@@ -1,0 +1,27 @@
+auto-xs.inc
+Changes
+const-c.inc
+const-xs.inc
+include/GL/eglew.h
+include/GL/glew.h
+include/GL/glxew.h
+include/GL/wglew.h
+lib/OpenGL/Modern.pm
+lib/OpenGL/Modern/Helpers.pm
+lib/OpenGL/Shader/OpenGL4.pm
+lib/OpenGL/Texture.pm
+Makefile.PL
+MANIFEST			This list of files
+Modern.xs
+ppport.h
+README
+README.md
+src/glew-context.c
+src/glew.c
+src/glewinfo.c
+src/visualinfo.c
+t/00_basic.t
+t/01_context.t
+t/02_glGetShaderInfoLog.t
+typemap
+utils/generate-XS.pl

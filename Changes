@@ -1,0 +1,5 @@
+Revision history for Perl extension OpenGL::Modern.
+
+0.00_01  Sat Nov 26 14:13:41 2016
+	- original version; created from app-shadertoy sources
+	  extracting OpenGL::Glew as OpenGL::Modern
