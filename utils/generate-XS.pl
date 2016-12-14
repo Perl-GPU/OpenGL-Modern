@@ -101,7 +101,9 @@ for my $file (@headers) {
         if( $line =~ /^#define (\w+) 1$/ and $1 ne 'GL_ONE' and $1 ne 'GL_TRUE') {
             $feature_name = $1;
 
-        } elsif( $line =~ /^typedef (\w+) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);/ ) {
+                          # typedef void* (GLAPIENTRY * PFNGLMAPBUFFERPROC) (GLenum target, GLenum access);
+                          # typedef void (GLAPIENTRY * PFNGLGETQUERYIVPROC) (GLenum target, GLenum pname, GLint* params);
+        } elsif( $line =~ /^typedef ([*\w]+) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);/ ) {
             my( $restype, $name, $sig ) = ($1,$2,$3);
             my $s = { signature => $sig, restype => $restype, feature => $feature_name, name => $name };
             $signature{ $name } = $s;
