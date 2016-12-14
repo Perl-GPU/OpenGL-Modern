@@ -103,7 +103,7 @@ for my $file (@headers) {
 
                           # typedef void* (GLAPIENTRY * PFNGLMAPBUFFERPROC) (GLenum target, GLenum access);
                           # typedef void (GLAPIENTRY * PFNGLGETQUERYIVPROC) (GLenum target, GLenum pname, GLint* params);
-        } elsif( $line =~ /^typedef ([*\w]+) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);/ ) {
+        } elsif( $line =~ /^typedef ([\w]+(?:\s*\*)?) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);/ ) {
             my( $restype, $name, $sig ) = ($1,$2,$3);
             my $s = { signature => $sig, restype => $restype, feature => $feature_name, name => $name };
             $signature{ $name } = $s;

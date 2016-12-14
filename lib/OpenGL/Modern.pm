@@ -938,6 +938,7 @@ our @glFunctions = qw(
     glGetPointeri_vEXT
     glGetPointerv
     glGetPolygonStipple
+    glGetProcAddressREGAL
     glGetProgramBinary
     glGetProgramEnvParameterdvARB
     glGetProgramEnvParameterfvARB
@@ -1259,13 +1260,21 @@ our @glFunctions = qw(
     glMap2d
     glMap2f
     glMapBuffer
+    glMapBufferARB
+    glMapBufferRange
     glMapControlPointsNV
     glMapGrid1d
     glMapGrid1f
     glMapGrid2d
     glMapGrid2f
+    glMapNamedBuffer
+    glMapNamedBufferEXT
+    glMapNamedBufferRange
+    glMapNamedBufferRangeEXT
+    glMapObjectBufferATI
     glMapParameterfvNV
     glMapParameterivNV
+    glMapTexture2DINTEL
     glMapVertexAttrib1dAPPLE
     glMapVertexAttrib1fAPPLE
     glMapVertexAttrib2dAPPLE
@@ -3029,6 +3038,8 @@ our %EXPORT_TAGS_GL = (
                                             'glGetVertexArrayiv',
                                             'glInvalidateNamedFramebufferData',
                                             'glInvalidateNamedFramebufferSubData',
+                                            'glMapNamedBuffer',
+                                            'glMapNamedBufferRange',
                                             'glNamedBufferData',
                                             'glNamedBufferStorage',
                                             'glNamedBufferSubData',
@@ -3250,7 +3261,8 @@ our %EXPORT_TAGS_GL = (
                                            'glInvalidateTexSubImage'
                                          ],
           'GL_ARB_map_buffer_range' => [
-                                         'glFlushMappedBufferRange'
+                                         'glFlushMappedBufferRange',
+                                         'glMapBufferRange'
                                        ],
           'GL_ARB_matrix_palette' => [
                                        'glCurrentPaletteMatrixARB',
@@ -3672,6 +3684,7 @@ our %EXPORT_TAGS_GL = (
                                              'glGetBufferPointervARB',
                                              'glGetBufferSubDataARB',
                                              'glIsBufferARB',
+                                             'glMapBufferARB',
                                              'glUnmapBufferARB'
                                            ],
           'GL_ARB_vertex_program' => [
@@ -3844,6 +3857,7 @@ our %EXPORT_TAGS_GL = (
                                         'glSetFragmentShaderConstantATI'
                                       ],
           'GL_ATI_map_object_buffer' => [
+                                          'glMapObjectBufferATI',
                                           'glUnmapObjectBufferATI'
                                         ],
           'GL_ATI_pn_triangles' => [
@@ -4070,6 +4084,8 @@ our %EXPORT_TAGS_GL = (
                                             'glGetVertexArrayIntegervEXT',
                                             'glGetVertexArrayPointeri_vEXT',
                                             'glGetVertexArrayPointervEXT',
+                                            'glMapNamedBufferEXT',
+                                            'glMapNamedBufferRangeEXT',
                                             'glMatrixFrustumEXT',
                                             'glMatrixLoadIdentityEXT',
                                             'glMatrixLoadTransposedEXT',
@@ -4615,6 +4631,7 @@ our %EXPORT_TAGS_GL = (
                                       'glReadBufferRegion'
                                     ],
           'GL_LAYOUT_LINEAR_INTEL' => [
+                                        'glMapTexture2DINTEL',
                                         'glSyncTextureINTEL',
                                         'glUnmapTexture2DINTEL'
                                       ],
@@ -5264,6 +5281,9 @@ our %EXPORT_TAGS_GL = (
           'GL_REGAL_log' => [
                               'glLogMessageCallbackREGAL'
                             ],
+          'GL_REGAL_proc_address' => [
+                                       'glGetProcAddressREGAL'
+                                     ],
           'GL_SGIS_detail_texture' => [
                                         'glDetailTexFuncSGIS',
                                         'glGetDetailTexFuncSGIS'

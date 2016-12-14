@@ -10231,6 +10231,17 @@ glGetPolygonStipple(mask);
 CODE:
     glGetPolygonStipple(mask);
 
+void *
+glGetProcAddressREGAL(name);
+     const GLchar *name;
+CODE:
+    if(! __glewGetProcAddressREGAL) {
+        croak("glGetProcAddressREGAL not available on this machine");
+    };
+    RETVAL = glGetProcAddressREGAL(name);
+OUTPUT:
+    RETVAL
+
 void
 glGetProgramBinary(program, bufSize, length, binaryFormat, binary);
      GLuint program;
@@ -13682,6 +13693,32 @@ CODE:
 OUTPUT:
     RETVAL
 
+void *
+glMapBufferARB(target, access);
+     GLenum target;
+     GLenum access;
+CODE:
+    if(! __glewMapBufferARB) {
+        croak("glMapBufferARB not available on this machine");
+    };
+    RETVAL = glMapBufferARB(target, access);
+OUTPUT:
+    RETVAL
+
+void *
+glMapBufferRange(target, offset, length, access);
+     GLenum target;
+     GLintptr offset;
+     GLsizeiptr length;
+     GLbitfield access;
+CODE:
+    if(! __glewMapBufferRange) {
+        croak("glMapBufferRange not available on this machine");
+    };
+    RETVAL = glMapBufferRange(target, offset, length, access);
+OUTPUT:
+    RETVAL
+
 void
 glMapControlPointsNV(target, index, type, ustride, vstride, uorder, vorder, packed, points);
      GLenum target;
@@ -13737,6 +13774,69 @@ glMapGrid2f(un, u1, u2, vn, v1, v2);
 CODE:
     glMapGrid2f(un, u1, u2, vn, v1, v2);
 
+void *
+glMapNamedBuffer(buffer, access);
+     GLuint buffer;
+     GLenum access;
+CODE:
+    if(! __glewMapNamedBuffer) {
+        croak("glMapNamedBuffer not available on this machine");
+    };
+    RETVAL = glMapNamedBuffer(buffer, access);
+OUTPUT:
+    RETVAL
+
+void *
+glMapNamedBufferEXT(buffer, access);
+     GLuint buffer;
+     GLenum access;
+CODE:
+    if(! __glewMapNamedBufferEXT) {
+        croak("glMapNamedBufferEXT not available on this machine");
+    };
+    RETVAL = glMapNamedBufferEXT(buffer, access);
+OUTPUT:
+    RETVAL
+
+void *
+glMapNamedBufferRange(buffer, offset, length, access);
+     GLuint buffer;
+     GLintptr offset;
+     GLsizeiptr length;
+     GLbitfield access;
+CODE:
+    if(! __glewMapNamedBufferRange) {
+        croak("glMapNamedBufferRange not available on this machine");
+    };
+    RETVAL = glMapNamedBufferRange(buffer, offset, length, access);
+OUTPUT:
+    RETVAL
+
+void *
+glMapNamedBufferRangeEXT(buffer, offset, length, access);
+     GLuint buffer;
+     GLintptr offset;
+     GLsizeiptr length;
+     GLbitfield access;
+CODE:
+    if(! __glewMapNamedBufferRangeEXT) {
+        croak("glMapNamedBufferRangeEXT not available on this machine");
+    };
+    RETVAL = glMapNamedBufferRangeEXT(buffer, offset, length, access);
+OUTPUT:
+    RETVAL
+
+void *
+glMapObjectBufferATI(buffer);
+     GLuint buffer;
+CODE:
+    if(! __glewMapObjectBufferATI) {
+        croak("glMapObjectBufferATI not available on this machine");
+    };
+    RETVAL = glMapObjectBufferATI(buffer);
+OUTPUT:
+    RETVAL
+
 void
 glMapParameterfvNV(target, pname, params);
      GLenum target;
@@ -13758,6 +13858,21 @@ CODE:
         croak("glMapParameterivNV not available on this machine");
     };
     glMapParameterivNV(target, pname, params);
+
+void *
+glMapTexture2DINTEL(texture, level, access, stride, layout);
+     GLuint texture;
+     GLint level;
+     GLbitfield access;
+     GLint* stride;
+     GLenum *layout;
+CODE:
+    if(! __glewMapTexture2DINTEL) {
+        croak("glMapTexture2DINTEL not available on this machine");
+    };
+    RETVAL = glMapTexture2DINTEL(texture, level, access, stride, layout);
+OUTPUT:
+    RETVAL
 
 void
 glMapVertexAttrib1dAPPLE(index, size, u1, u2, stride, order, points);
