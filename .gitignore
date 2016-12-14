@@ -2,3 +2,9 @@ MYMETA.*
 Makefile
 Makefile.old
 OpenGL-Modern-*.tar.gz
+*.bs
+*.o
+blib/
+pm_to_blib
+Modern.c
+Modern.def
