@@ -1258,6 +1258,7 @@ our @glFunctions = qw(
     glMap1f
     glMap2d
     glMap2f
+    glMapBuffer
     glMapControlPointsNV
     glMapGrid1d
     glMapGrid1f
@@ -5872,6 +5873,7 @@ our %EXPORT_TAGS_GL = (
                                 'glGetQueryiv',
                                 'glIsBuffer',
                                 'glIsQuery',
+                                'glMapBuffer',
                                 'glUnmapBuffer'
                               ],
           'GL_VERSION_2_0' => [
