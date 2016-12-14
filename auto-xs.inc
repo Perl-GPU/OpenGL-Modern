@@ -13670,6 +13670,18 @@ glMap2f(target, u1, u2, ustride, uorder, v1, v2, vstride, vorder, points);
 CODE:
     glMap2f(target, u1, u2, ustride, uorder, v1, v2, vstride, vorder, points);
 
+void*
+glMapBuffer(target, access);
+     GLenum target;
+     GLenum access;
+CODE:
+    if(! __glewMapBuffer) {
+        croak("glMapBuffer not available on this machine");
+    };
+    RETVAL = glMapBuffer(target, access);
+OUTPUT:
+    RETVAL
+
 void
 glMapControlPointsNV(target, index, type, ustride, vstride, uorder, vorder, packed, points);
      GLenum target;
