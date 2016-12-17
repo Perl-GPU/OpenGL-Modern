@@ -7,6 +7,7 @@ include/GL/glew.h
 include/GL/glxew.h
 include/GL/wglew.h
 lib/OpenGL/Modern.pm
+lib/OpenGL/Modern/Helpers.pm
 Makefile.PL
 MANIFEST			This list of files
 Modern.xs
