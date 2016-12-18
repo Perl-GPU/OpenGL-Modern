@@ -1,8 +1,26 @@
-OpenGL-Modern version 0.00_01
+OpenGL-Modern version 0.01_01
 =============================
 
-This is a start for modern OpenGL API bindings for versions
-since 3.1.
+This is an *alpha* release for OpenGL API bindings for versions
+from 3.1 to 4.5.  Bindings have been generated for all API
+routines but any pointer value arguments or return values are
+implemented as passing and returning appropriate perl strings.
+
+See documentation and the source for OpenGL::Modern::Helpers
+for examples for calling those routines.  The implementation
+for those arguments *will* be changing and will be documented
+in OpenGL::Modern::Helpers in lib/OpenGl/Modern/Helpers.pm .
+
+All releases for OpenGL::Modern *will* be *alpha* until the
+API is fully implemented and stabilized.  We're happy for
+use and feedback and questions.  See #pogl on irc.perl.org
+for chatting and the Perl OpenGL users lists at the sf.net
+site.  They are members only but you can use the Subscribe
+link to join:
+
+  https://sourceforge.net/p/pogl/mailman/?source=navbar
+
+
 
 INSTALLATION
 
@@ -17,11 +35,14 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-  TBD
+  OpenGL 0.70  (provides needed unimplemented functionality)
+  Filter::signatures 0.07
+  Carp
+  Devel::CheckOS
+  ExtUtils::MakeMaker
 
 COPYRIGHT AND LICENCE
 
-Put the correct copyright and licence information here.
 
 Copyright (C) 2016 by Chris Marshall
 Copyright (C) 2016 by Max Maischein
