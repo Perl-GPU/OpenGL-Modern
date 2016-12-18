@@ -26,13 +26,11 @@ WriteMakefile(
     VERSION_FROM      => 'lib/OpenGL/Modern.pm',
     PREREQ_PM         => {
       'OpenGL'                  => '0.7',  # only use latest version
-      'Prima'                   => 0,
-      'Prima::OpenGL'           => '0.07',
       'Filter::signatures'      => '0.07', # for empty function signatures
       'Carp' => 0,
     }, # e.g., Module::Name => 1.1
     ABSTRACT_FROM     => 'lib/OpenGL/Modern.pm', # retrieve abstract from module
-    AUTHOR            => 'Max Maischein <corion@cpan.org>',
+    AUTHOR            => 'Chris Marshall <chm@cpan.org>',
     LICENSE           => 'perl',
     #Value must be from legacy list of licenses here
     #http://search.cpan.org/perldoc?Module%3A%3ABuild%3A%3AAPI
