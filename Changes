@@ -1,5 +1,12 @@
 Revision history for Perl extension OpenGL::Modern.
 
-0.00_01  Sat Nov 26 14:13:41 2016
+0.01_02  TBD
+
+
+0.01_01  2016-12-18 16:17:31-05:00
+	- CPAN alpha release
+	- Cleaned up files to remove unnecessary ones
+
+0.00_01  2016-11-26 14:13:41-05:00
 	- original version; created from app-shadertoy sources
 	  extracting OpenGL::Glew as OpenGL::Modern
