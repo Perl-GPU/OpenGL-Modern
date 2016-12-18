@@ -1,9 +1,9 @@
 package # not an official package
-   OpenGL::Modern::Helpers;
+OpenGL::Modern::Helpers;
 
 BEGIN {
-   # use Filter::signatures always
-   $ENV{FORCE_FILTER_SIGNATURES} = 1;
+    # use Filter::signatures always
+    $ENV{FORCE_FILTER_SIGNATURES} = 1;
 }
 
 use strict;
