@@ -28,7 +28,7 @@ WriteMakefile(
       'OpenGL'                  => '0.7',  # only use latest version
       'Prima'                   => 0,
       'Prima::OpenGL'           => '0.07',
-      'Filter::signatures'      => '0.06', # for empty function signatures
+      'Filter::signatures'      => '0.07', # for empty function signatures
       'Carp' => 0,
     }, # e.g., Module::Name => 1.1
     ABSTRACT_FROM     => 'lib/OpenGL/Modern.pm', # retrieve abstract from module
