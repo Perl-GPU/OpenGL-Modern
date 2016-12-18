@@ -24,6 +24,22 @@ if( os_is('MSWin32')) {
 WriteMakefile1(
     NAME              => 'OpenGL::Modern',
     VERSION_FROM      => 'lib/OpenGL/Modern.pm',
+    ABSTRACT_FROM     => 'lib/OpenGL/Modern.pm', # retrieve abstract from module
+    AUTHOR            => 'Max Maischein <corion@cpan.org>',
+    LICENSE           => 'perl',
+    META_MERGE => {
+        "meta-spec" => { version => 2 },
+        resources => {
+            repository => {
+                web => 'https://github.com/devel-chm/OpenGL-Modern',
+                url => 'git@github.com:devel-chm/OpenGL-Modern.git',
+                type => 'git',
+            }
+        },
+    },
+
+    MIN_PERL_VERSION => '5.006',
+
     PREREQ_PM         => {
       'OpenGL'                  => '0.7',  # only use latest version
       'Prima'                   => 0,
@@ -31,9 +47,6 @@ WriteMakefile1(
       'Filter::signatures'      => '0.07', # for empty function signatures
       'Carp' => 0,
     }, # e.g., Module::Name => 1.1
-    ABSTRACT_FROM     => 'lib/OpenGL/Modern.pm', # retrieve abstract from module
-    AUTHOR            => 'Max Maischein <corion@cpan.org>',
-    LICENSE           => 'perl',
     #Value must be from legacy list of licenses here
     #http://search.cpan.org/perldoc?Module%3A%3ABuild%3A%3AAPI
     LIBS              => "@libs", # e.g., '-lm'
@@ -41,6 +54,9 @@ WriteMakefile1(
     INC               => $include,
     CONFIGURE_REQUIRES    => {
         'Devel::CheckOS' => 0,
+        'ExtUtils::MakeMaker' => 0,
+    },
+    BUILD_REQUIRES => {
         'ExtUtils::MakeMaker' => 0,
     },
     XSPROTOARG => '-prototypes',
