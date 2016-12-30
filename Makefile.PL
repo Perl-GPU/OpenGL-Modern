@@ -32,7 +32,7 @@ WriteMakefile1(
         resources => {
             repository => {
                 web => 'https://github.com/devel-chm/OpenGL-Modern',
-                url => 'git@github.com:devel-chm/OpenGL-Modern.git',
+		url => 'https://github.com/devel-chm/OpenGL-Modern.git',
                 type => 'git',
             }
         },
@@ -42,7 +42,7 @@ WriteMakefile1(
 
     PREREQ_PM         => {
       'OpenGL'                  => '0.70',  # only use latest version
-      'Filter::signatures'      => '0.07', # for empty function signatures
+      'Filter::signatures'      => '0.08', # for empty function signatures
       'Carp' => 0,
     }, # e.g., Module::Name => 1.1
     LIBS              => "@libs", # e.g., '-lm'
