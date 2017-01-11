@@ -3,6 +3,7 @@ use strict;
 use ExtUtils::MakeMaker;
 use Config '%Config';
 use Devel::CheckOS 'os_is';
+use IO::All -binary;
 
 my $include = "-I. -Iinclude -Isrc";
 my @libs;
@@ -50,7 +51,8 @@ WriteMakefile1(
     INC               => $include,
     CONFIGURE_REQUIRES    => {
         'Devel::CheckOS' => 0,
-        'ExtUtils::MakeMaker' => 0,
+        'ExtUtils::MakeMaker' => 6.52,
+        'IO::All' => 0,
     },
     BUILD_REQUIRES => {
         'ExtUtils::MakeMaker' => 0,
@@ -4092,6 +4094,10 @@ if  (eval {require ExtUtils::Constant; 1}) {
                                      XS_FILE      => 'const-xs.inc',
                                   );
 
+    if ( $^O eq "MSWin32" ) {    # fix up some unnecessary changes by EU::Constant on windows
+        io( $_ )->print( map { s/\r\n/\n/g; s@\n#!.*perl\.exe @\n#!/usr/bin/perl @i; $_ } io( $_ )->all )
+          for qw( const-c.inc const-xs.inc );
+    }
 }
 else {
   use File::Copy;
