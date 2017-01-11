@@ -8,7 +8,7 @@ glewInit();
 
 # Set up a windowless OpenGL context?!
 my $id = glCreateShader(GL_VERTEX_SHADER);
-diag "Got vertex shader $id, setting source";
+note "Got vertex shader $id, setting source";
 
 my $shader = <<SHADER;
 int i;
@@ -20,7 +20,7 @@ glShaderSource($id, 1, pack('P',$shader), pack('I',$shader_length));
 
 glCompileShader($id);
     
-warn "Looking for errors";
+note "Looking for errors";
 glGetShaderiv($id, GL_COMPILE_STATUS, (my $ok = "\0" x 8));
 $ok = unpack 'I', $ok;
 if( $ok == GL_FALSE ) {
@@ -32,7 +32,7 @@ if( $ok == GL_FALSE ) {
     my $log = substr $buffer, 0, $len;
     isnt $log, '', "We get some error message";
       
-    diag "Error message: $log";
+    note "Error message: $log";
       
 } else {
     fail "We recognize an invalid shader as valid";
