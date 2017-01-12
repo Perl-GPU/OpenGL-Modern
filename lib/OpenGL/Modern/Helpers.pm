@@ -4,6 +4,7 @@ OpenGL::Modern::Helpers;
 use strict;
 use Exporter 'import';
 use Carp qw(croak);
+use Config;
 
 use OpenGL::Modern qw(
     GL_NO_ERROR
@@ -158,6 +159,7 @@ $VERSION = '0.01_02';
     GL_TABLE_TOO_LARGE() => 'The specified table exceeds the implementation\'s maximum supported table size.',
 );
 
+our $PACK_TYPE = $Config{ptrsize} == 4 ? 'L' : 'Q';
 
 sub pack_GLuint {
     my @gluints = @_;
@@ -212,7 +214,7 @@ sub get_info_log_p {
     my $len = "\0" x 4;
     # void glGetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
     # void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
-    $call->( $id, $bufsize, unpack('Q',pack('p',$len)), $buffer);
+    $call->( $id, $bufsize, unpack( $PACK_TYPE, pack( 'p', $len ) ), $buffer );
     $len = unpack 'I', $len;
     return substr $buffer, 0, $len;
 }
