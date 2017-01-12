@@ -19,6 +19,17 @@ use OpenGL::Modern qw(
     glGetError
     glGetShaderInfoLog_c
     glGetProgramInfoLog_c
+  glGenTextures_c
+  glGetProgramiv_c
+  glGetShaderiv_c
+  glShaderSource_c
+  glGenFramebuffers_c
+  glGenVertexArrays_c
+  glGenBuffers_c
+  glGetIntegerv_c
+  glBufferData_c
+  glUniform2f
+  glUniform4f
 );
 
 =head1 NAME
@@ -144,6 +155,17 @@ $VERSION = '0.01_02';
     croak_on_gl_error
         
     glGetVersion_p
+  glGenTextures_p
+  glGetProgramiv_p
+  glGetShaderiv_p
+  glShaderSource_p
+  glGenFramebuffers_p
+  glGenVertexArrays_p
+  glGenBuffers_p
+  glGetIntegerv_p
+  glBufferData_p
+  glUniform2f_p
+  glUniform4f_p
 );
 
 
@@ -240,6 +262,67 @@ sub croak_on_gl_error {
     if( $error != GL_NO_ERROR ) {
         croak $glErrorStrings{ $error } || "Unknown OpenGL error: $error"
     };
+}
+
+sub gen_thing_p {
+    my ( $call, $n ) = @_;
+    xs_buffer my $new_ids, 4 * $n;
+    $call->( $n, unpack( $PACK_TYPE, pack( 'p', $new_ids ) ) );
+    my @ids = unpack 'I*', $new_ids;
+    return wantarray ? @ids : $ids[0];
+}
+
+sub glGenTextures_p { gen_thing_p \&glGenTextures_c, @_ }
+
+sub glGenFramebuffers_p { gen_thing_p \&glGenFramebuffers_c, @_ }
+
+sub glGenVertexArrays_p { gen_thing_p \&glGenVertexArrays_c, @_ }
+
+sub glGenBuffers_p { gen_thing_p \&glGenBuffers_c, @_ }
+
+sub get_iv_p {
+    my ( $call, $id, $pname, $count ) = @_;
+    $count ||= 1;
+    xs_buffer my $params, 4 * $count;
+    $call->( $id, $pname, unpack( "$PACK_TYPE*", pack( 'p*', $params ) ) );
+    my @params = unpack 'I*', $params;
+    return wantarray ? @params : $params[0];
+}
+
+sub glGetProgramiv_p { get_iv_p \&glGetProgramiv_c, @_ }
+
+sub glGetShaderiv_p { get_iv_p \&glGetShaderiv_c, @_ }
+
+sub glShaderSource_p {
+    my ( $shader, @sources ) = @_;
+    my $count = @sources;
+    my @lengths = map length, @sources;
+    glShaderSource_c( $shader, $count, pack( 'P*', @sources ), pack( 'I*', @lengths ) );
+    return;
+}
+
+sub glGetIntegerv_p {
+    my ( $pname, $count ) = @_;
+    $count ||= 1;
+    xs_buffer my $data, 4 * $count;
+    glGetIntegerv_c $pname, unpack( $PACK_TYPE, pack( 'p', $data ) );
+    my @data = unpack 'I*', $data;
+    return wantarray ? @data : $data[0];
+}
+
+sub glBufferData_p {
+    my ( $target, $oga, $usage ) = @_;
+    glBufferData_c $target, $oga->length, $oga->ptr, $usage;
+}
+
+sub glUniform2f_p {
+    my ( $uniform, $v0, $v1 ) = @_;
+    glUniform2f $uniform, $v0, $v1;
+}
+
+sub glUniform4f_p {
+    my ( $uniform, $v0, $v1, $v2, $v3 ) = @_;
+    glUniform4f $uniform, $v0, $v1, $v2, $v3;
 }
 
 1;
