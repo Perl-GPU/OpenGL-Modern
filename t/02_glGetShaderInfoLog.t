@@ -2,6 +2,7 @@
 use strict;
 use Test::More tests => 2;
 use OpenGL::Modern ':all';
+use OpenGL::Modern::Helpers 'xs_buffer';
 
 glewCreateContext();
 glewInit();
@@ -21,13 +22,13 @@ glShaderSource($id, 1, pack('P',$shader), pack('I',$shader_length));
 glCompileShader($id);
     
 warn "Looking for errors";
-glGetShaderiv($id, GL_COMPILE_STATUS, (my $ok = "\0" x 8));
+glGetShaderiv($id, GL_COMPILE_STATUS, xs_buffer(my $ok, 8));
 $ok = unpack 'I', $ok;
 if( $ok == GL_FALSE ) {
     pass "We recognize an invalid shader as invalid";
 
     my $bufsize = 1024*64;
-    glGetShaderInfoLog( $id, $bufsize, (my $len = "\0" x 8), (my $buffer = "\0" x $bufsize));
+    glGetShaderInfoLog( $id, $bufsize, xs_buffer(my $len, 8), xs_buffer(my $buffer, $bufsize));
     $len = unpack 'I', $len;
     my $log = substr $buffer, 0, $len;
     isnt $log, '', "We get some error message";
