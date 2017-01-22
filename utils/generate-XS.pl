@@ -30,7 +30,6 @@ my %alias;
 # These could also be read from Modern.xs, later maybe
 my @manual = qw(
     glGetError
-    glShaderSource
 );
 
 my %manual; @manual{@manual} = (1) x @manual;

@@ -83,19 +83,6 @@ CODE:
 OUTPUT:
     RETVAL
 
-SV *
-glShaderSource( shader, count, string, length);
-    GLuint shader;
-     GLsizei count;
-     char * string;
-     char * length;
-CODE:
-    if(! __glewShaderSource) {
-        croak("glShaderSource not available on this machine");
-    };
-    // We come from Perl, so we have null-terminated strings
-    glShaderSource( shader, count, string, NULL);
-
 GLboolean
 glewIsSupported(name);
     char* name;

@@ -21609,6 +21609,18 @@ CODE:
     glShaderOp3EXT(op, res, arg1, arg2, arg3);
 
 void
+glShaderSource(shader, count, string, length);
+     GLuint shader;
+     GLsizei count;
+     const GLchar *const* string;
+     const GLint* length;
+CODE:
+    if(! __glewShaderSource) {
+        croak("glShaderSource not available on this machine");
+    };
+    glShaderSource(shader, count, string, length);
+
+void
 glShaderSourceARB(shaderObj, count, string, length);
      GLhandleARB shaderObj;
      GLsizei count;

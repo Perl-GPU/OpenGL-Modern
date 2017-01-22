@@ -1,6 +1,9 @@
 Revision history for Perl extension OpenGL::Modern.
 
 0.01_02  TBD
+        - make glShaderSource bindings use auto-xs.inc versions
+	- use T_PTR for typemaps for all pointers except char or strings
+	- preparation for native perl argument handling
 
 
 0.01_01  2016-12-18 16:17:31-05:00

@@ -15,19 +15,22 @@ int i;
 provoke a syntax error
 SHADER
 
-my $shader_length = length($shader);
-glShaderSource($id, 1, pack('P',$shader), pack('I',$shader_length));
+my $len = "\0" x 4;
+glShaderSource($id, 1, $shader, unpack('Q',pack('P',$len)));
 
 glCompileShader($id);
     
 warn "Looking for errors";
-glGetShaderiv($id, GL_COMPILE_STATUS, (my $ok = "\0" x 8));
+my $ok = "\0" x 4;
+glGetShaderiv($id, GL_COMPILE_STATUS, unpack('Q',pack('p',$ok)));
 $ok = unpack 'I', $ok;
 if( $ok == GL_FALSE ) {
     pass "We recognize an invalid shader as invalid";
 
     my $bufsize = 1024*64;
-    glGetShaderInfoLog( $id, $bufsize, (my $len = "\0" x 8), (my $buffer = "\0" x $bufsize));
+    my $len = "\0" x 4;
+    my $buffer = "\0" x $bufsize;
+    glGetShaderInfoLog( $id, $bufsize, unpack('Q',pack('p',$len)), $buffer);
     $len = unpack 'I', $len;
     my $log = substr $buffer, 0, $len;
     isnt $log, '', "We get some error message";
@@ -36,6 +39,7 @@ if( $ok == GL_FALSE ) {
       
 } else {
     fail "We recognize an invalid shader as valid";
+
 };
 
 done_testing;

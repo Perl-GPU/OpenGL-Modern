@@ -108,15 +108,16 @@ Pointers can be used to return multiple input values
 
 =back
 
-To simplify the initial XS implementation, all
-pointer valued arguments in the OpenGL C API are
-mapped to and from a perl PV which is a string
-value that can be treated as a block of data.  
+The current XS implementation now represents non-char
+type pointers as the typemap T_PTR and the string and
+character pointers are T_PV.  The routines will be
+renamed with an added _c so as to indicate that the
+mapping is the direct C one.
 
-This simplifies the generation of the binding code
-to the OpenGL C API but it requires that the perl
-user hand manage the allocation, initialization,
-packing and unpacking, etc for each function call.
+These _c routines closely match the OpenGL C API but
+it requires that the perl user hand manage the allocation,
+initialization, packing and unpacking, etc for each
+function call.
 
 Please see this source file for the implementations of
 
@@ -136,7 +137,7 @@ a final version of Helpers.pm will be released.
 =cut
 
 use vars qw(@EXPORT_OK $VERSION %glErrorStrings);
-$VERSION = '0.01';
+$VERSION = '0.01_02';
 
 @EXPORT_OK = qw(
     pack_GLuint
@@ -189,12 +190,21 @@ sub pack_GLstrings {
 }
 
 # No parameter declaration because we don't want copies
+# This returns a packed string representation of the
+# pointer to the perl string data.  Not useful as is
+# because the scope of the inputs is not maintained so
+# the PV data may disappear before the pointer is actually
+# accessed by OpenGL routines.
+#
 sub pack_ptr {
     $_[0] = "\0" x $_[1];
     return pack 'P', $_[0];
 }
 
 # No parameter declaration because we don't want copies
+# This makes a packed string buffer of desired length.
+# As above, be careful of the variable scopes.
+#
 sub xs_buffer {
     $_[0] = "\0" x $_[1];
     $_[0];
@@ -202,16 +212,18 @@ sub xs_buffer {
 
 sub glGetShaderInfoLog_p( $shader ) {
     my $bufsize = 1024*64;
+    my $buffer = "\0" x $bufsize;
     # void glGetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
-    glGetShaderInfoLog( $shader, $bufsize, xs_buffer(my $len, 8), xs_buffer(my $buffer, $bufsize));
+    glGetShaderInfoLog( $shader, $bufsize, unpack('Q',pack('p',$len)), $buffer);
     $len = unpack 'I', $len;
     return substr $buffer, 0, $len;
 }
 
 sub glGetProgramInfoLog_p( $program ) {
     my $bufsize = 1024*64;
+    my $buffer = "\0" x $bufsize;
     # void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
-    glGetProgramInfoLog( $program, $bufsize, xs_buffer(my $len, 8), xs_buffer(my $buffer, $bufsize));
+    glGetProgramInfoLog( $program, $bufsize, unpack('Q',pack('p',$len)), $buffer);
     $len = unpack 'I', $len;
     return substr $buffer, 0, $len;
 }

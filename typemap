@@ -4,12 +4,12 @@ const unsigned char *       T_PV
 
 GLbitfield                  T_U_INT
 GLboolean                   T_BOOL
-GLboolean *                 T_PV
-const GLboolean *           T_PV
-const GLboolean **          T_PV
+GLboolean *                 T_PTR
+const GLboolean *           T_PTR
+const GLboolean **          T_PTR
 GLbyte                      T_INT
-GLbyte *                    T_PV
-const GLbyte *              T_PV
+GLbyte *                    T_PTR
+const GLbyte *              T_PTR
 GLchar *                    T_PV
 const GLchar *              T_PV
 GLchar * const *            T_PV
@@ -20,94 +20,93 @@ GLcharARB *                 T_PV
 const GLcharARB *           T_PV
 const GLcharARB **          T_PV
 GLenum                      T_INT
-GLenum *                    T_PV
-const GLenum *              T_PV
+GLenum *                    T_PTR
+const GLenum *              T_PTR
 GLsizei                     T_INT
-GLsizei *                   T_PV
-const GLsizei *             T_PV
+GLsizei *                   T_PTR
+const GLsizei *             T_PTR
 GLclampf                    T_FLOAT
-const GLclampf *            T_PV
+const GLclampf *            T_PTR
 GLclampd                    T_DOUBLE
-const GLclampd *            T_PV
-const GLclampd *            T_PV
+const GLclampd *            T_PTR
 GLclampx                    T_INT
 GLdouble                    T_DOUBLE
-GLdouble *                  T_PV
-const GLdouble *            T_PV
+GLdouble *                  T_PTR
+const GLdouble *            T_PTR
 GLfixed                     T_INT
-GLfixed *                   T_PV
-const GLfixed *             T_PV
+GLfixed *                   T_PTR
+const GLfixed *             T_PTR
 GLfloat                     T_FLOAT
 const GLfloat               T_FLOAT
-GLfloat *                   T_PV
-const GLfloat *             T_PV
+GLfloat *                   T_PTR
+const GLfloat *             T_PTR
 GLhalf                      T_FLOAT
-const GLhalf *              T_PV
+const GLhalf *              T_PTR
 GLhandleARB                 T_INT
-GLhandleARB *               T_PV
-const GLhandleARB *         T_PV
+GLhandleARB *               T_PTR
+const GLhandleARB *         T_PTR
 GLint                       T_INT
 const GLint                 T_INT
-const GLint *               T_PV
+const GLint *               T_PTR
 GLintptr                    T_U_INT
-GLintptr *                  T_PV
-const GLintptr *            T_PV
+GLintptr *                  T_PTR
+const GLintptr *            T_PTR
 GLintptrARB                 T_U_INT
-GLintptrARB *               T_PV
-const GLintptrARB *         T_PV
+GLintptrARB *               T_PTR
+const GLintptrARB *         T_PTR
 GLint64                     T_U_INT
-GLint64 *                   T_PV
-const GLint64 *             T_PV
+GLint64 *                   T_PTR
+const GLint64 *             T_PTR
 GLint64EXT                  T_U_INT
-GLint64EXT *                T_PV
-const GLint64EXT *          T_PV
+GLint64EXT *                T_PTR
+const GLint64EXT *          T_PTR
 GLuint                      T_U_INT
-GLuint *                    T_PV
-const GLuint *              T_PV
+GLuint *                    T_PTR
+const GLuint *              T_PTR
 GLushort                    T_U_SHORT
-GLushort *                  T_PV
-const GLushort *            T_PV
+GLushort *                  T_PTR
+const GLushort *            T_PTR
 GLint                       T_INT
-GLint *                     T_PV
+GLint *                     T_PTR
 GLshort                     T_SHORT
-GLshort *                   T_PV
-const GLshort *             T_PV
+GLshort *                   T_PTR
+const GLshort *             T_PTR
 GLsizeiptr                  T_U_INT
-GLsizeiptr *                T_PV
-const GLsizeiptr *          T_PV
+GLsizeiptr *                T_PTR
+const GLsizeiptr *          T_PTR
 GLsizeiptrARB               T_U_INT
-GLsync                      T_PV
+GLsync                      T_PTR
 GLbitfield                  T_INT
 GLubyte                     T_U_INT
-GLubyte *                   T_PV
-const GLubyte *             T_PV
+GLubyte *                   T_PTR
+const GLubyte *             T_PTR
 GLuint64                    T_U_INT
-GLuint64 *                  T_PV
-const GLuint64 *            T_PV
+GLuint64 *                  T_PTR
+const GLuint64 *            T_PTR
 GLuint64EXT                 T_U_INT
-GLuint64EXT *               T_PV
-const GLuint64EXT *         T_PV
+GLuint64EXT *               T_PTR
+const GLuint64EXT *         T_PTR
 GLhandleARB                 T_U_INT
-GLvdpauSurfaceNV            T_PV
-GLvoid *                    T_PV
-const GLvdpauSurfaceNV      T_PV
-const GLvdpauSurfaceNV *    T_PV
-void *                      T_PV
-const void *                T_PV
-void * *                    T_PV
-const void * *              T_PV
-const void * const *        T_PV
+GLvdpauSurfaceNV            T_PTR
+GLvoid *                    T_PTR
+const GLvdpauSurfaceNV      T_PTR
+const GLvdpauSurfaceNV *    T_PTR
+void *                      T_PTR
+const void *                T_PTR
+void * *                    T_PTR
+const void * *              T_PTR
+const void * const *        T_PTR
 
-GLVULKANPROCNV              T_PV
-GLLOGPROCREGAL              T_PV
-GLDEBUGPROCARB              T_PV
-GLDEBUGPROCAMD              T_PV
-GLDEBUGPROC                 T_PV
+GLVULKANPROCNV              T_PTR
+GLLOGPROCREGAL              T_PTR
+GLDEBUGPROCARB              T_PTR
+GLDEBUGPROCAMD              T_PTR
+GLDEBUGPROC                 T_PTR
 
-cl_context                  T_PV
-cl_event                    T_PV
+cl_context                  T_PTR
+cl_event                    T_PTR
 
-GLXDrawable                 T_PV
+GLXDrawable                 T_PTR
 
 INPUT
 
