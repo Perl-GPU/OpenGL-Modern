@@ -1,0 +1,76 @@
+Created on: Mon 23 Jan 2017 05:24:22 PM 
+Last saved: Mon 23 Jan 2017 05:55:55 PM 
+
+This file consists of notes and ideas for work to do to improve
+the automated code generation of OpenGL XS bindings from the
+GLEW include file declarations in glew.h.
+
+* OpenGL Features are marked with lines in this form:
+
+  #ifndef GL_FEATURE_NAME
+  #define GL_FEATURE_NAME 1
+  
+  //  declarations,
+  //  definitions,
+  //  and typemaps for
+  //  GL_FEATURE_NAME
+  //  ...
+  
+  #endif /* GL_FEATURE_NAME */
+ 
+  This sugggests the following, more specific, algorithm to
+  identify the current OpenGL feature in glew.h:
+
+  (1) Search for #ifndef to get a $maybe_feature_name
+  (2) If the next line is #define $maybe_feature_name 1 then set $feature_name
+  (3) Process lines for $feature_name until...
+  (4) We reach the line #endif /* $feature_name */
+
+  This takes advantage of the specific format of GLEW headers and
+  avoids confusing heuristics like ignoring GL_TRUE and GL_ONE.
+
+* Clean up use of regular expressions by using qr// assigned to
+  appropriately named perl variables, extended regex syntax,...
+
+* Collect file line handling machinery into subs so that the intent
+  of the code can be better understood and more easily maintained.
+
+* Add status logging output so that debugging is simpler.
+
+* Categorize OpenGL bindings as "good" or "bad" according to whether
+  or not they have pointer arguments.
+
+  - The good routines
+    - translate cleanly to XS with default typemaps
+    - won't require a separate _p perlish version
+
+  - The "bad" routines (with pointer args)
+    - C function declaration is ambiguous
+    - The argument could be input, output, or both
+    - The argument could be a pointer or a pointer to data
+    - The argument could point to an array of 1 or more elements
+    - Usage comes from the OpenGL specification
+    - These routines require manual review for optimal handling
+
+  - Still needs to be detemined the best typemap for pointers
+    - T_PTR is simple but could lead to SEGFAULT with bad values
+    - Opaque pointers might be better
+    - If the perl value corresponding to the pointer argument is
+      some type of reference (blessed or unblessed) we can use
+      that information to implement simply.  For example, a
+      single argument could be:
+      - an array ref, [ ]
+      - a hash ref, { }
+      - a scalar ref, \$
+      - a blessed object: PDL, Cpointer, OGA, ...
+
+* Remove use of function signatures from the OpenGL::Modern to reduce
+  compatibility issues with older perls
+  
+  - lib/OpenGL/Modern/Helpers.pm
+  - utils/generate-XS.pl
+
+* Consider writing generate-XS.pl as a modulino so that it could be
+  used as either a command or a module to load and use.
+
+
