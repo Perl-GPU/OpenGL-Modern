@@ -308,7 +308,7 @@ if( ! @ARGV) {
     use Data::Dumper;
     $Data::Dumper::Sortkeys = 1;
     my $gltags = Dumper \%glGroups;
-    $gltags =~ s!\$VAR1 = {!!;
+    $gltags =~ s!\$VAR1 = \{!!;
     $gltags =~ s!\s+};\r?$!!;
 
     my $new = slurp( $module );
