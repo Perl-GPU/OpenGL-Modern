@@ -213,6 +213,7 @@ sub xs_buffer {
 sub glGetShaderInfoLog_p( $shader ) {
     my $bufsize = 1024*64;
     my $buffer = "\0" x $bufsize;
+    my $len = "\0" x 4;
     # void glGetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
     glGetShaderInfoLog( $shader, $bufsize, unpack('Q',pack('p',$len)), $buffer);
     $len = unpack 'I', $len;
@@ -222,6 +223,7 @@ sub glGetShaderInfoLog_p( $shader ) {
 sub glGetProgramInfoLog_p( $program ) {
     my $bufsize = 1024*64;
     my $buffer = "\0" x $bufsize;
+    my $len = "\0" x 4;
     # void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
     glGetProgramInfoLog( $program, $bufsize, unpack('Q',pack('p',$len)), $buffer);
     $len = unpack 'I', $len;
