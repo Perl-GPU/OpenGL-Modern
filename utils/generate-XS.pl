@@ -80,12 +80,15 @@ my @known_type = sort { $b cmp $a } qw(
 );
 
 # Functions where we need to override the type signature
+# The keys are API function names and the values are hash
+# refs giving the name of the argument to modify and the
+# new type to use instead.
+#
+# NOTE: The current implementation appears to handle only
+# one name/type override per API function and is undocumented
+# except looking at the code.
 my %signature_override = (
-    # Yes, these are rather numbers than pointers, even though glew.h+gcc
-    # complain about some typecasting that would be needed.
-    'glVertexAttribPointer' => { name => 'pointer', type => 'GLsizeiptr' },
-    'glVertexAttribPointerARB' => { name => 'pointer', type => 'GLsizeiptr' },
-    'glVertexAttribPointerNV' => { name => 'pointer', type => 'GLsizeiptr' },
+    'glFunctionName' => { name => 'parameter name', type => 'new parameter type' },
 );
 
 my %features = ();
