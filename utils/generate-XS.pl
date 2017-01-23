@@ -95,14 +95,13 @@ my %features = ();
 
 for my $file (@headers) {
 
-    my $feature_name;
+    my $feature_name; warn "Processing file $file\n";
 
     open my $fh, '<', $file
         or die "Couldn't read '$file': $!";
     while( my $line = <$fh>) {
-        if( $line =~ /^#define (\w+) 1$/ and $1 ne 'GL_ONE' and $1 ne 'GL_TRUE') {
+        if( $line =~ /^#define (\w+) 1\r?$/ and $1 ne 'GL_ONE' and $1 ne 'GL_TRUE') {
             $feature_name = $1;
-
                           # typedef void* (GLAPIENTRY * PFNGLMAPBUFFERPROC) (GLenum target, GLenum access);
                           # typedef void (GLAPIENTRY * PFNGLGETQUERYIVPROC) (GLenum target, GLenum pname, GLint* params);
         } elsif( $line =~ /^typedef ([\w]+(?:\s*\*)?) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);/ ) {
@@ -217,7 +216,7 @@ sub generate_glew_xs( @items ) {
             for my $arg (@xs_args) {
                 my $name = $sig->{name};
                 my $type = $sig->{type};
-                if( $arg =~ /\b\Q$name\E$/ ) {
+                if( $arg =~ /\b\Q$name\E\r?$/ ) {
                     $arg = "$type $name";
                 };
             };
@@ -227,8 +226,8 @@ sub generate_glew_xs( @items ) {
 
         # Rewrite const GLwhatever foo[];
         # into    const GLwhatever* foo;
-        1 while $xs_args =~ s!^\s*const (\w+)\s+(\w+)\[\d*\](;?)$!     const $1 * $2$3!m;
-        1 while $xs_args =~ s!^\s*(\w+)\s+(\w+)\[\d*\](;?)$!     $1 * $2$3!m;
+        1 while $xs_args =~ s!^\s*const (\w+)\s+(\w+)\[\d*\](;?)\r?$!     const $1 * $2$3!m;
+        1 while $xs_args =~ s!^\s*(\w+)\s+(\w+)\[\d*\](;?)\r?$!     $1 * $2$3!m;
 
         # Meh. We'll need a "proper" C type parser here and hope that we don't
         # incur any macros
@@ -310,14 +309,14 @@ if( ! @ARGV) {
     $Data::Dumper::Sortkeys = 1;
     my $gltags = Dumper \%glGroups;
     $gltags =~ s!\$VAR1 = {!!;
-    $gltags =~ s!\s+};$!!;
+    $gltags =~ s!\s+};\r?$!!;
 
     my $new = slurp( $module );
     $new =~ s!\bour \@glFunctions = qw\(.*?\);!$glFunctions!sm;
     # our %EXPORT_TAGS_GL = (
     # );
     # # end of EXPORT_TAGS_GL
-    $new =~ s!(our \%EXPORT_TAGS_GL = \().+(\);\s+# end of EXPORT_TAGS_GL)$!$1$gltags$2!sm;
+    $new =~ s!(our \%EXPORT_TAGS_GL = \().+(\);\s+# end of EXPORT_TAGS_GL)\r?$!$1$gltags$2!sm;
 
     save_file( $module, $new);
 };
