@@ -1,0 +1,3 @@
+gluBuild1DMipmaps_s
+gluBuild2DMipmaps_s
+gluScaleImage_s

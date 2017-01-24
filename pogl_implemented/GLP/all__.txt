@@ -1,0 +1,13 @@
+glpDisplay
+glpHasGLUT
+glpHasGPGPU
+glpMoveResizeWindow
+glpMoveWindow
+glpPrintString
+glpRasterFont
+glpReadTex
+glpResizeWindow
+glpSetDebug
+glpXNextEvent
+glpXQueryPointer
+glpcOpenWindow

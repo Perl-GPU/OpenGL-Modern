@@ -1,0 +1,5 @@
+gluBuild1DMipmaps_c
+gluBuild2DMipmaps_c
+gluNurbsCurve_c
+gluNurbsSurface_c
+gluPwlCurve_c

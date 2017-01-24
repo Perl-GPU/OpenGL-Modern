@@ -1,0 +1,8 @@
+gluGetNurbsProperty_p($nurb, $property);
+gluGetTessProperty_p($tess, $property);
+gluLoadSamplingMatrices_p($nurb, $m1,$m2,$m3,$m4,$m5,$m6,$m7,$m8,$m9,$m10,$m11,$m12,$m13,$m14,$m15,$m16, $o1,$o2,$o3,$o4,$o5,$o6,$o7,$o8,$o9,$o10,$o11,$o12,$o13,$o14,$o15,$o16, $v1,$v2,$v3,$v4);
+gluNurbsCallback_p($nurb, $which, $handler, ...);
+gluPickMatrix_p($x, $y, $delX, $delY, $m1,$m2,$m3,$m4);
+gluProject_p($objx, $objy, $objz, @m4x4, @o4x4, $v1,$v2,$v3,$v4);
+gluTessVertex_p($tess, $x, $y, $z);
+gluUnProject_p($winx,$winy,$winz, @m4x4, @o4x4, $v1,$v2,$v3,$v4);
