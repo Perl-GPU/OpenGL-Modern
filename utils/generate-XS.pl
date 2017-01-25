@@ -95,7 +95,7 @@ my %features = ();
 
 for my $file (@headers) {
 
-    my $feature_name; warn "Processing file $file\n";
+    my $feature_name; print "Processing file $file\n";
 
     open my $fh, '<', $file
         or die "Couldn't read '$file': $!";
@@ -285,9 +285,9 @@ sub slurp( $filename ) {
 }
 
 sub save_file( $filename, $new ) {
-    my $old = slurp( $filename );
+    my $old = -e $filename ? slurp( $filename ) : "";
     if( $new ne $old ) {
-        warn "Saving new version of $filename";
+        print "Saving new version of $filename\n";
         open my $fh, '>:raw', $filename
             or die "Couldn't write new version of '$filename': $!";
         print $fh $new;
