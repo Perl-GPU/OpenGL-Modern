@@ -76,13 +76,6 @@ CODE:
 OUTPUT:
     RETVAL
 
-GLenum
-glGetError();
-CODE:
-    RETVAL = glGetError();
-OUTPUT:
-    RETVAL
-
 GLboolean
 glewIsSupported(name);
     char* name;

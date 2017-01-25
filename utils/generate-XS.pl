@@ -1,6 +1,6 @@
 #!perl -w
 #
-# Last saved: Wed 25 Jan 2017 05:36:12 PM 
+# Last saved: Wed 25 Jan 2017 05:37:18 PM 
 #
 #
 use strict;
@@ -30,7 +30,7 @@ my %alias;
 # The functions where we specify manual implementations or prototypes
 # These could also be read from Modern.xs, later maybe
 my @manual = qw(
-    glGetError
+    glManualImplementation
 );
 
 my %manual; @manual{@manual} = (1) x @manual;
