@@ -1,5 +1,5 @@
 Created on: Mon 23 Jan 2017 05:24:22 PM 
-Last saved: Mon 23 Jan 2017 05:55:55 PM 
+Last saved: Wed 25 Jan 2017 12:18:41 PM 
 
 This file consists of notes and ideas for work to do to improve
 the automated code generation of OpenGL XS bindings from the
@@ -63,12 +63,6 @@ GLEW include file declarations in glew.h.
       - a hash ref, { }
       - a scalar ref, \$
       - a blessed object: PDL, Cpointer, OGA, ...
-
-* Remove use of function signatures from the OpenGL::Modern to reduce
-  compatibility issues with older perls
-  
-  - lib/OpenGL/Modern/Helpers.pm
-  - utils/generate-XS.pl
 
 * Consider writing generate-XS.pl as a modulino so that it could be
   used as either a command or a module to load and use.

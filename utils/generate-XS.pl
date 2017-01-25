@@ -1,6 +1,6 @@
 #!perl -w
 #
-# Last saved: Wed 25 Jan 2017 05:37:18 PM 
+# Last saved: Wed 25 Jan 2017 05:39:10 PM 
 #
 #
 use strict;
@@ -37,6 +37,13 @@ my %manual; @manual{@manual} = (1) x @manual;
 
 my @exported_functions; # here we'll collect the names the module exports
 
+# TODO: check against the typedefs in glew.h.  All the simple GL types have names
+# matching GL\w+ and don't match the glew typedefs to define the OpenGL API bindings.
+# The callback typedefs match qr/(\w+) callback\b/ and the call back signature is
+# in another typedef matching the callback typedef spec.  The final addition is
+# for void which is a standard type so the spec for the API folks didnt' think it
+# needed to be wrapped.
+#
 my @known_type = sort { $b cmp $a } qw(
     GLbitfield
     GLboolean
@@ -100,19 +107,26 @@ for my $file (@headers) {
 
     open my $fh, '<', $file
         or die "Couldn't read '$file': $!";
+
     while( my $line = <$fh>) {
-        if( $line =~ /^#define (\w+) 1\r?$/ and $1 ne 'GL_ONE' and $1 ne 'GL_TRUE') {
+        if( $line =~ m|^#define (\w+) 1\r?$| and $1 ne 'GL_ONE' and $1 ne 'GL_TRUE') {
             $feature_name = $1;
-                          # typedef void* (GLAPIENTRY * PFNGLMAPBUFFERPROC) (GLenum target, GLenum access);
-                          # typedef void (GLAPIENTRY * PFNGLGETQUERYIVPROC) (GLenum target, GLenum pname, GLint* params);
-        } elsif( $line =~ /^typedef ([\w]+(?:\s*\*)?) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);/ ) {
+
+                                                      # #endif /* GL_FEATURE_NAME */
+        } elsif( defined($feature_name) and $line =~ m|^#endif /* $feature_name */$| ) {
+            # End of lines for this OpenGL feature
+            $feature_name = undef;
+
+                           # typedef void* (GLAPIENTRY * PFNGLMAPBUFFERPROC) (GLenum target, GLenum access);
+                           # typedef void (GLAPIENTRY * PFNGLGETQUERYIVPROC) (GLenum target, GLenum pname, GLint* params);
+        } elsif( $line =~ m|^typedef ([\w]+(?:\s*\*)?) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);| ) {
             my( $restype, $name, $sig ) = ($1,$2,$3);
             my $s = { signature => $sig, restype => $restype, feature => $feature_name, name => $name };
             $signature{ $name } = $s;
             push @{ $features{ $feature_name }}, $s;
 
-                          # GLAPI void GLAPIENTRY glClearColor (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha);
-        } elsif( $line =~ /^GLAPI (\w+) GLAPIENTRY (\w+) \((.*)\);/ ) {
+                           # GLAPI void GLAPIENTRY glClearColor (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha);
+        } elsif( $line =~ m|^GLAPI (\w+) GLAPIENTRY (\w+) \((.*)\);| ) {
             # Some external function, likely imported from libopengl / opengl32
             my( $restype, $name, $sig ) = ($1,$2,$3);
             my $s = { signature => $sig, restype => $restype, feature => $feature_name, name => $name };
@@ -120,13 +134,16 @@ for my $file (@headers) {
             $case_map{ uc $name } = $name;
             push @{ $features{ $feature_name }}, $s;
 
-        } elsif( $line =~ /^GLEW_FUN_EXPORT PFN(\w+)PROC __(\w+)/ ) {
+                           # GLEW_FUN_EXPORT PFNGLACTIVETEXTUREPROC __glewActiveTexture;
+        } elsif( $line =~ m|^GLEW_FUN_EXPORT PFN(\w+)PROC __(\w+)| ) {
             my( $name, $impl ) = ($1,$2);
             $case_map{ $name } = $impl;
 
-        } elsif( $line =~ /^#define (\w+) GLEW_GET_FUN\(__(\w+)\)/) {
+                           # #define glCopyTexSubImage3D GLEW_GET_FUN(__glewCopyTexSubImage3D)
+        } elsif( $line =~ m|^#define (\w+) GLEW_GET_FUN\(__(\w+)\)| ) {
             my( $name, $impl ) = ($1,$2);
             $alias{ $impl } = $name;
+
         };
     };
 }
@@ -137,12 +154,11 @@ for my $name (sort keys %signature) {
     my $real_name = $alias{ $impl } || $impl;
 
     my $s = $signature{ $name };
-
     $s->{name} = $real_name;
-    if( exists $alias{ $impl }) {
-        $s->{alias} = $alias{ $impl };
-    };
 };
+
+use Data::Dump qw(pp);
+# pp(values %signature);
 
 =head1 Automagic Perlification
 
@@ -179,12 +195,9 @@ sub generate_glew_xs {
         push @exported_functions, $name;
 
         if( $manual{ $name }) {
-            #warn "Skipping $name, already implemented in Modern.xs";
+            warn "Skipping $name, already implemented in Modern.xs";
             next
         };
-
-        # If we didn't see this, it's likely an OpenGL 1.1 function:
-        my $aliased = $item->{alias};
 
         my $args = $item->{signature}; # XXX clean up the C arguments here
         die "No args for $upper" unless $args;
@@ -196,7 +209,7 @@ sub generate_glew_xs {
         };
 
         my $glewImpl;
-        if( $aliased ) {
+        if( $item->{feature} ne "GL_VERSION_1_1" ) {
              ($glewImpl = $name) =~ s!^gl!__glew!;
         };
 
