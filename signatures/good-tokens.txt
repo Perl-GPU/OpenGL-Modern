@@ -1,0 +1,72 @@
+// function return values
+GLboolean
+GLenum
+GLfloat
+GLhandleARB
+GLint
+GLintptr
+GLsync
+GLuint
+GLuint64
+GLushort
+void
+
+// function argument types
+GLLOGPROCREGAL callback
+GLbitfield bit
+GLboolean bool
+GLbyte byte
+GLclampd dbl
+GLclampf flt
+GLclampx fix
+GLdouble dbl
+GLenum enum
+GLfixed fix
+GLfloat flt
+GLhalf hlf
+GLhandleARB hnd
+GLint int
+GLint64 i64
+GLint64EXT i64
+GLintptr iptr
+GLintptrARB iptr
+GLshort shrt
+GLsizei cnt
+GLsizeiptr len
+GLsync sync
+GLubyte ub
+GLuint uint
+GLuint64 ui64
+GLuint64EXT ui64
+GLushort usht
+GLvdpauSurfaceNV surf
+cl_context context
+cl_event event
+
+// function array args (should this be in bad?)
+const GLdouble m[16]
+const GLfloat m[16]
+const GLfloat param
+const GLfloat weights[]
+const GLint box[]
+const GLint param
+const GLuint paths[]
+
+// functions with array[]
+void glGetClipPlanef(GLenum pname, GLfloat eqn[4]);
+void glGetClipPlanex(GLenum pname, GLfixed eqn[4]);
+
+void glLoadTransposeMatrixd(const GLdouble m[16]);
+void glLoadTransposeMatrixf(const GLfloat m[16]);
+
+void glMultTransposeMatrixd(const GLdouble m[16]);
+void glMultTransposeMatrixf(const GLfloat m[16]);
+
+void glLoadTransposeMatrixdARB(GLdouble m[16]);
+void glLoadTransposeMatrixfARB(GLfloat m[16]);
+void glMultTransposeMatrixdARB(GLdouble m[16]);
+void glMultTransposeMatrixfARB(GLfloat m[16]);
+
+void glWeightPathsNV(GLuint resultPath, GLsizei numPaths, const GLuint paths[], const GLfloat weights[]);
+
+void glWindowRectanglesEXT(GLenum mode, GLsizei count, const GLint box[]);

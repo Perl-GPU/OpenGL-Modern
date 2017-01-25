@@ -1,5 +1,5 @@
 Created on: Mon 23 Jan 2017 05:24:22 PM 
-Last saved: Wed 25 Jan 2017 12:18:41 PM 
+Last saved: Wed 25 Jan 2017 05:01:23 PM 
 
 This file consists of notes and ideas for work to do to improve
 the automated code generation of OpenGL XS bindings from the
@@ -43,6 +43,7 @@ GLEW include file declarations in glew.h.
   - The good routines
     - translate cleanly to XS with default typemaps
     - won't require a separate _p perlish version
+    - There are 1265 good routines that translate directly (yay!)
 
   - The "bad" routines (with pointer args)
     - C function declaration is ambiguous
@@ -51,6 +52,15 @@ GLEW include file declarations in glew.h.
     - The argument could point to an array of 1 or more elements
     - Usage comes from the OpenGL specification
     - These routines require manual review for optimal handling
+
+  - There are 1483 functions with at least one pointer (or [] arg)
+    - 1329 routines with 1 ptr
+    -  102 routines with 2 ptrs
+    -   29 routines with 3 ptrs
+    -   16 routines with 4 ptrs
+    -    4 routines with 5 ptrs
+    -    2 routines with 6 ptrs
+    -    1 routines with 7 ptrs
 
   - Still needs to be detemined the best typemap for pointers
     - T_PTR is simple but could lead to SEGFAULT with bad values

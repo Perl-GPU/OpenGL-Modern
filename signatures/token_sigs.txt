@@ -1,0 +1,52 @@
+      Ctype
+
+      Ctype **arg
+
+      Ctype *arg
+const Ctype *arg
+
+const Ctype *const *arg
+const Ctype *const* arg
+
+      Ctype* *arg
+
+      Ctype* arg
+const Ctype* arg
+
+      Ctype** arg
+const Ctype** arg
+
+      Ctype*arg
+const Ctype*arg
+
+      GLtype * arg
+const GLtype * arg
+
+const GLtype * const * arg
+const GLtype * const* arg
+
+const GLtype ** arg
+
+      GLtype *arg
+const GLtype *arg
+
+const GLtype *const* arg
+
+      GLtype arg
+const GLtype arg
+
+      GLtype arg[16]
+const GLtype arg[16]
+
+      GLtype arg[2]
+
+      GLtype arg[4]
+
+      GLtype arg[]
+const GLtype arg[]
+
+      GLtype* arg
+const GLtype* arg
+
+const GLtype* const * arg
+const GLtype* const *arg
