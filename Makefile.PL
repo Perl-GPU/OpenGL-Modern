@@ -3,6 +3,8 @@ use strict;
 use ExtUtils::MakeMaker;
 use Config '%Config';
 use Devel::CheckOS 'os_is';
+use Capture::Tiny 'capture';
+use ExtUtils::Constant ();
 
 my $include = "-I. -Iinclude -Isrc";
 my @libs;
@@ -49,7 +51,9 @@ WriteMakefile1(
     DEFINE            => $define,
     INC               => $include,
     CONFIGURE_REQUIRES    => {
+        'Capture::Tiny' => 0,
         'Devel::CheckOS' => 0,
+        'ExtUtils::Constant' => 0,
         'ExtUtils::MakeMaker' => 0,
     },
     BUILD_REQUIRES => {
@@ -60,11 +64,8 @@ WriteMakefile1(
       'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
     },
 );
-if  (eval {require ExtUtils::Constant; 1}) {
-  # If you edit these definitions to change the constants used by this module,
-  # you will need to use the generated const-c.inc and const-xs.inc
-  # files to replace their "fallback" counterparts before distributing your
-  # changes.
+
+# these definitions change the constants used by this module
   my @names = (qw(
      GLEW_3DFX_multisample GLEW_3DFX_tbuffer
      GLEW_3DFX_texture_compression_FXT1
@@ -4092,14 +4093,14 @@ if  (eval {require ExtUtils::Constant; 1}) {
                                      XS_FILE      => 'const-xs.inc',
                                   );
 
-}
-else {
-  use File::Copy;
-  use File::Spec;
-  foreach my $file ('const-c.inc', 'const-xs.inc') {
-    my $fallback = File::Spec->catfile('fallback', $file);
-    copy ($fallback, $file) or die "Can't copy $fallback to $file: $!";
-  }
+generate_auto_xs();
+
+sub generate_auto_xs {
+    my ( $out, $err, $res ) = capture { system "perl utils/generate-XS.pl" };
+    die "auto xs generation failed:\n$err" if $err;
+    die "auto xs generation failed:\n$out" if $res;
+    print $out;
+    return;
 }
 
 sub WriteMakefile1 {  #Written by Alexandr Ciornii, version 0.21. Added by eumm-upgrade.
