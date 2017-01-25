@@ -1,8 +1,9 @@
 #!perl -w
+#
+# Last saved: Wed 25 Jan 2017 05:36:12 PM 
+#
+#
 use strict;
-use Filter::signatures;
-use feature 'signatures';
-no warnings 'experimental::signatures';
 
 
 =head1 PURPOSE
@@ -161,7 +162,8 @@ sub munge_GL_args {
     # GLsizei count
 }
 
-sub generate_glew_xs( @items ) {
+sub generate_glew_xs {
+    my( @items ) = @_;
     my @process = map { uc $_ } @items;
     if( ! @process) {
         @process = sort keys %signature;
@@ -278,14 +280,16 @@ XS
     return $content
 };
 
-sub slurp( $filename ) {
+sub slurp {
+    my $filename = $_[0];
     open my $old_fh, '<:raw', $filename
         or die "Couldn't read '$filename': $!";
     join '', <$old_fh>;
 }
 
-sub save_file( $filename, $new ) {
-    my $old = -e $filename ? slurp( $filename ) : "";
+sub save_file {
+    my ($filename, $new ) = @_;
+    my $old = slurp( $filename );
     if( $new ne $old ) {
         print "Saving new version of $filename\n";
         open my $fh, '>:raw', $filename

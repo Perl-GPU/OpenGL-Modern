@@ -1,18 +1,9 @@
 package # not an official package
 OpenGL::Modern::Helpers;
 
-BEGIN {
-    # use Filter::signatures always
-    $ENV{FORCE_FILTER_SIGNATURES} = 1;
-}
-
 use strict;
 use Exporter 'import';
 use Carp qw(croak);
-
-use Filter::signatures;
-no warnings 'experimental::signatures';
-use feature 'signatures';
 
 use OpenGL::Modern qw(
     GL_NO_ERROR
@@ -168,19 +159,23 @@ $VERSION = '0.01_02';
 );
 
 
-sub pack_GLuint(@gluints) {
+sub pack_GLuint {
+    my @gluints = @_;
     pack 'I*', @gluints
 }
 
-sub pack_GLint(@gluints) {
+sub pack_GLint {
+    my @gluints = @_;
     pack 'I*', @gluints
 }
 
-sub pack_GLfloat(@glfloats) {
+sub pack_GLfloat {
+    my @glfloats = @_;
     pack 'f*', @glfloats
 }
 
-sub pack_GLdouble(@gldoubles) {
+sub pack_GLdouble {
+    my @gldoubles = @_;
     pack 'd*', @gldoubles
 }
 
@@ -210,7 +205,8 @@ sub xs_buffer {
     $_[0];
 }
 
-sub glGetShaderInfoLog_p( $shader ) {
+sub glGetShaderInfoLog_p {
+    my $shader = $_[0];
     my $bufsize = 1024*64;
     my $buffer = "\0" x $bufsize;
     my $len = "\0" x 4;
@@ -220,7 +216,8 @@ sub glGetShaderInfoLog_p( $shader ) {
     return substr $buffer, 0, $len;
 }
 
-sub glGetProgramInfoLog_p( $program ) {
+sub glGetProgramInfoLog_p {
+    my $program = $_[0];
     my $bufsize = 1024*64;
     my $buffer = "\0" x $bufsize;
     my $len = "\0" x 4;
@@ -230,14 +227,14 @@ sub glGetProgramInfoLog_p( $program ) {
     return substr $buffer, 0, $len;
 }
 
-sub glGetVersion_p() {
+sub glGetVersion_p {
     # const GLubyte * GLAPIENTRY glGetString (GLenum name);
     my $glVersion = glGetString(GL_VERSION);
     ($glVersion) = ($glVersion =~ m!^(\d+\.\d+)!g);
     $glVersion
 }
 
-sub croak_on_gl_error() {
+sub croak_on_gl_error {
     # GLenum glGetError (void);
     my $error = glGetError();
     if( $error != GL_NO_ERROR ) {
