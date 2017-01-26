@@ -1,0 +1,58 @@
+language: perl
+#perl:
+#  - "5.8"
+#  - "5.12"
+#  - "5.18"
+#  - "5.20"
+#  - "5.22"
+#  - "dev"
+#  - "blead"
+matrix:
+  include:
+    - perl: 5.18
+      env: COVERAGE=1
+  allow_failures:
+    - perl: "blead"
+os:
+  #- linux
+  - osx
+sudo: required
+# Actually this is only needed for Linux, I guess
+addons:
+    apt:
+        packages:
+          - freeglut3-dev
+          - xutils-dev
+          - libxi-dev
+          - libxxf86vm-dev
+          - x11proto-xf86vidmode-dev
+          - mesa-utils
+          - xvfb
+          - libgl1-mesa-dri
+          - libglapi-mesa
+          - libosmesa6
+before_install:
+  - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then export DISPLAY=:99.0; sh -e /etc/init.d/xvfb start; fi
+  - if [ "${TRAVIS_OS_NAME}" = "osx" ]; then export TRAVIS_PERL_DEBUG=1; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update          ; fi
+  - export TRAVIS_PERL_DEBUG=1;
+  - perl -V
+  # kick off the build a second time
+  # ~/perl5 belongs to travis itself or the wonky perlbrew thing it tries
+  # and fails for OSX
+  - export MYLIB=$HOME/perl5-mylib
+install:
+  - git clone git://github.com/Perl-Toolchain-Gang/local-lib ~/local-lib && cd ~/local-lib && perl Makefile.PL --bootstrap=$MYLIB --no-manpages && make install
+  - if [ "${TRAVIS_PERL_DEBUG}" ]; then perl -I$MYLIB/lib/perl5 -Mlocal::lib=$MYLIB; fi
+  - eval "$(perl -I$MYLIB/lib/perl5/ -Mlocal::lib=$MYLIB)"
+  - git clone git://github.com/miyagawa/cpanminus ~/cpanminus && cd ~/cpanminus && perl Makefile.PL && make install
+  - $MYLIB/bin/cpanm Devel::CheckOS
+  - $MYLIB/bin/cpanm --notest OpenGL
+  - git clone git://github.com/Corion/opengl-modern ~/opengl-modern && cd ~/opengl-modern && $MYLIB/bin/cpanm --verbose --installdeps . && perl Makefile.PL && make
+before_script:
+  #- coverage-setup
+script:
+  - make
+  - prove -bv $(test-files)
+after_success:
+  #
