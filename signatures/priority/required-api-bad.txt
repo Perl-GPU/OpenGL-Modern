@@ -1,47 +1,45 @@
-      3 glGetString
-      3 glReadPixels
-
-      2 glGetAttribLocationARB_p
-      2 glGetProgramInfoLog_p
-      2 glGetShaderInfoLog_p
-      2 glGetUniformLocationARB_p
-      2 glGetVersion_p
-      2 glTexImage2D
-
-      1 glBufferData
-      1 glBufferDataARB_p
-      1 glDrawPixels_c
-      1 glGenBuffers
-      1 glGenBuffersARB_p
-      1 glGenFramebuffersEXT_p
-      1 glGenTextures
-      1 glGenTextures_p
-      1 glGenVertexArrays
-      1 glGenVertexArrays_p
-      1 glGetActiveUniform
-      1 glGetAttribLocation
-      1 glGetAttribLocationARB_p_safe
-      1 glGetIntegerv
-      1 glGetIntegerv_p
-      1 glGetProgramiv
-      1 glGetProgramiv_p
-      1 glGetShaderiv
-      1 glGetShaderiv_p
-      1 glGetUniformLocationARB_p_safe
-      1 glObjectLabel
-      1 glOptions
-      1 glProgramUniform2v
-      1 glProgramUniformMatrix4fv
-      1 glReadPixels_c
-      1 glResizeBuffers
-      1 glShaderSource
-      1 glShaderSourceARB_p
-      1 glTexGen
-      1 glTexImage1D
-      1 glTexImage2D_c
-      1 glTexImage3D_c
-      1 glTexSubImage2D
-      1 glTexSubImage3D_c
-      1 glVersion
-      1 glVertexAttribPointer
-      1 glVertexAttribPointerARB_c
+glBufferData
+glBufferDataARB_p
+glDrawPixels_c
+glGenBuffers
+glGenBuffersARB_p
+glGenFramebuffers
+glGenFramebuffersEXT_p
+glGenTextures
+glGenTextures_p
+glGenVertexArrays
+glGenVertexArrays_p
+glGetActiveUniform
+glGetAttribLocation
+glGetAttribLocationARB_p
+glGetAttribLocationARB_p_safe
+glGetIntegerv
+glGetIntegerv_p
+glGetProgramInfoLog_p
+glGetProgramiv
+glGetProgramiv_p
+glGetShaderInfoLog_p
+glGetShaderiv
+glGetShaderiv_p
+glGetString
+glGetUniformLocation
+glGetUniformLocationARB_p
+glGetUniformLocationARB_p_safe
+glGetVersion_p
+glObjectLabel
+glProgramUniform2v
+glProgramUniformMatrix4fv
+glReadPixels
+glReadPixels_c
+glResizeBuffers
+glShaderSource
+glShaderSourceARB_p
+glTexGen
+glTexImage1D
+glTexImage2D
+glTexImage2D_c
+glTexImage3D_c
+glTexSubImage2D
+glTexSubImage3D_c
+glVertexAttribPointer
+glVertexAttribPointerARB_c
