@@ -1,6 +1,6 @@
 #!perl -w
 #
-# Last saved: Wed 25 Jan 2017 05:39:10 PM 
+# Last saved: Thu 26 Jan 2017 02:29:21 PM 
 #
 #
 use strict;
@@ -119,14 +119,14 @@ for my $file (@headers) {
 
                            # typedef void* (GLAPIENTRY * PFNGLMAPBUFFERPROC) (GLenum target, GLenum access);
                            # typedef void (GLAPIENTRY * PFNGLGETQUERYIVPROC) (GLenum target, GLenum pname, GLint* params);
-        } elsif( $line =~ m|^typedef ([\w]+(?:\s*\*)?) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);| ) {
+        } elsif( $line =~ m|^typedef (\w+(?:\s*\*)?) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);| ) {
             my( $restype, $name, $sig ) = ($1,$2,$3);
             my $s = { signature => $sig, restype => $restype, feature => $feature_name, name => $name };
             $signature{ $name } = $s;
             push @{ $features{ $feature_name }}, $s;
 
                            # GLAPI void GLAPIENTRY glClearColor (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha);
-        } elsif( $line =~ m|^GLAPI (\w+) GLAPIENTRY (\w+) \((.*)\);| ) {
+        } elsif( $line =~ m|^GLAPI ([\w* ]+?) GLAPIENTRY (\w+) \((.*)\);| ) {
             # Some external function, likely imported from libopengl / opengl32
             my( $restype, $name, $sig ) = ($1,$2,$3);
             my $s = { signature => $sig, restype => $restype, feature => $feature_name, name => $name };

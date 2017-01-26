@@ -999,6 +999,7 @@ our @glFunctions = qw(
     glGetShaderSourceARB
     glGetSharpenTexFuncSGIS
     glGetStageIndexNV
+    glGetString
     glGetSubroutineIndex
     glGetSubroutineUniformLocation
     glGetSynciv
@@ -5553,6 +5554,7 @@ our %EXPORT_TAGS_GL = (
                                 'glGetPixelMapusv',
                                 'glGetPointerv',
                                 'glGetPolygonStipple',
+                                'glGetString',
                                 'glGetTexEnvfv',
                                 'glGetTexEnviv',
                                 'glGetTexGendv',
