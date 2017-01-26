@@ -39,7 +39,7 @@ CODE:
   };
     glewCreateContext (&params);
 
-SV *
+void
 glewDestroyContext()
 CODE:
     glewDestroyContext();
