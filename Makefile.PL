@@ -18,7 +18,7 @@ if( os_is('MSWin32')) {
     @libs = '-lGL -lX11';
 } else {
     # This might not work on MacOS / OSX, but until I get other reports...
-    @libs = '-lGL -lX11';
+    @libs = '-framework OpenGL';
 };
 
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
