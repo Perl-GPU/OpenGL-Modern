@@ -3,3 +3,12 @@
 ^pogl_implemented
 ^signatures
 ^utils/XS_generate_NOTES.txt
+^.git
+\.o$
+.travis.yml
+gdm.diff
+^Makefile$
+^MANIFEST.bak$
+\.bs$
+^Modern.c
+^pm_to_blib

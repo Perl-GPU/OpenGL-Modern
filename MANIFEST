@@ -10,7 +10,10 @@ lib/OpenGL/Modern.pm
 lib/OpenGL/Modern/Helpers.pm
 Makefile.PL
 MANIFEST			This list of files
+MANIFEST.SKIP
 Modern.xs
+MYMETA.json
+MYMETA.yml
 ppport.h
 README
 README.md
