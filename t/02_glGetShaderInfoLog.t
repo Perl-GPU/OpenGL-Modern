@@ -16,13 +16,13 @@ provoke a syntax error
 SHADER
 
 my $len = "\0" x 4;
-glShaderSource($id, 1, $shader, unpack('Q',pack('P',$len)));
+glShaderSource_c($id, 1, $shader, unpack('Q',pack('P',$len)));
 
 glCompileShader($id);
     
 warn "Looking for errors";
 my $ok = "\0" x 4;
-glGetShaderiv($id, GL_COMPILE_STATUS, unpack('Q',pack('p',$ok)));
+glGetShaderiv_c($id, GL_COMPILE_STATUS, unpack('Q',pack('p',$ok)));
 $ok = unpack 'I', $ok;
 if( $ok == GL_FALSE ) {
     pass "We recognize an invalid shader as invalid";
@@ -30,7 +30,7 @@ if( $ok == GL_FALSE ) {
     my $bufsize = 1024*64;
     my $len = "\0" x 4;
     my $buffer = "\0" x $bufsize;
-    glGetShaderInfoLog( $id, $bufsize, unpack('Q',pack('p',$len)), $buffer);
+    glGetShaderInfoLog_c( $id, $bufsize, unpack('Q',pack('p',$len)), $buffer);
     $len = unpack 'I', $len;
     my $log = substr $buffer, 0, $len;
     isnt $log, '', "We get some error message";

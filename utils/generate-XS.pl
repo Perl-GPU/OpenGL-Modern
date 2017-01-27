@@ -1,6 +1,6 @@
 #!perl -w
 #
-# Last saved: Thu 26 Jan 2017 02:32:11 PM 
+# Last saved: Fri 27 Jan 2017 11:04:59 AM 
 #
 #
 use strict;
@@ -192,8 +192,6 @@ sub generate_glew_xs {
 
         my $name = $item->{name};
 
-        push @exported_functions, $name;
-
         if( $manual{ $name }) {
             warn "Skipping $name, already implemented in Modern.xs";
             next
@@ -204,9 +202,14 @@ sub generate_glew_xs {
         my $type = $item->{restype}; # XXX clean up the C arguments here
         my $no_return_value;
 
+	# Track number of pointer type args/return values (either * or [])
+	my $num_ptr_types = 0;
+
         if( $type eq 'void' ) {
             $no_return_value = 1;
         };
+
+        $num_ptr_types += ( $type =~ tr/*[/*[/ );
 
         my $glewImpl;
         if( $item->{feature} ne "GL_VERSION_1_1" ) {
@@ -218,6 +221,8 @@ sub generate_glew_xs {
             $args = '';
             $xs_args = '';
         };
+
+        $num_ptr_types += ( $args =~ tr/*[/*[/ );
 
         # rewrite GLsync GLsync into GLsync myGLsync:
         for( $args, $xs_args ) {
@@ -254,9 +259,16 @@ sub generate_glew_xs {
         # Kill off all pointer indicators
         $args =~ s!\*! !g;
 
+	# Determine any name suffixes
+	# All routines with * or [] in the return value or arguments
+	# have a '_c' suffix variant.
+	my $binding_name = ($num_ptr_types > 0) ? $name . '_c' : $name ;
+
+        push @exported_functions, $binding_name;
+
         my $decl = <<XS;
 $type
-$name($args);
+$binding_name($args);
 XS
         if( $xs_args ) {
             $decl .= "     $xs_args;\n"

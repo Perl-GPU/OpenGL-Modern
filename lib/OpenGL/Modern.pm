@@ -20,7 +20,7 @@ our @glFunctions = qw(
     glActiveStencilFaceEXT
     glActiveTexture
     glActiveTextureARB
-    glActiveVaryingNV
+    glActiveVaryingNV_c
     glAddSwapHintRectWIN
     glAlphaFragmentOp1ATI
     glAlphaFragmentOp2ATI
@@ -28,9 +28,9 @@ our @glFunctions = qw(
     glAlphaFunc
     glAlphaFuncx
     glApplyTextureEXT
-    glAreProgramsResidentNV
-    glAreTexturesResident
-    glAreTexturesResidentEXT
+    glAreProgramsResidentNV_c
+    glAreTexturesResident_c
+    glAreTexturesResidentEXT_c
     glArrayElement
     glArrayElementEXT
     glArrayObjectATI
@@ -55,8 +55,8 @@ our @glFunctions = qw(
     glBeginTransformFeedbackNV
     glBeginVertexShaderEXT
     glBeginVideoCaptureNV
-    glBindAttribLocation
-    glBindAttribLocationARB
+    glBindAttribLocation_c
+    glBindAttribLocationARB_c
     glBindBuffer
     glBindBufferARB
     glBindBufferBase
@@ -67,17 +67,17 @@ our @glFunctions = qw(
     glBindBufferRange
     glBindBufferRangeEXT
     glBindBufferRangeNV
-    glBindBuffersBase
-    glBindBuffersRange
-    glBindFragDataLocation
-    glBindFragDataLocationEXT
-    glBindFragDataLocationIndexed
+    glBindBuffersBase_c
+    glBindBuffersRange_c
+    glBindFragDataLocation_c
+    glBindFragDataLocationEXT_c
+    glBindFragDataLocationIndexed_c
     glBindFragmentShaderATI
     glBindFramebuffer
     glBindFramebufferEXT
     glBindImageTexture
     glBindImageTextureEXT
-    glBindImageTextures
+    glBindImageTextures_c
     glBindLightParameterEXT
     glBindMaterialParameterEXT
     glBindMultiTextureEXT
@@ -88,11 +88,11 @@ our @glFunctions = qw(
     glBindRenderbuffer
     glBindRenderbufferEXT
     glBindSampler
-    glBindSamplers
+    glBindSamplers_c
     glBindTexGenParameterEXT
     glBindTexture
     glBindTextureEXT
-    glBindTextures
+    glBindTextures_c
     glBindTextureUnit
     glBindTextureUnitParameterEXT
     glBindTransformFeedback
@@ -100,12 +100,12 @@ our @glFunctions = qw(
     glBindVertexArray
     glBindVertexArrayAPPLE
     glBindVertexBuffer
-    glBindVertexBuffers
+    glBindVertexBuffers_c
     glBindVertexShaderEXT
     glBindVideoCaptureStreamBufferNV
     glBindVideoCaptureStreamTextureNV
-    glBinormalPointerEXT
-    glBitmap
+    glBinormalPointerEXT_c
+    glBitmap_c
     glBlendBarrierKHR
     glBlendBarrierNV
     glBlendColor
@@ -135,17 +135,17 @@ our @glFunctions = qw(
     glBlitFramebufferEXT
     glBlitNamedFramebuffer
     glBufferAddressRangeNV
-    glBufferData
-    glBufferDataARB
+    glBufferData_c
+    glBufferDataARB_c
     glBufferPageCommitmentARB
     glBufferParameteriAPPLE
     glBufferRegionEnabled
-    glBufferStorage
-    glBufferSubData
-    glBufferSubDataARB
+    glBufferStorage_c
+    glBufferSubData_c
+    glBufferSubDataARB_c
     glCallCommandListNV
     glCallList
-    glCallLists
+    glCallLists_c
     glCheckFramebufferStatus
     glCheckFramebufferStatusEXT
     glCheckNamedFramebufferStatus
@@ -154,12 +154,12 @@ our @glFunctions = qw(
     glClampColorARB
     glClear
     glClearAccum
-    glClearBufferData
+    glClearBufferData_c
     glClearBufferfi
-    glClearBufferfv
-    glClearBufferiv
-    glClearBufferSubData
-    glClearBufferuiv
+    glClearBufferfv_c
+    glClearBufferiv_c
+    glClearBufferSubData_c
+    glClearBufferuiv_c
     glClearColor
     glClearColorIiEXT
     glClearColorIuiEXT
@@ -170,71 +170,71 @@ our @glFunctions = qw(
     glClearDepthfOES
     glClearDepthx
     glClearIndex
-    glClearNamedBufferData
-    glClearNamedBufferDataEXT
-    glClearNamedBufferSubData
-    glClearNamedBufferSubDataEXT
+    glClearNamedBufferData_c
+    glClearNamedBufferDataEXT_c
+    glClearNamedBufferSubData_c
+    glClearNamedBufferSubDataEXT_c
     glClearNamedFramebufferfi
-    glClearNamedFramebufferfv
-    glClearNamedFramebufferiv
-    glClearNamedFramebufferuiv
+    glClearNamedFramebufferfv_c
+    glClearNamedFramebufferiv_c
+    glClearNamedFramebufferuiv_c
     glClearStencil
-    glClearTexImage
-    glClearTexSubImage
+    glClearTexImage_c
+    glClearTexSubImage_c
     glClientActiveTexture
     glClientActiveTextureARB
     glClientActiveVertexStreamATI
     glClientAttribDefaultEXT
     glClientWaitSync
     glClipControl
-    glClipPlane
-    glClipPlanef
-    glClipPlanefOES
-    glClipPlanex
+    glClipPlane_c
+    glClipPlanef_c
+    glClipPlanefOES_c
+    glClipPlanex_c
     glColor3b
-    glColor3bv
+    glColor3bv_c
     glColor3d
-    glColor3dv
+    glColor3dv_c
     glColor3f
-    glColor3fv
+    glColor3fv_c
     glColor3fVertex3fSUN
-    glColor3fVertex3fvSUN
+    glColor3fVertex3fvSUN_c
     glColor3hNV
-    glColor3hvNV
+    glColor3hvNV_c
     glColor3i
-    glColor3iv
+    glColor3iv_c
     glColor3s
-    glColor3sv
+    glColor3sv_c
     glColor3ub
-    glColor3ubv
+    glColor3ubv_c
     glColor3ui
-    glColor3uiv
+    glColor3uiv_c
     glColor3us
-    glColor3usv
+    glColor3usv_c
     glColor4b
-    glColor4bv
+    glColor4bv_c
     glColor4d
-    glColor4dv
+    glColor4dv_c
     glColor4f
     glColor4fNormal3fVertex3fSUN
-    glColor4fNormal3fVertex3fvSUN
-    glColor4fv
+    glColor4fNormal3fVertex3fvSUN_c
+    glColor4fv_c
     glColor4hNV
-    glColor4hvNV
+    glColor4hvNV_c
     glColor4i
-    glColor4iv
+    glColor4iv_c
     glColor4s
-    glColor4sv
+    glColor4sv_c
     glColor4ub
-    glColor4ubv
+    glColor4ubv_c
     glColor4ubVertex2fSUN
-    glColor4ubVertex2fvSUN
+    glColor4ubVertex2fvSUN_c
     glColor4ubVertex3fSUN
-    glColor4ubVertex3fvSUN
+    glColor4ubVertex3fvSUN_c
     glColor4ui
-    glColor4uiv
+    glColor4uiv_c
     glColor4us
-    glColor4usv
+    glColor4usv_c
     glColor4x
     glColorFormatNV
     glColorFragmentOp1ATI
@@ -245,75 +245,75 @@ our @glFunctions = qw(
     glColorMaskIndexedEXT
     glColorMaterial
     glColorP3ui
-    glColorP3uiv
+    glColorP3uiv_c
     glColorP4ui
-    glColorP4uiv
-    glColorPointer
-    glColorPointerEXT
-    glColorPointerListIBM
-    glColorPointervINTEL
-    glColorSubTable
-    glColorSubTableEXT
-    glColorTable
-    glColorTableEXT
-    glColorTableParameterfv
-    glColorTableParameterfvSGI
-    glColorTableParameteriv
-    glColorTableParameterivSGI
-    glColorTableSGI
+    glColorP4uiv_c
+    glColorPointer_c
+    glColorPointerEXT_c
+    glColorPointerListIBM_c
+    glColorPointervINTEL_c
+    glColorSubTable_c
+    glColorSubTableEXT_c
+    glColorTable_c
+    glColorTableEXT_c
+    glColorTableParameterfv_c
+    glColorTableParameterfvSGI_c
+    glColorTableParameteriv_c
+    glColorTableParameterivSGI_c
+    glColorTableSGI_c
     glCombinerInputNV
     glCombinerOutputNV
     glCombinerParameterfNV
-    glCombinerParameterfvNV
+    glCombinerParameterfvNV_c
     glCombinerParameteriNV
-    glCombinerParameterivNV
-    glCombinerStageParameterfvNV
+    glCombinerParameterivNV_c
+    glCombinerStageParameterfvNV_c
     glCommandListSegmentsNV
     glCompileCommandListNV
     glCompileShader
     glCompileShaderARB
-    glCompileShaderIncludeARB
-    glCompressedMultiTexImage1DEXT
-    glCompressedMultiTexImage2DEXT
-    glCompressedMultiTexImage3DEXT
-    glCompressedMultiTexSubImage1DEXT
-    glCompressedMultiTexSubImage2DEXT
-    glCompressedMultiTexSubImage3DEXT
-    glCompressedTexImage1D
-    glCompressedTexImage1DARB
-    glCompressedTexImage2D
-    glCompressedTexImage2DARB
-    glCompressedTexImage3D
-    glCompressedTexImage3DARB
-    glCompressedTexSubImage1D
-    glCompressedTexSubImage1DARB
-    glCompressedTexSubImage2D
-    glCompressedTexSubImage2DARB
-    glCompressedTexSubImage3D
-    glCompressedTexSubImage3DARB
-    glCompressedTextureImage1DEXT
-    glCompressedTextureImage2DEXT
-    glCompressedTextureImage3DEXT
-    glCompressedTextureSubImage1D
-    glCompressedTextureSubImage1DEXT
-    glCompressedTextureSubImage2D
-    glCompressedTextureSubImage2DEXT
-    glCompressedTextureSubImage3D
-    glCompressedTextureSubImage3DEXT
+    glCompileShaderIncludeARB_c
+    glCompressedMultiTexImage1DEXT_c
+    glCompressedMultiTexImage2DEXT_c
+    glCompressedMultiTexImage3DEXT_c
+    glCompressedMultiTexSubImage1DEXT_c
+    glCompressedMultiTexSubImage2DEXT_c
+    glCompressedMultiTexSubImage3DEXT_c
+    glCompressedTexImage1D_c
+    glCompressedTexImage1DARB_c
+    glCompressedTexImage2D_c
+    glCompressedTexImage2DARB_c
+    glCompressedTexImage3D_c
+    glCompressedTexImage3DARB_c
+    glCompressedTexSubImage1D_c
+    glCompressedTexSubImage1DARB_c
+    glCompressedTexSubImage2D_c
+    glCompressedTexSubImage2DARB_c
+    glCompressedTexSubImage3D_c
+    glCompressedTexSubImage3DARB_c
+    glCompressedTextureImage1DEXT_c
+    glCompressedTextureImage2DEXT_c
+    glCompressedTextureImage3DEXT_c
+    glCompressedTextureSubImage1D_c
+    glCompressedTextureSubImage1DEXT_c
+    glCompressedTextureSubImage2D_c
+    glCompressedTextureSubImage2DEXT_c
+    glCompressedTextureSubImage3D_c
+    glCompressedTextureSubImage3DEXT_c
     glConservativeRasterParameterfNV
     glConservativeRasterParameteriNV
-    glConvolutionFilter1D
-    glConvolutionFilter1DEXT
-    glConvolutionFilter2D
-    glConvolutionFilter2DEXT
+    glConvolutionFilter1D_c
+    glConvolutionFilter1DEXT_c
+    glConvolutionFilter2D_c
+    glConvolutionFilter2DEXT_c
     glConvolutionParameterf
     glConvolutionParameterfEXT
-    glConvolutionParameterfv
-    glConvolutionParameterfvEXT
+    glConvolutionParameterfv_c
+    glConvolutionParameterfvEXT_c
     glConvolutionParameteri
     glConvolutionParameteriEXT
-    glConvolutionParameteriv
-    glConvolutionParameterivEXT
+    glConvolutionParameteriv_c
+    glConvolutionParameterivEXT_c
     glCopyBufferSubData
     glCopyColorSubTable
     glCopyColorSubTableEXT
@@ -352,87 +352,87 @@ our @glFunctions = qw(
     glCopyTextureSubImage3D
     glCopyTextureSubImage3DEXT
     glCoverageModulationNV
-    glCoverageModulationTableNV
-    glCoverFillPathInstancedNV
+    glCoverageModulationTableNV_c
+    glCoverFillPathInstancedNV_c
     glCoverFillPathNV
-    glCoverStrokePathInstancedNV
+    glCoverStrokePathInstancedNV_c
     glCoverStrokePathNV
-    glCreateBuffers
-    glCreateCommandListsNV
-    glCreateFramebuffers
-    glCreatePerfQueryINTEL
+    glCreateBuffers_c
+    glCreateCommandListsNV_c
+    glCreateFramebuffers_c
+    glCreatePerfQueryINTEL_c
     glCreateProgram
     glCreateProgramObjectARB
-    glCreateProgramPipelines
-    glCreateQueries
-    glCreateRenderbuffers
-    glCreateSamplers
+    glCreateProgramPipelines_c
+    glCreateQueries_c
+    glCreateRenderbuffers_c
+    glCreateSamplers_c
     glCreateShader
     glCreateShaderObjectARB
-    glCreateShaderProgramEXT
-    glCreateShaderProgramv
-    glCreateStatesNV
+    glCreateShaderProgramEXT_c
+    glCreateShaderProgramv_c
+    glCreateStatesNV_c
     glCreateSyncFromCLeventARB
-    glCreateTextures
-    glCreateTransformFeedbacks
-    glCreateVertexArrays
+    glCreateTextures_c
+    glCreateTransformFeedbacks_c
+    glCreateVertexArrays_c
     glCullFace
-    glCullParameterdvEXT
-    glCullParameterfvEXT
+    glCullParameterdvEXT_c
+    glCullParameterfvEXT_c
     glCurrentPaletteMatrixARB
-    glDebugMessageCallback
-    glDebugMessageCallbackAMD
-    glDebugMessageCallbackARB
-    glDebugMessageControl
-    glDebugMessageControlARB
-    glDebugMessageEnableAMD
-    glDebugMessageInsert
-    glDebugMessageInsertAMD
-    glDebugMessageInsertARB
+    glDebugMessageCallback_c
+    glDebugMessageCallbackAMD_c
+    glDebugMessageCallbackARB_c
+    glDebugMessageControl_c
+    glDebugMessageControlARB_c
+    glDebugMessageEnableAMD_c
+    glDebugMessageInsert_c
+    glDebugMessageInsertAMD_c
+    glDebugMessageInsertARB_c
     glDeleteAsyncMarkersSGIX
     glDeleteBufferRegion
-    glDeleteBuffers
-    glDeleteBuffersARB
-    glDeleteCommandListsNV
-    glDeleteFencesAPPLE
-    glDeleteFencesNV
+    glDeleteBuffers_c
+    glDeleteBuffersARB_c
+    glDeleteCommandListsNV_c
+    glDeleteFencesAPPLE_c
+    glDeleteFencesNV_c
     glDeleteFragmentShaderATI
-    glDeleteFramebuffers
-    glDeleteFramebuffersEXT
+    glDeleteFramebuffers_c
+    glDeleteFramebuffersEXT_c
     glDeleteLists
-    glDeleteNamedStringARB
-    glDeleteNamesAMD
+    glDeleteNamedStringARB_c
+    glDeleteNamesAMD_c
     glDeleteObjectARB
-    glDeleteOcclusionQueriesNV
+    glDeleteOcclusionQueriesNV_c
     glDeletePathsNV
-    glDeletePerfMonitorsAMD
+    glDeletePerfMonitorsAMD_c
     glDeletePerfQueryINTEL
     glDeleteProgram
-    glDeleteProgramPipelines
-    glDeleteProgramsARB
-    glDeleteProgramsNV
-    glDeleteQueries
-    glDeleteQueriesANGLE
-    glDeleteQueriesARB
-    glDeleteRenderbuffers
-    glDeleteRenderbuffersEXT
-    glDeleteSamplers
+    glDeleteProgramPipelines_c
+    glDeleteProgramsARB_c
+    glDeleteProgramsNV_c
+    glDeleteQueries_c
+    glDeleteQueriesANGLE_c
+    glDeleteQueriesARB_c
+    glDeleteRenderbuffers_c
+    glDeleteRenderbuffersEXT_c
+    glDeleteSamplers_c
     glDeleteShader
-    glDeleteStatesNV
+    glDeleteStatesNV_c
     glDeleteSync
-    glDeleteTextures
-    glDeleteTexturesEXT
-    glDeleteTransformFeedbacks
-    glDeleteTransformFeedbacksNV
-    glDeleteVertexArrays
-    glDeleteVertexArraysAPPLE
+    glDeleteTextures_c
+    glDeleteTexturesEXT_c
+    glDeleteTransformFeedbacks_c
+    glDeleteTransformFeedbacksNV_c
+    glDeleteVertexArrays_c
+    glDeleteVertexArraysAPPLE_c
     glDeleteVertexShaderEXT
     glDepthBoundsdNV
     glDepthBoundsEXT
     glDepthFunc
     glDepthMask
     glDepthRange
-    glDepthRangeArrayv
+    glDepthRangeArrayv_c
     glDepthRangedNV
     glDepthRangef
     glDepthRangefOES
@@ -440,7 +440,7 @@ our @glFunctions = qw(
     glDepthRangex
     glDetachObjectARB
     glDetachShader
-    glDetailTexFuncSGIS
+    glDetailTexFuncSGIS_c
     glDisable
     glDisableClientState
     glDisableClientStateiEXT
@@ -459,7 +459,7 @@ our @glFunctions = qw(
     glDispatchComputeIndirect
     glDrawArrays
     glDrawArraysEXT
-    glDrawArraysIndirect
+    glDrawArraysIndirect_c
     glDrawArraysInstanced
     glDrawArraysInstancedANGLE
     glDrawArraysInstancedARB
@@ -467,31 +467,31 @@ our @glFunctions = qw(
     glDrawArraysInstancedEXT
     glDrawBuffer
     glDrawBufferRegion
-    glDrawBuffers
-    glDrawBuffersARB
-    glDrawBuffersATI
-    glDrawCommandsAddressNV
-    glDrawCommandsNV
-    glDrawCommandsStatesAddressNV
-    glDrawCommandsStatesNV
+    glDrawBuffers_c
+    glDrawBuffersARB_c
+    glDrawBuffersATI_c
+    glDrawCommandsAddressNV_c
+    glDrawCommandsNV_c
+    glDrawCommandsStatesAddressNV_c
+    glDrawCommandsStatesNV_c
     glDrawElementArrayAPPLE
     glDrawElementArrayATI
-    glDrawElements
-    glDrawElementsBaseVertex
-    glDrawElementsIndirect
-    glDrawElementsInstanced
-    glDrawElementsInstancedANGLE
-    glDrawElementsInstancedARB
-    glDrawElementsInstancedBaseInstance
-    glDrawElementsInstancedBaseVertex
-    glDrawElementsInstancedBaseVertexBaseInstance
-    glDrawElementsInstancedEXT
-    glDrawPixels
+    glDrawElements_c
+    glDrawElementsBaseVertex_c
+    glDrawElementsIndirect_c
+    glDrawElementsInstanced_c
+    glDrawElementsInstancedANGLE_c
+    glDrawElementsInstancedARB_c
+    glDrawElementsInstancedBaseInstance_c
+    glDrawElementsInstancedBaseVertex_c
+    glDrawElementsInstancedBaseVertexBaseInstance_c
+    glDrawElementsInstancedEXT_c
+    glDrawPixels_c
     glDrawRangeElementArrayAPPLE
     glDrawRangeElementArrayATI
-    glDrawRangeElements
-    glDrawRangeElementsBaseVertex
-    glDrawRangeElementsEXT
+    glDrawRangeElements_c
+    glDrawRangeElementsBaseVertex_c
+    glDrawRangeElementsEXT_c
     glDrawTextureNV
     glDrawTransformFeedback
     glDrawTransformFeedbackInstanced
@@ -501,12 +501,12 @@ our @glFunctions = qw(
     glDrawVkImageNV
     glEdgeFlag
     glEdgeFlagFormatNV
-    glEdgeFlagPointer
-    glEdgeFlagPointerEXT
-    glEdgeFlagPointerListIBM
-    glEdgeFlagv
-    glElementPointerAPPLE
-    glElementPointerATI
+    glEdgeFlagPointer_c
+    glEdgeFlagPointerEXT_c
+    glEdgeFlagPointerListIBM_c
+    glEdgeFlagv_c
+    glElementPointerAPPLE_c
+    glElementPointerATI_c
     glEnable
     glEnableClientState
     glEnableClientStateiEXT
@@ -540,25 +540,25 @@ our @glFunctions = qw(
     glEndVertexShaderEXT
     glEndVideoCaptureNV
     glEvalCoord1d
-    glEvalCoord1dv
+    glEvalCoord1dv_c
     glEvalCoord1f
-    glEvalCoord1fv
+    glEvalCoord1fv_c
     glEvalCoord2d
-    glEvalCoord2dv
+    glEvalCoord2dv_c
     glEvalCoord2f
-    glEvalCoord2fv
+    glEvalCoord2fv_c
     glEvalMapsNV
     glEvalMesh1
     glEvalMesh2
     glEvalPoint1
     glEvalPoint2
-    glExecuteProgramNV
+    glExecuteProgramNV_c
     glExtractComponentEXT
-    glFeedbackBuffer
+    glFeedbackBuffer_c
     glFenceSync
     glFinalCombinerInputNV
     glFinish
-    glFinishAsyncSGIX
+    glFinishAsyncSGIX_c
     glFinishFenceAPPLE
     glFinishFenceNV
     glFinishObjectAPPLE
@@ -570,64 +570,64 @@ our @glFunctions = qw(
     glFlushMappedNamedBufferRangeEXT
     glFlushPixelDataRangeNV
     glFlushRasterSGIX
-    glFlushVertexArrayRangeAPPLE
+    glFlushVertexArrayRangeAPPLE_c
     glFlushVertexArrayRangeNV
     glFogCoordd
     glFogCoorddEXT
-    glFogCoorddv
-    glFogCoorddvEXT
+    glFogCoorddv_c
+    glFogCoorddvEXT_c
     glFogCoordf
     glFogCoordfEXT
     glFogCoordFormatNV
-    glFogCoordfv
-    glFogCoordfvEXT
+    glFogCoordfv_c
+    glFogCoordfvEXT_c
     glFogCoordhNV
-    glFogCoordhvNV
-    glFogCoordPointer
-    glFogCoordPointerEXT
-    glFogCoordPointerListIBM
+    glFogCoordhvNV_c
+    glFogCoordPointer_c
+    glFogCoordPointerEXT_c
+    glFogCoordPointerListIBM_c
     glFogf
-    glFogFuncSGIS
-    glFogfv
+    glFogFuncSGIS_c
+    glFogfv_c
     glFogi
-    glFogiv
+    glFogiv_c
     glFogx
-    glFogxv
+    glFogxv_c
     glFragmentColorMaterialEXT
     glFragmentColorMaterialSGIX
     glFragmentCoverageColorNV
     glFragmentLightfEXT
     glFragmentLightfSGIX
-    glFragmentLightfvEXT
-    glFragmentLightfvSGIX
+    glFragmentLightfvEXT_c
+    glFragmentLightfvSGIX_c
     glFragmentLightiEXT
     glFragmentLightiSGIX
-    glFragmentLightivEXT
-    glFragmentLightivSGIX
+    glFragmentLightivEXT_c
+    glFragmentLightivSGIX_c
     glFragmentLightModelfEXT
     glFragmentLightModelfSGIX
-    glFragmentLightModelfvEXT
-    glFragmentLightModelfvSGIX
+    glFragmentLightModelfvEXT_c
+    glFragmentLightModelfvSGIX_c
     glFragmentLightModeliEXT
     glFragmentLightModeliSGIX
-    glFragmentLightModelivEXT
-    glFragmentLightModelivSGIX
+    glFragmentLightModelivEXT_c
+    glFragmentLightModelivSGIX_c
     glFragmentMaterialfEXT
     glFragmentMaterialfSGIX
-    glFragmentMaterialfvEXT
-    glFragmentMaterialfvSGIX
+    glFragmentMaterialfvEXT_c
+    glFragmentMaterialfvSGIX_c
     glFragmentMaterialiEXT
     glFragmentMaterialiSGIX
-    glFragmentMaterialivEXT
-    glFragmentMaterialivSGIX
+    glFragmentMaterialivEXT_c
+    glFragmentMaterialivSGIX_c
     glFramebufferDrawBufferEXT
-    glFramebufferDrawBuffersEXT
+    glFramebufferDrawBuffersEXT_c
     glFramebufferParameteri
     glFramebufferReadBufferEXT
     glFramebufferRenderbuffer
     glFramebufferRenderbufferEXT
-    glFramebufferSampleLocationsfvARB
-    glFramebufferSampleLocationsfvNV
+    glFramebufferSampleLocationsfvARB_c
+    glFramebufferSampleLocationsfvNV_c
     glFramebufferTexture
     glFramebufferTexture1D
     glFramebufferTexture1DEXT
@@ -652,468 +652,467 @@ our @glFunctions = qw(
     glFrustumfOES
     glFrustumx
     glGenAsyncMarkersSGIX
-    glGenBuffers
-    glGenBuffersARB
+    glGenBuffers_c
+    glGenBuffersARB_c
     glGenerateMipmap
     glGenerateMipmapEXT
     glGenerateMultiTexMipmapEXT
     glGenerateTextureMipmap
     glGenerateTextureMipmapEXT
-    glGenFencesAPPLE
-    glGenFencesNV
+    glGenFencesAPPLE_c
+    glGenFencesNV_c
     glGenFragmentShadersATI
-    glGenFramebuffers
-    glGenFramebuffersEXT
+    glGenFramebuffers_c
+    glGenFramebuffersEXT_c
     glGenLists
-    glGenNamesAMD
-    glGenOcclusionQueriesNV
+    glGenNamesAMD_c
+    glGenOcclusionQueriesNV_c
     glGenPathsNV
-    glGenPerfMonitorsAMD
-    glGenProgramPipelines
-    glGenProgramsARB
-    glGenProgramsNV
-    glGenQueries
-    glGenQueriesANGLE
-    glGenQueriesARB
-    glGenRenderbuffers
-    glGenRenderbuffersEXT
-    glGenSamplers
+    glGenPerfMonitorsAMD_c
+    glGenProgramPipelines_c
+    glGenProgramsARB_c
+    glGenProgramsNV_c
+    glGenQueries_c
+    glGenQueriesANGLE_c
+    glGenQueriesARB_c
+    glGenRenderbuffers_c
+    glGenRenderbuffersEXT_c
+    glGenSamplers_c
     glGenSymbolsEXT
-    glGenTextures
-    glGenTexturesEXT
-    glGenTransformFeedbacks
-    glGenTransformFeedbacksNV
-    glGenVertexArrays
-    glGenVertexArraysAPPLE
+    glGenTextures_c
+    glGenTexturesEXT_c
+    glGenTransformFeedbacks_c
+    glGenTransformFeedbacksNV_c
+    glGenVertexArrays_c
+    glGenVertexArraysAPPLE_c
     glGenVertexShadersEXT
-    glGetActiveAtomicCounterBufferiv
-    glGetActiveAttrib
-    glGetActiveAttribARB
-    glGetActiveSubroutineName
-    glGetActiveSubroutineUniformiv
-    glGetActiveSubroutineUniformName
-    glGetActiveUniform
-    glGetActiveUniformARB
-    glGetActiveUniformBlockiv
-    glGetActiveUniformBlockName
-    glGetActiveUniformName
-    glGetActiveUniformsiv
-    glGetActiveVaryingNV
-    glGetArrayObjectfvATI
-    glGetArrayObjectivATI
-    glGetAttachedObjectsARB
-    glGetAttachedShaders
-    glGetAttribLocation
-    glGetAttribLocationARB
-    glGetBooleanIndexedvEXT
-    glGetBooleani_v
-    glGetBooleanv
-    glGetBufferParameteri64v
-    glGetBufferParameteriv
-    glGetBufferParameterivARB
-    glGetBufferParameterui64vNV
-    glGetBufferPointerv
-    glGetBufferPointervARB
-    glGetBufferSubData
-    glGetBufferSubDataARB
-    glGetClipPlane
-    glGetClipPlanef
-    glGetClipPlanefOES
-    glGetClipPlanex
-    glGetColorTable
-    glGetColorTableEXT
-    glGetColorTableParameterfv
-    glGetColorTableParameterfvEXT
-    glGetColorTableParameterfvSGI
-    glGetColorTableParameteriv
-    glGetColorTableParameterivEXT
-    glGetColorTableParameterivSGI
-    glGetColorTableSGI
-    glGetCombinerInputParameterfvNV
-    glGetCombinerInputParameterivNV
-    glGetCombinerOutputParameterfvNV
-    glGetCombinerOutputParameterivNV
-    glGetCombinerStageParameterfvNV
+    glGetActiveAtomicCounterBufferiv_c
+    glGetActiveAttrib_c
+    glGetActiveAttribARB_c
+    glGetActiveSubroutineName_c
+    glGetActiveSubroutineUniformiv_c
+    glGetActiveSubroutineUniformName_c
+    glGetActiveUniform_c
+    glGetActiveUniformARB_c
+    glGetActiveUniformBlockiv_c
+    glGetActiveUniformBlockName_c
+    glGetActiveUniformName_c
+    glGetActiveUniformsiv_c
+    glGetActiveVaryingNV_c
+    glGetArrayObjectfvATI_c
+    glGetArrayObjectivATI_c
+    glGetAttachedObjectsARB_c
+    glGetAttachedShaders_c
+    glGetAttribLocation_c
+    glGetAttribLocationARB_c
+    glGetBooleanIndexedvEXT_c
+    glGetBooleani_v_c
+    glGetBooleanv_c
+    glGetBufferParameteri64v_c
+    glGetBufferParameteriv_c
+    glGetBufferParameterivARB_c
+    glGetBufferParameterui64vNV_c
+    glGetBufferPointerv_c
+    glGetBufferPointervARB_c
+    glGetBufferSubData_c
+    glGetBufferSubDataARB_c
+    glGetClipPlane_c
+    glGetClipPlanef_c
+    glGetClipPlanefOES_c
+    glGetClipPlanex_c
+    glGetColorTable_c
+    glGetColorTableEXT_c
+    glGetColorTableParameterfv_c
+    glGetColorTableParameterfvEXT_c
+    glGetColorTableParameterfvSGI_c
+    glGetColorTableParameteriv_c
+    glGetColorTableParameterivEXT_c
+    glGetColorTableParameterivSGI_c
+    glGetColorTableSGI_c
+    glGetCombinerInputParameterfvNV_c
+    glGetCombinerInputParameterivNV_c
+    glGetCombinerOutputParameterfvNV_c
+    glGetCombinerOutputParameterivNV_c
+    glGetCombinerStageParameterfvNV_c
     glGetCommandHeaderNV
-    glGetCompressedMultiTexImageEXT
-    glGetCompressedTexImage
-    glGetCompressedTexImageARB
-    glGetCompressedTextureImage
-    glGetCompressedTextureImageEXT
-    glGetCompressedTextureSubImage
-    glGetConvolutionFilter
-    glGetConvolutionFilterEXT
-    glGetConvolutionParameterfv
-    glGetConvolutionParameterfvEXT
-    glGetConvolutionParameteriv
-    glGetConvolutionParameterivEXT
-    glGetCoverageModulationTableNV
-    glGetDebugMessageLog
-    glGetDebugMessageLogAMD
-    glGetDebugMessageLogARB
-    glGetDetailTexFuncSGIS
-    glGetDoubleIndexedvEXT
-    glGetDoublei_v
-    glGetDoublei_vEXT
-    glGetDoublev
+    glGetCompressedMultiTexImageEXT_c
+    glGetCompressedTexImage_c
+    glGetCompressedTexImageARB_c
+    glGetCompressedTextureImage_c
+    glGetCompressedTextureImageEXT_c
+    glGetCompressedTextureSubImage_c
+    glGetConvolutionFilter_c
+    glGetConvolutionFilterEXT_c
+    glGetConvolutionParameterfv_c
+    glGetConvolutionParameterfvEXT_c
+    glGetConvolutionParameteriv_c
+    glGetConvolutionParameterivEXT_c
+    glGetCoverageModulationTableNV_c
+    glGetDebugMessageLog_c
+    glGetDebugMessageLogAMD_c
+    glGetDebugMessageLogARB_c
+    glGetDetailTexFuncSGIS_c
+    glGetDoubleIndexedvEXT_c
+    glGetDoublei_v_c
+    glGetDoublei_vEXT_c
+    glGetDoublev_c
     glGetError
-    glGetExtensionREGAL
-    glGetFenceivNV
-    glGetFinalCombinerInputParameterfvNV
-    glGetFinalCombinerInputParameterivNV
-    glGetFirstPerfQueryIdINTEL
-    glGetFixedv
-    glGetFloatIndexedvEXT
-    glGetFloati_v
-    glGetFloati_vEXT
-    glGetFloatv
-    glGetFogFuncSGIS
-    glGetFragDataIndex
-    glGetFragDataLocation
-    glGetFragDataLocationEXT
-    glGetFragmentLightfvEXT
-    glGetFragmentLightfvSGIX
-    glGetFragmentLightivEXT
-    glGetFragmentLightivSGIX
-    glGetFragmentMaterialfvEXT
-    glGetFragmentMaterialfvSGIX
-    glGetFragmentMaterialivEXT
-    glGetFragmentMaterialivSGIX
-    glGetFramebufferAttachmentParameteriv
-    glGetFramebufferAttachmentParameterivEXT
-    glGetFramebufferParameteriv
-    glGetFramebufferParameterivEXT
+    glGetExtensionREGAL_c
+    glGetFenceivNV_c
+    glGetFinalCombinerInputParameterfvNV_c
+    glGetFinalCombinerInputParameterivNV_c
+    glGetFirstPerfQueryIdINTEL_c
+    glGetFixedv_c
+    glGetFloatIndexedvEXT_c
+    glGetFloati_v_c
+    glGetFloati_vEXT_c
+    glGetFloatv_c
+    glGetFogFuncSGIS_c
+    glGetFragDataIndex_c
+    glGetFragDataLocation_c
+    glGetFragDataLocationEXT_c
+    glGetFragmentLightfvEXT_c
+    glGetFragmentLightfvSGIX_c
+    glGetFragmentLightivEXT_c
+    glGetFragmentLightivSGIX_c
+    glGetFragmentMaterialfvEXT_c
+    glGetFragmentMaterialfvSGIX_c
+    glGetFragmentMaterialivEXT_c
+    glGetFragmentMaterialivSGIX_c
+    glGetFramebufferAttachmentParameteriv_c
+    glGetFramebufferAttachmentParameterivEXT_c
+    glGetFramebufferParameteriv_c
+    glGetFramebufferParameterivEXT_c
     glGetGraphicsResetStatus
     glGetGraphicsResetStatusARB
     glGetHandleARB
-    glGetHistogram
-    glGetHistogramEXT
-    glGetHistogramParameterfv
-    glGetHistogramParameterfvEXT
-    glGetHistogramParameteriv
-    glGetHistogramParameterivEXT
+    glGetHistogram_c
+    glGetHistogramEXT_c
+    glGetHistogramParameterfv_c
+    glGetHistogramParameterfvEXT_c
+    glGetHistogramParameteriv_c
+    glGetHistogramParameterivEXT_c
     glGetImageHandleARB
     glGetImageHandleNV
-    glGetImageTransformParameterfvHP
-    glGetImageTransformParameterivHP
-    glGetInfoLogARB
-    glGetInteger64i_v
-    glGetInteger64v
-    glGetIntegerIndexedvEXT
-    glGetIntegeri_v
-    glGetIntegerui64i_vNV
-    glGetIntegerui64vNV
-    glGetIntegerv
-    glGetInternalformati64v
-    glGetInternalformativ
-    glGetInternalformatSampleivNV
-    glGetInvariantBooleanvEXT
-    glGetInvariantFloatvEXT
-    glGetInvariantIntegervEXT
-    glGetLightfv
-    glGetLightiv
-    glGetLightxv
-    glGetLocalConstantBooleanvEXT
-    glGetLocalConstantFloatvEXT
-    glGetLocalConstantIntegervEXT
-    glGetMapAttribParameterfvNV
-    glGetMapAttribParameterivNV
-    glGetMapControlPointsNV
-    glGetMapdv
-    glGetMapfv
-    glGetMapiv
-    glGetMapParameterfvNV
-    glGetMapParameterivNV
-    glGetMaterialfv
-    glGetMaterialiv
-    glGetMaterialxv
-    glGetMinmax
-    glGetMinmaxEXT
-    glGetMinmaxParameterfv
-    glGetMinmaxParameterfvEXT
-    glGetMinmaxParameteriv
-    glGetMinmaxParameterivEXT
-    glGetMultisamplefv
-    glGetMultisamplefvNV
-    glGetMultiTexEnvfvEXT
-    glGetMultiTexEnvivEXT
-    glGetMultiTexGendvEXT
-    glGetMultiTexGenfvEXT
-    glGetMultiTexGenivEXT
-    glGetMultiTexImageEXT
-    glGetMultiTexLevelParameterfvEXT
-    glGetMultiTexLevelParameterivEXT
-    glGetMultiTexParameterfvEXT
-    glGetMultiTexParameterIivEXT
-    glGetMultiTexParameterIuivEXT
-    glGetMultiTexParameterivEXT
-    glGetNamedBufferParameteri64v
-    glGetNamedBufferParameteriv
-    glGetNamedBufferParameterivEXT
-    glGetNamedBufferParameterui64vNV
-    glGetNamedBufferPointerv
-    glGetNamedBufferPointervEXT
-    glGetNamedBufferSubData
-    glGetNamedBufferSubDataEXT
-    glGetNamedFramebufferAttachmentParameteriv
-    glGetNamedFramebufferAttachmentParameterivEXT
-    glGetNamedFramebufferParameteriv
-    glGetNamedFramebufferParameterivEXT
-    glGetNamedProgramivEXT
-    glGetNamedProgramLocalParameterdvEXT
-    glGetNamedProgramLocalParameterfvEXT
-    glGetNamedProgramLocalParameterIivEXT
-    glGetNamedProgramLocalParameterIuivEXT
-    glGetNamedProgramStringEXT
-    glGetNamedRenderbufferParameteriv
-    glGetNamedRenderbufferParameterivEXT
-    glGetNamedStringARB
-    glGetNamedStringivARB
-    glGetnColorTableARB
-    glGetnCompressedTexImage
-    glGetnCompressedTexImageARB
-    glGetnConvolutionFilterARB
-    glGetNextPerfQueryIdINTEL
-    glGetnHistogramARB
-    glGetnMapdvARB
-    glGetnMapfvARB
-    glGetnMapivARB
-    glGetnMinmaxARB
-    glGetnPixelMapfvARB
-    glGetnPixelMapuivARB
-    glGetnPixelMapusvARB
-    glGetnPolygonStippleARB
-    glGetnSeparableFilterARB
-    glGetnTexImage
-    glGetnTexImageARB
-    glGetnUniformdv
-    glGetnUniformdvARB
-    glGetnUniformfv
-    glGetnUniformfvARB
-    glGetnUniformi64vARB
-    glGetnUniformiv
-    glGetnUniformivARB
-    glGetnUniformui64vARB
-    glGetnUniformuiv
-    glGetnUniformuivARB
-    glGetObjectBufferfvATI
-    glGetObjectBufferivATI
-    glGetObjectLabel
-    glGetObjectLabelEXT
-    glGetObjectParameterfvARB
-    glGetObjectParameterivAPPLE
-    glGetObjectParameterivARB
-    glGetObjectPtrLabel
-    glGetOcclusionQueryivNV
-    glGetOcclusionQueryuivNV
-    glGetPathColorGenfvNV
-    glGetPathColorGenivNV
-    glGetPathCommandsNV
-    glGetPathCoordsNV
-    glGetPathDashArrayNV
+    glGetImageTransformParameterfvHP_c
+    glGetImageTransformParameterivHP_c
+    glGetInfoLogARB_c
+    glGetInteger64i_v_c
+    glGetInteger64v_c
+    glGetIntegerIndexedvEXT_c
+    glGetIntegeri_v_c
+    glGetIntegerui64i_vNV_c
+    glGetIntegerui64vNV_c
+    glGetIntegerv_c
+    glGetInternalformati64v_c
+    glGetInternalformativ_c
+    glGetInternalformatSampleivNV_c
+    glGetInvariantBooleanvEXT_c
+    glGetInvariantFloatvEXT_c
+    glGetInvariantIntegervEXT_c
+    glGetLightfv_c
+    glGetLightiv_c
+    glGetLightxv_c
+    glGetLocalConstantBooleanvEXT_c
+    glGetLocalConstantFloatvEXT_c
+    glGetLocalConstantIntegervEXT_c
+    glGetMapAttribParameterfvNV_c
+    glGetMapAttribParameterivNV_c
+    glGetMapControlPointsNV_c
+    glGetMapdv_c
+    glGetMapfv_c
+    glGetMapiv_c
+    glGetMapParameterfvNV_c
+    glGetMapParameterivNV_c
+    glGetMaterialfv_c
+    glGetMaterialiv_c
+    glGetMaterialxv_c
+    glGetMinmax_c
+    glGetMinmaxEXT_c
+    glGetMinmaxParameterfv_c
+    glGetMinmaxParameterfvEXT_c
+    glGetMinmaxParameteriv_c
+    glGetMinmaxParameterivEXT_c
+    glGetMultisamplefv_c
+    glGetMultisamplefvNV_c
+    glGetMultiTexEnvfvEXT_c
+    glGetMultiTexEnvivEXT_c
+    glGetMultiTexGendvEXT_c
+    glGetMultiTexGenfvEXT_c
+    glGetMultiTexGenivEXT_c
+    glGetMultiTexImageEXT_c
+    glGetMultiTexLevelParameterfvEXT_c
+    glGetMultiTexLevelParameterivEXT_c
+    glGetMultiTexParameterfvEXT_c
+    glGetMultiTexParameterIivEXT_c
+    glGetMultiTexParameterIuivEXT_c
+    glGetMultiTexParameterivEXT_c
+    glGetNamedBufferParameteri64v_c
+    glGetNamedBufferParameteriv_c
+    glGetNamedBufferParameterivEXT_c
+    glGetNamedBufferParameterui64vNV_c
+    glGetNamedBufferPointerv_c
+    glGetNamedBufferPointervEXT_c
+    glGetNamedBufferSubData_c
+    glGetNamedBufferSubDataEXT_c
+    glGetNamedFramebufferAttachmentParameteriv_c
+    glGetNamedFramebufferAttachmentParameterivEXT_c
+    glGetNamedFramebufferParameteriv_c
+    glGetNamedFramebufferParameterivEXT_c
+    glGetNamedProgramivEXT_c
+    glGetNamedProgramLocalParameterdvEXT_c
+    glGetNamedProgramLocalParameterfvEXT_c
+    glGetNamedProgramLocalParameterIivEXT_c
+    glGetNamedProgramLocalParameterIuivEXT_c
+    glGetNamedProgramStringEXT_c
+    glGetNamedRenderbufferParameteriv_c
+    glGetNamedRenderbufferParameterivEXT_c
+    glGetNamedStringARB_c
+    glGetNamedStringivARB_c
+    glGetnColorTableARB_c
+    glGetnCompressedTexImage_c
+    glGetnCompressedTexImageARB_c
+    glGetnConvolutionFilterARB_c
+    glGetNextPerfQueryIdINTEL_c
+    glGetnHistogramARB_c
+    glGetnMapdvARB_c
+    glGetnMapfvARB_c
+    glGetnMapivARB_c
+    glGetnMinmaxARB_c
+    glGetnPixelMapfvARB_c
+    glGetnPixelMapuivARB_c
+    glGetnPixelMapusvARB_c
+    glGetnPolygonStippleARB_c
+    glGetnSeparableFilterARB_c
+    glGetnTexImage_c
+    glGetnTexImageARB_c
+    glGetnUniformdv_c
+    glGetnUniformdvARB_c
+    glGetnUniformfv_c
+    glGetnUniformfvARB_c
+    glGetnUniformi64vARB_c
+    glGetnUniformiv_c
+    glGetnUniformivARB_c
+    glGetnUniformui64vARB_c
+    glGetnUniformuiv_c
+    glGetnUniformuivARB_c
+    glGetObjectBufferfvATI_c
+    glGetObjectBufferivATI_c
+    glGetObjectLabel_c
+    glGetObjectLabelEXT_c
+    glGetObjectParameterfvARB_c
+    glGetObjectParameterivAPPLE_c
+    glGetObjectParameterivARB_c
+    glGetObjectPtrLabel_c
+    glGetOcclusionQueryivNV_c
+    glGetOcclusionQueryuivNV_c
+    glGetPathColorGenfvNV_c
+    glGetPathColorGenivNV_c
+    glGetPathCommandsNV_c
+    glGetPathCoordsNV_c
+    glGetPathDashArrayNV_c
     glGetPathLengthNV
-    glGetPathMetricRangeNV
-    glGetPathMetricsNV
-    glGetPathParameterfvNV
-    glGetPathParameterivNV
-    glGetPathSpacingNV
-    glGetPathTexGenfvNV
-    glGetPathTexGenivNV
-    glGetPerfCounterInfoINTEL
-    glGetPerfMonitorCounterDataAMD
-    glGetPerfMonitorCounterInfoAMD
-    glGetPerfMonitorCountersAMD
-    glGetPerfMonitorCounterStringAMD
-    glGetPerfMonitorGroupsAMD
-    glGetPerfMonitorGroupStringAMD
-    glGetPerfQueryDataINTEL
-    glGetPerfQueryIdByNameINTEL
-    glGetPerfQueryInfoINTEL
-    glGetPixelMapfv
-    glGetPixelMapuiv
-    glGetPixelMapusv
-    glGetPixelTransformParameterfvEXT
-    glGetPixelTransformParameterivEXT
-    glGetPointerIndexedvEXT
-    glGetPointeri_vEXT
-    glGetPointerv
-    glGetPolygonStipple
-    glGetProcAddressREGAL
-    glGetProgramBinary
-    glGetProgramEnvParameterdvARB
-    glGetProgramEnvParameterfvARB
-    glGetProgramInfoLog
-    glGetProgramInterfaceiv
-    glGetProgramiv
-    glGetProgramivARB
-    glGetProgramivNV
-    glGetProgramLocalParameterdvARB
-    glGetProgramLocalParameterfvARB
-    glGetProgramNamedParameterdvNV
-    glGetProgramNamedParameterfvNV
-    glGetProgramParameterdvNV
-    glGetProgramParameterfvNV
-    glGetProgramPipelineInfoLog
-    glGetProgramPipelineiv
-    glGetProgramResourcefvNV
-    glGetProgramResourceIndex
-    glGetProgramResourceiv
-    glGetProgramResourceLocation
-    glGetProgramResourceLocationIndex
-    glGetProgramResourceName
-    glGetProgramStageiv
-    glGetProgramStringARB
-    glGetProgramStringNV
+    glGetPathMetricRangeNV_c
+    glGetPathMetricsNV_c
+    glGetPathParameterfvNV_c
+    glGetPathParameterivNV_c
+    glGetPathSpacingNV_c
+    glGetPathTexGenfvNV_c
+    glGetPathTexGenivNV_c
+    glGetPerfCounterInfoINTEL_c
+    glGetPerfMonitorCounterDataAMD_c
+    glGetPerfMonitorCounterInfoAMD_c
+    glGetPerfMonitorCountersAMD_c
+    glGetPerfMonitorCounterStringAMD_c
+    glGetPerfMonitorGroupsAMD_c
+    glGetPerfMonitorGroupStringAMD_c
+    glGetPerfQueryDataINTEL_c
+    glGetPerfQueryIdByNameINTEL_c
+    glGetPerfQueryInfoINTEL_c
+    glGetPixelMapfv_c
+    glGetPixelMapuiv_c
+    glGetPixelMapusv_c
+    glGetPixelTransformParameterfvEXT_c
+    glGetPixelTransformParameterivEXT_c
+    glGetPointerIndexedvEXT_c
+    glGetPointeri_vEXT_c
+    glGetPointerv_c
+    glGetPolygonStipple_c
+    glGetProcAddressREGAL_c
+    glGetProgramBinary_c
+    glGetProgramEnvParameterdvARB_c
+    glGetProgramEnvParameterfvARB_c
+    glGetProgramInfoLog_c
+    glGetProgramInterfaceiv_c
+    glGetProgramiv_c
+    glGetProgramivARB_c
+    glGetProgramivNV_c
+    glGetProgramLocalParameterdvARB_c
+    glGetProgramLocalParameterfvARB_c
+    glGetProgramNamedParameterdvNV_c
+    glGetProgramNamedParameterfvNV_c
+    glGetProgramParameterdvNV_c
+    glGetProgramParameterfvNV_c
+    glGetProgramPipelineInfoLog_c
+    glGetProgramPipelineiv_c
+    glGetProgramResourcefvNV_c
+    glGetProgramResourceIndex_c
+    glGetProgramResourceiv_c
+    glGetProgramResourceLocation_c
+    glGetProgramResourceLocationIndex_c
+    glGetProgramResourceName_c
+    glGetProgramStageiv_c
+    glGetProgramStringARB_c
+    glGetProgramStringNV_c
     glGetQueryBufferObjecti64v
     glGetQueryBufferObjectiv
     glGetQueryBufferObjectui64v
     glGetQueryBufferObjectuiv
-    glGetQueryIndexediv
-    glGetQueryiv
-    glGetQueryivANGLE
-    glGetQueryivARB
-    glGetQueryObjecti64v
-    glGetQueryObjecti64vANGLE
-    glGetQueryObjecti64vEXT
-    glGetQueryObjectiv
-    glGetQueryObjectivANGLE
-    glGetQueryObjectivARB
-    glGetQueryObjectui64v
-    glGetQueryObjectui64vANGLE
-    glGetQueryObjectui64vEXT
-    glGetQueryObjectuiv
-    glGetQueryObjectuivANGLE
-    glGetQueryObjectuivARB
-    glGetRenderbufferParameteriv
-    glGetRenderbufferParameterivEXT
-    glGetSamplerParameterfv
-    glGetSamplerParameterIiv
-    glGetSamplerParameterIuiv
-    glGetSamplerParameteriv
-    glGetSeparableFilter
-    glGetSeparableFilterEXT
-    glGetShaderInfoLog
-    glGetShaderiv
-    glGetShaderPrecisionFormat
-    glGetShaderSource
-    glGetShaderSourceARB
-    glGetSharpenTexFuncSGIS
+    glGetQueryIndexediv_c
+    glGetQueryiv_c
+    glGetQueryivANGLE_c
+    glGetQueryivARB_c
+    glGetQueryObjecti64v_c
+    glGetQueryObjecti64vANGLE_c
+    glGetQueryObjecti64vEXT_c
+    glGetQueryObjectiv_c
+    glGetQueryObjectivANGLE_c
+    glGetQueryObjectivARB_c
+    glGetQueryObjectui64v_c
+    glGetQueryObjectui64vANGLE_c
+    glGetQueryObjectui64vEXT_c
+    glGetQueryObjectuiv_c
+    glGetQueryObjectuivANGLE_c
+    glGetQueryObjectuivARB_c
+    glGetRenderbufferParameteriv_c
+    glGetRenderbufferParameterivEXT_c
+    glGetSamplerParameterfv_c
+    glGetSamplerParameterIiv_c
+    glGetSamplerParameterIuiv_c
+    glGetSamplerParameteriv_c
+    glGetSeparableFilter_c
+    glGetSeparableFilterEXT_c
+    glGetShaderInfoLog_c
+    glGetShaderiv_c
+    glGetShaderPrecisionFormat_c
+    glGetShaderSource_c
+    glGetShaderSourceARB_c
+    glGetSharpenTexFuncSGIS_c
     glGetStageIndexNV
-    glGetString
-    glGetSubroutineIndex
-    glGetSubroutineUniformLocation
-    glGetSynciv
-    glGetTexBumpParameterfvATI
-    glGetTexBumpParameterivATI
-    glGetTexEnvfv
-    glGetTexEnviv
-    glGetTexEnvxv
-    glGetTexFilterFuncSGIS
-    glGetTexGendv
-    glGetTexGenfv
-    glGetTexGeniv
-    glGetTexImage
-    glGetTexLevelParameterfv
-    glGetTexLevelParameteriv
-    glGetTexParameterfv
-    glGetTexParameterIiv
-    glGetTexParameterIivEXT
-    glGetTexParameterIuiv
-    glGetTexParameterIuivEXT
-    glGetTexParameteriv
-    glGetTexParameterPointervAPPLE
-    glGetTexParameterxv
+    glGetSubroutineIndex_c
+    glGetSubroutineUniformLocation_c
+    glGetSynciv_c
+    glGetTexBumpParameterfvATI_c
+    glGetTexBumpParameterivATI_c
+    glGetTexEnvfv_c
+    glGetTexEnviv_c
+    glGetTexEnvxv_c
+    glGetTexFilterFuncSGIS_c
+    glGetTexGendv_c
+    glGetTexGenfv_c
+    glGetTexGeniv_c
+    glGetTexImage_c
+    glGetTexLevelParameterfv_c
+    glGetTexLevelParameteriv_c
+    glGetTexParameterfv_c
+    glGetTexParameterIiv_c
+    glGetTexParameterIivEXT_c
+    glGetTexParameterIuiv_c
+    glGetTexParameterIuivEXT_c
+    glGetTexParameteriv_c
+    glGetTexParameterPointervAPPLE_c
+    glGetTexParameterxv_c
     glGetTextureHandleARB
     glGetTextureHandleNV
-    glGetTextureImage
-    glGetTextureImageEXT
-    glGetTextureLevelParameterfv
-    glGetTextureLevelParameterfvEXT
-    glGetTextureLevelParameteriv
-    glGetTextureLevelParameterivEXT
-    glGetTextureParameterfv
-    glGetTextureParameterfvEXT
-    glGetTextureParameterIiv
-    glGetTextureParameterIivEXT
-    glGetTextureParameterIuiv
-    glGetTextureParameterIuivEXT
-    glGetTextureParameteriv
-    glGetTextureParameterivEXT
+    glGetTextureImage_c
+    glGetTextureImageEXT_c
+    glGetTextureLevelParameterfv_c
+    glGetTextureLevelParameterfvEXT_c
+    glGetTextureLevelParameteriv_c
+    glGetTextureLevelParameterivEXT_c
+    glGetTextureParameterfv_c
+    glGetTextureParameterfvEXT_c
+    glGetTextureParameterIiv_c
+    glGetTextureParameterIivEXT_c
+    glGetTextureParameterIuiv_c
+    glGetTextureParameterIuivEXT_c
+    glGetTextureParameteriv_c
+    glGetTextureParameterivEXT_c
     glGetTextureSamplerHandleARB
     glGetTextureSamplerHandleNV
-    glGetTextureSubImage
-    glGetTrackMatrixivNV
-    glGetTransformFeedbacki64_v
-    glGetTransformFeedbackiv
-    glGetTransformFeedbacki_v
-    glGetTransformFeedbackVarying
-    glGetTransformFeedbackVaryingEXT
-    glGetTransformFeedbackVaryingNV
-    glGetTranslatedShaderSourceANGLE
-    glGetUniformBlockIndex
+    glGetTextureSubImage_c
+    glGetTrackMatrixivNV_c
+    glGetTransformFeedbacki64_v_c
+    glGetTransformFeedbackiv_c
+    glGetTransformFeedbacki_v_c
+    glGetTransformFeedbackVarying_c
+    glGetTransformFeedbackVaryingEXT_c
+    glGetTransformFeedbackVaryingNV_c
+    glGetTranslatedShaderSourceANGLE_c
+    glGetUniformBlockIndex_c
     glGetUniformBufferSizeEXT
-    glGetUniformdv
-    glGetUniformfv
-    glGetUniformfvARB
-    glGetUniformi64vARB
-    glGetUniformi64vNV
-    glGetUniformIndices
-    glGetUniformiv
-    glGetUniformivARB
-    glGetUniformLocation
-    glGetUniformLocationARB
+    glGetUniformdv_c
+    glGetUniformfv_c
+    glGetUniformfvARB_c
+    glGetUniformi64vARB_c
+    glGetUniformi64vNV_c
+    glGetUniformIndices_c
+    glGetUniformiv_c
+    glGetUniformivARB_c
+    glGetUniformLocation_c
+    glGetUniformLocationARB_c
     glGetUniformOffsetEXT
-    glGetUniformSubroutineuiv
-    glGetUniformui64vARB
-    glGetUniformui64vNV
-    glGetUniformuiv
-    glGetUniformuivEXT
-    glGetVariantArrayObjectfvATI
-    glGetVariantArrayObjectivATI
-    glGetVariantBooleanvEXT
-    glGetVariantFloatvEXT
-    glGetVariantIntegervEXT
-    glGetVariantPointervEXT
-    glGetVaryingLocationNV
-    glGetVertexArrayIndexed64iv
-    glGetVertexArrayIndexediv
-    glGetVertexArrayIntegeri_vEXT
-    glGetVertexArrayIntegervEXT
-    glGetVertexArrayiv
-    glGetVertexArrayPointeri_vEXT
-    glGetVertexArrayPointervEXT
-    glGetVertexAttribArrayObjectfvATI
-    glGetVertexAttribArrayObjectivATI
-    glGetVertexAttribdv
-    glGetVertexAttribdvARB
-    glGetVertexAttribdvNV
-    glGetVertexAttribfv
-    glGetVertexAttribfvARB
-    glGetVertexAttribfvNV
-    glGetVertexAttribIiv
-    glGetVertexAttribIivEXT
-    glGetVertexAttribIuiv
-    glGetVertexAttribIuivEXT
-    glGetVertexAttribiv
-    glGetVertexAttribivARB
-    glGetVertexAttribivNV
-    glGetVertexAttribLdv
-    glGetVertexAttribLdvEXT
-    glGetVertexAttribLi64vNV
-    glGetVertexAttribLui64vARB
-    glGetVertexAttribLui64vNV
-    glGetVertexAttribPointerv
-    glGetVertexAttribPointervARB
-    glGetVertexAttribPointervNV
-    glGetVideoCaptureivNV
-    glGetVideoCaptureStreamdvNV
-    glGetVideoCaptureStreamfvNV
-    glGetVideoCaptureStreamivNV
-    glGetVideoi64vNV
-    glGetVideoivNV
-    glGetVideoui64vNV
-    glGetVideouivNV
-    glGetVkProcAddrNV
+    glGetUniformSubroutineuiv_c
+    glGetUniformui64vARB_c
+    glGetUniformui64vNV_c
+    glGetUniformuiv_c
+    glGetUniformuivEXT_c
+    glGetVariantArrayObjectfvATI_c
+    glGetVariantArrayObjectivATI_c
+    glGetVariantBooleanvEXT_c
+    glGetVariantFloatvEXT_c
+    glGetVariantIntegervEXT_c
+    glGetVariantPointervEXT_c
+    glGetVaryingLocationNV_c
+    glGetVertexArrayIndexed64iv_c
+    glGetVertexArrayIndexediv_c
+    glGetVertexArrayIntegeri_vEXT_c
+    glGetVertexArrayIntegervEXT_c
+    glGetVertexArrayiv_c
+    glGetVertexArrayPointeri_vEXT_c
+    glGetVertexArrayPointervEXT_c
+    glGetVertexAttribArrayObjectfvATI_c
+    glGetVertexAttribArrayObjectivATI_c
+    glGetVertexAttribdv_c
+    glGetVertexAttribdvARB_c
+    glGetVertexAttribdvNV_c
+    glGetVertexAttribfv_c
+    glGetVertexAttribfvARB_c
+    glGetVertexAttribfvNV_c
+    glGetVertexAttribIiv_c
+    glGetVertexAttribIivEXT_c
+    glGetVertexAttribIuiv_c
+    glGetVertexAttribIuivEXT_c
+    glGetVertexAttribiv_c
+    glGetVertexAttribivARB_c
+    glGetVertexAttribivNV_c
+    glGetVertexAttribLdv_c
+    glGetVertexAttribLdvEXT_c
+    glGetVertexAttribLi64vNV_c
+    glGetVertexAttribLui64vARB_c
+    glGetVertexAttribLui64vNV_c
+    glGetVertexAttribPointerv_c
+    glGetVertexAttribPointervARB_c
+    glGetVertexAttribPointervNV_c
+    glGetVideoCaptureivNV_c
+    glGetVideoCaptureStreamdvNV_c
+    glGetVideoCaptureStreamfvNV_c
+    glGetVideoCaptureStreamivNV_c
+    glGetVideoi64vNV_c
+    glGetVideoivNV_c
+    glGetVideoui64vNV_c
+    glGetVideouivNV_c
+    glGetVkProcAddrNV_c
     glGlobalAlphaFactorbSUN
     glGlobalAlphaFactordSUN
     glGlobalAlphaFactorfSUN
@@ -1126,38 +1125,38 @@ our @glFunctions = qw(
     glHistogram
     glHistogramEXT
     glImageTransformParameterfHP
-    glImageTransformParameterfvHP
+    glImageTransformParameterfvHP_c
     glImageTransformParameteriHP
-    glImageTransformParameterivHP
+    glImageTransformParameterivHP_c
     glImportSyncEXT
     glIndexd
-    glIndexdv
+    glIndexdv_c
     glIndexf
     glIndexFormatNV
     glIndexFuncEXT
-    glIndexfv
+    glIndexfv_c
     glIndexi
-    glIndexiv
+    glIndexiv_c
     glIndexMask
     glIndexMaterialEXT
-    glIndexPointer
-    glIndexPointerEXT
-    glIndexPointerListIBM
+    glIndexPointer_c
+    glIndexPointerEXT_c
+    glIndexPointerListIBM_c
     glIndexs
-    glIndexsv
+    glIndexsv_c
     glIndexub
-    glIndexubv
+    glIndexubv_c
     glInitNames
     glInsertComponentEXT
-    glInsertEventMarkerEXT
-    glInterleavedArrays
+    glInsertEventMarkerEXT_c
+    glInterleavedArrays_c
     glInterpolatePathsNV
     glInvalidateBufferData
     glInvalidateBufferSubData
-    glInvalidateFramebuffer
-    glInvalidateNamedFramebufferData
-    glInvalidateNamedFramebufferSubData
-    glInvalidateSubFramebuffer
+    glInvalidateFramebuffer_c
+    glInvalidateNamedFramebufferData_c
+    glInvalidateNamedFramebufferSubData_c
+    glInvalidateSubFramebuffer_c
     glInvalidateTexImage
     glInvalidateTexSubImage
     glIsAsyncMarkerSGIX
@@ -1177,7 +1176,7 @@ our @glFunctions = qw(
     glIsList
     glIsNameAMD
     glIsNamedBufferResidentNV
-    glIsNamedStringARB
+    glIsNamedStringARB_c
     glIsObjectBufferATI
     glIsOcclusionQueryNV
     glIsPathNV
@@ -1195,7 +1194,7 @@ our @glFunctions = qw(
     glIsSampler
     glIsShader
     glIsStateNV
-    glIsSupportedREGAL
+    glIsSupportedREGAL_c
     glIsSync
     glIsTexture
     glIsTextureEXT
@@ -1207,40 +1206,40 @@ our @glFunctions = qw(
     glIsVertexArray
     glIsVertexArrayAPPLE
     glIsVertexAttribEnabledAPPLE
-    glLabelObjectEXT
+    glLabelObjectEXT_c
     glLGPUCopyImageSubDataNVX
     glLGPUInterlockNVX
-    glLGPUNamedBufferSubDataNVX
+    glLGPUNamedBufferSubDataNVX_c
     glLightEnviEXT
     glLightf
-    glLightfv
+    glLightfv_c
     glLighti
-    glLightiv
+    glLightiv_c
     glLightModelf
-    glLightModelfv
+    glLightModelfv_c
     glLightModeli
-    glLightModeliv
+    glLightModeliv_c
     glLightModelx
-    glLightModelxv
+    glLightModelxv_c
     glLightx
-    glLightxv
+    glLightxv_c
     glLineStipple
     glLineWidth
     glLineWidthx
     glLinkProgram
     glLinkProgramARB
     glListBase
-    glListDrawCommandsStatesClientNV
+    glListDrawCommandsStatesClientNV_c
     glLoadIdentity
-    glLoadMatrixd
-    glLoadMatrixf
-    glLoadMatrixx
+    glLoadMatrixd_c
+    glLoadMatrixf_c
+    glLoadMatrixx_c
     glLoadName
-    glLoadProgramNV
-    glLoadTransposeMatrixd
-    glLoadTransposeMatrixdARB
-    glLoadTransposeMatrixf
-    glLoadTransposeMatrixfARB
+    glLoadProgramNV_c
+    glLoadTransposeMatrixd_c
+    glLoadTransposeMatrixdARB_c
+    glLoadTransposeMatrixf_c
+    glLoadTransposeMatrixfARB_c
     glLockArraysEXT
     glLogicOp
     glLogMessageCallbackREGAL
@@ -1256,57 +1255,57 @@ our @glFunctions = qw(
     glMakeTextureHandleNonResidentNV
     glMakeTextureHandleResidentARB
     glMakeTextureHandleResidentNV
-    glMap1d
-    glMap1f
-    glMap2d
-    glMap2f
-    glMapBuffer
-    glMapBufferARB
-    glMapBufferRange
-    glMapControlPointsNV
+    glMap1d_c
+    glMap1f_c
+    glMap2d_c
+    glMap2f_c
+    glMapBuffer_c
+    glMapBufferARB_c
+    glMapBufferRange_c
+    glMapControlPointsNV_c
     glMapGrid1d
     glMapGrid1f
     glMapGrid2d
     glMapGrid2f
-    glMapNamedBuffer
-    glMapNamedBufferEXT
-    glMapNamedBufferRange
-    glMapNamedBufferRangeEXT
-    glMapObjectBufferATI
-    glMapParameterfvNV
-    glMapParameterivNV
-    glMapTexture2DINTEL
-    glMapVertexAttrib1dAPPLE
-    glMapVertexAttrib1fAPPLE
-    glMapVertexAttrib2dAPPLE
-    glMapVertexAttrib2fAPPLE
+    glMapNamedBuffer_c
+    glMapNamedBufferEXT_c
+    glMapNamedBufferRange_c
+    glMapNamedBufferRangeEXT_c
+    glMapObjectBufferATI_c
+    glMapParameterfvNV_c
+    glMapParameterivNV_c
+    glMapTexture2DINTEL_c
+    glMapVertexAttrib1dAPPLE_c
+    glMapVertexAttrib1fAPPLE_c
+    glMapVertexAttrib2dAPPLE_c
+    glMapVertexAttrib2fAPPLE_c
     glMaterialf
-    glMaterialfv
+    glMaterialfv_c
     glMateriali
-    glMaterialiv
+    glMaterialiv_c
     glMaterialx
-    glMaterialxv
+    glMaterialxv_c
     glMatrixFrustumEXT
-    glMatrixIndexPointerARB
-    glMatrixIndexubvARB
-    glMatrixIndexuivARB
-    glMatrixIndexusvARB
-    glMatrixLoad3x2fNV
-    glMatrixLoad3x3fNV
-    glMatrixLoaddEXT
-    glMatrixLoadfEXT
+    glMatrixIndexPointerARB_c
+    glMatrixIndexubvARB_c
+    glMatrixIndexuivARB_c
+    glMatrixIndexusvARB_c
+    glMatrixLoad3x2fNV_c
+    glMatrixLoad3x3fNV_c
+    glMatrixLoaddEXT_c
+    glMatrixLoadfEXT_c
     glMatrixLoadIdentityEXT
-    glMatrixLoadTranspose3x3fNV
-    glMatrixLoadTransposedEXT
-    glMatrixLoadTransposefEXT
+    glMatrixLoadTranspose3x3fNV_c
+    glMatrixLoadTransposedEXT_c
+    glMatrixLoadTransposefEXT_c
     glMatrixMode
-    glMatrixMult3x2fNV
-    glMatrixMult3x3fNV
-    glMatrixMultdEXT
-    glMatrixMultfEXT
-    glMatrixMultTranspose3x3fNV
-    glMatrixMultTransposedEXT
-    glMatrixMultTransposefEXT
+    glMatrixMult3x2fNV_c
+    glMatrixMult3x3fNV_c
+    glMatrixMultdEXT_c
+    glMatrixMultfEXT_c
+    glMatrixMultTranspose3x3fNV_c
+    glMatrixMultTransposedEXT_c
+    glMatrixMultTransposefEXT_c
     glMatrixOrthoEXT
     glMatrixPopEXT
     glMatrixPushEXT
@@ -1326,163 +1325,163 @@ our @glFunctions = qw(
     glMinSampleShadingARB
     glMulticastBarrierNV
     glMulticastBlitFramebufferNV
-    glMulticastBufferSubDataNV
+    glMulticastBufferSubDataNV_c
     glMulticastCopyBufferSubDataNV
     glMulticastCopyImageSubDataNV
-    glMulticastFramebufferSampleLocationsfvNV
-    glMulticastGetQueryObjecti64vNV
-    glMulticastGetQueryObjectivNV
-    glMulticastGetQueryObjectui64vNV
-    glMulticastGetQueryObjectuivNV
+    glMulticastFramebufferSampleLocationsfvNV_c
+    glMulticastGetQueryObjecti64vNV_c
+    glMulticastGetQueryObjectivNV_c
+    glMulticastGetQueryObjectui64vNV_c
+    glMulticastGetQueryObjectuivNV_c
     glMulticastWaitSyncNV
-    glMultiDrawArrays
-    glMultiDrawArraysEXT
-    glMultiDrawArraysIndirect
-    glMultiDrawArraysIndirectAMD
-    glMultiDrawArraysIndirectBindlessCountNV
-    glMultiDrawArraysIndirectBindlessNV
-    glMultiDrawArraysIndirectCountARB
-    glMultiDrawElementArrayAPPLE
-    glMultiDrawElements
-    glMultiDrawElementsBaseVertex
-    glMultiDrawElementsEXT
-    glMultiDrawElementsIndirect
-    glMultiDrawElementsIndirectAMD
-    glMultiDrawElementsIndirectBindlessCountNV
-    glMultiDrawElementsIndirectBindlessNV
-    glMultiDrawElementsIndirectCountARB
-    glMultiDrawRangeElementArrayAPPLE
-    glMultiModeDrawArraysIBM
-    glMultiModeDrawElementsIBM
+    glMultiDrawArrays_c
+    glMultiDrawArraysEXT_c
+    glMultiDrawArraysIndirect_c
+    glMultiDrawArraysIndirectAMD_c
+    glMultiDrawArraysIndirectBindlessCountNV_c
+    glMultiDrawArraysIndirectBindlessNV_c
+    glMultiDrawArraysIndirectCountARB_c
+    glMultiDrawElementArrayAPPLE_c
+    glMultiDrawElements_c
+    glMultiDrawElementsBaseVertex_c
+    glMultiDrawElementsEXT_c
+    glMultiDrawElementsIndirect_c
+    glMultiDrawElementsIndirectAMD_c
+    glMultiDrawElementsIndirectBindlessCountNV_c
+    glMultiDrawElementsIndirectBindlessNV_c
+    glMultiDrawElementsIndirectCountARB_c
+    glMultiDrawRangeElementArrayAPPLE_c
+    glMultiModeDrawArraysIBM_c
+    glMultiModeDrawElementsIBM_c
     glMultiTexBufferEXT
     glMultiTexCoord1d
     glMultiTexCoord1dARB
-    glMultiTexCoord1dv
-    glMultiTexCoord1dvARB
+    glMultiTexCoord1dv_c
+    glMultiTexCoord1dvARB_c
     glMultiTexCoord1f
     glMultiTexCoord1fARB
-    glMultiTexCoord1fv
-    glMultiTexCoord1fvARB
+    glMultiTexCoord1fv_c
+    glMultiTexCoord1fvARB_c
     glMultiTexCoord1hNV
-    glMultiTexCoord1hvNV
+    glMultiTexCoord1hvNV_c
     glMultiTexCoord1i
     glMultiTexCoord1iARB
-    glMultiTexCoord1iv
-    glMultiTexCoord1ivARB
+    glMultiTexCoord1iv_c
+    glMultiTexCoord1ivARB_c
     glMultiTexCoord1s
     glMultiTexCoord1sARB
-    glMultiTexCoord1sv
-    glMultiTexCoord1svARB
+    glMultiTexCoord1sv_c
+    glMultiTexCoord1svARB_c
     glMultiTexCoord2d
     glMultiTexCoord2dARB
-    glMultiTexCoord2dv
-    glMultiTexCoord2dvARB
+    glMultiTexCoord2dv_c
+    glMultiTexCoord2dvARB_c
     glMultiTexCoord2f
     glMultiTexCoord2fARB
-    glMultiTexCoord2fv
-    glMultiTexCoord2fvARB
+    glMultiTexCoord2fv_c
+    glMultiTexCoord2fvARB_c
     glMultiTexCoord2hNV
-    glMultiTexCoord2hvNV
+    glMultiTexCoord2hvNV_c
     glMultiTexCoord2i
     glMultiTexCoord2iARB
-    glMultiTexCoord2iv
-    glMultiTexCoord2ivARB
+    glMultiTexCoord2iv_c
+    glMultiTexCoord2ivARB_c
     glMultiTexCoord2s
     glMultiTexCoord2sARB
-    glMultiTexCoord2sv
-    glMultiTexCoord2svARB
+    glMultiTexCoord2sv_c
+    glMultiTexCoord2svARB_c
     glMultiTexCoord3d
     glMultiTexCoord3dARB
-    glMultiTexCoord3dv
-    glMultiTexCoord3dvARB
+    glMultiTexCoord3dv_c
+    glMultiTexCoord3dvARB_c
     glMultiTexCoord3f
     glMultiTexCoord3fARB
-    glMultiTexCoord3fv
-    glMultiTexCoord3fvARB
+    glMultiTexCoord3fv_c
+    glMultiTexCoord3fvARB_c
     glMultiTexCoord3hNV
-    glMultiTexCoord3hvNV
+    glMultiTexCoord3hvNV_c
     glMultiTexCoord3i
     glMultiTexCoord3iARB
-    glMultiTexCoord3iv
-    glMultiTexCoord3ivARB
+    glMultiTexCoord3iv_c
+    glMultiTexCoord3ivARB_c
     glMultiTexCoord3s
     glMultiTexCoord3sARB
-    glMultiTexCoord3sv
-    glMultiTexCoord3svARB
+    glMultiTexCoord3sv_c
+    glMultiTexCoord3svARB_c
     glMultiTexCoord4d
     glMultiTexCoord4dARB
-    glMultiTexCoord4dv
-    glMultiTexCoord4dvARB
+    glMultiTexCoord4dv_c
+    glMultiTexCoord4dvARB_c
     glMultiTexCoord4f
     glMultiTexCoord4fARB
-    glMultiTexCoord4fv
-    glMultiTexCoord4fvARB
+    glMultiTexCoord4fv_c
+    glMultiTexCoord4fvARB_c
     glMultiTexCoord4hNV
-    glMultiTexCoord4hvNV
+    glMultiTexCoord4hvNV_c
     glMultiTexCoord4i
     glMultiTexCoord4iARB
-    glMultiTexCoord4iv
-    glMultiTexCoord4ivARB
+    glMultiTexCoord4iv_c
+    glMultiTexCoord4ivARB_c
     glMultiTexCoord4s
     glMultiTexCoord4sARB
-    glMultiTexCoord4sv
-    glMultiTexCoord4svARB
+    glMultiTexCoord4sv_c
+    glMultiTexCoord4svARB_c
     glMultiTexCoord4x
     glMultiTexCoordP1ui
-    glMultiTexCoordP1uiv
+    glMultiTexCoordP1uiv_c
     glMultiTexCoordP2ui
-    glMultiTexCoordP2uiv
+    glMultiTexCoordP2uiv_c
     glMultiTexCoordP3ui
-    glMultiTexCoordP3uiv
+    glMultiTexCoordP3uiv_c
     glMultiTexCoordP4ui
-    glMultiTexCoordP4uiv
-    glMultiTexCoordPointerEXT
+    glMultiTexCoordP4uiv_c
+    glMultiTexCoordPointerEXT_c
     glMultiTexEnvfEXT
-    glMultiTexEnvfvEXT
+    glMultiTexEnvfvEXT_c
     glMultiTexEnviEXT
-    glMultiTexEnvivEXT
+    glMultiTexEnvivEXT_c
     glMultiTexGendEXT
-    glMultiTexGendvEXT
+    glMultiTexGendvEXT_c
     glMultiTexGenfEXT
-    glMultiTexGenfvEXT
+    glMultiTexGenfvEXT_c
     glMultiTexGeniEXT
-    glMultiTexGenivEXT
-    glMultiTexImage1DEXT
-    glMultiTexImage2DEXT
-    glMultiTexImage3DEXT
+    glMultiTexGenivEXT_c
+    glMultiTexImage1DEXT_c
+    glMultiTexImage2DEXT_c
+    glMultiTexImage3DEXT_c
     glMultiTexParameterfEXT
-    glMultiTexParameterfvEXT
+    glMultiTexParameterfvEXT_c
     glMultiTexParameteriEXT
-    glMultiTexParameterIivEXT
-    glMultiTexParameterIuivEXT
-    glMultiTexParameterivEXT
+    glMultiTexParameterIivEXT_c
+    glMultiTexParameterIuivEXT_c
+    glMultiTexParameterivEXT_c
     glMultiTexRenderbufferEXT
-    glMultiTexSubImage1DEXT
-    glMultiTexSubImage2DEXT
-    glMultiTexSubImage3DEXT
-    glMultMatrixd
-    glMultMatrixf
-    glMultMatrixx
-    glMultTransposeMatrixd
-    glMultTransposeMatrixdARB
-    glMultTransposeMatrixf
-    glMultTransposeMatrixfARB
-    glNamedBufferData
-    glNamedBufferDataEXT
-    glNamedBufferStorage
-    glNamedBufferStorageEXT
-    glNamedBufferSubData
-    glNamedBufferSubDataEXT
+    glMultiTexSubImage1DEXT_c
+    glMultiTexSubImage2DEXT_c
+    glMultiTexSubImage3DEXT_c
+    glMultMatrixd_c
+    glMultMatrixf_c
+    glMultMatrixx_c
+    glMultTransposeMatrixd_c
+    glMultTransposeMatrixdARB_c
+    glMultTransposeMatrixf_c
+    glMultTransposeMatrixfARB_c
+    glNamedBufferData_c
+    glNamedBufferDataEXT_c
+    glNamedBufferStorage_c
+    glNamedBufferStorageEXT_c
+    glNamedBufferSubData_c
+    glNamedBufferSubDataEXT_c
     glNamedCopyBufferSubDataEXT
     glNamedFramebufferDrawBuffer
-    glNamedFramebufferDrawBuffers
+    glNamedFramebufferDrawBuffers_c
     glNamedFramebufferParameteri
     glNamedFramebufferParameteriEXT
     glNamedFramebufferReadBuffer
     glNamedFramebufferRenderbuffer
     glNamedFramebufferRenderbufferEXT
-    glNamedFramebufferSampleLocationsfvARB
-    glNamedFramebufferSampleLocationsfvNV
+    glNamedFramebufferSampleLocationsfvARB_c
+    glNamedFramebufferSampleLocationsfvNV_c
     glNamedFramebufferTexture
     glNamedFramebufferTexture1DEXT
     glNamedFramebufferTexture2DEXT
@@ -1492,60 +1491,60 @@ our @glFunctions = qw(
     glNamedFramebufferTextureLayer
     glNamedFramebufferTextureLayerEXT
     glNamedProgramLocalParameter4dEXT
-    glNamedProgramLocalParameter4dvEXT
+    glNamedProgramLocalParameter4dvEXT_c
     glNamedProgramLocalParameter4fEXT
-    glNamedProgramLocalParameter4fvEXT
+    glNamedProgramLocalParameter4fvEXT_c
     glNamedProgramLocalParameterI4iEXT
-    glNamedProgramLocalParameterI4ivEXT
+    glNamedProgramLocalParameterI4ivEXT_c
     glNamedProgramLocalParameterI4uiEXT
-    glNamedProgramLocalParameterI4uivEXT
-    glNamedProgramLocalParameters4fvEXT
-    glNamedProgramLocalParametersI4ivEXT
-    glNamedProgramLocalParametersI4uivEXT
-    glNamedProgramStringEXT
+    glNamedProgramLocalParameterI4uivEXT_c
+    glNamedProgramLocalParameters4fvEXT_c
+    glNamedProgramLocalParametersI4ivEXT_c
+    glNamedProgramLocalParametersI4uivEXT_c
+    glNamedProgramStringEXT_c
     glNamedRenderbufferStorage
     glNamedRenderbufferStorageEXT
     glNamedRenderbufferStorageMultisample
     glNamedRenderbufferStorageMultisampleCoverageEXT
     glNamedRenderbufferStorageMultisampleEXT
-    glNamedStringARB
+    glNamedStringARB_c
     glNewBufferRegion
     glNewList
-    glNewObjectBufferATI
+    glNewObjectBufferATI_c
     glNormal3b
-    glNormal3bv
+    glNormal3bv_c
     glNormal3d
-    glNormal3dv
+    glNormal3dv_c
     glNormal3f
-    glNormal3fv
+    glNormal3fv_c
     glNormal3fVertex3fSUN
-    glNormal3fVertex3fvSUN
+    glNormal3fVertex3fvSUN_c
     glNormal3hNV
-    glNormal3hvNV
+    glNormal3hvNV_c
     glNormal3i
-    glNormal3iv
+    glNormal3iv_c
     glNormal3s
-    glNormal3sv
+    glNormal3sv_c
     glNormal3x
     glNormalFormatNV
     glNormalP3ui
-    glNormalP3uiv
-    glNormalPointer
-    glNormalPointerEXT
-    glNormalPointerListIBM
-    glNormalPointervINTEL
+    glNormalP3uiv_c
+    glNormalPointer_c
+    glNormalPointerEXT_c
+    glNormalPointerListIBM_c
+    glNormalPointervINTEL_c
     glNormalStream3bATI
-    glNormalStream3bvATI
+    glNormalStream3bvATI_c
     glNormalStream3dATI
-    glNormalStream3dvATI
+    glNormalStream3dvATI_c
     glNormalStream3fATI
-    glNormalStream3fvATI
+    glNormalStream3fvATI_c
     glNormalStream3iATI
-    glNormalStream3ivATI
+    glNormalStream3ivATI_c
     glNormalStream3sATI
-    glNormalStream3svATI
-    glObjectLabel
-    glObjectPtrLabel
+    glNormalStream3svATI_c
+    glObjectLabel_c
+    glObjectPtrLabel_c
     glObjectPurgeableAPPLE
     glObjectUnpurgeableAPPLE
     glOrtho
@@ -1554,70 +1553,70 @@ our @glFunctions = qw(
     glOrthox
     glPassTexCoordATI
     glPassThrough
-    glPatchParameterfv
+    glPatchParameterfv_c
     glPatchParameteri
-    glPathColorGenNV
-    glPathCommandsNV
-    glPathCoordsNV
+    glPathColorGenNV_c
+    glPathCommandsNV_c
+    glPathCoordsNV_c
     glPathCoverDepthFuncNV
-    glPathDashArrayNV
+    glPathDashArrayNV_c
     glPathFogGenNV
-    glPathGlyphIndexArrayNV
-    glPathGlyphIndexRangeNV
-    glPathGlyphRangeNV
-    glPathGlyphsNV
-    glPathMemoryGlyphIndexArrayNV
+    glPathGlyphIndexArrayNV_c
+    glPathGlyphIndexRangeNV_c
+    glPathGlyphRangeNV_c
+    glPathGlyphsNV_c
+    glPathMemoryGlyphIndexArrayNV_c
     glPathParameterfNV
-    glPathParameterfvNV
+    glPathParameterfvNV_c
     glPathParameteriNV
-    glPathParameterivNV
+    glPathParameterivNV_c
     glPathStencilDepthOffsetNV
     glPathStencilFuncNV
-    glPathStringNV
-    glPathSubCommandsNV
-    glPathSubCoordsNV
-    glPathTexGenNV
+    glPathStringNV_c
+    glPathSubCommandsNV_c
+    glPathSubCoordsNV_c
+    glPathTexGenNV_c
     glPauseTransformFeedback
     glPauseTransformFeedbackNV
-    glPixelDataRangeNV
-    glPixelMapfv
-    glPixelMapuiv
-    glPixelMapusv
+    glPixelDataRangeNV_c
+    glPixelMapfv_c
+    glPixelMapuiv_c
+    glPixelMapusv_c
     glPixelStoref
     glPixelStorei
     glPixelTexGenSGIX
     glPixelTransferf
     glPixelTransferi
     glPixelTransformParameterfEXT
-    glPixelTransformParameterfvEXT
+    glPixelTransformParameterfvEXT_c
     glPixelTransformParameteriEXT
-    glPixelTransformParameterivEXT
+    glPixelTransformParameterivEXT_c
     glPixelZoom
     glPNTrianglesfATI
     glPNTrianglesiATI
-    glPointAlongPathNV
+    glPointAlongPathNV_c
     glPointParameterf
     glPointParameterfARB
     glPointParameterfEXT
-    glPointParameterfv
-    glPointParameterfvARB
-    glPointParameterfvEXT
+    glPointParameterfv_c
+    glPointParameterfvARB_c
+    glPointParameterfvEXT_c
     glPointParameteri
     glPointParameteriNV
-    glPointParameteriv
-    glPointParameterivNV
+    glPointParameteriv_c
+    glPointParameterivNV_c
     glPointParameterx
-    glPointParameterxv
+    glPointParameterxv_c
     glPointSize
-    glPointSizePointerOES
+    glPointSizePointerOES_c
     glPointSizex
-    glPollAsyncSGIX
+    glPollAsyncSGIX_c
     glPolygonMode
     glPolygonOffset
     glPolygonOffsetClampEXT
     glPolygonOffsetEXT
     glPolygonOffsetx
-    glPolygonStipple
+    glPolygonStipple_c
     glPopAttrib
     glPopClientAttrib
     glPopDebugGroup
@@ -1630,223 +1629,223 @@ our @glFunctions = qw(
     glPrimitiveRestartIndex
     glPrimitiveRestartIndexNV
     glPrimitiveRestartNV
-    glPrioritizeTextures
-    glPrioritizeTexturesEXT
-    glProgramBinary
-    glProgramBufferParametersfvNV
-    glProgramBufferParametersIivNV
-    glProgramBufferParametersIuivNV
+    glPrioritizeTextures_c
+    glPrioritizeTexturesEXT_c
+    glProgramBinary_c
+    glProgramBufferParametersfvNV_c
+    glProgramBufferParametersIivNV_c
+    glProgramBufferParametersIuivNV_c
     glProgramEnvParameter4dARB
-    glProgramEnvParameter4dvARB
+    glProgramEnvParameter4dvARB_c
     glProgramEnvParameter4fARB
-    glProgramEnvParameter4fvARB
+    glProgramEnvParameter4fvARB_c
     glProgramEnvParameterI4iNV
-    glProgramEnvParameterI4ivNV
+    glProgramEnvParameterI4ivNV_c
     glProgramEnvParameterI4uiNV
-    glProgramEnvParameterI4uivNV
-    glProgramEnvParameters4fvEXT
-    glProgramEnvParametersI4ivNV
-    glProgramEnvParametersI4uivNV
+    glProgramEnvParameterI4uivNV_c
+    glProgramEnvParameters4fvEXT_c
+    glProgramEnvParametersI4ivNV_c
+    glProgramEnvParametersI4uivNV_c
     glProgramLocalParameter4dARB
-    glProgramLocalParameter4dvARB
+    glProgramLocalParameter4dvARB_c
     glProgramLocalParameter4fARB
-    glProgramLocalParameter4fvARB
+    glProgramLocalParameter4fvARB_c
     glProgramLocalParameterI4iNV
-    glProgramLocalParameterI4ivNV
+    glProgramLocalParameterI4ivNV_c
     glProgramLocalParameterI4uiNV
-    glProgramLocalParameterI4uivNV
-    glProgramLocalParameters4fvEXT
-    glProgramLocalParametersI4ivNV
-    glProgramLocalParametersI4uivNV
-    glProgramNamedParameter4dNV
-    glProgramNamedParameter4dvNV
-    glProgramNamedParameter4fNV
-    glProgramNamedParameter4fvNV
+    glProgramLocalParameterI4uivNV_c
+    glProgramLocalParameters4fvEXT_c
+    glProgramLocalParametersI4ivNV_c
+    glProgramLocalParametersI4uivNV_c
+    glProgramNamedParameter4dNV_c
+    glProgramNamedParameter4dvNV_c
+    glProgramNamedParameter4fNV_c
+    glProgramNamedParameter4fvNV_c
     glProgramParameter4dNV
-    glProgramParameter4dvNV
+    glProgramParameter4dvNV_c
     glProgramParameter4fNV
-    glProgramParameter4fvNV
+    glProgramParameter4fvNV_c
     glProgramParameteri
     glProgramParameteriARB
     glProgramParameteriEXT
-    glProgramParameters4dvNV
-    glProgramParameters4fvNV
-    glProgramPathFragmentInputGenNV
-    glProgramStringARB
+    glProgramParameters4dvNV_c
+    glProgramParameters4fvNV_c
+    glProgramPathFragmentInputGenNV_c
+    glProgramStringARB_c
     glProgramUniform1d
-    glProgramUniform1dv
+    glProgramUniform1dv_c
     glProgramUniform1f
     glProgramUniform1fEXT
-    glProgramUniform1fv
-    glProgramUniform1fvEXT
+    glProgramUniform1fv_c
+    glProgramUniform1fvEXT_c
     glProgramUniform1i
     glProgramUniform1i64ARB
     glProgramUniform1i64NV
-    glProgramUniform1i64vARB
-    glProgramUniform1i64vNV
+    glProgramUniform1i64vARB_c
+    glProgramUniform1i64vNV_c
     glProgramUniform1iEXT
-    glProgramUniform1iv
-    glProgramUniform1ivEXT
+    glProgramUniform1iv_c
+    glProgramUniform1ivEXT_c
     glProgramUniform1ui
     glProgramUniform1ui64ARB
     glProgramUniform1ui64NV
-    glProgramUniform1ui64vARB
-    glProgramUniform1ui64vNV
+    glProgramUniform1ui64vARB_c
+    glProgramUniform1ui64vNV_c
     glProgramUniform1uiEXT
-    glProgramUniform1uiv
-    glProgramUniform1uivEXT
+    glProgramUniform1uiv_c
+    glProgramUniform1uivEXT_c
     glProgramUniform2d
-    glProgramUniform2dv
+    glProgramUniform2dv_c
     glProgramUniform2f
     glProgramUniform2fEXT
-    glProgramUniform2fv
-    glProgramUniform2fvEXT
+    glProgramUniform2fv_c
+    glProgramUniform2fvEXT_c
     glProgramUniform2i
     glProgramUniform2i64ARB
     glProgramUniform2i64NV
-    glProgramUniform2i64vARB
-    glProgramUniform2i64vNV
+    glProgramUniform2i64vARB_c
+    glProgramUniform2i64vNV_c
     glProgramUniform2iEXT
-    glProgramUniform2iv
-    glProgramUniform2ivEXT
+    glProgramUniform2iv_c
+    glProgramUniform2ivEXT_c
     glProgramUniform2ui
     glProgramUniform2ui64ARB
     glProgramUniform2ui64NV
-    glProgramUniform2ui64vARB
-    glProgramUniform2ui64vNV
+    glProgramUniform2ui64vARB_c
+    glProgramUniform2ui64vNV_c
     glProgramUniform2uiEXT
-    glProgramUniform2uiv
-    glProgramUniform2uivEXT
+    glProgramUniform2uiv_c
+    glProgramUniform2uivEXT_c
     glProgramUniform3d
-    glProgramUniform3dv
+    glProgramUniform3dv_c
     glProgramUniform3f
     glProgramUniform3fEXT
-    glProgramUniform3fv
-    glProgramUniform3fvEXT
+    glProgramUniform3fv_c
+    glProgramUniform3fvEXT_c
     glProgramUniform3i
     glProgramUniform3i64ARB
     glProgramUniform3i64NV
-    glProgramUniform3i64vARB
-    glProgramUniform3i64vNV
+    glProgramUniform3i64vARB_c
+    glProgramUniform3i64vNV_c
     glProgramUniform3iEXT
-    glProgramUniform3iv
-    glProgramUniform3ivEXT
+    glProgramUniform3iv_c
+    glProgramUniform3ivEXT_c
     glProgramUniform3ui
     glProgramUniform3ui64ARB
     glProgramUniform3ui64NV
-    glProgramUniform3ui64vARB
-    glProgramUniform3ui64vNV
+    glProgramUniform3ui64vARB_c
+    glProgramUniform3ui64vNV_c
     glProgramUniform3uiEXT
-    glProgramUniform3uiv
-    glProgramUniform3uivEXT
+    glProgramUniform3uiv_c
+    glProgramUniform3uivEXT_c
     glProgramUniform4d
-    glProgramUniform4dv
+    glProgramUniform4dv_c
     glProgramUniform4f
     glProgramUniform4fEXT
-    glProgramUniform4fv
-    glProgramUniform4fvEXT
+    glProgramUniform4fv_c
+    glProgramUniform4fvEXT_c
     glProgramUniform4i
     glProgramUniform4i64ARB
     glProgramUniform4i64NV
-    glProgramUniform4i64vARB
-    glProgramUniform4i64vNV
+    glProgramUniform4i64vARB_c
+    glProgramUniform4i64vNV_c
     glProgramUniform4iEXT
-    glProgramUniform4iv
-    glProgramUniform4ivEXT
+    glProgramUniform4iv_c
+    glProgramUniform4ivEXT_c
     glProgramUniform4ui
     glProgramUniform4ui64ARB
     glProgramUniform4ui64NV
-    glProgramUniform4ui64vARB
-    glProgramUniform4ui64vNV
+    glProgramUniform4ui64vARB_c
+    glProgramUniform4ui64vNV_c
     glProgramUniform4uiEXT
-    glProgramUniform4uiv
-    glProgramUniform4uivEXT
+    glProgramUniform4uiv_c
+    glProgramUniform4uivEXT_c
     glProgramUniformHandleui64ARB
     glProgramUniformHandleui64NV
-    glProgramUniformHandleui64vARB
-    glProgramUniformHandleui64vNV
-    glProgramUniformMatrix2dv
-    glProgramUniformMatrix2fv
-    glProgramUniformMatrix2fvEXT
-    glProgramUniformMatrix2x3dv
-    glProgramUniformMatrix2x3fv
-    glProgramUniformMatrix2x3fvEXT
-    glProgramUniformMatrix2x4dv
-    glProgramUniformMatrix2x4fv
-    glProgramUniformMatrix2x4fvEXT
-    glProgramUniformMatrix3dv
-    glProgramUniformMatrix3fv
-    glProgramUniformMatrix3fvEXT
-    glProgramUniformMatrix3x2dv
-    glProgramUniformMatrix3x2fv
-    glProgramUniformMatrix3x2fvEXT
-    glProgramUniformMatrix3x4dv
-    glProgramUniformMatrix3x4fv
-    glProgramUniformMatrix3x4fvEXT
-    glProgramUniformMatrix4dv
-    glProgramUniformMatrix4fv
-    glProgramUniformMatrix4fvEXT
-    glProgramUniformMatrix4x2dv
-    glProgramUniformMatrix4x2fv
-    glProgramUniformMatrix4x2fvEXT
-    glProgramUniformMatrix4x3dv
-    glProgramUniformMatrix4x3fv
-    glProgramUniformMatrix4x3fvEXT
+    glProgramUniformHandleui64vARB_c
+    glProgramUniformHandleui64vNV_c
+    glProgramUniformMatrix2dv_c
+    glProgramUniformMatrix2fv_c
+    glProgramUniformMatrix2fvEXT_c
+    glProgramUniformMatrix2x3dv_c
+    glProgramUniformMatrix2x3fv_c
+    glProgramUniformMatrix2x3fvEXT_c
+    glProgramUniformMatrix2x4dv_c
+    glProgramUniformMatrix2x4fv_c
+    glProgramUniformMatrix2x4fvEXT_c
+    glProgramUniformMatrix3dv_c
+    glProgramUniformMatrix3fv_c
+    glProgramUniformMatrix3fvEXT_c
+    glProgramUniformMatrix3x2dv_c
+    glProgramUniformMatrix3x2fv_c
+    glProgramUniformMatrix3x2fvEXT_c
+    glProgramUniformMatrix3x4dv_c
+    glProgramUniformMatrix3x4fv_c
+    glProgramUniformMatrix3x4fvEXT_c
+    glProgramUniformMatrix4dv_c
+    glProgramUniformMatrix4fv_c
+    glProgramUniformMatrix4fvEXT_c
+    glProgramUniformMatrix4x2dv_c
+    glProgramUniformMatrix4x2fv_c
+    glProgramUniformMatrix4x2fvEXT_c
+    glProgramUniformMatrix4x3dv_c
+    glProgramUniformMatrix4x3fv_c
+    glProgramUniformMatrix4x3fvEXT_c
     glProgramUniformui64NV
-    glProgramUniformui64vNV
+    glProgramUniformui64vNV_c
     glProgramVertexLimitNV
     glProvokingVertex
     glProvokingVertexEXT
     glPushAttrib
     glPushClientAttrib
     glPushClientAttribDefaultEXT
-    glPushDebugGroup
-    glPushGroupMarkerEXT
+    glPushDebugGroup_c
+    glPushGroupMarkerEXT_c
     glPushMatrix
     glPushName
     glQueryCounter
     glQueryCounterANGLE
     glQueryObjectParameteruiAMD
     glRasterPos2d
-    glRasterPos2dv
+    glRasterPos2dv_c
     glRasterPos2f
-    glRasterPos2fv
+    glRasterPos2fv_c
     glRasterPos2i
-    glRasterPos2iv
+    glRasterPos2iv_c
     glRasterPos2s
-    glRasterPos2sv
+    glRasterPos2sv_c
     glRasterPos3d
-    glRasterPos3dv
+    glRasterPos3dv_c
     glRasterPos3f
-    glRasterPos3fv
+    glRasterPos3fv_c
     glRasterPos3i
-    glRasterPos3iv
+    glRasterPos3iv_c
     glRasterPos3s
-    glRasterPos3sv
+    glRasterPos3sv_c
     glRasterPos4d
-    glRasterPos4dv
+    glRasterPos4dv_c
     glRasterPos4f
-    glRasterPos4fv
+    glRasterPos4fv_c
     glRasterPos4i
-    glRasterPos4iv
+    glRasterPos4iv_c
     glRasterPos4s
-    glRasterPos4sv
+    glRasterPos4sv_c
     glRasterSamplesEXT
     glReadBuffer
     glReadBufferRegion
-    glReadnPixels
-    glReadnPixelsARB
-    glReadPixels
-    glReadVideoPixelsSUN
+    glReadnPixels_c
+    glReadnPixelsARB_c
+    glReadPixels_c
+    glReadVideoPixelsSUN_c
     glRectd
-    glRectdv
+    glRectdv_c
     glRectf
-    glRectfv
+    glRectfv_c
     glRecti
-    glRectiv
+    glRectiv_c
     glRects
-    glRectsv
-    glReferencePlaneSGIX
+    glRectsv_c
+    glReferencePlaneSGIX_c
     glReleaseShaderCompiler
     glRenderbufferStorage
     glRenderbufferStorageEXT
@@ -1856,30 +1855,30 @@ our @glFunctions = qw(
     glRenderbufferStorageMultisampleEXT
     glRenderGpuMaskNV
     glRenderMode
-    glReplacementCodePointerSUN
+    glReplacementCodePointerSUN_c
     glReplacementCodeubSUN
-    glReplacementCodeubvSUN
+    glReplacementCodeubvSUN_c
     glReplacementCodeuiColor3fVertex3fSUN
-    glReplacementCodeuiColor3fVertex3fvSUN
+    glReplacementCodeuiColor3fVertex3fvSUN_c
     glReplacementCodeuiColor4fNormal3fVertex3fSUN
-    glReplacementCodeuiColor4fNormal3fVertex3fvSUN
+    glReplacementCodeuiColor4fNormal3fVertex3fvSUN_c
     glReplacementCodeuiColor4ubVertex3fSUN
-    glReplacementCodeuiColor4ubVertex3fvSUN
+    glReplacementCodeuiColor4ubVertex3fvSUN_c
     glReplacementCodeuiNormal3fVertex3fSUN
-    glReplacementCodeuiNormal3fVertex3fvSUN
+    glReplacementCodeuiNormal3fVertex3fvSUN_c
     glReplacementCodeuiSUN
     glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN
-    glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN
+    glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN_c
     glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN
-    glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN
+    glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN_c
     glReplacementCodeuiTexCoord2fVertex3fSUN
-    glReplacementCodeuiTexCoord2fVertex3fvSUN
+    glReplacementCodeuiTexCoord2fVertex3fvSUN_c
     glReplacementCodeuiVertex3fSUN
-    glReplacementCodeuiVertex3fvSUN
-    glReplacementCodeuivSUN
+    glReplacementCodeuiVertex3fvSUN_c
+    glReplacementCodeuivSUN_c
     glReplacementCodeusSUN
-    glReplacementCodeusvSUN
-    glRequestResidentProgramsNV
+    glReplacementCodeusvSUN_c
+    glRequestResidentProgramsNV_c
     glResetHistogram
     glResetHistogramEXT
     glResetMinmax
@@ -1901,86 +1900,86 @@ our @glFunctions = qw(
     glSamplePatternEXT
     glSamplePatternSGIS
     glSamplerParameterf
-    glSamplerParameterfv
+    glSamplerParameterfv_c
     glSamplerParameteri
-    glSamplerParameterIiv
-    glSamplerParameterIuiv
-    glSamplerParameteriv
+    glSamplerParameterIiv_c
+    glSamplerParameterIuiv_c
+    glSamplerParameteriv_c
     glScaled
     glScalef
     glScalex
     glScissor
-    glScissorArrayv
+    glScissorArrayv_c
     glScissorIndexed
-    glScissorIndexedv
+    glScissorIndexedv_c
     glSecondaryColor3b
     glSecondaryColor3bEXT
-    glSecondaryColor3bv
-    glSecondaryColor3bvEXT
+    glSecondaryColor3bv_c
+    glSecondaryColor3bvEXT_c
     glSecondaryColor3d
     glSecondaryColor3dEXT
-    glSecondaryColor3dv
-    glSecondaryColor3dvEXT
+    glSecondaryColor3dv_c
+    glSecondaryColor3dvEXT_c
     glSecondaryColor3f
     glSecondaryColor3fEXT
-    glSecondaryColor3fv
-    glSecondaryColor3fvEXT
+    glSecondaryColor3fv_c
+    glSecondaryColor3fvEXT_c
     glSecondaryColor3hNV
-    glSecondaryColor3hvNV
+    glSecondaryColor3hvNV_c
     glSecondaryColor3i
     glSecondaryColor3iEXT
-    glSecondaryColor3iv
-    glSecondaryColor3ivEXT
+    glSecondaryColor3iv_c
+    glSecondaryColor3ivEXT_c
     glSecondaryColor3s
     glSecondaryColor3sEXT
-    glSecondaryColor3sv
-    glSecondaryColor3svEXT
+    glSecondaryColor3sv_c
+    glSecondaryColor3svEXT_c
     glSecondaryColor3ub
     glSecondaryColor3ubEXT
-    glSecondaryColor3ubv
-    glSecondaryColor3ubvEXT
+    glSecondaryColor3ubv_c
+    glSecondaryColor3ubvEXT_c
     glSecondaryColor3ui
     glSecondaryColor3uiEXT
-    glSecondaryColor3uiv
-    glSecondaryColor3uivEXT
+    glSecondaryColor3uiv_c
+    glSecondaryColor3uivEXT_c
     glSecondaryColor3us
     glSecondaryColor3usEXT
-    glSecondaryColor3usv
-    glSecondaryColor3usvEXT
+    glSecondaryColor3usv_c
+    glSecondaryColor3usvEXT_c
     glSecondaryColorFormatNV
     glSecondaryColorP3ui
-    glSecondaryColorP3uiv
-    glSecondaryColorPointer
-    glSecondaryColorPointerEXT
-    glSecondaryColorPointerListIBM
-    glSelectBuffer
-    glSelectPerfMonitorCountersAMD
-    glSeparableFilter2D
-    glSeparableFilter2DEXT
+    glSecondaryColorP3uiv_c
+    glSecondaryColorPointer_c
+    glSecondaryColorPointerEXT_c
+    glSecondaryColorPointerListIBM_c
+    glSelectBuffer_c
+    glSelectPerfMonitorCountersAMD_c
+    glSeparableFilter2D_c
+    glSeparableFilter2DEXT_c
     glSetFenceAPPLE
     glSetFenceNV
-    glSetFragmentShaderConstantATI
-    glSetInvariantEXT
-    glSetLocalConstantEXT
-    glSetMultisamplefvAMD
+    glSetFragmentShaderConstantATI_c
+    glSetInvariantEXT_c
+    glSetLocalConstantEXT_c
+    glSetMultisamplefvAMD_c
     glShadeModel
-    glShaderBinary
+    glShaderBinary_c
     glShaderOp1EXT
     glShaderOp2EXT
     glShaderOp3EXT
-    glShaderSource
-    glShaderSourceARB
+    glShaderSource_c
+    glShaderSourceARB_c
     glShaderStorageBlockBinding
-    glSharpenTexFuncSGIS
+    glSharpenTexFuncSGIS_c
     glSignalVkFenceNV
     glSignalVkSemaphoreNV
-    glSpecializeShaderARB
+    glSpecializeShaderARB_c
     glSpriteParameterfSGIX
-    glSpriteParameterfvSGIX
+    glSpriteParameterfvSGIX_c
     glSpriteParameteriSGIX
-    glSpriteParameterivSGIX
+    glSpriteParameterivSGIX_c
     glStateCaptureNV
-    glStencilFillPathInstancedNV
+    glStencilFillPathInstancedNV_c
     glStencilFillPathNV
     glStencilFunc
     glStencilFuncSeparate
@@ -1991,18 +1990,18 @@ our @glFunctions = qw(
     glStencilOpSeparate
     glStencilOpSeparateATI
     glStencilOpValueAMD
-    glStencilStrokePathInstancedNV
+    glStencilStrokePathInstancedNV_c
     glStencilStrokePathNV
-    glStencilThenCoverFillPathInstancedNV
+    glStencilThenCoverFillPathInstancedNV_c
     glStencilThenCoverFillPathNV
-    glStencilThenCoverStrokePathInstancedNV
+    glStencilThenCoverStrokePathInstancedNV_c
     glStencilThenCoverStrokePathNV
-    glStringMarkerGREMEDY
+    glStringMarkerGREMEDY_c
     glSubpixelPrecisionBiasNV
     glSwizzleEXT
     glSyncTextureINTEL
     glTagSampleBufferSGIX
-    glTangentPointerEXT
+    glTangentPointerEXT_c
     glTbufferMask3DFX
     glTessellationFactorAMD
     glTessellationModeAMD
@@ -2013,108 +2012,108 @@ our @glFunctions = qw(
     glTexBufferARB
     glTexBufferEXT
     glTexBufferRange
-    glTexBumpParameterfvATI
-    glTexBumpParameterivATI
+    glTexBumpParameterfvATI_c
+    glTexBumpParameterivATI_c
     glTexCoord1d
-    glTexCoord1dv
+    glTexCoord1dv_c
     glTexCoord1f
-    glTexCoord1fv
+    glTexCoord1fv_c
     glTexCoord1hNV
-    glTexCoord1hvNV
+    glTexCoord1hvNV_c
     glTexCoord1i
-    glTexCoord1iv
+    glTexCoord1iv_c
     glTexCoord1s
-    glTexCoord1sv
+    glTexCoord1sv_c
     glTexCoord2d
-    glTexCoord2dv
+    glTexCoord2dv_c
     glTexCoord2f
     glTexCoord2fColor3fVertex3fSUN
-    glTexCoord2fColor3fVertex3fvSUN
+    glTexCoord2fColor3fVertex3fvSUN_c
     glTexCoord2fColor4fNormal3fVertex3fSUN
-    glTexCoord2fColor4fNormal3fVertex3fvSUN
+    glTexCoord2fColor4fNormal3fVertex3fvSUN_c
     glTexCoord2fColor4ubVertex3fSUN
-    glTexCoord2fColor4ubVertex3fvSUN
+    glTexCoord2fColor4ubVertex3fvSUN_c
     glTexCoord2fNormal3fVertex3fSUN
-    glTexCoord2fNormal3fVertex3fvSUN
-    glTexCoord2fv
+    glTexCoord2fNormal3fVertex3fvSUN_c
+    glTexCoord2fv_c
     glTexCoord2fVertex3fSUN
-    glTexCoord2fVertex3fvSUN
+    glTexCoord2fVertex3fvSUN_c
     glTexCoord2hNV
-    glTexCoord2hvNV
+    glTexCoord2hvNV_c
     glTexCoord2i
-    glTexCoord2iv
+    glTexCoord2iv_c
     glTexCoord2s
-    glTexCoord2sv
+    glTexCoord2sv_c
     glTexCoord3d
-    glTexCoord3dv
+    glTexCoord3dv_c
     glTexCoord3f
-    glTexCoord3fv
+    glTexCoord3fv_c
     glTexCoord3hNV
-    glTexCoord3hvNV
+    glTexCoord3hvNV_c
     glTexCoord3i
-    glTexCoord3iv
+    glTexCoord3iv_c
     glTexCoord3s
-    glTexCoord3sv
+    glTexCoord3sv_c
     glTexCoord4d
-    glTexCoord4dv
+    glTexCoord4dv_c
     glTexCoord4f
     glTexCoord4fColor4fNormal3fVertex4fSUN
-    glTexCoord4fColor4fNormal3fVertex4fvSUN
-    glTexCoord4fv
+    glTexCoord4fColor4fNormal3fVertex4fvSUN_c
+    glTexCoord4fv_c
     glTexCoord4fVertex4fSUN
-    glTexCoord4fVertex4fvSUN
+    glTexCoord4fVertex4fvSUN_c
     glTexCoord4hNV
-    glTexCoord4hvNV
+    glTexCoord4hvNV_c
     glTexCoord4i
-    glTexCoord4iv
+    glTexCoord4iv_c
     glTexCoord4s
-    glTexCoord4sv
+    glTexCoord4sv_c
     glTexCoordFormatNV
     glTexCoordP1ui
-    glTexCoordP1uiv
+    glTexCoordP1uiv_c
     glTexCoordP2ui
-    glTexCoordP2uiv
+    glTexCoordP2uiv_c
     glTexCoordP3ui
-    glTexCoordP3uiv
+    glTexCoordP3uiv_c
     glTexCoordP4ui
-    glTexCoordP4uiv
-    glTexCoordPointer
-    glTexCoordPointerEXT
-    glTexCoordPointerListIBM
-    glTexCoordPointervINTEL
+    glTexCoordP4uiv_c
+    glTexCoordPointer_c
+    glTexCoordPointerEXT_c
+    glTexCoordPointerListIBM_c
+    glTexCoordPointervINTEL_c
     glTexEnvf
-    glTexEnvfv
+    glTexEnvfv_c
     glTexEnvi
-    glTexEnviv
+    glTexEnviv_c
     glTexEnvx
-    glTexEnvxv
-    glTexFilterFuncSGIS
+    glTexEnvxv_c
+    glTexFilterFuncSGIS_c
     glTexGend
-    glTexGendv
+    glTexGendv_c
     glTexGenf
-    glTexGenfv
+    glTexGenfv_c
     glTexGeni
-    glTexGeniv
-    glTexImage1D
-    glTexImage2D
+    glTexGeniv_c
+    glTexImage1D_c
+    glTexImage2D_c
     glTexImage2DMultisample
     glTexImage2DMultisampleCoverageNV
-    glTexImage3D
-    glTexImage3DEXT
+    glTexImage3D_c
+    glTexImage3DEXT_c
     glTexImage3DMultisample
     glTexImage3DMultisampleCoverageNV
-    glTexImage4DSGIS
+    glTexImage4DSGIS_c
     glTexPageCommitmentARB
     glTexParameterf
-    glTexParameterfv
+    glTexParameterfv_c
     glTexParameteri
-    glTexParameterIiv
-    glTexParameterIivEXT
-    glTexParameterIuiv
-    glTexParameterIuivEXT
-    glTexParameteriv
+    glTexParameterIiv_c
+    glTexParameterIivEXT_c
+    glTexParameterIuiv_c
+    glTexParameterIuivEXT_c
+    glTexParameteriv_c
     glTexParameterx
-    glTexParameterxv
+    glTexParameterxv_c
     glTexRenderbufferNV
     glTexScissorFuncINTEL
     glTexScissorINTEL
@@ -2124,13 +2123,13 @@ our @glFunctions = qw(
     glTexStorage3D
     glTexStorage3DMultisample
     glTexStorageSparseAMD
-    glTexSubImage1D
-    glTexSubImage1DEXT
-    glTexSubImage2D
-    glTexSubImage2DEXT
-    glTexSubImage3D
-    glTexSubImage3DEXT
-    glTexSubImage4DSGIS
+    glTexSubImage1D_c
+    glTexSubImage1DEXT_c
+    glTexSubImage2D_c
+    glTexSubImage2DEXT_c
+    glTexSubImage3D_c
+    glTexSubImage3DEXT_c
+    glTexSubImage4DSGIS_c
     glTextureBarrier
     glTextureBarrierNV
     glTextureBuffer
@@ -2138,11 +2137,11 @@ our @glFunctions = qw(
     glTextureBufferRange
     glTextureBufferRangeEXT
     glTextureFogSGIX
-    glTextureImage1DEXT
-    glTextureImage2DEXT
+    glTextureImage1DEXT_c
+    glTextureImage2DEXT_c
     glTextureImage2DMultisampleCoverageNV
     glTextureImage2DMultisampleNV
-    glTextureImage3DEXT
+    glTextureImage3DEXT_c
     glTextureImage3DMultisampleCoverageNV
     glTextureImage3DMultisampleNV
     glTextureLightEXT
@@ -2151,17 +2150,17 @@ our @glFunctions = qw(
     glTexturePageCommitmentEXT
     glTextureParameterf
     glTextureParameterfEXT
-    glTextureParameterfv
-    glTextureParameterfvEXT
+    glTextureParameterfv_c
+    glTextureParameterfvEXT_c
     glTextureParameteri
     glTextureParameteriEXT
-    glTextureParameterIiv
-    glTextureParameterIivEXT
-    glTextureParameterIuiv
-    glTextureParameterIuivEXT
-    glTextureParameteriv
-    glTextureParameterivEXT
-    glTextureRangeAPPLE
+    glTextureParameterIiv_c
+    glTextureParameterIivEXT_c
+    glTextureParameterIuiv_c
+    glTextureParameterIuivEXT_c
+    glTextureParameteriv_c
+    glTextureParameterivEXT_c
+    glTextureRangeAPPLE_c
     glTextureRenderbufferEXT
     glTextureStorage1D
     glTextureStorage1DEXT
@@ -2174,142 +2173,142 @@ our @glFunctions = qw(
     glTextureStorage3DMultisample
     glTextureStorage3DMultisampleEXT
     glTextureStorageSparseAMD
-    glTextureSubImage1D
-    glTextureSubImage1DEXT
-    glTextureSubImage2D
-    glTextureSubImage2DEXT
-    glTextureSubImage3D
-    glTextureSubImage3DEXT
+    glTextureSubImage1D_c
+    glTextureSubImage1DEXT_c
+    glTextureSubImage2D_c
+    glTextureSubImage2DEXT_c
+    glTextureSubImage3D_c
+    glTextureSubImage3DEXT_c
     glTextureView
     glTrackMatrixNV
-    glTransformFeedbackAttribsNV
+    glTransformFeedbackAttribsNV_c
     glTransformFeedbackBufferBase
     glTransformFeedbackBufferRange
-    glTransformFeedbackVaryings
-    glTransformFeedbackVaryingsEXT
-    glTransformFeedbackVaryingsNV
-    glTransformPathNV
+    glTransformFeedbackVaryings_c
+    glTransformFeedbackVaryingsEXT_c
+    glTransformFeedbackVaryingsNV_c
+    glTransformPathNV_c
     glTranslated
     glTranslatef
     glTranslatex
     glUniform1d
-    glUniform1dv
+    glUniform1dv_c
     glUniform1f
     glUniform1fARB
-    glUniform1fv
-    glUniform1fvARB
+    glUniform1fv_c
+    glUniform1fvARB_c
     glUniform1i
     glUniform1i64ARB
     glUniform1i64NV
-    glUniform1i64vARB
-    glUniform1i64vNV
+    glUniform1i64vARB_c
+    glUniform1i64vNV_c
     glUniform1iARB
-    glUniform1iv
-    glUniform1ivARB
+    glUniform1iv_c
+    glUniform1ivARB_c
     glUniform1ui
     glUniform1ui64ARB
     glUniform1ui64NV
-    glUniform1ui64vARB
-    glUniform1ui64vNV
+    glUniform1ui64vARB_c
+    glUniform1ui64vNV_c
     glUniform1uiEXT
-    glUniform1uiv
-    glUniform1uivEXT
+    glUniform1uiv_c
+    glUniform1uivEXT_c
     glUniform2d
-    glUniform2dv
+    glUniform2dv_c
     glUniform2f
     glUniform2fARB
-    glUniform2fv
-    glUniform2fvARB
+    glUniform2fv_c
+    glUniform2fvARB_c
     glUniform2i
     glUniform2i64ARB
     glUniform2i64NV
-    glUniform2i64vARB
-    glUniform2i64vNV
+    glUniform2i64vARB_c
+    glUniform2i64vNV_c
     glUniform2iARB
-    glUniform2iv
-    glUniform2ivARB
+    glUniform2iv_c
+    glUniform2ivARB_c
     glUniform2ui
     glUniform2ui64ARB
     glUniform2ui64NV
-    glUniform2ui64vARB
-    glUniform2ui64vNV
+    glUniform2ui64vARB_c
+    glUniform2ui64vNV_c
     glUniform2uiEXT
-    glUniform2uiv
-    glUniform2uivEXT
+    glUniform2uiv_c
+    glUniform2uivEXT_c
     glUniform3d
-    glUniform3dv
+    glUniform3dv_c
     glUniform3f
     glUniform3fARB
-    glUniform3fv
-    glUniform3fvARB
+    glUniform3fv_c
+    glUniform3fvARB_c
     glUniform3i
     glUniform3i64ARB
     glUniform3i64NV
-    glUniform3i64vARB
-    glUniform3i64vNV
+    glUniform3i64vARB_c
+    glUniform3i64vNV_c
     glUniform3iARB
-    glUniform3iv
-    glUniform3ivARB
+    glUniform3iv_c
+    glUniform3ivARB_c
     glUniform3ui
     glUniform3ui64ARB
     glUniform3ui64NV
-    glUniform3ui64vARB
-    glUniform3ui64vNV
+    glUniform3ui64vARB_c
+    glUniform3ui64vNV_c
     glUniform3uiEXT
-    glUniform3uiv
-    glUniform3uivEXT
+    glUniform3uiv_c
+    glUniform3uivEXT_c
     glUniform4d
-    glUniform4dv
+    glUniform4dv_c
     glUniform4f
     glUniform4fARB
-    glUniform4fv
-    glUniform4fvARB
+    glUniform4fv_c
+    glUniform4fvARB_c
     glUniform4i
     glUniform4i64ARB
     glUniform4i64NV
-    glUniform4i64vARB
-    glUniform4i64vNV
+    glUniform4i64vARB_c
+    glUniform4i64vNV_c
     glUniform4iARB
-    glUniform4iv
-    glUniform4ivARB
+    glUniform4iv_c
+    glUniform4ivARB_c
     glUniform4ui
     glUniform4ui64ARB
     glUniform4ui64NV
-    glUniform4ui64vARB
-    glUniform4ui64vNV
+    glUniform4ui64vARB_c
+    glUniform4ui64vNV_c
     glUniform4uiEXT
-    glUniform4uiv
-    glUniform4uivEXT
+    glUniform4uiv_c
+    glUniform4uivEXT_c
     glUniformBlockBinding
     glUniformBufferEXT
     glUniformHandleui64ARB
     glUniformHandleui64NV
-    glUniformHandleui64vARB
-    glUniformHandleui64vNV
-    glUniformMatrix2dv
-    glUniformMatrix2fv
-    glUniformMatrix2fvARB
-    glUniformMatrix2x3dv
-    glUniformMatrix2x3fv
-    glUniformMatrix2x4dv
-    glUniformMatrix2x4fv
-    glUniformMatrix3dv
-    glUniformMatrix3fv
-    glUniformMatrix3fvARB
-    glUniformMatrix3x2dv
-    glUniformMatrix3x2fv
-    glUniformMatrix3x4dv
-    glUniformMatrix3x4fv
-    glUniformMatrix4dv
-    glUniformMatrix4fv
-    glUniformMatrix4fvARB
-    glUniformMatrix4x2dv
-    glUniformMatrix4x2fv
-    glUniformMatrix4x3dv
-    glUniformMatrix4x3fv
-    glUniformSubroutinesuiv
+    glUniformHandleui64vARB_c
+    glUniformHandleui64vNV_c
+    glUniformMatrix2dv_c
+    glUniformMatrix2fv_c
+    glUniformMatrix2fvARB_c
+    glUniformMatrix2x3dv_c
+    glUniformMatrix2x3fv_c
+    glUniformMatrix2x4dv_c
+    glUniformMatrix2x4fv_c
+    glUniformMatrix3dv_c
+    glUniformMatrix3fv_c
+    glUniformMatrix3fvARB_c
+    glUniformMatrix3x2dv_c
+    glUniformMatrix3x2fv_c
+    glUniformMatrix3x4dv_c
+    glUniformMatrix3x4fv_c
+    glUniformMatrix4dv_c
+    glUniformMatrix4fv_c
+    glUniformMatrix4fvARB_c
+    glUniformMatrix4x2dv_c
+    glUniformMatrix4x2fv_c
+    glUniformMatrix4x3dv_c
+    glUniformMatrix4x3fv_c
+    glUniformSubroutinesuiv_c
     glUniformui64NV
-    glUniformui64vNV
+    glUniformui64vNV_c
     glUnlockArraysEXT
     glUnmapBuffer
     glUnmapBufferARB
@@ -2317,7 +2316,7 @@ our @glFunctions = qw(
     glUnmapNamedBufferEXT
     glUnmapObjectBufferATI
     glUnmapTexture2DINTEL
-    glUpdateObjectBufferATI
+    glUpdateObjectBufferATI_c
     glUseProgram
     glUseProgramObjectARB
     glUseProgramStages
@@ -2326,55 +2325,55 @@ our @glFunctions = qw(
     glValidateProgramARB
     glValidateProgramPipeline
     glVariantArrayObjectATI
-    glVariantbvEXT
-    glVariantdvEXT
-    glVariantfvEXT
-    glVariantivEXT
-    glVariantPointerEXT
-    glVariantsvEXT
-    glVariantubvEXT
-    glVariantuivEXT
-    glVariantusvEXT
+    glVariantbvEXT_c
+    glVariantdvEXT_c
+    glVariantfvEXT_c
+    glVariantivEXT_c
+    glVariantPointerEXT_c
+    glVariantsvEXT_c
+    glVariantubvEXT_c
+    glVariantuivEXT_c
+    glVariantusvEXT_c
     glVDPAUFiniNV
-    glVDPAUGetSurfaceivNV
-    glVDPAUInitNV
+    glVDPAUGetSurfaceivNV_c
+    glVDPAUInitNV_c
     glVDPAUIsSurfaceNV
-    glVDPAUMapSurfacesNV
-    glVDPAURegisterOutputSurfaceNV
-    glVDPAURegisterVideoSurfaceNV
+    glVDPAUMapSurfacesNV_c
+    glVDPAURegisterOutputSurfaceNV_c
+    glVDPAURegisterVideoSurfaceNV_c
     glVDPAUSurfaceAccessNV
-    glVDPAUUnmapSurfacesNV
+    glVDPAUUnmapSurfacesNV_c
     glVDPAUUnregisterSurfaceNV
     glVertex2d
-    glVertex2dv
+    glVertex2dv_c
     glVertex2f
-    glVertex2fv
+    glVertex2fv_c
     glVertex2hNV
-    glVertex2hvNV
+    glVertex2hvNV_c
     glVertex2i
-    glVertex2iv
+    glVertex2iv_c
     glVertex2s
-    glVertex2sv
+    glVertex2sv_c
     glVertex3d
-    glVertex3dv
+    glVertex3dv_c
     glVertex3f
-    glVertex3fv
+    glVertex3fv_c
     glVertex3hNV
-    glVertex3hvNV
+    glVertex3hvNV_c
     glVertex3i
-    glVertex3iv
+    glVertex3iv_c
     glVertex3s
-    glVertex3sv
+    glVertex3sv_c
     glVertex4d
-    glVertex4dv
+    glVertex4dv_c
     glVertex4f
-    glVertex4fv
+    glVertex4fv_c
     glVertex4hNV
-    glVertex4hvNV
+    glVertex4hvNV_c
     glVertex4i
-    glVertex4iv
+    glVertex4iv_c
     glVertex4s
-    glVertex4sv
+    glVertex4sv_c
     glVertexArrayAttribBinding
     glVertexArrayAttribFormat
     glVertexArrayAttribIFormat
@@ -2389,8 +2388,8 @@ our @glFunctions = qw(
     glVertexArrayMultiTexCoordOffsetEXT
     glVertexArrayNormalOffsetEXT
     glVertexArrayParameteriAPPLE
-    glVertexArrayRangeAPPLE
-    glVertexArrayRangeNV
+    glVertexArrayRangeAPPLE_c
+    glVertexArrayRangeNV_c
     glVertexArraySecondaryColorOffsetEXT
     glVertexArrayTexCoordOffsetEXT
     glVertexArrayVertexAttribBindingEXT
@@ -2403,114 +2402,114 @@ our @glFunctions = qw(
     glVertexArrayVertexAttribOffsetEXT
     glVertexArrayVertexBindingDivisorEXT
     glVertexArrayVertexBuffer
-    glVertexArrayVertexBuffers
+    glVertexArrayVertexBuffers_c
     glVertexArrayVertexOffsetEXT
     glVertexAttrib1d
     glVertexAttrib1dARB
     glVertexAttrib1dNV
-    glVertexAttrib1dv
-    glVertexAttrib1dvARB
-    glVertexAttrib1dvNV
+    glVertexAttrib1dv_c
+    glVertexAttrib1dvARB_c
+    glVertexAttrib1dvNV_c
     glVertexAttrib1f
     glVertexAttrib1fARB
     glVertexAttrib1fNV
-    glVertexAttrib1fv
-    glVertexAttrib1fvARB
-    glVertexAttrib1fvNV
+    glVertexAttrib1fv_c
+    glVertexAttrib1fvARB_c
+    glVertexAttrib1fvNV_c
     glVertexAttrib1hNV
-    glVertexAttrib1hvNV
+    glVertexAttrib1hvNV_c
     glVertexAttrib1s
     glVertexAttrib1sARB
     glVertexAttrib1sNV
-    glVertexAttrib1sv
-    glVertexAttrib1svARB
-    glVertexAttrib1svNV
+    glVertexAttrib1sv_c
+    glVertexAttrib1svARB_c
+    glVertexAttrib1svNV_c
     glVertexAttrib2d
     glVertexAttrib2dARB
     glVertexAttrib2dNV
-    glVertexAttrib2dv
-    glVertexAttrib2dvARB
-    glVertexAttrib2dvNV
+    glVertexAttrib2dv_c
+    glVertexAttrib2dvARB_c
+    glVertexAttrib2dvNV_c
     glVertexAttrib2f
     glVertexAttrib2fARB
     glVertexAttrib2fNV
-    glVertexAttrib2fv
-    glVertexAttrib2fvARB
-    glVertexAttrib2fvNV
+    glVertexAttrib2fv_c
+    glVertexAttrib2fvARB_c
+    glVertexAttrib2fvNV_c
     glVertexAttrib2hNV
-    glVertexAttrib2hvNV
+    glVertexAttrib2hvNV_c
     glVertexAttrib2s
     glVertexAttrib2sARB
     glVertexAttrib2sNV
-    glVertexAttrib2sv
-    glVertexAttrib2svARB
-    glVertexAttrib2svNV
+    glVertexAttrib2sv_c
+    glVertexAttrib2svARB_c
+    glVertexAttrib2svNV_c
     glVertexAttrib3d
     glVertexAttrib3dARB
     glVertexAttrib3dNV
-    glVertexAttrib3dv
-    glVertexAttrib3dvARB
-    glVertexAttrib3dvNV
+    glVertexAttrib3dv_c
+    glVertexAttrib3dvARB_c
+    glVertexAttrib3dvNV_c
     glVertexAttrib3f
     glVertexAttrib3fARB
     glVertexAttrib3fNV
-    glVertexAttrib3fv
-    glVertexAttrib3fvARB
-    glVertexAttrib3fvNV
+    glVertexAttrib3fv_c
+    glVertexAttrib3fvARB_c
+    glVertexAttrib3fvNV_c
     glVertexAttrib3hNV
-    glVertexAttrib3hvNV
+    glVertexAttrib3hvNV_c
     glVertexAttrib3s
     glVertexAttrib3sARB
     glVertexAttrib3sNV
-    glVertexAttrib3sv
-    glVertexAttrib3svARB
-    glVertexAttrib3svNV
-    glVertexAttrib4bv
-    glVertexAttrib4bvARB
+    glVertexAttrib3sv_c
+    glVertexAttrib3svARB_c
+    glVertexAttrib3svNV_c
+    glVertexAttrib4bv_c
+    glVertexAttrib4bvARB_c
     glVertexAttrib4d
     glVertexAttrib4dARB
     glVertexAttrib4dNV
-    glVertexAttrib4dv
-    glVertexAttrib4dvARB
-    glVertexAttrib4dvNV
+    glVertexAttrib4dv_c
+    glVertexAttrib4dvARB_c
+    glVertexAttrib4dvNV_c
     glVertexAttrib4f
     glVertexAttrib4fARB
     glVertexAttrib4fNV
-    glVertexAttrib4fv
-    glVertexAttrib4fvARB
-    glVertexAttrib4fvNV
+    glVertexAttrib4fv_c
+    glVertexAttrib4fvARB_c
+    glVertexAttrib4fvNV_c
     glVertexAttrib4hNV
-    glVertexAttrib4hvNV
-    glVertexAttrib4iv
-    glVertexAttrib4ivARB
-    glVertexAttrib4Nbv
-    glVertexAttrib4NbvARB
-    glVertexAttrib4Niv
-    glVertexAttrib4NivARB
-    glVertexAttrib4Nsv
-    glVertexAttrib4NsvARB
+    glVertexAttrib4hvNV_c
+    glVertexAttrib4iv_c
+    glVertexAttrib4ivARB_c
+    glVertexAttrib4Nbv_c
+    glVertexAttrib4NbvARB_c
+    glVertexAttrib4Niv_c
+    glVertexAttrib4NivARB_c
+    glVertexAttrib4Nsv_c
+    glVertexAttrib4NsvARB_c
     glVertexAttrib4Nub
     glVertexAttrib4NubARB
-    glVertexAttrib4Nubv
-    glVertexAttrib4NubvARB
-    glVertexAttrib4Nuiv
-    glVertexAttrib4NuivARB
-    glVertexAttrib4Nusv
-    glVertexAttrib4NusvARB
+    glVertexAttrib4Nubv_c
+    glVertexAttrib4NubvARB_c
+    glVertexAttrib4Nuiv_c
+    glVertexAttrib4NuivARB_c
+    glVertexAttrib4Nusv_c
+    glVertexAttrib4NusvARB_c
     glVertexAttrib4s
     glVertexAttrib4sARB
     glVertexAttrib4sNV
-    glVertexAttrib4sv
-    glVertexAttrib4svARB
-    glVertexAttrib4svNV
+    glVertexAttrib4sv_c
+    glVertexAttrib4svARB_c
+    glVertexAttrib4svNV_c
     glVertexAttrib4ubNV
-    glVertexAttrib4ubv
-    glVertexAttrib4ubvARB
-    glVertexAttrib4ubvNV
-    glVertexAttrib4uiv
-    glVertexAttrib4uivARB
-    glVertexAttrib4usv
-    glVertexAttrib4usvARB
+    glVertexAttrib4ubv_c
+    glVertexAttrib4ubvARB_c
+    glVertexAttrib4ubvNV_c
+    glVertexAttrib4uiv_c
+    glVertexAttrib4uivARB_c
+    glVertexAttrib4usv_c
+    glVertexAttrib4usvARB_c
     glVertexAttribArrayObjectATI
     glVertexAttribBinding
     glVertexAttribDivisor
@@ -2520,246 +2519,246 @@ our @glFunctions = qw(
     glVertexAttribFormatNV
     glVertexAttribI1i
     glVertexAttribI1iEXT
-    glVertexAttribI1iv
-    glVertexAttribI1ivEXT
+    glVertexAttribI1iv_c
+    glVertexAttribI1ivEXT_c
     glVertexAttribI1ui
     glVertexAttribI1uiEXT
-    glVertexAttribI1uiv
-    glVertexAttribI1uivEXT
+    glVertexAttribI1uiv_c
+    glVertexAttribI1uivEXT_c
     glVertexAttribI2i
     glVertexAttribI2iEXT
-    glVertexAttribI2iv
-    glVertexAttribI2ivEXT
+    glVertexAttribI2iv_c
+    glVertexAttribI2ivEXT_c
     glVertexAttribI2ui
     glVertexAttribI2uiEXT
-    glVertexAttribI2uiv
-    glVertexAttribI2uivEXT
+    glVertexAttribI2uiv_c
+    glVertexAttribI2uivEXT_c
     glVertexAttribI3i
     glVertexAttribI3iEXT
-    glVertexAttribI3iv
-    glVertexAttribI3ivEXT
+    glVertexAttribI3iv_c
+    glVertexAttribI3ivEXT_c
     glVertexAttribI3ui
     glVertexAttribI3uiEXT
-    glVertexAttribI3uiv
-    glVertexAttribI3uivEXT
-    glVertexAttribI4bv
-    glVertexAttribI4bvEXT
+    glVertexAttribI3uiv_c
+    glVertexAttribI3uivEXT_c
+    glVertexAttribI4bv_c
+    glVertexAttribI4bvEXT_c
     glVertexAttribI4i
     glVertexAttribI4iEXT
-    glVertexAttribI4iv
-    glVertexAttribI4ivEXT
-    glVertexAttribI4sv
-    glVertexAttribI4svEXT
-    glVertexAttribI4ubv
-    glVertexAttribI4ubvEXT
+    glVertexAttribI4iv_c
+    glVertexAttribI4ivEXT_c
+    glVertexAttribI4sv_c
+    glVertexAttribI4svEXT_c
+    glVertexAttribI4ubv_c
+    glVertexAttribI4ubvEXT_c
     glVertexAttribI4ui
     glVertexAttribI4uiEXT
-    glVertexAttribI4uiv
-    glVertexAttribI4uivEXT
-    glVertexAttribI4usv
-    glVertexAttribI4usvEXT
+    glVertexAttribI4uiv_c
+    glVertexAttribI4uivEXT_c
+    glVertexAttribI4usv_c
+    glVertexAttribI4usvEXT_c
     glVertexAttribIFormat
     glVertexAttribIFormatNV
-    glVertexAttribIPointer
-    glVertexAttribIPointerEXT
+    glVertexAttribIPointer_c
+    glVertexAttribIPointerEXT_c
     glVertexAttribL1d
     glVertexAttribL1dEXT
-    glVertexAttribL1dv
-    glVertexAttribL1dvEXT
+    glVertexAttribL1dv_c
+    glVertexAttribL1dvEXT_c
     glVertexAttribL1i64NV
-    glVertexAttribL1i64vNV
+    glVertexAttribL1i64vNV_c
     glVertexAttribL1ui64ARB
     glVertexAttribL1ui64NV
-    glVertexAttribL1ui64vARB
-    glVertexAttribL1ui64vNV
+    glVertexAttribL1ui64vARB_c
+    glVertexAttribL1ui64vNV_c
     glVertexAttribL2d
     glVertexAttribL2dEXT
-    glVertexAttribL2dv
-    glVertexAttribL2dvEXT
+    glVertexAttribL2dv_c
+    glVertexAttribL2dvEXT_c
     glVertexAttribL2i64NV
-    glVertexAttribL2i64vNV
+    glVertexAttribL2i64vNV_c
     glVertexAttribL2ui64NV
-    glVertexAttribL2ui64vNV
+    glVertexAttribL2ui64vNV_c
     glVertexAttribL3d
     glVertexAttribL3dEXT
-    glVertexAttribL3dv
-    glVertexAttribL3dvEXT
+    glVertexAttribL3dv_c
+    glVertexAttribL3dvEXT_c
     glVertexAttribL3i64NV
-    glVertexAttribL3i64vNV
+    glVertexAttribL3i64vNV_c
     glVertexAttribL3ui64NV
-    glVertexAttribL3ui64vNV
+    glVertexAttribL3ui64vNV_c
     glVertexAttribL4d
     glVertexAttribL4dEXT
-    glVertexAttribL4dv
-    glVertexAttribL4dvEXT
+    glVertexAttribL4dv_c
+    glVertexAttribL4dvEXT_c
     glVertexAttribL4i64NV
-    glVertexAttribL4i64vNV
+    glVertexAttribL4i64vNV_c
     glVertexAttribL4ui64NV
-    glVertexAttribL4ui64vNV
+    glVertexAttribL4ui64vNV_c
     glVertexAttribLFormat
     glVertexAttribLFormatNV
-    glVertexAttribLPointer
-    glVertexAttribLPointerEXT
+    glVertexAttribLPointer_c
+    glVertexAttribLPointerEXT_c
     glVertexAttribP1ui
-    glVertexAttribP1uiv
+    glVertexAttribP1uiv_c
     glVertexAttribP2ui
-    glVertexAttribP2uiv
+    glVertexAttribP2uiv_c
     glVertexAttribP3ui
-    glVertexAttribP3uiv
+    glVertexAttribP3uiv_c
     glVertexAttribP4ui
-    glVertexAttribP4uiv
+    glVertexAttribP4uiv_c
     glVertexAttribParameteriAMD
-    glVertexAttribPointer
-    glVertexAttribPointerARB
-    glVertexAttribPointerNV
-    glVertexAttribs1dvNV
-    glVertexAttribs1fvNV
-    glVertexAttribs1hvNV
-    glVertexAttribs1svNV
-    glVertexAttribs2dvNV
-    glVertexAttribs2fvNV
-    glVertexAttribs2hvNV
-    glVertexAttribs2svNV
-    glVertexAttribs3dvNV
-    glVertexAttribs3fvNV
-    glVertexAttribs3hvNV
-    glVertexAttribs3svNV
-    glVertexAttribs4dvNV
-    glVertexAttribs4fvNV
-    glVertexAttribs4hvNV
-    glVertexAttribs4svNV
-    glVertexAttribs4ubvNV
+    glVertexAttribPointer_c
+    glVertexAttribPointerARB_c
+    glVertexAttribPointerNV_c
+    glVertexAttribs1dvNV_c
+    glVertexAttribs1fvNV_c
+    glVertexAttribs1hvNV_c
+    glVertexAttribs1svNV_c
+    glVertexAttribs2dvNV_c
+    glVertexAttribs2fvNV_c
+    glVertexAttribs2hvNV_c
+    glVertexAttribs2svNV_c
+    glVertexAttribs3dvNV_c
+    glVertexAttribs3fvNV_c
+    glVertexAttribs3hvNV_c
+    glVertexAttribs3svNV_c
+    glVertexAttribs4dvNV_c
+    glVertexAttribs4fvNV_c
+    glVertexAttribs4hvNV_c
+    glVertexAttribs4svNV_c
+    glVertexAttribs4ubvNV_c
     glVertexBindingDivisor
     glVertexBlendARB
     glVertexBlendEnvfATI
     glVertexBlendEnviATI
     glVertexFormatNV
     glVertexP2ui
-    glVertexP2uiv
+    glVertexP2uiv_c
     glVertexP3ui
-    glVertexP3uiv
+    glVertexP3uiv_c
     glVertexP4ui
-    glVertexP4uiv
-    glVertexPointer
-    glVertexPointerEXT
-    glVertexPointerListIBM
-    glVertexPointervINTEL
+    glVertexP4uiv_c
+    glVertexPointer_c
+    glVertexPointerEXT_c
+    glVertexPointerListIBM_c
+    glVertexPointervINTEL_c
     glVertexStream1dATI
-    glVertexStream1dvATI
+    glVertexStream1dvATI_c
     glVertexStream1fATI
-    glVertexStream1fvATI
+    glVertexStream1fvATI_c
     glVertexStream1iATI
-    glVertexStream1ivATI
+    glVertexStream1ivATI_c
     glVertexStream1sATI
-    glVertexStream1svATI
+    glVertexStream1svATI_c
     glVertexStream2dATI
-    glVertexStream2dvATI
+    glVertexStream2dvATI_c
     glVertexStream2fATI
-    glVertexStream2fvATI
+    glVertexStream2fvATI_c
     glVertexStream2iATI
-    glVertexStream2ivATI
+    glVertexStream2ivATI_c
     glVertexStream2sATI
-    glVertexStream2svATI
+    glVertexStream2svATI_c
     glVertexStream3dATI
-    glVertexStream3dvATI
+    glVertexStream3dvATI_c
     glVertexStream3fATI
-    glVertexStream3fvATI
+    glVertexStream3fvATI_c
     glVertexStream3iATI
-    glVertexStream3ivATI
+    glVertexStream3ivATI_c
     glVertexStream3sATI
-    glVertexStream3svATI
+    glVertexStream3svATI_c
     glVertexStream4dATI
-    glVertexStream4dvATI
+    glVertexStream4dvATI_c
     glVertexStream4fATI
-    glVertexStream4fvATI
+    glVertexStream4fvATI_c
     glVertexStream4iATI
-    glVertexStream4ivATI
+    glVertexStream4ivATI_c
     glVertexStream4sATI
-    glVertexStream4svATI
+    glVertexStream4svATI_c
     glVertexWeightfEXT
-    glVertexWeightfvEXT
+    glVertexWeightfvEXT_c
     glVertexWeighthNV
-    glVertexWeighthvNV
-    glVertexWeightPointerEXT
-    glVideoCaptureNV
-    glVideoCaptureStreamParameterdvNV
-    glVideoCaptureStreamParameterfvNV
-    glVideoCaptureStreamParameterivNV
+    glVertexWeighthvNV_c
+    glVertexWeightPointerEXT_c
+    glVideoCaptureNV_c
+    glVideoCaptureStreamParameterdvNV_c
+    glVideoCaptureStreamParameterfvNV_c
+    glVideoCaptureStreamParameterivNV_c
     glViewport
-    glViewportArrayv
+    glViewportArrayv_c
     glViewportIndexedf
-    glViewportIndexedfv
+    glViewportIndexedfv_c
     glViewportPositionWScaleNV
     glViewportSwizzleNV
     glWaitSync
     glWaitVkSemaphoreNV
-    glWeightbvARB
-    glWeightdvARB
-    glWeightfvARB
-    glWeightivARB
-    glWeightPathsNV
-    glWeightPointerARB
-    glWeightsvARB
-    glWeightubvARB
-    glWeightuivARB
-    glWeightusvARB
+    glWeightbvARB_c
+    glWeightdvARB_c
+    glWeightfvARB_c
+    glWeightivARB_c
+    glWeightPathsNV_c
+    glWeightPointerARB_c
+    glWeightsvARB_c
+    glWeightubvARB_c
+    glWeightuivARB_c
+    glWeightusvARB_c
     glWindowPos2d
     glWindowPos2dARB
     glWindowPos2dMESA
-    glWindowPos2dv
-    glWindowPos2dvARB
-    glWindowPos2dvMESA
+    glWindowPos2dv_c
+    glWindowPos2dvARB_c
+    glWindowPos2dvMESA_c
     glWindowPos2f
     glWindowPos2fARB
     glWindowPos2fMESA
-    glWindowPos2fv
-    glWindowPos2fvARB
-    glWindowPos2fvMESA
+    glWindowPos2fv_c
+    glWindowPos2fvARB_c
+    glWindowPos2fvMESA_c
     glWindowPos2i
     glWindowPos2iARB
     glWindowPos2iMESA
-    glWindowPos2iv
-    glWindowPos2ivARB
-    glWindowPos2ivMESA
+    glWindowPos2iv_c
+    glWindowPos2ivARB_c
+    glWindowPos2ivMESA_c
     glWindowPos2s
     glWindowPos2sARB
     glWindowPos2sMESA
-    glWindowPos2sv
-    glWindowPos2svARB
-    glWindowPos2svMESA
+    glWindowPos2sv_c
+    glWindowPos2svARB_c
+    glWindowPos2svMESA_c
     glWindowPos3d
     glWindowPos3dARB
     glWindowPos3dMESA
-    glWindowPos3dv
-    glWindowPos3dvARB
-    glWindowPos3dvMESA
+    glWindowPos3dv_c
+    glWindowPos3dvARB_c
+    glWindowPos3dvMESA_c
     glWindowPos3f
     glWindowPos3fARB
     glWindowPos3fMESA
-    glWindowPos3fv
-    glWindowPos3fvARB
-    glWindowPos3fvMESA
+    glWindowPos3fv_c
+    glWindowPos3fvARB_c
+    glWindowPos3fvMESA_c
     glWindowPos3i
     glWindowPos3iARB
     glWindowPos3iMESA
-    glWindowPos3iv
-    glWindowPos3ivARB
-    glWindowPos3ivMESA
+    glWindowPos3iv_c
+    glWindowPos3ivARB_c
+    glWindowPos3ivMESA_c
     glWindowPos3s
     glWindowPos3sARB
     glWindowPos3sMESA
-    glWindowPos3sv
-    glWindowPos3svARB
-    glWindowPos3svMESA
+    glWindowPos3sv_c
+    glWindowPos3svARB_c
+    glWindowPos3svMESA_c
     glWindowPos4dMESA
-    glWindowPos4dvMESA
+    glWindowPos4dvMESA_c
     glWindowPos4fMESA
-    glWindowPos4fvMESA
+    glWindowPos4fvMESA_c
     glWindowPos4iMESA
-    glWindowPos4ivMESA
+    glWindowPos4ivMESA_c
     glWindowPos4sMESA
-    glWindowPos4svMESA
-    glWindowRectanglesEXT
+    glWindowPos4svMESA_c
+    glWindowRectanglesEXT_c
     glWriteMaskEXT
 );
 
