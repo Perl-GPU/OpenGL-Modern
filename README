@@ -35,16 +35,17 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-  OpenGL 0.70  (provides needed unimplemented functionality)
-  Filter::signatures 0.07
+  OpenGL 0.70  (use to provide any unimplemented functions)
+  Capture::Tiny
   Carp
   Devel::CheckOS
+  ExtUtils::Constant
   ExtUtils::MakeMaker
 
 COPYRIGHT AND LICENCE
 
 
-Copyright (C) 2016 by Chris Marshall
+Copyright (C) 2017 by Chris Marshall
 Copyright (C) 2016 by Max Maischein
 
 This library is free software; you can redistribute it and/or modify

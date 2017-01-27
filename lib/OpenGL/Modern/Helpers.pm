@@ -211,7 +211,7 @@ sub glGetShaderInfoLog_p {
     my $buffer = "\0" x $bufsize;
     my $len = "\0" x 4;
     # void glGetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
-    glGetShaderInfoLog( $shader, $bufsize, unpack('Q',pack('p',$len)), $buffer);
+    glGetShaderInfoLog_c( $shader, $bufsize, unpack('Q',pack('p',$len)), $buffer);
     $len = unpack 'I', $len;
     return substr $buffer, 0, $len;
 }
@@ -222,7 +222,7 @@ sub glGetProgramInfoLog_p {
     my $buffer = "\0" x $bufsize;
     my $len = "\0" x 4;
     # void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
-    glGetProgramInfoLog( $program, $bufsize, unpack('Q',pack('p',$len)), $buffer);
+    glGetProgramInfoLog_c( $program, $bufsize, unpack('Q',pack('p',$len)), $buffer);
     $len = unpack 'I', $len;
     return substr $buffer, 0, $len;
 }
