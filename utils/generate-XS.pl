@@ -1,6 +1,6 @@
 #!perl -w
 #
-# Last saved: Fri 27 Jan 2017 11:04:59 AM 
+# Last saved: Fri 27 Jan 2017 11:28:32 AM 
 #
 #
 use strict;
@@ -103,7 +103,9 @@ my %features = ();
 
 for my $file (@headers) {
 
-    my $feature_name; print "Processing file $file\n";
+    my $feature_name;
+    
+    print "Processing file $file\n";
 
     open my $fh, '<', $file
         or die "Couldn't read '$file': $!";
@@ -193,7 +195,7 @@ sub generate_glew_xs {
         my $name = $item->{name};
 
         if( $manual{ $name }) {
-            warn "Skipping $name, already implemented in Modern.xs";
+            print "Skipping $name, already implemented in Modern.xs\n";
             next
         };
 
