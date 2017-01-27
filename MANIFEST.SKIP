@@ -1,0 +1,5 @@
+\.old$
+^blib/
+^pogl_implemented
+^signatures
+^utils/XS_generate_NOTES.txt
