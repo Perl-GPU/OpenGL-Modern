@@ -11,14 +11,19 @@ my @libs;
 my $define;
 
 if( os_is('MSWin32')) {
-    @libs = '-lopengl32 -lgdi32 -lmsimg32';
-    $define = "-D_WIN32", # XXX Platform specific
+   @libs = '-lopengl32 -lgdi32 -lmsimg32';
+   $define = "-D_WIN32", # XXX Platform specific
 
 } elsif( os_is('Cygwin')) {
-    @libs = '-lGL -lX11';
+   @libs = '-lGL -lX11';
+
+} elsif( os_is('MacOSX')) {
+   # This might not work on MacOS / OSX, but until I get other reports...
+   @libs = '-framework OpenGL';
+
 } else {
-    # This might not work on MacOS / OSX, but until I get other reports...
-    @libs = '-framework OpenGL';
+   @libs = '-lGL -lX11';
+
 };
 
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
@@ -44,7 +49,6 @@ WriteMakefile1(
 
     PREREQ_PM         => {
       'OpenGL'                  => '0.70',  # only use latest version
-      'Filter::signatures'      => '0.08', # for empty function signatures
       'Carp' => 0,
     }, # e.g., Module::Name => 1.1
     LIBS              => "@libs", # e.g., '-lm'
