@@ -1,6 +1,11 @@
 Revision history for Perl extension OpenGL::Modern.
 
-0.01_02  TBD
+0.01_03  2017-01-28 18:29:02-05:00
+        - fix breakage in linux/freebsd link line
+	- more release cleanup
+	- have test fails on Strawberry perl
+
+0.01_02  2017-01-27 10:35:02-05:00
         - make glShaderSource bindings use auto-xs.inc versions
 	- use T_PTR for typemaps for all pointers except char or strings
 	- preparation for native perl argument handling
