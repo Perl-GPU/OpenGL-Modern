@@ -17,8 +17,8 @@ use OpenGL::Modern qw(
     GL_VERSION
     glGetString
     glGetError
-    glGetShaderInfoLog
-    glGetProgramInfoLog
+    glGetShaderInfoLog_c
+    glGetProgramInfoLog_c
 );
 
 =head1 NAME
