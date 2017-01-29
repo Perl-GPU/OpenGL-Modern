@@ -1,23 +1,25 @@
 Revision history for Perl extension OpenGL::Modern.
 
-0.01_04  TBD
-
+0.01_04  2017-01-29 18:22:01-05:00
+        - implement glShaderSource_p and use it in
+          t/02_glGetShaderInfoLog.t
+        - this appears to work on Strawberry Perl
 
 0.01_03  2017-01-28 18:29:02-05:00
         - fix breakage in linux/freebsd link line
-	- more release cleanup
-	- have test fails on Strawberry perl
+        - more release cleanup
+        - have test fails on Strawberry perl
 
 0.01_02  2017-01-27 10:35:02-05:00
         - make glShaderSource bindings use auto-xs.inc versions
-	- use T_PTR for typemaps for all pointers except char or strings
-	- preparation for native perl argument handling
+        - use T_PTR for typemaps for all pointers except char or strings
+        - preparation for native perl argument handling
 
 
 0.01_01  2016-12-18 16:17:31-05:00
-	- CPAN alpha release
-	- Cleaned up files to remove unnecessary ones
+        - CPAN alpha release
+        - Cleaned up files to remove unnecessary ones
 
 0.00_01  2016-11-26 14:13:41-05:00
-	- original version; created from app-shadertoy sources
-	  extracting OpenGL::Glew as OpenGL::Modern
+        - original version; created from app-shadertoy sources
+          extracting OpenGL::Glew as OpenGL::Modern
