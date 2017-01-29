@@ -1,5 +1,8 @@
 Revision history for Perl extension OpenGL::Modern.
 
+0.01_05  TBD
+
+
 0.01_04  2017-01-29 18:22:01-05:00
         - implement glShaderSource_p and use it in
           t/02_glGetShaderInfoLog.t
