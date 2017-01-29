@@ -14,6 +14,8 @@ $VERSION = eval $VERSION;  # see L<perlmodstyle>
 # ATTENTION: This array is overwritten by utils/generate-XS.pl!
 #            Manual changes will be lost.
 our @glFunctions = qw(
+    glGetString
+    glShaderSource_p
     glAccum
     glActiveProgramEXT
     glActiveShaderProgram

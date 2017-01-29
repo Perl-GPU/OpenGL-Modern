@@ -99,5 +99,34 @@ OUTPUT:
 #        PUSHs(sv_2mortal(newSViv(residences[i2])));
 #	 };
 
+# Manual implementations go here
+#
+
+#//# glShaderSource_p($shaderObj, @string);
+void
+glShaderSource_p(shader, ...);
+     GLuint shader;
+INIT:
+    int i;
+    GLsizei count = items - 1;
+CODE:
+    if(! __glewShaderSource) {
+    	croak("glShaderSource not available on this machine");
+    };
+    
+    GLchar** string = malloc(sizeof(GLchar *) * count);
+    GLint *length = malloc(sizeof(GLint) * count);
+    
+    for(i=0; i<count; i++) {
+    	string[i] = (GLchar *)SvPV(ST(i+1),PL_na);
+    	length[i] = strlen(string[i]);
+    }
+    
+    glShaderSource(shader, count, (const GLchar *const*)string, (const GLint *)length);
+    
+    free(string);
+    free(length);
+
+
 INCLUDE: const-xs.inc
 INCLUDE: auto-xs.inc

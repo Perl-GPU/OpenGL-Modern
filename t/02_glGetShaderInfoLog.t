@@ -15,8 +15,7 @@ int i;
 provoke a syntax error
 SHADER
 
-my $len = "\0" x 4;
-glShaderSource_c($id, 1, $shader, unpack('Q',pack('P',$len)));
+glShaderSource_p($id, $shader);
 
 glCompileShader($id);
     

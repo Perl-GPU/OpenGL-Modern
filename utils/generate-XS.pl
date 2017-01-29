@@ -29,13 +29,16 @@ my %alias;
 
 # The functions where we specify manual implementations or prototypes
 # These could also be read from Modern.xs, later maybe
-my @manual = qw(
+my @manual_list = qw(
     glGetString
+    glShaderSource_p
 );
 
-my %manual; @manual{@manual} = (1) x @manual;
+my %manual; @manual{@manual_list} = (1) x @manual_list;
 
 my @exported_functions; # here we'll collect the names the module exports
+
+push @exported_functions, $_ foreach @manual_list;
 
 # TODO: check against the typedefs in glew.h.  All the simple GL types have names
 # matching GL\w+ and don't match the glew typedefs to define the OpenGL API bindings.
