@@ -1,4 +1,4 @@
-OpenGL-Modern version 0.01_02
+OpenGL-Modern version 0.01_06
 =============================
 
 This is an *alpha* release for OpenGL API bindings for versions
@@ -35,12 +35,18 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-  OpenGL 0.70  (use to provide any unimplemented functions)
-  Capture::Tiny
-  Carp
-  Devel::CheckOS
-  ExtUtils::Constant
-  ExtUtils::MakeMaker
+  Capture::Tiny: '0'
+  Data::Dump: '0'
+  Data::Dumper: '0'
+  Devel::CheckOS: '0'
+  ExtUtils::Constant: '0'
+  ExtUtils::MakeMaker: '0'
+
+not *required* but needed for unimplemented features:
+
+  OpenGL 0.70  (for unimplemented functions)
+
+
 
 COPYRIGHT AND LICENCE
 

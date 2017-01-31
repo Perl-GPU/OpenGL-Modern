@@ -7,7 +7,7 @@ use Carp;
 use Exporter 'import';
 use AutoLoader;
 
-our $VERSION = '0.01_05';
+our $VERSION = '0.01_06';
 our $XS_VERSION = $VERSION;
 $VERSION = eval $VERSION;  # see L<perlmodstyle>
 
