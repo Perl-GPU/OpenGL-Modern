@@ -48,7 +48,7 @@ WriteMakefile1(
     MIN_PERL_VERSION => '5.006',
 
     PREREQ_PM         => {
-      'OpenGL'                  => '0.70',  # only use latest version
+       # 'OpenGL' => '0.70',  # are we stand-alone now?
       'Carp' => 0,
     }, # e.g., Module::Name => 1.1
     LIBS              => "@libs", # e.g., '-lm'
@@ -56,6 +56,8 @@ WriteMakefile1(
     INC               => $include,
     CONFIGURE_REQUIRES    => {
         'Capture::Tiny' => 0,
+	'Data::Dump' => 0,
+	'Data::Dumper' => 0,
         'Devel::CheckOS' => 0,
         'ExtUtils::Constant' => 0,
         'ExtUtils::MakeMaker' => 0,

@@ -1,7 +1,8 @@
 Revision history for Perl extension OpenGL::Modern.
 
-0.01_05  TBD
-
+0.01_05  2017-01-31 12:08:46-05:00
+        - Add missing dependencies to Makefile.PL
+        - Remove OpenGL as a dependency (we should be standalone)
 
 0.01_04  2017-01-29 18:22:01-05:00
         - implement glShaderSource_p and use it in
