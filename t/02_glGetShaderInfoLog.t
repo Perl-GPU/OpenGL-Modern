@@ -1,5 +1,6 @@
 #!perl -w
 use strict;
+use Config;
 use Test::More tests => 2;
 use OpenGL::Modern ':all';
 
@@ -21,7 +22,8 @@ glCompileShader($id);
     
 warn "Looking for errors";
 my $ok = "\0" x 4;
-glGetShaderiv_c($id, GL_COMPILE_STATUS, unpack('Q',pack('p',$ok)));
+my $pack_type = $Config{ptrsize} == 4 ? 'L' : 'Q';
+glGetShaderiv_c($id, GL_COMPILE_STATUS, unpack($pack_type,pack('p',$ok)));
 $ok = unpack 'I', $ok;
 if( $ok == GL_FALSE ) {
     pass "We recognize an invalid shader as invalid";
@@ -29,7 +31,7 @@ if( $ok == GL_FALSE ) {
     my $bufsize = 1024*64;
     my $len = "\0" x 4;
     my $buffer = "\0" x $bufsize;
-    glGetShaderInfoLog_c( $id, $bufsize, unpack('Q',pack('p',$len)), $buffer);
+    glGetShaderInfoLog_c( $id, $bufsize, unpack($pack_type,pack('p',$len)), $buffer);
     $len = unpack 'I', $len;
     my $log = substr $buffer, 0, $len;
     isnt $log, '', "We get some error message";
