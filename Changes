@@ -1,8 +1,10 @@
 Revision history for Perl extension OpenGL::Modern.
 
-0.01_06  TBD
+0.01_06  2017-02-05 11:22:40-05:00
         - Remove MYMETA.* from MANIFEST to clean up distribution files
         - fix t/02_glGetShaderInfoLog.t to handle ptrsize=4
+	- split lists of constants, function names, exports to separate files
+	  (thanks Mithaldu!)
 
 0.01_05  2017-01-31 12:08:46-05:00
         - Add missing dependencies to Makefile.PL
