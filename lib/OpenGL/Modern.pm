@@ -10,7 +10,7 @@ use AutoLoader;
 use OpenGL::Modern::NameLists::Modern;
 use OpenGL::Modern::NameLists::MakefileAll;
 
-our $VERSION = '0.01_06';
+our $VERSION = '0.01_07';
 our $XS_VERSION = $VERSION;
 $VERSION = eval $VERSION;  # see L<perlmodstyle>
 
