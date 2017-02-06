@@ -12,17 +12,19 @@ use OpenGL::Modern ':all';
 my $tests = 3;
 plan tests => $tests;
 
-TODO: {
-    local $TODO = "Maybe should skip some if the first 1 or 2 fail";
+my $gCC_status = -1;
+$gCC_status = glewCreateContext();  # returns GL_TRUE or GL_FALSE
+ok(($gCC_status == GL_TRUE() or $gCC_status == GL_FALSE()), "glewCreateContext");  # returns GL_TRUE or GL_FALSE
 
-    ok(my $gCC_status = glewCreateContext(), "glewCreateContext");  # returns GL_TRUE or GL_FALSE
-    print "glewCreateContext returned '$gCC_status'\n";
+my $gI_status = -1;
+$gI_status = glewInit();  # returns GLEW_OK or ???
+ok($gI_status == GLEW_OK(), "glewInit") or note "glewInit() returned '$gI_status'\n";
 
-    ok(my $gI_status = glewInit(), "glewInit");    # returns GLEW_OK or ???
-    print "glewInit returned '$gI_status'\n";
+SKIP: {
+    skip "glewInit did not succeed, skipping live tests", 1 unless $gI_status == GLEW_OK;
 
     my $opengl_version = glGetString(GL_VERSION);  # should skip if no context (and/or no init?)
-    isnt '', $opengl_version;
+    isnt('', $opengl_version, 'GL_VERSION');
 
-    diag "We got OpenGL version $opengl_version";
+    note "We got OpenGL version $opengl_version\n";
 }

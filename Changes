@@ -1,7 +1,8 @@
 Revision history for Perl extension OpenGL::Modern.
 
 0.01_07  TBD
-
+        - Fix return values from glewCreateContext
+        - Add conditional skips to tests
 
 0.01_06  2017-02-05 11:22:40-05:00
         - Remove MYMETA.* from MANIFEST to clean up distribution files
