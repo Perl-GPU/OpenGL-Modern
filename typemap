@@ -3,7 +3,7 @@ TYPEMAP
 const unsigned char *       T_PV
 
 GLbitfield                  T_U_INT
-GLboolean                   T_BOOL
+GLboolean                   T_INT
 GLboolean *                 T_PTR
 const GLboolean *           T_PTR
 const GLboolean **          T_PTR

@@ -37,7 +37,10 @@ CODE:
     0,   /* profile mask */
     0    /* flags */
   };
-    glewCreateContext (&params);
+    RETVAL = glewCreateContext(&params);
+OUTPUT:
+    RETVAL
+
 
 void
 glewDestroyContext()
