@@ -1,3 +1,4 @@
+.perltidyrc
 Changes
 MANIFEST			This list of files
 MANIFEST.SKIP
@@ -24,5 +25,7 @@ src/visualinfo.c
 t/00_basic.t
 t/01_context.t
 t/02_glGetShaderInfoLog.t
+t/0999_tidy.t
+t/lib/PerlTidyCheck.pm
 typemap
 utils/generate-XS.pl
