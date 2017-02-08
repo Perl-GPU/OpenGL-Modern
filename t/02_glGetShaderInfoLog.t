@@ -7,10 +7,10 @@ use OpenGL::Modern ':all';
 glewCreateContext();
 
 SKIP: {
-    skip "glewInit not successful, skipping tests", 2 if glewInit();  # GLEW_OK == 0
+    skip "glewInit not successful, skipping tests", 2 if glewInit();    # GLEW_OK == 0
 
     # Set up a windowless OpenGL context?!
-    my $id = glCreateShader(GL_VERTEX_SHADER);
+    my $id = glCreateShader( GL_VERTEX_SHADER );
     note "Got vertex shader $id, setting source";
 
     my $shader = <<SHADER;
@@ -18,31 +18,32 @@ int i;
 provoke a syntax error
 SHADER
 
-    glShaderSource_p($id, $shader);
+    glShaderSource_p( $id, $shader );
 
-    glCompileShader($id);
+    glCompileShader( $id );
 
     my $ok = "\0" x 4;
     my $pack_type = $Config{ptrsize} == 4 ? 'L' : 'Q';
-    glGetShaderiv_c($id, GL_COMPILE_STATUS, unpack($pack_type,pack('p',$ok)));
+    glGetShaderiv_c( $id, GL_COMPILE_STATUS, unpack( $pack_type, pack( 'p', $ok ) ) );
     $ok = unpack 'I', $ok;
-    if( $ok == GL_FALSE ) {
-	pass "We recognize an invalid shader as invalid";
+    if ( $ok == GL_FALSE ) {
+        pass "We recognize an invalid shader as invalid";
 
-	my $bufsize = 1024*64;
-	my $len = "\0" x 4;
-	my $buffer = "\0" x $bufsize;
-	glGetShaderInfoLog_c( $id, $bufsize, unpack($pack_type,pack('p',$len)), $buffer);
-	$len = unpack 'I', $len;
-	my $log = substr $buffer, 0, $len;
-	isnt $log, '', "We get some error message";
+        my $bufsize = 1024 * 64;
+        my $len     = "\0" x 4;
+        my $buffer  = "\0" x $bufsize;
+        glGetShaderInfoLog_c( $id, $bufsize, unpack( $pack_type, pack( 'p', $len ) ), $buffer );
+        $len = unpack 'I', $len;
+        my $log = substr $buffer, 0, $len;
+        isnt $log, '', "We get some error message";
 
-	note "Error message: $log";
+        note "Error message: $log";
 
-    } else {
-	fail "We recognize an invalid shader as valid";
+    }
+    else {
+        fail "We recognize an invalid shader as valid";
 
-    };
+    }
 
 }
 

@@ -9,9 +9,9 @@ use Exporter 'import';
 use OpenGL::Modern::NameLists::Modern;
 use OpenGL::Modern::NameLists::MakefileAll;
 
-our $VERSION = '0.01_08';
+our $VERSION    = '0.01_08';
 our $XS_VERSION = $VERSION;
-$VERSION = eval $VERSION;  # see L<perlmodstyle>
+$VERSION = eval $VERSION;    # see L<perlmodstyle>
 
 # ATTENTION: This array is overwritten by utils/generate-XS.pl!
 #            Manual changes will be lost.
@@ -31,43 +31,43 @@ our %EXPORT_TAGS_GL = OpenGL::Modern::NameLists::Modern::EXPORT_TAGS_GL();
 # If you do not need this, moving things directly into @EXPORT or @EXPORT_OK
 # will save memory.
 our %EXPORT_TAGS = (
-   %EXPORT_TAGS_GL,
-   'all' => [
-      @glFunctions,
-      qw(
+    %EXPORT_TAGS_GL,
+    'all' => [
+        @glFunctions,
+        qw(
 
-      glewCreateContext
-      glGetError
-      glewGetErrorString
-      glewIsSupported
-      glGetString
-      glewInit
+          glewCreateContext
+          glGetError
+          glewGetErrorString
+          glewIsSupported
+          glGetString
+          glewInit
 
-      glClear
-      glClearColor
-      glDrawArrays
-      glFlush
-      glObjectLabel
+          glClear
+          glClearColor
+          glDrawArrays
+          glFlush
+          glObjectLabel
 
-      ),
-      OpenGL::Modern::NameLists::MakefileAll::makefile_all,
-      OpenGL::Modern::NameLists::MakefileAll::not_for_makefile,
-      OpenGL::Modern::NameLists::MakefileAll::later_all,
+          ),
+        OpenGL::Modern::NameLists::MakefileAll::makefile_all,
+        OpenGL::Modern::NameLists::MakefileAll::not_for_makefile,
+        OpenGL::Modern::NameLists::MakefileAll::later_all,
     ]
 );
-	
+
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw(
-	
+
 );
 
 require XSLoader;
-XSLoader::load('OpenGL::Modern', $XS_VERSION);
+XSLoader::load( 'OpenGL::Modern', $XS_VERSION );
 
 for my $constname ( OpenGL::Modern::NameLists::MakefileAll::makefile_all ) {
-    my ($error, $val) = constant($constname);
-    if ($error) { croak $error; }
+    my ( $error, $val ) = constant( $constname );
+    if ( $error ) { croak $error; }
     no strict 'refs';
     *$constname = sub () { $val };
 }

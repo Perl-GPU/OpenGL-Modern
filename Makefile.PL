@@ -12,36 +12,40 @@ my $include = "-I. -Iinclude -Isrc";
 my @libs;
 my $define;
 
-if( os_is('MSWin32')) {
-   @libs = '-lopengl32 -lgdi32 -lmsimg32';
-   $define = "-D_WIN32", # XXX Platform specific
+if ( os_is( 'MSWin32' ) ) {
+    @libs   = '-lopengl32 -lgdi32 -lmsimg32';
+    $define = "-D_WIN32",                       # XXX Platform specific
 
-} elsif( os_is('Cygwin')) {
-   @libs = '-lGL -lX11';
+}
+elsif ( os_is( 'Cygwin' ) ) {
+    @libs = '-lGL -lX11';
 
-} elsif( os_is('MacOSX')) {
-   # This might not work on MacOS / OSX, but until I get other reports...
-   @libs = '-framework OpenGL';
+}
+elsif ( os_is( 'MacOSX' ) ) {
 
-} else {
-   @libs = '-lGL -lX11';
+    # This might not work on MacOS / OSX, but until I get other reports...
+    @libs = '-framework OpenGL';
 
-};
+}
+else {
+    @libs = '-lGL -lX11';
+
+}
 
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 WriteMakefile1(
-    NAME              => 'OpenGL::Modern',
-    VERSION_FROM      => 'lib/OpenGL/Modern.pm',
-    ABSTRACT_FROM     => 'lib/OpenGL/Modern.pm', # retrieve abstract from module
-    AUTHOR            => 'Chris Marshall <chm@cpan.org>',
-    LICENSE           => 'perl',
-    META_MERGE => {
+    NAME          => 'OpenGL::Modern',
+    VERSION_FROM  => 'lib/OpenGL/Modern.pm',
+    ABSTRACT_FROM => 'lib/OpenGL/Modern.pm',            # retrieve abstract from module
+    AUTHOR        => 'Chris Marshall <chm@cpan.org>',
+    LICENSE       => 'perl',
+    META_MERGE    => {
         "meta-spec" => { version => 2 },
-        resources => {
+        resources   => {
             repository => {
-                web => 'https://github.com/devel-chm/OpenGL-Modern',
-		url => 'https://github.com/devel-chm/OpenGL-Modern.git',
+                web  => 'https://github.com/devel-chm/OpenGL-Modern',
+                url  => 'https://github.com/devel-chm/OpenGL-Modern.git',
                 type => 'git',
             }
         },
@@ -49,27 +53,28 @@ WriteMakefile1(
 
     MIN_PERL_VERSION => '5.006',
 
-    PREREQ_PM         => {
-       # 'OpenGL' => '0.70',  # are we stand-alone now?
-      'Carp' => 0,
-    }, # e.g., Module::Name => 1.1
-    LIBS              => "@libs", # e.g., '-lm'
-    DEFINE            => $define,
-    INC               => $include,
-    CONFIGURE_REQUIRES    => {
-        'Capture::Tiny' => 0,
-	'Data::Dump' => 0,
-	'Data::Dumper' => 0,
-        'Devel::CheckOS' => 0,
-        'ExtUtils::Constant' => 0,
+    PREREQ_PM => {
+
+        # 'OpenGL' => '0.70',  # are we stand-alone now?
+        'Carp' => 0,
+    },    # e.g., Module::Name => 1.1
+    LIBS               => "@libs",    # e.g., '-lm'
+    DEFINE             => $define,
+    INC                => $include,
+    CONFIGURE_REQUIRES => {
+        'Capture::Tiny'       => 0,
+        'Data::Dump'          => 0,
+        'Data::Dumper'        => 0,
+        'Devel::CheckOS'      => 0,
+        'ExtUtils::Constant'  => 0,
         'ExtUtils::MakeMaker' => 0,
     },
     BUILD_REQUIRES => {
         'ExtUtils::MakeMaker' => 0,
     },
     XSPROTOARG => '-prototypes',
-    depend => {
-      'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
+    depend     => {
+        'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
     },
 );
 
@@ -79,13 +84,12 @@ WriteMakefile1(
 # changes.
 my @names = OpenGL::Modern::NameLists::MakefileAll::makefile_all();
 
-
 ExtUtils::Constant::WriteConstants(
-   NAME         => 'OpenGL::Modern',
-   NAMES        => \@names,
-   DEFAULT_TYPE => 'UV',
-   C_FILE       => 'const-c.inc',
-   XS_FILE      => 'const-xs.inc',
+    NAME         => 'OpenGL::Modern',
+    NAMES        => \@names,
+    DEFAULT_TYPE => 'UV',
+    C_FILE       => 'const-c.inc',
+    XS_FILE      => 'const-xs.inc',
 );
 
 generate_auto_xs();

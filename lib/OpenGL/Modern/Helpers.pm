@@ -1,5 +1,5 @@
-package # not an official package
-OpenGL::Modern::Helpers;
+package    # not an official package
+  OpenGL::Modern::Helpers;
 
 use strict;
 use Exporter 'import';
@@ -7,19 +7,19 @@ use Carp qw(croak);
 use Config;
 
 use OpenGL::Modern qw(
-    GL_NO_ERROR
-    GL_INVALID_ENUM
-    GL_INVALID_VALUE
-    GL_INVALID_OPERATION
-    GL_STACK_OVERFLOW
-    GL_STACK_UNDERFLOW
-    GL_OUT_OF_MEMORY
-    GL_TABLE_TOO_LARGE
-    GL_VERSION
-    glGetString
-    glGetError
-    glGetShaderInfoLog_c
-    glGetProgramInfoLog_c
+  GL_NO_ERROR
+  GL_INVALID_ENUM
+  GL_INVALID_VALUE
+  GL_INVALID_OPERATION
+  GL_STACK_OVERFLOW
+  GL_STACK_UNDERFLOW
+  GL_OUT_OF_MEMORY
+  GL_TABLE_TOO_LARGE
+  GL_VERSION
+  glGetString
+  glGetError
+  glGetShaderInfoLog_c
+  glGetProgramInfoLog_c
   glGenTextures_c
   glGetProgramiv_c
   glGetShaderiv_c
@@ -143,19 +143,19 @@ use vars qw(@EXPORT_OK $VERSION %glErrorStrings);
 $VERSION = '0.01_02';
 
 @EXPORT_OK = qw(
-    pack_GLuint
-    pack_GLfloat
-    pack_GLdouble
-    pack_GLint
-    pack_GLstrings
-    pack_ptr
-    xs_buffer
-    
-    glGetShaderInfoLog_p
-    glGetProgramInfoLog_p
-    croak_on_gl_error
-        
-    glGetVersion_p
+  pack_GLuint
+  pack_GLfloat
+  pack_GLdouble
+  pack_GLint
+  pack_GLstrings
+  pack_ptr
+  xs_buffer
+
+  glGetShaderInfoLog_p
+  glGetProgramInfoLog_p
+  croak_on_gl_error
+
+  glGetVersion_p
   glGenTextures_p
   glGetProgramiv_p
   glGetShaderiv_p
@@ -169,43 +169,42 @@ $VERSION = '0.01_02';
   glUniform4f_p
 );
 
-
 %glErrorStrings = (
-    GL_NO_ERROR() => 'No error has been recorded.',
-    GL_INVALID_ENUM() => 'An unacceptable value is specified for an enumerated argument.',
-    GL_INVALID_VALUE() => 'A numeric argument is out of range.',
+    GL_NO_ERROR()          => 'No error has been recorded.',
+    GL_INVALID_ENUM()      => 'An unacceptable value is specified for an enumerated argument.',
+    GL_INVALID_VALUE()     => 'A numeric argument is out of range.',
     GL_INVALID_OPERATION() => 'The specified operation is not allowed in the current state.',
-    GL_STACK_OVERFLOW() => 'This command would cause a stack overflow.',
-    GL_STACK_UNDERFLOW() => 'This command would cause a stack underflow.',
-    GL_OUT_OF_MEMORY() => 'There is not enough memory left to execute the command.',
-    GL_TABLE_TOO_LARGE() => 'The specified table exceeds the implementation\'s maximum supported table size.',
+    GL_STACK_OVERFLOW()    => 'This command would cause a stack overflow.',
+    GL_STACK_UNDERFLOW()   => 'This command would cause a stack underflow.',
+    GL_OUT_OF_MEMORY()     => 'There is not enough memory left to execute the command.',
+    GL_TABLE_TOO_LARGE()   => 'The specified table exceeds the implementation\'s maximum supported table size.',
 );
 
 our $PACK_TYPE = $Config{ptrsize} == 4 ? 'L' : 'Q';
 
 sub pack_GLuint {
     my @gluints = @_;
-    pack 'I*', @gluints
+    pack 'I*', @gluints;
 }
 
 sub pack_GLint {
     my @gluints = @_;
-    pack 'I*', @gluints
+    pack 'I*', @gluints;
 }
 
 sub pack_GLfloat {
     my @glfloats = @_;
-    pack 'f*', @glfloats
+    pack 'f*', @glfloats;
 }
 
 sub pack_GLdouble {
     my @gldoubles = @_;
-    pack 'd*', @gldoubles
+    pack 'd*', @gldoubles;
 }
 
 # No parameter declaration because we don't want copies
 sub pack_GLstrings {
-    pack 'P*', @_
+    pack 'P*', @_;
 }
 
 # No parameter declaration because we don't want copies
@@ -231,9 +230,10 @@ sub xs_buffer {
 
 sub get_info_log_p {
     my ( $call, $id ) = @_;
-    my $bufsize = 1024*64;
-    my $buffer = "\0" x $bufsize;
-    my $len = "\0" x 4;
+    my $bufsize = 1024 * 64;
+    my $buffer  = "\0" x $bufsize;
+    my $len     = "\0" x 4;
+
     # void glGetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
     # void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
     $call->( $id, $bufsize, unpack( $PACK_TYPE, pack( 'p', $len ) ), $buffer );
@@ -241,22 +241,24 @@ sub get_info_log_p {
     return substr $buffer, 0, $len;
 }
 
-sub glGetShaderInfoLog_p { get_info_log_p \&glGetShaderInfoLog, @_ }
+sub glGetShaderInfoLog_p  { get_info_log_p \&glGetShaderInfoLog,  @_ }
 sub glGetProgramInfoLog_p { get_info_log_p \&glGetProgramInfoLog, @_ }
 
 sub glGetVersion_p {
+
     # const GLubyte * GLAPIENTRY glGetString (GLenum name);
-    my $glVersion = glGetString(GL_VERSION);
-    ($glVersion) = ($glVersion =~ m!^(\d+\.\d+)!g);
-    $glVersion
+    my $glVersion = glGetString( GL_VERSION );
+    ( $glVersion ) = ( $glVersion =~ m!^(\d+\.\d+)!g );
+    $glVersion;
 }
 
 sub croak_on_gl_error {
+
     # GLenum glGetError (void);
     my $error = glGetError();
-    if( $error != GL_NO_ERROR ) {
-        croak $glErrorStrings{ $error } || "Unknown OpenGL error: $error"
-    };
+    if ( $error != GL_NO_ERROR ) {
+        croak $glErrorStrings{$error} || "Unknown OpenGL error: $error";
+    }
 }
 
 sub gen_thing_p {
