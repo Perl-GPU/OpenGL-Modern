@@ -9,7 +9,7 @@ use Exporter 'import';
 use OpenGL::Modern::NameLists::Modern;
 use OpenGL::Modern::NameLists::MakefileAll;
 
-our $VERSION    = '0.01_09';
+our $VERSION    = '0.01_10';
 our $XS_VERSION = $VERSION;
 $VERSION = eval $VERSION;    # see L<perlmodstyle>
 
