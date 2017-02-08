@@ -4,6 +4,7 @@ OpenGL::Modern::Helpers;
 use strict;
 use Exporter 'import';
 use Carp qw(croak);
+use Config;
 
 use OpenGL::Modern qw(
     GL_NO_ERROR
@@ -158,6 +159,7 @@ $VERSION = '0.01_02';
     GL_TABLE_TOO_LARGE() => 'The specified table exceeds the implementation\'s maximum supported table size.',
 );
 
+our $PACK_TYPE = $Config{ptrsize} == 4 ? 'L' : 'Q';
 
 sub pack_GLuint {
     my @gluints = @_;
@@ -205,27 +207,20 @@ sub xs_buffer {
     $_[0];
 }
 
-sub glGetShaderInfoLog_p {
-    my $shader = $_[0];
+sub get_info_log_p {
+    my ( $call, $id ) = @_;
     my $bufsize = 1024*64;
     my $buffer = "\0" x $bufsize;
     my $len = "\0" x 4;
     # void glGetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
-    glGetShaderInfoLog_c( $shader, $bufsize, unpack('Q',pack('p',$len)), $buffer);
+    # void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
+    $call->( $id, $bufsize, unpack( $PACK_TYPE, pack( 'p', $len ) ), $buffer );
     $len = unpack 'I', $len;
     return substr $buffer, 0, $len;
 }
 
-sub glGetProgramInfoLog_p {
-    my $program = $_[0];
-    my $bufsize = 1024*64;
-    my $buffer = "\0" x $bufsize;
-    my $len = "\0" x 4;
-    # void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
-    glGetProgramInfoLog_c( $program, $bufsize, unpack('Q',pack('p',$len)), $buffer);
-    $len = unpack 'I', $len;
-    return substr $buffer, 0, $len;
-}
+sub glGetShaderInfoLog_p { get_info_log_p \&glGetShaderInfoLog, @_ }
+sub glGetProgramInfoLog_p { get_info_log_p \&glGetProgramInfoLog, @_ }
 
 sub glGetVersion_p {
     # const GLubyte * GLAPIENTRY glGetString (GLenum name);
