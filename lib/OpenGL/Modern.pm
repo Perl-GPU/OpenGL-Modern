@@ -5,7 +5,6 @@ use warnings;
 use Carp;
 
 use Exporter 'import';
-use AutoLoader;
 
 use OpenGL::Modern::NameLists::Modern;
 use OpenGL::Modern::NameLists::MakefileAll;
@@ -63,26 +62,15 @@ our @EXPORT = qw(
 	
 );
 
-sub AUTOLOAD {
-
-    # This AUTOLOAD is used to 'autoload' constants from the constant()
-    # XS function.
-
-    my $constname;
-    our $AUTOLOAD;
-    ($constname = $AUTOLOAD) =~ s/.*:://;
-    croak "&OpenGL::Modern not defined" if $constname eq 'constant';
-    my ($error, $val) = constant($constname);
-    if ($error) { croak $error; }
-    {
-    no strict 'refs';
-        *$AUTOLOAD = sub { $val };
-    }
-    goto &$AUTOLOAD;
-}
-
 require XSLoader;
 XSLoader::load('OpenGL::Modern', $XS_VERSION);
+
+for my $constname ( OpenGL::Modern::NameLists::MakefileAll::makefile_all ) {
+    my ($error, $val) = constant($constname);
+    if ($error) { croak $error; }
+    no strict 'refs';
+    *$constname = sub () { $val };
+}
 
 # Preloaded methods go here.
 
