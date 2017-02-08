@@ -319,7 +319,7 @@ sub slurp {
 
 sub save_file {
     my ($filename, $new) = @_;
-    my $old = slurp( $filename );
+    my $old = -e $filename ? slurp( $filename ) : "";
     if ( $new ne $old ) {
         print "Saving new version of $filename";
         open my $fh, '>:raw', $filename
