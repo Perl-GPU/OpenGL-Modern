@@ -5,10 +5,7 @@ use Test::More tests => 2;
 use OpenGL::Modern ':all';
 
 SKIP: {
-    skip "glewInit not successful, skipping tests", 2
-      if !done_glewInit()
-      or glewCreateContext()
-      or glewInit();    # GLEW_OK == 0
+    skip "glewInit not successful, skipping tests", 2 if glewCreateContext() or glewInit();    # GLEW_OK == 0
 
     # Set up a windowless OpenGL context?!
     my $id = glCreateShader( GL_VERTEX_SHADER );

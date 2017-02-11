@@ -287,6 +287,10 @@ XS
 
         my $res = $decl . <<XS;
 CODE:
+        if ( ! _done_glewInit ) {
+            glewExperimental = GL_TRUE;
+            glewInit();
+        }
 XS
         if ( $glewImpl ) {
             $res .= <<XS;
