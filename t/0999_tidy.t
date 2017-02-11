@@ -6,15 +6,11 @@ use IO::All -binary;
 use lib "t/lib";
 use Devel::Confess;
 
-SKIP: if ( !eval { require Capture::Tiny && require Perl::Tidy } ) {
-    skip "test requires Capture::Tiny and Perl::Tidy", 1;
-    exit;
-}
+plan skip_all => "test requires Capture::Tiny and Perl::Tidy"
+  if !eval { require Capture::Tiny && require Perl::Tidy };
 
-SKIP: if ( $ENV{SKIP_TIDY_TESTS} ) {
-    skip "test skipped due to \$ENV{SKIP_TIDY_TESTS}", 1;
-    exit;
-}
+plan skip_all => "test skipped due to \$ENV{SKIP_TIDY_TESTS}"
+  if $ENV{SKIP_TIDY_TESTS};
 
 run();
 
