@@ -13,6 +13,8 @@
 
 #include "const-c.inc"
 
+static int _done_glewInit = 0;
+
 /*
   Maybe one day we'll allow Perl callbacks for GLDEBUGPROCARB
 */
@@ -51,7 +53,11 @@ UV
 glewInit()
 CODE:
     glewExperimental = GL_TRUE; /* We want everything that is available on this machine */
+    if (_done_glewInit>0) {
+        warn("glewInit() called %dX already", _done_glewInit);
+    }
     RETVAL = glewInit();
+    _done_glewInit++;
 OUTPUT:
     RETVAL
 
@@ -87,6 +93,13 @@ CODE:
 OUTPUT:
     RETVAL
 
+#// Test for done with glutInit
+int
+done_glewInit()
+CODE:
+    RETVAL = _done_glewInit;
+OUTPUT:
+    RETVAL
 
 # This isn't a bad idea, but I postpone this API and the corresponding
 # typemap hackery until later
