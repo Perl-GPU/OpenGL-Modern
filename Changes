@@ -1,5 +1,9 @@
 Revision history for Perl extension OpenGL::Modern.
 
+0.02     TBD
+        - First offical release of OpenGL::Modern
+
+
 0.01_10  2017-02-11 12:44:57-05:00
         - Added done_glewInit() to determine if glewInit() has been called
 	- Automatically call glewInit() if not called (doesn't handle context check)
