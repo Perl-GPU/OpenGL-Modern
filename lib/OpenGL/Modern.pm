@@ -42,6 +42,7 @@ our %EXPORT_TAGS = (
           glewIsSupported
           glGetString
           glewInit
+          done_glewInit
 
           glClear
           glClearColor

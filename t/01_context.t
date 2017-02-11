@@ -20,7 +20,7 @@ SKIP: {
     skip "glewContext did not succeed, skipping live tests", 2 unless $gCC_status == GLEW_OK;
 
     my $gI_status = -1;
-    $gI_status = glewInit();                                                             # returns GLEW_OK or ???
+    $gI_status = ( done_glewInit() ) ? GLEW_OK() : glewInit();                           # returns GLEW_OK or ???
     ok( $gI_status == GLEW_OK(), "glewInit" ) or note "glewInit() returned '$gI_status'\n";
 
   SKIP: {
