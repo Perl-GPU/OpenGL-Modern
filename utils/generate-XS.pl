@@ -287,14 +287,14 @@ XS
 
         my $res = $decl . <<XS;
 CODE:
-        if ( ! _done_glewInit ) {
-            glewExperimental = GL_TRUE;
-            glewInit();
-        }
+    if ( ! _done_glewInit ) {
+        glewExperimental = GL_TRUE;
+        glewInit();
+    }
 XS
         if ( $glewImpl ) {
             $res .= <<XS;
-    if(! $glewImpl) {
+    if ( ! $glewImpl ) {
         croak("$name not available on this machine");
     };
 XS
