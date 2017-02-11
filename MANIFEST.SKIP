@@ -9,6 +9,9 @@
 gdm.diff
 ^Makefile$
 ^MANIFEST.bak$
+^MANIFEST.SKIP~$
 \.bs$
 ^Modern.c
 ^pm_to_blib
+^MYMETA.*
+\.pm\.bak$
