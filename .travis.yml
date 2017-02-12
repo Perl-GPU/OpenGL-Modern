@@ -48,7 +48,7 @@ install:
   - git clone git://github.com/miyagawa/cpanminus ~/cpanminus && cd ~/cpanminus && perl Makefile.PL && make install
   - $MYLIB/bin/cpanm Devel::CheckOS
   - $MYLIB/bin/cpanm --notest OpenGL
-  - git clone git://github.com/Corion/opengl-modern ~/opengl-modern && cd ~/opengl-modern && $MYLIB/bin/cpanm --verbose --installdeps . && perl Makefile.PL && make
+  - git clone git://github.com/devel-chm/OpenGL-Modern ~/OpenGL-Modern && cd ~/OpenGL-Modern && $MYLIB/bin/cpanm --verbose --installdeps . && perl Makefile.PL && make
 before_script:
   #- coverage-setup
 script:
