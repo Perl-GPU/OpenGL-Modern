@@ -4,7 +4,6 @@ use Test::InDistDir;
 use Test::More 0.88;
 use IO::All -binary;
 use lib "t/lib";
-use Devel::Confess;
 
 plan skip_all => "test requires Capture::Tiny and Perl::Tidy"
   if !eval { require Capture::Tiny && require Perl::Tidy };

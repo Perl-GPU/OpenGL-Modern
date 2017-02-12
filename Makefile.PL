@@ -66,7 +66,6 @@ WriteMakefile1(
         'Data::Dump'          => 0,
         'Data::Dumper'        => 0,
         'Devel::CheckOS'      => 0,
-        'Devel::Confess'      => 0,
         'ExtUtils::Constant'  => 0,
         'ExtUtils::MakeMaker' => 0,
         'IO::All'             => 0,
