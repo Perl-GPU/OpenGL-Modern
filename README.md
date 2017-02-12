@@ -1,4 +1,4 @@
-# OpenGL-Modern version 0.02_01
+# OpenGL-Modern
 
 
 ## STATUS
