@@ -15,7 +15,7 @@ matrix:
     - perl: "blead"
 os:
   - linux
-  - osx
+  #- osx
 sudo: required
 # Actually this is only needed for Linux, I guess
 addons:
