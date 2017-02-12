@@ -1,5 +1,4 @@
-OpenGL-Modern version 0.02_01
-=============================
+# OpenGL-Modern version 0.02_01
 
 This is the first official release of OpenGL::Modern
 supporting OpenGL API bindings for OpenGL versions up to
@@ -10,7 +9,7 @@ any pointer value arguments or return values are
 implemented as passing and returning raw pointers to
 data or string buffers.  These "raw" functions are
 named by starting with the base name of the C OpenGL
-routine and appending _c (representing the C pointer)
+routine and appending `_c` (representing the C pointer)
 usage.
 
 See documentation and the perl source to
@@ -28,45 +27,43 @@ on irc.perl.org for chatting and the Perl OpenGL users
 lists at the sf.net site.  They are members only but
 you can use the Subscribe link to join:
 
-  https://sourceforge.net/p/pogl/mailman/?source=navbar
+https://sourceforge.net/p/pogl/mailman/?source=navbar
 
-
-
-INSTALLATION
+## INSTALLATION
 
 To install this module type the following:
 
+```
    perl Makefile.PL
    make
    make test
    make install
+```
 
 or cpan or cpanm.
 
 
 
-DEPENDENCIES
+## DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-   Carp                          => 0,
-   Capture::Tiny                 => 0,
-   Data::Dumper                  => 0,
-   Devel::CheckOS                => 0,
-   ExtUtils::Constant            => 0,
-   ExtUtils::MakeMaker           => 6.17,
-   ExtUtils::MakeMaker::CPANfile => 0,
-   IO::All                       => 0,
-   Test::InDistDir               => 0,
-   Test::More                    => 0.88,
+    Carp                          => 0,
+    Capture::Tiny                 => 0,
+    Data::Dumper                  => 0,
+    Devel::CheckOS                => 0,
+    ExtUtils::Constant            => 0,
+    ExtUtils::MakeMaker           => 6.17,
+    ExtUtils::MakeMaker::CPANfile => 0,
+    IO::All                       => 0,
+    Test::InDistDir               => 0,
+    Test::More                    => 0.88,
 
 not *required* but needed for currently unimplemented features:
 
-  OpenGL 0.70  (for unimplemented functions)
+    OpenGL 0.70  (for unimplemented functions)
 
-
-
-COPYRIGHT AND LICENCE
+## COPYRIGHT AND LICENCE
 
 Copyright (C) 2017 by Chris Marshall
 Copyright (C) 2016 by Max Maischein
