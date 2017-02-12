@@ -1,6 +1,7 @@
 #!perl -w
 use strict;
 use ExtUtils::MakeMaker;
+use ExtUtils::MakeMaker::CPANfile;
 use Config '%Config';
 use Devel::CheckOS 'os_is';
 use lib 'lib';
@@ -50,33 +51,12 @@ WriteMakefile1(
             }
         },
     },
-
     MIN_PERL_VERSION => '5.006',
-
-    PREREQ_PM => {
-
-        # 'OpenGL' => '0.70',  # are we stand-alone now?
-        'Carp' => 0,
-    },    # e.g., Module::Name => 1.1
-    LIBS               => "@libs",    # e.g., '-lm'
-    DEFINE             => $define,
-    INC                => $include,
-    CONFIGURE_REQUIRES => {
-        'Capture::Tiny'       => 0,
-        'Data::Dump'          => 0,
-        'Data::Dumper'        => 0,
-        'Devel::CheckOS'      => 0,
-        'ExtUtils::Constant'  => 0,
-        'ExtUtils::MakeMaker' => 0,
-        'IO::All'             => 0,
-        'Test::InDistDir'     => 0,
-        'Test::More'          => 0.88,
-    },
-    BUILD_REQUIRES => {
-        'ExtUtils::MakeMaker' => 0,
-    },
-    XSPROTOARG => '-prototypes',
-    depend     => {
+    LIBS             => "@libs",         # e.g., '-lm'
+    DEFINE           => $define,
+    INC              => $include,
+    XSPROTOARG       => '-prototypes',
+    depend           => {
         'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
     },
 );
