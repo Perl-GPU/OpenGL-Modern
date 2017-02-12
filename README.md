@@ -1,5 +1,12 @@
 # OpenGL-Modern version 0.02_01
 
+
+## STATUS
+
+[![Build Status](https://travis-ci.org/devel-chm/OpenGL-Modern.png)](https://travis-ci.org/devel-chm/OpenGL-Modern)
+
+## DESCRIPTION
+
 This is the first official release of OpenGL::Modern
 supporting OpenGL API bindings for OpenGL versions up to
 version 4.5.
