@@ -6,9 +6,6 @@ Makefile.PL
 Modern.xs
 README
 README.md
-auto-xs.inc
-const-c.inc
-const-xs.inc
 include/GL/eglew.h
 include/GL/glew.h
 include/GL/glxew.h
@@ -29,3 +26,5 @@ t/0999_tidy.t
 t/lib/PerlTidyCheck.pm
 typemap
 utils/generate-XS.pl
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)
