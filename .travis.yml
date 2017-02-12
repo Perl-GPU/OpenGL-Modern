@@ -14,7 +14,7 @@ matrix:
   allow_failures:
     - perl: "blead"
 os:
-  #- linux
+  - linux
   - osx
 sudo: required
 # Actually this is only needed for Linux, I guess
