@@ -290,6 +290,7 @@ CODE:
     if ( ! _done_glewInit ) {
         glewExperimental = GL_TRUE;
         glewInit();
+        _done_glewInit++;
     }
 XS
         if ( $glewImpl ) {
