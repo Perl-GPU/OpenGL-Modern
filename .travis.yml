@@ -50,7 +50,6 @@ install:
 before_script:
   #- coverage-setup
 script:
-  - make
-  - prove -bv $(test-files)
+  - prove -bv t
 after_success:
   #
