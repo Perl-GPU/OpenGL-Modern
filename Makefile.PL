@@ -10,26 +10,26 @@ use Capture::Tiny 'capture';
 use ExtUtils::Constant ();
 
 my $include = "-I. -Iinclude -Isrc";
-my @libs;
+my $libs;
 my $define;
 
 if ( os_is( 'MSWin32' ) ) {
-    @libs   = '-lopengl32 -lgdi32 -lmsimg32';
+    $libs   = '-lopengl32 -lgdi32 -lmsimg32';
     $define = "-D_WIN32",                       # XXX Platform specific
 
 }
 elsif ( os_is( 'Cygwin' ) ) {
-    @libs = '-lGL -lX11';
+    $libs = '-lGL -lX11';
 
 }
 elsif ( os_is( 'MacOSX' ) ) {
 
     # This might not work on MacOS / OSX, but until I get other reports...
-    @libs = '-framework OpenGL';
+    $libs = '-framework OpenGL';
 
 }
 else {
-    @libs = '-lGL -lX11';
+    $libs = '-lGL -lX11';
 
 }
 
@@ -52,7 +52,7 @@ WriteMakefile1(
         },
     },
     MIN_PERL_VERSION => '5.006',
-    LIBS             => "@libs",         # e.g., '-lm'
+    LIBS             => $libs,           # e.g., '-lm'
     DEFINE           => $define,
     INC              => $include,
     XSPROTOARG       => '-prototypes',
