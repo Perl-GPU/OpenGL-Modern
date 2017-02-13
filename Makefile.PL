@@ -12,25 +12,20 @@ use ExtUtils::Constant ();
 my $include = "-I. -Iinclude -Isrc";
 my $libs;
 my $define;
+my $DYNS;
 
 if ( os_is( 'MSWin32' ) ) {
     $libs   = '-lopengl32 -lgdi32 -lmsimg32';
     $define = "-D_WIN32",                       # XXX Platform specific
-
 }
 elsif ( os_is( 'Cygwin' ) ) {
     $libs = '-lGL -lX11';
-
 }
 elsif ( os_is( 'MacOSX' ) ) {
-
-    # This might not work on MacOS / OSX, but until I get other reports...
-    $libs = '-framework OpenGL';
-
+    $DYNS = { 'OTHERLDFLAGS' => '-framework OpenGL' };
 }
 else {
     $libs = '-lGL -lX11';
-
 }
 
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
@@ -59,6 +54,7 @@ WriteMakefile1(
     depend           => {
         'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
     },
+    $DYNS ? ( dynamic_lib => $DYNS ) : (),
 );
 
 # If you edit these definitions to change the constants used by this module,
