@@ -8,8 +8,8 @@ Revision history for Perl extension OpenGL::Modern.
 
 0.01_10  2017-02-11 12:44:57-05:00
         - Added done_glewInit() to determine if glewInit() has been called
-	- Automatically call glewInit() if not called (doesn't handle context check)
-	- new tests and cleanup re perltidy
+        - Automatically call glewInit() if not called (doesn't handle context check)
+        - new tests and cleanup re perltidy
 
 0.01_09  2017-02-08 10:00:50-05:00
         - Update prerequisite modules in Makefile.PL
