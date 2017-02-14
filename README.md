@@ -3,7 +3,7 @@
 
 ## STATUS
 
-[![Build Status](https://travis-ci.org/devel-chm/OpenGL-Modern.png)](https://travis-ci.org/devel-chm/OpenGL-Modern)
+[![Build Status](https://travis-ci.org/devel-chm/OpenGL-Modern.svg?branch=master)](https://travis-ci.org/devel-chm/OpenGL-Modern)
 
 ## DESCRIPTION
 
