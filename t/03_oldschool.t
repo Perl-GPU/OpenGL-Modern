@@ -8,20 +8,23 @@ BEGIN {
 }
 
 use OpenGL::Modern qw':all';
-use OpenGL::Modern::Helpers qw' glGenTextures_p glGenBuffers_p glGenFramebuffers_p glBufferData_p ';
+use OpenGL::Modern::Helpers qw' glGenTextures_p glGenBuffers_p
+  glGenFramebuffers_p glBufferData_p glGenProgramsARB_p glGenRenderbuffers_p
+  glBufferSubData_p ';
 
 use OpenGL qw' glpHasGLUT glpCheckExtension glpFullScreen glpRestoreScreen ',    # glp
 
   qw' gluBuild2DMipmaps_c gluPerspective gluOrtho2D gluUnProject_p gluErrorString ',    # glu
 
-  qw' glGenRenderbuffersEXT_p glGenProgramsARB_p glProgramStringARB_p
-  glBufferSubDataARB_p glMapBufferARB_p glGetBufferPointervARB_p glLightfv_p
-  glDeleteRenderbuffersEXT_p glDeleteFramebuffersEXT_p glDeleteProgramsARB_p
-  glDeleteBuffersARB_p glDeleteTextures_p glGetBufferParameterivARB_p
-  glGetBufferSubDataARB_p glVertexPointer_p glColorPointer_p glTexCoordPointer_p
-  glGetProgramStringARB_p glTexImage2D_s glTexImage2D_p glGetProgramivARB_p
-  glGetProgramEnvParameterdvARB_p glGetProgramEnvParameterfvARB_p
-  glNormalPointer_p ',                                                                  # _p
+  qw' glProgramStringARB_p
+  glMapBufferARB_p glGetBufferSubDataARB_p
+  glLightfv_p
+  glDeleteProgramsARB_p glDeleteFramebuffersEXT_p glDeleteRenderbuffersEXT_p glDeleteBuffersARB_p glDeleteTextures_p
+  glGetBufferParameterivARB_p glGetProgramStringARB_p glGetProgramivARB_p glGetProgramEnvParameterdvARB_p glGetProgramEnvParameterfvARB_p
+  glVertexPointer_p glColorPointer_p glTexCoordPointer_p glNormalPointer_p
+
+  glTexImage2D_s glTexImage2D_p
+  ',                                                                                    # _p
 
   map( "glut$_", qw' Init InitDisplayMode InitWindowSize CreateWindow IdleFunc
       DisplayFunc ReshapeFunc KeyboardFunc SpecialFunc KeyboardUpFunc MouseFunc
@@ -38,7 +41,7 @@ use OpenGL qw' glpHasGLUT glpCheckExtension glpFullScreen glpRestoreScreen ',   
 BEGIN { eval 'use Time::HiRes "time"' }    # necessary to do at BEGIN so time() will be imported
 
 use constant PROGRAM_TITLE      => "OpenGL Test App";
-use constant DO_TESTS           => 0;
+use constant DO_TESTS           => 1;
 use constant FRAME_RATE_SAMPLES => 50;
 
 plan skip_all => "test requires free/GLUT" if not glpHasGLUT;
@@ -406,7 +409,7 @@ sub ourInitVertexBuffers {
         $colors_oga->bind( $ColorObjID );
         glBufferData_p GL_ARRAY_BUFFER_ARB, $colors_oga, GL_DYNAMIC_DRAW_ARB;
         $rainbow_oga->assign( 0, @rainbow );
-        glBufferSubDataARB_p GL_ARRAY_BUFFER_ARB, $rainbow_offset, $rainbow_oga;
+        glBufferSubData_p GL_ARRAY_BUFFER_ARB, $rainbow_offset, $rainbow_oga;
         glColorPointer_c 4, GL_FLOAT, 0, 0;
 
         #glBindBufferARB(GL_ARRAY_BUFFER_ARB, $TexCoordObjID);
@@ -567,10 +570,11 @@ sub ourBuildTextures {
 
     # Benchmarks for Image Loading
     if ( DO_TESTS && $hasIM ) {
-        my $loops = 1000;
+        my $loops = 2;
 
-        my $im = Image::Magick->new;
-        $im->Read( $Tex_File );
+        my $im  = Image::Magick->new;
+        my $res = $im->Read( $Tex_File );
+        die $res if $res;
         $im->Set( magick => 'RGBA', depth => 8 );
         $im->Negate( channel => 'alpha' );
 
@@ -619,7 +623,7 @@ sub ourBuildTextures {
         note "Using FBOs\n";
 
         ( $FrameBufferID )  = glGenFramebuffers_p 1;
-        ( $RenderBufferID ) = glGenRenderbuffersEXT_p 1;
+        ( $RenderBufferID ) = glGenRenderbuffers_p 1;
 
         glBindFramebufferEXT GL_FRAMEBUFFER_EXT, $FrameBufferID;
         glBindTexture GL_TEXTURE_2D,             $TextureID_FBO;
@@ -720,8 +724,9 @@ sub ourInitShaders {
         glProgramStringARB_p GL_VERTEX_PROGRAM_ARB, $VertexProg;
 
         if ( DO_TESTS ) {
-            my $format = glGetProgramivARB_p GL_VERTEX_PROGRAM_ARB, GL_PROGRAM_FORMAT_ARB;
-            note sprintf "glGetProgramivARB_p format: '#%04X'\n", $format;
+            my $format = glGetProgramivARB_p GL_VERTEX_PROGRAM_ARB,
+              GL_PROGRAM_FORMAT_ARB;    # does this even make sense? target seems wrong
+            note sprintf "glGetProgramivARB_p format: '#%04X'\n", $format; # 34933 # glGetProgramivARB_p format: '#8875'
 
             my @params = glGetProgramEnvParameterdvARB_p GL_VERTEX_PROGRAM_ARB, 0;
             my $params = join ', ', @params;
@@ -881,9 +886,8 @@ sub cbRenderScene {
 
     if ( $hasVBO ) {
         glBindBufferARB GL_ARRAY_BUFFER_ARB, $ColorObjID;
-        my $color_map = glMapBufferARB_p GL_ARRAY_BUFFER_ARB,         GL_WRITE_ONLY_ARB,         GL_FLOAT;
-        my $buffer    = glGetBufferPointervARB_p GL_ARRAY_BUFFER_ARB, GL_BUFFER_MAP_POINTER_ARB, GL_FLOAT;
-        $color_map->assign( $rainbow_offset, @rainbow );
+        my $color_map_oga = glMapBufferARB_p GL_ARRAY_BUFFER_ARB, GL_WRITE_ONLY_ARB, GL_FLOAT;
+        $color_map_oga->assign( $rainbow_offset, @rainbow );
         glUnmapBufferARB GL_ARRAY_BUFFER_ARB;
     }
     else {

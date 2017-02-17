@@ -27,10 +27,14 @@ use OpenGL::Modern qw(
   glGenFramebuffers_c
   glGenVertexArrays_c
   glGenBuffers_c
+  glGenProgramsARB_c
+  glGenRenderbuffers_c
   glGetIntegerv_c
   glBufferData_c
+  glBufferSubData_c
   glUniform2f
   glUniform4f
+  glGetProgramivARB_c
 );
 
 =head1 NAME
@@ -163,10 +167,14 @@ $VERSION = '0.01_02';
   glGenFramebuffers_p
   glGenVertexArrays_p
   glGenBuffers_p
+  glGenProgramsARB_p
+  glGenRenderbuffers_p
   glGetIntegerv_p
   glBufferData_p
+  glBufferSubData_p
   glUniform2f_p
   glUniform4f_p
+  glGetProgramivARB_p
 );
 
 %glErrorStrings = (
@@ -277,6 +285,10 @@ sub glGenVertexArrays_p { gen_thing_p \&glGenVertexArrays_c, @_ }
 
 sub glGenBuffers_p { gen_thing_p \&glGenBuffers_c, @_ }
 
+sub glGenProgramsARB_p { gen_thing_p \&glGenProgramsARB_c, @_ }
+
+sub glGenRenderbuffers_p { gen_thing_p \&glGenRenderbuffers_c, @_ }
+
 sub get_iv_p {
     my ( $call, $id, $pname, $count ) = @_;
     $count ||= 1;
@@ -287,6 +299,8 @@ sub get_iv_p {
 }
 
 sub glGetProgramiv_p { get_iv_p \&glGetProgramiv_c, @_ }
+
+sub glGetProgramivARB_p { get_iv_p \&glGetProgramivARB_c, @_ }
 
 sub glGetShaderiv_p { get_iv_p \&glGetShaderiv_c, @_ }
 
@@ -310,6 +324,11 @@ sub glGetIntegerv_p {
 sub glBufferData_p {
     my ( $target, $oga, $usage ) = @_;
     glBufferData_c $target, $oga->length, $oga->ptr, $usage;
+}
+
+sub glBufferSubData_p {
+    my ( $target, $offset, $oga ) = @_;
+    glBufferSubData_c $target, $offset, $oga->length, $oga->ptr;
 }
 
 sub glUniform2f_p {
