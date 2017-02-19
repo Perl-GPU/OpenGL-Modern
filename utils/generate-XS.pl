@@ -127,7 +127,8 @@ for my $file ( @headers ) {
         }
         elsif ( $line =~ m|^typedef (\w+(?:\s*\*)?) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);| ) {
             my ( $restype, $name, $sig ) = ( $1, $2, $3 );
-            my $s = { signature => $sig, restype => $restype, feature => $feature_name, name => $name };
+            my $s =
+              { signature => $sig, restype => $restype, feature => $feature_name, name => $name, glewtype => 'fun' };
             $signature{$name} = $s;
             push @{ $features{$feature_name} }, $s;
 
@@ -137,7 +138,8 @@ for my $file ( @headers ) {
 
             # Some external function, likely imported from libopengl / opengl32
             my ( $restype, $name, $sig ) = ( $1, $2, $3 );
-            my $s = { signature => $sig, restype => $restype, feature => $feature_name, name => $name };
+            my $s =
+              { signature => $sig, restype => $restype, feature => $feature_name, name => $name, glewtype => 'fun' };
             $signature{ uc $name } = $s;
             $case_map{ uc $name }  = $name;
             push @{ $features{$feature_name} }, $s;
@@ -153,6 +155,22 @@ for my $file ( @headers ) {
         elsif ( $line =~ m|^#define (\w+) GLEW_GET_FUN\(__(\w+)\)| ) {
             my ( $name, $impl ) = ( $1, $2 );
             $alias{$impl} = $name;
+
+            # #define GLEW_VERSION_1_1 GLEW_GET_VAR(__GLEW_VERSION_1_1)
+        }
+        elsif ( $line =~ m|^#define (\w+) GLEW_GET_VAR\(__(\w+)\)| ) {
+            my ( $name, $impl ) = ( $1, $2 );
+            $alias{$impl} = $name;
+
+            # GLEW_VAR_EXPORT GLboolean __GLEW_VERSION_1_1;
+        }
+        elsif ( $line =~ m|^GLEW_VAR_EXPORT (\w+) __(\w+)| ) {
+            my ( $restype, $impl ) = ( $1, $2 );
+            my $s = { signature => 'void', restype => $restype, feature => $feature_name, glewtype => 'var' };
+            my $name = $alias{$impl};
+            $signature{$name} = $s;
+            push @{ $features{$feature_name} }, $s;
+            $case_map{$name} = $impl;
 
         }
     }
@@ -309,8 +327,8 @@ XS
 
         }
         else {
+            $res .= "    RETVAL = $name" . ( ( $item->{glewtype} eq 'var' ) ? ";\n" : "($args);\n" );
             $res .= <<XS;
-    RETVAL = $name($args);
 OUTPUT:
     RETVAL
 
