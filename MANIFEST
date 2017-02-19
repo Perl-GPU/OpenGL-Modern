@@ -2,10 +2,13 @@
 Changes
 MANIFEST			This list of files
 MANIFEST.SKIP
+META.json                                Module JSON meta-data (added by MakeMaker)
+META.yml                                 Module YAML meta-data (added by MakeMaker)
 Makefile.PL
 Modern.xs
 README
 README.md
+cpanfile
 include/GL/eglew.h
 include/GL/glew.h
 include/GL/glxew.h
@@ -26,5 +29,3 @@ t/0999_tidy.t
 t/lib/PerlTidyCheck.pm
 typemap
 utils/generate-XS.pl
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)
