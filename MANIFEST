@@ -6,7 +6,6 @@ META.json                                Module JSON meta-data (added by MakeMak
 META.yml                                 Module YAML meta-data (added by MakeMaker)
 Makefile.PL
 Modern.xs
-README
 README.md
 cpanfile
 include/GL/eglew.h
