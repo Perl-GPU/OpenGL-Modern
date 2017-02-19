@@ -1,7 +1,10 @@
 Revision history for Perl extension OpenGL::Modern.
 
-0.02_01  TBD
-
+0.02_01  2017-02-19 11:18:52-05:00
+        - Implemented accessor routines for GLEW_VERSION_N_M and others
+	- fixes for Travis-CI integration
+	- more conditions for tests to skipj
+	- MacOSX fixes for build
 
 0.02     2017-02-12 09:10:44-05:00
         - First offical release of OpenGL::Modern
