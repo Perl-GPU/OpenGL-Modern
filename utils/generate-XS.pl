@@ -311,7 +311,7 @@ CODE:
         _done_glewInit++;
     }
 XS
-        if ( $glewImpl ) {
+        if ( $item->{glewtype} eq 'fun' and $glewImpl ) {
             $res .= <<XS;
     if ( ! $glewImpl ) {
         croak("$name not available on this machine");
