@@ -57,7 +57,8 @@ CODE:
         warn("glewInit() called %dX already", _done_glewInit);
     }
     RETVAL = glewInit();
-    _done_glewInit++;
+    if ( !RETVAL )
+        _done_glewInit++;
 OUTPUT:
     RETVAL
 
