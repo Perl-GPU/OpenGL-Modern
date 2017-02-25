@@ -7,6 +7,7 @@ on configure => sub {
     requires 'ExtUtils::Constant'            => 0;
     requires 'ExtUtils::MakeMaker'           => '6.17';
     requires 'ExtUtils::MakeMaker::CPANfile' => 0;
+    requires 'Devel::CheckLib'               => 0;
 };
 
 on test => sub {
