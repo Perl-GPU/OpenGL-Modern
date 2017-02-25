@@ -1,5 +1,11 @@
 Revision history for Perl extension OpenGL::Modern.
 
+0.03     2017-02-25 17:08:07-05:00
+        - Use Devel::CheckLib to generate NA for missing libraries
+	- Fix automatic calls for glewInit() and done_glewInit()
+	- Implement accessor function for GLEW_* state variables
+	- Now builds on Mac OS X
+
 0.02_03  2017-02-25 15:47:35-05:00
         - final check before 0.03 release
         - use Devel::CheckLib to generate NA on missing libs
@@ -11,7 +17,7 @@ Revision history for Perl extension OpenGL::Modern.
 0.02_01  2017-02-19 11:18:52-05:00
         - Implemented accessor routines for GLEW_VERSION_N_M and others
 	- fixes for Travis-CI integration
-	- more conditions for tests to skipj
+	- more conditions for tests to skip
 	- MacOSX fixes for build
 
 0.02     2017-02-12 09:10:44-05:00
