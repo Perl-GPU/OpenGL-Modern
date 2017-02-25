@@ -1,11 +1,12 @@
 Revision history for Perl extension OpenGL::Modern.
 
-0.02_03  TBD
-
+0.02_03  2017-02-25 15:47:35-05:00
+        - final check before 0.03 release
+        - use Devel::CheckLib to generate NA on missing libs
+	- fix implementation of done_glewInit()
 
 0.02_02  2017-02-20 09:20:17-05:00
         - Fix bad code generated for GLEW_* variable accessors
-
 
 0.02_01  2017-02-19 11:18:52-05:00
         - Implemented accessor routines for GLEW_VERSION_N_M and others

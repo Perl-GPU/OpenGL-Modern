@@ -59,6 +59,7 @@ This module requires these other modules and libraries:
     Capture::Tiny                 => 0,
     Data::Dumper                  => 0,
     Devel::CheckOS                => 0,
+    Devel::CheckLib               => 0,
     ExtUtils::Constant            => 0,
     ExtUtils::MakeMaker           => 6.17,
     ExtUtils::MakeMaker::CPANfile => 0,
