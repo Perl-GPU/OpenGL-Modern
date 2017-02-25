@@ -8,6 +8,7 @@ use lib 'lib';
 use OpenGL::Modern::NameLists::MakefileAll;
 use Capture::Tiny 'capture';
 use ExtUtils::Constant ();
+use Devel::CheckLib 'assert_lib';
 
 my $include = "-I. -Iinclude -Isrc";
 my $libs;
@@ -105,6 +106,8 @@ sub WriteMakefile1 {    #Written by Alexandr Ciornii, version 0.21. Added by eum
     delete $params{AUTHOR}             if $] < 5.005;
     delete $params{ABSTRACT_FROM}      if $] < 5.005;
     delete $params{BINARY_LOCATION}    if $] < 5.005;
+
+    die "$@\nOS unsupported\n" if not eval { assert_lib %params; 1 };
 
     WriteMakefile( %params );
 }
