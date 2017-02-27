@@ -4,15 +4,29 @@ use warnings;
 use Test::More;
 
 BEGIN {
-    plan skip_all => "test requires old OpenGL.pm for now" if !eval { require OpenGL; 1 };
+    plan skip_all => "test requires old OpenGL.pm for now" if !eval { require OpenGL;       1 };
+    plan skip_all => "test requires OpenGL::GLUT"          if !eval { require OpenGL::GLUT; 1 };
 }
 
+use OpenGL::GLUT
+  map( "glut$_", qw' Init InitDisplayMode InitWindowSize CreateWindow IdleFunc
+      DisplayFunc ReshapeFunc KeyboardFunc SpecialFunc KeyboardUpFunc MouseFunc
+      SpecialUpFunc CloseFunc SetOption MainLoop WireTeapot BitmapCharacter Get
+      SwapBuffers HideWindow DestroyWindow LeaveMainLoop GetModifiers
+      GameModeGet EnterGameMode LeaveGameMode GameModeString ' ),
+  map( "GLUT_$_", qw' ACTIVE_SHIFT ACTIVE_CTRL ACTIVE_ALT BITMAP_HELVETICA_12 UP
+      WINDOW_WIDTH WINDOW_HEIGHT KEY_PAGE_UP KEY_PAGE_DOWN KEY_UP KEY_DOWN ALPHA
+      KEY_LEFT KEY_RIGHT LEFT_BUTTON MIDDLE_BUTTON RIGHT_BUTTON DOWN DOUBLE RGBA
+      ACTION_ON_WINDOW_CLOSE ACTION_GLUTMAINLOOP_RETURNS GAME_MODE_WIDTH DEPTH
+      DISPLAY_MODE_POSSIBLE GAME_MODE_HEIGHT' );
+
 use OpenGL::Modern qw':all';
+
 use OpenGL::Modern::Helpers qw' glGenTextures_p glGenBuffers_p
   glGenFramebuffers_p glBufferData_p glGenProgramsARB_p glGenRenderbuffers_p
   glBufferSubData_p ';
 
-use OpenGL qw' glpHasGLUT glpCheckExtension glpFullScreen glpRestoreScreen ',    # glp
+use OpenGL qw' glpCheckExtension glpFullScreen glpRestoreScreen ',    # glp
 
   qw' gluBuild2DMipmaps_c gluPerspective gluOrtho2D gluUnProject_p gluErrorString ',    # glu
 
@@ -24,27 +38,13 @@ use OpenGL qw' glpHasGLUT glpCheckExtension glpFullScreen glpRestoreScreen ',   
   glVertexPointer_p glColorPointer_p glTexCoordPointer_p glNormalPointer_p
 
   glTexImage2D_s glTexImage2D_p
-  ',                                                                                    # _p
-
-  map( "glut$_", qw' Init InitDisplayMode InitWindowSize CreateWindow IdleFunc
-      DisplayFunc ReshapeFunc KeyboardFunc SpecialFunc KeyboardUpFunc MouseFunc
-      SpecialUpFunc CloseFunc SetOption MainLoop WireTeapot BitmapCharacter Get
-      SwapBuffers HideWindow DestroyWindow LeaveMainLoop GetModifiers
-      GameModeGet EnterGameMode LeaveGameMode GameModeString ' ),                       # glut
-
-  map( "GLUT_$_", qw' ACTIVE_SHIFT ACTIVE_CTRL ACTIVE_ALT BITMAP_HELVETICA_12 UP
-      WINDOW_WIDTH WINDOW_HEIGHT KEY_PAGE_UP KEY_PAGE_DOWN KEY_UP KEY_DOWN ALPHA
-      KEY_LEFT KEY_RIGHT LEFT_BUTTON MIDDLE_BUTTON RIGHT_BUTTON DOWN DOUBLE RGBA
-      ACTION_ON_WINDOW_CLOSE ACTION_GLUTMAINLOOP_RETURNS GAME_MODE_WIDTH DEPTH
-      DISPLAY_MODE_POSSIBLE GAME_MODE_HEIGHT' );                                        # GLUT
+  ';                                                                                    # _p
 
 BEGIN { eval 'use Time::HiRes "time"' }    # necessary to do at BEGIN so time() will be imported
 
 use constant PROGRAM_TITLE      => "OpenGL Test App";
 use constant DO_TESTS           => 1;
 use constant FRAME_RATE_SAMPLES => 50;
-
-plan skip_all => "test requires free/GLUT" if not glpHasGLUT;
 
 my $hasHires  = eval 'use Time::HiRes; 1';
 my $hasImage  = eval 'use OpenGL::Image 1.03; 1';
@@ -173,7 +173,7 @@ my @Light_Position = ( 2.0, 2.0, 0.0, 1.0 );
 my @Light_Ambient  = ( 0.1, 0.1, 0.1, 1.0 );
 my @Light_Diffuse  = ( 1.2, 1.2, 1.2, 1.0 );
 
-my $Tex_File   = 'test.tga';
+my $Tex_File   = 't/data/test.tga';
 my $Tex_Width  = 128;
 my $Tex_Height = 128;
 my $Tex_Type;
