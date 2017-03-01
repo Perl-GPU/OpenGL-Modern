@@ -1,0 +1,28 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glFogCoordPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogCoordPointer,0,0,GLenum,type,N/A,in,fixed,??
+glFogCoordPointer,1,0,GLsizei,stride,N/A,in,fixed,??
+glFogCoordPointer,2,1,"const void *",pointer,???,???,???,???
+glFogCoorddv,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogCoorddv,0,1,"const GLdouble *",coord,???,???,???,???
+glFogCoordfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogCoordfv,0,1,"const GLfloat *",coord,???,???,???,???
+glMultiDrawArrays,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawArrays,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawArrays,1,1,"const GLint *",first,???,???,???,???
+glMultiDrawArrays,2,1,"const GLsizei *",count,???,???,???,???
+glMultiDrawArrays,3,0,GLsizei,drawcount,N/A,in,fixed,??
+glMultiDrawElements,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawElements,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawElements,1,1,"const GLsizei *",count,???,???,???,???
+glMultiDrawElements,2,0,GLenum,type,N/A,in,fixed,??
+glMultiDrawElements,3,2,"const void * const *",indices,???,???,???,???
+glMultiDrawElements,4,0,GLsizei,drawcount,N/A,in,fixed,??
+glPointParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glPointParameterfv,0,0,GLenum,pname,N/A,in,fixed,??
+glPointParameterfv,1,1,"const GLfloat *",params,???,???,???,???
+glPointParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glPointParameteriv,0,0,GLenum,pname,N/A,in,fixed,??
+glPointParameteriv,1,1,"const GLint *",params,???,???,???,???
+glSecondaryColor3bv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColor3bv,0,1,"const GLbyte *",v,???,???,???,???

@@ -1,0 +1,13 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVertexAttribs4fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs4fvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs4fvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs4fvNV,2,1,"const GLfloat *",v,???,???,???,???
+glVertexAttribs4svNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs4svNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs4svNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs4svNV,2,1,"const GLshort *",v,???,???,???,???
+glVertexAttribs4ubvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs4ubvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs4ubvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs4ubvNV,2,1,"const GLubyte *",v,???,???,???,???

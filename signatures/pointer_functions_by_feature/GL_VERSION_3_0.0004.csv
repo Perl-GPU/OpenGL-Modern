@@ -1,0 +1,10 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVertexAttribI4usv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI4usv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI4usv,1,1,"const GLushort *",v0,???,???,???,???
+glVertexAttribIPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribIPointer,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribIPointer,1,0,GLint,size,N/A,in,fixed,??
+glVertexAttribIPointer,2,0,GLenum,type,N/A,in,fixed,??
+glVertexAttribIPointer,3,0,GLsizei,stride,N/A,in,fixed,??
+glVertexAttribIPointer,4,1,"const void *",pointer,???,???,???,???

@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetInternalformativ,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetInternalformativ,0,0,GLenum,target,N/A,in,fixed,??
+glGetInternalformativ,1,0,GLenum,internalformat,N/A,in,fixed,??
+glGetInternalformativ,2,0,GLenum,pname,N/A,in,fixed,??
+glGetInternalformativ,3,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetInternalformativ,4,1,"GLint *",params,???,???,???,???

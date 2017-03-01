@@ -1,0 +1,11 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glBufferStorage,-1,0,void,N/A,N/A,out,fixed,N/A
+glBufferStorage,0,0,GLenum,target,N/A,in,fixed,??
+glBufferStorage,1,0,GLsizeiptr,size,N/A,in,fixed,??
+glBufferStorage,2,1,"const void *",data,???,???,???,???
+glBufferStorage,3,0,GLbitfield,flags,N/A,in,fixed,??
+glNamedBufferStorageEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedBufferStorageEXT,0,0,GLuint,buffer,N/A,in,fixed,??
+glNamedBufferStorageEXT,1,0,GLsizeiptr,size,N/A,in,fixed,??
+glNamedBufferStorageEXT,2,1,"const void *",data,???,???,???,???
+glNamedBufferStorageEXT,3,0,GLbitfield,flags,N/A,in,fixed,??

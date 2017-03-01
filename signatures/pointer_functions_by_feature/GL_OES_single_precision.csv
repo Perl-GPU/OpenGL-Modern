@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glClipPlanefOES,-1,0,void,N/A,N/A,out,fixed,N/A
+glClipPlanefOES,0,0,GLenum,plane,N/A,in,fixed,??
+glClipPlanefOES,1,1,"const GLfloat *",equation,???,???,???,???
+glGetClipPlanefOES,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetClipPlanefOES,0,0,GLenum,plane,N/A,in,fixed,??
+glGetClipPlanefOES,1,1,"GLfloat *",equation,???,???,???,???

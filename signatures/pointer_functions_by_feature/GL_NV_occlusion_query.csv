@@ -1,0 +1,15 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteOcclusionQueriesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteOcclusionQueriesNV,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteOcclusionQueriesNV,1,1,"const GLuint *",ids,???,???,???,???
+glGenOcclusionQueriesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenOcclusionQueriesNV,0,0,GLsizei,n,N/A,in,fixed,??
+glGenOcclusionQueriesNV,1,1,"GLuint *",ids,???,???,???,???
+glGetOcclusionQueryivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetOcclusionQueryivNV,0,0,GLuint,id,N/A,in,fixed,??
+glGetOcclusionQueryivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetOcclusionQueryivNV,2,1,"GLint *",params,???,???,???,???
+glGetOcclusionQueryuivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetOcclusionQueryuivNV,0,0,GLuint,id,N/A,in,fixed,??
+glGetOcclusionQueryuivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetOcclusionQueryuivNV,2,1,"GLuint *",params,???,???,???,???

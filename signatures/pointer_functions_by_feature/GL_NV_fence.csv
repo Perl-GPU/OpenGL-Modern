@@ -1,0 +1,11 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteFencesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteFencesNV,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteFencesNV,1,1,"const GLuint *",fences,???,???,???,???
+glGenFencesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenFencesNV,0,0,GLsizei,n,N/A,in,fixed,??
+glGenFencesNV,1,1,"GLuint *",fences,???,???,???,???
+glGetFenceivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFenceivNV,0,0,GLuint,fence,N/A,in,fixed,??
+glGetFenceivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFenceivNV,2,1,"GLint *",params,???,???,???,???

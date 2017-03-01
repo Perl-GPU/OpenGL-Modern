@@ -1,0 +1,31 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glNormal3sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormal3sv,0,1,"const GLshort *",v,???,???,???,???
+glNormalPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormalPointer,0,0,GLenum,type,N/A,in,fixed,??
+glNormalPointer,1,0,GLsizei,stride,N/A,in,fixed,??
+glNormalPointer,2,1,"const void *",pointer,???,???,???,???
+glPixelMapfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glPixelMapfv,0,0,GLenum,map,N/A,in,fixed,??
+glPixelMapfv,1,0,GLsizei,mapsize,N/A,in,fixed,??
+glPixelMapfv,2,1,"const GLfloat *",values,???,???,???,???
+glPixelMapuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glPixelMapuiv,0,0,GLenum,map,N/A,in,fixed,??
+glPixelMapuiv,1,0,GLsizei,mapsize,N/A,in,fixed,??
+glPixelMapuiv,2,1,"const GLuint *",values,???,???,???,???
+glPixelMapusv,-1,0,void,N/A,N/A,out,fixed,N/A
+glPixelMapusv,0,0,GLenum,map,N/A,in,fixed,??
+glPixelMapusv,1,0,GLsizei,mapsize,N/A,in,fixed,??
+glPixelMapusv,2,1,"const GLushort *",values,???,???,???,???
+glPolygonStipple,-1,0,void,N/A,N/A,out,fixed,N/A
+glPolygonStipple,0,1,"const GLubyte *",mask,???,???,???,???
+glPrioritizeTextures,-1,0,void,N/A,N/A,out,fixed,N/A
+glPrioritizeTextures,0,0,GLsizei,n,N/A,in,fixed,??
+glPrioritizeTextures,1,1,"const GLuint *",textures,???,???,???,???
+glPrioritizeTextures,2,1,"const GLclampf *",priorities,???,???,???,???
+glRasterPos2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glRasterPos2dv,0,1,"const GLdouble *",v,???,???,???,???
+glRasterPos2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glRasterPos2fv,0,1,"const GLfloat *",v,???,???,???,???
+glRasterPos2iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glRasterPos2iv,0,1,"const GLint *",v,???,???,???,???

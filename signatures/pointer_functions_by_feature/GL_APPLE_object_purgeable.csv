@@ -1,0 +1,6 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetObjectParameterivAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetObjectParameterivAPPLE,0,0,GLenum,objectType,N/A,in,fixed,??
+glGetObjectParameterivAPPLE,1,0,GLuint,name,N/A,in,fixed,??
+glGetObjectParameterivAPPLE,2,0,GLenum,pname,N/A,in,fixed,??
+glGetObjectParameterivAPPLE,3,1,"GLint *",params,???,???,???,???

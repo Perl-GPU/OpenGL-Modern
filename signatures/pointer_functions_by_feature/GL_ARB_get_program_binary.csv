@@ -1,0 +1,12 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetProgramBinary,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramBinary,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramBinary,1,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetProgramBinary,2,1,"GLsizei *",length,???,???,???,???
+glGetProgramBinary,3,1,"GLenum *",binaryFormat,???,???,???,???
+glGetProgramBinary,4,1,"void *",binary,???,???,???,???
+glProgramBinary,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramBinary,0,0,GLuint,program,N/A,in,fixed,??
+glProgramBinary,1,0,GLenum,binaryFormat,N/A,in,fixed,??
+glProgramBinary,2,1,"const void *",binary,???,???,???,???
+glProgramBinary,3,0,GLsizei,length,N/A,in,fixed,??

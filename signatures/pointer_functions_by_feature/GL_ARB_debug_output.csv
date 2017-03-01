@@ -1,0 +1,27 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDebugMessageCallbackARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glDebugMessageCallbackARB,0,0,GLDEBUGPROCARB,callback,N/A,in,fixed,??
+glDebugMessageCallbackARB,1,1,"const void *",userParam,???,???,???,???
+glDebugMessageControlARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glDebugMessageControlARB,0,0,GLenum,source,N/A,in,fixed,??
+glDebugMessageControlARB,1,0,GLenum,type,N/A,in,fixed,??
+glDebugMessageControlARB,2,0,GLenum,severity,N/A,in,fixed,??
+glDebugMessageControlARB,3,0,GLsizei,count,N/A,in,fixed,??
+glDebugMessageControlARB,4,1,"const GLuint *",ids,???,???,???,???
+glDebugMessageControlARB,5,0,GLboolean,enabled,N/A,in,fixed,??
+glDebugMessageInsertARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glDebugMessageInsertARB,0,0,GLenum,source,N/A,in,fixed,??
+glDebugMessageInsertARB,1,0,GLenum,type,N/A,in,fixed,??
+glDebugMessageInsertARB,2,0,GLuint,id,N/A,in,fixed,??
+glDebugMessageInsertARB,3,0,GLenum,severity,N/A,in,fixed,??
+glDebugMessageInsertARB,4,0,GLsizei,length,N/A,in,fixed,??
+glDebugMessageInsertARB,5,1,"const GLchar *",buf,???,???,???,???
+glGetDebugMessageLogARB,-1,0,GLuint,N/A,N/A,out,fixed,??
+glGetDebugMessageLogARB,0,0,GLuint,count,N/A,in,fixed,??
+glGetDebugMessageLogARB,1,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetDebugMessageLogARB,2,1,"GLenum *",sources,???,???,???,???
+glGetDebugMessageLogARB,3,1,"GLenum *",types,???,???,???,???
+glGetDebugMessageLogARB,4,1,"GLuint *",ids,???,???,???,???
+glGetDebugMessageLogARB,5,1,"GLenum *",severities,???,???,???,???
+glGetDebugMessageLogARB,6,1,"GLsizei *",lengths,???,???,???,???
+glGetDebugMessageLogARB,7,1,"GLchar *",messageLog,???,???,???,???

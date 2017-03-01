@@ -1,0 +1,8 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetInternalformatSampleivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetInternalformatSampleivNV,0,0,GLenum,target,N/A,in,fixed,??
+glGetInternalformatSampleivNV,1,0,GLenum,internalformat,N/A,in,fixed,??
+glGetInternalformatSampleivNV,2,0,GLsizei,samples,N/A,in,fixed,??
+glGetInternalformatSampleivNV,3,0,GLenum,pname,N/A,in,fixed,??
+glGetInternalformatSampleivNV,4,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetInternalformatSampleivNV,5,1,"GLint *",params,???,???,???,???

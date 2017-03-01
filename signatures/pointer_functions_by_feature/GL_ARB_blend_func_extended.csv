@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glBindFragDataLocationIndexed,-1,0,void,N/A,N/A,out,fixed,N/A
+glBindFragDataLocationIndexed,0,0,GLuint,program,N/A,in,fixed,??
+glBindFragDataLocationIndexed,1,0,GLuint,colorNumber,N/A,in,fixed,??
+glBindFragDataLocationIndexed,2,0,GLuint,index,N/A,in,fixed,??
+glBindFragDataLocationIndexed,3,1,"const GLchar *",name,???,???,???,???
+glGetFragDataIndex,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetFragDataIndex,0,0,GLuint,program,N/A,in,fixed,??
+glGetFragDataIndex,1,1,"const GLchar *",name,???,???,???,???

@@ -1,0 +1,4 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glSetFragmentShaderConstantATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glSetFragmentShaderConstantATI,0,0,GLuint,dst,N/A,in,fixed,??
+glSetFragmentShaderConstantATI,1,1,"const GLfloat *",value,???,???,???,???

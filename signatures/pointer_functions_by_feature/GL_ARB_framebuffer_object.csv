@@ -1,0 +1,22 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteFramebuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteFramebuffers,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteFramebuffers,1,1,"const GLuint *",framebuffers,???,???,???,???
+glDeleteRenderbuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteRenderbuffers,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteRenderbuffers,1,1,"const GLuint *",renderbuffers,???,???,???,???
+glGenFramebuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenFramebuffers,0,0,GLsizei,n,N/A,in,fixed,??
+glGenFramebuffers,1,1,"GLuint *",framebuffers,???,???,???,???
+glGenRenderbuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenRenderbuffers,0,0,GLsizei,n,N/A,in,fixed,??
+glGenRenderbuffers,1,1,"GLuint *",renderbuffers,???,???,???,???
+glGetFramebufferAttachmentParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFramebufferAttachmentParameteriv,0,0,GLenum,target,N/A,in,fixed,??
+glGetFramebufferAttachmentParameteriv,1,0,GLenum,attachment,N/A,in,fixed,??
+glGetFramebufferAttachmentParameteriv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetFramebufferAttachmentParameteriv,3,1,"GLint *",params,???,???,???,???
+glGetRenderbufferParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetRenderbufferParameteriv,0,0,GLenum,target,N/A,in,fixed,??
+glGetRenderbufferParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetRenderbufferParameteriv,2,1,"GLint *",params,???,???,???,???

@@ -1,0 +1,49 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetConvolutionFilter,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetConvolutionFilter,0,0,GLenum,target,N/A,in,fixed,??
+glGetConvolutionFilter,1,0,GLenum,format,N/A,in,fixed,??
+glGetConvolutionFilter,2,0,GLenum,type,N/A,in,fixed,??
+glGetConvolutionFilter,3,1,"void *",image,???,???,???,???
+glGetConvolutionParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetConvolutionParameterfv,0,0,GLenum,target,N/A,in,fixed,??
+glGetConvolutionParameterfv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetConvolutionParameterfv,2,1,"GLfloat *",params,???,???,???,???
+glGetConvolutionParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetConvolutionParameteriv,0,0,GLenum,target,N/A,in,fixed,??
+glGetConvolutionParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetConvolutionParameteriv,2,1,"GLint *",params,???,???,???,???
+glGetHistogram,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetHistogram,0,0,GLenum,target,N/A,in,fixed,??
+glGetHistogram,1,0,GLboolean,reset,N/A,in,fixed,??
+glGetHistogram,2,0,GLenum,format,N/A,in,fixed,??
+glGetHistogram,3,0,GLenum,type,N/A,in,fixed,??
+glGetHistogram,4,1,"void *",values,???,???,???,???
+glGetHistogramParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetHistogramParameterfv,0,0,GLenum,target,N/A,in,fixed,??
+glGetHistogramParameterfv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetHistogramParameterfv,2,1,"GLfloat *",params,???,???,???,???
+glGetHistogramParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetHistogramParameteriv,0,0,GLenum,target,N/A,in,fixed,??
+glGetHistogramParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetHistogramParameteriv,2,1,"GLint *",params,???,???,???,???
+glGetMinmax,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMinmax,0,0,GLenum,target,N/A,in,fixed,??
+glGetMinmax,1,0,GLboolean,reset,N/A,in,fixed,??
+glGetMinmax,2,0,GLenum,format,N/A,in,fixed,??
+glGetMinmax,3,0,GLenum,types,N/A,in,fixed,??
+glGetMinmax,4,1,"void *",values,???,???,???,???
+glGetMinmaxParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMinmaxParameterfv,0,0,GLenum,target,N/A,in,fixed,??
+glGetMinmaxParameterfv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetMinmaxParameterfv,2,1,"GLfloat *",params,???,???,???,???
+glGetMinmaxParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMinmaxParameteriv,0,0,GLenum,target,N/A,in,fixed,??
+glGetMinmaxParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetMinmaxParameteriv,2,1,"GLint *",params,???,???,???,???
+glGetSeparableFilter,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetSeparableFilter,0,0,GLenum,target,N/A,in,fixed,??
+glGetSeparableFilter,1,0,GLenum,format,N/A,in,fixed,??
+glGetSeparableFilter,2,0,GLenum,type,N/A,in,fixed,??
+glGetSeparableFilter,3,1,"void *",row,???,???,???,???
+glGetSeparableFilter,4,1,"void *",column,???,???,???,???
+glGetSeparableFilter,5,1,"void *",span,???,???,???,???

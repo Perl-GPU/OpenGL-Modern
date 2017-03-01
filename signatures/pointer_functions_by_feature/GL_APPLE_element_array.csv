@@ -1,0 +1,16 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glElementPointerAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glElementPointerAPPLE,0,0,GLenum,type,N/A,in,fixed,??
+glElementPointerAPPLE,1,1,"const void *",pointer,???,???,???,???
+glMultiDrawElementArrayAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawElementArrayAPPLE,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawElementArrayAPPLE,1,1,"const GLint *",first,???,???,???,???
+glMultiDrawElementArrayAPPLE,2,1,"const GLsizei *",count,???,???,???,???
+glMultiDrawElementArrayAPPLE,3,0,GLsizei,primcount,N/A,in,fixed,??
+glMultiDrawRangeElementArrayAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawRangeElementArrayAPPLE,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawRangeElementArrayAPPLE,1,0,GLuint,start,N/A,in,fixed,??
+glMultiDrawRangeElementArrayAPPLE,2,0,GLuint,end,N/A,in,fixed,??
+glMultiDrawRangeElementArrayAPPLE,3,1,"const GLint *",first,???,???,???,???
+glMultiDrawRangeElementArrayAPPLE,4,1,"const GLsizei *",count,???,???,???,???
+glMultiDrawRangeElementArrayAPPLE,5,0,GLsizei,primcount,N/A,in,fixed,??

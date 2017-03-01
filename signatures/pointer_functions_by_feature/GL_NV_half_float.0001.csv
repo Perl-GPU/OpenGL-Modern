@@ -1,0 +1,27 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glColor3hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glColor3hvNV,0,1,"const GLhalf *",v,???,???,???,???
+glColor4hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glColor4hvNV,0,1,"const GLhalf *",v,???,???,???,???
+glFogCoordhvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogCoordhvNV,0,1,"const GLhalf *",fog,???,???,???,???
+glMultiTexCoord1hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord1hvNV,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord1hvNV,1,1,"const GLhalf *",v,???,???,???,???
+glMultiTexCoord2hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord2hvNV,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord2hvNV,1,1,"const GLhalf *",v,???,???,???,???
+glMultiTexCoord3hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord3hvNV,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord3hvNV,1,1,"const GLhalf *",v,???,???,???,???
+glMultiTexCoord4hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord4hvNV,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord4hvNV,1,1,"const GLhalf *",v,???,???,???,???
+glNormal3hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormal3hvNV,0,1,"const GLhalf *",v,???,???,???,???
+glSecondaryColor3hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColor3hvNV,0,1,"const GLhalf *",v,???,???,???,???
+glTexCoord1hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoord1hvNV,0,1,"const GLhalf *",v,???,???,???,???
+glTexCoord2hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoord2hvNV,0,1,"const GLhalf *",v,???,???,???,???

@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteNamesAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteNamesAMD,0,0,GLenum,identifier,N/A,in,fixed,??
+glDeleteNamesAMD,1,0,GLuint,num,N/A,in,fixed,??
+glDeleteNamesAMD,2,1,"const GLuint *",names,???,???,???,???
+glGenNamesAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenNamesAMD,0,0,GLenum,identifier,N/A,in,fixed,??
+glGenNamesAMD,1,0,GLuint,num,N/A,in,fixed,??
+glGenNamesAMD,2,1,"GLuint *",names,???,???,???,???

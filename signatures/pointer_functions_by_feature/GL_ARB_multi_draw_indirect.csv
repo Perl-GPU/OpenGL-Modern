@@ -1,0 +1,12 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMultiDrawArraysIndirect,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawArraysIndirect,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawArraysIndirect,1,1,"const void *",indirect,???,???,???,???
+glMultiDrawArraysIndirect,2,0,GLsizei,primcount,N/A,in,fixed,??
+glMultiDrawArraysIndirect,3,0,GLsizei,stride,N/A,in,fixed,??
+glMultiDrawElementsIndirect,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawElementsIndirect,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawElementsIndirect,1,0,GLenum,type,N/A,in,fixed,??
+glMultiDrawElementsIndirect,2,1,"const void *",indirect,???,???,???,???
+glMultiDrawElementsIndirect,3,0,GLsizei,primcount,N/A,in,fixed,??
+glMultiDrawElementsIndirect,4,0,GLsizei,stride,N/A,in,fixed,??

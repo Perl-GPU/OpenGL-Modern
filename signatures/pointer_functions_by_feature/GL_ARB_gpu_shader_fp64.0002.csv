@@ -1,0 +1,16 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glUniformMatrix4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix4dv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix4dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix4dv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix4dv,3,1,"const GLdouble *",value,???,???,???,???
+glUniformMatrix4x2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix4x2dv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix4x2dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix4x2dv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix4x2dv,3,1,"const GLdouble *",value,???,???,???,???
+glUniformMatrix4x3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix4x3dv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix4x3dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix4x3dv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix4x3dv,3,1,"const GLdouble *",value,???,???,???,???

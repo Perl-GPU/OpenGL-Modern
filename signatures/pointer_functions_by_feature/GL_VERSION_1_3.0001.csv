@@ -1,0 +1,70 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCompressedTexImage1D,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexImage1D,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexImage1D,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexImage1D,2,0,GLenum,internalformat,N/A,in,fixed,??
+glCompressedTexImage1D,3,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexImage1D,4,0,GLint,border,N/A,in,fixed,??
+glCompressedTexImage1D,5,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexImage1D,6,1,"const void *",data,???,???,???,???
+glCompressedTexImage2D,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexImage2D,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexImage2D,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexImage2D,2,0,GLenum,internalformat,N/A,in,fixed,??
+glCompressedTexImage2D,3,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexImage2D,4,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTexImage2D,5,0,GLint,border,N/A,in,fixed,??
+glCompressedTexImage2D,6,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexImage2D,7,1,"const void *",data,???,???,???,???
+glCompressedTexImage3D,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexImage3D,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexImage3D,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexImage3D,2,0,GLenum,internalformat,N/A,in,fixed,??
+glCompressedTexImage3D,3,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexImage3D,4,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTexImage3D,5,0,GLsizei,depth,N/A,in,fixed,??
+glCompressedTexImage3D,6,0,GLint,border,N/A,in,fixed,??
+glCompressedTexImage3D,7,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexImage3D,8,1,"const void *",data,???,???,???,???
+glCompressedTexSubImage1D,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexSubImage1D,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexSubImage1D,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexSubImage1D,2,0,GLint,xoffset,N/A,in,fixed,??
+glCompressedTexSubImage1D,3,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexSubImage1D,4,0,GLenum,format,N/A,in,fixed,??
+glCompressedTexSubImage1D,5,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexSubImage1D,6,1,"const void *",data,???,???,???,???
+glCompressedTexSubImage2D,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexSubImage2D,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexSubImage2D,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexSubImage2D,2,0,GLint,xoffset,N/A,in,fixed,??
+glCompressedTexSubImage2D,3,0,GLint,yoffset,N/A,in,fixed,??
+glCompressedTexSubImage2D,4,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexSubImage2D,5,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTexSubImage2D,6,0,GLenum,format,N/A,in,fixed,??
+glCompressedTexSubImage2D,7,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexSubImage2D,8,1,"const void *",data,???,???,???,???
+glCompressedTexSubImage3D,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexSubImage3D,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexSubImage3D,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexSubImage3D,2,0,GLint,xoffset,N/A,in,fixed,??
+glCompressedTexSubImage3D,3,0,GLint,yoffset,N/A,in,fixed,??
+glCompressedTexSubImage3D,4,0,GLint,zoffset,N/A,in,fixed,??
+glCompressedTexSubImage3D,5,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexSubImage3D,6,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTexSubImage3D,7,0,GLsizei,depth,N/A,in,fixed,??
+glCompressedTexSubImage3D,8,0,GLenum,format,N/A,in,fixed,??
+glCompressedTexSubImage3D,9,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexSubImage3D,10,1,"const void *",data,???,???,???,???
+glGetCompressedTexImage,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCompressedTexImage,0,0,GLenum,target,N/A,in,fixed,??
+glGetCompressedTexImage,1,0,GLint,lod,N/A,in,fixed,??
+glGetCompressedTexImage,2,1,"void *",img,???,???,???,???
+glLoadTransposeMatrixd,-1,0,void,N/A,N/A,out,fixed,N/A
+glLoadTransposeMatrixd,0,0,"const GLdouble",m,???,in,fixed,??
+glLoadTransposeMatrixf,-1,0,void,N/A,N/A,out,fixed,N/A
+glLoadTransposeMatrixf,0,0,"const GLfloat",m,???,in,fixed,??
+glMultTransposeMatrixd,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultTransposeMatrixd,0,0,"const GLdouble",m,???,in,fixed,??
+glMultTransposeMatrixf,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultTransposeMatrixf,0,0,"const GLfloat",m,???,in,fixed,??

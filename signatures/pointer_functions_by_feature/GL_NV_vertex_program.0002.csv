@@ -1,0 +1,45 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetVertexAttribdvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribdvNV,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribdvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribdvNV,2,1,"GLdouble *",params,???,???,???,???
+glGetVertexAttribfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribfvNV,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribfvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribfvNV,2,1,"GLfloat *",params,???,???,???,???
+glGetVertexAttribivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribivNV,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribivNV,2,1,"GLint *",params,???,???,???,???
+glLoadProgramNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glLoadProgramNV,0,0,GLenum,target,N/A,in,fixed,??
+glLoadProgramNV,1,0,GLuint,id,N/A,in,fixed,??
+glLoadProgramNV,2,0,GLsizei,len,N/A,in,fixed,??
+glLoadProgramNV,3,1,"const GLubyte *",program,???,???,???,???
+glProgramParameter4dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramParameter4dvNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramParameter4dvNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramParameter4dvNV,2,1,"const GLdouble *",params,???,???,???,???
+glProgramParameter4fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramParameter4fvNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramParameter4fvNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramParameter4fvNV,2,1,"const GLfloat *",params,???,???,???,???
+glProgramParameters4dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramParameters4dvNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramParameters4dvNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramParameters4dvNV,2,0,GLsizei,num,N/A,in,fixed,??
+glProgramParameters4dvNV,3,1,"const GLdouble *",params,???,???,???,???
+glProgramParameters4fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramParameters4fvNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramParameters4fvNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramParameters4fvNV,2,0,GLsizei,num,N/A,in,fixed,??
+glProgramParameters4fvNV,3,1,"const GLfloat *",params,???,???,???,???
+glRequestResidentProgramsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glRequestResidentProgramsNV,0,0,GLsizei,n,N/A,in,fixed,??
+glRequestResidentProgramsNV,1,1,"GLuint *",ids,???,???,???,???
+glVertexAttrib1dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib1dvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib1dvNV,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttrib1fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib1fvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib1fvNV,1,1,"const GLfloat *",v,???,???,???,???

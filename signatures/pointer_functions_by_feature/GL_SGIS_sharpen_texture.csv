@@ -1,0 +1,8 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetSharpenTexFuncSGIS,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetSharpenTexFuncSGIS,0,0,GLenum,target,N/A,in,fixed,??
+glGetSharpenTexFuncSGIS,1,1,"GLfloat *",points,???,???,???,???
+glSharpenTexFuncSGIS,-1,0,void,N/A,N/A,out,fixed,N/A
+glSharpenTexFuncSGIS,0,0,GLenum,target,N/A,in,fixed,??
+glSharpenTexFuncSGIS,1,0,GLsizei,n,N/A,in,fixed,??
+glSharpenTexFuncSGIS,2,1,"const GLfloat *",points,???,???,???,???

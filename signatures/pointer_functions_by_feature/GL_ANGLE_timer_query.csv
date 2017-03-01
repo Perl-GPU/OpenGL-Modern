@@ -1,0 +1,27 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteQueriesANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteQueriesANGLE,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteQueriesANGLE,1,1,"const GLuint *",ids,???,???,???,???
+glGenQueriesANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenQueriesANGLE,0,0,GLsizei,n,N/A,in,fixed,??
+glGenQueriesANGLE,1,1,"GLuint *",ids,???,???,???,???
+glGetQueryObjecti64vANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryObjecti64vANGLE,0,0,GLuint,id,N/A,in,fixed,??
+glGetQueryObjecti64vANGLE,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryObjecti64vANGLE,2,1,"GLint64 *",params,???,???,???,???
+glGetQueryObjectivANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryObjectivANGLE,0,0,GLuint,id,N/A,in,fixed,??
+glGetQueryObjectivANGLE,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryObjectivANGLE,2,1,"GLint *",params,???,???,???,???
+glGetQueryObjectui64vANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryObjectui64vANGLE,0,0,GLuint,id,N/A,in,fixed,??
+glGetQueryObjectui64vANGLE,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryObjectui64vANGLE,2,1,"GLuint64 *",params,???,???,???,???
+glGetQueryObjectuivANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryObjectuivANGLE,0,0,GLuint,id,N/A,in,fixed,??
+glGetQueryObjectuivANGLE,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryObjectuivANGLE,2,1,"GLuint *",params,???,???,???,???
+glGetQueryivANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryivANGLE,0,0,GLenum,target,N/A,in,fixed,??
+glGetQueryivANGLE,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryivANGLE,2,1,"GLint *",params,???,???,???,???

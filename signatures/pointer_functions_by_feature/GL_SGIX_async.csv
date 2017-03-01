@@ -1,0 +1,5 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glFinishAsyncSGIX,-1,0,GLint,N/A,N/A,out,fixed,??
+glFinishAsyncSGIX,0,1,"GLuint *",markerp,???,???,???,???
+glPollAsyncSGIX,-1,0,GLint,N/A,N/A,out,fixed,??
+glPollAsyncSGIX,0,1,"GLuint *",markerp,???,???,???,???

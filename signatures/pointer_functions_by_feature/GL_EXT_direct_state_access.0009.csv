@@ -1,0 +1,60 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glNamedBufferSubDataEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedBufferSubDataEXT,0,0,GLuint,buffer,N/A,in,fixed,??
+glNamedBufferSubDataEXT,1,0,GLintptr,offset,N/A,in,fixed,??
+glNamedBufferSubDataEXT,2,0,GLsizeiptr,size,N/A,in,fixed,??
+glNamedBufferSubDataEXT,3,1,"const void *",data,???,???,???,???
+glNamedProgramLocalParameter4dvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedProgramLocalParameter4dvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glNamedProgramLocalParameter4dvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glNamedProgramLocalParameter4dvEXT,2,0,GLuint,index,N/A,in,fixed,??
+glNamedProgramLocalParameter4dvEXT,3,1,"const GLdouble *",params,???,???,???,???
+glNamedProgramLocalParameter4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedProgramLocalParameter4fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glNamedProgramLocalParameter4fvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glNamedProgramLocalParameter4fvEXT,2,0,GLuint,index,N/A,in,fixed,??
+glNamedProgramLocalParameter4fvEXT,3,1,"const GLfloat *",params,???,???,???,???
+glNamedProgramLocalParameterI4ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedProgramLocalParameterI4ivEXT,0,0,GLuint,program,N/A,in,fixed,??
+glNamedProgramLocalParameterI4ivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glNamedProgramLocalParameterI4ivEXT,2,0,GLuint,index,N/A,in,fixed,??
+glNamedProgramLocalParameterI4ivEXT,3,1,"const GLint *",params,???,???,???,???
+glNamedProgramLocalParameterI4uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedProgramLocalParameterI4uivEXT,0,0,GLuint,program,N/A,in,fixed,??
+glNamedProgramLocalParameterI4uivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glNamedProgramLocalParameterI4uivEXT,2,0,GLuint,index,N/A,in,fixed,??
+glNamedProgramLocalParameterI4uivEXT,3,1,"const GLuint *",params,???,???,???,???
+glNamedProgramLocalParameters4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedProgramLocalParameters4fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glNamedProgramLocalParameters4fvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glNamedProgramLocalParameters4fvEXT,2,0,GLuint,index,N/A,in,fixed,??
+glNamedProgramLocalParameters4fvEXT,3,0,GLsizei,count,N/A,in,fixed,??
+glNamedProgramLocalParameters4fvEXT,4,1,"const GLfloat *",params,???,???,???,???
+glNamedProgramLocalParametersI4ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedProgramLocalParametersI4ivEXT,0,0,GLuint,program,N/A,in,fixed,??
+glNamedProgramLocalParametersI4ivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glNamedProgramLocalParametersI4ivEXT,2,0,GLuint,index,N/A,in,fixed,??
+glNamedProgramLocalParametersI4ivEXT,3,0,GLsizei,count,N/A,in,fixed,??
+glNamedProgramLocalParametersI4ivEXT,4,1,"const GLint *",params,???,???,???,???
+glNamedProgramLocalParametersI4uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedProgramLocalParametersI4uivEXT,0,0,GLuint,program,N/A,in,fixed,??
+glNamedProgramLocalParametersI4uivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glNamedProgramLocalParametersI4uivEXT,2,0,GLuint,index,N/A,in,fixed,??
+glNamedProgramLocalParametersI4uivEXT,3,0,GLsizei,count,N/A,in,fixed,??
+glNamedProgramLocalParametersI4uivEXT,4,1,"const GLuint *",params,???,???,???,???
+glNamedProgramStringEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedProgramStringEXT,0,0,GLuint,program,N/A,in,fixed,??
+glNamedProgramStringEXT,1,0,GLenum,target,N/A,in,fixed,??
+glNamedProgramStringEXT,2,0,GLenum,format,N/A,in,fixed,??
+glNamedProgramStringEXT,3,0,GLsizei,len,N/A,in,fixed,??
+glNamedProgramStringEXT,4,1,"const void *",string,???,???,???,???
+glProgramUniform1fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform1fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform1fvEXT,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform1fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform1fvEXT,3,1,"const GLfloat *",value,???,???,???,???
+glProgramUniform1ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform1ivEXT,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform1ivEXT,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform1ivEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform1ivEXT,3,1,"const GLint *",value,???,???,???,???

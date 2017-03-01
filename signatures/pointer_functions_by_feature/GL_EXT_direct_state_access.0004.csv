@@ -1,0 +1,49 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetNamedBufferPointervEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedBufferPointervEXT,0,0,GLuint,buffer,N/A,in,fixed,??
+glGetNamedBufferPointervEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedBufferPointervEXT,2,2,"void * *",params,???,???,???,???
+glGetNamedBufferSubDataEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedBufferSubDataEXT,0,0,GLuint,buffer,N/A,in,fixed,??
+glGetNamedBufferSubDataEXT,1,0,GLintptr,offset,N/A,in,fixed,??
+glGetNamedBufferSubDataEXT,2,0,GLsizeiptr,size,N/A,in,fixed,??
+glGetNamedBufferSubDataEXT,3,1,"void *",data,???,???,???,???
+glGetNamedFramebufferAttachmentParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedFramebufferAttachmentParameterivEXT,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glGetNamedFramebufferAttachmentParameterivEXT,1,0,GLenum,attachment,N/A,in,fixed,??
+glGetNamedFramebufferAttachmentParameterivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedFramebufferAttachmentParameterivEXT,3,1,"GLint *",params,???,???,???,???
+glGetNamedProgramLocalParameterIivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedProgramLocalParameterIivEXT,0,0,GLuint,program,N/A,in,fixed,??
+glGetNamedProgramLocalParameterIivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetNamedProgramLocalParameterIivEXT,2,0,GLuint,index,N/A,in,fixed,??
+glGetNamedProgramLocalParameterIivEXT,3,1,"GLint *",params,???,???,???,???
+glGetNamedProgramLocalParameterIuivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedProgramLocalParameterIuivEXT,0,0,GLuint,program,N/A,in,fixed,??
+glGetNamedProgramLocalParameterIuivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetNamedProgramLocalParameterIuivEXT,2,0,GLuint,index,N/A,in,fixed,??
+glGetNamedProgramLocalParameterIuivEXT,3,1,"GLuint *",params,???,???,???,???
+glGetNamedProgramLocalParameterdvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedProgramLocalParameterdvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glGetNamedProgramLocalParameterdvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetNamedProgramLocalParameterdvEXT,2,0,GLuint,index,N/A,in,fixed,??
+glGetNamedProgramLocalParameterdvEXT,3,1,"GLdouble *",params,???,???,???,???
+glGetNamedProgramLocalParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedProgramLocalParameterfvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glGetNamedProgramLocalParameterfvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetNamedProgramLocalParameterfvEXT,2,0,GLuint,index,N/A,in,fixed,??
+glGetNamedProgramLocalParameterfvEXT,3,1,"GLfloat *",params,???,???,???,???
+glGetNamedProgramStringEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedProgramStringEXT,0,0,GLuint,program,N/A,in,fixed,??
+glGetNamedProgramStringEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetNamedProgramStringEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedProgramStringEXT,3,1,"void *",string,???,???,???,???
+glGetNamedProgramivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedProgramivEXT,0,0,GLuint,program,N/A,in,fixed,??
+glGetNamedProgramivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetNamedProgramivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedProgramivEXT,3,1,"GLint *",params,???,???,???,???
+glGetNamedRenderbufferParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedRenderbufferParameterivEXT,0,0,GLuint,renderbuffer,N/A,in,fixed,??
+glGetNamedRenderbufferParameterivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedRenderbufferParameterivEXT,2,1,"GLint *",params,???,???,???,???

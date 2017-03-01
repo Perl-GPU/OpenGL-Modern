@@ -1,0 +1,13 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glInvalidateFramebuffer,-1,0,void,N/A,N/A,out,fixed,N/A
+glInvalidateFramebuffer,0,0,GLenum,target,N/A,in,fixed,??
+glInvalidateFramebuffer,1,0,GLsizei,numAttachments,N/A,in,fixed,??
+glInvalidateFramebuffer,2,1,"const GLenum *",attachments,???,???,???,???
+glInvalidateSubFramebuffer,-1,0,void,N/A,N/A,out,fixed,N/A
+glInvalidateSubFramebuffer,0,0,GLenum,target,N/A,in,fixed,??
+glInvalidateSubFramebuffer,1,0,GLsizei,numAttachments,N/A,in,fixed,??
+glInvalidateSubFramebuffer,2,1,"const GLenum *",attachments,???,???,???,???
+glInvalidateSubFramebuffer,3,0,GLint,x,N/A,in,fixed,??
+glInvalidateSubFramebuffer,4,0,GLint,y,N/A,in,fixed,??
+glInvalidateSubFramebuffer,5,0,GLsizei,width,N/A,in,fixed,??
+glInvalidateSubFramebuffer,6,0,GLsizei,height,N/A,in,fixed,??

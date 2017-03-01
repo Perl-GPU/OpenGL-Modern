@@ -1,0 +1,82 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glProgramUniformMatrix2x3fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix2x3fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix2x3fvEXT,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix2x3fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix2x3fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix2x3fvEXT,4,1,"const GLfloat *",value,???,???,???,???
+glProgramUniformMatrix2x4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix2x4fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix2x4fvEXT,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix2x4fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix2x4fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix2x4fvEXT,4,1,"const GLfloat *",value,???,???,???,???
+glProgramUniformMatrix3fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix3fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix3fvEXT,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix3fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix3fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix3fvEXT,4,1,"const GLfloat *",value,???,???,???,???
+glProgramUniformMatrix3x2fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix3x2fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix3x2fvEXT,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix3x2fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix3x2fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix3x2fvEXT,4,1,"const GLfloat *",value,???,???,???,???
+glProgramUniformMatrix3x4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix3x4fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix3x4fvEXT,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix3x4fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix3x4fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix3x4fvEXT,4,1,"const GLfloat *",value,???,???,???,???
+glProgramUniformMatrix4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix4fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix4fvEXT,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix4fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix4fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix4fvEXT,4,1,"const GLfloat *",value,???,???,???,???
+glProgramUniformMatrix4x2fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix4x2fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix4x2fvEXT,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix4x2fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix4x2fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix4x2fvEXT,4,1,"const GLfloat *",value,???,???,???,???
+glProgramUniformMatrix4x3fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix4x3fvEXT,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix4x3fvEXT,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix4x3fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix4x3fvEXT,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix4x3fvEXT,4,1,"const GLfloat *",value,???,???,???,???
+glTextureImage1DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureImage1DEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureImage1DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glTextureImage1DEXT,2,0,GLint,level,N/A,in,fixed,??
+glTextureImage1DEXT,3,0,GLint,internalformat,N/A,in,fixed,??
+glTextureImage1DEXT,4,0,GLsizei,width,N/A,in,fixed,??
+glTextureImage1DEXT,5,0,GLint,border,N/A,in,fixed,??
+glTextureImage1DEXT,6,0,GLenum,format,N/A,in,fixed,??
+glTextureImage1DEXT,7,0,GLenum,type,N/A,in,fixed,??
+glTextureImage1DEXT,8,1,"const void *",pixels,???,???,???,???
+glTextureImage2DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureImage2DEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureImage2DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glTextureImage2DEXT,2,0,GLint,level,N/A,in,fixed,??
+glTextureImage2DEXT,3,0,GLint,internalformat,N/A,in,fixed,??
+glTextureImage2DEXT,4,0,GLsizei,width,N/A,in,fixed,??
+glTextureImage2DEXT,5,0,GLsizei,height,N/A,in,fixed,??
+glTextureImage2DEXT,6,0,GLint,border,N/A,in,fixed,??
+glTextureImage2DEXT,7,0,GLenum,format,N/A,in,fixed,??
+glTextureImage2DEXT,8,0,GLenum,type,N/A,in,fixed,??
+glTextureImage2DEXT,9,1,"const void *",pixels,???,???,???,???
+glTextureImage3DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureImage3DEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureImage3DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glTextureImage3DEXT,2,0,GLint,level,N/A,in,fixed,??
+glTextureImage3DEXT,3,0,GLint,internalformat,N/A,in,fixed,??
+glTextureImage3DEXT,4,0,GLsizei,width,N/A,in,fixed,??
+glTextureImage3DEXT,5,0,GLsizei,height,N/A,in,fixed,??
+glTextureImage3DEXT,6,0,GLsizei,depth,N/A,in,fixed,??
+glTextureImage3DEXT,7,0,GLint,border,N/A,in,fixed,??
+glTextureImage3DEXT,8,0,GLenum,format,N/A,in,fixed,??
+glTextureImage3DEXT,9,0,GLenum,type,N/A,in,fixed,??
+glTextureImage3DEXT,10,1,"const void *",pixels,???,???,???,???

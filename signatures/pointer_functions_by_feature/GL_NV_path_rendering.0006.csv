@@ -1,0 +1,21 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glStencilThenCoverStrokePathInstancedNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glStencilThenCoverStrokePathInstancedNV,0,0,GLsizei,numPaths,N/A,in,fixed,??
+glStencilThenCoverStrokePathInstancedNV,1,0,GLenum,pathNameType,N/A,in,fixed,??
+glStencilThenCoverStrokePathInstancedNV,2,1,"const void *",paths,???,???,???,???
+glStencilThenCoverStrokePathInstancedNV,3,0,GLuint,pathBase,N/A,in,fixed,??
+glStencilThenCoverStrokePathInstancedNV,4,0,GLint,reference,N/A,in,fixed,??
+glStencilThenCoverStrokePathInstancedNV,5,0,GLuint,mask,N/A,in,fixed,??
+glStencilThenCoverStrokePathInstancedNV,6,0,GLenum,coverMode,N/A,in,fixed,??
+glStencilThenCoverStrokePathInstancedNV,7,0,GLenum,transformType,N/A,in,fixed,??
+glStencilThenCoverStrokePathInstancedNV,8,1,"const GLfloat *",transformValues,???,???,???,???
+glTransformPathNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glTransformPathNV,0,0,GLuint,resultPath,N/A,in,fixed,??
+glTransformPathNV,1,0,GLuint,srcPath,N/A,in,fixed,??
+glTransformPathNV,2,0,GLenum,transformType,N/A,in,fixed,??
+glTransformPathNV,3,1,"const GLfloat *",transformValues,???,???,???,???
+glWeightPathsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glWeightPathsNV,0,0,GLuint,resultPath,N/A,in,fixed,??
+glWeightPathsNV,1,0,GLsizei,numPaths,N/A,in,fixed,??
+glWeightPathsNV,2,0,"const GLuint",paths,???,in,fixed,??
+glWeightPathsNV,3,0,"const GLfloat",weights,???,in,fixed,??

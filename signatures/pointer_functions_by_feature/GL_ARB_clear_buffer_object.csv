@@ -1,0 +1,29 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glClearBufferData,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearBufferData,0,0,GLenum,target,N/A,in,fixed,??
+glClearBufferData,1,0,GLenum,internalformat,N/A,in,fixed,??
+glClearBufferData,2,0,GLenum,format,N/A,in,fixed,??
+glClearBufferData,3,0,GLenum,type,N/A,in,fixed,??
+glClearBufferData,4,1,"const void *",data,???,???,???,???
+glClearBufferSubData,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearBufferSubData,0,0,GLenum,target,N/A,in,fixed,??
+glClearBufferSubData,1,0,GLenum,internalformat,N/A,in,fixed,??
+glClearBufferSubData,2,0,GLintptr,offset,N/A,in,fixed,??
+glClearBufferSubData,3,0,GLsizeiptr,size,N/A,in,fixed,??
+glClearBufferSubData,4,0,GLenum,format,N/A,in,fixed,??
+glClearBufferSubData,5,0,GLenum,type,N/A,in,fixed,??
+glClearBufferSubData,6,1,"const void *",data,???,???,???,???
+glClearNamedBufferDataEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearNamedBufferDataEXT,0,0,GLuint,buffer,N/A,in,fixed,??
+glClearNamedBufferDataEXT,1,0,GLenum,internalformat,N/A,in,fixed,??
+glClearNamedBufferDataEXT,2,0,GLenum,format,N/A,in,fixed,??
+glClearNamedBufferDataEXT,3,0,GLenum,type,N/A,in,fixed,??
+glClearNamedBufferDataEXT,4,1,"const void *",data,???,???,???,???
+glClearNamedBufferSubDataEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearNamedBufferSubDataEXT,0,0,GLuint,buffer,N/A,in,fixed,??
+glClearNamedBufferSubDataEXT,1,0,GLenum,internalformat,N/A,in,fixed,??
+glClearNamedBufferSubDataEXT,2,0,GLintptr,offset,N/A,in,fixed,??
+glClearNamedBufferSubDataEXT,3,0,GLsizeiptr,size,N/A,in,fixed,??
+glClearNamedBufferSubDataEXT,4,0,GLenum,format,N/A,in,fixed,??
+glClearNamedBufferSubDataEXT,5,0,GLenum,type,N/A,in,fixed,??
+glClearNamedBufferSubDataEXT,6,1,"const void *",data,???,???,???,???

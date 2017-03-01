@@ -1,0 +1,56 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glProgramUniform2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform2dv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform2dv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform2dv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform2dv,3,1,"const GLdouble *",value,???,???,???,???
+glProgramUniform2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform2fv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform2fv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform2fv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform2fv,3,1,"const GLfloat *",value,???,???,???,???
+glProgramUniform2iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform2iv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform2iv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform2iv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform2iv,3,1,"const GLint *",value,???,???,???,???
+glProgramUniform2uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform2uiv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform2uiv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform2uiv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform2uiv,3,1,"const GLuint *",value,???,???,???,???
+glProgramUniform3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform3dv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform3dv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform3dv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform3dv,3,1,"const GLdouble *",value,???,???,???,???
+glProgramUniform3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform3fv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform3fv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform3fv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform3fv,3,1,"const GLfloat *",value,???,???,???,???
+glProgramUniform3iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform3iv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform3iv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform3iv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform3iv,3,1,"const GLint *",value,???,???,???,???
+glProgramUniform3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform3uiv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform3uiv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform3uiv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform3uiv,3,1,"const GLuint *",value,???,???,???,???
+glProgramUniform4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform4dv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform4dv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform4dv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform4dv,3,1,"const GLdouble *",value,???,???,???,???
+glProgramUniform4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform4fv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform4fv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform4fv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform4fv,3,1,"const GLfloat *",value,???,???,???,???
+glProgramUniform4iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform4iv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform4iv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform4iv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform4iv,3,1,"const GLint *",value,???,???,???,???

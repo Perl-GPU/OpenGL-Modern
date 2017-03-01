@@ -1,0 +1,4 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCreateShaderProgramEXT,-1,0,GLuint,N/A,N/A,out,fixed,??
+glCreateShaderProgramEXT,0,0,GLenum,type,N/A,in,fixed,??
+glCreateShaderProgramEXT,1,1,"const GLchar *",string,???,???,???,???

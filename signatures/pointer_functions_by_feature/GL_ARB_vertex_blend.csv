@@ -1,0 +1,30 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glWeightPointerARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glWeightPointerARB,0,0,GLint,size,N/A,in,fixed,??
+glWeightPointerARB,1,0,GLenum,type,N/A,in,fixed,??
+glWeightPointerARB,2,0,GLsizei,stride,N/A,in,fixed,??
+glWeightPointerARB,3,1,"void *",pointer,???,???,???,???
+glWeightbvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glWeightbvARB,0,0,GLint,size,N/A,in,fixed,??
+glWeightbvARB,1,1,"GLbyte *",weights,???,???,???,???
+glWeightdvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glWeightdvARB,0,0,GLint,size,N/A,in,fixed,??
+glWeightdvARB,1,1,"GLdouble *",weights,???,???,???,???
+glWeightfvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glWeightfvARB,0,0,GLint,size,N/A,in,fixed,??
+glWeightfvARB,1,1,"GLfloat *",weights,???,???,???,???
+glWeightivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glWeightivARB,0,0,GLint,size,N/A,in,fixed,??
+glWeightivARB,1,1,"GLint *",weights,???,???,???,???
+glWeightsvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glWeightsvARB,0,0,GLint,size,N/A,in,fixed,??
+glWeightsvARB,1,1,"GLshort *",weights,???,???,???,???
+glWeightubvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glWeightubvARB,0,0,GLint,size,N/A,in,fixed,??
+glWeightubvARB,1,1,"GLubyte *",weights,???,???,???,???
+glWeightuivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glWeightuivARB,0,0,GLint,size,N/A,in,fixed,??
+glWeightuivARB,1,1,"GLuint *",weights,???,???,???,???
+glWeightusvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glWeightusvARB,0,0,GLint,size,N/A,in,fixed,??
+glWeightusvARB,1,1,"GLushort *",weights,???,???,???,???

@@ -1,0 +1,32 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glColorPointerListIBM,-1,0,void,N/A,N/A,out,fixed,N/A
+glColorPointerListIBM,0,0,GLint,size,N/A,in,fixed,??
+glColorPointerListIBM,1,0,GLenum,type,N/A,in,fixed,??
+glColorPointerListIBM,2,0,GLint,stride,N/A,in,fixed,??
+glColorPointerListIBM,3,2,"const void * *",pointer,???,???,???,???
+glColorPointerListIBM,4,0,GLint,ptrstride,N/A,in,fixed,??
+glEdgeFlagPointerListIBM,-1,0,void,N/A,N/A,out,fixed,N/A
+glEdgeFlagPointerListIBM,0,0,GLint,stride,N/A,in,fixed,??
+glEdgeFlagPointerListIBM,1,2,"const GLboolean * *",pointer,???,???,???,???
+glEdgeFlagPointerListIBM,2,0,GLint,ptrstride,N/A,in,fixed,??
+glFogCoordPointerListIBM,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogCoordPointerListIBM,0,0,GLenum,type,N/A,in,fixed,??
+glFogCoordPointerListIBM,1,0,GLint,stride,N/A,in,fixed,??
+glFogCoordPointerListIBM,2,2,"const void * *",pointer,???,???,???,???
+glFogCoordPointerListIBM,3,0,GLint,ptrstride,N/A,in,fixed,??
+glIndexPointerListIBM,-1,0,void,N/A,N/A,out,fixed,N/A
+glIndexPointerListIBM,0,0,GLenum,type,N/A,in,fixed,??
+glIndexPointerListIBM,1,0,GLint,stride,N/A,in,fixed,??
+glIndexPointerListIBM,2,2,"const void * *",pointer,???,???,???,???
+glIndexPointerListIBM,3,0,GLint,ptrstride,N/A,in,fixed,??
+glNormalPointerListIBM,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormalPointerListIBM,0,0,GLenum,type,N/A,in,fixed,??
+glNormalPointerListIBM,1,0,GLint,stride,N/A,in,fixed,??
+glNormalPointerListIBM,2,2,"const void * *",pointer,???,???,???,???
+glNormalPointerListIBM,3,0,GLint,ptrstride,N/A,in,fixed,??
+glSecondaryColorPointerListIBM,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColorPointerListIBM,0,0,GLint,size,N/A,in,fixed,??
+glSecondaryColorPointerListIBM,1,0,GLenum,type,N/A,in,fixed,??
+glSecondaryColorPointerListIBM,2,0,GLint,stride,N/A,in,fixed,??
+glSecondaryColorPointerListIBM,3,2,"const void * *",pointer,???,???,???,???
+glSecondaryColorPointerListIBM,4,0,GLint,ptrstride,N/A,in,fixed,??

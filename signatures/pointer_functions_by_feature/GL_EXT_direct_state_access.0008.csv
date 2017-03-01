@@ -1,0 +1,92 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMultiTexImage1DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexImage1DEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexImage1DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexImage1DEXT,2,0,GLint,level,N/A,in,fixed,??
+glMultiTexImage1DEXT,3,0,GLint,internalformat,N/A,in,fixed,??
+glMultiTexImage1DEXT,4,0,GLsizei,width,N/A,in,fixed,??
+glMultiTexImage1DEXT,5,0,GLint,border,N/A,in,fixed,??
+glMultiTexImage1DEXT,6,0,GLenum,format,N/A,in,fixed,??
+glMultiTexImage1DEXT,7,0,GLenum,type,N/A,in,fixed,??
+glMultiTexImage1DEXT,8,1,"const void *",pixels,???,???,???,???
+glMultiTexImage2DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexImage2DEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexImage2DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexImage2DEXT,2,0,GLint,level,N/A,in,fixed,??
+glMultiTexImage2DEXT,3,0,GLint,internalformat,N/A,in,fixed,??
+glMultiTexImage2DEXT,4,0,GLsizei,width,N/A,in,fixed,??
+glMultiTexImage2DEXT,5,0,GLsizei,height,N/A,in,fixed,??
+glMultiTexImage2DEXT,6,0,GLint,border,N/A,in,fixed,??
+glMultiTexImage2DEXT,7,0,GLenum,format,N/A,in,fixed,??
+glMultiTexImage2DEXT,8,0,GLenum,type,N/A,in,fixed,??
+glMultiTexImage2DEXT,9,1,"const void *",pixels,???,???,???,???
+glMultiTexImage3DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexImage3DEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexImage3DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexImage3DEXT,2,0,GLint,level,N/A,in,fixed,??
+glMultiTexImage3DEXT,3,0,GLint,internalformat,N/A,in,fixed,??
+glMultiTexImage3DEXT,4,0,GLsizei,width,N/A,in,fixed,??
+glMultiTexImage3DEXT,5,0,GLsizei,height,N/A,in,fixed,??
+glMultiTexImage3DEXT,6,0,GLsizei,depth,N/A,in,fixed,??
+glMultiTexImage3DEXT,7,0,GLint,border,N/A,in,fixed,??
+glMultiTexImage3DEXT,8,0,GLenum,format,N/A,in,fixed,??
+glMultiTexImage3DEXT,9,0,GLenum,type,N/A,in,fixed,??
+glMultiTexImage3DEXT,10,1,"const void *",pixels,???,???,???,???
+glMultiTexParameterIivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexParameterIivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexParameterIivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexParameterIivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glMultiTexParameterIivEXT,3,1,"const GLint *",params,???,???,???,???
+glMultiTexParameterIuivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexParameterIuivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexParameterIuivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexParameterIuivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glMultiTexParameterIuivEXT,3,1,"const GLuint *",params,???,???,???,???
+glMultiTexParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexParameterfvEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexParameterfvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexParameterfvEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glMultiTexParameterfvEXT,3,1,"const GLfloat *",param,???,???,???,???
+glMultiTexParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexParameterivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexParameterivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexParameterivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glMultiTexParameterivEXT,3,1,"const GLint *",param,???,???,???,???
+glMultiTexSubImage1DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexSubImage1DEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexSubImage1DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexSubImage1DEXT,2,0,GLint,level,N/A,in,fixed,??
+glMultiTexSubImage1DEXT,3,0,GLint,xoffset,N/A,in,fixed,??
+glMultiTexSubImage1DEXT,4,0,GLsizei,width,N/A,in,fixed,??
+glMultiTexSubImage1DEXT,5,0,GLenum,format,N/A,in,fixed,??
+glMultiTexSubImage1DEXT,6,0,GLenum,type,N/A,in,fixed,??
+glMultiTexSubImage1DEXT,7,1,"const void *",pixels,???,???,???,???
+glMultiTexSubImage2DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexSubImage2DEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexSubImage2DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexSubImage2DEXT,2,0,GLint,level,N/A,in,fixed,??
+glMultiTexSubImage2DEXT,3,0,GLint,xoffset,N/A,in,fixed,??
+glMultiTexSubImage2DEXT,4,0,GLint,yoffset,N/A,in,fixed,??
+glMultiTexSubImage2DEXT,5,0,GLsizei,width,N/A,in,fixed,??
+glMultiTexSubImage2DEXT,6,0,GLsizei,height,N/A,in,fixed,??
+glMultiTexSubImage2DEXT,7,0,GLenum,format,N/A,in,fixed,??
+glMultiTexSubImage2DEXT,8,0,GLenum,type,N/A,in,fixed,??
+glMultiTexSubImage2DEXT,9,1,"const void *",pixels,???,???,???,???
+glMultiTexSubImage3DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexSubImage3DEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,2,0,GLint,level,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,3,0,GLint,xoffset,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,4,0,GLint,yoffset,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,5,0,GLint,zoffset,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,6,0,GLsizei,width,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,7,0,GLsizei,height,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,8,0,GLsizei,depth,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,9,0,GLenum,format,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,10,0,GLenum,type,N/A,in,fixed,??
+glMultiTexSubImage3DEXT,11,1,"const void *",pixels,???,???,???,???
+glNamedBufferDataEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedBufferDataEXT,0,0,GLuint,buffer,N/A,in,fixed,??
+glNamedBufferDataEXT,1,0,GLsizeiptr,size,N/A,in,fixed,??
+glNamedBufferDataEXT,2,1,"const void *",data,???,???,???,???
+glNamedBufferDataEXT,3,0,GLenum,usage,N/A,in,fixed,??

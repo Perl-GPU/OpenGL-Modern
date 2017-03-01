@@ -1,0 +1,10 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetTexFilterFuncSGIS,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexFilterFuncSGIS,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexFilterFuncSGIS,1,0,GLenum,filter,N/A,in,fixed,??
+glGetTexFilterFuncSGIS,2,1,"GLfloat *",weights,???,???,???,???
+glTexFilterFuncSGIS,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexFilterFuncSGIS,0,0,GLenum,target,N/A,in,fixed,??
+glTexFilterFuncSGIS,1,0,GLenum,filter,N/A,in,fixed,??
+glTexFilterFuncSGIS,2,0,GLsizei,n,N/A,in,fixed,??
+glTexFilterFuncSGIS,3,1,"const GLfloat *",weights,???,???,???,???

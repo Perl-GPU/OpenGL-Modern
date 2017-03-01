@@ -1,0 +1,59 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetnColorTableARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnColorTableARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetnColorTableARB,1,0,GLenum,format,N/A,in,fixed,??
+glGetnColorTableARB,2,0,GLenum,type,N/A,in,fixed,??
+glGetnColorTableARB,3,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnColorTableARB,4,1,"void *",table,???,???,???,???
+glGetnCompressedTexImageARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnCompressedTexImageARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetnCompressedTexImageARB,1,0,GLint,lod,N/A,in,fixed,??
+glGetnCompressedTexImageARB,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnCompressedTexImageARB,3,1,"void *",img,???,???,???,???
+glGetnConvolutionFilterARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnConvolutionFilterARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetnConvolutionFilterARB,1,0,GLenum,format,N/A,in,fixed,??
+glGetnConvolutionFilterARB,2,0,GLenum,type,N/A,in,fixed,??
+glGetnConvolutionFilterARB,3,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnConvolutionFilterARB,4,1,"void *",image,???,???,???,???
+glGetnHistogramARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnHistogramARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetnHistogramARB,1,0,GLboolean,reset,N/A,in,fixed,??
+glGetnHistogramARB,2,0,GLenum,format,N/A,in,fixed,??
+glGetnHistogramARB,3,0,GLenum,type,N/A,in,fixed,??
+glGetnHistogramARB,4,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnHistogramARB,5,1,"void *",values,???,???,???,???
+glGetnMapdvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnMapdvARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetnMapdvARB,1,0,GLenum,query,N/A,in,fixed,??
+glGetnMapdvARB,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnMapdvARB,3,1,"GLdouble *",v,???,???,???,???
+glGetnMapfvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnMapfvARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetnMapfvARB,1,0,GLenum,query,N/A,in,fixed,??
+glGetnMapfvARB,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnMapfvARB,3,1,"GLfloat *",v,???,???,???,???
+glGetnMapivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnMapivARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetnMapivARB,1,0,GLenum,query,N/A,in,fixed,??
+glGetnMapivARB,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnMapivARB,3,1,"GLint *",v,???,???,???,???
+glGetnMinmaxARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnMinmaxARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetnMinmaxARB,1,0,GLboolean,reset,N/A,in,fixed,??
+glGetnMinmaxARB,2,0,GLenum,format,N/A,in,fixed,??
+glGetnMinmaxARB,3,0,GLenum,type,N/A,in,fixed,??
+glGetnMinmaxARB,4,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnMinmaxARB,5,1,"void *",values,???,???,???,???
+glGetnPixelMapfvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnPixelMapfvARB,0,0,GLenum,map,N/A,in,fixed,??
+glGetnPixelMapfvARB,1,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnPixelMapfvARB,2,1,"GLfloat *",values,???,???,???,???
+glGetnPixelMapuivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnPixelMapuivARB,0,0,GLenum,map,N/A,in,fixed,??
+glGetnPixelMapuivARB,1,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnPixelMapuivARB,2,1,"GLuint *",values,???,???,???,???
+glGetnPixelMapusvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnPixelMapusvARB,0,0,GLenum,map,N/A,in,fixed,??
+glGetnPixelMapusvARB,1,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnPixelMapusvARB,2,1,"GLushort *",values,???,???,???,???

@@ -1,0 +1,15 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glAreTexturesResidentEXT,-1,0,GLboolean,N/A,N/A,out,fixed,??
+glAreTexturesResidentEXT,0,0,GLsizei,n,N/A,in,fixed,??
+glAreTexturesResidentEXT,1,1,"const GLuint *",textures,???,???,???,???
+glAreTexturesResidentEXT,2,1,"GLboolean *",residences,???,???,???,???
+glDeleteTexturesEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteTexturesEXT,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteTexturesEXT,1,1,"const GLuint *",textures,???,???,???,???
+glGenTexturesEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenTexturesEXT,0,0,GLsizei,n,N/A,in,fixed,??
+glGenTexturesEXT,1,1,"GLuint *",textures,???,???,???,???
+glPrioritizeTexturesEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glPrioritizeTexturesEXT,0,0,GLsizei,n,N/A,in,fixed,??
+glPrioritizeTexturesEXT,1,1,"const GLuint *",textures,???,???,???,???
+glPrioritizeTexturesEXT,2,1,"const GLclampf *",priorities,???,???,???,???

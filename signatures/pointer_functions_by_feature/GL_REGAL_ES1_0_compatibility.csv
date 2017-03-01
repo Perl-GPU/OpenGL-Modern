@@ -1,0 +1,23 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glFogxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogxv,0,0,GLenum,pname,N/A,in,fixed,??
+glFogxv,1,1,"const GLfixed *",params,???,???,???,???
+glLightModelxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glLightModelxv,0,0,GLenum,pname,N/A,in,fixed,??
+glLightModelxv,1,1,"const GLfixed *",params,???,???,???,???
+glLightxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glLightxv,0,0,GLenum,light,N/A,in,fixed,??
+glLightxv,1,0,GLenum,pname,N/A,in,fixed,??
+glLightxv,2,1,"const GLfixed *",params,???,???,???,???
+glLoadMatrixx,-1,0,void,N/A,N/A,out,fixed,N/A
+glLoadMatrixx,0,1,"const GLfixed *",m,???,???,???,???
+glMaterialxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMaterialxv,0,0,GLenum,face,N/A,in,fixed,??
+glMaterialxv,1,0,GLenum,pname,N/A,in,fixed,??
+glMaterialxv,2,1,"const GLfixed *",params,???,???,???,???
+glMultMatrixx,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultMatrixx,0,1,"const GLfixed *",m,???,???,???,???
+glTexEnvxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexEnvxv,0,0,GLenum,target,N/A,in,fixed,??
+glTexEnvxv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexEnvxv,2,1,"const GLfixed *",params,???,???,???,???

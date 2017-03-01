@@ -1,0 +1,18 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetnCompressedTexImage,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnCompressedTexImage,0,0,GLenum,target,N/A,in,fixed,??
+glGetnCompressedTexImage,1,0,GLint,lod,N/A,in,fixed,??
+glGetnCompressedTexImage,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnCompressedTexImage,3,1,"GLvoid *",pixels,???,???,???,???
+glGetnTexImage,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnTexImage,0,0,GLenum,tex,N/A,in,fixed,??
+glGetnTexImage,1,0,GLint,level,N/A,in,fixed,??
+glGetnTexImage,2,0,GLenum,format,N/A,in,fixed,??
+glGetnTexImage,3,0,GLenum,type,N/A,in,fixed,??
+glGetnTexImage,4,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnTexImage,5,1,"GLvoid *",pixels,???,???,???,???
+glGetnUniformdv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnUniformdv,0,0,GLuint,program,N/A,in,fixed,??
+glGetnUniformdv,1,0,GLint,location,N/A,in,fixed,??
+glGetnUniformdv,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnUniformdv,3,1,"GLdouble *",params,???,???,???,???

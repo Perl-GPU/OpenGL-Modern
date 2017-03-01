@@ -1,0 +1,36 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetActiveUniformBlockName,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveUniformBlockName,0,0,GLuint,program,N/A,in,fixed,??
+glGetActiveUniformBlockName,1,0,GLuint,uniformBlockIndex,N/A,in,fixed,??
+glGetActiveUniformBlockName,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetActiveUniformBlockName,3,1,"GLsizei *",length,???,???,???,???
+glGetActiveUniformBlockName,4,1,"GLchar *",uniformBlockName,???,???,???,???
+glGetActiveUniformBlockiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveUniformBlockiv,0,0,GLuint,program,N/A,in,fixed,??
+glGetActiveUniformBlockiv,1,0,GLuint,uniformBlockIndex,N/A,in,fixed,??
+glGetActiveUniformBlockiv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetActiveUniformBlockiv,3,1,"GLint *",params,???,???,???,???
+glGetActiveUniformName,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveUniformName,0,0,GLuint,program,N/A,in,fixed,??
+glGetActiveUniformName,1,0,GLuint,uniformIndex,N/A,in,fixed,??
+glGetActiveUniformName,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetActiveUniformName,3,1,"GLsizei *",length,???,???,???,???
+glGetActiveUniformName,4,1,"GLchar *",uniformName,???,???,???,???
+glGetActiveUniformsiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveUniformsiv,0,0,GLuint,program,N/A,in,fixed,??
+glGetActiveUniformsiv,1,0,GLsizei,uniformCount,N/A,in,fixed,??
+glGetActiveUniformsiv,2,1,"const GLuint *",uniformIndices,???,???,???,???
+glGetActiveUniformsiv,3,0,GLenum,pname,N/A,in,fixed,??
+glGetActiveUniformsiv,4,1,"GLint *",params,???,???,???,???
+glGetIntegeri_v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetIntegeri_v,0,0,GLenum,target,N/A,in,fixed,??
+glGetIntegeri_v,1,0,GLuint,index,N/A,in,fixed,??
+glGetIntegeri_v,2,1,"GLint *",data,???,???,???,???
+glGetUniformBlockIndex,-1,0,GLuint,N/A,N/A,out,fixed,??
+glGetUniformBlockIndex,0,0,GLuint,program,N/A,in,fixed,??
+glGetUniformBlockIndex,1,1,"const GLchar *",uniformBlockName,???,???,???,???
+glGetUniformIndices,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetUniformIndices,0,0,GLuint,program,N/A,in,fixed,??
+glGetUniformIndices,1,0,GLsizei,uniformCount,N/A,in,fixed,??
+glGetUniformIndices,2,2,"const GLchar * const *",uniformNames,???,???,???,???
+glGetUniformIndices,3,1,"GLuint *",uniformIndices,???,???,???,???

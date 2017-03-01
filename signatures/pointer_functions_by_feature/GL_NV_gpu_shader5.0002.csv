@@ -1,0 +1,29 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glUniform1ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform1ui64vNV,0,0,GLint,location,N/A,in,fixed,??
+glUniform1ui64vNV,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform1ui64vNV,2,1,"const GLuint64EXT *",value,???,???,???,???
+glUniform2i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform2i64vNV,0,0,GLint,location,N/A,in,fixed,??
+glUniform2i64vNV,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform2i64vNV,2,1,"const GLint64EXT *",value,???,???,???,???
+glUniform2ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform2ui64vNV,0,0,GLint,location,N/A,in,fixed,??
+glUniform2ui64vNV,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform2ui64vNV,2,1,"const GLuint64EXT *",value,???,???,???,???
+glUniform3i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform3i64vNV,0,0,GLint,location,N/A,in,fixed,??
+glUniform3i64vNV,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform3i64vNV,2,1,"const GLint64EXT *",value,???,???,???,???
+glUniform3ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform3ui64vNV,0,0,GLint,location,N/A,in,fixed,??
+glUniform3ui64vNV,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform3ui64vNV,2,1,"const GLuint64EXT *",value,???,???,???,???
+glUniform4i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform4i64vNV,0,0,GLint,location,N/A,in,fixed,??
+glUniform4i64vNV,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform4i64vNV,2,1,"const GLint64EXT *",value,???,???,???,???
+glUniform4ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform4ui64vNV,0,0,GLint,location,N/A,in,fixed,??
+glUniform4ui64vNV,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform4ui64vNV,2,1,"const GLuint64EXT *",value,???,???,???,???

@@ -1,0 +1,16 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glBindAttribLocationARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glBindAttribLocationARB,0,0,GLhandleARB,programObj,N/A,in,fixed,??
+glBindAttribLocationARB,1,0,GLuint,index,N/A,in,fixed,??
+glBindAttribLocationARB,2,1,"const GLcharARB *",name,???,???,???,???
+glGetActiveAttribARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveAttribARB,0,0,GLhandleARB,programObj,N/A,in,fixed,??
+glGetActiveAttribARB,1,0,GLuint,index,N/A,in,fixed,??
+glGetActiveAttribARB,2,0,GLsizei,maxLength,N/A,in,fixed,??
+glGetActiveAttribARB,3,1,"GLsizei *",length,???,???,???,???
+glGetActiveAttribARB,4,1,"GLint *",size,???,???,???,???
+glGetActiveAttribARB,5,1,"GLenum *",type,???,???,???,???
+glGetActiveAttribARB,6,1,"GLcharARB *",name,???,???,???,???
+glGetAttribLocationARB,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetAttribLocationARB,0,0,GLhandleARB,programObj,N/A,in,fixed,??
+glGetAttribLocationARB,1,1,"const GLcharARB *",name,???,???,???,???

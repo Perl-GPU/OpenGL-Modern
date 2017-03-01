@@ -1,0 +1,34 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetProgramInterfaceiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramInterfaceiv,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramInterfaceiv,1,0,GLenum,programInterface,N/A,in,fixed,??
+glGetProgramInterfaceiv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetProgramInterfaceiv,3,1,"GLint *",params,???,???,???,???
+glGetProgramResourceIndex,-1,0,GLuint,N/A,N/A,out,fixed,??
+glGetProgramResourceIndex,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramResourceIndex,1,0,GLenum,programInterface,N/A,in,fixed,??
+glGetProgramResourceIndex,2,1,"const GLchar *",name,???,???,???,???
+glGetProgramResourceLocation,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetProgramResourceLocation,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramResourceLocation,1,0,GLenum,programInterface,N/A,in,fixed,??
+glGetProgramResourceLocation,2,1,"const GLchar *",name,???,???,???,???
+glGetProgramResourceLocationIndex,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetProgramResourceLocationIndex,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramResourceLocationIndex,1,0,GLenum,programInterface,N/A,in,fixed,??
+glGetProgramResourceLocationIndex,2,1,"const GLchar *",name,???,???,???,???
+glGetProgramResourceName,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramResourceName,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramResourceName,1,0,GLenum,programInterface,N/A,in,fixed,??
+glGetProgramResourceName,2,0,GLuint,index,N/A,in,fixed,??
+glGetProgramResourceName,3,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetProgramResourceName,4,1,"GLsizei *",length,???,???,???,???
+glGetProgramResourceName,5,1,"GLchar *",name,???,???,???,???
+glGetProgramResourceiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramResourceiv,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramResourceiv,1,0,GLenum,programInterface,N/A,in,fixed,??
+glGetProgramResourceiv,2,0,GLuint,index,N/A,in,fixed,??
+glGetProgramResourceiv,3,0,GLsizei,propCount,N/A,in,fixed,??
+glGetProgramResourceiv,4,1,"const GLenum *",props,???,???,???,???
+glGetProgramResourceiv,5,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetProgramResourceiv,6,1,"GLsizei *",length,???,???,???,???
+glGetProgramResourceiv,7,1,"GLint *",params,???,???,???,???

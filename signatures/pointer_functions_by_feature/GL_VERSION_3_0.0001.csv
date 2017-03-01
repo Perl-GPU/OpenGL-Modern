@@ -1,0 +1,40 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glBindFragDataLocation,-1,0,void,N/A,N/A,out,fixed,N/A
+glBindFragDataLocation,0,0,GLuint,program,N/A,in,fixed,??
+glBindFragDataLocation,1,0,GLuint,colorNumber,N/A,in,fixed,??
+glBindFragDataLocation,2,1,"const GLchar *",name,???,???,???,???
+glClearBufferfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearBufferfv,0,0,GLenum,buffer,N/A,in,fixed,??
+glClearBufferfv,1,0,GLint,drawBuffer,N/A,in,fixed,??
+glClearBufferfv,2,1,"const GLfloat *",value,???,???,???,???
+glClearBufferiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearBufferiv,0,0,GLenum,buffer,N/A,in,fixed,??
+glClearBufferiv,1,0,GLint,drawBuffer,N/A,in,fixed,??
+glClearBufferiv,2,1,"const GLint *",value,???,???,???,???
+glClearBufferuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearBufferuiv,0,0,GLenum,buffer,N/A,in,fixed,??
+glClearBufferuiv,1,0,GLint,drawBuffer,N/A,in,fixed,??
+glClearBufferuiv,2,1,"const GLuint *",value,???,???,???,???
+glGetBooleani_v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetBooleani_v,0,0,GLenum,pname,N/A,in,fixed,??
+glGetBooleani_v,1,0,GLuint,index,N/A,in,fixed,??
+glGetBooleani_v,2,1,"GLboolean *",data,???,???,???,???
+glGetFragDataLocation,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetFragDataLocation,0,0,GLuint,program,N/A,in,fixed,??
+glGetFragDataLocation,1,1,"const GLchar *",name,???,???,???,???
+glGetTexParameterIiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexParameterIiv,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexParameterIiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexParameterIiv,2,1,"GLint *",params,???,???,???,???
+glGetTexParameterIuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexParameterIuiv,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexParameterIuiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexParameterIuiv,2,1,"GLuint *",params,???,???,???,???
+glGetTransformFeedbackVarying,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTransformFeedbackVarying,0,0,GLuint,program,N/A,in,fixed,??
+glGetTransformFeedbackVarying,1,0,GLuint,index,N/A,in,fixed,??
+glGetTransformFeedbackVarying,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetTransformFeedbackVarying,3,1,"GLsizei *",length,???,???,???,???
+glGetTransformFeedbackVarying,4,1,"GLsizei *",size,???,???,???,???
+glGetTransformFeedbackVarying,5,1,"GLenum *",type,???,???,???,???
+glGetTransformFeedbackVarying,6,1,"GLchar *",name,???,???,???,???

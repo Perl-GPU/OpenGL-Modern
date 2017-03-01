@@ -1,0 +1,37 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glProgramEnvParameterI4ivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramEnvParameterI4ivNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramEnvParameterI4ivNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramEnvParameterI4ivNV,2,1,"const GLint *",params,???,???,???,???
+glProgramEnvParameterI4uivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramEnvParameterI4uivNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramEnvParameterI4uivNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramEnvParameterI4uivNV,2,1,"const GLuint *",params,???,???,???,???
+glProgramEnvParametersI4ivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramEnvParametersI4ivNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramEnvParametersI4ivNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramEnvParametersI4ivNV,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramEnvParametersI4ivNV,3,1,"const GLint *",params,???,???,???,???
+glProgramEnvParametersI4uivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramEnvParametersI4uivNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramEnvParametersI4uivNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramEnvParametersI4uivNV,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramEnvParametersI4uivNV,3,1,"const GLuint *",params,???,???,???,???
+glProgramLocalParameterI4ivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramLocalParameterI4ivNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramLocalParameterI4ivNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramLocalParameterI4ivNV,2,1,"const GLint *",params,???,???,???,???
+glProgramLocalParameterI4uivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramLocalParameterI4uivNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramLocalParameterI4uivNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramLocalParameterI4uivNV,2,1,"const GLuint *",params,???,???,???,???
+glProgramLocalParametersI4ivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramLocalParametersI4ivNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramLocalParametersI4ivNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramLocalParametersI4ivNV,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramLocalParametersI4ivNV,3,1,"const GLint *",params,???,???,???,???
+glProgramLocalParametersI4uivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramLocalParametersI4uivNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramLocalParametersI4uivNV,1,0,GLuint,index,N/A,in,fixed,??
+glProgramLocalParametersI4uivNV,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramLocalParametersI4uivNV,3,1,"const GLuint *",params,???,???,???,???

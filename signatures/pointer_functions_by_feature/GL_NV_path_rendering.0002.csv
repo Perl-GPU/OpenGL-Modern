@@ -1,0 +1,42 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetPathParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathParameterfvNV,0,0,GLuint,path,N/A,in,fixed,??
+glGetPathParameterfvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetPathParameterfvNV,2,1,"GLfloat *",value,???,???,???,???
+glGetPathParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathParameterivNV,0,0,GLuint,path,N/A,in,fixed,??
+glGetPathParameterivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetPathParameterivNV,2,1,"GLint *",value,???,???,???,???
+glGetPathSpacingNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathSpacingNV,0,0,GLenum,pathListMode,N/A,in,fixed,??
+glGetPathSpacingNV,1,0,GLsizei,numPaths,N/A,in,fixed,??
+glGetPathSpacingNV,2,0,GLenum,pathNameType,N/A,in,fixed,??
+glGetPathSpacingNV,3,1,"const void *",paths,???,???,???,???
+glGetPathSpacingNV,4,0,GLuint,pathBase,N/A,in,fixed,??
+glGetPathSpacingNV,5,0,GLfloat,advanceScale,N/A,in,fixed,??
+glGetPathSpacingNV,6,0,GLfloat,kerningScale,N/A,in,fixed,??
+glGetPathSpacingNV,7,0,GLenum,transformType,N/A,in,fixed,??
+glGetPathSpacingNV,8,1,"GLfloat *",returnedSpacing,???,???,???,???
+glGetPathTexGenfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathTexGenfvNV,0,0,GLenum,texCoordSet,N/A,in,fixed,??
+glGetPathTexGenfvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetPathTexGenfvNV,2,1,"GLfloat *",value,???,???,???,???
+glGetPathTexGenivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathTexGenivNV,0,0,GLenum,texCoordSet,N/A,in,fixed,??
+glGetPathTexGenivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetPathTexGenivNV,2,1,"GLint *",value,???,???,???,???
+glGetProgramResourcefvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramResourcefvNV,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramResourcefvNV,1,0,GLenum,programInterface,N/A,in,fixed,??
+glGetProgramResourcefvNV,2,0,GLuint,index,N/A,in,fixed,??
+glGetProgramResourcefvNV,3,0,GLsizei,propCount,N/A,in,fixed,??
+glGetProgramResourcefvNV,4,1,"const GLenum *",props,???,???,???,???
+glGetProgramResourcefvNV,5,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetProgramResourcefvNV,6,1,"GLsizei *",length,???,???,???,???
+glGetProgramResourcefvNV,7,1,"GLfloat *",params,???,???,???,???
+glMatrixLoad3x2fNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixLoad3x2fNV,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixLoad3x2fNV,1,1,"const GLfloat *",m,???,???,???,???
+glMatrixLoad3x3fNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixLoad3x3fNV,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixLoad3x3fNV,1,1,"const GLfloat *",m,???,???,???,???

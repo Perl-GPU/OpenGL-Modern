@@ -1,0 +1,38 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glColorP3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glColorP3uiv,0,0,GLenum,type,N/A,in,fixed,??
+glColorP3uiv,1,1,"const GLuint *",color,???,???,???,???
+glColorP4uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glColorP4uiv,0,0,GLenum,type,N/A,in,fixed,??
+glColorP4uiv,1,1,"const GLuint *",color,???,???,???,???
+glMultiTexCoordP1uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoordP1uiv,0,0,GLenum,texture,N/A,in,fixed,??
+glMultiTexCoordP1uiv,1,0,GLenum,type,N/A,in,fixed,??
+glMultiTexCoordP1uiv,2,1,"const GLuint *",coords,???,???,???,???
+glMultiTexCoordP2uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoordP2uiv,0,0,GLenum,texture,N/A,in,fixed,??
+glMultiTexCoordP2uiv,1,0,GLenum,type,N/A,in,fixed,??
+glMultiTexCoordP2uiv,2,1,"const GLuint *",coords,???,???,???,???
+glMultiTexCoordP3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoordP3uiv,0,0,GLenum,texture,N/A,in,fixed,??
+glMultiTexCoordP3uiv,1,0,GLenum,type,N/A,in,fixed,??
+glMultiTexCoordP3uiv,2,1,"const GLuint *",coords,???,???,???,???
+glMultiTexCoordP4uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoordP4uiv,0,0,GLenum,texture,N/A,in,fixed,??
+glMultiTexCoordP4uiv,1,0,GLenum,type,N/A,in,fixed,??
+glMultiTexCoordP4uiv,2,1,"const GLuint *",coords,???,???,???,???
+glNormalP3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormalP3uiv,0,0,GLenum,type,N/A,in,fixed,??
+glNormalP3uiv,1,1,"const GLuint *",coords,???,???,???,???
+glSecondaryColorP3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColorP3uiv,0,0,GLenum,type,N/A,in,fixed,??
+glSecondaryColorP3uiv,1,1,"const GLuint *",color,???,???,???,???
+glTexCoordP1uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoordP1uiv,0,0,GLenum,type,N/A,in,fixed,??
+glTexCoordP1uiv,1,1,"const GLuint *",coords,???,???,???,???
+glTexCoordP2uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoordP2uiv,0,0,GLenum,type,N/A,in,fixed,??
+glTexCoordP2uiv,1,1,"const GLuint *",coords,???,???,???,???
+glTexCoordP3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoordP3uiv,0,0,GLenum,type,N/A,in,fixed,??
+glTexCoordP3uiv,1,1,"const GLuint *",coords,???,???,???,???

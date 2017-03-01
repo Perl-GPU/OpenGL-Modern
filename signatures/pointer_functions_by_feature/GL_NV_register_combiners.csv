@@ -1,0 +1,37 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCombinerParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glCombinerParameterfvNV,0,0,GLenum,pname,N/A,in,fixed,??
+glCombinerParameterfvNV,1,1,"const GLfloat *",params,???,???,???,???
+glCombinerParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glCombinerParameterivNV,0,0,GLenum,pname,N/A,in,fixed,??
+glCombinerParameterivNV,1,1,"const GLint *",params,???,???,???,???
+glGetCombinerInputParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCombinerInputParameterfvNV,0,0,GLenum,stage,N/A,in,fixed,??
+glGetCombinerInputParameterfvNV,1,0,GLenum,portion,N/A,in,fixed,??
+glGetCombinerInputParameterfvNV,2,0,GLenum,variable,N/A,in,fixed,??
+glGetCombinerInputParameterfvNV,3,0,GLenum,pname,N/A,in,fixed,??
+glGetCombinerInputParameterfvNV,4,1,"GLfloat *",params,???,???,???,???
+glGetCombinerInputParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCombinerInputParameterivNV,0,0,GLenum,stage,N/A,in,fixed,??
+glGetCombinerInputParameterivNV,1,0,GLenum,portion,N/A,in,fixed,??
+glGetCombinerInputParameterivNV,2,0,GLenum,variable,N/A,in,fixed,??
+glGetCombinerInputParameterivNV,3,0,GLenum,pname,N/A,in,fixed,??
+glGetCombinerInputParameterivNV,4,1,"GLint *",params,???,???,???,???
+glGetCombinerOutputParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCombinerOutputParameterfvNV,0,0,GLenum,stage,N/A,in,fixed,??
+glGetCombinerOutputParameterfvNV,1,0,GLenum,portion,N/A,in,fixed,??
+glGetCombinerOutputParameterfvNV,2,0,GLenum,pname,N/A,in,fixed,??
+glGetCombinerOutputParameterfvNV,3,1,"GLfloat *",params,???,???,???,???
+glGetCombinerOutputParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCombinerOutputParameterivNV,0,0,GLenum,stage,N/A,in,fixed,??
+glGetCombinerOutputParameterivNV,1,0,GLenum,portion,N/A,in,fixed,??
+glGetCombinerOutputParameterivNV,2,0,GLenum,pname,N/A,in,fixed,??
+glGetCombinerOutputParameterivNV,3,1,"GLint *",params,???,???,???,???
+glGetFinalCombinerInputParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFinalCombinerInputParameterfvNV,0,0,GLenum,variable,N/A,in,fixed,??
+glGetFinalCombinerInputParameterfvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFinalCombinerInputParameterfvNV,2,1,"GLfloat *",params,???,???,???,???
+glGetFinalCombinerInputParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFinalCombinerInputParameterivNV,0,0,GLenum,variable,N/A,in,fixed,??
+glGetFinalCombinerInputParameterivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFinalCombinerInputParameterivNV,2,1,"GLint *",params,???,???,???,???

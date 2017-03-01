@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glFogCoordPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogCoordPointerEXT,0,0,GLenum,type,N/A,in,fixed,??
+glFogCoordPointerEXT,1,0,GLsizei,stride,N/A,in,fixed,??
+glFogCoordPointerEXT,2,1,"const void *",pointer,???,???,???,???
+glFogCoorddvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogCoorddvEXT,0,1,"const GLdouble *",coord,???,???,???,???
+glFogCoordfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogCoordfvEXT,0,1,"const GLfloat *",coord,???,???,???,???

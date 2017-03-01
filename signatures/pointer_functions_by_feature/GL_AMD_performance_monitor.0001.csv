@@ -1,0 +1,35 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeletePerfMonitorsAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeletePerfMonitorsAMD,0,0,GLsizei,n,N/A,in,fixed,??
+glDeletePerfMonitorsAMD,1,1,"GLuint *",monitors,???,???,???,???
+glGenPerfMonitorsAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenPerfMonitorsAMD,0,0,GLsizei,n,N/A,in,fixed,??
+glGenPerfMonitorsAMD,1,1,"GLuint *",monitors,???,???,???,???
+glGetPerfMonitorCounterDataAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPerfMonitorCounterDataAMD,0,0,GLuint,monitor,N/A,in,fixed,??
+glGetPerfMonitorCounterDataAMD,1,0,GLenum,pname,N/A,in,fixed,??
+glGetPerfMonitorCounterDataAMD,2,0,GLsizei,dataSize,N/A,in,fixed,??
+glGetPerfMonitorCounterDataAMD,3,1,"GLuint *",data,???,???,???,???
+glGetPerfMonitorCounterDataAMD,4,1,"GLint *",bytesWritten,???,???,???,???
+glGetPerfMonitorCounterInfoAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPerfMonitorCounterInfoAMD,0,0,GLuint,group,N/A,in,fixed,??
+glGetPerfMonitorCounterInfoAMD,1,0,GLuint,counter,N/A,in,fixed,??
+glGetPerfMonitorCounterInfoAMD,2,0,GLenum,pname,N/A,in,fixed,??
+glGetPerfMonitorCounterInfoAMD,3,1,"void *",data,???,???,???,???
+glGetPerfMonitorCounterStringAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPerfMonitorCounterStringAMD,0,0,GLuint,group,N/A,in,fixed,??
+glGetPerfMonitorCounterStringAMD,1,0,GLuint,counter,N/A,in,fixed,??
+glGetPerfMonitorCounterStringAMD,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetPerfMonitorCounterStringAMD,3,1,"GLsizei *",length,???,???,???,???
+glGetPerfMonitorCounterStringAMD,4,1,"GLchar *",counterString,???,???,???,???
+glGetPerfMonitorCountersAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPerfMonitorCountersAMD,0,0,GLuint,group,N/A,in,fixed,??
+glGetPerfMonitorCountersAMD,1,1,"GLint *",numCounters,???,???,???,???
+glGetPerfMonitorCountersAMD,2,1,"GLint *",maxActiveCounters,???,???,???,???
+glGetPerfMonitorCountersAMD,3,0,GLsizei,countersSize,N/A,in,fixed,??
+glGetPerfMonitorCountersAMD,4,1,"GLuint *",counters,???,???,???,???
+glGetPerfMonitorGroupStringAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPerfMonitorGroupStringAMD,0,0,GLuint,group,N/A,in,fixed,??
+glGetPerfMonitorGroupStringAMD,1,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetPerfMonitorGroupStringAMD,2,1,"GLsizei *",length,???,???,???,???
+glGetPerfMonitorGroupStringAMD,3,1,"GLchar *",groupString,???,???,???,???

@@ -1,0 +1,39 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glClipPlanef,-1,0,void,N/A,N/A,out,fixed,N/A
+glClipPlanef,0,0,GLenum,plane,N/A,in,fixed,??
+glClipPlanef,1,1,"const GLfloat *",equation,???,???,???,???
+glClipPlanex,-1,0,void,N/A,N/A,out,fixed,N/A
+glClipPlanex,0,0,GLenum,plane,N/A,in,fixed,??
+glClipPlanex,1,1,"const GLfixed *",equation,???,???,???,???
+glGetClipPlanef,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetClipPlanef,0,0,GLenum,pname,N/A,in,fixed,??
+glGetClipPlanef,1,0,GLfloat,eqn,???,in,fixed,??
+glGetClipPlanex,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetClipPlanex,0,0,GLenum,pname,N/A,in,fixed,??
+glGetClipPlanex,1,0,GLfixed,eqn,???,in,fixed,??
+glGetFixedv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFixedv,0,0,GLenum,pname,N/A,in,fixed,??
+glGetFixedv,1,1,"GLfixed *",params,???,???,???,???
+glGetLightxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetLightxv,0,0,GLenum,light,N/A,in,fixed,??
+glGetLightxv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetLightxv,2,1,"GLfixed *",params,???,???,???,???
+glGetMaterialxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMaterialxv,0,0,GLenum,face,N/A,in,fixed,??
+glGetMaterialxv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetMaterialxv,2,1,"GLfixed *",params,???,???,???,???
+glGetTexEnvxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexEnvxv,0,0,GLenum,env,N/A,in,fixed,??
+glGetTexEnvxv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexEnvxv,2,1,"GLfixed *",params,???,???,???,???
+glGetTexParameterxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexParameterxv,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexParameterxv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexParameterxv,2,1,"GLfixed *",params,???,???,???,???
+glPointParameterxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glPointParameterxv,0,0,GLenum,pname,N/A,in,fixed,??
+glPointParameterxv,1,1,"const GLfixed *",params,???,???,???,???
+glPointSizePointerOES,-1,0,void,N/A,N/A,out,fixed,N/A
+glPointSizePointerOES,0,0,GLenum,type,N/A,in,fixed,??
+glPointSizePointerOES,1,0,GLsizei,stride,N/A,in,fixed,??
+glPointSizePointerOES,2,1,"const void *",pointer,???,???,???,???

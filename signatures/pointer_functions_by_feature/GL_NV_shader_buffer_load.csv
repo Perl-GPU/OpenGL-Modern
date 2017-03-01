@@ -1,0 +1,21 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetBufferParameterui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetBufferParameterui64vNV,0,0,GLenum,target,N/A,in,fixed,??
+glGetBufferParameterui64vNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetBufferParameterui64vNV,2,1,"GLuint64EXT *",params,???,???,???,???
+glGetIntegerui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetIntegerui64vNV,0,0,GLenum,value,N/A,in,fixed,??
+glGetIntegerui64vNV,1,1,"GLuint64EXT *",result,???,???,???,???
+glGetNamedBufferParameterui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedBufferParameterui64vNV,0,0,GLuint,buffer,N/A,in,fixed,??
+glGetNamedBufferParameterui64vNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedBufferParameterui64vNV,2,1,"GLuint64EXT *",params,???,???,???,???
+glProgramUniformui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformui64vNV,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformui64vNV,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformui64vNV,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformui64vNV,3,1,"const GLuint64EXT *",value,???,???,???,???
+glUniformui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformui64vNV,0,0,GLint,location,N/A,in,fixed,??
+glUniformui64vNV,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformui64vNV,2,1,"const GLuint64EXT *",value,???,???,???,???

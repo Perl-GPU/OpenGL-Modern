@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCombinerStageParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glCombinerStageParameterfvNV,0,0,GLenum,stage,N/A,in,fixed,??
+glCombinerStageParameterfvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glCombinerStageParameterfvNV,2,1,"const GLfloat *",params,???,???,???,???
+glGetCombinerStageParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCombinerStageParameterfvNV,0,0,GLenum,stage,N/A,in,fixed,??
+glGetCombinerStageParameterfvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetCombinerStageParameterfvNV,2,1,"GLfloat *",params,???,???,???,???

@@ -1,0 +1,32 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glAreTexturesResident,-1,0,GLboolean,N/A,N/A,out,fixed,??
+glAreTexturesResident,0,0,GLsizei,n,N/A,in,fixed,??
+glAreTexturesResident,1,1,"const GLuint *",textures,???,???,???,???
+glAreTexturesResident,2,1,"GLboolean *",residences,???,???,???,???
+glBitmap,-1,0,void,N/A,N/A,out,fixed,N/A
+glBitmap,0,0,GLsizei,width,N/A,in,fixed,??
+glBitmap,1,0,GLsizei,height,N/A,in,fixed,??
+glBitmap,2,0,GLfloat,xorig,N/A,in,fixed,??
+glBitmap,3,0,GLfloat,yorig,N/A,in,fixed,??
+glBitmap,4,0,GLfloat,xmove,N/A,in,fixed,??
+glBitmap,5,0,GLfloat,ymove,N/A,in,fixed,??
+glBitmap,6,1,"const GLubyte *",bitmap,???,???,???,???
+glCallLists,-1,0,void,N/A,N/A,out,fixed,N/A
+glCallLists,0,0,GLsizei,n,N/A,in,fixed,??
+glCallLists,1,0,GLenum,type,N/A,in,fixed,??
+glCallLists,2,1,"const void *",lists,???,???,???,???
+glClipPlane,-1,0,void,N/A,N/A,out,fixed,N/A
+glClipPlane,0,0,GLenum,plane,N/A,in,fixed,??
+glClipPlane,1,1,"const GLdouble *",equation,???,???,???,???
+glColor3bv,-1,0,void,N/A,N/A,out,fixed,N/A
+glColor3bv,0,1,"const GLbyte *",v,???,???,???,???
+glColor3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glColor3dv,0,1,"const GLdouble *",v,???,???,???,???
+glColor3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glColor3fv,0,1,"const GLfloat *",v,???,???,???,???
+glColor3iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glColor3iv,0,1,"const GLint *",v,???,???,???,???
+glColor3sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glColor3sv,0,1,"const GLshort *",v,???,???,???,???
+glColor3ubv,-1,0,void,N/A,N/A,out,fixed,N/A
+glColor3ubv,0,1,"const GLubyte *",v,???,???,???,???

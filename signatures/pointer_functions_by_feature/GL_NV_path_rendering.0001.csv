@@ -1,0 +1,48 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCoverFillPathInstancedNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glCoverFillPathInstancedNV,0,0,GLsizei,numPaths,N/A,in,fixed,??
+glCoverFillPathInstancedNV,1,0,GLenum,pathNameType,N/A,in,fixed,??
+glCoverFillPathInstancedNV,2,1,"const void *",paths,???,???,???,???
+glCoverFillPathInstancedNV,3,0,GLuint,pathBase,N/A,in,fixed,??
+glCoverFillPathInstancedNV,4,0,GLenum,coverMode,N/A,in,fixed,??
+glCoverFillPathInstancedNV,5,0,GLenum,transformType,N/A,in,fixed,??
+glCoverFillPathInstancedNV,6,1,"const GLfloat *",transformValues,???,???,???,???
+glCoverStrokePathInstancedNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glCoverStrokePathInstancedNV,0,0,GLsizei,numPaths,N/A,in,fixed,??
+glCoverStrokePathInstancedNV,1,0,GLenum,pathNameType,N/A,in,fixed,??
+glCoverStrokePathInstancedNV,2,1,"const void *",paths,???,???,???,???
+glCoverStrokePathInstancedNV,3,0,GLuint,pathBase,N/A,in,fixed,??
+glCoverStrokePathInstancedNV,4,0,GLenum,coverMode,N/A,in,fixed,??
+glCoverStrokePathInstancedNV,5,0,GLenum,transformType,N/A,in,fixed,??
+glCoverStrokePathInstancedNV,6,1,"const GLfloat *",transformValues,???,???,???,???
+glGetPathColorGenfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathColorGenfvNV,0,0,GLenum,color,N/A,in,fixed,??
+glGetPathColorGenfvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetPathColorGenfvNV,2,1,"GLfloat *",value,???,???,???,???
+glGetPathColorGenivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathColorGenivNV,0,0,GLenum,color,N/A,in,fixed,??
+glGetPathColorGenivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetPathColorGenivNV,2,1,"GLint *",value,???,???,???,???
+glGetPathCommandsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathCommandsNV,0,0,GLuint,path,N/A,in,fixed,??
+glGetPathCommandsNV,1,1,"GLubyte *",commands,???,???,???,???
+glGetPathCoordsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathCoordsNV,0,0,GLuint,path,N/A,in,fixed,??
+glGetPathCoordsNV,1,1,"GLfloat *",coords,???,???,???,???
+glGetPathDashArrayNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathDashArrayNV,0,0,GLuint,path,N/A,in,fixed,??
+glGetPathDashArrayNV,1,1,"GLfloat *",dashArray,???,???,???,???
+glGetPathMetricRangeNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathMetricRangeNV,0,0,GLbitfield,metricQueryMask,N/A,in,fixed,??
+glGetPathMetricRangeNV,1,0,GLuint,firstPathName,N/A,in,fixed,??
+glGetPathMetricRangeNV,2,0,GLsizei,numPaths,N/A,in,fixed,??
+glGetPathMetricRangeNV,3,0,GLsizei,stride,N/A,in,fixed,??
+glGetPathMetricRangeNV,4,1,"GLfloat *",metrics,???,???,???,???
+glGetPathMetricsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPathMetricsNV,0,0,GLbitfield,metricQueryMask,N/A,in,fixed,??
+glGetPathMetricsNV,1,0,GLsizei,numPaths,N/A,in,fixed,??
+glGetPathMetricsNV,2,0,GLenum,pathNameType,N/A,in,fixed,??
+glGetPathMetricsNV,3,1,"const void *",paths,???,???,???,???
+glGetPathMetricsNV,4,0,GLuint,pathBase,N/A,in,fixed,??
+glGetPathMetricsNV,5,0,GLsizei,stride,N/A,in,fixed,??
+glGetPathMetricsNV,6,1,"GLfloat *",metrics,???,???,???,???

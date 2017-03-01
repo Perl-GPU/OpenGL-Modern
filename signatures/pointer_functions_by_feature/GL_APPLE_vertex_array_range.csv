@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glFlushVertexArrayRangeAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glFlushVertexArrayRangeAPPLE,0,0,GLsizei,length,N/A,in,fixed,??
+glFlushVertexArrayRangeAPPLE,1,1,"void *",pointer,???,???,???,???
+glVertexArrayRangeAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexArrayRangeAPPLE,0,0,GLsizei,length,N/A,in,fixed,??
+glVertexArrayRangeAPPLE,1,1,"void *",pointer,???,???,???,???

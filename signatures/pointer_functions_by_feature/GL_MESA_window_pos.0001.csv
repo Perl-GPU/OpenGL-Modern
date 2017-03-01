@@ -1,0 +1,23 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glWindowPos2dvMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos2dvMESA,0,1,"const GLdouble *",p,???,???,???,???
+glWindowPos2fvMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos2fvMESA,0,1,"const GLfloat *",p,???,???,???,???
+glWindowPos2ivMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos2ivMESA,0,1,"const GLint *",p,???,???,???,???
+glWindowPos2svMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos2svMESA,0,1,"const GLshort *",p,???,???,???,???
+glWindowPos3dvMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos3dvMESA,0,1,"const GLdouble *",p,???,???,???,???
+glWindowPos3fvMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos3fvMESA,0,1,"const GLfloat *",p,???,???,???,???
+glWindowPos3ivMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos3ivMESA,0,1,"const GLint *",p,???,???,???,???
+glWindowPos3svMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos3svMESA,0,1,"const GLshort *",p,???,???,???,???
+glWindowPos4dvMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos4dvMESA,0,1,"const GLdouble *",p,???,???,???,???
+glWindowPos4fvMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos4fvMESA,0,1,"const GLfloat *",p,???,???,???,???
+glWindowPos4ivMESA,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos4ivMESA,0,1,"const GLint *",p,???,???,???,???

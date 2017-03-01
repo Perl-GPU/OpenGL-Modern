@@ -1,0 +1,17 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetVideoi64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVideoi64vNV,0,0,GLuint,video_slot,N/A,in,fixed,??
+glGetVideoi64vNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVideoi64vNV,2,1,"GLint64EXT *",params,???,???,???,???
+glGetVideoivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVideoivNV,0,0,GLuint,video_slot,N/A,in,fixed,??
+glGetVideoivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVideoivNV,2,1,"GLint *",params,???,???,???,???
+glGetVideoui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVideoui64vNV,0,0,GLuint,video_slot,N/A,in,fixed,??
+glGetVideoui64vNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVideoui64vNV,2,1,"GLuint64EXT *",params,???,???,???,???
+glGetVideouivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVideouivNV,0,0,GLuint,video_slot,N/A,in,fixed,??
+glGetVideouivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVideouivNV,2,1,"GLuint *",params,???,???,???,???

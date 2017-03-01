@@ -1,0 +1,31 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVertexStream2ivATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexStream2ivATI,0,0,GLenum,stream,N/A,in,fixed,??
+glVertexStream2ivATI,1,1,"const GLint *",coords,???,???,???,???
+glVertexStream2svATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexStream2svATI,0,0,GLenum,stream,N/A,in,fixed,??
+glVertexStream2svATI,1,1,"const GLshort *",coords,???,???,???,???
+glVertexStream3dvATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexStream3dvATI,0,0,GLenum,stream,N/A,in,fixed,??
+glVertexStream3dvATI,1,1,"const GLdouble *",coords,???,???,???,???
+glVertexStream3fvATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexStream3fvATI,0,0,GLenum,stream,N/A,in,fixed,??
+glVertexStream3fvATI,1,1,"const GLfloat *",coords,???,???,???,???
+glVertexStream3ivATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexStream3ivATI,0,0,GLenum,stream,N/A,in,fixed,??
+glVertexStream3ivATI,1,1,"const GLint *",coords,???,???,???,???
+glVertexStream3svATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexStream3svATI,0,0,GLenum,stream,N/A,in,fixed,??
+glVertexStream3svATI,1,1,"const GLshort *",coords,???,???,???,???
+glVertexStream4dvATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexStream4dvATI,0,0,GLenum,stream,N/A,in,fixed,??
+glVertexStream4dvATI,1,1,"const GLdouble *",coords,???,???,???,???
+glVertexStream4fvATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexStream4fvATI,0,0,GLenum,stream,N/A,in,fixed,??
+glVertexStream4fvATI,1,1,"const GLfloat *",coords,???,???,???,???
+glVertexStream4ivATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexStream4ivATI,0,0,GLenum,stream,N/A,in,fixed,??
+glVertexStream4ivATI,1,1,"const GLint *",coords,???,???,???,???
+glVertexStream4svATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexStream4svATI,0,0,GLenum,stream,N/A,in,fixed,??
+glVertexStream4svATI,1,1,"const GLshort *",coords,???,???,???,???

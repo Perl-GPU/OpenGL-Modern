@@ -1,0 +1,38 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glSetInvariantEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glSetInvariantEXT,0,0,GLuint,id,N/A,in,fixed,??
+glSetInvariantEXT,1,0,GLenum,type,N/A,in,fixed,??
+glSetInvariantEXT,2,1,"void *",addr,???,???,???,???
+glSetLocalConstantEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glSetLocalConstantEXT,0,0,GLuint,id,N/A,in,fixed,??
+glSetLocalConstantEXT,1,0,GLenum,type,N/A,in,fixed,??
+glSetLocalConstantEXT,2,1,"void *",addr,???,???,???,???
+glVariantPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVariantPointerEXT,0,0,GLuint,id,N/A,in,fixed,??
+glVariantPointerEXT,1,0,GLenum,type,N/A,in,fixed,??
+glVariantPointerEXT,2,0,GLuint,stride,N/A,in,fixed,??
+glVariantPointerEXT,3,1,"void *",addr,???,???,???,???
+glVariantbvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVariantbvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glVariantbvEXT,1,1,"GLbyte *",addr,???,???,???,???
+glVariantdvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVariantdvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glVariantdvEXT,1,1,"GLdouble *",addr,???,???,???,???
+glVariantfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVariantfvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glVariantfvEXT,1,1,"GLfloat *",addr,???,???,???,???
+glVariantivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVariantivEXT,0,0,GLuint,id,N/A,in,fixed,??
+glVariantivEXT,1,1,"GLint *",addr,???,???,???,???
+glVariantsvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVariantsvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glVariantsvEXT,1,1,"GLshort *",addr,???,???,???,???
+glVariantubvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVariantubvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glVariantubvEXT,1,1,"GLubyte *",addr,???,???,???,???
+glVariantuivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVariantuivEXT,0,0,GLuint,id,N/A,in,fixed,??
+glVariantuivEXT,1,1,"GLuint *",addr,???,???,???,???
+glVariantusvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVariantusvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glVariantusvEXT,1,1,"GLushort *",addr,???,???,???,???

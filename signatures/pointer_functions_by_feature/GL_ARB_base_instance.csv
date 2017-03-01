@@ -1,0 +1,16 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDrawElementsInstancedBaseInstance,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawElementsInstancedBaseInstance,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawElementsInstancedBaseInstance,1,0,GLsizei,count,N/A,in,fixed,??
+glDrawElementsInstancedBaseInstance,2,0,GLenum,type,N/A,in,fixed,??
+glDrawElementsInstancedBaseInstance,3,1,"const void *",indices,???,???,???,???
+glDrawElementsInstancedBaseInstance,4,0,GLsizei,primcount,N/A,in,fixed,??
+glDrawElementsInstancedBaseInstance,5,0,GLuint,baseinstance,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertexBaseInstance,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawElementsInstancedBaseVertexBaseInstance,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertexBaseInstance,1,0,GLsizei,count,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertexBaseInstance,2,0,GLenum,type,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertexBaseInstance,3,1,"const void *",indices,???,???,???,???
+glDrawElementsInstancedBaseVertexBaseInstance,4,0,GLsizei,primcount,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertexBaseInstance,5,0,GLint,basevertex,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertexBaseInstance,6,0,GLuint,baseinstance,N/A,in,fixed,??

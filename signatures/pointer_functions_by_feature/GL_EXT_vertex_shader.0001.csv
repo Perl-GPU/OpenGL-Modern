@@ -1,0 +1,41 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetInvariantBooleanvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetInvariantBooleanvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetInvariantBooleanvEXT,1,0,GLenum,value,N/A,in,fixed,??
+glGetInvariantBooleanvEXT,2,1,"GLboolean *",data,???,???,???,???
+glGetInvariantFloatvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetInvariantFloatvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetInvariantFloatvEXT,1,0,GLenum,value,N/A,in,fixed,??
+glGetInvariantFloatvEXT,2,1,"GLfloat *",data,???,???,???,???
+glGetInvariantIntegervEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetInvariantIntegervEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetInvariantIntegervEXT,1,0,GLenum,value,N/A,in,fixed,??
+glGetInvariantIntegervEXT,2,1,"GLint *",data,???,???,???,???
+glGetLocalConstantBooleanvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetLocalConstantBooleanvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetLocalConstantBooleanvEXT,1,0,GLenum,value,N/A,in,fixed,??
+glGetLocalConstantBooleanvEXT,2,1,"GLboolean *",data,???,???,???,???
+glGetLocalConstantFloatvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetLocalConstantFloatvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetLocalConstantFloatvEXT,1,0,GLenum,value,N/A,in,fixed,??
+glGetLocalConstantFloatvEXT,2,1,"GLfloat *",data,???,???,???,???
+glGetLocalConstantIntegervEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetLocalConstantIntegervEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetLocalConstantIntegervEXT,1,0,GLenum,value,N/A,in,fixed,??
+glGetLocalConstantIntegervEXT,2,1,"GLint *",data,???,???,???,???
+glGetVariantBooleanvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVariantBooleanvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetVariantBooleanvEXT,1,0,GLenum,value,N/A,in,fixed,??
+glGetVariantBooleanvEXT,2,1,"GLboolean *",data,???,???,???,???
+glGetVariantFloatvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVariantFloatvEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetVariantFloatvEXT,1,0,GLenum,value,N/A,in,fixed,??
+glGetVariantFloatvEXT,2,1,"GLfloat *",data,???,???,???,???
+glGetVariantIntegervEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVariantIntegervEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetVariantIntegervEXT,1,0,GLenum,value,N/A,in,fixed,??
+glGetVariantIntegervEXT,2,1,"GLint *",data,???,???,???,???
+glGetVariantPointervEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVariantPointervEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetVariantPointervEXT,1,0,GLenum,value,N/A,in,fixed,??
+glGetVariantPointervEXT,2,2,"void * *",data,???,???,???,???

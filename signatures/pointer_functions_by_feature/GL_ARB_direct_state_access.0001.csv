@@ -1,0 +1,69 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glClearNamedBufferData,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearNamedBufferData,0,0,GLuint,buffer,N/A,in,fixed,??
+glClearNamedBufferData,1,0,GLenum,internalformat,N/A,in,fixed,??
+glClearNamedBufferData,2,0,GLenum,format,N/A,in,fixed,??
+glClearNamedBufferData,3,0,GLenum,type,N/A,in,fixed,??
+glClearNamedBufferData,4,1,"const void *",data,???,???,???,???
+glClearNamedBufferSubData,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearNamedBufferSubData,0,0,GLuint,buffer,N/A,in,fixed,??
+glClearNamedBufferSubData,1,0,GLenum,internalformat,N/A,in,fixed,??
+glClearNamedBufferSubData,2,0,GLintptr,offset,N/A,in,fixed,??
+glClearNamedBufferSubData,3,0,GLsizeiptr,size,N/A,in,fixed,??
+glClearNamedBufferSubData,4,0,GLenum,format,N/A,in,fixed,??
+glClearNamedBufferSubData,5,0,GLenum,type,N/A,in,fixed,??
+glClearNamedBufferSubData,6,1,"const void *",data,???,???,???,???
+glClearNamedFramebufferfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearNamedFramebufferfv,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glClearNamedFramebufferfv,1,0,GLenum,buffer,N/A,in,fixed,??
+glClearNamedFramebufferfv,2,0,GLint,drawbuffer,N/A,in,fixed,??
+glClearNamedFramebufferfv,3,1,"GLfloat *",value,???,???,???,???
+glClearNamedFramebufferiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearNamedFramebufferiv,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glClearNamedFramebufferiv,1,0,GLenum,buffer,N/A,in,fixed,??
+glClearNamedFramebufferiv,2,0,GLint,drawbuffer,N/A,in,fixed,??
+glClearNamedFramebufferiv,3,1,"const GLint *",value,???,???,???,???
+glClearNamedFramebufferuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glClearNamedFramebufferuiv,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glClearNamedFramebufferuiv,1,0,GLenum,buffer,N/A,in,fixed,??
+glClearNamedFramebufferuiv,2,0,GLint,drawbuffer,N/A,in,fixed,??
+glClearNamedFramebufferuiv,3,1,"const GLuint *",value,???,???,???,???
+glCompressedTextureSubImage1D,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTextureSubImage1D,0,0,GLuint,texture,N/A,in,fixed,??
+glCompressedTextureSubImage1D,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTextureSubImage1D,2,0,GLint,xoffset,N/A,in,fixed,??
+glCompressedTextureSubImage1D,3,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTextureSubImage1D,4,0,GLenum,format,N/A,in,fixed,??
+glCompressedTextureSubImage1D,5,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTextureSubImage1D,6,1,"const void *",data,???,???,???,???
+glCompressedTextureSubImage2D,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTextureSubImage2D,0,0,GLuint,texture,N/A,in,fixed,??
+glCompressedTextureSubImage2D,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTextureSubImage2D,2,0,GLint,xoffset,N/A,in,fixed,??
+glCompressedTextureSubImage2D,3,0,GLint,yoffset,N/A,in,fixed,??
+glCompressedTextureSubImage2D,4,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTextureSubImage2D,5,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTextureSubImage2D,6,0,GLenum,format,N/A,in,fixed,??
+glCompressedTextureSubImage2D,7,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTextureSubImage2D,8,1,"const void *",data,???,???,???,???
+glCompressedTextureSubImage3D,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTextureSubImage3D,0,0,GLuint,texture,N/A,in,fixed,??
+glCompressedTextureSubImage3D,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTextureSubImage3D,2,0,GLint,xoffset,N/A,in,fixed,??
+glCompressedTextureSubImage3D,3,0,GLint,yoffset,N/A,in,fixed,??
+glCompressedTextureSubImage3D,4,0,GLint,zoffset,N/A,in,fixed,??
+glCompressedTextureSubImage3D,5,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTextureSubImage3D,6,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTextureSubImage3D,7,0,GLsizei,depth,N/A,in,fixed,??
+glCompressedTextureSubImage3D,8,0,GLenum,format,N/A,in,fixed,??
+glCompressedTextureSubImage3D,9,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTextureSubImage3D,10,1,"const void *",data,???,???,???,???
+glCreateBuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateBuffers,0,0,GLsizei,n,N/A,in,fixed,??
+glCreateBuffers,1,1,"GLuint *",buffers,???,???,???,???
+glCreateFramebuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateFramebuffers,0,0,GLsizei,n,N/A,in,fixed,??
+glCreateFramebuffers,1,1,"GLuint *",framebuffers,???,???,???,???
+glCreateProgramPipelines,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateProgramPipelines,0,0,GLsizei,n,N/A,in,fixed,??
+glCreateProgramPipelines,1,1,"GLuint *",pipelines,???,???,???,???

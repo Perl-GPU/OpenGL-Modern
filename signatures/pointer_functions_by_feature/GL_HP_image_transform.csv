@@ -1,0 +1,17 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetImageTransformParameterfvHP,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetImageTransformParameterfvHP,0,0,GLenum,target,N/A,in,fixed,??
+glGetImageTransformParameterfvHP,1,0,GLenum,pname,N/A,in,fixed,??
+glGetImageTransformParameterfvHP,2,1,"const GLfloat *",params,???,???,???,???
+glGetImageTransformParameterivHP,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetImageTransformParameterivHP,0,0,GLenum,target,N/A,in,fixed,??
+glGetImageTransformParameterivHP,1,0,GLenum,pname,N/A,in,fixed,??
+glGetImageTransformParameterivHP,2,1,"const GLint *",params,???,???,???,???
+glImageTransformParameterfvHP,-1,0,void,N/A,N/A,out,fixed,N/A
+glImageTransformParameterfvHP,0,0,GLenum,target,N/A,in,fixed,??
+glImageTransformParameterfvHP,1,0,GLenum,pname,N/A,in,fixed,??
+glImageTransformParameterfvHP,2,1,"const GLfloat *",params,???,???,???,???
+glImageTransformParameterivHP,-1,0,void,N/A,N/A,out,fixed,N/A
+glImageTransformParameterivHP,0,0,GLenum,target,N/A,in,fixed,??
+glImageTransformParameterivHP,1,0,GLenum,pname,N/A,in,fixed,??
+glImageTransformParameterivHP,2,1,"const GLint *",params,???,???,???,???

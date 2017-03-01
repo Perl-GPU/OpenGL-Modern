@@ -1,0 +1,36 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glIndexiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glIndexiv,0,1,"const GLint *",c,???,???,???,???
+glIndexsv,-1,0,void,N/A,N/A,out,fixed,N/A
+glIndexsv,0,1,"const GLshort *",c,???,???,???,???
+glIndexubv,-1,0,void,N/A,N/A,out,fixed,N/A
+glIndexubv,0,1,"const GLubyte *",c,???,???,???,???
+glInterleavedArrays,-1,0,void,N/A,N/A,out,fixed,N/A
+glInterleavedArrays,0,0,GLenum,format,N/A,in,fixed,??
+glInterleavedArrays,1,0,GLsizei,stride,N/A,in,fixed,??
+glInterleavedArrays,2,1,"const void *",pointer,???,???,???,???
+glLightModelfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glLightModelfv,0,0,GLenum,pname,N/A,in,fixed,??
+glLightModelfv,1,1,"const GLfloat *",params,???,???,???,???
+glLightModeliv,-1,0,void,N/A,N/A,out,fixed,N/A
+glLightModeliv,0,0,GLenum,pname,N/A,in,fixed,??
+glLightModeliv,1,1,"const GLint *",params,???,???,???,???
+glLightfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glLightfv,0,0,GLenum,light,N/A,in,fixed,??
+glLightfv,1,0,GLenum,pname,N/A,in,fixed,??
+glLightfv,2,1,"const GLfloat *",params,???,???,???,???
+glLightiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glLightiv,0,0,GLenum,light,N/A,in,fixed,??
+glLightiv,1,0,GLenum,pname,N/A,in,fixed,??
+glLightiv,2,1,"const GLint *",params,???,???,???,???
+glLoadMatrixd,-1,0,void,N/A,N/A,out,fixed,N/A
+glLoadMatrixd,0,1,"const GLdouble *",m,???,???,???,???
+glLoadMatrixf,-1,0,void,N/A,N/A,out,fixed,N/A
+glLoadMatrixf,0,1,"const GLfloat *",m,???,???,???,???
+glMap1d,-1,0,void,N/A,N/A,out,fixed,N/A
+glMap1d,0,0,GLenum,target,N/A,in,fixed,??
+glMap1d,1,0,GLdouble,u1,N/A,in,fixed,??
+glMap1d,2,0,GLdouble,u2,N/A,in,fixed,??
+glMap1d,3,0,GLint,stride,N/A,in,fixed,??
+glMap1d,4,0,GLint,order,N/A,in,fixed,??
+glMap1d,5,1,"const GLdouble *",points,???,???,???,???

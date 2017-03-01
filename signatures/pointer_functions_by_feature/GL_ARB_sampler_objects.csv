@@ -1,0 +1,39 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteSamplers,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteSamplers,0,0,GLsizei,count,N/A,in,fixed,??
+glDeleteSamplers,1,1,"const GLuint *",samplers,???,???,???,???
+glGenSamplers,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenSamplers,0,0,GLsizei,count,N/A,in,fixed,??
+glGenSamplers,1,1,"GLuint *",samplers,???,???,???,???
+glGetSamplerParameterIiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetSamplerParameterIiv,0,0,GLuint,sampler,N/A,in,fixed,??
+glGetSamplerParameterIiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetSamplerParameterIiv,2,1,"GLint *",params,???,???,???,???
+glGetSamplerParameterIuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetSamplerParameterIuiv,0,0,GLuint,sampler,N/A,in,fixed,??
+glGetSamplerParameterIuiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetSamplerParameterIuiv,2,1,"GLuint *",params,???,???,???,???
+glGetSamplerParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetSamplerParameterfv,0,0,GLuint,sampler,N/A,in,fixed,??
+glGetSamplerParameterfv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetSamplerParameterfv,2,1,"GLfloat *",params,???,???,???,???
+glGetSamplerParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetSamplerParameteriv,0,0,GLuint,sampler,N/A,in,fixed,??
+glGetSamplerParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetSamplerParameteriv,2,1,"GLint *",params,???,???,???,???
+glSamplerParameterIiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSamplerParameterIiv,0,0,GLuint,sampler,N/A,in,fixed,??
+glSamplerParameterIiv,1,0,GLenum,pname,N/A,in,fixed,??
+glSamplerParameterIiv,2,1,"const GLint *",params,???,???,???,???
+glSamplerParameterIuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSamplerParameterIuiv,0,0,GLuint,sampler,N/A,in,fixed,??
+glSamplerParameterIuiv,1,0,GLenum,pname,N/A,in,fixed,??
+glSamplerParameterIuiv,2,1,"const GLuint *",params,???,???,???,???
+glSamplerParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSamplerParameterfv,0,0,GLuint,sampler,N/A,in,fixed,??
+glSamplerParameterfv,1,0,GLenum,pname,N/A,in,fixed,??
+glSamplerParameterfv,2,1,"const GLfloat *",params,???,???,???,???
+glSamplerParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSamplerParameteriv,0,0,GLuint,sampler,N/A,in,fixed,??
+glSamplerParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glSamplerParameteriv,2,1,"const GLint *",params,???,???,???,???

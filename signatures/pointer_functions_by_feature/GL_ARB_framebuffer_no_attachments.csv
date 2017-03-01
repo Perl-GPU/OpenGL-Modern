@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetFramebufferParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFramebufferParameteriv,0,0,GLenum,target,N/A,in,fixed,??
+glGetFramebufferParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFramebufferParameteriv,2,1,"GLint *",params,???,???,???,???
+glGetNamedFramebufferParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedFramebufferParameterivEXT,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glGetNamedFramebufferParameterivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedFramebufferParameterivEXT,2,1,"GLint *",params,???,???,???,???

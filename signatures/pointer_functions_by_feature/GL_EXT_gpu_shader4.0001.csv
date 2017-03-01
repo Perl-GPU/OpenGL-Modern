@@ -1,0 +1,42 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glBindFragDataLocationEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glBindFragDataLocationEXT,0,0,GLuint,program,N/A,in,fixed,??
+glBindFragDataLocationEXT,1,0,GLuint,color,N/A,in,fixed,??
+glBindFragDataLocationEXT,2,1,"const GLchar *",name,???,???,???,???
+glGetFragDataLocationEXT,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetFragDataLocationEXT,0,0,GLuint,program,N/A,in,fixed,??
+glGetFragDataLocationEXT,1,1,"const GLchar *",name,???,???,???,???
+glGetUniformuivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetUniformuivEXT,0,0,GLuint,program,N/A,in,fixed,??
+glGetUniformuivEXT,1,0,GLint,location,N/A,in,fixed,??
+glGetUniformuivEXT,2,1,"GLuint *",params,???,???,???,???
+glGetVertexAttribIivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribIivEXT,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribIivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribIivEXT,2,1,"GLint *",params,???,???,???,???
+glGetVertexAttribIuivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribIuivEXT,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribIuivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribIuivEXT,2,1,"GLuint *",params,???,???,???,???
+glUniform1uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform1uivEXT,0,0,GLint,location,N/A,in,fixed,??
+glUniform1uivEXT,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform1uivEXT,2,1,"const GLuint *",value,???,???,???,???
+glUniform2uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform2uivEXT,0,0,GLint,location,N/A,in,fixed,??
+glUniform2uivEXT,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform2uivEXT,2,1,"const GLuint *",value,???,???,???,???
+glUniform3uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform3uivEXT,0,0,GLint,location,N/A,in,fixed,??
+glUniform3uivEXT,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform3uivEXT,2,1,"const GLuint *",value,???,???,???,???
+glUniform4uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform4uivEXT,0,0,GLint,location,N/A,in,fixed,??
+glUniform4uivEXT,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform4uivEXT,2,1,"const GLuint *",value,???,???,???,???
+glVertexAttribI1ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI1ivEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI1ivEXT,1,1,"const GLint *",v,???,???,???,???
+glVertexAttribI1uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI1uivEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI1uivEXT,1,1,"const GLuint *",v,???,???,???,???

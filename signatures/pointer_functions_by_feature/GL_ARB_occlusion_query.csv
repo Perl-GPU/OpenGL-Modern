@@ -1,0 +1,19 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteQueriesARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteQueriesARB,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteQueriesARB,1,1,"const GLuint *",ids,???,???,???,???
+glGenQueriesARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenQueriesARB,0,0,GLsizei,n,N/A,in,fixed,??
+glGenQueriesARB,1,1,"GLuint *",ids,???,???,???,???
+glGetQueryObjectivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryObjectivARB,0,0,GLuint,id,N/A,in,fixed,??
+glGetQueryObjectivARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryObjectivARB,2,1,"GLint *",params,???,???,???,???
+glGetQueryObjectuivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryObjectuivARB,0,0,GLuint,id,N/A,in,fixed,??
+glGetQueryObjectuivARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryObjectuivARB,2,1,"GLuint *",params,???,???,???,???
+glGetQueryivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryivARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetQueryivARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryivARB,2,1,"GLint *",params,???,???,???,???

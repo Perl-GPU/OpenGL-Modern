@@ -1,0 +1,3 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glReferencePlaneSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glReferencePlaneSGIX,0,1,"const GLdouble *",equation,???,???,???,???

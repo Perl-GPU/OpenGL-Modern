@@ -1,0 +1,12 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetQueryObjectuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryObjectuiv,0,0,GLuint,id,N/A,in,fixed,??
+glGetQueryObjectuiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryObjectuiv,2,1,"GLuint *",params,???,???,???,???
+glGetQueryiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryiv,0,0,GLenum,target,N/A,in,fixed,??
+glGetQueryiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryiv,2,1,"GLint *",params,???,???,???,???
+glMapBuffer,-1,1,"void *",N/A,???,out,???,???
+glMapBuffer,0,0,GLenum,target,N/A,in,fixed,??
+glMapBuffer,1,0,GLenum,access,N/A,in,fixed,??

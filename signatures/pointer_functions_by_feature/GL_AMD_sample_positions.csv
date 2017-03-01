@@ -1,0 +1,5 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glSetMultisamplefvAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glSetMultisamplefvAMD,0,0,GLenum,pname,N/A,in,fixed,??
+glSetMultisamplefvAMD,1,0,GLuint,index,N/A,in,fixed,??
+glSetMultisamplefvAMD,2,1,"const GLfloat *",val,???,???,???,???

@@ -1,0 +1,8 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDrawArraysIndirect,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawArraysIndirect,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawArraysIndirect,1,1,"const void *",indirect,???,???,???,???
+glDrawElementsIndirect,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawElementsIndirect,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawElementsIndirect,1,0,GLenum,type,N/A,in,fixed,??
+glDrawElementsIndirect,2,1,"const void *",indirect,???,???,???,???

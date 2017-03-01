@@ -1,0 +1,15 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMatrixIndexPointerARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixIndexPointerARB,0,0,GLint,size,N/A,in,fixed,??
+glMatrixIndexPointerARB,1,0,GLenum,type,N/A,in,fixed,??
+glMatrixIndexPointerARB,2,0,GLsizei,stride,N/A,in,fixed,??
+glMatrixIndexPointerARB,3,1,"void *",pointer,???,???,???,???
+glMatrixIndexubvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixIndexubvARB,0,0,GLint,size,N/A,in,fixed,??
+glMatrixIndexubvARB,1,1,"GLubyte *",indices,???,???,???,???
+glMatrixIndexuivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixIndexuivARB,0,0,GLint,size,N/A,in,fixed,??
+glMatrixIndexuivARB,1,1,"GLuint *",indices,???,???,???,???
+glMatrixIndexusvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixIndexusvARB,0,0,GLint,size,N/A,in,fixed,??
+glMatrixIndexusvARB,1,1,"GLushort *",indices,???,???,???,???

@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteFencesAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteFencesAPPLE,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteFencesAPPLE,1,1,"const GLuint *",fences,???,???,???,???
+glGenFencesAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenFencesAPPLE,0,0,GLsizei,n,N/A,in,fixed,??
+glGenFencesAPPLE,1,1,"GLuint *",fences,???,???,???,???

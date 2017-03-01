@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetTexParameterPointervAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexParameterPointervAPPLE,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexParameterPointervAPPLE,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexParameterPointervAPPLE,2,2,"void * *",params,???,???,???,???
+glTextureRangeAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureRangeAPPLE,0,0,GLenum,target,N/A,in,fixed,??
+glTextureRangeAPPLE,1,0,GLsizei,length,N/A,in,fixed,??
+glTextureRangeAPPLE,2,1,"void *",pointer,???,???,???,???

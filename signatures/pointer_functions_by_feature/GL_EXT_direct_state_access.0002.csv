@@ -1,0 +1,58 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCompressedTextureSubImage3DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTextureSubImage3DEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,2,0,GLint,level,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,3,0,GLint,xoffset,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,4,0,GLint,yoffset,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,5,0,GLint,zoffset,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,6,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,7,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,8,0,GLsizei,depth,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,9,0,GLenum,format,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,10,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTextureSubImage3DEXT,11,1,"const void *",data,???,???,???,???
+glFramebufferDrawBuffersEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glFramebufferDrawBuffersEXT,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glFramebufferDrawBuffersEXT,1,0,GLsizei,n,N/A,in,fixed,??
+glFramebufferDrawBuffersEXT,2,1,"const GLenum *",bufs,???,???,???,???
+glGetCompressedMultiTexImageEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCompressedMultiTexImageEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetCompressedMultiTexImageEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetCompressedMultiTexImageEXT,2,0,GLint,level,N/A,in,fixed,??
+glGetCompressedMultiTexImageEXT,3,1,"void *",img,???,???,???,???
+glGetCompressedTextureImageEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCompressedTextureImageEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glGetCompressedTextureImageEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetCompressedTextureImageEXT,2,0,GLint,level,N/A,in,fixed,??
+glGetCompressedTextureImageEXT,3,1,"void *",img,???,???,???,???
+glGetDoubleIndexedvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetDoubleIndexedvEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetDoubleIndexedvEXT,1,0,GLuint,index,N/A,in,fixed,??
+glGetDoubleIndexedvEXT,2,1,"GLdouble *",params,???,???,???,???
+glGetDoublei_vEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetDoublei_vEXT,0,0,GLenum,pname,N/A,in,fixed,??
+glGetDoublei_vEXT,1,0,GLuint,index,N/A,in,fixed,??
+glGetDoublei_vEXT,2,1,"GLdouble *",params,???,???,???,???
+glGetFloatIndexedvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFloatIndexedvEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetFloatIndexedvEXT,1,0,GLuint,index,N/A,in,fixed,??
+glGetFloatIndexedvEXT,2,1,"GLfloat *",params,???,???,???,???
+glGetFloati_vEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFloati_vEXT,0,0,GLenum,pname,N/A,in,fixed,??
+glGetFloati_vEXT,1,0,GLuint,index,N/A,in,fixed,??
+glGetFloati_vEXT,2,1,"GLfloat *",params,???,???,???,???
+glGetFramebufferParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFramebufferParameterivEXT,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glGetFramebufferParameterivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFramebufferParameterivEXT,2,1,"GLint *",param,???,???,???,???
+glGetMultiTexEnvfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexEnvfvEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexEnvfvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetMultiTexEnvfvEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexEnvfvEXT,3,1,"GLfloat *",params,???,???,???,???
+glGetMultiTexEnvivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexEnvivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexEnvivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetMultiTexEnvivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexEnvivEXT,3,1,"GLint *",params,???,???,???,???

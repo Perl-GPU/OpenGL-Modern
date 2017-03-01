@@ -1,0 +1,16 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMultiDrawArraysIndirectBindlessCountNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawArraysIndirectBindlessCountNV,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawArraysIndirectBindlessCountNV,1,1,"const void *",indirect,???,???,???,???
+glMultiDrawArraysIndirectBindlessCountNV,2,0,GLintptr,drawCount,N/A,in,fixed,??
+glMultiDrawArraysIndirectBindlessCountNV,3,0,GLsizei,maxDrawCount,N/A,in,fixed,??
+glMultiDrawArraysIndirectBindlessCountNV,4,0,GLsizei,stride,N/A,in,fixed,??
+glMultiDrawArraysIndirectBindlessCountNV,5,0,GLint,vertexBufferCount,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessCountNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawElementsIndirectBindlessCountNV,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessCountNV,1,0,GLenum,type,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessCountNV,2,1,"const void *",indirect,???,???,???,???
+glMultiDrawElementsIndirectBindlessCountNV,3,0,GLintptr,drawCount,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessCountNV,4,0,GLsizei,maxDrawCount,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessCountNV,5,0,GLsizei,stride,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessCountNV,6,0,GLint,vertexBufferCount,N/A,in,fixed,??

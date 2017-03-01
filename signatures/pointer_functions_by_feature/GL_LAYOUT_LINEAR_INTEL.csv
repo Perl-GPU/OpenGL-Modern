@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMapTexture2DINTEL,-1,1,"void *",N/A,???,out,???,???
+glMapTexture2DINTEL,0,0,GLuint,texture,N/A,in,fixed,??
+glMapTexture2DINTEL,1,0,GLint,level,N/A,in,fixed,??
+glMapTexture2DINTEL,2,0,GLbitfield,access,N/A,in,fixed,??
+glMapTexture2DINTEL,3,1,"GLint *",stride,???,???,???,???
+glMapTexture2DINTEL,4,1,"GLenum *",layout,???,???,???,???

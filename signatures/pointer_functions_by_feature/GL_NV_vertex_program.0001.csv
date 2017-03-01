@@ -1,0 +1,42 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glAreProgramsResidentNV,-1,0,GLboolean,N/A,N/A,out,fixed,??
+glAreProgramsResidentNV,0,0,GLsizei,n,N/A,in,fixed,??
+glAreProgramsResidentNV,1,1,"const GLuint *",ids,???,???,???,???
+glAreProgramsResidentNV,2,1,"GLboolean *",residences,???,???,???,???
+glDeleteProgramsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteProgramsNV,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteProgramsNV,1,1,"const GLuint *",ids,???,???,???,???
+glExecuteProgramNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glExecuteProgramNV,0,0,GLenum,target,N/A,in,fixed,??
+glExecuteProgramNV,1,0,GLuint,id,N/A,in,fixed,??
+glExecuteProgramNV,2,1,"const GLfloat *",params,???,???,???,???
+glGenProgramsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenProgramsNV,0,0,GLsizei,n,N/A,in,fixed,??
+glGenProgramsNV,1,1,"GLuint *",ids,???,???,???,???
+glGetProgramParameterdvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramParameterdvNV,0,0,GLenum,target,N/A,in,fixed,??
+glGetProgramParameterdvNV,1,0,GLuint,index,N/A,in,fixed,??
+glGetProgramParameterdvNV,2,0,GLenum,pname,N/A,in,fixed,??
+glGetProgramParameterdvNV,3,1,"GLdouble *",params,???,???,???,???
+glGetProgramParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramParameterfvNV,0,0,GLenum,target,N/A,in,fixed,??
+glGetProgramParameterfvNV,1,0,GLuint,index,N/A,in,fixed,??
+glGetProgramParameterfvNV,2,0,GLenum,pname,N/A,in,fixed,??
+glGetProgramParameterfvNV,3,1,"GLfloat *",params,???,???,???,???
+glGetProgramStringNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramStringNV,0,0,GLuint,id,N/A,in,fixed,??
+glGetProgramStringNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetProgramStringNV,2,1,"GLubyte *",program,???,???,???,???
+glGetProgramivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramivNV,0,0,GLuint,id,N/A,in,fixed,??
+glGetProgramivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetProgramivNV,2,1,"GLint *",params,???,???,???,???
+glGetTrackMatrixivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTrackMatrixivNV,0,0,GLenum,target,N/A,in,fixed,??
+glGetTrackMatrixivNV,1,0,GLuint,address,N/A,in,fixed,??
+glGetTrackMatrixivNV,2,0,GLenum,pname,N/A,in,fixed,??
+glGetTrackMatrixivNV,3,1,"GLint *",params,???,???,???,???
+glGetVertexAttribPointervNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribPointervNV,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribPointervNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribPointervNV,2,2,"void * *",pointer,???,???,???,???

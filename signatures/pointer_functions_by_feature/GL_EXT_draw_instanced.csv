@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDrawElementsInstancedEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawElementsInstancedEXT,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawElementsInstancedEXT,1,0,GLsizei,count,N/A,in,fixed,??
+glDrawElementsInstancedEXT,2,0,GLenum,type,N/A,in,fixed,??
+glDrawElementsInstancedEXT,3,1,"const void *",indices,???,???,???,???
+glDrawElementsInstancedEXT,4,0,GLsizei,primcount,N/A,in,fixed,??

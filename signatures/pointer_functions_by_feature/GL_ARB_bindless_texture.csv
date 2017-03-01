@@ -1,0 +1,17 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetVertexAttribLui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribLui64vARB,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribLui64vARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribLui64vARB,2,1,"GLuint64EXT *",params,???,???,???,???
+glProgramUniformHandleui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformHandleui64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformHandleui64vARB,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformHandleui64vARB,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformHandleui64vARB,3,1,"const GLuint64 *",values,???,???,???,???
+glUniformHandleui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformHandleui64vARB,0,0,GLint,location,N/A,in,fixed,??
+glUniformHandleui64vARB,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformHandleui64vARB,2,1,"const GLuint64 *",value,???,???,???,???
+glVertexAttribL1ui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL1ui64vARB,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL1ui64vARB,1,1,"const GLuint64EXT *",v,???,???,???,???

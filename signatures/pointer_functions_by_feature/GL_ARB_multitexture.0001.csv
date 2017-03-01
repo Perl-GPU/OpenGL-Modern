@@ -1,0 +1,34 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMultiTexCoord1dvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord1dvARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord1dvARB,1,1,"const GLdouble *",v,???,???,???,???
+glMultiTexCoord1fvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord1fvARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord1fvARB,1,1,"const GLfloat *",v,???,???,???,???
+glMultiTexCoord1ivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord1ivARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord1ivARB,1,1,"const GLint *",v,???,???,???,???
+glMultiTexCoord1svARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord1svARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord1svARB,1,1,"const GLshort *",v,???,???,???,???
+glMultiTexCoord2dvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord2dvARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord2dvARB,1,1,"const GLdouble *",v,???,???,???,???
+glMultiTexCoord2fvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord2fvARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord2fvARB,1,1,"const GLfloat *",v,???,???,???,???
+glMultiTexCoord2ivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord2ivARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord2ivARB,1,1,"const GLint *",v,???,???,???,???
+glMultiTexCoord2svARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord2svARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord2svARB,1,1,"const GLshort *",v,???,???,???,???
+glMultiTexCoord3dvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord3dvARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord3dvARB,1,1,"const GLdouble *",v,???,???,???,???
+glMultiTexCoord3fvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord3fvARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord3fvARB,1,1,"const GLfloat *",v,???,???,???,???
+glMultiTexCoord3ivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord3ivARB,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord3ivARB,1,1,"const GLint *",v,???,???,???,???

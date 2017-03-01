@@ -1,0 +1,26 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVDPAUGetSurfaceivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVDPAUGetSurfaceivNV,0,0,GLvdpauSurfaceNV,surface,N/A,in,fixed,??
+glVDPAUGetSurfaceivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glVDPAUGetSurfaceivNV,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glVDPAUGetSurfaceivNV,3,1,"GLsizei *",length,???,???,???,???
+glVDPAUGetSurfaceivNV,4,1,"GLint *",values,???,???,???,???
+glVDPAUInitNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVDPAUInitNV,0,1,"const void *",vdpDevice,???,???,???,???
+glVDPAUInitNV,1,1,"const void *",getProcAddress,???,???,???,???
+glVDPAUMapSurfacesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVDPAUMapSurfacesNV,0,0,GLsizei,numSurfaces,N/A,in,fixed,??
+glVDPAUMapSurfacesNV,1,1,"const GLvdpauSurfaceNV *",surfaces,???,???,???,???
+glVDPAURegisterOutputSurfaceNV,-1,0,GLvdpauSurfaceNV,N/A,N/A,out,fixed,??
+glVDPAURegisterOutputSurfaceNV,0,1,"const void *",vdpSurface,???,???,???,???
+glVDPAURegisterOutputSurfaceNV,1,0,GLenum,target,N/A,in,fixed,??
+glVDPAURegisterOutputSurfaceNV,2,0,GLsizei,numTextureNames,N/A,in,fixed,??
+glVDPAURegisterOutputSurfaceNV,3,1,"const GLuint *",textureNames,???,???,???,???
+glVDPAURegisterVideoSurfaceNV,-1,0,GLvdpauSurfaceNV,N/A,N/A,out,fixed,??
+glVDPAURegisterVideoSurfaceNV,0,1,"const void *",vdpSurface,???,???,???,???
+glVDPAURegisterVideoSurfaceNV,1,0,GLenum,target,N/A,in,fixed,??
+glVDPAURegisterVideoSurfaceNV,2,0,GLsizei,numTextureNames,N/A,in,fixed,??
+glVDPAURegisterVideoSurfaceNV,3,1,"const GLuint *",textureNames,???,???,???,???
+glVDPAUUnmapSurfacesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVDPAUUnmapSurfacesNV,0,0,GLsizei,numSurface,N/A,in,fixed,??
+glVDPAUUnmapSurfacesNV,1,1,"const GLvdpauSurfaceNV *",surfaces,???,???,???,???

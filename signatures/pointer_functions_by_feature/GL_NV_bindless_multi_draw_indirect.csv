@@ -1,0 +1,14 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMultiDrawArraysIndirectBindlessNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawArraysIndirectBindlessNV,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawArraysIndirectBindlessNV,1,1,"const void *",indirect,???,???,???,???
+glMultiDrawArraysIndirectBindlessNV,2,0,GLsizei,drawCount,N/A,in,fixed,??
+glMultiDrawArraysIndirectBindlessNV,3,0,GLsizei,stride,N/A,in,fixed,??
+glMultiDrawArraysIndirectBindlessNV,4,0,GLint,vertexBufferCount,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawElementsIndirectBindlessNV,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessNV,1,0,GLenum,type,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessNV,2,1,"const void *",indirect,???,???,???,???
+glMultiDrawElementsIndirectBindlessNV,3,0,GLsizei,drawCount,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessNV,4,0,GLsizei,stride,N/A,in,fixed,??
+glMultiDrawElementsIndirectBindlessNV,5,0,GLint,vertexBufferCount,N/A,in,fixed,??

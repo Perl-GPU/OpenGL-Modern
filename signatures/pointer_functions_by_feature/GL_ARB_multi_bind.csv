@@ -1,0 +1,31 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glBindBuffersBase,-1,0,void,N/A,N/A,out,fixed,N/A
+glBindBuffersBase,0,0,GLenum,target,N/A,in,fixed,??
+glBindBuffersBase,1,0,GLuint,first,N/A,in,fixed,??
+glBindBuffersBase,2,0,GLsizei,count,N/A,in,fixed,??
+glBindBuffersBase,3,1,"const GLuint *",buffers,???,???,???,???
+glBindBuffersRange,-1,0,void,N/A,N/A,out,fixed,N/A
+glBindBuffersRange,0,0,GLenum,target,N/A,in,fixed,??
+glBindBuffersRange,1,0,GLuint,first,N/A,in,fixed,??
+glBindBuffersRange,2,0,GLsizei,count,N/A,in,fixed,??
+glBindBuffersRange,3,1,"const GLuint *",buffers,???,???,???,???
+glBindBuffersRange,4,1,"const GLintptr *",offsets,???,???,???,???
+glBindBuffersRange,5,1,"const GLsizeiptr *",sizes,???,???,???,???
+glBindImageTextures,-1,0,void,N/A,N/A,out,fixed,N/A
+glBindImageTextures,0,0,GLuint,first,N/A,in,fixed,??
+glBindImageTextures,1,0,GLsizei,count,N/A,in,fixed,??
+glBindImageTextures,2,1,"const GLuint *",textures,???,???,???,???
+glBindSamplers,-1,0,void,N/A,N/A,out,fixed,N/A
+glBindSamplers,0,0,GLuint,first,N/A,in,fixed,??
+glBindSamplers,1,0,GLsizei,count,N/A,in,fixed,??
+glBindSamplers,2,1,"const GLuint *",samplers,???,???,???,???
+glBindTextures,-1,0,void,N/A,N/A,out,fixed,N/A
+glBindTextures,0,0,GLuint,first,N/A,in,fixed,??
+glBindTextures,1,0,GLsizei,count,N/A,in,fixed,??
+glBindTextures,2,1,"const GLuint *",textures,???,???,???,???
+glBindVertexBuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+glBindVertexBuffers,0,0,GLuint,first,N/A,in,fixed,??
+glBindVertexBuffers,1,0,GLsizei,count,N/A,in,fixed,??
+glBindVertexBuffers,2,1,"const GLuint *",buffers,???,???,???,???
+glBindVertexBuffers,3,1,"const GLintptr *",offsets,???,???,???,???
+glBindVertexBuffers,4,1,"const GLsizei *",strides,???,???,???,???

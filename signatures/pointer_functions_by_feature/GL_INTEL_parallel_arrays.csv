@@ -1,0 +1,16 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glColorPointervINTEL,-1,0,void,N/A,N/A,out,fixed,N/A
+glColorPointervINTEL,0,0,GLint,size,N/A,in,fixed,??
+glColorPointervINTEL,1,0,GLenum,type,N/A,in,fixed,??
+glColorPointervINTEL,2,2,"const void * *",pointer,???,???,???,???
+glNormalPointervINTEL,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormalPointervINTEL,0,0,GLenum,type,N/A,in,fixed,??
+glNormalPointervINTEL,1,2,"const void * *",pointer,???,???,???,???
+glTexCoordPointervINTEL,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoordPointervINTEL,0,0,GLint,size,N/A,in,fixed,??
+glTexCoordPointervINTEL,1,0,GLenum,type,N/A,in,fixed,??
+glTexCoordPointervINTEL,2,2,"const void * *",pointer,???,???,???,???
+glVertexPointervINTEL,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexPointervINTEL,0,0,GLint,size,N/A,in,fixed,??
+glVertexPointervINTEL,1,0,GLenum,type,N/A,in,fixed,??
+glVertexPointervINTEL,2,2,"const void * *",pointer,???,???,???,???

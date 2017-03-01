@@ -1,0 +1,54 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetUniformi64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetUniformi64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glGetUniformi64vARB,1,0,GLint,location,N/A,in,fixed,??
+glGetUniformi64vARB,2,1,"GLint64 *",params,???,???,???,???
+glGetUniformui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetUniformui64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glGetUniformui64vARB,1,0,GLint,location,N/A,in,fixed,??
+glGetUniformui64vARB,2,1,"GLuint64 *",params,???,???,???,???
+glGetnUniformi64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnUniformi64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glGetnUniformi64vARB,1,0,GLint,location,N/A,in,fixed,??
+glGetnUniformi64vARB,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnUniformi64vARB,3,1,"GLint64 *",params,???,???,???,???
+glGetnUniformui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetnUniformui64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glGetnUniformui64vARB,1,0,GLint,location,N/A,in,fixed,??
+glGetnUniformui64vARB,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetnUniformui64vARB,3,1,"GLuint64 *",params,???,???,???,???
+glProgramUniform1i64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform1i64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform1i64vARB,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform1i64vARB,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform1i64vARB,3,1,"const GLint64 *",value,???,???,???,???
+glProgramUniform1ui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform1ui64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform1ui64vARB,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform1ui64vARB,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform1ui64vARB,3,1,"const GLuint64 *",value,???,???,???,???
+glProgramUniform2i64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform2i64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform2i64vARB,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform2i64vARB,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform2i64vARB,3,1,"const GLint64 *",value,???,???,???,???
+glProgramUniform2ui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform2ui64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform2ui64vARB,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform2ui64vARB,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform2ui64vARB,3,1,"const GLuint64 *",value,???,???,???,???
+glProgramUniform3i64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform3i64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform3i64vARB,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform3i64vARB,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform3i64vARB,3,1,"const GLint64 *",value,???,???,???,???
+glProgramUniform3ui64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform3ui64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform3ui64vARB,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform3ui64vARB,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform3ui64vARB,3,1,"const GLuint64 *",value,???,???,???,???
+glProgramUniform4i64vARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform4i64vARB,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform4i64vARB,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform4i64vARB,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform4i64vARB,3,1,"const GLint64 *",value,???,???,???,???

@@ -1,0 +1,5 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glTexParameterxv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexParameterxv,0,0,GLenum,target,N/A,in,fixed,??
+glTexParameterxv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexParameterxv,2,1,"const GLfixed *",params,???,???,???,???

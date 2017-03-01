@@ -1,0 +1,37 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetUniformLocationARB,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetUniformLocationARB,0,0,GLhandleARB,programObj,N/A,in,fixed,??
+glGetUniformLocationARB,1,1,"const GLcharARB *",name,???,???,???,???
+glGetUniformfvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetUniformfvARB,0,0,GLhandleARB,programObj,N/A,in,fixed,??
+glGetUniformfvARB,1,0,GLint,location,N/A,in,fixed,??
+glGetUniformfvARB,2,1,"GLfloat *",params,???,???,???,???
+glGetUniformivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetUniformivARB,0,0,GLhandleARB,programObj,N/A,in,fixed,??
+glGetUniformivARB,1,0,GLint,location,N/A,in,fixed,??
+glGetUniformivARB,2,1,"GLint *",params,???,???,???,???
+glShaderSourceARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glShaderSourceARB,0,0,GLhandleARB,shaderObj,N/A,in,fixed,??
+glShaderSourceARB,1,0,GLsizei,count,N/A,in,fixed,??
+glShaderSourceARB,2,2,"const GLcharARB * *",string,???,???,???,???
+glShaderSourceARB,3,1,"const GLint *",length,???,???,???,???
+glUniform1fvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform1fvARB,0,0,GLint,location,N/A,in,fixed,??
+glUniform1fvARB,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform1fvARB,2,1,"const GLfloat *",value,???,???,???,???
+glUniform1ivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform1ivARB,0,0,GLint,location,N/A,in,fixed,??
+glUniform1ivARB,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform1ivARB,2,1,"const GLint *",value,???,???,???,???
+glUniform2fvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform2fvARB,0,0,GLint,location,N/A,in,fixed,??
+glUniform2fvARB,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform2fvARB,2,1,"const GLfloat *",value,???,???,???,???
+glUniform2ivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform2ivARB,0,0,GLint,location,N/A,in,fixed,??
+glUniform2ivARB,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform2ivARB,2,1,"const GLint *",value,???,???,???,???
+glUniform3fvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform3fvARB,0,0,GLint,location,N/A,in,fixed,??
+glUniform3fvARB,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform3fvARB,2,1,"const GLfloat *",value,???,???,???,???

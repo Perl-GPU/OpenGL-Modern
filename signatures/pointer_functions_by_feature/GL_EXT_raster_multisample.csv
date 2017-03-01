@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCoverageModulationTableNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glCoverageModulationTableNV,0,0,GLsizei,n,N/A,in,fixed,??
+glCoverageModulationTableNV,1,1,"const GLfloat *",v,???,???,???,???
+glGetCoverageModulationTableNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCoverageModulationTableNV,0,0,GLsizei,bufsize,N/A,in,fixed,??
+glGetCoverageModulationTableNV,1,1,"GLfloat *",v,???,???,???,???

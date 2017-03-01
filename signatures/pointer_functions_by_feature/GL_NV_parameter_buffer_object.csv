@@ -1,0 +1,19 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glProgramBufferParametersIivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramBufferParametersIivNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramBufferParametersIivNV,1,0,GLuint,buffer,N/A,in,fixed,??
+glProgramBufferParametersIivNV,2,0,GLuint,index,N/A,in,fixed,??
+glProgramBufferParametersIivNV,3,0,GLsizei,count,N/A,in,fixed,??
+glProgramBufferParametersIivNV,4,1,"const GLint *",params,???,???,???,???
+glProgramBufferParametersIuivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramBufferParametersIuivNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramBufferParametersIuivNV,1,0,GLuint,buffer,N/A,in,fixed,??
+glProgramBufferParametersIuivNV,2,0,GLuint,index,N/A,in,fixed,??
+glProgramBufferParametersIuivNV,3,0,GLsizei,count,N/A,in,fixed,??
+glProgramBufferParametersIuivNV,4,1,"const GLuint *",params,???,???,???,???
+glProgramBufferParametersfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramBufferParametersfvNV,0,0,GLenum,target,N/A,in,fixed,??
+glProgramBufferParametersfvNV,1,0,GLuint,buffer,N/A,in,fixed,??
+glProgramBufferParametersfvNV,2,0,GLuint,index,N/A,in,fixed,??
+glProgramBufferParametersfvNV,3,0,GLsizei,count,N/A,in,fixed,??
+glProgramBufferParametersfvNV,4,1,"const GLfloat *",params,???,???,???,???

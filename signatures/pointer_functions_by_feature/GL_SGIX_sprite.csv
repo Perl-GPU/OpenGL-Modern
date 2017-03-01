@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glSpriteParameterfvSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glSpriteParameterfvSGIX,0,0,GLenum,pname,N/A,in,fixed,??
+glSpriteParameterfvSGIX,1,1,"GLfloat *",params,???,???,???,???
+glSpriteParameterivSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glSpriteParameterivSGIX,0,0,GLenum,pname,N/A,in,fixed,??
+glSpriteParameterivSGIX,1,1,"GLint *",params,???,???,???,???

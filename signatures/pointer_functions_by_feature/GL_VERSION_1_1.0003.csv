@@ -1,0 +1,35 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteTextures,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteTextures,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteTextures,1,1,"const GLuint *",textures,???,???,???,???
+glDrawElements,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawElements,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawElements,1,0,GLsizei,count,N/A,in,fixed,??
+glDrawElements,2,0,GLenum,type,N/A,in,fixed,??
+glDrawElements,3,1,"const void *",indices,???,???,???,???
+glDrawPixels,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawPixels,0,0,GLsizei,width,N/A,in,fixed,??
+glDrawPixels,1,0,GLsizei,height,N/A,in,fixed,??
+glDrawPixels,2,0,GLenum,format,N/A,in,fixed,??
+glDrawPixels,3,0,GLenum,type,N/A,in,fixed,??
+glDrawPixels,4,1,"const void *",pixels,???,???,???,???
+glEdgeFlagPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+glEdgeFlagPointer,0,0,GLsizei,stride,N/A,in,fixed,??
+glEdgeFlagPointer,1,1,"const void *",pointer,???,???,???,???
+glEdgeFlagv,-1,0,void,N/A,N/A,out,fixed,N/A
+glEdgeFlagv,0,1,"const GLboolean *",flag,???,???,???,???
+glEvalCoord1dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glEvalCoord1dv,0,1,"const GLdouble *",u,???,???,???,???
+glEvalCoord1fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glEvalCoord1fv,0,1,"const GLfloat *",u,???,???,???,???
+glEvalCoord2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glEvalCoord2dv,0,1,"const GLdouble *",u,???,???,???,???
+glEvalCoord2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glEvalCoord2fv,0,1,"const GLfloat *",u,???,???,???,???
+glFeedbackBuffer,-1,0,void,N/A,N/A,out,fixed,N/A
+glFeedbackBuffer,0,0,GLsizei,size,N/A,in,fixed,??
+glFeedbackBuffer,1,0,GLenum,type,N/A,in,fixed,??
+glFeedbackBuffer,2,1,"GLfloat *",buffer,???,???,???,???
+glFogfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogfv,0,0,GLenum,pname,N/A,in,fixed,??
+glFogfv,1,1,"const GLfloat *",params,???,???,???,???

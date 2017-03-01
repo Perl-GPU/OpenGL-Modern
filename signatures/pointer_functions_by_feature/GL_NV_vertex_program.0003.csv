@@ -1,0 +1,34 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVertexAttrib1svNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib1svNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib1svNV,1,1,"const GLshort *",v,???,???,???,???
+glVertexAttrib2dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib2dvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib2dvNV,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttrib2fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib2fvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib2fvNV,1,1,"const GLfloat *",v,???,???,???,???
+glVertexAttrib2svNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib2svNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib2svNV,1,1,"const GLshort *",v,???,???,???,???
+glVertexAttrib3dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib3dvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib3dvNV,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttrib3fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib3fvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib3fvNV,1,1,"const GLfloat *",v,???,???,???,???
+glVertexAttrib3svNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib3svNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib3svNV,1,1,"const GLshort *",v,???,???,???,???
+glVertexAttrib4dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4dvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4dvNV,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttrib4fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4fvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4fvNV,1,1,"const GLfloat *",v,???,???,???,???
+glVertexAttrib4svNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4svNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4svNV,1,1,"const GLshort *",v,???,???,???,???
+glVertexAttrib4ubvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4ubvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4ubvNV,1,1,"const GLubyte *",v,???,???,???,???

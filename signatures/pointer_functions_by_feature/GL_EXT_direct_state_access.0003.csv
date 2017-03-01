@@ -1,0 +1,59 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetMultiTexGendvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexGendvEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexGendvEXT,1,0,GLenum,coord,N/A,in,fixed,??
+glGetMultiTexGendvEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexGendvEXT,3,1,"GLdouble *",params,???,???,???,???
+glGetMultiTexGenfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexGenfvEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexGenfvEXT,1,0,GLenum,coord,N/A,in,fixed,??
+glGetMultiTexGenfvEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexGenfvEXT,3,1,"GLfloat *",params,???,???,???,???
+glGetMultiTexGenivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexGenivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexGenivEXT,1,0,GLenum,coord,N/A,in,fixed,??
+glGetMultiTexGenivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexGenivEXT,3,1,"GLint *",params,???,???,???,???
+glGetMultiTexImageEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexImageEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexImageEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetMultiTexImageEXT,2,0,GLint,level,N/A,in,fixed,??
+glGetMultiTexImageEXT,3,0,GLenum,format,N/A,in,fixed,??
+glGetMultiTexImageEXT,4,0,GLenum,type,N/A,in,fixed,??
+glGetMultiTexImageEXT,5,1,"void *",pixels,???,???,???,???
+glGetMultiTexLevelParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexLevelParameterfvEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexLevelParameterfvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetMultiTexLevelParameterfvEXT,2,0,GLint,level,N/A,in,fixed,??
+glGetMultiTexLevelParameterfvEXT,3,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexLevelParameterfvEXT,4,1,"GLfloat *",params,???,???,???,???
+glGetMultiTexLevelParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexLevelParameterivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexLevelParameterivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetMultiTexLevelParameterivEXT,2,0,GLint,level,N/A,in,fixed,??
+glGetMultiTexLevelParameterivEXT,3,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexLevelParameterivEXT,4,1,"GLint *",params,???,???,???,???
+glGetMultiTexParameterIivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexParameterIivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexParameterIivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetMultiTexParameterIivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexParameterIivEXT,3,1,"GLint *",params,???,???,???,???
+glGetMultiTexParameterIuivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexParameterIuivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexParameterIuivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetMultiTexParameterIuivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexParameterIuivEXT,3,1,"GLuint *",params,???,???,???,???
+glGetMultiTexParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexParameterfvEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexParameterfvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetMultiTexParameterfvEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexParameterfvEXT,3,1,"GLfloat *",params,???,???,???,???
+glGetMultiTexParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMultiTexParameterivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glGetMultiTexParameterivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glGetMultiTexParameterivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMultiTexParameterivEXT,3,1,"GLint *",params,???,???,???,???
+glGetNamedBufferParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedBufferParameterivEXT,0,0,GLuint,buffer,N/A,in,fixed,??
+glGetNamedBufferParameterivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedBufferParameterivEXT,2,1,"GLint *",params,???,???,???,???

@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteVertexArraysAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteVertexArraysAPPLE,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteVertexArraysAPPLE,1,1,"const GLuint *",arrays,???,???,???,???
+glGenVertexArraysAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenVertexArraysAPPLE,0,0,GLsizei,n,N/A,in,fixed,??
+glGenVertexArraysAPPLE,1,1,"const GLuint *",arrays,???,???,???,???

@@ -1,0 +1,16 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN,-1,0,void,N/A,N/A,out,fixed,N/A
+glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN,0,1,"const GLuint *",rc,???,???,???,???
+glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN,1,1,"const GLfloat *",tc,???,???,???,???
+glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN,2,1,"const GLfloat *",c,???,???,???,???
+glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN,3,1,"const GLfloat *",n,???,???,???,???
+glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN,4,1,"const GLfloat *",v,???,???,???,???
+glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN,-1,0,void,N/A,N/A,out,fixed,N/A
+glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN,0,1,"const GLuint *",rc,???,???,???,???
+glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN,1,1,"const GLfloat *",tc,???,???,???,???
+glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN,2,1,"const GLfloat *",n,???,???,???,???
+glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN,3,1,"const GLfloat *",v,???,???,???,???
+glReplacementCodeuiTexCoord2fVertex3fvSUN,-1,0,void,N/A,N/A,out,fixed,N/A
+glReplacementCodeuiTexCoord2fVertex3fvSUN,0,1,"const GLuint *",rc,???,???,???,???
+glReplacementCodeuiTexCoord2fVertex3fvSUN,1,1,"const GLfloat *",tc,???,???,???,???
+glReplacementCodeuiTexCoord2fVertex3fvSUN,2,1,"const GLfloat *",v,???,???,???,???

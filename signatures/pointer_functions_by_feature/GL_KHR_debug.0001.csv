@@ -1,0 +1,33 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDebugMessageCallback,-1,0,void,N/A,N/A,out,fixed,N/A
+glDebugMessageCallback,0,0,GLDEBUGPROC,callback,N/A,in,fixed,??
+glDebugMessageCallback,1,1,"const void *",userParam,???,???,???,???
+glDebugMessageControl,-1,0,void,N/A,N/A,out,fixed,N/A
+glDebugMessageControl,0,0,GLenum,source,N/A,in,fixed,??
+glDebugMessageControl,1,0,GLenum,type,N/A,in,fixed,??
+glDebugMessageControl,2,0,GLenum,severity,N/A,in,fixed,??
+glDebugMessageControl,3,0,GLsizei,count,N/A,in,fixed,??
+glDebugMessageControl,4,1,"const GLuint *",ids,???,???,???,???
+glDebugMessageControl,5,0,GLboolean,enabled,N/A,in,fixed,??
+glDebugMessageInsert,-1,0,void,N/A,N/A,out,fixed,N/A
+glDebugMessageInsert,0,0,GLenum,source,N/A,in,fixed,??
+glDebugMessageInsert,1,0,GLenum,type,N/A,in,fixed,??
+glDebugMessageInsert,2,0,GLuint,id,N/A,in,fixed,??
+glDebugMessageInsert,3,0,GLenum,severity,N/A,in,fixed,??
+glDebugMessageInsert,4,0,GLsizei,length,N/A,in,fixed,??
+glDebugMessageInsert,5,1,"const GLchar *",buf,???,???,???,???
+glGetDebugMessageLog,-1,0,GLuint,N/A,N/A,out,fixed,??
+glGetDebugMessageLog,0,0,GLuint,count,N/A,in,fixed,??
+glGetDebugMessageLog,1,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetDebugMessageLog,2,1,"GLenum *",sources,???,???,???,???
+glGetDebugMessageLog,3,1,"GLenum *",types,???,???,???,???
+glGetDebugMessageLog,4,1,"GLuint *",ids,???,???,???,???
+glGetDebugMessageLog,5,1,"GLenum *",severities,???,???,???,???
+glGetDebugMessageLog,6,1,"GLsizei *",lengths,???,???,???,???
+glGetDebugMessageLog,7,1,"GLchar *",messageLog,???,???,???,???
+glGetObjectLabel,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetObjectLabel,0,0,GLenum,identifier,N/A,in,fixed,??
+glGetObjectLabel,1,0,GLuint,name,N/A,in,fixed,??
+glGetObjectLabel,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetObjectLabel,3,1,"GLsizei *",length,???,???,???,???
+glGetObjectLabel,4,1,"GLchar *",label,???,???,???,???

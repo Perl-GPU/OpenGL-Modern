@@ -1,0 +1,45 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetTexGendv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexGendv,0,0,GLenum,coord,N/A,in,fixed,??
+glGetTexGendv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexGendv,2,1,"GLdouble *",params,???,???,???,???
+glGetTexGenfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexGenfv,0,0,GLenum,coord,N/A,in,fixed,??
+glGetTexGenfv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexGenfv,2,1,"GLfloat *",params,???,???,???,???
+glGetTexGeniv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexGeniv,0,0,GLenum,coord,N/A,in,fixed,??
+glGetTexGeniv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexGeniv,2,1,"GLint *",params,???,???,???,???
+glGetTexImage,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexImage,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexImage,1,0,GLint,level,N/A,in,fixed,??
+glGetTexImage,2,0,GLenum,format,N/A,in,fixed,??
+glGetTexImage,3,0,GLenum,type,N/A,in,fixed,??
+glGetTexImage,4,1,"void *",pixels,???,???,???,???
+glGetTexLevelParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexLevelParameterfv,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexLevelParameterfv,1,0,GLint,level,N/A,in,fixed,??
+glGetTexLevelParameterfv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetTexLevelParameterfv,3,1,"GLfloat *",params,???,???,???,???
+glGetTexLevelParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexLevelParameteriv,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexLevelParameteriv,1,0,GLint,level,N/A,in,fixed,??
+glGetTexLevelParameteriv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetTexLevelParameteriv,3,1,"GLint *",params,???,???,???,???
+glGetTexParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexParameterfv,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexParameterfv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexParameterfv,2,1,"GLfloat *",params,???,???,???,???
+glGetTexParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexParameteriv,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexParameteriv,2,1,"GLint *",params,???,???,???,???
+glIndexPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+glIndexPointer,0,0,GLenum,type,N/A,in,fixed,??
+glIndexPointer,1,0,GLsizei,stride,N/A,in,fixed,??
+glIndexPointer,2,1,"const void *",pointer,???,???,???,???
+glIndexdv,-1,0,void,N/A,N/A,out,fixed,N/A
+glIndexdv,0,1,"const GLdouble *",c,???,???,???,???
+glIndexfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glIndexfv,0,1,"const GLfloat *",c,???,???,???,???

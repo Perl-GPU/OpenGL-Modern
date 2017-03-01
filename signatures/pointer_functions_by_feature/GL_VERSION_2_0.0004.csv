@@ -1,0 +1,46 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glUniform2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform2fv,0,0,GLint,location,N/A,in,fixed,??
+glUniform2fv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform2fv,2,1,"const GLfloat *",value,???,???,???,???
+glUniform2iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform2iv,0,0,GLint,location,N/A,in,fixed,??
+glUniform2iv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform2iv,2,1,"const GLint *",value,???,???,???,???
+glUniform3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform3fv,0,0,GLint,location,N/A,in,fixed,??
+glUniform3fv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform3fv,2,1,"const GLfloat *",value,???,???,???,???
+glUniform3iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform3iv,0,0,GLint,location,N/A,in,fixed,??
+glUniform3iv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform3iv,2,1,"const GLint *",value,???,???,???,???
+glUniform4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform4fv,0,0,GLint,location,N/A,in,fixed,??
+glUniform4fv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform4fv,2,1,"const GLfloat *",value,???,???,???,???
+glUniform4iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform4iv,0,0,GLint,location,N/A,in,fixed,??
+glUniform4iv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform4iv,2,1,"const GLint *",value,???,???,???,???
+glUniformMatrix2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix2fv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix2fv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix2fv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix2fv,3,1,"const GLfloat *",value,???,???,???,???
+glUniformMatrix3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix3fv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix3fv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix3fv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix3fv,3,1,"const GLfloat *",value,???,???,???,???
+glUniformMatrix4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix4fv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix4fv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix4fv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix4fv,3,1,"const GLfloat *",value,???,???,???,???
+glVertexAttrib1dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib1dv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib1dv,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttrib1fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib1fv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib1fv,1,1,"const GLfloat *",v,???,???,???,???

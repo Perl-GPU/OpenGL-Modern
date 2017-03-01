@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDrawElementsInstancedANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawElementsInstancedANGLE,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawElementsInstancedANGLE,1,0,GLsizei,count,N/A,in,fixed,??
+glDrawElementsInstancedANGLE,2,0,GLenum,type,N/A,in,fixed,??
+glDrawElementsInstancedANGLE,3,1,"const void *",indices,???,???,???,???
+glDrawElementsInstancedANGLE,4,0,GLsizei,primcount,N/A,in,fixed,??

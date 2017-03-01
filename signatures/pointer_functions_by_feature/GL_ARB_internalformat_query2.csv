@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetInternalformati64v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetInternalformati64v,0,0,GLenum,target,N/A,in,fixed,??
+glGetInternalformati64v,1,0,GLenum,internalformat,N/A,in,fixed,??
+glGetInternalformati64v,2,0,GLenum,pname,N/A,in,fixed,??
+glGetInternalformati64v,3,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetInternalformati64v,4,1,"GLint64 *",params,???,???,???,???

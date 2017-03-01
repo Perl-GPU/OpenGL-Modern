@@ -1,0 +1,51 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetUniformdv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetUniformdv,0,0,GLuint,program,N/A,in,fixed,??
+glGetUniformdv,1,0,GLint,location,N/A,in,fixed,??
+glGetUniformdv,2,1,"GLdouble *",params,???,???,???,???
+glUniform1dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform1dv,0,0,GLint,location,N/A,in,fixed,??
+glUniform1dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform1dv,2,1,"const GLdouble *",value,???,???,???,???
+glUniform2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform2dv,0,0,GLint,location,N/A,in,fixed,??
+glUniform2dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform2dv,2,1,"const GLdouble *",value,???,???,???,???
+glUniform3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform3dv,0,0,GLint,location,N/A,in,fixed,??
+glUniform3dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform3dv,2,1,"const GLdouble *",value,???,???,???,???
+glUniform4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform4dv,0,0,GLint,location,N/A,in,fixed,??
+glUniform4dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform4dv,2,1,"const GLdouble *",value,???,???,???,???
+glUniformMatrix2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix2dv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix2dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix2dv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix2dv,3,1,"const GLdouble *",value,???,???,???,???
+glUniformMatrix2x3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix2x3dv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix2x3dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix2x3dv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix2x3dv,3,1,"const GLdouble *",value,???,???,???,???
+glUniformMatrix2x4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix2x4dv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix2x4dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix2x4dv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix2x4dv,3,1,"const GLdouble *",value,???,???,???,???
+glUniformMatrix3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix3dv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix3dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix3dv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix3dv,3,1,"const GLdouble *",value,???,???,???,???
+glUniformMatrix3x2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix3x2dv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix3x2dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix3x2dv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix3x2dv,3,1,"const GLdouble *",value,???,???,???,???
+glUniformMatrix3x4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformMatrix3x4dv,0,0,GLint,location,N/A,in,fixed,??
+glUniformMatrix3x4dv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformMatrix3x4dv,2,0,GLboolean,transpose,N/A,in,fixed,??
+glUniformMatrix3x4dv,3,1,"const GLdouble *",value,???,???,???,???

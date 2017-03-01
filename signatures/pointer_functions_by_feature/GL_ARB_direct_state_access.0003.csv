@@ -1,0 +1,52 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetNamedBufferSubData,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedBufferSubData,0,0,GLuint,buffer,N/A,in,fixed,??
+glGetNamedBufferSubData,1,0,GLintptr,offset,N/A,in,fixed,??
+glGetNamedBufferSubData,2,0,GLsizeiptr,size,N/A,in,fixed,??
+glGetNamedBufferSubData,3,1,"void *",data,???,???,???,???
+glGetNamedFramebufferAttachmentParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedFramebufferAttachmentParameteriv,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glGetNamedFramebufferAttachmentParameteriv,1,0,GLenum,attachment,N/A,in,fixed,??
+glGetNamedFramebufferAttachmentParameteriv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedFramebufferAttachmentParameteriv,3,1,"GLint *",params,???,???,???,???
+glGetNamedFramebufferParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedFramebufferParameteriv,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glGetNamedFramebufferParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedFramebufferParameteriv,2,1,"GLint *",param,???,???,???,???
+glGetNamedRenderbufferParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedRenderbufferParameteriv,0,0,GLuint,renderbuffer,N/A,in,fixed,??
+glGetNamedRenderbufferParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedRenderbufferParameteriv,2,1,"GLint *",params,???,???,???,???
+glGetTextureImage,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTextureImage,0,0,GLuint,texture,N/A,in,fixed,??
+glGetTextureImage,1,0,GLint,level,N/A,in,fixed,??
+glGetTextureImage,2,0,GLenum,format,N/A,in,fixed,??
+glGetTextureImage,3,0,GLenum,type,N/A,in,fixed,??
+glGetTextureImage,4,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetTextureImage,5,1,"void *",pixels,???,???,???,???
+glGetTextureLevelParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTextureLevelParameterfv,0,0,GLuint,texture,N/A,in,fixed,??
+glGetTextureLevelParameterfv,1,0,GLint,level,N/A,in,fixed,??
+glGetTextureLevelParameterfv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetTextureLevelParameterfv,3,1,"GLfloat *",params,???,???,???,???
+glGetTextureLevelParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTextureLevelParameteriv,0,0,GLuint,texture,N/A,in,fixed,??
+glGetTextureLevelParameteriv,1,0,GLint,level,N/A,in,fixed,??
+glGetTextureLevelParameteriv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetTextureLevelParameteriv,3,1,"GLint *",params,???,???,???,???
+glGetTextureParameterIiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTextureParameterIiv,0,0,GLuint,texture,N/A,in,fixed,??
+glGetTextureParameterIiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTextureParameterIiv,2,1,"GLint *",params,???,???,???,???
+glGetTextureParameterIuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTextureParameterIuiv,0,0,GLuint,texture,N/A,in,fixed,??
+glGetTextureParameterIuiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTextureParameterIuiv,2,1,"GLuint *",params,???,???,???,???
+glGetTextureParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTextureParameterfv,0,0,GLuint,texture,N/A,in,fixed,??
+glGetTextureParameterfv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTextureParameterfv,2,1,"GLfloat *",params,???,???,???,???
+glGetTextureParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTextureParameteriv,0,0,GLuint,texture,N/A,in,fixed,??
+glGetTextureParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTextureParameteriv,2,1,"GLint *",params,???,???,???,???

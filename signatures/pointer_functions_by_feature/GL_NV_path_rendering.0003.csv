@@ -1,0 +1,50 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMatrixLoadTranspose3x3fNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixLoadTranspose3x3fNV,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixLoadTranspose3x3fNV,1,1,"const GLfloat *",m,???,???,???,???
+glMatrixMult3x2fNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixMult3x2fNV,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixMult3x2fNV,1,1,"const GLfloat *",m,???,???,???,???
+glMatrixMult3x3fNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixMult3x3fNV,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixMult3x3fNV,1,1,"const GLfloat *",m,???,???,???,???
+glMatrixMultTranspose3x3fNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixMultTranspose3x3fNV,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixMultTranspose3x3fNV,1,1,"const GLfloat *",m,???,???,???,???
+glPathColorGenNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathColorGenNV,0,0,GLenum,color,N/A,in,fixed,??
+glPathColorGenNV,1,0,GLenum,genMode,N/A,in,fixed,??
+glPathColorGenNV,2,0,GLenum,colorFormat,N/A,in,fixed,??
+glPathColorGenNV,3,1,"const GLfloat *",coeffs,???,???,???,???
+glPathCommandsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathCommandsNV,0,0,GLuint,path,N/A,in,fixed,??
+glPathCommandsNV,1,0,GLsizei,numCommands,N/A,in,fixed,??
+glPathCommandsNV,2,1,"const GLubyte *",commands,???,???,???,???
+glPathCommandsNV,3,0,GLsizei,numCoords,N/A,in,fixed,??
+glPathCommandsNV,4,0,GLenum,coordType,N/A,in,fixed,??
+glPathCommandsNV,5,1,"const void *",coords,???,???,???,???
+glPathCoordsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathCoordsNV,0,0,GLuint,path,N/A,in,fixed,??
+glPathCoordsNV,1,0,GLsizei,numCoords,N/A,in,fixed,??
+glPathCoordsNV,2,0,GLenum,coordType,N/A,in,fixed,??
+glPathCoordsNV,3,1,"const void *",coords,???,???,???,???
+glPathDashArrayNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathDashArrayNV,0,0,GLuint,path,N/A,in,fixed,??
+glPathDashArrayNV,1,0,GLsizei,dashCount,N/A,in,fixed,??
+glPathDashArrayNV,2,1,"const GLfloat *",dashArray,???,???,???,???
+glPathGlyphIndexArrayNV,-1,0,GLenum,N/A,N/A,out,fixed,??
+glPathGlyphIndexArrayNV,0,0,GLuint,firstPathName,N/A,in,fixed,??
+glPathGlyphIndexArrayNV,1,0,GLenum,fontTarget,N/A,in,fixed,??
+glPathGlyphIndexArrayNV,2,1,"const void *",fontName,???,???,???,???
+glPathGlyphIndexArrayNV,3,0,GLbitfield,fontStyle,N/A,in,fixed,??
+glPathGlyphIndexArrayNV,4,0,GLuint,firstGlyphIndex,N/A,in,fixed,??
+glPathGlyphIndexArrayNV,5,0,GLsizei,numGlyphs,N/A,in,fixed,??
+glPathGlyphIndexArrayNV,6,0,GLuint,pathParameterTemplate,N/A,in,fixed,??
+glPathGlyphIndexArrayNV,7,0,GLfloat,emScale,N/A,in,fixed,??
+glPathGlyphIndexRangeNV,-1,0,GLenum,N/A,N/A,out,fixed,??
+glPathGlyphIndexRangeNV,0,0,GLenum,fontTarget,N/A,in,fixed,??
+glPathGlyphIndexRangeNV,1,1,"const void *",fontName,???,???,???,???
+glPathGlyphIndexRangeNV,2,0,GLbitfield,fontStyle,N/A,in,fixed,??
+glPathGlyphIndexRangeNV,3,0,GLuint,pathParameterTemplate,N/A,in,fixed,??
+glPathGlyphIndexRangeNV,4,0,GLfloat,emScale,N/A,in,fixed,??
+glPathGlyphIndexRangeNV,5,0,GLuint,baseAndCount,???,in,fixed,??

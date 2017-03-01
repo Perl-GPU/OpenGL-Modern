@@ -1,0 +1,47 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMatrixLoadfEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixLoadfEXT,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixLoadfEXT,1,1,"const GLfloat *",m,???,???,???,???
+glMatrixMultTransposedEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixMultTransposedEXT,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixMultTransposedEXT,1,1,"const GLdouble *",m,???,???,???,???
+glMatrixMultTransposefEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixMultTransposefEXT,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixMultTransposefEXT,1,1,"const GLfloat *",m,???,???,???,???
+glMatrixMultdEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixMultdEXT,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixMultdEXT,1,1,"const GLdouble *",m,???,???,???,???
+glMatrixMultfEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixMultfEXT,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixMultfEXT,1,1,"const GLfloat *",m,???,???,???,???
+glMultiTexCoordPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoordPointerEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexCoordPointerEXT,1,0,GLint,size,N/A,in,fixed,??
+glMultiTexCoordPointerEXT,2,0,GLenum,type,N/A,in,fixed,??
+glMultiTexCoordPointerEXT,3,0,GLsizei,stride,N/A,in,fixed,??
+glMultiTexCoordPointerEXT,4,1,"const void *",pointer,???,???,???,???
+glMultiTexEnvfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexEnvfvEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexEnvfvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexEnvfvEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glMultiTexEnvfvEXT,3,1,"const GLfloat *",params,???,???,???,???
+glMultiTexEnvivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexEnvivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexEnvivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glMultiTexEnvivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glMultiTexEnvivEXT,3,1,"const GLint *",params,???,???,???,???
+glMultiTexGendvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexGendvEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexGendvEXT,1,0,GLenum,coord,N/A,in,fixed,??
+glMultiTexGendvEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glMultiTexGendvEXT,3,1,"const GLdouble *",params,???,???,???,???
+glMultiTexGenfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexGenfvEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexGenfvEXT,1,0,GLenum,coord,N/A,in,fixed,??
+glMultiTexGenfvEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glMultiTexGenfvEXT,3,1,"const GLfloat *",params,???,???,???,???
+glMultiTexGenivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexGenivEXT,0,0,GLenum,texunit,N/A,in,fixed,??
+glMultiTexGenivEXT,1,0,GLenum,coord,N/A,in,fixed,??
+glMultiTexGenivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glMultiTexGenivEXT,3,1,"const GLint *",params,???,???,???,???

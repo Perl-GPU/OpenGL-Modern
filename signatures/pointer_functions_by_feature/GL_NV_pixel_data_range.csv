@@ -1,0 +1,5 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glPixelDataRangeNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPixelDataRangeNV,0,0,GLenum,target,N/A,in,fixed,??
+glPixelDataRangeNV,1,0,GLsizei,length,N/A,in,fixed,??
+glPixelDataRangeNV,2,1,"void *",pointer,???,???,???,???

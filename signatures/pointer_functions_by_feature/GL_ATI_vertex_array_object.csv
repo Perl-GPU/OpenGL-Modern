@@ -1,0 +1,35 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetArrayObjectfvATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetArrayObjectfvATI,0,0,GLenum,array,N/A,in,fixed,??
+glGetArrayObjectfvATI,1,0,GLenum,pname,N/A,in,fixed,??
+glGetArrayObjectfvATI,2,1,"GLfloat *",params,???,???,???,???
+glGetArrayObjectivATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetArrayObjectivATI,0,0,GLenum,array,N/A,in,fixed,??
+glGetArrayObjectivATI,1,0,GLenum,pname,N/A,in,fixed,??
+glGetArrayObjectivATI,2,1,"GLint *",params,???,???,???,???
+glGetObjectBufferfvATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetObjectBufferfvATI,0,0,GLuint,buffer,N/A,in,fixed,??
+glGetObjectBufferfvATI,1,0,GLenum,pname,N/A,in,fixed,??
+glGetObjectBufferfvATI,2,1,"GLfloat *",params,???,???,???,???
+glGetObjectBufferivATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetObjectBufferivATI,0,0,GLuint,buffer,N/A,in,fixed,??
+glGetObjectBufferivATI,1,0,GLenum,pname,N/A,in,fixed,??
+glGetObjectBufferivATI,2,1,"GLint *",params,???,???,???,???
+glGetVariantArrayObjectfvATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVariantArrayObjectfvATI,0,0,GLuint,id,N/A,in,fixed,??
+glGetVariantArrayObjectfvATI,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVariantArrayObjectfvATI,2,1,"GLfloat *",params,???,???,???,???
+glGetVariantArrayObjectivATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVariantArrayObjectivATI,0,0,GLuint,id,N/A,in,fixed,??
+glGetVariantArrayObjectivATI,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVariantArrayObjectivATI,2,1,"GLint *",params,???,???,???,???
+glNewObjectBufferATI,-1,0,GLuint,N/A,N/A,out,fixed,??
+glNewObjectBufferATI,0,0,GLsizei,size,N/A,in,fixed,??
+glNewObjectBufferATI,1,1,"const void *",pointer,???,???,???,???
+glNewObjectBufferATI,2,0,GLenum,usage,N/A,in,fixed,??
+glUpdateObjectBufferATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glUpdateObjectBufferATI,0,0,GLuint,buffer,N/A,in,fixed,??
+glUpdateObjectBufferATI,1,0,GLuint,offset,N/A,in,fixed,??
+glUpdateObjectBufferATI,2,0,GLsizei,size,N/A,in,fixed,??
+glUpdateObjectBufferATI,3,1,"const void *",pointer,???,???,???,???
+glUpdateObjectBufferATI,4,0,GLenum,preserve,N/A,in,fixed,??

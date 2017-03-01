@@ -1,0 +1,28 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glActiveVaryingNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glActiveVaryingNV,0,0,GLuint,program,N/A,in,fixed,??
+glActiveVaryingNV,1,1,"const GLchar *",name,???,???,???,???
+glGetActiveVaryingNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveVaryingNV,0,0,GLuint,program,N/A,in,fixed,??
+glGetActiveVaryingNV,1,0,GLuint,index,N/A,in,fixed,??
+glGetActiveVaryingNV,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetActiveVaryingNV,3,1,"GLsizei *",length,???,???,???,???
+glGetActiveVaryingNV,4,1,"GLsizei *",size,???,???,???,???
+glGetActiveVaryingNV,5,1,"GLenum *",type,???,???,???,???
+glGetActiveVaryingNV,6,1,"GLchar *",name,???,???,???,???
+glGetTransformFeedbackVaryingNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTransformFeedbackVaryingNV,0,0,GLuint,program,N/A,in,fixed,??
+glGetTransformFeedbackVaryingNV,1,0,GLuint,index,N/A,in,fixed,??
+glGetTransformFeedbackVaryingNV,2,1,"GLint *",location,???,???,???,???
+glGetVaryingLocationNV,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetVaryingLocationNV,0,0,GLuint,program,N/A,in,fixed,??
+glGetVaryingLocationNV,1,1,"const GLchar *",name,???,???,???,???
+glTransformFeedbackAttribsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glTransformFeedbackAttribsNV,0,0,GLuint,count,N/A,in,fixed,??
+glTransformFeedbackAttribsNV,1,1,"const GLint *",attribs,???,???,???,???
+glTransformFeedbackAttribsNV,2,0,GLenum,bufferMode,N/A,in,fixed,??
+glTransformFeedbackVaryingsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glTransformFeedbackVaryingsNV,0,0,GLuint,program,N/A,in,fixed,??
+glTransformFeedbackVaryingsNV,1,0,GLsizei,count,N/A,in,fixed,??
+glTransformFeedbackVaryingsNV,2,1,"const GLint *",locations,???,???,???,???
+glTransformFeedbackVaryingsNV,3,0,GLenum,bufferMode,N/A,in,fixed,??

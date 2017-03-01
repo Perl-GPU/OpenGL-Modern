@@ -1,0 +1,27 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDepthRangeArrayv,-1,0,void,N/A,N/A,out,fixed,N/A
+glDepthRangeArrayv,0,0,GLuint,first,N/A,in,fixed,??
+glDepthRangeArrayv,1,0,GLsizei,count,N/A,in,fixed,??
+glDepthRangeArrayv,2,1,"const GLclampd *",v,???,???,???,???
+glGetDoublei_v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetDoublei_v,0,0,GLenum,target,N/A,in,fixed,??
+glGetDoublei_v,1,0,GLuint,index,N/A,in,fixed,??
+glGetDoublei_v,2,1,"GLdouble *",data,???,???,???,???
+glGetFloati_v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFloati_v,0,0,GLenum,target,N/A,in,fixed,??
+glGetFloati_v,1,0,GLuint,index,N/A,in,fixed,??
+glGetFloati_v,2,1,"GLfloat *",data,???,???,???,???
+glScissorArrayv,-1,0,void,N/A,N/A,out,fixed,N/A
+glScissorArrayv,0,0,GLuint,first,N/A,in,fixed,??
+glScissorArrayv,1,0,GLsizei,count,N/A,in,fixed,??
+glScissorArrayv,2,1,"const GLint *",v,???,???,???,???
+glScissorIndexedv,-1,0,void,N/A,N/A,out,fixed,N/A
+glScissorIndexedv,0,0,GLuint,index,N/A,in,fixed,??
+glScissorIndexedv,1,1,"const GLint *",v,???,???,???,???
+glViewportArrayv,-1,0,void,N/A,N/A,out,fixed,N/A
+glViewportArrayv,0,0,GLuint,first,N/A,in,fixed,??
+glViewportArrayv,1,0,GLsizei,count,N/A,in,fixed,??
+glViewportArrayv,2,1,"const GLfloat *",v,???,???,???,???
+glViewportIndexedfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glViewportIndexedfv,0,0,GLuint,index,N/A,in,fixed,??
+glViewportIndexedfv,1,1,"const GLfloat *",v,???,???,???,???

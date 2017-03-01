@@ -1,0 +1,38 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glFogiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glFogiv,0,0,GLenum,pname,N/A,in,fixed,??
+glFogiv,1,1,"const GLint *",params,???,???,???,???
+glGenTextures,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenTextures,0,0,GLsizei,n,N/A,in,fixed,??
+glGenTextures,1,1,"GLuint *",textures,???,???,???,???
+glGetBooleanv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetBooleanv,0,0,GLenum,pname,N/A,in,fixed,??
+glGetBooleanv,1,1,"GLboolean *",params,???,???,???,???
+glGetClipPlane,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetClipPlane,0,0,GLenum,plane,N/A,in,fixed,??
+glGetClipPlane,1,1,"GLdouble *",equation,???,???,???,???
+glGetDoublev,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetDoublev,0,0,GLenum,pname,N/A,in,fixed,??
+glGetDoublev,1,1,"GLdouble *",params,???,???,???,???
+glGetFloatv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFloatv,0,0,GLenum,pname,N/A,in,fixed,??
+glGetFloatv,1,1,"GLfloat *",params,???,???,???,???
+glGetIntegerv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetIntegerv,0,0,GLenum,pname,N/A,in,fixed,??
+glGetIntegerv,1,1,"GLint *",params,???,???,???,???
+glGetLightfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetLightfv,0,0,GLenum,light,N/A,in,fixed,??
+glGetLightfv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetLightfv,2,1,"GLfloat *",params,???,???,???,???
+glGetLightiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetLightiv,0,0,GLenum,light,N/A,in,fixed,??
+glGetLightiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetLightiv,2,1,"GLint *",params,???,???,???,???
+glGetMapdv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMapdv,0,0,GLenum,target,N/A,in,fixed,??
+glGetMapdv,1,0,GLenum,query,N/A,in,fixed,??
+glGetMapdv,2,1,"GLdouble *",v,???,???,???,???
+glGetMapfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMapfv,0,0,GLenum,target,N/A,in,fixed,??
+glGetMapfv,1,0,GLenum,query,N/A,in,fixed,??
+glGetMapfv,2,1,"GLfloat *",v,???,???,???,???

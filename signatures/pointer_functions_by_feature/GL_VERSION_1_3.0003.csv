@@ -1,0 +1,16 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMultiTexCoord3sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord3sv,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord3sv,1,1,"const GLshort *",v,???,???,???,???
+glMultiTexCoord4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord4dv,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord4dv,1,1,"const GLdouble *",v,???,???,???,???
+glMultiTexCoord4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord4fv,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord4fv,1,1,"const GLfloat *",v,???,???,???,???
+glMultiTexCoord4iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord4iv,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord4iv,1,1,"const GLint *",v,???,???,???,???
+glMultiTexCoord4sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiTexCoord4sv,0,0,GLenum,target,N/A,in,fixed,??
+glMultiTexCoord4sv,1,1,"const GLshort *",v,???,???,???,???

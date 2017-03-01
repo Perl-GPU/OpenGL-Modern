@@ -1,0 +1,5 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetExtensionREGAL,-1,0,GLboolean,N/A,N/A,out,fixed,??
+glGetExtensionREGAL,0,1,"const GLchar *",ext,???,???,???,???
+glIsSupportedREGAL,-1,0,GLboolean,N/A,N/A,out,fixed,??
+glIsSupportedREGAL,0,1,"const GLchar *",ext,???,???,???,???

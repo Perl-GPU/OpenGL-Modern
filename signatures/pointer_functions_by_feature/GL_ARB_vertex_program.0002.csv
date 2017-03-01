@@ -1,0 +1,42 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetVertexAttribfvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribfvARB,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribfvARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribfvARB,2,1,"GLfloat *",params,???,???,???,???
+glGetVertexAttribivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribivARB,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribivARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribivARB,2,1,"GLint *",params,???,???,???,???
+glProgramEnvParameter4dvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramEnvParameter4dvARB,0,0,GLenum,target,N/A,in,fixed,??
+glProgramEnvParameter4dvARB,1,0,GLuint,index,N/A,in,fixed,??
+glProgramEnvParameter4dvARB,2,1,"const GLdouble *",params,???,???,???,???
+glProgramEnvParameter4fvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramEnvParameter4fvARB,0,0,GLenum,target,N/A,in,fixed,??
+glProgramEnvParameter4fvARB,1,0,GLuint,index,N/A,in,fixed,??
+glProgramEnvParameter4fvARB,2,1,"const GLfloat *",params,???,???,???,???
+glProgramLocalParameter4dvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramLocalParameter4dvARB,0,0,GLenum,target,N/A,in,fixed,??
+glProgramLocalParameter4dvARB,1,0,GLuint,index,N/A,in,fixed,??
+glProgramLocalParameter4dvARB,2,1,"const GLdouble *",params,???,???,???,???
+glProgramLocalParameter4fvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramLocalParameter4fvARB,0,0,GLenum,target,N/A,in,fixed,??
+glProgramLocalParameter4fvARB,1,0,GLuint,index,N/A,in,fixed,??
+glProgramLocalParameter4fvARB,2,1,"const GLfloat *",params,???,???,???,???
+glProgramStringARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramStringARB,0,0,GLenum,target,N/A,in,fixed,??
+glProgramStringARB,1,0,GLenum,format,N/A,in,fixed,??
+glProgramStringARB,2,0,GLsizei,len,N/A,in,fixed,??
+glProgramStringARB,3,1,"const void *",string,???,???,???,???
+glVertexAttrib1dvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib1dvARB,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib1dvARB,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttrib1fvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib1fvARB,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib1fvARB,1,1,"const GLfloat *",v,???,???,???,???
+glVertexAttrib1svARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib1svARB,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib1svARB,1,1,"const GLshort *",v,???,???,???,???
+glVertexAttrib2dvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib2dvARB,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib2dvARB,1,1,"const GLdouble *",v,???,???,???,???

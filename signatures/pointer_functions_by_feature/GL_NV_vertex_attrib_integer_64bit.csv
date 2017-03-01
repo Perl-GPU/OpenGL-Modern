@@ -1,0 +1,33 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetVertexAttribLi64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribLi64vNV,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribLi64vNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribLi64vNV,2,1,"GLint64EXT *",params,???,???,???,???
+glGetVertexAttribLui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribLui64vNV,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribLui64vNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribLui64vNV,2,1,"GLuint64EXT *",params,???,???,???,???
+glVertexAttribL1i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL1i64vNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL1i64vNV,1,1,"const GLint64EXT *",v,???,???,???,???
+glVertexAttribL1ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL1ui64vNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL1ui64vNV,1,1,"const GLuint64EXT *",v,???,???,???,???
+glVertexAttribL2i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL2i64vNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL2i64vNV,1,1,"const GLint64EXT *",v,???,???,???,???
+glVertexAttribL2ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL2ui64vNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL2ui64vNV,1,1,"const GLuint64EXT *",v,???,???,???,???
+glVertexAttribL3i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL3i64vNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL3i64vNV,1,1,"const GLint64EXT *",v,???,???,???,???
+glVertexAttribL3ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL3ui64vNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL3ui64vNV,1,1,"const GLuint64EXT *",v,???,???,???,???
+glVertexAttribL4i64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL4i64vNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL4i64vNV,1,1,"const GLint64EXT *",v,???,???,???,???
+glVertexAttribL4ui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL4ui64vNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL4ui64vNV,1,1,"const GLuint64EXT *",v,???,???,???,???

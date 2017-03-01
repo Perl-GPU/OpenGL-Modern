@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetVertexAttribArrayObjectfvATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribArrayObjectfvATI,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribArrayObjectfvATI,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribArrayObjectfvATI,2,1,"GLfloat *",params,???,???,???,???
+glGetVertexAttribArrayObjectivATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribArrayObjectivATI,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribArrayObjectivATI,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribArrayObjectivATI,2,1,"GLint *",params,???,???,???,???

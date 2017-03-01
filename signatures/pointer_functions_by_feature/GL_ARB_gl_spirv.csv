@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glSpecializeShaderARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glSpecializeShaderARB,0,0,GLuint,shader,N/A,in,fixed,??
+glSpecializeShaderARB,1,1,"const GLchar *",pEntryPoint,???,???,???,???
+glSpecializeShaderARB,2,0,GLuint,numSpecializationConstants,N/A,in,fixed,??
+glSpecializeShaderARB,3,1,"const GLuint *",pConstantIndex,???,???,???,???
+glSpecializeShaderARB,4,1,"const GLuint *",pConstantValue,???,???,???,???

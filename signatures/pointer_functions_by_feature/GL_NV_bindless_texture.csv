@@ -1,0 +1,10 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glProgramUniformHandleui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformHandleui64vNV,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformHandleui64vNV,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformHandleui64vNV,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformHandleui64vNV,3,1,"const GLuint64 *",values,???,???,???,???
+glUniformHandleui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformHandleui64vNV,0,0,GLint,location,N/A,in,fixed,??
+glUniformHandleui64vNV,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformHandleui64vNV,2,1,"const GLuint64 *",value,???,???,???,???

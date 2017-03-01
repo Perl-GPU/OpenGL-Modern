@@ -1,0 +1,39 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glFragmentLightModelfvSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentLightModelfvSGIX,0,0,GLenum,pname,N/A,in,fixed,??
+glFragmentLightModelfvSGIX,1,1,"GLfloat *",params,???,???,???,???
+glFragmentLightModelivSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentLightModelivSGIX,0,0,GLenum,pname,N/A,in,fixed,??
+glFragmentLightModelivSGIX,1,1,"GLint *",params,???,???,???,???
+glFragmentLightfvSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentLightfvSGIX,0,0,GLenum,light,N/A,in,fixed,??
+glFragmentLightfvSGIX,1,0,GLenum,pname,N/A,in,fixed,??
+glFragmentLightfvSGIX,2,1,"GLfloat *",params,???,???,???,???
+glFragmentLightivSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentLightivSGIX,0,0,GLenum,light,N/A,in,fixed,??
+glFragmentLightivSGIX,1,0,GLenum,pname,N/A,in,fixed,??
+glFragmentLightivSGIX,2,1,"GLint *",params,???,???,???,???
+glFragmentMaterialfvSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentMaterialfvSGIX,0,0,GLenum,face,N/A,in,fixed,??
+glFragmentMaterialfvSGIX,1,0,GLenum,pname,N/A,in,fixed,??
+glFragmentMaterialfvSGIX,2,1,"const GLfloat *",params,???,???,???,???
+glFragmentMaterialivSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentMaterialivSGIX,0,0,GLenum,face,N/A,in,fixed,??
+glFragmentMaterialivSGIX,1,0,GLenum,pname,N/A,in,fixed,??
+glFragmentMaterialivSGIX,2,1,"const GLint *",params,???,???,???,???
+glGetFragmentLightfvSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFragmentLightfvSGIX,0,0,GLenum,light,N/A,in,fixed,??
+glGetFragmentLightfvSGIX,1,0,GLenum,value,N/A,in,fixed,??
+glGetFragmentLightfvSGIX,2,1,"GLfloat *",data,???,???,???,???
+glGetFragmentLightivSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFragmentLightivSGIX,0,0,GLenum,light,N/A,in,fixed,??
+glGetFragmentLightivSGIX,1,0,GLenum,value,N/A,in,fixed,??
+glGetFragmentLightivSGIX,2,1,"GLint *",data,???,???,???,???
+glGetFragmentMaterialfvSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFragmentMaterialfvSGIX,0,0,GLenum,face,N/A,in,fixed,??
+glGetFragmentMaterialfvSGIX,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFragmentMaterialfvSGIX,2,1,"const GLfloat *",data,???,???,???,???
+glGetFragmentMaterialivSGIX,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFragmentMaterialivSGIX,0,0,GLenum,face,N/A,in,fixed,??
+glGetFragmentMaterialivSGIX,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFragmentMaterialivSGIX,2,1,"const GLint *",data,???,???,???,???

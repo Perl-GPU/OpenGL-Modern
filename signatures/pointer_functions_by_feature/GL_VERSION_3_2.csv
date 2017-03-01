@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetBufferParameteri64v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetBufferParameteri64v,0,0,GLenum,target,N/A,in,fixed,??
+glGetBufferParameteri64v,1,0,GLenum,value,N/A,in,fixed,??
+glGetBufferParameteri64v,2,1,"GLint64 *",data,???,???,???,???
+glGetInteger64i_v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetInteger64i_v,0,0,GLenum,pname,N/A,in,fixed,??
+glGetInteger64i_v,1,0,GLuint,index,N/A,in,fixed,??
+glGetInteger64i_v,2,1,"GLint64 *",data,???,???,???,???

@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glLGPUNamedBufferSubDataNVX,-1,0,void,N/A,N/A,out,fixed,N/A
+glLGPUNamedBufferSubDataNVX,0,0,GLbitfield,gpuMask,N/A,in,fixed,??
+glLGPUNamedBufferSubDataNVX,1,0,GLuint,buffer,N/A,in,fixed,??
+glLGPUNamedBufferSubDataNVX,2,0,GLintptr,offset,N/A,in,fixed,??
+glLGPUNamedBufferSubDataNVX,3,0,GLsizeiptr,size,N/A,in,fixed,??
+glLGPUNamedBufferSubDataNVX,4,1,"const void *",data,???,???,???,???

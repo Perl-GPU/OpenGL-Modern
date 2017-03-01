@@ -1,0 +1,33 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glBufferDataARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glBufferDataARB,0,0,GLenum,target,N/A,in,fixed,??
+glBufferDataARB,1,0,GLsizeiptrARB,size,N/A,in,fixed,??
+glBufferDataARB,2,1,"const void *",data,???,???,???,???
+glBufferDataARB,3,0,GLenum,usage,N/A,in,fixed,??
+glBufferSubDataARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glBufferSubDataARB,0,0,GLenum,target,N/A,in,fixed,??
+glBufferSubDataARB,1,0,GLintptrARB,offset,N/A,in,fixed,??
+glBufferSubDataARB,2,0,GLsizeiptrARB,size,N/A,in,fixed,??
+glBufferSubDataARB,3,1,"const void *",data,???,???,???,???
+glDeleteBuffersARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteBuffersARB,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteBuffersARB,1,1,"const GLuint *",buffers,???,???,???,???
+glGenBuffersARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenBuffersARB,0,0,GLsizei,n,N/A,in,fixed,??
+glGenBuffersARB,1,1,"GLuint *",buffers,???,???,???,???
+glGetBufferParameterivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetBufferParameterivARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetBufferParameterivARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetBufferParameterivARB,2,1,"GLint *",params,???,???,???,???
+glGetBufferPointervARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetBufferPointervARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetBufferPointervARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetBufferPointervARB,2,2,"void * *",params,???,???,???,???
+glGetBufferSubDataARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetBufferSubDataARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetBufferSubDataARB,1,0,GLintptrARB,offset,N/A,in,fixed,??
+glGetBufferSubDataARB,2,0,GLsizeiptrARB,size,N/A,in,fixed,??
+glGetBufferSubDataARB,3,1,"void *",data,???,???,???,???
+glMapBufferARB,-1,1,"void *",N/A,???,out,???,???
+glMapBufferARB,0,0,GLenum,target,N/A,in,fixed,??
+glMapBufferARB,1,0,GLenum,access,N/A,in,fixed,??

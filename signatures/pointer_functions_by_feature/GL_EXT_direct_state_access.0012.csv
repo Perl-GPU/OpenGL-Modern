@@ -1,0 +1,54 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glTextureParameterIivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureParameterIivEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureParameterIivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glTextureParameterIivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glTextureParameterIivEXT,3,1,"const GLint *",params,???,???,???,???
+glTextureParameterIuivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureParameterIuivEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureParameterIuivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glTextureParameterIuivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glTextureParameterIuivEXT,3,1,"const GLuint *",params,???,???,???,???
+glTextureParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureParameterfvEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureParameterfvEXT,1,0,GLenum,target,N/A,in,fixed,??
+glTextureParameterfvEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glTextureParameterfvEXT,3,1,"const GLfloat *",param,???,???,???,???
+glTextureParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureParameterivEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureParameterivEXT,1,0,GLenum,target,N/A,in,fixed,??
+glTextureParameterivEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glTextureParameterivEXT,3,1,"const GLint *",param,???,???,???,???
+glTextureSubImage1DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureSubImage1DEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureSubImage1DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glTextureSubImage1DEXT,2,0,GLint,level,N/A,in,fixed,??
+glTextureSubImage1DEXT,3,0,GLint,xoffset,N/A,in,fixed,??
+glTextureSubImage1DEXT,4,0,GLsizei,width,N/A,in,fixed,??
+glTextureSubImage1DEXT,5,0,GLenum,format,N/A,in,fixed,??
+glTextureSubImage1DEXT,6,0,GLenum,type,N/A,in,fixed,??
+glTextureSubImage1DEXT,7,1,"const void *",pixels,???,???,???,???
+glTextureSubImage2DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureSubImage2DEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureSubImage2DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glTextureSubImage2DEXT,2,0,GLint,level,N/A,in,fixed,??
+glTextureSubImage2DEXT,3,0,GLint,xoffset,N/A,in,fixed,??
+glTextureSubImage2DEXT,4,0,GLint,yoffset,N/A,in,fixed,??
+glTextureSubImage2DEXT,5,0,GLsizei,width,N/A,in,fixed,??
+glTextureSubImage2DEXT,6,0,GLsizei,height,N/A,in,fixed,??
+glTextureSubImage2DEXT,7,0,GLenum,format,N/A,in,fixed,??
+glTextureSubImage2DEXT,8,0,GLenum,type,N/A,in,fixed,??
+glTextureSubImage2DEXT,9,1,"const void *",pixels,???,???,???,???
+glTextureSubImage3DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureSubImage3DEXT,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureSubImage3DEXT,1,0,GLenum,target,N/A,in,fixed,??
+glTextureSubImage3DEXT,2,0,GLint,level,N/A,in,fixed,??
+glTextureSubImage3DEXT,3,0,GLint,xoffset,N/A,in,fixed,??
+glTextureSubImage3DEXT,4,0,GLint,yoffset,N/A,in,fixed,??
+glTextureSubImage3DEXT,5,0,GLint,zoffset,N/A,in,fixed,??
+glTextureSubImage3DEXT,6,0,GLsizei,width,N/A,in,fixed,??
+glTextureSubImage3DEXT,7,0,GLsizei,height,N/A,in,fixed,??
+glTextureSubImage3DEXT,8,0,GLsizei,depth,N/A,in,fixed,??
+glTextureSubImage3DEXT,9,0,GLenum,format,N/A,in,fixed,??
+glTextureSubImage3DEXT,10,0,GLenum,type,N/A,in,fixed,??
+glTextureSubImage3DEXT,11,1,"const void *",pixels,???,???,???,???

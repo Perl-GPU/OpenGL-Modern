@@ -1,0 +1,21 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glColorTableEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glColorTableEXT,0,0,GLenum,target,N/A,in,fixed,??
+glColorTableEXT,1,0,GLenum,internalFormat,N/A,in,fixed,??
+glColorTableEXT,2,0,GLsizei,width,N/A,in,fixed,??
+glColorTableEXT,3,0,GLenum,format,N/A,in,fixed,??
+glColorTableEXT,4,0,GLenum,type,N/A,in,fixed,??
+glColorTableEXT,5,1,"const void *",data,???,???,???,???
+glGetColorTableEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetColorTableEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetColorTableEXT,1,0,GLenum,format,N/A,in,fixed,??
+glGetColorTableEXT,2,0,GLenum,type,N/A,in,fixed,??
+glGetColorTableEXT,3,1,"void *",data,???,???,???,???
+glGetColorTableParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetColorTableParameterfvEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetColorTableParameterfvEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetColorTableParameterfvEXT,2,1,"GLfloat *",params,???,???,???,???
+glGetColorTableParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetColorTableParameterivEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetColorTableParameterivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetColorTableParameterivEXT,2,1,"GLint *",params,???,???,???,???

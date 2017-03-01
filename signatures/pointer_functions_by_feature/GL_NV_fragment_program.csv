@@ -1,0 +1,37 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetProgramNamedParameterdvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramNamedParameterdvNV,0,0,GLuint,id,N/A,in,fixed,??
+glGetProgramNamedParameterdvNV,1,0,GLsizei,len,N/A,in,fixed,??
+glGetProgramNamedParameterdvNV,2,1,"const GLubyte *",name,???,???,???,???
+glGetProgramNamedParameterdvNV,3,1,"GLdouble *",params,???,???,???,???
+glGetProgramNamedParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramNamedParameterfvNV,0,0,GLuint,id,N/A,in,fixed,??
+glGetProgramNamedParameterfvNV,1,0,GLsizei,len,N/A,in,fixed,??
+glGetProgramNamedParameterfvNV,2,1,"const GLubyte *",name,???,???,???,???
+glGetProgramNamedParameterfvNV,3,1,"GLfloat *",params,???,???,???,???
+glProgramNamedParameter4dNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramNamedParameter4dNV,0,0,GLuint,id,N/A,in,fixed,??
+glProgramNamedParameter4dNV,1,0,GLsizei,len,N/A,in,fixed,??
+glProgramNamedParameter4dNV,2,1,"const GLubyte *",name,???,???,???,???
+glProgramNamedParameter4dNV,3,0,GLdouble,x,N/A,in,fixed,??
+glProgramNamedParameter4dNV,4,0,GLdouble,y,N/A,in,fixed,??
+glProgramNamedParameter4dNV,5,0,GLdouble,z,N/A,in,fixed,??
+glProgramNamedParameter4dNV,6,0,GLdouble,w,N/A,in,fixed,??
+glProgramNamedParameter4dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramNamedParameter4dvNV,0,0,GLuint,id,N/A,in,fixed,??
+glProgramNamedParameter4dvNV,1,0,GLsizei,len,N/A,in,fixed,??
+glProgramNamedParameter4dvNV,2,1,"const GLubyte *",name,???,???,???,???
+glProgramNamedParameter4dvNV,3,0,"const GLdouble",v,???,in,fixed,??
+glProgramNamedParameter4fNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramNamedParameter4fNV,0,0,GLuint,id,N/A,in,fixed,??
+glProgramNamedParameter4fNV,1,0,GLsizei,len,N/A,in,fixed,??
+glProgramNamedParameter4fNV,2,1,"const GLubyte *",name,???,???,???,???
+glProgramNamedParameter4fNV,3,0,GLfloat,x,N/A,in,fixed,??
+glProgramNamedParameter4fNV,4,0,GLfloat,y,N/A,in,fixed,??
+glProgramNamedParameter4fNV,5,0,GLfloat,z,N/A,in,fixed,??
+glProgramNamedParameter4fNV,6,0,GLfloat,w,N/A,in,fixed,??
+glProgramNamedParameter4fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramNamedParameter4fvNV,0,0,GLuint,id,N/A,in,fixed,??
+glProgramNamedParameter4fvNV,1,0,GLsizei,len,N/A,in,fixed,??
+glProgramNamedParameter4fvNV,2,1,"const GLubyte *",name,???,???,???,???
+glProgramNamedParameter4fvNV,3,0,"const GLfloat",v,???,in,fixed,??

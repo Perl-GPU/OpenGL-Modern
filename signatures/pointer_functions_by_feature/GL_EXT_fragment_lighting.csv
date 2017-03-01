@@ -1,0 +1,39 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glFragmentLightModelfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentLightModelfvEXT,0,0,GLenum,pname,N/A,in,fixed,??
+glFragmentLightModelfvEXT,1,1,"GLfloat *",params,???,???,???,???
+glFragmentLightModelivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentLightModelivEXT,0,0,GLenum,pname,N/A,in,fixed,??
+glFragmentLightModelivEXT,1,1,"GLint *",params,???,???,???,???
+glFragmentLightfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentLightfvEXT,0,0,GLenum,light,N/A,in,fixed,??
+glFragmentLightfvEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glFragmentLightfvEXT,2,1,"GLfloat *",params,???,???,???,???
+glFragmentLightivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentLightivEXT,0,0,GLenum,light,N/A,in,fixed,??
+glFragmentLightivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glFragmentLightivEXT,2,1,"GLint *",params,???,???,???,???
+glFragmentMaterialfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentMaterialfvEXT,0,0,GLenum,face,N/A,in,fixed,??
+glFragmentMaterialfvEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glFragmentMaterialfvEXT,2,1,"const GLfloat *",params,???,???,???,???
+glFragmentMaterialivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glFragmentMaterialivEXT,0,0,GLenum,face,N/A,in,fixed,??
+glFragmentMaterialivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glFragmentMaterialivEXT,2,1,"const GLint *",params,???,???,???,???
+glGetFragmentLightfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFragmentLightfvEXT,0,0,GLenum,light,N/A,in,fixed,??
+glGetFragmentLightfvEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFragmentLightfvEXT,2,1,"GLfloat *",params,???,???,???,???
+glGetFragmentLightivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFragmentLightivEXT,0,0,GLenum,light,N/A,in,fixed,??
+glGetFragmentLightivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFragmentLightivEXT,2,1,"GLint *",params,???,???,???,???
+glGetFragmentMaterialfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFragmentMaterialfvEXT,0,0,GLenum,face,N/A,in,fixed,??
+glGetFragmentMaterialfvEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFragmentMaterialfvEXT,2,1,"const GLfloat *",params,???,???,???,???
+glGetFragmentMaterialivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFragmentMaterialivEXT,0,0,GLenum,face,N/A,in,fixed,??
+glGetFragmentMaterialivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetFragmentMaterialivEXT,2,1,"const GLint *",params,???,???,???,???

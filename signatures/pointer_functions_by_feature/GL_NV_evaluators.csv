@@ -1,0 +1,45 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetMapAttribParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMapAttribParameterfvNV,0,0,GLenum,target,N/A,in,fixed,??
+glGetMapAttribParameterfvNV,1,0,GLuint,index,N/A,in,fixed,??
+glGetMapAttribParameterfvNV,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMapAttribParameterfvNV,3,1,"GLfloat *",params,???,???,???,???
+glGetMapAttribParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMapAttribParameterivNV,0,0,GLenum,target,N/A,in,fixed,??
+glGetMapAttribParameterivNV,1,0,GLuint,index,N/A,in,fixed,??
+glGetMapAttribParameterivNV,2,0,GLenum,pname,N/A,in,fixed,??
+glGetMapAttribParameterivNV,3,1,"GLint *",params,???,???,???,???
+glGetMapControlPointsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMapControlPointsNV,0,0,GLenum,target,N/A,in,fixed,??
+glGetMapControlPointsNV,1,0,GLuint,index,N/A,in,fixed,??
+glGetMapControlPointsNV,2,0,GLenum,type,N/A,in,fixed,??
+glGetMapControlPointsNV,3,0,GLsizei,ustride,N/A,in,fixed,??
+glGetMapControlPointsNV,4,0,GLsizei,vstride,N/A,in,fixed,??
+glGetMapControlPointsNV,5,0,GLboolean,packed,N/A,in,fixed,??
+glGetMapControlPointsNV,6,1,"void *",points,???,???,???,???
+glGetMapParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMapParameterfvNV,0,0,GLenum,target,N/A,in,fixed,??
+glGetMapParameterfvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetMapParameterfvNV,2,1,"GLfloat *",params,???,???,???,???
+glGetMapParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMapParameterivNV,0,0,GLenum,target,N/A,in,fixed,??
+glGetMapParameterivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetMapParameterivNV,2,1,"GLint *",params,???,???,???,???
+glMapControlPointsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMapControlPointsNV,0,0,GLenum,target,N/A,in,fixed,??
+glMapControlPointsNV,1,0,GLuint,index,N/A,in,fixed,??
+glMapControlPointsNV,2,0,GLenum,type,N/A,in,fixed,??
+glMapControlPointsNV,3,0,GLsizei,ustride,N/A,in,fixed,??
+glMapControlPointsNV,4,0,GLsizei,vstride,N/A,in,fixed,??
+glMapControlPointsNV,5,0,GLint,uorder,N/A,in,fixed,??
+glMapControlPointsNV,6,0,GLint,vorder,N/A,in,fixed,??
+glMapControlPointsNV,7,0,GLboolean,packed,N/A,in,fixed,??
+glMapControlPointsNV,8,1,"const void *",points,???,???,???,???
+glMapParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMapParameterfvNV,0,0,GLenum,target,N/A,in,fixed,??
+glMapParameterfvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glMapParameterfvNV,2,1,"const GLfloat *",params,???,???,???,???
+glMapParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMapParameterivNV,0,0,GLenum,target,N/A,in,fixed,??
+glMapParameterivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glMapParameterivNV,2,1,"const GLint *",params,???,???,???,???

@@ -1,0 +1,16 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDrawCommandsStatesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawCommandsStatesNV,0,0,GLuint,buffer,N/A,in,fixed,??
+glDrawCommandsStatesNV,1,1,"const GLintptr *",indirects,???,???,???,???
+glDrawCommandsStatesNV,2,1,"const GLsizei *",sizes,???,???,???,???
+glDrawCommandsStatesNV,3,1,"const GLuint *",states,???,???,???,???
+glDrawCommandsStatesNV,4,1,"const GLuint *",fbos,???,???,???,???
+glDrawCommandsStatesNV,5,0,GLuint,count,N/A,in,fixed,??
+glListDrawCommandsStatesClientNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glListDrawCommandsStatesClientNV,0,0,GLuint,list,N/A,in,fixed,??
+glListDrawCommandsStatesClientNV,1,0,GLuint,segment,N/A,in,fixed,??
+glListDrawCommandsStatesClientNV,2,2,"const void * *",indirects,???,???,???,???
+glListDrawCommandsStatesClientNV,3,1,"const GLsizei *",sizes,???,???,???,???
+glListDrawCommandsStatesClientNV,4,1,"const GLuint *",states,???,???,???,???
+glListDrawCommandsStatesClientNV,5,1,"const GLuint *",fbos,???,???,???,???
+glListDrawCommandsStatesClientNV,6,0,GLuint,count,N/A,in,fixed,??

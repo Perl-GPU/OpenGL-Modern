@@ -1,0 +1,38 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVertexAttrib4Nuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4Nuiv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4Nuiv,1,1,"const GLuint *",v,???,???,???,???
+glVertexAttrib4Nusv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4Nusv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4Nusv,1,1,"const GLushort *",v,???,???,???,???
+glVertexAttrib4bv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4bv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4bv,1,1,"const GLbyte *",v,???,???,???,???
+glVertexAttrib4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4dv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4dv,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttrib4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4fv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4fv,1,1,"const GLfloat *",v,???,???,???,???
+glVertexAttrib4iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4iv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4iv,1,1,"const GLint *",v,???,???,???,???
+glVertexAttrib4sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4sv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4sv,1,1,"const GLshort *",v,???,???,???,???
+glVertexAttrib4ubv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4ubv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4ubv,1,1,"const GLubyte *",v,???,???,???,???
+glVertexAttrib4uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4uiv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4uiv,1,1,"const GLuint *",v,???,???,???,???
+glVertexAttrib4usv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4usv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4usv,1,1,"const GLushort *",v,???,???,???,???
+glVertexAttribPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribPointer,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribPointer,1,0,GLint,size,N/A,in,fixed,??
+glVertexAttribPointer,2,0,GLenum,type,N/A,in,fixed,??
+glVertexAttribPointer,3,0,GLboolean,normalized,N/A,in,fixed,??
+glVertexAttribPointer,4,0,GLsizei,stride,N/A,in,fixed,??
+glVertexAttribPointer,5,1,"const void *",pointer,???,???,???,???

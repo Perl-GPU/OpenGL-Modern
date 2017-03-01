@@ -1,0 +1,44 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glPointAlongPathNV,-1,0,GLboolean,N/A,N/A,out,fixed,??
+glPointAlongPathNV,0,0,GLuint,path,N/A,in,fixed,??
+glPointAlongPathNV,1,0,GLsizei,startSegment,N/A,in,fixed,??
+glPointAlongPathNV,2,0,GLsizei,numSegments,N/A,in,fixed,??
+glPointAlongPathNV,3,0,GLfloat,distance,N/A,in,fixed,??
+glPointAlongPathNV,4,1,"GLfloat *",x,???,???,???,???
+glPointAlongPathNV,5,1,"GLfloat *",y,???,???,???,???
+glPointAlongPathNV,6,1,"GLfloat *",tangentX,???,???,???,???
+glPointAlongPathNV,7,1,"GLfloat *",tangentY,???,???,???,???
+glProgramPathFragmentInputGenNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramPathFragmentInputGenNV,0,0,GLuint,program,N/A,in,fixed,??
+glProgramPathFragmentInputGenNV,1,0,GLint,location,N/A,in,fixed,??
+glProgramPathFragmentInputGenNV,2,0,GLenum,genMode,N/A,in,fixed,??
+glProgramPathFragmentInputGenNV,3,0,GLint,components,N/A,in,fixed,??
+glProgramPathFragmentInputGenNV,4,1,"const GLfloat *",coeffs,???,???,???,???
+glStencilFillPathInstancedNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glStencilFillPathInstancedNV,0,0,GLsizei,numPaths,N/A,in,fixed,??
+glStencilFillPathInstancedNV,1,0,GLenum,pathNameType,N/A,in,fixed,??
+glStencilFillPathInstancedNV,2,1,"const void *",paths,???,???,???,???
+glStencilFillPathInstancedNV,3,0,GLuint,pathBase,N/A,in,fixed,??
+glStencilFillPathInstancedNV,4,0,GLenum,fillMode,N/A,in,fixed,??
+glStencilFillPathInstancedNV,5,0,GLuint,mask,N/A,in,fixed,??
+glStencilFillPathInstancedNV,6,0,GLenum,transformType,N/A,in,fixed,??
+glStencilFillPathInstancedNV,7,1,"const GLfloat *",transformValues,???,???,???,???
+glStencilStrokePathInstancedNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glStencilStrokePathInstancedNV,0,0,GLsizei,numPaths,N/A,in,fixed,??
+glStencilStrokePathInstancedNV,1,0,GLenum,pathNameType,N/A,in,fixed,??
+glStencilStrokePathInstancedNV,2,1,"const void *",paths,???,???,???,???
+glStencilStrokePathInstancedNV,3,0,GLuint,pathBase,N/A,in,fixed,??
+glStencilStrokePathInstancedNV,4,0,GLint,reference,N/A,in,fixed,??
+glStencilStrokePathInstancedNV,5,0,GLuint,mask,N/A,in,fixed,??
+glStencilStrokePathInstancedNV,6,0,GLenum,transformType,N/A,in,fixed,??
+glStencilStrokePathInstancedNV,7,1,"const GLfloat *",transformValues,???,???,???,???
+glStencilThenCoverFillPathInstancedNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glStencilThenCoverFillPathInstancedNV,0,0,GLsizei,numPaths,N/A,in,fixed,??
+glStencilThenCoverFillPathInstancedNV,1,0,GLenum,pathNameType,N/A,in,fixed,??
+glStencilThenCoverFillPathInstancedNV,2,1,"const void *",paths,???,???,???,???
+glStencilThenCoverFillPathInstancedNV,3,0,GLuint,pathBase,N/A,in,fixed,??
+glStencilThenCoverFillPathInstancedNV,4,0,GLenum,fillMode,N/A,in,fixed,??
+glStencilThenCoverFillPathInstancedNV,5,0,GLuint,mask,N/A,in,fixed,??
+glStencilThenCoverFillPathInstancedNV,6,0,GLenum,coverMode,N/A,in,fixed,??
+glStencilThenCoverFillPathInstancedNV,7,0,GLenum,transformType,N/A,in,fixed,??
+glStencilThenCoverFillPathInstancedNV,8,1,"const GLfloat *",transformValues,???,???,???,???

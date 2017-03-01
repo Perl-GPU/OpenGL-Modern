@@ -1,0 +1,4 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glPointParameterfvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glPointParameterfvARB,0,0,GLenum,pname,N/A,in,fixed,??
+glPointParameterfvARB,1,1,"const GLfloat *",params,???,???,???,???

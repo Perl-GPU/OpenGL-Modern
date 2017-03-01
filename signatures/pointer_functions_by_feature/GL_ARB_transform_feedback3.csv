@@ -1,0 +1,6 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetQueryIndexediv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryIndexediv,0,0,GLenum,target,N/A,in,fixed,??
+glGetQueryIndexediv,1,0,GLuint,index,N/A,in,fixed,??
+glGetQueryIndexediv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryIndexediv,3,1,"GLint *",params,???,???,???,???

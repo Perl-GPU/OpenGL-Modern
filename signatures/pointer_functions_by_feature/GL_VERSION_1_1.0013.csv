@@ -1,0 +1,55 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glTexCoord4sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoord4sv,0,1,"const GLshort *",v,???,???,???,???
+glTexCoordPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoordPointer,0,0,GLint,size,N/A,in,fixed,??
+glTexCoordPointer,1,0,GLenum,type,N/A,in,fixed,??
+glTexCoordPointer,2,0,GLsizei,stride,N/A,in,fixed,??
+glTexCoordPointer,3,1,"const void *",pointer,???,???,???,???
+glTexEnvfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexEnvfv,0,0,GLenum,target,N/A,in,fixed,??
+glTexEnvfv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexEnvfv,2,1,"const GLfloat *",params,???,???,???,???
+glTexEnviv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexEnviv,0,0,GLenum,target,N/A,in,fixed,??
+glTexEnviv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexEnviv,2,1,"const GLint *",params,???,???,???,???
+glTexGendv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexGendv,0,0,GLenum,coord,N/A,in,fixed,??
+glTexGendv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexGendv,2,1,"const GLdouble *",params,???,???,???,???
+glTexGenfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexGenfv,0,0,GLenum,coord,N/A,in,fixed,??
+glTexGenfv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexGenfv,2,1,"const GLfloat *",params,???,???,???,???
+glTexGeniv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexGeniv,0,0,GLenum,coord,N/A,in,fixed,??
+glTexGeniv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexGeniv,2,1,"const GLint *",params,???,???,???,???
+glTexImage1D,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexImage1D,0,0,GLenum,target,N/A,in,fixed,??
+glTexImage1D,1,0,GLint,level,N/A,in,fixed,??
+glTexImage1D,2,0,GLint,internalformat,N/A,in,fixed,??
+glTexImage1D,3,0,GLsizei,width,N/A,in,fixed,??
+glTexImage1D,4,0,GLint,border,N/A,in,fixed,??
+glTexImage1D,5,0,GLenum,format,N/A,in,fixed,??
+glTexImage1D,6,0,GLenum,type,N/A,in,fixed,??
+glTexImage1D,7,1,"const void *",pixels,???,???,???,???
+glTexImage2D,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexImage2D,0,0,GLenum,target,N/A,in,fixed,??
+glTexImage2D,1,0,GLint,level,N/A,in,fixed,??
+glTexImage2D,2,0,GLint,internalformat,N/A,in,fixed,??
+glTexImage2D,3,0,GLsizei,width,N/A,in,fixed,??
+glTexImage2D,4,0,GLsizei,height,N/A,in,fixed,??
+glTexImage2D,5,0,GLint,border,N/A,in,fixed,??
+glTexImage2D,6,0,GLenum,format,N/A,in,fixed,??
+glTexImage2D,7,0,GLenum,type,N/A,in,fixed,??
+glTexImage2D,8,1,"const void *",pixels,???,???,???,???
+glTexParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexParameterfv,0,0,GLenum,target,N/A,in,fixed,??
+glTexParameterfv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexParameterfv,2,1,"const GLfloat *",params,???,???,???,???
+glTexParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexParameteriv,0,0,GLenum,target,N/A,in,fixed,??
+glTexParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexParameteriv,2,1,"const GLint *",params,???,???,???,???

@@ -1,0 +1,33 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMulticastBufferSubDataNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMulticastBufferSubDataNV,0,0,GLbitfield,gpuMask,N/A,in,fixed,??
+glMulticastBufferSubDataNV,1,0,GLuint,buffer,N/A,in,fixed,??
+glMulticastBufferSubDataNV,2,0,GLintptr,offset,N/A,in,fixed,??
+glMulticastBufferSubDataNV,3,0,GLsizeiptr,size,N/A,in,fixed,??
+glMulticastBufferSubDataNV,4,1,"const void *",data,???,???,???,???
+glMulticastFramebufferSampleLocationsfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMulticastFramebufferSampleLocationsfvNV,0,0,GLuint,gpu,N/A,in,fixed,??
+glMulticastFramebufferSampleLocationsfvNV,1,0,GLuint,framebuffer,N/A,in,fixed,??
+glMulticastFramebufferSampleLocationsfvNV,2,0,GLuint,start,N/A,in,fixed,??
+glMulticastFramebufferSampleLocationsfvNV,3,0,GLsizei,count,N/A,in,fixed,??
+glMulticastFramebufferSampleLocationsfvNV,4,1,"const GLfloat *",v,???,???,???,???
+glMulticastGetQueryObjecti64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMulticastGetQueryObjecti64vNV,0,0,GLuint,gpu,N/A,in,fixed,??
+glMulticastGetQueryObjecti64vNV,1,0,GLuint,id,N/A,in,fixed,??
+glMulticastGetQueryObjecti64vNV,2,0,GLenum,pname,N/A,in,fixed,??
+glMulticastGetQueryObjecti64vNV,3,1,"GLint64 *",params,???,???,???,???
+glMulticastGetQueryObjectivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMulticastGetQueryObjectivNV,0,0,GLuint,gpu,N/A,in,fixed,??
+glMulticastGetQueryObjectivNV,1,0,GLuint,id,N/A,in,fixed,??
+glMulticastGetQueryObjectivNV,2,0,GLenum,pname,N/A,in,fixed,??
+glMulticastGetQueryObjectivNV,3,1,"GLint *",params,???,???,???,???
+glMulticastGetQueryObjectui64vNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMulticastGetQueryObjectui64vNV,0,0,GLuint,gpu,N/A,in,fixed,??
+glMulticastGetQueryObjectui64vNV,1,0,GLuint,id,N/A,in,fixed,??
+glMulticastGetQueryObjectui64vNV,2,0,GLenum,pname,N/A,in,fixed,??
+glMulticastGetQueryObjectui64vNV,3,1,"GLuint64 *",params,???,???,???,???
+glMulticastGetQueryObjectuivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glMulticastGetQueryObjectuivNV,0,0,GLuint,gpu,N/A,in,fixed,??
+glMulticastGetQueryObjectuivNV,1,0,GLuint,id,N/A,in,fixed,??
+glMulticastGetQueryObjectuivNV,2,0,GLenum,pname,N/A,in,fixed,??
+glMulticastGetQueryObjectuivNV,3,1,"GLuint *",params,???,???,???,???

@@ -1,0 +1,39 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDeleteProgramsARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteProgramsARB,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteProgramsARB,1,1,"const GLuint *",programs,???,???,???,???
+glGenProgramsARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenProgramsARB,0,0,GLsizei,n,N/A,in,fixed,??
+glGenProgramsARB,1,1,"GLuint *",programs,???,???,???,???
+glGetProgramEnvParameterdvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramEnvParameterdvARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetProgramEnvParameterdvARB,1,0,GLuint,index,N/A,in,fixed,??
+glGetProgramEnvParameterdvARB,2,1,"GLdouble *",params,???,???,???,???
+glGetProgramEnvParameterfvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramEnvParameterfvARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetProgramEnvParameterfvARB,1,0,GLuint,index,N/A,in,fixed,??
+glGetProgramEnvParameterfvARB,2,1,"GLfloat *",params,???,???,???,???
+glGetProgramLocalParameterdvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramLocalParameterdvARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetProgramLocalParameterdvARB,1,0,GLuint,index,N/A,in,fixed,??
+glGetProgramLocalParameterdvARB,2,1,"GLdouble *",params,???,???,???,???
+glGetProgramLocalParameterfvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramLocalParameterfvARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetProgramLocalParameterfvARB,1,0,GLuint,index,N/A,in,fixed,??
+glGetProgramLocalParameterfvARB,2,1,"GLfloat *",params,???,???,???,???
+glGetProgramStringARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramStringARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetProgramStringARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetProgramStringARB,2,1,"void *",string,???,???,???,???
+glGetProgramivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramivARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetProgramivARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetProgramivARB,2,1,"GLint *",params,???,???,???,???
+glGetVertexAttribPointervARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribPointervARB,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribPointervARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribPointervARB,2,2,"void * *",pointer,???,???,???,???
+glGetVertexAttribdvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribdvARB,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribdvARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribdvARB,2,1,"GLdouble *",params,???,???,???,???

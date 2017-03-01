@@ -1,0 +1,11 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glWindowPos2sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos2sv,0,1,"const GLshort *",p,???,???,???,???
+glWindowPos3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos3dv,0,1,"const GLdouble *",p,???,???,???,???
+glWindowPos3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos3fv,0,1,"const GLfloat *",p,???,???,???,???
+glWindowPos3iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos3iv,0,1,"const GLint *",p,???,???,???,???
+glWindowPos3sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos3sv,0,1,"const GLshort *",p,???,???,???,???

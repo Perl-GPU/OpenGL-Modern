@@ -1,0 +1,35 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetMapiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMapiv,0,0,GLenum,target,N/A,in,fixed,??
+glGetMapiv,1,0,GLenum,query,N/A,in,fixed,??
+glGetMapiv,2,1,"GLint *",v,???,???,???,???
+glGetMaterialfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMaterialfv,0,0,GLenum,face,N/A,in,fixed,??
+glGetMaterialfv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetMaterialfv,2,1,"GLfloat *",params,???,???,???,???
+glGetMaterialiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMaterialiv,0,0,GLenum,face,N/A,in,fixed,??
+glGetMaterialiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetMaterialiv,2,1,"GLint *",params,???,???,???,???
+glGetPixelMapfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPixelMapfv,0,0,GLenum,map,N/A,in,fixed,??
+glGetPixelMapfv,1,1,"GLfloat *",values,???,???,???,???
+glGetPixelMapuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPixelMapuiv,0,0,GLenum,map,N/A,in,fixed,??
+glGetPixelMapuiv,1,1,"GLuint *",values,???,???,???,???
+glGetPixelMapusv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPixelMapusv,0,0,GLenum,map,N/A,in,fixed,??
+glGetPixelMapusv,1,1,"GLushort *",values,???,???,???,???
+glGetPointerv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPointerv,0,0,GLenum,pname,N/A,in,fixed,??
+glGetPointerv,1,2,"void * *",params,???,???,???,???
+glGetPolygonStipple,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPolygonStipple,0,1,"GLubyte *",mask,???,???,???,???
+glGetTexEnvfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexEnvfv,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexEnvfv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexEnvfv,2,1,"GLfloat *",params,???,???,???,???
+glGetTexEnviv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexEnviv,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexEnviv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexEnviv,2,1,"GLint *",params,???,???,???,???

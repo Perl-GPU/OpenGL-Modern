@@ -1,0 +1,54 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetTransformFeedbacki64_v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTransformFeedbacki64_v,0,0,GLuint,xfb,N/A,in,fixed,??
+glGetTransformFeedbacki64_v,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTransformFeedbacki64_v,2,0,GLuint,index,N/A,in,fixed,??
+glGetTransformFeedbacki64_v,3,1,"GLint64 *",param,???,???,???,???
+glGetTransformFeedbacki_v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTransformFeedbacki_v,0,0,GLuint,xfb,N/A,in,fixed,??
+glGetTransformFeedbacki_v,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTransformFeedbacki_v,2,0,GLuint,index,N/A,in,fixed,??
+glGetTransformFeedbacki_v,3,1,"GLint *",param,???,???,???,???
+glGetTransformFeedbackiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTransformFeedbackiv,0,0,GLuint,xfb,N/A,in,fixed,??
+glGetTransformFeedbackiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTransformFeedbackiv,2,1,"GLint *",param,???,???,???,???
+glGetVertexArrayIndexed64iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexArrayIndexed64iv,0,0,GLuint,vaobj,N/A,in,fixed,??
+glGetVertexArrayIndexed64iv,1,0,GLuint,index,N/A,in,fixed,??
+glGetVertexArrayIndexed64iv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexArrayIndexed64iv,3,1,"GLint64 *",param,???,???,???,???
+glGetVertexArrayIndexediv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexArrayIndexediv,0,0,GLuint,vaobj,N/A,in,fixed,??
+glGetVertexArrayIndexediv,1,0,GLuint,index,N/A,in,fixed,??
+glGetVertexArrayIndexediv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexArrayIndexediv,3,1,"GLint *",param,???,???,???,???
+glGetVertexArrayiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexArrayiv,0,0,GLuint,vaobj,N/A,in,fixed,??
+glGetVertexArrayiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexArrayiv,2,1,"GLint *",param,???,???,???,???
+glInvalidateNamedFramebufferData,-1,0,void,N/A,N/A,out,fixed,N/A
+glInvalidateNamedFramebufferData,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glInvalidateNamedFramebufferData,1,0,GLsizei,numAttachments,N/A,in,fixed,??
+glInvalidateNamedFramebufferData,2,1,"const GLenum *",attachments,???,???,???,???
+glInvalidateNamedFramebufferSubData,-1,0,void,N/A,N/A,out,fixed,N/A
+glInvalidateNamedFramebufferSubData,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glInvalidateNamedFramebufferSubData,1,0,GLsizei,numAttachments,N/A,in,fixed,??
+glInvalidateNamedFramebufferSubData,2,1,"const GLenum *",attachments,???,???,???,???
+glInvalidateNamedFramebufferSubData,3,0,GLint,x,N/A,in,fixed,??
+glInvalidateNamedFramebufferSubData,4,0,GLint,y,N/A,in,fixed,??
+glInvalidateNamedFramebufferSubData,5,0,GLsizei,width,N/A,in,fixed,??
+glInvalidateNamedFramebufferSubData,6,0,GLsizei,height,N/A,in,fixed,??
+glMapNamedBuffer,-1,1,"void *",N/A,???,out,???,???
+glMapNamedBuffer,0,0,GLuint,buffer,N/A,in,fixed,??
+glMapNamedBuffer,1,0,GLenum,access,N/A,in,fixed,??
+glMapNamedBufferRange,-1,1,"void *",N/A,???,out,???,???
+glMapNamedBufferRange,0,0,GLuint,buffer,N/A,in,fixed,??
+glMapNamedBufferRange,1,0,GLintptr,offset,N/A,in,fixed,??
+glMapNamedBufferRange,2,0,GLsizeiptr,length,N/A,in,fixed,??
+glMapNamedBufferRange,3,0,GLbitfield,access,N/A,in,fixed,??
+glNamedBufferData,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedBufferData,0,0,GLuint,buffer,N/A,in,fixed,??
+glNamedBufferData,1,0,GLsizeiptr,size,N/A,in,fixed,??
+glNamedBufferData,2,1,"const void *",data,???,???,???,???
+glNamedBufferData,3,0,GLenum,usage,N/A,in,fixed,??

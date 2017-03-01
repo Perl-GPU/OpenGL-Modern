@@ -1,0 +1,24 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDebugMessageCallbackAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glDebugMessageCallbackAMD,0,0,GLDEBUGPROCAMD,callback,N/A,in,fixed,??
+glDebugMessageCallbackAMD,1,1,"void *",userParam,???,???,???,???
+glDebugMessageEnableAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glDebugMessageEnableAMD,0,0,GLenum,category,N/A,in,fixed,??
+glDebugMessageEnableAMD,1,0,GLenum,severity,N/A,in,fixed,??
+glDebugMessageEnableAMD,2,0,GLsizei,count,N/A,in,fixed,??
+glDebugMessageEnableAMD,3,1,"const GLuint *",ids,???,???,???,???
+glDebugMessageEnableAMD,4,0,GLboolean,enabled,N/A,in,fixed,??
+glDebugMessageInsertAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glDebugMessageInsertAMD,0,0,GLenum,category,N/A,in,fixed,??
+glDebugMessageInsertAMD,1,0,GLenum,severity,N/A,in,fixed,??
+glDebugMessageInsertAMD,2,0,GLuint,id,N/A,in,fixed,??
+glDebugMessageInsertAMD,3,0,GLsizei,length,N/A,in,fixed,??
+glDebugMessageInsertAMD,4,1,"const GLchar *",buf,???,???,???,???
+glGetDebugMessageLogAMD,-1,0,GLuint,N/A,N/A,out,fixed,??
+glGetDebugMessageLogAMD,0,0,GLuint,count,N/A,in,fixed,??
+glGetDebugMessageLogAMD,1,0,GLsizei,bufsize,N/A,in,fixed,??
+glGetDebugMessageLogAMD,2,1,"GLenum *",categories,???,???,???,???
+glGetDebugMessageLogAMD,3,1,"GLuint *",severities,???,???,???,???
+glGetDebugMessageLogAMD,4,1,"GLuint *",ids,???,???,???,???
+glGetDebugMessageLogAMD,5,1,"GLsizei *",lengths,???,???,???,???
+glGetDebugMessageLogAMD,6,1,"GLchar *",message,???,???,???,???

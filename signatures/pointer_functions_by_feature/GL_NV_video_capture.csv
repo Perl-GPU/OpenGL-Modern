@@ -1,0 +1,39 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetVideoCaptureStreamdvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVideoCaptureStreamdvNV,0,0,GLuint,video_capture_slot,N/A,in,fixed,??
+glGetVideoCaptureStreamdvNV,1,0,GLuint,stream,N/A,in,fixed,??
+glGetVideoCaptureStreamdvNV,2,0,GLenum,pname,N/A,in,fixed,??
+glGetVideoCaptureStreamdvNV,3,1,"GLdouble *",params,???,???,???,???
+glGetVideoCaptureStreamfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVideoCaptureStreamfvNV,0,0,GLuint,video_capture_slot,N/A,in,fixed,??
+glGetVideoCaptureStreamfvNV,1,0,GLuint,stream,N/A,in,fixed,??
+glGetVideoCaptureStreamfvNV,2,0,GLenum,pname,N/A,in,fixed,??
+glGetVideoCaptureStreamfvNV,3,1,"GLfloat *",params,???,???,???,???
+glGetVideoCaptureStreamivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVideoCaptureStreamivNV,0,0,GLuint,video_capture_slot,N/A,in,fixed,??
+glGetVideoCaptureStreamivNV,1,0,GLuint,stream,N/A,in,fixed,??
+glGetVideoCaptureStreamivNV,2,0,GLenum,pname,N/A,in,fixed,??
+glGetVideoCaptureStreamivNV,3,1,"GLint *",params,???,???,???,???
+glGetVideoCaptureivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVideoCaptureivNV,0,0,GLuint,video_capture_slot,N/A,in,fixed,??
+glGetVideoCaptureivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVideoCaptureivNV,2,1,"GLint *",params,???,???,???,???
+glVideoCaptureNV,-1,0,GLenum,N/A,N/A,out,fixed,??
+glVideoCaptureNV,0,0,GLuint,video_capture_slot,N/A,in,fixed,??
+glVideoCaptureNV,1,1,"GLuint *",sequence_num,???,???,???,???
+glVideoCaptureNV,2,1,"GLuint64EXT *",capture_time,???,???,???,???
+glVideoCaptureStreamParameterdvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVideoCaptureStreamParameterdvNV,0,0,GLuint,video_capture_slot,N/A,in,fixed,??
+glVideoCaptureStreamParameterdvNV,1,0,GLuint,stream,N/A,in,fixed,??
+glVideoCaptureStreamParameterdvNV,2,0,GLenum,pname,N/A,in,fixed,??
+glVideoCaptureStreamParameterdvNV,3,1,"const GLdouble *",params,???,???,???,???
+glVideoCaptureStreamParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVideoCaptureStreamParameterfvNV,0,0,GLuint,video_capture_slot,N/A,in,fixed,??
+glVideoCaptureStreamParameterfvNV,1,0,GLuint,stream,N/A,in,fixed,??
+glVideoCaptureStreamParameterfvNV,2,0,GLenum,pname,N/A,in,fixed,??
+glVideoCaptureStreamParameterfvNV,3,1,"const GLfloat *",params,???,???,???,???
+glVideoCaptureStreamParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVideoCaptureStreamParameterivNV,0,0,GLuint,video_capture_slot,N/A,in,fixed,??
+glVideoCaptureStreamParameterivNV,1,0,GLuint,stream,N/A,in,fixed,??
+glVideoCaptureStreamParameterivNV,2,0,GLenum,pname,N/A,in,fixed,??
+glVideoCaptureStreamParameterivNV,3,1,"const GLint *",params,???,???,???,???

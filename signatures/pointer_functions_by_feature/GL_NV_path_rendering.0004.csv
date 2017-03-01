@@ -1,0 +1,65 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glPathGlyphRangeNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathGlyphRangeNV,0,0,GLuint,firstPathName,N/A,in,fixed,??
+glPathGlyphRangeNV,1,0,GLenum,fontTarget,N/A,in,fixed,??
+glPathGlyphRangeNV,2,1,"const void *",fontName,???,???,???,???
+glPathGlyphRangeNV,3,0,GLbitfield,fontStyle,N/A,in,fixed,??
+glPathGlyphRangeNV,4,0,GLuint,firstGlyph,N/A,in,fixed,??
+glPathGlyphRangeNV,5,0,GLsizei,numGlyphs,N/A,in,fixed,??
+glPathGlyphRangeNV,6,0,GLenum,handleMissingGlyphs,N/A,in,fixed,??
+glPathGlyphRangeNV,7,0,GLuint,pathParameterTemplate,N/A,in,fixed,??
+glPathGlyphRangeNV,8,0,GLfloat,emScale,N/A,in,fixed,??
+glPathGlyphsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathGlyphsNV,0,0,GLuint,firstPathName,N/A,in,fixed,??
+glPathGlyphsNV,1,0,GLenum,fontTarget,N/A,in,fixed,??
+glPathGlyphsNV,2,1,"const void *",fontName,???,???,???,???
+glPathGlyphsNV,3,0,GLbitfield,fontStyle,N/A,in,fixed,??
+glPathGlyphsNV,4,0,GLsizei,numGlyphs,N/A,in,fixed,??
+glPathGlyphsNV,5,0,GLenum,type,N/A,in,fixed,??
+glPathGlyphsNV,6,1,"const void *",charcodes,???,???,???,???
+glPathGlyphsNV,7,0,GLenum,handleMissingGlyphs,N/A,in,fixed,??
+glPathGlyphsNV,8,0,GLuint,pathParameterTemplate,N/A,in,fixed,??
+glPathGlyphsNV,9,0,GLfloat,emScale,N/A,in,fixed,??
+glPathMemoryGlyphIndexArrayNV,-1,0,GLenum,N/A,N/A,out,fixed,??
+glPathMemoryGlyphIndexArrayNV,0,0,GLuint,firstPathName,N/A,in,fixed,??
+glPathMemoryGlyphIndexArrayNV,1,0,GLenum,fontTarget,N/A,in,fixed,??
+glPathMemoryGlyphIndexArrayNV,2,0,GLsizeiptr,fontSize,N/A,in,fixed,??
+glPathMemoryGlyphIndexArrayNV,3,1,"const void *",fontData,???,???,???,???
+glPathMemoryGlyphIndexArrayNV,4,0,GLsizei,faceIndex,N/A,in,fixed,??
+glPathMemoryGlyphIndexArrayNV,5,0,GLuint,firstGlyphIndex,N/A,in,fixed,??
+glPathMemoryGlyphIndexArrayNV,6,0,GLsizei,numGlyphs,N/A,in,fixed,??
+glPathMemoryGlyphIndexArrayNV,7,0,GLuint,pathParameterTemplate,N/A,in,fixed,??
+glPathMemoryGlyphIndexArrayNV,8,0,GLfloat,emScale,N/A,in,fixed,??
+glPathParameterfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathParameterfvNV,0,0,GLuint,path,N/A,in,fixed,??
+glPathParameterfvNV,1,0,GLenum,pname,N/A,in,fixed,??
+glPathParameterfvNV,2,1,"const GLfloat *",value,???,???,???,???
+glPathParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathParameterivNV,0,0,GLuint,path,N/A,in,fixed,??
+glPathParameterivNV,1,0,GLenum,pname,N/A,in,fixed,??
+glPathParameterivNV,2,1,"const GLint *",value,???,???,???,???
+glPathStringNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathStringNV,0,0,GLuint,path,N/A,in,fixed,??
+glPathStringNV,1,0,GLenum,format,N/A,in,fixed,??
+glPathStringNV,2,0,GLsizei,length,N/A,in,fixed,??
+glPathStringNV,3,1,"const void *",pathString,???,???,???,???
+glPathSubCommandsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathSubCommandsNV,0,0,GLuint,path,N/A,in,fixed,??
+glPathSubCommandsNV,1,0,GLsizei,commandStart,N/A,in,fixed,??
+glPathSubCommandsNV,2,0,GLsizei,commandsToDelete,N/A,in,fixed,??
+glPathSubCommandsNV,3,0,GLsizei,numCommands,N/A,in,fixed,??
+glPathSubCommandsNV,4,1,"const GLubyte *",commands,???,???,???,???
+glPathSubCommandsNV,5,0,GLsizei,numCoords,N/A,in,fixed,??
+glPathSubCommandsNV,6,0,GLenum,coordType,N/A,in,fixed,??
+glPathSubCommandsNV,7,1,"const void *",coords,???,???,???,???
+glPathSubCoordsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathSubCoordsNV,0,0,GLuint,path,N/A,in,fixed,??
+glPathSubCoordsNV,1,0,GLsizei,coordStart,N/A,in,fixed,??
+glPathSubCoordsNV,2,0,GLsizei,numCoords,N/A,in,fixed,??
+glPathSubCoordsNV,3,0,GLenum,coordType,N/A,in,fixed,??
+glPathSubCoordsNV,4,1,"const void *",coords,???,???,???,???
+glPathTexGenNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPathTexGenNV,0,0,GLenum,texCoordSet,N/A,in,fixed,??
+glPathTexGenNV,1,0,GLenum,genMode,N/A,in,fixed,??
+glPathTexGenNV,2,0,GLint,components,N/A,in,fixed,??
+glPathTexGenNV,3,1,"const GLfloat *",coeffs,???,???,???,???

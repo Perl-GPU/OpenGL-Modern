@@ -1,0 +1,12 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetShaderPrecisionFormat,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetShaderPrecisionFormat,0,0,GLenum,shadertype,N/A,in,fixed,??
+glGetShaderPrecisionFormat,1,0,GLenum,precisiontype,N/A,in,fixed,??
+glGetShaderPrecisionFormat,2,1,"GLint *",range,???,???,???,???
+glGetShaderPrecisionFormat,3,1,"GLint *",precision,???,???,???,???
+glShaderBinary,-1,0,void,N/A,N/A,out,fixed,N/A
+glShaderBinary,0,0,GLsizei,count,N/A,in,fixed,??
+glShaderBinary,1,1,"const GLuint *",shaders,???,???,???,???
+glShaderBinary,2,0,GLenum,binaryformat,N/A,in,fixed,??
+glShaderBinary,3,1,"const void *",binary,???,???,???,???
+glShaderBinary,4,0,GLsizei,length,N/A,in,fixed,??

@@ -1,0 +1,6 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetTranslatedShaderSourceANGLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTranslatedShaderSourceANGLE,0,0,GLuint,shader,N/A,in,fixed,??
+glGetTranslatedShaderSourceANGLE,1,0,GLsizei,bufsize,N/A,in,fixed,??
+glGetTranslatedShaderSourceANGLE,2,1,"GLsizei *",length,???,???,???,???
+glGetTranslatedShaderSourceANGLE,3,1,"GLchar *",source,???,???,???,???

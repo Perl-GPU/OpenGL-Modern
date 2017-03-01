@@ -1,0 +1,42 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetUniformuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetUniformuiv,0,0,GLuint,program,N/A,in,fixed,??
+glGetUniformuiv,1,0,GLint,location,N/A,in,fixed,??
+glGetUniformuiv,2,1,"GLuint *",params,???,???,???,???
+glGetVertexAttribIiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribIiv,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribIiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribIiv,2,1,"GLint *",params,???,???,???,???
+glGetVertexAttribIuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribIuiv,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribIuiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribIuiv,2,1,"GLuint *",params,???,???,???,???
+glTexParameterIiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexParameterIiv,0,0,GLenum,target,N/A,in,fixed,??
+glTexParameterIiv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexParameterIiv,2,1,"const GLint *",params,???,???,???,???
+glTexParameterIuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexParameterIuiv,0,0,GLenum,target,N/A,in,fixed,??
+glTexParameterIuiv,1,0,GLenum,pname,N/A,in,fixed,??
+glTexParameterIuiv,2,1,"const GLuint *",params,???,???,???,???
+glTransformFeedbackVaryings,-1,0,void,N/A,N/A,out,fixed,N/A
+glTransformFeedbackVaryings,0,0,GLuint,program,N/A,in,fixed,??
+glTransformFeedbackVaryings,1,0,GLsizei,count,N/A,in,fixed,??
+glTransformFeedbackVaryings,2,2,"const GLchar * const *",varyings,???,???,???,???
+glTransformFeedbackVaryings,3,0,GLenum,bufferMode,N/A,in,fixed,??
+glUniform1uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform1uiv,0,0,GLint,location,N/A,in,fixed,??
+glUniform1uiv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform1uiv,2,1,"const GLuint *",value,???,???,???,???
+glUniform2uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform2uiv,0,0,GLint,location,N/A,in,fixed,??
+glUniform2uiv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform2uiv,2,1,"const GLuint *",value,???,???,???,???
+glUniform3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform3uiv,0,0,GLint,location,N/A,in,fixed,??
+glUniform3uiv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform3uiv,2,1,"const GLuint *",value,???,???,???,???
+glUniform4uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniform4uiv,0,0,GLint,location,N/A,in,fixed,??
+glUniform4uiv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniform4uiv,2,1,"const GLuint *",value,???,???,???,???

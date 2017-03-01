@@ -1,0 +1,11 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetPerfMonitorGroupsAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPerfMonitorGroupsAMD,0,1,"GLint *",numGroups,???,???,???,???
+glGetPerfMonitorGroupsAMD,1,0,GLsizei,groupsSize,N/A,in,fixed,??
+glGetPerfMonitorGroupsAMD,2,1,"GLuint *",groups,???,???,???,???
+glSelectPerfMonitorCountersAMD,-1,0,void,N/A,N/A,out,fixed,N/A
+glSelectPerfMonitorCountersAMD,0,0,GLuint,monitor,N/A,in,fixed,??
+glSelectPerfMonitorCountersAMD,1,0,GLboolean,enable,N/A,in,fixed,??
+glSelectPerfMonitorCountersAMD,2,0,GLuint,group,N/A,in,fixed,??
+glSelectPerfMonitorCountersAMD,3,0,GLint,numCounters,N/A,in,fixed,??
+glSelectPerfMonitorCountersAMD,4,1,"GLuint *",counterList,???,???,???,???

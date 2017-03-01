@@ -1,0 +1,17 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetTexParameterIivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexParameterIivEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexParameterIivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexParameterIivEXT,2,1,"GLint *",params,???,???,???,???
+glGetTexParameterIuivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexParameterIuivEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetTexParameterIuivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetTexParameterIuivEXT,2,1,"GLuint *",params,???,???,???,???
+glTexParameterIivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexParameterIivEXT,0,0,GLenum,target,N/A,in,fixed,??
+glTexParameterIivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glTexParameterIivEXT,2,1,"const GLint *",params,???,???,???,???
+glTexParameterIuivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexParameterIuivEXT,0,0,GLenum,target,N/A,in,fixed,??
+glTexParameterIuivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glTexParameterIuivEXT,2,1,"const GLuint *",params,???,???,???,???

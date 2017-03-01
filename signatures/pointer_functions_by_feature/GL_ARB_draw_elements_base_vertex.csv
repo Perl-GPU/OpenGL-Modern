@@ -1,0 +1,29 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDrawElementsBaseVertex,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawElementsBaseVertex,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawElementsBaseVertex,1,0,GLsizei,count,N/A,in,fixed,??
+glDrawElementsBaseVertex,2,0,GLenum,type,N/A,in,fixed,??
+glDrawElementsBaseVertex,3,1,"const void *",indices,???,???,???,???
+glDrawElementsBaseVertex,4,0,GLint,basevertex,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertex,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawElementsInstancedBaseVertex,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertex,1,0,GLsizei,count,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertex,2,0,GLenum,type,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertex,3,1,"const void *",indices,???,???,???,???
+glDrawElementsInstancedBaseVertex,4,0,GLsizei,primcount,N/A,in,fixed,??
+glDrawElementsInstancedBaseVertex,5,0,GLint,basevertex,N/A,in,fixed,??
+glDrawRangeElementsBaseVertex,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawRangeElementsBaseVertex,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawRangeElementsBaseVertex,1,0,GLuint,start,N/A,in,fixed,??
+glDrawRangeElementsBaseVertex,2,0,GLuint,end,N/A,in,fixed,??
+glDrawRangeElementsBaseVertex,3,0,GLsizei,count,N/A,in,fixed,??
+glDrawRangeElementsBaseVertex,4,0,GLenum,type,N/A,in,fixed,??
+glDrawRangeElementsBaseVertex,5,1,"const void *",indices,???,???,???,???
+glDrawRangeElementsBaseVertex,6,0,GLint,basevertex,N/A,in,fixed,??
+glMultiDrawElementsBaseVertex,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultiDrawElementsBaseVertex,0,0,GLenum,mode,N/A,in,fixed,??
+glMultiDrawElementsBaseVertex,1,1,"const GLsizei *",count,???,???,???,???
+glMultiDrawElementsBaseVertex,2,0,GLenum,type,N/A,in,fixed,??
+glMultiDrawElementsBaseVertex,3,2,"const void * const *",indices,???,???,???,???
+glMultiDrawElementsBaseVertex,4,0,GLsizei,primcount,N/A,in,fixed,??
+glMultiDrawElementsBaseVertex,5,1,"const GLint *",basevertex,???,???,???,???

@@ -1,0 +1,33 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glColorPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glColorPointerEXT,0,0,GLint,size,N/A,in,fixed,??
+glColorPointerEXT,1,0,GLenum,type,N/A,in,fixed,??
+glColorPointerEXT,2,0,GLsizei,stride,N/A,in,fixed,??
+glColorPointerEXT,3,0,GLsizei,count,N/A,in,fixed,??
+glColorPointerEXT,4,1,"const void *",pointer,???,???,???,???
+glEdgeFlagPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glEdgeFlagPointerEXT,0,0,GLsizei,stride,N/A,in,fixed,??
+glEdgeFlagPointerEXT,1,0,GLsizei,count,N/A,in,fixed,??
+glEdgeFlagPointerEXT,2,1,"const GLboolean *",pointer,???,???,???,???
+glIndexPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glIndexPointerEXT,0,0,GLenum,type,N/A,in,fixed,??
+glIndexPointerEXT,1,0,GLsizei,stride,N/A,in,fixed,??
+glIndexPointerEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glIndexPointerEXT,3,1,"const void *",pointer,???,???,???,???
+glNormalPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormalPointerEXT,0,0,GLenum,type,N/A,in,fixed,??
+glNormalPointerEXT,1,0,GLsizei,stride,N/A,in,fixed,??
+glNormalPointerEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glNormalPointerEXT,3,1,"const void *",pointer,???,???,???,???
+glTexCoordPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoordPointerEXT,0,0,GLint,size,N/A,in,fixed,??
+glTexCoordPointerEXT,1,0,GLenum,type,N/A,in,fixed,??
+glTexCoordPointerEXT,2,0,GLsizei,stride,N/A,in,fixed,??
+glTexCoordPointerEXT,3,0,GLsizei,count,N/A,in,fixed,??
+glTexCoordPointerEXT,4,1,"const void *",pointer,???,???,???,???
+glVertexPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexPointerEXT,0,0,GLint,size,N/A,in,fixed,??
+glVertexPointerEXT,1,0,GLenum,type,N/A,in,fixed,??
+glVertexPointerEXT,2,0,GLsizei,stride,N/A,in,fixed,??
+glVertexPointerEXT,3,0,GLsizei,count,N/A,in,fixed,??
+glVertexPointerEXT,4,1,"const void *",pointer,???,???,???,???

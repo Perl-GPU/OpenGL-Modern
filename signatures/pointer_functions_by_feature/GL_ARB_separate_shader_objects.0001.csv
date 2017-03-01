@@ -1,0 +1,40 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCreateShaderProgramv,-1,0,GLuint,N/A,N/A,out,fixed,??
+glCreateShaderProgramv,0,0,GLenum,type,N/A,in,fixed,??
+glCreateShaderProgramv,1,0,GLsizei,count,N/A,in,fixed,??
+glCreateShaderProgramv,2,2,"const GLchar * const *",strings,???,???,???,???
+glDeleteProgramPipelines,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteProgramPipelines,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteProgramPipelines,1,1,"const GLuint *",pipelines,???,???,???,???
+glGenProgramPipelines,-1,0,void,N/A,N/A,out,fixed,N/A
+glGenProgramPipelines,0,0,GLsizei,n,N/A,in,fixed,??
+glGenProgramPipelines,1,1,"GLuint *",pipelines,???,???,???,???
+glGetProgramPipelineInfoLog,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramPipelineInfoLog,0,0,GLuint,pipeline,N/A,in,fixed,??
+glGetProgramPipelineInfoLog,1,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetProgramPipelineInfoLog,2,1,"GLsizei *",length,???,???,???,???
+glGetProgramPipelineInfoLog,3,1,"GLchar *",infoLog,???,???,???,???
+glGetProgramPipelineiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramPipelineiv,0,0,GLuint,pipeline,N/A,in,fixed,??
+glGetProgramPipelineiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetProgramPipelineiv,2,1,"GLint *",params,???,???,???,???
+glProgramUniform1dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform1dv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform1dv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform1dv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform1dv,3,1,"const GLdouble *",value,???,???,???,???
+glProgramUniform1fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform1fv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform1fv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform1fv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform1fv,3,1,"const GLfloat *",value,???,???,???,???
+glProgramUniform1iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform1iv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform1iv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform1iv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform1iv,3,1,"const GLint *",value,???,???,???,???
+glProgramUniform1uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniform1uiv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniform1uiv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniform1uiv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniform1uiv,3,1,"const GLuint *",value,???,???,???,???

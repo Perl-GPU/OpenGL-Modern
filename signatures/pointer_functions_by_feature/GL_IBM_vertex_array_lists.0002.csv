@@ -1,0 +1,13 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glTexCoordPointerListIBM,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoordPointerListIBM,0,0,GLint,size,N/A,in,fixed,??
+glTexCoordPointerListIBM,1,0,GLenum,type,N/A,in,fixed,??
+glTexCoordPointerListIBM,2,0,GLint,stride,N/A,in,fixed,??
+glTexCoordPointerListIBM,3,2,"const void * *",pointer,???,???,???,???
+glTexCoordPointerListIBM,4,0,GLint,ptrstride,N/A,in,fixed,??
+glVertexPointerListIBM,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexPointerListIBM,0,0,GLint,size,N/A,in,fixed,??
+glVertexPointerListIBM,1,0,GLenum,type,N/A,in,fixed,??
+glVertexPointerListIBM,2,0,GLint,stride,N/A,in,fixed,??
+glVertexPointerListIBM,3,2,"const void * *",pointer,???,???,???,???
+glVertexPointerListIBM,4,0,GLint,ptrstride,N/A,in,fixed,??

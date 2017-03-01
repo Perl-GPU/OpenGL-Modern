@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glLoadTransposeMatrixdARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glLoadTransposeMatrixdARB,0,0,GLdouble,m,???,in,fixed,??
+glLoadTransposeMatrixfARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glLoadTransposeMatrixfARB,0,0,GLfloat,m,???,in,fixed,??
+glMultTransposeMatrixdARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultTransposeMatrixdARB,0,0,GLdouble,m,???,in,fixed,??
+glMultTransposeMatrixfARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultTransposeMatrixfARB,0,0,GLfloat,m,???,in,fixed,??

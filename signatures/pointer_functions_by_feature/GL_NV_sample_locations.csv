@@ -1,0 +1,11 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glFramebufferSampleLocationsfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glFramebufferSampleLocationsfvNV,0,0,GLenum,target,N/A,in,fixed,??
+glFramebufferSampleLocationsfvNV,1,0,GLuint,start,N/A,in,fixed,??
+glFramebufferSampleLocationsfvNV,2,0,GLsizei,count,N/A,in,fixed,??
+glFramebufferSampleLocationsfvNV,3,1,"const GLfloat *",v,???,???,???,???
+glNamedFramebufferSampleLocationsfvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedFramebufferSampleLocationsfvNV,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glNamedFramebufferSampleLocationsfvNV,1,0,GLuint,start,N/A,in,fixed,??
+glNamedFramebufferSampleLocationsfvNV,2,0,GLsizei,count,N/A,in,fixed,??
+glNamedFramebufferSampleLocationsfvNV,3,1,"const GLfloat *",v,???,???,???,???

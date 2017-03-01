@@ -1,0 +1,31 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDrawRangeElements,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawRangeElements,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawRangeElements,1,0,GLuint,start,N/A,in,fixed,??
+glDrawRangeElements,2,0,GLuint,end,N/A,in,fixed,??
+glDrawRangeElements,3,0,GLsizei,count,N/A,in,fixed,??
+glDrawRangeElements,4,0,GLenum,type,N/A,in,fixed,??
+glDrawRangeElements,5,1,"const void *",indices,???,???,???,???
+glTexImage3D,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexImage3D,0,0,GLenum,target,N/A,in,fixed,??
+glTexImage3D,1,0,GLint,level,N/A,in,fixed,??
+glTexImage3D,2,0,GLint,internalFormat,N/A,in,fixed,??
+glTexImage3D,3,0,GLsizei,width,N/A,in,fixed,??
+glTexImage3D,4,0,GLsizei,height,N/A,in,fixed,??
+glTexImage3D,5,0,GLsizei,depth,N/A,in,fixed,??
+glTexImage3D,6,0,GLint,border,N/A,in,fixed,??
+glTexImage3D,7,0,GLenum,format,N/A,in,fixed,??
+glTexImage3D,8,0,GLenum,type,N/A,in,fixed,??
+glTexImage3D,9,1,"const void *",pixels,???,???,???,???
+glTexSubImage3D,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexSubImage3D,0,0,GLenum,target,N/A,in,fixed,??
+glTexSubImage3D,1,0,GLint,level,N/A,in,fixed,??
+glTexSubImage3D,2,0,GLint,xoffset,N/A,in,fixed,??
+glTexSubImage3D,3,0,GLint,yoffset,N/A,in,fixed,??
+glTexSubImage3D,4,0,GLint,zoffset,N/A,in,fixed,??
+glTexSubImage3D,5,0,GLsizei,width,N/A,in,fixed,??
+glTexSubImage3D,6,0,GLsizei,height,N/A,in,fixed,??
+glTexSubImage3D,7,0,GLsizei,depth,N/A,in,fixed,??
+glTexSubImage3D,8,0,GLenum,format,N/A,in,fixed,??
+glTexSubImage3D,9,0,GLenum,type,N/A,in,fixed,??
+glTexSubImage3D,10,1,"const void *",pixels,???,???,???,???

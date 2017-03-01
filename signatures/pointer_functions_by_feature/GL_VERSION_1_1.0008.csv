@@ -1,0 +1,50 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMap1f,-1,0,void,N/A,N/A,out,fixed,N/A
+glMap1f,0,0,GLenum,target,N/A,in,fixed,??
+glMap1f,1,0,GLfloat,u1,N/A,in,fixed,??
+glMap1f,2,0,GLfloat,u2,N/A,in,fixed,??
+glMap1f,3,0,GLint,stride,N/A,in,fixed,??
+glMap1f,4,0,GLint,order,N/A,in,fixed,??
+glMap1f,5,1,"const GLfloat *",points,???,???,???,???
+glMap2d,-1,0,void,N/A,N/A,out,fixed,N/A
+glMap2d,0,0,GLenum,target,N/A,in,fixed,??
+glMap2d,1,0,GLdouble,u1,N/A,in,fixed,??
+glMap2d,2,0,GLdouble,u2,N/A,in,fixed,??
+glMap2d,3,0,GLint,ustride,N/A,in,fixed,??
+glMap2d,4,0,GLint,uorder,N/A,in,fixed,??
+glMap2d,5,0,GLdouble,v1,N/A,in,fixed,??
+glMap2d,6,0,GLdouble,v2,N/A,in,fixed,??
+glMap2d,7,0,GLint,vstride,N/A,in,fixed,??
+glMap2d,8,0,GLint,vorder,N/A,in,fixed,??
+glMap2d,9,1,"const GLdouble *",points,???,???,???,???
+glMap2f,-1,0,void,N/A,N/A,out,fixed,N/A
+glMap2f,0,0,GLenum,target,N/A,in,fixed,??
+glMap2f,1,0,GLfloat,u1,N/A,in,fixed,??
+glMap2f,2,0,GLfloat,u2,N/A,in,fixed,??
+glMap2f,3,0,GLint,ustride,N/A,in,fixed,??
+glMap2f,4,0,GLint,uorder,N/A,in,fixed,??
+glMap2f,5,0,GLfloat,v1,N/A,in,fixed,??
+glMap2f,6,0,GLfloat,v2,N/A,in,fixed,??
+glMap2f,7,0,GLint,vstride,N/A,in,fixed,??
+glMap2f,8,0,GLint,vorder,N/A,in,fixed,??
+glMap2f,9,1,"const GLfloat *",points,???,???,???,???
+glMaterialfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMaterialfv,0,0,GLenum,face,N/A,in,fixed,??
+glMaterialfv,1,0,GLenum,pname,N/A,in,fixed,??
+glMaterialfv,2,1,"const GLfloat *",params,???,???,???,???
+glMaterialiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glMaterialiv,0,0,GLenum,face,N/A,in,fixed,??
+glMaterialiv,1,0,GLenum,pname,N/A,in,fixed,??
+glMaterialiv,2,1,"const GLint *",params,???,???,???,???
+glMultMatrixd,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultMatrixd,0,1,"const GLdouble *",m,???,???,???,???
+glMultMatrixf,-1,0,void,N/A,N/A,out,fixed,N/A
+glMultMatrixf,0,1,"const GLfloat *",m,???,???,???,???
+glNormal3bv,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormal3bv,0,1,"const GLbyte *",v,???,???,???,???
+glNormal3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormal3dv,0,1,"const GLdouble *",v,???,???,???,???
+glNormal3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormal3fv,0,1,"const GLfloat *",v,???,???,???,???
+glNormal3iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glNormal3iv,0,1,"const GLint *",v,???,???,???,???

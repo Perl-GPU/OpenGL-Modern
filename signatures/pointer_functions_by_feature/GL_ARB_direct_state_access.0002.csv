@@ -1,0 +1,38 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCreateQueries,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateQueries,0,0,GLenum,target,N/A,in,fixed,??
+glCreateQueries,1,0,GLsizei,n,N/A,in,fixed,??
+glCreateQueries,2,1,"GLuint *",ids,???,???,???,???
+glCreateRenderbuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateRenderbuffers,0,0,GLsizei,n,N/A,in,fixed,??
+glCreateRenderbuffers,1,1,"GLuint *",renderbuffers,???,???,???,???
+glCreateSamplers,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateSamplers,0,0,GLsizei,n,N/A,in,fixed,??
+glCreateSamplers,1,1,"GLuint *",samplers,???,???,???,???
+glCreateTextures,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateTextures,0,0,GLenum,target,N/A,in,fixed,??
+glCreateTextures,1,0,GLsizei,n,N/A,in,fixed,??
+glCreateTextures,2,1,"GLuint *",textures,???,???,???,???
+glCreateTransformFeedbacks,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateTransformFeedbacks,0,0,GLsizei,n,N/A,in,fixed,??
+glCreateTransformFeedbacks,1,1,"GLuint *",ids,???,???,???,???
+glCreateVertexArrays,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateVertexArrays,0,0,GLsizei,n,N/A,in,fixed,??
+glCreateVertexArrays,1,1,"GLuint *",arrays,???,???,???,???
+glGetCompressedTextureImage,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCompressedTextureImage,0,0,GLuint,texture,N/A,in,fixed,??
+glGetCompressedTextureImage,1,0,GLint,level,N/A,in,fixed,??
+glGetCompressedTextureImage,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetCompressedTextureImage,3,1,"void *",pixels,???,???,???,???
+glGetNamedBufferParameteri64v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedBufferParameteri64v,0,0,GLuint,buffer,N/A,in,fixed,??
+glGetNamedBufferParameteri64v,1,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedBufferParameteri64v,2,1,"GLint64 *",params,???,???,???,???
+glGetNamedBufferParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedBufferParameteriv,0,0,GLuint,buffer,N/A,in,fixed,??
+glGetNamedBufferParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedBufferParameteriv,2,1,"GLint *",params,???,???,???,???
+glGetNamedBufferPointerv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedBufferPointerv,0,0,GLuint,buffer,N/A,in,fixed,??
+glGetNamedBufferPointerv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedBufferPointerv,2,2,"void * *",params,???,???,???,???

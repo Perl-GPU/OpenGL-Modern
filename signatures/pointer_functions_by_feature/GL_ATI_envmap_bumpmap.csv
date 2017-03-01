@@ -1,0 +1,13 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetTexBumpParameterfvATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexBumpParameterfvATI,0,0,GLenum,pname,N/A,in,fixed,??
+glGetTexBumpParameterfvATI,1,1,"GLfloat *",param,???,???,???,???
+glGetTexBumpParameterivATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTexBumpParameterivATI,0,0,GLenum,pname,N/A,in,fixed,??
+glGetTexBumpParameterivATI,1,1,"GLint *",param,???,???,???,???
+glTexBumpParameterfvATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexBumpParameterfvATI,0,0,GLenum,pname,N/A,in,fixed,??
+glTexBumpParameterfvATI,1,1,"GLfloat *",param,???,???,???,???
+glTexBumpParameterivATI,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexBumpParameterivATI,0,0,GLenum,pname,N/A,in,fixed,??
+glTexBumpParameterivATI,1,1,"GLint *",param,???,???,???,???

@@ -1,0 +1,11 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVertexAttribs3hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs3hvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs3hvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs3hvNV,2,1,"const GLhalf *",v,???,???,???,???
+glVertexAttribs4hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs4hvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs4hvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs4hvNV,2,1,"const GLhalf *",v,???,???,???,???
+glVertexWeighthvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexWeighthvNV,0,1,"const GLhalf *",weight,???,???,???,???

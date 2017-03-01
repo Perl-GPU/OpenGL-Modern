@@ -1,0 +1,32 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetActiveUniformARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveUniformARB,0,0,GLhandleARB,programObj,N/A,in,fixed,??
+glGetActiveUniformARB,1,0,GLuint,index,N/A,in,fixed,??
+glGetActiveUniformARB,2,0,GLsizei,maxLength,N/A,in,fixed,??
+glGetActiveUniformARB,3,1,"GLsizei *",length,???,???,???,???
+glGetActiveUniformARB,4,1,"GLint *",size,???,???,???,???
+glGetActiveUniformARB,5,1,"GLenum *",type,???,???,???,???
+glGetActiveUniformARB,6,1,"GLcharARB *",name,???,???,???,???
+glGetAttachedObjectsARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetAttachedObjectsARB,0,0,GLhandleARB,containerObj,N/A,in,fixed,??
+glGetAttachedObjectsARB,1,0,GLsizei,maxCount,N/A,in,fixed,??
+glGetAttachedObjectsARB,2,1,"GLsizei *",count,???,???,???,???
+glGetAttachedObjectsARB,3,1,"GLhandleARB *",obj,???,???,???,???
+glGetInfoLogARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetInfoLogARB,0,0,GLhandleARB,obj,N/A,in,fixed,??
+glGetInfoLogARB,1,0,GLsizei,maxLength,N/A,in,fixed,??
+glGetInfoLogARB,2,1,"GLsizei *",length,???,???,???,???
+glGetInfoLogARB,3,1,"GLcharARB *",infoLog,???,???,???,???
+glGetObjectParameterfvARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetObjectParameterfvARB,0,0,GLhandleARB,obj,N/A,in,fixed,??
+glGetObjectParameterfvARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetObjectParameterfvARB,2,1,"GLfloat *",params,???,???,???,???
+glGetObjectParameterivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetObjectParameterivARB,0,0,GLhandleARB,obj,N/A,in,fixed,??
+glGetObjectParameterivARB,1,0,GLenum,pname,N/A,in,fixed,??
+glGetObjectParameterivARB,2,1,"GLint *",params,???,???,???,???
+glGetShaderSourceARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetShaderSourceARB,0,0,GLhandleARB,obj,N/A,in,fixed,??
+glGetShaderSourceARB,1,0,GLsizei,maxLength,N/A,in,fixed,??
+glGetShaderSourceARB,2,1,"GLsizei *",length,???,???,???,???
+glGetShaderSourceARB,3,1,"GLcharARB *",source,???,???,???,???

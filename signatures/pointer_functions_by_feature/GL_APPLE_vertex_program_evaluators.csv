@@ -1,0 +1,41 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMapVertexAttrib1dAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glMapVertexAttrib1dAPPLE,0,0,GLuint,index,N/A,in,fixed,??
+glMapVertexAttrib1dAPPLE,1,0,GLuint,size,N/A,in,fixed,??
+glMapVertexAttrib1dAPPLE,2,0,GLdouble,u1,N/A,in,fixed,??
+glMapVertexAttrib1dAPPLE,3,0,GLdouble,u2,N/A,in,fixed,??
+glMapVertexAttrib1dAPPLE,4,0,GLint,stride,N/A,in,fixed,??
+glMapVertexAttrib1dAPPLE,5,0,GLint,order,N/A,in,fixed,??
+glMapVertexAttrib1dAPPLE,6,1,"const GLdouble *",points,???,???,???,???
+glMapVertexAttrib1fAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glMapVertexAttrib1fAPPLE,0,0,GLuint,index,N/A,in,fixed,??
+glMapVertexAttrib1fAPPLE,1,0,GLuint,size,N/A,in,fixed,??
+glMapVertexAttrib1fAPPLE,2,0,GLfloat,u1,N/A,in,fixed,??
+glMapVertexAttrib1fAPPLE,3,0,GLfloat,u2,N/A,in,fixed,??
+glMapVertexAttrib1fAPPLE,4,0,GLint,stride,N/A,in,fixed,??
+glMapVertexAttrib1fAPPLE,5,0,GLint,order,N/A,in,fixed,??
+glMapVertexAttrib1fAPPLE,6,1,"const GLfloat *",points,???,???,???,???
+glMapVertexAttrib2dAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glMapVertexAttrib2dAPPLE,0,0,GLuint,index,N/A,in,fixed,??
+glMapVertexAttrib2dAPPLE,1,0,GLuint,size,N/A,in,fixed,??
+glMapVertexAttrib2dAPPLE,2,0,GLdouble,u1,N/A,in,fixed,??
+glMapVertexAttrib2dAPPLE,3,0,GLdouble,u2,N/A,in,fixed,??
+glMapVertexAttrib2dAPPLE,4,0,GLint,ustride,N/A,in,fixed,??
+glMapVertexAttrib2dAPPLE,5,0,GLint,uorder,N/A,in,fixed,??
+glMapVertexAttrib2dAPPLE,6,0,GLdouble,v1,N/A,in,fixed,??
+glMapVertexAttrib2dAPPLE,7,0,GLdouble,v2,N/A,in,fixed,??
+glMapVertexAttrib2dAPPLE,8,0,GLint,vstride,N/A,in,fixed,??
+glMapVertexAttrib2dAPPLE,9,0,GLint,vorder,N/A,in,fixed,??
+glMapVertexAttrib2dAPPLE,10,1,"const GLdouble *",points,???,???,???,???
+glMapVertexAttrib2fAPPLE,-1,0,void,N/A,N/A,out,fixed,N/A
+glMapVertexAttrib2fAPPLE,0,0,GLuint,index,N/A,in,fixed,??
+glMapVertexAttrib2fAPPLE,1,0,GLuint,size,N/A,in,fixed,??
+glMapVertexAttrib2fAPPLE,2,0,GLfloat,u1,N/A,in,fixed,??
+glMapVertexAttrib2fAPPLE,3,0,GLfloat,u2,N/A,in,fixed,??
+glMapVertexAttrib2fAPPLE,4,0,GLint,ustride,N/A,in,fixed,??
+glMapVertexAttrib2fAPPLE,5,0,GLint,uorder,N/A,in,fixed,??
+glMapVertexAttrib2fAPPLE,6,0,GLfloat,v1,N/A,in,fixed,??
+glMapVertexAttrib2fAPPLE,7,0,GLfloat,v2,N/A,in,fixed,??
+glMapVertexAttrib2fAPPLE,8,0,GLint,vstride,N/A,in,fixed,??
+glMapVertexAttrib2fAPPLE,9,0,GLint,vorder,N/A,in,fixed,??
+glMapVertexAttrib2fAPPLE,10,1,"const GLfloat *",points,???,???,???,???

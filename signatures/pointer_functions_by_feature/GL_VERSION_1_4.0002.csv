@@ -1,0 +1,26 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glSecondaryColor3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColor3dv,0,1,"const GLdouble *",v,???,???,???,???
+glSecondaryColor3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColor3fv,0,1,"const GLfloat *",v,???,???,???,???
+glSecondaryColor3iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColor3iv,0,1,"const GLint *",v,???,???,???,???
+glSecondaryColor3sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColor3sv,0,1,"const GLshort *",v,???,???,???,???
+glSecondaryColor3ubv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColor3ubv,0,1,"const GLubyte *",v,???,???,???,???
+glSecondaryColor3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColor3uiv,0,1,"const GLuint *",v,???,???,???,???
+glSecondaryColor3usv,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColor3usv,0,1,"const GLushort *",v,???,???,???,???
+glSecondaryColorPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+glSecondaryColorPointer,0,0,GLint,size,N/A,in,fixed,??
+glSecondaryColorPointer,1,0,GLenum,type,N/A,in,fixed,??
+glSecondaryColorPointer,2,0,GLsizei,stride,N/A,in,fixed,??
+glSecondaryColorPointer,3,1,"const void *",pointer,???,???,???,???
+glWindowPos2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos2dv,0,1,"const GLdouble *",p,???,???,???,???
+glWindowPos2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos2fv,0,1,"const GLfloat *",p,???,???,???,???
+glWindowPos2iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glWindowPos2iv,0,1,"const GLint *",p,???,???,???,???

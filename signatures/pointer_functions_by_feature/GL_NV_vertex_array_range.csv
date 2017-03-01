@@ -1,0 +1,4 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVertexArrayRangeNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexArrayRangeNV,0,0,GLsizei,length,N/A,in,fixed,??
+glVertexArrayRangeNV,1,1,"void *",pointer,???,???,???,???

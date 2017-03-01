@@ -1,0 +1,29 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCompileShaderIncludeARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompileShaderIncludeARB,0,0,GLuint,shader,N/A,in,fixed,??
+glCompileShaderIncludeARB,1,0,GLsizei,count,N/A,in,fixed,??
+glCompileShaderIncludeARB,2,2,"const GLchar * const *",path,???,???,???,???
+glCompileShaderIncludeARB,3,1,"const GLint *",length,???,???,???,???
+glDeleteNamedStringARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteNamedStringARB,0,0,GLint,namelen,N/A,in,fixed,??
+glDeleteNamedStringARB,1,1,"const GLchar *",name,???,???,???,???
+glGetNamedStringARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedStringARB,0,0,GLint,namelen,N/A,in,fixed,??
+glGetNamedStringARB,1,1,"const GLchar *",name,???,???,???,???
+glGetNamedStringARB,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetNamedStringARB,3,1,"GLint *",stringlen,???,???,???,???
+glGetNamedStringARB,4,1,"GLchar *",string,???,???,???,???
+glGetNamedStringivARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNamedStringivARB,0,0,GLint,namelen,N/A,in,fixed,??
+glGetNamedStringivARB,1,1,"const GLchar *",name,???,???,???,???
+glGetNamedStringivARB,2,0,GLenum,pname,N/A,in,fixed,??
+glGetNamedStringivARB,3,1,"GLint *",params,???,???,???,???
+glIsNamedStringARB,-1,0,GLboolean,N/A,N/A,out,fixed,??
+glIsNamedStringARB,0,0,GLint,namelen,N/A,in,fixed,??
+glIsNamedStringARB,1,1,"const GLchar *",name,???,???,???,???
+glNamedStringARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedStringARB,0,0,GLenum,type,N/A,in,fixed,??
+glNamedStringARB,1,0,GLint,namelen,N/A,in,fixed,??
+glNamedStringARB,2,1,"const GLchar *",name,???,???,???,???
+glNamedStringARB,3,0,GLint,stringlen,N/A,in,fixed,??
+glNamedStringARB,4,1,"const GLchar *",string,???,???,???,???

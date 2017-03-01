@@ -1,0 +1,14 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetTransformFeedbackVaryingEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetTransformFeedbackVaryingEXT,0,0,GLuint,program,N/A,in,fixed,??
+glGetTransformFeedbackVaryingEXT,1,0,GLuint,index,N/A,in,fixed,??
+glGetTransformFeedbackVaryingEXT,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetTransformFeedbackVaryingEXT,3,1,"GLsizei *",length,???,???,???,???
+glGetTransformFeedbackVaryingEXT,4,1,"GLsizei *",size,???,???,???,???
+glGetTransformFeedbackVaryingEXT,5,1,"GLenum *",type,???,???,???,???
+glGetTransformFeedbackVaryingEXT,6,1,"GLchar *",name,???,???,???,???
+glTransformFeedbackVaryingsEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTransformFeedbackVaryingsEXT,0,0,GLuint,program,N/A,in,fixed,??
+glTransformFeedbackVaryingsEXT,1,0,GLsizei,count,N/A,in,fixed,??
+glTransformFeedbackVaryingsEXT,2,2,"const GLchar * const *",varyings,???,???,???,???
+glTransformFeedbackVaryingsEXT,3,0,GLenum,bufferMode,N/A,in,fixed,??

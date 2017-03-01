@@ -1,0 +1,10 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetInteger64v,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetInteger64v,0,0,GLenum,pname,N/A,in,fixed,??
+glGetInteger64v,1,1,"GLint64 *",params,???,???,???,???
+glGetSynciv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetSynciv,0,0,GLsync,GLsync,N/A,in,fixed,??
+glGetSynciv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetSynciv,2,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetSynciv,3,1,"GLsizei *",length,???,???,???,???
+glGetSynciv,4,1,"GLint *",values,???,???,???,???

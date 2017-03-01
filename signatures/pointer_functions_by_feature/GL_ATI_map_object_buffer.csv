@@ -1,0 +1,3 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glMapObjectBufferATI,-1,1,"void *",N/A,???,out,???,???
+glMapObjectBufferATI,0,0,GLuint,buffer,N/A,in,fixed,??

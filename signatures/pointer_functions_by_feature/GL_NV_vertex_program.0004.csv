@@ -1,0 +1,47 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVertexAttribPointerNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribPointerNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribPointerNV,1,0,GLint,size,N/A,in,fixed,??
+glVertexAttribPointerNV,2,0,GLenum,type,N/A,in,fixed,??
+glVertexAttribPointerNV,3,0,GLsizei,stride,N/A,in,fixed,??
+glVertexAttribPointerNV,4,1,"const void *",pointer,???,???,???,???
+glVertexAttribs1dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs1dvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs1dvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs1dvNV,2,1,"const GLdouble *",v,???,???,???,???
+glVertexAttribs1fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs1fvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs1fvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs1fvNV,2,1,"const GLfloat *",v,???,???,???,???
+glVertexAttribs1svNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs1svNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs1svNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs1svNV,2,1,"const GLshort *",v,???,???,???,???
+glVertexAttribs2dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs2dvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs2dvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs2dvNV,2,1,"const GLdouble *",v,???,???,???,???
+glVertexAttribs2fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs2fvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs2fvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs2fvNV,2,1,"const GLfloat *",v,???,???,???,???
+glVertexAttribs2svNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs2svNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs2svNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs2svNV,2,1,"const GLshort *",v,???,???,???,???
+glVertexAttribs3dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs3dvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs3dvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs3dvNV,2,1,"const GLdouble *",v,???,???,???,???
+glVertexAttribs3fvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs3fvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs3fvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs3fvNV,2,1,"const GLfloat *",v,???,???,???,???
+glVertexAttribs3svNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs3svNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs3svNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs3svNV,2,1,"const GLshort *",v,???,???,???,???
+glVertexAttribs4dvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs4dvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs4dvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs4dvNV,2,1,"const GLdouble *",v,???,???,???,???

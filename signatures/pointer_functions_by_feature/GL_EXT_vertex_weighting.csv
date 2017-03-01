@@ -1,0 +1,8 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVertexWeightPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexWeightPointerEXT,0,0,GLint,size,N/A,in,fixed,??
+glVertexWeightPointerEXT,1,0,GLenum,type,N/A,in,fixed,??
+glVertexWeightPointerEXT,2,0,GLsizei,stride,N/A,in,fixed,??
+glVertexWeightPointerEXT,3,1,"void *",pointer,???,???,???,???
+glVertexWeightfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexWeightfvEXT,0,1,"GLfloat *",weight,???,???,???,???

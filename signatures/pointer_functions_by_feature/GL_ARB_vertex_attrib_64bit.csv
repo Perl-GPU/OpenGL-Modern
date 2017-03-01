@@ -1,0 +1,23 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetVertexAttribLdv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexAttribLdv,0,0,GLuint,index,N/A,in,fixed,??
+glGetVertexAttribLdv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexAttribLdv,2,1,"GLdouble *",params,???,???,???,???
+glVertexAttribL1dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL1dv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL1dv,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttribL2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL2dv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL2dv,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttribL3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL3dv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL3dv,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttribL4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribL4dv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribL4dv,1,1,"const GLdouble *",v,???,???,???,???
+glVertexAttribLPointer,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribLPointer,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribLPointer,1,0,GLint,size,N/A,in,fixed,??
+glVertexAttribLPointer,2,0,GLenum,type,N/A,in,fixed,??
+glVertexAttribLPointer,3,0,GLsizei,stride,N/A,in,fixed,??
+glVertexAttribLPointer,4,1,"const void *",pointer,???,???,???,???

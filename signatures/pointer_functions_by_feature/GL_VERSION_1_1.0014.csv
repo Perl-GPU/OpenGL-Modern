@@ -1,0 +1,37 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glTexSubImage1D,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexSubImage1D,0,0,GLenum,target,N/A,in,fixed,??
+glTexSubImage1D,1,0,GLint,level,N/A,in,fixed,??
+glTexSubImage1D,2,0,GLint,xoffset,N/A,in,fixed,??
+glTexSubImage1D,3,0,GLsizei,width,N/A,in,fixed,??
+glTexSubImage1D,4,0,GLenum,format,N/A,in,fixed,??
+glTexSubImage1D,5,0,GLenum,type,N/A,in,fixed,??
+glTexSubImage1D,6,1,"const void *",pixels,???,???,???,???
+glTexSubImage2D,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexSubImage2D,0,0,GLenum,target,N/A,in,fixed,??
+glTexSubImage2D,1,0,GLint,level,N/A,in,fixed,??
+glTexSubImage2D,2,0,GLint,xoffset,N/A,in,fixed,??
+glTexSubImage2D,3,0,GLint,yoffset,N/A,in,fixed,??
+glTexSubImage2D,4,0,GLsizei,width,N/A,in,fixed,??
+glTexSubImage2D,5,0,GLsizei,height,N/A,in,fixed,??
+glTexSubImage2D,6,0,GLenum,format,N/A,in,fixed,??
+glTexSubImage2D,7,0,GLenum,type,N/A,in,fixed,??
+glTexSubImage2D,8,1,"const void *",pixels,???,???,???,???
+glVertex2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex2dv,0,1,"const GLdouble *",v,???,???,???,???
+glVertex2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex2fv,0,1,"const GLfloat *",v,???,???,???,???
+glVertex2iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex2iv,0,1,"const GLint *",v,???,???,???,???
+glVertex2sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex2sv,0,1,"const GLshort *",v,???,???,???,???
+glVertex3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex3dv,0,1,"const GLdouble *",v,???,???,???,???
+glVertex3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex3fv,0,1,"const GLfloat *",v,???,???,???,???
+glVertex3iv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex3iv,0,1,"const GLint *",v,???,???,???,???
+glVertex3sv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex3sv,0,1,"const GLshort *",v,???,???,???,???
+glVertex4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex4dv,0,1,"const GLdouble *",v,???,???,???,???

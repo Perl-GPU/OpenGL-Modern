@@ -1,0 +1,42 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetActiveSubroutineName,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveSubroutineName,0,0,GLuint,program,N/A,in,fixed,??
+glGetActiveSubroutineName,1,0,GLenum,shadertype,N/A,in,fixed,??
+glGetActiveSubroutineName,2,0,GLuint,index,N/A,in,fixed,??
+glGetActiveSubroutineName,3,0,GLsizei,bufsize,N/A,in,fixed,??
+glGetActiveSubroutineName,4,1,"GLsizei *",length,???,???,???,???
+glGetActiveSubroutineName,5,1,"GLchar *",name,???,???,???,???
+glGetActiveSubroutineUniformName,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveSubroutineUniformName,0,0,GLuint,program,N/A,in,fixed,??
+glGetActiveSubroutineUniformName,1,0,GLenum,shadertype,N/A,in,fixed,??
+glGetActiveSubroutineUniformName,2,0,GLuint,index,N/A,in,fixed,??
+glGetActiveSubroutineUniformName,3,0,GLsizei,bufsize,N/A,in,fixed,??
+glGetActiveSubroutineUniformName,4,1,"GLsizei *",length,???,???,???,???
+glGetActiveSubroutineUniformName,5,1,"GLchar *",name,???,???,???,???
+glGetActiveSubroutineUniformiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveSubroutineUniformiv,0,0,GLuint,program,N/A,in,fixed,??
+glGetActiveSubroutineUniformiv,1,0,GLenum,shadertype,N/A,in,fixed,??
+glGetActiveSubroutineUniformiv,2,0,GLuint,index,N/A,in,fixed,??
+glGetActiveSubroutineUniformiv,3,0,GLenum,pname,N/A,in,fixed,??
+glGetActiveSubroutineUniformiv,4,1,"GLint *",values,???,???,???,???
+glGetProgramStageiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramStageiv,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramStageiv,1,0,GLenum,shadertype,N/A,in,fixed,??
+glGetProgramStageiv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetProgramStageiv,3,1,"GLint *",values,???,???,???,???
+glGetSubroutineIndex,-1,0,GLuint,N/A,N/A,out,fixed,??
+glGetSubroutineIndex,0,0,GLuint,program,N/A,in,fixed,??
+glGetSubroutineIndex,1,0,GLenum,shadertype,N/A,in,fixed,??
+glGetSubroutineIndex,2,1,"const GLchar *",name,???,???,???,???
+glGetSubroutineUniformLocation,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetSubroutineUniformLocation,0,0,GLuint,program,N/A,in,fixed,??
+glGetSubroutineUniformLocation,1,0,GLenum,shadertype,N/A,in,fixed,??
+glGetSubroutineUniformLocation,2,1,"const GLchar *",name,???,???,???,???
+glGetUniformSubroutineuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetUniformSubroutineuiv,0,0,GLenum,shadertype,N/A,in,fixed,??
+glGetUniformSubroutineuiv,1,0,GLint,location,N/A,in,fixed,??
+glGetUniformSubroutineuiv,2,1,"GLuint *",params,???,???,???,???
+glUniformSubroutinesuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glUniformSubroutinesuiv,0,0,GLenum,shadertype,N/A,in,fixed,??
+glUniformSubroutinesuiv,1,0,GLsizei,count,N/A,in,fixed,??
+glUniformSubroutinesuiv,2,1,"const GLuint *",indices,???,???,???,???

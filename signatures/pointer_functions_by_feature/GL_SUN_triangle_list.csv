@@ -1,0 +1,11 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glReplacementCodePointerSUN,-1,0,void,N/A,N/A,out,fixed,N/A
+glReplacementCodePointerSUN,0,0,GLenum,type,N/A,in,fixed,??
+glReplacementCodePointerSUN,1,0,GLsizei,stride,N/A,in,fixed,??
+glReplacementCodePointerSUN,2,1,"const void *",pointer,???,???,???,???
+glReplacementCodeubvSUN,-1,0,void,N/A,N/A,out,fixed,N/A
+glReplacementCodeubvSUN,0,1,"const GLubyte *",code,???,???,???,???
+glReplacementCodeuivSUN,-1,0,void,N/A,N/A,out,fixed,N/A
+glReplacementCodeuivSUN,0,1,"const GLuint *",code,???,???,???,???
+glReplacementCodeusvSUN,-1,0,void,N/A,N/A,out,fixed,N/A
+glReplacementCodeusvSUN,0,1,"const GLushort *",code,???,???,???,???

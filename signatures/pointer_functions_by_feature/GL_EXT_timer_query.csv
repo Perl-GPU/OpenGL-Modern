@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetQueryObjecti64vEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryObjecti64vEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetQueryObjecti64vEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryObjecti64vEXT,2,1,"GLint64EXT *",params,???,???,???,???
+glGetQueryObjectui64vEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetQueryObjectui64vEXT,0,0,GLuint,id,N/A,in,fixed,??
+glGetQueryObjectui64vEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetQueryObjectui64vEXT,2,1,"GLuint64EXT *",params,???,???,???,???

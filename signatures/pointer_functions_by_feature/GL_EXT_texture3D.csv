@@ -1,0 +1,12 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glTexImage3DEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexImage3DEXT,0,0,GLenum,target,N/A,in,fixed,??
+glTexImage3DEXT,1,0,GLint,level,N/A,in,fixed,??
+glTexImage3DEXT,2,0,GLenum,internalformat,N/A,in,fixed,??
+glTexImage3DEXT,3,0,GLsizei,width,N/A,in,fixed,??
+glTexImage3DEXT,4,0,GLsizei,height,N/A,in,fixed,??
+glTexImage3DEXT,5,0,GLsizei,depth,N/A,in,fixed,??
+glTexImage3DEXT,6,0,GLint,border,N/A,in,fixed,??
+glTexImage3DEXT,7,0,GLenum,format,N/A,in,fixed,??
+glTexImage3DEXT,8,0,GLenum,type,N/A,in,fixed,??
+glTexImage3DEXT,9,1,"const void *",pixels,???,???,???,???

@@ -1,0 +1,34 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetAttribLocation,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetAttribLocation,0,0,GLuint,program,N/A,in,fixed,??
+glGetAttribLocation,1,1,"const GLchar *",name,???,???,???,???
+glGetProgramInfoLog,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramInfoLog,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramInfoLog,1,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetProgramInfoLog,2,1,"GLsizei *",length,???,???,???,???
+glGetProgramInfoLog,3,1,"GLchar *",infoLog,???,???,???,???
+glGetProgramiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetProgramiv,0,0,GLuint,program,N/A,in,fixed,??
+glGetProgramiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetProgramiv,2,1,"GLint *",param,???,???,???,???
+glGetShaderInfoLog,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetShaderInfoLog,0,0,GLuint,shader,N/A,in,fixed,??
+glGetShaderInfoLog,1,0,GLsizei,bufSize,N/A,in,fixed,??
+glGetShaderInfoLog,2,1,"GLsizei *",length,???,???,???,???
+glGetShaderInfoLog,3,1,"GLchar *",infoLog,???,???,???,???
+glGetShaderSource,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetShaderSource,0,0,GLuint,obj,N/A,in,fixed,??
+glGetShaderSource,1,0,GLsizei,maxLength,N/A,in,fixed,??
+glGetShaderSource,2,1,"GLsizei *",length,???,???,???,???
+glGetShaderSource,3,1,"GLchar *",source,???,???,???,???
+glGetShaderiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetShaderiv,0,0,GLuint,shader,N/A,in,fixed,??
+glGetShaderiv,1,0,GLenum,pname,N/A,in,fixed,??
+glGetShaderiv,2,1,"GLint *",param,???,???,???,???
+glGetUniformLocation,-1,0,GLint,N/A,N/A,out,fixed,??
+glGetUniformLocation,0,0,GLuint,program,N/A,in,fixed,??
+glGetUniformLocation,1,1,"const GLchar *",name,???,???,???,???
+glGetUniformfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetUniformfv,0,0,GLuint,program,N/A,in,fixed,??
+glGetUniformfv,1,0,GLint,location,N/A,in,fixed,??
+glGetUniformfv,2,1,"GLfloat *",params,???,???,???,???

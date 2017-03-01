@@ -1,0 +1,4 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glPointParameterivNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glPointParameterivNV,0,0,GLenum,pname,N/A,in,fixed,??
+glPointParameterivNV,1,1,"const GLint *",params,???,???,???,???

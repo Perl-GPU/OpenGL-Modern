@@ -1,0 +1,8 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDrawRangeElementsEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawRangeElementsEXT,0,0,GLenum,mode,N/A,in,fixed,??
+glDrawRangeElementsEXT,1,0,GLuint,start,N/A,in,fixed,??
+glDrawRangeElementsEXT,2,0,GLuint,end,N/A,in,fixed,??
+glDrawRangeElementsEXT,3,0,GLsizei,count,N/A,in,fixed,??
+glDrawRangeElementsEXT,4,0,GLenum,type,N/A,in,fixed,??
+glDrawRangeElementsEXT,5,1,"const void *",indices,???,???,???,???

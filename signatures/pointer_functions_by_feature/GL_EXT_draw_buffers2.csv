@@ -1,0 +1,9 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetBooleanIndexedvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetBooleanIndexedvEXT,0,0,GLenum,value,N/A,in,fixed,??
+glGetBooleanIndexedvEXT,1,0,GLuint,index,N/A,in,fixed,??
+glGetBooleanIndexedvEXT,2,1,"GLboolean *",data,???,???,???,???
+glGetIntegerIndexedvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetIntegerIndexedvEXT,0,0,GLenum,value,N/A,in,fixed,??
+glGetIntegerIndexedvEXT,1,0,GLuint,index,N/A,in,fixed,??
+glGetIntegerIndexedvEXT,2,1,"GLint *",data,???,???,???,???

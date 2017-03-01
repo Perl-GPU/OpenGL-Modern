@@ -1,0 +1,7 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCullParameterdvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glCullParameterdvEXT,0,0,GLenum,pname,N/A,in,fixed,??
+glCullParameterdvEXT,1,1,"GLdouble *",params,???,???,???,???
+glCullParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glCullParameterfvEXT,0,0,GLenum,pname,N/A,in,fixed,??
+glCullParameterfvEXT,1,1,"GLfloat *",params,???,???,???,???

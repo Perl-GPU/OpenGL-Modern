@@ -1,0 +1,11 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glProgramEnvParameters4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramEnvParameters4fvEXT,0,0,GLenum,target,N/A,in,fixed,??
+glProgramEnvParameters4fvEXT,1,0,GLuint,index,N/A,in,fixed,??
+glProgramEnvParameters4fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramEnvParameters4fvEXT,3,1,"const GLfloat *",params,???,???,???,???
+glProgramLocalParameters4fvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramLocalParameters4fvEXT,0,0,GLenum,target,N/A,in,fixed,??
+glProgramLocalParameters4fvEXT,1,0,GLuint,index,N/A,in,fixed,??
+glProgramLocalParameters4fvEXT,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramLocalParameters4fvEXT,3,1,"const GLfloat *",params,???,???,???,???

@@ -1,0 +1,36 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetVertexArrayIntegeri_vEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexArrayIntegeri_vEXT,0,0,GLuint,vaobj,N/A,in,fixed,??
+glGetVertexArrayIntegeri_vEXT,1,0,GLuint,index,N/A,in,fixed,??
+glGetVertexArrayIntegeri_vEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexArrayIntegeri_vEXT,3,1,"GLint *",param,???,???,???,???
+glGetVertexArrayIntegervEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexArrayIntegervEXT,0,0,GLuint,vaobj,N/A,in,fixed,??
+glGetVertexArrayIntegervEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexArrayIntegervEXT,2,1,"GLint *",param,???,???,???,???
+glGetVertexArrayPointeri_vEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexArrayPointeri_vEXT,0,0,GLuint,vaobj,N/A,in,fixed,??
+glGetVertexArrayPointeri_vEXT,1,0,GLuint,index,N/A,in,fixed,??
+glGetVertexArrayPointeri_vEXT,2,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexArrayPointeri_vEXT,3,2,"void * *",param,???,???,???,???
+glGetVertexArrayPointervEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetVertexArrayPointervEXT,0,0,GLuint,vaobj,N/A,in,fixed,??
+glGetVertexArrayPointervEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetVertexArrayPointervEXT,2,2,"void * *",param,???,???,???,???
+glMapNamedBufferEXT,-1,1,"void *",N/A,???,out,???,???
+glMapNamedBufferEXT,0,0,GLuint,buffer,N/A,in,fixed,??
+glMapNamedBufferEXT,1,0,GLenum,access,N/A,in,fixed,??
+glMapNamedBufferRangeEXT,-1,1,"void *",N/A,???,out,???,???
+glMapNamedBufferRangeEXT,0,0,GLuint,buffer,N/A,in,fixed,??
+glMapNamedBufferRangeEXT,1,0,GLintptr,offset,N/A,in,fixed,??
+glMapNamedBufferRangeEXT,2,0,GLsizeiptr,length,N/A,in,fixed,??
+glMapNamedBufferRangeEXT,3,0,GLbitfield,access,N/A,in,fixed,??
+glMatrixLoadTransposedEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixLoadTransposedEXT,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixLoadTransposedEXT,1,1,"const GLdouble *",m,???,???,???,???
+glMatrixLoadTransposefEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixLoadTransposefEXT,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixLoadTransposefEXT,1,1,"const GLfloat *",m,???,???,???,???
+glMatrixLoaddEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glMatrixLoaddEXT,0,0,GLenum,matrixMode,N/A,in,fixed,??
+glMatrixLoaddEXT,1,1,"const GLdouble *",m,???,???,???,???

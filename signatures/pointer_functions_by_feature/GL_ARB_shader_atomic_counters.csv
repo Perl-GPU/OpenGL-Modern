@@ -1,0 +1,6 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetActiveAtomicCounterBufferiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetActiveAtomicCounterBufferiv,0,0,GLuint,program,N/A,in,fixed,??
+glGetActiveAtomicCounterBufferiv,1,0,GLuint,bufferIndex,N/A,in,fixed,??
+glGetActiveAtomicCounterBufferiv,2,0,GLenum,pname,N/A,in,fixed,??
+glGetActiveAtomicCounterBufferiv,3,1,"GLint *",params,???,???,???,???

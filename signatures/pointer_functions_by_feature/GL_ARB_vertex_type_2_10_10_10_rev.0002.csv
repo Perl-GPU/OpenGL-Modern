@@ -1,0 +1,33 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glTexCoordP4uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoordP4uiv,0,0,GLenum,type,N/A,in,fixed,??
+glTexCoordP4uiv,1,1,"const GLuint *",coords,???,???,???,???
+glVertexAttribP1uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribP1uiv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribP1uiv,1,0,GLenum,type,N/A,in,fixed,??
+glVertexAttribP1uiv,2,0,GLboolean,normalized,N/A,in,fixed,??
+glVertexAttribP1uiv,3,1,"const GLuint *",value,???,???,???,???
+glVertexAttribP2uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribP2uiv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribP2uiv,1,0,GLenum,type,N/A,in,fixed,??
+glVertexAttribP2uiv,2,0,GLboolean,normalized,N/A,in,fixed,??
+glVertexAttribP2uiv,3,1,"const GLuint *",value,???,???,???,???
+glVertexAttribP3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribP3uiv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribP3uiv,1,0,GLenum,type,N/A,in,fixed,??
+glVertexAttribP3uiv,2,0,GLboolean,normalized,N/A,in,fixed,??
+glVertexAttribP3uiv,3,1,"const GLuint *",value,???,???,???,???
+glVertexAttribP4uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribP4uiv,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribP4uiv,1,0,GLenum,type,N/A,in,fixed,??
+glVertexAttribP4uiv,2,0,GLboolean,normalized,N/A,in,fixed,??
+glVertexAttribP4uiv,3,1,"const GLuint *",value,???,???,???,???
+glVertexP2uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexP2uiv,0,0,GLenum,type,N/A,in,fixed,??
+glVertexP2uiv,1,1,"const GLuint *",value,???,???,???,???
+glVertexP3uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexP3uiv,0,0,GLenum,type,N/A,in,fixed,??
+glVertexP3uiv,1,1,"const GLuint *",value,???,???,???,???
+glVertexP4uiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexP4uiv,0,0,GLenum,type,N/A,in,fixed,??
+glVertexP4uiv,1,1,"const GLuint *",value,???,???,???,???

@@ -1,0 +1,68 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glNamedBufferStorage,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedBufferStorage,0,0,GLuint,buffer,N/A,in,fixed,??
+glNamedBufferStorage,1,0,GLsizeiptr,size,N/A,in,fixed,??
+glNamedBufferStorage,2,1,"const void *",data,???,???,???,???
+glNamedBufferStorage,3,0,GLbitfield,flags,N/A,in,fixed,??
+glNamedBufferSubData,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedBufferSubData,0,0,GLuint,buffer,N/A,in,fixed,??
+glNamedBufferSubData,1,0,GLintptr,offset,N/A,in,fixed,??
+glNamedBufferSubData,2,0,GLsizeiptr,size,N/A,in,fixed,??
+glNamedBufferSubData,3,1,"const void *",data,???,???,???,???
+glNamedFramebufferDrawBuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+glNamedFramebufferDrawBuffers,0,0,GLuint,framebuffer,N/A,in,fixed,??
+glNamedFramebufferDrawBuffers,1,0,GLsizei,n,N/A,in,fixed,??
+glNamedFramebufferDrawBuffers,2,1,"const GLenum *",bufs,???,???,???,???
+glTextureParameterIiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureParameterIiv,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureParameterIiv,1,0,GLenum,pname,N/A,in,fixed,??
+glTextureParameterIiv,2,1,"const GLint *",params,???,???,???,???
+glTextureParameterIuiv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureParameterIuiv,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureParameterIuiv,1,0,GLenum,pname,N/A,in,fixed,??
+glTextureParameterIuiv,2,1,"const GLuint *",params,???,???,???,???
+glTextureParameterfv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureParameterfv,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureParameterfv,1,0,GLenum,pname,N/A,in,fixed,??
+glTextureParameterfv,2,1,"const GLfloat *",param,???,???,???,???
+glTextureParameteriv,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureParameteriv,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureParameteriv,1,0,GLenum,pname,N/A,in,fixed,??
+glTextureParameteriv,2,1,"const GLint *",param,???,???,???,???
+glTextureSubImage1D,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureSubImage1D,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureSubImage1D,1,0,GLint,level,N/A,in,fixed,??
+glTextureSubImage1D,2,0,GLint,xoffset,N/A,in,fixed,??
+glTextureSubImage1D,3,0,GLsizei,width,N/A,in,fixed,??
+glTextureSubImage1D,4,0,GLenum,format,N/A,in,fixed,??
+glTextureSubImage1D,5,0,GLenum,type,N/A,in,fixed,??
+glTextureSubImage1D,6,1,"const void *",pixels,???,???,???,???
+glTextureSubImage2D,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureSubImage2D,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureSubImage2D,1,0,GLint,level,N/A,in,fixed,??
+glTextureSubImage2D,2,0,GLint,xoffset,N/A,in,fixed,??
+glTextureSubImage2D,3,0,GLint,yoffset,N/A,in,fixed,??
+glTextureSubImage2D,4,0,GLsizei,width,N/A,in,fixed,??
+glTextureSubImage2D,5,0,GLsizei,height,N/A,in,fixed,??
+glTextureSubImage2D,6,0,GLenum,format,N/A,in,fixed,??
+glTextureSubImage2D,7,0,GLenum,type,N/A,in,fixed,??
+glTextureSubImage2D,8,1,"const void *",pixels,???,???,???,???
+glTextureSubImage3D,-1,0,void,N/A,N/A,out,fixed,N/A
+glTextureSubImage3D,0,0,GLuint,texture,N/A,in,fixed,??
+glTextureSubImage3D,1,0,GLint,level,N/A,in,fixed,??
+glTextureSubImage3D,2,0,GLint,xoffset,N/A,in,fixed,??
+glTextureSubImage3D,3,0,GLint,yoffset,N/A,in,fixed,??
+glTextureSubImage3D,4,0,GLint,zoffset,N/A,in,fixed,??
+glTextureSubImage3D,5,0,GLsizei,width,N/A,in,fixed,??
+glTextureSubImage3D,6,0,GLsizei,height,N/A,in,fixed,??
+glTextureSubImage3D,7,0,GLsizei,depth,N/A,in,fixed,??
+glTextureSubImage3D,8,0,GLenum,format,N/A,in,fixed,??
+glTextureSubImage3D,9,0,GLenum,type,N/A,in,fixed,??
+glTextureSubImage3D,10,1,"const void *",pixels,???,???,???,???
+glVertexArrayVertexBuffers,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexArrayVertexBuffers,0,0,GLuint,vaobj,N/A,in,fixed,??
+glVertexArrayVertexBuffers,1,0,GLuint,first,N/A,in,fixed,??
+glVertexArrayVertexBuffers,2,0,GLsizei,count,N/A,in,fixed,??
+glVertexArrayVertexBuffers,3,1,"const GLuint *",buffers,???,???,???,???
+glVertexArrayVertexBuffers,4,1,"const GLintptr *",offsets,???,???,???,???
+glVertexArrayVertexBuffers,5,1,"const GLsizei *",strides,???,???,???,???

@@ -1,0 +1,8 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glDetailTexFuncSGIS,-1,0,void,N/A,N/A,out,fixed,N/A
+glDetailTexFuncSGIS,0,0,GLenum,target,N/A,in,fixed,??
+glDetailTexFuncSGIS,1,0,GLsizei,n,N/A,in,fixed,??
+glDetailTexFuncSGIS,2,1,"const GLfloat *",points,???,???,???,???
+glGetDetailTexFuncSGIS,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetDetailTexFuncSGIS,0,0,GLenum,target,N/A,in,fixed,??
+glGetDetailTexFuncSGIS,1,1,"GLfloat *",points,???,???,???,???

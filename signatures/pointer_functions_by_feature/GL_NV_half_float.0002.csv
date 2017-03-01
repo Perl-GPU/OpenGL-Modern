@@ -1,0 +1,31 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glTexCoord3hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoord3hvNV,0,1,"const GLhalf *",v,???,???,???,???
+glTexCoord4hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glTexCoord4hvNV,0,1,"const GLhalf *",v,???,???,???,???
+glVertex2hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex2hvNV,0,1,"const GLhalf *",v,???,???,???,???
+glVertex3hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex3hvNV,0,1,"const GLhalf *",v,???,???,???,???
+glVertex4hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertex4hvNV,0,1,"const GLhalf *",v,???,???,???,???
+glVertexAttrib1hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib1hvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib1hvNV,1,1,"const GLhalf *",v,???,???,???,???
+glVertexAttrib2hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib2hvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib2hvNV,1,1,"const GLhalf *",v,???,???,???,???
+glVertexAttrib3hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib3hvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib3hvNV,1,1,"const GLhalf *",v,???,???,???,???
+glVertexAttrib4hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttrib4hvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttrib4hvNV,1,1,"const GLhalf *",v,???,???,???,???
+glVertexAttribs1hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs1hvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs1hvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs1hvNV,2,1,"const GLhalf *",v,???,???,???,???
+glVertexAttribs2hvNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribs2hvNV,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribs2hvNV,1,0,GLsizei,n,N/A,in,fixed,??
+glVertexAttribs2hvNV,2,1,"const GLhalf *",v,???,???,???,???

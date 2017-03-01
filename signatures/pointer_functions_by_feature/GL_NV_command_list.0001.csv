@@ -1,0 +1,30 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCreateCommandListsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateCommandListsNV,0,0,GLsizei,n,N/A,in,fixed,??
+glCreateCommandListsNV,1,1,"GLuint *",lists,???,???,???,???
+glCreateStatesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreateStatesNV,0,0,GLsizei,n,N/A,in,fixed,??
+glCreateStatesNV,1,1,"GLuint *",states,???,???,???,???
+glDeleteCommandListsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteCommandListsNV,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteCommandListsNV,1,1,"const GLuint *",lists,???,???,???,???
+glDeleteStatesNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glDeleteStatesNV,0,0,GLsizei,n,N/A,in,fixed,??
+glDeleteStatesNV,1,1,"const GLuint *",states,???,???,???,???
+glDrawCommandsAddressNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawCommandsAddressNV,0,0,GLenum,primitiveMode,N/A,in,fixed,??
+glDrawCommandsAddressNV,1,1,"const GLuint64 *",indirects,???,???,???,???
+glDrawCommandsAddressNV,2,1,"const GLsizei *",sizes,???,???,???,???
+glDrawCommandsAddressNV,3,0,GLuint,count,N/A,in,fixed,??
+glDrawCommandsNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawCommandsNV,0,0,GLenum,primitiveMode,N/A,in,fixed,??
+glDrawCommandsNV,1,0,GLuint,buffer,N/A,in,fixed,??
+glDrawCommandsNV,2,1,"const GLintptr *",indirects,???,???,???,???
+glDrawCommandsNV,3,1,"const GLsizei *",sizes,???,???,???,???
+glDrawCommandsNV,4,0,GLuint,count,N/A,in,fixed,??
+glDrawCommandsStatesAddressNV,-1,0,void,N/A,N/A,out,fixed,N/A
+glDrawCommandsStatesAddressNV,0,1,"const GLuint64 *",indirects,???,???,???,???
+glDrawCommandsStatesAddressNV,1,1,"const GLsizei *",sizes,???,???,???,???
+glDrawCommandsStatesAddressNV,2,1,"const GLuint *",states,???,???,???,???
+glDrawCommandsStatesAddressNV,3,1,"const GLuint *",fbos,???,???,???,???
+glDrawCommandsStatesAddressNV,4,0,GLuint,count,N/A,in,fixed,??

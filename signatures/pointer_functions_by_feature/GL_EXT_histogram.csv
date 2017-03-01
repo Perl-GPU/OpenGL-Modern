@@ -1,0 +1,29 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetHistogramEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetHistogramEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetHistogramEXT,1,0,GLboolean,reset,N/A,in,fixed,??
+glGetHistogramEXT,2,0,GLenum,format,N/A,in,fixed,??
+glGetHistogramEXT,3,0,GLenum,type,N/A,in,fixed,??
+glGetHistogramEXT,4,1,"void *",values,???,???,???,???
+glGetHistogramParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetHistogramParameterfvEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetHistogramParameterfvEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetHistogramParameterfvEXT,2,1,"GLfloat *",params,???,???,???,???
+glGetHistogramParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetHistogramParameterivEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetHistogramParameterivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetHistogramParameterivEXT,2,1,"GLint *",params,???,???,???,???
+glGetMinmaxEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMinmaxEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetMinmaxEXT,1,0,GLboolean,reset,N/A,in,fixed,??
+glGetMinmaxEXT,2,0,GLenum,format,N/A,in,fixed,??
+glGetMinmaxEXT,3,0,GLenum,type,N/A,in,fixed,??
+glGetMinmaxEXT,4,1,"void *",values,???,???,???,???
+glGetMinmaxParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMinmaxParameterfvEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetMinmaxParameterfvEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetMinmaxParameterfvEXT,2,1,"GLfloat *",params,???,???,???,???
+glGetMinmaxParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetMinmaxParameterivEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetMinmaxParameterivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetMinmaxParameterivEXT,2,1,"GLint *",params,???,???,???,???

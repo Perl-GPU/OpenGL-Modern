@@ -1,0 +1,62 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCompressedTexImage1DARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexImage1DARB,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexImage1DARB,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexImage1DARB,2,0,GLenum,internalformat,N/A,in,fixed,??
+glCompressedTexImage1DARB,3,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexImage1DARB,4,0,GLint,border,N/A,in,fixed,??
+glCompressedTexImage1DARB,5,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexImage1DARB,6,1,"const void *",data,???,???,???,???
+glCompressedTexImage2DARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexImage2DARB,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexImage2DARB,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexImage2DARB,2,0,GLenum,internalformat,N/A,in,fixed,??
+glCompressedTexImage2DARB,3,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexImage2DARB,4,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTexImage2DARB,5,0,GLint,border,N/A,in,fixed,??
+glCompressedTexImage2DARB,6,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexImage2DARB,7,1,"const void *",data,???,???,???,???
+glCompressedTexImage3DARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexImage3DARB,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexImage3DARB,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexImage3DARB,2,0,GLenum,internalformat,N/A,in,fixed,??
+glCompressedTexImage3DARB,3,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexImage3DARB,4,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTexImage3DARB,5,0,GLsizei,depth,N/A,in,fixed,??
+glCompressedTexImage3DARB,6,0,GLint,border,N/A,in,fixed,??
+glCompressedTexImage3DARB,7,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexImage3DARB,8,1,"const void *",data,???,???,???,???
+glCompressedTexSubImage1DARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexSubImage1DARB,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexSubImage1DARB,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexSubImage1DARB,2,0,GLint,xoffset,N/A,in,fixed,??
+glCompressedTexSubImage1DARB,3,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexSubImage1DARB,4,0,GLenum,format,N/A,in,fixed,??
+glCompressedTexSubImage1DARB,5,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexSubImage1DARB,6,1,"const void *",data,???,???,???,???
+glCompressedTexSubImage2DARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexSubImage2DARB,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexSubImage2DARB,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexSubImage2DARB,2,0,GLint,xoffset,N/A,in,fixed,??
+glCompressedTexSubImage2DARB,3,0,GLint,yoffset,N/A,in,fixed,??
+glCompressedTexSubImage2DARB,4,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexSubImage2DARB,5,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTexSubImage2DARB,6,0,GLenum,format,N/A,in,fixed,??
+glCompressedTexSubImage2DARB,7,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexSubImage2DARB,8,1,"const void *",data,???,???,???,???
+glCompressedTexSubImage3DARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glCompressedTexSubImage3DARB,0,0,GLenum,target,N/A,in,fixed,??
+glCompressedTexSubImage3DARB,1,0,GLint,level,N/A,in,fixed,??
+glCompressedTexSubImage3DARB,2,0,GLint,xoffset,N/A,in,fixed,??
+glCompressedTexSubImage3DARB,3,0,GLint,yoffset,N/A,in,fixed,??
+glCompressedTexSubImage3DARB,4,0,GLint,zoffset,N/A,in,fixed,??
+glCompressedTexSubImage3DARB,5,0,GLsizei,width,N/A,in,fixed,??
+glCompressedTexSubImage3DARB,6,0,GLsizei,height,N/A,in,fixed,??
+glCompressedTexSubImage3DARB,7,0,GLsizei,depth,N/A,in,fixed,??
+glCompressedTexSubImage3DARB,8,0,GLenum,format,N/A,in,fixed,??
+glCompressedTexSubImage3DARB,9,0,GLsizei,imageSize,N/A,in,fixed,??
+glCompressedTexSubImage3DARB,10,1,"const void *",data,???,???,???,???
+glGetCompressedTexImageARB,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetCompressedTexImageARB,0,0,GLenum,target,N/A,in,fixed,??
+glGetCompressedTexImageARB,1,0,GLint,lod,N/A,in,fixed,??
+glGetCompressedTexImageARB,2,1,"void *",img,???,???,???,???

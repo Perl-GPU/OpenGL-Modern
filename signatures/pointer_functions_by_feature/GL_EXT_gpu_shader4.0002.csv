@@ -1,0 +1,37 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glVertexAttribI2ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI2ivEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI2ivEXT,1,1,"const GLint *",v,???,???,???,???
+glVertexAttribI2uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI2uivEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI2uivEXT,1,1,"const GLuint *",v,???,???,???,???
+glVertexAttribI3ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI3ivEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI3ivEXT,1,1,"const GLint *",v,???,???,???,???
+glVertexAttribI3uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI3uivEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI3uivEXT,1,1,"const GLuint *",v,???,???,???,???
+glVertexAttribI4bvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI4bvEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI4bvEXT,1,1,"const GLbyte *",v,???,???,???,???
+glVertexAttribI4ivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI4ivEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI4ivEXT,1,1,"const GLint *",v,???,???,???,???
+glVertexAttribI4svEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI4svEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI4svEXT,1,1,"const GLshort *",v,???,???,???,???
+glVertexAttribI4ubvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI4ubvEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI4ubvEXT,1,1,"const GLubyte *",v,???,???,???,???
+glVertexAttribI4uivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI4uivEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI4uivEXT,1,1,"const GLuint *",v,???,???,???,???
+glVertexAttribI4usvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribI4usvEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribI4usvEXT,1,1,"const GLushort *",v,???,???,???,???
+glVertexAttribIPointerEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glVertexAttribIPointerEXT,0,0,GLuint,index,N/A,in,fixed,??
+glVertexAttribIPointerEXT,1,0,GLint,size,N/A,in,fixed,??
+glVertexAttribIPointerEXT,2,0,GLenum,type,N/A,in,fixed,??
+glVertexAttribIPointerEXT,3,0,GLsizei,stride,N/A,in,fixed,??
+glVertexAttribIPointerEXT,4,1,"const void *",pointer,???,???,???,???

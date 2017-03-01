@@ -1,0 +1,17 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glGetPixelTransformParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPixelTransformParameterfvEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetPixelTransformParameterfvEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetPixelTransformParameterfvEXT,2,1,"const GLfloat *",params,???,???,???,???
+glGetPixelTransformParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPixelTransformParameterivEXT,0,0,GLenum,target,N/A,in,fixed,??
+glGetPixelTransformParameterivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glGetPixelTransformParameterivEXT,2,1,"const GLint *",params,???,???,???,???
+glPixelTransformParameterfvEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glPixelTransformParameterfvEXT,0,0,GLenum,target,N/A,in,fixed,??
+glPixelTransformParameterfvEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glPixelTransformParameterfvEXT,2,1,"const GLfloat *",params,???,???,???,???
+glPixelTransformParameterivEXT,-1,0,void,N/A,N/A,out,fixed,N/A
+glPixelTransformParameterivEXT,0,0,GLenum,target,N/A,in,fixed,??
+glPixelTransformParameterivEXT,1,0,GLenum,pname,N/A,in,fixed,??
+glPixelTransformParameterivEXT,2,1,"const GLint *",params,???,???,???,???

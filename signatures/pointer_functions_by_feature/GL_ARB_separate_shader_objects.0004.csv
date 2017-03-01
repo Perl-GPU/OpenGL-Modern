@@ -1,0 +1,49 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glProgramUniformMatrix3x4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix3x4dv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix3x4dv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix3x4dv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix3x4dv,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix3x4dv,4,1,"const GLdouble *",value,???,???,???,???
+glProgramUniformMatrix3x4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix3x4fv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix3x4fv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix3x4fv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix3x4fv,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix3x4fv,4,1,"const GLfloat *",value,???,???,???,???
+glProgramUniformMatrix4dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix4dv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix4dv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix4dv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix4dv,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix4dv,4,1,"const GLdouble *",value,???,???,???,???
+glProgramUniformMatrix4fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix4fv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix4fv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix4fv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix4fv,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix4fv,4,1,"const GLfloat *",value,???,???,???,???
+glProgramUniformMatrix4x2dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix4x2dv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix4x2dv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix4x2dv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix4x2dv,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix4x2dv,4,1,"const GLdouble *",value,???,???,???,???
+glProgramUniformMatrix4x2fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix4x2fv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix4x2fv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix4x2fv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix4x2fv,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix4x2fv,4,1,"const GLfloat *",value,???,???,???,???
+glProgramUniformMatrix4x3dv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix4x3dv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix4x3dv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix4x3dv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix4x3dv,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix4x3dv,4,1,"const GLdouble *",value,???,???,???,???
+glProgramUniformMatrix4x3fv,-1,0,void,N/A,N/A,out,fixed,N/A
+glProgramUniformMatrix4x3fv,0,0,GLuint,program,N/A,in,fixed,??
+glProgramUniformMatrix4x3fv,1,0,GLint,location,N/A,in,fixed,??
+glProgramUniformMatrix4x3fv,2,0,GLsizei,count,N/A,in,fixed,??
+glProgramUniformMatrix4x3fv,3,0,GLboolean,transpose,N/A,in,fixed,??
+glProgramUniformMatrix4x3fv,4,1,"const GLfloat *",value,???,???,???,???

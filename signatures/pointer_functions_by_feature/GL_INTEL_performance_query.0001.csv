@@ -1,0 +1,27 @@
+func_name,arg_pos,pointer_depth,type,arg_name,array_size,inout,width,notes
+glCreatePerfQueryINTEL,-1,0,void,N/A,N/A,out,fixed,N/A
+glCreatePerfQueryINTEL,0,0,GLuint,queryId,N/A,in,fixed,??
+glCreatePerfQueryINTEL,1,1,"GLuint *",queryHandle,???,???,???,???
+glGetFirstPerfQueryIdINTEL,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetFirstPerfQueryIdINTEL,0,1,"GLuint *",queryId,???,???,???,???
+glGetNextPerfQueryIdINTEL,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetNextPerfQueryIdINTEL,0,0,GLuint,queryId,N/A,in,fixed,??
+glGetNextPerfQueryIdINTEL,1,1,"GLuint *",nextQueryId,???,???,???,???
+glGetPerfCounterInfoINTEL,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPerfCounterInfoINTEL,0,0,GLuint,queryId,N/A,in,fixed,??
+glGetPerfCounterInfoINTEL,1,0,GLuint,counterId,N/A,in,fixed,??
+glGetPerfCounterInfoINTEL,2,0,GLuint,counterNameLength,N/A,in,fixed,??
+glGetPerfCounterInfoINTEL,3,1,"GLchar *",counterName,???,???,???,???
+glGetPerfCounterInfoINTEL,4,0,GLuint,counterDescLength,N/A,in,fixed,??
+glGetPerfCounterInfoINTEL,5,1,"GLchar *",counterDesc,???,???,???,???
+glGetPerfCounterInfoINTEL,6,1,"GLuint *",counterOffset,???,???,???,???
+glGetPerfCounterInfoINTEL,7,1,"GLuint *",counterDataSize,???,???,???,???
+glGetPerfCounterInfoINTEL,8,1,"GLuint *",counterTypeEnum,???,???,???,???
+glGetPerfCounterInfoINTEL,9,1,"GLuint *",counterDataTypeEnum,???,???,???,???
+glGetPerfCounterInfoINTEL,10,1,"GLuint64 *",rawCounterMaxValue,???,???,???,???
+glGetPerfQueryDataINTEL,-1,0,void,N/A,N/A,out,fixed,N/A
+glGetPerfQueryDataINTEL,0,0,GLuint,queryHandle,N/A,in,fixed,??
+glGetPerfQueryDataINTEL,1,0,GLuint,flags,N/A,in,fixed,??
+glGetPerfQueryDataINTEL,2,0,GLsizei,dataSize,N/A,in,fixed,??
+glGetPerfQueryDataINTEL,3,1,"void *",data,???,???,???,???
+glGetPerfQueryDataINTEL,4,1,"GLuint *",bytesWritten,???,???,???,???
