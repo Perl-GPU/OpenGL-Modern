@@ -106,6 +106,20 @@ Much of the functionality that used to be accessed via the
 extension mechanism in C<OpenGL> now is standardized and
 in the OpenGL Core APIs.
 
+=head2 OpenGL::Image
+
+The module OpenGL::Image was written for the original OpenGL.pm, however it can
+be made to work seamlessly with OpenGL::Modern. Where-as you previously loaded
+it like this:
+
+    use OpenGL::Image;             # loads OpenGL.pm on its own
+
+You can prepend two use lines, and get this:
+
+    use OpenGL::Array;             # not part of OpenGL::Modern
+    use OpenGL::Modern::ImageHack; # sets up a fake OpenGL namespace
+    use OpenGL::Image;             # now safe to do, won't load OpenGL.pm
+
 =head2 EXPORT
 
 None by default.

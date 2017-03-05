@@ -1,4 +1,5 @@
 requires 'Carp' => 0;
+requires 'Import::Into' => 0;
 
 on configure => sub {
     requires 'Capture::Tiny'                 => 0;
