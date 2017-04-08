@@ -19,7 +19,7 @@ SKIP: {
     pass "didn't crash yet";
 
     my ( $out, $err ) = capture {
-        eval { $@ = undef; glpCheckErrors }
+        eval { $@ = undef; glpCheckErrors };
     };
     like $err, qr/OpenGL error: 1281/,          "got expected errors";
     like $@,   qr/1 OpenGL errors encountered/, "can check for errors manually";
@@ -29,7 +29,7 @@ SKIP: {
 
     glpSetAutoCheckErrors 1;
     ( $out, $err ) = capture {
-        eval { $@ = undef; glClear GL_COLOR }
+        eval { $@ = undef; glClear GL_COLOR };
     };
     like $err, qr/OpenGL error: 1281/,          "got expected errors";
     like $@,   qr/1 OpenGL errors encountered/, "errors cause crashes now";
@@ -39,7 +39,7 @@ SKIP: {
     pass "crashes are gone again";
 
     ( $out, $err ) = capture {
-        eval { $@ = undef; glpCheckErrors }
+        eval { $@ = undef; glpCheckErrors };
     };
     like $err, qr/OpenGL error: 1281/,          "got expected errors";
     like $@,   qr/1 OpenGL errors encountered/, "but we can still check for errors manually";
