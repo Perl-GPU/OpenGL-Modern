@@ -104,13 +104,19 @@ CODE:
 OUTPUT:
     RETVAL
 
-void
-glpSetAutoCheckErrors(state)
-    int state;
+int
+glpSetAutoCheckErrors(...)
 CODE:
-    if( state != 0 && state != 1 )
-      croak( "Usage: glpSetAutoCheckErrors(1|0)\n" );
-    _auto_check_errors = state;
+    int state;
+    if (items == 1) {
+        state = (int)SvIV(ST(0));
+        if (state != 0 && state != 1 )
+            croak( "Usage: glpSetAutoCheckErrors(1|0)\n" );
+        _auto_check_errors = state;
+    }
+    RETVAL = _auto_check_errors;
+OUTPUT:
+    RETVAL
 
 void
 glpCheckErrors()
