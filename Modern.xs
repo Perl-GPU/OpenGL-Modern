@@ -11,6 +11,7 @@
 #include <src/glew.c>
 #include <src/glew-context.c>
 
+#include "gl_errors.h"
 #include "const-c.inc"
 
 static int _done_glewInit = 0;
@@ -114,14 +115,15 @@ CODE:
 void
 glpCheckErrors()
 CODE:
-    GLenum err;
+    int err = GL_NO_ERROR;
     int error_count = 0;
     while ( ( err = glGetError() ) != GL_NO_ERROR ) {
-        warn( "OpenGL error: %d", err );
+        /* warn( "OpenGL error: %d", err ); */
+        warn( "glpCheckErrors: OpenGL error: %d %s", err, gl_error_string(err) );
 	error_count++;
     }
     if( error_count )
-      croak( "%d OpenGL errors encountered.", error_count );
+      croak( "glpCheckErrors: %d OpenGL errors encountered.", error_count );
 
 # This isn't a bad idea, but I postpone this API and the corresponding
 # typemap hackery until later

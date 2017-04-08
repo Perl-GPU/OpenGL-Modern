@@ -305,16 +305,17 @@ XS
             $decl .= "     $xs_args;\n";
         }
 
-        my $error_check = $name eq "glGetError" ? "" : <<XS;
+        my $error_check = $name eq "glGetError" ? "" : <<"XS";
     if ( _auto_check_errors ) {
-        GLenum err;
+        int err = GL_NO_ERROR;
         int error_count = 0;
         while ( ( err = glGetError() ) != GL_NO_ERROR ) {
-            warn( "OpenGL error: %d", err );
+            /* warn( "OpenGL error: %d", err ); */
+            warn( "$name: OpenGL error: %d %s", err, gl_error_string(err) );
             error_count++;
         }
         if( error_count )
-          croak( "%d OpenGL errors encountered.", error_count );
+          croak( "$name: %d OpenGL errors encountered.", error_count );
     }
 XS
         chomp $error_check;    # trailing newline needs to be done conditionally
