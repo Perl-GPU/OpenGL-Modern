@@ -149,6 +149,7 @@ $VERSION = '0.01_02';
   pack_GLint
   pack_GLstrings
   pack_ptr
+  iv_ptr
   xs_buffer
 
   glGetShaderInfoLog_p
@@ -217,6 +218,11 @@ sub pack_GLstrings {
 sub pack_ptr {
     $_[0] = "\0" x $_[1];
     return pack 'P', $_[0];
+}
+
+sub iv_ptr {
+    $_[0] = "\0" x $_[1];
+    return unpack( $PACK_TYPE, pack('P', $_[0]));
 }
 
 # No parameter declaration because we don't want copies
