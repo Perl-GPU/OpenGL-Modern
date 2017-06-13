@@ -241,8 +241,8 @@ sub get_info_log_p {
     return substr $buffer, 0, $len;
 }
 
-sub glGetShaderInfoLog_p  { get_info_log_p \&glGetShaderInfoLog,  @_ }
-sub glGetProgramInfoLog_p { get_info_log_p \&glGetProgramInfoLog, @_ }
+sub glGetShaderInfoLog_p  { get_info_log_p \&glGetShaderInfoLog_c,  @_ }
+sub glGetProgramInfoLog_p { get_info_log_p \&glGetProgramInfoLog_c, @_ }
 
 sub glGetVersion_p {
 
