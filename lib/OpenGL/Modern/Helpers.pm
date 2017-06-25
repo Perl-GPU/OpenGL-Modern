@@ -222,7 +222,7 @@ sub pack_ptr {
 
 sub iv_ptr {
     $_[0] = "\0" x $_[1] if $_[1];
-    return unpack( $PACK_TYPE, pack('P', $_[0]));
+    return unpack( $PACK_TYPE, pack( 'P', $_[0] ) );
 }
 
 # No parameter declaration because we don't want copies
