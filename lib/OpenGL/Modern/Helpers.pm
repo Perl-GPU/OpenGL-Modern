@@ -314,6 +314,14 @@ sub glGetIntegerv_p {
 }
 
 sub glBufferData_p {
+    my $usage = pop;
+    my ($target, $size, @data) = @_;
+    my $pdata = pack "f*", @data;
+
+    glBufferData_c $target, $size, unpack( $PACK_TYPE, pack( 'p', $pdata ) ), $usage;
+}
+
+sub glBufferData_o {
     my ( $target, $oga, $usage ) = @_;
     glBufferData_c $target, $oga->length, $oga->ptr, $usage;
 }
