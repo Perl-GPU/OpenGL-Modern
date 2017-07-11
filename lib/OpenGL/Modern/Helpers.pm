@@ -53,7 +53,7 @@ use from perl.
 OpenGL::Modern is an XS module providings bindings to the
 C OpenGL library for graphics.  As such, it needs to handle
 conversion of input arguements from perl into the required
-datatypes for the C OpenGL API, it then calls the OpenGL\
+datatypes for the C OpenGL API, it then calls the OpenGL
 routine, and then converts the return value (if any) from
 the C API datatype into an appropriate Perl type.
 
@@ -250,8 +250,10 @@ sub get_info_log_p {
 sub glGetShaderInfoLog_p  { get_info_log_p \&glGetShaderInfoLog_c,  @_ }
 sub glGetProgramInfoLog_p { get_info_log_p \&glGetProgramInfoLog_c, @_ }
 
+# This should probably be named glpGetVersion since there is actually
+# no glGetVersion() in the OpenGL API.
+#
 sub glGetVersion_p {
-
     # const GLubyte * GLAPIENTRY glGetString (GLenum name);
     my $glVersion = glGetString( GL_VERSION );
     ( $glVersion ) = ( $glVersion =~ m!^(\d+\.\d+)!g );
@@ -292,9 +294,9 @@ sub get_iv_p {
     return wantarray ? @params : $params[0];
 }
 
-sub glGetProgramiv_p { get_iv_p \&glGetProgramiv_c, @_ }
+sub glGetProgramiv_p { get_iv_p \&glGetProgramiv_c, @_ }  # TODO: get rid of $count
 
-sub glGetShaderiv_p { get_iv_p \&glGetShaderiv_c, @_ }
+sub glGetShaderiv_p { get_iv_p \&glGetShaderiv_c, @_ }    # TODO: get rid of $count
 
 sub glShaderSource_p {
     my ( $shader, @sources ) = @_;
@@ -305,7 +307,7 @@ sub glShaderSource_p {
 }
 
 sub glGetIntegerv_p {
-    my ( $pname, $count ) = @_;
+    my ( $pname, $count ) = @_;  # TODO: get rid of $count
     $count ||= 1;
     xs_buffer my $data, 4 * $count;
     glGetIntegerv_c $pname, unpack( $PACK_TYPE, pack( 'p', $data ) );
@@ -313,7 +315,7 @@ sub glGetIntegerv_p {
     return wantarray ? @data : $data[0];
 }
 
-sub glBufferData_p {
+sub glBufferData_p {  # NOTE: this might be better named glpBufferDataf_p
     my $usage = pop;
     my ($target, $size, @data) = @_;
     my $pdata = pack "f*", @data;
@@ -321,17 +323,17 @@ sub glBufferData_p {
     glBufferData_c $target, $size, unpack( $PACK_TYPE, pack( 'p', $pdata ) ), $usage;
 }
 
-sub glBufferData_o {
+sub glBufferData_o {  # NOTE: this was glBufferData_p in OpenGL
     my ( $target, $oga, $usage ) = @_;
     glBufferData_c $target, $oga->length, $oga->ptr, $usage;
 }
 
-sub glUniform2f_p {
+sub glUniform2fv_p {  # NOTE: this name is more consistent with OpenGL API
     my ( $uniform, $v0, $v1 ) = @_;
     glUniform2f $uniform, $v0, $v1;
 }
 
-sub glUniform4f_p {
+sub glUniform4fv_p {  # NOTE: this name is more consistent with OpenGL API
     my ( $uniform, $v0, $v1, $v2, $v3 ) = @_;
     glUniform4f $uniform, $v0, $v1, $v2, $v3;
 }
