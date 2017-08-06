@@ -1,6 +1,10 @@
 package    # not an official package
   OpenGL::Modern::Helpers;
 
+# Update version number with each change
+our $VERSION = '0.03_01';
+$VERSION = eval $VERSION;
+
 use strict;
 use Exporter 'import';
 use Carp qw(croak);
