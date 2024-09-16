@@ -126,7 +126,11 @@ You can prepend two use lines, and get this:
 
 None by default.
 
+=head1 DEBUGGING
 
+In development, you can call C<glpSetAutoCheckErrors(1)> which will have
+each OpenGL function automatically call C<glGetErrors()> and report any
+found. This is off by default for performance reasons.
 
 =head1 SEE ALSO
 
