@@ -108,6 +108,6 @@ sub WriteMakefile1 {    #Written by Alexandr Ciornii, version 0.21. Added by eum
     delete $params{BINARY_LOCATION}    if $] < 5.005;
 
     die "$@\nOS unsupported\n" if not eval { assert_lib %params; 1 };
-
+    $params{LIBS} = ":nosearch $params{LIBS}";
     WriteMakefile( %params );
 }
