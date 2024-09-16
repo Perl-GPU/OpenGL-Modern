@@ -53,7 +53,7 @@ WriteMakefile1(
     LIBS             => $libs,           # e.g., '-lm'
     DEFINE           => $define,
     INC              => $include,
-    XSPROTOARG       => '-prototypes',
+    XSPROTOARG       => '-noprototypes',
     depend           => {
         'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
     },
