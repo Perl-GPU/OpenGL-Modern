@@ -63,8 +63,6 @@ This module requires these other modules and libraries:
     ExtUtils::Constant            => 0,
     ExtUtils::MakeMaker           => 6.17,
     ExtUtils::MakeMaker::CPANfile => 0,
-    IO::All                       => 0,
-    Test::InDistDir               => 0,
     Test::More                    => 0.88,
 
 not *required* but needed for currently unimplemented features:

@@ -13,6 +13,4 @@ on configure => sub {
 
 on test => sub {
     requires 'Test::More'      => '0.88';
-    requires 'IO::All'         => '0.86';
-    requires 'Test::InDistDir' => 0;
 };
