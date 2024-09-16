@@ -323,8 +323,12 @@ XS
         my $res = $decl . <<XS;
 CODE:
     if ( ! _done_glewInit ) {
+        GLenum err;
         glewExperimental = GL_TRUE;
-        glewInit() || _done_glewInit++;
+        err = glewInit();
+        if (GLEW_OK != err)
+          croak("Error: %s", glewGetErrorString(err));
+        _done_glewInit++;
     }
 $error_check
 XS
