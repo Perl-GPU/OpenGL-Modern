@@ -40,10 +40,10 @@ WriteMakefile1(
     META_MERGE    => {
         "meta-spec" => { version => 2 },
         resources   => {
-            bugtracker  => {web=>'https://github.com/PDLPorters/pdl/issues'},
+            bugtracker  => {web=>'https://github.com/Perl-GPU/OpenGL-Modern/issues'},
             repository => {
-                web  => 'https://github.com/devel-chm/OpenGL-Modern',
-                url  => 'https://github.com/devel-chm/OpenGL-Modern.git',
+                web  => 'https://github.com/Perl-GPU/OpenGL-Modern',
+                url  => 'https://github.com/Perl-GPU/OpenGL-Modern.git',
                 type => 'git',
             },
             x_IRC => 'irc://irc.perl.org/#pogl',
