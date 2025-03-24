@@ -12,12 +12,12 @@ use Devel::CheckLib 'assert_lib';
 
 my $include = "-I. -Iinclude -Isrc";
 my $libs;
-my $define;
+my $define = "-DGLEW_NO_GLU";
 my $DYNS;
 
 if ( os_is( 'MSWin32' ) ) {
     $libs   = '-lopengl32 -lgdi32 -lmsimg32';
-    $define = "-D_WIN32",                       # XXX Platform specific
+    $define .= " -D_WIN32",
 }
 elsif ( os_is( 'Cygwin' ) ) {
     $libs = '-lGL -lX11';
