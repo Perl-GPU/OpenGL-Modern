@@ -56,7 +56,7 @@ use from perl.
 
 OpenGL::Modern is an XS module providings bindings to the
 C OpenGL library for graphics.  As such, it needs to handle
-conversion of input arguements from perl into the required
+conversion of input arguments from perl into the required
 datatypes for the C OpenGL API, it then calls the OpenGL
 routine, and then converts the return value (if any) from
 the C API datatype into an appropriate Perl type.
