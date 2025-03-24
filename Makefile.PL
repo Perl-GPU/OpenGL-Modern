@@ -57,6 +57,7 @@ WriteMakefile1(
     depend           => {
         'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
     },
+    clean => { FILES => 'auto-xs.inc const-c.inc const-xs.inc' },
     $DYNS ? ( dynamic_lib => $DYNS ) : (),
 );
 
