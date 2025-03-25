@@ -305,53 +305,26 @@ XS
             $decl .= "     $xs_args;\n";
         }
 
-        my $error_check = $name eq "glGetError" ? "" : <<"XS";
-    if ( _auto_check_errors ) {
-        int err = GL_NO_ERROR;
-        int error_count = 0;
-        while ( ( err = glGetError() ) != GL_NO_ERROR ) {
-            /* warn( "OpenGL error: %d", err ); */
-            warn( "$name: OpenGL error: %d %s", err, gl_error_string(err) );
-            error_count++;
-        }
-        if( error_count )
-          croak( "$name: %d OpenGL errors encountered.", error_count );
-    }
-XS
-        chomp $error_check;    # trailing newline needs to be done conditionally
+        my $error_check = $name eq "glGetError" ? "" : "OGLM_CHECK_ERR($name)";
 
         my $res = $decl . <<XS;
 CODE:
-    if ( ! _done_glewInit ) {
-        GLenum err;
-        glewExperimental = GL_TRUE;
-        err = glewInit();
-        if (GLEW_OK != err)
-          croak("Error: %s", glewGetErrorString(err));
-        _done_glewInit++;
-    }
-$error_check
+    OGLM_GLEWINIT@{[$error_check && "\n    $error_check"]}
 XS
 
         if ( $item->{glewtype} eq 'fun' and $glewImpl ) {
-            $res .= <<XS;
-    if ( ! $glewImpl ) {
-        croak("$name not available on this machine");
-    };
-XS
+            $res .= "    OGLM_AVAIL_CHECK($glewImpl, $name)\n";
         }
-
-        $error_check = "\n$error_check" if $error_check;    # otherwise glGetError gets a stray newline
 
         if ( $no_return_value ) {
             $res .= <<XS;
-    $name($args);$error_check
+    $name($args);@{[$error_check && "\n    $error_check"]}
 XS
         }
         else {
             my $arg_list = $item->{glewtype} eq 'var' ? "" : "($args)";
             $res .= <<XS;
-    RETVAL = $name$arg_list;$error_check
+    RETVAL = $name$arg_list;@{[$error_check && "\n    $error_check"]}
 OUTPUT:
     RETVAL
 XS
