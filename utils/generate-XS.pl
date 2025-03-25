@@ -80,6 +80,7 @@ my @known_type = sort { $b cmp $a } qw(
   GLubyte
   GLushort
   GLvdpauSurfaceNV
+  GLeglClientBufferEXT
   GLvoid
   void
 
@@ -277,8 +278,8 @@ sub generate_glew_xs {
 
         # Rewrite const GLwhatever foo[];
         # into    const GLwhatever* foo;
-        1 while $xs_args =~ s!^\s*const (\w+)\s+(\w+)\[\d*\](;?)\r?$!     const $1 * $2$3!m;
-        1 while $xs_args =~ s!^\s*(\w+)\s+(\w+)\[\d*\](;?)\r?$!     $1 * $2$3!m;
+        1 while $xs_args =~ s!^\s*const (\w+)\s+(\**)(\w+)\[\d*\](;?)\r?$!     const $1 * $2$3$4!m;
+        1 while $xs_args =~ s!^\s*(\w+)\s+(\**)(\w+)\[\d*\](;?)\r?$!     $1 * $2$3$4!m;
 
         # Meh. We'll need a "proper" C type parser here and hope that we don't
         # incur any macros
@@ -367,7 +368,7 @@ if ( !@ARGV ) {
     $Data::Dumper::Sortkeys = 1;
     my $gltags = Dumper \%glGroups;
     $gltags =~ s!\$VAR1 = \{!!;
-    $gltags =~ s!\s+};$!!;
+    $gltags =~ s!\s+\};$!!;
 
     my $new = <<"END";
 package OpenGL::Modern::NameLists::Modern;

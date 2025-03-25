@@ -1,3 +1,7 @@
+- document glpSetAutoCheckErrors (#44)
+- croak if auto-glewInit fails (#43 #36)
+- update to GLEW 2.1.0 which captures OpenGL 4.6
+
 0.04     2017-08-06 12:06:13-04:00
 - Add module to allow OpenGL::Image to work with OpenGL::Modern
 - Add error checking and glpSetAutoCheckErrors to control

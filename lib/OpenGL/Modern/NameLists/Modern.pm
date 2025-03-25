@@ -10,22 +10,27 @@ sub gl_functions {
       glpCheckErrors
       glpSetAutoCheckErrors
       glAccum
+      glAcquireKeyedMutexWin32EXT
       glActiveProgramEXT
       glActiveShaderProgram
       glActiveStencilFaceEXT
       glActiveTexture
       glActiveTextureARB
       glActiveVaryingNV_c
+      glAddressSpace
       glAddSwapHintRectWIN
+      glAllocMPEGPredictorsSGIX_c
       glAlphaFragmentOp1ATI
       glAlphaFragmentOp2ATI
       glAlphaFragmentOp3ATI
       glAlphaFunc
+      glAlphaFuncQCOM
       glAlphaFuncx
       glApplyTextureEXT
       glAreProgramsResidentNV_c
       glAreTexturesResident_c
       glAreTexturesResidentEXT_c
+      glAreVertexArraysResidentSGIX_c
       glArrayElement
       glArrayElementEXT
       glArrayObjectATI
@@ -50,6 +55,7 @@ sub gl_functions {
       glBeginTransformFeedbackNV
       glBeginVertexShaderEXT
       glBeginVideoCaptureNV
+      glBindArraySetEXT_c
       glBindAttribLocation_c
       glBindAttribLocationARB_c
       glBindBuffer
@@ -67,6 +73,7 @@ sub gl_functions {
       glBindFragDataLocation_c
       glBindFragDataLocationEXT_c
       glBindFragDataLocationIndexed_c
+      glBindFragDataLocationIndexedEXT_c
       glBindFragmentShaderATI
       glBindFramebuffer
       glBindFramebufferEXT
@@ -94,6 +101,7 @@ sub gl_functions {
       glBindTransformFeedbackNV
       glBindVertexArray
       glBindVertexArrayAPPLE
+      glBindVertexArraySGIX
       glBindVertexBuffer
       glBindVertexBuffers_c
       glBindVertexShaderEXT
@@ -109,25 +117,30 @@ sub gl_functions {
       glBlendEquationEXT
       glBlendEquationi
       glBlendEquationiARB
+      glBlendEquationiEXT
       glBlendEquationIndexedAMD
       glBlendEquationSeparate
       glBlendEquationSeparateEXT
       glBlendEquationSeparatei
       glBlendEquationSeparateiARB
+      glBlendEquationSeparateiEXT
       glBlendEquationSeparateIndexedAMD
       glBlendFunc
       glBlendFunci
       glBlendFunciARB
+      glBlendFunciEXT
       glBlendFuncIndexedAMD
       glBlendFuncSeparate
       glBlendFuncSeparateEXT
       glBlendFuncSeparatei
       glBlendFuncSeparateiARB
+      glBlendFuncSeparateiEXT
       glBlendFuncSeparateIndexedAMD
       glBlendParameteriNV
       glBlitFramebuffer
       glBlitFramebufferANGLE
       glBlitFramebufferEXT
+      glBlitFramebufferNV
       glBlitNamedFramebuffer
       glBufferAddressRangeNV
       glBufferData_c
@@ -136,6 +149,9 @@ sub gl_functions {
       glBufferParameteriAPPLE
       glBufferRegionEnabled
       glBufferStorage_c
+      glBufferStorageEXT_c
+      glBufferStorageExternalEXT
+      glBufferStorageMemEXT
       glBufferSubData_c
       glBufferSubDataARB_c
       glCallCommandListNV
@@ -162,7 +178,6 @@ sub gl_functions {
       glClearDepth
       glClearDepthdNV
       glClearDepthf
-      glClearDepthfOES
       glClearDepthx
       glClearIndex
       glClearNamedBufferData_c
@@ -173,18 +188,21 @@ sub gl_functions {
       glClearNamedFramebufferfv_c
       glClearNamedFramebufferiv_c
       glClearNamedFramebufferuiv_c
+      glClearPixelLocalStorageuiEXT_c
       glClearStencil
       glClearTexImage_c
+      glClearTexImageEXT_c
       glClearTexSubImage_c
+      glClearTexSubImageEXT_c
       glClientActiveTexture
       glClientActiveTextureARB
       glClientActiveVertexStreamATI
       glClientAttribDefaultEXT
       glClientWaitSync
+      glClientWaitSyncAPPLE
       glClipControl
       glClipPlane_c
       glClipPlanef_c
-      glClipPlanefOES_c
       glClipPlanex_c
       glColor3b
       glColor3bv_c
@@ -237,6 +255,7 @@ sub gl_functions {
       glColorFragmentOp3ATI
       glColorMask
       glColorMaski
+      glColorMaskiEXT
       glColorMaskIndexedEXT
       glColorMaterial
       glColorP3ui
@@ -280,12 +299,14 @@ sub gl_functions {
       glCompressedTexImage2DARB_c
       glCompressedTexImage3D_c
       glCompressedTexImage3DARB_c
+      glCompressedTexImage3DNV_c
       glCompressedTexSubImage1D_c
       glCompressedTexSubImage1DARB_c
       glCompressedTexSubImage2D_c
       glCompressedTexSubImage2DARB_c
       glCompressedTexSubImage3D_c
       glCompressedTexSubImage3DARB_c
+      glCompressedTexSubImage3DNV_c
       glCompressedTextureImage1DEXT_c
       glCompressedTextureImage2DEXT_c
       glCompressedTextureImage3DEXT_c
@@ -310,6 +331,7 @@ sub gl_functions {
       glConvolutionParameteriv_c
       glConvolutionParameterivEXT_c
       glCopyBufferSubData
+      glCopyBufferSubDataNV
       glCopyColorSubTable
       glCopyColorSubTableEXT
       glCopyColorTable
@@ -319,6 +341,7 @@ sub gl_functions {
       glCopyConvolutionFilter2D
       glCopyConvolutionFilter2DEXT
       glCopyImageSubData
+      glCopyImageSubDataEXT
       glCopyImageSubDataNV
       glCopyMultiTexImage1DEXT
       glCopyMultiTexImage2DEXT
@@ -338,8 +361,10 @@ sub gl_functions {
       glCopyTexSubImage2DEXT
       glCopyTexSubImage3D
       glCopyTexSubImage3DEXT
+      glCopyTexSubImage3DNV
       glCopyTextureImage1DEXT
       glCopyTextureImage2DEXT
+      glCopyTextureLevelsAPPLE
       glCopyTextureSubImage1D
       glCopyTextureSubImage1DEXT
       glCopyTextureSubImage2D
@@ -355,6 +380,7 @@ sub gl_functions {
       glCreateBuffers_c
       glCreateCommandListsNV_c
       glCreateFramebuffers_c
+      glCreateMemoryObjectsEXT_c
       glCreatePerfQueryINTEL_c
       glCreateProgram
       glCreateProgramObjectARB
@@ -375,6 +401,7 @@ sub gl_functions {
       glCullParameterdvEXT_c
       glCullParameterfvEXT_c
       glCurrentPaletteMatrixARB
+      glDataPipe
       glDebugMessageCallback_c
       glDebugMessageCallbackAMD_c
       glDebugMessageCallbackARB_c
@@ -384,6 +411,8 @@ sub gl_functions {
       glDebugMessageInsert_c
       glDebugMessageInsertAMD_c
       glDebugMessageInsertARB_c
+      glDeformSGIX
+      glDeleteArraySetsEXT_c
       glDeleteAsyncMarkersSGIX
       glDeleteBufferRegion
       glDeleteBuffers_c
@@ -395,6 +424,8 @@ sub gl_functions {
       glDeleteFramebuffers_c
       glDeleteFramebuffersEXT_c
       glDeleteLists
+      glDeleteMemoryObjectsEXT_c
+      glDeleteMPEGPredictorsSGIX_c
       glDeleteNamedStringARB_c
       glDeleteNamesAMD_c
       glDeleteObjectARB
@@ -412,26 +443,30 @@ sub gl_functions {
       glDeleteRenderbuffers_c
       glDeleteRenderbuffersEXT_c
       glDeleteSamplers_c
+      glDeleteSemaphoresEXT_c
       glDeleteShader
       glDeleteStatesNV_c
       glDeleteSync
+      glDeleteSyncAPPLE
       glDeleteTextures_c
       glDeleteTexturesEXT_c
       glDeleteTransformFeedbacks_c
       glDeleteTransformFeedbacksNV_c
       glDeleteVertexArrays_c
       glDeleteVertexArraysAPPLE_c
+      glDeleteVertexArraysSGIX_c
       glDeleteVertexShaderEXT
       glDepthBoundsdNV
       glDepthBoundsEXT
       glDepthFunc
       glDepthMask
       glDepthRange
+      glDepthRangeArrayfvNV_c
       glDepthRangeArrayv_c
       glDepthRangedNV
       glDepthRangef
-      glDepthRangefOES
       glDepthRangeIndexed
+      glDepthRangeIndexedfNV
       glDepthRangex
       glDetachObjectARB
       glDetachShader
@@ -440,8 +475,11 @@ sub gl_functions {
       glDisableClientState
       glDisableClientStateiEXT
       glDisableClientStateIndexedEXT
+      glDisableDriverControlQCOM
       glDisablei
+      glDisableiEXT
       glDisableIndexedEXT
+      glDisableiNV
       glDisableVariantClientStateEXT
       glDisableVertexArrayAttrib
       glDisableVertexArrayAttribEXT
@@ -449,6 +487,7 @@ sub gl_functions {
       glDisableVertexAttribAPPLE
       glDisableVertexAttribArray
       glDisableVertexAttribArrayARB
+      glDiscardFramebufferEXT_c
       glDispatchCompute
       glDispatchComputeGroupSizeARB
       glDispatchComputeIndirect
@@ -459,12 +498,17 @@ sub gl_functions {
       glDrawArraysInstancedANGLE
       glDrawArraysInstancedARB
       glDrawArraysInstancedBaseInstance
+      glDrawArraysInstancedBaseInstanceEXT
       glDrawArraysInstancedEXT
+      glDrawArraysInstancedNV
       glDrawBuffer
       glDrawBufferRegion
       glDrawBuffers_c
       glDrawBuffersARB_c
       glDrawBuffersATI_c
+      glDrawBuffersEXT_c
+      glDrawBuffersIndexedEXT_c
+      glDrawBuffersNV_c
       glDrawCommandsAddressNV_c
       glDrawCommandsNV_c
       glDrawCommandsStatesAddressNV_c
@@ -473,19 +517,25 @@ sub gl_functions {
       glDrawElementArrayATI
       glDrawElements_c
       glDrawElementsBaseVertex_c
+      glDrawElementsBaseVertexEXT_c
       glDrawElementsIndirect_c
       glDrawElementsInstanced_c
       glDrawElementsInstancedANGLE_c
       glDrawElementsInstancedARB_c
       glDrawElementsInstancedBaseInstance_c
+      glDrawElementsInstancedBaseInstanceEXT_c
       glDrawElementsInstancedBaseVertex_c
       glDrawElementsInstancedBaseVertexBaseInstance_c
+      glDrawElementsInstancedBaseVertexBaseInstanceEXT_c
+      glDrawElementsInstancedBaseVertexEXT_c
       glDrawElementsInstancedEXT_c
+      glDrawElementsInstancedNV_c
       glDrawPixels_c
       glDrawRangeElementArrayAPPLE
       glDrawRangeElementArrayATI
       glDrawRangeElements_c
       glDrawRangeElementsBaseVertex_c
+      glDrawRangeElementsBaseVertexEXT_c
       glDrawRangeElementsEXT_c
       glDrawTextureNV
       glDrawTransformFeedback
@@ -506,8 +556,11 @@ sub gl_functions {
       glEnableClientState
       glEnableClientStateiEXT
       glEnableClientStateIndexedEXT
+      glEnableDriverControlQCOM
       glEnablei
+      glEnableiEXT
       glEnableIndexedEXT
+      glEnableiNV
       glEnableVariantClientStateEXT
       glEnableVertexArrayAttrib
       glEnableVertexArrayAttribEXT
@@ -529,6 +582,7 @@ sub gl_functions {
       glEndQueryARB
       glEndQueryIndexed
       glEndSceneEXT
+      glEndTilingQCOM
       glEndTransformFeedback
       glEndTransformFeedbackEXT
       glEndTransformFeedbackNV
@@ -551,11 +605,16 @@ sub gl_functions {
       GLEW_3DFX_tbuffer
       GLEW_3DFX_texture_compression_FXT1
       GLEW_AMD_blend_minmax_factor
+      GLEW_AMD_compressed_3DC_texture
+      GLEW_AMD_compressed_ATC_texture
       GLEW_AMD_conservative_depth
       GLEW_AMD_debug_output
       GLEW_AMD_depth_clamp_separate
       GLEW_AMD_draw_buffers_blend
+      GLEW_AMD_framebuffer_sample_positions
       GLEW_AMD_gcn_shader
+      GLEW_AMD_gpu_shader_half_float
+      GLEW_AMD_gpu_shader_int16
       GLEW_AMD_gpu_shader_int64
       GLEW_AMD_interleaved_elements
       GLEW_AMD_multi_draw_indirect
@@ -563,22 +622,26 @@ sub gl_functions {
       GLEW_AMD_occlusion_query_event
       GLEW_AMD_performance_monitor
       GLEW_AMD_pinned_memory
+      GLEW_AMD_program_binary_Z400
       GLEW_AMD_query_buffer_object
       GLEW_AMD_sample_positions
       GLEW_AMD_seamless_cubemap_per_texture
       GLEW_AMD_shader_atomic_counter_ops
+      GLEW_AMD_shader_ballot
       GLEW_AMD_shader_explicit_vertex_parameter
       GLEW_AMD_shader_stencil_export
       GLEW_AMD_shader_stencil_value_export
       GLEW_AMD_shader_trinary_minmax
       GLEW_AMD_sparse_texture
       GLEW_AMD_stencil_operation_extended
+      GLEW_AMD_texture_gather_bias_lod
       GLEW_AMD_texture_texture4
       GLEW_AMD_transform_feedback3_lines_triangles
       GLEW_AMD_transform_feedback4
       GLEW_AMD_vertex_shader_layer
       GLEW_AMD_vertex_shader_tessellator
       GLEW_AMD_vertex_shader_viewport_index
+      GLEW_ANDROID_extension_pack_es31a
       GLEW_ANGLE_depth_texture
       GLEW_ANGLE_framebuffer_blit
       GLEW_ANGLE_framebuffer_multisample
@@ -593,15 +656,24 @@ sub gl_functions {
       GLEW_ANGLE_translated_shader_source
       GLEW_APPLE_aux_depth_stencil
       GLEW_APPLE_client_storage
+      GLEW_APPLE_clip_distance
+      GLEW_APPLE_color_buffer_packed_float
+      GLEW_APPLE_copy_texture_levels
       GLEW_APPLE_element_array
       GLEW_APPLE_fence
       GLEW_APPLE_float_pixels
       GLEW_APPLE_flush_buffer_range
+      GLEW_APPLE_framebuffer_multisample
       GLEW_APPLE_object_purgeable
       GLEW_APPLE_pixel_buffer
       GLEW_APPLE_rgb_422
       GLEW_APPLE_row_bytes
       GLEW_APPLE_specular_vector
+      GLEW_APPLE_sync
+      GLEW_APPLE_texture_2D_limited_npot
+      GLEW_APPLE_texture_format_BGRA8888
+      GLEW_APPLE_texture_max_level
+      GLEW_APPLE_texture_packed_float
       GLEW_APPLE_texture_range
       GLEW_APPLE_transform_hint
       GLEW_APPLE_vertex_array_object
@@ -683,6 +755,7 @@ sub gl_functions {
       GLEW_ARB_pixel_buffer_object
       GLEW_ARB_point_parameters
       GLEW_ARB_point_sprite
+      GLEW_ARB_polygon_offset_clamp
       GLEW_ARB_post_depth_coverage
       GLEW_ARB_program_interface_query
       GLEW_ARB_provoking_vertex
@@ -724,6 +797,7 @@ sub gl_functions {
       GLEW_ARB_sparse_texture
       GLEW_ARB_sparse_texture2
       GLEW_ARB_sparse_texture_clamp
+      GLEW_ARB_spirv_extensions
       GLEW_ARB_stencil_texturing
       GLEW_ARB_sync
       GLEW_ARB_tessellation_shader
@@ -741,6 +815,7 @@ sub gl_functions {
       GLEW_ARB_texture_env_combine
       GLEW_ARB_texture_env_crossbar
       GLEW_ARB_texture_env_dot3
+      GLEW_ARB_texture_filter_anisotropic
       GLEW_ARB_texture_filter_minmax
       GLEW_ARB_texture_float
       GLEW_ARB_texture_gather
@@ -777,6 +852,11 @@ sub gl_functions {
       GLEW_ARB_vertex_type_2_10_10_10_rev
       GLEW_ARB_viewport_array
       GLEW_ARB_window_pos
+      GLEW_ARM_mali_program_binary
+      GLEW_ARM_mali_shader_binary
+      GLEW_ARM_rgba8
+      GLEW_ARM_shader_framebuffer_fetch
+      GLEW_ARM_shader_framebuffer_fetch_depth_stencil
       GLEW_ATIX_point_sprites
       GLEW_ATIX_texture_env_combine3
       GLEW_ATIX_texture_env_route
@@ -798,52 +878,86 @@ sub gl_functions {
       GLEW_ATI_vertex_array_object
       GLEW_ATI_vertex_attrib_array_object
       GLEW_ATI_vertex_streams
+      GLEW_EGL_KHR_context_flush_control
       GLEW_EGL_NV_robustness_video_memory_purge
       GLEW_EXT_422_pixels
       GLEW_EXT_Cg_shader
+      GLEW_EXT_EGL_image_array
+      GLEW_EXT_YUV_target
       GLEW_EXT_abgr
+      GLEW_EXT_base_instance
       GLEW_EXT_bgra
       GLEW_EXT_bindable_uniform
       GLEW_EXT_blend_color
       GLEW_EXT_blend_equation_separate
+      GLEW_EXT_blend_func_extended
       GLEW_EXT_blend_func_separate
       GLEW_EXT_blend_logic_op
       GLEW_EXT_blend_minmax
       GLEW_EXT_blend_subtract
+      GLEW_EXT_buffer_storage
+      GLEW_EXT_clear_texture
+      GLEW_EXT_clip_cull_distance
       GLEW_EXT_clip_volume_hint
       GLEW_EXT_cmyka
+      GLEW_EXT_color_buffer_float
+      GLEW_EXT_color_buffer_half_float
       GLEW_EXT_color_subtable
       GLEW_EXT_compiled_vertex_array
+      GLEW_EXT_compressed_ETC1_RGB8_sub_texture
+      GLEW_EXT_conservative_depth
       GLEW_EXT_convolution
       GLEW_EXT_coordinate_frame
+      GLEW_EXT_copy_image
       GLEW_EXT_copy_texture
       GLEW_EXT_cull_vertex
       GLEW_EXT_debug_label
       GLEW_EXT_debug_marker
       GLEW_EXT_depth_bounds_test
       GLEW_EXT_direct_state_access
+      GLEW_EXT_discard_framebuffer
+      GLEW_EXT_draw_buffers
       GLEW_EXT_draw_buffers2
+      GLEW_EXT_draw_buffers_indexed
+      GLEW_EXT_draw_elements_base_vertex
       GLEW_EXT_draw_instanced
       GLEW_EXT_draw_range_elements
+      GLEW_EXT_external_buffer
+      GLEW_EXT_float_blend
       GLEW_EXT_fog_coord
+      GLEW_EXT_frag_depth
       GLEW_EXT_fragment_lighting
       GLEW_EXT_framebuffer_blit
       GLEW_EXT_framebuffer_multisample
       GLEW_EXT_framebuffer_multisample_blit_scaled
       GLEW_EXT_framebuffer_object
       GLEW_EXT_framebuffer_sRGB
+      GLEW_EXT_geometry_point_size
+      GLEW_EXT_geometry_shader
       GLEW_EXT_geometry_shader4
       GLEW_EXT_gpu_program_parameters
       GLEW_EXT_gpu_shader4
+      GLEW_EXT_gpu_shader5
       GLEW_EXT_histogram
       GLEW_EXT_index_array_formats
       GLEW_EXT_index_func
       GLEW_EXT_index_material
       GLEW_EXT_index_texture
+      GLEW_EXT_instanced_arrays
       GLEW_EXT_light_texture
+      GLEW_EXT_map_buffer_range
+      GLEW_EXT_memory_object
+      GLEW_EXT_memory_object_fd
+      GLEW_EXT_memory_object_win32
       GLEW_EXT_misc_attribute
       GLEW_EXT_multi_draw_arrays
+      GLEW_EXT_multi_draw_indirect
+      GLEW_EXT_multiple_textures
       GLEW_EXT_multisample
+      GLEW_EXT_multisample_compatibility
+      GLEW_EXT_multisampled_render_to_texture
+      GLEW_EXT_multisampled_render_to_texture2
+      GLEW_EXT_multiview_draw_buffers
       GLEW_EXT_packed_depth_stencil
       GLEW_EXT_packed_float
       GLEW_EXT_packed_pixels
@@ -856,17 +970,35 @@ sub gl_functions {
       GLEW_EXT_polygon_offset_clamp
       GLEW_EXT_post_depth_coverage
       GLEW_EXT_provoking_vertex
+      GLEW_EXT_pvrtc_sRGB
       GLEW_EXT_raster_multisample
+      GLEW_EXT_read_format_bgra
+      GLEW_EXT_render_snorm
       GLEW_EXT_rescale_normal
+      GLEW_EXT_sRGB
+      GLEW_EXT_sRGB_write_control
       GLEW_EXT_scene_marker
       GLEW_EXT_secondary_color
+      GLEW_EXT_semaphore
+      GLEW_EXT_semaphore_fd
+      GLEW_EXT_semaphore_win32
       GLEW_EXT_separate_shader_objects
       GLEW_EXT_separate_specular_color
+      GLEW_EXT_shader_framebuffer_fetch
+      GLEW_EXT_shader_group_vote
       GLEW_EXT_shader_image_load_formatted
       GLEW_EXT_shader_image_load_store
+      GLEW_EXT_shader_implicit_conversions
       GLEW_EXT_shader_integer_mix
+      GLEW_EXT_shader_io_blocks
+      GLEW_EXT_shader_non_constant_global_initializers
+      GLEW_EXT_shader_pixel_local_storage
+      GLEW_EXT_shader_pixel_local_storage2
+      GLEW_EXT_shader_texture_lod
       GLEW_EXT_shadow_funcs
+      GLEW_EXT_shadow_samplers
       GLEW_EXT_shared_texture_palette
+      GLEW_EXT_sparse_texture
       GLEW_EXT_sparse_texture2
       GLEW_EXT_stencil_clear_tag
       GLEW_EXT_stencil_two_side
@@ -876,11 +1008,15 @@ sub gl_functions {
       GLEW_EXT_texture3D
       GLEW_EXT_texture_array
       GLEW_EXT_texture_buffer_object
+      GLEW_EXT_texture_compression_astc_decode_mode
+      GLEW_EXT_texture_compression_astc_decode_mode_rgb9e5
+      GLEW_EXT_texture_compression_bptc
       GLEW_EXT_texture_compression_dxt1
       GLEW_EXT_texture_compression_latc
       GLEW_EXT_texture_compression_rgtc
       GLEW_EXT_texture_compression_s3tc
       GLEW_EXT_texture_cube_map
+      GLEW_EXT_texture_cube_map_array
       GLEW_EXT_texture_edge_clamp
       GLEW_EXT_texture_env
       GLEW_EXT_texture_env_add
@@ -888,24 +1024,35 @@ sub gl_functions {
       GLEW_EXT_texture_env_dot3
       GLEW_EXT_texture_filter_anisotropic
       GLEW_EXT_texture_filter_minmax
+      GLEW_EXT_texture_format_BGRA8888
       GLEW_EXT_texture_integer
       GLEW_EXT_texture_lod_bias
       GLEW_EXT_texture_mirror_clamp
+      GLEW_EXT_texture_norm16
       GLEW_EXT_texture_object
       GLEW_EXT_texture_perturb_normal
       GLEW_EXT_texture_rectangle
+      GLEW_EXT_texture_rg
       GLEW_EXT_texture_sRGB
+      GLEW_EXT_texture_sRGB_R8
+      GLEW_EXT_texture_sRGB_RG8
       GLEW_EXT_texture_sRGB_decode
       GLEW_EXT_texture_shared_exponent
       GLEW_EXT_texture_snorm
+      GLEW_EXT_texture_storage
       GLEW_EXT_texture_swizzle
+      GLEW_EXT_texture_type_2_10_10_10_REV
+      GLEW_EXT_texture_view
       GLEW_EXT_timer_query
       GLEW_EXT_transform_feedback
+      GLEW_EXT_unpack_subimage
       GLEW_EXT_vertex_array
       GLEW_EXT_vertex_array_bgra
+      GLEW_EXT_vertex_array_setXXX
       GLEW_EXT_vertex_attrib_64bit
       GLEW_EXT_vertex_shader
       GLEW_EXT_vertex_weighting
+      GLEW_EXT_win32_keyed_mutex
       GLEW_EXT_window_rectangles
       GLEW_EXT_x11_sync_object
       GLEW_GREMEDY_frame_terminator
@@ -934,6 +1081,7 @@ sub gl_functions {
       GLEW_KHR_context_flush_control
       GLEW_KHR_debug
       GLEW_KHR_no_error
+      GLEW_KHR_parallel_shader_compile
       GLEW_KHR_robust_buffer_access_behavior
       GLEW_KHR_robustness
       GLEW_KHR_texture_compression_astc_hdr
@@ -950,11 +1098,16 @@ sub gl_functions {
       GLEW_NVX_conditional_render
       GLEW_NVX_gpu_memory_info
       GLEW_NVX_linked_gpu_multicast
+      GLEW_NV_3dvision_settings
+      GLEW_NV_EGL_stream_consumer_external
+      GLEW_NV_alpha_to_coverage_dither_control
+      GLEW_NV_bgr
       GLEW_NV_bindless_multi_draw_indirect
       GLEW_NV_bindless_multi_draw_indirect_count
       GLEW_NV_bindless_texture
       GLEW_NV_blend_equation_advanced
       GLEW_NV_blend_equation_advanced_coherent
+      GLEW_NV_blend_minmax_factor
       GLEW_NV_blend_square
       GLEW_NV_clip_space_w_scaling
       GLEW_NV_command_list
@@ -963,16 +1116,21 @@ sub gl_functions {
       GLEW_NV_conservative_raster
       GLEW_NV_conservative_raster_dilate
       GLEW_NV_conservative_raster_pre_snap_triangles
+      GLEW_NV_copy_buffer
       GLEW_NV_copy_depth_to_color
       GLEW_NV_copy_image
       GLEW_NV_deep_texture3D
       GLEW_NV_depth_buffer_float
       GLEW_NV_depth_clamp
       GLEW_NV_depth_range_unclamped
+      GLEW_NV_draw_buffers
+      GLEW_NV_draw_instanced
       GLEW_NV_draw_texture
       GLEW_NV_draw_vulkan_image
       GLEW_NV_evaluators
+      GLEW_NV_explicit_attrib_location
       GLEW_NV_explicit_multisample
+      GLEW_NV_fbo_color_attachments
       GLEW_NV_fence
       GLEW_NV_fill_rectangle
       GLEW_NV_float_buffer
@@ -983,8 +1141,11 @@ sub gl_functions {
       GLEW_NV_fragment_program4
       GLEW_NV_fragment_program_option
       GLEW_NV_fragment_shader_interlock
+      GLEW_NV_framebuffer_blit
       GLEW_NV_framebuffer_mixed_samples
+      GLEW_NV_framebuffer_multisample
       GLEW_NV_framebuffer_multisample_coverage
+      GLEW_NV_generate_mipmap_sRGB
       GLEW_NV_geometry_program4
       GLEW_NV_geometry_shader4
       GLEW_NV_geometry_shader_passthrough
@@ -995,23 +1156,36 @@ sub gl_functions {
       GLEW_NV_gpu_program_fp64
       GLEW_NV_gpu_shader5
       GLEW_NV_half_float
+      GLEW_NV_image_formats
+      GLEW_NV_instanced_arrays
       GLEW_NV_internalformat_sample_query
       GLEW_NV_light_max_exponent
       GLEW_NV_multisample_coverage
       GLEW_NV_multisample_filter_hint
+      GLEW_NV_non_square_matrices
       GLEW_NV_occlusion_query
+      GLEW_NV_pack_subimage
       GLEW_NV_packed_depth_stencil
+      GLEW_NV_packed_float
+      GLEW_NV_packed_float_linear
       GLEW_NV_parameter_buffer_object
       GLEW_NV_parameter_buffer_object2
       GLEW_NV_path_rendering
       GLEW_NV_path_rendering_shared_edge
+      GLEW_NV_pixel_buffer_object
       GLEW_NV_pixel_data_range
+      GLEW_NV_platform_binary
       GLEW_NV_point_sprite
+      GLEW_NV_polygon_mode
       GLEW_NV_present_video
       GLEW_NV_primitive_restart
+      GLEW_NV_read_depth
+      GLEW_NV_read_depth_stencil
+      GLEW_NV_read_stencil
       GLEW_NV_register_combiners
       GLEW_NV_register_combiners2
       GLEW_NV_robustness_video_memory_purge
+      GLEW_NV_sRGB_formats
       GLEW_NV_sample_locations
       GLEW_NV_sample_mask_override_coverage
       GLEW_NV_shader_atomic_counters
@@ -1020,19 +1194,29 @@ sub gl_functions {
       GLEW_NV_shader_atomic_fp16_vector
       GLEW_NV_shader_atomic_int64
       GLEW_NV_shader_buffer_load
+      GLEW_NV_shader_noperspective_interpolation
       GLEW_NV_shader_storage_buffer_object
       GLEW_NV_shader_thread_group
       GLEW_NV_shader_thread_shuffle
+      GLEW_NV_shadow_samplers_array
+      GLEW_NV_shadow_samplers_cube
       GLEW_NV_stereo_view_rendering
       GLEW_NV_tessellation_program5
       GLEW_NV_texgen_emboss
       GLEW_NV_texgen_reflection
+      GLEW_NV_texture_array
       GLEW_NV_texture_barrier
+      GLEW_NV_texture_border_clamp
+      GLEW_NV_texture_compression_latc
+      GLEW_NV_texture_compression_s3tc
+      GLEW_NV_texture_compression_s3tc_update
       GLEW_NV_texture_compression_vtc
       GLEW_NV_texture_env_combine4
       GLEW_NV_texture_expand_normal
       GLEW_NV_texture_multisample
+      GLEW_NV_texture_npot_2D_mipmap
       GLEW_NV_texture_rectangle
+      GLEW_NV_texture_rectangle_compressed
       GLEW_NV_texture_shader
       GLEW_NV_texture_shader2
       GLEW_NV_texture_shader3
@@ -1051,19 +1235,28 @@ sub gl_functions {
       GLEW_NV_vertex_program3
       GLEW_NV_vertex_program4
       GLEW_NV_video_capture
+      GLEW_NV_viewport_array
       GLEW_NV_viewport_array2
       GLEW_NV_viewport_swizzle
       GLEW_OES_byte_coordinates
-      GLEW_OES_compressed_paletted_texture
-      GLEW_OES_read_format
-      GLEW_OES_single_precision
       GLEW_OML_interlace
       GLEW_OML_resample
       GLEW_OML_subsample
       GLEW_OVR_multiview
       GLEW_OVR_multiview2
+      GLEW_OVR_multiview_multisampled_render_to_texture
       GLEW_PGI_misc_hints
       GLEW_PGI_vertex_hints
+      GLEW_QCOM_alpha_test
+      GLEW_QCOM_binning_control
+      GLEW_QCOM_driver_control
+      GLEW_QCOM_extended_get
+      GLEW_QCOM_extended_get2
+      GLEW_QCOM_framebuffer_foveated
+      GLEW_QCOM_perfmon_global_mode
+      GLEW_QCOM_shader_framebuffer_fetch_noncoherent
+      GLEW_QCOM_tiled_rendering
+      GLEW_QCOM_writeonly_rendering
       GLEW_REGAL_ES1_0_compatibility
       GLEW_REGAL_ES1_1_compatibility
       GLEW_REGAL_enable
@@ -1073,13 +1266,17 @@ sub gl_functions {
       GLEW_REGAL_proc_address
       GLEW_REND_screen_coordinates
       GLEW_S3_s3tc
+      GLEW_SGIS_clip_band_hint
       GLEW_SGIS_color_range
       GLEW_SGIS_detail_texture
       GLEW_SGIS_fog_function
       GLEW_SGIS_generate_mipmap
+      GLEW_SGIS_line_texgen
       GLEW_SGIS_multisample
+      GLEW_SGIS_multitexture
       GLEW_SGIS_pixel_texture
       GLEW_SGIS_point_line_texgen
+      GLEW_SGIS_shared_multisample
       GLEW_SGIS_sharpen_texture
       GLEW_SGIS_texture4D
       GLEW_SGIS_texture_border_clamp
@@ -1090,37 +1287,90 @@ sub gl_functions {
       GLEW_SGIX_async
       GLEW_SGIX_async_histogram
       GLEW_SGIX_async_pixel
+      GLEW_SGIX_bali_g_instruments
+      GLEW_SGIX_bali_r_instruments
+      GLEW_SGIX_bali_timer_instruments
       GLEW_SGIX_blend_alpha_minmax
+      GLEW_SGIX_blend_cadd
+      GLEW_SGIX_blend_cmultiply
+      GLEW_SGIX_calligraphic_fragment
       GLEW_SGIX_clipmap
+      GLEW_SGIX_color_matrix_accuracy
+      GLEW_SGIX_color_table_index_mode
+      GLEW_SGIX_complex_polar
       GLEW_SGIX_convolution_accuracy
+      GLEW_SGIX_cube_map
+      GLEW_SGIX_cylinder_texgen
+      GLEW_SGIX_datapipe
+      GLEW_SGIX_decimation
+      GLEW_SGIX_depth_pass_instrument
       GLEW_SGIX_depth_texture
+      GLEW_SGIX_dvc
       GLEW_SGIX_flush_raster
+      GLEW_SGIX_fog_blend
+      GLEW_SGIX_fog_factor_to_alpha
+      GLEW_SGIX_fog_layers
       GLEW_SGIX_fog_offset
+      GLEW_SGIX_fog_patchy
+      GLEW_SGIX_fog_scale
       GLEW_SGIX_fog_texture
+      GLEW_SGIX_fragment_lighting_space
       GLEW_SGIX_fragment_specular_lighting
+      GLEW_SGIX_fragments_instrument
       GLEW_SGIX_framezoom
+      GLEW_SGIX_icc_texture
+      GLEW_SGIX_igloo_interface
+      GLEW_SGIX_image_compression
+      GLEW_SGIX_impact_pixel_texture
+      GLEW_SGIX_instrument_error
       GLEW_SGIX_interlace
       GLEW_SGIX_ir_instrument1
+      GLEW_SGIX_line_quality_hint
       GLEW_SGIX_list_priority
+      GLEW_SGIX_mpeg1
+      GLEW_SGIX_mpeg2
+      GLEW_SGIX_nonlinear_lighting_pervertex
+      GLEW_SGIX_nurbs_eval
+      GLEW_SGIX_occlusion_instrument
+      GLEW_SGIX_packed_6bytes
       GLEW_SGIX_pixel_texture
       GLEW_SGIX_pixel_texture_bits
+      GLEW_SGIX_pixel_texture_lod
+      GLEW_SGIX_pixel_tiles
+      GLEW_SGIX_polynomial_ffd
+      GLEW_SGIX_quad_mesh
       GLEW_SGIX_reference_plane
       GLEW_SGIX_resample
+      GLEW_SGIX_scalebias_hint
       GLEW_SGIX_shadow
       GLEW_SGIX_shadow_ambient
+      GLEW_SGIX_slim
+      GLEW_SGIX_spotlight_cutoff
       GLEW_SGIX_sprite
+      GLEW_SGIX_subdiv_patch
+      GLEW_SGIX_subsample
       GLEW_SGIX_tag_sample_buffer
       GLEW_SGIX_texture_add_env
       GLEW_SGIX_texture_coordinate_clamp
       GLEW_SGIX_texture_lod_bias
+      GLEW_SGIX_texture_mipmap_anisotropic
       GLEW_SGIX_texture_multi_buffer
+      GLEW_SGIX_texture_phase
       GLEW_SGIX_texture_range
       GLEW_SGIX_texture_scale_bias
+      GLEW_SGIX_texture_supersample
+      GLEW_SGIX_vector_ops
+      GLEW_SGIX_vertex_array_object
       GLEW_SGIX_vertex_preclip
       GLEW_SGIX_vertex_preclip_hint
       GLEW_SGIX_ycrcb
+      GLEW_SGIX_ycrcb_subsample
+      GLEW_SGIX_ycrcba
       GLEW_SGI_color_matrix
       GLEW_SGI_color_table
+      GLEW_SGI_complex
+      GLEW_SGI_complex_type
+      GLEW_SGI_fft
       GLEW_SGI_texture_color_table
       GLEW_SUNX_constant_data
       GLEW_SUN_convolution_border_modes
@@ -1148,13 +1398,28 @@ sub gl_functions {
       GLEW_VERSION_4_3
       GLEW_VERSION_4_4
       GLEW_VERSION_4_5
+      GLEW_VERSION_4_6
       GLEW_WIN_phong_shading
+      GLEW_WIN_scene_markerXXX
       GLEW_WIN_specular_fog
       GLEW_WIN_swap_hint
       glExecuteProgramNV_c
+      glExtGetBufferPointervQCOM_c
+      glExtGetBuffersQCOM_c
+      glExtGetFramebuffersQCOM_c
+      glExtGetProgramBinarySourceQCOM_c
+      glExtGetProgramsQCOM_c
+      glExtGetRenderbuffersQCOM_c
+      glExtGetShadersQCOM_c
+      glExtGetTexLevelParameterivQCOM_c
+      glExtGetTexSubImageQCOM_c
+      glExtGetTexturesQCOM_c
+      glExtIsProgramBinaryQCOM
       glExtractComponentEXT
+      glExtTexObjectStateOverrideiQCOM
       glFeedbackBuffer_c
       glFenceSync
+      glFenceSyncAPPLE
       glFinalCombinerInputNV
       glFinish
       glFinishAsyncSGIX_c
@@ -1165,6 +1430,7 @@ sub gl_functions {
       glFlush
       glFlushMappedBufferRange
       glFlushMappedBufferRangeAPPLE
+      glFlushMappedBufferRangeEXT
       glFlushMappedNamedBufferRange
       glFlushMappedNamedBufferRangeEXT
       glFlushPixelDataRangeNV
@@ -1190,6 +1456,7 @@ sub gl_functions {
       glFogfv_c
       glFogi
       glFogiv_c
+      glFogLayersSGIX_c
       glFogx
       glFogxv_c
       glFragmentColorMaterialEXT
@@ -1221,17 +1488,23 @@ sub gl_functions {
       glFragmentMaterialivSGIX_c
       glFramebufferDrawBufferEXT
       glFramebufferDrawBuffersEXT_c
+      glFramebufferFetchBarrierQCOM
+      glFramebufferFoveationConfigQCOM_c
+      glFramebufferFoveationParametersQCOM
       glFramebufferParameteri
+      glFramebufferPixelLocalStorageSizeEXT
       glFramebufferReadBufferEXT
       glFramebufferRenderbuffer
       glFramebufferRenderbufferEXT
       glFramebufferSampleLocationsfvARB_c
       glFramebufferSampleLocationsfvNV_c
+      glFramebufferSamplePositionsfvAMD_c
       glFramebufferTexture
       glFramebufferTexture1D
       glFramebufferTexture1DEXT
       glFramebufferTexture2D
       glFramebufferTexture2DEXT
+      glFramebufferTexture2DMultisampleEXT
       glFramebufferTexture3D
       glFramebufferTexture3DEXT
       glFramebufferTextureARB
@@ -1241,6 +1514,8 @@ sub gl_functions {
       glFramebufferTextureLayer
       glFramebufferTextureLayerARB
       glFramebufferTextureLayerEXT
+      glFramebufferTextureLayerNV
+      glFramebufferTextureMultisampleMultiviewOVR
       glFramebufferTextureMultiviewOVR
       glFrameTerminatorGREMEDY
       glFrameZoomSGIX
@@ -1248,7 +1523,6 @@ sub gl_functions {
       glFrontFace
       glFrustum
       glFrustumf
-      glFrustumfOES
       glFrustumx
       glGenAsyncMarkersSGIX
       glGenBuffers_c
@@ -1264,6 +1538,7 @@ sub gl_functions {
       glGenFramebuffers_c
       glGenFramebuffersEXT_c
       glGenLists
+      glGenMPEGPredictorsSGIX_c
       glGenNamesAMD_c
       glGenOcclusionQueriesNV_c
       glGenPathsNV
@@ -1277,6 +1552,7 @@ sub gl_functions {
       glGenRenderbuffers_c
       glGenRenderbuffersEXT_c
       glGenSamplers_c
+      glGenSemaphoresEXT_c
       glGenSymbolsEXT
       glGenTextures_c
       glGenTexturesEXT_c
@@ -1284,6 +1560,7 @@ sub gl_functions {
       glGenTransformFeedbacksNV_c
       glGenVertexArrays_c
       glGenVertexArraysAPPLE_c
+      glGenVertexArraysSGIX_c
       glGenVertexShadersEXT
       glGetActiveAtomicCounterBufferiv_c
       glGetActiveAttrib_c
@@ -1317,7 +1594,6 @@ sub gl_functions {
       glGetBufferSubDataARB_c
       glGetClipPlane_c
       glGetClipPlanef_c
-      glGetClipPlanefOES_c
       glGetClipPlanex_c
       glGetColorTable_c
       glGetColorTableEXT_c
@@ -1355,6 +1631,8 @@ sub gl_functions {
       glGetDoublei_v_c
       glGetDoublei_vEXT_c
       glGetDoublev_c
+      glGetDriverControlsQCOM_c
+      glGetDriverControlStringQCOM_c
       glGetError
       glGetExtensionREGAL_c
       glGetFenceivNV_c
@@ -1365,9 +1643,12 @@ sub gl_functions {
       glGetFloatIndexedvEXT_c
       glGetFloati_v_c
       glGetFloati_vEXT_c
+      glGetFloati_vNV_c
       glGetFloatv_c
       glGetFogFuncSGIS_c
+      glGetFogLayersSGIX_c
       glGetFragDataIndex_c
+      glGetFragDataIndexEXT_c
       glGetFragDataLocation_c
       glGetFragDataLocationEXT_c
       glGetFragmentLightfvEXT_c
@@ -1380,8 +1661,10 @@ sub gl_functions {
       glGetFragmentMaterialivSGIX_c
       glGetFramebufferAttachmentParameteriv_c
       glGetFramebufferAttachmentParameterivEXT_c
+      glGetFramebufferParameterfvAMD_c
       glGetFramebufferParameteriv_c
       glGetFramebufferParameterivEXT_c
+      glGetFramebufferPixelLocalStorageSizeEXT
       glGetGraphicsResetStatus
       glGetGraphicsResetStatusARB
       glGetHandleARB
@@ -1398,8 +1681,10 @@ sub gl_functions {
       glGetInfoLogARB_c
       glGetInteger64i_v_c
       glGetInteger64v_c
+      glGetInteger64vAPPLE_c
       glGetIntegerIndexedvEXT_c
       glGetIntegeri_v_c
+      glGetIntegeri_vEXT_c
       glGetIntegerui64i_vNV_c
       glGetIntegerui64vNV_c
       glGetIntegerv_c
@@ -1426,12 +1711,17 @@ sub gl_functions {
       glGetMaterialfv_c
       glGetMaterialiv_c
       glGetMaterialxv_c
+      glGetMemoryObjectParameterivEXT_c
       glGetMinmax_c
       glGetMinmaxEXT_c
       glGetMinmaxParameterfv_c
       glGetMinmaxParameterfvEXT_c
       glGetMinmaxParameteriv_c
       glGetMinmaxParameterivEXT_c
+      glGetMPEGParameterfvSGIX_c
+      glGetMPEGParameterivSGIX_c
+      glGetMPEGPredictorSGIX_c
+      glGetMPEGQuantTableubv_c
       glGetMultisamplefv_c
       glGetMultisamplefvNV_c
       glGetMultiTexEnvfvEXT_c
@@ -1456,6 +1746,7 @@ sub gl_functions {
       glGetNamedBufferSubDataEXT_c
       glGetNamedFramebufferAttachmentParameteriv_c
       glGetNamedFramebufferAttachmentParameterivEXT_c
+      glGetNamedFramebufferParameterfvAMD_c
       glGetNamedFramebufferParameteriv_c
       glGetNamedFramebufferParameterivEXT_c
       glGetNamedProgramivEXT_c
@@ -1478,6 +1769,8 @@ sub gl_functions {
       glGetnMapfvARB_c
       glGetnMapivARB_c
       glGetnMinmaxARB_c
+      glGetNonlinLightfvSGIX_c
+      glGetNonlinMaterialfvSGIX_c
       glGetnPixelMapfvARB_c
       glGetnPixelMapuivARB_c
       glGetnPixelMapusvARB_c
@@ -1532,7 +1825,9 @@ sub gl_functions {
       glGetPixelMapuiv_c
       glGetPixelMapusv_c
       glGetPixelTransformParameterfvEXT_c
+      glGetPixelTransformParameterfvSGI_c
       glGetPixelTransformParameterivEXT_c
+      glGetPixelTransformParameterivSGI_c
       glGetPointerIndexedvEXT_c
       glGetPointeri_vEXT_c
       glGetPointerv_c
@@ -1559,6 +1854,7 @@ sub gl_functions {
       glGetProgramResourceiv_c
       glGetProgramResourceLocation_c
       glGetProgramResourceLocationIndex_c
+      glGetProgramResourceLocationIndexEXT_c
       glGetProgramResourceName_c
       glGetProgramStageiv_c
       glGetProgramStringARB_c
@@ -1589,6 +1885,7 @@ sub gl_functions {
       glGetSamplerParameterIiv_c
       glGetSamplerParameterIuiv_c
       glGetSamplerParameteriv_c
+      glGetSemaphoreParameterui64vEXT_c
       glGetSeparableFilter_c
       glGetSeparableFilterEXT_c
       glGetShaderInfoLog_c
@@ -1601,6 +1898,7 @@ sub gl_functions {
       glGetSubroutineIndex_c
       glGetSubroutineUniformLocation_c
       glGetSynciv_c
+      glGetSyncivAPPLE_c
       glGetTexBumpParameterfvATI_c
       glGetTexBumpParameterivATI_c
       glGetTexEnvfv_c
@@ -1666,6 +1964,8 @@ sub gl_functions {
       glGetUniformui64vNV_c
       glGetUniformuiv_c
       glGetUniformuivEXT_c
+      glGetUnsignedBytei_vEXT_c
+      glGetUnsignedBytevEXT_c
       glGetVariantArrayObjectfvATI_c
       glGetVariantArrayObjectivATI_c
       glGetVariantBooleanvEXT_c
@@ -1673,6 +1973,7 @@ sub gl_functions {
       glGetVariantIntegervEXT_c
       glGetVariantPointervEXT_c
       glGetVaryingLocationNV_c
+      glGetVectorOperationSGIX
       glGetVertexArrayIndexed64iv_c
       glGetVertexArrayIndexediv_c
       glGetVertexArrayIntegeri_vEXT_c
@@ -1723,10 +2024,17 @@ sub gl_functions {
       glHint
       glHistogram
       glHistogramEXT
+      glIglooInterfaceSGIX_c
       glImageTransformParameterfHP
       glImageTransformParameterfvHP_c
       glImageTransformParameteriHP
       glImageTransformParameterivHP_c
+      glImportMemoryFdEXT
+      glImportMemoryWin32HandleEXT_c
+      glImportMemoryWin32NameEXT_c
+      glImportSemaphoreFdEXT
+      glImportSemaphoreWin32HandleEXT_c
+      glImportSemaphoreWin32NameEXT_c
       glImportSyncEXT
       glIndexd
       glIndexdv_c
@@ -1749,6 +2057,7 @@ sub gl_functions {
       glInsertComponentEXT
       glInsertEventMarkerEXT_c
       glInterleavedArrays_c
+      glInterleavedTextureCoordSetsSGIS
       glInterpolatePathsNV
       glInvalidateBufferData
       glInvalidateBufferSubData
@@ -1765,7 +2074,9 @@ sub gl_functions {
       glIsCommandListNV
       glIsEnabled
       glIsEnabledi
+      glIsEnablediEXT
       glIsEnabledIndexedEXT
+      glIsEnablediNV
       glIsFenceAPPLE
       glIsFenceNV
       glIsFramebuffer
@@ -1773,6 +2084,8 @@ sub gl_functions {
       glIsImageHandleResidentARB
       glIsImageHandleResidentNV
       glIsList
+      glIsMemoryObjectEXT
+      glIsMPEGPredictorSGIX
       glIsNameAMD
       glIsNamedBufferResidentNV
       glIsNamedStringARB_c
@@ -1791,10 +2104,12 @@ sub gl_functions {
       glIsRenderbuffer
       glIsRenderbufferEXT
       glIsSampler
+      glIsSemaphoreEXT
       glIsShader
       glIsStateNV
       glIsSupportedREGAL_c
       glIsSync
+      glIsSyncAPPLE
       glIsTexture
       glIsTextureEXT
       glIsTextureHandleResidentARB
@@ -1804,6 +2119,7 @@ sub gl_functions {
       glIsVariantEnabledEXT
       glIsVertexArray
       glIsVertexArrayAPPLE
+      glIsVertexArraySGIX
       glIsVertexAttribEnabledAPPLE
       glLabelObjectEXT_c
       glLGPUCopyImageSubDataNVX
@@ -1830,6 +2146,7 @@ sub gl_functions {
       glListBase
       glListDrawCommandsStatesClientNV_c
       glLoadIdentity
+      glLoadIdentityDeformationMapSGIX
       glLoadMatrixd_c
       glLoadMatrixf_c
       glLoadMatrixx_c
@@ -1861,6 +2178,7 @@ sub gl_functions {
       glMapBuffer_c
       glMapBufferARB_c
       glMapBufferRange_c
+      glMapBufferRangeEXT_c
       glMapControlPointsNV_c
       glMapGrid1d
       glMapGrid1f
@@ -1915,13 +2233,19 @@ sub gl_functions {
       glMatrixTranslatedEXT
       glMatrixTranslatefEXT
       glMaxShaderCompilerThreadsARB
+      glMaxShaderCompilerThreadsKHR
       glMemoryBarrier
       glMemoryBarrierByRegion
       glMemoryBarrierEXT
+      glMemoryObjectParameterivEXT_c
+      glMeshBreadthSGIX
+      glMeshStrideSGIX
       glMinmax
       glMinmaxEXT
       glMinSampleShading
       glMinSampleShadingARB
+      glMPEGPredictorSGIX_c
+      glMPEGQuantTableubv_c
       glMulticastBarrierNV
       glMulticastBlitFramebufferNV
       glMulticastBufferSubDataNV_c
@@ -1939,19 +2263,25 @@ sub gl_functions {
       glMultiDrawArraysIndirectAMD_c
       glMultiDrawArraysIndirectBindlessCountNV_c
       glMultiDrawArraysIndirectBindlessNV_c
+      glMultiDrawArraysIndirectCount_c
       glMultiDrawArraysIndirectCountARB_c
+      glMultiDrawArraysIndirectEXT_c
       glMultiDrawElementArrayAPPLE_c
       glMultiDrawElements_c
       glMultiDrawElementsBaseVertex_c
+      glMultiDrawElementsBaseVertexEXT_c
       glMultiDrawElementsEXT_c
       glMultiDrawElementsIndirect_c
       glMultiDrawElementsIndirectAMD_c
       glMultiDrawElementsIndirectBindlessCountNV_c
       glMultiDrawElementsIndirectBindlessNV_c
+      glMultiDrawElementsIndirectCount_c
       glMultiDrawElementsIndirectCountARB_c
+      glMultiDrawElementsIndirectEXT_c
       glMultiDrawRangeElementArrayAPPLE_c
       glMultiModeDrawArraysIBM_c
       glMultiModeDrawElementsIBM_c
+      glMultisampleSubRectPosSGIS
       glMultiTexBufferEXT
       glMultiTexCoord1d
       glMultiTexCoord1dARB
@@ -2069,6 +2399,8 @@ sub gl_functions {
       glNamedBufferDataEXT_c
       glNamedBufferStorage_c
       glNamedBufferStorageEXT_c
+      glNamedBufferStorageExternalEXT
+      glNamedBufferStorageMemEXT
       glNamedBufferSubData_c
       glNamedBufferSubDataEXT_c
       glNamedCopyBufferSubDataEXT
@@ -2081,6 +2413,7 @@ sub gl_functions {
       glNamedFramebufferRenderbufferEXT
       glNamedFramebufferSampleLocationsfvARB_c
       glNamedFramebufferSampleLocationsfvNV_c
+      glNamedFramebufferSamplePositionsfvAMD_c
       glNamedFramebufferTexture
       glNamedFramebufferTexture1DEXT
       glNamedFramebufferTexture2DEXT
@@ -2110,6 +2443,8 @@ sub gl_functions {
       glNewBufferRegion
       glNewList
       glNewObjectBufferATI_c
+      glNonlinLightfvSGIX_c
+      glNonlinMaterialfvSGIX_c
       glNormal3b
       glNormal3bv_c
       glNormal3d
@@ -2148,7 +2483,6 @@ sub gl_functions {
       glObjectUnpurgeableAPPLE
       glOrtho
       glOrthof
-      glOrthofOES
       glOrthox
       glPassTexCoordATI
       glPassThrough
@@ -2187,9 +2521,14 @@ sub gl_functions {
       glPixelTransferf
       glPixelTransferi
       glPixelTransformParameterfEXT
+      glPixelTransformParameterfSGI
       glPixelTransformParameterfvEXT_c
+      glPixelTransformParameterfvSGI_c
       glPixelTransformParameteriEXT
+      glPixelTransformParameteriSGI
       glPixelTransformParameterivEXT_c
+      glPixelTransformParameterivSGI_c
+      glPixelTransformSGI
       glPixelZoom
       glPNTrianglesfATI
       glPNTrianglesiATI
@@ -2211,7 +2550,9 @@ sub gl_functions {
       glPointSizex
       glPollAsyncSGIX_c
       glPolygonMode
+      glPolygonModeNV
       glPolygonOffset
+      glPolygonOffsetClamp
       glPolygonOffsetClampEXT
       glPolygonOffsetEXT
       glPolygonOffsetx
@@ -2230,6 +2571,7 @@ sub gl_functions {
       glPrimitiveRestartNV
       glPrioritizeTextures_c
       glPrioritizeTexturesEXT_c
+      glPrioritizeVertexArraysSGIX_c
       glProgramBinary_c
       glProgramBufferParametersfvNV_c
       glProgramBufferParametersIivNV_c
@@ -2431,6 +2773,7 @@ sub gl_functions {
       glRasterPos4sv_c
       glRasterSamplesEXT
       glReadBuffer
+      glReadBufferIndexedEXT
       glReadBufferRegion
       glReadnPixels_c
       glReadnPixelsARB_c
@@ -2445,13 +2788,16 @@ sub gl_functions {
       glRects
       glRectsv_c
       glReferencePlaneSGIX_c
+      glReleaseKeyedMutexWin32EXT
       glReleaseShaderCompiler
       glRenderbufferStorage
       glRenderbufferStorageEXT
       glRenderbufferStorageMultisample
       glRenderbufferStorageMultisampleANGLE
+      glRenderbufferStorageMultisampleAPPLE
       glRenderbufferStorageMultisampleCoverageNV
       glRenderbufferStorageMultisampleEXT
+      glRenderbufferStorageMultisampleNV
       glRenderGpuMaskNV
       glRenderMode
       glReplacementCodePointerSUN_c
@@ -2483,6 +2829,7 @@ sub gl_functions {
       glResetMinmax
       glResetMinmaxEXT
       glResizeBuffersMESA
+      glResolveMultisampleFramebufferAPPLE
       glResumeTransformFeedback
       glResumeTransformFeedbackNV
       glRotated
@@ -2509,8 +2856,11 @@ sub gl_functions {
       glScalex
       glScissor
       glScissorArrayv_c
+      glScissorArrayvNV_c
       glScissorIndexed
+      glScissorIndexedNV
       glScissorIndexedv_c
+      glScissorIndexedvNV_c
       glSecondaryColor3b
       glSecondaryColor3bEXT
       glSecondaryColor3bv_c
@@ -2553,6 +2903,10 @@ sub gl_functions {
       glSecondaryColorPointerListIBM_c
       glSelectBuffer_c
       glSelectPerfMonitorCountersAMD_c
+      glSelectTextureCoordSetSGIS
+      glSelectTextureSGIS
+      glSelectTextureTransformSGIS
+      glSemaphoreParameterui64vEXT_c
       glSeparableFilter2D_c
       glSeparableFilter2DEXT_c
       glSetFenceAPPLE
@@ -2570,13 +2924,16 @@ sub gl_functions {
       glShaderSourceARB_c
       glShaderStorageBlockBinding
       glSharpenTexFuncSGIS_c
+      glSignalSemaphoreEXT_c
       glSignalVkFenceNV
       glSignalVkSemaphoreNV
+      glSpecializeShader_c
       glSpecializeShaderARB_c
       glSpriteParameterfSGIX
       glSpriteParameterfvSGIX_c
       glSpriteParameteriSGIX
       glSpriteParameterivSGIX_c
+      glStartTilingQCOM
       glStateCaptureNV
       glStencilFillPathInstancedNV_c
       glStencilFillPathNV
@@ -2595,8 +2952,11 @@ sub gl_functions {
       glStencilThenCoverFillPathNV
       glStencilThenCoverStrokePathInstancedNV_c
       glStencilThenCoverStrokePathNV
+      glStereoParameterfNV
+      glStereoParameteriNV
       glStringMarkerGREMEDY_c
       glSubpixelPrecisionBiasNV
+      glSwapMPEGPredictorsSGIX
       glSwizzleEXT
       glSyncTextureINTEL
       glTagSampleBufferSGIX
@@ -2701,8 +3061,10 @@ sub gl_functions {
       glTexImage3DEXT_c
       glTexImage3DMultisample
       glTexImage3DMultisampleCoverageNV
+      glTexImage3DNV_c
       glTexImage4DSGIS_c
       glTexPageCommitmentARB
+      glTexPageCommitmentEXT
       glTexParameterf
       glTexParameterfv_c
       glTexParameteri
@@ -2717,10 +3079,18 @@ sub gl_functions {
       glTexScissorFuncINTEL
       glTexScissorINTEL
       glTexStorage1D
+      glTexStorage1DEXT
       glTexStorage2D
+      glTexStorage2DEXT
       glTexStorage2DMultisample
       glTexStorage3D
+      glTexStorage3DEXT
       glTexStorage3DMultisample
+      glTexStorageMem1DEXT
+      glTexStorageMem2DEXT
+      glTexStorageMem2DMultisampleEXT
+      glTexStorageMem3DEXT
+      glTexStorageMem3DMultisampleEXT
       glTexStorageSparseAMD
       glTexSubImage1D_c
       glTexSubImage1DEXT_c
@@ -2728,6 +3098,7 @@ sub gl_functions {
       glTexSubImage2DEXT_c
       glTexSubImage3D_c
       glTexSubImage3DEXT_c
+      glTexSubImage3DNV_c
       glTexSubImage4DSGIS_c
       glTextureBarrier
       glTextureBarrierNV
@@ -2771,6 +3142,11 @@ sub gl_functions {
       glTextureStorage3DEXT
       glTextureStorage3DMultisample
       glTextureStorage3DMultisampleEXT
+      glTextureStorageMem1DEXT
+      glTextureStorageMem2DEXT
+      glTextureStorageMem2DMultisampleEXT
+      glTextureStorageMem3DEXT
+      glTextureStorageMem3DMultisampleEXT
       glTextureStorageSparseAMD
       glTextureSubImage1D_c
       glTextureSubImage1DEXT_c
@@ -2779,6 +3155,7 @@ sub gl_functions {
       glTextureSubImage3D_c
       glTextureSubImage3DEXT_c
       glTextureView
+      glTextureViewEXT
       glTrackMatrixNV
       glTransformFeedbackAttribsNV_c
       glTransformFeedbackBufferBase
@@ -2889,22 +3266,28 @@ sub gl_functions {
       glUniformMatrix2fvARB_c
       glUniformMatrix2x3dv_c
       glUniformMatrix2x3fv_c
+      glUniformMatrix2x3fvNV_c
       glUniformMatrix2x4dv_c
       glUniformMatrix2x4fv_c
+      glUniformMatrix2x4fvNV_c
       glUniformMatrix3dv_c
       glUniformMatrix3fv_c
       glUniformMatrix3fvARB_c
       glUniformMatrix3x2dv_c
       glUniformMatrix3x2fv_c
+      glUniformMatrix3x2fvNV_c
       glUniformMatrix3x4dv_c
       glUniformMatrix3x4fv_c
+      glUniformMatrix3x4fvNV_c
       glUniformMatrix4dv_c
       glUniformMatrix4fv_c
       glUniformMatrix4fvARB_c
       glUniformMatrix4x2dv_c
       glUniformMatrix4x2fv_c
+      glUniformMatrix4x2fvNV_c
       glUniformMatrix4x3dv_c
       glUniformMatrix4x3fv_c
+      glUniformMatrix4x3fvNV_c
       glUniformSubroutinesuiv_c
       glUniformui64NV
       glUniformui64vNV_c
@@ -2943,6 +3326,7 @@ sub gl_functions {
       glVDPAUSurfaceAccessNV
       glVDPAUUnmapSurfacesNV_c
       glVDPAUUnregisterSurfaceNV
+      glVectorOperationSGIX
       glVertex2d
       glVertex2dv_c
       glVertex2f
@@ -3114,6 +3498,8 @@ sub gl_functions {
       glVertexAttribDivisor
       glVertexAttribDivisorANGLE
       glVertexAttribDivisorARB
+      glVertexAttribDivisorEXT
+      glVertexAttribDivisorNV
       glVertexAttribFormat
       glVertexAttribFormatNV
       glVertexAttribI1i
@@ -3285,11 +3671,16 @@ sub gl_functions {
       glVideoCaptureStreamParameterivNV_c
       glViewport
       glViewportArrayv_c
+      glViewportArrayvNV_c
       glViewportIndexedf
+      glViewportIndexedfNV
       glViewportIndexedfv_c
+      glViewportIndexedfvNV_c
       glViewportPositionWScaleNV
       glViewportSwizzleNV
+      glWaitSemaphoreEXT_c
       glWaitSync
+      glWaitSyncAPPLE
       glWaitVkSemaphoreNV
       glWeightbvARB_c
       glWeightdvARB_c
@@ -3379,6 +3770,12 @@ sub EXPORT_TAGS_GL {
                                            'glBlendFuncIndexedAMD',
                                            'glBlendFuncSeparateIndexedAMD'
                                          ],
+          'GL_AMD_framebuffer_sample_positions' => [
+                                                     'glFramebufferSamplePositionsfvAMD',
+                                                     'glGetFramebufferParameterfvAMD',
+                                                     'glGetNamedFramebufferParameterfvAMD',
+                                                     'glNamedFramebufferSamplePositionsfvAMD'
+                                                   ],
           'GL_AMD_interleaved_elements' => [
                                              'glVertexAttribParameteriAMD'
                                            ],
@@ -3448,6 +3845,9 @@ sub EXPORT_TAGS_GL {
           'GL_ANGLE_translated_shader_source' => [
                                                    'glGetTranslatedShaderSourceANGLE'
                                                  ],
+          'GL_APPLE_copy_texture_levels' => [
+                                              'glCopyTextureLevelsAPPLE'
+                                            ],
           'GL_APPLE_element_array' => [
                                         'glDrawElementArrayAPPLE',
                                         'glDrawRangeElementArrayAPPLE',
@@ -3469,11 +3869,24 @@ sub EXPORT_TAGS_GL {
                                              'glBufferParameteriAPPLE',
                                              'glFlushMappedBufferRangeAPPLE'
                                            ],
+          'GL_APPLE_framebuffer_multisample' => [
+                                                  'glRenderbufferStorageMultisampleAPPLE',
+                                                  'glResolveMultisampleFramebufferAPPLE'
+                                                ],
           'GL_APPLE_object_purgeable' => [
                                            'glGetObjectParameterivAPPLE',
                                            'glObjectPurgeableAPPLE',
                                            'glObjectUnpurgeableAPPLE'
                                          ],
+          'GL_APPLE_sync' => [
+                               'glClientWaitSyncAPPLE',
+                               'glDeleteSyncAPPLE',
+                               'glFenceSyncAPPLE',
+                               'glGetInteger64vAPPLE',
+                               'glGetSyncivAPPLE',
+                               'glIsSyncAPPLE',
+                               'glWaitSyncAPPLE'
+                             ],
           'GL_APPLE_texture_range' => [
                                         'glGetTexParameterPointervAPPLE',
                                         'glTextureRangeAPPLE'
@@ -3539,8 +3952,7 @@ sub EXPORT_TAGS_GL {
                                             'glGetFragDataIndex'
                                           ],
           'GL_ARB_buffer_storage' => [
-                                       'glBufferStorage',
-                                       'glNamedBufferStorageEXT'
+                                       'glBufferStorage'
                                      ],
           'GL_ARB_cl_event' => [
                                  'glCreateSyncFromCLeventARB'
@@ -3938,6 +4350,9 @@ sub EXPORT_TAGS_GL {
                                          'glPointParameterfARB',
                                          'glPointParameterfvARB'
                                        ],
+          'GL_ARB_polygon_offset_clamp' => [
+                                             'glPolygonOffsetClamp'
+                                           ],
           'GL_ARB_program_interface_query' => [
                                                 'glGetProgramInterfaceiv',
                                                 'glGetProgramResourceIndex',
@@ -4129,8 +4544,7 @@ sub EXPORT_TAGS_GL {
                                       'glBufferPageCommitmentARB'
                                     ],
           'GL_ARB_sparse_texture' => [
-                                       'glTexPageCommitmentARB',
-                                       'glTexturePageCommitmentEXT'
+                                       'glTexPageCommitmentARB'
                                      ],
           'GL_ARB_sync' => [
                              'glClientWaitSync',
@@ -4173,10 +4587,7 @@ sub EXPORT_TAGS_GL {
           'GL_ARB_texture_storage' => [
                                         'glTexStorage1D',
                                         'glTexStorage2D',
-                                        'glTexStorage3D',
-                                        'glTextureStorage1DEXT',
-                                        'glTextureStorage2DEXT',
-                                        'glTextureStorage3DEXT'
+                                        'glTexStorage3D'
                                       ],
           'GL_ARB_texture_storage_multisample' => [
                                                     'glTexStorage2DMultisample',
@@ -4533,6 +4944,11 @@ sub EXPORT_TAGS_GL {
                                        'glVertexStream4sATI',
                                        'glVertexStream4svATI'
                                      ],
+          'GL_EXT_base_instance' => [
+                                      'glDrawArraysInstancedBaseInstanceEXT',
+                                      'glDrawElementsInstancedBaseInstanceEXT',
+                                      'glDrawElementsInstancedBaseVertexBaseInstanceEXT'
+                                    ],
           'GL_EXT_bindable_uniform' => [
                                          'glGetUniformBufferSizeEXT',
                                          'glGetUniformOffsetEXT',
@@ -4544,12 +4960,25 @@ sub EXPORT_TAGS_GL {
           'GL_EXT_blend_equation_separate' => [
                                                 'glBlendEquationSeparateEXT'
                                               ],
+          'GL_EXT_blend_func_extended' => [
+                                            'glBindFragDataLocationIndexedEXT',
+                                            'glGetFragDataIndexEXT',
+                                            'glGetProgramResourceLocationIndexEXT'
+                                          ],
           'GL_EXT_blend_func_separate' => [
                                             'glBlendFuncSeparateEXT'
                                           ],
           'GL_EXT_blend_minmax' => [
                                      'glBlendEquationEXT'
                                    ],
+          'GL_EXT_buffer_storage' => [
+                                       'glBufferStorageEXT',
+                                       'glNamedBufferStorageEXT'
+                                     ],
+          'GL_EXT_clear_texture' => [
+                                      'glClearTexImageEXT',
+                                      'glClearTexSubImageEXT'
+                                    ],
           'GL_EXT_color_subtable' => [
                                        'glColorSubTableEXT',
                                        'glCopyColorSubTableEXT'
@@ -4577,6 +5006,9 @@ sub EXPORT_TAGS_GL {
                                          'glBinormalPointerEXT',
                                          'glTangentPointerEXT'
                                        ],
+          'GL_EXT_copy_image' => [
+                                   'glCopyImageSubDataEXT'
+                                 ],
           'GL_EXT_copy_texture' => [
                                      'glCopyTexImage1DEXT',
                                      'glCopyTexImage2DEXT',
@@ -4816,6 +5248,12 @@ sub EXPORT_TAGS_GL {
                                             'glVertexArrayVertexAttribOffsetEXT',
                                             'glVertexArrayVertexOffsetEXT'
                                           ],
+          'GL_EXT_discard_framebuffer' => [
+                                            'glDiscardFramebufferEXT'
+                                          ],
+          'GL_EXT_draw_buffers' => [
+                                     'glDrawBuffersEXT'
+                                   ],
           'GL_EXT_draw_buffers2' => [
                                       'glColorMaskIndexedEXT',
                                       'glDisableIndexedEXT',
@@ -4824,6 +5262,22 @@ sub EXPORT_TAGS_GL {
                                       'glGetIntegerIndexedvEXT',
                                       'glIsEnabledIndexedEXT'
                                     ],
+          'GL_EXT_draw_buffers_indexed' => [
+                                             'glBlendEquationSeparateiEXT',
+                                             'glBlendEquationiEXT',
+                                             'glBlendFuncSeparateiEXT',
+                                             'glBlendFunciEXT',
+                                             'glColorMaskiEXT',
+                                             'glDisableiEXT',
+                                             'glEnableiEXT',
+                                             'glIsEnablediEXT'
+                                           ],
+          'GL_EXT_draw_elements_base_vertex' => [
+                                                  'glDrawElementsBaseVertexEXT',
+                                                  'glDrawElementsInstancedBaseVertexEXT',
+                                                  'glDrawRangeElementsBaseVertexEXT',
+                                                  'glMultiDrawElementsBaseVertexEXT'
+                                                ],
           'GL_EXT_draw_instanced' => [
                                        'glDrawArraysInstancedEXT',
                                        'glDrawElementsInstancedEXT'
@@ -4831,6 +5285,10 @@ sub EXPORT_TAGS_GL {
           'GL_EXT_draw_range_elements' => [
                                             'glDrawRangeElementsEXT'
                                           ],
+          'GL_EXT_external_buffer' => [
+                                        'glBufferStorageExternalEXT',
+                                        'glNamedBufferStorageExternalEXT'
+                                      ],
           'GL_EXT_fog_coord' => [
                                   'glFogCoordPointerEXT',
                                   'glFogCoorddEXT',
@@ -4946,19 +5404,66 @@ sub EXPORT_TAGS_GL {
           'GL_EXT_index_material' => [
                                        'glIndexMaterialEXT'
                                      ],
+          'GL_EXT_instanced_arrays' => [
+                                         'glVertexAttribDivisorEXT'
+                                       ],
           'GL_EXT_light_texture' => [
                                       'glApplyTextureEXT',
                                       'glTextureLightEXT',
                                       'glTextureMaterialEXT'
                                     ],
+          'GL_EXT_map_buffer_range' => [
+                                         'glFlushMappedBufferRangeEXT',
+                                         'glMapBufferRangeEXT'
+                                       ],
+          'GL_EXT_memory_object' => [
+                                      'glBufferStorageMemEXT',
+                                      'glCreateMemoryObjectsEXT',
+                                      'glDeleteMemoryObjectsEXT',
+                                      'glGetMemoryObjectParameterivEXT',
+                                      'glGetUnsignedBytei_vEXT',
+                                      'glGetUnsignedBytevEXT',
+                                      'glIsMemoryObjectEXT',
+                                      'glMemoryObjectParameterivEXT',
+                                      'glNamedBufferStorageMemEXT',
+                                      'glTexStorageMem1DEXT',
+                                      'glTexStorageMem2DEXT',
+                                      'glTexStorageMem2DMultisampleEXT',
+                                      'glTexStorageMem3DEXT',
+                                      'glTexStorageMem3DMultisampleEXT',
+                                      'glTextureStorageMem1DEXT',
+                                      'glTextureStorageMem2DEXT',
+                                      'glTextureStorageMem2DMultisampleEXT',
+                                      'glTextureStorageMem3DEXT',
+                                      'glTextureStorageMem3DMultisampleEXT'
+                                    ],
+          'GL_EXT_memory_object_fd' => [
+                                         'glImportMemoryFdEXT'
+                                       ],
+          'GL_EXT_memory_object_win32' => [
+                                            'glImportMemoryWin32HandleEXT',
+                                            'glImportMemoryWin32NameEXT'
+                                          ],
           'GL_EXT_multi_draw_arrays' => [
                                           'glMultiDrawArraysEXT',
                                           'glMultiDrawElementsEXT'
                                         ],
+          'GL_EXT_multi_draw_indirect' => [
+                                            'glMultiDrawArraysIndirectEXT',
+                                            'glMultiDrawElementsIndirectEXT'
+                                          ],
           'GL_EXT_multisample' => [
                                     'glSampleMaskEXT',
                                     'glSamplePatternEXT'
                                   ],
+          'GL_EXT_multisampled_render_to_texture' => [
+                                                       'glFramebufferTexture2DMultisampleEXT'
+                                                     ],
+          'GL_EXT_multiview_draw_buffers' => [
+                                               'glDrawBuffersIndexedEXT',
+                                               'glGetIntegeri_vEXT',
+                                               'glReadBufferIndexedEXT'
+                                             ],
           'GL_EXT_paletted_texture' => [
                                          'glColorTableEXT',
                                          'glGetColorTableEXT',
@@ -5015,6 +5520,22 @@ sub EXPORT_TAGS_GL {
                                         'glSecondaryColor3usvEXT',
                                         'glSecondaryColorPointerEXT'
                                       ],
+          'GL_EXT_semaphore' => [
+                                  'glDeleteSemaphoresEXT',
+                                  'glGenSemaphoresEXT',
+                                  'glGetSemaphoreParameterui64vEXT',
+                                  'glIsSemaphoreEXT',
+                                  'glSemaphoreParameterui64vEXT',
+                                  'glSignalSemaphoreEXT',
+                                  'glWaitSemaphoreEXT'
+                                ],
+          'GL_EXT_semaphore_fd' => [
+                                     'glImportSemaphoreFdEXT'
+                                   ],
+          'GL_EXT_semaphore_win32' => [
+                                        'glImportSemaphoreWin32HandleEXT',
+                                        'glImportSemaphoreWin32NameEXT'
+                                      ],
           'GL_EXT_separate_shader_objects' => [
                                                 'glActiveProgramEXT',
                                                 'glCreateShaderProgramEXT',
@@ -5024,6 +5545,15 @@ sub EXPORT_TAGS_GL {
                                                 'glBindImageTextureEXT',
                                                 'glMemoryBarrierEXT'
                                               ],
+          'GL_EXT_shader_pixel_local_storage2' => [
+                                                    'glClearPixelLocalStorageuiEXT',
+                                                    'glFramebufferPixelLocalStorageSizeEXT',
+                                                    'glGetFramebufferPixelLocalStorageSizeEXT'
+                                                  ],
+          'GL_EXT_sparse_texture' => [
+                                       'glTexPageCommitmentEXT',
+                                       'glTexturePageCommitmentEXT'
+                                     ],
           'GL_EXT_stencil_two_side' => [
                                          'glActiveStencilFaceEXT'
                                        ],
@@ -5060,6 +5590,17 @@ sub EXPORT_TAGS_GL {
           'GL_EXT_texture_perturb_normal' => [
                                                'glTextureNormalEXT'
                                              ],
+          'GL_EXT_texture_storage' => [
+                                        'glTexStorage1DEXT',
+                                        'glTexStorage2DEXT',
+                                        'glTexStorage3DEXT',
+                                        'glTextureStorage1DEXT',
+                                        'glTextureStorage2DEXT',
+                                        'glTextureStorage3DEXT'
+                                      ],
+          'GL_EXT_texture_view' => [
+                                     'glTextureViewEXT'
+                                   ],
           'GL_EXT_timer_query' => [
                                     'glGetQueryObjecti64vEXT',
                                     'glGetQueryObjectui64vEXT'
@@ -5083,6 +5624,10 @@ sub EXPORT_TAGS_GL {
                                      'glTexCoordPointerEXT',
                                      'glVertexPointerEXT'
                                    ],
+          'GL_EXT_vertex_array_setXXX' => [
+                                            'glBindArraySetEXT',
+                                            'glDeleteArraySetsEXT'
+                                          ],
           'GL_EXT_vertex_attrib_64bit' => [
                                             'glGetVertexAttribLdvEXT',
                                             'glVertexArrayVertexAttribLOffsetEXT',
@@ -5145,6 +5690,10 @@ sub EXPORT_TAGS_GL {
                                          'glVertexWeightfEXT',
                                          'glVertexWeightfvEXT'
                                        ],
+          'GL_EXT_win32_keyed_mutex' => [
+                                          'glAcquireKeyedMutexWin32EXT',
+                                          'glReleaseKeyedMutexWin32EXT'
+                                        ],
           'GL_EXT_window_rectangles' => [
                                           'glWindowRectanglesEXT'
                                         ],
@@ -5216,6 +5765,9 @@ sub EXPORT_TAGS_GL {
                               'glPopDebugGroup',
                               'glPushDebugGroup'
                             ],
+          'GL_KHR_parallel_shader_compile' => [
+                                                'glMaxShaderCompilerThreadsKHR'
+                                              ],
           'GL_KHR_robustness' => [
                                    'glGetnUniformfv',
                                    'glGetnUniformiv',
@@ -5272,6 +5824,10 @@ sub EXPORT_TAGS_GL {
                                              'glLGPUInterlockNVX',
                                              'glLGPUNamedBufferSubDataNVX'
                                            ],
+          'GL_NV_3dvision_settings' => [
+                                         'glStereoParameterfNV',
+                                         'glStereoParameteriNV'
+                                       ],
           'GL_NV_bindless_multi_draw_indirect' => [
                                                     'glMultiDrawArraysIndirectBindlessNV',
                                                     'glMultiDrawElementsIndirectBindlessNV'
@@ -5334,6 +5890,9 @@ sub EXPORT_TAGS_GL {
           'GL_NV_conservative_raster_pre_snap_triangles' => [
                                                               'glConservativeRasterParameteriNV'
                                                             ],
+          'GL_NV_copy_buffer' => [
+                                   'glCopyBufferSubDataNV'
+                                 ],
           'GL_NV_copy_image' => [
                                   'glCopyImageSubDataNV'
                                 ],
@@ -5342,6 +5901,13 @@ sub EXPORT_TAGS_GL {
                                           'glDepthBoundsdNV',
                                           'glDepthRangedNV'
                                         ],
+          'GL_NV_draw_buffers' => [
+                                    'glDrawBuffersNV'
+                                  ],
+          'GL_NV_draw_instanced' => [
+                                      'glDrawArraysInstancedNV',
+                                      'glDrawElementsInstancedNV'
+                                    ],
           'GL_NV_draw_texture' => [
                                     'glDrawTextureNV'
                                   ],
@@ -5388,6 +5954,12 @@ sub EXPORT_TAGS_GL {
                                         'glProgramNamedParameter4fNV',
                                         'glProgramNamedParameter4fvNV'
                                       ],
+          'GL_NV_framebuffer_blit' => [
+                                        'glBlitFramebufferNV'
+                                      ],
+          'GL_NV_framebuffer_multisample' => [
+                                               'glRenderbufferStorageMultisampleNV'
+                                             ],
           'GL_NV_framebuffer_multisample_coverage' => [
                                                         'glRenderbufferStorageMultisampleCoverageNV'
                                                       ],
@@ -5506,9 +6078,20 @@ sub EXPORT_TAGS_GL {
                                   'glVertexWeighthNV',
                                   'glVertexWeighthvNV'
                                 ],
+          'GL_NV_instanced_arrays' => [
+                                        'glVertexAttribDivisorNV'
+                                      ],
           'GL_NV_internalformat_sample_query' => [
                                                    'glGetInternalformatSampleivNV'
                                                  ],
+          'GL_NV_non_square_matrices' => [
+                                           'glUniformMatrix2x3fvNV',
+                                           'glUniformMatrix2x4fvNV',
+                                           'glUniformMatrix3x2fvNV',
+                                           'glUniformMatrix3x4fvNV',
+                                           'glUniformMatrix4x2fvNV',
+                                           'glUniformMatrix4x3fvNV'
+                                         ],
           'GL_NV_occlusion_query' => [
                                        'glBeginOcclusionQueryNV',
                                        'glDeleteOcclusionQueriesNV',
@@ -5597,6 +6180,9 @@ sub EXPORT_TAGS_GL {
                                     'glPointParameteriNV',
                                     'glPointParameterivNV'
                                   ],
+          'GL_NV_polygon_mode' => [
+                                    'glPolygonModeNV'
+                                  ],
           'GL_NV_present_video' => [
                                      'glGetVideoi64vNV',
                                      'glGetVideoivNV',
@@ -5647,6 +6233,14 @@ sub EXPORT_TAGS_GL {
                                           'glUniformui64NV',
                                           'glUniformui64vNV'
                                         ],
+          'GL_NV_texture_array' => [
+                                     'glCompressedTexImage3DNV',
+                                     'glCompressedTexSubImage3DNV',
+                                     'glCopyTexSubImage3DNV',
+                                     'glFramebufferTextureLayerNV',
+                                     'glTexImage3DNV',
+                                     'glTexSubImage3DNV'
+                                   ],
           'GL_NV_texture_barrier' => [
                                        'glTextureBarrierNV'
                                      ],
@@ -5811,20 +6405,65 @@ sub EXPORT_TAGS_GL {
                                      'glVideoCaptureStreamParameterfvNV',
                                      'glVideoCaptureStreamParameterivNV'
                                    ],
+          'GL_NV_viewport_array' => [
+                                      'glDepthRangeArrayfvNV',
+                                      'glDepthRangeIndexedfNV',
+                                      'glDisableiNV',
+                                      'glEnableiNV',
+                                      'glGetFloati_vNV',
+                                      'glIsEnablediNV',
+                                      'glScissorArrayvNV',
+                                      'glScissorIndexedNV',
+                                      'glScissorIndexedvNV',
+                                      'glViewportArrayvNV',
+                                      'glViewportIndexedfNV',
+                                      'glViewportIndexedfvNV'
+                                    ],
           'GL_NV_viewport_swizzle' => [
                                         'glViewportSwizzleNV'
                                       ],
-          'GL_OES_single_precision' => [
-                                         'glClearDepthfOES',
-                                         'glClipPlanefOES',
-                                         'glDepthRangefOES',
-                                         'glFrustumfOES',
-                                         'glGetClipPlanefOES',
-                                         'glOrthofOES'
-                                       ],
           'GL_OVR_multiview' => [
                                   'glFramebufferTextureMultiviewOVR'
                                 ],
+          'GL_OVR_multiview_multisampled_render_to_texture' => [
+                                                                 'glFramebufferTextureMultisampleMultiviewOVR'
+                                                               ],
+          'GL_QCOM_alpha_test' => [
+                                    'glAlphaFuncQCOM'
+                                  ],
+          'GL_QCOM_driver_control' => [
+                                        'glDisableDriverControlQCOM',
+                                        'glEnableDriverControlQCOM',
+                                        'glGetDriverControlStringQCOM',
+                                        'glGetDriverControlsQCOM'
+                                      ],
+          'GL_QCOM_extended_get' => [
+                                      'glExtGetBufferPointervQCOM',
+                                      'glExtGetBuffersQCOM',
+                                      'glExtGetFramebuffersQCOM',
+                                      'glExtGetRenderbuffersQCOM',
+                                      'glExtGetTexLevelParameterivQCOM',
+                                      'glExtGetTexSubImageQCOM',
+                                      'glExtGetTexturesQCOM',
+                                      'glExtTexObjectStateOverrideiQCOM'
+                                    ],
+          'GL_QCOM_extended_get2' => [
+                                       'glExtGetProgramBinarySourceQCOM',
+                                       'glExtGetProgramsQCOM',
+                                       'glExtGetShadersQCOM',
+                                       'glExtIsProgramBinaryQCOM'
+                                     ],
+          'GL_QCOM_framebuffer_foveated' => [
+                                              'glFramebufferFoveationConfigQCOM',
+                                              'glFramebufferFoveationParametersQCOM'
+                                            ],
+          'GL_QCOM_shader_framebuffer_fetch_noncoherent' => [
+                                                              'glFramebufferFetchBarrierQCOM'
+                                                            ],
+          'GL_QCOM_tiled_rendering' => [
+                                         'glEndTilingQCOM',
+                                         'glStartTilingQCOM'
+                                       ],
           'GL_REGAL_ES1_0_compatibility' => [
                                               'glAlphaFuncx',
                                               'glClearColorx',
@@ -5895,6 +6534,15 @@ sub EXPORT_TAGS_GL {
                                      'glSampleMaskSGIS',
                                      'glSamplePatternSGIS'
                                    ],
+          'GL_SGIS_multitexture' => [
+                                      'glInterleavedTextureCoordSetsSGIS',
+                                      'glSelectTextureCoordSetSGIS',
+                                      'glSelectTextureSGIS',
+                                      'glSelectTextureTransformSGIS'
+                                    ],
+          'GL_SGIS_shared_multisample' => [
+                                            'glMultisampleSubRectPosSGIS'
+                                          ],
           'GL_SGIS_sharpen_texture' => [
                                          'glGetSharpenTexFuncSGIS',
                                          'glSharpenTexFuncSGIS'
@@ -5915,9 +6563,17 @@ sub EXPORT_TAGS_GL {
                                'glIsAsyncMarkerSGIX',
                                'glPollAsyncSGIX'
                              ],
+          'GL_SGIX_datapipe' => [
+                                  'glAddressSpace',
+                                  'glDataPipe'
+                                ],
           'GL_SGIX_flush_raster' => [
                                       'glFlushRasterSGIX'
                                     ],
+          'GL_SGIX_fog_layers' => [
+                                    'glFogLayersSGIX',
+                                    'glGetFogLayersSGIX'
+                                  ],
           'GL_SGIX_fog_texture' => [
                                      'glTextureFogSGIX'
                                    ],
@@ -5943,9 +6599,39 @@ sub EXPORT_TAGS_GL {
           'GL_SGIX_framezoom' => [
                                    'glFrameZoomSGIX'
                                  ],
+          'GL_SGIX_igloo_interface' => [
+                                         'glIglooInterfaceSGIX'
+                                       ],
+          'GL_SGIX_mpeg1' => [
+                               'glAllocMPEGPredictorsSGIX',
+                               'glDeleteMPEGPredictorsSGIX',
+                               'glGenMPEGPredictorsSGIX',
+                               'glGetMPEGParameterfvSGIX',
+                               'glGetMPEGParameterivSGIX',
+                               'glGetMPEGPredictorSGIX',
+                               'glGetMPEGQuantTableubv',
+                               'glIsMPEGPredictorSGIX',
+                               'glMPEGPredictorSGIX',
+                               'glMPEGQuantTableubv',
+                               'glSwapMPEGPredictorsSGIX'
+                             ],
+          'GL_SGIX_nonlinear_lighting_pervertex' => [
+                                                      'glGetNonlinLightfvSGIX',
+                                                      'glGetNonlinMaterialfvSGIX',
+                                                      'glNonlinLightfvSGIX',
+                                                      'glNonlinMaterialfvSGIX'
+                                                    ],
           'GL_SGIX_pixel_texture' => [
                                        'glPixelTexGenSGIX'
                                      ],
+          'GL_SGIX_polynomial_ffd' => [
+                                        'glDeformSGIX',
+                                        'glLoadIdentityDeformationMapSGIX'
+                                      ],
+          'GL_SGIX_quad_mesh' => [
+                                   'glMeshBreadthSGIX',
+                                   'glMeshStrideSGIX'
+                                 ],
           'GL_SGIX_reference_plane' => [
                                          'glReferencePlaneSGIX'
                                        ],
@@ -5958,6 +6644,18 @@ sub EXPORT_TAGS_GL {
           'GL_SGIX_tag_sample_buffer' => [
                                            'glTagSampleBufferSGIX'
                                          ],
+          'GL_SGIX_vector_ops' => [
+                                    'glGetVectorOperationSGIX',
+                                    'glVectorOperationSGIX'
+                                  ],
+          'GL_SGIX_vertex_array_object' => [
+                                             'glAreVertexArraysResidentSGIX',
+                                             'glBindVertexArraySGIX',
+                                             'glDeleteVertexArraysSGIX',
+                                             'glGenVertexArraysSGIX',
+                                             'glIsVertexArraySGIX',
+                                             'glPrioritizeVertexArraysSGIX'
+                                           ],
           'GL_SGI_color_table' => [
                                     'glColorTableParameterfvSGI',
                                     'glColorTableParameterivSGI',
@@ -5967,6 +6665,15 @@ sub EXPORT_TAGS_GL {
                                     'glGetColorTableParameterivSGI',
                                     'glGetColorTableSGI'
                                   ],
+          'GL_SGI_fft' => [
+                            'glGetPixelTransformParameterfvSGI',
+                            'glGetPixelTransformParameterivSGI',
+                            'glPixelTransformParameterfSGI',
+                            'glPixelTransformParameterfvSGI',
+                            'glPixelTransformParameteriSGI',
+                            'glPixelTransformParameterivSGI',
+                            'glPixelTransformSGI'
+                          ],
           'GL_SUNX_constant_data' => [
                                        'glFinishTextureSUNX'
                                      ],
@@ -6682,6 +7389,11 @@ sub EXPORT_TAGS_GL {
                                 'glGetnTexImage',
                                 'glGetnUniformdv'
                               ],
+          'GL_VERSION_4_6' => [
+                                'glMultiDrawArraysIndirectCount',
+                                'glMultiDrawElementsIndirectCount',
+                                'glSpecializeShader'
+                              ],
           'GL_WIN_swap_hint' => [
                                   'glAddSwapHintRectWIN',
                                   'GLEW_VERSION_1_1',
@@ -6702,15 +7414,21 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_VERSION_4_3',
                                   'GLEW_VERSION_4_4',
                                   'GLEW_VERSION_4_5',
+                                  'GLEW_VERSION_4_6',
                                   'GLEW_3DFX_multisample',
                                   'GLEW_3DFX_tbuffer',
                                   'GLEW_3DFX_texture_compression_FXT1',
                                   'GLEW_AMD_blend_minmax_factor',
+                                  'GLEW_AMD_compressed_3DC_texture',
+                                  'GLEW_AMD_compressed_ATC_texture',
                                   'GLEW_AMD_conservative_depth',
                                   'GLEW_AMD_debug_output',
                                   'GLEW_AMD_depth_clamp_separate',
                                   'GLEW_AMD_draw_buffers_blend',
+                                  'GLEW_AMD_framebuffer_sample_positions',
                                   'GLEW_AMD_gcn_shader',
+                                  'GLEW_AMD_gpu_shader_half_float',
+                                  'GLEW_AMD_gpu_shader_int16',
                                   'GLEW_AMD_gpu_shader_int64',
                                   'GLEW_AMD_interleaved_elements',
                                   'GLEW_AMD_multi_draw_indirect',
@@ -6718,22 +7436,26 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_AMD_occlusion_query_event',
                                   'GLEW_AMD_performance_monitor',
                                   'GLEW_AMD_pinned_memory',
+                                  'GLEW_AMD_program_binary_Z400',
                                   'GLEW_AMD_query_buffer_object',
                                   'GLEW_AMD_sample_positions',
                                   'GLEW_AMD_seamless_cubemap_per_texture',
                                   'GLEW_AMD_shader_atomic_counter_ops',
+                                  'GLEW_AMD_shader_ballot',
                                   'GLEW_AMD_shader_explicit_vertex_parameter',
                                   'GLEW_AMD_shader_stencil_export',
                                   'GLEW_AMD_shader_stencil_value_export',
                                   'GLEW_AMD_shader_trinary_minmax',
                                   'GLEW_AMD_sparse_texture',
                                   'GLEW_AMD_stencil_operation_extended',
+                                  'GLEW_AMD_texture_gather_bias_lod',
                                   'GLEW_AMD_texture_texture4',
                                   'GLEW_AMD_transform_feedback3_lines_triangles',
                                   'GLEW_AMD_transform_feedback4',
                                   'GLEW_AMD_vertex_shader_layer',
                                   'GLEW_AMD_vertex_shader_tessellator',
                                   'GLEW_AMD_vertex_shader_viewport_index',
+                                  'GLEW_ANDROID_extension_pack_es31a',
                                   'GLEW_ANGLE_depth_texture',
                                   'GLEW_ANGLE_framebuffer_blit',
                                   'GLEW_ANGLE_framebuffer_multisample',
@@ -6748,15 +7470,24 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_ANGLE_translated_shader_source',
                                   'GLEW_APPLE_aux_depth_stencil',
                                   'GLEW_APPLE_client_storage',
+                                  'GLEW_APPLE_clip_distance',
+                                  'GLEW_APPLE_color_buffer_packed_float',
+                                  'GLEW_APPLE_copy_texture_levels',
                                   'GLEW_APPLE_element_array',
                                   'GLEW_APPLE_fence',
                                   'GLEW_APPLE_float_pixels',
                                   'GLEW_APPLE_flush_buffer_range',
+                                  'GLEW_APPLE_framebuffer_multisample',
                                   'GLEW_APPLE_object_purgeable',
                                   'GLEW_APPLE_pixel_buffer',
                                   'GLEW_APPLE_rgb_422',
                                   'GLEW_APPLE_row_bytes',
                                   'GLEW_APPLE_specular_vector',
+                                  'GLEW_APPLE_sync',
+                                  'GLEW_APPLE_texture_2D_limited_npot',
+                                  'GLEW_APPLE_texture_format_BGRA8888',
+                                  'GLEW_APPLE_texture_max_level',
+                                  'GLEW_APPLE_texture_packed_float',
                                   'GLEW_APPLE_texture_range',
                                   'GLEW_APPLE_transform_hint',
                                   'GLEW_APPLE_vertex_array_object',
@@ -6838,6 +7569,7 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_ARB_pixel_buffer_object',
                                   'GLEW_ARB_point_parameters',
                                   'GLEW_ARB_point_sprite',
+                                  'GLEW_ARB_polygon_offset_clamp',
                                   'GLEW_ARB_post_depth_coverage',
                                   'GLEW_ARB_program_interface_query',
                                   'GLEW_ARB_provoking_vertex',
@@ -6879,6 +7611,7 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_ARB_sparse_texture',
                                   'GLEW_ARB_sparse_texture2',
                                   'GLEW_ARB_sparse_texture_clamp',
+                                  'GLEW_ARB_spirv_extensions',
                                   'GLEW_ARB_stencil_texturing',
                                   'GLEW_ARB_sync',
                                   'GLEW_ARB_tessellation_shader',
@@ -6896,6 +7629,7 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_ARB_texture_env_combine',
                                   'GLEW_ARB_texture_env_crossbar',
                                   'GLEW_ARB_texture_env_dot3',
+                                  'GLEW_ARB_texture_filter_anisotropic',
                                   'GLEW_ARB_texture_filter_minmax',
                                   'GLEW_ARB_texture_float',
                                   'GLEW_ARB_texture_gather',
@@ -6932,6 +7666,11 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_ARB_vertex_type_2_10_10_10_rev',
                                   'GLEW_ARB_viewport_array',
                                   'GLEW_ARB_window_pos',
+                                  'GLEW_ARM_mali_program_binary',
+                                  'GLEW_ARM_mali_shader_binary',
+                                  'GLEW_ARM_rgba8',
+                                  'GLEW_ARM_shader_framebuffer_fetch',
+                                  'GLEW_ARM_shader_framebuffer_fetch_depth_stencil',
                                   'GLEW_ATIX_point_sprites',
                                   'GLEW_ATIX_texture_env_combine3',
                                   'GLEW_ATIX_texture_env_route',
@@ -6953,52 +7692,86 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_ATI_vertex_array_object',
                                   'GLEW_ATI_vertex_attrib_array_object',
                                   'GLEW_ATI_vertex_streams',
+                                  'GLEW_EGL_KHR_context_flush_control',
                                   'GLEW_EGL_NV_robustness_video_memory_purge',
                                   'GLEW_EXT_422_pixels',
                                   'GLEW_EXT_Cg_shader',
+                                  'GLEW_EXT_EGL_image_array',
+                                  'GLEW_EXT_YUV_target',
                                   'GLEW_EXT_abgr',
+                                  'GLEW_EXT_base_instance',
                                   'GLEW_EXT_bgra',
                                   'GLEW_EXT_bindable_uniform',
                                   'GLEW_EXT_blend_color',
                                   'GLEW_EXT_blend_equation_separate',
+                                  'GLEW_EXT_blend_func_extended',
                                   'GLEW_EXT_blend_func_separate',
                                   'GLEW_EXT_blend_logic_op',
                                   'GLEW_EXT_blend_minmax',
                                   'GLEW_EXT_blend_subtract',
+                                  'GLEW_EXT_buffer_storage',
+                                  'GLEW_EXT_clear_texture',
+                                  'GLEW_EXT_clip_cull_distance',
                                   'GLEW_EXT_clip_volume_hint',
                                   'GLEW_EXT_cmyka',
+                                  'GLEW_EXT_color_buffer_float',
+                                  'GLEW_EXT_color_buffer_half_float',
                                   'GLEW_EXT_color_subtable',
                                   'GLEW_EXT_compiled_vertex_array',
+                                  'GLEW_EXT_compressed_ETC1_RGB8_sub_texture',
+                                  'GLEW_EXT_conservative_depth',
                                   'GLEW_EXT_convolution',
                                   'GLEW_EXT_coordinate_frame',
+                                  'GLEW_EXT_copy_image',
                                   'GLEW_EXT_copy_texture',
                                   'GLEW_EXT_cull_vertex',
                                   'GLEW_EXT_debug_label',
                                   'GLEW_EXT_debug_marker',
                                   'GLEW_EXT_depth_bounds_test',
                                   'GLEW_EXT_direct_state_access',
+                                  'GLEW_EXT_discard_framebuffer',
+                                  'GLEW_EXT_draw_buffers',
                                   'GLEW_EXT_draw_buffers2',
+                                  'GLEW_EXT_draw_buffers_indexed',
+                                  'GLEW_EXT_draw_elements_base_vertex',
                                   'GLEW_EXT_draw_instanced',
                                   'GLEW_EXT_draw_range_elements',
+                                  'GLEW_EXT_external_buffer',
+                                  'GLEW_EXT_float_blend',
                                   'GLEW_EXT_fog_coord',
+                                  'GLEW_EXT_frag_depth',
                                   'GLEW_EXT_fragment_lighting',
                                   'GLEW_EXT_framebuffer_blit',
                                   'GLEW_EXT_framebuffer_multisample',
                                   'GLEW_EXT_framebuffer_multisample_blit_scaled',
                                   'GLEW_EXT_framebuffer_object',
                                   'GLEW_EXT_framebuffer_sRGB',
+                                  'GLEW_EXT_geometry_point_size',
+                                  'GLEW_EXT_geometry_shader',
                                   'GLEW_EXT_geometry_shader4',
                                   'GLEW_EXT_gpu_program_parameters',
                                   'GLEW_EXT_gpu_shader4',
+                                  'GLEW_EXT_gpu_shader5',
                                   'GLEW_EXT_histogram',
                                   'GLEW_EXT_index_array_formats',
                                   'GLEW_EXT_index_func',
                                   'GLEW_EXT_index_material',
                                   'GLEW_EXT_index_texture',
+                                  'GLEW_EXT_instanced_arrays',
                                   'GLEW_EXT_light_texture',
+                                  'GLEW_EXT_map_buffer_range',
+                                  'GLEW_EXT_memory_object',
+                                  'GLEW_EXT_memory_object_fd',
+                                  'GLEW_EXT_memory_object_win32',
                                   'GLEW_EXT_misc_attribute',
                                   'GLEW_EXT_multi_draw_arrays',
+                                  'GLEW_EXT_multi_draw_indirect',
+                                  'GLEW_EXT_multiple_textures',
                                   'GLEW_EXT_multisample',
+                                  'GLEW_EXT_multisample_compatibility',
+                                  'GLEW_EXT_multisampled_render_to_texture',
+                                  'GLEW_EXT_multisampled_render_to_texture2',
+                                  'GLEW_EXT_multiview_draw_buffers',
                                   'GLEW_EXT_packed_depth_stencil',
                                   'GLEW_EXT_packed_float',
                                   'GLEW_EXT_packed_pixels',
@@ -7011,17 +7784,35 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_EXT_polygon_offset_clamp',
                                   'GLEW_EXT_post_depth_coverage',
                                   'GLEW_EXT_provoking_vertex',
+                                  'GLEW_EXT_pvrtc_sRGB',
                                   'GLEW_EXT_raster_multisample',
+                                  'GLEW_EXT_read_format_bgra',
+                                  'GLEW_EXT_render_snorm',
                                   'GLEW_EXT_rescale_normal',
+                                  'GLEW_EXT_sRGB',
+                                  'GLEW_EXT_sRGB_write_control',
                                   'GLEW_EXT_scene_marker',
                                   'GLEW_EXT_secondary_color',
+                                  'GLEW_EXT_semaphore',
+                                  'GLEW_EXT_semaphore_fd',
+                                  'GLEW_EXT_semaphore_win32',
                                   'GLEW_EXT_separate_shader_objects',
                                   'GLEW_EXT_separate_specular_color',
+                                  'GLEW_EXT_shader_framebuffer_fetch',
+                                  'GLEW_EXT_shader_group_vote',
                                   'GLEW_EXT_shader_image_load_formatted',
                                   'GLEW_EXT_shader_image_load_store',
+                                  'GLEW_EXT_shader_implicit_conversions',
                                   'GLEW_EXT_shader_integer_mix',
+                                  'GLEW_EXT_shader_io_blocks',
+                                  'GLEW_EXT_shader_non_constant_global_initializers',
+                                  'GLEW_EXT_shader_pixel_local_storage',
+                                  'GLEW_EXT_shader_pixel_local_storage2',
+                                  'GLEW_EXT_shader_texture_lod',
                                   'GLEW_EXT_shadow_funcs',
+                                  'GLEW_EXT_shadow_samplers',
                                   'GLEW_EXT_shared_texture_palette',
+                                  'GLEW_EXT_sparse_texture',
                                   'GLEW_EXT_sparse_texture2',
                                   'GLEW_EXT_stencil_clear_tag',
                                   'GLEW_EXT_stencil_two_side',
@@ -7031,11 +7822,15 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_EXT_texture3D',
                                   'GLEW_EXT_texture_array',
                                   'GLEW_EXT_texture_buffer_object',
+                                  'GLEW_EXT_texture_compression_astc_decode_mode',
+                                  'GLEW_EXT_texture_compression_astc_decode_mode_rgb9e5',
+                                  'GLEW_EXT_texture_compression_bptc',
                                   'GLEW_EXT_texture_compression_dxt1',
                                   'GLEW_EXT_texture_compression_latc',
                                   'GLEW_EXT_texture_compression_rgtc',
                                   'GLEW_EXT_texture_compression_s3tc',
                                   'GLEW_EXT_texture_cube_map',
+                                  'GLEW_EXT_texture_cube_map_array',
                                   'GLEW_EXT_texture_edge_clamp',
                                   'GLEW_EXT_texture_env',
                                   'GLEW_EXT_texture_env_add',
@@ -7043,24 +7838,35 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_EXT_texture_env_dot3',
                                   'GLEW_EXT_texture_filter_anisotropic',
                                   'GLEW_EXT_texture_filter_minmax',
+                                  'GLEW_EXT_texture_format_BGRA8888',
                                   'GLEW_EXT_texture_integer',
                                   'GLEW_EXT_texture_lod_bias',
                                   'GLEW_EXT_texture_mirror_clamp',
+                                  'GLEW_EXT_texture_norm16',
                                   'GLEW_EXT_texture_object',
                                   'GLEW_EXT_texture_perturb_normal',
                                   'GLEW_EXT_texture_rectangle',
+                                  'GLEW_EXT_texture_rg',
                                   'GLEW_EXT_texture_sRGB',
+                                  'GLEW_EXT_texture_sRGB_R8',
+                                  'GLEW_EXT_texture_sRGB_RG8',
                                   'GLEW_EXT_texture_sRGB_decode',
                                   'GLEW_EXT_texture_shared_exponent',
                                   'GLEW_EXT_texture_snorm',
+                                  'GLEW_EXT_texture_storage',
                                   'GLEW_EXT_texture_swizzle',
+                                  'GLEW_EXT_texture_type_2_10_10_10_REV',
+                                  'GLEW_EXT_texture_view',
                                   'GLEW_EXT_timer_query',
                                   'GLEW_EXT_transform_feedback',
+                                  'GLEW_EXT_unpack_subimage',
                                   'GLEW_EXT_vertex_array',
                                   'GLEW_EXT_vertex_array_bgra',
+                                  'GLEW_EXT_vertex_array_setXXX',
                                   'GLEW_EXT_vertex_attrib_64bit',
                                   'GLEW_EXT_vertex_shader',
                                   'GLEW_EXT_vertex_weighting',
+                                  'GLEW_EXT_win32_keyed_mutex',
                                   'GLEW_EXT_window_rectangles',
                                   'GLEW_EXT_x11_sync_object',
                                   'GLEW_GREMEDY_frame_terminator',
@@ -7089,6 +7895,7 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_KHR_context_flush_control',
                                   'GLEW_KHR_debug',
                                   'GLEW_KHR_no_error',
+                                  'GLEW_KHR_parallel_shader_compile',
                                   'GLEW_KHR_robust_buffer_access_behavior',
                                   'GLEW_KHR_robustness',
                                   'GLEW_KHR_texture_compression_astc_hdr',
@@ -7105,11 +7912,16 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_NVX_conditional_render',
                                   'GLEW_NVX_gpu_memory_info',
                                   'GLEW_NVX_linked_gpu_multicast',
+                                  'GLEW_NV_3dvision_settings',
+                                  'GLEW_NV_EGL_stream_consumer_external',
+                                  'GLEW_NV_alpha_to_coverage_dither_control',
+                                  'GLEW_NV_bgr',
                                   'GLEW_NV_bindless_multi_draw_indirect',
                                   'GLEW_NV_bindless_multi_draw_indirect_count',
                                   'GLEW_NV_bindless_texture',
                                   'GLEW_NV_blend_equation_advanced',
                                   'GLEW_NV_blend_equation_advanced_coherent',
+                                  'GLEW_NV_blend_minmax_factor',
                                   'GLEW_NV_blend_square',
                                   'GLEW_NV_clip_space_w_scaling',
                                   'GLEW_NV_command_list',
@@ -7118,16 +7930,21 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_NV_conservative_raster',
                                   'GLEW_NV_conservative_raster_dilate',
                                   'GLEW_NV_conservative_raster_pre_snap_triangles',
+                                  'GLEW_NV_copy_buffer',
                                   'GLEW_NV_copy_depth_to_color',
                                   'GLEW_NV_copy_image',
                                   'GLEW_NV_deep_texture3D',
                                   'GLEW_NV_depth_buffer_float',
                                   'GLEW_NV_depth_clamp',
                                   'GLEW_NV_depth_range_unclamped',
+                                  'GLEW_NV_draw_buffers',
+                                  'GLEW_NV_draw_instanced',
                                   'GLEW_NV_draw_texture',
                                   'GLEW_NV_draw_vulkan_image',
                                   'GLEW_NV_evaluators',
+                                  'GLEW_NV_explicit_attrib_location',
                                   'GLEW_NV_explicit_multisample',
+                                  'GLEW_NV_fbo_color_attachments',
                                   'GLEW_NV_fence',
                                   'GLEW_NV_fill_rectangle',
                                   'GLEW_NV_float_buffer',
@@ -7138,8 +7955,11 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_NV_fragment_program4',
                                   'GLEW_NV_fragment_program_option',
                                   'GLEW_NV_fragment_shader_interlock',
+                                  'GLEW_NV_framebuffer_blit',
                                   'GLEW_NV_framebuffer_mixed_samples',
+                                  'GLEW_NV_framebuffer_multisample',
                                   'GLEW_NV_framebuffer_multisample_coverage',
+                                  'GLEW_NV_generate_mipmap_sRGB',
                                   'GLEW_NV_geometry_program4',
                                   'GLEW_NV_geometry_shader4',
                                   'GLEW_NV_geometry_shader_passthrough',
@@ -7150,23 +7970,36 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_NV_gpu_program_fp64',
                                   'GLEW_NV_gpu_shader5',
                                   'GLEW_NV_half_float',
+                                  'GLEW_NV_image_formats',
+                                  'GLEW_NV_instanced_arrays',
                                   'GLEW_NV_internalformat_sample_query',
                                   'GLEW_NV_light_max_exponent',
                                   'GLEW_NV_multisample_coverage',
                                   'GLEW_NV_multisample_filter_hint',
+                                  'GLEW_NV_non_square_matrices',
                                   'GLEW_NV_occlusion_query',
+                                  'GLEW_NV_pack_subimage',
                                   'GLEW_NV_packed_depth_stencil',
+                                  'GLEW_NV_packed_float',
+                                  'GLEW_NV_packed_float_linear',
                                   'GLEW_NV_parameter_buffer_object',
                                   'GLEW_NV_parameter_buffer_object2',
                                   'GLEW_NV_path_rendering',
                                   'GLEW_NV_path_rendering_shared_edge',
+                                  'GLEW_NV_pixel_buffer_object',
                                   'GLEW_NV_pixel_data_range',
+                                  'GLEW_NV_platform_binary',
                                   'GLEW_NV_point_sprite',
+                                  'GLEW_NV_polygon_mode',
                                   'GLEW_NV_present_video',
                                   'GLEW_NV_primitive_restart',
+                                  'GLEW_NV_read_depth',
+                                  'GLEW_NV_read_depth_stencil',
+                                  'GLEW_NV_read_stencil',
                                   'GLEW_NV_register_combiners',
                                   'GLEW_NV_register_combiners2',
                                   'GLEW_NV_robustness_video_memory_purge',
+                                  'GLEW_NV_sRGB_formats',
                                   'GLEW_NV_sample_locations',
                                   'GLEW_NV_sample_mask_override_coverage',
                                   'GLEW_NV_shader_atomic_counters',
@@ -7175,19 +8008,29 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_NV_shader_atomic_fp16_vector',
                                   'GLEW_NV_shader_atomic_int64',
                                   'GLEW_NV_shader_buffer_load',
+                                  'GLEW_NV_shader_noperspective_interpolation',
                                   'GLEW_NV_shader_storage_buffer_object',
                                   'GLEW_NV_shader_thread_group',
                                   'GLEW_NV_shader_thread_shuffle',
+                                  'GLEW_NV_shadow_samplers_array',
+                                  'GLEW_NV_shadow_samplers_cube',
                                   'GLEW_NV_stereo_view_rendering',
                                   'GLEW_NV_tessellation_program5',
                                   'GLEW_NV_texgen_emboss',
                                   'GLEW_NV_texgen_reflection',
+                                  'GLEW_NV_texture_array',
                                   'GLEW_NV_texture_barrier',
+                                  'GLEW_NV_texture_border_clamp',
+                                  'GLEW_NV_texture_compression_latc',
+                                  'GLEW_NV_texture_compression_s3tc',
+                                  'GLEW_NV_texture_compression_s3tc_update',
                                   'GLEW_NV_texture_compression_vtc',
                                   'GLEW_NV_texture_env_combine4',
                                   'GLEW_NV_texture_expand_normal',
                                   'GLEW_NV_texture_multisample',
+                                  'GLEW_NV_texture_npot_2D_mipmap',
                                   'GLEW_NV_texture_rectangle',
+                                  'GLEW_NV_texture_rectangle_compressed',
                                   'GLEW_NV_texture_shader',
                                   'GLEW_NV_texture_shader2',
                                   'GLEW_NV_texture_shader3',
@@ -7206,19 +8049,28 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_NV_vertex_program3',
                                   'GLEW_NV_vertex_program4',
                                   'GLEW_NV_video_capture',
+                                  'GLEW_NV_viewport_array',
                                   'GLEW_NV_viewport_array2',
                                   'GLEW_NV_viewport_swizzle',
                                   'GLEW_OES_byte_coordinates',
-                                  'GLEW_OES_compressed_paletted_texture',
-                                  'GLEW_OES_read_format',
-                                  'GLEW_OES_single_precision',
                                   'GLEW_OML_interlace',
                                   'GLEW_OML_resample',
                                   'GLEW_OML_subsample',
                                   'GLEW_OVR_multiview',
                                   'GLEW_OVR_multiview2',
+                                  'GLEW_OVR_multiview_multisampled_render_to_texture',
                                   'GLEW_PGI_misc_hints',
                                   'GLEW_PGI_vertex_hints',
+                                  'GLEW_QCOM_alpha_test',
+                                  'GLEW_QCOM_binning_control',
+                                  'GLEW_QCOM_driver_control',
+                                  'GLEW_QCOM_extended_get',
+                                  'GLEW_QCOM_extended_get2',
+                                  'GLEW_QCOM_framebuffer_foveated',
+                                  'GLEW_QCOM_perfmon_global_mode',
+                                  'GLEW_QCOM_shader_framebuffer_fetch_noncoherent',
+                                  'GLEW_QCOM_tiled_rendering',
+                                  'GLEW_QCOM_writeonly_rendering',
                                   'GLEW_REGAL_ES1_0_compatibility',
                                   'GLEW_REGAL_ES1_1_compatibility',
                                   'GLEW_REGAL_enable',
@@ -7228,13 +8080,17 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_REGAL_proc_address',
                                   'GLEW_REND_screen_coordinates',
                                   'GLEW_S3_s3tc',
+                                  'GLEW_SGIS_clip_band_hint',
                                   'GLEW_SGIS_color_range',
                                   'GLEW_SGIS_detail_texture',
                                   'GLEW_SGIS_fog_function',
                                   'GLEW_SGIS_generate_mipmap',
+                                  'GLEW_SGIS_line_texgen',
                                   'GLEW_SGIS_multisample',
+                                  'GLEW_SGIS_multitexture',
                                   'GLEW_SGIS_pixel_texture',
                                   'GLEW_SGIS_point_line_texgen',
+                                  'GLEW_SGIS_shared_multisample',
                                   'GLEW_SGIS_sharpen_texture',
                                   'GLEW_SGIS_texture4D',
                                   'GLEW_SGIS_texture_border_clamp',
@@ -7245,37 +8101,90 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_SGIX_async',
                                   'GLEW_SGIX_async_histogram',
                                   'GLEW_SGIX_async_pixel',
+                                  'GLEW_SGIX_bali_g_instruments',
+                                  'GLEW_SGIX_bali_r_instruments',
+                                  'GLEW_SGIX_bali_timer_instruments',
                                   'GLEW_SGIX_blend_alpha_minmax',
+                                  'GLEW_SGIX_blend_cadd',
+                                  'GLEW_SGIX_blend_cmultiply',
+                                  'GLEW_SGIX_calligraphic_fragment',
                                   'GLEW_SGIX_clipmap',
+                                  'GLEW_SGIX_color_matrix_accuracy',
+                                  'GLEW_SGIX_color_table_index_mode',
+                                  'GLEW_SGIX_complex_polar',
                                   'GLEW_SGIX_convolution_accuracy',
+                                  'GLEW_SGIX_cube_map',
+                                  'GLEW_SGIX_cylinder_texgen',
+                                  'GLEW_SGIX_datapipe',
+                                  'GLEW_SGIX_decimation',
+                                  'GLEW_SGIX_depth_pass_instrument',
                                   'GLEW_SGIX_depth_texture',
+                                  'GLEW_SGIX_dvc',
                                   'GLEW_SGIX_flush_raster',
+                                  'GLEW_SGIX_fog_blend',
+                                  'GLEW_SGIX_fog_factor_to_alpha',
+                                  'GLEW_SGIX_fog_layers',
                                   'GLEW_SGIX_fog_offset',
+                                  'GLEW_SGIX_fog_patchy',
+                                  'GLEW_SGIX_fog_scale',
                                   'GLEW_SGIX_fog_texture',
+                                  'GLEW_SGIX_fragment_lighting_space',
                                   'GLEW_SGIX_fragment_specular_lighting',
+                                  'GLEW_SGIX_fragments_instrument',
                                   'GLEW_SGIX_framezoom',
+                                  'GLEW_SGIX_icc_texture',
+                                  'GLEW_SGIX_igloo_interface',
+                                  'GLEW_SGIX_image_compression',
+                                  'GLEW_SGIX_impact_pixel_texture',
+                                  'GLEW_SGIX_instrument_error',
                                   'GLEW_SGIX_interlace',
                                   'GLEW_SGIX_ir_instrument1',
+                                  'GLEW_SGIX_line_quality_hint',
                                   'GLEW_SGIX_list_priority',
+                                  'GLEW_SGIX_mpeg1',
+                                  'GLEW_SGIX_mpeg2',
+                                  'GLEW_SGIX_nonlinear_lighting_pervertex',
+                                  'GLEW_SGIX_nurbs_eval',
+                                  'GLEW_SGIX_occlusion_instrument',
+                                  'GLEW_SGIX_packed_6bytes',
                                   'GLEW_SGIX_pixel_texture',
                                   'GLEW_SGIX_pixel_texture_bits',
+                                  'GLEW_SGIX_pixel_texture_lod',
+                                  'GLEW_SGIX_pixel_tiles',
+                                  'GLEW_SGIX_polynomial_ffd',
+                                  'GLEW_SGIX_quad_mesh',
                                   'GLEW_SGIX_reference_plane',
                                   'GLEW_SGIX_resample',
+                                  'GLEW_SGIX_scalebias_hint',
                                   'GLEW_SGIX_shadow',
                                   'GLEW_SGIX_shadow_ambient',
+                                  'GLEW_SGIX_slim',
+                                  'GLEW_SGIX_spotlight_cutoff',
                                   'GLEW_SGIX_sprite',
+                                  'GLEW_SGIX_subdiv_patch',
+                                  'GLEW_SGIX_subsample',
                                   'GLEW_SGIX_tag_sample_buffer',
                                   'GLEW_SGIX_texture_add_env',
                                   'GLEW_SGIX_texture_coordinate_clamp',
                                   'GLEW_SGIX_texture_lod_bias',
+                                  'GLEW_SGIX_texture_mipmap_anisotropic',
                                   'GLEW_SGIX_texture_multi_buffer',
+                                  'GLEW_SGIX_texture_phase',
                                   'GLEW_SGIX_texture_range',
                                   'GLEW_SGIX_texture_scale_bias',
+                                  'GLEW_SGIX_texture_supersample',
+                                  'GLEW_SGIX_vector_ops',
+                                  'GLEW_SGIX_vertex_array_object',
                                   'GLEW_SGIX_vertex_preclip',
                                   'GLEW_SGIX_vertex_preclip_hint',
                                   'GLEW_SGIX_ycrcb',
+                                  'GLEW_SGIX_ycrcb_subsample',
+                                  'GLEW_SGIX_ycrcba',
                                   'GLEW_SGI_color_matrix',
                                   'GLEW_SGI_color_table',
+                                  'GLEW_SGI_complex',
+                                  'GLEW_SGI_complex_type',
+                                  'GLEW_SGI_fft',
                                   'GLEW_SGI_texture_color_table',
                                   'GLEW_SUNX_constant_data',
                                   'GLEW_SUN_convolution_border_modes',
@@ -7286,6 +8195,7 @@ sub EXPORT_TAGS_GL {
                                   'GLEW_SUN_triangle_list',
                                   'GLEW_SUN_vertex',
                                   'GLEW_WIN_phong_shading',
+                                  'GLEW_WIN_scene_markerXXX',
                                   'GLEW_WIN_specular_fog',
                                   'GLEW_WIN_swap_hint'
                                 ]
