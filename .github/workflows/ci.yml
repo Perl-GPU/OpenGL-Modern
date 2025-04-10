@@ -6,19 +6,9 @@ on:
     tags-ignore:
       - '*'
   pull_request:
-  create:
 jobs:
-  notify:
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    if: ${{ always() }}
-    steps:
-      - uses: Perl-GPU/devops/github-actions/irc-notifications@main
-        with:
-          target-notifications: true
   ci:
     runs-on: ${{ matrix.os }}
-    if: ${{ github.event_name == 'push' || github.event_name == 'pull_request' }}
     strategy:
       fail-fast: false
       matrix:
