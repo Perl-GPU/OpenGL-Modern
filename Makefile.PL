@@ -3,7 +3,6 @@ use strict;
 use ExtUtils::MakeMaker;
 use ExtUtils::MakeMaker::CPANfile;
 use Config '%Config';
-use Devel::CheckOS 'os_is';
 use lib 'lib';
 use OpenGL::Modern::NameLists::MakefileAll;
 use Capture::Tiny 'capture';
@@ -15,17 +14,14 @@ my $libs;
 my $define = "-DGLEW_NO_GLU";
 my $DYNS;
 
-if ( os_is( 'MSWin32' ) ) {
+if ( $^O eq 'MSWin32' ) {
     $libs   = '-lopengl32 -lgdi32 -lmsimg32';
     $define .= " -D_WIN32",
-}
-elsif ( os_is( 'Cygwin' ) ) {
+} elsif ( $^O eq 'cygwin' ) {
     $libs = '-lGL -lX11';
-}
-elsif ( os_is( 'MacOSX' ) ) {
+} elsif ( $^O eq 'darwin' ) {
     $DYNS = { 'OTHERLDFLAGS' => '-framework OpenGL' };
-}
-else {
+} else {
     $libs = '-lGL -lX11';
 }
 

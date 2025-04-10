@@ -38,8 +38,8 @@ jobs:
           target-setup-perl: false
           target-install-dist-perl-deps: true
           dist-perl-deps-configure:
-            Capture::Tiny Data::Dumper Devel::CheckOS
-            ExtUtils::Constant ExtUtils::MakeMaker ExtUtils::MakeMaker::CPANfile
+            Capture::Tiny
+            ExtUtils::MakeMaker::CPANfile
             Devel::CheckLib
           build-enable-graphical-display: true
           target-test-release-testing: true
