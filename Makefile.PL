@@ -28,33 +28,33 @@ if ( $^O eq 'MSWin32' ) {
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 WriteMakefile1(
-    NAME          => 'OpenGL::Modern',
-    VERSION_FROM  => 'lib/OpenGL/Modern.pm',
-    ABSTRACT_FROM => 'lib/OpenGL/Modern.pm',            # retrieve abstract from module
-    AUTHOR        => 'Chris Marshall <chm@cpan.org>',
-    LICENSE       => 'perl',
-    META_MERGE    => {
-        "meta-spec" => { version => 2 },
-        resources   => {
-            bugtracker  => {web=>'https://github.com/Perl-GPU/OpenGL-Modern/issues'},
-            repository => {
-                web  => 'https://github.com/Perl-GPU/OpenGL-Modern',
-                url  => 'https://github.com/Perl-GPU/OpenGL-Modern.git',
-                type => 'git',
-            },
-            x_IRC => 'irc://irc.perl.org/#pogl',
-        },
+  NAME      => 'OpenGL::Modern',
+  VERSION_FROM  => 'lib/OpenGL/Modern.pm',
+  ABSTRACT_FROM => 'lib/OpenGL/Modern.pm',      # retrieve abstract from module
+  AUTHOR    => 'Chris Marshall <chm@cpan.org>',
+  LICENSE     => 'perl',
+  META_MERGE  => {
+    "meta-spec" => { version => 2 },
+    resources   => {
+      bugtracker  => {web=>'https://github.com/Perl-GPU/OpenGL-Modern/issues'},
+      repository => {
+        web  => 'https://github.com/Perl-GPU/OpenGL-Modern',
+        url  => 'https://github.com/Perl-GPU/OpenGL-Modern.git',
+        type => 'git',
+      },
+      x_IRC => 'irc://irc.perl.org/#pogl',
     },
-    MIN_PERL_VERSION => '5.006',
-    LIBS             => $libs,           # e.g., '-lm'
-    DEFINE           => $define,
-    INC              => $include,
-    XSPROTOARG       => '-noprototypes',
-    depend           => {
-        'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
-    },
-    clean => { FILES => 'auto-xs.inc const-c.inc const-xs.inc' },
-    $DYNS ? ( dynamic_lib => $DYNS ) : (),
+  },
+  MIN_PERL_VERSION => '5.016',
+  LIBS             => $libs,           # e.g., '-lm'
+  DEFINE           => $define,
+  INC              => $include,
+  XSPROTOARG       => '-noprototypes',
+  depend           => {
+    'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
+  },
+  clean => { FILES => 'auto-xs.inc const-c.inc const-xs.inc' },
+  $DYNS ? ( dynamic_lib => $DYNS ) : (),
 );
 
 # If you edit these definitions to change the constants used by this module,
