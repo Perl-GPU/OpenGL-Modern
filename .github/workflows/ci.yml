@@ -37,9 +37,7 @@ jobs:
         with:
           target-setup-perl: false
           target-install-dist-perl-deps: true
-          dist-perl-deps-configure:
-            Capture::Tiny
-            Devel::CheckLib
+          dist-perl-deps-configure: Devel::CheckLib
           build-enable-graphical-display: true
           target-test-release-testing: true
           target-test: true

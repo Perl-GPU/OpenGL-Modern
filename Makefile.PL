@@ -2,7 +2,6 @@ use strict;
 use ExtUtils::MakeMaker;
 use lib 'lib';
 use OpenGL::Modern::NameLists::MakefileAll;
-use Capture::Tiny 'capture';
 use ExtUtils::Constant ();
 use Devel::CheckLib 'assert_lib';
 
@@ -10,27 +9,24 @@ my $include = "-I. -Iinclude -Isrc";
 my $libs;
 my $define = "-DGLEW_NO_GLU";
 my $DYNS;
-
 if ( $^O eq 'MSWin32' ) {
-    $libs   = '-lopengl32 -lgdi32 -lmsimg32';
-    $define .= " -D_WIN32",
+  $libs   = '-lopengl32 -lgdi32 -lmsimg32';
+  $define .= " -D_WIN32",
 } elsif ( $^O eq 'cygwin' ) {
-    $libs = '-lGL -lX11';
+  $libs = '-lGL -lX11';
 } elsif ( $^O eq 'darwin' ) {
-    $DYNS = { 'OTHERLDFLAGS' => '-framework OpenGL' };
+  $DYNS = { 'OTHERLDFLAGS' => '-framework OpenGL' };
 } else {
-    $libs = '-lGL -lX11';
+  $libs = '-lGL -lX11';
 }
 my %buildargs = (
-  LIBS             => $libs,           # e.g., '-lm'
+  LIBS             => $libs,
   DEFINE           => $define,
   INC              => $include,
   $DYNS ? ( dynamic_lib => $DYNS ) : (),
 );
 die "$@\nOS unsupported\n" if not eval { assert_lib %buildargs; 1 };
 
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
 WriteMakefile(
   NAME => 'OpenGL::Modern',
   VERSION_FROM => 'lib/OpenGL/Modern.pm',
@@ -41,11 +37,11 @@ WriteMakefile(
     'Import::Into' => 0,
   },
   CONFIGURE_REQUIRES => {
-    'Capture::Tiny' => 0,
     'ExtUtils::MakeMaker' => '7.72',
     'Devel::CheckLib' => 0,
   },
   TEST_REQUIRES => {
+    'Capture::Tiny' => 0,
     'Test::More' => '0.88',
   },
   META_MERGE => {
@@ -83,12 +79,10 @@ ExtUtils::Constant::WriteConstants(
     XS_FILE      => 'const-xs.inc',
 );
 
-generate_auto_xs();
-
-sub generate_auto_xs {
-    my ( $out, $err, $res ) = capture { system "perl utils/generate-XS.pl" };
-    die "auto xs generation failed:\n$err" if $err;
-    die "auto xs generation failed:\n$out" if $res;
-    print $out;
-    return;
+sub MY::postamble {
+  my $deps = join ' ', 'utils/generate-XS.pl', glob 'include/GL/*.h';
+  <<EOF;
+lib/OpenGL/Modern/NameLists/Modern.pm auto-xs.inc : $deps
+\t\$(PERLRUN) utils/generate-XS.pl
+EOF
 }
