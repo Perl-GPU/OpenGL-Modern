@@ -21,10 +21,17 @@ if ( $^O eq 'MSWin32' ) {
 } else {
     $libs = '-lGL -lX11';
 }
+my %buildargs = (
+  LIBS             => $libs,           # e.g., '-lm'
+  DEFINE           => $define,
+  INC              => $include,
+  $DYNS ? ( dynamic_lib => $DYNS ) : (),
+);
+die "$@\nOS unsupported\n" if not eval { assert_lib %buildargs; 1 };
 
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
-WriteMakefile1(
+WriteMakefile(
   NAME => 'OpenGL::Modern',
   VERSION_FROM => 'lib/OpenGL/Modern.pm',
   ABSTRACT_FROM => 'lib/OpenGL/Modern.pm',
@@ -54,15 +61,12 @@ WriteMakefile1(
     },
   },
   MIN_PERL_VERSION => '5.016',
-  LIBS => $libs,
-  DEFINE => $define,
-  INC => $include,
-  XSPROTOARG => '-noprototypes',
-  depend => {
+  XSPROTOARG       => '-noprototypes',
+  depend           => {
     'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
   },
   clean => { FILES => 'auto-xs.inc const-c.inc const-xs.inc' },
-  $DYNS ? ( dynamic_lib => $DYNS ) : (),
+  %buildargs,
 );
 
 # If you edit these definitions to change the constants used by this module,
@@ -87,33 +91,4 @@ sub generate_auto_xs {
     die "auto xs generation failed:\n$out" if $res;
     print $out;
     return;
-}
-
-sub WriteMakefile1 {    #Written by Alexandr Ciornii, version 0.21. Added by eumm-upgrade.
-    my %params       = @_;
-    my $eumm_version = $ExtUtils::MakeMaker::VERSION;
-    $eumm_version = eval $eumm_version;
-    die "EXTRA_META is deprecated" if exists $params{EXTRA_META};
-    die "License not specified" if not exists $params{LICENSE};
-    if ( $params{BUILD_REQUIRES} and $eumm_version < 6.5503 ) {
-
-        #EUMM 6.5502 has problems with BUILD_REQUIRES
-        $params{PREREQ_PM} = { %{ $params{PREREQ_PM} || {} }, %{ $params{BUILD_REQUIRES} } };
-        delete $params{BUILD_REQUIRES};
-    }
-    if ( $params{TEST_REQUIRES} and $eumm_version < 6.64 ) {
-        $params{PREREQ_PM} = { %{ $params{PREREQ_PM} || {} }, %{ $params{TEST_REQUIRES} } };
-        delete $params{TEST_REQUIRES};
-    }
-    delete $params{CONFIGURE_REQUIRES} if $eumm_version < 6.52;
-    delete $params{MIN_PERL_VERSION}   if $eumm_version < 6.48;
-    delete $params{META_MERGE}         if $eumm_version < 6.46;
-    delete $params{META_ADD}           if $eumm_version < 6.46;
-    delete $params{LICENSE}            if $eumm_version < 6.31;
-    delete $params{AUTHOR}             if $] < 5.005;
-    delete $params{ABSTRACT_FROM}      if $] < 5.005;
-    delete $params{BINARY_LOCATION}    if $] < 5.005;
-
-    die "$@\nOS unsupported\n" if not eval { assert_lib %params; 1 };
-    WriteMakefile( %params );
 }
