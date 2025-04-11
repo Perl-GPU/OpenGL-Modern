@@ -1,11 +1,4 @@
-.perltidyrc
 Changes
-MANIFEST			This list of files
-MANIFEST.SKIP
-Makefile.PL
-Modern.xs
-README.md
-cpanfile
 gl_errors.h
 include/GL/eglew.h
 include/GL/glew.h
@@ -16,7 +9,12 @@ lib/OpenGL/Modern/Helpers.pm
 lib/OpenGL/Modern/ImageHack.pm
 lib/OpenGL/Modern/NameLists/MakefileAll.pm
 lib/OpenGL/Modern/NameLists/Modern.pm
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+Modern.xs
 ppport.h
+README.md
 src/glew-context.c
 src/glew.c
 src/glewinfo.c
@@ -25,7 +23,7 @@ t/00-report-prereqs.t
 t/00_basic.t
 t/01_context.t
 t/02_auto_error_check.t
-t/02_glGetShaderInfoLog.t
 t/02_glew_version_accessors.t
+t/02_glGetShaderInfoLog.t
 typemap
 utils/generate-XS.pl

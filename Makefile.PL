@@ -1,8 +1,5 @@
-#!perl -w
 use strict;
 use ExtUtils::MakeMaker;
-use ExtUtils::MakeMaker::CPANfile;
-use Config '%Config';
 use lib 'lib';
 use OpenGL::Modern::NameLists::MakefileAll;
 use Capture::Tiny 'capture';
@@ -28,14 +25,25 @@ if ( $^O eq 'MSWin32' ) {
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 WriteMakefile1(
-  NAME      => 'OpenGL::Modern',
-  VERSION_FROM  => 'lib/OpenGL/Modern.pm',
-  ABSTRACT_FROM => 'lib/OpenGL/Modern.pm',      # retrieve abstract from module
-  AUTHOR    => 'Chris Marshall <chm@cpan.org>',
-  LICENSE     => 'perl',
-  META_MERGE  => {
+  NAME => 'OpenGL::Modern',
+  VERSION_FROM => 'lib/OpenGL/Modern.pm',
+  ABSTRACT_FROM => 'lib/OpenGL/Modern.pm',
+  AUTHOR => 'Chris Marshall <chm@cpan.org>',
+  LICENSE => 'perl',
+  PREREQ_PM => {
+    'Import::Into' => 0,
+  },
+  CONFIGURE_REQUIRES => {
+    'Capture::Tiny' => 0,
+    'ExtUtils::MakeMaker' => '7.72',
+    'Devel::CheckLib' => 0,
+  },
+  TEST_REQUIRES => {
+    'Test::More' => '0.88',
+  },
+  META_MERGE => {
     "meta-spec" => { version => 2 },
-    resources   => {
+    resources => {
       bugtracker  => {web=>'https://github.com/Perl-GPU/OpenGL-Modern/issues'},
       repository => {
         web  => 'https://github.com/Perl-GPU/OpenGL-Modern',
@@ -46,11 +54,11 @@ WriteMakefile1(
     },
   },
   MIN_PERL_VERSION => '5.016',
-  LIBS             => $libs,           # e.g., '-lm'
-  DEFINE           => $define,
-  INC              => $include,
-  XSPROTOARG       => '-noprototypes',
-  depend           => {
+  LIBS => $libs,
+  DEFINE => $define,
+  INC => $include,
+  XSPROTOARG => '-noprototypes',
+  depend => {
     'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
   },
   clean => { FILES => 'auto-xs.inc const-c.inc const-xs.inc' },

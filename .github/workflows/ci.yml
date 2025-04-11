@@ -39,7 +39,6 @@ jobs:
           target-install-dist-perl-deps: true
           dist-perl-deps-configure:
             Capture::Tiny
-            ExtUtils::MakeMaker::CPANfile
             Devel::CheckLib
           build-enable-graphical-display: true
           target-test-release-testing: true
