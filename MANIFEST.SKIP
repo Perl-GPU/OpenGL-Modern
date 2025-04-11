@@ -4,6 +4,8 @@
 ^signatures
 ^utils/XS_generate_NOTES.txt
 ^.git
+^xt/
+\.sw.$
 \.o$
 .travis.yml
 gdm.diff
