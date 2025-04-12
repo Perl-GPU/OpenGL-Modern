@@ -2,6 +2,7 @@
 - croak if auto-glewInit fails (#43 #36)
 - update to GLEW 2.1.0 which captures OpenGL 4.6
 - minimum Perl 5.16
+- add OpenGL::Modern::Config like OpenGL::Config
 
 0.04     2017-08-06 12:06:13-04:00
 - Add module to allow OpenGL::Image to work with OpenGL::Modern

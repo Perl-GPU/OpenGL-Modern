@@ -22,7 +22,8 @@ my %buildargs = (
   INC              => $include,
   $DYNS ? ( dynamic_lib => $DYNS ) : (),
 );
-die "$@\nOS unsupported\n" if not eval { assert_lib %buildargs; 1 };
+die "$@\nOS unsupported\n" if !eval { assert_lib %buildargs; 1 };
+WriteConfigPM({ LIBS => $libs || $DYNS->{OTHERLDFLAGS} });
 
 WriteMakefile(
   NAME => 'OpenGL::Modern',
@@ -58,7 +59,7 @@ WriteMakefile(
   depend           => {
     'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h const.h',
   },
-  clean => { FILES => 'auto-xs.inc const.h' },
+  clean => { FILES => 'auto-xs.inc const.h lib/OpenGL/Modern/Config.pm' },
   %buildargs,
 );
 
@@ -76,4 +77,20 @@ lib/OpenGL/Modern/NameLists/Modern.pm auto-xs.inc : $deps
 const.h : lib/OpenGL/Modern/NameLists/MakefileAll.pm
 \t$const_cmd >\$@
 EOF
+}
+
+sub WriteConfigPM {
+  my($config) = @_;
+  die "Unable to write to Config.pm\n" if !open my $fh, ">", "lib/OpenGL/Modern/Config.pm";
+  print $fh q{# This is the Perl OpenGL build configuration file.
+# It contains the final OpenGL build arguments from
+# the configuration process.  Access the values by
+# use OpenGL::Modern::Config which defines the variable
+# $OpenGL::Modern::Config containing the hash arguments needed for
+# WriteMakefile()
+};
+  require Data::Dumper;
+  { no warnings; $Data::Dumper::Sortkeys = 1; } # deterministic output
+  print $fh Data::Dumper->Dump( [$config], [qw(OpenGL::Modern::Config)] );
+  print $fh qq{1;\n};
 }

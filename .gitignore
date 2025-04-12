@@ -2,14 +2,14 @@ MYMETA.*
 MANIFEST.bak
 Makefile
 Makefile.old
-OpenGL-Modern-*.tar.gz
-OpenGL-Modern-*/
+lib/OpenGL/Modern/Config.pm
 *.bs
 *.o
 blib/
 pm_to_blib
 Modern.c
 Modern.def
+Modern_def.old
 *.inc
 *~
 const.h
