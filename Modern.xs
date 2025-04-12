@@ -12,7 +12,6 @@
 #include <src/glew-context.c>
 
 #include "gl_errors.h"
-#include "const-c.inc"
 
 static int _done_glewInit = 0;
 static int _auto_check_errors = 0;
@@ -41,6 +40,8 @@ static int _auto_check_errors = 0;
     if ( !impl ) { \
         croak(#name " not available on this machine"); \
     }
+/* used in BOOT */
+#define OGL_CONST_i(test) newCONSTSUB(stash, #test, newSViv((IV)test));
 
 /*
   Maybe one day we'll allow Perl callbacks for GLDEBUGPROCARB
@@ -198,6 +199,8 @@ CODE:
     free(string);
     free(length);
 
-
-INCLUDE: const-xs.inc
 INCLUDE: auto-xs.inc
+
+BOOT:
+  HV *stash = gv_stashpvn("OpenGL::Modern", strlen("OpenGL::Modern"), TRUE);
+#include "const.h"

@@ -18,4 +18,5 @@ gdm.diff
 ^MYMETA.*
 \.pm\.bak$
 \.inc$
+^const\.h$
 ~$

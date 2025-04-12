@@ -1,5 +1,10 @@
 package OpenGL::Modern::NameLists::MakefileAll;
 
+use strict;
+use warnings;
+use Exporter 'import';
+our @EXPORT = qw(makefile_all);
+
 sub makefile_all {
     qw(
       GLEW_OK

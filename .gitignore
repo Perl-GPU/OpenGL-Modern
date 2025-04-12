@@ -12,3 +12,4 @@ Modern.c
 Modern.def
 *.inc
 *~
+const.h

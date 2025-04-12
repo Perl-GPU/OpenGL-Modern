@@ -1,8 +1,5 @@
 use strict;
 use ExtUtils::MakeMaker;
-use lib 'lib';
-use OpenGL::Modern::NameLists::MakefileAll;
-use ExtUtils::Constant ();
 use Devel::CheckLib 'assert_lib';
 
 my $include = "-I. -Iinclude -Isrc";
@@ -59,30 +56,24 @@ WriteMakefile(
   MIN_PERL_VERSION => '5.016',
   XSPROTOARG       => '-noprototypes',
   depend           => {
-    'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h',
+    'Modern.c' => 'Modern.xs auto-xs.inc src/glew.c include/GL/glew.h include/GL/wglew.h const.h',
   },
-  clean => { FILES => 'auto-xs.inc const-c.inc const-xs.inc' },
+  clean => { FILES => 'auto-xs.inc const.h' },
   %buildargs,
 );
 
-# If you edit these definitions to change the constants used by this module,
-# you will need to use the generated const-c.inc and const-xs.inc
-# files to replace their "fallback" counterparts before distributing your
-# changes.
-my @names = OpenGL::Modern::NameLists::MakefileAll::makefile_all();
-
-ExtUtils::Constant::WriteConstants(
-    NAME         => 'OpenGL::Modern',
-    NAMES        => \@names,
-    DEFAULT_TYPE => 'UV',
-    C_FILE       => 'const-c.inc',
-    XS_FILE      => 'const-xs.inc',
-);
-
 sub MY::postamble {
+  my ($self) = @_;
   my $deps = join ' ', 'utils/generate-XS.pl', glob 'include/GL/*.h';
+  my $const_cmd = $self->oneliner(
+    'print " OGL_CONST_i($_)\n" for makefile_all();',
+    [qw(-Ilib -MOpenGL::Modern::NameLists::MakefileAll)],
+  );
   <<EOF;
 lib/OpenGL/Modern/NameLists/Modern.pm auto-xs.inc : $deps
 \t\$(PERLRUN) utils/generate-XS.pl
+
+const.h : lib/OpenGL/Modern/NameLists/MakefileAll.pm
+\t$const_cmd >\$@
 EOF
 }
