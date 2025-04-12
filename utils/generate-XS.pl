@@ -20,8 +20,6 @@ that shows which features are associated with which functions.
 
 =cut
 
-my @headers = glob "include/GL/*.h";
-
 my %signature;
 my %case_map;
 my %alias;
@@ -105,7 +103,7 @@ my %signature_override = ( 'glFunctionName' => { name => 'parameter name', type 
 
 my %features = ();
 
-for my $file ( @headers ) {
+for my $file ("include/GL/glew.h") {
 
     my $feature_name;
 
