@@ -347,7 +347,7 @@ sub save_file {
     my ( $filename, $new ) = @_;
     my $old = -e $filename ? slurp( $filename ) : "";
     if ( $new ne $old ) {
-        print "Saving new version of $filename";
+        print "Saving new version of $filename\n";
         open my $fh, '>:raw', $filename
           or die "Couldn't write new version of '$filename': $!";
         print $fh $new;
