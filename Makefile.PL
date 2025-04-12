@@ -45,6 +45,7 @@ WriteMakefile(
   },
   META_MERGE => {
     "meta-spec" => { version => 2 },
+    dynamic_config => 0,
     resources => {
       bugtracker  => {web=>'https://github.com/Perl-GPU/OpenGL-Modern/issues'},
       repository => {
