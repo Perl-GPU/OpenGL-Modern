@@ -34,7 +34,6 @@ WriteMakefile(
   AUTHOR => 'Chris Marshall <chm@cpan.org>',
   LICENSE => 'perl',
   PREREQ_PM => {
-    'Import::Into' => 0,
   },
   CONFIGURE_REQUIRES => {
     'ExtUtils::MakeMaker' => '7.72',
