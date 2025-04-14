@@ -17,8 +17,6 @@ ppport.h
 README.md
 src/glew-context.c
 src/glew.c
-src/glewinfo.c
-src/visualinfo.c
 t/00-report-prereqs.t
 t/00_basic.t
 t/01_context.t
