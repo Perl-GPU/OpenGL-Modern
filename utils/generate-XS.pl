@@ -91,16 +91,6 @@ my @known_type = sort { $b cmp $a } qw(
   GLDEBUGPROC
 );
 
-# Functions where we need to override the type signature
-# The keys are API function names and the values are hash
-# refs giving the name of the argument to modify and the
-# new type to use instead.
-#
-# NOTE: The current implementation appears to handle only
-# one name/type override per API function and is undocumented
-# except looking at the code.
-my %signature_override = ( 'glFunctionName' => { name => 'parameter name', type => 'new parameter type' }, );
-
 my %features = ();
 
 for my $file ("include/GL/glew.h") {
@@ -260,17 +250,6 @@ sub generate_glew_xs {
         }
 
         my @xs_args = split /,/, $xs_args;
-
-        # Patch function signatures if we want other types
-        if ( my $sig = $signature_override{$name} ) {
-            for my $arg ( @xs_args ) {
-                my $name = $sig->{name};
-                my $type = $sig->{type};
-                if ( $arg =~ /\b\Q$name\E\r?$/ ) {
-                    $arg = "$type $name";
-                }
-            }
-        }
 
         $xs_args = join ";\n    ", @xs_args;
 
