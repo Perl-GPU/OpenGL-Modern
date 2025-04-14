@@ -59,7 +59,7 @@ WriteMakefile(
   XSPROTOARG       => '-noprototypes',
   depend           => {
     'Modern.c' => 'auto-xs.inc',
-    'Modern$(OBJ_EXT)' => 'src/glew.c include/GL/glew.h include/GL/wglew.h const.h',
+    'Modern$(OBJ_EXT)' => 'src/glew.c src/glew-context.c include/GL/glew.h include/GL/wglew.h const.h',
   },
   clean => { FILES => 'auto-xs.inc const.h lib/OpenGL/Modern/Config.pm' },
   %buildargs,
