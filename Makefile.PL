@@ -13,7 +13,7 @@ if ( $^O eq 'MSWin32' ) {
   $libs = '-lGL -lX11';
 } elsif ( $^O eq 'darwin' ) {
   $DYNS = { 'OTHERLDFLAGS' => '-framework OpenGL' };
-  $define .= " -Wno-compound-token-split-by-macro";
+  $define .= " -Wno-compound-token-split-by-macro -DGL_SILENCE_DEPRECATION";
 } else {
   $libs = '-lGL -lX11';
 }
