@@ -3,6 +3,17 @@
 */
 /* ------------------------------------------------------------------------ */
 
+#if defined(GLEW_EGL)
+#include <GL/eglew.h>
+#elif defined(GLEW_OSMESA)
+#define GLAPI extern
+#include <GL/osmesa.h>
+#elif defined(_WIN32)
+#include <GL/wglew.h>
+#elif !defined(__APPLE__) && !defined(__HAIKU__) || defined(GLEW_APPLE_GLX)
+#include <GL/glxew.h>
+#endif
+
 struct createParams
 {
 #if defined(GLEW_OSMESA)

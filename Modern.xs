@@ -5,9 +5,7 @@
 
 #include "ppport.h"
 
-/* This makes memory requirements balloon but makes building so much easier*/
 #include <GL/glew.h>
-#include <glew.c>
 #include <glew-context.c>
 
 #include "gl_errors.h"
