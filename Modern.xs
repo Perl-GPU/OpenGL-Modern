@@ -5,7 +5,6 @@
 
 #include "ppport.h"
 
-#define GLEW_STATIC
 /* This makes memory requirements balloon but makes building so much easier*/
 #include <include/GL/glew.h>
 #include <src/glew.c>

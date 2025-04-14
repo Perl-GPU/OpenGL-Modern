@@ -4,7 +4,7 @@ use Devel::CheckLib 'assert_lib';
 
 my $include = "-I. -Iinclude -Isrc";
 my $libs;
-my $define = "-DGLEW_NO_GLU";
+my $define = "-DGLEW_NO_GLU -DGLEW_STATIC";
 my $DYNS;
 if ( $^O eq 'MSWin32' ) {
   $libs   = '-lopengl32 -lgdi32 -lmsimg32';
