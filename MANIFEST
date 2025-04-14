@@ -1,5 +1,7 @@
 Changes
 gl_errors.h
+glew-context.c
+glew.c
 include/GL/eglew.h
 include/GL/glew.h
 include/GL/glxew.h
@@ -15,8 +17,6 @@ MANIFEST.SKIP
 Modern.xs
 ppport.h
 README.md
-src/glew-context.c
-src/glew.c
 t/00-report-prereqs.t
 t/00_basic.t
 t/01_context.t
