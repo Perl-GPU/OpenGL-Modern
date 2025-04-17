@@ -35,13 +35,6 @@ our %EXPORT_TAGS = (
           glpSetAutoCheckErrors
           glpCheckErrors
           glpErrorString
-
-          glClear
-          glClearColor
-          glDrawArrays
-          glFlush
-          glObjectLabel
-
           ),
         OpenGL::Modern::NameLists::MakefileAll::makefile_all,
         OpenGL::Modern::NameLists::MakefileAll::not_for_makefile,
