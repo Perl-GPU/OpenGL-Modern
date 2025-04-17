@@ -14,6 +14,13 @@ our $XS_VERSION = $VERSION;
 $VERSION = eval $VERSION;    # see L<perlmodstyle>
 
 our @glFunctions = OpenGL::Modern::Registry::gl_functions();
+our @glew_functions = qw(
+  glewCreateContext
+  glewGetErrorString
+  glewIsSupported
+  glewInit
+  done_glewInit
+);
 our %EXPORT_TAGS_GL = OpenGL::Modern::Registry::EXPORT_TAGS_GL();
 
 # This allows declaration use OpenGL::Modern ':all';
@@ -21,17 +28,13 @@ our %EXPORT_TAGS_GL = OpenGL::Modern::Registry::EXPORT_TAGS_GL();
 # will save memory.
 our %EXPORT_TAGS = (
     %EXPORT_TAGS_GL,
+    glewfunctions => \@glew_functions,
     'all' => [
         @glFunctions,
+        @glew_functions,
         qw(
-
-          glewCreateContext
           glGetError
-          glewGetErrorString
-          glewIsSupported
           glGetString
-          glewInit
-          done_glewInit
           glpSetAutoCheckErrors
           glpCheckErrors
           glpErrorString
@@ -43,10 +46,6 @@ our %EXPORT_TAGS = (
 );
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
-
-our @EXPORT = qw(
-
-);
 
 require XSLoader;
 XSLoader::load( 'OpenGL::Modern', $XS_VERSION );
