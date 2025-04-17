@@ -29,8 +29,6 @@ my %alias;
 my @manual_list = qw(
   glGetString
   glShaderSource_p
-  glpCheckErrors
-  glpSetAutoCheckErrors
 );
 
 my %manual;

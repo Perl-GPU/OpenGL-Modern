@@ -21,6 +21,11 @@ our @glew_functions = qw(
   glewInit
   done_glewInit
 );
+our @glp_functions = qw(
+  glpSetAutoCheckErrors
+  glpCheckErrors
+  glpErrorString
+);
 our %EXPORT_TAGS_GL = OpenGL::Modern::Registry::EXPORT_TAGS_GL();
 
 # This allows declaration use OpenGL::Modern ':all';
@@ -29,15 +34,14 @@ our %EXPORT_TAGS_GL = OpenGL::Modern::Registry::EXPORT_TAGS_GL();
 our %EXPORT_TAGS = (
     %EXPORT_TAGS_GL,
     glewfunctions => \@glew_functions,
+    glpfunctions => \@glp_functions,
     'all' => [
         @glFunctions,
         @glew_functions,
+        @glp_functions,
         qw(
           glGetError
           glGetString
-          glpSetAutoCheckErrors
-          glpCheckErrors
-          glpErrorString
           ),
         OpenGL::Modern::NameLists::MakefileAll::makefile_all,
         OpenGL::Modern::NameLists::MakefileAll::not_for_makefile,
