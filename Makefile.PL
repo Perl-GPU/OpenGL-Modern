@@ -74,7 +74,7 @@ sub MY::postamble {
     [qw(-Ilib -MOpenGL::Modern::NameLists::MakefileAll)],
   );
   <<EOF;
-lib/OpenGL/Modern/NameLists/Modern.pm auto-xs.inc : $deps
+lib/OpenGL/Modern/Registry.pm auto-xs.inc : $deps
 \t\$(PERLRUN) utils/generate-XS.pl
 
 const.h : lib/OpenGL/Modern/NameLists/MakefileAll.pm

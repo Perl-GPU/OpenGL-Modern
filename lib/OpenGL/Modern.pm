@@ -6,15 +6,15 @@ use Carp;
 
 use Exporter 'import';
 
-use OpenGL::Modern::NameLists::Modern;
+use OpenGL::Modern::Registry;
 use OpenGL::Modern::NameLists::MakefileAll;
 
 our $VERSION    = '0.04_01';
 our $XS_VERSION = $VERSION;
 $VERSION = eval $VERSION;    # see L<perlmodstyle>
 
-our @glFunctions = OpenGL::Modern::NameLists::Modern::gl_functions();
-our %EXPORT_TAGS_GL = OpenGL::Modern::NameLists::Modern::EXPORT_TAGS_GL();
+our @glFunctions = OpenGL::Modern::Registry::gl_functions();
+our %EXPORT_TAGS_GL = OpenGL::Modern::Registry::EXPORT_TAGS_GL();
 
 # This allows declaration use OpenGL::Modern ':all';
 # If you do not need this, moving things directly into @EXPORT or @EXPORT_OK
