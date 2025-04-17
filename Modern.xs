@@ -154,6 +154,14 @@ CODE:
     if( error_count )
       croak( "glpCheckErrors: %d OpenGL errors encountered.", error_count );
 
+const char *
+glpErrorString(err)
+  int err
+CODE:
+  RETVAL = gl_error_string(err);
+OUTPUT:
+  RETVAL
+
 # This isn't a bad idea, but I postpone this API and the corresponding
 # typemap hackery until later
 #GLboolean

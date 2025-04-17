@@ -34,6 +34,7 @@ our %EXPORT_TAGS = (
           done_glewInit
           glpSetAutoCheckErrors
           glpCheckErrors
+          glpErrorString
 
           glClear
           glClearColor
