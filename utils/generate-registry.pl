@@ -36,10 +36,9 @@ for my $file ("include/GL/glew.h") {
     while ( my $line = <$fh> ) {
         if ( $line =~ m|^#define (\w+) 1\r?$| and $1 ne 'GL_ONE' and $1 ne 'GL_TRUE' ) {
             $feature_name = $1;
-
             # #endif /* GL_FEATURE_NAME */
         }
-        elsif ( defined( $feature_name ) and $line =~ m|^#endif /* $feature_name */$| ) {
+        elsif ( defined( $feature_name ) and $line =~ m|^#endif /\* $feature_name \*/\s*| ) {
 
             # End of lines for this OpenGL feature
             $feature_name = undef;
@@ -50,7 +49,8 @@ for my $file ("include/GL/glew.h") {
         elsif ( $line =~ m|^typedef (\w+(?:\s*\*)?) \(GLAPIENTRY \* PFN(\w+)PROC\)\s*\((.*)\);| ) {
             my ( $restype, $name, $sig ) = ( $1, $2, $3 );
             my $s =
-              { signature => $sig, restype => $restype, feature => $feature_name, name => $name, glewtype => 'fun' };
+              { signature => $sig, restype => $restype, name => $name, glewtype => 'fun' };
+            $s->{feature} = $feature_name if $feature_name;
             $upper2data{$name} = $s;
 
             # GLAPI void GLAPIENTRY glClearColor (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha);
@@ -60,7 +60,8 @@ for my $file ("include/GL/glew.h") {
             # Some external function, likely imported from libopengl / opengl32
             my ( $restype, $name, $sig ) = ( $1, $2, $3 );
             my $s =
-              { signature => $sig, restype => $restype, feature => $feature_name, name => $name, glewtype => 'fun' };
+              { signature => $sig, restype => $restype, name => $name, glewtype => 'fun' };
+            $s->{feature} = $feature_name if $feature_name;
             $upper2data{ uc $name } = $s;
             $case_map{ uc $name }  = $name;
 
@@ -86,7 +87,8 @@ for my $file ("include/GL/glew.h") {
         }
         elsif ( $line =~ m|^GLEW_VAR_EXPORT (\w+) __(\w+)| ) {
             my ( $restype, $impl ) = ( $1, $2 );
-            my $s = { signature => 'void', restype => $restype, feature => $feature_name, glewtype => 'var' };
+            my $s = { signature => 'void', restype => $restype, glewtype => 'var' };
+            $s->{feature} = $feature_name if $feature_name;
             my $name = $alias{$impl};
             $upper2data{$name} = $s;
             $case_map{$name} = $impl;
@@ -103,7 +105,7 @@ for my $name ( sort {uc$a cmp uc$b} keys %upper2data ) {
     my $s = $upper2data{$name};
     $signature{$real_name} = $s;
     delete $s->{name};
-    push @{ $features{$s->{feature}} }, $real_name;
+    push @{ $features{$s->{feature}} }, $real_name if $s->{feature};
 }
 
 sub preprocess_for_registry {
@@ -125,7 +127,7 @@ sub preprocess_for_registry {
         }
         $item->{argdata} = \@argdata;
         my $glewImpl;
-        if ( $item->{feature} ne "GL_VERSION_1_1" ) {
+        if ( ($item->{feature}//'') ne "GL_VERSION_1_1" ) {
             ( $glewImpl = $name ) =~ s!^gl!__glew!;
         }
         $item->{glewImpl} = $glewImpl;
