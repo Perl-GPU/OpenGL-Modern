@@ -112,7 +112,7 @@ sub preprocess_for_registry {
     for my $name (@_ ? @_ : sort keys %signature) {
         my $item = $signature{$name};
         next if $manual{$name};
-        my $args = $item->{signature};
+        my $args = delete $item->{signature};
         die "No args for $name" unless $args;
         my @argdata;
         $args = '' if $args eq 'void';
