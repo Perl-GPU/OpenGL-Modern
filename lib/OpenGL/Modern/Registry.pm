@@ -7398,7 +7398,6 @@ sub EXPORT_TAGS_GL {(
 
 our %registry = (
   'GLEW_3DFX_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_3DFX_multisample',
     'glewImpl' => 'GLEW_3DFX_multisample',
     'glewtype' => 'var',
@@ -7406,7 +7405,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_3DFX_tbuffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_3DFX_tbuffer',
     'glewImpl' => 'GLEW_3DFX_tbuffer',
     'glewtype' => 'var',
@@ -7414,7 +7412,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_3DFX_texture_compression_FXT1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_3DFX_texture_compression_FXT1',
     'glewImpl' => 'GLEW_3DFX_texture_compression_FXT1',
     'glewtype' => 'var',
@@ -7422,7 +7419,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_blend_minmax_factor' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_blend_minmax_factor',
     'glewImpl' => 'GLEW_AMD_blend_minmax_factor',
     'glewtype' => 'var',
@@ -7430,7 +7426,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_compressed_3DC_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_compressed_3DC_texture',
     'glewImpl' => 'GLEW_AMD_compressed_3DC_texture',
     'glewtype' => 'var',
@@ -7438,7 +7433,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_compressed_ATC_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_compressed_ATC_texture',
     'glewImpl' => 'GLEW_AMD_compressed_ATC_texture',
     'glewtype' => 'var',
@@ -7446,7 +7440,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_conservative_depth' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_conservative_depth',
     'glewImpl' => 'GLEW_AMD_conservative_depth',
     'glewtype' => 'var',
@@ -7454,7 +7447,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_debug_output' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_debug_output',
     'glewImpl' => 'GLEW_AMD_debug_output',
     'glewtype' => 'var',
@@ -7462,7 +7454,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_depth_clamp_separate' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_depth_clamp_separate',
     'glewImpl' => 'GLEW_AMD_depth_clamp_separate',
     'glewtype' => 'var',
@@ -7470,7 +7461,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_draw_buffers_blend' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_draw_buffers_blend',
     'glewImpl' => 'GLEW_AMD_draw_buffers_blend',
     'glewtype' => 'var',
@@ -7478,7 +7468,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_framebuffer_sample_positions' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_framebuffer_sample_positions',
     'glewImpl' => 'GLEW_AMD_framebuffer_sample_positions',
     'glewtype' => 'var',
@@ -7486,7 +7475,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_gcn_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_gcn_shader',
     'glewImpl' => 'GLEW_AMD_gcn_shader',
     'glewtype' => 'var',
@@ -7494,7 +7482,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_gpu_shader_half_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_gpu_shader_half_float',
     'glewImpl' => 'GLEW_AMD_gpu_shader_half_float',
     'glewtype' => 'var',
@@ -7502,7 +7489,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_gpu_shader_int16' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_gpu_shader_int16',
     'glewImpl' => 'GLEW_AMD_gpu_shader_int16',
     'glewtype' => 'var',
@@ -7510,7 +7496,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_gpu_shader_int64' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_gpu_shader_int64',
     'glewImpl' => 'GLEW_AMD_gpu_shader_int64',
     'glewtype' => 'var',
@@ -7518,7 +7503,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_interleaved_elements' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_interleaved_elements',
     'glewImpl' => 'GLEW_AMD_interleaved_elements',
     'glewtype' => 'var',
@@ -7526,7 +7510,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_multi_draw_indirect' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_multi_draw_indirect',
     'glewImpl' => 'GLEW_AMD_multi_draw_indirect',
     'glewtype' => 'var',
@@ -7534,7 +7517,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_name_gen_delete' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_name_gen_delete',
     'glewImpl' => 'GLEW_AMD_name_gen_delete',
     'glewtype' => 'var',
@@ -7542,7 +7524,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_occlusion_query_event' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_occlusion_query_event',
     'glewImpl' => 'GLEW_AMD_occlusion_query_event',
     'glewtype' => 'var',
@@ -7550,7 +7531,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_performance_monitor' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_performance_monitor',
     'glewImpl' => 'GLEW_AMD_performance_monitor',
     'glewtype' => 'var',
@@ -7558,7 +7538,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_pinned_memory' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_pinned_memory',
     'glewImpl' => 'GLEW_AMD_pinned_memory',
     'glewtype' => 'var',
@@ -7566,7 +7545,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_program_binary_Z400' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_program_binary_Z400',
     'glewImpl' => 'GLEW_AMD_program_binary_Z400',
     'glewtype' => 'var',
@@ -7574,7 +7552,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_query_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_query_buffer_object',
     'glewImpl' => 'GLEW_AMD_query_buffer_object',
     'glewtype' => 'var',
@@ -7582,7 +7559,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_sample_positions' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_sample_positions',
     'glewImpl' => 'GLEW_AMD_sample_positions',
     'glewtype' => 'var',
@@ -7590,7 +7566,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_seamless_cubemap_per_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_seamless_cubemap_per_texture',
     'glewImpl' => 'GLEW_AMD_seamless_cubemap_per_texture',
     'glewtype' => 'var',
@@ -7598,7 +7573,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_shader_atomic_counter_ops' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_shader_atomic_counter_ops',
     'glewImpl' => 'GLEW_AMD_shader_atomic_counter_ops',
     'glewtype' => 'var',
@@ -7606,7 +7580,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_shader_ballot' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_shader_ballot',
     'glewImpl' => 'GLEW_AMD_shader_ballot',
     'glewtype' => 'var',
@@ -7614,7 +7587,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_shader_explicit_vertex_parameter' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_shader_explicit_vertex_parameter',
     'glewImpl' => 'GLEW_AMD_shader_explicit_vertex_parameter',
     'glewtype' => 'var',
@@ -7622,7 +7594,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_shader_stencil_export' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_shader_stencil_export',
     'glewImpl' => 'GLEW_AMD_shader_stencil_export',
     'glewtype' => 'var',
@@ -7630,7 +7601,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_shader_stencil_value_export' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_shader_stencil_value_export',
     'glewImpl' => 'GLEW_AMD_shader_stencil_value_export',
     'glewtype' => 'var',
@@ -7638,7 +7608,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_shader_trinary_minmax' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_shader_trinary_minmax',
     'glewImpl' => 'GLEW_AMD_shader_trinary_minmax',
     'glewtype' => 'var',
@@ -7646,7 +7615,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_sparse_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_sparse_texture',
     'glewImpl' => 'GLEW_AMD_sparse_texture',
     'glewtype' => 'var',
@@ -7654,7 +7622,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_stencil_operation_extended' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_stencil_operation_extended',
     'glewImpl' => 'GLEW_AMD_stencil_operation_extended',
     'glewtype' => 'var',
@@ -7662,7 +7629,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_texture_gather_bias_lod' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_texture_gather_bias_lod',
     'glewImpl' => 'GLEW_AMD_texture_gather_bias_lod',
     'glewtype' => 'var',
@@ -7670,7 +7636,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_texture_texture4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_texture_texture4',
     'glewImpl' => 'GLEW_AMD_texture_texture4',
     'glewtype' => 'var',
@@ -7678,7 +7643,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_transform_feedback3_lines_triangles' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_transform_feedback3_lines_triangles',
     'glewImpl' => 'GLEW_AMD_transform_feedback3_lines_triangles',
     'glewtype' => 'var',
@@ -7686,7 +7650,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_transform_feedback4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_transform_feedback4',
     'glewImpl' => 'GLEW_AMD_transform_feedback4',
     'glewtype' => 'var',
@@ -7694,7 +7657,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_vertex_shader_layer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_vertex_shader_layer',
     'glewImpl' => 'GLEW_AMD_vertex_shader_layer',
     'glewtype' => 'var',
@@ -7702,7 +7664,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_vertex_shader_tessellator' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_vertex_shader_tessellator',
     'glewImpl' => 'GLEW_AMD_vertex_shader_tessellator',
     'glewtype' => 'var',
@@ -7710,7 +7671,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_AMD_vertex_shader_viewport_index' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_AMD_vertex_shader_viewport_index',
     'glewImpl' => 'GLEW_AMD_vertex_shader_viewport_index',
     'glewtype' => 'var',
@@ -7718,7 +7678,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANDROID_extension_pack_es31a' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANDROID_extension_pack_es31a',
     'glewImpl' => 'GLEW_ANDROID_extension_pack_es31a',
     'glewtype' => 'var',
@@ -7726,7 +7685,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_depth_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_depth_texture',
     'glewImpl' => 'GLEW_ANGLE_depth_texture',
     'glewtype' => 'var',
@@ -7734,7 +7692,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_framebuffer_blit' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_framebuffer_blit',
     'glewImpl' => 'GLEW_ANGLE_framebuffer_blit',
     'glewtype' => 'var',
@@ -7742,7 +7699,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_framebuffer_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_framebuffer_multisample',
     'glewImpl' => 'GLEW_ANGLE_framebuffer_multisample',
     'glewtype' => 'var',
@@ -7750,7 +7706,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_instanced_arrays' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_instanced_arrays',
     'glewImpl' => 'GLEW_ANGLE_instanced_arrays',
     'glewtype' => 'var',
@@ -7758,7 +7713,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_pack_reverse_row_order' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_pack_reverse_row_order',
     'glewImpl' => 'GLEW_ANGLE_pack_reverse_row_order',
     'glewtype' => 'var',
@@ -7766,7 +7720,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_program_binary' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_program_binary',
     'glewImpl' => 'GLEW_ANGLE_program_binary',
     'glewtype' => 'var',
@@ -7774,7 +7727,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_texture_compression_dxt1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_texture_compression_dxt1',
     'glewImpl' => 'GLEW_ANGLE_texture_compression_dxt1',
     'glewtype' => 'var',
@@ -7782,7 +7734,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_texture_compression_dxt3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_texture_compression_dxt3',
     'glewImpl' => 'GLEW_ANGLE_texture_compression_dxt3',
     'glewtype' => 'var',
@@ -7790,7 +7741,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_texture_compression_dxt5' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_texture_compression_dxt5',
     'glewImpl' => 'GLEW_ANGLE_texture_compression_dxt5',
     'glewtype' => 'var',
@@ -7798,7 +7748,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_texture_usage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_texture_usage',
     'glewImpl' => 'GLEW_ANGLE_texture_usage',
     'glewtype' => 'var',
@@ -7806,7 +7755,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_timer_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_timer_query',
     'glewImpl' => 'GLEW_ANGLE_timer_query',
     'glewtype' => 'var',
@@ -7814,7 +7762,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ANGLE_translated_shader_source' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ANGLE_translated_shader_source',
     'glewImpl' => 'GLEW_ANGLE_translated_shader_source',
     'glewtype' => 'var',
@@ -7822,7 +7769,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_aux_depth_stencil' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_aux_depth_stencil',
     'glewImpl' => 'GLEW_APPLE_aux_depth_stencil',
     'glewtype' => 'var',
@@ -7830,7 +7776,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_client_storage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_client_storage',
     'glewImpl' => 'GLEW_APPLE_client_storage',
     'glewtype' => 'var',
@@ -7838,7 +7783,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_clip_distance' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_clip_distance',
     'glewImpl' => 'GLEW_APPLE_clip_distance',
     'glewtype' => 'var',
@@ -7846,7 +7790,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_color_buffer_packed_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_color_buffer_packed_float',
     'glewImpl' => 'GLEW_APPLE_color_buffer_packed_float',
     'glewtype' => 'var',
@@ -7854,7 +7797,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_copy_texture_levels' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_copy_texture_levels',
     'glewImpl' => 'GLEW_APPLE_copy_texture_levels',
     'glewtype' => 'var',
@@ -7862,7 +7804,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_element_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_element_array',
     'glewImpl' => 'GLEW_APPLE_element_array',
     'glewtype' => 'var',
@@ -7870,7 +7811,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_fence' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_fence',
     'glewImpl' => 'GLEW_APPLE_fence',
     'glewtype' => 'var',
@@ -7878,7 +7818,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_float_pixels' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_float_pixels',
     'glewImpl' => 'GLEW_APPLE_float_pixels',
     'glewtype' => 'var',
@@ -7886,7 +7825,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_flush_buffer_range' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_flush_buffer_range',
     'glewImpl' => 'GLEW_APPLE_flush_buffer_range',
     'glewtype' => 'var',
@@ -7894,7 +7832,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_framebuffer_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_framebuffer_multisample',
     'glewImpl' => 'GLEW_APPLE_framebuffer_multisample',
     'glewtype' => 'var',
@@ -7902,7 +7839,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_object_purgeable' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_object_purgeable',
     'glewImpl' => 'GLEW_APPLE_object_purgeable',
     'glewtype' => 'var',
@@ -7910,7 +7846,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_pixel_buffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_pixel_buffer',
     'glewImpl' => 'GLEW_APPLE_pixel_buffer',
     'glewtype' => 'var',
@@ -7918,7 +7853,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_rgb_422' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_rgb_422',
     'glewImpl' => 'GLEW_APPLE_rgb_422',
     'glewtype' => 'var',
@@ -7926,7 +7860,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_row_bytes' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_row_bytes',
     'glewImpl' => 'GLEW_APPLE_row_bytes',
     'glewtype' => 'var',
@@ -7934,7 +7867,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_specular_vector' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_specular_vector',
     'glewImpl' => 'GLEW_APPLE_specular_vector',
     'glewtype' => 'var',
@@ -7942,7 +7874,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_sync' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_sync',
     'glewImpl' => 'GLEW_APPLE_sync',
     'glewtype' => 'var',
@@ -7950,7 +7881,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_texture_2D_limited_npot' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_texture_2D_limited_npot',
     'glewImpl' => 'GLEW_APPLE_texture_2D_limited_npot',
     'glewtype' => 'var',
@@ -7958,7 +7888,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_texture_format_BGRA8888' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_texture_format_BGRA8888',
     'glewImpl' => 'GLEW_APPLE_texture_format_BGRA8888',
     'glewtype' => 'var',
@@ -7966,7 +7895,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_texture_max_level' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_texture_max_level',
     'glewImpl' => 'GLEW_APPLE_texture_max_level',
     'glewtype' => 'var',
@@ -7974,7 +7902,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_texture_packed_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_texture_packed_float',
     'glewImpl' => 'GLEW_APPLE_texture_packed_float',
     'glewtype' => 'var',
@@ -7982,7 +7909,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_texture_range' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_texture_range',
     'glewImpl' => 'GLEW_APPLE_texture_range',
     'glewtype' => 'var',
@@ -7990,7 +7916,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_transform_hint' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_transform_hint',
     'glewImpl' => 'GLEW_APPLE_transform_hint',
     'glewtype' => 'var',
@@ -7998,7 +7923,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_vertex_array_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_vertex_array_object',
     'glewImpl' => 'GLEW_APPLE_vertex_array_object',
     'glewtype' => 'var',
@@ -8006,7 +7930,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_vertex_array_range' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_vertex_array_range',
     'glewImpl' => 'GLEW_APPLE_vertex_array_range',
     'glewtype' => 'var',
@@ -8014,7 +7937,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_vertex_program_evaluators' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_vertex_program_evaluators',
     'glewImpl' => 'GLEW_APPLE_vertex_program_evaluators',
     'glewtype' => 'var',
@@ -8022,7 +7944,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_APPLE_ycbcr_422' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_APPLE_ycbcr_422',
     'glewImpl' => 'GLEW_APPLE_ycbcr_422',
     'glewtype' => 'var',
@@ -8030,7 +7951,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_ES2_compatibility' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_ES2_compatibility',
     'glewImpl' => 'GLEW_ARB_ES2_compatibility',
     'glewtype' => 'var',
@@ -8038,7 +7958,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_ES3_1_compatibility' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_ES3_1_compatibility',
     'glewImpl' => 'GLEW_ARB_ES3_1_compatibility',
     'glewtype' => 'var',
@@ -8046,7 +7965,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_ES3_2_compatibility' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_ES3_2_compatibility',
     'glewImpl' => 'GLEW_ARB_ES3_2_compatibility',
     'glewtype' => 'var',
@@ -8054,7 +7972,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_ES3_compatibility' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_ES3_compatibility',
     'glewImpl' => 'GLEW_ARB_ES3_compatibility',
     'glewtype' => 'var',
@@ -8062,7 +7979,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_arrays_of_arrays' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_arrays_of_arrays',
     'glewImpl' => 'GLEW_ARB_arrays_of_arrays',
     'glewtype' => 'var',
@@ -8070,7 +7986,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_base_instance' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_base_instance',
     'glewImpl' => 'GLEW_ARB_base_instance',
     'glewtype' => 'var',
@@ -8078,7 +7993,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_bindless_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_bindless_texture',
     'glewImpl' => 'GLEW_ARB_bindless_texture',
     'glewtype' => 'var',
@@ -8086,7 +8000,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_blend_func_extended' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_blend_func_extended',
     'glewImpl' => 'GLEW_ARB_blend_func_extended',
     'glewtype' => 'var',
@@ -8094,7 +8007,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_buffer_storage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_buffer_storage',
     'glewImpl' => 'GLEW_ARB_buffer_storage',
     'glewtype' => 'var',
@@ -8102,7 +8014,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_cl_event' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_cl_event',
     'glewImpl' => 'GLEW_ARB_cl_event',
     'glewtype' => 'var',
@@ -8110,7 +8021,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_clear_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_clear_buffer_object',
     'glewImpl' => 'GLEW_ARB_clear_buffer_object',
     'glewtype' => 'var',
@@ -8118,7 +8028,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_clear_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_clear_texture',
     'glewImpl' => 'GLEW_ARB_clear_texture',
     'glewtype' => 'var',
@@ -8126,7 +8035,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_clip_control' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_clip_control',
     'glewImpl' => 'GLEW_ARB_clip_control',
     'glewtype' => 'var',
@@ -8134,7 +8042,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_color_buffer_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_color_buffer_float',
     'glewImpl' => 'GLEW_ARB_color_buffer_float',
     'glewtype' => 'var',
@@ -8142,7 +8049,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_compatibility' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_compatibility',
     'glewImpl' => 'GLEW_ARB_compatibility',
     'glewtype' => 'var',
@@ -8150,7 +8056,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_compressed_texture_pixel_storage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_compressed_texture_pixel_storage',
     'glewImpl' => 'GLEW_ARB_compressed_texture_pixel_storage',
     'glewtype' => 'var',
@@ -8158,7 +8063,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_compute_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_compute_shader',
     'glewImpl' => 'GLEW_ARB_compute_shader',
     'glewtype' => 'var',
@@ -8166,7 +8070,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_compute_variable_group_size' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_compute_variable_group_size',
     'glewImpl' => 'GLEW_ARB_compute_variable_group_size',
     'glewtype' => 'var',
@@ -8174,7 +8077,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_conditional_render_inverted' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_conditional_render_inverted',
     'glewImpl' => 'GLEW_ARB_conditional_render_inverted',
     'glewtype' => 'var',
@@ -8182,7 +8084,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_conservative_depth' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_conservative_depth',
     'glewImpl' => 'GLEW_ARB_conservative_depth',
     'glewtype' => 'var',
@@ -8190,7 +8091,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_copy_buffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_copy_buffer',
     'glewImpl' => 'GLEW_ARB_copy_buffer',
     'glewtype' => 'var',
@@ -8198,7 +8098,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_copy_image' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_copy_image',
     'glewImpl' => 'GLEW_ARB_copy_image',
     'glewtype' => 'var',
@@ -8206,7 +8105,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_cull_distance' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_cull_distance',
     'glewImpl' => 'GLEW_ARB_cull_distance',
     'glewtype' => 'var',
@@ -8214,7 +8112,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_debug_output' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_debug_output',
     'glewImpl' => 'GLEW_ARB_debug_output',
     'glewtype' => 'var',
@@ -8222,7 +8119,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_depth_buffer_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_depth_buffer_float',
     'glewImpl' => 'GLEW_ARB_depth_buffer_float',
     'glewtype' => 'var',
@@ -8230,7 +8126,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_depth_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_depth_clamp',
     'glewImpl' => 'GLEW_ARB_depth_clamp',
     'glewtype' => 'var',
@@ -8238,7 +8133,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_depth_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_depth_texture',
     'glewImpl' => 'GLEW_ARB_depth_texture',
     'glewtype' => 'var',
@@ -8246,7 +8140,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_derivative_control' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_derivative_control',
     'glewImpl' => 'GLEW_ARB_derivative_control',
     'glewtype' => 'var',
@@ -8254,7 +8147,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_direct_state_access' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_direct_state_access',
     'glewImpl' => 'GLEW_ARB_direct_state_access',
     'glewtype' => 'var',
@@ -8262,7 +8154,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_draw_buffers' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_draw_buffers',
     'glewImpl' => 'GLEW_ARB_draw_buffers',
     'glewtype' => 'var',
@@ -8270,7 +8161,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_draw_buffers_blend' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_draw_buffers_blend',
     'glewImpl' => 'GLEW_ARB_draw_buffers_blend',
     'glewtype' => 'var',
@@ -8278,7 +8168,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_draw_elements_base_vertex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_draw_elements_base_vertex',
     'glewImpl' => 'GLEW_ARB_draw_elements_base_vertex',
     'glewtype' => 'var',
@@ -8286,7 +8175,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_draw_indirect' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_draw_indirect',
     'glewImpl' => 'GLEW_ARB_draw_indirect',
     'glewtype' => 'var',
@@ -8294,7 +8182,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_draw_instanced' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_draw_instanced',
     'glewImpl' => 'GLEW_ARB_draw_instanced',
     'glewtype' => 'var',
@@ -8302,7 +8189,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_enhanced_layouts' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_enhanced_layouts',
     'glewImpl' => 'GLEW_ARB_enhanced_layouts',
     'glewtype' => 'var',
@@ -8310,7 +8196,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_explicit_attrib_location' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_explicit_attrib_location',
     'glewImpl' => 'GLEW_ARB_explicit_attrib_location',
     'glewtype' => 'var',
@@ -8318,7 +8203,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_explicit_uniform_location' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_explicit_uniform_location',
     'glewImpl' => 'GLEW_ARB_explicit_uniform_location',
     'glewtype' => 'var',
@@ -8326,7 +8210,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_coord_conventions' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_fragment_coord_conventions',
     'glewImpl' => 'GLEW_ARB_fragment_coord_conventions',
     'glewtype' => 'var',
@@ -8334,7 +8217,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_layer_viewport' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_fragment_layer_viewport',
     'glewImpl' => 'GLEW_ARB_fragment_layer_viewport',
     'glewtype' => 'var',
@@ -8342,7 +8224,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_program' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_fragment_program',
     'glewImpl' => 'GLEW_ARB_fragment_program',
     'glewtype' => 'var',
@@ -8350,7 +8231,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_program_shadow' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_fragment_program_shadow',
     'glewImpl' => 'GLEW_ARB_fragment_program_shadow',
     'glewtype' => 'var',
@@ -8358,7 +8238,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_fragment_shader',
     'glewImpl' => 'GLEW_ARB_fragment_shader',
     'glewtype' => 'var',
@@ -8366,7 +8245,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_shader_interlock' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_fragment_shader_interlock',
     'glewImpl' => 'GLEW_ARB_fragment_shader_interlock',
     'glewtype' => 'var',
@@ -8374,7 +8252,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_framebuffer_no_attachments' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_framebuffer_no_attachments',
     'glewImpl' => 'GLEW_ARB_framebuffer_no_attachments',
     'glewtype' => 'var',
@@ -8382,7 +8259,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_framebuffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_framebuffer_object',
     'glewImpl' => 'GLEW_ARB_framebuffer_object',
     'glewtype' => 'var',
@@ -8390,7 +8266,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_framebuffer_sRGB' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_framebuffer_sRGB',
     'glewImpl' => 'GLEW_ARB_framebuffer_sRGB',
     'glewtype' => 'var',
@@ -8398,7 +8273,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_geometry_shader4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_geometry_shader4',
     'glewImpl' => 'GLEW_ARB_geometry_shader4',
     'glewtype' => 'var',
@@ -8406,7 +8280,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_get_program_binary' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_get_program_binary',
     'glewImpl' => 'GLEW_ARB_get_program_binary',
     'glewtype' => 'var',
@@ -8414,7 +8287,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_get_texture_sub_image' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_get_texture_sub_image',
     'glewImpl' => 'GLEW_ARB_get_texture_sub_image',
     'glewtype' => 'var',
@@ -8422,7 +8294,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_gl_spirv' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_gl_spirv',
     'glewImpl' => 'GLEW_ARB_gl_spirv',
     'glewtype' => 'var',
@@ -8430,7 +8301,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_gpu_shader5' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_gpu_shader5',
     'glewImpl' => 'GLEW_ARB_gpu_shader5',
     'glewtype' => 'var',
@@ -8438,7 +8308,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_gpu_shader_fp64' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_gpu_shader_fp64',
     'glewImpl' => 'GLEW_ARB_gpu_shader_fp64',
     'glewtype' => 'var',
@@ -8446,7 +8315,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_gpu_shader_int64' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_gpu_shader_int64',
     'glewImpl' => 'GLEW_ARB_gpu_shader_int64',
     'glewtype' => 'var',
@@ -8454,7 +8322,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_half_float_pixel' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_half_float_pixel',
     'glewImpl' => 'GLEW_ARB_half_float_pixel',
     'glewtype' => 'var',
@@ -8462,7 +8329,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_half_float_vertex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_half_float_vertex',
     'glewImpl' => 'GLEW_ARB_half_float_vertex',
     'glewtype' => 'var',
@@ -8470,7 +8336,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_imaging' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_imaging',
     'glewImpl' => 'GLEW_ARB_imaging',
     'glewtype' => 'var',
@@ -8478,7 +8343,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_indirect_parameters' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_indirect_parameters',
     'glewImpl' => 'GLEW_ARB_indirect_parameters',
     'glewtype' => 'var',
@@ -8486,7 +8350,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_instanced_arrays' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_instanced_arrays',
     'glewImpl' => 'GLEW_ARB_instanced_arrays',
     'glewtype' => 'var',
@@ -8494,7 +8357,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_internalformat_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_internalformat_query',
     'glewImpl' => 'GLEW_ARB_internalformat_query',
     'glewtype' => 'var',
@@ -8502,7 +8364,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_internalformat_query2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_internalformat_query2',
     'glewImpl' => 'GLEW_ARB_internalformat_query2',
     'glewtype' => 'var',
@@ -8510,7 +8371,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_invalidate_subdata' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_invalidate_subdata',
     'glewImpl' => 'GLEW_ARB_invalidate_subdata',
     'glewtype' => 'var',
@@ -8518,7 +8378,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_map_buffer_alignment' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_map_buffer_alignment',
     'glewImpl' => 'GLEW_ARB_map_buffer_alignment',
     'glewtype' => 'var',
@@ -8526,7 +8385,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_map_buffer_range' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_map_buffer_range',
     'glewImpl' => 'GLEW_ARB_map_buffer_range',
     'glewtype' => 'var',
@@ -8534,7 +8392,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_matrix_palette' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_matrix_palette',
     'glewImpl' => 'GLEW_ARB_matrix_palette',
     'glewtype' => 'var',
@@ -8542,7 +8399,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_multi_bind' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_multi_bind',
     'glewImpl' => 'GLEW_ARB_multi_bind',
     'glewtype' => 'var',
@@ -8550,7 +8406,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_multi_draw_indirect' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_multi_draw_indirect',
     'glewImpl' => 'GLEW_ARB_multi_draw_indirect',
     'glewtype' => 'var',
@@ -8558,7 +8413,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_multisample',
     'glewImpl' => 'GLEW_ARB_multisample',
     'glewtype' => 'var',
@@ -8566,7 +8420,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_multitexture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_multitexture',
     'glewImpl' => 'GLEW_ARB_multitexture',
     'glewtype' => 'var',
@@ -8574,7 +8427,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_occlusion_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_occlusion_query',
     'glewImpl' => 'GLEW_ARB_occlusion_query',
     'glewtype' => 'var',
@@ -8582,7 +8434,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_occlusion_query2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_occlusion_query2',
     'glewImpl' => 'GLEW_ARB_occlusion_query2',
     'glewtype' => 'var',
@@ -8590,7 +8441,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_parallel_shader_compile' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_parallel_shader_compile',
     'glewImpl' => 'GLEW_ARB_parallel_shader_compile',
     'glewtype' => 'var',
@@ -8598,7 +8448,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_pipeline_statistics_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_pipeline_statistics_query',
     'glewImpl' => 'GLEW_ARB_pipeline_statistics_query',
     'glewtype' => 'var',
@@ -8606,7 +8455,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_pixel_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_pixel_buffer_object',
     'glewImpl' => 'GLEW_ARB_pixel_buffer_object',
     'glewtype' => 'var',
@@ -8614,7 +8462,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_point_parameters' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_point_parameters',
     'glewImpl' => 'GLEW_ARB_point_parameters',
     'glewtype' => 'var',
@@ -8622,7 +8469,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_point_sprite' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_point_sprite',
     'glewImpl' => 'GLEW_ARB_point_sprite',
     'glewtype' => 'var',
@@ -8630,7 +8476,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_polygon_offset_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_polygon_offset_clamp',
     'glewImpl' => 'GLEW_ARB_polygon_offset_clamp',
     'glewtype' => 'var',
@@ -8638,7 +8483,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_post_depth_coverage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_post_depth_coverage',
     'glewImpl' => 'GLEW_ARB_post_depth_coverage',
     'glewtype' => 'var',
@@ -8646,7 +8490,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_program_interface_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_program_interface_query',
     'glewImpl' => 'GLEW_ARB_program_interface_query',
     'glewtype' => 'var',
@@ -8654,7 +8497,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_provoking_vertex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_provoking_vertex',
     'glewImpl' => 'GLEW_ARB_provoking_vertex',
     'glewtype' => 'var',
@@ -8662,7 +8504,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_query_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_query_buffer_object',
     'glewImpl' => 'GLEW_ARB_query_buffer_object',
     'glewtype' => 'var',
@@ -8670,7 +8511,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_robust_buffer_access_behavior' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_robust_buffer_access_behavior',
     'glewImpl' => 'GLEW_ARB_robust_buffer_access_behavior',
     'glewtype' => 'var',
@@ -8678,7 +8518,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_robustness' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_robustness',
     'glewImpl' => 'GLEW_ARB_robustness',
     'glewtype' => 'var',
@@ -8686,7 +8525,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_robustness_application_isolation' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_robustness_application_isolation',
     'glewImpl' => 'GLEW_ARB_robustness_application_isolation',
     'glewtype' => 'var',
@@ -8694,7 +8532,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_robustness_share_group_isolation' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_robustness_share_group_isolation',
     'glewImpl' => 'GLEW_ARB_robustness_share_group_isolation',
     'glewtype' => 'var',
@@ -8702,7 +8539,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_sample_locations' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_sample_locations',
     'glewImpl' => 'GLEW_ARB_sample_locations',
     'glewtype' => 'var',
@@ -8710,7 +8546,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_sample_shading' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_sample_shading',
     'glewImpl' => 'GLEW_ARB_sample_shading',
     'glewtype' => 'var',
@@ -8718,7 +8553,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_sampler_objects' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_sampler_objects',
     'glewImpl' => 'GLEW_ARB_sampler_objects',
     'glewtype' => 'var',
@@ -8726,7 +8560,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_seamless_cube_map' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_seamless_cube_map',
     'glewImpl' => 'GLEW_ARB_seamless_cube_map',
     'glewtype' => 'var',
@@ -8734,7 +8567,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_seamless_cubemap_per_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_seamless_cubemap_per_texture',
     'glewImpl' => 'GLEW_ARB_seamless_cubemap_per_texture',
     'glewtype' => 'var',
@@ -8742,7 +8574,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_separate_shader_objects' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_separate_shader_objects',
     'glewImpl' => 'GLEW_ARB_separate_shader_objects',
     'glewtype' => 'var',
@@ -8750,7 +8581,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_atomic_counter_ops' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_atomic_counter_ops',
     'glewImpl' => 'GLEW_ARB_shader_atomic_counter_ops',
     'glewtype' => 'var',
@@ -8758,7 +8588,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_atomic_counters' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_atomic_counters',
     'glewImpl' => 'GLEW_ARB_shader_atomic_counters',
     'glewtype' => 'var',
@@ -8766,7 +8595,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_ballot' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_ballot',
     'glewImpl' => 'GLEW_ARB_shader_ballot',
     'glewtype' => 'var',
@@ -8774,7 +8602,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_bit_encoding' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_bit_encoding',
     'glewImpl' => 'GLEW_ARB_shader_bit_encoding',
     'glewtype' => 'var',
@@ -8782,7 +8609,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_clock' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_clock',
     'glewImpl' => 'GLEW_ARB_shader_clock',
     'glewtype' => 'var',
@@ -8790,7 +8616,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_draw_parameters' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_draw_parameters',
     'glewImpl' => 'GLEW_ARB_shader_draw_parameters',
     'glewtype' => 'var',
@@ -8798,7 +8623,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_group_vote' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_group_vote',
     'glewImpl' => 'GLEW_ARB_shader_group_vote',
     'glewtype' => 'var',
@@ -8806,7 +8630,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_image_load_store' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_image_load_store',
     'glewImpl' => 'GLEW_ARB_shader_image_load_store',
     'glewtype' => 'var',
@@ -8814,7 +8637,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_image_size' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_image_size',
     'glewImpl' => 'GLEW_ARB_shader_image_size',
     'glewtype' => 'var',
@@ -8822,7 +8644,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_objects' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_objects',
     'glewImpl' => 'GLEW_ARB_shader_objects',
     'glewtype' => 'var',
@@ -8830,7 +8651,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_precision' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_precision',
     'glewImpl' => 'GLEW_ARB_shader_precision',
     'glewtype' => 'var',
@@ -8838,7 +8658,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_stencil_export' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_stencil_export',
     'glewImpl' => 'GLEW_ARB_shader_stencil_export',
     'glewtype' => 'var',
@@ -8846,7 +8665,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_storage_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_storage_buffer_object',
     'glewImpl' => 'GLEW_ARB_shader_storage_buffer_object',
     'glewtype' => 'var',
@@ -8854,7 +8672,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_subroutine' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_subroutine',
     'glewImpl' => 'GLEW_ARB_shader_subroutine',
     'glewtype' => 'var',
@@ -8862,7 +8679,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_texture_image_samples' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_texture_image_samples',
     'glewImpl' => 'GLEW_ARB_shader_texture_image_samples',
     'glewtype' => 'var',
@@ -8870,7 +8686,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_texture_lod' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_texture_lod',
     'glewImpl' => 'GLEW_ARB_shader_texture_lod',
     'glewtype' => 'var',
@@ -8878,7 +8693,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shader_viewport_layer_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shader_viewport_layer_array',
     'glewImpl' => 'GLEW_ARB_shader_viewport_layer_array',
     'glewtype' => 'var',
@@ -8886,7 +8700,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shading_language_100' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shading_language_100',
     'glewImpl' => 'GLEW_ARB_shading_language_100',
     'glewtype' => 'var',
@@ -8894,7 +8707,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shading_language_420pack' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shading_language_420pack',
     'glewImpl' => 'GLEW_ARB_shading_language_420pack',
     'glewtype' => 'var',
@@ -8902,7 +8714,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shading_language_include' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shading_language_include',
     'glewImpl' => 'GLEW_ARB_shading_language_include',
     'glewtype' => 'var',
@@ -8910,7 +8721,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shading_language_packing' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shading_language_packing',
     'glewImpl' => 'GLEW_ARB_shading_language_packing',
     'glewtype' => 'var',
@@ -8918,7 +8728,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shadow' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shadow',
     'glewImpl' => 'GLEW_ARB_shadow',
     'glewtype' => 'var',
@@ -8926,7 +8735,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_shadow_ambient' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_shadow_ambient',
     'glewImpl' => 'GLEW_ARB_shadow_ambient',
     'glewtype' => 'var',
@@ -8934,7 +8742,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_sparse_buffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_sparse_buffer',
     'glewImpl' => 'GLEW_ARB_sparse_buffer',
     'glewtype' => 'var',
@@ -8942,7 +8749,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_sparse_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_sparse_texture',
     'glewImpl' => 'GLEW_ARB_sparse_texture',
     'glewtype' => 'var',
@@ -8950,7 +8756,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_sparse_texture2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_sparse_texture2',
     'glewImpl' => 'GLEW_ARB_sparse_texture2',
     'glewtype' => 'var',
@@ -8958,7 +8763,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_sparse_texture_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_sparse_texture_clamp',
     'glewImpl' => 'GLEW_ARB_sparse_texture_clamp',
     'glewtype' => 'var',
@@ -8966,7 +8770,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_spirv_extensions' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_spirv_extensions',
     'glewImpl' => 'GLEW_ARB_spirv_extensions',
     'glewtype' => 'var',
@@ -8974,7 +8777,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_stencil_texturing' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_stencil_texturing',
     'glewImpl' => 'GLEW_ARB_stencil_texturing',
     'glewtype' => 'var',
@@ -8982,7 +8784,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_sync' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_sync',
     'glewImpl' => 'GLEW_ARB_sync',
     'glewtype' => 'var',
@@ -8990,7 +8791,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_tessellation_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_tessellation_shader',
     'glewImpl' => 'GLEW_ARB_tessellation_shader',
     'glewtype' => 'var',
@@ -8998,7 +8798,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_barrier' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_barrier',
     'glewImpl' => 'GLEW_ARB_texture_barrier',
     'glewtype' => 'var',
@@ -9006,7 +8805,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_border_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_border_clamp',
     'glewImpl' => 'GLEW_ARB_texture_border_clamp',
     'glewtype' => 'var',
@@ -9014,7 +8812,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_buffer_object',
     'glewImpl' => 'GLEW_ARB_texture_buffer_object',
     'glewtype' => 'var',
@@ -9022,7 +8819,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_buffer_object_rgb32' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_buffer_object_rgb32',
     'glewImpl' => 'GLEW_ARB_texture_buffer_object_rgb32',
     'glewtype' => 'var',
@@ -9030,7 +8826,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_buffer_range' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_buffer_range',
     'glewImpl' => 'GLEW_ARB_texture_buffer_range',
     'glewtype' => 'var',
@@ -9038,7 +8833,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_compression' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_compression',
     'glewImpl' => 'GLEW_ARB_texture_compression',
     'glewtype' => 'var',
@@ -9046,7 +8840,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_compression_bptc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_compression_bptc',
     'glewImpl' => 'GLEW_ARB_texture_compression_bptc',
     'glewtype' => 'var',
@@ -9054,7 +8847,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_compression_rgtc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_compression_rgtc',
     'glewImpl' => 'GLEW_ARB_texture_compression_rgtc',
     'glewtype' => 'var',
@@ -9062,7 +8854,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_cube_map' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_cube_map',
     'glewImpl' => 'GLEW_ARB_texture_cube_map',
     'glewtype' => 'var',
@@ -9070,7 +8861,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_cube_map_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_cube_map_array',
     'glewImpl' => 'GLEW_ARB_texture_cube_map_array',
     'glewtype' => 'var',
@@ -9078,7 +8868,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_env_add' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_env_add',
     'glewImpl' => 'GLEW_ARB_texture_env_add',
     'glewtype' => 'var',
@@ -9086,7 +8875,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_env_combine' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_env_combine',
     'glewImpl' => 'GLEW_ARB_texture_env_combine',
     'glewtype' => 'var',
@@ -9094,7 +8882,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_env_crossbar' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_env_crossbar',
     'glewImpl' => 'GLEW_ARB_texture_env_crossbar',
     'glewtype' => 'var',
@@ -9102,7 +8889,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_env_dot3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_env_dot3',
     'glewImpl' => 'GLEW_ARB_texture_env_dot3',
     'glewtype' => 'var',
@@ -9110,7 +8896,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_filter_anisotropic' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_filter_anisotropic',
     'glewImpl' => 'GLEW_ARB_texture_filter_anisotropic',
     'glewtype' => 'var',
@@ -9118,7 +8903,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_filter_minmax' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_filter_minmax',
     'glewImpl' => 'GLEW_ARB_texture_filter_minmax',
     'glewtype' => 'var',
@@ -9126,7 +8910,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_float',
     'glewImpl' => 'GLEW_ARB_texture_float',
     'glewtype' => 'var',
@@ -9134,7 +8917,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_gather' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_gather',
     'glewImpl' => 'GLEW_ARB_texture_gather',
     'glewtype' => 'var',
@@ -9142,7 +8924,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_mirror_clamp_to_edge' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_mirror_clamp_to_edge',
     'glewImpl' => 'GLEW_ARB_texture_mirror_clamp_to_edge',
     'glewtype' => 'var',
@@ -9150,7 +8931,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_mirrored_repeat' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_mirrored_repeat',
     'glewImpl' => 'GLEW_ARB_texture_mirrored_repeat',
     'glewtype' => 'var',
@@ -9158,7 +8938,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_multisample',
     'glewImpl' => 'GLEW_ARB_texture_multisample',
     'glewtype' => 'var',
@@ -9166,7 +8945,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_non_power_of_two' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_non_power_of_two',
     'glewImpl' => 'GLEW_ARB_texture_non_power_of_two',
     'glewtype' => 'var',
@@ -9174,7 +8952,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_query_levels' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_query_levels',
     'glewImpl' => 'GLEW_ARB_texture_query_levels',
     'glewtype' => 'var',
@@ -9182,7 +8959,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_query_lod' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_query_lod',
     'glewImpl' => 'GLEW_ARB_texture_query_lod',
     'glewtype' => 'var',
@@ -9190,7 +8966,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_rectangle' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_rectangle',
     'glewImpl' => 'GLEW_ARB_texture_rectangle',
     'glewtype' => 'var',
@@ -9198,7 +8973,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_rg' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_rg',
     'glewImpl' => 'GLEW_ARB_texture_rg',
     'glewtype' => 'var',
@@ -9206,7 +8980,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_rgb10_a2ui' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_rgb10_a2ui',
     'glewImpl' => 'GLEW_ARB_texture_rgb10_a2ui',
     'glewtype' => 'var',
@@ -9214,7 +8987,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_stencil8' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_stencil8',
     'glewImpl' => 'GLEW_ARB_texture_stencil8',
     'glewtype' => 'var',
@@ -9222,7 +8994,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_storage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_storage',
     'glewImpl' => 'GLEW_ARB_texture_storage',
     'glewtype' => 'var',
@@ -9230,7 +9001,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_storage_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_storage_multisample',
     'glewImpl' => 'GLEW_ARB_texture_storage_multisample',
     'glewtype' => 'var',
@@ -9238,7 +9008,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_swizzle' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_swizzle',
     'glewImpl' => 'GLEW_ARB_texture_swizzle',
     'glewtype' => 'var',
@@ -9246,7 +9015,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_texture_view' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_texture_view',
     'glewImpl' => 'GLEW_ARB_texture_view',
     'glewtype' => 'var',
@@ -9254,7 +9022,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_timer_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_timer_query',
     'glewImpl' => 'GLEW_ARB_timer_query',
     'glewtype' => 'var',
@@ -9262,7 +9029,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_transform_feedback2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_transform_feedback2',
     'glewImpl' => 'GLEW_ARB_transform_feedback2',
     'glewtype' => 'var',
@@ -9270,7 +9036,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_transform_feedback3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_transform_feedback3',
     'glewImpl' => 'GLEW_ARB_transform_feedback3',
     'glewtype' => 'var',
@@ -9278,7 +9043,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_transform_feedback_instanced' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_transform_feedback_instanced',
     'glewImpl' => 'GLEW_ARB_transform_feedback_instanced',
     'glewtype' => 'var',
@@ -9286,7 +9050,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_transform_feedback_overflow_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_transform_feedback_overflow_query',
     'glewImpl' => 'GLEW_ARB_transform_feedback_overflow_query',
     'glewtype' => 'var',
@@ -9294,7 +9057,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_transpose_matrix' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_transpose_matrix',
     'glewImpl' => 'GLEW_ARB_transpose_matrix',
     'glewtype' => 'var',
@@ -9302,7 +9064,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_uniform_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_uniform_buffer_object',
     'glewImpl' => 'GLEW_ARB_uniform_buffer_object',
     'glewtype' => 'var',
@@ -9310,7 +9071,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_array_bgra' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_vertex_array_bgra',
     'glewImpl' => 'GLEW_ARB_vertex_array_bgra',
     'glewtype' => 'var',
@@ -9318,7 +9078,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_array_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_vertex_array_object',
     'glewImpl' => 'GLEW_ARB_vertex_array_object',
     'glewtype' => 'var',
@@ -9326,7 +9085,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_attrib_64bit' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_vertex_attrib_64bit',
     'glewImpl' => 'GLEW_ARB_vertex_attrib_64bit',
     'glewtype' => 'var',
@@ -9334,7 +9092,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_attrib_binding' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_vertex_attrib_binding',
     'glewImpl' => 'GLEW_ARB_vertex_attrib_binding',
     'glewtype' => 'var',
@@ -9342,7 +9099,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_blend' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_vertex_blend',
     'glewImpl' => 'GLEW_ARB_vertex_blend',
     'glewtype' => 'var',
@@ -9350,7 +9106,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_vertex_buffer_object',
     'glewImpl' => 'GLEW_ARB_vertex_buffer_object',
     'glewtype' => 'var',
@@ -9358,7 +9113,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_program' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_vertex_program',
     'glewImpl' => 'GLEW_ARB_vertex_program',
     'glewtype' => 'var',
@@ -9366,7 +9120,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_vertex_shader',
     'glewImpl' => 'GLEW_ARB_vertex_shader',
     'glewtype' => 'var',
@@ -9374,7 +9127,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_type_10f_11f_11f_rev' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_vertex_type_10f_11f_11f_rev',
     'glewImpl' => 'GLEW_ARB_vertex_type_10f_11f_11f_rev',
     'glewtype' => 'var',
@@ -9382,7 +9134,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_type_2_10_10_10_rev' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => 'GLEW_ARB_vertex_type_2_10_10_10_rev',
     'glewtype' => 'var',
@@ -9390,7 +9141,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_viewport_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_viewport_array',
     'glewImpl' => 'GLEW_ARB_viewport_array',
     'glewtype' => 'var',
@@ -9398,7 +9148,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARB_window_pos' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARB_window_pos',
     'glewImpl' => 'GLEW_ARB_window_pos',
     'glewtype' => 'var',
@@ -9406,7 +9155,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARM_mali_program_binary' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARM_mali_program_binary',
     'glewImpl' => 'GLEW_ARM_mali_program_binary',
     'glewtype' => 'var',
@@ -9414,7 +9162,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARM_mali_shader_binary' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARM_mali_shader_binary',
     'glewImpl' => 'GLEW_ARM_mali_shader_binary',
     'glewtype' => 'var',
@@ -9422,7 +9169,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARM_rgba8' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARM_rgba8',
     'glewImpl' => 'GLEW_ARM_rgba8',
     'glewtype' => 'var',
@@ -9430,7 +9176,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARM_shader_framebuffer_fetch' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARM_shader_framebuffer_fetch',
     'glewImpl' => 'GLEW_ARM_shader_framebuffer_fetch',
     'glewtype' => 'var',
@@ -9438,7 +9183,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ARM_shader_framebuffer_fetch_depth_stencil' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ARM_shader_framebuffer_fetch_depth_stencil',
     'glewImpl' => 'GLEW_ARM_shader_framebuffer_fetch_depth_stencil',
     'glewtype' => 'var',
@@ -9446,7 +9190,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATIX_point_sprites' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATIX_point_sprites',
     'glewImpl' => 'GLEW_ATIX_point_sprites',
     'glewtype' => 'var',
@@ -9454,7 +9197,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATIX_texture_env_combine3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATIX_texture_env_combine3',
     'glewImpl' => 'GLEW_ATIX_texture_env_combine3',
     'glewtype' => 'var',
@@ -9462,7 +9204,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATIX_texture_env_route' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATIX_texture_env_route',
     'glewImpl' => 'GLEW_ATIX_texture_env_route',
     'glewtype' => 'var',
@@ -9470,7 +9211,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATIX_vertex_shader_output_point_size' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATIX_vertex_shader_output_point_size',
     'glewImpl' => 'GLEW_ATIX_vertex_shader_output_point_size',
     'glewtype' => 'var',
@@ -9478,7 +9218,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_draw_buffers' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_draw_buffers',
     'glewImpl' => 'GLEW_ATI_draw_buffers',
     'glewtype' => 'var',
@@ -9486,7 +9225,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_element_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_element_array',
     'glewImpl' => 'GLEW_ATI_element_array',
     'glewtype' => 'var',
@@ -9494,7 +9232,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_envmap_bumpmap' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_envmap_bumpmap',
     'glewImpl' => 'GLEW_ATI_envmap_bumpmap',
     'glewtype' => 'var',
@@ -9502,7 +9239,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_fragment_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_fragment_shader',
     'glewImpl' => 'GLEW_ATI_fragment_shader',
     'glewtype' => 'var',
@@ -9510,7 +9246,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_map_object_buffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_map_object_buffer',
     'glewImpl' => 'GLEW_ATI_map_object_buffer',
     'glewtype' => 'var',
@@ -9518,7 +9253,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_meminfo' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_meminfo',
     'glewImpl' => 'GLEW_ATI_meminfo',
     'glewtype' => 'var',
@@ -9526,7 +9260,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_pn_triangles' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_pn_triangles',
     'glewImpl' => 'GLEW_ATI_pn_triangles',
     'glewtype' => 'var',
@@ -9534,7 +9267,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_separate_stencil' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_separate_stencil',
     'glewImpl' => 'GLEW_ATI_separate_stencil',
     'glewtype' => 'var',
@@ -9542,7 +9274,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_shader_texture_lod' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_shader_texture_lod',
     'glewImpl' => 'GLEW_ATI_shader_texture_lod',
     'glewtype' => 'var',
@@ -9550,7 +9281,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_text_fragment_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_text_fragment_shader',
     'glewImpl' => 'GLEW_ATI_text_fragment_shader',
     'glewtype' => 'var',
@@ -9558,7 +9288,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_texture_compression_3dc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_texture_compression_3dc',
     'glewImpl' => 'GLEW_ATI_texture_compression_3dc',
     'glewtype' => 'var',
@@ -9566,7 +9295,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_texture_env_combine3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_texture_env_combine3',
     'glewImpl' => 'GLEW_ATI_texture_env_combine3',
     'glewtype' => 'var',
@@ -9574,7 +9302,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_texture_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_texture_float',
     'glewImpl' => 'GLEW_ATI_texture_float',
     'glewtype' => 'var',
@@ -9582,7 +9309,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_texture_mirror_once' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_texture_mirror_once',
     'glewImpl' => 'GLEW_ATI_texture_mirror_once',
     'glewtype' => 'var',
@@ -9590,7 +9316,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_vertex_array_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_vertex_array_object',
     'glewImpl' => 'GLEW_ATI_vertex_array_object',
     'glewtype' => 'var',
@@ -9598,7 +9323,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_vertex_attrib_array_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_vertex_attrib_array_object',
     'glewImpl' => 'GLEW_ATI_vertex_attrib_array_object',
     'glewtype' => 'var',
@@ -9606,7 +9330,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_ATI_vertex_streams' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_ATI_vertex_streams',
     'glewImpl' => 'GLEW_ATI_vertex_streams',
     'glewtype' => 'var',
@@ -9614,7 +9337,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EGL_KHR_context_flush_control' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EGL_KHR_context_flush_control',
     'glewImpl' => 'GLEW_EGL_KHR_context_flush_control',
     'glewtype' => 'var',
@@ -9622,7 +9344,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EGL_NV_robustness_video_memory_purge' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EGL_NV_robustness_video_memory_purge',
     'glewImpl' => 'GLEW_EGL_NV_robustness_video_memory_purge',
     'glewtype' => 'var',
@@ -9630,7 +9351,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_422_pixels' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_422_pixels',
     'glewImpl' => 'GLEW_EXT_422_pixels',
     'glewtype' => 'var',
@@ -9638,7 +9358,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_Cg_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_Cg_shader',
     'glewImpl' => 'GLEW_EXT_Cg_shader',
     'glewtype' => 'var',
@@ -9646,7 +9365,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_EGL_image_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_EGL_image_array',
     'glewImpl' => 'GLEW_EXT_EGL_image_array',
     'glewtype' => 'var',
@@ -9654,7 +9372,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_YUV_target' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_YUV_target',
     'glewImpl' => 'GLEW_EXT_YUV_target',
     'glewtype' => 'var',
@@ -9662,7 +9379,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_abgr' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_abgr',
     'glewImpl' => 'GLEW_EXT_abgr',
     'glewtype' => 'var',
@@ -9670,7 +9386,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_base_instance' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_base_instance',
     'glewImpl' => 'GLEW_EXT_base_instance',
     'glewtype' => 'var',
@@ -9678,7 +9393,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_bgra' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_bgra',
     'glewImpl' => 'GLEW_EXT_bgra',
     'glewtype' => 'var',
@@ -9686,7 +9400,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_bindable_uniform' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_bindable_uniform',
     'glewImpl' => 'GLEW_EXT_bindable_uniform',
     'glewtype' => 'var',
@@ -9694,7 +9407,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_blend_color' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_blend_color',
     'glewImpl' => 'GLEW_EXT_blend_color',
     'glewtype' => 'var',
@@ -9702,7 +9414,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_blend_equation_separate' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_blend_equation_separate',
     'glewImpl' => 'GLEW_EXT_blend_equation_separate',
     'glewtype' => 'var',
@@ -9710,7 +9421,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_blend_func_extended' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_blend_func_extended',
     'glewImpl' => 'GLEW_EXT_blend_func_extended',
     'glewtype' => 'var',
@@ -9718,7 +9428,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_blend_func_separate' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_blend_func_separate',
     'glewImpl' => 'GLEW_EXT_blend_func_separate',
     'glewtype' => 'var',
@@ -9726,7 +9435,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_blend_logic_op' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_blend_logic_op',
     'glewImpl' => 'GLEW_EXT_blend_logic_op',
     'glewtype' => 'var',
@@ -9734,7 +9442,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_blend_minmax' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_blend_minmax',
     'glewImpl' => 'GLEW_EXT_blend_minmax',
     'glewtype' => 'var',
@@ -9742,7 +9449,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_blend_subtract' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_blend_subtract',
     'glewImpl' => 'GLEW_EXT_blend_subtract',
     'glewtype' => 'var',
@@ -9750,7 +9456,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_buffer_storage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_buffer_storage',
     'glewImpl' => 'GLEW_EXT_buffer_storage',
     'glewtype' => 'var',
@@ -9758,7 +9463,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_clear_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_clear_texture',
     'glewImpl' => 'GLEW_EXT_clear_texture',
     'glewtype' => 'var',
@@ -9766,7 +9470,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_clip_cull_distance' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_clip_cull_distance',
     'glewImpl' => 'GLEW_EXT_clip_cull_distance',
     'glewtype' => 'var',
@@ -9774,7 +9477,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_clip_volume_hint' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_clip_volume_hint',
     'glewImpl' => 'GLEW_EXT_clip_volume_hint',
     'glewtype' => 'var',
@@ -9782,7 +9484,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_cmyka' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_cmyka',
     'glewImpl' => 'GLEW_EXT_cmyka',
     'glewtype' => 'var',
@@ -9790,7 +9491,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_color_buffer_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_color_buffer_float',
     'glewImpl' => 'GLEW_EXT_color_buffer_float',
     'glewtype' => 'var',
@@ -9798,7 +9498,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_color_buffer_half_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_color_buffer_half_float',
     'glewImpl' => 'GLEW_EXT_color_buffer_half_float',
     'glewtype' => 'var',
@@ -9806,7 +9505,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_color_subtable' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_color_subtable',
     'glewImpl' => 'GLEW_EXT_color_subtable',
     'glewtype' => 'var',
@@ -9814,7 +9512,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_compiled_vertex_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_compiled_vertex_array',
     'glewImpl' => 'GLEW_EXT_compiled_vertex_array',
     'glewtype' => 'var',
@@ -9822,7 +9519,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_compressed_ETC1_RGB8_sub_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_compressed_ETC1_RGB8_sub_texture',
     'glewImpl' => 'GLEW_EXT_compressed_ETC1_RGB8_sub_texture',
     'glewtype' => 'var',
@@ -9830,7 +9526,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_conservative_depth' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_conservative_depth',
     'glewImpl' => 'GLEW_EXT_conservative_depth',
     'glewtype' => 'var',
@@ -9838,7 +9533,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_convolution' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_convolution',
     'glewImpl' => 'GLEW_EXT_convolution',
     'glewtype' => 'var',
@@ -9846,7 +9540,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_coordinate_frame' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_coordinate_frame',
     'glewImpl' => 'GLEW_EXT_coordinate_frame',
     'glewtype' => 'var',
@@ -9854,7 +9547,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_copy_image' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_copy_image',
     'glewImpl' => 'GLEW_EXT_copy_image',
     'glewtype' => 'var',
@@ -9862,7 +9554,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_copy_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_copy_texture',
     'glewImpl' => 'GLEW_EXT_copy_texture',
     'glewtype' => 'var',
@@ -9870,7 +9561,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_cull_vertex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_cull_vertex',
     'glewImpl' => 'GLEW_EXT_cull_vertex',
     'glewtype' => 'var',
@@ -9878,7 +9568,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_debug_label' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_debug_label',
     'glewImpl' => 'GLEW_EXT_debug_label',
     'glewtype' => 'var',
@@ -9886,7 +9575,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_debug_marker' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_debug_marker',
     'glewImpl' => 'GLEW_EXT_debug_marker',
     'glewtype' => 'var',
@@ -9894,7 +9582,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_depth_bounds_test' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_depth_bounds_test',
     'glewImpl' => 'GLEW_EXT_depth_bounds_test',
     'glewtype' => 'var',
@@ -9902,7 +9589,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_direct_state_access' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_direct_state_access',
     'glewImpl' => 'GLEW_EXT_direct_state_access',
     'glewtype' => 'var',
@@ -9910,7 +9596,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_discard_framebuffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_discard_framebuffer',
     'glewImpl' => 'GLEW_EXT_discard_framebuffer',
     'glewtype' => 'var',
@@ -9918,7 +9603,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_draw_buffers' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_draw_buffers',
     'glewImpl' => 'GLEW_EXT_draw_buffers',
     'glewtype' => 'var',
@@ -9926,7 +9610,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_draw_buffers2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_draw_buffers2',
     'glewImpl' => 'GLEW_EXT_draw_buffers2',
     'glewtype' => 'var',
@@ -9934,7 +9617,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_draw_buffers_indexed' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_draw_buffers_indexed',
     'glewImpl' => 'GLEW_EXT_draw_buffers_indexed',
     'glewtype' => 'var',
@@ -9942,7 +9624,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_draw_elements_base_vertex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_draw_elements_base_vertex',
     'glewImpl' => 'GLEW_EXT_draw_elements_base_vertex',
     'glewtype' => 'var',
@@ -9950,7 +9631,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_draw_instanced' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_draw_instanced',
     'glewImpl' => 'GLEW_EXT_draw_instanced',
     'glewtype' => 'var',
@@ -9958,7 +9638,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_draw_range_elements' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_draw_range_elements',
     'glewImpl' => 'GLEW_EXT_draw_range_elements',
     'glewtype' => 'var',
@@ -9966,7 +9645,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_external_buffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_external_buffer',
     'glewImpl' => 'GLEW_EXT_external_buffer',
     'glewtype' => 'var',
@@ -9974,7 +9652,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_float_blend' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_float_blend',
     'glewImpl' => 'GLEW_EXT_float_blend',
     'glewtype' => 'var',
@@ -9982,7 +9659,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_fog_coord' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_fog_coord',
     'glewImpl' => 'GLEW_EXT_fog_coord',
     'glewtype' => 'var',
@@ -9990,7 +9666,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_frag_depth' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_frag_depth',
     'glewImpl' => 'GLEW_EXT_frag_depth',
     'glewtype' => 'var',
@@ -9998,7 +9673,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_fragment_lighting' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_fragment_lighting',
     'glewImpl' => 'GLEW_EXT_fragment_lighting',
     'glewtype' => 'var',
@@ -10006,7 +9680,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_framebuffer_blit' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_framebuffer_blit',
     'glewImpl' => 'GLEW_EXT_framebuffer_blit',
     'glewtype' => 'var',
@@ -10014,7 +9687,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_framebuffer_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_framebuffer_multisample',
     'glewImpl' => 'GLEW_EXT_framebuffer_multisample',
     'glewtype' => 'var',
@@ -10022,7 +9694,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_framebuffer_multisample_blit_scaled' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_framebuffer_multisample_blit_scaled',
     'glewImpl' => 'GLEW_EXT_framebuffer_multisample_blit_scaled',
     'glewtype' => 'var',
@@ -10030,7 +9701,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_framebuffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_framebuffer_object',
     'glewImpl' => 'GLEW_EXT_framebuffer_object',
     'glewtype' => 'var',
@@ -10038,7 +9708,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_framebuffer_sRGB' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_framebuffer_sRGB',
     'glewImpl' => 'GLEW_EXT_framebuffer_sRGB',
     'glewtype' => 'var',
@@ -10046,7 +9715,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_geometry_point_size' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_geometry_point_size',
     'glewImpl' => 'GLEW_EXT_geometry_point_size',
     'glewtype' => 'var',
@@ -10054,7 +9722,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_geometry_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_geometry_shader',
     'glewImpl' => 'GLEW_EXT_geometry_shader',
     'glewtype' => 'var',
@@ -10062,7 +9729,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_geometry_shader4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_geometry_shader4',
     'glewImpl' => 'GLEW_EXT_geometry_shader4',
     'glewtype' => 'var',
@@ -10070,7 +9736,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_gpu_program_parameters' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_gpu_program_parameters',
     'glewImpl' => 'GLEW_EXT_gpu_program_parameters',
     'glewtype' => 'var',
@@ -10078,7 +9743,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_gpu_shader4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_gpu_shader4',
     'glewImpl' => 'GLEW_EXT_gpu_shader4',
     'glewtype' => 'var',
@@ -10086,7 +9750,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_gpu_shader5' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_gpu_shader5',
     'glewImpl' => 'GLEW_EXT_gpu_shader5',
     'glewtype' => 'var',
@@ -10094,7 +9757,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_histogram' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_histogram',
     'glewImpl' => 'GLEW_EXT_histogram',
     'glewtype' => 'var',
@@ -10102,7 +9764,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_index_array_formats' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_index_array_formats',
     'glewImpl' => 'GLEW_EXT_index_array_formats',
     'glewtype' => 'var',
@@ -10110,7 +9771,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_index_func' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_index_func',
     'glewImpl' => 'GLEW_EXT_index_func',
     'glewtype' => 'var',
@@ -10118,7 +9778,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_index_material' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_index_material',
     'glewImpl' => 'GLEW_EXT_index_material',
     'glewtype' => 'var',
@@ -10126,7 +9785,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_index_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_index_texture',
     'glewImpl' => 'GLEW_EXT_index_texture',
     'glewtype' => 'var',
@@ -10134,7 +9792,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_instanced_arrays' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_instanced_arrays',
     'glewImpl' => 'GLEW_EXT_instanced_arrays',
     'glewtype' => 'var',
@@ -10142,7 +9799,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_light_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_light_texture',
     'glewImpl' => 'GLEW_EXT_light_texture',
     'glewtype' => 'var',
@@ -10150,7 +9806,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_map_buffer_range' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_map_buffer_range',
     'glewImpl' => 'GLEW_EXT_map_buffer_range',
     'glewtype' => 'var',
@@ -10158,7 +9813,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_memory_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_memory_object',
     'glewImpl' => 'GLEW_EXT_memory_object',
     'glewtype' => 'var',
@@ -10166,7 +9820,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_memory_object_fd' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_memory_object_fd',
     'glewImpl' => 'GLEW_EXT_memory_object_fd',
     'glewtype' => 'var',
@@ -10174,7 +9827,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_memory_object_win32' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_memory_object_win32',
     'glewImpl' => 'GLEW_EXT_memory_object_win32',
     'glewtype' => 'var',
@@ -10182,7 +9834,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_misc_attribute' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_misc_attribute',
     'glewImpl' => 'GLEW_EXT_misc_attribute',
     'glewtype' => 'var',
@@ -10190,7 +9841,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_multi_draw_arrays' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_multi_draw_arrays',
     'glewImpl' => 'GLEW_EXT_multi_draw_arrays',
     'glewtype' => 'var',
@@ -10198,7 +9848,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_multi_draw_indirect' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_multi_draw_indirect',
     'glewImpl' => 'GLEW_EXT_multi_draw_indirect',
     'glewtype' => 'var',
@@ -10206,7 +9855,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_multiple_textures' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_multiple_textures',
     'glewImpl' => 'GLEW_EXT_multiple_textures',
     'glewtype' => 'var',
@@ -10214,7 +9862,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_multisample',
     'glewImpl' => 'GLEW_EXT_multisample',
     'glewtype' => 'var',
@@ -10222,7 +9869,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_multisample_compatibility' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_multisample_compatibility',
     'glewImpl' => 'GLEW_EXT_multisample_compatibility',
     'glewtype' => 'var',
@@ -10230,7 +9876,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_multisampled_render_to_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_multisampled_render_to_texture',
     'glewImpl' => 'GLEW_EXT_multisampled_render_to_texture',
     'glewtype' => 'var',
@@ -10238,7 +9883,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_multisampled_render_to_texture2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_multisampled_render_to_texture2',
     'glewImpl' => 'GLEW_EXT_multisampled_render_to_texture2',
     'glewtype' => 'var',
@@ -10246,7 +9890,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_multiview_draw_buffers' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_multiview_draw_buffers',
     'glewImpl' => 'GLEW_EXT_multiview_draw_buffers',
     'glewtype' => 'var',
@@ -10254,7 +9897,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_packed_depth_stencil' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_packed_depth_stencil',
     'glewImpl' => 'GLEW_EXT_packed_depth_stencil',
     'glewtype' => 'var',
@@ -10262,7 +9904,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_packed_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_packed_float',
     'glewImpl' => 'GLEW_EXT_packed_float',
     'glewtype' => 'var',
@@ -10270,7 +9911,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_packed_pixels' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_packed_pixels',
     'glewImpl' => 'GLEW_EXT_packed_pixels',
     'glewtype' => 'var',
@@ -10278,7 +9918,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_paletted_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_paletted_texture',
     'glewImpl' => 'GLEW_EXT_paletted_texture',
     'glewtype' => 'var',
@@ -10286,7 +9925,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_pixel_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_pixel_buffer_object',
     'glewImpl' => 'GLEW_EXT_pixel_buffer_object',
     'glewtype' => 'var',
@@ -10294,7 +9932,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_pixel_transform' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_pixel_transform',
     'glewImpl' => 'GLEW_EXT_pixel_transform',
     'glewtype' => 'var',
@@ -10302,7 +9939,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_pixel_transform_color_table' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_pixel_transform_color_table',
     'glewImpl' => 'GLEW_EXT_pixel_transform_color_table',
     'glewtype' => 'var',
@@ -10310,7 +9946,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_point_parameters' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_point_parameters',
     'glewImpl' => 'GLEW_EXT_point_parameters',
     'glewtype' => 'var',
@@ -10318,7 +9953,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_polygon_offset' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_polygon_offset',
     'glewImpl' => 'GLEW_EXT_polygon_offset',
     'glewtype' => 'var',
@@ -10326,7 +9960,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_polygon_offset_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_polygon_offset_clamp',
     'glewImpl' => 'GLEW_EXT_polygon_offset_clamp',
     'glewtype' => 'var',
@@ -10334,7 +9967,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_post_depth_coverage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_post_depth_coverage',
     'glewImpl' => 'GLEW_EXT_post_depth_coverage',
     'glewtype' => 'var',
@@ -10342,7 +9974,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_provoking_vertex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_provoking_vertex',
     'glewImpl' => 'GLEW_EXT_provoking_vertex',
     'glewtype' => 'var',
@@ -10350,7 +9981,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_pvrtc_sRGB' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_pvrtc_sRGB',
     'glewImpl' => 'GLEW_EXT_pvrtc_sRGB',
     'glewtype' => 'var',
@@ -10358,7 +9988,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_raster_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_raster_multisample',
     'glewImpl' => 'GLEW_EXT_raster_multisample',
     'glewtype' => 'var',
@@ -10366,7 +9995,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_read_format_bgra' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_read_format_bgra',
     'glewImpl' => 'GLEW_EXT_read_format_bgra',
     'glewtype' => 'var',
@@ -10374,7 +10002,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_render_snorm' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_render_snorm',
     'glewImpl' => 'GLEW_EXT_render_snorm',
     'glewtype' => 'var',
@@ -10382,7 +10009,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_rescale_normal' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_rescale_normal',
     'glewImpl' => 'GLEW_EXT_rescale_normal',
     'glewtype' => 'var',
@@ -10390,7 +10016,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_sRGB' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_sRGB',
     'glewImpl' => 'GLEW_EXT_sRGB',
     'glewtype' => 'var',
@@ -10398,7 +10023,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_sRGB_write_control' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_sRGB_write_control',
     'glewImpl' => 'GLEW_EXT_sRGB_write_control',
     'glewtype' => 'var',
@@ -10406,7 +10030,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_scene_marker' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_scene_marker',
     'glewImpl' => 'GLEW_EXT_scene_marker',
     'glewtype' => 'var',
@@ -10414,7 +10037,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_secondary_color' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_secondary_color',
     'glewImpl' => 'GLEW_EXT_secondary_color',
     'glewtype' => 'var',
@@ -10422,7 +10044,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_semaphore' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_semaphore',
     'glewImpl' => 'GLEW_EXT_semaphore',
     'glewtype' => 'var',
@@ -10430,7 +10051,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_semaphore_fd' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_semaphore_fd',
     'glewImpl' => 'GLEW_EXT_semaphore_fd',
     'glewtype' => 'var',
@@ -10438,7 +10058,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_semaphore_win32' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_semaphore_win32',
     'glewImpl' => 'GLEW_EXT_semaphore_win32',
     'glewtype' => 'var',
@@ -10446,7 +10065,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_separate_shader_objects' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_separate_shader_objects',
     'glewImpl' => 'GLEW_EXT_separate_shader_objects',
     'glewtype' => 'var',
@@ -10454,7 +10072,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_separate_specular_color' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_separate_specular_color',
     'glewImpl' => 'GLEW_EXT_separate_specular_color',
     'glewtype' => 'var',
@@ -10462,7 +10079,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_framebuffer_fetch' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_framebuffer_fetch',
     'glewImpl' => 'GLEW_EXT_shader_framebuffer_fetch',
     'glewtype' => 'var',
@@ -10470,7 +10086,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_group_vote' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_group_vote',
     'glewImpl' => 'GLEW_EXT_shader_group_vote',
     'glewtype' => 'var',
@@ -10478,7 +10093,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_image_load_formatted' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_image_load_formatted',
     'glewImpl' => 'GLEW_EXT_shader_image_load_formatted',
     'glewtype' => 'var',
@@ -10486,7 +10100,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_image_load_store' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_image_load_store',
     'glewImpl' => 'GLEW_EXT_shader_image_load_store',
     'glewtype' => 'var',
@@ -10494,7 +10107,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_implicit_conversions' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_implicit_conversions',
     'glewImpl' => 'GLEW_EXT_shader_implicit_conversions',
     'glewtype' => 'var',
@@ -10502,7 +10114,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_integer_mix' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_integer_mix',
     'glewImpl' => 'GLEW_EXT_shader_integer_mix',
     'glewtype' => 'var',
@@ -10510,7 +10121,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_io_blocks' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_io_blocks',
     'glewImpl' => 'GLEW_EXT_shader_io_blocks',
     'glewtype' => 'var',
@@ -10518,7 +10128,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_non_constant_global_initializers' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_non_constant_global_initializers',
     'glewImpl' => 'GLEW_EXT_shader_non_constant_global_initializers',
     'glewtype' => 'var',
@@ -10526,7 +10135,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_pixel_local_storage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_pixel_local_storage',
     'glewImpl' => 'GLEW_EXT_shader_pixel_local_storage',
     'glewtype' => 'var',
@@ -10534,7 +10142,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_pixel_local_storage2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_pixel_local_storage2',
     'glewImpl' => 'GLEW_EXT_shader_pixel_local_storage2',
     'glewtype' => 'var',
@@ -10542,7 +10149,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shader_texture_lod' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shader_texture_lod',
     'glewImpl' => 'GLEW_EXT_shader_texture_lod',
     'glewtype' => 'var',
@@ -10550,7 +10156,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shadow_funcs' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shadow_funcs',
     'glewImpl' => 'GLEW_EXT_shadow_funcs',
     'glewtype' => 'var',
@@ -10558,7 +10163,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shadow_samplers' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shadow_samplers',
     'glewImpl' => 'GLEW_EXT_shadow_samplers',
     'glewtype' => 'var',
@@ -10566,7 +10170,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_shared_texture_palette' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_shared_texture_palette',
     'glewImpl' => 'GLEW_EXT_shared_texture_palette',
     'glewtype' => 'var',
@@ -10574,7 +10177,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_sparse_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_sparse_texture',
     'glewImpl' => 'GLEW_EXT_sparse_texture',
     'glewtype' => 'var',
@@ -10582,7 +10184,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_sparse_texture2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_sparse_texture2',
     'glewImpl' => 'GLEW_EXT_sparse_texture2',
     'glewtype' => 'var',
@@ -10590,7 +10191,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_stencil_clear_tag' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_stencil_clear_tag',
     'glewImpl' => 'GLEW_EXT_stencil_clear_tag',
     'glewtype' => 'var',
@@ -10598,7 +10198,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_stencil_two_side' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_stencil_two_side',
     'glewImpl' => 'GLEW_EXT_stencil_two_side',
     'glewtype' => 'var',
@@ -10606,7 +10205,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_stencil_wrap' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_stencil_wrap',
     'glewImpl' => 'GLEW_EXT_stencil_wrap',
     'glewtype' => 'var',
@@ -10614,7 +10212,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_subtexture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_subtexture',
     'glewImpl' => 'GLEW_EXT_subtexture',
     'glewtype' => 'var',
@@ -10622,7 +10219,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture',
     'glewImpl' => 'GLEW_EXT_texture',
     'glewtype' => 'var',
@@ -10630,7 +10226,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture3D' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture3D',
     'glewImpl' => 'GLEW_EXT_texture3D',
     'glewtype' => 'var',
@@ -10638,7 +10233,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_array',
     'glewImpl' => 'GLEW_EXT_texture_array',
     'glewtype' => 'var',
@@ -10646,7 +10240,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_buffer_object',
     'glewImpl' => 'GLEW_EXT_texture_buffer_object',
     'glewtype' => 'var',
@@ -10654,7 +10247,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_astc_decode_mode' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_compression_astc_decode_mode',
     'glewImpl' => 'GLEW_EXT_texture_compression_astc_decode_mode',
     'glewtype' => 'var',
@@ -10662,7 +10254,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_astc_decode_mode_rgb9e5' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_compression_astc_decode_mode_rgb9e5',
     'glewImpl' => 'GLEW_EXT_texture_compression_astc_decode_mode_rgb9e5',
     'glewtype' => 'var',
@@ -10670,7 +10261,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_bptc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_compression_bptc',
     'glewImpl' => 'GLEW_EXT_texture_compression_bptc',
     'glewtype' => 'var',
@@ -10678,7 +10268,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_dxt1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_compression_dxt1',
     'glewImpl' => 'GLEW_EXT_texture_compression_dxt1',
     'glewtype' => 'var',
@@ -10686,7 +10275,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_latc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_compression_latc',
     'glewImpl' => 'GLEW_EXT_texture_compression_latc',
     'glewtype' => 'var',
@@ -10694,7 +10282,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_rgtc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_compression_rgtc',
     'glewImpl' => 'GLEW_EXT_texture_compression_rgtc',
     'glewtype' => 'var',
@@ -10702,7 +10289,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_s3tc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_compression_s3tc',
     'glewImpl' => 'GLEW_EXT_texture_compression_s3tc',
     'glewtype' => 'var',
@@ -10710,7 +10296,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_cube_map' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_cube_map',
     'glewImpl' => 'GLEW_EXT_texture_cube_map',
     'glewtype' => 'var',
@@ -10718,7 +10303,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_cube_map_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_cube_map_array',
     'glewImpl' => 'GLEW_EXT_texture_cube_map_array',
     'glewtype' => 'var',
@@ -10726,7 +10310,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_edge_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_edge_clamp',
     'glewImpl' => 'GLEW_EXT_texture_edge_clamp',
     'glewtype' => 'var',
@@ -10734,7 +10317,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_env' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_env',
     'glewImpl' => 'GLEW_EXT_texture_env',
     'glewtype' => 'var',
@@ -10742,7 +10324,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_env_add' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_env_add',
     'glewImpl' => 'GLEW_EXT_texture_env_add',
     'glewtype' => 'var',
@@ -10750,7 +10331,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_env_combine' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_env_combine',
     'glewImpl' => 'GLEW_EXT_texture_env_combine',
     'glewtype' => 'var',
@@ -10758,7 +10338,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_env_dot3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_env_dot3',
     'glewImpl' => 'GLEW_EXT_texture_env_dot3',
     'glewtype' => 'var',
@@ -10766,7 +10345,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_filter_anisotropic' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_filter_anisotropic',
     'glewImpl' => 'GLEW_EXT_texture_filter_anisotropic',
     'glewtype' => 'var',
@@ -10774,7 +10352,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_filter_minmax' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_filter_minmax',
     'glewImpl' => 'GLEW_EXT_texture_filter_minmax',
     'glewtype' => 'var',
@@ -10782,7 +10359,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_format_BGRA8888' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_format_BGRA8888',
     'glewImpl' => 'GLEW_EXT_texture_format_BGRA8888',
     'glewtype' => 'var',
@@ -10790,7 +10366,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_integer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_integer',
     'glewImpl' => 'GLEW_EXT_texture_integer',
     'glewtype' => 'var',
@@ -10798,7 +10373,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_lod_bias' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_lod_bias',
     'glewImpl' => 'GLEW_EXT_texture_lod_bias',
     'glewtype' => 'var',
@@ -10806,7 +10380,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_mirror_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_mirror_clamp',
     'glewImpl' => 'GLEW_EXT_texture_mirror_clamp',
     'glewtype' => 'var',
@@ -10814,7 +10387,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_norm16' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_norm16',
     'glewImpl' => 'GLEW_EXT_texture_norm16',
     'glewtype' => 'var',
@@ -10822,7 +10394,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_object',
     'glewImpl' => 'GLEW_EXT_texture_object',
     'glewtype' => 'var',
@@ -10830,7 +10401,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_perturb_normal' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_perturb_normal',
     'glewImpl' => 'GLEW_EXT_texture_perturb_normal',
     'glewtype' => 'var',
@@ -10838,7 +10408,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_rectangle' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_rectangle',
     'glewImpl' => 'GLEW_EXT_texture_rectangle',
     'glewtype' => 'var',
@@ -10846,7 +10415,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_rg' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_rg',
     'glewImpl' => 'GLEW_EXT_texture_rg',
     'glewtype' => 'var',
@@ -10854,7 +10422,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_sRGB' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_sRGB',
     'glewImpl' => 'GLEW_EXT_texture_sRGB',
     'glewtype' => 'var',
@@ -10862,7 +10429,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_sRGB_R8' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_sRGB_R8',
     'glewImpl' => 'GLEW_EXT_texture_sRGB_R8',
     'glewtype' => 'var',
@@ -10870,7 +10436,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_sRGB_RG8' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_sRGB_RG8',
     'glewImpl' => 'GLEW_EXT_texture_sRGB_RG8',
     'glewtype' => 'var',
@@ -10878,7 +10443,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_sRGB_decode' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_sRGB_decode',
     'glewImpl' => 'GLEW_EXT_texture_sRGB_decode',
     'glewtype' => 'var',
@@ -10886,7 +10450,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_shared_exponent' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_shared_exponent',
     'glewImpl' => 'GLEW_EXT_texture_shared_exponent',
     'glewtype' => 'var',
@@ -10894,7 +10457,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_snorm' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_snorm',
     'glewImpl' => 'GLEW_EXT_texture_snorm',
     'glewtype' => 'var',
@@ -10902,7 +10464,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_storage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_storage',
     'glewImpl' => 'GLEW_EXT_texture_storage',
     'glewtype' => 'var',
@@ -10910,7 +10471,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_swizzle' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_swizzle',
     'glewImpl' => 'GLEW_EXT_texture_swizzle',
     'glewtype' => 'var',
@@ -10918,7 +10478,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_type_2_10_10_10_REV' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_type_2_10_10_10_REV',
     'glewImpl' => 'GLEW_EXT_texture_type_2_10_10_10_REV',
     'glewtype' => 'var',
@@ -10926,7 +10485,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_texture_view' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_texture_view',
     'glewImpl' => 'GLEW_EXT_texture_view',
     'glewtype' => 'var',
@@ -10934,7 +10492,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_timer_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_timer_query',
     'glewImpl' => 'GLEW_EXT_timer_query',
     'glewtype' => 'var',
@@ -10942,7 +10499,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_transform_feedback' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_transform_feedback',
     'glewImpl' => 'GLEW_EXT_transform_feedback',
     'glewtype' => 'var',
@@ -10950,7 +10506,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_unpack_subimage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_unpack_subimage',
     'glewImpl' => 'GLEW_EXT_unpack_subimage',
     'glewtype' => 'var',
@@ -10958,7 +10513,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_vertex_array',
     'glewImpl' => 'GLEW_EXT_vertex_array',
     'glewtype' => 'var',
@@ -10966,7 +10520,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_array_bgra' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_vertex_array_bgra',
     'glewImpl' => 'GLEW_EXT_vertex_array_bgra',
     'glewtype' => 'var',
@@ -10974,7 +10527,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_array_setXXX' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_vertex_array_setXXX',
     'glewImpl' => 'GLEW_EXT_vertex_array_setXXX',
     'glewtype' => 'var',
@@ -10982,7 +10534,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_attrib_64bit' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_vertex_attrib_64bit',
     'glewImpl' => 'GLEW_EXT_vertex_attrib_64bit',
     'glewtype' => 'var',
@@ -10990,7 +10541,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_vertex_shader',
     'glewImpl' => 'GLEW_EXT_vertex_shader',
     'glewtype' => 'var',
@@ -10998,7 +10548,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_weighting' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_vertex_weighting',
     'glewImpl' => 'GLEW_EXT_vertex_weighting',
     'glewtype' => 'var',
@@ -11006,7 +10555,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_win32_keyed_mutex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_win32_keyed_mutex',
     'glewImpl' => 'GLEW_EXT_win32_keyed_mutex',
     'glewtype' => 'var',
@@ -11014,7 +10562,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_window_rectangles' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_window_rectangles',
     'glewImpl' => 'GLEW_EXT_window_rectangles',
     'glewtype' => 'var',
@@ -11022,7 +10569,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_EXT_x11_sync_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_EXT_x11_sync_object',
     'glewImpl' => 'GLEW_EXT_x11_sync_object',
     'glewtype' => 'var',
@@ -11030,7 +10576,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_GREMEDY_frame_terminator' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_GREMEDY_frame_terminator',
     'glewImpl' => 'GLEW_GREMEDY_frame_terminator',
     'glewtype' => 'var',
@@ -11038,7 +10583,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_GREMEDY_string_marker' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_GREMEDY_string_marker',
     'glewImpl' => 'GLEW_GREMEDY_string_marker',
     'glewtype' => 'var',
@@ -11046,7 +10590,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_HP_convolution_border_modes' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_HP_convolution_border_modes',
     'glewImpl' => 'GLEW_HP_convolution_border_modes',
     'glewtype' => 'var',
@@ -11054,7 +10597,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_HP_image_transform' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_HP_image_transform',
     'glewImpl' => 'GLEW_HP_image_transform',
     'glewtype' => 'var',
@@ -11062,7 +10604,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_HP_occlusion_test' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_HP_occlusion_test',
     'glewImpl' => 'GLEW_HP_occlusion_test',
     'glewtype' => 'var',
@@ -11070,7 +10611,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_HP_texture_lighting' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_HP_texture_lighting',
     'glewImpl' => 'GLEW_HP_texture_lighting',
     'glewtype' => 'var',
@@ -11078,7 +10618,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_IBM_cull_vertex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_IBM_cull_vertex',
     'glewImpl' => 'GLEW_IBM_cull_vertex',
     'glewtype' => 'var',
@@ -11086,7 +10625,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_IBM_multimode_draw_arrays' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_IBM_multimode_draw_arrays',
     'glewImpl' => 'GLEW_IBM_multimode_draw_arrays',
     'glewtype' => 'var',
@@ -11094,7 +10632,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_IBM_rasterpos_clip' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_IBM_rasterpos_clip',
     'glewImpl' => 'GLEW_IBM_rasterpos_clip',
     'glewtype' => 'var',
@@ -11102,7 +10639,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_IBM_static_data' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_IBM_static_data',
     'glewImpl' => 'GLEW_IBM_static_data',
     'glewtype' => 'var',
@@ -11110,7 +10646,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_IBM_texture_mirrored_repeat' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_IBM_texture_mirrored_repeat',
     'glewImpl' => 'GLEW_IBM_texture_mirrored_repeat',
     'glewtype' => 'var',
@@ -11118,7 +10653,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_IBM_vertex_array_lists' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_IBM_vertex_array_lists',
     'glewImpl' => 'GLEW_IBM_vertex_array_lists',
     'glewtype' => 'var',
@@ -11126,7 +10660,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_INGR_color_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_INGR_color_clamp',
     'glewImpl' => 'GLEW_INGR_color_clamp',
     'glewtype' => 'var',
@@ -11134,7 +10667,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_INGR_interlace_read' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_INGR_interlace_read',
     'glewImpl' => 'GLEW_INGR_interlace_read',
     'glewtype' => 'var',
@@ -11142,7 +10674,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_INTEL_conservative_rasterization' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_INTEL_conservative_rasterization',
     'glewImpl' => 'GLEW_INTEL_conservative_rasterization',
     'glewtype' => 'var',
@@ -11150,7 +10681,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_INTEL_fragment_shader_ordering' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_INTEL_fragment_shader_ordering',
     'glewImpl' => 'GLEW_INTEL_fragment_shader_ordering',
     'glewtype' => 'var',
@@ -11158,7 +10688,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_INTEL_framebuffer_CMAA' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_INTEL_framebuffer_CMAA',
     'glewImpl' => 'GLEW_INTEL_framebuffer_CMAA',
     'glewtype' => 'var',
@@ -11166,7 +10695,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_INTEL_map_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_INTEL_map_texture',
     'glewImpl' => 'GLEW_INTEL_map_texture',
     'glewtype' => 'var',
@@ -11174,7 +10702,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_INTEL_parallel_arrays' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_INTEL_parallel_arrays',
     'glewImpl' => 'GLEW_INTEL_parallel_arrays',
     'glewtype' => 'var',
@@ -11182,7 +10709,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_INTEL_performance_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_INTEL_performance_query',
     'glewImpl' => 'GLEW_INTEL_performance_query',
     'glewtype' => 'var',
@@ -11190,7 +10716,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_INTEL_texture_scissor' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_INTEL_texture_scissor',
     'glewImpl' => 'GLEW_INTEL_texture_scissor',
     'glewtype' => 'var',
@@ -11198,7 +10723,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_blend_equation_advanced' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_blend_equation_advanced',
     'glewImpl' => 'GLEW_KHR_blend_equation_advanced',
     'glewtype' => 'var',
@@ -11206,7 +10730,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_blend_equation_advanced_coherent' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_blend_equation_advanced_coherent',
     'glewImpl' => 'GLEW_KHR_blend_equation_advanced_coherent',
     'glewtype' => 'var',
@@ -11214,7 +10737,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_context_flush_control' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_context_flush_control',
     'glewImpl' => 'GLEW_KHR_context_flush_control',
     'glewtype' => 'var',
@@ -11222,7 +10744,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_debug' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_debug',
     'glewImpl' => 'GLEW_KHR_debug',
     'glewtype' => 'var',
@@ -11230,7 +10751,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_no_error' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_no_error',
     'glewImpl' => 'GLEW_KHR_no_error',
     'glewtype' => 'var',
@@ -11238,7 +10758,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_parallel_shader_compile' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_parallel_shader_compile',
     'glewImpl' => 'GLEW_KHR_parallel_shader_compile',
     'glewtype' => 'var',
@@ -11246,7 +10765,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_robust_buffer_access_behavior' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_robust_buffer_access_behavior',
     'glewImpl' => 'GLEW_KHR_robust_buffer_access_behavior',
     'glewtype' => 'var',
@@ -11254,7 +10772,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_robustness' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_robustness',
     'glewImpl' => 'GLEW_KHR_robustness',
     'glewtype' => 'var',
@@ -11262,7 +10779,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_texture_compression_astc_hdr' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_texture_compression_astc_hdr',
     'glewImpl' => 'GLEW_KHR_texture_compression_astc_hdr',
     'glewtype' => 'var',
@@ -11270,7 +10786,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_texture_compression_astc_ldr' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_texture_compression_astc_ldr',
     'glewImpl' => 'GLEW_KHR_texture_compression_astc_ldr',
     'glewtype' => 'var',
@@ -11278,7 +10793,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KHR_texture_compression_astc_sliced_3d' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KHR_texture_compression_astc_sliced_3d',
     'glewImpl' => 'GLEW_KHR_texture_compression_astc_sliced_3d',
     'glewtype' => 'var',
@@ -11286,7 +10800,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_KTX_buffer_region' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_KTX_buffer_region',
     'glewImpl' => 'GLEW_KTX_buffer_region',
     'glewtype' => 'var',
@@ -11294,7 +10807,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_MESAX_texture_stack' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_MESAX_texture_stack',
     'glewImpl' => 'GLEW_MESAX_texture_stack',
     'glewtype' => 'var',
@@ -11302,7 +10814,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_MESA_pack_invert' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_MESA_pack_invert',
     'glewImpl' => 'GLEW_MESA_pack_invert',
     'glewtype' => 'var',
@@ -11310,7 +10821,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_MESA_resize_buffers' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_MESA_resize_buffers',
     'glewImpl' => 'GLEW_MESA_resize_buffers',
     'glewtype' => 'var',
@@ -11318,7 +10828,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_MESA_shader_integer_functions' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_MESA_shader_integer_functions',
     'glewImpl' => 'GLEW_MESA_shader_integer_functions',
     'glewtype' => 'var',
@@ -11326,7 +10835,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_MESA_window_pos' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_MESA_window_pos',
     'glewImpl' => 'GLEW_MESA_window_pos',
     'glewtype' => 'var',
@@ -11334,7 +10842,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_MESA_ycbcr_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_MESA_ycbcr_texture',
     'glewImpl' => 'GLEW_MESA_ycbcr_texture',
     'glewtype' => 'var',
@@ -11342,7 +10849,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NVX_blend_equation_advanced_multi_draw_buffers' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NVX_blend_equation_advanced_multi_draw_buffers',
     'glewImpl' => 'GLEW_NVX_blend_equation_advanced_multi_draw_buffers',
     'glewtype' => 'var',
@@ -11350,7 +10856,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NVX_conditional_render' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NVX_conditional_render',
     'glewImpl' => 'GLEW_NVX_conditional_render',
     'glewtype' => 'var',
@@ -11358,7 +10863,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NVX_gpu_memory_info' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NVX_gpu_memory_info',
     'glewImpl' => 'GLEW_NVX_gpu_memory_info',
     'glewtype' => 'var',
@@ -11366,7 +10870,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NVX_linked_gpu_multicast' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NVX_linked_gpu_multicast',
     'glewImpl' => 'GLEW_NVX_linked_gpu_multicast',
     'glewtype' => 'var',
@@ -11374,7 +10877,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_3dvision_settings' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_3dvision_settings',
     'glewImpl' => 'GLEW_NV_3dvision_settings',
     'glewtype' => 'var',
@@ -11382,7 +10884,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_EGL_stream_consumer_external' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_EGL_stream_consumer_external',
     'glewImpl' => 'GLEW_NV_EGL_stream_consumer_external',
     'glewtype' => 'var',
@@ -11390,7 +10891,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_alpha_to_coverage_dither_control' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_alpha_to_coverage_dither_control',
     'glewImpl' => 'GLEW_NV_alpha_to_coverage_dither_control',
     'glewtype' => 'var',
@@ -11398,7 +10898,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_bgr' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_bgr',
     'glewImpl' => 'GLEW_NV_bgr',
     'glewtype' => 'var',
@@ -11406,7 +10905,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_bindless_multi_draw_indirect' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_bindless_multi_draw_indirect',
     'glewImpl' => 'GLEW_NV_bindless_multi_draw_indirect',
     'glewtype' => 'var',
@@ -11414,7 +10912,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_bindless_multi_draw_indirect_count' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_bindless_multi_draw_indirect_count',
     'glewImpl' => 'GLEW_NV_bindless_multi_draw_indirect_count',
     'glewtype' => 'var',
@@ -11422,7 +10919,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_bindless_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_bindless_texture',
     'glewImpl' => 'GLEW_NV_bindless_texture',
     'glewtype' => 'var',
@@ -11430,7 +10926,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_blend_equation_advanced' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_blend_equation_advanced',
     'glewImpl' => 'GLEW_NV_blend_equation_advanced',
     'glewtype' => 'var',
@@ -11438,7 +10933,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_blend_equation_advanced_coherent' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_blend_equation_advanced_coherent',
     'glewImpl' => 'GLEW_NV_blend_equation_advanced_coherent',
     'glewtype' => 'var',
@@ -11446,7 +10940,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_blend_minmax_factor' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_blend_minmax_factor',
     'glewImpl' => 'GLEW_NV_blend_minmax_factor',
     'glewtype' => 'var',
@@ -11454,7 +10947,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_blend_square' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_blend_square',
     'glewImpl' => 'GLEW_NV_blend_square',
     'glewtype' => 'var',
@@ -11462,7 +10954,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_clip_space_w_scaling' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_clip_space_w_scaling',
     'glewImpl' => 'GLEW_NV_clip_space_w_scaling',
     'glewtype' => 'var',
@@ -11470,7 +10961,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_command_list' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_command_list',
     'glewImpl' => 'GLEW_NV_command_list',
     'glewtype' => 'var',
@@ -11478,7 +10968,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_compute_program5' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_compute_program5',
     'glewImpl' => 'GLEW_NV_compute_program5',
     'glewtype' => 'var',
@@ -11486,7 +10975,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_conditional_render' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_conditional_render',
     'glewImpl' => 'GLEW_NV_conditional_render',
     'glewtype' => 'var',
@@ -11494,7 +10982,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_conservative_raster' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_conservative_raster',
     'glewImpl' => 'GLEW_NV_conservative_raster',
     'glewtype' => 'var',
@@ -11502,7 +10989,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_conservative_raster_dilate' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_conservative_raster_dilate',
     'glewImpl' => 'GLEW_NV_conservative_raster_dilate',
     'glewtype' => 'var',
@@ -11510,7 +10996,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_conservative_raster_pre_snap_triangles' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_conservative_raster_pre_snap_triangles',
     'glewImpl' => 'GLEW_NV_conservative_raster_pre_snap_triangles',
     'glewtype' => 'var',
@@ -11518,7 +11003,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_copy_buffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_copy_buffer',
     'glewImpl' => 'GLEW_NV_copy_buffer',
     'glewtype' => 'var',
@@ -11526,7 +11010,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_copy_depth_to_color' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_copy_depth_to_color',
     'glewImpl' => 'GLEW_NV_copy_depth_to_color',
     'glewtype' => 'var',
@@ -11534,7 +11017,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_copy_image' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_copy_image',
     'glewImpl' => 'GLEW_NV_copy_image',
     'glewtype' => 'var',
@@ -11542,7 +11024,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_deep_texture3D' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_deep_texture3D',
     'glewImpl' => 'GLEW_NV_deep_texture3D',
     'glewtype' => 'var',
@@ -11550,7 +11031,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_depth_buffer_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_depth_buffer_float',
     'glewImpl' => 'GLEW_NV_depth_buffer_float',
     'glewtype' => 'var',
@@ -11558,7 +11038,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_depth_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_depth_clamp',
     'glewImpl' => 'GLEW_NV_depth_clamp',
     'glewtype' => 'var',
@@ -11566,7 +11045,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_depth_range_unclamped' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_depth_range_unclamped',
     'glewImpl' => 'GLEW_NV_depth_range_unclamped',
     'glewtype' => 'var',
@@ -11574,7 +11052,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_draw_buffers' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_draw_buffers',
     'glewImpl' => 'GLEW_NV_draw_buffers',
     'glewtype' => 'var',
@@ -11582,7 +11059,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_draw_instanced' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_draw_instanced',
     'glewImpl' => 'GLEW_NV_draw_instanced',
     'glewtype' => 'var',
@@ -11590,7 +11066,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_draw_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_draw_texture',
     'glewImpl' => 'GLEW_NV_draw_texture',
     'glewtype' => 'var',
@@ -11598,7 +11073,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_draw_vulkan_image' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_draw_vulkan_image',
     'glewImpl' => 'GLEW_NV_draw_vulkan_image',
     'glewtype' => 'var',
@@ -11606,7 +11080,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_evaluators' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_evaluators',
     'glewImpl' => 'GLEW_NV_evaluators',
     'glewtype' => 'var',
@@ -11614,7 +11087,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_explicit_attrib_location' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_explicit_attrib_location',
     'glewImpl' => 'GLEW_NV_explicit_attrib_location',
     'glewtype' => 'var',
@@ -11622,7 +11094,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_explicit_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_explicit_multisample',
     'glewImpl' => 'GLEW_NV_explicit_multisample',
     'glewtype' => 'var',
@@ -11630,7 +11101,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_fbo_color_attachments' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_fbo_color_attachments',
     'glewImpl' => 'GLEW_NV_fbo_color_attachments',
     'glewtype' => 'var',
@@ -11638,7 +11108,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_fence' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_fence',
     'glewImpl' => 'GLEW_NV_fence',
     'glewtype' => 'var',
@@ -11646,7 +11115,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_fill_rectangle' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_fill_rectangle',
     'glewImpl' => 'GLEW_NV_fill_rectangle',
     'glewtype' => 'var',
@@ -11654,7 +11122,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_float_buffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_float_buffer',
     'glewImpl' => 'GLEW_NV_float_buffer',
     'glewtype' => 'var',
@@ -11662,7 +11129,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_fog_distance' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_fog_distance',
     'glewImpl' => 'GLEW_NV_fog_distance',
     'glewtype' => 'var',
@@ -11670,7 +11136,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_fragment_coverage_to_color' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_fragment_coverage_to_color',
     'glewImpl' => 'GLEW_NV_fragment_coverage_to_color',
     'glewtype' => 'var',
@@ -11678,7 +11143,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_fragment_program' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_fragment_program',
     'glewImpl' => 'GLEW_NV_fragment_program',
     'glewtype' => 'var',
@@ -11686,7 +11150,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_fragment_program2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_fragment_program2',
     'glewImpl' => 'GLEW_NV_fragment_program2',
     'glewtype' => 'var',
@@ -11694,7 +11157,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_fragment_program4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_fragment_program4',
     'glewImpl' => 'GLEW_NV_fragment_program4',
     'glewtype' => 'var',
@@ -11702,7 +11164,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_fragment_program_option' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_fragment_program_option',
     'glewImpl' => 'GLEW_NV_fragment_program_option',
     'glewtype' => 'var',
@@ -11710,7 +11171,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_fragment_shader_interlock' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_fragment_shader_interlock',
     'glewImpl' => 'GLEW_NV_fragment_shader_interlock',
     'glewtype' => 'var',
@@ -11718,7 +11178,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_framebuffer_blit' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_framebuffer_blit',
     'glewImpl' => 'GLEW_NV_framebuffer_blit',
     'glewtype' => 'var',
@@ -11726,7 +11185,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_framebuffer_mixed_samples' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_framebuffer_mixed_samples',
     'glewImpl' => 'GLEW_NV_framebuffer_mixed_samples',
     'glewtype' => 'var',
@@ -11734,7 +11192,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_framebuffer_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_framebuffer_multisample',
     'glewImpl' => 'GLEW_NV_framebuffer_multisample',
     'glewtype' => 'var',
@@ -11742,7 +11199,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_framebuffer_multisample_coverage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_framebuffer_multisample_coverage',
     'glewImpl' => 'GLEW_NV_framebuffer_multisample_coverage',
     'glewtype' => 'var',
@@ -11750,7 +11206,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_generate_mipmap_sRGB' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_generate_mipmap_sRGB',
     'glewImpl' => 'GLEW_NV_generate_mipmap_sRGB',
     'glewtype' => 'var',
@@ -11758,7 +11213,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_geometry_program4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_geometry_program4',
     'glewImpl' => 'GLEW_NV_geometry_program4',
     'glewtype' => 'var',
@@ -11766,7 +11220,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_geometry_shader4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_geometry_shader4',
     'glewImpl' => 'GLEW_NV_geometry_shader4',
     'glewtype' => 'var',
@@ -11774,7 +11227,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_geometry_shader_passthrough' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_geometry_shader_passthrough',
     'glewImpl' => 'GLEW_NV_geometry_shader_passthrough',
     'glewtype' => 'var',
@@ -11782,7 +11234,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_gpu_multicast' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_gpu_multicast',
     'glewImpl' => 'GLEW_NV_gpu_multicast',
     'glewtype' => 'var',
@@ -11790,7 +11241,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_gpu_program4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_gpu_program4',
     'glewImpl' => 'GLEW_NV_gpu_program4',
     'glewtype' => 'var',
@@ -11798,7 +11248,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_gpu_program5' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_gpu_program5',
     'glewImpl' => 'GLEW_NV_gpu_program5',
     'glewtype' => 'var',
@@ -11806,7 +11255,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_gpu_program5_mem_extended' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_gpu_program5_mem_extended',
     'glewImpl' => 'GLEW_NV_gpu_program5_mem_extended',
     'glewtype' => 'var',
@@ -11814,7 +11262,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_gpu_program_fp64' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_gpu_program_fp64',
     'glewImpl' => 'GLEW_NV_gpu_program_fp64',
     'glewtype' => 'var',
@@ -11822,7 +11269,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_gpu_shader5' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_gpu_shader5',
     'glewImpl' => 'GLEW_NV_gpu_shader5',
     'glewtype' => 'var',
@@ -11830,7 +11276,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_half_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_half_float',
     'glewImpl' => 'GLEW_NV_half_float',
     'glewtype' => 'var',
@@ -11838,7 +11283,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_image_formats' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_image_formats',
     'glewImpl' => 'GLEW_NV_image_formats',
     'glewtype' => 'var',
@@ -11846,7 +11290,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_instanced_arrays' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_instanced_arrays',
     'glewImpl' => 'GLEW_NV_instanced_arrays',
     'glewtype' => 'var',
@@ -11854,7 +11297,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_internalformat_sample_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_internalformat_sample_query',
     'glewImpl' => 'GLEW_NV_internalformat_sample_query',
     'glewtype' => 'var',
@@ -11862,7 +11304,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_light_max_exponent' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_light_max_exponent',
     'glewImpl' => 'GLEW_NV_light_max_exponent',
     'glewtype' => 'var',
@@ -11870,7 +11311,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_multisample_coverage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_multisample_coverage',
     'glewImpl' => 'GLEW_NV_multisample_coverage',
     'glewtype' => 'var',
@@ -11878,7 +11318,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_multisample_filter_hint' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_multisample_filter_hint',
     'glewImpl' => 'GLEW_NV_multisample_filter_hint',
     'glewtype' => 'var',
@@ -11886,7 +11325,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_non_square_matrices' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_non_square_matrices',
     'glewImpl' => 'GLEW_NV_non_square_matrices',
     'glewtype' => 'var',
@@ -11894,7 +11332,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_occlusion_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_occlusion_query',
     'glewImpl' => 'GLEW_NV_occlusion_query',
     'glewtype' => 'var',
@@ -11902,7 +11339,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_pack_subimage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_pack_subimage',
     'glewImpl' => 'GLEW_NV_pack_subimage',
     'glewtype' => 'var',
@@ -11910,7 +11346,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_packed_depth_stencil' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_packed_depth_stencil',
     'glewImpl' => 'GLEW_NV_packed_depth_stencil',
     'glewtype' => 'var',
@@ -11918,7 +11353,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_packed_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_packed_float',
     'glewImpl' => 'GLEW_NV_packed_float',
     'glewtype' => 'var',
@@ -11926,7 +11360,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_packed_float_linear' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_packed_float_linear',
     'glewImpl' => 'GLEW_NV_packed_float_linear',
     'glewtype' => 'var',
@@ -11934,7 +11367,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_parameter_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_parameter_buffer_object',
     'glewImpl' => 'GLEW_NV_parameter_buffer_object',
     'glewtype' => 'var',
@@ -11942,7 +11374,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_parameter_buffer_object2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_parameter_buffer_object2',
     'glewImpl' => 'GLEW_NV_parameter_buffer_object2',
     'glewtype' => 'var',
@@ -11950,7 +11381,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_path_rendering' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_path_rendering',
     'glewImpl' => 'GLEW_NV_path_rendering',
     'glewtype' => 'var',
@@ -11958,7 +11388,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_path_rendering_shared_edge' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_path_rendering_shared_edge',
     'glewImpl' => 'GLEW_NV_path_rendering_shared_edge',
     'glewtype' => 'var',
@@ -11966,7 +11395,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_pixel_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_pixel_buffer_object',
     'glewImpl' => 'GLEW_NV_pixel_buffer_object',
     'glewtype' => 'var',
@@ -11974,7 +11402,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_pixel_data_range' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_pixel_data_range',
     'glewImpl' => 'GLEW_NV_pixel_data_range',
     'glewtype' => 'var',
@@ -11982,7 +11409,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_platform_binary' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_platform_binary',
     'glewImpl' => 'GLEW_NV_platform_binary',
     'glewtype' => 'var',
@@ -11990,7 +11416,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_point_sprite' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_point_sprite',
     'glewImpl' => 'GLEW_NV_point_sprite',
     'glewtype' => 'var',
@@ -11998,7 +11423,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_polygon_mode' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_polygon_mode',
     'glewImpl' => 'GLEW_NV_polygon_mode',
     'glewtype' => 'var',
@@ -12006,7 +11430,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_present_video' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_present_video',
     'glewImpl' => 'GLEW_NV_present_video',
     'glewtype' => 'var',
@@ -12014,7 +11437,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_primitive_restart' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_primitive_restart',
     'glewImpl' => 'GLEW_NV_primitive_restart',
     'glewtype' => 'var',
@@ -12022,7 +11444,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_read_depth' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_read_depth',
     'glewImpl' => 'GLEW_NV_read_depth',
     'glewtype' => 'var',
@@ -12030,7 +11451,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_read_depth_stencil' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_read_depth_stencil',
     'glewImpl' => 'GLEW_NV_read_depth_stencil',
     'glewtype' => 'var',
@@ -12038,7 +11458,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_read_stencil' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_read_stencil',
     'glewImpl' => 'GLEW_NV_read_stencil',
     'glewtype' => 'var',
@@ -12046,7 +11465,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_register_combiners' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_register_combiners',
     'glewImpl' => 'GLEW_NV_register_combiners',
     'glewtype' => 'var',
@@ -12054,7 +11472,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_register_combiners2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_register_combiners2',
     'glewImpl' => 'GLEW_NV_register_combiners2',
     'glewtype' => 'var',
@@ -12062,7 +11479,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_robustness_video_memory_purge' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_robustness_video_memory_purge',
     'glewImpl' => 'GLEW_NV_robustness_video_memory_purge',
     'glewtype' => 'var',
@@ -12070,7 +11486,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_sRGB_formats' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_sRGB_formats',
     'glewImpl' => 'GLEW_NV_sRGB_formats',
     'glewtype' => 'var',
@@ -12078,7 +11493,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_sample_locations' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_sample_locations',
     'glewImpl' => 'GLEW_NV_sample_locations',
     'glewtype' => 'var',
@@ -12086,7 +11500,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_sample_mask_override_coverage' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_sample_mask_override_coverage',
     'glewImpl' => 'GLEW_NV_sample_mask_override_coverage',
     'glewtype' => 'var',
@@ -12094,7 +11507,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shader_atomic_counters' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shader_atomic_counters',
     'glewImpl' => 'GLEW_NV_shader_atomic_counters',
     'glewtype' => 'var',
@@ -12102,7 +11514,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shader_atomic_float' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shader_atomic_float',
     'glewImpl' => 'GLEW_NV_shader_atomic_float',
     'glewtype' => 'var',
@@ -12110,7 +11521,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shader_atomic_float64' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shader_atomic_float64',
     'glewImpl' => 'GLEW_NV_shader_atomic_float64',
     'glewtype' => 'var',
@@ -12118,7 +11528,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shader_atomic_fp16_vector' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shader_atomic_fp16_vector',
     'glewImpl' => 'GLEW_NV_shader_atomic_fp16_vector',
     'glewtype' => 'var',
@@ -12126,7 +11535,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shader_atomic_int64' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shader_atomic_int64',
     'glewImpl' => 'GLEW_NV_shader_atomic_int64',
     'glewtype' => 'var',
@@ -12134,7 +11542,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shader_buffer_load' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shader_buffer_load',
     'glewImpl' => 'GLEW_NV_shader_buffer_load',
     'glewtype' => 'var',
@@ -12142,7 +11549,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shader_noperspective_interpolation' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shader_noperspective_interpolation',
     'glewImpl' => 'GLEW_NV_shader_noperspective_interpolation',
     'glewtype' => 'var',
@@ -12150,7 +11556,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shader_storage_buffer_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shader_storage_buffer_object',
     'glewImpl' => 'GLEW_NV_shader_storage_buffer_object',
     'glewtype' => 'var',
@@ -12158,7 +11563,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shader_thread_group' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shader_thread_group',
     'glewImpl' => 'GLEW_NV_shader_thread_group',
     'glewtype' => 'var',
@@ -12166,7 +11570,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shader_thread_shuffle' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shader_thread_shuffle',
     'glewImpl' => 'GLEW_NV_shader_thread_shuffle',
     'glewtype' => 'var',
@@ -12174,7 +11577,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shadow_samplers_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shadow_samplers_array',
     'glewImpl' => 'GLEW_NV_shadow_samplers_array',
     'glewtype' => 'var',
@@ -12182,7 +11584,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_shadow_samplers_cube' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_shadow_samplers_cube',
     'glewImpl' => 'GLEW_NV_shadow_samplers_cube',
     'glewtype' => 'var',
@@ -12190,7 +11591,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_stereo_view_rendering' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_stereo_view_rendering',
     'glewImpl' => 'GLEW_NV_stereo_view_rendering',
     'glewtype' => 'var',
@@ -12198,7 +11598,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_tessellation_program5' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_tessellation_program5',
     'glewImpl' => 'GLEW_NV_tessellation_program5',
     'glewtype' => 'var',
@@ -12206,7 +11605,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texgen_emboss' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texgen_emboss',
     'glewImpl' => 'GLEW_NV_texgen_emboss',
     'glewtype' => 'var',
@@ -12214,7 +11612,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texgen_reflection' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texgen_reflection',
     'glewImpl' => 'GLEW_NV_texgen_reflection',
     'glewtype' => 'var',
@@ -12222,7 +11619,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_array',
     'glewImpl' => 'GLEW_NV_texture_array',
     'glewtype' => 'var',
@@ -12230,7 +11626,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_barrier' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_barrier',
     'glewImpl' => 'GLEW_NV_texture_barrier',
     'glewtype' => 'var',
@@ -12238,7 +11633,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_border_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_border_clamp',
     'glewImpl' => 'GLEW_NV_texture_border_clamp',
     'glewtype' => 'var',
@@ -12246,7 +11640,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_compression_latc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_compression_latc',
     'glewImpl' => 'GLEW_NV_texture_compression_latc',
     'glewtype' => 'var',
@@ -12254,7 +11647,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_compression_s3tc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_compression_s3tc',
     'glewImpl' => 'GLEW_NV_texture_compression_s3tc',
     'glewtype' => 'var',
@@ -12262,7 +11654,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_compression_s3tc_update' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_compression_s3tc_update',
     'glewImpl' => 'GLEW_NV_texture_compression_s3tc_update',
     'glewtype' => 'var',
@@ -12270,7 +11661,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_compression_vtc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_compression_vtc',
     'glewImpl' => 'GLEW_NV_texture_compression_vtc',
     'glewtype' => 'var',
@@ -12278,7 +11668,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_env_combine4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_env_combine4',
     'glewImpl' => 'GLEW_NV_texture_env_combine4',
     'glewtype' => 'var',
@@ -12286,7 +11675,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_expand_normal' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_expand_normal',
     'glewImpl' => 'GLEW_NV_texture_expand_normal',
     'glewtype' => 'var',
@@ -12294,7 +11682,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_multisample',
     'glewImpl' => 'GLEW_NV_texture_multisample',
     'glewtype' => 'var',
@@ -12302,7 +11689,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_npot_2D_mipmap' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_npot_2D_mipmap',
     'glewImpl' => 'GLEW_NV_texture_npot_2D_mipmap',
     'glewtype' => 'var',
@@ -12310,7 +11696,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_rectangle' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_rectangle',
     'glewImpl' => 'GLEW_NV_texture_rectangle',
     'glewtype' => 'var',
@@ -12318,7 +11703,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_rectangle_compressed' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_rectangle_compressed',
     'glewImpl' => 'GLEW_NV_texture_rectangle_compressed',
     'glewtype' => 'var',
@@ -12326,7 +11710,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_shader' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_shader',
     'glewImpl' => 'GLEW_NV_texture_shader',
     'glewtype' => 'var',
@@ -12334,7 +11717,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_shader2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_shader2',
     'glewImpl' => 'GLEW_NV_texture_shader2',
     'glewtype' => 'var',
@@ -12342,7 +11724,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_texture_shader3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_texture_shader3',
     'glewImpl' => 'GLEW_NV_texture_shader3',
     'glewtype' => 'var',
@@ -12350,7 +11731,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_transform_feedback' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_transform_feedback',
     'glewImpl' => 'GLEW_NV_transform_feedback',
     'glewtype' => 'var',
@@ -12358,7 +11738,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_transform_feedback2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_transform_feedback2',
     'glewImpl' => 'GLEW_NV_transform_feedback2',
     'glewtype' => 'var',
@@ -12366,7 +11745,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_uniform_buffer_unified_memory' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_uniform_buffer_unified_memory',
     'glewImpl' => 'GLEW_NV_uniform_buffer_unified_memory',
     'glewtype' => 'var',
@@ -12374,7 +11752,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vdpau_interop' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vdpau_interop',
     'glewImpl' => 'GLEW_NV_vdpau_interop',
     'glewtype' => 'var',
@@ -12382,7 +11759,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vertex_array_range' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vertex_array_range',
     'glewImpl' => 'GLEW_NV_vertex_array_range',
     'glewtype' => 'var',
@@ -12390,7 +11766,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vertex_array_range2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vertex_array_range2',
     'glewImpl' => 'GLEW_NV_vertex_array_range2',
     'glewtype' => 'var',
@@ -12398,7 +11773,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vertex_attrib_integer_64bit' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vertex_attrib_integer_64bit',
     'glewImpl' => 'GLEW_NV_vertex_attrib_integer_64bit',
     'glewtype' => 'var',
@@ -12406,7 +11780,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vertex_buffer_unified_memory' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vertex_buffer_unified_memory',
     'glewImpl' => 'GLEW_NV_vertex_buffer_unified_memory',
     'glewtype' => 'var',
@@ -12414,7 +11787,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vertex_program',
     'glewImpl' => 'GLEW_NV_vertex_program',
     'glewtype' => 'var',
@@ -12422,7 +11794,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program1_1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vertex_program1_1',
     'glewImpl' => 'GLEW_NV_vertex_program1_1',
     'glewtype' => 'var',
@@ -12430,7 +11801,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vertex_program2',
     'glewImpl' => 'GLEW_NV_vertex_program2',
     'glewtype' => 'var',
@@ -12438,7 +11808,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program2_option' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vertex_program2_option',
     'glewImpl' => 'GLEW_NV_vertex_program2_option',
     'glewtype' => 'var',
@@ -12446,7 +11815,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vertex_program3',
     'glewImpl' => 'GLEW_NV_vertex_program3',
     'glewtype' => 'var',
@@ -12454,7 +11822,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_vertex_program4',
     'glewImpl' => 'GLEW_NV_vertex_program4',
     'glewtype' => 'var',
@@ -12462,7 +11829,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_video_capture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_video_capture',
     'glewImpl' => 'GLEW_NV_video_capture',
     'glewtype' => 'var',
@@ -12470,7 +11836,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_viewport_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_viewport_array',
     'glewImpl' => 'GLEW_NV_viewport_array',
     'glewtype' => 'var',
@@ -12478,7 +11843,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_viewport_array2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_viewport_array2',
     'glewImpl' => 'GLEW_NV_viewport_array2',
     'glewtype' => 'var',
@@ -12486,7 +11850,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_NV_viewport_swizzle' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_NV_viewport_swizzle',
     'glewImpl' => 'GLEW_NV_viewport_swizzle',
     'glewtype' => 'var',
@@ -12494,7 +11857,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_OES_byte_coordinates' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_OES_byte_coordinates',
     'glewImpl' => 'GLEW_OES_byte_coordinates',
     'glewtype' => 'var',
@@ -12502,7 +11864,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_OML_interlace' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_OML_interlace',
     'glewImpl' => 'GLEW_OML_interlace',
     'glewtype' => 'var',
@@ -12510,7 +11871,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_OML_resample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_OML_resample',
     'glewImpl' => 'GLEW_OML_resample',
     'glewtype' => 'var',
@@ -12518,7 +11878,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_OML_subsample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_OML_subsample',
     'glewImpl' => 'GLEW_OML_subsample',
     'glewtype' => 'var',
@@ -12526,7 +11885,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_OVR_multiview' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_OVR_multiview',
     'glewImpl' => 'GLEW_OVR_multiview',
     'glewtype' => 'var',
@@ -12534,7 +11892,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_OVR_multiview2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_OVR_multiview2',
     'glewImpl' => 'GLEW_OVR_multiview2',
     'glewtype' => 'var',
@@ -12542,7 +11899,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_OVR_multiview_multisampled_render_to_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_OVR_multiview_multisampled_render_to_texture',
     'glewImpl' => 'GLEW_OVR_multiview_multisampled_render_to_texture',
     'glewtype' => 'var',
@@ -12550,7 +11906,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_PGI_misc_hints' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_PGI_misc_hints',
     'glewImpl' => 'GLEW_PGI_misc_hints',
     'glewtype' => 'var',
@@ -12558,7 +11913,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_PGI_vertex_hints' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_PGI_vertex_hints',
     'glewImpl' => 'GLEW_PGI_vertex_hints',
     'glewtype' => 'var',
@@ -12566,7 +11920,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_QCOM_alpha_test' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_QCOM_alpha_test',
     'glewImpl' => 'GLEW_QCOM_alpha_test',
     'glewtype' => 'var',
@@ -12574,7 +11927,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_QCOM_binning_control' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_QCOM_binning_control',
     'glewImpl' => 'GLEW_QCOM_binning_control',
     'glewtype' => 'var',
@@ -12582,7 +11934,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_QCOM_driver_control' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_QCOM_driver_control',
     'glewImpl' => 'GLEW_QCOM_driver_control',
     'glewtype' => 'var',
@@ -12590,7 +11941,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_QCOM_extended_get' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_QCOM_extended_get',
     'glewImpl' => 'GLEW_QCOM_extended_get',
     'glewtype' => 'var',
@@ -12598,7 +11948,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_QCOM_extended_get2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_QCOM_extended_get2',
     'glewImpl' => 'GLEW_QCOM_extended_get2',
     'glewtype' => 'var',
@@ -12606,7 +11955,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_QCOM_framebuffer_foveated' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_QCOM_framebuffer_foveated',
     'glewImpl' => 'GLEW_QCOM_framebuffer_foveated',
     'glewtype' => 'var',
@@ -12614,7 +11962,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_QCOM_perfmon_global_mode' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_QCOM_perfmon_global_mode',
     'glewImpl' => 'GLEW_QCOM_perfmon_global_mode',
     'glewtype' => 'var',
@@ -12622,7 +11969,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_QCOM_shader_framebuffer_fetch_noncoherent' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_QCOM_shader_framebuffer_fetch_noncoherent',
     'glewImpl' => 'GLEW_QCOM_shader_framebuffer_fetch_noncoherent',
     'glewtype' => 'var',
@@ -12630,7 +11976,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_QCOM_tiled_rendering' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_QCOM_tiled_rendering',
     'glewImpl' => 'GLEW_QCOM_tiled_rendering',
     'glewtype' => 'var',
@@ -12638,7 +11983,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_QCOM_writeonly_rendering' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_QCOM_writeonly_rendering',
     'glewImpl' => 'GLEW_QCOM_writeonly_rendering',
     'glewtype' => 'var',
@@ -12646,7 +11990,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_REGAL_ES1_0_compatibility' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_REGAL_ES1_0_compatibility',
     'glewImpl' => 'GLEW_REGAL_ES1_0_compatibility',
     'glewtype' => 'var',
@@ -12654,7 +11997,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_REGAL_ES1_1_compatibility' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_REGAL_ES1_1_compatibility',
     'glewImpl' => 'GLEW_REGAL_ES1_1_compatibility',
     'glewtype' => 'var',
@@ -12662,7 +12004,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_REGAL_enable' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_REGAL_enable',
     'glewImpl' => 'GLEW_REGAL_enable',
     'glewtype' => 'var',
@@ -12670,7 +12011,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_REGAL_error_string' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_REGAL_error_string',
     'glewImpl' => 'GLEW_REGAL_error_string',
     'glewtype' => 'var',
@@ -12678,7 +12018,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_REGAL_extension_query' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_REGAL_extension_query',
     'glewImpl' => 'GLEW_REGAL_extension_query',
     'glewtype' => 'var',
@@ -12686,7 +12025,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_REGAL_log' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_REGAL_log',
     'glewImpl' => 'GLEW_REGAL_log',
     'glewtype' => 'var',
@@ -12694,7 +12032,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_REGAL_proc_address' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_REGAL_proc_address',
     'glewImpl' => 'GLEW_REGAL_proc_address',
     'glewtype' => 'var',
@@ -12702,7 +12039,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_REND_screen_coordinates' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_REND_screen_coordinates',
     'glewImpl' => 'GLEW_REND_screen_coordinates',
     'glewtype' => 'var',
@@ -12710,7 +12046,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_S3_s3tc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_S3_s3tc',
     'glewImpl' => 'GLEW_S3_s3tc',
     'glewtype' => 'var',
@@ -12718,7 +12053,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_clip_band_hint' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_clip_band_hint',
     'glewImpl' => 'GLEW_SGIS_clip_band_hint',
     'glewtype' => 'var',
@@ -12726,7 +12060,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_color_range' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_color_range',
     'glewImpl' => 'GLEW_SGIS_color_range',
     'glewtype' => 'var',
@@ -12734,7 +12067,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_detail_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_detail_texture',
     'glewImpl' => 'GLEW_SGIS_detail_texture',
     'glewtype' => 'var',
@@ -12742,7 +12074,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_fog_function' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_fog_function',
     'glewImpl' => 'GLEW_SGIS_fog_function',
     'glewtype' => 'var',
@@ -12750,7 +12081,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_generate_mipmap' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_generate_mipmap',
     'glewImpl' => 'GLEW_SGIS_generate_mipmap',
     'glewtype' => 'var',
@@ -12758,7 +12088,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_line_texgen' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_line_texgen',
     'glewImpl' => 'GLEW_SGIS_line_texgen',
     'glewtype' => 'var',
@@ -12766,7 +12095,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_multisample',
     'glewImpl' => 'GLEW_SGIS_multisample',
     'glewtype' => 'var',
@@ -12774,7 +12102,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_multitexture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_multitexture',
     'glewImpl' => 'GLEW_SGIS_multitexture',
     'glewtype' => 'var',
@@ -12782,7 +12109,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_pixel_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_pixel_texture',
     'glewImpl' => 'GLEW_SGIS_pixel_texture',
     'glewtype' => 'var',
@@ -12790,7 +12116,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_point_line_texgen' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_point_line_texgen',
     'glewImpl' => 'GLEW_SGIS_point_line_texgen',
     'glewtype' => 'var',
@@ -12798,7 +12123,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_shared_multisample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_shared_multisample',
     'glewImpl' => 'GLEW_SGIS_shared_multisample',
     'glewtype' => 'var',
@@ -12806,7 +12130,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_sharpen_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_sharpen_texture',
     'glewImpl' => 'GLEW_SGIS_sharpen_texture',
     'glewtype' => 'var',
@@ -12814,7 +12137,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_texture4D' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_texture4D',
     'glewImpl' => 'GLEW_SGIS_texture4D',
     'glewtype' => 'var',
@@ -12822,7 +12144,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_texture_border_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_texture_border_clamp',
     'glewImpl' => 'GLEW_SGIS_texture_border_clamp',
     'glewtype' => 'var',
@@ -12830,7 +12151,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_texture_edge_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_texture_edge_clamp',
     'glewImpl' => 'GLEW_SGIS_texture_edge_clamp',
     'glewtype' => 'var',
@@ -12838,7 +12158,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_texture_filter4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_texture_filter4',
     'glewImpl' => 'GLEW_SGIS_texture_filter4',
     'glewtype' => 'var',
@@ -12846,7 +12165,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_texture_lod' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_texture_lod',
     'glewImpl' => 'GLEW_SGIS_texture_lod',
     'glewtype' => 'var',
@@ -12854,7 +12172,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIS_texture_select' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIS_texture_select',
     'glewImpl' => 'GLEW_SGIS_texture_select',
     'glewtype' => 'var',
@@ -12862,7 +12179,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_async' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_async',
     'glewImpl' => 'GLEW_SGIX_async',
     'glewtype' => 'var',
@@ -12870,7 +12186,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_async_histogram' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_async_histogram',
     'glewImpl' => 'GLEW_SGIX_async_histogram',
     'glewtype' => 'var',
@@ -12878,7 +12193,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_async_pixel' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_async_pixel',
     'glewImpl' => 'GLEW_SGIX_async_pixel',
     'glewtype' => 'var',
@@ -12886,7 +12200,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_bali_g_instruments' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_bali_g_instruments',
     'glewImpl' => 'GLEW_SGIX_bali_g_instruments',
     'glewtype' => 'var',
@@ -12894,7 +12207,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_bali_r_instruments' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_bali_r_instruments',
     'glewImpl' => 'GLEW_SGIX_bali_r_instruments',
     'glewtype' => 'var',
@@ -12902,7 +12214,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_bali_timer_instruments' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_bali_timer_instruments',
     'glewImpl' => 'GLEW_SGIX_bali_timer_instruments',
     'glewtype' => 'var',
@@ -12910,7 +12221,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_blend_alpha_minmax' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_blend_alpha_minmax',
     'glewImpl' => 'GLEW_SGIX_blend_alpha_minmax',
     'glewtype' => 'var',
@@ -12918,7 +12228,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_blend_cadd' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_blend_cadd',
     'glewImpl' => 'GLEW_SGIX_blend_cadd',
     'glewtype' => 'var',
@@ -12926,7 +12235,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_blend_cmultiply' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_blend_cmultiply',
     'glewImpl' => 'GLEW_SGIX_blend_cmultiply',
     'glewtype' => 'var',
@@ -12934,7 +12242,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_calligraphic_fragment' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_calligraphic_fragment',
     'glewImpl' => 'GLEW_SGIX_calligraphic_fragment',
     'glewtype' => 'var',
@@ -12942,7 +12249,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_clipmap' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_clipmap',
     'glewImpl' => 'GLEW_SGIX_clipmap',
     'glewtype' => 'var',
@@ -12950,7 +12256,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_color_matrix_accuracy' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_color_matrix_accuracy',
     'glewImpl' => 'GLEW_SGIX_color_matrix_accuracy',
     'glewtype' => 'var',
@@ -12958,7 +12263,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_color_table_index_mode' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_color_table_index_mode',
     'glewImpl' => 'GLEW_SGIX_color_table_index_mode',
     'glewtype' => 'var',
@@ -12966,7 +12270,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_complex_polar' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_complex_polar',
     'glewImpl' => 'GLEW_SGIX_complex_polar',
     'glewtype' => 'var',
@@ -12974,7 +12277,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_convolution_accuracy' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_convolution_accuracy',
     'glewImpl' => 'GLEW_SGIX_convolution_accuracy',
     'glewtype' => 'var',
@@ -12982,7 +12284,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_cube_map' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_cube_map',
     'glewImpl' => 'GLEW_SGIX_cube_map',
     'glewtype' => 'var',
@@ -12990,7 +12291,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_cylinder_texgen' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_cylinder_texgen',
     'glewImpl' => 'GLEW_SGIX_cylinder_texgen',
     'glewtype' => 'var',
@@ -12998,7 +12298,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_datapipe' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_datapipe',
     'glewImpl' => 'GLEW_SGIX_datapipe',
     'glewtype' => 'var',
@@ -13006,7 +12305,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_decimation' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_decimation',
     'glewImpl' => 'GLEW_SGIX_decimation',
     'glewtype' => 'var',
@@ -13014,7 +12312,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_depth_pass_instrument' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_depth_pass_instrument',
     'glewImpl' => 'GLEW_SGIX_depth_pass_instrument',
     'glewtype' => 'var',
@@ -13022,7 +12319,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_depth_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_depth_texture',
     'glewImpl' => 'GLEW_SGIX_depth_texture',
     'glewtype' => 'var',
@@ -13030,7 +12326,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_dvc' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_dvc',
     'glewImpl' => 'GLEW_SGIX_dvc',
     'glewtype' => 'var',
@@ -13038,7 +12333,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_flush_raster' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_flush_raster',
     'glewImpl' => 'GLEW_SGIX_flush_raster',
     'glewtype' => 'var',
@@ -13046,7 +12340,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_blend' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_fog_blend',
     'glewImpl' => 'GLEW_SGIX_fog_blend',
     'glewtype' => 'var',
@@ -13054,7 +12347,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_factor_to_alpha' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_fog_factor_to_alpha',
     'glewImpl' => 'GLEW_SGIX_fog_factor_to_alpha',
     'glewtype' => 'var',
@@ -13062,7 +12354,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_layers' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_fog_layers',
     'glewImpl' => 'GLEW_SGIX_fog_layers',
     'glewtype' => 'var',
@@ -13070,7 +12361,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_offset' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_fog_offset',
     'glewImpl' => 'GLEW_SGIX_fog_offset',
     'glewtype' => 'var',
@@ -13078,7 +12368,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_patchy' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_fog_patchy',
     'glewImpl' => 'GLEW_SGIX_fog_patchy',
     'glewtype' => 'var',
@@ -13086,7 +12375,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_scale' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_fog_scale',
     'glewImpl' => 'GLEW_SGIX_fog_scale',
     'glewtype' => 'var',
@@ -13094,7 +12382,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_fog_texture',
     'glewImpl' => 'GLEW_SGIX_fog_texture',
     'glewtype' => 'var',
@@ -13102,7 +12389,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_fragment_lighting_space' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_fragment_lighting_space',
     'glewImpl' => 'GLEW_SGIX_fragment_lighting_space',
     'glewtype' => 'var',
@@ -13110,7 +12396,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_fragment_specular_lighting' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_fragment_specular_lighting',
     'glewImpl' => 'GLEW_SGIX_fragment_specular_lighting',
     'glewtype' => 'var',
@@ -13118,7 +12403,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_fragments_instrument' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_fragments_instrument',
     'glewImpl' => 'GLEW_SGIX_fragments_instrument',
     'glewtype' => 'var',
@@ -13126,7 +12410,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_framezoom' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_framezoom',
     'glewImpl' => 'GLEW_SGIX_framezoom',
     'glewtype' => 'var',
@@ -13134,7 +12417,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_icc_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_icc_texture',
     'glewImpl' => 'GLEW_SGIX_icc_texture',
     'glewtype' => 'var',
@@ -13142,7 +12424,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_igloo_interface' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_igloo_interface',
     'glewImpl' => 'GLEW_SGIX_igloo_interface',
     'glewtype' => 'var',
@@ -13150,7 +12431,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_image_compression' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_image_compression',
     'glewImpl' => 'GLEW_SGIX_image_compression',
     'glewtype' => 'var',
@@ -13158,7 +12438,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_impact_pixel_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_impact_pixel_texture',
     'glewImpl' => 'GLEW_SGIX_impact_pixel_texture',
     'glewtype' => 'var',
@@ -13166,7 +12445,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_instrument_error' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_instrument_error',
     'glewImpl' => 'GLEW_SGIX_instrument_error',
     'glewtype' => 'var',
@@ -13174,7 +12452,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_interlace' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_interlace',
     'glewImpl' => 'GLEW_SGIX_interlace',
     'glewtype' => 'var',
@@ -13182,7 +12459,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_ir_instrument1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_ir_instrument1',
     'glewImpl' => 'GLEW_SGIX_ir_instrument1',
     'glewtype' => 'var',
@@ -13190,7 +12466,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_line_quality_hint' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_line_quality_hint',
     'glewImpl' => 'GLEW_SGIX_line_quality_hint',
     'glewtype' => 'var',
@@ -13198,7 +12473,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_list_priority' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_list_priority',
     'glewImpl' => 'GLEW_SGIX_list_priority',
     'glewtype' => 'var',
@@ -13206,7 +12480,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_mpeg1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_mpeg1',
     'glewImpl' => 'GLEW_SGIX_mpeg1',
     'glewtype' => 'var',
@@ -13214,7 +12487,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_mpeg2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_mpeg2',
     'glewImpl' => 'GLEW_SGIX_mpeg2',
     'glewtype' => 'var',
@@ -13222,7 +12494,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_nonlinear_lighting_pervertex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_nonlinear_lighting_pervertex',
     'glewImpl' => 'GLEW_SGIX_nonlinear_lighting_pervertex',
     'glewtype' => 'var',
@@ -13230,7 +12501,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_nurbs_eval' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_nurbs_eval',
     'glewImpl' => 'GLEW_SGIX_nurbs_eval',
     'glewtype' => 'var',
@@ -13238,7 +12508,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_occlusion_instrument' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_occlusion_instrument',
     'glewImpl' => 'GLEW_SGIX_occlusion_instrument',
     'glewtype' => 'var',
@@ -13246,7 +12515,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_packed_6bytes' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_packed_6bytes',
     'glewImpl' => 'GLEW_SGIX_packed_6bytes',
     'glewtype' => 'var',
@@ -13254,7 +12522,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_pixel_texture' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_pixel_texture',
     'glewImpl' => 'GLEW_SGIX_pixel_texture',
     'glewtype' => 'var',
@@ -13262,7 +12529,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_pixel_texture_bits' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_pixel_texture_bits',
     'glewImpl' => 'GLEW_SGIX_pixel_texture_bits',
     'glewtype' => 'var',
@@ -13270,7 +12536,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_pixel_texture_lod' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_pixel_texture_lod',
     'glewImpl' => 'GLEW_SGIX_pixel_texture_lod',
     'glewtype' => 'var',
@@ -13278,7 +12543,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_pixel_tiles' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_pixel_tiles',
     'glewImpl' => 'GLEW_SGIX_pixel_tiles',
     'glewtype' => 'var',
@@ -13286,7 +12550,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_polynomial_ffd' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_polynomial_ffd',
     'glewImpl' => 'GLEW_SGIX_polynomial_ffd',
     'glewtype' => 'var',
@@ -13294,7 +12557,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_quad_mesh' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_quad_mesh',
     'glewImpl' => 'GLEW_SGIX_quad_mesh',
     'glewtype' => 'var',
@@ -13302,7 +12564,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_reference_plane' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_reference_plane',
     'glewImpl' => 'GLEW_SGIX_reference_plane',
     'glewtype' => 'var',
@@ -13310,7 +12571,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_resample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_resample',
     'glewImpl' => 'GLEW_SGIX_resample',
     'glewtype' => 'var',
@@ -13318,7 +12578,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_scalebias_hint' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_scalebias_hint',
     'glewImpl' => 'GLEW_SGIX_scalebias_hint',
     'glewtype' => 'var',
@@ -13326,7 +12585,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_shadow' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_shadow',
     'glewImpl' => 'GLEW_SGIX_shadow',
     'glewtype' => 'var',
@@ -13334,7 +12592,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_shadow_ambient' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_shadow_ambient',
     'glewImpl' => 'GLEW_SGIX_shadow_ambient',
     'glewtype' => 'var',
@@ -13342,7 +12599,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_slim' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_slim',
     'glewImpl' => 'GLEW_SGIX_slim',
     'glewtype' => 'var',
@@ -13350,7 +12606,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_spotlight_cutoff' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_spotlight_cutoff',
     'glewImpl' => 'GLEW_SGIX_spotlight_cutoff',
     'glewtype' => 'var',
@@ -13358,7 +12613,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_sprite' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_sprite',
     'glewImpl' => 'GLEW_SGIX_sprite',
     'glewtype' => 'var',
@@ -13366,7 +12620,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_subdiv_patch' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_subdiv_patch',
     'glewImpl' => 'GLEW_SGIX_subdiv_patch',
     'glewtype' => 'var',
@@ -13374,7 +12627,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_subsample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_subsample',
     'glewImpl' => 'GLEW_SGIX_subsample',
     'glewtype' => 'var',
@@ -13382,7 +12634,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_tag_sample_buffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_tag_sample_buffer',
     'glewImpl' => 'GLEW_SGIX_tag_sample_buffer',
     'glewtype' => 'var',
@@ -13390,7 +12641,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_add_env' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_texture_add_env',
     'glewImpl' => 'GLEW_SGIX_texture_add_env',
     'glewtype' => 'var',
@@ -13398,7 +12648,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_coordinate_clamp' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_texture_coordinate_clamp',
     'glewImpl' => 'GLEW_SGIX_texture_coordinate_clamp',
     'glewtype' => 'var',
@@ -13406,7 +12655,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_lod_bias' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_texture_lod_bias',
     'glewImpl' => 'GLEW_SGIX_texture_lod_bias',
     'glewtype' => 'var',
@@ -13414,7 +12662,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_mipmap_anisotropic' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_texture_mipmap_anisotropic',
     'glewImpl' => 'GLEW_SGIX_texture_mipmap_anisotropic',
     'glewtype' => 'var',
@@ -13422,7 +12669,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_multi_buffer' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_texture_multi_buffer',
     'glewImpl' => 'GLEW_SGIX_texture_multi_buffer',
     'glewtype' => 'var',
@@ -13430,7 +12676,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_phase' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_texture_phase',
     'glewImpl' => 'GLEW_SGIX_texture_phase',
     'glewtype' => 'var',
@@ -13438,7 +12683,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_range' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_texture_range',
     'glewImpl' => 'GLEW_SGIX_texture_range',
     'glewtype' => 'var',
@@ -13446,7 +12690,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_scale_bias' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_texture_scale_bias',
     'glewImpl' => 'GLEW_SGIX_texture_scale_bias',
     'glewtype' => 'var',
@@ -13454,7 +12697,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_supersample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_texture_supersample',
     'glewImpl' => 'GLEW_SGIX_texture_supersample',
     'glewtype' => 'var',
@@ -13462,7 +12704,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_vector_ops' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_vector_ops',
     'glewImpl' => 'GLEW_SGIX_vector_ops',
     'glewtype' => 'var',
@@ -13470,7 +12711,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_vertex_array_object' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_vertex_array_object',
     'glewImpl' => 'GLEW_SGIX_vertex_array_object',
     'glewtype' => 'var',
@@ -13478,7 +12718,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_vertex_preclip' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_vertex_preclip',
     'glewImpl' => 'GLEW_SGIX_vertex_preclip',
     'glewtype' => 'var',
@@ -13486,7 +12725,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_vertex_preclip_hint' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_vertex_preclip_hint',
     'glewImpl' => 'GLEW_SGIX_vertex_preclip_hint',
     'glewtype' => 'var',
@@ -13494,7 +12732,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_ycrcb' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_ycrcb',
     'glewImpl' => 'GLEW_SGIX_ycrcb',
     'glewtype' => 'var',
@@ -13502,7 +12739,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_ycrcb_subsample' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_ycrcb_subsample',
     'glewImpl' => 'GLEW_SGIX_ycrcb_subsample',
     'glewtype' => 'var',
@@ -13510,7 +12746,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGIX_ycrcba' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGIX_ycrcba',
     'glewImpl' => 'GLEW_SGIX_ycrcba',
     'glewtype' => 'var',
@@ -13518,7 +12753,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGI_color_matrix' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGI_color_matrix',
     'glewImpl' => 'GLEW_SGI_color_matrix',
     'glewtype' => 'var',
@@ -13526,7 +12760,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGI_color_table' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGI_color_table',
     'glewImpl' => 'GLEW_SGI_color_table',
     'glewtype' => 'var',
@@ -13534,7 +12767,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGI_complex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGI_complex',
     'glewImpl' => 'GLEW_SGI_complex',
     'glewtype' => 'var',
@@ -13542,7 +12774,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGI_complex_type' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGI_complex_type',
     'glewImpl' => 'GLEW_SGI_complex_type',
     'glewtype' => 'var',
@@ -13550,7 +12781,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGI_fft' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGI_fft',
     'glewImpl' => 'GLEW_SGI_fft',
     'glewtype' => 'var',
@@ -13558,7 +12788,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SGI_texture_color_table' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SGI_texture_color_table',
     'glewImpl' => 'GLEW_SGI_texture_color_table',
     'glewtype' => 'var',
@@ -13566,7 +12795,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SUNX_constant_data' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SUNX_constant_data',
     'glewImpl' => 'GLEW_SUNX_constant_data',
     'glewtype' => 'var',
@@ -13574,7 +12802,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SUN_convolution_border_modes' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SUN_convolution_border_modes',
     'glewImpl' => 'GLEW_SUN_convolution_border_modes',
     'glewtype' => 'var',
@@ -13582,7 +12809,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SUN_global_alpha' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SUN_global_alpha',
     'glewImpl' => 'GLEW_SUN_global_alpha',
     'glewtype' => 'var',
@@ -13590,7 +12816,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SUN_mesh_array' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SUN_mesh_array',
     'glewImpl' => 'GLEW_SUN_mesh_array',
     'glewtype' => 'var',
@@ -13598,7 +12823,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SUN_read_video_pixels' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SUN_read_video_pixels',
     'glewImpl' => 'GLEW_SUN_read_video_pixels',
     'glewtype' => 'var',
@@ -13606,7 +12830,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SUN_slice_accum' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SUN_slice_accum',
     'glewImpl' => 'GLEW_SUN_slice_accum',
     'glewtype' => 'var',
@@ -13614,7 +12837,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SUN_triangle_list' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SUN_triangle_list',
     'glewImpl' => 'GLEW_SUN_triangle_list',
     'glewtype' => 'var',
@@ -13622,7 +12844,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_SUN_vertex' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_SUN_vertex',
     'glewImpl' => 'GLEW_SUN_vertex',
     'glewtype' => 'var',
@@ -13630,7 +12851,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_1_1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_1_1',
     'glewImpl' => 'GLEW_VERSION_1_1',
     'glewtype' => 'var',
@@ -13638,7 +12858,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_1_2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_1_2',
     'glewImpl' => 'GLEW_VERSION_1_2',
     'glewtype' => 'var',
@@ -13646,7 +12865,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_1_2_1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_1_2_1',
     'glewImpl' => 'GLEW_VERSION_1_2_1',
     'glewtype' => 'var',
@@ -13654,7 +12872,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_1_3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_1_3',
     'glewImpl' => 'GLEW_VERSION_1_3',
     'glewtype' => 'var',
@@ -13662,7 +12879,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_1_4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_1_4',
     'glewImpl' => 'GLEW_VERSION_1_4',
     'glewtype' => 'var',
@@ -13670,7 +12886,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_1_5' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_1_5',
     'glewImpl' => 'GLEW_VERSION_1_5',
     'glewtype' => 'var',
@@ -13678,7 +12893,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_2_0' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_2_0',
     'glewImpl' => 'GLEW_VERSION_2_0',
     'glewtype' => 'var',
@@ -13686,7 +12900,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_2_1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_2_1',
     'glewImpl' => 'GLEW_VERSION_2_1',
     'glewtype' => 'var',
@@ -13694,7 +12907,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_3_0' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_3_0',
     'glewImpl' => 'GLEW_VERSION_3_0',
     'glewtype' => 'var',
@@ -13702,7 +12914,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_3_1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_3_1',
     'glewImpl' => 'GLEW_VERSION_3_1',
     'glewtype' => 'var',
@@ -13710,7 +12921,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_3_2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_3_2',
     'glewImpl' => 'GLEW_VERSION_3_2',
     'glewtype' => 'var',
@@ -13718,7 +12928,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_3_3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_3_3',
     'glewImpl' => 'GLEW_VERSION_3_3',
     'glewtype' => 'var',
@@ -13726,7 +12935,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_4_0' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_4_0',
     'glewImpl' => 'GLEW_VERSION_4_0',
     'glewtype' => 'var',
@@ -13734,7 +12942,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_4_1' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_4_1',
     'glewImpl' => 'GLEW_VERSION_4_1',
     'glewtype' => 'var',
@@ -13742,7 +12949,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_4_2' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_4_2',
     'glewImpl' => 'GLEW_VERSION_4_2',
     'glewtype' => 'var',
@@ -13750,7 +12956,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_4_3' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_4_3',
     'glewImpl' => 'GLEW_VERSION_4_3',
     'glewtype' => 'var',
@@ -13758,7 +12963,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_4_4' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_4_4',
     'glewImpl' => 'GLEW_VERSION_4_4',
     'glewtype' => 'var',
@@ -13766,7 +12970,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_4_5' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_4_5',
     'glewImpl' => 'GLEW_VERSION_4_5',
     'glewtype' => 'var',
@@ -13774,7 +12977,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_VERSION_4_6' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_VERSION_4_6',
     'glewImpl' => 'GLEW_VERSION_4_6',
     'glewtype' => 'var',
@@ -13782,7 +12984,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_WIN_phong_shading' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_WIN_phong_shading',
     'glewImpl' => 'GLEW_WIN_phong_shading',
     'glewtype' => 'var',
@@ -13790,7 +12991,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_WIN_scene_markerXXX' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_WIN_scene_markerXXX',
     'glewImpl' => 'GLEW_WIN_scene_markerXXX',
     'glewtype' => 'var',
@@ -13798,7 +12998,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_WIN_specular_fog' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_WIN_specular_fog',
     'glewImpl' => 'GLEW_WIN_specular_fog',
     'glewtype' => 'var',
@@ -13806,7 +13005,6 @@ our %registry = (
     'signature' => 'void'
   },
   'GLEW_WIN_swap_hint' => {
-    'argdata' => [],
     'binding_name' => 'GLEW_WIN_swap_hint',
     'glewImpl' => 'GLEW_WIN_swap_hint',
     'glewtype' => 'var',
@@ -14486,7 +13684,6 @@ our %registry = (
     'signature' => 'GLuint id'
   },
   'glBeginFragmentShaderATI' => {
-    'argdata' => [],
     'binding_name' => 'glBeginFragmentShaderATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewBeginFragmentShaderATI',
@@ -14613,7 +13810,6 @@ our %registry = (
     'signature' => 'GLenum target, GLuint index, GLuint id'
   },
   'glBeginSceneEXT' => {
-    'argdata' => [],
     'binding_name' => 'glBeginSceneEXT',
     'feature' => 'GL_EXT_scene_marker',
     'glewImpl' => '__glewBeginSceneEXT',
@@ -14664,7 +13860,6 @@ our %registry = (
     'signature' => 'GLenum primitiveMode'
   },
   'glBeginVertexShaderEXT' => {
-    'argdata' => [],
     'binding_name' => 'glBeginVertexShaderEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewBeginVertexShaderEXT',
@@ -15871,7 +15066,6 @@ our %registry = (
     'signature' => 'GLsizei width, GLsizei height, GLfloat xorig, GLfloat yorig, GLfloat xmove, GLfloat ymove, const GLubyte *bitmap'
   },
   'glBlendBarrierKHR' => {
-    'argdata' => [],
     'binding_name' => 'glBlendBarrierKHR',
     'feature' => 'GL_KHR_blend_equation_advanced',
     'glewImpl' => '__glewBlendBarrierKHR',
@@ -15880,7 +15074,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glBlendBarrierNV' => {
-    'argdata' => [],
     'binding_name' => 'glBlendBarrierNV',
     'feature' => 'GL_NV_blend_equation_advanced',
     'glewImpl' => '__glewBlendBarrierNV',
@@ -16845,7 +16038,6 @@ our %registry = (
     'signature' => 'GLenum target, GLenum pname, GLint param'
   },
   'glBufferRegionEnabled' => {
-    'argdata' => [],
     'binding_name' => 'glBufferRegionEnabled',
     'feature' => 'GL_KTX_buffer_region',
     'glewImpl' => '__glewBufferRegionEnabled',
@@ -23678,7 +22870,6 @@ our %registry = (
     'signature' => 'GLuint queryId, GLuint* queryHandle'
   },
   'glCreateProgram' => {
-    'argdata' => [],
     'binding_name' => 'glCreateProgram',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewCreateProgram',
@@ -23687,7 +22878,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glCreateProgramObjectARB' => {
-    'argdata' => [],
     'binding_name' => 'glCreateProgramObjectARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewCreateProgramObjectARB',
@@ -27572,7 +26762,6 @@ our %registry = (
     'signature' => 'GLenum target, GLuint index'
   },
   'glEnd' => {
-    'argdata' => [],
     'binding_name' => 'glEnd',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -27581,7 +26770,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndConditionalRender' => {
-    'argdata' => [],
     'binding_name' => 'glEndConditionalRender',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewEndConditionalRender',
@@ -27590,7 +26778,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndConditionalRenderNV' => {
-    'argdata' => [],
     'binding_name' => 'glEndConditionalRenderNV',
     'feature' => 'GL_NV_conditional_render',
     'glewImpl' => '__glewEndConditionalRenderNV',
@@ -27599,7 +26786,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndConditionalRenderNVX' => {
-    'argdata' => [],
     'binding_name' => 'glEndConditionalRenderNVX',
     'feature' => 'GL_NVX_conditional_render',
     'glewImpl' => '__glewEndConditionalRenderNVX',
@@ -27608,7 +26794,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndFragmentShaderATI' => {
-    'argdata' => [],
     'binding_name' => 'glEndFragmentShaderATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewEndFragmentShaderATI',
@@ -27617,7 +26802,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndList' => {
-    'argdata' => [],
     'binding_name' => 'glEndList',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -27626,7 +26810,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndOcclusionQueryNV' => {
-    'argdata' => [],
     'binding_name' => 'glEndOcclusionQueryNV',
     'feature' => 'GL_NV_occlusion_query',
     'glewImpl' => '__glewEndOcclusionQueryNV',
@@ -27723,7 +26906,6 @@ our %registry = (
     'signature' => 'GLenum target, GLuint index'
   },
   'glEndSceneEXT' => {
-    'argdata' => [],
     'binding_name' => 'glEndSceneEXT',
     'feature' => 'GL_EXT_scene_marker',
     'glewImpl' => '__glewEndSceneEXT',
@@ -27746,7 +26928,6 @@ our %registry = (
     'signature' => 'GLbitfield preserveMask'
   },
   'glEndTransformFeedback' => {
-    'argdata' => [],
     'binding_name' => 'glEndTransformFeedback',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewEndTransformFeedback',
@@ -27755,7 +26936,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndTransformFeedbackEXT' => {
-    'argdata' => [],
     'binding_name' => 'glEndTransformFeedbackEXT',
     'feature' => 'GL_EXT_transform_feedback',
     'glewImpl' => '__glewEndTransformFeedbackEXT',
@@ -27764,7 +26944,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndTransformFeedbackNV' => {
-    'argdata' => [],
     'binding_name' => 'glEndTransformFeedbackNV',
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewEndTransformFeedbackNV',
@@ -27773,7 +26952,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndVertexShaderEXT' => {
-    'argdata' => [],
     'binding_name' => 'glEndVertexShaderEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewEndVertexShaderEXT',
@@ -28442,7 +27620,6 @@ our %registry = (
     'signature' => 'GLenum variable, GLenum input, GLenum mapping, GLenum componentUsage'
   },
   'glFinish' => {
-    'argdata' => [],
     'binding_name' => 'glFinish',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -28511,7 +27688,6 @@ our %registry = (
     'signature' => 'GLenum object, GLint name'
   },
   'glFinishTextureSUNX' => {
-    'argdata' => [],
     'binding_name' => 'glFinishTextureSUNX',
     'feature' => 'GL_SUNX_constant_data',
     'glewImpl' => '__glewFinishTextureSUNX',
@@ -28520,7 +27696,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glFlush' => {
-    'argdata' => [],
     'binding_name' => 'glFlush',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -28653,7 +27828,6 @@ our %registry = (
     'signature' => 'GLenum target'
   },
   'glFlushRasterSGIX' => {
-    'argdata' => [],
     'binding_name' => 'glFlushRasterSGIX',
     'feature' => 'GL_SGIX_flush_raster',
     'glewImpl' => '__glewFlushRasterSGIX',
@@ -28680,7 +27854,6 @@ our %registry = (
     'signature' => 'GLsizei length, void *pointer'
   },
   'glFlushVertexArrayRangeNV' => {
-    'argdata' => [],
     'binding_name' => 'glFlushVertexArrayRangeNV',
     'feature' => 'GL_NV_vertex_array_range',
     'glewImpl' => '__glewFlushVertexArrayRangeNV',
@@ -29607,7 +28780,6 @@ our %registry = (
     'signature' => 'GLenum face, GLenum pname, const GLint* params'
   },
   'glFrameTerminatorGREMEDY' => {
-    'argdata' => [],
     'binding_name' => 'glFrameTerminatorGREMEDY',
     'feature' => 'GL_GREMEDY_frame_terminator',
     'glewImpl' => '__glewFrameTerminatorGREMEDY',
@@ -29670,7 +28842,6 @@ our %registry = (
     'signature' => 'GLuint framebuffer, GLsizei n, const GLenum* bufs'
   },
   'glFramebufferFetchBarrierQCOM' => {
-    'argdata' => [],
     'binding_name' => 'glFramebufferFetchBarrierQCOM',
     'feature' => 'GL_QCOM_shader_framebuffer_fetch_noncoherent',
     'glewImpl' => '__glewFramebufferFetchBarrierQCOM',
@@ -33111,7 +32282,6 @@ our %registry = (
     'signature' => 'GLint* num, GLsizei size, GLuint *driverControls'
   },
   'glGetError' => {
-    'argdata' => [],
     'binding_name' => 'glGetError',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -33758,7 +32928,6 @@ our %registry = (
     'signature' => 'GLuint target'
   },
   'glGetGraphicsResetStatus' => {
-    'argdata' => [],
     'binding_name' => 'glGetGraphicsResetStatus',
     'feature' => 'GL_VERSION_4_5',
     'glewImpl' => '__glewGetGraphicsResetStatus',
@@ -33767,7 +32936,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glGetGraphicsResetStatusARB' => {
-    'argdata' => [],
     'binding_name' => 'glGetGraphicsResetStatusARB',
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetGraphicsResetStatusARB',
@@ -42870,7 +42038,6 @@ our %registry = (
     'signature' => 'const GLubyte *c'
   },
   'glInitNames' => {
-    'argdata' => [],
     'binding_name' => 'glInitNames',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -44083,7 +43250,6 @@ our %registry = (
     'signature' => 'GLuint sourceGpu, GLbitfield destinationGpuMask, GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srxY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei width, GLsizei height, GLsizei depth'
   },
   'glLGPUInterlockNVX' => {
-    'argdata' => [],
     'binding_name' => 'glLGPUInterlockNVX',
     'feature' => 'GL_NVX_linked_gpu_multicast',
     'glewImpl' => '__glewLGPUInterlockNVX',
@@ -44532,7 +43698,6 @@ our %registry = (
     'signature' => 'GLuint list, GLuint segment, const void** indirects, const GLsizei* sizes, const GLuint* states, const GLuint* fbos, GLuint count'
   },
   'glLoadIdentity' => {
-    'argdata' => [],
     'binding_name' => 'glLoadIdentity',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -50039,7 +49204,6 @@ our %registry = (
     'signature' => 'GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels'
   },
   'glMulticastBarrierNV' => {
-    'argdata' => [],
     'binding_name' => 'glMulticastBarrierNV',
     'feature' => 'GL_NV_gpu_multicast',
     'glewImpl' => '__glewMulticastBarrierNV',
@@ -53354,7 +52518,6 @@ our %registry = (
     'signature' => 'GLenum texCoordSet, GLenum genMode, GLint components, const GLfloat* coeffs'
   },
   'glPauseTransformFeedback' => {
-    'argdata' => [],
     'binding_name' => 'glPauseTransformFeedback',
     'feature' => 'GL_ARB_transform_feedback2',
     'glewImpl' => '__glewPauseTransformFeedback',
@@ -53363,7 +52526,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPauseTransformFeedbackNV' => {
-    'argdata' => [],
     'binding_name' => 'glPauseTransformFeedbackNV',
     'feature' => 'GL_NV_transform_feedback2',
     'glewImpl' => '__glewPauseTransformFeedbackNV',
@@ -54224,7 +53386,6 @@ our %registry = (
     'signature' => 'const GLubyte *mask'
   },
   'glPopAttrib' => {
-    'argdata' => [],
     'binding_name' => 'glPopAttrib',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -54233,7 +53394,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPopClientAttrib' => {
-    'argdata' => [],
     'binding_name' => 'glPopClientAttrib',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -54242,7 +53402,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPopDebugGroup' => {
-    'argdata' => [],
     'binding_name' => 'glPopDebugGroup',
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewPopDebugGroup',
@@ -54251,7 +53410,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPopGroupMarkerEXT' => {
-    'argdata' => [],
     'binding_name' => 'glPopGroupMarkerEXT',
     'feature' => 'GL_EXT_debug_marker',
     'glewImpl' => '__glewPopGroupMarkerEXT',
@@ -54260,7 +53418,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPopMatrix' => {
-    'argdata' => [],
     'binding_name' => 'glPopMatrix',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -54269,7 +53426,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPopName' => {
-    'argdata' => [],
     'binding_name' => 'glPopName',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -54464,7 +53620,6 @@ our %registry = (
     'signature' => 'GLuint index'
   },
   'glPrimitiveRestartNV' => {
-    'argdata' => [],
     'binding_name' => 'glPrimitiveRestartNV',
     'feature' => 'GL_NV_primitive_restart',
     'glewImpl' => '__glewPrimitiveRestartNV',
@@ -59135,7 +58290,6 @@ our %registry = (
     'signature' => 'GLsizei length, const GLchar* marker'
   },
   'glPushMatrix' => {
-    'argdata' => [],
     'binding_name' => 'glPushMatrix',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
@@ -60100,7 +59254,6 @@ our %registry = (
     'signature' => 'GLuint memory, GLuint64 key'
   },
   'glReleaseShaderCompiler' => {
-    'argdata' => [],
     'binding_name' => 'glReleaseShaderCompiler',
     'feature' => 'GL_ARB_ES2_compatibility',
     'glewImpl' => '__glewReleaseShaderCompiler',
@@ -61081,7 +60234,6 @@ our %registry = (
     'signature' => 'GLenum target'
   },
   'glResizeBuffersMESA' => {
-    'argdata' => [],
     'binding_name' => 'glResizeBuffersMESA',
     'feature' => 'GL_MESA_resize_buffers',
     'glewImpl' => '__glewResizeBuffersMESA',
@@ -61090,7 +60242,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glResolveMultisampleFramebufferAPPLE' => {
-    'argdata' => [],
     'binding_name' => 'glResolveMultisampleFramebufferAPPLE',
     'feature' => 'GL_APPLE_framebuffer_multisample',
     'glewImpl' => '__glewResolveMultisampleFramebufferAPPLE',
@@ -61099,7 +60250,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glResumeTransformFeedback' => {
-    'argdata' => [],
     'binding_name' => 'glResumeTransformFeedback',
     'feature' => 'GL_ARB_transform_feedback2',
     'glewImpl' => '__glewResumeTransformFeedback',
@@ -61108,7 +60258,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glResumeTransformFeedbackNV' => {
-    'argdata' => [],
     'binding_name' => 'glResumeTransformFeedbackNV',
     'feature' => 'GL_NV_transform_feedback2',
     'glewImpl' => '__glewResumeTransformFeedbackNV',
@@ -63867,7 +63016,6 @@ our %registry = (
     'signature' => 'GLuint texture'
   },
   'glTagSampleBufferSGIX' => {
-    'argdata' => [],
     'binding_name' => 'glTagSampleBufferSGIX',
     'feature' => 'GL_SGIX_tag_sample_buffer',
     'glewImpl' => '__glewTagSampleBufferSGIX',
@@ -67548,7 +66696,6 @@ our %registry = (
     'signature' => 'GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint woffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei extent, GLenum format, GLenum type, const void *pixels'
   },
   'glTextureBarrier' => {
-    'argdata' => [],
     'binding_name' => 'glTextureBarrier',
     'feature' => 'GL_ARB_texture_barrier',
     'glewImpl' => '__glewTextureBarrier',
@@ -67557,7 +66704,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glTextureBarrierNV' => {
-    'argdata' => [],
     'binding_name' => 'glTextureBarrierNV',
     'feature' => 'GL_NV_texture_barrier',
     'glewImpl' => '__glewTextureBarrierNV',
@@ -72576,7 +71722,6 @@ our %registry = (
     'signature' => 'GLint location, GLsizei count, const GLuint64EXT* value'
   },
   'glUnlockArraysEXT' => {
-    'argdata' => [],
     'binding_name' => 'glUnlockArraysEXT',
     'feature' => 'GL_EXT_compiled_vertex_array',
     'glewImpl' => '__glewUnlockArraysEXT',
@@ -72771,7 +71916,6 @@ our %registry = (
     'signature' => 'GLenum type, GLuint program'
   },
   'glVDPAUFiniNV' => {
-    'argdata' => [],
     'binding_name' => 'glVDPAUFiniNV',
     'feature' => 'GL_NV_vdpau_interop',
     'glewImpl' => '__glewVDPAUFiniNV',

@@ -125,7 +125,7 @@ sub preprocess_for_registry {
             /(.*?)(\w+)$/;
             push @argdata, [$2,$1]; # name, type
         }
-        $item->{argdata} = \@argdata;
+        $item->{argdata} = \@argdata if @argdata;
         my $glewImpl;
         if ( ($item->{feature}//'') ne "GL_VERSION_1_1" ) {
             ( $glewImpl = $name ) =~ s!^gl!__glew!;

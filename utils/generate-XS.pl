@@ -50,12 +50,12 @@ sub generate_glew_xs {
             next;
         }
         my $argdata = $item->{argdata};
-        die "No argdata for $name" unless $argdata;
+        my @argdata = @{$argdata || []};
         my $type = $item->{restype};
         my $no_return_value = $type eq 'void';
         my $glewImpl = $item->{glewImpl};
-        my $args = join ', ', map $_->[0], @$argdata;
-        my $xs_args = join '', map "     $_->[1]$_->[0];\n", @$argdata;
+        my $args = join ', ', map $_->[0], @argdata;
+        my $xs_args = join '', map "     $_->[1]$_->[0];\n", @argdata;
         my $binding_name = $item->{binding_name};
         my $decl = <<XS;
 $type
