@@ -41,7 +41,6 @@ our %EXPORT_TAGS = (
           glGetString
           ),
         OpenGL::Modern::NameLists::MakefileAll::makefile_all,
-        OpenGL::Modern::NameLists::MakefileAll::not_for_makefile,
     ]
 );
 
