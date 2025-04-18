@@ -99,13 +99,12 @@ for my $file ("include/GL/glew.h") {
 
 my %signature;
 # Now rewrite the names to proper case when we only have their uppercase alias
-for my $name ( sort {uc$a cmp uc$b} keys %upper2data ) {
-    my $impl      = $case_map{$name} || $name;
-    my $real_name = $alias{$impl}    || $impl;
-    my $s = $upper2data{$name};
-    $signature{$real_name} = $s;
-    delete $s->{name};
-    push @{ $features{$s->{feature}} }, $real_name if $s->{feature};
+for my $name ( keys %upper2data ) {
+  my $impl      = $case_map{$name} || $name;
+  my $real_name = $alias{$impl}    || $impl;
+  my $s = $upper2data{$name};
+  $signature{$real_name} = $s;
+  delete $s->{name};
 }
 
 sub preprocess_for_registry {
@@ -161,6 +160,11 @@ sub save_file {
 }
 
 preprocess_for_registry(@ARGV);
+
+for my $name (sort {uc$a cmp uc$b} keys %signature) {
+  my $s = $signature{$name};
+  push @{ $features{$s->{feature}} }, $s->{binding_name} || $name if $s->{feature};
+}
 
 # Now rewrite registry if we need to:
 my $glFunctions = join '', "\n", map "  $_\n", sort {uc$a cmp uc$b} @exported_functions;
