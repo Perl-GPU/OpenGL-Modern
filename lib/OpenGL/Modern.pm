@@ -28,9 +28,6 @@ our @glp_functions = qw(
 );
 our %EXPORT_TAGS_GL = OpenGL::Modern::Registry::EXPORT_TAGS_GL();
 
-# This allows declaration use OpenGL::Modern ':all';
-# If you do not need this, moving things directly into @EXPORT or @EXPORT_OK
-# will save memory.
 our %EXPORT_TAGS = (
     %EXPORT_TAGS_GL,
     glewfunctions => \@glew_functions,
@@ -45,7 +42,6 @@ our %EXPORT_TAGS = (
           ),
         OpenGL::Modern::NameLists::MakefileAll::makefile_all,
         OpenGL::Modern::NameLists::MakefileAll::not_for_makefile,
-        OpenGL::Modern::NameLists::MakefileAll::later_all,
     ]
 );
 
