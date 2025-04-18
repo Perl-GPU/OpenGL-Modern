@@ -22,7 +22,7 @@ my @manual_list = qw(
 my %manual;
 @manual{@manual_list} = ( 1 ) x @manual_list;
 my @exported_functions = @manual_list; # names the module exports
-my %features;
+my %constants;
 
 for my $file ("include/GL/glew.h") {
 
@@ -82,6 +82,12 @@ for my $file ("include/GL/glew.h") {
         elsif ( $line =~ m|^#define (\w+) GLEW_GET_VAR\(__(\w+)\)| ) {
             my ( $name, $impl ) = ( $1, $2 );
             $alias{$impl} = $name;
+
+            # #define GL_CONSTANT_NAME ...
+        }
+        elsif ( $line =~ m|^#define (GL(?:EW)?_\w+)\s+\S| ) {
+            my $c = $1;
+            $constants{$c} = undef if $c !~ /_EXPORT$/;
 
             # GLEW_VAR_EXPORT GLboolean __GLEW_VERSION_1_1;
         }
@@ -161,13 +167,17 @@ sub save_file {
 
 preprocess_for_registry(@ARGV);
 
+my %features;
 for my $name (sort {uc$a cmp uc$b} keys %signature) {
   my $s = $signature{$name};
-  push @{ $features{$s->{feature}} }, $s->{binding_name} || $name if $s->{feature};
+  next if !$s->{feature};
+  push @{ $features{$s->{feature}} }, $s->{binding_name} || $name;
 }
+my @glconstants = sort keys %constants;
 
 # Now rewrite registry if we need to:
 my $glFunctions = join '', "\n", map "  $_\n", sort {uc$a cmp uc$b} @exported_functions;
+my $glconstants = join '', "\n", map "  $_\n", @glconstants;
 use Data::Dumper;
 $Data::Dumper::Indent = $Data::Dumper::Sortkeys = $Data::Dumper::Terse = 1;
 my $gltags = Dumper \%features;
@@ -189,6 +199,7 @@ END
 my $registry = Dumper \%signature;
 $registry =~ s!^\{!!;
 $registry =~ s!\s+\}$!!s;
-$new .= "our %registry = ($registry);\n";
+$new .= "our %registry = ($registry);\n\n";
+$new .= "our \@glconstants = qw($glconstants);\n\n";
 $new .= "1;\n";
 save_file( "lib/OpenGL/Modern/Registry.pm", $new );

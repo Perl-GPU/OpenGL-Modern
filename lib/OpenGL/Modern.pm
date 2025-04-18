@@ -7,7 +7,6 @@ use Carp;
 use Exporter 'import';
 
 use OpenGL::Modern::Registry;
-use OpenGL::Modern::NameLists::MakefileAll;
 
 our $VERSION    = '0.04_01';
 our $XS_VERSION = $VERSION;
@@ -32,15 +31,12 @@ our %EXPORT_TAGS = (
     %EXPORT_TAGS_GL,
     glewfunctions => \@glew_functions,
     glpfunctions => \@glp_functions,
-    'all' => [
+    glconstants => \@OpenGL::Modern::Registry::glconstants,
+    all => [
         @glFunctions,
         @glew_functions,
         @glp_functions,
-        qw(
-          glGetError
-          glGetString
-          ),
-        OpenGL::Modern::NameLists::MakefileAll::makefile_all,
+        @OpenGL::Modern::Registry::glconstants,
     ]
 );
 
