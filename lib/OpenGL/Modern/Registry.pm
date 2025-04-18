@@ -7398,5614 +7398,4812 @@ sub EXPORT_TAGS_GL {(
 
 our %registry = (
   'GLEW_3DFX_multisample' => {
-    'binding_name' => 'GLEW_3DFX_multisample',
     'glewImpl' => 'GLEW_3DFX_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_3DFX_tbuffer' => {
-    'binding_name' => 'GLEW_3DFX_tbuffer',
     'glewImpl' => 'GLEW_3DFX_tbuffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_3DFX_texture_compression_FXT1' => {
-    'binding_name' => 'GLEW_3DFX_texture_compression_FXT1',
     'glewImpl' => 'GLEW_3DFX_texture_compression_FXT1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_blend_minmax_factor' => {
-    'binding_name' => 'GLEW_AMD_blend_minmax_factor',
     'glewImpl' => 'GLEW_AMD_blend_minmax_factor',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_compressed_3DC_texture' => {
-    'binding_name' => 'GLEW_AMD_compressed_3DC_texture',
     'glewImpl' => 'GLEW_AMD_compressed_3DC_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_compressed_ATC_texture' => {
-    'binding_name' => 'GLEW_AMD_compressed_ATC_texture',
     'glewImpl' => 'GLEW_AMD_compressed_ATC_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_conservative_depth' => {
-    'binding_name' => 'GLEW_AMD_conservative_depth',
     'glewImpl' => 'GLEW_AMD_conservative_depth',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_debug_output' => {
-    'binding_name' => 'GLEW_AMD_debug_output',
     'glewImpl' => 'GLEW_AMD_debug_output',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_depth_clamp_separate' => {
-    'binding_name' => 'GLEW_AMD_depth_clamp_separate',
     'glewImpl' => 'GLEW_AMD_depth_clamp_separate',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_draw_buffers_blend' => {
-    'binding_name' => 'GLEW_AMD_draw_buffers_blend',
     'glewImpl' => 'GLEW_AMD_draw_buffers_blend',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_framebuffer_sample_positions' => {
-    'binding_name' => 'GLEW_AMD_framebuffer_sample_positions',
     'glewImpl' => 'GLEW_AMD_framebuffer_sample_positions',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_gcn_shader' => {
-    'binding_name' => 'GLEW_AMD_gcn_shader',
     'glewImpl' => 'GLEW_AMD_gcn_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_gpu_shader_half_float' => {
-    'binding_name' => 'GLEW_AMD_gpu_shader_half_float',
     'glewImpl' => 'GLEW_AMD_gpu_shader_half_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_gpu_shader_int16' => {
-    'binding_name' => 'GLEW_AMD_gpu_shader_int16',
     'glewImpl' => 'GLEW_AMD_gpu_shader_int16',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_gpu_shader_int64' => {
-    'binding_name' => 'GLEW_AMD_gpu_shader_int64',
     'glewImpl' => 'GLEW_AMD_gpu_shader_int64',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_interleaved_elements' => {
-    'binding_name' => 'GLEW_AMD_interleaved_elements',
     'glewImpl' => 'GLEW_AMD_interleaved_elements',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_multi_draw_indirect' => {
-    'binding_name' => 'GLEW_AMD_multi_draw_indirect',
     'glewImpl' => 'GLEW_AMD_multi_draw_indirect',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_name_gen_delete' => {
-    'binding_name' => 'GLEW_AMD_name_gen_delete',
     'glewImpl' => 'GLEW_AMD_name_gen_delete',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_occlusion_query_event' => {
-    'binding_name' => 'GLEW_AMD_occlusion_query_event',
     'glewImpl' => 'GLEW_AMD_occlusion_query_event',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_performance_monitor' => {
-    'binding_name' => 'GLEW_AMD_performance_monitor',
     'glewImpl' => 'GLEW_AMD_performance_monitor',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_pinned_memory' => {
-    'binding_name' => 'GLEW_AMD_pinned_memory',
     'glewImpl' => 'GLEW_AMD_pinned_memory',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_program_binary_Z400' => {
-    'binding_name' => 'GLEW_AMD_program_binary_Z400',
     'glewImpl' => 'GLEW_AMD_program_binary_Z400',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_query_buffer_object' => {
-    'binding_name' => 'GLEW_AMD_query_buffer_object',
     'glewImpl' => 'GLEW_AMD_query_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_sample_positions' => {
-    'binding_name' => 'GLEW_AMD_sample_positions',
     'glewImpl' => 'GLEW_AMD_sample_positions',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_seamless_cubemap_per_texture' => {
-    'binding_name' => 'GLEW_AMD_seamless_cubemap_per_texture',
     'glewImpl' => 'GLEW_AMD_seamless_cubemap_per_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_shader_atomic_counter_ops' => {
-    'binding_name' => 'GLEW_AMD_shader_atomic_counter_ops',
     'glewImpl' => 'GLEW_AMD_shader_atomic_counter_ops',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_shader_ballot' => {
-    'binding_name' => 'GLEW_AMD_shader_ballot',
     'glewImpl' => 'GLEW_AMD_shader_ballot',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_shader_explicit_vertex_parameter' => {
-    'binding_name' => 'GLEW_AMD_shader_explicit_vertex_parameter',
     'glewImpl' => 'GLEW_AMD_shader_explicit_vertex_parameter',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_shader_stencil_export' => {
-    'binding_name' => 'GLEW_AMD_shader_stencil_export',
     'glewImpl' => 'GLEW_AMD_shader_stencil_export',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_shader_stencil_value_export' => {
-    'binding_name' => 'GLEW_AMD_shader_stencil_value_export',
     'glewImpl' => 'GLEW_AMD_shader_stencil_value_export',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_shader_trinary_minmax' => {
-    'binding_name' => 'GLEW_AMD_shader_trinary_minmax',
     'glewImpl' => 'GLEW_AMD_shader_trinary_minmax',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_sparse_texture' => {
-    'binding_name' => 'GLEW_AMD_sparse_texture',
     'glewImpl' => 'GLEW_AMD_sparse_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_stencil_operation_extended' => {
-    'binding_name' => 'GLEW_AMD_stencil_operation_extended',
     'glewImpl' => 'GLEW_AMD_stencil_operation_extended',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_texture_gather_bias_lod' => {
-    'binding_name' => 'GLEW_AMD_texture_gather_bias_lod',
     'glewImpl' => 'GLEW_AMD_texture_gather_bias_lod',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_texture_texture4' => {
-    'binding_name' => 'GLEW_AMD_texture_texture4',
     'glewImpl' => 'GLEW_AMD_texture_texture4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_transform_feedback3_lines_triangles' => {
-    'binding_name' => 'GLEW_AMD_transform_feedback3_lines_triangles',
     'glewImpl' => 'GLEW_AMD_transform_feedback3_lines_triangles',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_transform_feedback4' => {
-    'binding_name' => 'GLEW_AMD_transform_feedback4',
     'glewImpl' => 'GLEW_AMD_transform_feedback4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_vertex_shader_layer' => {
-    'binding_name' => 'GLEW_AMD_vertex_shader_layer',
     'glewImpl' => 'GLEW_AMD_vertex_shader_layer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_vertex_shader_tessellator' => {
-    'binding_name' => 'GLEW_AMD_vertex_shader_tessellator',
     'glewImpl' => 'GLEW_AMD_vertex_shader_tessellator',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_AMD_vertex_shader_viewport_index' => {
-    'binding_name' => 'GLEW_AMD_vertex_shader_viewport_index',
     'glewImpl' => 'GLEW_AMD_vertex_shader_viewport_index',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANDROID_extension_pack_es31a' => {
-    'binding_name' => 'GLEW_ANDROID_extension_pack_es31a',
     'glewImpl' => 'GLEW_ANDROID_extension_pack_es31a',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_depth_texture' => {
-    'binding_name' => 'GLEW_ANGLE_depth_texture',
     'glewImpl' => 'GLEW_ANGLE_depth_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_framebuffer_blit' => {
-    'binding_name' => 'GLEW_ANGLE_framebuffer_blit',
     'glewImpl' => 'GLEW_ANGLE_framebuffer_blit',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_framebuffer_multisample' => {
-    'binding_name' => 'GLEW_ANGLE_framebuffer_multisample',
     'glewImpl' => 'GLEW_ANGLE_framebuffer_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_instanced_arrays' => {
-    'binding_name' => 'GLEW_ANGLE_instanced_arrays',
     'glewImpl' => 'GLEW_ANGLE_instanced_arrays',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_pack_reverse_row_order' => {
-    'binding_name' => 'GLEW_ANGLE_pack_reverse_row_order',
     'glewImpl' => 'GLEW_ANGLE_pack_reverse_row_order',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_program_binary' => {
-    'binding_name' => 'GLEW_ANGLE_program_binary',
     'glewImpl' => 'GLEW_ANGLE_program_binary',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_texture_compression_dxt1' => {
-    'binding_name' => 'GLEW_ANGLE_texture_compression_dxt1',
     'glewImpl' => 'GLEW_ANGLE_texture_compression_dxt1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_texture_compression_dxt3' => {
-    'binding_name' => 'GLEW_ANGLE_texture_compression_dxt3',
     'glewImpl' => 'GLEW_ANGLE_texture_compression_dxt3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_texture_compression_dxt5' => {
-    'binding_name' => 'GLEW_ANGLE_texture_compression_dxt5',
     'glewImpl' => 'GLEW_ANGLE_texture_compression_dxt5',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_texture_usage' => {
-    'binding_name' => 'GLEW_ANGLE_texture_usage',
     'glewImpl' => 'GLEW_ANGLE_texture_usage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_timer_query' => {
-    'binding_name' => 'GLEW_ANGLE_timer_query',
     'glewImpl' => 'GLEW_ANGLE_timer_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ANGLE_translated_shader_source' => {
-    'binding_name' => 'GLEW_ANGLE_translated_shader_source',
     'glewImpl' => 'GLEW_ANGLE_translated_shader_source',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_aux_depth_stencil' => {
-    'binding_name' => 'GLEW_APPLE_aux_depth_stencil',
     'glewImpl' => 'GLEW_APPLE_aux_depth_stencil',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_client_storage' => {
-    'binding_name' => 'GLEW_APPLE_client_storage',
     'glewImpl' => 'GLEW_APPLE_client_storage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_clip_distance' => {
-    'binding_name' => 'GLEW_APPLE_clip_distance',
     'glewImpl' => 'GLEW_APPLE_clip_distance',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_color_buffer_packed_float' => {
-    'binding_name' => 'GLEW_APPLE_color_buffer_packed_float',
     'glewImpl' => 'GLEW_APPLE_color_buffer_packed_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_copy_texture_levels' => {
-    'binding_name' => 'GLEW_APPLE_copy_texture_levels',
     'glewImpl' => 'GLEW_APPLE_copy_texture_levels',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_element_array' => {
-    'binding_name' => 'GLEW_APPLE_element_array',
     'glewImpl' => 'GLEW_APPLE_element_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_fence' => {
-    'binding_name' => 'GLEW_APPLE_fence',
     'glewImpl' => 'GLEW_APPLE_fence',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_float_pixels' => {
-    'binding_name' => 'GLEW_APPLE_float_pixels',
     'glewImpl' => 'GLEW_APPLE_float_pixels',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_flush_buffer_range' => {
-    'binding_name' => 'GLEW_APPLE_flush_buffer_range',
     'glewImpl' => 'GLEW_APPLE_flush_buffer_range',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_framebuffer_multisample' => {
-    'binding_name' => 'GLEW_APPLE_framebuffer_multisample',
     'glewImpl' => 'GLEW_APPLE_framebuffer_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_object_purgeable' => {
-    'binding_name' => 'GLEW_APPLE_object_purgeable',
     'glewImpl' => 'GLEW_APPLE_object_purgeable',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_pixel_buffer' => {
-    'binding_name' => 'GLEW_APPLE_pixel_buffer',
     'glewImpl' => 'GLEW_APPLE_pixel_buffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_rgb_422' => {
-    'binding_name' => 'GLEW_APPLE_rgb_422',
     'glewImpl' => 'GLEW_APPLE_rgb_422',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_row_bytes' => {
-    'binding_name' => 'GLEW_APPLE_row_bytes',
     'glewImpl' => 'GLEW_APPLE_row_bytes',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_specular_vector' => {
-    'binding_name' => 'GLEW_APPLE_specular_vector',
     'glewImpl' => 'GLEW_APPLE_specular_vector',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_sync' => {
-    'binding_name' => 'GLEW_APPLE_sync',
     'glewImpl' => 'GLEW_APPLE_sync',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_texture_2D_limited_npot' => {
-    'binding_name' => 'GLEW_APPLE_texture_2D_limited_npot',
     'glewImpl' => 'GLEW_APPLE_texture_2D_limited_npot',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_texture_format_BGRA8888' => {
-    'binding_name' => 'GLEW_APPLE_texture_format_BGRA8888',
     'glewImpl' => 'GLEW_APPLE_texture_format_BGRA8888',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_texture_max_level' => {
-    'binding_name' => 'GLEW_APPLE_texture_max_level',
     'glewImpl' => 'GLEW_APPLE_texture_max_level',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_texture_packed_float' => {
-    'binding_name' => 'GLEW_APPLE_texture_packed_float',
     'glewImpl' => 'GLEW_APPLE_texture_packed_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_texture_range' => {
-    'binding_name' => 'GLEW_APPLE_texture_range',
     'glewImpl' => 'GLEW_APPLE_texture_range',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_transform_hint' => {
-    'binding_name' => 'GLEW_APPLE_transform_hint',
     'glewImpl' => 'GLEW_APPLE_transform_hint',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_vertex_array_object' => {
-    'binding_name' => 'GLEW_APPLE_vertex_array_object',
     'glewImpl' => 'GLEW_APPLE_vertex_array_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_vertex_array_range' => {
-    'binding_name' => 'GLEW_APPLE_vertex_array_range',
     'glewImpl' => 'GLEW_APPLE_vertex_array_range',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_vertex_program_evaluators' => {
-    'binding_name' => 'GLEW_APPLE_vertex_program_evaluators',
     'glewImpl' => 'GLEW_APPLE_vertex_program_evaluators',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_APPLE_ycbcr_422' => {
-    'binding_name' => 'GLEW_APPLE_ycbcr_422',
     'glewImpl' => 'GLEW_APPLE_ycbcr_422',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_ES2_compatibility' => {
-    'binding_name' => 'GLEW_ARB_ES2_compatibility',
     'glewImpl' => 'GLEW_ARB_ES2_compatibility',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_ES3_1_compatibility' => {
-    'binding_name' => 'GLEW_ARB_ES3_1_compatibility',
     'glewImpl' => 'GLEW_ARB_ES3_1_compatibility',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_ES3_2_compatibility' => {
-    'binding_name' => 'GLEW_ARB_ES3_2_compatibility',
     'glewImpl' => 'GLEW_ARB_ES3_2_compatibility',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_ES3_compatibility' => {
-    'binding_name' => 'GLEW_ARB_ES3_compatibility',
     'glewImpl' => 'GLEW_ARB_ES3_compatibility',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_arrays_of_arrays' => {
-    'binding_name' => 'GLEW_ARB_arrays_of_arrays',
     'glewImpl' => 'GLEW_ARB_arrays_of_arrays',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_base_instance' => {
-    'binding_name' => 'GLEW_ARB_base_instance',
     'glewImpl' => 'GLEW_ARB_base_instance',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_bindless_texture' => {
-    'binding_name' => 'GLEW_ARB_bindless_texture',
     'glewImpl' => 'GLEW_ARB_bindless_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_blend_func_extended' => {
-    'binding_name' => 'GLEW_ARB_blend_func_extended',
     'glewImpl' => 'GLEW_ARB_blend_func_extended',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_buffer_storage' => {
-    'binding_name' => 'GLEW_ARB_buffer_storage',
     'glewImpl' => 'GLEW_ARB_buffer_storage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_cl_event' => {
-    'binding_name' => 'GLEW_ARB_cl_event',
     'glewImpl' => 'GLEW_ARB_cl_event',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_clear_buffer_object' => {
-    'binding_name' => 'GLEW_ARB_clear_buffer_object',
     'glewImpl' => 'GLEW_ARB_clear_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_clear_texture' => {
-    'binding_name' => 'GLEW_ARB_clear_texture',
     'glewImpl' => 'GLEW_ARB_clear_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_clip_control' => {
-    'binding_name' => 'GLEW_ARB_clip_control',
     'glewImpl' => 'GLEW_ARB_clip_control',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_color_buffer_float' => {
-    'binding_name' => 'GLEW_ARB_color_buffer_float',
     'glewImpl' => 'GLEW_ARB_color_buffer_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_compatibility' => {
-    'binding_name' => 'GLEW_ARB_compatibility',
     'glewImpl' => 'GLEW_ARB_compatibility',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_compressed_texture_pixel_storage' => {
-    'binding_name' => 'GLEW_ARB_compressed_texture_pixel_storage',
     'glewImpl' => 'GLEW_ARB_compressed_texture_pixel_storage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_compute_shader' => {
-    'binding_name' => 'GLEW_ARB_compute_shader',
     'glewImpl' => 'GLEW_ARB_compute_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_compute_variable_group_size' => {
-    'binding_name' => 'GLEW_ARB_compute_variable_group_size',
     'glewImpl' => 'GLEW_ARB_compute_variable_group_size',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_conditional_render_inverted' => {
-    'binding_name' => 'GLEW_ARB_conditional_render_inverted',
     'glewImpl' => 'GLEW_ARB_conditional_render_inverted',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_conservative_depth' => {
-    'binding_name' => 'GLEW_ARB_conservative_depth',
     'glewImpl' => 'GLEW_ARB_conservative_depth',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_copy_buffer' => {
-    'binding_name' => 'GLEW_ARB_copy_buffer',
     'glewImpl' => 'GLEW_ARB_copy_buffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_copy_image' => {
-    'binding_name' => 'GLEW_ARB_copy_image',
     'glewImpl' => 'GLEW_ARB_copy_image',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_cull_distance' => {
-    'binding_name' => 'GLEW_ARB_cull_distance',
     'glewImpl' => 'GLEW_ARB_cull_distance',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_debug_output' => {
-    'binding_name' => 'GLEW_ARB_debug_output',
     'glewImpl' => 'GLEW_ARB_debug_output',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_depth_buffer_float' => {
-    'binding_name' => 'GLEW_ARB_depth_buffer_float',
     'glewImpl' => 'GLEW_ARB_depth_buffer_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_depth_clamp' => {
-    'binding_name' => 'GLEW_ARB_depth_clamp',
     'glewImpl' => 'GLEW_ARB_depth_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_depth_texture' => {
-    'binding_name' => 'GLEW_ARB_depth_texture',
     'glewImpl' => 'GLEW_ARB_depth_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_derivative_control' => {
-    'binding_name' => 'GLEW_ARB_derivative_control',
     'glewImpl' => 'GLEW_ARB_derivative_control',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_direct_state_access' => {
-    'binding_name' => 'GLEW_ARB_direct_state_access',
     'glewImpl' => 'GLEW_ARB_direct_state_access',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_draw_buffers' => {
-    'binding_name' => 'GLEW_ARB_draw_buffers',
     'glewImpl' => 'GLEW_ARB_draw_buffers',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_draw_buffers_blend' => {
-    'binding_name' => 'GLEW_ARB_draw_buffers_blend',
     'glewImpl' => 'GLEW_ARB_draw_buffers_blend',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_draw_elements_base_vertex' => {
-    'binding_name' => 'GLEW_ARB_draw_elements_base_vertex',
     'glewImpl' => 'GLEW_ARB_draw_elements_base_vertex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_draw_indirect' => {
-    'binding_name' => 'GLEW_ARB_draw_indirect',
     'glewImpl' => 'GLEW_ARB_draw_indirect',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_draw_instanced' => {
-    'binding_name' => 'GLEW_ARB_draw_instanced',
     'glewImpl' => 'GLEW_ARB_draw_instanced',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_enhanced_layouts' => {
-    'binding_name' => 'GLEW_ARB_enhanced_layouts',
     'glewImpl' => 'GLEW_ARB_enhanced_layouts',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_explicit_attrib_location' => {
-    'binding_name' => 'GLEW_ARB_explicit_attrib_location',
     'glewImpl' => 'GLEW_ARB_explicit_attrib_location',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_explicit_uniform_location' => {
-    'binding_name' => 'GLEW_ARB_explicit_uniform_location',
     'glewImpl' => 'GLEW_ARB_explicit_uniform_location',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_coord_conventions' => {
-    'binding_name' => 'GLEW_ARB_fragment_coord_conventions',
     'glewImpl' => 'GLEW_ARB_fragment_coord_conventions',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_layer_viewport' => {
-    'binding_name' => 'GLEW_ARB_fragment_layer_viewport',
     'glewImpl' => 'GLEW_ARB_fragment_layer_viewport',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_program' => {
-    'binding_name' => 'GLEW_ARB_fragment_program',
     'glewImpl' => 'GLEW_ARB_fragment_program',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_program_shadow' => {
-    'binding_name' => 'GLEW_ARB_fragment_program_shadow',
     'glewImpl' => 'GLEW_ARB_fragment_program_shadow',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_shader' => {
-    'binding_name' => 'GLEW_ARB_fragment_shader',
     'glewImpl' => 'GLEW_ARB_fragment_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_fragment_shader_interlock' => {
-    'binding_name' => 'GLEW_ARB_fragment_shader_interlock',
     'glewImpl' => 'GLEW_ARB_fragment_shader_interlock',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_framebuffer_no_attachments' => {
-    'binding_name' => 'GLEW_ARB_framebuffer_no_attachments',
     'glewImpl' => 'GLEW_ARB_framebuffer_no_attachments',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_framebuffer_object' => {
-    'binding_name' => 'GLEW_ARB_framebuffer_object',
     'glewImpl' => 'GLEW_ARB_framebuffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_framebuffer_sRGB' => {
-    'binding_name' => 'GLEW_ARB_framebuffer_sRGB',
     'glewImpl' => 'GLEW_ARB_framebuffer_sRGB',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_geometry_shader4' => {
-    'binding_name' => 'GLEW_ARB_geometry_shader4',
     'glewImpl' => 'GLEW_ARB_geometry_shader4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_get_program_binary' => {
-    'binding_name' => 'GLEW_ARB_get_program_binary',
     'glewImpl' => 'GLEW_ARB_get_program_binary',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_get_texture_sub_image' => {
-    'binding_name' => 'GLEW_ARB_get_texture_sub_image',
     'glewImpl' => 'GLEW_ARB_get_texture_sub_image',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_gl_spirv' => {
-    'binding_name' => 'GLEW_ARB_gl_spirv',
     'glewImpl' => 'GLEW_ARB_gl_spirv',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_gpu_shader5' => {
-    'binding_name' => 'GLEW_ARB_gpu_shader5',
     'glewImpl' => 'GLEW_ARB_gpu_shader5',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_gpu_shader_fp64' => {
-    'binding_name' => 'GLEW_ARB_gpu_shader_fp64',
     'glewImpl' => 'GLEW_ARB_gpu_shader_fp64',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_gpu_shader_int64' => {
-    'binding_name' => 'GLEW_ARB_gpu_shader_int64',
     'glewImpl' => 'GLEW_ARB_gpu_shader_int64',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_half_float_pixel' => {
-    'binding_name' => 'GLEW_ARB_half_float_pixel',
     'glewImpl' => 'GLEW_ARB_half_float_pixel',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_half_float_vertex' => {
-    'binding_name' => 'GLEW_ARB_half_float_vertex',
     'glewImpl' => 'GLEW_ARB_half_float_vertex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_imaging' => {
-    'binding_name' => 'GLEW_ARB_imaging',
     'glewImpl' => 'GLEW_ARB_imaging',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_indirect_parameters' => {
-    'binding_name' => 'GLEW_ARB_indirect_parameters',
     'glewImpl' => 'GLEW_ARB_indirect_parameters',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_instanced_arrays' => {
-    'binding_name' => 'GLEW_ARB_instanced_arrays',
     'glewImpl' => 'GLEW_ARB_instanced_arrays',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_internalformat_query' => {
-    'binding_name' => 'GLEW_ARB_internalformat_query',
     'glewImpl' => 'GLEW_ARB_internalformat_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_internalformat_query2' => {
-    'binding_name' => 'GLEW_ARB_internalformat_query2',
     'glewImpl' => 'GLEW_ARB_internalformat_query2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_invalidate_subdata' => {
-    'binding_name' => 'GLEW_ARB_invalidate_subdata',
     'glewImpl' => 'GLEW_ARB_invalidate_subdata',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_map_buffer_alignment' => {
-    'binding_name' => 'GLEW_ARB_map_buffer_alignment',
     'glewImpl' => 'GLEW_ARB_map_buffer_alignment',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_map_buffer_range' => {
-    'binding_name' => 'GLEW_ARB_map_buffer_range',
     'glewImpl' => 'GLEW_ARB_map_buffer_range',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_matrix_palette' => {
-    'binding_name' => 'GLEW_ARB_matrix_palette',
     'glewImpl' => 'GLEW_ARB_matrix_palette',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_multi_bind' => {
-    'binding_name' => 'GLEW_ARB_multi_bind',
     'glewImpl' => 'GLEW_ARB_multi_bind',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_multi_draw_indirect' => {
-    'binding_name' => 'GLEW_ARB_multi_draw_indirect',
     'glewImpl' => 'GLEW_ARB_multi_draw_indirect',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_multisample' => {
-    'binding_name' => 'GLEW_ARB_multisample',
     'glewImpl' => 'GLEW_ARB_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_multitexture' => {
-    'binding_name' => 'GLEW_ARB_multitexture',
     'glewImpl' => 'GLEW_ARB_multitexture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_occlusion_query' => {
-    'binding_name' => 'GLEW_ARB_occlusion_query',
     'glewImpl' => 'GLEW_ARB_occlusion_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_occlusion_query2' => {
-    'binding_name' => 'GLEW_ARB_occlusion_query2',
     'glewImpl' => 'GLEW_ARB_occlusion_query2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_parallel_shader_compile' => {
-    'binding_name' => 'GLEW_ARB_parallel_shader_compile',
     'glewImpl' => 'GLEW_ARB_parallel_shader_compile',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_pipeline_statistics_query' => {
-    'binding_name' => 'GLEW_ARB_pipeline_statistics_query',
     'glewImpl' => 'GLEW_ARB_pipeline_statistics_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_pixel_buffer_object' => {
-    'binding_name' => 'GLEW_ARB_pixel_buffer_object',
     'glewImpl' => 'GLEW_ARB_pixel_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_point_parameters' => {
-    'binding_name' => 'GLEW_ARB_point_parameters',
     'glewImpl' => 'GLEW_ARB_point_parameters',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_point_sprite' => {
-    'binding_name' => 'GLEW_ARB_point_sprite',
     'glewImpl' => 'GLEW_ARB_point_sprite',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_polygon_offset_clamp' => {
-    'binding_name' => 'GLEW_ARB_polygon_offset_clamp',
     'glewImpl' => 'GLEW_ARB_polygon_offset_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_post_depth_coverage' => {
-    'binding_name' => 'GLEW_ARB_post_depth_coverage',
     'glewImpl' => 'GLEW_ARB_post_depth_coverage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_program_interface_query' => {
-    'binding_name' => 'GLEW_ARB_program_interface_query',
     'glewImpl' => 'GLEW_ARB_program_interface_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_provoking_vertex' => {
-    'binding_name' => 'GLEW_ARB_provoking_vertex',
     'glewImpl' => 'GLEW_ARB_provoking_vertex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_query_buffer_object' => {
-    'binding_name' => 'GLEW_ARB_query_buffer_object',
     'glewImpl' => 'GLEW_ARB_query_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_robust_buffer_access_behavior' => {
-    'binding_name' => 'GLEW_ARB_robust_buffer_access_behavior',
     'glewImpl' => 'GLEW_ARB_robust_buffer_access_behavior',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_robustness' => {
-    'binding_name' => 'GLEW_ARB_robustness',
     'glewImpl' => 'GLEW_ARB_robustness',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_robustness_application_isolation' => {
-    'binding_name' => 'GLEW_ARB_robustness_application_isolation',
     'glewImpl' => 'GLEW_ARB_robustness_application_isolation',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_robustness_share_group_isolation' => {
-    'binding_name' => 'GLEW_ARB_robustness_share_group_isolation',
     'glewImpl' => 'GLEW_ARB_robustness_share_group_isolation',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_sample_locations' => {
-    'binding_name' => 'GLEW_ARB_sample_locations',
     'glewImpl' => 'GLEW_ARB_sample_locations',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_sample_shading' => {
-    'binding_name' => 'GLEW_ARB_sample_shading',
     'glewImpl' => 'GLEW_ARB_sample_shading',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_sampler_objects' => {
-    'binding_name' => 'GLEW_ARB_sampler_objects',
     'glewImpl' => 'GLEW_ARB_sampler_objects',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_seamless_cube_map' => {
-    'binding_name' => 'GLEW_ARB_seamless_cube_map',
     'glewImpl' => 'GLEW_ARB_seamless_cube_map',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_seamless_cubemap_per_texture' => {
-    'binding_name' => 'GLEW_ARB_seamless_cubemap_per_texture',
     'glewImpl' => 'GLEW_ARB_seamless_cubemap_per_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_separate_shader_objects' => {
-    'binding_name' => 'GLEW_ARB_separate_shader_objects',
     'glewImpl' => 'GLEW_ARB_separate_shader_objects',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_atomic_counter_ops' => {
-    'binding_name' => 'GLEW_ARB_shader_atomic_counter_ops',
     'glewImpl' => 'GLEW_ARB_shader_atomic_counter_ops',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_atomic_counters' => {
-    'binding_name' => 'GLEW_ARB_shader_atomic_counters',
     'glewImpl' => 'GLEW_ARB_shader_atomic_counters',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_ballot' => {
-    'binding_name' => 'GLEW_ARB_shader_ballot',
     'glewImpl' => 'GLEW_ARB_shader_ballot',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_bit_encoding' => {
-    'binding_name' => 'GLEW_ARB_shader_bit_encoding',
     'glewImpl' => 'GLEW_ARB_shader_bit_encoding',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_clock' => {
-    'binding_name' => 'GLEW_ARB_shader_clock',
     'glewImpl' => 'GLEW_ARB_shader_clock',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_draw_parameters' => {
-    'binding_name' => 'GLEW_ARB_shader_draw_parameters',
     'glewImpl' => 'GLEW_ARB_shader_draw_parameters',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_group_vote' => {
-    'binding_name' => 'GLEW_ARB_shader_group_vote',
     'glewImpl' => 'GLEW_ARB_shader_group_vote',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_image_load_store' => {
-    'binding_name' => 'GLEW_ARB_shader_image_load_store',
     'glewImpl' => 'GLEW_ARB_shader_image_load_store',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_image_size' => {
-    'binding_name' => 'GLEW_ARB_shader_image_size',
     'glewImpl' => 'GLEW_ARB_shader_image_size',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_objects' => {
-    'binding_name' => 'GLEW_ARB_shader_objects',
     'glewImpl' => 'GLEW_ARB_shader_objects',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_precision' => {
-    'binding_name' => 'GLEW_ARB_shader_precision',
     'glewImpl' => 'GLEW_ARB_shader_precision',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_stencil_export' => {
-    'binding_name' => 'GLEW_ARB_shader_stencil_export',
     'glewImpl' => 'GLEW_ARB_shader_stencil_export',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_storage_buffer_object' => {
-    'binding_name' => 'GLEW_ARB_shader_storage_buffer_object',
     'glewImpl' => 'GLEW_ARB_shader_storage_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_subroutine' => {
-    'binding_name' => 'GLEW_ARB_shader_subroutine',
     'glewImpl' => 'GLEW_ARB_shader_subroutine',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_texture_image_samples' => {
-    'binding_name' => 'GLEW_ARB_shader_texture_image_samples',
     'glewImpl' => 'GLEW_ARB_shader_texture_image_samples',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_texture_lod' => {
-    'binding_name' => 'GLEW_ARB_shader_texture_lod',
     'glewImpl' => 'GLEW_ARB_shader_texture_lod',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shader_viewport_layer_array' => {
-    'binding_name' => 'GLEW_ARB_shader_viewport_layer_array',
     'glewImpl' => 'GLEW_ARB_shader_viewport_layer_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shading_language_100' => {
-    'binding_name' => 'GLEW_ARB_shading_language_100',
     'glewImpl' => 'GLEW_ARB_shading_language_100',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shading_language_420pack' => {
-    'binding_name' => 'GLEW_ARB_shading_language_420pack',
     'glewImpl' => 'GLEW_ARB_shading_language_420pack',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shading_language_include' => {
-    'binding_name' => 'GLEW_ARB_shading_language_include',
     'glewImpl' => 'GLEW_ARB_shading_language_include',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shading_language_packing' => {
-    'binding_name' => 'GLEW_ARB_shading_language_packing',
     'glewImpl' => 'GLEW_ARB_shading_language_packing',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shadow' => {
-    'binding_name' => 'GLEW_ARB_shadow',
     'glewImpl' => 'GLEW_ARB_shadow',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_shadow_ambient' => {
-    'binding_name' => 'GLEW_ARB_shadow_ambient',
     'glewImpl' => 'GLEW_ARB_shadow_ambient',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_sparse_buffer' => {
-    'binding_name' => 'GLEW_ARB_sparse_buffer',
     'glewImpl' => 'GLEW_ARB_sparse_buffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_sparse_texture' => {
-    'binding_name' => 'GLEW_ARB_sparse_texture',
     'glewImpl' => 'GLEW_ARB_sparse_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_sparse_texture2' => {
-    'binding_name' => 'GLEW_ARB_sparse_texture2',
     'glewImpl' => 'GLEW_ARB_sparse_texture2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_sparse_texture_clamp' => {
-    'binding_name' => 'GLEW_ARB_sparse_texture_clamp',
     'glewImpl' => 'GLEW_ARB_sparse_texture_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_spirv_extensions' => {
-    'binding_name' => 'GLEW_ARB_spirv_extensions',
     'glewImpl' => 'GLEW_ARB_spirv_extensions',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_stencil_texturing' => {
-    'binding_name' => 'GLEW_ARB_stencil_texturing',
     'glewImpl' => 'GLEW_ARB_stencil_texturing',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_sync' => {
-    'binding_name' => 'GLEW_ARB_sync',
     'glewImpl' => 'GLEW_ARB_sync',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_tessellation_shader' => {
-    'binding_name' => 'GLEW_ARB_tessellation_shader',
     'glewImpl' => 'GLEW_ARB_tessellation_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_barrier' => {
-    'binding_name' => 'GLEW_ARB_texture_barrier',
     'glewImpl' => 'GLEW_ARB_texture_barrier',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_border_clamp' => {
-    'binding_name' => 'GLEW_ARB_texture_border_clamp',
     'glewImpl' => 'GLEW_ARB_texture_border_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_buffer_object' => {
-    'binding_name' => 'GLEW_ARB_texture_buffer_object',
     'glewImpl' => 'GLEW_ARB_texture_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_buffer_object_rgb32' => {
-    'binding_name' => 'GLEW_ARB_texture_buffer_object_rgb32',
     'glewImpl' => 'GLEW_ARB_texture_buffer_object_rgb32',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_buffer_range' => {
-    'binding_name' => 'GLEW_ARB_texture_buffer_range',
     'glewImpl' => 'GLEW_ARB_texture_buffer_range',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_compression' => {
-    'binding_name' => 'GLEW_ARB_texture_compression',
     'glewImpl' => 'GLEW_ARB_texture_compression',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_compression_bptc' => {
-    'binding_name' => 'GLEW_ARB_texture_compression_bptc',
     'glewImpl' => 'GLEW_ARB_texture_compression_bptc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_compression_rgtc' => {
-    'binding_name' => 'GLEW_ARB_texture_compression_rgtc',
     'glewImpl' => 'GLEW_ARB_texture_compression_rgtc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_cube_map' => {
-    'binding_name' => 'GLEW_ARB_texture_cube_map',
     'glewImpl' => 'GLEW_ARB_texture_cube_map',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_cube_map_array' => {
-    'binding_name' => 'GLEW_ARB_texture_cube_map_array',
     'glewImpl' => 'GLEW_ARB_texture_cube_map_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_env_add' => {
-    'binding_name' => 'GLEW_ARB_texture_env_add',
     'glewImpl' => 'GLEW_ARB_texture_env_add',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_env_combine' => {
-    'binding_name' => 'GLEW_ARB_texture_env_combine',
     'glewImpl' => 'GLEW_ARB_texture_env_combine',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_env_crossbar' => {
-    'binding_name' => 'GLEW_ARB_texture_env_crossbar',
     'glewImpl' => 'GLEW_ARB_texture_env_crossbar',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_env_dot3' => {
-    'binding_name' => 'GLEW_ARB_texture_env_dot3',
     'glewImpl' => 'GLEW_ARB_texture_env_dot3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_filter_anisotropic' => {
-    'binding_name' => 'GLEW_ARB_texture_filter_anisotropic',
     'glewImpl' => 'GLEW_ARB_texture_filter_anisotropic',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_filter_minmax' => {
-    'binding_name' => 'GLEW_ARB_texture_filter_minmax',
     'glewImpl' => 'GLEW_ARB_texture_filter_minmax',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_float' => {
-    'binding_name' => 'GLEW_ARB_texture_float',
     'glewImpl' => 'GLEW_ARB_texture_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_gather' => {
-    'binding_name' => 'GLEW_ARB_texture_gather',
     'glewImpl' => 'GLEW_ARB_texture_gather',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_mirror_clamp_to_edge' => {
-    'binding_name' => 'GLEW_ARB_texture_mirror_clamp_to_edge',
     'glewImpl' => 'GLEW_ARB_texture_mirror_clamp_to_edge',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_mirrored_repeat' => {
-    'binding_name' => 'GLEW_ARB_texture_mirrored_repeat',
     'glewImpl' => 'GLEW_ARB_texture_mirrored_repeat',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_multisample' => {
-    'binding_name' => 'GLEW_ARB_texture_multisample',
     'glewImpl' => 'GLEW_ARB_texture_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_non_power_of_two' => {
-    'binding_name' => 'GLEW_ARB_texture_non_power_of_two',
     'glewImpl' => 'GLEW_ARB_texture_non_power_of_two',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_query_levels' => {
-    'binding_name' => 'GLEW_ARB_texture_query_levels',
     'glewImpl' => 'GLEW_ARB_texture_query_levels',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_query_lod' => {
-    'binding_name' => 'GLEW_ARB_texture_query_lod',
     'glewImpl' => 'GLEW_ARB_texture_query_lod',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_rectangle' => {
-    'binding_name' => 'GLEW_ARB_texture_rectangle',
     'glewImpl' => 'GLEW_ARB_texture_rectangle',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_rg' => {
-    'binding_name' => 'GLEW_ARB_texture_rg',
     'glewImpl' => 'GLEW_ARB_texture_rg',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_rgb10_a2ui' => {
-    'binding_name' => 'GLEW_ARB_texture_rgb10_a2ui',
     'glewImpl' => 'GLEW_ARB_texture_rgb10_a2ui',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_stencil8' => {
-    'binding_name' => 'GLEW_ARB_texture_stencil8',
     'glewImpl' => 'GLEW_ARB_texture_stencil8',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_storage' => {
-    'binding_name' => 'GLEW_ARB_texture_storage',
     'glewImpl' => 'GLEW_ARB_texture_storage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_storage_multisample' => {
-    'binding_name' => 'GLEW_ARB_texture_storage_multisample',
     'glewImpl' => 'GLEW_ARB_texture_storage_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_swizzle' => {
-    'binding_name' => 'GLEW_ARB_texture_swizzle',
     'glewImpl' => 'GLEW_ARB_texture_swizzle',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_texture_view' => {
-    'binding_name' => 'GLEW_ARB_texture_view',
     'glewImpl' => 'GLEW_ARB_texture_view',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_timer_query' => {
-    'binding_name' => 'GLEW_ARB_timer_query',
     'glewImpl' => 'GLEW_ARB_timer_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_transform_feedback2' => {
-    'binding_name' => 'GLEW_ARB_transform_feedback2',
     'glewImpl' => 'GLEW_ARB_transform_feedback2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_transform_feedback3' => {
-    'binding_name' => 'GLEW_ARB_transform_feedback3',
     'glewImpl' => 'GLEW_ARB_transform_feedback3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_transform_feedback_instanced' => {
-    'binding_name' => 'GLEW_ARB_transform_feedback_instanced',
     'glewImpl' => 'GLEW_ARB_transform_feedback_instanced',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_transform_feedback_overflow_query' => {
-    'binding_name' => 'GLEW_ARB_transform_feedback_overflow_query',
     'glewImpl' => 'GLEW_ARB_transform_feedback_overflow_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_transpose_matrix' => {
-    'binding_name' => 'GLEW_ARB_transpose_matrix',
     'glewImpl' => 'GLEW_ARB_transpose_matrix',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_uniform_buffer_object' => {
-    'binding_name' => 'GLEW_ARB_uniform_buffer_object',
     'glewImpl' => 'GLEW_ARB_uniform_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_array_bgra' => {
-    'binding_name' => 'GLEW_ARB_vertex_array_bgra',
     'glewImpl' => 'GLEW_ARB_vertex_array_bgra',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_array_object' => {
-    'binding_name' => 'GLEW_ARB_vertex_array_object',
     'glewImpl' => 'GLEW_ARB_vertex_array_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_attrib_64bit' => {
-    'binding_name' => 'GLEW_ARB_vertex_attrib_64bit',
     'glewImpl' => 'GLEW_ARB_vertex_attrib_64bit',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_attrib_binding' => {
-    'binding_name' => 'GLEW_ARB_vertex_attrib_binding',
     'glewImpl' => 'GLEW_ARB_vertex_attrib_binding',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_blend' => {
-    'binding_name' => 'GLEW_ARB_vertex_blend',
     'glewImpl' => 'GLEW_ARB_vertex_blend',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_buffer_object' => {
-    'binding_name' => 'GLEW_ARB_vertex_buffer_object',
     'glewImpl' => 'GLEW_ARB_vertex_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_program' => {
-    'binding_name' => 'GLEW_ARB_vertex_program',
     'glewImpl' => 'GLEW_ARB_vertex_program',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_shader' => {
-    'binding_name' => 'GLEW_ARB_vertex_shader',
     'glewImpl' => 'GLEW_ARB_vertex_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_type_10f_11f_11f_rev' => {
-    'binding_name' => 'GLEW_ARB_vertex_type_10f_11f_11f_rev',
     'glewImpl' => 'GLEW_ARB_vertex_type_10f_11f_11f_rev',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_vertex_type_2_10_10_10_rev' => {
-    'binding_name' => 'GLEW_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => 'GLEW_ARB_vertex_type_2_10_10_10_rev',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_viewport_array' => {
-    'binding_name' => 'GLEW_ARB_viewport_array',
     'glewImpl' => 'GLEW_ARB_viewport_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARB_window_pos' => {
-    'binding_name' => 'GLEW_ARB_window_pos',
     'glewImpl' => 'GLEW_ARB_window_pos',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARM_mali_program_binary' => {
-    'binding_name' => 'GLEW_ARM_mali_program_binary',
     'glewImpl' => 'GLEW_ARM_mali_program_binary',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARM_mali_shader_binary' => {
-    'binding_name' => 'GLEW_ARM_mali_shader_binary',
     'glewImpl' => 'GLEW_ARM_mali_shader_binary',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARM_rgba8' => {
-    'binding_name' => 'GLEW_ARM_rgba8',
     'glewImpl' => 'GLEW_ARM_rgba8',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARM_shader_framebuffer_fetch' => {
-    'binding_name' => 'GLEW_ARM_shader_framebuffer_fetch',
     'glewImpl' => 'GLEW_ARM_shader_framebuffer_fetch',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ARM_shader_framebuffer_fetch_depth_stencil' => {
-    'binding_name' => 'GLEW_ARM_shader_framebuffer_fetch_depth_stencil',
     'glewImpl' => 'GLEW_ARM_shader_framebuffer_fetch_depth_stencil',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATIX_point_sprites' => {
-    'binding_name' => 'GLEW_ATIX_point_sprites',
     'glewImpl' => 'GLEW_ATIX_point_sprites',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATIX_texture_env_combine3' => {
-    'binding_name' => 'GLEW_ATIX_texture_env_combine3',
     'glewImpl' => 'GLEW_ATIX_texture_env_combine3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATIX_texture_env_route' => {
-    'binding_name' => 'GLEW_ATIX_texture_env_route',
     'glewImpl' => 'GLEW_ATIX_texture_env_route',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATIX_vertex_shader_output_point_size' => {
-    'binding_name' => 'GLEW_ATIX_vertex_shader_output_point_size',
     'glewImpl' => 'GLEW_ATIX_vertex_shader_output_point_size',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_draw_buffers' => {
-    'binding_name' => 'GLEW_ATI_draw_buffers',
     'glewImpl' => 'GLEW_ATI_draw_buffers',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_element_array' => {
-    'binding_name' => 'GLEW_ATI_element_array',
     'glewImpl' => 'GLEW_ATI_element_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_envmap_bumpmap' => {
-    'binding_name' => 'GLEW_ATI_envmap_bumpmap',
     'glewImpl' => 'GLEW_ATI_envmap_bumpmap',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_fragment_shader' => {
-    'binding_name' => 'GLEW_ATI_fragment_shader',
     'glewImpl' => 'GLEW_ATI_fragment_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_map_object_buffer' => {
-    'binding_name' => 'GLEW_ATI_map_object_buffer',
     'glewImpl' => 'GLEW_ATI_map_object_buffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_meminfo' => {
-    'binding_name' => 'GLEW_ATI_meminfo',
     'glewImpl' => 'GLEW_ATI_meminfo',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_pn_triangles' => {
-    'binding_name' => 'GLEW_ATI_pn_triangles',
     'glewImpl' => 'GLEW_ATI_pn_triangles',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_separate_stencil' => {
-    'binding_name' => 'GLEW_ATI_separate_stencil',
     'glewImpl' => 'GLEW_ATI_separate_stencil',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_shader_texture_lod' => {
-    'binding_name' => 'GLEW_ATI_shader_texture_lod',
     'glewImpl' => 'GLEW_ATI_shader_texture_lod',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_text_fragment_shader' => {
-    'binding_name' => 'GLEW_ATI_text_fragment_shader',
     'glewImpl' => 'GLEW_ATI_text_fragment_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_texture_compression_3dc' => {
-    'binding_name' => 'GLEW_ATI_texture_compression_3dc',
     'glewImpl' => 'GLEW_ATI_texture_compression_3dc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_texture_env_combine3' => {
-    'binding_name' => 'GLEW_ATI_texture_env_combine3',
     'glewImpl' => 'GLEW_ATI_texture_env_combine3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_texture_float' => {
-    'binding_name' => 'GLEW_ATI_texture_float',
     'glewImpl' => 'GLEW_ATI_texture_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_texture_mirror_once' => {
-    'binding_name' => 'GLEW_ATI_texture_mirror_once',
     'glewImpl' => 'GLEW_ATI_texture_mirror_once',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_vertex_array_object' => {
-    'binding_name' => 'GLEW_ATI_vertex_array_object',
     'glewImpl' => 'GLEW_ATI_vertex_array_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_vertex_attrib_array_object' => {
-    'binding_name' => 'GLEW_ATI_vertex_attrib_array_object',
     'glewImpl' => 'GLEW_ATI_vertex_attrib_array_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_ATI_vertex_streams' => {
-    'binding_name' => 'GLEW_ATI_vertex_streams',
     'glewImpl' => 'GLEW_ATI_vertex_streams',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EGL_KHR_context_flush_control' => {
-    'binding_name' => 'GLEW_EGL_KHR_context_flush_control',
     'glewImpl' => 'GLEW_EGL_KHR_context_flush_control',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EGL_NV_robustness_video_memory_purge' => {
-    'binding_name' => 'GLEW_EGL_NV_robustness_video_memory_purge',
     'glewImpl' => 'GLEW_EGL_NV_robustness_video_memory_purge',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_422_pixels' => {
-    'binding_name' => 'GLEW_EXT_422_pixels',
     'glewImpl' => 'GLEW_EXT_422_pixels',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_Cg_shader' => {
-    'binding_name' => 'GLEW_EXT_Cg_shader',
     'glewImpl' => 'GLEW_EXT_Cg_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_EGL_image_array' => {
-    'binding_name' => 'GLEW_EXT_EGL_image_array',
     'glewImpl' => 'GLEW_EXT_EGL_image_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_YUV_target' => {
-    'binding_name' => 'GLEW_EXT_YUV_target',
     'glewImpl' => 'GLEW_EXT_YUV_target',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_abgr' => {
-    'binding_name' => 'GLEW_EXT_abgr',
     'glewImpl' => 'GLEW_EXT_abgr',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_base_instance' => {
-    'binding_name' => 'GLEW_EXT_base_instance',
     'glewImpl' => 'GLEW_EXT_base_instance',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_bgra' => {
-    'binding_name' => 'GLEW_EXT_bgra',
     'glewImpl' => 'GLEW_EXT_bgra',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_bindable_uniform' => {
-    'binding_name' => 'GLEW_EXT_bindable_uniform',
     'glewImpl' => 'GLEW_EXT_bindable_uniform',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_blend_color' => {
-    'binding_name' => 'GLEW_EXT_blend_color',
     'glewImpl' => 'GLEW_EXT_blend_color',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_blend_equation_separate' => {
-    'binding_name' => 'GLEW_EXT_blend_equation_separate',
     'glewImpl' => 'GLEW_EXT_blend_equation_separate',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_blend_func_extended' => {
-    'binding_name' => 'GLEW_EXT_blend_func_extended',
     'glewImpl' => 'GLEW_EXT_blend_func_extended',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_blend_func_separate' => {
-    'binding_name' => 'GLEW_EXT_blend_func_separate',
     'glewImpl' => 'GLEW_EXT_blend_func_separate',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_blend_logic_op' => {
-    'binding_name' => 'GLEW_EXT_blend_logic_op',
     'glewImpl' => 'GLEW_EXT_blend_logic_op',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_blend_minmax' => {
-    'binding_name' => 'GLEW_EXT_blend_minmax',
     'glewImpl' => 'GLEW_EXT_blend_minmax',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_blend_subtract' => {
-    'binding_name' => 'GLEW_EXT_blend_subtract',
     'glewImpl' => 'GLEW_EXT_blend_subtract',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_buffer_storage' => {
-    'binding_name' => 'GLEW_EXT_buffer_storage',
     'glewImpl' => 'GLEW_EXT_buffer_storage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_clear_texture' => {
-    'binding_name' => 'GLEW_EXT_clear_texture',
     'glewImpl' => 'GLEW_EXT_clear_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_clip_cull_distance' => {
-    'binding_name' => 'GLEW_EXT_clip_cull_distance',
     'glewImpl' => 'GLEW_EXT_clip_cull_distance',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_clip_volume_hint' => {
-    'binding_name' => 'GLEW_EXT_clip_volume_hint',
     'glewImpl' => 'GLEW_EXT_clip_volume_hint',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_cmyka' => {
-    'binding_name' => 'GLEW_EXT_cmyka',
     'glewImpl' => 'GLEW_EXT_cmyka',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_color_buffer_float' => {
-    'binding_name' => 'GLEW_EXT_color_buffer_float',
     'glewImpl' => 'GLEW_EXT_color_buffer_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_color_buffer_half_float' => {
-    'binding_name' => 'GLEW_EXT_color_buffer_half_float',
     'glewImpl' => 'GLEW_EXT_color_buffer_half_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_color_subtable' => {
-    'binding_name' => 'GLEW_EXT_color_subtable',
     'glewImpl' => 'GLEW_EXT_color_subtable',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_compiled_vertex_array' => {
-    'binding_name' => 'GLEW_EXT_compiled_vertex_array',
     'glewImpl' => 'GLEW_EXT_compiled_vertex_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_compressed_ETC1_RGB8_sub_texture' => {
-    'binding_name' => 'GLEW_EXT_compressed_ETC1_RGB8_sub_texture',
     'glewImpl' => 'GLEW_EXT_compressed_ETC1_RGB8_sub_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_conservative_depth' => {
-    'binding_name' => 'GLEW_EXT_conservative_depth',
     'glewImpl' => 'GLEW_EXT_conservative_depth',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_convolution' => {
-    'binding_name' => 'GLEW_EXT_convolution',
     'glewImpl' => 'GLEW_EXT_convolution',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_coordinate_frame' => {
-    'binding_name' => 'GLEW_EXT_coordinate_frame',
     'glewImpl' => 'GLEW_EXT_coordinate_frame',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_copy_image' => {
-    'binding_name' => 'GLEW_EXT_copy_image',
     'glewImpl' => 'GLEW_EXT_copy_image',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_copy_texture' => {
-    'binding_name' => 'GLEW_EXT_copy_texture',
     'glewImpl' => 'GLEW_EXT_copy_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_cull_vertex' => {
-    'binding_name' => 'GLEW_EXT_cull_vertex',
     'glewImpl' => 'GLEW_EXT_cull_vertex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_debug_label' => {
-    'binding_name' => 'GLEW_EXT_debug_label',
     'glewImpl' => 'GLEW_EXT_debug_label',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_debug_marker' => {
-    'binding_name' => 'GLEW_EXT_debug_marker',
     'glewImpl' => 'GLEW_EXT_debug_marker',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_depth_bounds_test' => {
-    'binding_name' => 'GLEW_EXT_depth_bounds_test',
     'glewImpl' => 'GLEW_EXT_depth_bounds_test',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_direct_state_access' => {
-    'binding_name' => 'GLEW_EXT_direct_state_access',
     'glewImpl' => 'GLEW_EXT_direct_state_access',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_discard_framebuffer' => {
-    'binding_name' => 'GLEW_EXT_discard_framebuffer',
     'glewImpl' => 'GLEW_EXT_discard_framebuffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_draw_buffers' => {
-    'binding_name' => 'GLEW_EXT_draw_buffers',
     'glewImpl' => 'GLEW_EXT_draw_buffers',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_draw_buffers2' => {
-    'binding_name' => 'GLEW_EXT_draw_buffers2',
     'glewImpl' => 'GLEW_EXT_draw_buffers2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_draw_buffers_indexed' => {
-    'binding_name' => 'GLEW_EXT_draw_buffers_indexed',
     'glewImpl' => 'GLEW_EXT_draw_buffers_indexed',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_draw_elements_base_vertex' => {
-    'binding_name' => 'GLEW_EXT_draw_elements_base_vertex',
     'glewImpl' => 'GLEW_EXT_draw_elements_base_vertex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_draw_instanced' => {
-    'binding_name' => 'GLEW_EXT_draw_instanced',
     'glewImpl' => 'GLEW_EXT_draw_instanced',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_draw_range_elements' => {
-    'binding_name' => 'GLEW_EXT_draw_range_elements',
     'glewImpl' => 'GLEW_EXT_draw_range_elements',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_external_buffer' => {
-    'binding_name' => 'GLEW_EXT_external_buffer',
     'glewImpl' => 'GLEW_EXT_external_buffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_float_blend' => {
-    'binding_name' => 'GLEW_EXT_float_blend',
     'glewImpl' => 'GLEW_EXT_float_blend',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_fog_coord' => {
-    'binding_name' => 'GLEW_EXT_fog_coord',
     'glewImpl' => 'GLEW_EXT_fog_coord',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_frag_depth' => {
-    'binding_name' => 'GLEW_EXT_frag_depth',
     'glewImpl' => 'GLEW_EXT_frag_depth',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_fragment_lighting' => {
-    'binding_name' => 'GLEW_EXT_fragment_lighting',
     'glewImpl' => 'GLEW_EXT_fragment_lighting',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_framebuffer_blit' => {
-    'binding_name' => 'GLEW_EXT_framebuffer_blit',
     'glewImpl' => 'GLEW_EXT_framebuffer_blit',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_framebuffer_multisample' => {
-    'binding_name' => 'GLEW_EXT_framebuffer_multisample',
     'glewImpl' => 'GLEW_EXT_framebuffer_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_framebuffer_multisample_blit_scaled' => {
-    'binding_name' => 'GLEW_EXT_framebuffer_multisample_blit_scaled',
     'glewImpl' => 'GLEW_EXT_framebuffer_multisample_blit_scaled',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_framebuffer_object' => {
-    'binding_name' => 'GLEW_EXT_framebuffer_object',
     'glewImpl' => 'GLEW_EXT_framebuffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_framebuffer_sRGB' => {
-    'binding_name' => 'GLEW_EXT_framebuffer_sRGB',
     'glewImpl' => 'GLEW_EXT_framebuffer_sRGB',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_geometry_point_size' => {
-    'binding_name' => 'GLEW_EXT_geometry_point_size',
     'glewImpl' => 'GLEW_EXT_geometry_point_size',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_geometry_shader' => {
-    'binding_name' => 'GLEW_EXT_geometry_shader',
     'glewImpl' => 'GLEW_EXT_geometry_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_geometry_shader4' => {
-    'binding_name' => 'GLEW_EXT_geometry_shader4',
     'glewImpl' => 'GLEW_EXT_geometry_shader4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_gpu_program_parameters' => {
-    'binding_name' => 'GLEW_EXT_gpu_program_parameters',
     'glewImpl' => 'GLEW_EXT_gpu_program_parameters',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_gpu_shader4' => {
-    'binding_name' => 'GLEW_EXT_gpu_shader4',
     'glewImpl' => 'GLEW_EXT_gpu_shader4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_gpu_shader5' => {
-    'binding_name' => 'GLEW_EXT_gpu_shader5',
     'glewImpl' => 'GLEW_EXT_gpu_shader5',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_histogram' => {
-    'binding_name' => 'GLEW_EXT_histogram',
     'glewImpl' => 'GLEW_EXT_histogram',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_index_array_formats' => {
-    'binding_name' => 'GLEW_EXT_index_array_formats',
     'glewImpl' => 'GLEW_EXT_index_array_formats',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_index_func' => {
-    'binding_name' => 'GLEW_EXT_index_func',
     'glewImpl' => 'GLEW_EXT_index_func',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_index_material' => {
-    'binding_name' => 'GLEW_EXT_index_material',
     'glewImpl' => 'GLEW_EXT_index_material',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_index_texture' => {
-    'binding_name' => 'GLEW_EXT_index_texture',
     'glewImpl' => 'GLEW_EXT_index_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_instanced_arrays' => {
-    'binding_name' => 'GLEW_EXT_instanced_arrays',
     'glewImpl' => 'GLEW_EXT_instanced_arrays',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_light_texture' => {
-    'binding_name' => 'GLEW_EXT_light_texture',
     'glewImpl' => 'GLEW_EXT_light_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_map_buffer_range' => {
-    'binding_name' => 'GLEW_EXT_map_buffer_range',
     'glewImpl' => 'GLEW_EXT_map_buffer_range',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_memory_object' => {
-    'binding_name' => 'GLEW_EXT_memory_object',
     'glewImpl' => 'GLEW_EXT_memory_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_memory_object_fd' => {
-    'binding_name' => 'GLEW_EXT_memory_object_fd',
     'glewImpl' => 'GLEW_EXT_memory_object_fd',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_memory_object_win32' => {
-    'binding_name' => 'GLEW_EXT_memory_object_win32',
     'glewImpl' => 'GLEW_EXT_memory_object_win32',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_misc_attribute' => {
-    'binding_name' => 'GLEW_EXT_misc_attribute',
     'glewImpl' => 'GLEW_EXT_misc_attribute',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_multi_draw_arrays' => {
-    'binding_name' => 'GLEW_EXT_multi_draw_arrays',
     'glewImpl' => 'GLEW_EXT_multi_draw_arrays',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_multi_draw_indirect' => {
-    'binding_name' => 'GLEW_EXT_multi_draw_indirect',
     'glewImpl' => 'GLEW_EXT_multi_draw_indirect',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_multiple_textures' => {
-    'binding_name' => 'GLEW_EXT_multiple_textures',
     'glewImpl' => 'GLEW_EXT_multiple_textures',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_multisample' => {
-    'binding_name' => 'GLEW_EXT_multisample',
     'glewImpl' => 'GLEW_EXT_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_multisample_compatibility' => {
-    'binding_name' => 'GLEW_EXT_multisample_compatibility',
     'glewImpl' => 'GLEW_EXT_multisample_compatibility',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_multisampled_render_to_texture' => {
-    'binding_name' => 'GLEW_EXT_multisampled_render_to_texture',
     'glewImpl' => 'GLEW_EXT_multisampled_render_to_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_multisampled_render_to_texture2' => {
-    'binding_name' => 'GLEW_EXT_multisampled_render_to_texture2',
     'glewImpl' => 'GLEW_EXT_multisampled_render_to_texture2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_multiview_draw_buffers' => {
-    'binding_name' => 'GLEW_EXT_multiview_draw_buffers',
     'glewImpl' => 'GLEW_EXT_multiview_draw_buffers',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_packed_depth_stencil' => {
-    'binding_name' => 'GLEW_EXT_packed_depth_stencil',
     'glewImpl' => 'GLEW_EXT_packed_depth_stencil',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_packed_float' => {
-    'binding_name' => 'GLEW_EXT_packed_float',
     'glewImpl' => 'GLEW_EXT_packed_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_packed_pixels' => {
-    'binding_name' => 'GLEW_EXT_packed_pixels',
     'glewImpl' => 'GLEW_EXT_packed_pixels',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_paletted_texture' => {
-    'binding_name' => 'GLEW_EXT_paletted_texture',
     'glewImpl' => 'GLEW_EXT_paletted_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_pixel_buffer_object' => {
-    'binding_name' => 'GLEW_EXT_pixel_buffer_object',
     'glewImpl' => 'GLEW_EXT_pixel_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_pixel_transform' => {
-    'binding_name' => 'GLEW_EXT_pixel_transform',
     'glewImpl' => 'GLEW_EXT_pixel_transform',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_pixel_transform_color_table' => {
-    'binding_name' => 'GLEW_EXT_pixel_transform_color_table',
     'glewImpl' => 'GLEW_EXT_pixel_transform_color_table',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_point_parameters' => {
-    'binding_name' => 'GLEW_EXT_point_parameters',
     'glewImpl' => 'GLEW_EXT_point_parameters',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_polygon_offset' => {
-    'binding_name' => 'GLEW_EXT_polygon_offset',
     'glewImpl' => 'GLEW_EXT_polygon_offset',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_polygon_offset_clamp' => {
-    'binding_name' => 'GLEW_EXT_polygon_offset_clamp',
     'glewImpl' => 'GLEW_EXT_polygon_offset_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_post_depth_coverage' => {
-    'binding_name' => 'GLEW_EXT_post_depth_coverage',
     'glewImpl' => 'GLEW_EXT_post_depth_coverage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_provoking_vertex' => {
-    'binding_name' => 'GLEW_EXT_provoking_vertex',
     'glewImpl' => 'GLEW_EXT_provoking_vertex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_pvrtc_sRGB' => {
-    'binding_name' => 'GLEW_EXT_pvrtc_sRGB',
     'glewImpl' => 'GLEW_EXT_pvrtc_sRGB',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_raster_multisample' => {
-    'binding_name' => 'GLEW_EXT_raster_multisample',
     'glewImpl' => 'GLEW_EXT_raster_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_read_format_bgra' => {
-    'binding_name' => 'GLEW_EXT_read_format_bgra',
     'glewImpl' => 'GLEW_EXT_read_format_bgra',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_render_snorm' => {
-    'binding_name' => 'GLEW_EXT_render_snorm',
     'glewImpl' => 'GLEW_EXT_render_snorm',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_rescale_normal' => {
-    'binding_name' => 'GLEW_EXT_rescale_normal',
     'glewImpl' => 'GLEW_EXT_rescale_normal',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_sRGB' => {
-    'binding_name' => 'GLEW_EXT_sRGB',
     'glewImpl' => 'GLEW_EXT_sRGB',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_sRGB_write_control' => {
-    'binding_name' => 'GLEW_EXT_sRGB_write_control',
     'glewImpl' => 'GLEW_EXT_sRGB_write_control',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_scene_marker' => {
-    'binding_name' => 'GLEW_EXT_scene_marker',
     'glewImpl' => 'GLEW_EXT_scene_marker',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_secondary_color' => {
-    'binding_name' => 'GLEW_EXT_secondary_color',
     'glewImpl' => 'GLEW_EXT_secondary_color',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_semaphore' => {
-    'binding_name' => 'GLEW_EXT_semaphore',
     'glewImpl' => 'GLEW_EXT_semaphore',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_semaphore_fd' => {
-    'binding_name' => 'GLEW_EXT_semaphore_fd',
     'glewImpl' => 'GLEW_EXT_semaphore_fd',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_semaphore_win32' => {
-    'binding_name' => 'GLEW_EXT_semaphore_win32',
     'glewImpl' => 'GLEW_EXT_semaphore_win32',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_separate_shader_objects' => {
-    'binding_name' => 'GLEW_EXT_separate_shader_objects',
     'glewImpl' => 'GLEW_EXT_separate_shader_objects',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_separate_specular_color' => {
-    'binding_name' => 'GLEW_EXT_separate_specular_color',
     'glewImpl' => 'GLEW_EXT_separate_specular_color',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_framebuffer_fetch' => {
-    'binding_name' => 'GLEW_EXT_shader_framebuffer_fetch',
     'glewImpl' => 'GLEW_EXT_shader_framebuffer_fetch',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_group_vote' => {
-    'binding_name' => 'GLEW_EXT_shader_group_vote',
     'glewImpl' => 'GLEW_EXT_shader_group_vote',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_image_load_formatted' => {
-    'binding_name' => 'GLEW_EXT_shader_image_load_formatted',
     'glewImpl' => 'GLEW_EXT_shader_image_load_formatted',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_image_load_store' => {
-    'binding_name' => 'GLEW_EXT_shader_image_load_store',
     'glewImpl' => 'GLEW_EXT_shader_image_load_store',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_implicit_conversions' => {
-    'binding_name' => 'GLEW_EXT_shader_implicit_conversions',
     'glewImpl' => 'GLEW_EXT_shader_implicit_conversions',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_integer_mix' => {
-    'binding_name' => 'GLEW_EXT_shader_integer_mix',
     'glewImpl' => 'GLEW_EXT_shader_integer_mix',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_io_blocks' => {
-    'binding_name' => 'GLEW_EXT_shader_io_blocks',
     'glewImpl' => 'GLEW_EXT_shader_io_blocks',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_non_constant_global_initializers' => {
-    'binding_name' => 'GLEW_EXT_shader_non_constant_global_initializers',
     'glewImpl' => 'GLEW_EXT_shader_non_constant_global_initializers',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_pixel_local_storage' => {
-    'binding_name' => 'GLEW_EXT_shader_pixel_local_storage',
     'glewImpl' => 'GLEW_EXT_shader_pixel_local_storage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_pixel_local_storage2' => {
-    'binding_name' => 'GLEW_EXT_shader_pixel_local_storage2',
     'glewImpl' => 'GLEW_EXT_shader_pixel_local_storage2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shader_texture_lod' => {
-    'binding_name' => 'GLEW_EXT_shader_texture_lod',
     'glewImpl' => 'GLEW_EXT_shader_texture_lod',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shadow_funcs' => {
-    'binding_name' => 'GLEW_EXT_shadow_funcs',
     'glewImpl' => 'GLEW_EXT_shadow_funcs',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shadow_samplers' => {
-    'binding_name' => 'GLEW_EXT_shadow_samplers',
     'glewImpl' => 'GLEW_EXT_shadow_samplers',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_shared_texture_palette' => {
-    'binding_name' => 'GLEW_EXT_shared_texture_palette',
     'glewImpl' => 'GLEW_EXT_shared_texture_palette',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_sparse_texture' => {
-    'binding_name' => 'GLEW_EXT_sparse_texture',
     'glewImpl' => 'GLEW_EXT_sparse_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_sparse_texture2' => {
-    'binding_name' => 'GLEW_EXT_sparse_texture2',
     'glewImpl' => 'GLEW_EXT_sparse_texture2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_stencil_clear_tag' => {
-    'binding_name' => 'GLEW_EXT_stencil_clear_tag',
     'glewImpl' => 'GLEW_EXT_stencil_clear_tag',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_stencil_two_side' => {
-    'binding_name' => 'GLEW_EXT_stencil_two_side',
     'glewImpl' => 'GLEW_EXT_stencil_two_side',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_stencil_wrap' => {
-    'binding_name' => 'GLEW_EXT_stencil_wrap',
     'glewImpl' => 'GLEW_EXT_stencil_wrap',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_subtexture' => {
-    'binding_name' => 'GLEW_EXT_subtexture',
     'glewImpl' => 'GLEW_EXT_subtexture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture' => {
-    'binding_name' => 'GLEW_EXT_texture',
     'glewImpl' => 'GLEW_EXT_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture3D' => {
-    'binding_name' => 'GLEW_EXT_texture3D',
     'glewImpl' => 'GLEW_EXT_texture3D',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_array' => {
-    'binding_name' => 'GLEW_EXT_texture_array',
     'glewImpl' => 'GLEW_EXT_texture_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_buffer_object' => {
-    'binding_name' => 'GLEW_EXT_texture_buffer_object',
     'glewImpl' => 'GLEW_EXT_texture_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_astc_decode_mode' => {
-    'binding_name' => 'GLEW_EXT_texture_compression_astc_decode_mode',
     'glewImpl' => 'GLEW_EXT_texture_compression_astc_decode_mode',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_astc_decode_mode_rgb9e5' => {
-    'binding_name' => 'GLEW_EXT_texture_compression_astc_decode_mode_rgb9e5',
     'glewImpl' => 'GLEW_EXT_texture_compression_astc_decode_mode_rgb9e5',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_bptc' => {
-    'binding_name' => 'GLEW_EXT_texture_compression_bptc',
     'glewImpl' => 'GLEW_EXT_texture_compression_bptc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_dxt1' => {
-    'binding_name' => 'GLEW_EXT_texture_compression_dxt1',
     'glewImpl' => 'GLEW_EXT_texture_compression_dxt1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_latc' => {
-    'binding_name' => 'GLEW_EXT_texture_compression_latc',
     'glewImpl' => 'GLEW_EXT_texture_compression_latc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_rgtc' => {
-    'binding_name' => 'GLEW_EXT_texture_compression_rgtc',
     'glewImpl' => 'GLEW_EXT_texture_compression_rgtc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_compression_s3tc' => {
-    'binding_name' => 'GLEW_EXT_texture_compression_s3tc',
     'glewImpl' => 'GLEW_EXT_texture_compression_s3tc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_cube_map' => {
-    'binding_name' => 'GLEW_EXT_texture_cube_map',
     'glewImpl' => 'GLEW_EXT_texture_cube_map',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_cube_map_array' => {
-    'binding_name' => 'GLEW_EXT_texture_cube_map_array',
     'glewImpl' => 'GLEW_EXT_texture_cube_map_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_edge_clamp' => {
-    'binding_name' => 'GLEW_EXT_texture_edge_clamp',
     'glewImpl' => 'GLEW_EXT_texture_edge_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_env' => {
-    'binding_name' => 'GLEW_EXT_texture_env',
     'glewImpl' => 'GLEW_EXT_texture_env',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_env_add' => {
-    'binding_name' => 'GLEW_EXT_texture_env_add',
     'glewImpl' => 'GLEW_EXT_texture_env_add',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_env_combine' => {
-    'binding_name' => 'GLEW_EXT_texture_env_combine',
     'glewImpl' => 'GLEW_EXT_texture_env_combine',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_env_dot3' => {
-    'binding_name' => 'GLEW_EXT_texture_env_dot3',
     'glewImpl' => 'GLEW_EXT_texture_env_dot3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_filter_anisotropic' => {
-    'binding_name' => 'GLEW_EXT_texture_filter_anisotropic',
     'glewImpl' => 'GLEW_EXT_texture_filter_anisotropic',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_filter_minmax' => {
-    'binding_name' => 'GLEW_EXT_texture_filter_minmax',
     'glewImpl' => 'GLEW_EXT_texture_filter_minmax',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_format_BGRA8888' => {
-    'binding_name' => 'GLEW_EXT_texture_format_BGRA8888',
     'glewImpl' => 'GLEW_EXT_texture_format_BGRA8888',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_integer' => {
-    'binding_name' => 'GLEW_EXT_texture_integer',
     'glewImpl' => 'GLEW_EXT_texture_integer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_lod_bias' => {
-    'binding_name' => 'GLEW_EXT_texture_lod_bias',
     'glewImpl' => 'GLEW_EXT_texture_lod_bias',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_mirror_clamp' => {
-    'binding_name' => 'GLEW_EXT_texture_mirror_clamp',
     'glewImpl' => 'GLEW_EXT_texture_mirror_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_norm16' => {
-    'binding_name' => 'GLEW_EXT_texture_norm16',
     'glewImpl' => 'GLEW_EXT_texture_norm16',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_object' => {
-    'binding_name' => 'GLEW_EXT_texture_object',
     'glewImpl' => 'GLEW_EXT_texture_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_perturb_normal' => {
-    'binding_name' => 'GLEW_EXT_texture_perturb_normal',
     'glewImpl' => 'GLEW_EXT_texture_perturb_normal',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_rectangle' => {
-    'binding_name' => 'GLEW_EXT_texture_rectangle',
     'glewImpl' => 'GLEW_EXT_texture_rectangle',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_rg' => {
-    'binding_name' => 'GLEW_EXT_texture_rg',
     'glewImpl' => 'GLEW_EXT_texture_rg',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_sRGB' => {
-    'binding_name' => 'GLEW_EXT_texture_sRGB',
     'glewImpl' => 'GLEW_EXT_texture_sRGB',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_sRGB_R8' => {
-    'binding_name' => 'GLEW_EXT_texture_sRGB_R8',
     'glewImpl' => 'GLEW_EXT_texture_sRGB_R8',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_sRGB_RG8' => {
-    'binding_name' => 'GLEW_EXT_texture_sRGB_RG8',
     'glewImpl' => 'GLEW_EXT_texture_sRGB_RG8',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_sRGB_decode' => {
-    'binding_name' => 'GLEW_EXT_texture_sRGB_decode',
     'glewImpl' => 'GLEW_EXT_texture_sRGB_decode',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_shared_exponent' => {
-    'binding_name' => 'GLEW_EXT_texture_shared_exponent',
     'glewImpl' => 'GLEW_EXT_texture_shared_exponent',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_snorm' => {
-    'binding_name' => 'GLEW_EXT_texture_snorm',
     'glewImpl' => 'GLEW_EXT_texture_snorm',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_storage' => {
-    'binding_name' => 'GLEW_EXT_texture_storage',
     'glewImpl' => 'GLEW_EXT_texture_storage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_swizzle' => {
-    'binding_name' => 'GLEW_EXT_texture_swizzle',
     'glewImpl' => 'GLEW_EXT_texture_swizzle',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_type_2_10_10_10_REV' => {
-    'binding_name' => 'GLEW_EXT_texture_type_2_10_10_10_REV',
     'glewImpl' => 'GLEW_EXT_texture_type_2_10_10_10_REV',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_texture_view' => {
-    'binding_name' => 'GLEW_EXT_texture_view',
     'glewImpl' => 'GLEW_EXT_texture_view',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_timer_query' => {
-    'binding_name' => 'GLEW_EXT_timer_query',
     'glewImpl' => 'GLEW_EXT_timer_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_transform_feedback' => {
-    'binding_name' => 'GLEW_EXT_transform_feedback',
     'glewImpl' => 'GLEW_EXT_transform_feedback',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_unpack_subimage' => {
-    'binding_name' => 'GLEW_EXT_unpack_subimage',
     'glewImpl' => 'GLEW_EXT_unpack_subimage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_array' => {
-    'binding_name' => 'GLEW_EXT_vertex_array',
     'glewImpl' => 'GLEW_EXT_vertex_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_array_bgra' => {
-    'binding_name' => 'GLEW_EXT_vertex_array_bgra',
     'glewImpl' => 'GLEW_EXT_vertex_array_bgra',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_array_setXXX' => {
-    'binding_name' => 'GLEW_EXT_vertex_array_setXXX',
     'glewImpl' => 'GLEW_EXT_vertex_array_setXXX',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_attrib_64bit' => {
-    'binding_name' => 'GLEW_EXT_vertex_attrib_64bit',
     'glewImpl' => 'GLEW_EXT_vertex_attrib_64bit',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_shader' => {
-    'binding_name' => 'GLEW_EXT_vertex_shader',
     'glewImpl' => 'GLEW_EXT_vertex_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_vertex_weighting' => {
-    'binding_name' => 'GLEW_EXT_vertex_weighting',
     'glewImpl' => 'GLEW_EXT_vertex_weighting',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_win32_keyed_mutex' => {
-    'binding_name' => 'GLEW_EXT_win32_keyed_mutex',
     'glewImpl' => 'GLEW_EXT_win32_keyed_mutex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_window_rectangles' => {
-    'binding_name' => 'GLEW_EXT_window_rectangles',
     'glewImpl' => 'GLEW_EXT_window_rectangles',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_EXT_x11_sync_object' => {
-    'binding_name' => 'GLEW_EXT_x11_sync_object',
     'glewImpl' => 'GLEW_EXT_x11_sync_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_GREMEDY_frame_terminator' => {
-    'binding_name' => 'GLEW_GREMEDY_frame_terminator',
     'glewImpl' => 'GLEW_GREMEDY_frame_terminator',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_GREMEDY_string_marker' => {
-    'binding_name' => 'GLEW_GREMEDY_string_marker',
     'glewImpl' => 'GLEW_GREMEDY_string_marker',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_HP_convolution_border_modes' => {
-    'binding_name' => 'GLEW_HP_convolution_border_modes',
     'glewImpl' => 'GLEW_HP_convolution_border_modes',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_HP_image_transform' => {
-    'binding_name' => 'GLEW_HP_image_transform',
     'glewImpl' => 'GLEW_HP_image_transform',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_HP_occlusion_test' => {
-    'binding_name' => 'GLEW_HP_occlusion_test',
     'glewImpl' => 'GLEW_HP_occlusion_test',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_HP_texture_lighting' => {
-    'binding_name' => 'GLEW_HP_texture_lighting',
     'glewImpl' => 'GLEW_HP_texture_lighting',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_IBM_cull_vertex' => {
-    'binding_name' => 'GLEW_IBM_cull_vertex',
     'glewImpl' => 'GLEW_IBM_cull_vertex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_IBM_multimode_draw_arrays' => {
-    'binding_name' => 'GLEW_IBM_multimode_draw_arrays',
     'glewImpl' => 'GLEW_IBM_multimode_draw_arrays',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_IBM_rasterpos_clip' => {
-    'binding_name' => 'GLEW_IBM_rasterpos_clip',
     'glewImpl' => 'GLEW_IBM_rasterpos_clip',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_IBM_static_data' => {
-    'binding_name' => 'GLEW_IBM_static_data',
     'glewImpl' => 'GLEW_IBM_static_data',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_IBM_texture_mirrored_repeat' => {
-    'binding_name' => 'GLEW_IBM_texture_mirrored_repeat',
     'glewImpl' => 'GLEW_IBM_texture_mirrored_repeat',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_IBM_vertex_array_lists' => {
-    'binding_name' => 'GLEW_IBM_vertex_array_lists',
     'glewImpl' => 'GLEW_IBM_vertex_array_lists',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_INGR_color_clamp' => {
-    'binding_name' => 'GLEW_INGR_color_clamp',
     'glewImpl' => 'GLEW_INGR_color_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_INGR_interlace_read' => {
-    'binding_name' => 'GLEW_INGR_interlace_read',
     'glewImpl' => 'GLEW_INGR_interlace_read',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_INTEL_conservative_rasterization' => {
-    'binding_name' => 'GLEW_INTEL_conservative_rasterization',
     'glewImpl' => 'GLEW_INTEL_conservative_rasterization',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_INTEL_fragment_shader_ordering' => {
-    'binding_name' => 'GLEW_INTEL_fragment_shader_ordering',
     'glewImpl' => 'GLEW_INTEL_fragment_shader_ordering',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_INTEL_framebuffer_CMAA' => {
-    'binding_name' => 'GLEW_INTEL_framebuffer_CMAA',
     'glewImpl' => 'GLEW_INTEL_framebuffer_CMAA',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_INTEL_map_texture' => {
-    'binding_name' => 'GLEW_INTEL_map_texture',
     'glewImpl' => 'GLEW_INTEL_map_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_INTEL_parallel_arrays' => {
-    'binding_name' => 'GLEW_INTEL_parallel_arrays',
     'glewImpl' => 'GLEW_INTEL_parallel_arrays',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_INTEL_performance_query' => {
-    'binding_name' => 'GLEW_INTEL_performance_query',
     'glewImpl' => 'GLEW_INTEL_performance_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_INTEL_texture_scissor' => {
-    'binding_name' => 'GLEW_INTEL_texture_scissor',
     'glewImpl' => 'GLEW_INTEL_texture_scissor',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_blend_equation_advanced' => {
-    'binding_name' => 'GLEW_KHR_blend_equation_advanced',
     'glewImpl' => 'GLEW_KHR_blend_equation_advanced',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_blend_equation_advanced_coherent' => {
-    'binding_name' => 'GLEW_KHR_blend_equation_advanced_coherent',
     'glewImpl' => 'GLEW_KHR_blend_equation_advanced_coherent',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_context_flush_control' => {
-    'binding_name' => 'GLEW_KHR_context_flush_control',
     'glewImpl' => 'GLEW_KHR_context_flush_control',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_debug' => {
-    'binding_name' => 'GLEW_KHR_debug',
     'glewImpl' => 'GLEW_KHR_debug',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_no_error' => {
-    'binding_name' => 'GLEW_KHR_no_error',
     'glewImpl' => 'GLEW_KHR_no_error',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_parallel_shader_compile' => {
-    'binding_name' => 'GLEW_KHR_parallel_shader_compile',
     'glewImpl' => 'GLEW_KHR_parallel_shader_compile',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_robust_buffer_access_behavior' => {
-    'binding_name' => 'GLEW_KHR_robust_buffer_access_behavior',
     'glewImpl' => 'GLEW_KHR_robust_buffer_access_behavior',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_robustness' => {
-    'binding_name' => 'GLEW_KHR_robustness',
     'glewImpl' => 'GLEW_KHR_robustness',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_texture_compression_astc_hdr' => {
-    'binding_name' => 'GLEW_KHR_texture_compression_astc_hdr',
     'glewImpl' => 'GLEW_KHR_texture_compression_astc_hdr',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_texture_compression_astc_ldr' => {
-    'binding_name' => 'GLEW_KHR_texture_compression_astc_ldr',
     'glewImpl' => 'GLEW_KHR_texture_compression_astc_ldr',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KHR_texture_compression_astc_sliced_3d' => {
-    'binding_name' => 'GLEW_KHR_texture_compression_astc_sliced_3d',
     'glewImpl' => 'GLEW_KHR_texture_compression_astc_sliced_3d',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_KTX_buffer_region' => {
-    'binding_name' => 'GLEW_KTX_buffer_region',
     'glewImpl' => 'GLEW_KTX_buffer_region',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_MESAX_texture_stack' => {
-    'binding_name' => 'GLEW_MESAX_texture_stack',
     'glewImpl' => 'GLEW_MESAX_texture_stack',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_MESA_pack_invert' => {
-    'binding_name' => 'GLEW_MESA_pack_invert',
     'glewImpl' => 'GLEW_MESA_pack_invert',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_MESA_resize_buffers' => {
-    'binding_name' => 'GLEW_MESA_resize_buffers',
     'glewImpl' => 'GLEW_MESA_resize_buffers',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_MESA_shader_integer_functions' => {
-    'binding_name' => 'GLEW_MESA_shader_integer_functions',
     'glewImpl' => 'GLEW_MESA_shader_integer_functions',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_MESA_window_pos' => {
-    'binding_name' => 'GLEW_MESA_window_pos',
     'glewImpl' => 'GLEW_MESA_window_pos',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_MESA_ycbcr_texture' => {
-    'binding_name' => 'GLEW_MESA_ycbcr_texture',
     'glewImpl' => 'GLEW_MESA_ycbcr_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NVX_blend_equation_advanced_multi_draw_buffers' => {
-    'binding_name' => 'GLEW_NVX_blend_equation_advanced_multi_draw_buffers',
     'glewImpl' => 'GLEW_NVX_blend_equation_advanced_multi_draw_buffers',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NVX_conditional_render' => {
-    'binding_name' => 'GLEW_NVX_conditional_render',
     'glewImpl' => 'GLEW_NVX_conditional_render',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NVX_gpu_memory_info' => {
-    'binding_name' => 'GLEW_NVX_gpu_memory_info',
     'glewImpl' => 'GLEW_NVX_gpu_memory_info',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NVX_linked_gpu_multicast' => {
-    'binding_name' => 'GLEW_NVX_linked_gpu_multicast',
     'glewImpl' => 'GLEW_NVX_linked_gpu_multicast',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_3dvision_settings' => {
-    'binding_name' => 'GLEW_NV_3dvision_settings',
     'glewImpl' => 'GLEW_NV_3dvision_settings',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_EGL_stream_consumer_external' => {
-    'binding_name' => 'GLEW_NV_EGL_stream_consumer_external',
     'glewImpl' => 'GLEW_NV_EGL_stream_consumer_external',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_alpha_to_coverage_dither_control' => {
-    'binding_name' => 'GLEW_NV_alpha_to_coverage_dither_control',
     'glewImpl' => 'GLEW_NV_alpha_to_coverage_dither_control',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_bgr' => {
-    'binding_name' => 'GLEW_NV_bgr',
     'glewImpl' => 'GLEW_NV_bgr',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_bindless_multi_draw_indirect' => {
-    'binding_name' => 'GLEW_NV_bindless_multi_draw_indirect',
     'glewImpl' => 'GLEW_NV_bindless_multi_draw_indirect',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_bindless_multi_draw_indirect_count' => {
-    'binding_name' => 'GLEW_NV_bindless_multi_draw_indirect_count',
     'glewImpl' => 'GLEW_NV_bindless_multi_draw_indirect_count',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_bindless_texture' => {
-    'binding_name' => 'GLEW_NV_bindless_texture',
     'glewImpl' => 'GLEW_NV_bindless_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_blend_equation_advanced' => {
-    'binding_name' => 'GLEW_NV_blend_equation_advanced',
     'glewImpl' => 'GLEW_NV_blend_equation_advanced',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_blend_equation_advanced_coherent' => {
-    'binding_name' => 'GLEW_NV_blend_equation_advanced_coherent',
     'glewImpl' => 'GLEW_NV_blend_equation_advanced_coherent',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_blend_minmax_factor' => {
-    'binding_name' => 'GLEW_NV_blend_minmax_factor',
     'glewImpl' => 'GLEW_NV_blend_minmax_factor',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_blend_square' => {
-    'binding_name' => 'GLEW_NV_blend_square',
     'glewImpl' => 'GLEW_NV_blend_square',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_clip_space_w_scaling' => {
-    'binding_name' => 'GLEW_NV_clip_space_w_scaling',
     'glewImpl' => 'GLEW_NV_clip_space_w_scaling',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_command_list' => {
-    'binding_name' => 'GLEW_NV_command_list',
     'glewImpl' => 'GLEW_NV_command_list',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_compute_program5' => {
-    'binding_name' => 'GLEW_NV_compute_program5',
     'glewImpl' => 'GLEW_NV_compute_program5',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_conditional_render' => {
-    'binding_name' => 'GLEW_NV_conditional_render',
     'glewImpl' => 'GLEW_NV_conditional_render',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_conservative_raster' => {
-    'binding_name' => 'GLEW_NV_conservative_raster',
     'glewImpl' => 'GLEW_NV_conservative_raster',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_conservative_raster_dilate' => {
-    'binding_name' => 'GLEW_NV_conservative_raster_dilate',
     'glewImpl' => 'GLEW_NV_conservative_raster_dilate',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_conservative_raster_pre_snap_triangles' => {
-    'binding_name' => 'GLEW_NV_conservative_raster_pre_snap_triangles',
     'glewImpl' => 'GLEW_NV_conservative_raster_pre_snap_triangles',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_copy_buffer' => {
-    'binding_name' => 'GLEW_NV_copy_buffer',
     'glewImpl' => 'GLEW_NV_copy_buffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_copy_depth_to_color' => {
-    'binding_name' => 'GLEW_NV_copy_depth_to_color',
     'glewImpl' => 'GLEW_NV_copy_depth_to_color',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_copy_image' => {
-    'binding_name' => 'GLEW_NV_copy_image',
     'glewImpl' => 'GLEW_NV_copy_image',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_deep_texture3D' => {
-    'binding_name' => 'GLEW_NV_deep_texture3D',
     'glewImpl' => 'GLEW_NV_deep_texture3D',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_depth_buffer_float' => {
-    'binding_name' => 'GLEW_NV_depth_buffer_float',
     'glewImpl' => 'GLEW_NV_depth_buffer_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_depth_clamp' => {
-    'binding_name' => 'GLEW_NV_depth_clamp',
     'glewImpl' => 'GLEW_NV_depth_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_depth_range_unclamped' => {
-    'binding_name' => 'GLEW_NV_depth_range_unclamped',
     'glewImpl' => 'GLEW_NV_depth_range_unclamped',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_draw_buffers' => {
-    'binding_name' => 'GLEW_NV_draw_buffers',
     'glewImpl' => 'GLEW_NV_draw_buffers',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_draw_instanced' => {
-    'binding_name' => 'GLEW_NV_draw_instanced',
     'glewImpl' => 'GLEW_NV_draw_instanced',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_draw_texture' => {
-    'binding_name' => 'GLEW_NV_draw_texture',
     'glewImpl' => 'GLEW_NV_draw_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_draw_vulkan_image' => {
-    'binding_name' => 'GLEW_NV_draw_vulkan_image',
     'glewImpl' => 'GLEW_NV_draw_vulkan_image',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_evaluators' => {
-    'binding_name' => 'GLEW_NV_evaluators',
     'glewImpl' => 'GLEW_NV_evaluators',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_explicit_attrib_location' => {
-    'binding_name' => 'GLEW_NV_explicit_attrib_location',
     'glewImpl' => 'GLEW_NV_explicit_attrib_location',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_explicit_multisample' => {
-    'binding_name' => 'GLEW_NV_explicit_multisample',
     'glewImpl' => 'GLEW_NV_explicit_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_fbo_color_attachments' => {
-    'binding_name' => 'GLEW_NV_fbo_color_attachments',
     'glewImpl' => 'GLEW_NV_fbo_color_attachments',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_fence' => {
-    'binding_name' => 'GLEW_NV_fence',
     'glewImpl' => 'GLEW_NV_fence',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_fill_rectangle' => {
-    'binding_name' => 'GLEW_NV_fill_rectangle',
     'glewImpl' => 'GLEW_NV_fill_rectangle',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_float_buffer' => {
-    'binding_name' => 'GLEW_NV_float_buffer',
     'glewImpl' => 'GLEW_NV_float_buffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_fog_distance' => {
-    'binding_name' => 'GLEW_NV_fog_distance',
     'glewImpl' => 'GLEW_NV_fog_distance',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_fragment_coverage_to_color' => {
-    'binding_name' => 'GLEW_NV_fragment_coverage_to_color',
     'glewImpl' => 'GLEW_NV_fragment_coverage_to_color',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_fragment_program' => {
-    'binding_name' => 'GLEW_NV_fragment_program',
     'glewImpl' => 'GLEW_NV_fragment_program',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_fragment_program2' => {
-    'binding_name' => 'GLEW_NV_fragment_program2',
     'glewImpl' => 'GLEW_NV_fragment_program2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_fragment_program4' => {
-    'binding_name' => 'GLEW_NV_fragment_program4',
     'glewImpl' => 'GLEW_NV_fragment_program4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_fragment_program_option' => {
-    'binding_name' => 'GLEW_NV_fragment_program_option',
     'glewImpl' => 'GLEW_NV_fragment_program_option',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_fragment_shader_interlock' => {
-    'binding_name' => 'GLEW_NV_fragment_shader_interlock',
     'glewImpl' => 'GLEW_NV_fragment_shader_interlock',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_framebuffer_blit' => {
-    'binding_name' => 'GLEW_NV_framebuffer_blit',
     'glewImpl' => 'GLEW_NV_framebuffer_blit',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_framebuffer_mixed_samples' => {
-    'binding_name' => 'GLEW_NV_framebuffer_mixed_samples',
     'glewImpl' => 'GLEW_NV_framebuffer_mixed_samples',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_framebuffer_multisample' => {
-    'binding_name' => 'GLEW_NV_framebuffer_multisample',
     'glewImpl' => 'GLEW_NV_framebuffer_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_framebuffer_multisample_coverage' => {
-    'binding_name' => 'GLEW_NV_framebuffer_multisample_coverage',
     'glewImpl' => 'GLEW_NV_framebuffer_multisample_coverage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_generate_mipmap_sRGB' => {
-    'binding_name' => 'GLEW_NV_generate_mipmap_sRGB',
     'glewImpl' => 'GLEW_NV_generate_mipmap_sRGB',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_geometry_program4' => {
-    'binding_name' => 'GLEW_NV_geometry_program4',
     'glewImpl' => 'GLEW_NV_geometry_program4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_geometry_shader4' => {
-    'binding_name' => 'GLEW_NV_geometry_shader4',
     'glewImpl' => 'GLEW_NV_geometry_shader4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_geometry_shader_passthrough' => {
-    'binding_name' => 'GLEW_NV_geometry_shader_passthrough',
     'glewImpl' => 'GLEW_NV_geometry_shader_passthrough',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_gpu_multicast' => {
-    'binding_name' => 'GLEW_NV_gpu_multicast',
     'glewImpl' => 'GLEW_NV_gpu_multicast',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_gpu_program4' => {
-    'binding_name' => 'GLEW_NV_gpu_program4',
     'glewImpl' => 'GLEW_NV_gpu_program4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_gpu_program5' => {
-    'binding_name' => 'GLEW_NV_gpu_program5',
     'glewImpl' => 'GLEW_NV_gpu_program5',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_gpu_program5_mem_extended' => {
-    'binding_name' => 'GLEW_NV_gpu_program5_mem_extended',
     'glewImpl' => 'GLEW_NV_gpu_program5_mem_extended',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_gpu_program_fp64' => {
-    'binding_name' => 'GLEW_NV_gpu_program_fp64',
     'glewImpl' => 'GLEW_NV_gpu_program_fp64',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_gpu_shader5' => {
-    'binding_name' => 'GLEW_NV_gpu_shader5',
     'glewImpl' => 'GLEW_NV_gpu_shader5',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_half_float' => {
-    'binding_name' => 'GLEW_NV_half_float',
     'glewImpl' => 'GLEW_NV_half_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_image_formats' => {
-    'binding_name' => 'GLEW_NV_image_formats',
     'glewImpl' => 'GLEW_NV_image_formats',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_instanced_arrays' => {
-    'binding_name' => 'GLEW_NV_instanced_arrays',
     'glewImpl' => 'GLEW_NV_instanced_arrays',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_internalformat_sample_query' => {
-    'binding_name' => 'GLEW_NV_internalformat_sample_query',
     'glewImpl' => 'GLEW_NV_internalformat_sample_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_light_max_exponent' => {
-    'binding_name' => 'GLEW_NV_light_max_exponent',
     'glewImpl' => 'GLEW_NV_light_max_exponent',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_multisample_coverage' => {
-    'binding_name' => 'GLEW_NV_multisample_coverage',
     'glewImpl' => 'GLEW_NV_multisample_coverage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_multisample_filter_hint' => {
-    'binding_name' => 'GLEW_NV_multisample_filter_hint',
     'glewImpl' => 'GLEW_NV_multisample_filter_hint',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_non_square_matrices' => {
-    'binding_name' => 'GLEW_NV_non_square_matrices',
     'glewImpl' => 'GLEW_NV_non_square_matrices',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_occlusion_query' => {
-    'binding_name' => 'GLEW_NV_occlusion_query',
     'glewImpl' => 'GLEW_NV_occlusion_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_pack_subimage' => {
-    'binding_name' => 'GLEW_NV_pack_subimage',
     'glewImpl' => 'GLEW_NV_pack_subimage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_packed_depth_stencil' => {
-    'binding_name' => 'GLEW_NV_packed_depth_stencil',
     'glewImpl' => 'GLEW_NV_packed_depth_stencil',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_packed_float' => {
-    'binding_name' => 'GLEW_NV_packed_float',
     'glewImpl' => 'GLEW_NV_packed_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_packed_float_linear' => {
-    'binding_name' => 'GLEW_NV_packed_float_linear',
     'glewImpl' => 'GLEW_NV_packed_float_linear',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_parameter_buffer_object' => {
-    'binding_name' => 'GLEW_NV_parameter_buffer_object',
     'glewImpl' => 'GLEW_NV_parameter_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_parameter_buffer_object2' => {
-    'binding_name' => 'GLEW_NV_parameter_buffer_object2',
     'glewImpl' => 'GLEW_NV_parameter_buffer_object2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_path_rendering' => {
-    'binding_name' => 'GLEW_NV_path_rendering',
     'glewImpl' => 'GLEW_NV_path_rendering',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_path_rendering_shared_edge' => {
-    'binding_name' => 'GLEW_NV_path_rendering_shared_edge',
     'glewImpl' => 'GLEW_NV_path_rendering_shared_edge',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_pixel_buffer_object' => {
-    'binding_name' => 'GLEW_NV_pixel_buffer_object',
     'glewImpl' => 'GLEW_NV_pixel_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_pixel_data_range' => {
-    'binding_name' => 'GLEW_NV_pixel_data_range',
     'glewImpl' => 'GLEW_NV_pixel_data_range',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_platform_binary' => {
-    'binding_name' => 'GLEW_NV_platform_binary',
     'glewImpl' => 'GLEW_NV_platform_binary',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_point_sprite' => {
-    'binding_name' => 'GLEW_NV_point_sprite',
     'glewImpl' => 'GLEW_NV_point_sprite',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_polygon_mode' => {
-    'binding_name' => 'GLEW_NV_polygon_mode',
     'glewImpl' => 'GLEW_NV_polygon_mode',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_present_video' => {
-    'binding_name' => 'GLEW_NV_present_video',
     'glewImpl' => 'GLEW_NV_present_video',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_primitive_restart' => {
-    'binding_name' => 'GLEW_NV_primitive_restart',
     'glewImpl' => 'GLEW_NV_primitive_restart',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_read_depth' => {
-    'binding_name' => 'GLEW_NV_read_depth',
     'glewImpl' => 'GLEW_NV_read_depth',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_read_depth_stencil' => {
-    'binding_name' => 'GLEW_NV_read_depth_stencil',
     'glewImpl' => 'GLEW_NV_read_depth_stencil',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_read_stencil' => {
-    'binding_name' => 'GLEW_NV_read_stencil',
     'glewImpl' => 'GLEW_NV_read_stencil',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_register_combiners' => {
-    'binding_name' => 'GLEW_NV_register_combiners',
     'glewImpl' => 'GLEW_NV_register_combiners',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_register_combiners2' => {
-    'binding_name' => 'GLEW_NV_register_combiners2',
     'glewImpl' => 'GLEW_NV_register_combiners2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_robustness_video_memory_purge' => {
-    'binding_name' => 'GLEW_NV_robustness_video_memory_purge',
     'glewImpl' => 'GLEW_NV_robustness_video_memory_purge',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_sRGB_formats' => {
-    'binding_name' => 'GLEW_NV_sRGB_formats',
     'glewImpl' => 'GLEW_NV_sRGB_formats',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_sample_locations' => {
-    'binding_name' => 'GLEW_NV_sample_locations',
     'glewImpl' => 'GLEW_NV_sample_locations',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_sample_mask_override_coverage' => {
-    'binding_name' => 'GLEW_NV_sample_mask_override_coverage',
     'glewImpl' => 'GLEW_NV_sample_mask_override_coverage',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shader_atomic_counters' => {
-    'binding_name' => 'GLEW_NV_shader_atomic_counters',
     'glewImpl' => 'GLEW_NV_shader_atomic_counters',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shader_atomic_float' => {
-    'binding_name' => 'GLEW_NV_shader_atomic_float',
     'glewImpl' => 'GLEW_NV_shader_atomic_float',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shader_atomic_float64' => {
-    'binding_name' => 'GLEW_NV_shader_atomic_float64',
     'glewImpl' => 'GLEW_NV_shader_atomic_float64',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shader_atomic_fp16_vector' => {
-    'binding_name' => 'GLEW_NV_shader_atomic_fp16_vector',
     'glewImpl' => 'GLEW_NV_shader_atomic_fp16_vector',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shader_atomic_int64' => {
-    'binding_name' => 'GLEW_NV_shader_atomic_int64',
     'glewImpl' => 'GLEW_NV_shader_atomic_int64',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shader_buffer_load' => {
-    'binding_name' => 'GLEW_NV_shader_buffer_load',
     'glewImpl' => 'GLEW_NV_shader_buffer_load',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shader_noperspective_interpolation' => {
-    'binding_name' => 'GLEW_NV_shader_noperspective_interpolation',
     'glewImpl' => 'GLEW_NV_shader_noperspective_interpolation',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shader_storage_buffer_object' => {
-    'binding_name' => 'GLEW_NV_shader_storage_buffer_object',
     'glewImpl' => 'GLEW_NV_shader_storage_buffer_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shader_thread_group' => {
-    'binding_name' => 'GLEW_NV_shader_thread_group',
     'glewImpl' => 'GLEW_NV_shader_thread_group',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shader_thread_shuffle' => {
-    'binding_name' => 'GLEW_NV_shader_thread_shuffle',
     'glewImpl' => 'GLEW_NV_shader_thread_shuffle',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shadow_samplers_array' => {
-    'binding_name' => 'GLEW_NV_shadow_samplers_array',
     'glewImpl' => 'GLEW_NV_shadow_samplers_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_shadow_samplers_cube' => {
-    'binding_name' => 'GLEW_NV_shadow_samplers_cube',
     'glewImpl' => 'GLEW_NV_shadow_samplers_cube',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_stereo_view_rendering' => {
-    'binding_name' => 'GLEW_NV_stereo_view_rendering',
     'glewImpl' => 'GLEW_NV_stereo_view_rendering',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_tessellation_program5' => {
-    'binding_name' => 'GLEW_NV_tessellation_program5',
     'glewImpl' => 'GLEW_NV_tessellation_program5',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texgen_emboss' => {
-    'binding_name' => 'GLEW_NV_texgen_emboss',
     'glewImpl' => 'GLEW_NV_texgen_emboss',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texgen_reflection' => {
-    'binding_name' => 'GLEW_NV_texgen_reflection',
     'glewImpl' => 'GLEW_NV_texgen_reflection',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_array' => {
-    'binding_name' => 'GLEW_NV_texture_array',
     'glewImpl' => 'GLEW_NV_texture_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_barrier' => {
-    'binding_name' => 'GLEW_NV_texture_barrier',
     'glewImpl' => 'GLEW_NV_texture_barrier',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_border_clamp' => {
-    'binding_name' => 'GLEW_NV_texture_border_clamp',
     'glewImpl' => 'GLEW_NV_texture_border_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_compression_latc' => {
-    'binding_name' => 'GLEW_NV_texture_compression_latc',
     'glewImpl' => 'GLEW_NV_texture_compression_latc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_compression_s3tc' => {
-    'binding_name' => 'GLEW_NV_texture_compression_s3tc',
     'glewImpl' => 'GLEW_NV_texture_compression_s3tc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_compression_s3tc_update' => {
-    'binding_name' => 'GLEW_NV_texture_compression_s3tc_update',
     'glewImpl' => 'GLEW_NV_texture_compression_s3tc_update',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_compression_vtc' => {
-    'binding_name' => 'GLEW_NV_texture_compression_vtc',
     'glewImpl' => 'GLEW_NV_texture_compression_vtc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_env_combine4' => {
-    'binding_name' => 'GLEW_NV_texture_env_combine4',
     'glewImpl' => 'GLEW_NV_texture_env_combine4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_expand_normal' => {
-    'binding_name' => 'GLEW_NV_texture_expand_normal',
     'glewImpl' => 'GLEW_NV_texture_expand_normal',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_multisample' => {
-    'binding_name' => 'GLEW_NV_texture_multisample',
     'glewImpl' => 'GLEW_NV_texture_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_npot_2D_mipmap' => {
-    'binding_name' => 'GLEW_NV_texture_npot_2D_mipmap',
     'glewImpl' => 'GLEW_NV_texture_npot_2D_mipmap',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_rectangle' => {
-    'binding_name' => 'GLEW_NV_texture_rectangle',
     'glewImpl' => 'GLEW_NV_texture_rectangle',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_rectangle_compressed' => {
-    'binding_name' => 'GLEW_NV_texture_rectangle_compressed',
     'glewImpl' => 'GLEW_NV_texture_rectangle_compressed',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_shader' => {
-    'binding_name' => 'GLEW_NV_texture_shader',
     'glewImpl' => 'GLEW_NV_texture_shader',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_shader2' => {
-    'binding_name' => 'GLEW_NV_texture_shader2',
     'glewImpl' => 'GLEW_NV_texture_shader2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_texture_shader3' => {
-    'binding_name' => 'GLEW_NV_texture_shader3',
     'glewImpl' => 'GLEW_NV_texture_shader3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_transform_feedback' => {
-    'binding_name' => 'GLEW_NV_transform_feedback',
     'glewImpl' => 'GLEW_NV_transform_feedback',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_transform_feedback2' => {
-    'binding_name' => 'GLEW_NV_transform_feedback2',
     'glewImpl' => 'GLEW_NV_transform_feedback2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_uniform_buffer_unified_memory' => {
-    'binding_name' => 'GLEW_NV_uniform_buffer_unified_memory',
     'glewImpl' => 'GLEW_NV_uniform_buffer_unified_memory',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vdpau_interop' => {
-    'binding_name' => 'GLEW_NV_vdpau_interop',
     'glewImpl' => 'GLEW_NV_vdpau_interop',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vertex_array_range' => {
-    'binding_name' => 'GLEW_NV_vertex_array_range',
     'glewImpl' => 'GLEW_NV_vertex_array_range',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vertex_array_range2' => {
-    'binding_name' => 'GLEW_NV_vertex_array_range2',
     'glewImpl' => 'GLEW_NV_vertex_array_range2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vertex_attrib_integer_64bit' => {
-    'binding_name' => 'GLEW_NV_vertex_attrib_integer_64bit',
     'glewImpl' => 'GLEW_NV_vertex_attrib_integer_64bit',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vertex_buffer_unified_memory' => {
-    'binding_name' => 'GLEW_NV_vertex_buffer_unified_memory',
     'glewImpl' => 'GLEW_NV_vertex_buffer_unified_memory',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program' => {
-    'binding_name' => 'GLEW_NV_vertex_program',
     'glewImpl' => 'GLEW_NV_vertex_program',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program1_1' => {
-    'binding_name' => 'GLEW_NV_vertex_program1_1',
     'glewImpl' => 'GLEW_NV_vertex_program1_1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program2' => {
-    'binding_name' => 'GLEW_NV_vertex_program2',
     'glewImpl' => 'GLEW_NV_vertex_program2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program2_option' => {
-    'binding_name' => 'GLEW_NV_vertex_program2_option',
     'glewImpl' => 'GLEW_NV_vertex_program2_option',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program3' => {
-    'binding_name' => 'GLEW_NV_vertex_program3',
     'glewImpl' => 'GLEW_NV_vertex_program3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_vertex_program4' => {
-    'binding_name' => 'GLEW_NV_vertex_program4',
     'glewImpl' => 'GLEW_NV_vertex_program4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_video_capture' => {
-    'binding_name' => 'GLEW_NV_video_capture',
     'glewImpl' => 'GLEW_NV_video_capture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_viewport_array' => {
-    'binding_name' => 'GLEW_NV_viewport_array',
     'glewImpl' => 'GLEW_NV_viewport_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_viewport_array2' => {
-    'binding_name' => 'GLEW_NV_viewport_array2',
     'glewImpl' => 'GLEW_NV_viewport_array2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_NV_viewport_swizzle' => {
-    'binding_name' => 'GLEW_NV_viewport_swizzle',
     'glewImpl' => 'GLEW_NV_viewport_swizzle',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_OES_byte_coordinates' => {
-    'binding_name' => 'GLEW_OES_byte_coordinates',
     'glewImpl' => 'GLEW_OES_byte_coordinates',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_OML_interlace' => {
-    'binding_name' => 'GLEW_OML_interlace',
     'glewImpl' => 'GLEW_OML_interlace',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_OML_resample' => {
-    'binding_name' => 'GLEW_OML_resample',
     'glewImpl' => 'GLEW_OML_resample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_OML_subsample' => {
-    'binding_name' => 'GLEW_OML_subsample',
     'glewImpl' => 'GLEW_OML_subsample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_OVR_multiview' => {
-    'binding_name' => 'GLEW_OVR_multiview',
     'glewImpl' => 'GLEW_OVR_multiview',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_OVR_multiview2' => {
-    'binding_name' => 'GLEW_OVR_multiview2',
     'glewImpl' => 'GLEW_OVR_multiview2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_OVR_multiview_multisampled_render_to_texture' => {
-    'binding_name' => 'GLEW_OVR_multiview_multisampled_render_to_texture',
     'glewImpl' => 'GLEW_OVR_multiview_multisampled_render_to_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_PGI_misc_hints' => {
-    'binding_name' => 'GLEW_PGI_misc_hints',
     'glewImpl' => 'GLEW_PGI_misc_hints',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_PGI_vertex_hints' => {
-    'binding_name' => 'GLEW_PGI_vertex_hints',
     'glewImpl' => 'GLEW_PGI_vertex_hints',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_QCOM_alpha_test' => {
-    'binding_name' => 'GLEW_QCOM_alpha_test',
     'glewImpl' => 'GLEW_QCOM_alpha_test',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_QCOM_binning_control' => {
-    'binding_name' => 'GLEW_QCOM_binning_control',
     'glewImpl' => 'GLEW_QCOM_binning_control',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_QCOM_driver_control' => {
-    'binding_name' => 'GLEW_QCOM_driver_control',
     'glewImpl' => 'GLEW_QCOM_driver_control',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_QCOM_extended_get' => {
-    'binding_name' => 'GLEW_QCOM_extended_get',
     'glewImpl' => 'GLEW_QCOM_extended_get',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_QCOM_extended_get2' => {
-    'binding_name' => 'GLEW_QCOM_extended_get2',
     'glewImpl' => 'GLEW_QCOM_extended_get2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_QCOM_framebuffer_foveated' => {
-    'binding_name' => 'GLEW_QCOM_framebuffer_foveated',
     'glewImpl' => 'GLEW_QCOM_framebuffer_foveated',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_QCOM_perfmon_global_mode' => {
-    'binding_name' => 'GLEW_QCOM_perfmon_global_mode',
     'glewImpl' => 'GLEW_QCOM_perfmon_global_mode',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_QCOM_shader_framebuffer_fetch_noncoherent' => {
-    'binding_name' => 'GLEW_QCOM_shader_framebuffer_fetch_noncoherent',
     'glewImpl' => 'GLEW_QCOM_shader_framebuffer_fetch_noncoherent',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_QCOM_tiled_rendering' => {
-    'binding_name' => 'GLEW_QCOM_tiled_rendering',
     'glewImpl' => 'GLEW_QCOM_tiled_rendering',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_QCOM_writeonly_rendering' => {
-    'binding_name' => 'GLEW_QCOM_writeonly_rendering',
     'glewImpl' => 'GLEW_QCOM_writeonly_rendering',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_REGAL_ES1_0_compatibility' => {
-    'binding_name' => 'GLEW_REGAL_ES1_0_compatibility',
     'glewImpl' => 'GLEW_REGAL_ES1_0_compatibility',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_REGAL_ES1_1_compatibility' => {
-    'binding_name' => 'GLEW_REGAL_ES1_1_compatibility',
     'glewImpl' => 'GLEW_REGAL_ES1_1_compatibility',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_REGAL_enable' => {
-    'binding_name' => 'GLEW_REGAL_enable',
     'glewImpl' => 'GLEW_REGAL_enable',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_REGAL_error_string' => {
-    'binding_name' => 'GLEW_REGAL_error_string',
     'glewImpl' => 'GLEW_REGAL_error_string',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_REGAL_extension_query' => {
-    'binding_name' => 'GLEW_REGAL_extension_query',
     'glewImpl' => 'GLEW_REGAL_extension_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_REGAL_log' => {
-    'binding_name' => 'GLEW_REGAL_log',
     'glewImpl' => 'GLEW_REGAL_log',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_REGAL_proc_address' => {
-    'binding_name' => 'GLEW_REGAL_proc_address',
     'glewImpl' => 'GLEW_REGAL_proc_address',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_REND_screen_coordinates' => {
-    'binding_name' => 'GLEW_REND_screen_coordinates',
     'glewImpl' => 'GLEW_REND_screen_coordinates',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_S3_s3tc' => {
-    'binding_name' => 'GLEW_S3_s3tc',
     'glewImpl' => 'GLEW_S3_s3tc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_clip_band_hint' => {
-    'binding_name' => 'GLEW_SGIS_clip_band_hint',
     'glewImpl' => 'GLEW_SGIS_clip_band_hint',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_color_range' => {
-    'binding_name' => 'GLEW_SGIS_color_range',
     'glewImpl' => 'GLEW_SGIS_color_range',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_detail_texture' => {
-    'binding_name' => 'GLEW_SGIS_detail_texture',
     'glewImpl' => 'GLEW_SGIS_detail_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_fog_function' => {
-    'binding_name' => 'GLEW_SGIS_fog_function',
     'glewImpl' => 'GLEW_SGIS_fog_function',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_generate_mipmap' => {
-    'binding_name' => 'GLEW_SGIS_generate_mipmap',
     'glewImpl' => 'GLEW_SGIS_generate_mipmap',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_line_texgen' => {
-    'binding_name' => 'GLEW_SGIS_line_texgen',
     'glewImpl' => 'GLEW_SGIS_line_texgen',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_multisample' => {
-    'binding_name' => 'GLEW_SGIS_multisample',
     'glewImpl' => 'GLEW_SGIS_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_multitexture' => {
-    'binding_name' => 'GLEW_SGIS_multitexture',
     'glewImpl' => 'GLEW_SGIS_multitexture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_pixel_texture' => {
-    'binding_name' => 'GLEW_SGIS_pixel_texture',
     'glewImpl' => 'GLEW_SGIS_pixel_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_point_line_texgen' => {
-    'binding_name' => 'GLEW_SGIS_point_line_texgen',
     'glewImpl' => 'GLEW_SGIS_point_line_texgen',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_shared_multisample' => {
-    'binding_name' => 'GLEW_SGIS_shared_multisample',
     'glewImpl' => 'GLEW_SGIS_shared_multisample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_sharpen_texture' => {
-    'binding_name' => 'GLEW_SGIS_sharpen_texture',
     'glewImpl' => 'GLEW_SGIS_sharpen_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_texture4D' => {
-    'binding_name' => 'GLEW_SGIS_texture4D',
     'glewImpl' => 'GLEW_SGIS_texture4D',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_texture_border_clamp' => {
-    'binding_name' => 'GLEW_SGIS_texture_border_clamp',
     'glewImpl' => 'GLEW_SGIS_texture_border_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_texture_edge_clamp' => {
-    'binding_name' => 'GLEW_SGIS_texture_edge_clamp',
     'glewImpl' => 'GLEW_SGIS_texture_edge_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_texture_filter4' => {
-    'binding_name' => 'GLEW_SGIS_texture_filter4',
     'glewImpl' => 'GLEW_SGIS_texture_filter4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_texture_lod' => {
-    'binding_name' => 'GLEW_SGIS_texture_lod',
     'glewImpl' => 'GLEW_SGIS_texture_lod',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIS_texture_select' => {
-    'binding_name' => 'GLEW_SGIS_texture_select',
     'glewImpl' => 'GLEW_SGIS_texture_select',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_async' => {
-    'binding_name' => 'GLEW_SGIX_async',
     'glewImpl' => 'GLEW_SGIX_async',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_async_histogram' => {
-    'binding_name' => 'GLEW_SGIX_async_histogram',
     'glewImpl' => 'GLEW_SGIX_async_histogram',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_async_pixel' => {
-    'binding_name' => 'GLEW_SGIX_async_pixel',
     'glewImpl' => 'GLEW_SGIX_async_pixel',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_bali_g_instruments' => {
-    'binding_name' => 'GLEW_SGIX_bali_g_instruments',
     'glewImpl' => 'GLEW_SGIX_bali_g_instruments',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_bali_r_instruments' => {
-    'binding_name' => 'GLEW_SGIX_bali_r_instruments',
     'glewImpl' => 'GLEW_SGIX_bali_r_instruments',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_bali_timer_instruments' => {
-    'binding_name' => 'GLEW_SGIX_bali_timer_instruments',
     'glewImpl' => 'GLEW_SGIX_bali_timer_instruments',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_blend_alpha_minmax' => {
-    'binding_name' => 'GLEW_SGIX_blend_alpha_minmax',
     'glewImpl' => 'GLEW_SGIX_blend_alpha_minmax',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_blend_cadd' => {
-    'binding_name' => 'GLEW_SGIX_blend_cadd',
     'glewImpl' => 'GLEW_SGIX_blend_cadd',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_blend_cmultiply' => {
-    'binding_name' => 'GLEW_SGIX_blend_cmultiply',
     'glewImpl' => 'GLEW_SGIX_blend_cmultiply',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_calligraphic_fragment' => {
-    'binding_name' => 'GLEW_SGIX_calligraphic_fragment',
     'glewImpl' => 'GLEW_SGIX_calligraphic_fragment',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_clipmap' => {
-    'binding_name' => 'GLEW_SGIX_clipmap',
     'glewImpl' => 'GLEW_SGIX_clipmap',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_color_matrix_accuracy' => {
-    'binding_name' => 'GLEW_SGIX_color_matrix_accuracy',
     'glewImpl' => 'GLEW_SGIX_color_matrix_accuracy',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_color_table_index_mode' => {
-    'binding_name' => 'GLEW_SGIX_color_table_index_mode',
     'glewImpl' => 'GLEW_SGIX_color_table_index_mode',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_complex_polar' => {
-    'binding_name' => 'GLEW_SGIX_complex_polar',
     'glewImpl' => 'GLEW_SGIX_complex_polar',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_convolution_accuracy' => {
-    'binding_name' => 'GLEW_SGIX_convolution_accuracy',
     'glewImpl' => 'GLEW_SGIX_convolution_accuracy',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_cube_map' => {
-    'binding_name' => 'GLEW_SGIX_cube_map',
     'glewImpl' => 'GLEW_SGIX_cube_map',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_cylinder_texgen' => {
-    'binding_name' => 'GLEW_SGIX_cylinder_texgen',
     'glewImpl' => 'GLEW_SGIX_cylinder_texgen',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_datapipe' => {
-    'binding_name' => 'GLEW_SGIX_datapipe',
     'glewImpl' => 'GLEW_SGIX_datapipe',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_decimation' => {
-    'binding_name' => 'GLEW_SGIX_decimation',
     'glewImpl' => 'GLEW_SGIX_decimation',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_depth_pass_instrument' => {
-    'binding_name' => 'GLEW_SGIX_depth_pass_instrument',
     'glewImpl' => 'GLEW_SGIX_depth_pass_instrument',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_depth_texture' => {
-    'binding_name' => 'GLEW_SGIX_depth_texture',
     'glewImpl' => 'GLEW_SGIX_depth_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_dvc' => {
-    'binding_name' => 'GLEW_SGIX_dvc',
     'glewImpl' => 'GLEW_SGIX_dvc',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_flush_raster' => {
-    'binding_name' => 'GLEW_SGIX_flush_raster',
     'glewImpl' => 'GLEW_SGIX_flush_raster',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_blend' => {
-    'binding_name' => 'GLEW_SGIX_fog_blend',
     'glewImpl' => 'GLEW_SGIX_fog_blend',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_factor_to_alpha' => {
-    'binding_name' => 'GLEW_SGIX_fog_factor_to_alpha',
     'glewImpl' => 'GLEW_SGIX_fog_factor_to_alpha',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_layers' => {
-    'binding_name' => 'GLEW_SGIX_fog_layers',
     'glewImpl' => 'GLEW_SGIX_fog_layers',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_offset' => {
-    'binding_name' => 'GLEW_SGIX_fog_offset',
     'glewImpl' => 'GLEW_SGIX_fog_offset',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_patchy' => {
-    'binding_name' => 'GLEW_SGIX_fog_patchy',
     'glewImpl' => 'GLEW_SGIX_fog_patchy',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_scale' => {
-    'binding_name' => 'GLEW_SGIX_fog_scale',
     'glewImpl' => 'GLEW_SGIX_fog_scale',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_fog_texture' => {
-    'binding_name' => 'GLEW_SGIX_fog_texture',
     'glewImpl' => 'GLEW_SGIX_fog_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_fragment_lighting_space' => {
-    'binding_name' => 'GLEW_SGIX_fragment_lighting_space',
     'glewImpl' => 'GLEW_SGIX_fragment_lighting_space',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_fragment_specular_lighting' => {
-    'binding_name' => 'GLEW_SGIX_fragment_specular_lighting',
     'glewImpl' => 'GLEW_SGIX_fragment_specular_lighting',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_fragments_instrument' => {
-    'binding_name' => 'GLEW_SGIX_fragments_instrument',
     'glewImpl' => 'GLEW_SGIX_fragments_instrument',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_framezoom' => {
-    'binding_name' => 'GLEW_SGIX_framezoom',
     'glewImpl' => 'GLEW_SGIX_framezoom',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_icc_texture' => {
-    'binding_name' => 'GLEW_SGIX_icc_texture',
     'glewImpl' => 'GLEW_SGIX_icc_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_igloo_interface' => {
-    'binding_name' => 'GLEW_SGIX_igloo_interface',
     'glewImpl' => 'GLEW_SGIX_igloo_interface',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_image_compression' => {
-    'binding_name' => 'GLEW_SGIX_image_compression',
     'glewImpl' => 'GLEW_SGIX_image_compression',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_impact_pixel_texture' => {
-    'binding_name' => 'GLEW_SGIX_impact_pixel_texture',
     'glewImpl' => 'GLEW_SGIX_impact_pixel_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_instrument_error' => {
-    'binding_name' => 'GLEW_SGIX_instrument_error',
     'glewImpl' => 'GLEW_SGIX_instrument_error',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_interlace' => {
-    'binding_name' => 'GLEW_SGIX_interlace',
     'glewImpl' => 'GLEW_SGIX_interlace',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_ir_instrument1' => {
-    'binding_name' => 'GLEW_SGIX_ir_instrument1',
     'glewImpl' => 'GLEW_SGIX_ir_instrument1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_line_quality_hint' => {
-    'binding_name' => 'GLEW_SGIX_line_quality_hint',
     'glewImpl' => 'GLEW_SGIX_line_quality_hint',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_list_priority' => {
-    'binding_name' => 'GLEW_SGIX_list_priority',
     'glewImpl' => 'GLEW_SGIX_list_priority',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_mpeg1' => {
-    'binding_name' => 'GLEW_SGIX_mpeg1',
     'glewImpl' => 'GLEW_SGIX_mpeg1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_mpeg2' => {
-    'binding_name' => 'GLEW_SGIX_mpeg2',
     'glewImpl' => 'GLEW_SGIX_mpeg2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_nonlinear_lighting_pervertex' => {
-    'binding_name' => 'GLEW_SGIX_nonlinear_lighting_pervertex',
     'glewImpl' => 'GLEW_SGIX_nonlinear_lighting_pervertex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_nurbs_eval' => {
-    'binding_name' => 'GLEW_SGIX_nurbs_eval',
     'glewImpl' => 'GLEW_SGIX_nurbs_eval',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_occlusion_instrument' => {
-    'binding_name' => 'GLEW_SGIX_occlusion_instrument',
     'glewImpl' => 'GLEW_SGIX_occlusion_instrument',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_packed_6bytes' => {
-    'binding_name' => 'GLEW_SGIX_packed_6bytes',
     'glewImpl' => 'GLEW_SGIX_packed_6bytes',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_pixel_texture' => {
-    'binding_name' => 'GLEW_SGIX_pixel_texture',
     'glewImpl' => 'GLEW_SGIX_pixel_texture',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_pixel_texture_bits' => {
-    'binding_name' => 'GLEW_SGIX_pixel_texture_bits',
     'glewImpl' => 'GLEW_SGIX_pixel_texture_bits',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_pixel_texture_lod' => {
-    'binding_name' => 'GLEW_SGIX_pixel_texture_lod',
     'glewImpl' => 'GLEW_SGIX_pixel_texture_lod',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_pixel_tiles' => {
-    'binding_name' => 'GLEW_SGIX_pixel_tiles',
     'glewImpl' => 'GLEW_SGIX_pixel_tiles',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_polynomial_ffd' => {
-    'binding_name' => 'GLEW_SGIX_polynomial_ffd',
     'glewImpl' => 'GLEW_SGIX_polynomial_ffd',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_quad_mesh' => {
-    'binding_name' => 'GLEW_SGIX_quad_mesh',
     'glewImpl' => 'GLEW_SGIX_quad_mesh',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_reference_plane' => {
-    'binding_name' => 'GLEW_SGIX_reference_plane',
     'glewImpl' => 'GLEW_SGIX_reference_plane',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_resample' => {
-    'binding_name' => 'GLEW_SGIX_resample',
     'glewImpl' => 'GLEW_SGIX_resample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_scalebias_hint' => {
-    'binding_name' => 'GLEW_SGIX_scalebias_hint',
     'glewImpl' => 'GLEW_SGIX_scalebias_hint',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_shadow' => {
-    'binding_name' => 'GLEW_SGIX_shadow',
     'glewImpl' => 'GLEW_SGIX_shadow',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_shadow_ambient' => {
-    'binding_name' => 'GLEW_SGIX_shadow_ambient',
     'glewImpl' => 'GLEW_SGIX_shadow_ambient',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_slim' => {
-    'binding_name' => 'GLEW_SGIX_slim',
     'glewImpl' => 'GLEW_SGIX_slim',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_spotlight_cutoff' => {
-    'binding_name' => 'GLEW_SGIX_spotlight_cutoff',
     'glewImpl' => 'GLEW_SGIX_spotlight_cutoff',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_sprite' => {
-    'binding_name' => 'GLEW_SGIX_sprite',
     'glewImpl' => 'GLEW_SGIX_sprite',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_subdiv_patch' => {
-    'binding_name' => 'GLEW_SGIX_subdiv_patch',
     'glewImpl' => 'GLEW_SGIX_subdiv_patch',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_subsample' => {
-    'binding_name' => 'GLEW_SGIX_subsample',
     'glewImpl' => 'GLEW_SGIX_subsample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_tag_sample_buffer' => {
-    'binding_name' => 'GLEW_SGIX_tag_sample_buffer',
     'glewImpl' => 'GLEW_SGIX_tag_sample_buffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_add_env' => {
-    'binding_name' => 'GLEW_SGIX_texture_add_env',
     'glewImpl' => 'GLEW_SGIX_texture_add_env',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_coordinate_clamp' => {
-    'binding_name' => 'GLEW_SGIX_texture_coordinate_clamp',
     'glewImpl' => 'GLEW_SGIX_texture_coordinate_clamp',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_lod_bias' => {
-    'binding_name' => 'GLEW_SGIX_texture_lod_bias',
     'glewImpl' => 'GLEW_SGIX_texture_lod_bias',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_mipmap_anisotropic' => {
-    'binding_name' => 'GLEW_SGIX_texture_mipmap_anisotropic',
     'glewImpl' => 'GLEW_SGIX_texture_mipmap_anisotropic',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_multi_buffer' => {
-    'binding_name' => 'GLEW_SGIX_texture_multi_buffer',
     'glewImpl' => 'GLEW_SGIX_texture_multi_buffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_phase' => {
-    'binding_name' => 'GLEW_SGIX_texture_phase',
     'glewImpl' => 'GLEW_SGIX_texture_phase',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_range' => {
-    'binding_name' => 'GLEW_SGIX_texture_range',
     'glewImpl' => 'GLEW_SGIX_texture_range',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_scale_bias' => {
-    'binding_name' => 'GLEW_SGIX_texture_scale_bias',
     'glewImpl' => 'GLEW_SGIX_texture_scale_bias',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_texture_supersample' => {
-    'binding_name' => 'GLEW_SGIX_texture_supersample',
     'glewImpl' => 'GLEW_SGIX_texture_supersample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_vector_ops' => {
-    'binding_name' => 'GLEW_SGIX_vector_ops',
     'glewImpl' => 'GLEW_SGIX_vector_ops',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_vertex_array_object' => {
-    'binding_name' => 'GLEW_SGIX_vertex_array_object',
     'glewImpl' => 'GLEW_SGIX_vertex_array_object',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_vertex_preclip' => {
-    'binding_name' => 'GLEW_SGIX_vertex_preclip',
     'glewImpl' => 'GLEW_SGIX_vertex_preclip',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_vertex_preclip_hint' => {
-    'binding_name' => 'GLEW_SGIX_vertex_preclip_hint',
     'glewImpl' => 'GLEW_SGIX_vertex_preclip_hint',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_ycrcb' => {
-    'binding_name' => 'GLEW_SGIX_ycrcb',
     'glewImpl' => 'GLEW_SGIX_ycrcb',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_ycrcb_subsample' => {
-    'binding_name' => 'GLEW_SGIX_ycrcb_subsample',
     'glewImpl' => 'GLEW_SGIX_ycrcb_subsample',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGIX_ycrcba' => {
-    'binding_name' => 'GLEW_SGIX_ycrcba',
     'glewImpl' => 'GLEW_SGIX_ycrcba',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGI_color_matrix' => {
-    'binding_name' => 'GLEW_SGI_color_matrix',
     'glewImpl' => 'GLEW_SGI_color_matrix',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGI_color_table' => {
-    'binding_name' => 'GLEW_SGI_color_table',
     'glewImpl' => 'GLEW_SGI_color_table',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGI_complex' => {
-    'binding_name' => 'GLEW_SGI_complex',
     'glewImpl' => 'GLEW_SGI_complex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGI_complex_type' => {
-    'binding_name' => 'GLEW_SGI_complex_type',
     'glewImpl' => 'GLEW_SGI_complex_type',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGI_fft' => {
-    'binding_name' => 'GLEW_SGI_fft',
     'glewImpl' => 'GLEW_SGI_fft',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SGI_texture_color_table' => {
-    'binding_name' => 'GLEW_SGI_texture_color_table',
     'glewImpl' => 'GLEW_SGI_texture_color_table',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SUNX_constant_data' => {
-    'binding_name' => 'GLEW_SUNX_constant_data',
     'glewImpl' => 'GLEW_SUNX_constant_data',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SUN_convolution_border_modes' => {
-    'binding_name' => 'GLEW_SUN_convolution_border_modes',
     'glewImpl' => 'GLEW_SUN_convolution_border_modes',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SUN_global_alpha' => {
-    'binding_name' => 'GLEW_SUN_global_alpha',
     'glewImpl' => 'GLEW_SUN_global_alpha',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SUN_mesh_array' => {
-    'binding_name' => 'GLEW_SUN_mesh_array',
     'glewImpl' => 'GLEW_SUN_mesh_array',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SUN_read_video_pixels' => {
-    'binding_name' => 'GLEW_SUN_read_video_pixels',
     'glewImpl' => 'GLEW_SUN_read_video_pixels',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SUN_slice_accum' => {
-    'binding_name' => 'GLEW_SUN_slice_accum',
     'glewImpl' => 'GLEW_SUN_slice_accum',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SUN_triangle_list' => {
-    'binding_name' => 'GLEW_SUN_triangle_list',
     'glewImpl' => 'GLEW_SUN_triangle_list',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_SUN_vertex' => {
-    'binding_name' => 'GLEW_SUN_vertex',
     'glewImpl' => 'GLEW_SUN_vertex',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_1_1' => {
-    'binding_name' => 'GLEW_VERSION_1_1',
     'glewImpl' => 'GLEW_VERSION_1_1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_1_2' => {
-    'binding_name' => 'GLEW_VERSION_1_2',
     'glewImpl' => 'GLEW_VERSION_1_2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_1_2_1' => {
-    'binding_name' => 'GLEW_VERSION_1_2_1',
     'glewImpl' => 'GLEW_VERSION_1_2_1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_1_3' => {
-    'binding_name' => 'GLEW_VERSION_1_3',
     'glewImpl' => 'GLEW_VERSION_1_3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_1_4' => {
-    'binding_name' => 'GLEW_VERSION_1_4',
     'glewImpl' => 'GLEW_VERSION_1_4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_1_5' => {
-    'binding_name' => 'GLEW_VERSION_1_5',
     'glewImpl' => 'GLEW_VERSION_1_5',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_2_0' => {
-    'binding_name' => 'GLEW_VERSION_2_0',
     'glewImpl' => 'GLEW_VERSION_2_0',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_2_1' => {
-    'binding_name' => 'GLEW_VERSION_2_1',
     'glewImpl' => 'GLEW_VERSION_2_1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_3_0' => {
-    'binding_name' => 'GLEW_VERSION_3_0',
     'glewImpl' => 'GLEW_VERSION_3_0',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_3_1' => {
-    'binding_name' => 'GLEW_VERSION_3_1',
     'glewImpl' => 'GLEW_VERSION_3_1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_3_2' => {
-    'binding_name' => 'GLEW_VERSION_3_2',
     'glewImpl' => 'GLEW_VERSION_3_2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_3_3' => {
-    'binding_name' => 'GLEW_VERSION_3_3',
     'glewImpl' => 'GLEW_VERSION_3_3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_4_0' => {
-    'binding_name' => 'GLEW_VERSION_4_0',
     'glewImpl' => 'GLEW_VERSION_4_0',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_4_1' => {
-    'binding_name' => 'GLEW_VERSION_4_1',
     'glewImpl' => 'GLEW_VERSION_4_1',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_4_2' => {
-    'binding_name' => 'GLEW_VERSION_4_2',
     'glewImpl' => 'GLEW_VERSION_4_2',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_4_3' => {
-    'binding_name' => 'GLEW_VERSION_4_3',
     'glewImpl' => 'GLEW_VERSION_4_3',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_4_4' => {
-    'binding_name' => 'GLEW_VERSION_4_4',
     'glewImpl' => 'GLEW_VERSION_4_4',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_4_5' => {
-    'binding_name' => 'GLEW_VERSION_4_5',
     'glewImpl' => 'GLEW_VERSION_4_5',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_VERSION_4_6' => {
-    'binding_name' => 'GLEW_VERSION_4_6',
     'glewImpl' => 'GLEW_VERSION_4_6',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_WIN_phong_shading' => {
-    'binding_name' => 'GLEW_WIN_phong_shading',
     'glewImpl' => 'GLEW_WIN_phong_shading',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_WIN_scene_markerXXX' => {
-    'binding_name' => 'GLEW_WIN_scene_markerXXX',
     'glewImpl' => 'GLEW_WIN_scene_markerXXX',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_WIN_specular_fog' => {
-    'binding_name' => 'GLEW_WIN_specular_fog',
     'glewImpl' => 'GLEW_WIN_specular_fog',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
     'signature' => 'void'
   },
   'GLEW_WIN_swap_hint' => {
-    'binding_name' => 'GLEW_WIN_swap_hint',
     'glewImpl' => 'GLEW_WIN_swap_hint',
     'glewtype' => 'var',
     'restype' => 'GLboolean',
@@ -13022,7 +12220,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glAccum',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -13044,7 +12241,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glAcquireKeyedMutexWin32EXT',
     'feature' => 'GL_EXT_win32_keyed_mutex',
     'glewImpl' => '__glewAcquireKeyedMutexWin32EXT',
     'glewtype' => 'fun',
@@ -13058,7 +12254,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glActiveProgramEXT',
     'feature' => 'GL_EXT_separate_shader_objects',
     'glewImpl' => '__glewActiveProgramEXT',
     'glewtype' => 'fun',
@@ -13076,7 +12271,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glActiveShaderProgram',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewActiveShaderProgram',
     'glewtype' => 'fun',
@@ -13090,7 +12284,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glActiveStencilFaceEXT',
     'feature' => 'GL_EXT_stencil_two_side',
     'glewImpl' => '__glewActiveStencilFaceEXT',
     'glewtype' => 'fun',
@@ -13104,7 +12297,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glActiveTexture',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewActiveTexture',
     'glewtype' => 'fun',
@@ -13118,7 +12310,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glActiveTextureARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewActiveTextureARB',
     'glewtype' => 'fun',
@@ -13162,7 +12353,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glAddSwapHintRectWIN',
     'feature' => 'GL_WIN_swap_hint',
     'glewImpl' => '__glewAddSwapHintRectWIN',
     'glewtype' => 'fun',
@@ -13180,7 +12370,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glAddressSpace',
     'feature' => 'GL_SGIX_datapipe',
     'glewImpl' => '__glewAddressSpace',
     'glewtype' => 'fun',
@@ -13240,7 +12429,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glAlphaFragmentOp1ATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewAlphaFragmentOp1ATI',
     'glewtype' => 'fun',
@@ -13286,7 +12474,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glAlphaFragmentOp2ATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewAlphaFragmentOp2ATI',
     'glewtype' => 'fun',
@@ -13344,7 +12531,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glAlphaFragmentOp3ATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewAlphaFragmentOp3ATI',
     'glewtype' => 'fun',
@@ -13362,7 +12548,6 @@ our %registry = (
         'GLclampf '
       ]
     ],
-    'binding_name' => 'glAlphaFunc',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -13380,7 +12565,6 @@ our %registry = (
         'GLclampf '
       ]
     ],
-    'binding_name' => 'glAlphaFuncQCOM',
     'feature' => 'GL_QCOM_alpha_test',
     'glewImpl' => '__glewAlphaFuncQCOM',
     'glewtype' => 'fun',
@@ -13398,7 +12582,6 @@ our %registry = (
         'GLclampx '
       ]
     ],
-    'binding_name' => 'glAlphaFuncx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewAlphaFuncx',
     'glewtype' => 'fun',
@@ -13412,7 +12595,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glApplyTextureEXT',
     'feature' => 'GL_EXT_light_texture',
     'glewImpl' => '__glewApplyTextureEXT',
     'glewtype' => 'fun',
@@ -13514,7 +12696,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glArrayElement',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -13528,7 +12709,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glArrayElementEXT',
     'feature' => 'GL_EXT_vertex_array',
     'glewImpl' => '__glewArrayElementEXT',
     'glewtype' => 'fun',
@@ -13562,7 +12742,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glArrayObjectATI',
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewArrayObjectATI',
     'glewtype' => 'fun',
@@ -13576,7 +12755,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glAsyncMarkerSGIX',
     'feature' => 'GL_SGIX_async',
     'glewImpl' => '__glewAsyncMarkerSGIX',
     'glewtype' => 'fun',
@@ -13594,7 +12772,6 @@ our %registry = (
         'GLhandleARB '
       ]
     ],
-    'binding_name' => 'glAttachObjectARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewAttachObjectARB',
     'glewtype' => 'fun',
@@ -13612,7 +12789,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glAttachShader',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewAttachShader',
     'glewtype' => 'fun',
@@ -13626,7 +12802,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBegin',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -13644,7 +12819,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBeginConditionalRender',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewBeginConditionalRender',
     'glewtype' => 'fun',
@@ -13662,7 +12836,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBeginConditionalRenderNV',
     'feature' => 'GL_NV_conditional_render',
     'glewImpl' => '__glewBeginConditionalRenderNV',
     'glewtype' => 'fun',
@@ -13676,7 +12849,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBeginConditionalRenderNVX',
     'feature' => 'GL_NVX_conditional_render',
     'glewImpl' => '__glewBeginConditionalRenderNVX',
     'glewtype' => 'fun',
@@ -13684,7 +12856,6 @@ our %registry = (
     'signature' => 'GLuint id'
   },
   'glBeginFragmentShaderATI' => {
-    'binding_name' => 'glBeginFragmentShaderATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewBeginFragmentShaderATI',
     'glewtype' => 'fun',
@@ -13698,7 +12869,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBeginOcclusionQueryNV',
     'feature' => 'GL_NV_occlusion_query',
     'glewImpl' => '__glewBeginOcclusionQueryNV',
     'glewtype' => 'fun',
@@ -13712,7 +12882,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBeginPerfMonitorAMD',
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewBeginPerfMonitorAMD',
     'glewtype' => 'fun',
@@ -13726,7 +12895,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBeginPerfQueryINTEL',
     'feature' => 'GL_INTEL_performance_query',
     'glewImpl' => '__glewBeginPerfQueryINTEL',
     'glewtype' => 'fun',
@@ -13744,7 +12912,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBeginQuery',
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewBeginQuery',
     'glewtype' => 'fun',
@@ -13762,7 +12929,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBeginQueryANGLE',
     'feature' => 'GL_ANGLE_timer_query',
     'glewImpl' => '__glewBeginQueryANGLE',
     'glewtype' => 'fun',
@@ -13780,7 +12946,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBeginQueryARB',
     'feature' => 'GL_ARB_occlusion_query',
     'glewImpl' => '__glewBeginQueryARB',
     'glewtype' => 'fun',
@@ -13802,7 +12967,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBeginQueryIndexed',
     'feature' => 'GL_ARB_transform_feedback3',
     'glewImpl' => '__glewBeginQueryIndexed',
     'glewtype' => 'fun',
@@ -13810,7 +12974,6 @@ our %registry = (
     'signature' => 'GLenum target, GLuint index, GLuint id'
   },
   'glBeginSceneEXT' => {
-    'binding_name' => 'glBeginSceneEXT',
     'feature' => 'GL_EXT_scene_marker',
     'glewImpl' => '__glewBeginSceneEXT',
     'glewtype' => 'fun',
@@ -13824,7 +12987,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBeginTransformFeedback',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewBeginTransformFeedback',
     'glewtype' => 'fun',
@@ -13838,7 +13000,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBeginTransformFeedbackEXT',
     'feature' => 'GL_EXT_transform_feedback',
     'glewImpl' => '__glewBeginTransformFeedbackEXT',
     'glewtype' => 'fun',
@@ -13852,7 +13013,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBeginTransformFeedbackNV',
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewBeginTransformFeedbackNV',
     'glewtype' => 'fun',
@@ -13860,7 +13020,6 @@ our %registry = (
     'signature' => 'GLenum primitiveMode'
   },
   'glBeginVertexShaderEXT' => {
-    'binding_name' => 'glBeginVertexShaderEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewBeginVertexShaderEXT',
     'glewtype' => 'fun',
@@ -13874,7 +13033,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBeginVideoCaptureNV',
     'feature' => 'GL_NV_video_capture',
     'glewImpl' => '__glewBeginVideoCaptureNV',
     'glewtype' => 'fun',
@@ -13950,7 +13108,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindBuffer',
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewBindBuffer',
     'glewtype' => 'fun',
@@ -13968,7 +13125,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindBufferARB',
     'feature' => 'GL_ARB_vertex_buffer_object',
     'glewImpl' => '__glewBindBufferARB',
     'glewtype' => 'fun',
@@ -13990,7 +13146,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindBufferBase',
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewBindBufferBase',
     'glewtype' => 'fun',
@@ -14012,7 +13167,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindBufferBaseEXT',
     'feature' => 'GL_EXT_transform_feedback',
     'glewImpl' => '__glewBindBufferBaseEXT',
     'glewtype' => 'fun',
@@ -14034,7 +13188,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindBufferBaseNV',
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewBindBufferBaseNV',
     'glewtype' => 'fun',
@@ -14060,7 +13213,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glBindBufferOffsetEXT',
     'feature' => 'GL_EXT_transform_feedback',
     'glewImpl' => '__glewBindBufferOffsetEXT',
     'glewtype' => 'fun',
@@ -14086,7 +13238,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glBindBufferOffsetNV',
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewBindBufferOffsetNV',
     'glewtype' => 'fun',
@@ -14116,7 +13267,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glBindBufferRange',
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewBindBufferRange',
     'glewtype' => 'fun',
@@ -14146,7 +13296,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glBindBufferRangeEXT',
     'feature' => 'GL_EXT_transform_feedback',
     'glewImpl' => '__glewBindBufferRangeEXT',
     'glewtype' => 'fun',
@@ -14176,7 +13325,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glBindBufferRangeNV',
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewBindBufferRangeNV',
     'glewtype' => 'fun',
@@ -14346,7 +13494,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindFragmentShaderATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewBindFragmentShaderATI',
     'glewtype' => 'fun',
@@ -14364,7 +13511,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindFramebuffer',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewBindFramebuffer',
     'glewtype' => 'fun',
@@ -14382,7 +13528,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindFramebufferEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewBindFramebufferEXT',
     'glewtype' => 'fun',
@@ -14420,7 +13565,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBindImageTexture',
     'feature' => 'GL_ARB_shader_image_load_store',
     'glewImpl' => '__glewBindImageTexture',
     'glewtype' => 'fun',
@@ -14458,7 +13602,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glBindImageTextureEXT',
     'feature' => 'GL_EXT_shader_image_load_store',
     'glewImpl' => '__glewBindImageTextureEXT',
     'glewtype' => 'fun',
@@ -14498,7 +13641,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBindLightParameterEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewBindLightParameterEXT',
     'glewtype' => 'fun',
@@ -14516,7 +13658,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBindMaterialParameterEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewBindMaterialParameterEXT',
     'glewtype' => 'fun',
@@ -14538,7 +13679,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindMultiTextureEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewBindMultiTextureEXT',
     'glewtype' => 'fun',
@@ -14552,7 +13692,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBindParameterEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewBindParameterEXT',
     'glewtype' => 'fun',
@@ -14570,7 +13709,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindProgramARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewBindProgramARB',
     'glewtype' => 'fun',
@@ -14588,7 +13726,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindProgramNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewBindProgramNV',
     'glewtype' => 'fun',
@@ -14602,7 +13739,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindProgramPipeline',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewBindProgramPipeline',
     'glewtype' => 'fun',
@@ -14620,7 +13756,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindRenderbuffer',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewBindRenderbuffer',
     'glewtype' => 'fun',
@@ -14638,7 +13773,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindRenderbufferEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewBindRenderbufferEXT',
     'glewtype' => 'fun',
@@ -14656,7 +13790,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindSampler',
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewBindSampler',
     'glewtype' => 'fun',
@@ -14700,7 +13833,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBindTexGenParameterEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewBindTexGenParameterEXT',
     'glewtype' => 'fun',
@@ -14718,7 +13850,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindTexture',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -14736,7 +13867,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindTextureEXT',
     'feature' => 'GL_EXT_texture_object',
     'glewImpl' => '__glewBindTextureEXT',
     'glewtype' => 'fun',
@@ -14754,7 +13884,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindTextureUnit',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewBindTextureUnit',
     'glewtype' => 'fun',
@@ -14772,7 +13901,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBindTextureUnitParameterEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewBindTextureUnitParameterEXT',
     'glewtype' => 'fun',
@@ -14812,7 +13940,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindTransformFeedback',
     'feature' => 'GL_ARB_transform_feedback2',
     'glewImpl' => '__glewBindTransformFeedback',
     'glewtype' => 'fun',
@@ -14830,7 +13957,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindTransformFeedbackNV',
     'feature' => 'GL_NV_transform_feedback2',
     'glewImpl' => '__glewBindTransformFeedbackNV',
     'glewtype' => 'fun',
@@ -14844,7 +13970,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindVertexArray',
     'feature' => 'GL_ARB_vertex_array_object',
     'glewImpl' => '__glewBindVertexArray',
     'glewtype' => 'fun',
@@ -14858,7 +13983,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindVertexArrayAPPLE',
     'feature' => 'GL_APPLE_vertex_array_object',
     'glewImpl' => '__glewBindVertexArrayAPPLE',
     'glewtype' => 'fun',
@@ -14872,7 +13996,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindVertexArraySGIX',
     'feature' => 'GL_SGIX_vertex_array_object',
     'glewImpl' => '__glewBindVertexArraySGIX',
     'glewtype' => 'fun',
@@ -14898,7 +14021,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glBindVertexBuffer',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewBindVertexBuffer',
     'glewtype' => 'fun',
@@ -14942,7 +14064,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindVertexShaderEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewBindVertexShaderEXT',
     'glewtype' => 'fun',
@@ -14968,7 +14089,6 @@ our %registry = (
         'GLintptrARB '
       ]
     ],
-    'binding_name' => 'glBindVideoCaptureStreamBufferNV',
     'feature' => 'GL_NV_video_capture',
     'glewImpl' => '__glewBindVideoCaptureStreamBufferNV',
     'glewtype' => 'fun',
@@ -14998,7 +14118,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glBindVideoCaptureStreamTextureNV',
     'feature' => 'GL_NV_video_capture',
     'glewImpl' => '__glewBindVideoCaptureStreamTextureNV',
     'glewtype' => 'fun',
@@ -15066,7 +14185,6 @@ our %registry = (
     'signature' => 'GLsizei width, GLsizei height, GLfloat xorig, GLfloat yorig, GLfloat xmove, GLfloat ymove, const GLubyte *bitmap'
   },
   'glBlendBarrierKHR' => {
-    'binding_name' => 'glBlendBarrierKHR',
     'feature' => 'GL_KHR_blend_equation_advanced',
     'glewImpl' => '__glewBlendBarrierKHR',
     'glewtype' => 'fun',
@@ -15074,7 +14192,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glBlendBarrierNV' => {
-    'binding_name' => 'glBlendBarrierNV',
     'feature' => 'GL_NV_blend_equation_advanced',
     'glewImpl' => '__glewBlendBarrierNV',
     'glewtype' => 'fun',
@@ -15100,7 +14217,6 @@ our %registry = (
         'GLclampf '
       ]
     ],
-    'binding_name' => 'glBlendColor',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewBlendColor',
     'glewtype' => 'fun',
@@ -15126,7 +14242,6 @@ our %registry = (
         'GLclampf '
       ]
     ],
-    'binding_name' => 'glBlendColorEXT',
     'feature' => 'GL_EXT_blend_color',
     'glewImpl' => '__glewBlendColorEXT',
     'glewtype' => 'fun',
@@ -15140,7 +14255,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquation',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewBlendEquation',
     'glewtype' => 'fun',
@@ -15154,7 +14268,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationEXT',
     'feature' => 'GL_EXT_blend_minmax',
     'glewImpl' => '__glewBlendEquationEXT',
     'glewtype' => 'fun',
@@ -15172,7 +14285,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationIndexedAMD',
     'feature' => 'GL_AMD_draw_buffers_blend',
     'glewImpl' => '__glewBlendEquationIndexedAMD',
     'glewtype' => 'fun',
@@ -15190,7 +14302,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationSeparate',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewBlendEquationSeparate',
     'glewtype' => 'fun',
@@ -15208,7 +14319,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationSeparateEXT',
     'feature' => 'GL_EXT_blend_equation_separate',
     'glewImpl' => '__glewBlendEquationSeparateEXT',
     'glewtype' => 'fun',
@@ -15230,7 +14340,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationSeparateIndexedAMD',
     'feature' => 'GL_AMD_draw_buffers_blend',
     'glewImpl' => '__glewBlendEquationSeparateIndexedAMD',
     'glewtype' => 'fun',
@@ -15252,7 +14361,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationSeparatei',
     'feature' => 'GL_VERSION_4_0',
     'glewImpl' => '__glewBlendEquationSeparatei',
     'glewtype' => 'fun',
@@ -15274,7 +14382,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationSeparateiARB',
     'feature' => 'GL_ARB_draw_buffers_blend',
     'glewImpl' => '__glewBlendEquationSeparateiARB',
     'glewtype' => 'fun',
@@ -15296,7 +14403,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationSeparateiEXT',
     'feature' => 'GL_EXT_draw_buffers_indexed',
     'glewImpl' => '__glewBlendEquationSeparateiEXT',
     'glewtype' => 'fun',
@@ -15314,7 +14420,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationi',
     'feature' => 'GL_VERSION_4_0',
     'glewImpl' => '__glewBlendEquationi',
     'glewtype' => 'fun',
@@ -15332,7 +14437,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationiARB',
     'feature' => 'GL_ARB_draw_buffers_blend',
     'glewImpl' => '__glewBlendEquationiARB',
     'glewtype' => 'fun',
@@ -15350,7 +14454,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendEquationiEXT',
     'feature' => 'GL_EXT_draw_buffers_indexed',
     'glewImpl' => '__glewBlendEquationiEXT',
     'glewtype' => 'fun',
@@ -15368,7 +14471,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFunc',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -15390,7 +14492,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFuncIndexedAMD',
     'feature' => 'GL_AMD_draw_buffers_blend',
     'glewImpl' => '__glewBlendFuncIndexedAMD',
     'glewtype' => 'fun',
@@ -15416,7 +14517,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFuncSeparate',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewBlendFuncSeparate',
     'glewtype' => 'fun',
@@ -15442,7 +14542,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFuncSeparateEXT',
     'feature' => 'GL_EXT_blend_func_separate',
     'glewImpl' => '__glewBlendFuncSeparateEXT',
     'glewtype' => 'fun',
@@ -15472,7 +14571,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFuncSeparateIndexedAMD',
     'feature' => 'GL_AMD_draw_buffers_blend',
     'glewImpl' => '__glewBlendFuncSeparateIndexedAMD',
     'glewtype' => 'fun',
@@ -15502,7 +14600,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFuncSeparatei',
     'feature' => 'GL_VERSION_4_0',
     'glewImpl' => '__glewBlendFuncSeparatei',
     'glewtype' => 'fun',
@@ -15532,7 +14629,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFuncSeparateiARB',
     'feature' => 'GL_ARB_draw_buffers_blend',
     'glewImpl' => '__glewBlendFuncSeparateiARB',
     'glewtype' => 'fun',
@@ -15562,7 +14658,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFuncSeparateiEXT',
     'feature' => 'GL_EXT_draw_buffers_indexed',
     'glewImpl' => '__glewBlendFuncSeparateiEXT',
     'glewtype' => 'fun',
@@ -15584,7 +14679,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFunci',
     'feature' => 'GL_VERSION_4_0',
     'glewImpl' => '__glewBlendFunci',
     'glewtype' => 'fun',
@@ -15606,7 +14700,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFunciARB',
     'feature' => 'GL_ARB_draw_buffers_blend',
     'glewImpl' => '__glewBlendFunciARB',
     'glewtype' => 'fun',
@@ -15628,7 +14721,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlendFunciEXT',
     'feature' => 'GL_EXT_draw_buffers_indexed',
     'glewImpl' => '__glewBlendFunciEXT',
     'glewtype' => 'fun',
@@ -15646,7 +14738,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glBlendParameteriNV',
     'feature' => 'GL_NV_blend_equation_advanced',
     'glewImpl' => '__glewBlendParameteriNV',
     'glewtype' => 'fun',
@@ -15696,7 +14787,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlitFramebuffer',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewBlitFramebuffer',
     'glewtype' => 'fun',
@@ -15746,7 +14836,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlitFramebufferANGLE',
     'feature' => 'GL_ANGLE_framebuffer_blit',
     'glewImpl' => '__glewBlitFramebufferANGLE',
     'glewtype' => 'fun',
@@ -15796,7 +14885,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlitFramebufferEXT',
     'feature' => 'GL_EXT_framebuffer_blit',
     'glewImpl' => '__glewBlitFramebufferEXT',
     'glewtype' => 'fun',
@@ -15846,7 +14934,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlitFramebufferNV',
     'feature' => 'GL_NV_framebuffer_blit',
     'glewImpl' => '__glewBlitFramebufferNV',
     'glewtype' => 'fun',
@@ -15904,7 +14991,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glBlitNamedFramebuffer',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewBlitNamedFramebuffer',
     'glewtype' => 'fun',
@@ -15930,7 +15016,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glBufferAddressRangeNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewBufferAddressRangeNV',
     'glewtype' => 'fun',
@@ -16008,7 +15093,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glBufferPageCommitmentARB',
     'feature' => 'GL_ARB_sparse_buffer',
     'glewImpl' => '__glewBufferPageCommitmentARB',
     'glewtype' => 'fun',
@@ -16030,7 +15114,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glBufferParameteriAPPLE',
     'feature' => 'GL_APPLE_flush_buffer_range',
     'glewImpl' => '__glewBufferParameteriAPPLE',
     'glewtype' => 'fun',
@@ -16038,7 +15121,6 @@ our %registry = (
     'signature' => 'GLenum target, GLenum pname, GLint param'
   },
   'glBufferRegionEnabled' => {
-    'binding_name' => 'glBufferRegionEnabled',
     'feature' => 'GL_KTX_buffer_region',
     'glewImpl' => '__glewBufferRegionEnabled',
     'glewtype' => 'fun',
@@ -16120,7 +15202,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glBufferStorageExternalEXT',
     'feature' => 'GL_EXT_external_buffer',
     'glewImpl' => '__glewBufferStorageExternalEXT',
     'glewtype' => 'fun',
@@ -16146,7 +15227,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glBufferStorageMemEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewBufferStorageMemEXT',
     'glewtype' => 'fun',
@@ -16212,7 +15292,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glCallCommandListNV',
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewCallCommandListNV',
     'glewtype' => 'fun',
@@ -16226,7 +15305,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glCallList',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16262,7 +15340,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCheckFramebufferStatus',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewCheckFramebufferStatus',
     'glewtype' => 'fun',
@@ -16276,7 +15353,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCheckFramebufferStatusEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewCheckFramebufferStatusEXT',
     'glewtype' => 'fun',
@@ -16294,7 +15370,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCheckNamedFramebufferStatus',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCheckNamedFramebufferStatus',
     'glewtype' => 'fun',
@@ -16312,7 +15387,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCheckNamedFramebufferStatusEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCheckNamedFramebufferStatusEXT',
     'glewtype' => 'fun',
@@ -16330,7 +15404,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glClampColor',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewClampColor',
     'glewtype' => 'fun',
@@ -16348,7 +15421,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glClampColorARB',
     'feature' => 'GL_ARB_color_buffer_float',
     'glewImpl' => '__glewClampColorARB',
     'glewtype' => 'fun',
@@ -16362,7 +15434,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glClear',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16388,7 +15459,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glClearAccum',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16482,7 +15552,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glClearBufferfi',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewClearBufferfi',
     'glewtype' => 'fun',
@@ -16574,7 +15643,6 @@ our %registry = (
         'GLclampf '
       ]
     ],
-    'binding_name' => 'glClearColor',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16600,7 +15668,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glClearColorIiEXT',
     'feature' => 'GL_EXT_texture_integer',
     'glewImpl' => '__glewClearColorIiEXT',
     'glewtype' => 'fun',
@@ -16626,7 +15693,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glClearColorIuiEXT',
     'feature' => 'GL_EXT_texture_integer',
     'glewImpl' => '__glewClearColorIuiEXT',
     'glewtype' => 'fun',
@@ -16652,7 +15718,6 @@ our %registry = (
         'GLclampx '
       ]
     ],
-    'binding_name' => 'glClearColorx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewClearColorx',
     'glewtype' => 'fun',
@@ -16666,7 +15731,6 @@ our %registry = (
         'GLclampd '
       ]
     ],
-    'binding_name' => 'glClearDepth',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16680,7 +15744,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glClearDepthdNV',
     'feature' => 'GL_NV_depth_buffer_float',
     'glewImpl' => '__glewClearDepthdNV',
     'glewtype' => 'fun',
@@ -16694,7 +15757,6 @@ our %registry = (
         'GLclampf '
       ]
     ],
-    'binding_name' => 'glClearDepthf',
     'feature' => 'GL_ARB_ES2_compatibility',
     'glewImpl' => '__glewClearDepthf',
     'glewtype' => 'fun',
@@ -16708,7 +15770,6 @@ our %registry = (
         'GLclampx '
       ]
     ],
-    'binding_name' => 'glClearDepthx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewClearDepthx',
     'glewtype' => 'fun',
@@ -16722,7 +15783,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glClearIndex',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16888,7 +15948,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glClearNamedFramebufferfi',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewClearNamedFramebufferfi',
     'glewtype' => 'fun',
@@ -17002,7 +16061,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glClearStencil',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17184,7 +16242,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glClientActiveTexture',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewClientActiveTexture',
     'glewtype' => 'fun',
@@ -17198,7 +16255,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glClientActiveTextureARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewClientActiveTextureARB',
     'glewtype' => 'fun',
@@ -17212,7 +16268,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glClientActiveVertexStreamATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewClientActiveVertexStreamATI',
     'glewtype' => 'fun',
@@ -17226,7 +16281,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glClientAttribDefaultEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewClientAttribDefaultEXT',
     'glewtype' => 'fun',
@@ -17248,7 +16302,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glClientWaitSync',
     'feature' => 'GL_ARB_sync',
     'glewImpl' => '__glewClientWaitSync',
     'glewtype' => 'fun',
@@ -17270,7 +16323,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glClientWaitSyncAPPLE',
     'feature' => 'GL_APPLE_sync',
     'glewImpl' => '__glewClientWaitSyncAPPLE',
     'glewtype' => 'fun',
@@ -17288,7 +16340,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glClipControl',
     'feature' => 'GL_ARB_clip_control',
     'glewImpl' => '__glewClipControl',
     'glewtype' => 'fun',
@@ -17364,7 +16415,6 @@ our %registry = (
         'GLbyte '
       ]
     ],
-    'binding_name' => 'glColor3b',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17400,7 +16450,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glColor3d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17436,7 +16485,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glColor3f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17470,7 +16518,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glColor3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -17524,7 +16571,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glColor3hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewColor3hNV',
     'glewtype' => 'fun',
@@ -17560,7 +16606,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glColor3i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17596,7 +16641,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glColor3s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17632,7 +16676,6 @@ our %registry = (
         'GLubyte '
       ]
     ],
-    'binding_name' => 'glColor3ub',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17668,7 +16711,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glColor3ui',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17704,7 +16746,6 @@ our %registry = (
         'GLushort '
       ]
     ],
-    'binding_name' => 'glColor3us',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17744,7 +16785,6 @@ our %registry = (
         'GLbyte '
       ]
     ],
-    'binding_name' => 'glColor4b',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17784,7 +16824,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glColor4d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17824,7 +16863,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glColor4f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17874,7 +16912,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glColor4fNormal3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor4fNormal3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -17936,7 +16973,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glColor4hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewColor4hNV',
     'glewtype' => 'fun',
@@ -17976,7 +17012,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glColor4i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -18016,7 +17051,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glColor4s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -18056,7 +17090,6 @@ our %registry = (
         'GLubyte '
       ]
     ],
-    'binding_name' => 'glColor4ub',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -18090,7 +17123,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glColor4ubVertex2fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor4ubVertex2fSUN',
     'glewtype' => 'fun',
@@ -18146,7 +17178,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glColor4ubVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor4ubVertex3fSUN',
     'glewtype' => 'fun',
@@ -18204,7 +17235,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glColor4ui',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -18244,7 +17274,6 @@ our %registry = (
         'GLushort '
       ]
     ],
-    'binding_name' => 'glColor4us',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -18284,7 +17313,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glColor4x',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewColor4x',
     'glewtype' => 'fun',
@@ -18306,7 +17334,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glColorFormatNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewColorFormatNV',
     'glewtype' => 'fun',
@@ -18344,7 +17371,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glColorFragmentOp1ATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewColorFragmentOp1ATI',
     'glewtype' => 'fun',
@@ -18394,7 +17420,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glColorFragmentOp2ATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewColorFragmentOp2ATI',
     'glewtype' => 'fun',
@@ -18456,7 +17481,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glColorFragmentOp3ATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewColorFragmentOp3ATI',
     'glewtype' => 'fun',
@@ -18482,7 +17506,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glColorMask',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -18512,7 +17535,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glColorMaskIndexedEXT',
     'feature' => 'GL_EXT_draw_buffers2',
     'glewImpl' => '__glewColorMaskIndexedEXT',
     'glewtype' => 'fun',
@@ -18542,7 +17564,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glColorMaski',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewColorMaski',
     'glewtype' => 'fun',
@@ -18572,7 +17593,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glColorMaskiEXT',
     'feature' => 'GL_EXT_draw_buffers_indexed',
     'glewImpl' => '__glewColorMaskiEXT',
     'glewtype' => 'fun',
@@ -18590,7 +17610,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glColorMaterial',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -18608,7 +17627,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glColorP3ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewColorP3ui',
     'glewtype' => 'fun',
@@ -18644,7 +17662,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glColorP4ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewColorP4ui',
     'glewtype' => 'fun',
@@ -19062,7 +18079,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCombinerInputNV',
     'feature' => 'GL_NV_register_combiners',
     'glewImpl' => '__glewCombinerInputNV',
     'glewtype' => 'fun',
@@ -19112,7 +18128,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glCombinerOutputNV',
     'feature' => 'GL_NV_register_combiners',
     'glewImpl' => '__glewCombinerOutputNV',
     'glewtype' => 'fun',
@@ -19130,7 +18145,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glCombinerParameterfNV',
     'feature' => 'GL_NV_register_combiners',
     'glewImpl' => '__glewCombinerParameterfNV',
     'glewtype' => 'fun',
@@ -19166,7 +18180,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glCombinerParameteriNV',
     'feature' => 'GL_NV_register_combiners',
     'glewImpl' => '__glewCombinerParameteriNV',
     'glewtype' => 'fun',
@@ -19224,7 +18237,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glCommandListSegmentsNV',
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewCommandListSegmentsNV',
     'glewtype' => 'fun',
@@ -19238,7 +18250,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glCompileCommandListNV',
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewCompileCommandListNV',
     'glewtype' => 'fun',
@@ -19252,7 +18263,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glCompileShader',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewCompileShader',
     'glewtype' => 'fun',
@@ -19266,7 +18276,6 @@ our %registry = (
         'GLhandleARB '
       ]
     ],
-    'binding_name' => 'glCompileShaderARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewCompileShaderARB',
     'glewtype' => 'fun',
@@ -20652,7 +19661,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glConservativeRasterParameterfNV',
     'feature' => 'GL_NV_conservative_raster_dilate',
     'glewImpl' => '__glewConservativeRasterParameterfNV',
     'glewtype' => 'fun',
@@ -20670,7 +19678,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glConservativeRasterParameteriNV',
     'feature' => 'GL_NV_conservative_raster_pre_snap_triangles',
     'glewImpl' => '__glewConservativeRasterParameteriNV',
     'glewtype' => 'fun',
@@ -20836,7 +19843,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glConvolutionParameterf',
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewConvolutionParameterf',
     'glewtype' => 'fun',
@@ -20858,7 +19864,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glConvolutionParameterfEXT',
     'feature' => 'GL_EXT_convolution',
     'glewImpl' => '__glewConvolutionParameterfEXT',
     'glewtype' => 'fun',
@@ -20924,7 +19929,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glConvolutionParameteri',
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewConvolutionParameteri',
     'glewtype' => 'fun',
@@ -20946,7 +19950,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glConvolutionParameteriEXT',
     'feature' => 'GL_EXT_convolution',
     'glewImpl' => '__glewConvolutionParameteriEXT',
     'glewtype' => 'fun',
@@ -21020,7 +20023,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glCopyBufferSubData',
     'feature' => 'GL_ARB_copy_buffer',
     'glewImpl' => '__glewCopyBufferSubData',
     'glewtype' => 'fun',
@@ -21050,7 +20052,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glCopyBufferSubDataNV',
     'feature' => 'GL_NV_copy_buffer',
     'glewImpl' => '__glewCopyBufferSubDataNV',
     'glewtype' => 'fun',
@@ -21080,7 +20081,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyColorSubTable',
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewCopyColorSubTable',
     'glewtype' => 'fun',
@@ -21110,7 +20110,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyColorSubTableEXT',
     'feature' => 'GL_EXT_color_subtable',
     'glewImpl' => '__glewCopyColorSubTableEXT',
     'glewtype' => 'fun',
@@ -21140,7 +20139,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyColorTable',
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewCopyColorTable',
     'glewtype' => 'fun',
@@ -21170,7 +20168,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyColorTableSGI',
     'feature' => 'GL_SGI_color_table',
     'glewImpl' => '__glewCopyColorTableSGI',
     'glewtype' => 'fun',
@@ -21200,7 +20197,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyConvolutionFilter1D',
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewCopyConvolutionFilter1D',
     'glewtype' => 'fun',
@@ -21230,7 +20226,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyConvolutionFilter1DEXT',
     'feature' => 'GL_EXT_convolution',
     'glewImpl' => '__glewCopyConvolutionFilter1DEXT',
     'glewtype' => 'fun',
@@ -21264,7 +20259,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyConvolutionFilter2D',
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewCopyConvolutionFilter2D',
     'glewtype' => 'fun',
@@ -21298,7 +20292,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyConvolutionFilter2DEXT',
     'feature' => 'GL_EXT_convolution',
     'glewImpl' => '__glewCopyConvolutionFilter2DEXT',
     'glewtype' => 'fun',
@@ -21368,7 +20361,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyImageSubData',
     'feature' => 'GL_ARB_copy_image',
     'glewImpl' => '__glewCopyImageSubData',
     'glewtype' => 'fun',
@@ -21438,7 +20430,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyImageSubDataEXT',
     'feature' => 'GL_EXT_copy_image',
     'glewImpl' => '__glewCopyImageSubDataEXT',
     'glewtype' => 'fun',
@@ -21508,7 +20499,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyImageSubDataNV',
     'feature' => 'GL_NV_copy_image',
     'glewImpl' => '__glewCopyImageSubDataNV',
     'glewtype' => 'fun',
@@ -21550,7 +20540,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glCopyMultiTexImage1DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCopyMultiTexImage1DEXT',
     'glewtype' => 'fun',
@@ -21596,7 +20585,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glCopyMultiTexImage2DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCopyMultiTexImage2DEXT',
     'glewtype' => 'fun',
@@ -21634,7 +20622,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyMultiTexSubImage1DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCopyMultiTexSubImage1DEXT',
     'glewtype' => 'fun',
@@ -21680,7 +20667,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyMultiTexSubImage2DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCopyMultiTexSubImage2DEXT',
     'glewtype' => 'fun',
@@ -21730,7 +20716,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyMultiTexSubImage3DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCopyMultiTexSubImage3DEXT',
     'glewtype' => 'fun',
@@ -21760,7 +20745,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glCopyNamedBufferSubData',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCopyNamedBufferSubData',
     'glewtype' => 'fun',
@@ -21778,7 +20762,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glCopyPathNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewCopyPathNV',
     'glewtype' => 'fun',
@@ -21808,7 +20791,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCopyPixels',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -21846,7 +20828,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glCopyTexImage1D',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -21884,7 +20865,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glCopyTexImage1DEXT',
     'feature' => 'GL_EXT_copy_texture',
     'glewImpl' => '__glewCopyTexImage1DEXT',
     'glewtype' => 'fun',
@@ -21926,7 +20906,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glCopyTexImage2D',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -21968,7 +20947,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glCopyTexImage2DEXT',
     'feature' => 'GL_EXT_copy_texture',
     'glewImpl' => '__glewCopyTexImage2DEXT',
     'glewtype' => 'fun',
@@ -22002,7 +20980,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTexSubImage1D',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -22036,7 +21013,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTexSubImage1DEXT',
     'feature' => 'GL_EXT_copy_texture',
     'glewImpl' => '__glewCopyTexSubImage1DEXT',
     'glewtype' => 'fun',
@@ -22078,7 +21054,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTexSubImage2D',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -22120,7 +21095,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTexSubImage2DEXT',
     'feature' => 'GL_EXT_copy_texture',
     'glewImpl' => '__glewCopyTexSubImage2DEXT',
     'glewtype' => 'fun',
@@ -22166,7 +21140,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTexSubImage3D',
     'feature' => 'GL_VERSION_1_2',
     'glewImpl' => '__glewCopyTexSubImage3D',
     'glewtype' => 'fun',
@@ -22212,7 +21185,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTexSubImage3DEXT',
     'feature' => 'GL_EXT_copy_texture',
     'glewImpl' => '__glewCopyTexSubImage3DEXT',
     'glewtype' => 'fun',
@@ -22258,7 +21230,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTexSubImage3DNV',
     'feature' => 'GL_NV_texture_array',
     'glewImpl' => '__glewCopyTexSubImage3DNV',
     'glewtype' => 'fun',
@@ -22300,7 +21271,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glCopyTextureImage1DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCopyTextureImage1DEXT',
     'glewtype' => 'fun',
@@ -22346,7 +21316,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glCopyTextureImage2DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCopyTextureImage2DEXT',
     'glewtype' => 'fun',
@@ -22372,7 +21341,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTextureLevelsAPPLE',
     'feature' => 'GL_APPLE_copy_texture_levels',
     'glewImpl' => '__glewCopyTextureLevelsAPPLE',
     'glewtype' => 'fun',
@@ -22406,7 +21374,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTextureSubImage1D',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCopyTextureSubImage1D',
     'glewtype' => 'fun',
@@ -22444,7 +21411,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTextureSubImage1DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCopyTextureSubImage1DEXT',
     'glewtype' => 'fun',
@@ -22486,7 +21452,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTextureSubImage2D',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCopyTextureSubImage2D',
     'glewtype' => 'fun',
@@ -22532,7 +21497,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTextureSubImage2DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCopyTextureSubImage2DEXT',
     'glewtype' => 'fun',
@@ -22578,7 +21542,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTextureSubImage3D',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCopyTextureSubImage3D',
     'glewtype' => 'fun',
@@ -22628,7 +21591,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glCopyTextureSubImage3DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewCopyTextureSubImage3DEXT',
     'glewtype' => 'fun',
@@ -22684,7 +21646,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCoverFillPathNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewCoverFillPathNV',
     'glewtype' => 'fun',
@@ -22740,7 +21701,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCoverStrokePathNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewCoverStrokePathNV',
     'glewtype' => 'fun',
@@ -22754,7 +21714,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCoverageModulationNV',
     'feature' => 'GL_EXT_raster_multisample',
     'glewImpl' => '__glewCoverageModulationNV',
     'glewtype' => 'fun',
@@ -22870,7 +21829,6 @@ our %registry = (
     'signature' => 'GLuint queryId, GLuint* queryHandle'
   },
   'glCreateProgram' => {
-    'binding_name' => 'glCreateProgram',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewCreateProgram',
     'glewtype' => 'fun',
@@ -22878,7 +21836,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glCreateProgramObjectARB' => {
-    'binding_name' => 'glCreateProgramObjectARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewCreateProgramObjectARB',
     'glewtype' => 'fun',
@@ -22968,7 +21925,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCreateShader',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewCreateShader',
     'glewtype' => 'fun',
@@ -22982,7 +21938,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCreateShaderObjectARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewCreateShaderObjectARB',
     'glewtype' => 'fun',
@@ -23062,7 +22017,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glCreateSyncFromCLeventARB',
     'feature' => 'GL_ARB_cl_event',
     'glewImpl' => '__glewCreateSyncFromCLeventARB',
     'glewtype' => 'fun',
@@ -23134,7 +22088,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glCullFace',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -23184,7 +22137,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glCurrentPaletteMatrixARB',
     'feature' => 'GL_ARB_matrix_palette',
     'glewImpl' => '__glewCurrentPaletteMatrixARB',
     'glewtype' => 'fun',
@@ -23198,7 +22150,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glDataPipe',
     'feature' => 'GL_SGIX_datapipe',
     'glewImpl' => '__glewDataPipe',
     'glewtype' => 'fun',
@@ -23462,7 +22413,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glDeformSGIX',
     'feature' => 'GL_SGIX_polynomial_ffd',
     'glewImpl' => '__glewDeformSGIX',
     'glewtype' => 'fun',
@@ -23498,7 +22448,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDeleteAsyncMarkersSGIX',
     'feature' => 'GL_SGIX_async',
     'glewImpl' => '__glewDeleteAsyncMarkersSGIX',
     'glewtype' => 'fun',
@@ -23512,7 +22461,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glDeleteBufferRegion',
     'feature' => 'GL_KTX_buffer_region',
     'glewImpl' => '__glewDeleteBufferRegion',
     'glewtype' => 'fun',
@@ -23616,7 +22564,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDeleteFragmentShaderATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewDeleteFragmentShaderATI',
     'glewtype' => 'fun',
@@ -23670,7 +22617,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDeleteLists',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -23760,7 +22706,6 @@ our %registry = (
         'GLhandleARB '
       ]
     ],
-    'binding_name' => 'glDeleteObjectARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewDeleteObjectARB',
     'glewtype' => 'fun',
@@ -23796,7 +22741,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDeletePathsNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewDeletePathsNV',
     'glewtype' => 'fun',
@@ -23828,7 +22772,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDeletePerfQueryINTEL',
     'feature' => 'GL_INTEL_performance_query',
     'glewImpl' => '__glewDeletePerfQueryINTEL',
     'glewtype' => 'fun',
@@ -23842,7 +22785,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDeleteProgram',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewDeleteProgram',
     'glewtype' => 'fun',
@@ -24036,7 +22978,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDeleteShader',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewDeleteShader',
     'glewtype' => 'fun',
@@ -24068,7 +23009,6 @@ our %registry = (
         'GLsync '
       ]
     ],
-    'binding_name' => 'glDeleteSync',
     'feature' => 'GL_ARB_sync',
     'glewImpl' => '__glewDeleteSync',
     'glewtype' => 'fun',
@@ -24082,7 +23022,6 @@ our %registry = (
         'GLsync '
       ]
     ],
-    'binding_name' => 'glDeleteSyncAPPLE',
     'feature' => 'GL_APPLE_sync',
     'glewImpl' => '__glewDeleteSyncAPPLE',
     'glewtype' => 'fun',
@@ -24222,7 +23161,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDeleteVertexShaderEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewDeleteVertexShaderEXT',
     'glewtype' => 'fun',
@@ -24240,7 +23178,6 @@ our %registry = (
         'GLclampd '
       ]
     ],
-    'binding_name' => 'glDepthBoundsEXT',
     'feature' => 'GL_EXT_depth_bounds_test',
     'glewImpl' => '__glewDepthBoundsEXT',
     'glewtype' => 'fun',
@@ -24258,7 +23195,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glDepthBoundsdNV',
     'feature' => 'GL_NV_depth_buffer_float',
     'glewImpl' => '__glewDepthBoundsdNV',
     'glewtype' => 'fun',
@@ -24272,7 +23208,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glDepthFunc',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -24286,7 +23221,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glDepthMask',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -24304,7 +23238,6 @@ our %registry = (
         'GLclampd '
       ]
     ],
-    'binding_name' => 'glDepthRange',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -24370,7 +23303,6 @@ our %registry = (
         'GLclampd '
       ]
     ],
-    'binding_name' => 'glDepthRangeIndexed',
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewDepthRangeIndexed',
     'glewtype' => 'fun',
@@ -24392,7 +23324,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glDepthRangeIndexedfNV',
     'feature' => 'GL_NV_viewport_array',
     'glewImpl' => '__glewDepthRangeIndexedfNV',
     'glewtype' => 'fun',
@@ -24410,7 +23341,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glDepthRangedNV',
     'feature' => 'GL_NV_depth_buffer_float',
     'glewImpl' => '__glewDepthRangedNV',
     'glewtype' => 'fun',
@@ -24428,7 +23358,6 @@ our %registry = (
         'GLclampf '
       ]
     ],
-    'binding_name' => 'glDepthRangef',
     'feature' => 'GL_ARB_ES2_compatibility',
     'glewImpl' => '__glewDepthRangef',
     'glewtype' => 'fun',
@@ -24446,7 +23375,6 @@ our %registry = (
         'GLclampx '
       ]
     ],
-    'binding_name' => 'glDepthRangex',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewDepthRangex',
     'glewtype' => 'fun',
@@ -24464,7 +23392,6 @@ our %registry = (
         'GLhandleARB '
       ]
     ],
-    'binding_name' => 'glDetachObjectARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewDetachObjectARB',
     'glewtype' => 'fun',
@@ -24482,7 +23409,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDetachShader',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewDetachShader',
     'glewtype' => 'fun',
@@ -24518,7 +23444,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glDisable',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -24532,7 +23457,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glDisableClientState',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -24550,7 +23474,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableClientStateIndexedEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewDisableClientStateIndexedEXT',
     'glewtype' => 'fun',
@@ -24568,7 +23491,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableClientStateiEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewDisableClientStateiEXT',
     'glewtype' => 'fun',
@@ -24582,7 +23504,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableDriverControlQCOM',
     'feature' => 'GL_QCOM_driver_control',
     'glewImpl' => '__glewDisableDriverControlQCOM',
     'glewtype' => 'fun',
@@ -24600,7 +23521,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableIndexedEXT',
     'feature' => 'GL_EXT_draw_buffers2',
     'glewImpl' => '__glewDisableIndexedEXT',
     'glewtype' => 'fun',
@@ -24614,7 +23534,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableVariantClientStateEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewDisableVariantClientStateEXT',
     'glewtype' => 'fun',
@@ -24632,7 +23551,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableVertexArrayAttrib',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewDisableVertexArrayAttrib',
     'glewtype' => 'fun',
@@ -24650,7 +23568,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableVertexArrayAttribEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewDisableVertexArrayAttribEXT',
     'glewtype' => 'fun',
@@ -24668,7 +23585,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glDisableVertexArrayEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewDisableVertexArrayEXT',
     'glewtype' => 'fun',
@@ -24686,7 +23602,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glDisableVertexAttribAPPLE',
     'feature' => 'GL_APPLE_vertex_program_evaluators',
     'glewImpl' => '__glewDisableVertexAttribAPPLE',
     'glewtype' => 'fun',
@@ -24700,7 +23615,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableVertexAttribArray',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewDisableVertexAttribArray',
     'glewtype' => 'fun',
@@ -24714,7 +23628,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableVertexAttribArrayARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewDisableVertexAttribArrayARB',
     'glewtype' => 'fun',
@@ -24732,7 +23645,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisablei',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewDisablei',
     'glewtype' => 'fun',
@@ -24750,7 +23662,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableiEXT',
     'feature' => 'GL_EXT_draw_buffers_indexed',
     'glewImpl' => '__glewDisableiEXT',
     'glewtype' => 'fun',
@@ -24768,7 +23679,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDisableiNV',
     'feature' => 'GL_NV_viewport_array',
     'glewImpl' => '__glewDisableiNV',
     'glewtype' => 'fun',
@@ -24812,7 +23722,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDispatchCompute',
     'feature' => 'GL_ARB_compute_shader',
     'glewImpl' => '__glewDispatchCompute',
     'glewtype' => 'fun',
@@ -24846,7 +23755,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDispatchComputeGroupSizeARB',
     'feature' => 'GL_ARB_compute_variable_group_size',
     'glewImpl' => '__glewDispatchComputeGroupSizeARB',
     'glewtype' => 'fun',
@@ -24860,7 +23768,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glDispatchComputeIndirect',
     'feature' => 'GL_ARB_compute_shader',
     'glewImpl' => '__glewDispatchComputeIndirect',
     'glewtype' => 'fun',
@@ -24882,7 +23789,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawArrays',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -24904,7 +23810,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawArraysEXT',
     'feature' => 'GL_EXT_vertex_array',
     'glewImpl' => '__glewDrawArraysEXT',
     'glewtype' => 'fun',
@@ -24948,7 +23853,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawArraysInstanced',
     'feature' => 'GL_VERSION_3_1',
     'glewImpl' => '__glewDrawArraysInstanced',
     'glewtype' => 'fun',
@@ -24974,7 +23878,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawArraysInstancedANGLE',
     'feature' => 'GL_ANGLE_instanced_arrays',
     'glewImpl' => '__glewDrawArraysInstancedANGLE',
     'glewtype' => 'fun',
@@ -25000,7 +23903,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawArraysInstancedARB',
     'feature' => 'GL_ARB_instanced_arrays',
     'glewImpl' => '__glewDrawArraysInstancedARB',
     'glewtype' => 'fun',
@@ -25030,7 +23932,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDrawArraysInstancedBaseInstance',
     'feature' => 'GL_ARB_base_instance',
     'glewImpl' => '__glewDrawArraysInstancedBaseInstance',
     'glewtype' => 'fun',
@@ -25060,7 +23961,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDrawArraysInstancedBaseInstanceEXT',
     'feature' => 'GL_EXT_base_instance',
     'glewImpl' => '__glewDrawArraysInstancedBaseInstanceEXT',
     'glewtype' => 'fun',
@@ -25086,7 +23986,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawArraysInstancedEXT',
     'feature' => 'GL_EXT_draw_instanced',
     'glewImpl' => '__glewDrawArraysInstancedEXT',
     'glewtype' => 'fun',
@@ -25112,7 +24011,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawArraysInstancedNV',
     'feature' => 'GL_NV_draw_instanced',
     'glewImpl' => '__glewDrawArraysInstancedNV',
     'glewtype' => 'fun',
@@ -25126,7 +24024,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glDrawBuffer',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -25164,7 +24061,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glDrawBufferRegion',
     'feature' => 'GL_KTX_buffer_region',
     'glewImpl' => '__glewDrawBufferRegion',
     'glewtype' => 'fun',
@@ -25418,7 +24314,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawElementArrayAPPLE',
     'feature' => 'GL_APPLE_element_array',
     'glewImpl' => '__glewDrawElementArrayAPPLE',
     'glewtype' => 'fun',
@@ -25436,7 +24331,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawElementArrayATI',
     'feature' => 'GL_ATI_element_array',
     'glewImpl' => '__glewDrawElementArrayATI',
     'glewtype' => 'fun',
@@ -25966,7 +24860,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawRangeElementArrayAPPLE',
     'feature' => 'GL_APPLE_element_array',
     'glewImpl' => '__glewDrawRangeElementArrayAPPLE',
     'glewtype' => 'fun',
@@ -25992,7 +24885,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawRangeElementArrayATI',
     'feature' => 'GL_ATI_element_array',
     'glewImpl' => '__glewDrawRangeElementArrayATI',
     'glewtype' => 'fun',
@@ -26190,7 +25082,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glDrawTextureNV',
     'feature' => 'GL_NV_draw_texture',
     'glewImpl' => '__glewDrawTextureNV',
     'glewtype' => 'fun',
@@ -26208,7 +25099,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDrawTransformFeedback',
     'feature' => 'GL_ARB_transform_feedback2',
     'glewImpl' => '__glewDrawTransformFeedback',
     'glewtype' => 'fun',
@@ -26230,7 +25120,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawTransformFeedbackInstanced',
     'feature' => 'GL_ARB_transform_feedback_instanced',
     'glewImpl' => '__glewDrawTransformFeedbackInstanced',
     'glewtype' => 'fun',
@@ -26248,7 +25137,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDrawTransformFeedbackNV',
     'feature' => 'GL_NV_transform_feedback2',
     'glewImpl' => '__glewDrawTransformFeedbackNV',
     'glewtype' => 'fun',
@@ -26270,7 +25158,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glDrawTransformFeedbackStream',
     'feature' => 'GL_ARB_transform_feedback3',
     'glewImpl' => '__glewDrawTransformFeedbackStream',
     'glewtype' => 'fun',
@@ -26296,7 +25183,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glDrawTransformFeedbackStreamInstanced',
     'feature' => 'GL_ARB_transform_feedback_instanced',
     'glewImpl' => '__glewDrawTransformFeedbackStreamInstanced',
     'glewtype' => 'fun',
@@ -26350,7 +25236,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glDrawVkImageNV',
     'feature' => 'GL_NV_draw_vulkan_image',
     'glewImpl' => '__glewDrawVkImageNV',
     'glewtype' => 'fun',
@@ -26364,7 +25249,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glEdgeFlag',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -26378,7 +25262,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glEdgeFlagFormatNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewEdgeFlagFormatNV',
     'glewtype' => 'fun',
@@ -26504,7 +25387,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glEnable',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -26518,7 +25400,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glEnableClientState',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -26536,7 +25417,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableClientStateIndexedEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewEnableClientStateIndexedEXT',
     'glewtype' => 'fun',
@@ -26554,7 +25434,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableClientStateiEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewEnableClientStateiEXT',
     'glewtype' => 'fun',
@@ -26568,7 +25447,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableDriverControlQCOM',
     'feature' => 'GL_QCOM_driver_control',
     'glewImpl' => '__glewEnableDriverControlQCOM',
     'glewtype' => 'fun',
@@ -26586,7 +25464,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableIndexedEXT',
     'feature' => 'GL_EXT_draw_buffers2',
     'glewImpl' => '__glewEnableIndexedEXT',
     'glewtype' => 'fun',
@@ -26600,7 +25477,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableVariantClientStateEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewEnableVariantClientStateEXT',
     'glewtype' => 'fun',
@@ -26618,7 +25494,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableVertexArrayAttrib',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewEnableVertexArrayAttrib',
     'glewtype' => 'fun',
@@ -26636,7 +25511,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableVertexArrayAttribEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewEnableVertexArrayAttribEXT',
     'glewtype' => 'fun',
@@ -26654,7 +25528,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glEnableVertexArrayEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewEnableVertexArrayEXT',
     'glewtype' => 'fun',
@@ -26672,7 +25545,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glEnableVertexAttribAPPLE',
     'feature' => 'GL_APPLE_vertex_program_evaluators',
     'glewImpl' => '__glewEnableVertexAttribAPPLE',
     'glewtype' => 'fun',
@@ -26686,7 +25558,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableVertexAttribArray',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewEnableVertexAttribArray',
     'glewtype' => 'fun',
@@ -26700,7 +25571,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableVertexAttribArrayARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewEnableVertexAttribArrayARB',
     'glewtype' => 'fun',
@@ -26718,7 +25588,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnablei',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewEnablei',
     'glewtype' => 'fun',
@@ -26736,7 +25605,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableiEXT',
     'feature' => 'GL_EXT_draw_buffers_indexed',
     'glewImpl' => '__glewEnableiEXT',
     'glewtype' => 'fun',
@@ -26754,7 +25622,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEnableiNV',
     'feature' => 'GL_NV_viewport_array',
     'glewImpl' => '__glewEnableiNV',
     'glewtype' => 'fun',
@@ -26762,7 +25629,6 @@ our %registry = (
     'signature' => 'GLenum target, GLuint index'
   },
   'glEnd' => {
-    'binding_name' => 'glEnd',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -26770,7 +25636,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndConditionalRender' => {
-    'binding_name' => 'glEndConditionalRender',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewEndConditionalRender',
     'glewtype' => 'fun',
@@ -26778,7 +25643,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndConditionalRenderNV' => {
-    'binding_name' => 'glEndConditionalRenderNV',
     'feature' => 'GL_NV_conditional_render',
     'glewImpl' => '__glewEndConditionalRenderNV',
     'glewtype' => 'fun',
@@ -26786,7 +25650,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndConditionalRenderNVX' => {
-    'binding_name' => 'glEndConditionalRenderNVX',
     'feature' => 'GL_NVX_conditional_render',
     'glewImpl' => '__glewEndConditionalRenderNVX',
     'glewtype' => 'fun',
@@ -26794,7 +25657,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndFragmentShaderATI' => {
-    'binding_name' => 'glEndFragmentShaderATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewEndFragmentShaderATI',
     'glewtype' => 'fun',
@@ -26802,7 +25664,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndList' => {
-    'binding_name' => 'glEndList',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -26810,7 +25671,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndOcclusionQueryNV' => {
-    'binding_name' => 'glEndOcclusionQueryNV',
     'feature' => 'GL_NV_occlusion_query',
     'glewImpl' => '__glewEndOcclusionQueryNV',
     'glewtype' => 'fun',
@@ -26824,7 +25684,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEndPerfMonitorAMD',
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewEndPerfMonitorAMD',
     'glewtype' => 'fun',
@@ -26838,7 +25697,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEndPerfQueryINTEL',
     'feature' => 'GL_INTEL_performance_query',
     'glewImpl' => '__glewEndPerfQueryINTEL',
     'glewtype' => 'fun',
@@ -26852,7 +25710,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glEndQuery',
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewEndQuery',
     'glewtype' => 'fun',
@@ -26866,7 +25723,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glEndQueryANGLE',
     'feature' => 'GL_ANGLE_timer_query',
     'glewImpl' => '__glewEndQueryANGLE',
     'glewtype' => 'fun',
@@ -26880,7 +25736,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glEndQueryARB',
     'feature' => 'GL_ARB_occlusion_query',
     'glewImpl' => '__glewEndQueryARB',
     'glewtype' => 'fun',
@@ -26898,7 +25753,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEndQueryIndexed',
     'feature' => 'GL_ARB_transform_feedback3',
     'glewImpl' => '__glewEndQueryIndexed',
     'glewtype' => 'fun',
@@ -26906,7 +25760,6 @@ our %registry = (
     'signature' => 'GLenum target, GLuint index'
   },
   'glEndSceneEXT' => {
-    'binding_name' => 'glEndSceneEXT',
     'feature' => 'GL_EXT_scene_marker',
     'glewImpl' => '__glewEndSceneEXT',
     'glewtype' => 'fun',
@@ -26920,7 +25773,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glEndTilingQCOM',
     'feature' => 'GL_QCOM_tiled_rendering',
     'glewImpl' => '__glewEndTilingQCOM',
     'glewtype' => 'fun',
@@ -26928,7 +25780,6 @@ our %registry = (
     'signature' => 'GLbitfield preserveMask'
   },
   'glEndTransformFeedback' => {
-    'binding_name' => 'glEndTransformFeedback',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewEndTransformFeedback',
     'glewtype' => 'fun',
@@ -26936,7 +25787,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndTransformFeedbackEXT' => {
-    'binding_name' => 'glEndTransformFeedbackEXT',
     'feature' => 'GL_EXT_transform_feedback',
     'glewImpl' => '__glewEndTransformFeedbackEXT',
     'glewtype' => 'fun',
@@ -26944,7 +25794,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndTransformFeedbackNV' => {
-    'binding_name' => 'glEndTransformFeedbackNV',
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewEndTransformFeedbackNV',
     'glewtype' => 'fun',
@@ -26952,7 +25801,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glEndVertexShaderEXT' => {
-    'binding_name' => 'glEndVertexShaderEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewEndVertexShaderEXT',
     'glewtype' => 'fun',
@@ -26966,7 +25814,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glEndVideoCaptureNV',
     'feature' => 'GL_NV_video_capture',
     'glewImpl' => '__glewEndVideoCaptureNV',
     'glewtype' => 'fun',
@@ -26980,7 +25827,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glEvalCoord1d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27008,7 +25854,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glEvalCoord1f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27040,7 +25885,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glEvalCoord2d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27072,7 +25916,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glEvalCoord2f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27104,7 +25947,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glEvalMapsNV',
     'feature' => 'GL_NV_evaluators',
     'glewImpl' => '__glewEvalMapsNV',
     'glewtype' => 'fun',
@@ -27126,7 +25968,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glEvalMesh1',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27156,7 +25997,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glEvalMesh2',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27170,7 +26010,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glEvalPoint1',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27188,7 +26027,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glEvalPoint2',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27484,7 +26322,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glExtIsProgramBinaryQCOM',
     'feature' => 'GL_QCOM_extended_get2',
     'glewImpl' => '__glewExtIsProgramBinaryQCOM',
     'glewtype' => 'fun',
@@ -27506,7 +26343,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glExtTexObjectStateOverrideiQCOM',
     'feature' => 'GL_QCOM_extended_get',
     'glewImpl' => '__glewExtTexObjectStateOverrideiQCOM',
     'glewtype' => 'fun',
@@ -27528,7 +26364,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glExtractComponentEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewExtractComponentEXT',
     'glewtype' => 'fun',
@@ -27568,7 +26403,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glFenceSync',
     'feature' => 'GL_ARB_sync',
     'glewImpl' => '__glewFenceSync',
     'glewtype' => 'fun',
@@ -27586,7 +26420,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glFenceSyncAPPLE',
     'feature' => 'GL_APPLE_sync',
     'glewImpl' => '__glewFenceSyncAPPLE',
     'glewtype' => 'fun',
@@ -27612,7 +26445,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glFinalCombinerInputNV',
     'feature' => 'GL_NV_register_combiners',
     'glewImpl' => '__glewFinalCombinerInputNV',
     'glewtype' => 'fun',
@@ -27620,7 +26452,6 @@ our %registry = (
     'signature' => 'GLenum variable, GLenum input, GLenum mapping, GLenum componentUsage'
   },
   'glFinish' => {
-    'binding_name' => 'glFinish',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27648,7 +26479,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glFinishFenceAPPLE',
     'feature' => 'GL_APPLE_fence',
     'glewImpl' => '__glewFinishFenceAPPLE',
     'glewtype' => 'fun',
@@ -27662,7 +26492,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glFinishFenceNV',
     'feature' => 'GL_NV_fence',
     'glewImpl' => '__glewFinishFenceNV',
     'glewtype' => 'fun',
@@ -27680,7 +26509,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFinishObjectAPPLE',
     'feature' => 'GL_APPLE_fence',
     'glewImpl' => '__glewFinishObjectAPPLE',
     'glewtype' => 'fun',
@@ -27688,7 +26516,6 @@ our %registry = (
     'signature' => 'GLenum object, GLint name'
   },
   'glFinishTextureSUNX' => {
-    'binding_name' => 'glFinishTextureSUNX',
     'feature' => 'GL_SUNX_constant_data',
     'glewImpl' => '__glewFinishTextureSUNX',
     'glewtype' => 'fun',
@@ -27696,7 +26523,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glFlush' => {
-    'binding_name' => 'glFlush',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27718,7 +26544,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glFlushMappedBufferRange',
     'feature' => 'GL_ARB_map_buffer_range',
     'glewImpl' => '__glewFlushMappedBufferRange',
     'glewtype' => 'fun',
@@ -27740,7 +26565,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glFlushMappedBufferRangeAPPLE',
     'feature' => 'GL_APPLE_flush_buffer_range',
     'glewImpl' => '__glewFlushMappedBufferRangeAPPLE',
     'glewtype' => 'fun',
@@ -27762,7 +26586,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glFlushMappedBufferRangeEXT',
     'feature' => 'GL_EXT_map_buffer_range',
     'glewImpl' => '__glewFlushMappedBufferRangeEXT',
     'glewtype' => 'fun',
@@ -27784,7 +26607,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glFlushMappedNamedBufferRange',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewFlushMappedNamedBufferRange',
     'glewtype' => 'fun',
@@ -27806,7 +26628,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glFlushMappedNamedBufferRangeEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewFlushMappedNamedBufferRangeEXT',
     'glewtype' => 'fun',
@@ -27820,7 +26641,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glFlushPixelDataRangeNV',
     'feature' => 'GL_NV_pixel_data_range',
     'glewImpl' => '__glewFlushPixelDataRangeNV',
     'glewtype' => 'fun',
@@ -27828,7 +26648,6 @@ our %registry = (
     'signature' => 'GLenum target'
   },
   'glFlushRasterSGIX' => {
-    'binding_name' => 'glFlushRasterSGIX',
     'feature' => 'GL_SGIX_flush_raster',
     'glewImpl' => '__glewFlushRasterSGIX',
     'glewtype' => 'fun',
@@ -27854,7 +26673,6 @@ our %registry = (
     'signature' => 'GLsizei length, void *pointer'
   },
   'glFlushVertexArrayRangeNV' => {
-    'binding_name' => 'glFlushVertexArrayRangeNV',
     'feature' => 'GL_NV_vertex_array_range',
     'glewImpl' => '__glewFlushVertexArrayRangeNV',
     'glewtype' => 'fun',
@@ -27872,7 +26690,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glFogCoordFormatNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewFogCoordFormatNV',
     'glewtype' => 'fun',
@@ -27956,7 +26773,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glFogCoordd',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewFogCoordd',
     'glewtype' => 'fun',
@@ -27970,7 +26786,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glFogCoorddEXT',
     'feature' => 'GL_EXT_fog_coord',
     'glewImpl' => '__glewFogCoorddEXT',
     'glewtype' => 'fun',
@@ -28012,7 +26827,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glFogCoordf',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewFogCoordf',
     'glewtype' => 'fun',
@@ -28026,7 +26840,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glFogCoordfEXT',
     'feature' => 'GL_EXT_fog_coord',
     'glewImpl' => '__glewFogCoordfEXT',
     'glewtype' => 'fun',
@@ -28068,7 +26881,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glFogCoordhNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewFogCoordhNV',
     'glewtype' => 'fun',
@@ -28136,7 +26948,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glFogf',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -28172,7 +26983,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFogi',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -28208,7 +27018,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glFogx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewFogx',
     'glewtype' => 'fun',
@@ -28244,7 +27053,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glFragmentColorMaterialEXT',
     'feature' => 'GL_EXT_fragment_lighting',
     'glewImpl' => '__glewFragmentColorMaterialEXT',
     'glewtype' => 'fun',
@@ -28262,7 +27070,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glFragmentColorMaterialSGIX',
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentColorMaterialSGIX',
     'glewtype' => 'fun',
@@ -28276,7 +27083,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glFragmentCoverageColorNV',
     'feature' => 'GL_NV_fragment_coverage_to_color',
     'glewImpl' => '__glewFragmentCoverageColorNV',
     'glewtype' => 'fun',
@@ -28294,7 +27100,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glFragmentLightModelfEXT',
     'feature' => 'GL_EXT_fragment_lighting',
     'glewImpl' => '__glewFragmentLightModelfEXT',
     'glewtype' => 'fun',
@@ -28312,7 +27117,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glFragmentLightModelfSGIX',
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentLightModelfSGIX',
     'glewtype' => 'fun',
@@ -28366,7 +27170,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFragmentLightModeliEXT',
     'feature' => 'GL_EXT_fragment_lighting',
     'glewImpl' => '__glewFragmentLightModeliEXT',
     'glewtype' => 'fun',
@@ -28384,7 +27187,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFragmentLightModeliSGIX',
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentLightModeliSGIX',
     'glewtype' => 'fun',
@@ -28442,7 +27244,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glFragmentLightfEXT',
     'feature' => 'GL_EXT_fragment_lighting',
     'glewImpl' => '__glewFragmentLightfEXT',
     'glewtype' => 'fun',
@@ -28464,7 +27265,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glFragmentLightfSGIX',
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentLightfSGIX',
     'glewtype' => 'fun',
@@ -28530,7 +27330,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFragmentLightiEXT',
     'feature' => 'GL_EXT_fragment_lighting',
     'glewImpl' => '__glewFragmentLightiEXT',
     'glewtype' => 'fun',
@@ -28552,7 +27351,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFragmentLightiSGIX',
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentLightiSGIX',
     'glewtype' => 'fun',
@@ -28618,7 +27416,6 @@ our %registry = (
         'const GLfloat '
       ]
     ],
-    'binding_name' => 'glFragmentMaterialfEXT',
     'feature' => 'GL_EXT_fragment_lighting',
     'glewImpl' => '__glewFragmentMaterialfEXT',
     'glewtype' => 'fun',
@@ -28640,7 +27437,6 @@ our %registry = (
         'const GLfloat '
       ]
     ],
-    'binding_name' => 'glFragmentMaterialfSGIX',
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentMaterialfSGIX',
     'glewtype' => 'fun',
@@ -28706,7 +27502,6 @@ our %registry = (
         'const GLint '
       ]
     ],
-    'binding_name' => 'glFragmentMaterialiEXT',
     'feature' => 'GL_EXT_fragment_lighting',
     'glewImpl' => '__glewFragmentMaterialiEXT',
     'glewtype' => 'fun',
@@ -28728,7 +27523,6 @@ our %registry = (
         'const GLint '
       ]
     ],
-    'binding_name' => 'glFragmentMaterialiSGIX',
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentMaterialiSGIX',
     'glewtype' => 'fun',
@@ -28780,7 +27574,6 @@ our %registry = (
     'signature' => 'GLenum face, GLenum pname, const GLint* params'
   },
   'glFrameTerminatorGREMEDY' => {
-    'binding_name' => 'glFrameTerminatorGREMEDY',
     'feature' => 'GL_GREMEDY_frame_terminator',
     'glewImpl' => '__glewFrameTerminatorGREMEDY',
     'glewtype' => 'fun',
@@ -28794,7 +27587,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFrameZoomSGIX',
     'feature' => 'GL_SGIX_framezoom',
     'glewImpl' => '__glewFrameZoomSGIX',
     'glewtype' => 'fun',
@@ -28812,7 +27604,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glFramebufferDrawBufferEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewFramebufferDrawBufferEXT',
     'glewtype' => 'fun',
@@ -28842,7 +27633,6 @@ our %registry = (
     'signature' => 'GLuint framebuffer, GLsizei n, const GLenum* bufs'
   },
   'glFramebufferFetchBarrierQCOM' => {
-    'binding_name' => 'glFramebufferFetchBarrierQCOM',
     'feature' => 'GL_QCOM_shader_framebuffer_fetch_noncoherent',
     'glewImpl' => '__glewFramebufferFetchBarrierQCOM',
     'glewtype' => 'fun',
@@ -28914,7 +27704,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glFramebufferFoveationParametersQCOM',
     'feature' => 'GL_QCOM_framebuffer_foveated',
     'glewImpl' => '__glewFramebufferFoveationParametersQCOM',
     'glewtype' => 'fun',
@@ -28936,7 +27725,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferParameteri',
     'feature' => 'GL_ARB_framebuffer_no_attachments',
     'glewImpl' => '__glewFramebufferParameteri',
     'glewtype' => 'fun',
@@ -28954,7 +27742,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glFramebufferPixelLocalStorageSizeEXT',
     'feature' => 'GL_EXT_shader_pixel_local_storage2',
     'glewImpl' => '__glewFramebufferPixelLocalStorageSizeEXT',
     'glewtype' => 'fun',
@@ -28972,7 +27759,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glFramebufferReadBufferEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewFramebufferReadBufferEXT',
     'glewtype' => 'fun',
@@ -28998,7 +27784,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glFramebufferRenderbuffer',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewFramebufferRenderbuffer',
     'glewtype' => 'fun',
@@ -29024,7 +27809,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glFramebufferRenderbufferEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewFramebufferRenderbufferEXT',
     'glewtype' => 'fun',
@@ -29128,7 +27912,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTexture',
     'feature' => 'GL_VERSION_3_2',
     'glewImpl' => '__glewFramebufferTexture',
     'glewtype' => 'fun',
@@ -29158,7 +27941,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTexture1D',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewFramebufferTexture1D',
     'glewtype' => 'fun',
@@ -29188,7 +27970,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTexture1DEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewFramebufferTexture1DEXT',
     'glewtype' => 'fun',
@@ -29218,7 +27999,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTexture2D',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewFramebufferTexture2D',
     'glewtype' => 'fun',
@@ -29248,7 +28028,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTexture2DEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewFramebufferTexture2DEXT',
     'glewtype' => 'fun',
@@ -29282,7 +28061,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glFramebufferTexture2DMultisampleEXT',
     'feature' => 'GL_EXT_multisampled_render_to_texture',
     'glewImpl' => '__glewFramebufferTexture2DMultisampleEXT',
     'glewtype' => 'fun',
@@ -29316,7 +28094,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTexture3D',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewFramebufferTexture3D',
     'glewtype' => 'fun',
@@ -29350,7 +28127,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTexture3DEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewFramebufferTexture3DEXT',
     'glewtype' => 'fun',
@@ -29376,7 +28152,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTextureARB',
     'feature' => 'GL_ARB_geometry_shader4',
     'glewImpl' => '__glewFramebufferTextureARB',
     'glewtype' => 'fun',
@@ -29402,7 +28177,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTextureEXT',
     'feature' => 'GL_EXT_geometry_shader4',
     'glewImpl' => '__glewFramebufferTextureEXT',
     'glewtype' => 'fun',
@@ -29432,7 +28206,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glFramebufferTextureFaceARB',
     'feature' => 'GL_ARB_geometry_shader4',
     'glewImpl' => '__glewFramebufferTextureFaceARB',
     'glewtype' => 'fun',
@@ -29462,7 +28235,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glFramebufferTextureFaceEXT',
     'feature' => 'GL_EXT_geometry_shader4',
     'glewImpl' => '__glewFramebufferTextureFaceEXT',
     'glewtype' => 'fun',
@@ -29492,7 +28264,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTextureLayer',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewFramebufferTextureLayer',
     'glewtype' => 'fun',
@@ -29522,7 +28293,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTextureLayerARB',
     'feature' => 'GL_ARB_geometry_shader4',
     'glewImpl' => '__glewFramebufferTextureLayerARB',
     'glewtype' => 'fun',
@@ -29552,7 +28322,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTextureLayerEXT',
     'feature' => 'GL_EXT_texture_array',
     'glewImpl' => '__glewFramebufferTextureLayerEXT',
     'glewtype' => 'fun',
@@ -29582,7 +28351,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glFramebufferTextureLayerNV',
     'feature' => 'GL_NV_texture_array',
     'glewImpl' => '__glewFramebufferTextureLayerNV',
     'glewtype' => 'fun',
@@ -29620,7 +28388,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glFramebufferTextureMultisampleMultiviewOVR',
     'feature' => 'GL_OVR_multiview_multisampled_render_to_texture',
     'glewImpl' => '__glewFramebufferTextureMultisampleMultiviewOVR',
     'glewtype' => 'fun',
@@ -29654,7 +28421,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glFramebufferTextureMultiviewOVR',
     'feature' => 'GL_OVR_multiview',
     'glewImpl' => '__glewFramebufferTextureMultiviewOVR',
     'glewtype' => 'fun',
@@ -29668,7 +28434,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glFreeObjectBufferATI',
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewFreeObjectBufferATI',
     'glewtype' => 'fun',
@@ -29682,7 +28447,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glFrontFace',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -29716,7 +28480,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glFrustum',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -29750,7 +28513,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glFrustumf',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewFrustumf',
     'glewtype' => 'fun',
@@ -29784,7 +28546,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glFrustumx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewFrustumx',
     'glewtype' => 'fun',
@@ -29798,7 +28559,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glGenAsyncMarkersSGIX',
     'feature' => 'GL_SGIX_async',
     'glewImpl' => '__glewGenAsyncMarkersSGIX',
     'glewtype' => 'fun',
@@ -29884,7 +28644,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGenFragmentShadersATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewGenFragmentShadersATI',
     'glewtype' => 'fun',
@@ -29934,7 +28693,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glGenLists',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -30006,7 +28764,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glGenPathsNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewGenPathsNV',
     'glewtype' => 'fun',
@@ -30230,7 +28987,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGenSymbolsEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewGenSymbolsEXT',
     'glewtype' => 'fun',
@@ -30370,7 +29126,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGenVertexShadersEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewGenVertexShadersEXT',
     'glewtype' => 'fun',
@@ -30384,7 +29139,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glGenerateMipmap',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewGenerateMipmap',
     'glewtype' => 'fun',
@@ -30398,7 +29152,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glGenerateMipmapEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewGenerateMipmapEXT',
     'glewtype' => 'fun',
@@ -30416,7 +29169,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glGenerateMultiTexMipmapEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGenerateMultiTexMipmapEXT',
     'glewtype' => 'fun',
@@ -30430,7 +29182,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGenerateTextureMipmap',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewGenerateTextureMipmap',
     'glewtype' => 'fun',
@@ -30448,7 +29199,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glGenerateTextureMipmapEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGenerateTextureMipmapEXT',
     'glewtype' => 'fun',
@@ -31672,7 +30422,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGetCommandHeaderNV',
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewGetCommandHeaderNV',
     'glewtype' => 'fun',
@@ -32282,7 +31031,6 @@ our %registry = (
     'signature' => 'GLint* num, GLsizei size, GLuint *driverControls'
   },
   'glGetError' => {
-    'binding_name' => 'glGetError',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32920,7 +31668,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGetFramebufferPixelLocalStorageSizeEXT',
     'feature' => 'GL_EXT_shader_pixel_local_storage2',
     'glewImpl' => '__glewGetFramebufferPixelLocalStorageSizeEXT',
     'glewtype' => 'fun',
@@ -32928,7 +31675,6 @@ our %registry = (
     'signature' => 'GLuint target'
   },
   'glGetGraphicsResetStatus' => {
-    'binding_name' => 'glGetGraphicsResetStatus',
     'feature' => 'GL_VERSION_4_5',
     'glewImpl' => '__glewGetGraphicsResetStatus',
     'glewtype' => 'fun',
@@ -32936,7 +31682,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glGetGraphicsResetStatusARB' => {
-    'binding_name' => 'glGetGraphicsResetStatusARB',
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetGraphicsResetStatusARB',
     'glewtype' => 'fun',
@@ -32950,7 +31695,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glGetHandleARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewGetHandleARB',
     'glewtype' => 'fun',
@@ -33128,7 +31872,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glGetImageHandleARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewGetImageHandleARB',
     'glewtype' => 'fun',
@@ -33158,7 +31901,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glGetImageHandleNV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewGetImageHandleNV',
     'glewtype' => 'fun',
@@ -35602,7 +34344,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glGetPathLengthNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewGetPathLengthNV',
     'glewtype' => 'fun',
@@ -37030,7 +35771,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glGetQueryBufferObjecti64v',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewGetQueryBufferObjecti64v',
     'glewtype' => 'fun',
@@ -37056,7 +35796,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glGetQueryBufferObjectiv',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewGetQueryBufferObjectiv',
     'glewtype' => 'fun',
@@ -37082,7 +35821,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glGetQueryBufferObjectui64v',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewGetQueryBufferObjectui64v',
     'glewtype' => 'fun',
@@ -37108,7 +35846,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glGetQueryBufferObjectuiv',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewGetQueryBufferObjectuiv',
     'glewtype' => 'fun',
@@ -37844,7 +36581,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glGetStageIndexNV',
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewGetStageIndexNV',
     'glewtype' => 'fun',
@@ -38416,7 +37152,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGetTextureHandleARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewGetTextureHandleARB',
     'glewtype' => 'fun',
@@ -38430,7 +37165,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGetTextureHandleNV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewGetTextureHandleNV',
     'glewtype' => 'fun',
@@ -38820,7 +37554,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGetTextureSamplerHandleARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewGetTextureSamplerHandleARB',
     'glewtype' => 'fun',
@@ -38838,7 +37571,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGetTextureSamplerHandleNV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewGetTextureSamplerHandleNV',
     'glewtype' => 'fun',
@@ -39156,7 +37888,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glGetUniformBufferSizeEXT',
     'feature' => 'GL_EXT_bindable_uniform',
     'glewImpl' => '__glewGetUniformBufferSizeEXT',
     'glewtype' => 'fun',
@@ -39236,7 +37967,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glGetUniformOffsetEXT',
     'feature' => 'GL_EXT_bindable_uniform',
     'glewImpl' => '__glewGetUniformOffsetEXT',
     'glewtype' => 'fun',
@@ -39704,7 +38434,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glGetVectorOperationSGIX',
     'feature' => 'GL_SGIX_vector_ops',
     'glewImpl' => '__glewGetVectorOperationSGIX',
     'glewtype' => 'fun',
@@ -41308,7 +40037,6 @@ our %registry = (
         'GLbyte '
       ]
     ],
-    'binding_name' => 'glGlobalAlphaFactorbSUN',
     'feature' => 'GL_SUN_global_alpha',
     'glewImpl' => '__glewGlobalAlphaFactorbSUN',
     'glewtype' => 'fun',
@@ -41322,7 +40050,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glGlobalAlphaFactordSUN',
     'feature' => 'GL_SUN_global_alpha',
     'glewImpl' => '__glewGlobalAlphaFactordSUN',
     'glewtype' => 'fun',
@@ -41336,7 +40063,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glGlobalAlphaFactorfSUN',
     'feature' => 'GL_SUN_global_alpha',
     'glewImpl' => '__glewGlobalAlphaFactorfSUN',
     'glewtype' => 'fun',
@@ -41350,7 +40076,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glGlobalAlphaFactoriSUN',
     'feature' => 'GL_SUN_global_alpha',
     'glewImpl' => '__glewGlobalAlphaFactoriSUN',
     'glewtype' => 'fun',
@@ -41364,7 +40089,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glGlobalAlphaFactorsSUN',
     'feature' => 'GL_SUN_global_alpha',
     'glewImpl' => '__glewGlobalAlphaFactorsSUN',
     'glewtype' => 'fun',
@@ -41378,7 +40102,6 @@ our %registry = (
         'GLubyte '
       ]
     ],
-    'binding_name' => 'glGlobalAlphaFactorubSUN',
     'feature' => 'GL_SUN_global_alpha',
     'glewImpl' => '__glewGlobalAlphaFactorubSUN',
     'glewtype' => 'fun',
@@ -41392,7 +40115,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glGlobalAlphaFactoruiSUN',
     'feature' => 'GL_SUN_global_alpha',
     'glewImpl' => '__glewGlobalAlphaFactoruiSUN',
     'glewtype' => 'fun',
@@ -41406,7 +40128,6 @@ our %registry = (
         'GLushort '
       ]
     ],
-    'binding_name' => 'glGlobalAlphaFactorusSUN',
     'feature' => 'GL_SUN_global_alpha',
     'glewImpl' => '__glewGlobalAlphaFactorusSUN',
     'glewtype' => 'fun',
@@ -41424,7 +40145,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glHint',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41450,7 +40170,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glHistogram',
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewHistogram',
     'glewtype' => 'fun',
@@ -41476,7 +40195,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glHistogramEXT',
     'feature' => 'GL_EXT_histogram',
     'glewImpl' => '__glewHistogramEXT',
     'glewtype' => 'fun',
@@ -41516,7 +40234,6 @@ our %registry = (
         'const GLfloat '
       ]
     ],
-    'binding_name' => 'glImageTransformParameterfHP',
     'feature' => 'GL_HP_image_transform',
     'glewImpl' => '__glewImageTransformParameterfHP',
     'glewtype' => 'fun',
@@ -41560,7 +40277,6 @@ our %registry = (
         'const GLint '
       ]
     ],
-    'binding_name' => 'glImageTransformParameteriHP',
     'feature' => 'GL_HP_image_transform',
     'glewImpl' => '__glewImageTransformParameteriHP',
     'glewtype' => 'fun',
@@ -41608,7 +40324,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glImportMemoryFdEXT',
     'feature' => 'GL_EXT_memory_object_fd',
     'glewImpl' => '__glewImportMemoryFdEXT',
     'glewtype' => 'fun',
@@ -41682,7 +40397,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glImportSemaphoreFdEXT',
     'feature' => 'GL_EXT_semaphore_fd',
     'glewImpl' => '__glewImportSemaphoreFdEXT',
     'glewtype' => 'fun',
@@ -41748,7 +40462,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glImportSyncEXT',
     'feature' => 'GL_EXT_x11_sync_object',
     'glewImpl' => '__glewImportSyncEXT',
     'glewtype' => 'fun',
@@ -41766,7 +40479,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glIndexFormatNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewIndexFormatNV',
     'glewtype' => 'fun',
@@ -41784,7 +40496,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glIndexFuncEXT',
     'feature' => 'GL_EXT_index_func',
     'glewImpl' => '__glewIndexFuncEXT',
     'glewtype' => 'fun',
@@ -41798,7 +40509,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIndexMask',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41816,7 +40526,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glIndexMaterialEXT',
     'feature' => 'GL_EXT_index_material',
     'glewImpl' => '__glewIndexMaterialEXT',
     'glewtype' => 'fun',
@@ -41904,7 +40613,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glIndexd',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41932,7 +40640,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glIndexf',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41960,7 +40667,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glIndexi',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41988,7 +40694,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glIndexs',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -42016,7 +40721,6 @@ our %registry = (
         'GLubyte '
       ]
     ],
-    'binding_name' => 'glIndexub',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -42038,7 +40742,6 @@ our %registry = (
     'signature' => 'const GLubyte *c'
   },
   'glInitNames' => {
-    'binding_name' => 'glInitNames',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -42060,7 +40763,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glInsertComponentEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewInsertComponentEXT',
     'glewtype' => 'fun',
@@ -42114,7 +40816,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glInterleavedTextureCoordSetsSGIS',
     'feature' => 'GL_SGIS_multitexture',
     'glewImpl' => '__glewInterleavedTextureCoordSetsSGIS',
     'glewtype' => 'fun',
@@ -42140,7 +40841,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glInterpolatePathsNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewInterpolatePathsNV',
     'glewtype' => 'fun',
@@ -42154,7 +40854,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glInvalidateBufferData',
     'feature' => 'GL_ARB_invalidate_subdata',
     'glewImpl' => '__glewInvalidateBufferData',
     'glewtype' => 'fun',
@@ -42176,7 +40875,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glInvalidateBufferSubData',
     'feature' => 'GL_ARB_invalidate_subdata',
     'glewImpl' => '__glewInvalidateBufferSubData',
     'glewtype' => 'fun',
@@ -42314,7 +41012,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glInvalidateTexImage',
     'feature' => 'GL_ARB_invalidate_subdata',
     'glewImpl' => '__glewInvalidateTexImage',
     'glewtype' => 'fun',
@@ -42356,7 +41053,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glInvalidateTexSubImage',
     'feature' => 'GL_ARB_invalidate_subdata',
     'glewImpl' => '__glewInvalidateTexSubImage',
     'glewtype' => 'fun',
@@ -42370,7 +41066,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsAsyncMarkerSGIX',
     'feature' => 'GL_SGIX_async',
     'glewImpl' => '__glewIsAsyncMarkerSGIX',
     'glewtype' => 'fun',
@@ -42384,7 +41079,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsBuffer',
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewIsBuffer',
     'glewtype' => 'fun',
@@ -42398,7 +41092,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsBufferARB',
     'feature' => 'GL_ARB_vertex_buffer_object',
     'glewImpl' => '__glewIsBufferARB',
     'glewtype' => 'fun',
@@ -42412,7 +41105,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glIsBufferResidentNV',
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewIsBufferResidentNV',
     'glewtype' => 'fun',
@@ -42426,7 +41118,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsCommandListNV',
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewIsCommandListNV',
     'glewtype' => 'fun',
@@ -42440,7 +41131,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glIsEnabled',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -42458,7 +41148,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsEnabledIndexedEXT',
     'feature' => 'GL_EXT_draw_buffers2',
     'glewImpl' => '__glewIsEnabledIndexedEXT',
     'glewtype' => 'fun',
@@ -42476,7 +41165,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsEnabledi',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewIsEnabledi',
     'glewtype' => 'fun',
@@ -42494,7 +41182,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsEnablediEXT',
     'feature' => 'GL_EXT_draw_buffers_indexed',
     'glewImpl' => '__glewIsEnablediEXT',
     'glewtype' => 'fun',
@@ -42512,7 +41199,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsEnablediNV',
     'feature' => 'GL_NV_viewport_array',
     'glewImpl' => '__glewIsEnablediNV',
     'glewtype' => 'fun',
@@ -42526,7 +41212,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsFenceAPPLE',
     'feature' => 'GL_APPLE_fence',
     'glewImpl' => '__glewIsFenceAPPLE',
     'glewtype' => 'fun',
@@ -42540,7 +41225,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsFenceNV',
     'feature' => 'GL_NV_fence',
     'glewImpl' => '__glewIsFenceNV',
     'glewtype' => 'fun',
@@ -42554,7 +41238,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsFramebuffer',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewIsFramebuffer',
     'glewtype' => 'fun',
@@ -42568,7 +41251,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsFramebufferEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewIsFramebufferEXT',
     'glewtype' => 'fun',
@@ -42582,7 +41264,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glIsImageHandleResidentARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewIsImageHandleResidentARB',
     'glewtype' => 'fun',
@@ -42596,7 +41277,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glIsImageHandleResidentNV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewIsImageHandleResidentNV',
     'glewtype' => 'fun',
@@ -42610,7 +41290,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsList',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -42624,7 +41303,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsMPEGPredictorSGIX',
     'feature' => 'GL_SGIX_mpeg1',
     'glewImpl' => '__glewIsMPEGPredictorSGIX',
     'glewtype' => 'fun',
@@ -42638,7 +41316,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsMemoryObjectEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewIsMemoryObjectEXT',
     'glewtype' => 'fun',
@@ -42656,7 +41333,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsNameAMD',
     'feature' => 'GL_AMD_name_gen_delete',
     'glewImpl' => '__glewIsNameAMD',
     'glewtype' => 'fun',
@@ -42670,7 +41346,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsNamedBufferResidentNV',
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewIsNamedBufferResidentNV',
     'glewtype' => 'fun',
@@ -42702,7 +41377,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsObjectBufferATI',
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewIsObjectBufferATI',
     'glewtype' => 'fun',
@@ -42716,7 +41390,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsOcclusionQueryNV',
     'feature' => 'GL_NV_occlusion_query',
     'glewImpl' => '__glewIsOcclusionQueryNV',
     'glewtype' => 'fun',
@@ -42730,7 +41403,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsPathNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewIsPathNV',
     'glewtype' => 'fun',
@@ -42756,7 +41428,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glIsPointInFillPathNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewIsPointInFillPathNV',
     'glewtype' => 'fun',
@@ -42778,7 +41449,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glIsPointInStrokePathNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewIsPointInStrokePathNV',
     'glewtype' => 'fun',
@@ -42792,7 +41462,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsProgram',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewIsProgram',
     'glewtype' => 'fun',
@@ -42806,7 +41475,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsProgramARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewIsProgramARB',
     'glewtype' => 'fun',
@@ -42820,7 +41488,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsProgramNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewIsProgramNV',
     'glewtype' => 'fun',
@@ -42834,7 +41501,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsProgramPipeline',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewIsProgramPipeline',
     'glewtype' => 'fun',
@@ -42848,7 +41514,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsQuery',
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewIsQuery',
     'glewtype' => 'fun',
@@ -42862,7 +41527,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsQueryANGLE',
     'feature' => 'GL_ANGLE_timer_query',
     'glewImpl' => '__glewIsQueryANGLE',
     'glewtype' => 'fun',
@@ -42876,7 +41540,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsQueryARB',
     'feature' => 'GL_ARB_occlusion_query',
     'glewImpl' => '__glewIsQueryARB',
     'glewtype' => 'fun',
@@ -42890,7 +41553,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsRenderbuffer',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewIsRenderbuffer',
     'glewtype' => 'fun',
@@ -42904,7 +41566,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsRenderbufferEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewIsRenderbufferEXT',
     'glewtype' => 'fun',
@@ -42918,7 +41579,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsSampler',
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewIsSampler',
     'glewtype' => 'fun',
@@ -42932,7 +41592,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsSemaphoreEXT',
     'feature' => 'GL_EXT_semaphore',
     'glewImpl' => '__glewIsSemaphoreEXT',
     'glewtype' => 'fun',
@@ -42946,7 +41605,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsShader',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewIsShader',
     'glewtype' => 'fun',
@@ -42960,7 +41618,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsStateNV',
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewIsStateNV',
     'glewtype' => 'fun',
@@ -42988,7 +41645,6 @@ our %registry = (
         'GLsync '
       ]
     ],
-    'binding_name' => 'glIsSync',
     'feature' => 'GL_ARB_sync',
     'glewImpl' => '__glewIsSync',
     'glewtype' => 'fun',
@@ -43002,7 +41658,6 @@ our %registry = (
         'GLsync '
       ]
     ],
-    'binding_name' => 'glIsSyncAPPLE',
     'feature' => 'GL_APPLE_sync',
     'glewImpl' => '__glewIsSyncAPPLE',
     'glewtype' => 'fun',
@@ -43016,7 +41671,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsTexture',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43030,7 +41684,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsTextureEXT',
     'feature' => 'GL_EXT_texture_object',
     'glewImpl' => '__glewIsTextureEXT',
     'glewtype' => 'fun',
@@ -43044,7 +41697,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glIsTextureHandleResidentARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewIsTextureHandleResidentARB',
     'glewtype' => 'fun',
@@ -43058,7 +41710,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glIsTextureHandleResidentNV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewIsTextureHandleResidentNV',
     'glewtype' => 'fun',
@@ -43072,7 +41723,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsTransformFeedback',
     'feature' => 'GL_ARB_transform_feedback2',
     'glewImpl' => '__glewIsTransformFeedback',
     'glewtype' => 'fun',
@@ -43086,7 +41736,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsTransformFeedbackNV',
     'feature' => 'GL_NV_transform_feedback2',
     'glewImpl' => '__glewIsTransformFeedbackNV',
     'glewtype' => 'fun',
@@ -43104,7 +41753,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glIsVariantEnabledEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewIsVariantEnabledEXT',
     'glewtype' => 'fun',
@@ -43118,7 +41766,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsVertexArray',
     'feature' => 'GL_ARB_vertex_array_object',
     'glewImpl' => '__glewIsVertexArray',
     'glewtype' => 'fun',
@@ -43132,7 +41779,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsVertexArrayAPPLE',
     'feature' => 'GL_APPLE_vertex_array_object',
     'glewImpl' => '__glewIsVertexArrayAPPLE',
     'glewtype' => 'fun',
@@ -43146,7 +41792,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glIsVertexArraySGIX',
     'feature' => 'GL_SGIX_vertex_array_object',
     'glewImpl' => '__glewIsVertexArraySGIX',
     'glewtype' => 'fun',
@@ -43164,7 +41809,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glIsVertexAttribEnabledAPPLE',
     'feature' => 'GL_APPLE_vertex_program_evaluators',
     'glewImpl' => '__glewIsVertexAttribEnabledAPPLE',
     'glewtype' => 'fun',
@@ -43242,7 +41886,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glLGPUCopyImageSubDataNVX',
     'feature' => 'GL_NVX_linked_gpu_multicast',
     'glewImpl' => '__glewLGPUCopyImageSubDataNVX',
     'glewtype' => 'fun',
@@ -43250,7 +41893,6 @@ our %registry = (
     'signature' => 'GLuint sourceGpu, GLbitfield destinationGpuMask, GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srxY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei width, GLsizei height, GLsizei depth'
   },
   'glLGPUInterlockNVX' => {
-    'binding_name' => 'glLGPUInterlockNVX',
     'feature' => 'GL_NVX_linked_gpu_multicast',
     'glewImpl' => '__glewLGPUInterlockNVX',
     'glewtype' => 'fun',
@@ -43324,7 +41966,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glLightEnviEXT',
     'feature' => 'GL_EXT_fragment_lighting',
     'glewImpl' => '__glewLightEnviEXT',
     'glewtype' => 'fun',
@@ -43342,7 +41983,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glLightModelf',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43378,7 +42018,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glLightModeli',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43414,7 +42053,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glLightModelx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewLightModelx',
     'glewtype' => 'fun',
@@ -43454,7 +42092,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glLightf',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43498,7 +42135,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glLighti',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43542,7 +42178,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glLightx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewLightx',
     'glewtype' => 'fun',
@@ -43582,7 +42217,6 @@ our %registry = (
         'GLushort '
       ]
     ],
-    'binding_name' => 'glLineStipple',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43596,7 +42230,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glLineWidth',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43610,7 +42243,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glLineWidthx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewLineWidthx',
     'glewtype' => 'fun',
@@ -43624,7 +42256,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glLinkProgram',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewLinkProgram',
     'glewtype' => 'fun',
@@ -43638,7 +42269,6 @@ our %registry = (
         'GLhandleARB '
       ]
     ],
-    'binding_name' => 'glLinkProgramARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewLinkProgramARB',
     'glewtype' => 'fun',
@@ -43652,7 +42282,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glListBase',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43698,7 +42327,6 @@ our %registry = (
     'signature' => 'GLuint list, GLuint segment, const void** indirects, const GLsizei* sizes, const GLuint* states, const GLuint* fbos, GLuint count'
   },
   'glLoadIdentity' => {
-    'binding_name' => 'glLoadIdentity',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43712,7 +42340,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glLoadIdentityDeformationMapSGIX',
     'feature' => 'GL_SGIX_polynomial_ffd',
     'glewImpl' => '__glewLoadIdentityDeformationMapSGIX',
     'glewtype' => 'fun',
@@ -43768,7 +42395,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glLoadName',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43868,7 +42494,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glLockArraysEXT',
     'feature' => 'GL_EXT_compiled_vertex_array',
     'glewImpl' => '__glewLockArraysEXT',
     'glewtype' => 'fun',
@@ -43882,7 +42507,6 @@ our %registry = (
         'GLLOGPROCREGAL '
       ]
     ],
-    'binding_name' => 'glLogMessageCallbackREGAL',
     'feature' => 'GL_REGAL_log',
     'glewImpl' => '__glewLogMessageCallbackREGAL',
     'glewtype' => 'fun',
@@ -43896,7 +42520,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glLogicOp',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -43954,7 +42577,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glMakeBufferNonResidentNV',
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewMakeBufferNonResidentNV',
     'glewtype' => 'fun',
@@ -43972,7 +42594,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glMakeBufferResidentNV',
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewMakeBufferResidentNV',
     'glewtype' => 'fun',
@@ -43986,7 +42607,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glMakeImageHandleNonResidentARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewMakeImageHandleNonResidentARB',
     'glewtype' => 'fun',
@@ -44000,7 +42620,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glMakeImageHandleNonResidentNV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewMakeImageHandleNonResidentNV',
     'glewtype' => 'fun',
@@ -44018,7 +42637,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glMakeImageHandleResidentARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewMakeImageHandleResidentARB',
     'glewtype' => 'fun',
@@ -44036,7 +42654,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glMakeImageHandleResidentNV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewMakeImageHandleResidentNV',
     'glewtype' => 'fun',
@@ -44050,7 +42667,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glMakeNamedBufferNonResidentNV',
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewMakeNamedBufferNonResidentNV',
     'glewtype' => 'fun',
@@ -44068,7 +42684,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glMakeNamedBufferResidentNV',
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewMakeNamedBufferResidentNV',
     'glewtype' => 'fun',
@@ -44082,7 +42697,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glMakeTextureHandleNonResidentARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewMakeTextureHandleNonResidentARB',
     'glewtype' => 'fun',
@@ -44096,7 +42710,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glMakeTextureHandleNonResidentNV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewMakeTextureHandleNonResidentNV',
     'glewtype' => 'fun',
@@ -44110,7 +42723,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glMakeTextureHandleResidentARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewMakeTextureHandleResidentARB',
     'glewtype' => 'fun',
@@ -44124,7 +42736,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glMakeTextureHandleResidentNV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewMakeTextureHandleResidentNV',
     'glewtype' => 'fun',
@@ -44448,7 +43059,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMapGrid1d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -44470,7 +43080,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMapGrid1f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -44504,7 +43113,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMapGrid2d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -44538,7 +43146,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMapGrid2f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -44920,7 +43527,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMaterialf',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -44964,7 +43570,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMateriali',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -45008,7 +43613,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glMaterialx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewMaterialx',
     'glewtype' => 'fun',
@@ -45068,7 +43672,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMatrixFrustumEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixFrustumEXT',
     'glewtype' => 'fun',
@@ -45198,7 +43801,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glMatrixLoadIdentityEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixLoadIdentityEXT',
     'glewtype' => 'fun',
@@ -45302,7 +43904,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glMatrixMode',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -45466,7 +44067,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMatrixOrthoEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixOrthoEXT',
     'glewtype' => 'fun',
@@ -45480,7 +44080,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glMatrixPopEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixPopEXT',
     'glewtype' => 'fun',
@@ -45494,7 +44093,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glMatrixPushEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixPushEXT',
     'glewtype' => 'fun',
@@ -45524,7 +44122,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMatrixRotatedEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixRotatedEXT',
     'glewtype' => 'fun',
@@ -45554,7 +44151,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMatrixRotatefEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixRotatefEXT',
     'glewtype' => 'fun',
@@ -45580,7 +44176,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMatrixScaledEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixScaledEXT',
     'glewtype' => 'fun',
@@ -45606,7 +44201,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMatrixScalefEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixScalefEXT',
     'glewtype' => 'fun',
@@ -45632,7 +44226,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMatrixTranslatedEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixTranslatedEXT',
     'glewtype' => 'fun',
@@ -45658,7 +44251,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMatrixTranslatefEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixTranslatefEXT',
     'glewtype' => 'fun',
@@ -45672,7 +44264,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glMaxShaderCompilerThreadsARB',
     'feature' => 'GL_ARB_parallel_shader_compile',
     'glewImpl' => '__glewMaxShaderCompilerThreadsARB',
     'glewtype' => 'fun',
@@ -45686,7 +44277,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glMaxShaderCompilerThreadsKHR',
     'feature' => 'GL_KHR_parallel_shader_compile',
     'glewImpl' => '__glewMaxShaderCompilerThreadsKHR',
     'glewtype' => 'fun',
@@ -45700,7 +44290,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glMemoryBarrier',
     'feature' => 'GL_ARB_shader_image_load_store',
     'glewImpl' => '__glewMemoryBarrier',
     'glewtype' => 'fun',
@@ -45714,7 +44303,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glMemoryBarrierByRegion',
     'feature' => 'GL_ARB_ES3_1_compatibility',
     'glewImpl' => '__glewMemoryBarrierByRegion',
     'glewtype' => 'fun',
@@ -45728,7 +44316,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glMemoryBarrierEXT',
     'feature' => 'GL_EXT_shader_image_load_store',
     'glewImpl' => '__glewMemoryBarrierEXT',
     'glewtype' => 'fun',
@@ -45764,7 +44351,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMeshBreadthSGIX',
     'feature' => 'GL_SGIX_quad_mesh',
     'glewImpl' => '__glewMeshBreadthSGIX',
     'glewtype' => 'fun',
@@ -45778,7 +44364,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMeshStrideSGIX',
     'feature' => 'GL_SGIX_quad_mesh',
     'glewImpl' => '__glewMeshStrideSGIX',
     'glewtype' => 'fun',
@@ -45792,7 +44377,6 @@ our %registry = (
         'GLclampf '
       ]
     ],
-    'binding_name' => 'glMinSampleShading',
     'feature' => 'GL_VERSION_4_0',
     'glewImpl' => '__glewMinSampleShading',
     'glewtype' => 'fun',
@@ -45806,7 +44390,6 @@ our %registry = (
         'GLclampf '
       ]
     ],
-    'binding_name' => 'glMinSampleShadingARB',
     'feature' => 'GL_ARB_sample_shading',
     'glewImpl' => '__glewMinSampleShadingARB',
     'glewtype' => 'fun',
@@ -45828,7 +44411,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glMinmax',
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewMinmax',
     'glewtype' => 'fun',
@@ -45850,7 +44432,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glMinmaxEXT',
     'feature' => 'GL_EXT_histogram',
     'glewImpl' => '__glewMinmaxEXT',
     'glewtype' => 'fun',
@@ -46710,7 +45291,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glMultiTexBufferEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexBufferEXT',
     'glewtype' => 'fun',
@@ -46728,7 +45308,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord1d',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1d',
     'glewtype' => 'fun',
@@ -46746,7 +45325,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord1dARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord1dARB',
     'glewtype' => 'fun',
@@ -46800,7 +45378,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord1f',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1f',
     'glewtype' => 'fun',
@@ -46818,7 +45395,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord1fARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord1fARB',
     'glewtype' => 'fun',
@@ -46872,7 +45448,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord1hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewMultiTexCoord1hNV',
     'glewtype' => 'fun',
@@ -46908,7 +45483,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord1i',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1i',
     'glewtype' => 'fun',
@@ -46926,7 +45500,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord1iARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord1iARB',
     'glewtype' => 'fun',
@@ -46980,7 +45553,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord1s',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1s',
     'glewtype' => 'fun',
@@ -46998,7 +45570,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord1sARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord1sARB',
     'glewtype' => 'fun',
@@ -47056,7 +45627,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord2d',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2d',
     'glewtype' => 'fun',
@@ -47078,7 +45648,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord2dARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord2dARB',
     'glewtype' => 'fun',
@@ -47136,7 +45705,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord2f',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2f',
     'glewtype' => 'fun',
@@ -47158,7 +45726,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord2fARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord2fARB',
     'glewtype' => 'fun',
@@ -47216,7 +45783,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord2hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewMultiTexCoord2hNV',
     'glewtype' => 'fun',
@@ -47256,7 +45822,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord2i',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2i',
     'glewtype' => 'fun',
@@ -47278,7 +45843,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord2iARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord2iARB',
     'glewtype' => 'fun',
@@ -47336,7 +45900,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord2s',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2s',
     'glewtype' => 'fun',
@@ -47358,7 +45921,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord2sARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord2sARB',
     'glewtype' => 'fun',
@@ -47420,7 +45982,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord3d',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3d',
     'glewtype' => 'fun',
@@ -47446,7 +46007,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord3dARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord3dARB',
     'glewtype' => 'fun',
@@ -47508,7 +46068,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord3f',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3f',
     'glewtype' => 'fun',
@@ -47534,7 +46093,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord3fARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord3fARB',
     'glewtype' => 'fun',
@@ -47596,7 +46154,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord3hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewMultiTexCoord3hNV',
     'glewtype' => 'fun',
@@ -47640,7 +46197,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord3i',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3i',
     'glewtype' => 'fun',
@@ -47666,7 +46222,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord3iARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord3iARB',
     'glewtype' => 'fun',
@@ -47728,7 +46283,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord3s',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3s',
     'glewtype' => 'fun',
@@ -47754,7 +46308,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord3sARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord3sARB',
     'glewtype' => 'fun',
@@ -47820,7 +46373,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord4d',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4d',
     'glewtype' => 'fun',
@@ -47850,7 +46402,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord4dARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord4dARB',
     'glewtype' => 'fun',
@@ -47916,7 +46467,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord4f',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4f',
     'glewtype' => 'fun',
@@ -47946,7 +46496,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord4fARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord4fARB',
     'glewtype' => 'fun',
@@ -48012,7 +46561,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord4hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewMultiTexCoord4hNV',
     'glewtype' => 'fun',
@@ -48060,7 +46608,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord4i',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4i',
     'glewtype' => 'fun',
@@ -48090,7 +46637,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord4iARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord4iARB',
     'glewtype' => 'fun',
@@ -48156,7 +46702,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord4s',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4s',
     'glewtype' => 'fun',
@@ -48186,7 +46731,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord4sARB',
     'feature' => 'GL_ARB_multitexture',
     'glewImpl' => '__glewMultiTexCoord4sARB',
     'glewtype' => 'fun',
@@ -48252,7 +46796,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glMultiTexCoord4x',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewMultiTexCoord4x',
     'glewtype' => 'fun',
@@ -48274,7 +46817,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoordP1ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewMultiTexCoordP1ui',
     'glewtype' => 'fun',
@@ -48318,7 +46860,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoordP2ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewMultiTexCoordP2ui',
     'glewtype' => 'fun',
@@ -48362,7 +46903,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoordP3ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewMultiTexCoordP3ui',
     'glewtype' => 'fun',
@@ -48406,7 +46946,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glMultiTexCoordP4ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewMultiTexCoordP4ui',
     'glewtype' => 'fun',
@@ -48484,7 +47023,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexEnvfEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexEnvfEXT',
     'glewtype' => 'fun',
@@ -48536,7 +47074,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexEnviEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexEnviEXT',
     'glewtype' => 'fun',
@@ -48588,7 +47125,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glMultiTexGendEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexGendEXT',
     'glewtype' => 'fun',
@@ -48640,7 +47176,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexGenfEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexGenfEXT',
     'glewtype' => 'fun',
@@ -48692,7 +47227,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexGeniEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexGeniEXT',
     'glewtype' => 'fun',
@@ -48946,7 +47480,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glMultiTexParameterfEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexParameterfEXT',
     'glewtype' => 'fun',
@@ -48998,7 +47531,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultiTexParameteriEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexParameteriEXT',
     'glewtype' => 'fun',
@@ -49046,7 +47578,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glMultiTexRenderbufferEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexRenderbufferEXT',
     'glewtype' => 'fun',
@@ -49204,7 +47735,6 @@ our %registry = (
     'signature' => 'GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels'
   },
   'glMulticastBarrierNV' => {
-    'binding_name' => 'glMulticastBarrierNV',
     'feature' => 'GL_NV_gpu_multicast',
     'glewImpl' => '__glewMulticastBarrierNV',
     'glewtype' => 'fun',
@@ -49262,7 +47792,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glMulticastBlitFramebufferNV',
     'feature' => 'GL_NV_gpu_multicast',
     'glewImpl' => '__glewMulticastBlitFramebufferNV',
     'glewtype' => 'fun',
@@ -49330,7 +47859,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glMulticastCopyBufferSubDataNV',
     'feature' => 'GL_NV_gpu_multicast',
     'glewImpl' => '__glewMulticastCopyBufferSubDataNV',
     'glewtype' => 'fun',
@@ -49408,7 +47936,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glMulticastCopyImageSubDataNV',
     'feature' => 'GL_NV_gpu_multicast',
     'glewImpl' => '__glewMulticastCopyImageSubDataNV',
     'glewtype' => 'fun',
@@ -49560,7 +48087,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glMulticastWaitSyncNV',
     'feature' => 'GL_NV_gpu_multicast',
     'glewImpl' => '__glewMulticastWaitSyncNV',
     'glewtype' => 'fun',
@@ -49578,7 +48104,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glMultisampleSubRectPosSGIS',
     'feature' => 'GL_SGIS_shared_multisample',
     'glewImpl' => '__glewMultisampleSubRectPosSGIS',
     'glewtype' => 'fun',
@@ -49712,7 +48237,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glNamedBufferStorageExternalEXT',
     'feature' => 'GL_EXT_external_buffer',
     'glewImpl' => '__glewNamedBufferStorageExternalEXT',
     'glewtype' => 'fun',
@@ -49738,7 +48262,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glNamedBufferStorageMemEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewNamedBufferStorageMemEXT',
     'glewtype' => 'fun',
@@ -49820,7 +48343,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glNamedCopyBufferSubDataEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedCopyBufferSubDataEXT',
     'glewtype' => 'fun',
@@ -49838,7 +48360,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferDrawBuffer',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferDrawBuffer',
     'glewtype' => 'fun',
@@ -49882,7 +48403,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferParameteri',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferParameteri',
     'glewtype' => 'fun',
@@ -49904,7 +48424,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferParameteriEXT',
     'feature' => 'GL_ARB_framebuffer_no_attachments',
     'glewImpl' => '__glewNamedFramebufferParameteriEXT',
     'glewtype' => 'fun',
@@ -49922,7 +48441,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferReadBuffer',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferReadBuffer',
     'glewtype' => 'fun',
@@ -49948,7 +48466,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferRenderbuffer',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferRenderbuffer',
     'glewtype' => 'fun',
@@ -49974,7 +48491,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferRenderbufferEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferRenderbufferEXT',
     'glewtype' => 'fun',
@@ -50078,7 +48594,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferTexture',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferTexture',
     'glewtype' => 'fun',
@@ -50108,7 +48623,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferTexture1DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferTexture1DEXT',
     'glewtype' => 'fun',
@@ -50138,7 +48652,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferTexture2DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferTexture2DEXT',
     'glewtype' => 'fun',
@@ -50172,7 +48685,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferTexture3DEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferTexture3DEXT',
     'glewtype' => 'fun',
@@ -50198,7 +48710,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferTextureEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferTextureEXT',
     'glewtype' => 'fun',
@@ -50228,7 +48739,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferTextureFaceEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferTextureFaceEXT',
     'glewtype' => 'fun',
@@ -50258,7 +48768,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferTextureLayer',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferTextureLayer',
     'glewtype' => 'fun',
@@ -50288,7 +48797,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNamedFramebufferTextureLayerEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedFramebufferTextureLayerEXT',
     'glewtype' => 'fun',
@@ -50326,7 +48834,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glNamedProgramLocalParameter4dEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParameter4dEXT',
     'glewtype' => 'fun',
@@ -50390,7 +48897,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glNamedProgramLocalParameter4fEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParameter4fEXT',
     'glewtype' => 'fun',
@@ -50454,7 +48960,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNamedProgramLocalParameterI4iEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParameterI4iEXT',
     'glewtype' => 'fun',
@@ -50518,7 +49023,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glNamedProgramLocalParameterI4uiEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParameterI4uiEXT',
     'glewtype' => 'fun',
@@ -50690,7 +49194,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glNamedRenderbufferStorage',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewNamedRenderbufferStorage',
     'glewtype' => 'fun',
@@ -50716,7 +49219,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glNamedRenderbufferStorageEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedRenderbufferStorageEXT',
     'glewtype' => 'fun',
@@ -50746,7 +49248,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glNamedRenderbufferStorageMultisample',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewNamedRenderbufferStorageMultisample',
     'glewtype' => 'fun',
@@ -50780,7 +49281,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glNamedRenderbufferStorageMultisampleCoverageEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedRenderbufferStorageMultisampleCoverageEXT',
     'glewtype' => 'fun',
@@ -50810,7 +49310,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glNamedRenderbufferStorageMultisampleEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedRenderbufferStorageMultisampleEXT',
     'glewtype' => 'fun',
@@ -50854,7 +49353,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glNewBufferRegion',
     'feature' => 'GL_KTX_buffer_region',
     'glewImpl' => '__glewNewBufferRegion',
     'glewtype' => 'fun',
@@ -50872,7 +49370,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glNewList',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -50968,7 +49465,6 @@ our %registry = (
         'GLbyte '
       ]
     ],
-    'binding_name' => 'glNormal3b',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51004,7 +49500,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glNormal3d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51040,7 +49535,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glNormal3f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51074,7 +49568,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glNormal3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewNormal3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -51128,7 +49621,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glNormal3hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewNormal3hNV',
     'glewtype' => 'fun',
@@ -51164,7 +49656,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNormal3i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51200,7 +49691,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glNormal3s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51236,7 +49726,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glNormal3x',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewNormal3x',
     'glewtype' => 'fun',
@@ -51254,7 +49743,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glNormalFormatNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewNormalFormatNV',
     'glewtype' => 'fun',
@@ -51272,7 +49760,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glNormalP3ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewNormalP3ui',
     'glewtype' => 'fun',
@@ -51408,7 +49895,6 @@ our %registry = (
         'GLbyte '
       ]
     ],
-    'binding_name' => 'glNormalStream3bATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewNormalStream3bATI',
     'glewtype' => 'fun',
@@ -51452,7 +49938,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glNormalStream3dATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewNormalStream3dATI',
     'glewtype' => 'fun',
@@ -51496,7 +49981,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glNormalStream3fATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewNormalStream3fATI',
     'glewtype' => 'fun',
@@ -51540,7 +50024,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glNormalStream3iATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewNormalStream3iATI',
     'glewtype' => 'fun',
@@ -51584,7 +50067,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glNormalStream3sATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewNormalStream3sATI',
     'glewtype' => 'fun',
@@ -51672,7 +50154,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glObjectPurgeableAPPLE',
     'feature' => 'GL_APPLE_object_purgeable',
     'glewImpl' => '__glewObjectPurgeableAPPLE',
     'glewtype' => 'fun',
@@ -51694,7 +50175,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glObjectUnpurgeableAPPLE',
     'feature' => 'GL_APPLE_object_purgeable',
     'glewImpl' => '__glewObjectUnpurgeableAPPLE',
     'glewtype' => 'fun',
@@ -51728,7 +50208,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glOrtho',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51762,7 +50241,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glOrthof',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewOrthof',
     'glewtype' => 'fun',
@@ -51796,7 +50274,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glOrthox',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewOrthox',
     'glewtype' => 'fun',
@@ -51814,7 +50291,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPNTrianglesfATI',
     'feature' => 'GL_ATI_pn_triangles',
     'glewImpl' => '__glewPNTrianglesfATI',
     'glewtype' => 'fun',
@@ -51832,7 +50308,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glPNTrianglesiATI',
     'feature' => 'GL_ATI_pn_triangles',
     'glewImpl' => '__glewPNTrianglesiATI',
     'glewtype' => 'fun',
@@ -51854,7 +50329,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glPassTexCoordATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewPassTexCoordATI',
     'glewtype' => 'fun',
@@ -51868,7 +50342,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPassThrough',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51904,7 +50377,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glPatchParameteri',
     'feature' => 'GL_ARB_tessellation_shader',
     'glewImpl' => '__glewPatchParameteri',
     'glewtype' => 'fun',
@@ -52004,7 +50476,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glPathCoverDepthFuncNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathCoverDepthFuncNV',
     'glewtype' => 'fun',
@@ -52040,7 +50511,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glPathFogGenNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathFogGenNV',
     'glewtype' => 'fun',
@@ -52280,7 +50750,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPathParameterfNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathParameterfNV',
     'glewtype' => 'fun',
@@ -52324,7 +50793,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glPathParameteriNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathParameteriNV',
     'glewtype' => 'fun',
@@ -52364,7 +50832,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPathStencilDepthOffsetNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathStencilDepthOffsetNV',
     'glewtype' => 'fun',
@@ -52386,7 +50853,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glPathStencilFuncNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathStencilFuncNV',
     'glewtype' => 'fun',
@@ -52518,7 +50984,6 @@ our %registry = (
     'signature' => 'GLenum texCoordSet, GLenum genMode, GLint components, const GLfloat* coeffs'
   },
   'glPauseTransformFeedback' => {
-    'binding_name' => 'glPauseTransformFeedback',
     'feature' => 'GL_ARB_transform_feedback2',
     'glewImpl' => '__glewPauseTransformFeedback',
     'glewtype' => 'fun',
@@ -52526,7 +50991,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPauseTransformFeedbackNV' => {
-    'binding_name' => 'glPauseTransformFeedbackNV',
     'feature' => 'GL_NV_transform_feedback2',
     'glewImpl' => '__glewPauseTransformFeedbackNV',
     'glewtype' => 'fun',
@@ -52632,7 +51096,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPixelStoref',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52650,7 +51113,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glPixelStorei',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52664,7 +51126,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glPixelTexGenSGIX',
     'feature' => 'GL_SGIX_pixel_texture',
     'glewImpl' => '__glewPixelTexGenSGIX',
     'glewtype' => 'fun',
@@ -52682,7 +51143,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPixelTransferf',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52700,7 +51160,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glPixelTransferi',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52722,7 +51181,6 @@ our %registry = (
         'const GLfloat '
       ]
     ],
-    'binding_name' => 'glPixelTransformParameterfEXT',
     'feature' => 'GL_EXT_pixel_transform',
     'glewImpl' => '__glewPixelTransformParameterfEXT',
     'glewtype' => 'fun',
@@ -52744,7 +51202,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPixelTransformParameterfSGI',
     'feature' => 'GL_SGI_fft',
     'glewImpl' => '__glewPixelTransformParameterfSGI',
     'glewtype' => 'fun',
@@ -52810,7 +51267,6 @@ our %registry = (
         'const GLint '
       ]
     ],
-    'binding_name' => 'glPixelTransformParameteriEXT',
     'feature' => 'GL_EXT_pixel_transform',
     'glewImpl' => '__glewPixelTransformParameteriEXT',
     'glewtype' => 'fun',
@@ -52832,7 +51288,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glPixelTransformParameteriSGI',
     'feature' => 'GL_SGI_fft',
     'glewImpl' => '__glewPixelTransformParameteriSGI',
     'glewtype' => 'fun',
@@ -52890,7 +51345,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glPixelTransformSGI',
     'feature' => 'GL_SGI_fft',
     'glewImpl' => '__glewPixelTransformSGI',
     'glewtype' => 'fun',
@@ -52908,7 +51362,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPixelZoom',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52968,7 +51421,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPointParameterf',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewPointParameterf',
     'glewtype' => 'fun',
@@ -52986,7 +51438,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPointParameterfARB',
     'feature' => 'GL_ARB_point_parameters',
     'glewImpl' => '__glewPointParameterfARB',
     'glewtype' => 'fun',
@@ -53004,7 +51455,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPointParameterfEXT',
     'feature' => 'GL_EXT_point_parameters',
     'glewImpl' => '__glewPointParameterfEXT',
     'glewtype' => 'fun',
@@ -53076,7 +51526,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glPointParameteri',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewPointParameteri',
     'glewtype' => 'fun',
@@ -53094,7 +51543,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glPointParameteriNV',
     'feature' => 'GL_NV_point_sprite',
     'glewImpl' => '__glewPointParameteriNV',
     'glewtype' => 'fun',
@@ -53148,7 +51596,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glPointParameterx',
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewPointParameterx',
     'glewtype' => 'fun',
@@ -53180,7 +51627,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPointSize',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -53216,7 +51662,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glPointSizex',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewPointSizex',
     'glewtype' => 'fun',
@@ -53248,7 +51693,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glPolygonMode',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -53266,7 +51710,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glPolygonModeNV',
     'feature' => 'GL_NV_polygon_mode',
     'glewImpl' => '__glewPolygonModeNV',
     'glewtype' => 'fun',
@@ -53284,7 +51727,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPolygonOffset',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -53306,7 +51748,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPolygonOffsetClamp',
     'feature' => 'GL_ARB_polygon_offset_clamp',
     'glewImpl' => '__glewPolygonOffsetClamp',
     'glewtype' => 'fun',
@@ -53328,7 +51769,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPolygonOffsetClampEXT',
     'feature' => 'GL_EXT_polygon_offset_clamp',
     'glewImpl' => '__glewPolygonOffsetClampEXT',
     'glewtype' => 'fun',
@@ -53346,7 +51786,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPolygonOffsetEXT',
     'feature' => 'GL_EXT_polygon_offset',
     'glewImpl' => '__glewPolygonOffsetEXT',
     'glewtype' => 'fun',
@@ -53364,7 +51803,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glPolygonOffsetx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewPolygonOffsetx',
     'glewtype' => 'fun',
@@ -53386,7 +51824,6 @@ our %registry = (
     'signature' => 'const GLubyte *mask'
   },
   'glPopAttrib' => {
-    'binding_name' => 'glPopAttrib',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -53394,7 +51831,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPopClientAttrib' => {
-    'binding_name' => 'glPopClientAttrib',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -53402,7 +51838,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPopDebugGroup' => {
-    'binding_name' => 'glPopDebugGroup',
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewPopDebugGroup',
     'glewtype' => 'fun',
@@ -53410,7 +51845,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPopGroupMarkerEXT' => {
-    'binding_name' => 'glPopGroupMarkerEXT',
     'feature' => 'GL_EXT_debug_marker',
     'glewImpl' => '__glewPopGroupMarkerEXT',
     'glewtype' => 'fun',
@@ -53418,7 +51852,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPopMatrix' => {
-    'binding_name' => 'glPopMatrix',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -53426,7 +51859,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glPopName' => {
-    'binding_name' => 'glPopName',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -53488,7 +51920,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glPresentFrameDualFillNV',
     'feature' => 'GL_NV_present_video',
     'glewImpl' => '__glewPresentFrameDualFillNV',
     'glewtype' => 'fun',
@@ -53542,7 +51973,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glPresentFrameKeyedNV',
     'feature' => 'GL_NV_present_video',
     'glewImpl' => '__glewPresentFrameKeyedNV',
     'glewtype' => 'fun',
@@ -53584,7 +52014,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glPrimitiveBoundingBoxARB',
     'feature' => 'GL_ARB_ES3_2_compatibility',
     'glewImpl' => '__glewPrimitiveBoundingBoxARB',
     'glewtype' => 'fun',
@@ -53598,7 +52027,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glPrimitiveRestartIndex',
     'feature' => 'GL_VERSION_3_1',
     'glewImpl' => '__glewPrimitiveRestartIndex',
     'glewtype' => 'fun',
@@ -53612,7 +52040,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glPrimitiveRestartIndexNV',
     'feature' => 'GL_NV_primitive_restart',
     'glewImpl' => '__glewPrimitiveRestartIndexNV',
     'glewtype' => 'fun',
@@ -53620,7 +52047,6 @@ our %registry = (
     'signature' => 'GLuint index'
   },
   'glPrimitiveRestartNV' => {
-    'binding_name' => 'glPrimitiveRestartNV',
     'feature' => 'GL_NV_primitive_restart',
     'glewImpl' => '__glewPrimitiveRestartNV',
     'glewtype' => 'fun',
@@ -53836,7 +52262,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glProgramEnvParameter4dARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewProgramEnvParameter4dARB',
     'glewtype' => 'fun',
@@ -53892,7 +52317,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramEnvParameter4fARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewProgramEnvParameter4fARB',
     'glewtype' => 'fun',
@@ -53948,7 +52372,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramEnvParameterI4iNV',
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramEnvParameterI4iNV',
     'glewtype' => 'fun',
@@ -54004,7 +52427,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glProgramEnvParameterI4uiNV',
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramEnvParameterI4uiNV',
     'glewtype' => 'fun',
@@ -54138,7 +52560,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glProgramLocalParameter4dARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewProgramLocalParameter4dARB',
     'glewtype' => 'fun',
@@ -54194,7 +52615,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramLocalParameter4fARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewProgramLocalParameter4fARB',
     'glewtype' => 'fun',
@@ -54250,7 +52670,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramLocalParameterI4iNV',
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramLocalParameterI4iNV',
     'glewtype' => 'fun',
@@ -54306,7 +52725,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glProgramLocalParameterI4uiNV',
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramLocalParameterI4uiNV',
     'glewtype' => 'fun',
@@ -54568,7 +52986,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glProgramParameter4dNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewProgramParameter4dNV',
     'glewtype' => 'fun',
@@ -54624,7 +53041,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramParameter4fNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewProgramParameter4fNV',
     'glewtype' => 'fun',
@@ -54668,7 +53084,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramParameteri',
     'feature' => 'GL_ARB_get_program_binary',
     'glewImpl' => '__glewProgramParameteri',
     'glewtype' => 'fun',
@@ -54690,7 +53105,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramParameteriARB',
     'feature' => 'GL_ARB_geometry_shader4',
     'glewImpl' => '__glewProgramParameteriARB',
     'glewtype' => 'fun',
@@ -54712,7 +53126,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramParameteriEXT',
     'feature' => 'GL_EXT_geometry_shader4',
     'glewImpl' => '__glewProgramParameteriEXT',
     'glewtype' => 'fun',
@@ -54842,7 +53255,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glProgramUniform1d',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1d',
     'glewtype' => 'fun',
@@ -54890,7 +53302,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramUniform1f',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1f',
     'glewtype' => 'fun',
@@ -54912,7 +53323,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramUniform1fEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform1fEXT',
     'glewtype' => 'fun',
@@ -54986,7 +53396,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramUniform1i',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1i',
     'glewtype' => 'fun',
@@ -55008,7 +53417,6 @@ our %registry = (
         'GLint64 '
       ]
     ],
-    'binding_name' => 'glProgramUniform1i64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform1i64ARB',
     'glewtype' => 'fun',
@@ -55030,7 +53438,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glProgramUniform1i64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform1i64NV',
     'glewtype' => 'fun',
@@ -55104,7 +53511,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramUniform1iEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform1iEXT',
     'glewtype' => 'fun',
@@ -55178,7 +53584,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glProgramUniform1ui',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1ui',
     'glewtype' => 'fun',
@@ -55200,7 +53605,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glProgramUniform1ui64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform1ui64ARB',
     'glewtype' => 'fun',
@@ -55222,7 +53626,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glProgramUniform1ui64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform1ui64NV',
     'glewtype' => 'fun',
@@ -55296,7 +53699,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glProgramUniform1uiEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform1uiEXT',
     'glewtype' => 'fun',
@@ -55374,7 +53776,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glProgramUniform2d',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform2d',
     'glewtype' => 'fun',
@@ -55426,7 +53827,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramUniform2f',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform2f',
     'glewtype' => 'fun',
@@ -55452,7 +53852,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramUniform2fEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform2fEXT',
     'glewtype' => 'fun',
@@ -55530,7 +53929,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramUniform2i',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform2i',
     'glewtype' => 'fun',
@@ -55556,7 +53954,6 @@ our %registry = (
         'GLint64 '
       ]
     ],
-    'binding_name' => 'glProgramUniform2i64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform2i64ARB',
     'glewtype' => 'fun',
@@ -55582,7 +53979,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glProgramUniform2i64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform2i64NV',
     'glewtype' => 'fun',
@@ -55660,7 +54056,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramUniform2iEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform2iEXT',
     'glewtype' => 'fun',
@@ -55738,7 +54133,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glProgramUniform2ui',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform2ui',
     'glewtype' => 'fun',
@@ -55764,7 +54158,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glProgramUniform2ui64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform2ui64ARB',
     'glewtype' => 'fun',
@@ -55790,7 +54183,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glProgramUniform2ui64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform2ui64NV',
     'glewtype' => 'fun',
@@ -55868,7 +54260,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glProgramUniform2uiEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform2uiEXT',
     'glewtype' => 'fun',
@@ -55950,7 +54341,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glProgramUniform3d',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform3d',
     'glewtype' => 'fun',
@@ -56006,7 +54396,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramUniform3f',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform3f',
     'glewtype' => 'fun',
@@ -56036,7 +54425,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramUniform3fEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform3fEXT',
     'glewtype' => 'fun',
@@ -56118,7 +54506,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramUniform3i',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform3i',
     'glewtype' => 'fun',
@@ -56148,7 +54535,6 @@ our %registry = (
         'GLint64 '
       ]
     ],
-    'binding_name' => 'glProgramUniform3i64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform3i64ARB',
     'glewtype' => 'fun',
@@ -56178,7 +54564,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glProgramUniform3i64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform3i64NV',
     'glewtype' => 'fun',
@@ -56260,7 +54645,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramUniform3iEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform3iEXT',
     'glewtype' => 'fun',
@@ -56342,7 +54726,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glProgramUniform3ui',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform3ui',
     'glewtype' => 'fun',
@@ -56372,7 +54755,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glProgramUniform3ui64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform3ui64ARB',
     'glewtype' => 'fun',
@@ -56402,7 +54784,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glProgramUniform3ui64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform3ui64NV',
     'glewtype' => 'fun',
@@ -56484,7 +54865,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glProgramUniform3uiEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform3uiEXT',
     'glewtype' => 'fun',
@@ -56570,7 +54950,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glProgramUniform4d',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform4d',
     'glewtype' => 'fun',
@@ -56630,7 +55009,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramUniform4f',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform4f',
     'glewtype' => 'fun',
@@ -56664,7 +55042,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glProgramUniform4fEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform4fEXT',
     'glewtype' => 'fun',
@@ -56750,7 +55127,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramUniform4i',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform4i',
     'glewtype' => 'fun',
@@ -56784,7 +55160,6 @@ our %registry = (
         'GLint64 '
       ]
     ],
-    'binding_name' => 'glProgramUniform4i64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform4i64ARB',
     'glewtype' => 'fun',
@@ -56818,7 +55193,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glProgramUniform4i64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform4i64NV',
     'glewtype' => 'fun',
@@ -56904,7 +55278,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramUniform4iEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform4iEXT',
     'glewtype' => 'fun',
@@ -56990,7 +55363,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glProgramUniform4ui',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform4ui',
     'glewtype' => 'fun',
@@ -57024,7 +55396,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glProgramUniform4ui64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform4ui64ARB',
     'glewtype' => 'fun',
@@ -57058,7 +55429,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glProgramUniform4ui64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform4ui64NV',
     'glewtype' => 'fun',
@@ -57144,7 +55514,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glProgramUniform4uiEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewProgramUniform4uiEXT',
     'glewtype' => 'fun',
@@ -57218,7 +55587,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glProgramUniformHandleui64ARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewProgramUniformHandleui64ARB',
     'glewtype' => 'fun',
@@ -57240,7 +55608,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glProgramUniformHandleui64NV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewProgramUniformHandleui64NV',
     'glewtype' => 'fun',
@@ -58124,7 +56491,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glProgramUniformui64NV',
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewProgramUniformui64NV',
     'glewtype' => 'fun',
@@ -58168,7 +56534,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glProgramVertexLimitNV',
     'feature' => 'GL_NV_geometry_program4',
     'glewImpl' => '__glewProgramVertexLimitNV',
     'glewtype' => 'fun',
@@ -58182,7 +56547,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glProvokingVertex',
     'feature' => 'GL_ARB_provoking_vertex',
     'glewImpl' => '__glewProvokingVertex',
     'glewtype' => 'fun',
@@ -58196,7 +56560,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glProvokingVertexEXT',
     'feature' => 'GL_EXT_provoking_vertex',
     'glewImpl' => '__glewProvokingVertexEXT',
     'glewtype' => 'fun',
@@ -58210,7 +56573,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glPushAttrib',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58224,7 +56586,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glPushClientAttrib',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58238,7 +56599,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glPushClientAttribDefaultEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewPushClientAttribDefaultEXT',
     'glewtype' => 'fun',
@@ -58290,7 +56650,6 @@ our %registry = (
     'signature' => 'GLsizei length, const GLchar* marker'
   },
   'glPushMatrix' => {
-    'binding_name' => 'glPushMatrix',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58304,7 +56663,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glPushName',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58322,7 +56680,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glQueryCounter',
     'feature' => 'GL_ARB_timer_query',
     'glewImpl' => '__glewQueryCounter',
     'glewtype' => 'fun',
@@ -58340,7 +56697,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glQueryCounterANGLE',
     'feature' => 'GL_ANGLE_timer_query',
     'glewImpl' => '__glewQueryCounterANGLE',
     'glewtype' => 'fun',
@@ -58366,7 +56722,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glQueryObjectParameteruiAMD',
     'feature' => 'GL_AMD_occlusion_query_event',
     'glewImpl' => '__glewQueryObjectParameteruiAMD',
     'glewtype' => 'fun',
@@ -58384,7 +56739,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glRasterPos2d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58416,7 +56770,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glRasterPos2f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58448,7 +56801,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glRasterPos2i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58480,7 +56832,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glRasterPos2s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58516,7 +56867,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glRasterPos3d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58552,7 +56902,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glRasterPos3f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58588,7 +56937,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glRasterPos3i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58624,7 +56972,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glRasterPos3s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58664,7 +57011,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glRasterPos4d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58704,7 +57050,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glRasterPos4f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58744,7 +57089,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glRasterPos4i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58784,7 +57128,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glRasterPos4s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58816,7 +57159,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glRasterSamplesEXT',
     'feature' => 'GL_EXT_raster_multisample',
     'glewImpl' => '__glewRasterSamplesEXT',
     'glewtype' => 'fun',
@@ -58830,7 +57172,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glReadBuffer',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -58848,7 +57189,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glReadBufferIndexedEXT',
     'feature' => 'GL_EXT_multiview_draw_buffers',
     'glewImpl' => '__glewReadBufferIndexedEXT',
     'glewtype' => 'fun',
@@ -58878,7 +57218,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glReadBufferRegion',
     'feature' => 'GL_KTX_buffer_region',
     'glewImpl' => '__glewReadBufferRegion',
     'glewtype' => 'fun',
@@ -59064,7 +57403,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glRectd',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59108,7 +57446,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glRectf',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59152,7 +57489,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glRecti',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59196,7 +57532,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glRects',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59246,7 +57581,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glReleaseKeyedMutexWin32EXT',
     'feature' => 'GL_EXT_win32_keyed_mutex',
     'glewImpl' => '__glewReleaseKeyedMutexWin32EXT',
     'glewtype' => 'fun',
@@ -59254,7 +57588,6 @@ our %registry = (
     'signature' => 'GLuint memory, GLuint64 key'
   },
   'glReleaseShaderCompiler' => {
-    'binding_name' => 'glReleaseShaderCompiler',
     'feature' => 'GL_ARB_ES2_compatibility',
     'glewImpl' => '__glewReleaseShaderCompiler',
     'glewtype' => 'fun',
@@ -59268,7 +57601,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glRenderGpuMaskNV',
     'feature' => 'GL_NV_gpu_multicast',
     'glewImpl' => '__glewRenderGpuMaskNV',
     'glewtype' => 'fun',
@@ -59282,7 +57614,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glRenderMode',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59308,7 +57639,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glRenderbufferStorage',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewRenderbufferStorage',
     'glewtype' => 'fun',
@@ -59334,7 +57664,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glRenderbufferStorageEXT',
     'feature' => 'GL_EXT_framebuffer_object',
     'glewImpl' => '__glewRenderbufferStorageEXT',
     'glewtype' => 'fun',
@@ -59364,7 +57693,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glRenderbufferStorageMultisample',
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewRenderbufferStorageMultisample',
     'glewtype' => 'fun',
@@ -59394,7 +57722,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glRenderbufferStorageMultisampleANGLE',
     'feature' => 'GL_ANGLE_framebuffer_multisample',
     'glewImpl' => '__glewRenderbufferStorageMultisampleANGLE',
     'glewtype' => 'fun',
@@ -59424,7 +57751,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glRenderbufferStorageMultisampleAPPLE',
     'feature' => 'GL_APPLE_framebuffer_multisample',
     'glewImpl' => '__glewRenderbufferStorageMultisampleAPPLE',
     'glewtype' => 'fun',
@@ -59458,7 +57784,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glRenderbufferStorageMultisampleCoverageNV',
     'feature' => 'GL_NV_framebuffer_multisample_coverage',
     'glewImpl' => '__glewRenderbufferStorageMultisampleCoverageNV',
     'glewtype' => 'fun',
@@ -59488,7 +57813,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glRenderbufferStorageMultisampleEXT',
     'feature' => 'GL_EXT_framebuffer_multisample',
     'glewImpl' => '__glewRenderbufferStorageMultisampleEXT',
     'glewtype' => 'fun',
@@ -59518,7 +57842,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glRenderbufferStorageMultisampleNV',
     'feature' => 'GL_NV_framebuffer_multisample',
     'glewImpl' => '__glewRenderbufferStorageMultisampleNV',
     'glewtype' => 'fun',
@@ -59554,7 +57877,6 @@ our %registry = (
         'GLubyte '
       ]
     ],
-    'binding_name' => 'glReplacementCodeubSUN',
     'feature' => 'GL_SUN_triangle_list',
     'glewImpl' => '__glewReplacementCodeubSUN',
     'glewtype' => 'fun',
@@ -59606,7 +57928,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glReplacementCodeuiColor3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiColor3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -59682,7 +58003,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glReplacementCodeuiColor4fNormal3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiColor4fNormal3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -59750,7 +58070,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glReplacementCodeuiColor4ubVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiColor4ubVertex3fSUN',
     'glewtype' => 'fun',
@@ -59810,7 +58129,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glReplacementCodeuiNormal3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiNormal3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -59846,7 +58164,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glReplacementCodeuiSUN',
     'feature' => 'GL_SUN_triangle_list',
     'glewImpl' => '__glewReplacementCodeuiSUN',
     'glewtype' => 'fun',
@@ -59908,7 +58225,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -59984,7 +58300,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiTexCoord2fNormal3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -60044,7 +58359,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glReplacementCodeuiTexCoord2fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiTexCoord2fVertex3fSUN',
     'glewtype' => 'fun',
@@ -60092,7 +58406,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glReplacementCodeuiVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiVertex3fSUN',
     'glewtype' => 'fun',
@@ -60138,7 +58451,6 @@ our %registry = (
         'GLushort '
       ]
     ],
-    'binding_name' => 'glReplacementCodeusSUN',
     'feature' => 'GL_SUN_triangle_list',
     'glewImpl' => '__glewReplacementCodeusSUN',
     'glewtype' => 'fun',
@@ -60184,7 +58496,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glResetHistogram',
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewResetHistogram',
     'glewtype' => 'fun',
@@ -60198,7 +58509,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glResetHistogramEXT',
     'feature' => 'GL_EXT_histogram',
     'glewImpl' => '__glewResetHistogramEXT',
     'glewtype' => 'fun',
@@ -60212,7 +58522,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glResetMinmax',
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewResetMinmax',
     'glewtype' => 'fun',
@@ -60226,7 +58535,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glResetMinmaxEXT',
     'feature' => 'GL_EXT_histogram',
     'glewImpl' => '__glewResetMinmaxEXT',
     'glewtype' => 'fun',
@@ -60234,7 +58542,6 @@ our %registry = (
     'signature' => 'GLenum target'
   },
   'glResizeBuffersMESA' => {
-    'binding_name' => 'glResizeBuffersMESA',
     'feature' => 'GL_MESA_resize_buffers',
     'glewImpl' => '__glewResizeBuffersMESA',
     'glewtype' => 'fun',
@@ -60242,7 +58549,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glResolveMultisampleFramebufferAPPLE' => {
-    'binding_name' => 'glResolveMultisampleFramebufferAPPLE',
     'feature' => 'GL_APPLE_framebuffer_multisample',
     'glewImpl' => '__glewResolveMultisampleFramebufferAPPLE',
     'glewtype' => 'fun',
@@ -60250,7 +58556,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glResumeTransformFeedback' => {
-    'binding_name' => 'glResumeTransformFeedback',
     'feature' => 'GL_ARB_transform_feedback2',
     'glewImpl' => '__glewResumeTransformFeedback',
     'glewtype' => 'fun',
@@ -60258,7 +58563,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glResumeTransformFeedbackNV' => {
-    'binding_name' => 'glResumeTransformFeedbackNV',
     'feature' => 'GL_NV_transform_feedback2',
     'glewImpl' => '__glewResumeTransformFeedbackNV',
     'glewtype' => 'fun',
@@ -60284,7 +58588,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glRotated',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60310,7 +58613,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glRotatef',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60336,7 +58638,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glRotatex',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewRotatex',
     'glewtype' => 'fun',
@@ -60354,7 +58655,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glSampleCoverage',
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewSampleCoverage',
     'glewtype' => 'fun',
@@ -60372,7 +58672,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glSampleCoverageARB',
     'feature' => 'GL_ARB_multisample',
     'glewImpl' => '__glewSampleCoverageARB',
     'glewtype' => 'fun',
@@ -60390,7 +58689,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glSampleCoveragex',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewSampleCoveragex',
     'glewtype' => 'fun',
@@ -60412,7 +58710,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glSampleMapATI',
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewSampleMapATI',
     'glewtype' => 'fun',
@@ -60430,7 +58727,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glSampleMaskEXT',
     'feature' => 'GL_EXT_multisample',
     'glewImpl' => '__glewSampleMaskEXT',
     'glewtype' => 'fun',
@@ -60448,7 +58744,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glSampleMaskIndexedNV',
     'feature' => 'GL_NV_explicit_multisample',
     'glewImpl' => '__glewSampleMaskIndexedNV',
     'glewtype' => 'fun',
@@ -60466,7 +58761,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glSampleMaskSGIS',
     'feature' => 'GL_SGIS_multisample',
     'glewImpl' => '__glewSampleMaskSGIS',
     'glewtype' => 'fun',
@@ -60484,7 +58778,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glSampleMaski',
     'feature' => 'GL_ARB_texture_multisample',
     'glewImpl' => '__glewSampleMaski',
     'glewtype' => 'fun',
@@ -60498,7 +58791,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glSamplePatternEXT',
     'feature' => 'GL_EXT_multisample',
     'glewImpl' => '__glewSamplePatternEXT',
     'glewtype' => 'fun',
@@ -60512,7 +58804,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glSamplePatternSGIS',
     'feature' => 'GL_SGIS_multisample',
     'glewImpl' => '__glewSamplePatternSGIS',
     'glewtype' => 'fun',
@@ -60578,7 +58869,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glSamplerParameterf',
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewSamplerParameterf',
     'glewtype' => 'fun',
@@ -60622,7 +58912,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glSamplerParameteri',
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewSamplerParameteri',
     'glewtype' => 'fun',
@@ -60666,7 +58955,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glScaled',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60688,7 +58976,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glScalef',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60710,7 +58997,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glScalex',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewScalex',
     'glewtype' => 'fun',
@@ -60736,7 +59022,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glScissor',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60810,7 +59095,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glScissorIndexed',
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewScissorIndexed',
     'glewtype' => 'fun',
@@ -60840,7 +59124,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glScissorIndexedNV',
     'feature' => 'GL_NV_viewport_array',
     'glewImpl' => '__glewScissorIndexedNV',
     'glewtype' => 'fun',
@@ -60898,7 +59181,6 @@ our %registry = (
         'GLbyte '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3b',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3b',
     'glewtype' => 'fun',
@@ -60920,7 +59202,6 @@ our %registry = (
         'GLbyte '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3bEXT',
     'feature' => 'GL_EXT_secondary_color',
     'glewImpl' => '__glewSecondaryColor3bEXT',
     'glewtype' => 'fun',
@@ -60970,7 +59251,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3d',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3d',
     'glewtype' => 'fun',
@@ -60992,7 +59272,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3dEXT',
     'feature' => 'GL_EXT_secondary_color',
     'glewImpl' => '__glewSecondaryColor3dEXT',
     'glewtype' => 'fun',
@@ -61042,7 +59321,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3f',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3f',
     'glewtype' => 'fun',
@@ -61064,7 +59342,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3fEXT',
     'feature' => 'GL_EXT_secondary_color',
     'glewImpl' => '__glewSecondaryColor3fEXT',
     'glewtype' => 'fun',
@@ -61114,7 +59391,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewSecondaryColor3hNV',
     'glewtype' => 'fun',
@@ -61150,7 +59426,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3i',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3i',
     'glewtype' => 'fun',
@@ -61172,7 +59447,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3iEXT',
     'feature' => 'GL_EXT_secondary_color',
     'glewImpl' => '__glewSecondaryColor3iEXT',
     'glewtype' => 'fun',
@@ -61222,7 +59496,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3s',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3s',
     'glewtype' => 'fun',
@@ -61244,7 +59517,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3sEXT',
     'feature' => 'GL_EXT_secondary_color',
     'glewImpl' => '__glewSecondaryColor3sEXT',
     'glewtype' => 'fun',
@@ -61294,7 +59566,6 @@ our %registry = (
         'GLubyte '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3ub',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3ub',
     'glewtype' => 'fun',
@@ -61316,7 +59587,6 @@ our %registry = (
         'GLubyte '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3ubEXT',
     'feature' => 'GL_EXT_secondary_color',
     'glewImpl' => '__glewSecondaryColor3ubEXT',
     'glewtype' => 'fun',
@@ -61366,7 +59636,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3ui',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3ui',
     'glewtype' => 'fun',
@@ -61388,7 +59657,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3uiEXT',
     'feature' => 'GL_EXT_secondary_color',
     'glewImpl' => '__glewSecondaryColor3uiEXT',
     'glewtype' => 'fun',
@@ -61438,7 +59706,6 @@ our %registry = (
         'GLushort '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3us',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3us',
     'glewtype' => 'fun',
@@ -61460,7 +59727,6 @@ our %registry = (
         'GLushort '
       ]
     ],
-    'binding_name' => 'glSecondaryColor3usEXT',
     'feature' => 'GL_EXT_secondary_color',
     'glewImpl' => '__glewSecondaryColor3usEXT',
     'glewtype' => 'fun',
@@ -61510,7 +59776,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glSecondaryColorFormatNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewSecondaryColorFormatNV',
     'glewtype' => 'fun',
@@ -61528,7 +59793,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glSecondaryColorP3ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewSecondaryColorP3ui',
     'glewtype' => 'fun',
@@ -61690,7 +59954,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glSelectTextureCoordSetSGIS',
     'feature' => 'GL_SGIS_multitexture',
     'glewImpl' => '__glewSelectTextureCoordSetSGIS',
     'glewtype' => 'fun',
@@ -61704,7 +59967,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glSelectTextureSGIS',
     'feature' => 'GL_SGIS_multitexture',
     'glewImpl' => '__glewSelectTextureSGIS',
     'glewtype' => 'fun',
@@ -61718,7 +59980,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glSelectTextureTransformSGIS',
     'feature' => 'GL_SGIS_multitexture',
     'glewImpl' => '__glewSelectTextureTransformSGIS',
     'glewtype' => 'fun',
@@ -61838,7 +60099,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glSetFenceAPPLE',
     'feature' => 'GL_APPLE_fence',
     'glewImpl' => '__glewSetFenceAPPLE',
     'glewtype' => 'fun',
@@ -61856,7 +60116,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glSetFenceNV',
     'feature' => 'GL_NV_fence',
     'glewImpl' => '__glewSetFenceNV',
     'glewtype' => 'fun',
@@ -61954,7 +60213,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glShadeModel',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -62006,7 +60264,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glShaderOp1EXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewShaderOp1EXT',
     'glewtype' => 'fun',
@@ -62032,7 +60289,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glShaderOp2EXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewShaderOp2EXT',
     'glewtype' => 'fun',
@@ -62062,7 +60318,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glShaderOp3EXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewShaderOp3EXT',
     'glewtype' => 'fun',
@@ -62136,7 +60391,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glShaderStorageBlockBinding',
     'feature' => 'GL_ARB_shader_storage_buffer_object',
     'glewImpl' => '__glewShaderStorageBlockBinding',
     'glewtype' => 'fun',
@@ -62206,7 +60460,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glSignalVkFenceNV',
     'feature' => 'GL_NV_draw_vulkan_image',
     'glewImpl' => '__glewSignalVkFenceNV',
     'glewtype' => 'fun',
@@ -62220,7 +60473,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glSignalVkSemaphoreNV',
     'feature' => 'GL_NV_draw_vulkan_image',
     'glewImpl' => '__glewSignalVkSemaphoreNV',
     'glewtype' => 'fun',
@@ -62298,7 +60550,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glSpriteParameterfSGIX',
     'feature' => 'GL_SGIX_sprite',
     'glewImpl' => '__glewSpriteParameterfSGIX',
     'glewtype' => 'fun',
@@ -62334,7 +60585,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glSpriteParameteriSGIX',
     'feature' => 'GL_SGIX_sprite',
     'glewImpl' => '__glewSpriteParameteriSGIX',
     'glewtype' => 'fun',
@@ -62382,7 +60632,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glStartTilingQCOM',
     'feature' => 'GL_QCOM_tiled_rendering',
     'glewImpl' => '__glewStartTilingQCOM',
     'glewtype' => 'fun',
@@ -62400,7 +60649,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glStateCaptureNV',
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewStateCaptureNV',
     'glewtype' => 'fun',
@@ -62464,7 +60712,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glStencilFillPathNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewStencilFillPathNV',
     'glewtype' => 'fun',
@@ -62486,7 +60733,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glStencilFunc',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -62512,7 +60758,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glStencilFuncSeparate',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewStencilFuncSeparate',
     'glewtype' => 'fun',
@@ -62538,7 +60783,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glStencilFuncSeparateATI',
     'feature' => 'GL_ATI_separate_stencil',
     'glewImpl' => '__glewStencilFuncSeparateATI',
     'glewtype' => 'fun',
@@ -62552,7 +60796,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glStencilMask',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -62570,7 +60813,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glStencilMaskSeparate',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewStencilMaskSeparate',
     'glewtype' => 'fun',
@@ -62592,7 +60834,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glStencilOp',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -62618,7 +60859,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glStencilOpSeparate',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewStencilOpSeparate',
     'glewtype' => 'fun',
@@ -62644,7 +60884,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glStencilOpSeparateATI',
     'feature' => 'GL_ATI_separate_stencil',
     'glewImpl' => '__glewStencilOpSeparateATI',
     'glewtype' => 'fun',
@@ -62662,7 +60901,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glStencilOpValueAMD',
     'feature' => 'GL_AMD_stencil_operation_extended',
     'glewImpl' => '__glewStencilOpValueAMD',
     'glewtype' => 'fun',
@@ -62726,7 +60964,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glStencilStrokePathNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewStencilStrokePathNV',
     'glewtype' => 'fun',
@@ -62798,7 +61035,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glStencilThenCoverFillPathNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewStencilThenCoverFillPathNV',
     'glewtype' => 'fun',
@@ -62870,7 +61106,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glStencilThenCoverStrokePathNV',
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewStencilThenCoverStrokePathNV',
     'glewtype' => 'fun',
@@ -62888,7 +61123,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glStereoParameterfNV',
     'feature' => 'GL_NV_3dvision_settings',
     'glewImpl' => '__glewStereoParameterfNV',
     'glewtype' => 'fun',
@@ -62906,7 +61140,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glStereoParameteriNV',
     'feature' => 'GL_NV_3dvision_settings',
     'glewImpl' => '__glewStereoParameteriNV',
     'glewtype' => 'fun',
@@ -62942,7 +61175,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glSubpixelPrecisionBiasNV',
     'feature' => 'GL_NV_conservative_raster',
     'glewImpl' => '__glewSubpixelPrecisionBiasNV',
     'glewtype' => 'fun',
@@ -62960,7 +61192,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glSwapMPEGPredictorsSGIX',
     'feature' => 'GL_SGIX_mpeg1',
     'glewImpl' => '__glewSwapMPEGPredictorsSGIX',
     'glewtype' => 'fun',
@@ -62994,7 +61225,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glSwizzleEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewSwizzleEXT',
     'glewtype' => 'fun',
@@ -63008,7 +61238,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glSyncTextureINTEL',
     'feature' => 'GL_LAYOUT_LINEAR_INTEL',
     'glewImpl' => '__glewSyncTextureINTEL',
     'glewtype' => 'fun',
@@ -63016,7 +61245,6 @@ our %registry = (
     'signature' => 'GLuint texture'
   },
   'glTagSampleBufferSGIX' => {
-    'binding_name' => 'glTagSampleBufferSGIX',
     'feature' => 'GL_SGIX_tag_sample_buffer',
     'glewImpl' => '__glewTagSampleBufferSGIX',
     'glewtype' => 'fun',
@@ -63052,7 +61280,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTbufferMask3DFX',
     'feature' => 'GL_3DFX_tbuffer',
     'glewImpl' => '__glewTbufferMask3DFX',
     'glewtype' => 'fun',
@@ -63066,7 +61293,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTessellationFactorAMD',
     'feature' => 'GL_AMD_vertex_shader_tessellator',
     'glewImpl' => '__glewTessellationFactorAMD',
     'glewtype' => 'fun',
@@ -63080,7 +61306,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glTessellationModeAMD',
     'feature' => 'GL_AMD_vertex_shader_tessellator',
     'glewImpl' => '__glewTessellationModeAMD',
     'glewtype' => 'fun',
@@ -63094,7 +61319,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTestFenceAPPLE',
     'feature' => 'GL_APPLE_fence',
     'glewImpl' => '__glewTestFenceAPPLE',
     'glewtype' => 'fun',
@@ -63108,7 +61332,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTestFenceNV',
     'feature' => 'GL_NV_fence',
     'glewImpl' => '__glewTestFenceNV',
     'glewtype' => 'fun',
@@ -63126,7 +61349,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTestObjectAPPLE',
     'feature' => 'GL_APPLE_fence',
     'glewImpl' => '__glewTestObjectAPPLE',
     'glewtype' => 'fun',
@@ -63148,7 +61370,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTexBuffer',
     'feature' => 'GL_VERSION_3_1',
     'glewImpl' => '__glewTexBuffer',
     'glewtype' => 'fun',
@@ -63170,7 +61391,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTexBufferARB',
     'feature' => 'GL_ARB_texture_buffer_object',
     'glewImpl' => '__glewTexBufferARB',
     'glewtype' => 'fun',
@@ -63192,7 +61412,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTexBufferEXT',
     'feature' => 'GL_EXT_texture_buffer_object',
     'glewImpl' => '__glewTexBufferEXT',
     'glewtype' => 'fun',
@@ -63222,7 +61441,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glTexBufferRange',
     'feature' => 'GL_ARB_texture_buffer_range',
     'glewImpl' => '__glewTexBufferRange',
     'glewtype' => 'fun',
@@ -63272,7 +61490,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glTexCoord1d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -63300,7 +61517,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord1f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -63328,7 +61544,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glTexCoord1hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewTexCoord1hNV',
     'glewtype' => 'fun',
@@ -63356,7 +61571,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glTexCoord1i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -63384,7 +61598,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glTexCoord1s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -63416,7 +61629,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glTexCoord2d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -63448,7 +61660,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord2f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -63490,7 +61701,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord2fColor3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fColor3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -63570,7 +61780,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord2fColor4fNormal3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fColor4fNormal3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -63642,7 +61851,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord2fColor4ubVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fColor4ubVertex3fSUN',
     'glewtype' => 'fun',
@@ -63706,7 +61914,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord2fNormal3fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fNormal3fVertex3fSUN',
     'glewtype' => 'fun',
@@ -63758,7 +61965,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord2fVertex3fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fVertex3fSUN',
     'glewtype' => 'fun',
@@ -63808,7 +62014,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glTexCoord2hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewTexCoord2hNV',
     'glewtype' => 'fun',
@@ -63840,7 +62045,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glTexCoord2i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -63872,7 +62076,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glTexCoord2s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -63908,7 +62111,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glTexCoord3d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -63944,7 +62146,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord3f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -63980,7 +62181,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glTexCoord3hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewTexCoord3hNV',
     'glewtype' => 'fun',
@@ -64016,7 +62216,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glTexCoord3i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -64052,7 +62251,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glTexCoord3s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -64092,7 +62290,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glTexCoord4d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -64132,7 +62329,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord4f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -64202,7 +62398,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord4fColor4fNormal3fVertex4fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord4fColor4fNormal3fVertex4fSUN',
     'glewtype' => 'fun',
@@ -64270,7 +62465,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexCoord4fVertex4fSUN',
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord4fVertex4fSUN',
     'glewtype' => 'fun',
@@ -64328,7 +62522,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glTexCoord4hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewTexCoord4hNV',
     'glewtype' => 'fun',
@@ -64368,7 +62561,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glTexCoord4i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -64408,7 +62600,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glTexCoord4s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -64444,7 +62635,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTexCoordFormatNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewTexCoordFormatNV',
     'glewtype' => 'fun',
@@ -64462,7 +62652,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTexCoordP1ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewTexCoordP1ui',
     'glewtype' => 'fun',
@@ -64498,7 +62687,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTexCoordP2ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewTexCoordP2ui',
     'glewtype' => 'fun',
@@ -64534,7 +62722,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTexCoordP3ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewTexCoordP3ui',
     'glewtype' => 'fun',
@@ -64570,7 +62757,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTexCoordP4ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewTexCoordP4ui',
     'glewtype' => 'fun',
@@ -64718,7 +62904,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexEnvf',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -64762,7 +62947,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glTexEnvi',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -64806,7 +62990,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glTexEnvx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewTexEnvx',
     'glewtype' => 'fun',
@@ -64876,7 +63059,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glTexGend',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -64920,7 +63102,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexGenf',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -64964,7 +63145,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glTexGeni',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -65108,7 +63288,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTexImage2DMultisample',
     'feature' => 'GL_ARB_texture_multisample',
     'glewImpl' => '__glewTexImage2DMultisample',
     'glewtype' => 'fun',
@@ -65146,7 +63325,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTexImage2DMultisampleCoverageNV',
     'feature' => 'GL_NV_texture_multisample',
     'glewImpl' => '__glewTexImage2DMultisampleCoverageNV',
     'glewtype' => 'fun',
@@ -65284,7 +63462,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTexImage3DMultisample',
     'feature' => 'GL_ARB_texture_multisample',
     'glewImpl' => '__glewTexImage3DMultisample',
     'glewtype' => 'fun',
@@ -65326,7 +63503,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTexImage3DMultisampleCoverageNV',
     'feature' => 'GL_NV_texture_multisample',
     'glewImpl' => '__glewTexImage3DMultisampleCoverageNV',
     'glewtype' => 'fun',
@@ -65476,7 +63652,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTexPageCommitmentARB',
     'feature' => 'GL_ARB_sparse_texture',
     'glewImpl' => '__glewTexPageCommitmentARB',
     'glewtype' => 'fun',
@@ -65522,7 +63697,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTexPageCommitmentEXT',
     'feature' => 'GL_EXT_sparse_texture',
     'glewImpl' => '__glewTexPageCommitmentEXT',
     'glewtype' => 'fun',
@@ -65632,7 +63806,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTexParameterf',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -65676,7 +63849,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glTexParameteri',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -65720,7 +63892,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glTexParameterx',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewTexParameterx',
     'glewtype' => 'fun',
@@ -65760,7 +63931,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTexRenderbufferNV',
     'feature' => 'GL_NV_explicit_multisample',
     'glewImpl' => '__glewTexRenderbufferNV',
     'glewtype' => 'fun',
@@ -65782,7 +63952,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glTexScissorFuncINTEL',
     'feature' => 'GL_INTEL_texture_scissor',
     'glewImpl' => '__glewTexScissorFuncINTEL',
     'glewtype' => 'fun',
@@ -65804,7 +63973,6 @@ our %registry = (
         'GLclampf '
       ]
     ],
-    'binding_name' => 'glTexScissorINTEL',
     'feature' => 'GL_INTEL_texture_scissor',
     'glewImpl' => '__glewTexScissorINTEL',
     'glewtype' => 'fun',
@@ -65830,7 +63998,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTexStorage1D',
     'feature' => 'GL_ARB_texture_storage',
     'glewImpl' => '__glewTexStorage1D',
     'glewtype' => 'fun',
@@ -65856,7 +64023,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTexStorage1DEXT',
     'feature' => 'GL_EXT_texture_storage',
     'glewImpl' => '__glewTexStorage1DEXT',
     'glewtype' => 'fun',
@@ -65886,7 +64052,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTexStorage2D',
     'feature' => 'GL_ARB_texture_storage',
     'glewImpl' => '__glewTexStorage2D',
     'glewtype' => 'fun',
@@ -65916,7 +64081,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTexStorage2DEXT',
     'feature' => 'GL_EXT_texture_storage',
     'glewImpl' => '__glewTexStorage2DEXT',
     'glewtype' => 'fun',
@@ -65950,7 +64114,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTexStorage2DMultisample',
     'feature' => 'GL_ARB_texture_storage_multisample',
     'glewImpl' => '__glewTexStorage2DMultisample',
     'glewtype' => 'fun',
@@ -65984,7 +64147,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTexStorage3D',
     'feature' => 'GL_ARB_texture_storage',
     'glewImpl' => '__glewTexStorage3D',
     'glewtype' => 'fun',
@@ -66018,7 +64180,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTexStorage3DEXT',
     'feature' => 'GL_EXT_texture_storage',
     'glewImpl' => '__glewTexStorage3DEXT',
     'glewtype' => 'fun',
@@ -66056,7 +64217,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTexStorage3DMultisample',
     'feature' => 'GL_ARB_texture_storage_multisample',
     'glewImpl' => '__glewTexStorage3DMultisample',
     'glewtype' => 'fun',
@@ -66090,7 +64250,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glTexStorageMem1DEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewTexStorageMem1DEXT',
     'glewtype' => 'fun',
@@ -66128,7 +64287,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glTexStorageMem2DEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewTexStorageMem2DEXT',
     'glewtype' => 'fun',
@@ -66170,7 +64328,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glTexStorageMem2DMultisampleEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewTexStorageMem2DMultisampleEXT',
     'glewtype' => 'fun',
@@ -66212,7 +64369,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glTexStorageMem3DEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewTexStorageMem3DEXT',
     'glewtype' => 'fun',
@@ -66258,7 +64414,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glTexStorageMem3DMultisampleEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewTexStorageMem3DMultisampleEXT',
     'glewtype' => 'fun',
@@ -66296,7 +64451,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glTexStorageSparseAMD',
     'feature' => 'GL_AMD_sparse_texture',
     'glewImpl' => '__glewTexStorageSparseAMD',
     'glewtype' => 'fun',
@@ -66696,7 +64850,6 @@ our %registry = (
     'signature' => 'GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint woffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei extent, GLenum format, GLenum type, const void *pixels'
   },
   'glTextureBarrier' => {
-    'binding_name' => 'glTextureBarrier',
     'feature' => 'GL_ARB_texture_barrier',
     'glewImpl' => '__glewTextureBarrier',
     'glewtype' => 'fun',
@@ -66704,7 +64857,6 @@ our %registry = (
     'signature' => 'void'
   },
   'glTextureBarrierNV' => {
-    'binding_name' => 'glTextureBarrierNV',
     'feature' => 'GL_NV_texture_barrier',
     'glewImpl' => '__glewTextureBarrierNV',
     'glewtype' => 'fun',
@@ -66726,7 +64878,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTextureBuffer',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureBuffer',
     'glewtype' => 'fun',
@@ -66752,7 +64903,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTextureBufferEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewTextureBufferEXT',
     'glewtype' => 'fun',
@@ -66782,7 +64932,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glTextureBufferRange',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureBufferRange',
     'glewtype' => 'fun',
@@ -66816,7 +64965,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glTextureBufferRangeEXT',
     'feature' => 'GL_ARB_texture_buffer_range',
     'glewImpl' => '__glewTextureBufferRangeEXT',
     'glewtype' => 'fun',
@@ -66830,7 +64978,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glTextureFogSGIX',
     'feature' => 'GL_SGIX_fog_texture',
     'glewImpl' => '__glewTextureFogSGIX',
     'glewtype' => 'fun',
@@ -66968,7 +65115,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTextureImage2DMultisampleCoverageNV',
     'feature' => 'GL_NV_texture_multisample',
     'glewImpl' => '__glewTextureImage2DMultisampleCoverageNV',
     'glewtype' => 'fun',
@@ -67006,7 +65152,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTextureImage2DMultisampleNV',
     'feature' => 'GL_NV_texture_multisample',
     'glewImpl' => '__glewTextureImage2DMultisampleNV',
     'glewtype' => 'fun',
@@ -67106,7 +65251,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTextureImage3DMultisampleCoverageNV',
     'feature' => 'GL_NV_texture_multisample',
     'glewImpl' => '__glewTextureImage3DMultisampleCoverageNV',
     'glewtype' => 'fun',
@@ -67148,7 +65292,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTextureImage3DMultisampleNV',
     'feature' => 'GL_NV_texture_multisample',
     'glewImpl' => '__glewTextureImage3DMultisampleNV',
     'glewtype' => 'fun',
@@ -67162,7 +65305,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glTextureLightEXT',
     'feature' => 'GL_EXT_light_texture',
     'glewImpl' => '__glewTextureLightEXT',
     'glewtype' => 'fun',
@@ -67180,7 +65322,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glTextureMaterialEXT',
     'feature' => 'GL_EXT_light_texture',
     'glewImpl' => '__glewTextureMaterialEXT',
     'glewtype' => 'fun',
@@ -67194,7 +65335,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glTextureNormalEXT',
     'feature' => 'GL_EXT_texture_perturb_normal',
     'glewImpl' => '__glewTextureNormalEXT',
     'glewtype' => 'fun',
@@ -67240,7 +65380,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTexturePageCommitmentEXT',
     'feature' => 'GL_EXT_sparse_texture',
     'glewImpl' => '__glewTexturePageCommitmentEXT',
     'glewtype' => 'fun',
@@ -67358,7 +65497,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTextureParameterf',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureParameterf',
     'glewtype' => 'fun',
@@ -67384,7 +65522,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTextureParameterfEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewTextureParameterfEXT',
     'glewtype' => 'fun',
@@ -67454,7 +65591,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glTextureParameteri',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureParameteri',
     'glewtype' => 'fun',
@@ -67480,7 +65616,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glTextureParameteriEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewTextureParameteriEXT',
     'glewtype' => 'fun',
@@ -67572,7 +65707,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTextureRenderbufferEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewTextureRenderbufferEXT',
     'glewtype' => 'fun',
@@ -67598,7 +65732,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTextureStorage1D',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureStorage1D',
     'glewtype' => 'fun',
@@ -67628,7 +65761,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTextureStorage1DEXT',
     'feature' => 'GL_EXT_texture_storage',
     'glewImpl' => '__glewTextureStorage1DEXT',
     'glewtype' => 'fun',
@@ -67658,7 +65790,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTextureStorage2D',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureStorage2D',
     'glewtype' => 'fun',
@@ -67692,7 +65823,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTextureStorage2DEXT',
     'feature' => 'GL_EXT_texture_storage',
     'glewImpl' => '__glewTextureStorage2DEXT',
     'glewtype' => 'fun',
@@ -67726,7 +65856,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTextureStorage2DMultisample',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureStorage2DMultisample',
     'glewtype' => 'fun',
@@ -67764,7 +65893,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTextureStorage2DMultisampleEXT',
     'feature' => 'GL_ARB_texture_storage_multisample',
     'glewImpl' => '__glewTextureStorage2DMultisampleEXT',
     'glewtype' => 'fun',
@@ -67798,7 +65926,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTextureStorage3D',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureStorage3D',
     'glewtype' => 'fun',
@@ -67836,7 +65963,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glTextureStorage3DEXT',
     'feature' => 'GL_EXT_texture_storage',
     'glewImpl' => '__glewTextureStorage3DEXT',
     'glewtype' => 'fun',
@@ -67874,7 +66000,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTextureStorage3DMultisample',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureStorage3DMultisample',
     'glewtype' => 'fun',
@@ -67916,7 +66041,6 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'binding_name' => 'glTextureStorage3DMultisampleEXT',
     'feature' => 'GL_ARB_texture_storage_multisample',
     'glewImpl' => '__glewTextureStorage3DMultisampleEXT',
     'glewtype' => 'fun',
@@ -67950,7 +66074,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glTextureStorageMem1DEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewTextureStorageMem1DEXT',
     'glewtype' => 'fun',
@@ -67988,7 +66111,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glTextureStorageMem2DEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewTextureStorageMem2DEXT',
     'glewtype' => 'fun',
@@ -68030,7 +66152,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glTextureStorageMem2DMultisampleEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewTextureStorageMem2DMultisampleEXT',
     'glewtype' => 'fun',
@@ -68072,7 +66193,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glTextureStorageMem3DEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewTextureStorageMem3DEXT',
     'glewtype' => 'fun',
@@ -68118,7 +66238,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glTextureStorageMem3DMultisampleEXT',
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewTextureStorageMem3DMultisampleEXT',
     'glewtype' => 'fun',
@@ -68160,7 +66279,6 @@ our %registry = (
         'GLbitfield '
       ]
     ],
-    'binding_name' => 'glTextureStorageSparseAMD',
     'feature' => 'GL_AMD_sparse_texture',
     'glewImpl' => '__glewTextureStorageSparseAMD',
     'glewtype' => 'fun',
@@ -68490,7 +66608,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTextureView',
     'feature' => 'GL_ARB_texture_view',
     'glewImpl' => '__glewTextureView',
     'glewtype' => 'fun',
@@ -68532,7 +66649,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTextureViewEXT',
     'feature' => 'GL_EXT_texture_view',
     'glewImpl' => '__glewTextureViewEXT',
     'glewtype' => 'fun',
@@ -68558,7 +66674,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glTrackMatrixNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewTrackMatrixNV',
     'glewtype' => 'fun',
@@ -68602,7 +66717,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glTransformFeedbackBufferBase',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTransformFeedbackBufferBase',
     'glewtype' => 'fun',
@@ -68632,7 +66746,6 @@ our %registry = (
         'GLsizeiptr '
       ]
     ],
-    'binding_name' => 'glTransformFeedbackBufferRange',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTransformFeedbackBufferRange',
     'glewtype' => 'fun',
@@ -68758,7 +66871,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glTranslated',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -68780,7 +66892,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glTranslatef',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -68802,7 +66913,6 @@ our %registry = (
         'GLfixed '
       ]
     ],
-    'binding_name' => 'glTranslatex',
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewTranslatex',
     'glewtype' => 'fun',
@@ -68820,7 +66930,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glUniform1d',
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniform1d',
     'glewtype' => 'fun',
@@ -68860,7 +66969,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glUniform1f',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform1f',
     'glewtype' => 'fun',
@@ -68878,7 +66986,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glUniform1fARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewUniform1fARB',
     'glewtype' => 'fun',
@@ -68940,7 +67047,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glUniform1i',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform1i',
     'glewtype' => 'fun',
@@ -68958,7 +67064,6 @@ our %registry = (
         'GLint64 '
       ]
     ],
-    'binding_name' => 'glUniform1i64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform1i64ARB',
     'glewtype' => 'fun',
@@ -68976,7 +67081,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glUniform1i64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform1i64NV',
     'glewtype' => 'fun',
@@ -69038,7 +67142,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glUniform1iARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewUniform1iARB',
     'glewtype' => 'fun',
@@ -69100,7 +67203,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUniform1ui',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewUniform1ui',
     'glewtype' => 'fun',
@@ -69118,7 +67220,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glUniform1ui64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform1ui64ARB',
     'glewtype' => 'fun',
@@ -69136,7 +67237,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glUniform1ui64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform1ui64NV',
     'glewtype' => 'fun',
@@ -69198,7 +67298,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUniform1uiEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewUniform1uiEXT',
     'glewtype' => 'fun',
@@ -69264,7 +67363,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glUniform2d',
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniform2d',
     'glewtype' => 'fun',
@@ -69308,7 +67406,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glUniform2f',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform2f',
     'glewtype' => 'fun',
@@ -69330,7 +67427,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glUniform2fARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewUniform2fARB',
     'glewtype' => 'fun',
@@ -69396,7 +67492,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glUniform2i',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform2i',
     'glewtype' => 'fun',
@@ -69418,7 +67513,6 @@ our %registry = (
         'GLint64 '
       ]
     ],
-    'binding_name' => 'glUniform2i64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform2i64ARB',
     'glewtype' => 'fun',
@@ -69440,7 +67534,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glUniform2i64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform2i64NV',
     'glewtype' => 'fun',
@@ -69506,7 +67599,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glUniform2iARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewUniform2iARB',
     'glewtype' => 'fun',
@@ -69572,7 +67664,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUniform2ui',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewUniform2ui',
     'glewtype' => 'fun',
@@ -69594,7 +67685,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glUniform2ui64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform2ui64ARB',
     'glewtype' => 'fun',
@@ -69616,7 +67706,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glUniform2ui64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform2ui64NV',
     'glewtype' => 'fun',
@@ -69682,7 +67771,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUniform2uiEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewUniform2uiEXT',
     'glewtype' => 'fun',
@@ -69752,7 +67840,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glUniform3d',
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniform3d',
     'glewtype' => 'fun',
@@ -69800,7 +67887,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glUniform3f',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform3f',
     'glewtype' => 'fun',
@@ -69826,7 +67912,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glUniform3fARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewUniform3fARB',
     'glewtype' => 'fun',
@@ -69896,7 +67981,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glUniform3i',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform3i',
     'glewtype' => 'fun',
@@ -69922,7 +68006,6 @@ our %registry = (
         'GLint64 '
       ]
     ],
-    'binding_name' => 'glUniform3i64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform3i64ARB',
     'glewtype' => 'fun',
@@ -69948,7 +68031,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glUniform3i64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform3i64NV',
     'glewtype' => 'fun',
@@ -70018,7 +68100,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glUniform3iARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewUniform3iARB',
     'glewtype' => 'fun',
@@ -70088,7 +68169,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUniform3ui',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewUniform3ui',
     'glewtype' => 'fun',
@@ -70114,7 +68194,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glUniform3ui64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform3ui64ARB',
     'glewtype' => 'fun',
@@ -70140,7 +68219,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glUniform3ui64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform3ui64NV',
     'glewtype' => 'fun',
@@ -70210,7 +68288,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUniform3uiEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewUniform3uiEXT',
     'glewtype' => 'fun',
@@ -70284,7 +68361,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glUniform4d',
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniform4d',
     'glewtype' => 'fun',
@@ -70336,7 +68412,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glUniform4f',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform4f',
     'glewtype' => 'fun',
@@ -70366,7 +68441,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glUniform4fARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewUniform4fARB',
     'glewtype' => 'fun',
@@ -70440,7 +68514,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glUniform4i',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform4i',
     'glewtype' => 'fun',
@@ -70470,7 +68543,6 @@ our %registry = (
         'GLint64 '
       ]
     ],
-    'binding_name' => 'glUniform4i64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform4i64ARB',
     'glewtype' => 'fun',
@@ -70500,7 +68572,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glUniform4i64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform4i64NV',
     'glewtype' => 'fun',
@@ -70574,7 +68645,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glUniform4iARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewUniform4iARB',
     'glewtype' => 'fun',
@@ -70648,7 +68718,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUniform4ui',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewUniform4ui',
     'glewtype' => 'fun',
@@ -70678,7 +68747,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glUniform4ui64ARB',
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform4ui64ARB',
     'glewtype' => 'fun',
@@ -70708,7 +68776,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glUniform4ui64NV',
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform4ui64NV',
     'glewtype' => 'fun',
@@ -70782,7 +68849,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUniform4uiEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewUniform4uiEXT',
     'glewtype' => 'fun',
@@ -70848,7 +68914,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUniformBlockBinding',
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewUniformBlockBinding',
     'glewtype' => 'fun',
@@ -70870,7 +68935,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUniformBufferEXT',
     'feature' => 'GL_EXT_bindable_uniform',
     'glewImpl' => '__glewUniformBufferEXT',
     'glewtype' => 'fun',
@@ -70888,7 +68952,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glUniformHandleui64ARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewUniformHandleui64ARB',
     'glewtype' => 'fun',
@@ -70906,7 +68969,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glUniformHandleui64NV',
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewUniformHandleui64NV',
     'glewtype' => 'fun',
@@ -71692,7 +69754,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glUniformui64NV',
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewUniformui64NV',
     'glewtype' => 'fun',
@@ -71722,7 +69783,6 @@ our %registry = (
     'signature' => 'GLint location, GLsizei count, const GLuint64EXT* value'
   },
   'glUnlockArraysEXT' => {
-    'binding_name' => 'glUnlockArraysEXT',
     'feature' => 'GL_EXT_compiled_vertex_array',
     'glewImpl' => '__glewUnlockArraysEXT',
     'glewtype' => 'fun',
@@ -71736,7 +69796,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glUnmapBuffer',
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewUnmapBuffer',
     'glewtype' => 'fun',
@@ -71750,7 +69809,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glUnmapBufferARB',
     'feature' => 'GL_ARB_vertex_buffer_object',
     'glewImpl' => '__glewUnmapBufferARB',
     'glewtype' => 'fun',
@@ -71764,7 +69822,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUnmapNamedBuffer',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewUnmapNamedBuffer',
     'glewtype' => 'fun',
@@ -71778,7 +69835,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUnmapNamedBufferEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewUnmapNamedBufferEXT',
     'glewtype' => 'fun',
@@ -71792,7 +69848,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUnmapObjectBufferATI',
     'feature' => 'GL_ATI_map_object_buffer',
     'glewImpl' => '__glewUnmapObjectBufferATI',
     'glewtype' => 'fun',
@@ -71810,7 +69865,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glUnmapTexture2DINTEL',
     'feature' => 'GL_LAYOUT_LINEAR_INTEL',
     'glewImpl' => '__glewUnmapTexture2DINTEL',
     'glewtype' => 'fun',
@@ -71854,7 +69908,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUseProgram',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUseProgram',
     'glewtype' => 'fun',
@@ -71868,7 +69921,6 @@ our %registry = (
         'GLhandleARB '
       ]
     ],
-    'binding_name' => 'glUseProgramObjectARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewUseProgramObjectARB',
     'glewtype' => 'fun',
@@ -71890,7 +69942,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUseProgramStages',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewUseProgramStages',
     'glewtype' => 'fun',
@@ -71908,7 +69959,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glUseShaderProgramEXT',
     'feature' => 'GL_EXT_separate_shader_objects',
     'glewImpl' => '__glewUseShaderProgramEXT',
     'glewtype' => 'fun',
@@ -71916,7 +69966,6 @@ our %registry = (
     'signature' => 'GLenum type, GLuint program'
   },
   'glVDPAUFiniNV' => {
-    'binding_name' => 'glVDPAUFiniNV',
     'feature' => 'GL_NV_vdpau_interop',
     'glewImpl' => '__glewVDPAUFiniNV',
     'glewtype' => 'fun',
@@ -71978,7 +70027,6 @@ our %registry = (
         'GLvdpauSurfaceNV '
       ]
     ],
-    'binding_name' => 'glVDPAUIsSurfaceNV',
     'feature' => 'GL_NV_vdpau_interop',
     'glewImpl' => '__glewVDPAUIsSurfaceNV',
     'glewtype' => 'fun',
@@ -72066,7 +70114,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glVDPAUSurfaceAccessNV',
     'feature' => 'GL_NV_vdpau_interop',
     'glewImpl' => '__glewVDPAUSurfaceAccessNV',
     'glewtype' => 'fun',
@@ -72098,7 +70145,6 @@ our %registry = (
         'GLvdpauSurfaceNV '
       ]
     ],
-    'binding_name' => 'glVDPAUUnregisterSurfaceNV',
     'feature' => 'GL_NV_vdpau_interop',
     'glewImpl' => '__glewVDPAUUnregisterSurfaceNV',
     'glewtype' => 'fun',
@@ -72112,7 +70158,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glValidateProgram',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewValidateProgram',
     'glewtype' => 'fun',
@@ -72126,7 +70171,6 @@ our %registry = (
         'GLhandleARB '
       ]
     ],
-    'binding_name' => 'glValidateProgramARB',
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewValidateProgramARB',
     'glewtype' => 'fun',
@@ -72140,7 +70184,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glValidateProgramPipeline',
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewValidateProgramPipeline',
     'glewtype' => 'fun',
@@ -72170,7 +70213,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVariantArrayObjectATI',
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewVariantArrayObjectATI',
     'glewtype' => 'fun',
@@ -72354,7 +70396,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glVectorOperationSGIX',
     'feature' => 'GL_SGIX_vector_ops',
     'glewImpl' => '__glewVectorOperationSGIX',
     'glewtype' => 'fun',
@@ -72372,7 +70413,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertex2d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72404,7 +70444,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertex2f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72436,7 +70475,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glVertex2hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertex2hNV',
     'glewtype' => 'fun',
@@ -72468,7 +70506,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertex2i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72500,7 +70537,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertex2s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72536,7 +70572,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertex3d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72572,7 +70607,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertex3f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72608,7 +70642,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glVertex3hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertex3hNV',
     'glewtype' => 'fun',
@@ -72644,7 +70677,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertex3i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72680,7 +70712,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertex3s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72720,7 +70751,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertex4d',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72760,7 +70790,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertex4f',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72800,7 +70829,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glVertex4hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertex4hNV',
     'glewtype' => 'fun',
@@ -72840,7 +70868,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertex4i',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72880,7 +70907,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertex4s',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -72916,7 +70942,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayAttribBinding',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewVertexArrayAttribBinding',
     'glewtype' => 'fun',
@@ -72950,7 +70975,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayAttribFormat',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewVertexArrayAttribFormat',
     'glewtype' => 'fun',
@@ -72980,7 +71004,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayAttribIFormat',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewVertexArrayAttribIFormat',
     'glewtype' => 'fun',
@@ -73010,7 +71033,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayAttribLFormat',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewVertexArrayAttribLFormat',
     'glewtype' => 'fun',
@@ -73040,7 +71062,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glVertexArrayBindVertexBufferEXT',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexArrayBindVertexBufferEXT',
     'glewtype' => 'fun',
@@ -73062,7 +71083,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayBindingDivisor',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewVertexArrayBindingDivisor',
     'glewtype' => 'fun',
@@ -73096,7 +71116,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayColorOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayColorOffsetEXT',
     'glewtype' => 'fun',
@@ -73122,7 +71141,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayEdgeFlagOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayEdgeFlagOffsetEXT',
     'glewtype' => 'fun',
@@ -73140,7 +71158,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayElementBuffer',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewVertexArrayElementBuffer',
     'glewtype' => 'fun',
@@ -73170,7 +71187,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayFogCoordOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayFogCoordOffsetEXT',
     'glewtype' => 'fun',
@@ -73200,7 +71216,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayIndexOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayIndexOffsetEXT',
     'glewtype' => 'fun',
@@ -73238,7 +71253,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayMultiTexCoordOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayMultiTexCoordOffsetEXT',
     'glewtype' => 'fun',
@@ -73268,7 +71282,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayNormalOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayNormalOffsetEXT',
     'glewtype' => 'fun',
@@ -73286,7 +71299,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexArrayParameteriAPPLE',
     'feature' => 'GL_APPLE_vertex_array_range',
     'glewImpl' => '__glewVertexArrayParameteriAPPLE',
     'glewtype' => 'fun',
@@ -73356,7 +71368,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArraySecondaryColorOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArraySecondaryColorOffsetEXT',
     'glewtype' => 'fun',
@@ -73390,7 +71401,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayTexCoordOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayTexCoordOffsetEXT',
     'glewtype' => 'fun',
@@ -73412,7 +71422,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexAttribBindingEXT',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexArrayVertexAttribBindingEXT',
     'glewtype' => 'fun',
@@ -73434,7 +71443,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexAttribDivisorEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayVertexAttribDivisorEXT',
     'glewtype' => 'fun',
@@ -73468,7 +71476,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexAttribFormatEXT',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexArrayVertexAttribFormatEXT',
     'glewtype' => 'fun',
@@ -73498,7 +71505,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexAttribIFormatEXT',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexArrayVertexAttribIFormatEXT',
     'glewtype' => 'fun',
@@ -73536,7 +71542,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexAttribIOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayVertexAttribIOffsetEXT',
     'glewtype' => 'fun',
@@ -73566,7 +71571,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexAttribLFormatEXT',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexArrayVertexAttribLFormatEXT',
     'glewtype' => 'fun',
@@ -73604,7 +71608,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexAttribLOffsetEXT',
     'feature' => 'GL_EXT_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexArrayVertexAttribLOffsetEXT',
     'glewtype' => 'fun',
@@ -73646,7 +71649,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexAttribOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayVertexAttribOffsetEXT',
     'glewtype' => 'fun',
@@ -73668,7 +71670,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexBindingDivisorEXT',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexArrayVertexBindingDivisorEXT',
     'glewtype' => 'fun',
@@ -73698,7 +71699,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexBuffer',
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewVertexArrayVertexBuffer',
     'glewtype' => 'fun',
@@ -73766,7 +71766,6 @@ our %registry = (
         'GLintptr '
       ]
     ],
-    'binding_name' => 'glVertexArrayVertexOffsetEXT',
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewVertexArrayVertexOffsetEXT',
     'glewtype' => 'fun',
@@ -73784,7 +71783,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib1d',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib1d',
     'glewtype' => 'fun',
@@ -73802,7 +71800,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib1dARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib1dARB',
     'glewtype' => 'fun',
@@ -73820,7 +71817,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib1dNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib1dNV',
     'glewtype' => 'fun',
@@ -73892,7 +71888,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib1f',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib1f',
     'glewtype' => 'fun',
@@ -73910,7 +71905,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib1fARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib1fARB',
     'glewtype' => 'fun',
@@ -73928,7 +71922,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib1fNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib1fNV',
     'glewtype' => 'fun',
@@ -74000,7 +71993,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glVertexAttrib1hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttrib1hNV',
     'glewtype' => 'fun',
@@ -74036,7 +72028,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib1s',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib1s',
     'glewtype' => 'fun',
@@ -74054,7 +72045,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib1sARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib1sARB',
     'glewtype' => 'fun',
@@ -74072,7 +72062,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib1sNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib1sNV',
     'glewtype' => 'fun',
@@ -74148,7 +72137,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib2d',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib2d',
     'glewtype' => 'fun',
@@ -74170,7 +72158,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib2dARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib2dARB',
     'glewtype' => 'fun',
@@ -74192,7 +72179,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib2dNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib2dNV',
     'glewtype' => 'fun',
@@ -74268,7 +72254,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib2f',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib2f',
     'glewtype' => 'fun',
@@ -74290,7 +72275,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib2fARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib2fARB',
     'glewtype' => 'fun',
@@ -74312,7 +72296,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib2fNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib2fNV',
     'glewtype' => 'fun',
@@ -74388,7 +72371,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glVertexAttrib2hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttrib2hNV',
     'glewtype' => 'fun',
@@ -74428,7 +72410,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib2s',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib2s',
     'glewtype' => 'fun',
@@ -74450,7 +72431,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib2sARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib2sARB',
     'glewtype' => 'fun',
@@ -74472,7 +72452,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib2sNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib2sNV',
     'glewtype' => 'fun',
@@ -74552,7 +72531,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib3d',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib3d',
     'glewtype' => 'fun',
@@ -74578,7 +72556,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib3dARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib3dARB',
     'glewtype' => 'fun',
@@ -74604,7 +72581,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib3dNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib3dNV',
     'glewtype' => 'fun',
@@ -74684,7 +72660,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib3f',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib3f',
     'glewtype' => 'fun',
@@ -74710,7 +72685,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib3fARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib3fARB',
     'glewtype' => 'fun',
@@ -74736,7 +72710,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib3fNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib3fNV',
     'glewtype' => 'fun',
@@ -74816,7 +72789,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glVertexAttrib3hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttrib3hNV',
     'glewtype' => 'fun',
@@ -74860,7 +72832,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib3s',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib3s',
     'glewtype' => 'fun',
@@ -74886,7 +72857,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib3sARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib3sARB',
     'glewtype' => 'fun',
@@ -74912,7 +72882,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib3sNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib3sNV',
     'glewtype' => 'fun',
@@ -75104,7 +73073,6 @@ our %registry = (
         'GLubyte '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4Nub',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4Nub',
     'glewtype' => 'fun',
@@ -75134,7 +73102,6 @@ our %registry = (
         'GLubyte '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4NubARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib4NubARB',
     'glewtype' => 'fun',
@@ -75308,7 +73275,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4d',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4d',
     'glewtype' => 'fun',
@@ -75338,7 +73304,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4dARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib4dARB',
     'glewtype' => 'fun',
@@ -75368,7 +73333,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4dNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib4dNV',
     'glewtype' => 'fun',
@@ -75452,7 +73416,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4f',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4f',
     'glewtype' => 'fun',
@@ -75482,7 +73445,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4fARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib4fARB',
     'glewtype' => 'fun',
@@ -75512,7 +73474,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4fNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib4fNV',
     'glewtype' => 'fun',
@@ -75596,7 +73557,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4hNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttrib4hNV',
     'glewtype' => 'fun',
@@ -75680,7 +73640,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4s',
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4s',
     'glewtype' => 'fun',
@@ -75710,7 +73669,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4sARB',
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewVertexAttrib4sARB',
     'glewtype' => 'fun',
@@ -75740,7 +73698,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4sNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib4sNV',
     'glewtype' => 'fun',
@@ -75824,7 +73781,6 @@ our %registry = (
         'GLubyte '
       ]
     ],
-    'binding_name' => 'glVertexAttrib4ubNV',
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttrib4ubNV',
     'glewtype' => 'fun',
@@ -75988,7 +73944,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribArrayObjectATI',
     'feature' => 'GL_ATI_vertex_attrib_array_object',
     'glewImpl' => '__glewVertexAttribArrayObjectATI',
     'glewtype' => 'fun',
@@ -76006,7 +73961,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribBinding',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexAttribBinding',
     'glewtype' => 'fun',
@@ -76024,7 +73978,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribDivisor',
     'feature' => 'GL_VERSION_3_3',
     'glewImpl' => '__glewVertexAttribDivisor',
     'glewtype' => 'fun',
@@ -76042,7 +73995,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribDivisorANGLE',
     'feature' => 'GL_ANGLE_instanced_arrays',
     'glewImpl' => '__glewVertexAttribDivisorANGLE',
     'glewtype' => 'fun',
@@ -76060,7 +74012,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribDivisorARB',
     'feature' => 'GL_ARB_instanced_arrays',
     'glewImpl' => '__glewVertexAttribDivisorARB',
     'glewtype' => 'fun',
@@ -76078,7 +74029,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribDivisorEXT',
     'feature' => 'GL_EXT_instanced_arrays',
     'glewImpl' => '__glewVertexAttribDivisorEXT',
     'glewtype' => 'fun',
@@ -76096,7 +74046,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribDivisorNV',
     'feature' => 'GL_NV_instanced_arrays',
     'glewImpl' => '__glewVertexAttribDivisorNV',
     'glewtype' => 'fun',
@@ -76126,7 +74075,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribFormat',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexAttribFormat',
     'glewtype' => 'fun',
@@ -76156,7 +74104,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glVertexAttribFormatNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewVertexAttribFormatNV',
     'glewtype' => 'fun',
@@ -76174,7 +74121,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI1i',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI1i',
     'glewtype' => 'fun',
@@ -76192,7 +74138,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI1iEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewVertexAttribI1iEXT',
     'glewtype' => 'fun',
@@ -76246,7 +74191,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI1ui',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI1ui',
     'glewtype' => 'fun',
@@ -76264,7 +74208,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI1uiEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewVertexAttribI1uiEXT',
     'glewtype' => 'fun',
@@ -76322,7 +74265,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI2i',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI2i',
     'glewtype' => 'fun',
@@ -76344,7 +74286,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI2iEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewVertexAttribI2iEXT',
     'glewtype' => 'fun',
@@ -76402,7 +74343,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI2ui',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI2ui',
     'glewtype' => 'fun',
@@ -76424,7 +74364,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI2uiEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewVertexAttribI2uiEXT',
     'glewtype' => 'fun',
@@ -76486,7 +74425,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI3i',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI3i',
     'glewtype' => 'fun',
@@ -76512,7 +74450,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI3iEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewVertexAttribI3iEXT',
     'glewtype' => 'fun',
@@ -76574,7 +74511,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI3ui',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI3ui',
     'glewtype' => 'fun',
@@ -76600,7 +74536,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI3uiEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewVertexAttribI3uiEXT',
     'glewtype' => 'fun',
@@ -76702,7 +74637,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI4i',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI4i',
     'glewtype' => 'fun',
@@ -76732,7 +74666,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI4iEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewVertexAttribI4iEXT',
     'glewtype' => 'fun',
@@ -76870,7 +74803,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI4ui',
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI4ui',
     'glewtype' => 'fun',
@@ -76900,7 +74832,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribI4uiEXT',
     'feature' => 'GL_EXT_gpu_shader4',
     'glewImpl' => '__glewVertexAttribI4uiEXT',
     'glewtype' => 'fun',
@@ -76998,7 +74929,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribIFormat',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexAttribIFormat',
     'glewtype' => 'fun',
@@ -77024,7 +74954,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glVertexAttribIFormatNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewVertexAttribIFormatNV',
     'glewtype' => 'fun',
@@ -77102,7 +75031,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttribL1d',
     'feature' => 'GL_ARB_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL1d',
     'glewtype' => 'fun',
@@ -77120,7 +75048,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttribL1dEXT',
     'feature' => 'GL_EXT_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL1dEXT',
     'glewtype' => 'fun',
@@ -77174,7 +75101,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glVertexAttribL1i64NV',
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL1i64NV',
     'glewtype' => 'fun',
@@ -77210,7 +75136,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glVertexAttribL1ui64ARB',
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewVertexAttribL1ui64ARB',
     'glewtype' => 'fun',
@@ -77228,7 +75153,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glVertexAttribL1ui64NV',
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL1ui64NV',
     'glewtype' => 'fun',
@@ -77286,7 +75210,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttribL2d',
     'feature' => 'GL_ARB_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL2d',
     'glewtype' => 'fun',
@@ -77308,7 +75231,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttribL2dEXT',
     'feature' => 'GL_EXT_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL2dEXT',
     'glewtype' => 'fun',
@@ -77366,7 +75288,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glVertexAttribL2i64NV',
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL2i64NV',
     'glewtype' => 'fun',
@@ -77406,7 +75327,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glVertexAttribL2ui64NV',
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL2ui64NV',
     'glewtype' => 'fun',
@@ -77450,7 +75370,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttribL3d',
     'feature' => 'GL_ARB_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL3d',
     'glewtype' => 'fun',
@@ -77476,7 +75395,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttribL3dEXT',
     'feature' => 'GL_EXT_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL3dEXT',
     'glewtype' => 'fun',
@@ -77538,7 +75456,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glVertexAttribL3i64NV',
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL3i64NV',
     'glewtype' => 'fun',
@@ -77582,7 +75499,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glVertexAttribL3ui64NV',
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL3ui64NV',
     'glewtype' => 'fun',
@@ -77630,7 +75546,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttribL4d',
     'feature' => 'GL_ARB_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL4d',
     'glewtype' => 'fun',
@@ -77660,7 +75575,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexAttribL4dEXT',
     'feature' => 'GL_EXT_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL4dEXT',
     'glewtype' => 'fun',
@@ -77726,7 +75640,6 @@ our %registry = (
         'GLint64EXT '
       ]
     ],
-    'binding_name' => 'glVertexAttribL4i64NV',
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL4i64NV',
     'glewtype' => 'fun',
@@ -77774,7 +75687,6 @@ our %registry = (
         'GLuint64EXT '
       ]
     ],
-    'binding_name' => 'glVertexAttribL4ui64NV',
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL4ui64NV',
     'glewtype' => 'fun',
@@ -77818,7 +75730,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribLFormat',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexAttribLFormat',
     'glewtype' => 'fun',
@@ -77844,7 +75755,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glVertexAttribLFormatNV',
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribLFormatNV',
     'glewtype' => 'fun',
@@ -77930,7 +75840,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribP1ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexAttribP1ui',
     'glewtype' => 'fun',
@@ -77982,7 +75891,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribP2ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexAttribP2ui',
     'glewtype' => 'fun',
@@ -78034,7 +75942,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribP3ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexAttribP3ui',
     'glewtype' => 'fun',
@@ -78086,7 +75993,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexAttribP4ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexAttribP4ui',
     'glewtype' => 'fun',
@@ -78134,7 +76040,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexAttribParameteriAMD',
     'feature' => 'GL_AMD_interleaved_elements',
     'glewImpl' => '__glewVertexAttribParameteriAMD',
     'glewtype' => 'fun',
@@ -78624,7 +76529,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexBindingDivisor',
     'feature' => 'GL_ARB_vertex_attrib_binding',
     'glewImpl' => '__glewVertexBindingDivisor',
     'glewtype' => 'fun',
@@ -78638,7 +76542,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexBlendARB',
     'feature' => 'GL_ARB_vertex_blend',
     'glewImpl' => '__glewVertexBlendARB',
     'glewtype' => 'fun',
@@ -78656,7 +76559,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexBlendEnvfATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexBlendEnvfATI',
     'glewtype' => 'fun',
@@ -78674,7 +76576,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexBlendEnviATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexBlendEnviATI',
     'glewtype' => 'fun',
@@ -78696,7 +76597,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glVertexFormatNV',
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
     'glewImpl' => '__glewVertexFormatNV',
     'glewtype' => 'fun',
@@ -78714,7 +76614,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexP2ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexP2ui',
     'glewtype' => 'fun',
@@ -78750,7 +76649,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexP3ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexP3ui',
     'glewtype' => 'fun',
@@ -78786,7 +76684,6 @@ our %registry = (
         'GLuint '
       ]
     ],
-    'binding_name' => 'glVertexP4ui',
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexP4ui',
     'glewtype' => 'fun',
@@ -78930,7 +76827,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexStream1dATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream1dATI',
     'glewtype' => 'fun',
@@ -78966,7 +76862,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexStream1fATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream1fATI',
     'glewtype' => 'fun',
@@ -79002,7 +76897,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexStream1iATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream1iATI',
     'glewtype' => 'fun',
@@ -79038,7 +76932,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexStream1sATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream1sATI',
     'glewtype' => 'fun',
@@ -79078,7 +76971,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexStream2dATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream2dATI',
     'glewtype' => 'fun',
@@ -79118,7 +77010,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexStream2fATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream2fATI',
     'glewtype' => 'fun',
@@ -79158,7 +77049,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexStream2iATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream2iATI',
     'glewtype' => 'fun',
@@ -79198,7 +77088,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexStream2sATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream2sATI',
     'glewtype' => 'fun',
@@ -79242,7 +77131,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexStream3dATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream3dATI',
     'glewtype' => 'fun',
@@ -79286,7 +77174,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexStream3fATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream3fATI',
     'glewtype' => 'fun',
@@ -79330,7 +77217,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexStream3iATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream3iATI',
     'glewtype' => 'fun',
@@ -79374,7 +77260,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexStream3sATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream3sATI',
     'glewtype' => 'fun',
@@ -79422,7 +77307,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glVertexStream4dATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream4dATI',
     'glewtype' => 'fun',
@@ -79470,7 +77354,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexStream4fATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream4fATI',
     'glewtype' => 'fun',
@@ -79518,7 +77401,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glVertexStream4iATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream4iATI',
     'glewtype' => 'fun',
@@ -79566,7 +77448,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glVertexStream4sATI',
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream4sATI',
     'glewtype' => 'fun',
@@ -79624,7 +77505,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glVertexWeightfEXT',
     'feature' => 'GL_EXT_vertex_weighting',
     'glewImpl' => '__glewVertexWeightfEXT',
     'glewtype' => 'fun',
@@ -79652,7 +77532,6 @@ our %registry = (
         'GLhalf '
       ]
     ],
-    'binding_name' => 'glVertexWeighthNV',
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexWeighthNV',
     'glewtype' => 'fun',
@@ -79792,7 +77671,6 @@ our %registry = (
         'GLsizei '
       ]
     ],
-    'binding_name' => 'glViewport',
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -79866,7 +77744,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glViewportIndexedf',
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewViewportIndexedf',
     'glewtype' => 'fun',
@@ -79896,7 +77773,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glViewportIndexedfNV',
     'feature' => 'GL_NV_viewport_array',
     'glewImpl' => '__glewViewportIndexedfNV',
     'glewtype' => 'fun',
@@ -79954,7 +77830,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glViewportPositionWScaleNV',
     'feature' => 'GL_NV_clip_space_w_scaling',
     'glewImpl' => '__glewViewportPositionWScaleNV',
     'glewtype' => 'fun',
@@ -79984,7 +77859,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glViewportSwizzleNV',
     'feature' => 'GL_NV_viewport_swizzle',
     'glewImpl' => '__glewViewportSwizzleNV',
     'glewtype' => 'fun',
@@ -80040,7 +77914,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glWaitSync',
     'feature' => 'GL_ARB_sync',
     'glewImpl' => '__glewWaitSync',
     'glewtype' => 'fun',
@@ -80062,7 +77935,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glWaitSyncAPPLE',
     'feature' => 'GL_APPLE_sync',
     'glewImpl' => '__glewWaitSyncAPPLE',
     'glewtype' => 'fun',
@@ -80076,7 +77948,6 @@ our %registry = (
         'GLuint64 '
       ]
     ],
-    'binding_name' => 'glWaitVkSemaphoreNV',
     'feature' => 'GL_NV_draw_vulkan_image',
     'glewImpl' => '__glewWaitVkSemaphoreNV',
     'glewtype' => 'fun',
@@ -80290,7 +78161,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glWindowPos2d',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2d',
     'glewtype' => 'fun',
@@ -80308,7 +78178,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glWindowPos2dARB',
     'feature' => 'GL_ARB_window_pos',
     'glewImpl' => '__glewWindowPos2dARB',
     'glewtype' => 'fun',
@@ -80326,7 +78195,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glWindowPos2dMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos2dMESA',
     'glewtype' => 'fun',
@@ -80386,7 +78254,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glWindowPos2f',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2f',
     'glewtype' => 'fun',
@@ -80404,7 +78271,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glWindowPos2fARB',
     'feature' => 'GL_ARB_window_pos',
     'glewImpl' => '__glewWindowPos2fARB',
     'glewtype' => 'fun',
@@ -80422,7 +78288,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glWindowPos2fMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos2fMESA',
     'glewtype' => 'fun',
@@ -80482,7 +78347,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glWindowPos2i',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2i',
     'glewtype' => 'fun',
@@ -80500,7 +78364,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glWindowPos2iARB',
     'feature' => 'GL_ARB_window_pos',
     'glewImpl' => '__glewWindowPos2iARB',
     'glewtype' => 'fun',
@@ -80518,7 +78381,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glWindowPos2iMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos2iMESA',
     'glewtype' => 'fun',
@@ -80578,7 +78440,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glWindowPos2s',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2s',
     'glewtype' => 'fun',
@@ -80596,7 +78457,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glWindowPos2sARB',
     'feature' => 'GL_ARB_window_pos',
     'glewImpl' => '__glewWindowPos2sARB',
     'glewtype' => 'fun',
@@ -80614,7 +78474,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glWindowPos2sMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos2sMESA',
     'glewtype' => 'fun',
@@ -80678,7 +78537,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glWindowPos3d',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3d',
     'glewtype' => 'fun',
@@ -80700,7 +78558,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glWindowPos3dARB',
     'feature' => 'GL_ARB_window_pos',
     'glewImpl' => '__glewWindowPos3dARB',
     'glewtype' => 'fun',
@@ -80722,7 +78579,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glWindowPos3dMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos3dMESA',
     'glewtype' => 'fun',
@@ -80786,7 +78642,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glWindowPos3f',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3f',
     'glewtype' => 'fun',
@@ -80808,7 +78663,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glWindowPos3fARB',
     'feature' => 'GL_ARB_window_pos',
     'glewImpl' => '__glewWindowPos3fARB',
     'glewtype' => 'fun',
@@ -80830,7 +78684,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glWindowPos3fMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos3fMESA',
     'glewtype' => 'fun',
@@ -80894,7 +78747,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glWindowPos3i',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3i',
     'glewtype' => 'fun',
@@ -80916,7 +78768,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glWindowPos3iARB',
     'feature' => 'GL_ARB_window_pos',
     'glewImpl' => '__glewWindowPos3iARB',
     'glewtype' => 'fun',
@@ -80938,7 +78789,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glWindowPos3iMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos3iMESA',
     'glewtype' => 'fun',
@@ -81002,7 +78852,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glWindowPos3s',
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3s',
     'glewtype' => 'fun',
@@ -81024,7 +78873,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glWindowPos3sARB',
     'feature' => 'GL_ARB_window_pos',
     'glewImpl' => '__glewWindowPos3sARB',
     'glewtype' => 'fun',
@@ -81046,7 +78894,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glWindowPos3sMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos3sMESA',
     'glewtype' => 'fun',
@@ -81114,7 +78961,6 @@ our %registry = (
         'GLdouble '
       ]
     ],
-    'binding_name' => 'glWindowPos4dMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos4dMESA',
     'glewtype' => 'fun',
@@ -81154,7 +79000,6 @@ our %registry = (
         'GLfloat '
       ]
     ],
-    'binding_name' => 'glWindowPos4fMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos4fMESA',
     'glewtype' => 'fun',
@@ -81194,7 +79039,6 @@ our %registry = (
         'GLint '
       ]
     ],
-    'binding_name' => 'glWindowPos4iMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos4iMESA',
     'glewtype' => 'fun',
@@ -81234,7 +79078,6 @@ our %registry = (
         'GLshort '
       ]
     ],
-    'binding_name' => 'glWindowPos4sMESA',
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos4sMESA',
     'glewtype' => 'fun',
@@ -81304,7 +79147,6 @@ our %registry = (
         'GLenum '
       ]
     ],
-    'binding_name' => 'glWriteMaskEXT',
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewWriteMaskEXT',
     'glewtype' => 'fun',

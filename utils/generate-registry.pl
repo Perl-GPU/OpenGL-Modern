@@ -137,8 +137,8 @@ sub preprocess_for_registry {
         # Track number of pointer type args/return values (either * or [])
         my $type = $item->{restype};
         my $num_ptr_types = ( $type =~ tr/*[/*[/ ) + grep $_->[1] =~ /\*/, @argdata;
-        $item->{binding_name} = my $binding_name = ( $num_ptr_types > 0 ) ? $name . '_c' : $name;
-        push @exported_functions, $binding_name;
+        $item->{binding_name} = $name . '_c' if $num_ptr_types > 0;
+        push @exported_functions, $num_ptr_types > 0 ? $name . '_c' : $name;
     }
 }
 
