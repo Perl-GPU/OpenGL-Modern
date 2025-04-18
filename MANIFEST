@@ -24,4 +24,5 @@ t/02_auto_error_check.t
 t/02_glew_version_accessors.t
 t/02_glGetShaderInfoLog.t
 typemap
+utils/generate-registry.pl
 utils/generate-XS.pl
