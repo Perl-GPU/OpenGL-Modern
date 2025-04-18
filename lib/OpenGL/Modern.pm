@@ -12,7 +12,7 @@ our $VERSION    = '0.04_01';
 our $XS_VERSION = $VERSION;
 $VERSION = eval $VERSION;    # see L<perlmodstyle>
 
-our @glFunctions = OpenGL::Modern::Registry::gl_functions();
+our @gl_functions = OpenGL::Modern::Registry::gl_functions();
 our @glew_functions = qw(
   glewCreateContext
   glewGetErrorString
@@ -31,9 +31,10 @@ our %EXPORT_TAGS = (
     %EXPORT_TAGS_GL,
     glewfunctions => \@glew_functions,
     glpfunctions => \@glp_functions,
+    glfunctions => \@gl_functions,
     glconstants => \@OpenGL::Modern::Registry::glconstants,
     all => [
-        @glFunctions,
+        @gl_functions,
         @glew_functions,
         @glp_functions,
         @OpenGL::Modern::Registry::glconstants,
