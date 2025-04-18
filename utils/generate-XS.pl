@@ -1,9 +1,5 @@
-#!perl -w
-#
-# Last saved: Tue 31 Jan 2017 12:00:26 PM
-#
-#
 use strict;
+use warnings;
 
 =head1 PURPOSE
 
@@ -45,7 +41,7 @@ push @exported_functions, $_ foreach @manual_list;
 # for void which is a standard type so the spec for the API folks didnt' think it
 # needed to be wrapped.
 #
-my @known_type = sort { $b cmp $a } qw(
+my @known_type = qw(
   GLbitfield
   GLboolean
   GLbyte
@@ -166,7 +162,7 @@ for my $file ("include/GL/glew.h") {
 }
 
 # Now rewrite the names to proper case when we only have their uppercase alias
-for my $name ( sort keys %signature ) {
+for my $name ( keys %signature ) {
     my $impl      = $case_map{$name} || $name;
     my $real_name = $alias{$impl}    || $impl;
 
@@ -338,7 +334,7 @@ if ( !@ARGV ) {
 
     my %glGroups = map {
         $_ => [ map { $_->{name} } @{ $features{$_} } ],
-    } sort keys %features;
+    } keys %features;
     use Data::Dumper;
     $Data::Dumper::Sortkeys = 1;
     my $gltags = Dumper \%glGroups;
