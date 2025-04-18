@@ -29,63 +29,8 @@ my @manual_list = qw(
 
 my %manual;
 @manual{@manual_list} = ( 1 ) x @manual_list;
-
-my @exported_functions;    # here we'll collect the names the module exports
-
-push @exported_functions, $_ foreach @manual_list;
-
-# TODO: check against the typedefs in glew.h.  All the simple GL types have names
-# matching GL\w+ and don't match the glew typedefs to define the OpenGL API bindings.
-# The callback typedefs match qr/(\w+) callback\b/ and the call back signature is
-# in another typedef matching the callback typedef spec.  The final addition is
-# for void which is a standard type so the spec for the API folks didnt' think it
-# needed to be wrapped.
-#
-my @known_type = qw(
-  GLbitfield
-  GLboolean
-  GLbyte
-  GLchar
-  GLcharARB
-  GLclampd
-  GLclampf
-  GLclampx
-  GLdouble
-  GLenum
-  GLfixed
-  GLfloat
-  GLhalf
-  GLhandleARB
-  GLint
-  GLint64
-  GLint64EXT
-  GLintptr
-  GLintptrARB
-  GLuint
-  GLuint64
-  GLuint64EXT
-  GLshort
-  GLsizei
-  GLsizeiptr
-  GLsizeiptrARB
-  GLsync
-  GLubyte
-  GLushort
-  GLvdpauSurfaceNV
-  GLeglClientBufferEXT
-  GLvoid
-  void
-
-  cl_context
-  cl_event
-
-  GLLOGPROCREGAL
-  GLDEBUGPROCARB
-  GLDEBUGPROCAMD
-  GLDEBUGPROC
-);
-
-my %features = ();
+my @exported_functions = @manual_list; # names the module exports
+my %features;
 
 for my $file ("include/GL/glew.h") {
 
@@ -165,7 +110,6 @@ for my $file ("include/GL/glew.h") {
 for my $name ( keys %signature ) {
     my $impl      = $case_map{$name} || $name;
     my $real_name = $alias{$impl}    || $impl;
-
     my $s = $signature{$name};
     $s->{name} = $real_name;
 }
@@ -179,10 +123,6 @@ We should think about how to ideally enable the typemap
 to automatically perlify the API. Or just handwrite
 it for the _p functions?!
 
-We should move the function existence check
-into the AUTOLOAD part so the check is made only once
-instead of on every call. Microoptimization, I know.
-
 =cut
 
 sub munge_GL_args {
@@ -192,102 +132,71 @@ sub munge_GL_args {
     # GLsizei count
 }
 
-sub generate_glew_xs {
-    my ( @items ) = @_;
-    my @process = map { uc $_ } @items;
-    if ( !@process ) {
-        @process = sort keys %signature;
-    }
-
-    my $content;
-
-    for my $upper ( @process ) {
+sub preprocess_for_registry {
+    for my $upper (@_ ? @_ : sort keys %signature) {
         my $item = $signature{$upper};
-
         my $name = $item->{name};
-
-        if ( $manual{$name} ) {
-            print "Skipping $name, already implemented in Modern.xs\n";
-            next;
-        }
-
-        my $args = $item->{signature};    # XXX clean up the C arguments here
+        next if $manual{$name};
+        my $args = $item->{signature};
         die "No args for $upper" unless $args;
-        my $type = $item->{restype};      # XXX clean up the C arguments here
-        my $no_return_value;
-
-        # Track number of pointer type args/return values (either * or [])
-        my $num_ptr_types = 0;
-
-        if ( $type eq 'void' ) {
-            $no_return_value = 1;
+        my @argdata;
+        $args = '' if $args eq 'void';
+        for (split /\s*,\s*/, $args) {
+            s/\s+$//;
+            s!\bGLsync(\s+)GLsync!GLsync$1myGLsync!g; # rewrite
+            # Rewrite `const GLwhatever foo[]` into `const GLwhatever* foo`
+            s!^const (\w+)\s+(\**)(\w+)\[\d*\]$!const $1 * $2$3!;
+            s!^(\w+)\s+(\**)(\w+)\[\d*\]$!$1 * $2$3!;
+            /(.*?)(\w+)$/;
+            push @argdata, [$2,$1]; # name, type
         }
-
-        $num_ptr_types += ( $type =~ tr/*[/*[/ );
-
+        $item->{argdata} = \@argdata;
         my $glewImpl;
         if ( $item->{feature} ne "GL_VERSION_1_1" ) {
             ( $glewImpl = $name ) =~ s!^gl!__glew!;
         }
-
-        my $xs_args = $item->{signature};
-        if ( $args eq 'void' ) {
-            $args    = '';
-            $xs_args = '';
-        }
-
-        $num_ptr_types += ( $args =~ tr/*[/*[/ );
-
-        # rewrite GLsync GLsync into GLsync myGLsync:
-        for ( $args, $xs_args ) {
-            s!\bGLsync(\s+)GLsync!GLsync$1myGLsync!g;
-        }
-
-        my @xs_args = split /,/, $xs_args;
-
-        $xs_args = join ";\n    ", @xs_args;
-
-        # Rewrite const GLwhatever foo[];
-        # into    const GLwhatever* foo;
-        1 while $xs_args =~ s!^\s*const (\w+)\s+(\**)(\w+)\[\d*\](;?)\r?$!     const $1 * $2$3$4!m;
-        1 while $xs_args =~ s!^\s*(\w+)\s+(\**)(\w+)\[\d*\](;?)\r?$!     $1 * $2$3$4!m;
-
-        # Meh. We'll need a "proper" C type parser here and hope that we don't
-        # incur any macros
-        my $known_types = join "|", @known_type;
-        $args =~ s!\b(?:(?:const\s+)?\w+(?:(?:\s*(?:\bconst\b|\*)))*\s*(\w+))\b!$1!g;
-
-        1 while $args =~ s!(\bconst\b|\*|\[\d*\])!!g;
-
-        # Kill off all pointer indicators
-        $args =~ s!\*! !g;
-
+        $item->{glewImpl} = $glewImpl;
         # Determine any name suffixes
         # All routines with * or [] in the return value or arguments
         # have a '_c' suffix variant.
-        my $binding_name = ( $num_ptr_types > 0 ) ? $name . '_c' : $name;
-
+        # Track number of pointer type args/return values (either * or [])
+        my $type = $item->{restype};
+        my $num_ptr_types = ( $type =~ tr/*[/*[/ ) + grep $_->[1] =~ /\*/, @argdata;
+        $item->{binding_name} = my $binding_name = ( $num_ptr_types > 0 ) ? $name . '_c' : $name;
         push @exported_functions, $binding_name;
+    }
+}
 
+sub generate_glew_xs {
+    my $content;
+    for my $upper (@_ ? @_ : sort keys %signature) {
+        my $item = $signature{$upper};
+        my $name = $item->{name};
+        if ( $manual{$name} ) {
+            print "Skipping $name, already implemented in Modern.xs\n";
+            next;
+        }
+        my $argdata = $item->{argdata};
+        die "No argdata for $upper" unless $argdata;
+        my $type = $item->{restype};
+        my $no_return_value = $type eq 'void';
+        my $glewImpl = $item->{glewImpl};
+        my $args = join ', ', map $_->[0], @$argdata;
+        my $xs_args = join '', map "     $_->[1]$_->[0];\n", @$argdata;
+        my $binding_name = $item->{binding_name};
         my $decl = <<XS;
 $type
 $binding_name($args);
 XS
-        if ( $xs_args ) {
-            $decl .= "     $xs_args;\n";
-        }
-
+        $decl .= $xs_args;
         my $error_check = $name eq "glGetError" ? "" : "OGLM_CHECK_ERR($name)";
-
         my $res = $decl . <<XS;
 CODE:
     OGLM_GLEWINIT@{[$error_check && "\n    $error_check"]}
 XS
-
         if ( $item->{glewtype} eq 'fun' and $glewImpl ) {
             $res .= "    OGLM_AVAIL_CHECK($glewImpl, $name)\n";
         }
-
         if ( $no_return_value ) {
             $res .= <<XS;
     $name($args);@{[$error_check && "\n    $error_check"]}
@@ -301,7 +210,6 @@ OUTPUT:
     RETVAL
 XS
         }
-
         $content .= "$res\n";
     }
     return $content;
@@ -325,11 +233,12 @@ sub save_file {
     }
 }
 
-my $xs_code = generate_glew_xs( @ARGV );
+preprocess_for_registry(@ARGV);
+my $xs_code = generate_glew_xs(@ARGV);
 save_file( 'auto-xs.inc', $xs_code );
 
 # Now rewrite registry if we need to:
-my $glFunctions = join "\n      ", @exported_functions;
+my $glFunctions = join '', "\n", map "  $_\n", @exported_functions;
 my %glGroups = map {
   $_ => [ map { $_->{name} } @{ $features{$_} } ],
 } keys %features;
@@ -344,11 +253,7 @@ package OpenGL::Modern::Registry;
 # ATTENTION: This file is automatically generated by utils/generate-XS.pl!
 #            Manual changes will be lost.
 
-sub gl_functions {
-    qw(
-      $glFunctions
-    );
-}
+sub gl_functions {qw($glFunctions)}
 
 sub EXPORT_TAGS_GL {($gltags)}
 
