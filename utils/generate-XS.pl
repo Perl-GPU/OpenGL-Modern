@@ -52,7 +52,6 @@ sub generate_glew_xs {
         my $argdata = $item->{argdata};
         my @argdata = @{$argdata || []};
         my $type = $item->{restype};
-        my $no_return_value = $type eq 'void';
         my $glewImpl = $item->{glewImpl};
         my $args = join ', ', map $_->[0], @argdata;
         my $xs_args = join '', map "     $_->[1]$_->[0];\n", @argdata;
@@ -70,19 +69,11 @@ XS
         if ( $item->{glewtype} eq 'fun' and $glewImpl ) {
             $res .= "    OGLM_AVAIL_CHECK($glewImpl, $name)\n";
         }
-        if ( $no_return_value ) {
-            $res .= <<XS;
-    $name($args);@{[$error_check && "\n    $error_check"]}
+        my ($retcap, $retout) = $type eq 'void' ? ('','') : ('RETVAL = ', "\nOUTPUT:\n    RETVAL");
+        my $arg_list = $item->{glewtype} eq 'var' ? "" : "($args)";
+        $res .= <<XS;
+    $retcap$name$arg_list;@{[$error_check && "\n    $error_check"]}$retout
 XS
-        }
-        else {
-            my $arg_list = $item->{glewtype} eq 'var' ? "" : "($args)";
-            $res .= <<XS;
-    RETVAL = $name$arg_list;@{[$error_check && "\n    $error_check"]}
-OUTPUT:
-    RETVAL
-XS
-        }
         $content .= "$res\n";
     }
     return $content;
