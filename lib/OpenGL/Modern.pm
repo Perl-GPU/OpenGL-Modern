@@ -6,13 +6,15 @@ use Carp;
 
 use Exporter 'import';
 
+use OpenGL::Modern::Const;
+
+our $VERSION    = '0.0401';
+
 use OpenGL::Modern::Registry;
-
-our $VERSION    = '0.04_01';
-our $XS_VERSION = $VERSION;
-$VERSION =~ tr/_//d;
-
 our @gl_functions = OpenGL::Modern::Registry::gl_functions();
+our %EXPORT_TAGS_GL = OpenGL::Modern::Registry::EXPORT_TAGS_GL();
+our @gl_constants = @OpenGL::Modern::Registry::glconstants;
+
 our @glew_functions = qw(
   glewCreateContext
   glewGetErrorString
@@ -25,26 +27,25 @@ our @glp_functions = qw(
   glpCheckErrors
   glpErrorString
 );
-our %EXPORT_TAGS_GL = OpenGL::Modern::Registry::EXPORT_TAGS_GL();
 
 our %EXPORT_TAGS = (
     %EXPORT_TAGS_GL,
     glewfunctions => \@glew_functions,
     glpfunctions => \@glp_functions,
     glfunctions => \@gl_functions,
-    glconstants => \@OpenGL::Modern::Registry::glconstants,
+    glconstants => \@gl_constants,
     all => [
         @gl_functions,
         @glew_functions,
         @glp_functions,
-        @OpenGL::Modern::Registry::glconstants,
+        @gl_constants,
     ]
 );
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 require XSLoader;
-XSLoader::load( 'OpenGL::Modern', $XS_VERSION );
+XSLoader::load( __PACKAGE__, $VERSION );
 
 1;
 

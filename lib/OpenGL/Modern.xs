@@ -38,13 +38,12 @@ static int _auto_check_errors = 0;
         croak(#name " not available on this machine"); \
     }
 /* used in BOOT */
-#define OGL_CONST_i(test) newCONSTSUB(stash, #test, newSViv((IV)test));
 
 /*
   Maybe one day we'll allow Perl callbacks for GLDEBUGPROCARB
 */
 
-MODULE = OpenGL::Modern		PACKAGE = OpenGL::Modern		
+MODULE = OpenGL::Modern		PACKAGE = OpenGL::Modern
 
 GLboolean
 glewCreateContext()
@@ -205,7 +204,3 @@ CODE:
     free(length);
 
 INCLUDE: ../../auto-xs.inc
-
-BOOT:
-  HV *stash = gv_stashpvn("OpenGL::Modern", strlen("OpenGL::Modern"), TRUE);
-#include "const.h"

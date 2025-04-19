@@ -1,9 +1,7 @@
 package    # not an official package
   OpenGL::Modern::Helpers;
 
-# Update version number with each change
-our $VERSION = '0.04_01';
-$VERSION =~ tr/_//d;
+our $VERSION = '0.0401';
 
 use strict;
 use Exporter 'import';
@@ -143,10 +141,7 @@ a final version of Helpers.pm will be released.
 
 =cut
 
-use vars qw(@EXPORT_OK $VERSION %glErrorStrings);
-$VERSION = '0.01_02';
-
-@EXPORT_OK = qw(
+our @EXPORT_OK = qw(
   pack_GLuint
   pack_GLfloat
   pack_GLdouble
@@ -174,7 +169,7 @@ $VERSION = '0.01_02';
   glUniform4f_p
 );
 
-%glErrorStrings = (
+our %glErrorStrings = (
     GL_NO_ERROR()          => 'No error has been recorded.',
     GL_INVALID_ENUM()      => 'An unacceptable value is specified for an enumerated argument.',
     GL_INVALID_VALUE()     => 'A numeric argument is out of range.',

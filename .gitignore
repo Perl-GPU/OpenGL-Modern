@@ -10,6 +10,7 @@ lib/OpenGL/Modern/Config.pm
 blib/
 pm_to_blib
 lib/OpenGL/Modern.c
+lib/OpenGL/Modern/Const.c
 *.inc
 *~
 const.h
