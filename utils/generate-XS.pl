@@ -55,7 +55,7 @@ sub generate_glew_xs {
         my $glewImpl = $item->{glewImpl};
         my $args = join ', ', map $_->[0], @argdata;
         my $xs_args = join '', map "     $_->[1]$_->[0];\n", @argdata;
-        my $binding_name = $item->{binding_name} || $name;
+        my $binding_name = $item->{has_ptr_arg} ? $name . '_c' : $name;
         my $decl = <<XS;
 $type
 $binding_name($args);

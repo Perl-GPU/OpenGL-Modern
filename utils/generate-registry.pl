@@ -142,8 +142,7 @@ sub preprocess_for_registry {
         # Track number of pointer type args/return values (either * or [])
         my $type = $item->{restype};
         my $num_ptr_types = ( $type =~ tr/*[/*[/ ) + grep $_->[1] =~ /\*/, @argdata;
-        $item->{binding_name} = $name . '_c' if $num_ptr_types > 0;
-        push @exported_functions, $num_ptr_types > 0 ? $name . '_c' : $name;
+        $item->{has_ptr_arg} = 1 if $num_ptr_types > 0;
     }
 }
 
@@ -170,8 +169,9 @@ preprocess_for_registry(@ARGV);
 my %features;
 for my $name (sort {uc$a cmp uc$b} keys %signature) {
   my $s = $signature{$name};
-  next if !$s->{feature};
-  push @{ $features{$s->{feature}} }, $s->{binding_name} || $name;
+  my $binding_name = $s->{has_ptr_arg} ? $name . '_c' : $name;
+  push @{ $features{$s->{feature}} }, $binding_name if $s->{feature};
+  push @exported_functions, $binding_name if !$manual{$name};
 }
 my @glconstants = sort keys %constants;
 
