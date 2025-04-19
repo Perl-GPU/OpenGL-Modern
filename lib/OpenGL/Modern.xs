@@ -204,7 +204,7 @@ CODE:
     free(string);
     free(length);
 
-INCLUDE: auto-xs.inc
+INCLUDE: ../../auto-xs.inc
 
 BOOT:
   HV *stash = gv_stashpvn("OpenGL::Modern", strlen("OpenGL::Modern"), TRUE);

@@ -57,10 +57,17 @@ WriteMakefile(
   },
   MIN_PERL_VERSION => '5.016',
   XSPROTOARG       => '-noprototypes',
-  OBJECT => 'Modern$(OBJ_EXT) glew$(OBJ_EXT)',
+  XSMULTI => 1,
+  XSBUILD => {
+    xs => {
+      'lib/OpenGL/Modern' => {
+        OBJECT => 'lib/OpenGL/Modern$(OBJ_EXT) glew$(OBJ_EXT)',
+      },
+    },
+  },
   depend           => {
-    'Modern.c' => 'auto-xs.inc',
-    'Modern$(OBJ_EXT)' => 'glew-context.c include/GL/glew.h include/GL/wglew.h const.h',
+    'lib/OpenGL/Modern.xs' => 'auto-xs.inc', # not accurate but forced by XSMULTI which has no intermediate .c target
+    'lib/OpenGL/Modern$(OBJ_EXT)' => 'glew-context.c include/GL/glew.h include/GL/wglew.h const.h',
   },
   clean => { FILES => 'auto-xs.inc const.h lib/OpenGL/Modern/Config.pm' },
   %buildargs,

@@ -1,4 +1,4 @@
-\.old$
+\.(def|old)$
 ^blib/
 ^pogl_implemented
 ^signatures
@@ -14,7 +14,7 @@ gdm.diff
 ^MANIFEST.bak$
 ^MANIFEST.SKIP~$
 \.bs$
-^Modern.c
+^lib/OpenGL/Modern\.c$
 ^pm_to_blib
 ^MYMETA.*
 \.pm\.bak$
