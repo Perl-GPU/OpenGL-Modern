@@ -1,6 +1,7 @@
 use strict;
 use ExtUtils::MakeMaker;
 use Devel::CheckLib 'assert_lib';
+use Config;
 
 my $include = "-I. -Iinclude";
 my $libs;
@@ -73,7 +74,9 @@ WriteMakefile(
   %buildargs,
 );
 
-sub MY::postamble {
+{
+package MY; # so that "SUPER" works right
+sub postamble {
   my ($self) = @_;
   my $deps = join ' ', 'lib/OpenGL/Modern/Registry.pm utils/generate-XS.pl', glob 'include/GL/*.h';
   my $const_cmd = $self->oneliner(
@@ -87,6 +90,14 @@ auto-xs.inc : $deps
 const.h : lib/OpenGL/Modern/Registry.pm
 \t$const_cmd >\$@
 EOF
+}
+sub init_PM {
+  my ($eumm) = @_;
+  $eumm->SUPER::init_PM;
+  my $pm = $eumm->{PM};
+  delete @$pm{grep /(?:\.(?:c|xs|bs)|\Q$::Config{obj_ext}\E)$/, keys %$pm};
+  delete @$pm{grep /\.pl$/, keys %$pm};
+}
 }
 
 sub WriteConfigPM {
