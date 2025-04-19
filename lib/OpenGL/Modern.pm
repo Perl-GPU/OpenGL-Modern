@@ -10,7 +10,7 @@ use OpenGL::Modern::Registry;
 
 our $VERSION    = '0.04_01';
 our $XS_VERSION = $VERSION;
-$VERSION = eval $VERSION;    # see L<perlmodstyle>
+$VERSION =~ tr/_//d;
 
 our @gl_functions = OpenGL::Modern::Registry::gl_functions();
 our @glew_functions = qw(

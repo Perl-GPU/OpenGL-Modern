@@ -3,7 +3,7 @@ package    # not an official package
 
 # Update version number with each change
 our $VERSION = '0.04_01';
-$VERSION = eval $VERSION;
+$VERSION =~ tr/_//d;
 
 use strict;
 use Exporter 'import';

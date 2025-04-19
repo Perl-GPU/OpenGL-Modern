@@ -68,7 +68,7 @@ WriteMakefile(
   },
   depend           => {
     'lib/OpenGL/Modern.xs' => 'auto-xs.inc', # not accurate but forced by XSMULTI which has no intermediate .c target
-    'lib/OpenGL/Modern$(OBJ_EXT)' => 'glew-context.c include/GL/glew.h include/GL/wglew.h const.h',
+    'lib/OpenGL/Modern$(OBJ_EXT)' => 'glew-context.c include/GL/glew.h include/GL/wglew.h const.h gl_errors.h',
   },
   clean => { FILES => 'auto-xs.inc const.h lib/OpenGL/Modern/Config.pm' },
   %buildargs,
