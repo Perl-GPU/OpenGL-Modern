@@ -34,41 +34,41 @@ sub munge_GL_args {
 }
 
 sub generate_glew_xs {
-    my $content;
-    for my $name (@_ ? @_ : sort keys %signature) {
-        my $item = $signature{$name};
-        if ( is_manual($name) ) {
-            print "Skipping $name, already implemented in Modern.xs\n";
-            next;
-        }
-        my $argdata = $item->{argdata};
-        my @argdata = @{$argdata || []};
-        my $type = $item->{restype};
-        my $glewImpl = $item->{glewImpl};
-        my $args = join ', ', map $_->[0], @argdata;
-        my $xs_args = join '', map "     $_->[1]$_->[0];\n", @argdata;
-        my $binding_name = $item->{has_ptr_arg} ? $name . '_c' : $name;
-        my $decl = <<XS;
+  my $content;
+  for my $name (@_ ? @_ : sort keys %signature) {
+    my $item = $signature{$name};
+    if ( is_manual($name) ) {
+      print "Skipping $name, already implemented in Modern.xs\n";
+      next;
+    }
+    my $argdata = $item->{argdata};
+    my @argdata = @{$argdata || []};
+    my $type = $item->{restype};
+    my $glewImpl = $item->{glewImpl};
+    my $args = join ', ', map $_->[0], @argdata;
+    my $xs_args = join '', map "     $_->[1]$_->[0];\n", @argdata;
+    my ($binding_name) = bind_names($name, $item);
+    my $decl = <<XS;
 $type
 $binding_name($args);
 XS
-        $decl .= $xs_args;
-        my $error_check = $name eq "glGetError" ? "" : "OGLM_CHECK_ERR($name)";
-        my $res = $decl . <<XS;
+    $decl .= $xs_args;
+    my $error_check = $name eq "glGetError" ? "" : "OGLM_CHECK_ERR($name)";
+    my $res = $decl . <<XS;
 CODE:
-    OGLM_GLEWINIT@{[$error_check && "\n    $error_check"]}
+OGLM_GLEWINIT@{[$error_check && "\n    $error_check"]}
 XS
-        if ( $item->{glewtype} eq 'fun' and $glewImpl ) {
-            $res .= "    OGLM_AVAIL_CHECK($glewImpl, $name)\n";
-        }
-        my ($retcap, $retout) = $type eq 'void' ? ('','') : ('RETVAL = ', "\nOUTPUT:\n    RETVAL");
-        my $arg_list = $item->{glewtype} eq 'var' ? "" : "($args)";
-        $res .= <<XS;
-    $retcap$name$arg_list;@{[$error_check && "\n    $error_check"]}$retout
-XS
-        $content .= "$res\n";
+    if ( $item->{glewtype} eq 'fun' and $glewImpl ) {
+        $res .= "    OGLM_AVAIL_CHECK($glewImpl, $name)\n";
     }
-    return $content;
+    my ($retcap, $retout) = $type eq 'void' ? ('','') : ('RETVAL = ', "\nOUTPUT:\n    RETVAL");
+    my $arg_list = $item->{glewtype} eq 'var' ? "" : "($args)";
+    $res .= <<XS;
+$retcap$name$arg_list;@{[$error_check && "\n    $error_check"]}$retout
+XS
+    $content .= "$res\n";
+  }
+  return $content;
 }
 
 my $xs_code = generate_glew_xs(@ARGV);

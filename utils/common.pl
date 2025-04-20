@@ -32,4 +32,9 @@ sub save_file {
     }
 }
 
+sub bind_names {
+  my ($name, $s) = @_;
+  $s->{has_ptr_arg} ? $name . '_c' : $name;
+}
+
 1;
