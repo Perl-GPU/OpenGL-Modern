@@ -166,6 +166,7 @@ sub save_file {
 
 preprocess_for_registry(@ARGV);
 
+$signature{$_}{core_removed} = 1 for grep $_, split /\s+/, slurp 'utils/removed.txt';
 my (%features, %gltags);
 for my $name (sort {uc$a cmp uc$b} keys %signature) {
   my $s = $signature{$name};

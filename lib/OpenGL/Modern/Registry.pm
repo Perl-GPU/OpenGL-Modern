@@ -4027,6 +4027,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -4341,6 +4342,7 @@ our %registry = (
         'GLclampf '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -4426,6 +4428,7 @@ our %registry = (
         'GLboolean *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -4481,6 +4484,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -4581,6 +4585,7 @@ our %registry = (
         'GLenum '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -5885,6 +5890,7 @@ our %registry = (
         'const GLubyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -6966,6 +6972,7 @@ our %registry = (
         'GLuint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -6986,6 +6993,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -7111,6 +7119,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -7420,6 +7429,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -7864,6 +7874,7 @@ our %registry = (
         'GLenum '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewClientActiveTexture',
     'glewtype' => 'fun',
@@ -7972,6 +7983,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8027,6 +8039,7 @@ our %registry = (
         'GLbyte '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8039,6 +8052,7 @@ our %registry = (
         'const GLbyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8060,6 +8074,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8072,6 +8087,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8093,6 +8109,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8154,6 +8171,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8208,6 +8226,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8220,6 +8239,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8241,6 +8261,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8253,6 +8274,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8274,6 +8296,7 @@ our %registry = (
         'GLubyte '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8286,6 +8309,7 @@ our %registry = (
         'const GLubyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8307,6 +8331,7 @@ our %registry = (
         'GLuint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8319,6 +8344,7 @@ our %registry = (
         'const GLuint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8340,6 +8366,7 @@ our %registry = (
         'GLushort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8352,6 +8379,7 @@ our %registry = (
         'const GLushort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8377,6 +8405,7 @@ our %registry = (
         'GLbyte '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8389,6 +8418,7 @@ our %registry = (
         'const GLbyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8414,6 +8444,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8426,6 +8457,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8451,6 +8483,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8532,6 +8565,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8594,6 +8628,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8606,6 +8641,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8631,6 +8667,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8643,6 +8680,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8668,6 +8706,7 @@ our %registry = (
         'GLubyte '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8782,6 +8821,7 @@ our %registry = (
         'const GLubyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8807,6 +8847,7 @@ our %registry = (
         'GLuint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8819,6 +8860,7 @@ our %registry = (
         'const GLuint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8844,6 +8886,7 @@ our %registry = (
         'GLushort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -8856,6 +8899,7 @@ our %registry = (
         'const GLushort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -9169,6 +9213,7 @@ our %registry = (
         'GLenum '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -9259,6 +9304,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -12257,6 +12303,7 @@ our %registry = (
         'GLenum '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -14010,6 +14057,7 @@ our %registry = (
         'GLsizei '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -14801,6 +14849,7 @@ our %registry = (
         'GLenum '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16116,6 +16165,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16521,6 +16571,7 @@ our %registry = (
         'GLboolean '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16549,6 +16600,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16604,6 +16656,7 @@ our %registry = (
         'const GLboolean *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16663,6 +16716,7 @@ our %registry = (
         'GLenum '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16877,6 +16931,7 @@ our %registry = (
     'restype' => 'void'
   },
   'glEnd' => {
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -16907,6 +16962,7 @@ our %registry = (
     'restype' => 'void'
   },
   'glEndList' => {
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17055,6 +17111,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17067,6 +17124,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17080,6 +17138,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17092,6 +17151,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17109,6 +17169,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17121,6 +17182,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17138,6 +17200,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17150,6 +17213,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17187,6 +17251,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17215,6 +17280,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17227,6 +17293,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17243,6 +17310,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17586,6 +17654,7 @@ our %registry = (
         'GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -17891,6 +17960,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewFogCoordPointer',
     'glewtype' => 'fun',
@@ -17950,6 +18020,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewFogCoordd',
     'glewtype' => 'fun',
@@ -17974,6 +18045,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewFogCoorddv',
     'glewtype' => 'fun',
@@ -18000,6 +18072,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewFogCoordf',
     'glewtype' => 'fun',
@@ -18024,6 +18097,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewFogCoordfv',
     'glewtype' => 'fun',
@@ -18113,6 +18187,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -18129,6 +18204,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -18146,6 +18222,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -18162,6 +18239,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -19577,6 +19655,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -19779,6 +19858,7 @@ our %registry = (
         'GLsizei '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -21050,6 +21130,7 @@ our %registry = (
         'GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -23258,6 +23339,7 @@ our %registry = (
         'GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -23279,6 +23361,7 @@ our %registry = (
         'GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -23597,6 +23680,7 @@ our %registry = (
         'GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -23618,6 +23702,7 @@ our %registry = (
         'GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -23639,6 +23724,7 @@ our %registry = (
         'GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -23660,6 +23746,7 @@ our %registry = (
         'GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -23681,6 +23768,7 @@ our %registry = (
         'GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -25690,6 +25778,7 @@ our %registry = (
         'GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -25707,6 +25796,7 @@ our %registry = (
         'GLuint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -25724,6 +25814,7 @@ our %registry = (
         'GLushort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -25867,6 +25958,7 @@ our %registry = (
         'void* *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -25880,6 +25972,7 @@ our %registry = (
         'GLubyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27491,6 +27584,7 @@ our %registry = (
         'GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27512,6 +27606,7 @@ our %registry = (
         'GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27575,6 +27670,7 @@ our %registry = (
         'GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27596,6 +27692,7 @@ our %registry = (
         'GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -27617,6 +27714,7 @@ our %registry = (
         'GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31089,6 +31187,7 @@ our %registry = (
         'GLuint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31125,6 +31224,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31188,6 +31288,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31200,6 +31301,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31213,6 +31315,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31225,6 +31328,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31238,6 +31342,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31250,6 +31355,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31263,6 +31369,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31275,6 +31382,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31288,6 +31396,7 @@ our %registry = (
         'GLubyte '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31300,6 +31409,7 @@ our %registry = (
         'const GLubyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31307,6 +31417,7 @@ our %registry = (
     'restype' => 'void'
   },
   'glInitNames' => {
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31364,6 +31475,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -31825,6 +31937,7 @@ our %registry = (
         'GLuint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32475,6 +32588,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32491,6 +32605,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32508,6 +32623,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32524,6 +32640,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32578,6 +32695,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32598,6 +32716,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32619,6 +32738,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32639,6 +32759,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32697,6 +32818,7 @@ our %registry = (
         'GLushort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32757,6 +32879,7 @@ our %registry = (
         'GLuint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32800,6 +32923,7 @@ our %registry = (
     'restype' => 'void'
   },
   'glLoadIdentity' => {
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32824,6 +32948,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32837,6 +32962,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32863,6 +32989,7 @@ our %registry = (
         'GLuint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -32900,6 +33027,7 @@ our %registry = (
         'const GLdouble * '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewLoadTransposeMatrixd',
     'glewtype' => 'fun',
@@ -32926,6 +33054,7 @@ our %registry = (
         'const GLfloat * '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewLoadTransposeMatrixf',
     'glewtype' => 'fun',
@@ -33214,6 +33343,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -33247,6 +33377,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -33296,6 +33427,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -33345,6 +33477,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -33495,6 +33628,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -33515,6 +33649,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -33547,6 +33682,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -33579,6 +33715,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -33947,6 +34084,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -33967,6 +34105,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -33988,6 +34127,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -34008,6 +34148,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -34305,6 +34446,7 @@ our %registry = (
         'GLenum '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -34817,6 +34959,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -34830,6 +34973,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -34856,6 +35000,7 @@ our %registry = (
         'const GLdouble * '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultTransposeMatrixd',
     'glewtype' => 'fun',
@@ -34882,6 +35027,7 @@ our %registry = (
         'const GLfloat * '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultTransposeMatrixf',
     'glewtype' => 'fun',
@@ -35648,6 +35794,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1d',
     'glewtype' => 'fun',
@@ -35680,6 +35827,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1dv',
     'glewtype' => 'fun',
@@ -35714,6 +35862,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1f',
     'glewtype' => 'fun',
@@ -35746,6 +35895,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1fv',
     'glewtype' => 'fun',
@@ -35813,6 +35963,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1i',
     'glewtype' => 'fun',
@@ -35845,6 +35996,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1iv',
     'glewtype' => 'fun',
@@ -35879,6 +36031,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1s',
     'glewtype' => 'fun',
@@ -35911,6 +36064,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1sv',
     'glewtype' => 'fun',
@@ -35949,6 +36103,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2d',
     'glewtype' => 'fun',
@@ -35985,6 +36140,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2dv',
     'glewtype' => 'fun',
@@ -36023,6 +36179,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2f',
     'glewtype' => 'fun',
@@ -36059,6 +36216,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2fv',
     'glewtype' => 'fun',
@@ -36134,6 +36292,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2i',
     'glewtype' => 'fun',
@@ -36170,6 +36329,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2iv',
     'glewtype' => 'fun',
@@ -36208,6 +36368,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2s',
     'glewtype' => 'fun',
@@ -36244,6 +36405,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2sv',
     'glewtype' => 'fun',
@@ -36286,6 +36448,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3d',
     'glewtype' => 'fun',
@@ -36326,6 +36489,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3dv',
     'glewtype' => 'fun',
@@ -36368,6 +36532,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3f',
     'glewtype' => 'fun',
@@ -36408,6 +36573,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3fv',
     'glewtype' => 'fun',
@@ -36491,6 +36657,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3i',
     'glewtype' => 'fun',
@@ -36531,6 +36698,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3iv',
     'glewtype' => 'fun',
@@ -36573,6 +36741,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3s',
     'glewtype' => 'fun',
@@ -36613,6 +36782,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3sv',
     'glewtype' => 'fun',
@@ -36659,6 +36829,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4d',
     'glewtype' => 'fun',
@@ -36703,6 +36874,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4dv',
     'glewtype' => 'fun',
@@ -36749,6 +36921,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4f',
     'glewtype' => 'fun',
@@ -36793,6 +36966,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4fv',
     'glewtype' => 'fun',
@@ -36884,6 +37058,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4i',
     'glewtype' => 'fun',
@@ -36928,6 +37103,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4iv',
     'glewtype' => 'fun',
@@ -36974,6 +37150,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4s',
     'glewtype' => 'fun',
@@ -37018,6 +37195,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4sv',
     'glewtype' => 'fun',
@@ -39547,6 +39725,7 @@ our %registry = (
         'GLenum '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39638,6 +39817,7 @@ our %registry = (
         'GLbyte '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39650,6 +39830,7 @@ our %registry = (
         'const GLbyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39671,6 +39852,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39683,6 +39865,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39704,6 +39887,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39765,6 +39949,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39819,6 +40004,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39831,6 +40017,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39852,6 +40039,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39864,6 +40052,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -39954,6 +40143,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -40345,6 +40535,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -40473,6 +40664,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41138,6 +41330,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41159,6 +41352,7 @@ our %registry = (
         'const GLuint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41180,6 +41374,7 @@ our %registry = (
         'const GLushort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41241,6 +41436,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41257,6 +41453,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41449,6 +41646,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41878,6 +42076,7 @@ our %registry = (
         'const GLubyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41885,12 +42084,14 @@ our %registry = (
     'restype' => 'void'
   },
   'glPopAttrib' => {
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
   'glPopClientAttrib' => {
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -41909,12 +42110,14 @@ our %registry = (
     'restype' => 'void'
   },
   'glPopMatrix' => {
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
   'glPopName' => {
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -42117,6 +42320,7 @@ our %registry = (
         'const GLclampf *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46454,6 +46658,7 @@ our %registry = (
         'GLbitfield '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46466,6 +46671,7 @@ our %registry = (
         'GLbitfield '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46526,6 +46732,7 @@ our %registry = (
     'restype' => 'void'
   },
   'glPushMatrix' => {
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46538,6 +46745,7 @@ our %registry = (
         'GLuint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46610,6 +46818,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46622,6 +46831,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46639,6 +46849,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46651,6 +46862,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46668,6 +46880,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46680,6 +46893,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46697,6 +46911,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46709,6 +46924,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46730,6 +46946,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46742,6 +46959,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46763,6 +46981,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46775,6 +46994,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46796,6 +47016,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46808,6 +47029,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46829,6 +47051,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46841,6 +47064,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46866,6 +47090,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46878,6 +47103,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46903,6 +47129,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46915,6 +47142,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46940,6 +47168,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46952,6 +47181,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46977,6 +47207,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -46989,6 +47220,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -47242,6 +47474,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -47258,6 +47491,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -47283,6 +47517,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -47299,6 +47534,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -47324,6 +47560,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -47340,6 +47577,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -47365,6 +47603,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -47381,6 +47620,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -47441,6 +47681,7 @@ our %registry = (
         'GLenum '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -48374,6 +48615,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -48398,6 +48640,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -48722,6 +48965,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -48742,6 +48986,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -48938,6 +49183,7 @@ our %registry = (
         'GLbyte '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3b',
     'glewtype' => 'fun',
@@ -48970,6 +49216,7 @@ our %registry = (
         'const GLbyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3bv',
     'glewtype' => 'fun',
@@ -49004,6 +49251,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3d',
     'glewtype' => 'fun',
@@ -49036,6 +49284,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3dv',
     'glewtype' => 'fun',
@@ -49070,6 +49319,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3f',
     'glewtype' => 'fun',
@@ -49102,6 +49352,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3fv',
     'glewtype' => 'fun',
@@ -49169,6 +49420,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3i',
     'glewtype' => 'fun',
@@ -49201,6 +49453,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3iv',
     'glewtype' => 'fun',
@@ -49235,6 +49488,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3s',
     'glewtype' => 'fun',
@@ -49267,6 +49521,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3sv',
     'glewtype' => 'fun',
@@ -49301,6 +49556,7 @@ our %registry = (
         'GLubyte '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3ub',
     'glewtype' => 'fun',
@@ -49333,6 +49589,7 @@ our %registry = (
         'const GLubyte *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3ubv',
     'glewtype' => 'fun',
@@ -49367,6 +49624,7 @@ our %registry = (
         'GLuint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3ui',
     'glewtype' => 'fun',
@@ -49399,6 +49657,7 @@ our %registry = (
         'const GLuint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3uiv',
     'glewtype' => 'fun',
@@ -49433,6 +49692,7 @@ our %registry = (
         'GLushort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3us',
     'glewtype' => 'fun',
@@ -49465,6 +49725,7 @@ our %registry = (
         'const GLushort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3usv',
     'glewtype' => 'fun',
@@ -49556,6 +49817,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColorPointer',
     'glewtype' => 'fun',
@@ -49627,6 +49889,7 @@ our %registry = (
         'GLuint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -49916,6 +50179,7 @@ our %registry = (
         'GLenum '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51135,6 +51399,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51147,6 +51412,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51160,6 +51426,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51172,6 +51439,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51210,6 +51478,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51222,6 +51491,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51235,6 +51505,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51247,6 +51518,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51264,6 +51536,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51276,6 +51549,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51293,6 +51567,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51618,6 +51893,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51664,6 +51940,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51676,6 +51953,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51693,6 +51971,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51705,6 +51984,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51726,6 +52006,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51738,6 +52019,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51759,6 +52041,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51771,6 +52054,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51825,6 +52109,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51837,6 +52122,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51858,6 +52144,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51870,6 +52157,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51895,6 +52183,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51907,6 +52196,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -51932,6 +52222,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52094,6 +52385,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52156,6 +52448,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52168,6 +52461,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52193,6 +52487,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52205,6 +52500,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52382,6 +52678,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52482,6 +52779,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52502,6 +52800,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52523,6 +52822,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52543,6 +52843,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52630,6 +52931,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52650,6 +52952,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52671,6 +52974,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52691,6 +52995,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52712,6 +53017,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -52732,6 +53038,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -56325,6 +56632,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -56345,6 +56653,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59704,6 +60013,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59716,6 +60026,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59733,6 +60044,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59745,6 +60057,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59791,6 +60104,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59803,6 +60117,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59820,6 +60135,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59832,6 +60148,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59853,6 +60170,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59865,6 +60183,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59886,6 +60205,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59898,6 +60218,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59952,6 +60273,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59964,6 +60286,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59985,6 +60308,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -59997,6 +60321,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60022,6 +60347,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60034,6 +60360,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60059,6 +60386,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60071,6 +60399,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60133,6 +60462,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60145,6 +60475,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60170,6 +60501,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -60182,6 +60514,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -65721,6 +66054,7 @@ our %registry = (
         'const void *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewImpl' => undef,
     'glewtype' => 'fun',
@@ -67087,6 +67421,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2d',
     'glewtype' => 'fun',
@@ -67131,6 +67466,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2dv',
     'glewtype' => 'fun',
@@ -67174,6 +67510,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2f',
     'glewtype' => 'fun',
@@ -67218,6 +67555,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2fv',
     'glewtype' => 'fun',
@@ -67261,6 +67599,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2i',
     'glewtype' => 'fun',
@@ -67305,6 +67644,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2iv',
     'glewtype' => 'fun',
@@ -67348,6 +67688,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2s',
     'glewtype' => 'fun',
@@ -67392,6 +67733,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2sv',
     'glewtype' => 'fun',
@@ -67439,6 +67781,7 @@ our %registry = (
         'GLdouble '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3d',
     'glewtype' => 'fun',
@@ -67491,6 +67834,7 @@ our %registry = (
         'const GLdouble *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3dv',
     'glewtype' => 'fun',
@@ -67538,6 +67882,7 @@ our %registry = (
         'GLfloat '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3f',
     'glewtype' => 'fun',
@@ -67590,6 +67935,7 @@ our %registry = (
         'const GLfloat *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3fv',
     'glewtype' => 'fun',
@@ -67637,6 +67983,7 @@ our %registry = (
         'GLint '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3i',
     'glewtype' => 'fun',
@@ -67689,6 +68036,7 @@ our %registry = (
         'const GLint *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3iv',
     'glewtype' => 'fun',
@@ -67736,6 +68084,7 @@ our %registry = (
         'GLshort '
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3s',
     'glewtype' => 'fun',
@@ -67788,6 +68137,7 @@ our %registry = (
         'const GLshort *'
       ]
     ],
+    'core_removed' => 1,
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3sv',
     'glewtype' => 'fun',

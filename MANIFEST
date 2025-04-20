@@ -27,3 +27,4 @@ t/02_glGetShaderInfoLog.t
 typemap
 utils/generate-registry.pl
 utils/generate-XS.pl
+utils/removed.txt
