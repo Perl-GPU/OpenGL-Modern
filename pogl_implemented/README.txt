@@ -4,23 +4,8 @@ in the original Perl OpenGL in terms of _c, _s, _p, and non_suffixed.
 The contents of the directory are
 
      README.txt
-     
-     GL:
      all__.txt  all_c.txt  all_p.txt  all_s.txt
                work_c.tx  work_p.txt work_s.txt
-     
-     GLP:
-     all__.txt
-     
-     GLU:
-     all__.txt  all_c.txt  all_p.txt  all_s.txt
-               work_c.txt work_p.txt work_s.txt
-     
-     GLUT:
-     all__.txt
-     
-     GLX:
-     all__.txt
 
 Where README.txt is this file.
 

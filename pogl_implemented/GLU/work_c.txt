@@ -1,5 +1,0 @@
-gluBuild1DMipmaps_c($target, $internalformat, $width, $format, $type, (CPTR)data);
-gluBuild2DMipmaps_c($target, $internalformat, $width, $height, $format, $type, (CPTR)data);
-gluNurbsCurve_c(nurb, nknots, knot, stride, ctlarray, order, type);
-gluNurbsSurface_c(nurb, sknot_count, sknot, tknot_count, tknot, s_stride, t_stride, ctrlarray, sorder, torder, type);
-gluPwlCurve_c(nurb, count, data, stride, type);

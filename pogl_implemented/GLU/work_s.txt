@@ -1,3 +1,0 @@
-gluBuild1DMipmaps_s($target, $internalformat, $width, $format, $type, (PACKED)data);
-gluBuild2DMipmaps_s($target, $internalformat, $width, $height, $format, $type, (PACKED)data);
-gluScaleImage_s($format, $wIn, $hIn, $typeIn, (PACKED)dataIn, $wOut, $hOut, $typeOut, (PACKED)dataOut);

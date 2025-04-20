@@ -1,8 +1,0 @@
-gluGetNurbsProperty_p
-gluGetTessProperty_p
-gluLoadSamplingMatrices_p
-gluNurbsCallback_p
-gluPickMatrix_p
-gluProject_p
-gluTessVertex_p
-gluUnProject_p
