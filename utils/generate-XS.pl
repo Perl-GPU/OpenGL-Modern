@@ -41,32 +41,27 @@ sub generate_glew_xs {
       print "Skipping $name, already implemented in Modern.xs\n";
       next;
     }
-    my $argdata = $item->{argdata};
-    my @argdata = @{$argdata || []};
-    my $type = $item->{restype};
+    my @argdata = @{$item->{argdata} || []};
     my $glewImpl = $item->{glewImpl};
-    my $args = join ', ', map $_->[0], @argdata;
-    my $xs_args = join '', map "     $_->[1]$_->[0];\n", @argdata;
-    my ($binding_name) = bind_names($name, $item);
-    my $decl = <<XS;
-$type
-$binding_name($args);
-XS
-    $decl .= $xs_args;
     my $error_check = $name eq "glGetError" ? "" : "OGLM_CHECK_ERR($name)";
-    my $res = $decl . <<XS;
-CODE:
-OGLM_GLEWINIT@{[$error_check && "\n    $error_check"]}
-XS
-    if ( $item->{glewtype} eq 'fun' and $glewImpl ) {
-        $res .= "    OGLM_AVAIL_CHECK($glewImpl, $name)\n";
+    my $avail_check = ($item->{glewtype} eq 'fun' && $glewImpl)
+      ? "  OGLM_AVAIL_CHECK($glewImpl, $name)\n"
+      : "";
+    my $preamble = qq{  OGLM_GLEWINIT@{[$error_check && "\n  $error_check"]}\n};
+    my $callarg_list = $item->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map $_->[0], @argdata ]})";
+    for my $binding_name (bind_names($name, $item)) {
+      my (@thisargdata, $thistype, $retcap, $retout, $thiscode) = @argdata;
+      my ($beforecall, $aftercall) = ('', '');
+      $thistype = $item->{restype};
+      ($retcap, $retout) = $thistype eq 'void' ? ('','') : ('RETVAL = ', "\nOUTPUT:\n  RETVAL");
+      $thiscode = "CODE:\n";
+      my $args = join ', ', map $_->[0], @thisargdata;
+      my $res = "$thistype\n$binding_name($args)\n";
+      $res .= join '', map "  $_->[1]$_->[0];\n", @thisargdata;
+      $res .= $thiscode . $preamble . $avail_check . $beforecall;
+      $res .= qq{  $retcap$name$callarg_list;@{[$error_check && "\n  $error_check"]}};
+      $content .= "$res$aftercall$retout\n\n";
     }
-    my ($retcap, $retout) = $type eq 'void' ? ('','') : ('RETVAL = ', "\nOUTPUT:\n    RETVAL");
-    my $arg_list = $item->{glewtype} eq 'var' ? "" : "($args)";
-    $res .= <<XS;
-$retcap$name$arg_list;@{[$error_check && "\n    $error_check"]}$retout
-XS
-    $content .= "$res\n";
   }
   return $content;
 }

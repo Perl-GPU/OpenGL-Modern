@@ -33,8 +33,10 @@ sub save_file {
 }
 
 sub bind_names {
+  die "list context only" if !wantarray;
   my ($name, $s) = @_;
-  $s->{has_ptr_arg} ? $name . '_c' : $name;
+  return $name if !$s->{has_ptr_arg};
+  map "$name$_", qw(_c);
 }
 
 1;
