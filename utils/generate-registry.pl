@@ -166,6 +166,12 @@ sub save_file {
 
 preprocess_for_registry(@ARGV);
 
+my %feature2version;
+for (grep $_, split /\n/, slurp 'utils/feature-reuse.txt') {
+  my ($v, $f) = split /\s+/;
+  $feature2version{$f}{$v} = undef;
+}
+@feature2version{keys %feature2version} = map +(keys %$_)[0], values %feature2version;
 $signature{$_}{core_removed} = 1 for grep $_, split /\s+/, slurp 'utils/removed.txt';
 my (%features, %gltags);
 for my $name (sort {uc$a cmp uc$b} keys %signature) {
@@ -173,9 +179,13 @@ for my $name (sort {uc$a cmp uc$b} keys %signature) {
   my $binding_name = $s->{has_ptr_arg} ? $name . '_c' : $name;
   push @exported_functions, $binding_name if !$manual{$name};
   next if !$s->{feature};
-  push @{ $gltags{$s->{feature}} }, $binding_name;
-  push @{ $features{$s->{feature}} }, $name;
+  for ($s->{feature}, grep defined, $feature2version{$s->{feature}}) {
+    $gltags{$_}{$binding_name} = undef;
+    $features{$_}{$name} = undef;
+  }
 }
+@gltags{keys %gltags} = map [sort keys %$_], values %gltags;
+@features{keys %features} = map [sort keys %$_], values %features;
 my @version_features = grep /^GL_VERSION/, keys %features;
 my (@version_31, @version_core);
 for my $f (@version_features) {
