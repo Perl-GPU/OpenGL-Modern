@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 use OpenGL::Modern::Registry;
+require './utils/common.pl';
 
 =head1 PURPOSE
 
@@ -14,15 +15,6 @@ L<https://www.opengl.org/sdk/docs/man/html/glShaderSource.xhtml>
 
 =cut
 
-# The functions where we specify manual implementations or prototypes
-# These could also be read from Modern.xs, later maybe
-my @manual_list = qw(
-  glGetString
-  glShaderSource_p
-);
-
-my %manual;
-@manual{@manual_list} = ( 1 ) x @manual_list;
 our %signature;
 *signature = \%OpenGL::Modern::Registry::registry;
 
@@ -45,7 +37,7 @@ sub generate_glew_xs {
     my $content;
     for my $name (@_ ? @_ : sort keys %signature) {
         my $item = $signature{$name};
-        if ( $manual{$name} ) {
+        if ( is_manual($name) ) {
             print "Skipping $name, already implemented in Modern.xs\n";
             next;
         }
@@ -77,24 +69,6 @@ XS
         $content .= "$res\n";
     }
     return $content;
-}
-
-sub slurp {
-    my $filename = $_[0];
-    open my $old_fh, '<:raw', $filename
-      or die "Couldn't read '$filename': $!";
-    join '', <$old_fh>;
-}
-
-sub save_file {
-    my ( $filename, $new ) = @_;
-    my $old = -e $filename ? slurp( $filename ) : "";
-    if ( $new ne $old ) {
-        print "Saving new version of $filename\n";
-        open my $fh, '>:raw', $filename
-          or die "Couldn't write new version of '$filename': $!";
-        print $fh $new;
-    }
 }
 
 my $xs_code = generate_glew_xs(@ARGV);

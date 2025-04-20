@@ -8,20 +8,12 @@ and saves the info to lib/OpenGL/Modern/Registry.pm
 
 =cut
 
+require './utils/common.pl';
 my %upper2data;
 my %case_map;
 my %alias;
 
-# The functions where we specify manual implementations or prototypes
-# These could also be read from Modern.xs, later maybe
-my @manual_list = qw(
-  glGetString
-  glShaderSource_p
-);
-
-my %manual;
-@manual{@manual_list} = ( 1 ) x @manual_list;
-my @exported_functions = @manual_list; # names the module exports
+my @exported_functions = manual_list(); # names the module exports
 my %constants;
 
 for my $file ("include/GL/glew.h") {
@@ -116,7 +108,7 @@ for my $name ( keys %upper2data ) {
 sub preprocess_for_registry {
     for my $name (@_ ? @_ : sort keys %signature) {
         my $item = $signature{$name};
-        next if $manual{$name};
+        next if is_manual($name);
         my $args = delete $item->{signature};
         die "No args for $name" unless $args;
         my @argdata;
@@ -146,38 +138,20 @@ sub preprocess_for_registry {
     }
 }
 
-sub slurp {
-    my $filename = $_[0];
-    open my $old_fh, '<:raw', $filename
-      or die "Couldn't read '$filename': $!";
-    join '', <$old_fh>;
-}
-
-sub save_file {
-    my ( $filename, $new ) = @_;
-    my $old = -e $filename ? slurp( $filename ) : "";
-    if ( $new ne $old ) {
-        print "Saving new version of $filename\n";
-        open my $fh, '>:raw', $filename
-          or die "Couldn't write new version of '$filename': $!";
-        print $fh $new;
-    }
-}
-
 preprocess_for_registry(@ARGV);
 
 my %feature2version;
-for (grep $_, split /\n/, slurp 'utils/feature-reuse.txt') {
+for (grep $_, split /\n/, slurp('utils/feature-reuse.txt')) {
   my ($v, $f) = split /\s+/;
   $feature2version{$f}{$v} = undef;
 }
 @feature2version{keys %feature2version} = map +(keys %$_)[0], values %feature2version;
-$signature{$_}{core_removed} = 1 for grep $_, split /\s+/, slurp 'utils/removed.txt';
+$signature{$_}{core_removed} = 1 for grep $_, split /\s+/, slurp('utils/removed.txt');
 my (%features, %gltags);
 for my $name (sort {uc$a cmp uc$b} keys %signature) {
   my $s = $signature{$name};
   my $binding_name = $s->{has_ptr_arg} ? $name . '_c' : $name;
-  push @exported_functions, $binding_name if !$manual{$name};
+  push @exported_functions, $binding_name if !is_manual($name);
   next if !$s->{feature};
   for ($s->{feature}, grep defined, $feature2version{$s->{feature}}) {
     $gltags{$_}{$binding_name} = undef;
