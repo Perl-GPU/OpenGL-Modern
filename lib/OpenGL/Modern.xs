@@ -39,7 +39,15 @@ static int _auto_check_errors = 0;
   if ( !impl ) { \
     croak(#name " not available on this machine"); \
   }
-/* used in BOOT */
+#define OGLM_GEN_SETUP(name, n, buffername) \
+  if (n < 0) croak(#name "_p: called with negative n=%d", n); \
+  if (!n) XSRETURN_EMPTY; \
+  GLuint *buffername = malloc(sizeof(GLuint) * n); \
+  if (!buffername) croak(#name "_p: malloc failed");
+#define OGLM_GEN_FINISH(n, buffername) \
+  EXTEND(sp, n); \
+  { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newSVuv(buffername[i]))); } \
+  free(buffername);
 
 /*
   Maybe one day we'll allow Perl callbacks for GLDEBUGPROCARB

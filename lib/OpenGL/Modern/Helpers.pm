@@ -18,18 +18,18 @@ use OpenGL::Modern qw(
   GL_OUT_OF_MEMORY
   GL_TABLE_TOO_LARGE
   GL_VERSION
+  glGenTextures_p
+  glGenFramebuffers_p
+  glGenVertexArrays_p
+  glGenBuffers_p
   glGetString
   glGetError
   glGetShaderInfoLog_c
   glGetProgramInfoLog_c
-  glGenTextures_c
   glGetProgramiv_c
   glGetShaderiv_c
-  glShaderSource_c
-  glGenFramebuffers_c
-  glGenVertexArrays_c
-  glGenBuffers_c
   glGetIntegerv_c
+  glShaderSource_c
   glBufferData_c
   glUniform2f
   glUniform4f
@@ -276,14 +276,6 @@ sub gen_thing_p {
     my @ids = unpack 'I*', $new_ids;
     return wantarray ? @ids : $ids[0];
 }
-
-sub glGenTextures_p { gen_thing_p \&glGenTextures_c, @_ }
-
-sub glGenFramebuffers_p { gen_thing_p \&glGenFramebuffers_c, @_ }
-
-sub glGenVertexArrays_p { gen_thing_p \&glGenVertexArrays_c, @_ }
-
-sub glGenBuffers_p { gen_thing_p \&glGenBuffers_c, @_ }
 
 sub get_iv_p {
     my ( $call, $id, $pname, $count ) = @_;
