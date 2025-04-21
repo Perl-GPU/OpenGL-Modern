@@ -78,7 +78,7 @@ WriteMakefile(
 package MY; # so that "SUPER" works right
 sub postamble {
   my ($self) = @_;
-  my $deps = join ' ', 'lib/OpenGL/Modern/Registry.pm utils/generate-XS.pl', glob 'include/GL/*.h';
+  my $deps = join ' ', 'lib/OpenGL/Modern/Registry.pm utils/generate-XS.pl utils/common.pl', glob 'include/GL/*.h';
   my $const_cmd = $self->oneliner(
     'print " OGL_CONST_i($_)\n" for @OpenGL::Modern::Registry::glconstants;',
     [qw(-Ilib -MOpenGL::Modern::Registry)],

@@ -53,22 +53,29 @@ sub generate_glew_xs {
       my $error_check = $name eq "glGetError" ? "" : "OGLM_CHECK_ERR($name, )";
       my $error_check2 = $error_check;
       $thistype = $item->{restype};
+      $thiscode = "CODE:\n";
       if ($binding_name =~ /_p$/) {
-        die "$binding_name: don't know how to bind" if $binding_name !~ /^glGen/;
+        die "$binding_name: don't know how to bind" if $binding_name !~ /^gl(Gen|Delete)/;
         die "$binding_name: expected void, got '$item->{restype}'" if $item->{restype} ne 'void';
         die "$binding_name: expected (n, other), got '@{[join ', ', map $_->[0], @thisargdata]}'" if @argdata != 2;
-        pop @thisargdata;
         ($retcap, $retout) = $thistype eq 'void' ? ('','') : ('RETVAL = ', "\nOUTPUT:\n  RETVAL");
-        $thiscode = "PPCODE:\n";
-        ($beforecall, $aftercall) = ("  OGLM_GEN_SETUP($name, $argdata[0][0], $argdata[1][0])\n", "\n  OGLM_GEN_FINISH($argdata[0][0], $argdata[1][0])");
+        pop @thisargdata;
+        if ($binding_name =~ /^glGen/) {
+          $thiscode = "PPCODE:\n";
+          ($beforecall, $aftercall) = ("  OGLM_GEN_SETUP($name, $argdata[0][0], $argdata[1][0])\n", "\n  OGLM_GEN_FINISH($argdata[0][0], $argdata[1][0])");
+        } elsif ($binding_name =~ /^glDelete/) {
+          @thisargdata = ['...'];
+          ($beforecall, $aftercall) = ("  GLsizei $argdata[0][0] = items;\n  OGLM_DELETE_SETUP($name, items, $argdata[1][0])\n", "\n  OGLM_DELETE_FINISH($argdata[1][0])");
+        } else {
+          die "$binding_name: code error, don't know how to bind";
+        }
         $error_check2 = "OGLM_CHECK_ERR($name, free($argdata[1][0]))";
       } else {
         ($retcap, $retout) = $thistype eq 'void' ? ('','') : ('RETVAL = ', "\nOUTPUT:\n  RETVAL");
-        $thiscode = "CODE:\n";
       }
       my $args = join ', ', map $_->[0], @thisargdata;
       my $res = "$thistype\n$binding_name($args)\n";
-      $res .= join '', map "  $_->[1]$_->[0];\n", @thisargdata;
+      $res .= join '', map "  $_->[1]$_->[0];\n", @thisargdata unless @thisargdata == 1 && $thisargdata[0][0] eq '...';
       $res .= $thiscode . "  OGLM_GLEWINIT\n";
       $res .= "  $error_check\n" if $error_check;
       $res .= $avail_check . $beforecall;

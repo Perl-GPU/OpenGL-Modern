@@ -48,6 +48,13 @@ static int _auto_check_errors = 0;
   EXTEND(sp, n); \
   { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newSVuv(buffername[i]))); } \
   free(buffername);
+#define OGLM_DELETE_SETUP(name, n, buffername) \
+  if (!n) XSRETURN_EMPTY; \
+  GLuint *buffername = malloc(sizeof(GLuint) * n); \
+  if (!buffername) croak(#name "_p: malloc failed"); \
+  { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newSVuv(buffername[i]))); }
+#define OGLM_DELETE_FINISH(buffername) \
+  free(buffername);
 
 /*
   Maybe one day we'll allow Perl callbacks for GLDEBUGPROCARB

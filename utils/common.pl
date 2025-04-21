@@ -36,7 +36,10 @@ sub bind_names {
   die "list context only" if !wantarray;
   my ($name, $s) = @_;
   return $name if !$s->{has_ptr_arg};
-  return $name . '_c' if $name !~ /^glGen/ or @{$s->{argdata}} != 2;
+  return $name . '_c' if !(
+    ($name =~ /^glGen/ and @{$s->{argdata}} == 2) ||
+    ($name =~ /^glDelete/ and @{$s->{argdata}} == 2 and $s->{argdata}[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/)
+  );
   map "$name$_", qw(_c _p);
 }
 
