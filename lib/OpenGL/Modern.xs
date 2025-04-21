@@ -13,30 +13,32 @@
 static int _done_glewInit = 0;
 static int _auto_check_errors = 0;
 
-#define OGLM_CHECK_ERR(name) \
-  if ( _auto_check_errors ) { \
+#define OGLM_CHECK_ERR(name, cleanup) \
+  if (_auto_check_errors) { \
     int err = GL_NO_ERROR; \
     int error_count = 0; \
-    while ( ( err = glGetError() ) != GL_NO_ERROR ) { \
-      warn( #name ": OpenGL error: %d %s", err, gl_error_string(err) ); \
+    while ((err = glGetError()) != GL_NO_ERROR) { \
+      warn(#name ": OpenGL error: %d %s", err, gl_error_string(err)); \
       error_count++; \
     } \
-    if( error_count ) \
-      croak( #name ": %d OpenGL errors encountered.", error_count ); \
+    if (error_count) { \
+      cleanup; \
+      croak(#name ": %d OpenGL errors encountered.", error_count); \
+    } \
   }
 #define OGLM_GLEWINIT \
-    if ( !_done_glewInit ) { \
-        GLenum err; \
-        glewExperimental = GL_TRUE; \
-        err = glewInit(); \
-        if (GLEW_OK != err) \
-          croak("Error: %s", glewGetErrorString(err)); \
-        _done_glewInit++; \
-    }
+  if (!_done_glewInit) { \
+    GLenum err; \
+    glewExperimental = GL_TRUE; \
+    err = glewInit(); \
+    if (GLEW_OK != err) \
+      croak("Error: %s", glewGetErrorString(err)); \
+    _done_glewInit++; \
+  }
 #define OGLM_AVAIL_CHECK(impl, name) \
-    if ( !impl ) { \
-        croak(#name " not available on this machine"); \
-    }
+  if ( !impl ) { \
+    croak(#name " not available on this machine"); \
+  }
 /* used in BOOT */
 
 /*

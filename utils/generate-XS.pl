@@ -43,23 +43,25 @@ sub generate_glew_xs {
     }
     my @argdata = @{$item->{argdata} || []};
     my $glewImpl = $item->{glewImpl};
-    my $error_check = $name eq "glGetError" ? "" : "OGLM_CHECK_ERR($name)";
     my $avail_check = ($item->{glewtype} eq 'fun' && $glewImpl)
       ? "  OGLM_AVAIL_CHECK($glewImpl, $name)\n"
       : "";
-    my $preamble = qq{  OGLM_GLEWINIT@{[$error_check && "\n  $error_check"]}\n};
     my $callarg_list = $item->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map $_->[0], @argdata ]})";
     for my $binding_name (bind_names($name, $item)) {
       my (@thisargdata, $thistype, $retcap, $retout, $thiscode) = @argdata;
       my ($beforecall, $aftercall) = ('', '');
+      my $error_check = $name eq "glGetError" ? "" : "OGLM_CHECK_ERR($name, )";
       $thistype = $item->{restype};
       ($retcap, $retout) = $thistype eq 'void' ? ('','') : ('RETVAL = ', "\nOUTPUT:\n  RETVAL");
       $thiscode = "CODE:\n";
       my $args = join ', ', map $_->[0], @thisargdata;
       my $res = "$thistype\n$binding_name($args)\n";
       $res .= join '', map "  $_->[1]$_->[0];\n", @thisargdata;
-      $res .= $thiscode . $preamble . $avail_check . $beforecall;
-      $res .= qq{  $retcap$name$callarg_list;@{[$error_check && "\n  $error_check"]}};
+      $res .= $thiscode . "  OGLM_GLEWINIT\n";
+      $res .= "  $error_check\n" if $error_check;
+      $res .= $avail_check . $beforecall;
+      $res .= qq{  $retcap$name$callarg_list;};
+      $res .= "\n  $error_check" if $error_check;
       $content .= "$res$aftercall$retout\n\n";
     }
   }
