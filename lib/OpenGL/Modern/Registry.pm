@@ -27313,10 +27313,15 @@ our %registry = (
     'restype' => 'GLushort'
   },
   'glGetString' => {
+    'argdata' => [
+      [
+        'name',
+        'GLenum '
+      ]
+    ],
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
-    'restype' => 'const GLubyte *',
-    'signature' => 'GLenum name'
+    'restype' => 'const GLubyte *'
   },
   'glGetSubroutineIndex' => {
     'argdata' => [

@@ -108,7 +108,6 @@ for my $name ( keys %upper2data ) {
 sub preprocess_for_registry {
   for my $name (@_ ? @_ : sort keys %signature) {
     my $item = $signature{$name};
-    next if is_manual($name);
     my $args = delete $item->{signature};
     die "No args for $name" unless $args;
     my @argdata;
@@ -128,6 +127,7 @@ sub preprocess_for_registry {
         ( $glewImpl = $name ) =~ s!^gl!__glew!;
     }
     $item->{glewImpl} = $glewImpl if defined $glewImpl;
+    next if is_manual($name);
     my $type = $item->{restype};
     my $num_ptr_types = ( $type =~ tr/*[/*[/ ) + grep $_->[1] =~ /\*/, @argdata;
     $item->{has_ptr_arg} = 1 if $num_ptr_types > 0;
