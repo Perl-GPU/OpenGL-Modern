@@ -32,15 +32,56 @@ sub save_file {
     }
 }
 
-sub bind_names {
+sub bindings {
   die "list context only" if !wantarray;
   my ($name, $s) = @_;
-  return $name if !$s->{has_ptr_arg};
-  return $name . '_c' if !(
-    ($name =~ /^glGen/ and @{$s->{argdata}} == 2) ||
-    ($name =~ /^glDelete/ and @{$s->{argdata}} == 2 and $s->{argdata}[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/)
+  my $avail_check = ($s->{glewtype} eq 'fun' && $s->{glewImpl})
+    ? "  OGLM_AVAIL_CHECK($s->{glewImpl}, $name)\n"
+    : "";
+  my @argdata = @{$s->{argdata} || []};
+  my $callarg_list = $s->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map $_->[0], @argdata ]})";
+  my $thistype = $s->{restype};
+  my %default = (
+    binding_name => $name . ($s->{has_ptr_arg} ? '_c' : ''),
+    xs_rettype => $s->{restype},
+    xs_args => join(', ', map $_->[0], @argdata),
+    xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @argdata),
+    xs_code => "CODE:\n",
+    error_check => ($name eq "glGetError") ? "" : "OGLM_CHECK_ERR($name, )",
+    avail_check => $avail_check,
+    beforecall => '',
+    retcap => ($thistype eq 'void' ? '' : 'RETVAL = '),
+    callarg_list => $callarg_list,
+    error_check2 => ($name eq "glGetError") ? "" : "OGLM_CHECK_ERR($name, )",
+    aftercall => '',
+    retout => ($thistype eq 'void' ? '' : "\nOUTPUT:\n  RETVAL"),
   );
-  map "$name$_", qw(_c _p);
+  my @ret = \%default;
+  return @ret if !$s->{has_ptr_arg};
+  if ($name =~ /^glGen/ && @argdata == 2 && $s->{restype} eq 'void' ) {
+    push @ret, {
+      %default,
+      binding_name => $name . '_p',
+      xs_args => join(', ', map $_->[0], $argdata[0]),
+      xs_argdecls => join('', map "  $_->[1]$_->[0];\n", $argdata[0]),
+      xs_code => "PPCODE:\n",
+      beforecall => "  OGLM_GEN_SETUP($name, $argdata[0][0], $argdata[1][0])\n",
+      error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
+      aftercall => "\n  OGLM_GEN_FINISH($argdata[0][0], $argdata[1][0])",
+    };
+  }
+  if ($name =~ /^glDelete/ and @argdata == 2 and $argdata[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/) {
+    push @ret, {
+      %default,
+      binding_name => $name . '_p',
+      xs_args => '...',
+      xs_argdecls => '',
+      beforecall => "  GLsizei $argdata[0][0] = items;\n  OGLM_DELETE_SETUP($name, items, $argdata[1][0])\n",
+      error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
+      aftercall => "\n  OGLM_DELETE_FINISH($argdata[1][0])",
+    };
+  }
+  @ret;
 }
 
 1;

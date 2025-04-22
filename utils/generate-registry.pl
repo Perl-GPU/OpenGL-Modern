@@ -146,7 +146,7 @@ $signature{$_}{core_removed} = 1 for grep $_, split /\s+/, slurp('utils/removed.
 my (%features, %gltags);
 for my $name (sort {uc$a cmp uc$b} keys %signature) {
   my $s = $signature{$name};
-  my @binding_names = bind_names($name, $s);
+  my @binding_names = map $_->{binding_name}, bindings($name, $s);
   push @exported_functions, @binding_names if !is_manual($name);
   next if !$s->{feature};
   for ($s->{feature}, grep defined, $feature2version{$s->{feature}}) {
