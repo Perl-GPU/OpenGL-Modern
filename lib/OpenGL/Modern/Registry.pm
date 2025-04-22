@@ -4029,7 +4029,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -4344,7 +4343,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -4430,7 +4428,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'GLboolean'
@@ -4486,7 +4483,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -4587,7 +4583,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -5580,7 +5575,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -5892,7 +5886,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -6169,7 +6162,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -6974,7 +6966,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -6995,7 +6986,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -7096,7 +7086,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -7121,7 +7110,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -7298,7 +7286,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -7382,7 +7369,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -7431,7 +7417,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -7699,7 +7684,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -7985,7 +7969,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8041,7 +8024,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8054,7 +8036,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8076,7 +8057,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8089,7 +8069,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8111,7 +8090,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8173,7 +8151,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8228,7 +8205,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8241,7 +8217,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8263,7 +8238,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8276,7 +8250,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8298,7 +8271,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8311,7 +8283,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8333,7 +8304,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8346,7 +8316,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8368,7 +8337,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8381,7 +8349,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8407,7 +8374,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8420,7 +8386,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8446,7 +8411,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8459,7 +8423,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8485,7 +8448,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8567,7 +8529,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8630,7 +8591,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8643,7 +8603,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8669,7 +8628,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8682,7 +8640,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8708,7 +8665,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8823,7 +8779,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8849,7 +8804,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8862,7 +8816,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -8888,7 +8841,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -8901,7 +8853,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -9114,7 +9065,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -9215,7 +9165,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -9306,7 +9255,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -12305,7 +12253,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -12341,7 +12288,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -12417,7 +12363,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -12489,7 +12434,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -12561,7 +12505,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -13555,7 +13498,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -14059,7 +14001,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -14456,7 +14397,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -14615,7 +14555,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -14627,7 +14566,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -14643,7 +14581,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -14838,7 +14775,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -14851,7 +14787,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -15164,7 +15099,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -15389,7 +15323,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -15707,7 +15640,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -16167,7 +16099,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -16573,7 +16504,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -16602,7 +16532,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -16658,7 +16587,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -16705,7 +16633,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -16718,7 +16645,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -16933,7 +16859,6 @@ our %registry = (
   'glEnd' => {
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -16964,7 +16889,6 @@ our %registry = (
   'glEndList' => {
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17113,7 +17037,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17126,7 +17049,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -17140,7 +17062,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17153,7 +17074,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -17171,7 +17091,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17184,7 +17103,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -17202,7 +17120,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17215,7 +17132,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -17253,7 +17169,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17282,7 +17197,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17295,7 +17209,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17312,7 +17225,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17656,7 +17568,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -17719,7 +17630,6 @@ our %registry = (
   },
   'glFinish' => {
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17784,7 +17694,6 @@ our %registry = (
   },
   'glFlush' => {
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -18189,7 +18098,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -18206,7 +18114,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -18224,7 +18131,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -18241,7 +18147,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -19624,7 +19529,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -19657,7 +19561,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -19860,7 +19763,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'GLuint'
   },
@@ -20154,7 +20056,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -20938,7 +20839,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -21132,7 +21032,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -22045,7 +21944,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -22098,7 +21996,6 @@ our %registry = (
   },
   'glGetError' => {
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'GLenum'
   },
@@ -22304,7 +22201,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -23165,7 +23061,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -23341,7 +23236,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -23363,7 +23257,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -23682,7 +23575,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -23704,7 +23596,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -23726,7 +23617,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -23748,7 +23638,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -23770,7 +23659,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -25780,7 +25668,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -25798,7 +25685,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -25816,7 +25702,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -25960,7 +25845,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -25974,7 +25858,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -27586,7 +27469,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -27608,7 +27490,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -27672,7 +27553,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -27694,7 +27574,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -27716,7 +27595,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -27745,7 +27623,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -27770,7 +27647,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -27795,7 +27671,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -27921,7 +27796,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -27942,7 +27816,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -30841,7 +30714,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -31189,7 +31061,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -31226,7 +31097,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -31290,7 +31160,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -31303,7 +31172,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -31317,7 +31185,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -31330,7 +31197,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -31344,7 +31210,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -31357,7 +31222,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -31371,7 +31235,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -31384,7 +31247,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -31398,7 +31260,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -31411,7 +31272,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -31419,7 +31279,6 @@ our %registry = (
   'glInitNames' => {
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -31477,7 +31336,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -31790,7 +31648,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'GLboolean'
   },
@@ -31939,7 +31796,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'GLboolean'
   },
@@ -32293,7 +32149,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'GLboolean'
   },
@@ -32590,7 +32445,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -32607,7 +32461,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -32625,7 +32478,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -32642,7 +32494,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -32697,7 +32548,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -32718,7 +32568,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -32740,7 +32589,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -32761,7 +32609,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -32820,7 +32667,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -32832,7 +32678,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -32881,7 +32726,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -32925,7 +32769,6 @@ our %registry = (
   'glLoadIdentity' => {
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -32950,7 +32793,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -32964,7 +32806,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -32991,7 +32832,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -33110,7 +32950,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -33345,7 +33184,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -33379,7 +33217,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -33429,7 +33266,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -33479,7 +33315,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -33630,7 +33465,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -33651,7 +33485,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -33684,7 +33517,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -33717,7 +33549,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -34086,7 +33917,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -34107,7 +33937,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -34129,7 +33958,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -34150,7 +33978,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -34448,7 +34275,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -34961,7 +34787,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -34975,7 +34800,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -39727,7 +39551,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -39819,7 +39642,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -39832,7 +39654,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -39854,7 +39675,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -39867,7 +39687,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -39889,7 +39708,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -39951,7 +39769,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -40006,7 +39823,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -40019,7 +39835,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -40041,7 +39856,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -40054,7 +39868,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -40145,7 +39958,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -40537,7 +40349,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -40666,7 +40477,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -41332,7 +41142,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -41354,7 +41163,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -41376,7 +41184,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -41393,7 +41200,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -41409,7 +41215,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -41438,7 +41243,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -41455,7 +41259,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -41648,7 +41451,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -41899,7 +41701,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -41961,7 +41762,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -41993,7 +41793,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -42078,7 +41877,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -42086,14 +41884,12 @@ our %registry = (
   'glPopAttrib' => {
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
   'glPopClientAttrib' => {
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -42112,14 +41908,12 @@ our %registry = (
   'glPopMatrix' => {
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
   'glPopName' => {
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -42322,7 +42116,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -46660,7 +46453,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -46673,7 +46465,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -46734,7 +46525,6 @@ our %registry = (
   'glPushMatrix' => {
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -46747,7 +46537,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -46820,7 +46609,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -46833,7 +46621,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -46851,7 +46638,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -46864,7 +46650,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -46882,7 +46667,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -46895,7 +46679,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -46913,7 +46696,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -46926,7 +46708,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -46948,7 +46729,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -46961,7 +46741,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -46983,7 +46762,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -46996,7 +46774,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47018,7 +46795,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47031,7 +46807,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47053,7 +46828,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47066,7 +46840,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47092,7 +46865,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47105,7 +46877,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47131,7 +46902,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47144,7 +46914,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47170,7 +46939,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47183,7 +46951,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47209,7 +46976,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47222,7 +46988,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47251,7 +47016,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47331,7 +47095,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47476,7 +47239,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47493,7 +47255,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47519,7 +47280,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47536,7 +47296,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47562,7 +47321,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47579,7 +47337,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47605,7 +47362,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -47622,7 +47378,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -47683,7 +47438,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'GLint'
   },
@@ -48617,7 +48371,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -48642,7 +48395,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -48967,7 +48719,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -48988,7 +48739,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -49032,7 +48782,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -49891,7 +49640,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -50181,7 +49929,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -50679,7 +50426,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -50739,7 +50485,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -50775,7 +50520,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -51401,7 +51145,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -51414,7 +51157,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -51428,7 +51170,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -51441,7 +51182,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -51480,7 +51220,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -51493,7 +51232,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -51507,7 +51245,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -51520,7 +51257,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -51538,7 +51274,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -51551,7 +51286,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -51569,7 +51303,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -51895,7 +51628,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -51942,7 +51674,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -51955,7 +51686,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -51973,7 +51703,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -51986,7 +51715,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52008,7 +51736,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52021,7 +51748,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52043,7 +51769,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52056,7 +51781,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52111,7 +51835,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52124,7 +51847,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52146,7 +51868,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52159,7 +51880,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52185,7 +51905,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52198,7 +51917,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52224,7 +51942,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52387,7 +52104,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52450,7 +52166,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52463,7 +52178,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52489,7 +52203,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52502,7 +52215,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52680,7 +52392,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52781,7 +52492,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52802,7 +52512,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52824,7 +52533,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52845,7 +52553,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52933,7 +52640,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52954,7 +52660,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -52976,7 +52681,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -52997,7 +52701,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -53019,7 +52722,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -53040,7 +52742,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -53081,7 +52782,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -53126,7 +52826,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -53663,7 +53362,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -53683,7 +53381,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -53704,7 +53401,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -53724,7 +53420,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -54322,7 +54017,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -54404,7 +54098,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -56634,7 +56327,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -56655,7 +56347,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60015,7 +59706,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60028,7 +59718,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60046,7 +59735,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60059,7 +59747,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60106,7 +59793,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60119,7 +59805,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60137,7 +59822,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60150,7 +59834,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60172,7 +59855,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60185,7 +59867,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60207,7 +59888,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60220,7 +59900,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60275,7 +59954,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60288,7 +59966,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60310,7 +59987,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60323,7 +59999,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60349,7 +60024,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60362,7 +60036,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60388,7 +60061,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60401,7 +60073,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60464,7 +60135,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60477,7 +60147,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -60503,7 +60172,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -60516,7 +60184,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -66056,7 +65723,6 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'has_ptr_arg' => 1,
     'restype' => 'void'
@@ -66955,7 +66621,6 @@ our %registry = (
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
-    'glewImpl' => undef,
     'glewtype' => 'fun',
     'restype' => 'void'
   },
