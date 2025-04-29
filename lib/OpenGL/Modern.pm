@@ -950,23 +950,34 @@ our @gl_functionsrest = qw(
   glCoverStrokePathInstancedNV_c
   glCoverStrokePathNV
   glCreateBuffers_c
+  glCreateBuffers_p
   glCreateCommandListsNV_c
+  glCreateCommandListsNV_p
   glCreateFramebuffers_c
+  glCreateFramebuffers_p
   glCreateMemoryObjectsEXT_c
+  glCreateMemoryObjectsEXT_p
   glCreatePerfQueryINTEL_c
+  glCreatePerfQueryINTEL_p
   glCreateProgramObjectARB
   glCreateProgramPipelines_c
+  glCreateProgramPipelines_p
   glCreateQueries_c
   glCreateRenderbuffers_c
+  glCreateRenderbuffers_p
   glCreateSamplers_c
+  glCreateSamplers_p
   glCreateShaderObjectARB
   glCreateShaderProgramEXT_c
   glCreateShaderProgramv_c
   glCreateStatesNV_c
+  glCreateStatesNV_p
   glCreateSyncFromCLeventARB
   glCreateTextures_c
   glCreateTransformFeedbacks_c
+  glCreateTransformFeedbacks_p
   glCreateVertexArrays_c
+  glCreateVertexArrays_p
   glCullParameterdvEXT_c
   glCullParameterfvEXT_c
   glCurrentPaletteMatrixARB
@@ -4077,14 +4088,21 @@ our %EXPORT_TAGS_GL = (
     'glCopyTextureSubImage2D',
     'glCopyTextureSubImage3D',
     'glCreateBuffers_c',
+    'glCreateBuffers_p',
     'glCreateFramebuffers_c',
+    'glCreateFramebuffers_p',
     'glCreateProgramPipelines_c',
+    'glCreateProgramPipelines_p',
     'glCreateQueries_c',
     'glCreateRenderbuffers_c',
+    'glCreateRenderbuffers_p',
     'glCreateSamplers_c',
+    'glCreateSamplers_p',
     'glCreateTextures_c',
     'glCreateTransformFeedbacks_c',
+    'glCreateTransformFeedbacks_p',
     'glCreateVertexArrays_c',
+    'glCreateVertexArrays_p',
     'glDisableVertexArrayAttrib',
     'glEnableVertexArrayAttrib',
     'glFlushMappedNamedBufferRange',
@@ -5508,6 +5526,7 @@ our %EXPORT_TAGS_GL = (
   'GL_EXT_memory_object' => [
     'glBufferStorageMemEXT',
     'glCreateMemoryObjectsEXT_c',
+    'glCreateMemoryObjectsEXT_p',
     'glDeleteMemoryObjectsEXT_c',
     'glDeleteMemoryObjectsEXT_p',
     'glGetMemoryObjectParameterivEXT_c',
@@ -5831,6 +5850,7 @@ our %EXPORT_TAGS_GL = (
   'GL_INTEL_performance_query' => [
     'glBeginPerfQueryINTEL',
     'glCreatePerfQueryINTEL_c',
+    'glCreatePerfQueryINTEL_p',
     'glDeletePerfQueryINTEL',
     'glEndPerfQueryINTEL',
     'glGetFirstPerfQueryIdINTEL_c',
@@ -5957,7 +5977,9 @@ our %EXPORT_TAGS_GL = (
     'glCommandListSegmentsNV',
     'glCompileCommandListNV',
     'glCreateCommandListsNV_c',
+    'glCreateCommandListsNV_p',
     'glCreateStatesNV_c',
+    'glCreateStatesNV_p',
     'glDeleteCommandListsNV_c',
     'glDeleteCommandListsNV_p',
     'glDeleteStatesNV_c',
@@ -7855,14 +7877,21 @@ our %EXPORT_TAGS_GL = (
     'glCopyTextureSubImage2D',
     'glCopyTextureSubImage3D',
     'glCreateBuffers_c',
+    'glCreateBuffers_p',
     'glCreateFramebuffers_c',
+    'glCreateFramebuffers_p',
     'glCreateProgramPipelines_c',
+    'glCreateProgramPipelines_p',
     'glCreateQueries_c',
     'glCreateRenderbuffers_c',
+    'glCreateRenderbuffers_p',
     'glCreateSamplers_c',
+    'glCreateSamplers_p',
     'glCreateTextures_c',
     'glCreateTransformFeedbacks_c',
+    'glCreateTransformFeedbacks_p',
     'glCreateVertexArrays_c',
+    'glCreateVertexArrays_p',
     'glDisableVertexArrayAttrib',
     'glEnableVertexArrayAttrib',
     'glFlushMappedNamedBufferRange',

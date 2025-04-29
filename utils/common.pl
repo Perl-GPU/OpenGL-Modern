@@ -61,7 +61,7 @@ sub bindings {
   );
   my @ret = \%default;
   return @ret if !$s->{has_ptr_arg};
-  if ($name =~ /^glGen/ && @argdata == 2 && $s->{restype} eq 'void' ) {
+  if ($name =~ /^gl(?:Gen|Create)/ && @argdata == 2 && $s->{restype} eq 'void' ) {
     $i = 0;
     push @ret, {
       %default,
