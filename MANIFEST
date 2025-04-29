@@ -25,6 +25,7 @@ t/02_auto_error_check.t
 t/02_glew_version_accessors.t
 t/02_glGetShaderInfoLog.t
 typemap
+utils/aliases.txt
 utils/common.pl
 utils/feature-reuse.txt
 utils/generate-registry.pl

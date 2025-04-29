@@ -165,6 +165,23 @@ for my $f (@version_features) {
 }
 my %glcompat_c = map +($_=>undef), map @{$gltags{$_}}, @version_31;
 
+my %nonglew2alias;
+for (grep $_, split /\n/, slurp('utils/aliases.txt')) {
+  my ($to, $from) = split ' ';
+  my $alias_feature = $signature{$from}{feature};
+  if (exists $signature{$to}) {
+    # do nothing
+  } elsif (exists $nonglew2alias{$to}) {
+    $to = $nonglew2alias{$to};
+  } else {
+    $nonglew2alias{$to} = $from;
+    $signature{$to} = $signature{$from};
+    ($to, $from) = ($from, $to);
+  }
+  $signature{$to}{aliases}{$from} = $alias_feature;
+  delete $signature{$from};
+}
+
 # Now rewrite registry if we need to:
 use Data::Dumper;
 $Data::Dumper::Indent = $Data::Dumper::Sortkeys = $Data::Dumper::Terse = 1;

@@ -41,11 +41,14 @@ sub bindings {
   my @argdata = @{$s->{argdata} || []};
   my $callarg_list = $s->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map $_->[0], @argdata ]})";
   my $thistype = $s->{restype};
+  my $c_suffix = $s->{has_ptr_arg} ? '_c' : '';
+  my $i = 0;
   my %default = (
-    binding_name => $name . ($s->{has_ptr_arg} ? '_c' : ''),
+    binding_name => $name . $c_suffix,
     xs_rettype => $s->{restype},
     xs_args => join(', ', map $_->[0], @argdata),
     xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @argdata),
+    aliases => !$s->{aliases} ? "" : "ALIAS:\n".join('', map "  $_$c_suffix = ".++$i."\n", sort keys %{$s->{aliases}}),
     xs_code => "CODE:\n",
     error_check => ($name eq "glGetError") ? "" : "OGLM_CHECK_ERR($name, )",
     avail_check => $avail_check,
@@ -59,11 +62,13 @@ sub bindings {
   my @ret = \%default;
   return @ret if !$s->{has_ptr_arg};
   if ($name =~ /^glGen/ && @argdata == 2 && $s->{restype} eq 'void' ) {
+    $i = 0;
     push @ret, {
       %default,
       binding_name => $name . '_p',
       xs_args => join(', ', map $_->[0], $argdata[0]),
       xs_argdecls => join('', map "  $_->[1]$_->[0];\n", $argdata[0]),
+      aliases => !$s->{aliases} ? "" : "ALIAS:\n".join('', map "  ${_}_p = ".++$i."\n", sort keys %{$s->{aliases}}),
       xs_code => "PPCODE:\n",
       beforecall => "  OGLM_GEN_SETUP($name, $argdata[0][0], $argdata[1][0])\n",
       error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
@@ -71,11 +76,13 @@ sub bindings {
     };
   }
   if ($name =~ /^glDelete/ and @argdata == 2 and $argdata[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/) {
+    $i = 0;
     push @ret, {
       %default,
       binding_name => $name . '_p',
       xs_args => '...',
       xs_argdecls => '',
+      aliases => !$s->{aliases} ? "" : "ALIAS:\n".join('', map "  ${_}_p = ".++$i."\n", sort keys %{$s->{aliases}}),
       beforecall => "  GLsizei $argdata[0][0] = items;\n  OGLM_DELETE_SETUP($name, items, $argdata[1][0])\n",
       error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
       aftercall => "\n  OGLM_DELETE_FINISH($argdata[1][0])",
