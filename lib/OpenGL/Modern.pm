@@ -25,11 +25,11 @@ our @gl_functionscompat = qw(
   glBeginConditionalRender
   glBeginQuery
   glBeginTransformFeedback
-  glBindAttribLocation_c
+  glBindAttribLocation
   glBindBuffer
   glBindBufferBase
   glBindBufferRange
-  glBindFragDataLocation_c
+  glBindFragDataLocation
   glBindFramebuffer
   glBindRenderbuffer
   glBindTexture
@@ -208,7 +208,7 @@ our @gl_functionscompat = qw(
   glGetActiveUniform_c
   glGetActiveUniformsiv_c
   glGetAttachedShaders_c
-  glGetAttribLocation_c
+  glGetAttribLocation
   glGetBooleani_v_c
   glGetBooleanv_c
   glGetBufferParameteriv_c
@@ -219,7 +219,7 @@ our @gl_functionscompat = qw(
   glGetDoublev_c
   glGetError
   glGetFloatv_c
-  glGetFragDataLocation_c
+  glGetFragDataLocation
   glGetFramebufferAttachmentParameteriv_c
   glGetIntegeri_v_c
   glGetIntegerv_c
@@ -258,9 +258,9 @@ our @gl_functionscompat = qw(
   glGetTexParameterfv_c
   glGetTexParameteriv_c
   glGetTransformFeedbackVarying_c
-  glGetUniformBlockIndex_c
+  glGetUniformBlockIndex
   glGetUniformIndices_c
-  glGetUniformLocation_c
+  glGetUniformLocation
   glGetUniformfv_c
   glGetUniformiv_c
   glGetUniformuiv_c
@@ -680,7 +680,7 @@ our @gl_functionsrest = qw(
   glActiveShaderProgram
   glActiveStencilFaceEXT
   glActiveTextureARB
-  glActiveVaryingNV_c
+  glActiveVaryingNV
   glAddressSpace
   glAddSwapHintRectWIN
   glAllocMPEGPredictorsSGIX_c
@@ -722,9 +722,9 @@ our @gl_functionsrest = qw(
   glBindBufferRangeNV
   glBindBuffersBase_c
   glBindBuffersRange_c
-  glBindFragDataLocationEXT_c
-  glBindFragDataLocationIndexedEXT_c
-  glBindFragDataLocationIndexed_c
+  glBindFragDataLocationEXT
+  glBindFragDataLocationIndexed
+  glBindFragDataLocationIndexedEXT
   glBindFragmentShaderATI
   glBindFramebufferEXT
   glBindImageTexture
@@ -968,7 +968,7 @@ our @gl_functionsrest = qw(
   glCreateSamplers_c
   glCreateSamplers_p
   glCreateShaderObjectARB
-  glCreateShaderProgramEXT_c
+  glCreateShaderProgramEXT
   glCreateShaderProgramv_c
   glCreateStatesNV_c
   glCreateStatesNV_p
@@ -988,9 +988,9 @@ our @gl_functionsrest = qw(
   glDebugMessageControlARB_c
   glDebugMessageControl_c
   glDebugMessageEnableAMD_c
-  glDebugMessageInsertAMD_c
-  glDebugMessageInsertARB_c
-  glDebugMessageInsert_c
+  glDebugMessageInsert
+  glDebugMessageInsertAMD
+  glDebugMessageInsertARB
   glDeformSGIX
   glDeleteArraySetsEXT_c
   glDeleteAsyncMarkersSGIX
@@ -1009,7 +1009,7 @@ our @gl_functionsrest = qw(
   glDeleteMemoryObjectsEXT_c
   glDeleteMemoryObjectsEXT_p
   glDeleteMPEGPredictorsSGIX_c
-  glDeleteNamedStringARB_c
+  glDeleteNamedStringARB
   glDeleteNamesAMD_c
   glDeleteObjectARB
   glDeleteOcclusionQueriesNV_c
@@ -2161,7 +2161,7 @@ our @gl_functionsrest = qw(
   glGetDoublei_v_c
   glGetDriverControlsQCOM_c
   glGetDriverControlStringQCOM_c
-  glGetExtensionREGAL_c
+  glGetExtensionREGAL
   glGetFenceivNV_c
   glGetFinalCombinerInputParameterfvNV_c
   glGetFinalCombinerInputParameterivNV_c
@@ -2173,9 +2173,9 @@ our @gl_functionsrest = qw(
   glGetFloati_v_c
   glGetFogFuncSGIS_c
   glGetFogLayersSGIX_c
-  glGetFragDataIndexEXT_c
-  glGetFragDataIndex_c
-  glGetFragDataLocationEXT_c
+  glGetFragDataIndex
+  glGetFragDataIndexEXT
+  glGetFragDataLocationEXT
   glGetFragmentLightfvEXT_c
   glGetFragmentLightfvSGIX_c
   glGetFragmentLightivEXT_c
@@ -2358,11 +2358,11 @@ our @gl_functionsrest = qw(
   glGetProgramPipelineInfoLog_c
   glGetProgramPipelineiv_c
   glGetProgramResourcefvNV_c
-  glGetProgramResourceIndex_c
+  glGetProgramResourceIndex
   glGetProgramResourceiv_c
-  glGetProgramResourceLocationIndexEXT_c
-  glGetProgramResourceLocationIndex_c
-  glGetProgramResourceLocation_c
+  glGetProgramResourceLocation
+  glGetProgramResourceLocationIndex
+  glGetProgramResourceLocationIndexEXT
   glGetProgramResourceName_c
   glGetProgramStageiv_c
   glGetProgramStringARB_c
@@ -2396,8 +2396,8 @@ our @gl_functionsrest = qw(
   glGetShaderSourceARB_c
   glGetSharpenTexFuncSGIS_c
   glGetStageIndexNV
-  glGetSubroutineIndex_c
-  glGetSubroutineUniformLocation_c
+  glGetSubroutineIndex
+  glGetSubroutineUniformLocation
   glGetSyncivAPPLE_c
   glGetSynciv_c
   glGetTexBumpParameterfvATI_c
@@ -2454,7 +2454,7 @@ our @gl_functionsrest = qw(
   glGetVariantFloatvEXT_c
   glGetVariantIntegervEXT_c
   glGetVariantPointervEXT_c
-  glGetVaryingLocationNV_c
+  glGetVaryingLocationNV
   glGetVectorOperationSGIX
   glGetVertexArrayIndexed64iv_c
   glGetVertexArrayIndexediv_c
@@ -2488,7 +2488,7 @@ our @gl_functionsrest = qw(
   glGetVideoivNV_c
   glGetVideoui64vNV_c
   glGetVideouivNV_c
-  glGetVkProcAddrNV_c
+  glGetVkProcAddrNV
   glGlobalAlphaFactorbSUN
   glGlobalAlphaFactordSUN
   glGlobalAlphaFactorfSUN
@@ -2517,7 +2517,7 @@ our @gl_functionsrest = qw(
   glIndexPointerEXT_c
   glIndexPointerListIBM_c
   glInsertComponentEXT
-  glInsertEventMarkerEXT_c
+  glInsertEventMarkerEXT
   glInterleavedTextureCoordSetsSGIS
   glInterpolatePathsNV
   glInvalidateBufferData
@@ -2544,7 +2544,7 @@ our @gl_functionsrest = qw(
   glIsMPEGPredictorSGIX
   glIsNameAMD
   glIsNamedBufferResidentNV
-  glIsNamedStringARB_c
+  glIsNamedStringARB
   glIsObjectBufferATI
   glIsOcclusionQueryNV
   glIsPathNV
@@ -2559,7 +2559,7 @@ our @gl_functionsrest = qw(
   glIsSampler
   glIsSemaphoreEXT
   glIsStateNV
-  glIsSupportedREGAL_c
+  glIsSupportedREGAL
   glIsSync
   glIsSyncAPPLE
   glIsTextureEXT
@@ -2571,7 +2571,7 @@ our @gl_functionsrest = qw(
   glIsVertexArrayAPPLE
   glIsVertexArraySGIX
   glIsVertexAttribEnabledAPPLE
-  glLabelObjectEXT_c
+  glLabelObjectEXT
   glLGPUCopyImageSubDataNVX
   glLGPUInterlockNVX
   glLGPUNamedBufferSubDataNVX_c
@@ -2817,7 +2817,7 @@ our @gl_functionsrest = qw(
   glNamedRenderbufferStorageMultisample
   glNamedRenderbufferStorageMultisampleCoverageEXT
   glNamedRenderbufferStorageMultisampleEXT
-  glNamedStringARB_c
+  glNamedStringARB
   glNewBufferRegion
   glNewObjectBufferATI_c
   glNonlinLightfvSGIX_c
@@ -2843,7 +2843,7 @@ our @gl_functionsrest = qw(
   glNormalStream3ivATI_c
   glNormalStream3sATI
   glNormalStream3svATI_c
-  glObjectLabel_c
+  glObjectLabel
   glObjectPtrLabel_c
   glObjectPurgeableAPPLE
   glObjectUnpurgeableAPPLE
@@ -3080,8 +3080,8 @@ our @gl_functionsrest = qw(
   glProvokingVertex
   glProvokingVertexEXT
   glPushClientAttribDefaultEXT
-  glPushDebugGroup_c
-  glPushGroupMarkerEXT_c
+  glPushDebugGroup
+  glPushGroupMarkerEXT
   glQueryCounter
   glQueryCounterANGLE
   glQueryObjectParameteruiAMD
@@ -3832,7 +3832,7 @@ our %EXPORT_TAGS_GL = (
   'GL_AMD_debug_output' => [
     'glDebugMessageCallbackAMD_c',
     'glDebugMessageEnableAMD_c',
-    'glDebugMessageInsertAMD_c',
+    'glDebugMessageInsertAMD',
     'glGetDebugMessageLogAMD_c'
   ],
   'GL_AMD_draw_buffers_blend' => [
@@ -4026,8 +4026,8 @@ our %EXPORT_TAGS_GL = (
     'glVertexAttribL1ui64vARB_c'
   ],
   'GL_ARB_blend_func_extended' => [
-    'glBindFragDataLocationIndexed_c',
-    'glGetFragDataIndex_c'
+    'glBindFragDataLocationIndexed',
+    'glGetFragDataIndex'
   ],
   'GL_ARB_buffer_storage' => [
     'glBufferStorage_c'
@@ -4067,7 +4067,7 @@ our %EXPORT_TAGS_GL = (
   'GL_ARB_debug_output' => [
     'glDebugMessageCallbackARB_c',
     'glDebugMessageControlARB_c',
-    'glDebugMessageInsertARB_c',
+    'glDebugMessageInsertARB',
     'glGetDebugMessageLogARB_c'
   ],
   'GL_ARB_direct_state_access' => [
@@ -4446,9 +4446,9 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ARB_program_interface_query' => [
     'glGetProgramInterfaceiv_c',
-    'glGetProgramResourceIndex_c',
-    'glGetProgramResourceLocationIndex_c',
-    'glGetProgramResourceLocation_c',
+    'glGetProgramResourceIndex',
+    'glGetProgramResourceLocation',
+    'glGetProgramResourceLocationIndex',
     'glGetProgramResourceName_c',
     'glGetProgramResourceiv_c'
   ],
@@ -4622,18 +4622,18 @@ our %EXPORT_TAGS_GL = (
     'glGetActiveSubroutineUniformName_c',
     'glGetActiveSubroutineUniformiv_c',
     'glGetProgramStageiv_c',
-    'glGetSubroutineIndex_c',
-    'glGetSubroutineUniformLocation_c',
+    'glGetSubroutineIndex',
+    'glGetSubroutineUniformLocation',
     'glGetUniformSubroutineuiv_c',
     'glUniformSubroutinesuiv_c'
   ],
   'GL_ARB_shading_language_include' => [
     'glCompileShaderIncludeARB_c',
-    'glDeleteNamedStringARB_c',
+    'glDeleteNamedStringARB',
     'glGetNamedStringARB_c',
     'glGetNamedStringivARB_c',
-    'glIsNamedStringARB_c',
-    'glNamedStringARB_c'
+    'glIsNamedStringARB',
+    'glNamedStringARB'
   ],
   'GL_ARB_sparse_buffer' => [
     'glBufferPageCommitmentARB'
@@ -4733,7 +4733,7 @@ our %EXPORT_TAGS_GL = (
     'glGetActiveUniformName_c',
     'glGetActiveUniformsiv_c',
     'glGetIntegeri_v_c',
-    'glGetUniformBlockIndex_c',
+    'glGetUniformBlockIndex',
     'glGetUniformIndices_c',
     'glUniformBlockBinding'
   ],
@@ -5064,9 +5064,9 @@ our %EXPORT_TAGS_GL = (
     'glBlendEquationSeparateEXT'
   ],
   'GL_EXT_blend_func_extended' => [
-    'glBindFragDataLocationIndexedEXT_c',
-    'glGetFragDataIndexEXT_c',
-    'glGetProgramResourceLocationIndexEXT_c'
+    'glBindFragDataLocationIndexedEXT',
+    'glGetFragDataIndexEXT',
+    'glGetProgramResourceLocationIndexEXT'
   ],
   'GL_EXT_blend_func_separate' => [
     'glBlendFuncSeparateEXT'
@@ -5125,12 +5125,12 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_EXT_debug_label' => [
     'glGetObjectLabelEXT_c',
-    'glLabelObjectEXT_c'
+    'glLabelObjectEXT'
   ],
   'GL_EXT_debug_marker' => [
-    'glInsertEventMarkerEXT_c',
+    'glInsertEventMarkerEXT',
     'glPopGroupMarkerEXT',
-    'glPushGroupMarkerEXT_c'
+    'glPushGroupMarkerEXT'
   ],
   'GL_EXT_depth_bounds_test' => [
     'glDepthBoundsEXT'
@@ -5458,8 +5458,8 @@ our %EXPORT_TAGS_GL = (
     'glProgramLocalParameters4fvEXT_c'
   ],
   'GL_EXT_gpu_shader4' => [
-    'glBindFragDataLocationEXT_c',
-    'glGetFragDataLocationEXT_c',
+    'glBindFragDataLocationEXT',
+    'glGetFragDataLocationEXT',
     'glGetUniformuivEXT_c',
     'glGetVertexAttribIivEXT_c',
     'glGetVertexAttribIuivEXT_c',
@@ -5649,7 +5649,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_EXT_separate_shader_objects' => [
     'glActiveProgramEXT',
-    'glCreateShaderProgramEXT_c',
+    'glCreateShaderProgramEXT',
     'glUseShaderProgramEXT'
   ],
   'GL_EXT_shader_image_load_store' => [
@@ -5870,14 +5870,14 @@ our %EXPORT_TAGS_GL = (
   'GL_KHR_debug' => [
     'glDebugMessageCallback_c',
     'glDebugMessageControl_c',
-    'glDebugMessageInsert_c',
+    'glDebugMessageInsert',
     'glGetDebugMessageLog_c',
     'glGetObjectLabel_c',
     'glGetObjectPtrLabel_c',
-    'glObjectLabel_c',
+    'glObjectLabel',
     'glObjectPtrLabel_c',
     'glPopDebugGroup',
-    'glPushDebugGroup_c'
+    'glPushDebugGroup'
   ],
   'GL_KHR_parallel_shader_compile' => [
     'glMaxShaderCompilerThreadsKHR'
@@ -6031,7 +6031,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_NV_draw_vulkan_image' => [
     'glDrawVkImageNV',
-    'glGetVkProcAddrNV_c',
+    'glGetVkProcAddrNV',
     'glSignalVkFenceNV',
     'glSignalVkSemaphoreNV',
     'glWaitVkSemaphoreNV'
@@ -6375,7 +6375,7 @@ our %EXPORT_TAGS_GL = (
     'glTextureImage3DMultisampleNV'
   ],
   'GL_NV_transform_feedback' => [
-    'glActiveVaryingNV_c',
+    'glActiveVaryingNV',
     'glBeginTransformFeedbackNV',
     'glBindBufferBaseNV',
     'glBindBufferOffsetNV',
@@ -6383,7 +6383,7 @@ our %EXPORT_TAGS_GL = (
     'glEndTransformFeedbackNV',
     'glGetActiveVaryingNV_c',
     'glGetTransformFeedbackVaryingNV_c',
-    'glGetVaryingLocationNV_c',
+    'glGetVaryingLocationNV',
     'glTransformFeedbackAttribsNV_c',
     'glTransformFeedbackVaryingsNV_c'
   ],
@@ -6639,8 +6639,8 @@ our %EXPORT_TAGS_GL = (
     'glTexParameterxv_c'
   ],
   'GL_REGAL_extension_query' => [
-    'glGetExtensionREGAL_c',
-    'glIsSupportedREGAL_c'
+    'glGetExtensionREGAL',
+    'glIsSupportedREGAL'
   ],
   'GL_REGAL_log' => [
     'glLogMessageCallbackREGAL'
@@ -7340,7 +7340,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_VERSION_2_0' => [
     'glAttachShader',
-    'glBindAttribLocation_c',
+    'glBindAttribLocation',
     'glBlendEquationSeparate',
     'glCompileShader',
     'glCreateProgram',
@@ -7354,13 +7354,13 @@ our %EXPORT_TAGS_GL = (
     'glGetActiveAttrib_c',
     'glGetActiveUniform_c',
     'glGetAttachedShaders_c',
-    'glGetAttribLocation_c',
+    'glGetAttribLocation',
     'glGetProgramInfoLog_c',
     'glGetProgramiv_c',
     'glGetShaderInfoLog_c',
     'glGetShaderSource_c',
     'glGetShaderiv_c',
-    'glGetUniformLocation_c',
+    'glGetUniformLocation',
     'glGetUniformfv_c',
     'glGetUniformiv_c',
     'glGetVertexAttribPointerv_c',
@@ -7444,7 +7444,7 @@ our %EXPORT_TAGS_GL = (
   'GL_VERSION_3_0' => [
     'glBeginConditionalRender',
     'glBeginTransformFeedback',
-    'glBindFragDataLocation_c',
+    'glBindFragDataLocation',
     'glBindFramebuffer',
     'glBindRenderbuffer',
     'glBindVertexArray',
@@ -7480,7 +7480,7 @@ our %EXPORT_TAGS_GL = (
     'glGenVertexArrays_p',
     'glGenerateMipmap',
     'glGetBooleani_v_c',
-    'glGetFragDataLocation_c',
+    'glGetFragDataLocation',
     'glGetFramebufferAttachmentParameteriv_c',
     'glGetRenderbufferParameteriv_c',
     'glGetTexParameterIiv_c',
@@ -7540,7 +7540,7 @@ our %EXPORT_TAGS_GL = (
     'glGetActiveUniformName_c',
     'glGetActiveUniformsiv_c',
     'glGetIntegeri_v_c',
-    'glGetUniformBlockIndex_c',
+    'glGetUniformBlockIndex',
     'glGetUniformIndices_c',
     'glPrimitiveRestartIndex',
     'glTexBuffer',
@@ -7568,7 +7568,7 @@ our %EXPORT_TAGS_GL = (
     'glWaitSync'
   ],
   'GL_VERSION_3_3' => [
-    'glBindFragDataLocationIndexed_c',
+    'glBindFragDataLocationIndexed',
     'glBindSampler',
     'glColorP3ui',
     'glColorP3uiv_c',
@@ -7578,7 +7578,7 @@ our %EXPORT_TAGS_GL = (
     'glDeleteSamplers_p',
     'glGenSamplers_c',
     'glGenSamplers_p',
-    'glGetFragDataIndex_c',
+    'glGetFragDataIndex',
     'glGetQueryObjecti64v_c',
     'glGetQueryObjectui64v_c',
     'glGetSamplerParameterIiv_c',
@@ -7654,8 +7654,8 @@ our %EXPORT_TAGS_GL = (
     'glGetActiveSubroutineUniformiv_c',
     'glGetProgramStageiv_c',
     'glGetQueryIndexediv_c',
-    'glGetSubroutineIndex_c',
-    'glGetSubroutineUniformLocation_c',
+    'glGetSubroutineIndex',
+    'glGetSubroutineUniformLocation',
     'glGetUniformSubroutineuiv_c',
     'glGetUniformdv_c',
     'glIsTransformFeedback',
@@ -7798,7 +7798,7 @@ our %EXPORT_TAGS_GL = (
     'glCopyImageSubData',
     'glDebugMessageCallback_c',
     'glDebugMessageControl_c',
-    'glDebugMessageInsert_c',
+    'glDebugMessageInsert',
     'glDispatchCompute',
     'glDispatchComputeIndirect',
     'glFramebufferParameteri',
@@ -7809,9 +7809,9 @@ our %EXPORT_TAGS_GL = (
     'glGetObjectLabel_c',
     'glGetObjectPtrLabel_c',
     'glGetProgramInterfaceiv_c',
-    'glGetProgramResourceIndex_c',
-    'glGetProgramResourceLocationIndex_c',
-    'glGetProgramResourceLocation_c',
+    'glGetProgramResourceIndex',
+    'glGetProgramResourceLocation',
+    'glGetProgramResourceLocationIndex',
     'glGetProgramResourceName_c',
     'glGetProgramResourceiv_c',
     'glInvalidateBufferData',
@@ -7823,10 +7823,10 @@ our %EXPORT_TAGS_GL = (
     'glMultiDrawArraysIndirect_c',
     'glMultiDrawElementsIndirect_c',
     'glNamedFramebufferParameteriEXT',
-    'glObjectLabel_c',
+    'glObjectLabel',
     'glObjectPtrLabel_c',
     'glPopDebugGroup',
-    'glPushDebugGroup_c',
+    'glPushDebugGroup',
     'glShaderStorageBlockBinding',
     'glTexBufferRange',
     'glTexStorage2DMultisample',

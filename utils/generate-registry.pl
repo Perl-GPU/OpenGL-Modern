@@ -105,36 +105,35 @@ for my $name ( keys %upper2data ) {
   delete $s->{name};
 }
 
-sub preprocess_for_registry {
-  for my $name (@_ ? @_ : sort keys %signature) {
-    my $item = $signature{$name};
-    my $args = delete $item->{signature};
-    die "No args for $name" unless $args;
-    my @argdata;
-    $args = '' if $args eq 'void';
-    for (split /\s*,\s*/, $args) {
-      s/\s+$//;
-      s!\bGLsync(\s+)GLsync!GLsync$1myGLsync!g; # rewrite
-      # Rewrite `const GLwhatever foo[]` into `const GLwhatever* foo`
-      s!^const (\w+)\s+(\**)(\w+)\[\d*\]$!const $1 * $2$3!;
-      s!^(\w+)\s+(\**)(\w+)\[\d*\]$!$1 * $2$3!;
-      /(.*?)(\w+)$/;
-      push @argdata, [$2,$1]; # name, type
-    }
-    $item->{argdata} = \@argdata if @argdata;
-    my $glewImpl;
-    if ( ($item->{feature}//'') ne "GL_VERSION_1_1" ) {
-        ( $glewImpl = $name ) =~ s!^gl!__glew!;
-    }
-    $item->{glewImpl} = $glewImpl if defined $glewImpl;
-    next if is_manual($name);
-    my $type = $item->{restype};
-    my $num_ptr_types = ( $type =~ tr/*[/*[/ ) + grep $_->[1] =~ /\*/, @argdata;
-    $item->{has_ptr_arg} = 1 if $num_ptr_types > 0;
+for my $name (@ARGV ? @ARGV : sort keys %signature) {
+  my $item = $signature{$name};
+  my $args = delete $item->{signature};
+  die "No args for $name" unless $args;
+  my @argdata;
+  $args = '' if $args eq 'void';
+  for (split /\s*,\s*/, $args) {
+    s/\s+$//;
+    s!\bGLsync(\s+)GLsync!GLsync$1myGLsync!g; # rewrite
+    # Rewrite `const GLwhatever foo[]` into `const GLwhatever* foo`
+    s!^const (\w+)\s+(\**)(\w+)\[\d*\]$!const $1 * $2$3!;
+    s!^(\w+)\s+(\**)(\w+)\[\d*\]$!$1 * $2$3!;
+    /(.*?)(\w+)$/;
+    push @argdata, [$2,$1]; # name, type
   }
+  $item->{argdata} = \@argdata if @argdata;
+  my $glewImpl;
+  if ( ($item->{feature}//'') ne "GL_VERSION_1_1" ) {
+      ( $glewImpl = $name ) =~ s!^gl!__glew!;
+  }
+  $item->{glewImpl} = $glewImpl if defined $glewImpl;
+  next if is_manual($name);
+  my $type = $item->{restype};
+  my $num_ptr_types = 0;
+  for ($type, map $_->[1], @argdata) {
+    $num_ptr_types++ if /\*/ and !/^\s*const\s+GLchar\s*\*\s*$/;
+  }
+  $item->{has_ptr_arg} = 1 if $num_ptr_types > 0;
 }
-
-preprocess_for_registry(@ARGV);
 
 my %feature2version;
 for (grep $_, split /\n/, slurp('utils/feature-reuse.txt')) {
