@@ -181,6 +181,18 @@ for (grep $_, split /\n/, slurp('utils/aliases.txt')) {
   delete $signature{$from};
 }
 
+for (grep $_, split /\n/, slurp('utils/len-args.txt')) {
+  my ($func, @args) = split ' ';
+  next unless my $s = $signature{$func};
+  my $argind = 0;
+  for (@args) {
+    my ($name, $len) = split /=/;
+    my $arginfo = $s->{argdata}[$argind++];
+    $arginfo->[0] = $name;
+    push @$arginfo, $len if $len;
+  }
+}
+
 # Now rewrite registry if we need to:
 use Data::Dumper;
 $Data::Dumper::Indent = $Data::Dumper::Sortkeys = $Data::Dumper::Terse = 1;

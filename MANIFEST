@@ -30,4 +30,5 @@ utils/common.pl
 utils/feature-reuse.txt
 utils/generate-registry.pl
 utils/generate-XS.pl
+utils/len-args.txt
 utils/removed.txt

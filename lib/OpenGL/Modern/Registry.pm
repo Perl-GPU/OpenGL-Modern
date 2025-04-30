@@ -4115,7 +4115,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar *'
+        'const GLchar *',
+        'COMPSIZE(name)'
       ]
     ],
     'feature' => 'GL_NV_transform_feedback',
@@ -4387,12 +4388,14 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'ids',
-        'const GLuint* '
+        'programs',
+        'const GLuint* ',
+        'n'
       ],
       [
         'residences',
-        'GLboolean *'
+        'GLboolean *',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -4409,11 +4412,13 @@ our %registry = (
       ],
       [
         'textures',
-        'const GLuint *'
+        'const GLuint *',
+        'n'
       ],
       [
         'residences',
-        'GLboolean *'
+        'GLboolean *',
+        'n'
       ]
     ],
     'core_removed' => 1,
@@ -4430,11 +4435,13 @@ our %registry = (
       ],
       [
         'textures',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ],
       [
         'residences',
-        'GLboolean* '
+        'GLboolean* ',
+        'n'
       ]
     ],
     'feature' => 'GL_EXT_texture_object',
@@ -4876,7 +4883,8 @@ our %registry = (
       ],
       [
         'buffers',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_multi_bind',
@@ -4901,15 +4909,18 @@ our %registry = (
       ],
       [
         'buffers',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ],
       [
         'offsets',
-        'const GLintptr *'
+        'const GLintptr *',
+        'count'
       ],
       [
         'sizes',
-        'const GLsizeiptr *'
+        'const GLsizeiptr *',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_multi_bind',
@@ -4928,12 +4939,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'colorNumber',
+        'color',
         'GLuint '
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE(name)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -5096,7 +5108,8 @@ our %registry = (
       ],
       [
         'textures',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_multi_bind',
@@ -5260,7 +5273,8 @@ our %registry = (
       ],
       [
         'samplers',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_multi_bind',
@@ -5351,7 +5365,8 @@ our %registry = (
       ],
       [
         'textures',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_multi_bind',
@@ -5464,15 +5479,18 @@ our %registry = (
       ],
       [
         'buffers',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ],
       [
         'offsets',
-        'const GLintptr *'
+        'const GLintptr *',
+        'count'
       ],
       [
         'strides',
-        'const GLsizei *'
+        'const GLsizei *',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_multi_bind',
@@ -5557,7 +5575,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void *'
+        'void *',
+        'COMPSIZE(type,stride)'
       ]
     ],
     'feature' => 'GL_EXT_coordinate_frame',
@@ -5594,7 +5613,8 @@ our %registry = (
       ],
       [
         'bitmap',
-        'const GLubyte *'
+        'const GLubyte *',
+        'COMPSIZE(width,height)'
       ]
     ],
     'core_removed' => 1,
@@ -6032,7 +6052,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void* '
+        'const void* ',
+        'size'
       ],
       [
         'usage',
@@ -6110,7 +6131,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'size'
       ],
       [
         'flags',
@@ -6194,7 +6216,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void* '
+        'const void* ',
+        'size'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -6239,7 +6262,8 @@ our %registry = (
       ],
       [
         'lists',
-        'const void *'
+        'const void *',
+        'COMPSIZE(n,type)'
       ]
     ],
     'core_removed' => 1,
@@ -6369,7 +6393,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type)'
       ]
     ],
     'feature' => 'GL_ARB_clear_buffer_object',
@@ -6406,7 +6431,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type)'
       ]
     ],
     'feature' => 'GL_ARB_clear_buffer_object',
@@ -6446,12 +6472,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'drawBuffer',
+        'drawbuffer',
         'GLint '
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(buffer)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -6467,12 +6494,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'drawBuffer',
+        'drawbuffer',
         'GLint '
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(buffer)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -6488,12 +6516,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'drawBuffer',
+        'drawbuffer',
         'GLint '
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        'COMPSIZE(buffer)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -6676,7 +6705,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type)'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -6705,7 +6735,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type)'
       ]
     ],
     'feature' => 'GL_ARB_clear_buffer_object',
@@ -6742,7 +6773,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type)'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -6779,7 +6811,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type)'
       ]
     ],
     'feature' => 'GL_ARB_clear_buffer_object',
@@ -6832,7 +6865,8 @@ our %registry = (
       ],
       [
         'value',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(buffer)'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -6857,7 +6891,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(buffer)'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -6882,7 +6917,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        'COMPSIZE(buffer)'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -6903,7 +6939,8 @@ our %registry = (
       ],
       [
         'values',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_EXT_shader_pixel_local_storage2',
@@ -6946,7 +6983,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type)'
       ]
     ],
     'feature' => 'GL_ARB_clear_texture',
@@ -7002,7 +7040,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type)'
       ]
     ],
     'feature' => 'GL_ARB_clear_texture',
@@ -7101,7 +7140,8 @@ our %registry = (
       ],
       [
         'equation',
-        'const GLdouble *'
+        'const GLdouble *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -7113,12 +7153,13 @@ our %registry = (
   'glClipPlanef' => {
     'argdata' => [
       [
-        'plane',
+        'p',
         'GLenum '
       ],
       [
-        'equation',
-        'const GLfloat* '
+        'eqn',
+        'const GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
@@ -7135,7 +7176,8 @@ our %registry = (
       ],
       [
         'equation',
-        'const GLfixed* '
+        'const GLfixed* ',
+        '4'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
@@ -7168,7 +7210,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLbyte *'
+        'const GLbyte *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -7201,7 +7244,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -7266,11 +7310,13 @@ our %registry = (
     'argdata' => [
       [
         'c',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -7283,7 +7329,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -7316,7 +7363,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '3'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -7349,7 +7397,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -7382,7 +7431,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -7415,7 +7465,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLubyte *'
+        'const GLubyte *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -7448,7 +7499,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLuint *'
+        'const GLuint *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -7481,7 +7533,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLushort *'
+        'const GLushort *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -7518,7 +7571,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLbyte *'
+        'const GLbyte *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -7555,7 +7609,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -7640,15 +7695,18 @@ our %registry = (
     'argdata' => [
       [
         'c',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '4'
       ],
       [
         'n',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -7661,7 +7719,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -7698,7 +7757,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -7735,7 +7795,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -7772,7 +7833,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -7841,11 +7903,13 @@ our %registry = (
     'argdata' => [
       [
         'c',
-        'const GLubyte* '
+        'const GLubyte* ',
+        '4'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -7894,11 +7958,13 @@ our %registry = (
     'argdata' => [
       [
         'c',
-        'const GLubyte* '
+        'const GLubyte* ',
+        '4'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -7911,7 +7977,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLubyte *'
+        'const GLubyte *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -7948,7 +8015,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLuint *'
+        'const GLuint *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -7985,7 +8053,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLushort *'
+        'const GLushort *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -8277,7 +8346,8 @@ our %registry = (
       ],
       [
         'color',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -8310,7 +8380,8 @@ our %registry = (
       ],
       [
         'color',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -8335,7 +8406,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(size,type,stride)'
       ]
     ],
     'core_removed' => 1,
@@ -8364,7 +8436,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(size,type,stride,count)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_array',
@@ -8389,7 +8462,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        'COMPSIZE(size,type,stride)'
       ],
       [
         'ptrstride',
@@ -8414,7 +8488,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        '4'
       ]
     ],
     'feature' => 'GL_INTEL_parallel_arrays',
@@ -8450,7 +8525,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,count)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -8487,7 +8563,8 @@ our %registry = (
       ],
       [
         'table',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -8511,7 +8588,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -8535,7 +8613,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -8648,7 +8727,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_register_combiners',
@@ -8681,7 +8761,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_register_combiners',
@@ -8702,7 +8783,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_register_combiners2',
@@ -8766,11 +8848,13 @@ our %registry = (
       ],
       [
         'path',
-        'const GLchar* const *'
+        'const GLchar* const *',
+        'count'
       ],
       [
         'length',
-        'const GLint *'
+        'const GLint *',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_shading_language_include',
@@ -8810,8 +8894,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -8855,8 +8940,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -8904,8 +8990,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -8945,8 +9032,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -8994,8 +9082,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -9051,8 +9140,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -9092,7 +9182,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_VERSION_1_3',
@@ -9136,7 +9227,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_VERSION_1_3',
@@ -9184,7 +9276,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_VERSION_1_3',
@@ -9269,7 +9362,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_VERSION_1_3',
@@ -9317,7 +9411,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_VERSION_1_3',
@@ -9373,7 +9468,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_VERSION_1_3',
@@ -9466,8 +9562,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -9511,8 +9608,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -9560,8 +9658,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -9598,7 +9697,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -9638,8 +9738,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -9684,7 +9785,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -9732,8 +9834,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -9786,7 +9889,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -9842,8 +9946,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'data',
-        'const void *'
+        'bits',
+        'const void *',
+        'imageSize'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -9911,7 +10016,8 @@ our %registry = (
       ],
       [
         'image',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -9951,7 +10057,8 @@ our %registry = (
       ],
       [
         'image',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -9998,7 +10105,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -10045,7 +10153,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -11247,7 +11356,8 @@ our %registry = (
       ],
       [
         'paths',
-        'const void *'
+        'const void *',
+        'COMPSIZE(numPaths,pathNameType,paths)'
       ],
       [
         'pathBase',
@@ -11263,7 +11373,8 @@ our %registry = (
       ],
       [
         'transformValues',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(numPaths,transformType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -11300,7 +11411,8 @@ our %registry = (
       ],
       [
         'paths',
-        'const void *'
+        'const void *',
+        'COMPSIZE(numPaths,pathNameType,paths)'
       ],
       [
         'pathBase',
@@ -11316,7 +11428,8 @@ our %registry = (
       ],
       [
         'transformValues',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(numPaths,transformType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -11361,7 +11474,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'n'
       ]
     ],
     'feature' => 'GL_EXT_raster_multisample',
@@ -11378,7 +11492,8 @@ our %registry = (
       ],
       [
         'buffers',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -11395,7 +11510,8 @@ our %registry = (
       ],
       [
         'lists',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_command_list',
@@ -11412,7 +11528,8 @@ our %registry = (
       ],
       [
         'framebuffers',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -11472,7 +11589,8 @@ our %registry = (
       ],
       [
         'pipelines',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -11493,7 +11611,8 @@ our %registry = (
       ],
       [
         'ids',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -11510,7 +11629,8 @@ our %registry = (
       ],
       [
         'renderbuffers',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -11527,7 +11647,8 @@ our %registry = (
       ],
       [
         'samplers',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -11579,7 +11700,8 @@ our %registry = (
       ],
       [
         'strings',
-        'const GLchar * const * '
+        'const GLchar * const * ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -11596,7 +11718,8 @@ our %registry = (
       ],
       [
         'states',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_command_list',
@@ -11637,7 +11760,8 @@ our %registry = (
       ],
       [
         'textures',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -11654,7 +11778,8 @@ our %registry = (
       ],
       [
         'ids',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -11671,7 +11796,8 @@ our %registry = (
       ],
       [
         'arrays',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -11699,7 +11825,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_EXT_cull_vertex',
@@ -11716,7 +11843,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_EXT_cull_vertex',
@@ -11811,7 +11939,8 @@ our %registry = (
       ],
       [
         'ids',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ],
       [
         'enabled',
@@ -11840,7 +11969,8 @@ our %registry = (
       ],
       [
         'ids',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ],
       [
         'enabled',
@@ -11881,7 +12011,8 @@ our %registry = (
       ],
       [
         'buf',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE(buf,length)'
       ]
     ],
     'feature' => 'GL_KHR_debug',
@@ -11909,7 +12040,8 @@ our %registry = (
       ],
       [
         'buf',
-        'const GLchar* '
+        'const GLchar* ',
+        'length'
       ]
     ],
     'feature' => 'GL_AMD_debug_output',
@@ -11985,7 +12117,8 @@ our %registry = (
       ],
       [
         'buffers',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -12002,7 +12135,8 @@ our %registry = (
       ],
       [
         'lists',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_command_list',
@@ -12019,7 +12153,8 @@ our %registry = (
       ],
       [
         'fences',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_APPLE_fence',
@@ -12036,7 +12171,8 @@ our %registry = (
       ],
       [
         'fences',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_fence',
@@ -12068,7 +12204,8 @@ our %registry = (
       ],
       [
         'framebuffers',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_object',
@@ -12118,7 +12255,8 @@ our %registry = (
       ],
       [
         'memoryObjects',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_EXT_memory_object',
@@ -12135,7 +12273,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'namelen'
       ]
     ],
     'feature' => 'GL_ARB_shading_language_include',
@@ -12155,7 +12294,8 @@ our %registry = (
       ],
       [
         'names',
-        'const GLuint* '
+        'const GLuint* ',
+        'num'
       ]
     ],
     'feature' => 'GL_AMD_name_gen_delete',
@@ -12184,7 +12324,8 @@ our %registry = (
       ],
       [
         'ids',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_occlusion_query',
@@ -12217,7 +12358,8 @@ our %registry = (
       ],
       [
         'monitors',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_AMD_performance_monitor',
@@ -12258,7 +12400,8 @@ our %registry = (
       ],
       [
         'pipelines',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -12278,7 +12421,8 @@ our %registry = (
       ],
       [
         'programs',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -12298,7 +12442,8 @@ our %registry = (
       ],
       [
         'ids',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -12335,7 +12480,8 @@ our %registry = (
       ],
       [
         'renderbuffers',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_object',
@@ -12352,7 +12498,8 @@ our %registry = (
       ],
       [
         'samplers',
-        'const GLuint * '
+        'const GLuint * ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_sampler_objects',
@@ -12369,7 +12516,8 @@ our %registry = (
       ],
       [
         'semaphores',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_EXT_semaphore',
@@ -12398,7 +12546,8 @@ our %registry = (
       ],
       [
         'states',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_command_list',
@@ -12430,7 +12579,8 @@ our %registry = (
       ],
       [
         'textures',
-        'const GLuint *'
+        'const GLuint *',
+        'n'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -12446,7 +12596,8 @@ our %registry = (
       ],
       [
         'textures',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_EXT_texture_object',
@@ -12466,7 +12617,8 @@ our %registry = (
       ],
       [
         'ids',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_transform_feedback2',
@@ -12486,7 +12638,8 @@ our %registry = (
       ],
       [
         'arrays',
-        'const GLuint* '
+        'const GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_vertex_array_object',
@@ -12626,7 +12779,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLclampd * '
+        'const GLclampd * ',
+        'COMPSIZE(count)'
       ]
     ],
     'feature' => 'GL_ARB_viewport_array',
@@ -12754,7 +12908,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'n*2'
       ]
     ],
     'feature' => 'GL_SGIS_detail_texture',
@@ -12954,7 +13109,8 @@ our %registry = (
       ],
       [
         'attachments',
-        'const GLenum* '
+        'const GLenum* ',
+        'numAttachments'
       ]
     ],
     'feature' => 'GL_EXT_discard_framebuffer',
@@ -13187,7 +13343,8 @@ our %registry = (
       ],
       [
         'bufs',
-        'const GLenum* '
+        'const GLenum* ',
+        'n'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -13204,11 +13361,13 @@ our %registry = (
       ],
       [
         'location',
-        'const GLenum* '
+        'const GLenum* ',
+        'n'
       ],
       [
         'indices',
-        'const GLint *'
+        'const GLint *',
+        'n'
       ]
     ],
     'feature' => 'GL_EXT_multiview_draw_buffers',
@@ -13225,7 +13384,8 @@ our %registry = (
       ],
       [
         'bufs',
-        'const GLenum* '
+        'const GLenum* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_draw_buffers',
@@ -13402,7 +13562,8 @@ our %registry = (
       ],
       [
         'indices',
-        'const void *'
+        'const void *',
+        'COMPSIZE(count,type)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -13429,7 +13590,8 @@ our %registry = (
       ],
       [
         'indices',
-        'void *'
+        'void *',
+        'COMPSIZE(count,type)'
       ],
       [
         'basevertex',
@@ -13485,10 +13647,11 @@ our %registry = (
       ],
       [
         'indices',
-        'const void* '
+        'const void* ',
+        'COMPSIZE(count,type)'
       ],
       [
-        'primcount',
+        'instancecount',
         'GLsizei '
       ]
     ],
@@ -13517,10 +13680,11 @@ our %registry = (
       ],
       [
         'indices',
-        'const void *'
+        'const void *',
+        'count'
       ],
       [
-        'primcount',
+        'instancecount',
         'GLsizei '
       ],
       [
@@ -13553,10 +13717,11 @@ our %registry = (
       ],
       [
         'indices',
-        'const void *'
+        'const void *',
+        'COMPSIZE(count,type)'
       ],
       [
-        'primcount',
+        'instancecount',
         'GLsizei '
       ],
       [
@@ -13589,10 +13754,11 @@ our %registry = (
       ],
       [
         'indices',
-        'const void *'
+        'const void *',
+        'count'
       ],
       [
-        'primcount',
+        'instancecount',
         'GLsizei '
       ],
       [
@@ -13630,7 +13796,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height)'
       ]
     ],
     'core_removed' => 1,
@@ -13718,7 +13885,8 @@ our %registry = (
       ],
       [
         'indices',
-        'const void *'
+        'const void *',
+        'COMPSIZE(count,type)'
       ]
     ],
     'feature' => 'GL_VERSION_1_2',
@@ -13754,7 +13922,8 @@ our %registry = (
       ],
       [
         'indices',
-        'void *'
+        'void *',
+        'COMPSIZE(count,type)'
       ],
       [
         'basevertex',
@@ -13990,7 +14159,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(stride)'
       ]
     ],
     'core_removed' => 1,
@@ -14011,7 +14181,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const GLboolean* '
+        'const GLboolean* ',
+        'COMPSIZE(stride,count)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_array',
@@ -14028,7 +14199,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const GLboolean ** '
+        'const GLboolean ** ',
+        'COMPSIZE(stride)'
       ],
       [
         'ptrstride',
@@ -14045,7 +14217,8 @@ our %registry = (
     'argdata' => [
       [
         'flag',
-        'const GLboolean *'
+        'const GLboolean *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -14062,7 +14235,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(type)'
       ]
     ],
     'feature' => 'GL_APPLE_element_array',
@@ -14079,7 +14253,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(type)'
       ]
     ],
     'feature' => 'GL_ATI_element_array',
@@ -14430,7 +14605,8 @@ our %registry = (
     'argdata' => [
       [
         'u',
-        'const GLdouble *'
+        'const GLdouble *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -14455,7 +14631,8 @@ our %registry = (
     'argdata' => [
       [
         'u',
-        'const GLfloat *'
+        'const GLfloat *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -14484,7 +14661,8 @@ our %registry = (
     'argdata' => [
       [
         'u',
-        'const GLdouble *'
+        'const GLdouble *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -14513,7 +14691,8 @@ our %registry = (
     'argdata' => [
       [
         'u',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -14626,7 +14805,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -14643,7 +14823,8 @@ our %registry = (
       ],
       [
         'params',
-        'void** '
+        'void** ',
+        '1'
       ]
     ],
     'feature' => 'GL_QCOM_extended_get',
@@ -14656,7 +14837,8 @@ our %registry = (
     'argdata' => [
       [
         'buffers',
-        'GLuint* '
+        'GLuint* ',
+        'maxBuffers'
       ],
       [
         'maxBuffers',
@@ -14664,7 +14846,8 @@ our %registry = (
       ],
       [
         'numBuffers',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_QCOM_extended_get',
@@ -14677,7 +14860,8 @@ our %registry = (
     'argdata' => [
       [
         'framebuffers',
-        'GLuint* '
+        'GLuint* ',
+        'maxFramebuffers'
       ],
       [
         'maxFramebuffers',
@@ -14685,7 +14869,8 @@ our %registry = (
       ],
       [
         'numFramebuffers',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_QCOM_extended_get',
@@ -14706,7 +14891,8 @@ our %registry = (
       ],
       [
         'source',
-        'GLchar* '
+        'GLchar* ',
+        'length'
       ],
       [
         'length',
@@ -14723,7 +14909,8 @@ our %registry = (
     'argdata' => [
       [
         'programs',
-        'GLuint* '
+        'GLuint* ',
+        'maxPrograms'
       ],
       [
         'maxPrograms',
@@ -14731,7 +14918,8 @@ our %registry = (
       ],
       [
         'numPrograms',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_QCOM_extended_get2',
@@ -14744,7 +14932,8 @@ our %registry = (
     'argdata' => [
       [
         'renderbuffers',
-        'GLuint* '
+        'GLuint* ',
+        'maxRenderbuffers'
       ],
       [
         'maxRenderbuffers',
@@ -14752,7 +14941,8 @@ our %registry = (
       ],
       [
         'numRenderbuffers',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_QCOM_extended_get',
@@ -14765,7 +14955,8 @@ our %registry = (
     'argdata' => [
       [
         'shaders',
-        'GLuint* '
+        'GLuint* ',
+        'maxShaders'
       ],
       [
         'maxShaders',
@@ -14773,7 +14964,8 @@ our %registry = (
       ],
       [
         'numShaders',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_QCOM_extended_get2',
@@ -14949,7 +15141,8 @@ our %registry = (
       ],
       [
         'buffer',
-        'GLfloat *'
+        'GLfloat *',
+        'size'
       ]
     ],
     'core_removed' => 1,
@@ -15010,7 +15203,8 @@ our %registry = (
     'argdata' => [
       [
         'markerp',
-        'GLuint* '
+        'GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_SGIX_async',
@@ -15160,7 +15354,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void *'
+        'void *',
+        'length'
       ]
     ],
     'feature' => 'GL_APPLE_vertex_array_range',
@@ -15206,7 +15401,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(type,stride)'
       ]
     ],
     'core_removed' => 1,
@@ -15228,7 +15424,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        'COMPSIZE(type,stride)'
       ],
       [
         'ptrstride',
@@ -15264,7 +15461,8 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'const GLdouble *'
+        'const GLdouble *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -15297,7 +15495,8 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'const GLfloat *'
+        'const GLfloat *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -15323,7 +15522,8 @@ our %registry = (
     'argdata' => [
       [
         'fog',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '1'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -15340,7 +15540,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'n*2'
       ]
     ],
     'feature' => 'GL_SGIS_fog_function',
@@ -15390,7 +15591,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -15423,7 +15625,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -15455,8 +15658,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'const GLfixed* '
+        'param',
+        'const GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_0_compatibility',
@@ -15566,7 +15770,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -15632,7 +15837,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -15714,7 +15920,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -15796,7 +16003,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -15878,7 +16086,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -15960,7 +16169,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -16015,7 +16225,8 @@ our %registry = (
       ],
       [
         'bufs',
-        'const GLenum* '
+        'const GLenum* ',
+        'n'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -16033,7 +16244,7 @@ our %registry = (
   'glFramebufferFoveationConfigQCOM' => {
     'argdata' => [
       [
-        'fbo',
+        'framebuffer',
         'GLuint '
       ],
       [
@@ -16050,7 +16261,8 @@ our %registry = (
       ],
       [
         'providedFeatures',
-        'GLuint* '
+        'GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_QCOM_framebuffer_foveated',
@@ -16711,7 +16923,8 @@ our %registry = (
       ],
       [
         'buffers',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -16728,7 +16941,8 @@ our %registry = (
       ],
       [
         'fences',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_APPLE_fence',
@@ -16745,7 +16959,8 @@ our %registry = (
       ],
       [
         'fences',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_fence',
@@ -16777,7 +16992,8 @@ our %registry = (
       ],
       [
         'framebuffers',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_object',
@@ -16827,7 +17043,8 @@ our %registry = (
       ],
       [
         'names',
-        'GLuint* '
+        'GLuint* ',
+        'num'
       ]
     ],
     'feature' => 'GL_AMD_name_gen_delete',
@@ -16844,7 +17061,8 @@ our %registry = (
       ],
       [
         'ids',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_occlusion_query',
@@ -16873,7 +17091,8 @@ our %registry = (
       ],
       [
         'monitors',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_AMD_performance_monitor',
@@ -16890,7 +17109,8 @@ our %registry = (
       ],
       [
         'pipelines',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -16910,7 +17130,8 @@ our %registry = (
       ],
       [
         'programs',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -16930,7 +17151,8 @@ our %registry = (
       ],
       [
         'ids',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -16967,7 +17189,8 @@ our %registry = (
       ],
       [
         'renderbuffers',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_object',
@@ -16984,7 +17207,8 @@ our %registry = (
       ],
       [
         'samplers',
-        'GLuint* '
+        'GLuint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_sampler_objects',
@@ -17001,7 +17225,8 @@ our %registry = (
       ],
       [
         'semaphores',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_EXT_semaphore',
@@ -17042,7 +17267,8 @@ our %registry = (
       ],
       [
         'textures',
-        'GLuint *'
+        'GLuint *',
+        'n'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -17058,7 +17284,8 @@ our %registry = (
       ],
       [
         'textures',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_EXT_texture_object',
@@ -17078,7 +17305,8 @@ our %registry = (
       ],
       [
         'ids',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_transform_feedback2',
@@ -17098,7 +17326,8 @@ our %registry = (
       ],
       [
         'arrays',
-        'GLuint* '
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_vertex_array_object',
@@ -17211,7 +17440,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_shader_atomic_counters',
@@ -17234,24 +17464,28 @@ our %registry = (
         'GLuint '
       ],
       [
-        'maxLength',
+        'bufSize',
         'GLsizei '
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'size',
-        'GLint* '
+        'GLint* ',
+        '1'
       ],
       [
         'type',
-        'GLenum* '
+        'GLenum* ',
+        '1'
       ],
       [
         'name',
-        'GLchar* '
+        'GLchar* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -17275,16 +17509,18 @@ our %registry = (
         'GLuint '
       ],
       [
-        'bufsize',
+        'bufSize',
         'GLsizei '
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'name',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_shader_subroutine',
@@ -17308,16 +17544,18 @@ our %registry = (
         'GLuint '
       ],
       [
-        'bufsize',
+        'bufSize',
         'GLsizei '
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'name',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_shader_subroutine',
@@ -17346,7 +17584,8 @@ our %registry = (
       ],
       [
         'values',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_shader_subroutine',
@@ -17369,24 +17608,28 @@ our %registry = (
         'GLuint '
       ],
       [
-        'maxLength',
+        'bufSize',
         'GLsizei '
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'size',
-        'GLint* '
+        'GLint* ',
+        '1'
       ],
       [
         'type',
-        'GLenum* '
+        'GLenum* ',
+        '1'
       ],
       [
         'name',
-        'GLchar* '
+        'GLchar* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -17411,11 +17654,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'uniformBlockName',
-        'GLchar* '
+        'GLchar* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_uniform_buffer_object',
@@ -17440,7 +17685,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(program,uniformBlockIndex,pname)'
       ]
     ],
     'feature' => 'GL_ARB_uniform_buffer_object',
@@ -17465,11 +17711,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'uniformName',
-        'GLchar* '
+        'GLchar* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_uniform_buffer_object',
@@ -17490,7 +17738,8 @@ our %registry = (
       ],
       [
         'uniformIndices',
-        'const GLuint* '
+        'const GLuint* ',
+        'uniformCount'
       ],
       [
         'pname',
@@ -17498,7 +17747,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(uniformCount,pname)'
       ]
     ],
     'feature' => 'GL_ARB_uniform_buffer_object',
@@ -17523,19 +17773,23 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei *'
+        'GLsizei *',
+        '1'
       ],
       [
         'size',
-        'GLsizei *'
+        'GLsizei *',
+        '1'
       ],
       [
         'type',
-        'GLenum *'
+        'GLenum *',
+        '1'
       ],
       [
         'name',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_NV_transform_feedback',
@@ -17556,7 +17810,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ATI_vertex_array_object',
@@ -17577,7 +17832,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ATI_vertex_array_object',
@@ -17598,11 +17854,13 @@ our %registry = (
       ],
       [
         'count',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'obj',
-        'GLhandleARB *'
+        'GLhandleARB *',
+        'maxCount'
       ]
     ],
     'feature' => 'GL_ARB_shader_objects',
@@ -17623,11 +17881,13 @@ our %registry = (
       ],
       [
         'count',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'shaders',
-        'GLuint* '
+        'GLuint* ',
+        'maxCount'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -17661,7 +17921,7 @@ our %registry = (
     },
     'argdata' => [
       [
-        'pname',
+        'target',
         'GLenum '
       ],
       [
@@ -17670,7 +17930,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLboolean* '
+        'GLboolean* ',
+        'COMPSIZE(target)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -17686,8 +17947,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'GLboolean *'
+        'data',
+        'GLboolean *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -17702,12 +17964,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'value',
+        'pname',
         'GLenum '
       ],
       [
-        'data',
-        'GLint64 * '
+        'params',
+        'GLint64 * ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_3_2',
@@ -17731,7 +17994,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -17752,7 +18016,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint64EXT* '
+        'GLuint64EXT* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_shader_buffer_load',
@@ -17776,7 +18041,8 @@ our %registry = (
       ],
       [
         'params',
-        'void** '
+        'void** ',
+        '1'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -17804,7 +18070,8 @@ our %registry = (
       ],
       [
         'data',
-        'void* '
+        'void* ',
+        'size'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -17821,7 +18088,8 @@ our %registry = (
       ],
       [
         'equation',
-        'GLdouble *'
+        'GLdouble *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -17833,12 +18101,13 @@ our %registry = (
   'glGetClipPlanef' => {
     'argdata' => [
       [
-        'pname',
+        'plane',
         'GLenum '
       ],
       [
-        'eqn',
-        'GLfloat * '
+        'equation',
+        'GLfloat * ',
+        '4'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
@@ -17850,12 +18119,13 @@ our %registry = (
   'glGetClipPlanex' => {
     'argdata' => [
       [
-        'pname',
+        'plane',
         'GLenum '
       ],
       [
-        'eqn',
-        'GLfixed * '
+        'equation',
+        'GLfixed * ',
+        '4'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
@@ -17883,7 +18153,8 @@ our %registry = (
       ],
       [
         'table',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -17907,7 +18178,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -17928,7 +18200,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGI_color_table',
@@ -17952,7 +18225,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -17973,7 +18247,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGI_color_table',
@@ -17998,7 +18273,8 @@ our %registry = (
       ],
       [
         'table',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ]
     ],
     'feature' => 'GL_SGI_color_table',
@@ -18027,7 +18303,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_register_combiners',
@@ -18056,7 +18333,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_register_combiners',
@@ -18081,7 +18359,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_register_combiners',
@@ -18106,7 +18385,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_register_combiners',
@@ -18127,7 +18407,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_register_combiners2',
@@ -18163,12 +18444,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'level',
+        'lod',
         'GLint '
       ],
       [
         'img',
-        'void *'
+        'void *',
+        'COMPSIZE(target,lod)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -18187,12 +18469,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'lod',
+        'level',
         'GLint '
       ],
       [
         'img',
-        'void *'
+        'void *',
+        'COMPSIZE(target,level)'
       ]
     ],
     'feature' => 'GL_VERSION_1_3',
@@ -18217,7 +18500,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'void *'
+        'void *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -18237,12 +18521,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'level',
+        'lod',
         'GLint '
       ],
       [
         'img',
-        'void *'
+        'void *',
+        'COMPSIZE(target,lod)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -18291,7 +18576,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'void *'
+        'void *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_get_texture_sub_image',
@@ -18316,7 +18602,8 @@ our %registry = (
       ],
       [
         'image',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -18341,7 +18628,8 @@ our %registry = (
       ],
       [
         'image',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ]
     ],
     'feature' => 'GL_EXT_convolution',
@@ -18362,7 +18650,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -18383,7 +18672,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_convolution',
@@ -18404,7 +18694,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -18425,7 +18716,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_convolution',
@@ -18467,27 +18759,33 @@ our %registry = (
       ],
       [
         'sources',
-        'GLenum* '
+        'GLenum* ',
+        'count'
       ],
       [
         'types',
-        'GLenum* '
+        'GLenum* ',
+        'count'
       ],
       [
         'ids',
-        'GLuint* '
+        'GLuint* ',
+        'count'
       ],
       [
         'severities',
-        'GLenum* '
+        'GLenum* ',
+        'count'
       ],
       [
         'lengths',
-        'GLsizei* '
+        'GLsizei* ',
+        'count'
       ],
       [
         'messageLog',
-        'GLchar* '
+        'GLchar* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_KHR_debug',
@@ -18503,28 +18801,33 @@ our %registry = (
         'GLuint '
       ],
       [
-        'bufsize',
+        'bufSize',
         'GLsizei '
       ],
       [
         'categories',
-        'GLenum* '
+        'GLenum* ',
+        'count'
       ],
       [
         'severities',
-        'GLuint* '
+        'GLuint* ',
+        'count'
       ],
       [
         'ids',
-        'GLuint* '
+        'GLuint* ',
+        'count'
       ],
       [
         'lengths',
-        'GLsizei* '
+        'GLsizei* ',
+        'count'
       ],
       [
         'message',
-        'GLchar* '
+        'GLchar* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_AMD_debug_output',
@@ -18541,7 +18844,8 @@ our %registry = (
       ],
       [
         'points',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(target)'
       ]
     ],
     'feature' => 'GL_SGIS_detail_texture',
@@ -18566,7 +18870,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLdouble* '
+        'GLdouble* ',
+        'COMPSIZE(target)'
       ]
     ],
     'feature' => 'GL_ARB_viewport_array',
@@ -18582,8 +18887,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'GLdouble *'
+        'data',
+        'GLdouble *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -18607,7 +18913,8 @@ our %registry = (
       ],
       [
         'driverControlString',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_QCOM_driver_control',
@@ -18628,7 +18935,8 @@ our %registry = (
       ],
       [
         'driverControls',
-        'GLuint *'
+        'GLuint *',
+        'size'
       ]
     ],
     'feature' => 'GL_QCOM_driver_control',
@@ -18666,7 +18974,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_fence',
@@ -18687,7 +18996,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_register_combiners',
@@ -18708,7 +19018,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_register_combiners',
@@ -18764,7 +19075,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(target)'
       ]
     ],
     'feature' => 'GL_ARB_viewport_array',
@@ -18780,8 +19092,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'GLfloat *'
+        'data',
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -18793,7 +19106,8 @@ our %registry = (
     'argdata' => [
       [
         'points',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE()'
       ]
     ],
     'feature' => 'GL_SGIS_fog_function',
@@ -18845,7 +19159,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE(name)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -18881,12 +19196,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'value',
+        'pname',
         'GLenum '
       ],
       [
-        'data',
-        'GLfloat* '
+        'params',
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -18923,12 +19239,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'value',
+        'pname',
         'GLenum '
       ],
       [
-        'data',
-        'GLint* '
+        'params',
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -18969,8 +19286,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'data',
-        'const GLfloat* '
+        'params',
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -19011,8 +19329,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'data',
-        'const GLint* '
+        'params',
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -19040,7 +19359,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_object',
@@ -19094,7 +19414,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_no_attachments',
@@ -19114,8 +19435,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'param',
-        'GLint* '
+        'params',
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -19184,7 +19506,8 @@ our %registry = (
       ],
       [
         'values',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -19213,7 +19536,8 @@ our %registry = (
       ],
       [
         'values',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ]
     ],
     'feature' => 'GL_EXT_histogram',
@@ -19234,7 +19558,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -19255,7 +19580,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_histogram',
@@ -19276,7 +19602,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -19297,7 +19624,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_histogram',
@@ -19374,7 +19702,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_HP_image_transform',
@@ -19395,7 +19724,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_HP_image_transform',
@@ -19416,11 +19746,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'infoLog',
-        'GLcharARB *'
+        'GLcharARB *',
+        'maxLength'
       ]
     ],
     'feature' => 'GL_ARB_shader_objects',
@@ -19432,7 +19764,7 @@ our %registry = (
   'glGetInteger64i_v' => {
     'argdata' => [
       [
-        'pname',
+        'target',
         'GLenum '
       ],
       [
@@ -19441,7 +19773,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLint64 * '
+        'GLint64 * ',
+        'COMPSIZE(target)'
       ]
     ],
     'feature' => 'GL_VERSION_3_2',
@@ -19461,8 +19794,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'GLint64* '
+        'data',
+        'GLint64* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_sync',
@@ -19486,7 +19820,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(target)'
       ]
     ],
     'feature' => 'GL_ARB_uniform_buffer_object',
@@ -19528,7 +19863,8 @@ our %registry = (
       ],
       [
         'result',
-        'GLuint64EXT * '
+        'GLuint64EXT * ',
+        'COMPSIZE(value)'
       ]
     ],
     'feature' => 'GL_NV_vertex_buffer_unified_memory',
@@ -19545,7 +19881,8 @@ our %registry = (
       ],
       [
         'result',
-        'GLuint64EXT* '
+        'GLuint64EXT* ',
+        'COMPSIZE(value)'
       ]
     ],
     'feature' => 'GL_NV_shader_buffer_load',
@@ -19561,8 +19898,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'GLint *'
+        'data',
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -19589,12 +19927,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'bufSize',
+        'count',
         'GLsizei '
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_internalformat_sample_query',
@@ -19618,12 +19957,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'bufSize',
+        'count',
         'GLsizei '
       ],
       [
         'params',
-        'GLint64* '
+        'GLint64* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_internalformat_query2',
@@ -19647,12 +19987,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'bufSize',
+        'count',
         'GLsizei '
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_internalformat_query',
@@ -19673,7 +20014,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLboolean *'
+        'GLboolean *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -19694,7 +20036,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -19715,7 +20058,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -19736,7 +20080,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -19757,7 +20102,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -19778,7 +20124,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfixed* '
+        'GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
@@ -19799,7 +20146,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLboolean *'
+        'GLboolean *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -19820,7 +20168,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -19841,7 +20190,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -19950,7 +20300,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_evaluators',
@@ -19975,7 +20326,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_evaluators',
@@ -20012,7 +20364,8 @@ our %registry = (
       ],
       [
         'points',
-        'void *'
+        'void *',
+        'COMPSIZE(target)'
       ]
     ],
     'feature' => 'GL_NV_evaluators',
@@ -20033,7 +20386,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(target,pname)'
       ]
     ],
     'feature' => 'GL_NV_evaluators',
@@ -20054,7 +20408,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(target,pname)'
       ]
     ],
     'feature' => 'GL_NV_evaluators',
@@ -20075,7 +20430,8 @@ our %registry = (
       ],
       [
         'v',
-        'GLdouble *'
+        'GLdouble *',
+        'COMPSIZE(target,query)'
       ]
     ],
     'core_removed' => 1,
@@ -20096,7 +20452,8 @@ our %registry = (
       ],
       [
         'v',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(target,query)'
       ]
     ],
     'core_removed' => 1,
@@ -20117,7 +20474,8 @@ our %registry = (
       ],
       [
         'v',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(target,query)'
       ]
     ],
     'core_removed' => 1,
@@ -20138,7 +20496,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -20159,7 +20518,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -20180,7 +20540,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfixed* '
+        'GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
@@ -20225,12 +20586,13 @@ our %registry = (
         'GLenum '
       ],
       [
-        'types',
+        'type',
         'GLenum '
       ],
       [
         'values',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -20259,7 +20621,8 @@ our %registry = (
       ],
       [
         'values',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ]
     ],
     'feature' => 'GL_EXT_histogram',
@@ -20280,7 +20643,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -20301,7 +20665,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_histogram',
@@ -20322,7 +20687,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -20343,7 +20709,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_histogram',
@@ -20368,7 +20735,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20393,7 +20761,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20418,7 +20787,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20443,7 +20813,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20468,7 +20839,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20501,7 +20873,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'void *'
+        'void *',
+        'COMPSIZE(target,level,format,type)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20530,7 +20903,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20559,7 +20933,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20584,7 +20959,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20609,7 +20985,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20634,7 +21011,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20659,7 +21037,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20683,7 +21062,8 @@ our %registry = (
       ],
       [
         'val',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_texture_multisample',
@@ -20746,7 +21126,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20767,7 +21148,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint64EXT* '
+        'GLuint64EXT* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_shader_buffer_load',
@@ -20788,7 +21170,8 @@ our %registry = (
       ],
       [
         'params',
-        'void** '
+        'void** ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -20809,7 +21192,8 @@ our %registry = (
       ],
       [
         'params',
-        'void** '
+        'void** ',
+        '1'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20834,7 +21218,8 @@ our %registry = (
       ],
       [
         'data',
-        'void *'
+        'void *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -20859,7 +21244,8 @@ our %registry = (
       ],
       [
         'data',
-        'void *'
+        'void *',
+        'COMPSIZE(size)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20909,7 +21295,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -20984,7 +21371,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_no_attachments',
@@ -21009,7 +21397,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -21034,7 +21423,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -21059,7 +21449,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -21084,7 +21475,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -21109,7 +21501,8 @@ our %registry = (
       ],
       [
         'string',
-        'void *'
+        'void *',
+        'COMPSIZE(program,pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -21134,7 +21527,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -21176,7 +21570,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -21193,7 +21588,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'namelen'
       ],
       [
         'bufSize',
@@ -21201,11 +21597,13 @@ our %registry = (
       ],
       [
         'stringlen',
-        'GLint *'
+        'GLint *',
+        '1'
       ],
       [
         'string',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_shading_language_include',
@@ -21222,7 +21620,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'namelen'
       ],
       [
         'pname',
@@ -21230,7 +21629,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_shading_language_include',
@@ -21318,7 +21718,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ATI_vertex_array_object',
@@ -21339,7 +21740,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ATI_vertex_array_object',
@@ -21367,11 +21769,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'label',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_KHR_debug',
@@ -21396,11 +21800,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'label',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_EXT_debug_label',
@@ -21421,7 +21827,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_shader_objects',
@@ -21446,7 +21853,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_APPLE_object_purgeable',
@@ -21467,7 +21875,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_shader_objects',
@@ -21491,11 +21900,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'label',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_KHR_debug',
@@ -21516,7 +21927,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_occlusion_query',
@@ -21537,7 +21949,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_occlusion_query',
@@ -21558,7 +21971,8 @@ our %registry = (
       ],
       [
         'value',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21579,7 +21993,8 @@ our %registry = (
       ],
       [
         'value',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21596,7 +22011,8 @@ our %registry = (
       ],
       [
         'commands',
-        'GLubyte* '
+        'GLubyte* ',
+        'COMPSIZE(path)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21613,7 +22029,8 @@ our %registry = (
       ],
       [
         'coords',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(path)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21630,7 +22047,8 @@ our %registry = (
       ],
       [
         'dashArray',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(path)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21679,7 +22097,8 @@ our %registry = (
       ],
       [
         'metrics',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(metricQueryMask,numPaths,stride)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21704,7 +22123,8 @@ our %registry = (
       ],
       [
         'paths',
-        'const void *'
+        'const void *',
+        'COMPSIZE(numPaths,pathNameType,paths)'
       ],
       [
         'pathBase',
@@ -21716,7 +22136,8 @@ our %registry = (
       ],
       [
         'metrics',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(metricQueryMask,numPaths,stride)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21737,7 +22158,8 @@ our %registry = (
       ],
       [
         'value',
-        'GLfloat* '
+        'GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21758,7 +22180,8 @@ our %registry = (
       ],
       [
         'value',
-        'GLint* '
+        'GLint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21783,7 +22206,8 @@ our %registry = (
       ],
       [
         'paths',
-        'const void *'
+        'const void *',
+        'COMPSIZE(numPaths,pathNameType,paths)'
       ],
       [
         'pathBase',
@@ -21803,7 +22227,8 @@ our %registry = (
       ],
       [
         'returnedSpacing',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pathListMode,numPaths)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21824,7 +22249,8 @@ our %registry = (
       ],
       [
         'value',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21845,7 +22271,8 @@ our %registry = (
       ],
       [
         'value',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -21870,7 +22297,8 @@ our %registry = (
       ],
       [
         'counterName',
-        'GLchar* '
+        'GLchar* ',
+        'counterNameLength'
       ],
       [
         'counterDescLength',
@@ -21878,7 +22306,8 @@ our %registry = (
       ],
       [
         'counterDesc',
-        'GLchar *'
+        'GLchar *',
+        'counterDescLength'
       ],
       [
         'counterOffset',
@@ -21923,11 +22352,13 @@ our %registry = (
       ],
       [
         'data',
-        'GLuint* '
+        'GLuint* ',
+        'dataSize/4'
       ],
       [
         'bytesWritten',
-        'GLint *'
+        'GLint *',
+        '1'
       ]
     ],
     'feature' => 'GL_AMD_performance_monitor',
@@ -21952,7 +22383,8 @@ our %registry = (
       ],
       [
         'data',
-        'void *'
+        'void *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_AMD_performance_monitor',
@@ -21977,11 +22409,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'counterString',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_AMD_performance_monitor',
@@ -21998,19 +22432,22 @@ our %registry = (
       ],
       [
         'numCounters',
-        'GLint* '
+        'GLint* ',
+        '1'
       ],
       [
         'maxActiveCounters',
-        'GLint *'
+        'GLint *',
+        '1'
       ],
       [
-        'countersSize',
+        'counterSize',
         'GLsizei '
       ],
       [
         'counters',
-        'GLuint *'
+        'GLuint *',
+        'counterSize'
       ]
     ],
     'feature' => 'GL_AMD_performance_monitor',
@@ -22031,11 +22468,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'groupString',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_AMD_performance_monitor',
@@ -22048,7 +22487,8 @@ our %registry = (
     'argdata' => [
       [
         'numGroups',
-        'GLint* '
+        'GLint* ',
+        '1'
       ],
       [
         'groupsSize',
@@ -22056,7 +22496,8 @@ our %registry = (
       ],
       [
         'groups',
-        'GLuint *'
+        'GLuint *',
+        'groupsSize'
       ]
     ],
     'feature' => 'GL_AMD_performance_monitor',
@@ -22123,7 +22564,8 @@ our %registry = (
       ],
       [
         'queryName',
-        'GLchar* '
+        'GLchar* ',
+        'queryNameLength'
       ],
       [
         'dataSize',
@@ -22156,7 +22598,8 @@ our %registry = (
       ],
       [
         'values',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(map)'
       ]
     ],
     'core_removed' => 1,
@@ -22173,7 +22616,8 @@ our %registry = (
       ],
       [
         'values',
-        'GLuint *'
+        'GLuint *',
+        'COMPSIZE(map)'
       ]
     ],
     'core_removed' => 1,
@@ -22190,7 +22634,8 @@ our %registry = (
       ],
       [
         'values',
-        'GLushort *'
+        'GLushort *',
+        'COMPSIZE(map)'
       ]
     ],
     'core_removed' => 1,
@@ -22211,7 +22656,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_pixel_transform',
@@ -22253,7 +22699,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_pixel_transform',
@@ -22294,8 +22741,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'params',
-        'void** '
+        'data',
+        'void** ',
+        '1'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -22316,7 +22764,8 @@ our %registry = (
       ],
       [
         'params',
-        'void** '
+        'void** ',
+        '1'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -22337,7 +22786,8 @@ our %registry = (
       ],
       [
         'params',
-        'void* *'
+        'void* *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -22350,7 +22800,8 @@ our %registry = (
     'argdata' => [
       [
         'mask',
-        'GLubyte *'
+        'GLubyte *',
+        'COMPSIZE()'
       ]
     ],
     'core_removed' => 1,
@@ -22384,15 +22835,18 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'binaryFormat',
-        'GLenum *'
+        'GLenum *',
+        '1'
       ],
       [
         'binary',
-        'void*'
+        'void*',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_get_program_binary',
@@ -22413,7 +22867,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -22434,7 +22889,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -22455,11 +22911,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'infoLog',
-        'GLchar* '
+        'GLchar* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -22484,7 +22942,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_program_interface_query',
@@ -22505,7 +22964,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -22526,7 +22986,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -22547,11 +23008,13 @@ our %registry = (
       ],
       [
         'name',
-        'const GLubyte* '
+        'const GLubyte* ',
+        '1'
       ],
       [
         'params',
-        'GLdouble *'
+        'GLdouble *',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_fragment_program',
@@ -22572,11 +23035,13 @@ our %registry = (
       ],
       [
         'name',
-        'const GLubyte* '
+        'const GLubyte* ',
+        '1'
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_fragment_program',
@@ -22601,7 +23066,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -22626,7 +23092,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -22647,11 +23114,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'infoLog',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -22672,7 +23141,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -22693,7 +23163,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE(name)'
       ]
     ],
     'feature' => 'GL_ARB_program_interface_query',
@@ -22713,7 +23184,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE(name)'
       ]
     ],
     'feature' => 'GL_ARB_program_interface_query',
@@ -22733,7 +23205,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE(name)'
       ]
     ],
     'feature' => 'GL_ARB_program_interface_query',
@@ -22753,7 +23226,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE(name)'
       ]
     ],
     'feature' => 'GL_EXT_blend_func_extended',
@@ -22781,11 +23255,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'name',
-        'GLchar *'
+        'GLchar *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_program_interface_query',
@@ -22817,16 +23293,18 @@ our %registry = (
         'const GLenum* '
       ],
       [
-        'bufSize',
+        'count',
         'GLsizei '
       ],
       [
         'length',
-        'GLsizei *'
+        'GLsizei *',
+        '1'
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -22855,19 +23333,22 @@ our %registry = (
       ],
       [
         'props',
-        'const GLenum* '
+        'const GLenum* ',
+        'propCount'
       ],
       [
-        'bufSize',
+        'count',
         'GLsizei '
       ],
       [
         'length',
-        'GLsizei *'
+        'GLsizei *',
+        '1'
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_program_interface_query',
@@ -22892,7 +23373,8 @@ our %registry = (
       ],
       [
         'values',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_shader_subroutine',
@@ -22913,7 +23395,8 @@ our %registry = (
       ],
       [
         'string',
-        'void *'
+        'void *',
+        'COMPSIZE(target,pname)'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -22934,7 +23417,8 @@ our %registry = (
       ],
       [
         'program',
-        'GLubyte* '
+        'GLubyte* ',
+        'COMPSIZE(id,pname)'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -22954,8 +23438,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'param',
-        'GLint* '
+        'params',
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -22976,7 +23461,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -22997,7 +23483,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -23118,7 +23605,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_transform_feedback3',
@@ -23142,7 +23630,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint64* '
+        'GLint64* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_timer_query',
@@ -23188,7 +23677,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -23233,7 +23723,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint64* '
+        'GLuint64* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_timer_query',
@@ -23278,7 +23769,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -23323,7 +23815,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -23368,7 +23861,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_object',
@@ -23392,7 +23886,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_sampler_objects',
@@ -23416,7 +23911,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_sampler_objects',
@@ -23437,7 +23933,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_sampler_objects',
@@ -23458,7 +23955,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_sampler_objects',
@@ -23504,15 +24002,18 @@ our %registry = (
       ],
       [
         'row',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ],
       [
         'column',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ],
       [
         'span',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -23537,15 +24038,18 @@ our %registry = (
       ],
       [
         'row',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ],
       [
         'column',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ],
       [
         'span',
-        'void *'
+        'void *',
+        'COMPSIZE(target,format,type)'
       ]
     ],
     'feature' => 'GL_EXT_convolution',
@@ -23566,11 +24070,13 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'infoLog',
-        'GLchar* '
+        'GLchar* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -23591,11 +24097,13 @@ our %registry = (
       ],
       [
         'range',
-        'GLint* '
+        'GLint* ',
+        '2'
       ],
       [
         'precision',
-        'GLint *'
+        'GLint *',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_ES2_compatibility',
@@ -23610,20 +24118,22 @@ our %registry = (
     },
     'argdata' => [
       [
-        'obj',
+        'shader',
         'GLuint '
       ],
       [
-        'maxLength',
+        'bufSize',
         'GLsizei '
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'source',
-        'GLchar* '
+        'GLchar* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -23643,8 +24153,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'param',
-        'GLint* '
+        'params',
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -23661,7 +24172,8 @@ our %registry = (
       ],
       [
         'points',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(target)'
       ]
     ],
     'feature' => 'GL_SGIS_sharpen_texture',
@@ -23739,7 +24251,7 @@ our %registry = (
     },
     'argdata' => [
       [
-        'myGLsync',
+        'sync',
         'GLsync '
       ],
       [
@@ -23747,16 +24259,18 @@ our %registry = (
         'GLenum '
       ],
       [
-        'bufSize',
+        'count',
         'GLsizei '
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'values',
-        'GLint *'
+        'GLint *',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_sync',
@@ -23773,7 +24287,8 @@ our %registry = (
       ],
       [
         'param',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ATI_envmap_bumpmap',
@@ -23790,7 +24305,8 @@ our %registry = (
       ],
       [
         'param',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ATI_envmap_bumpmap',
@@ -23811,7 +24327,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -23832,7 +24349,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -23844,7 +24362,7 @@ our %registry = (
   'glGetTexEnvxv' => {
     'argdata' => [
       [
-        'env',
+        'target',
         'GLenum '
       ],
       [
@@ -23853,7 +24371,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfixed* '
+        'GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
@@ -23874,7 +24393,8 @@ our %registry = (
       ],
       [
         'weights',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(target,filter)'
       ]
     ],
     'feature' => 'GL_SGIS_texture_filter4',
@@ -23895,7 +24415,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble *'
+        'GLdouble *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -23916,7 +24437,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -23937,7 +24459,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -23966,7 +24489,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'void *'
+        'void *',
+        'COMPSIZE(target,level,format,type)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -23990,7 +24514,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -24014,7 +24539,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -24037,7 +24563,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -24061,7 +24588,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -24082,7 +24610,8 @@ our %registry = (
       ],
       [
         'params',
-        'void **'
+        'void **',
+        '1'
       ]
     ],
     'feature' => 'GL_APPLE_texture_range',
@@ -24103,7 +24632,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -24123,7 +24653,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -24143,7 +24674,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfixed* '
+        'GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
@@ -24203,7 +24735,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'void *'
+        'void *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -24236,7 +24769,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'void *'
+        'void *',
+        'COMPSIZE(target,level,format,type)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -24290,7 +24824,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -24344,7 +24879,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -24390,7 +24926,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -24436,7 +24973,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -24482,7 +25020,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -24528,7 +25067,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -24620,7 +25160,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'void *'
+        'void *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_get_texture_sub_image',
@@ -24645,7 +25186,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -24673,19 +25215,23 @@ our %registry = (
       ],
       [
         'length',
-        'GLsizei * '
+        'GLsizei * ',
+        '1'
       ],
       [
         'size',
-        'GLsizei * '
+        'GLsizei * ',
+        '1'
       ],
       [
         'type',
-        'GLenum * '
+        'GLenum * ',
+        '1'
       ],
       [
         'name',
-        'GLchar * '
+        'GLchar * ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -24706,7 +25252,8 @@ our %registry = (
       ],
       [
         'location',
-        'GLint *'
+        'GLint *',
+        '1'
       ]
     ],
     'feature' => 'GL_NV_transform_feedback',
@@ -24793,16 +25340,18 @@ our %registry = (
         'GLuint '
       ],
       [
-        'bufsize',
+        'bufSize',
         'GLsizei '
       ],
       [
         'length',
-        'GLsizei* '
+        'GLsizei* ',
+        '1'
       ],
       [
         'source',
-        'GLchar* '
+        'GLchar* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ANGLE_translated_shader_source',
@@ -24819,7 +25368,8 @@ our %registry = (
       ],
       [
         'uniformBlockName',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE()'
       ]
     ],
     'feature' => 'GL_ARB_uniform_buffer_object',
@@ -24855,11 +25405,13 @@ our %registry = (
       ],
       [
         'uniformNames',
-        'const GLchar* const * '
+        'const GLchar* const * ',
+        'COMPSIZE(uniformCount)'
       ],
       [
         'uniformIndices',
-        'GLuint* '
+        'GLuint* ',
+        'COMPSIZE(uniformCount)'
       ]
     ],
     'feature' => 'GL_ARB_uniform_buffer_object',
@@ -24915,7 +25467,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_shader_subroutine',
@@ -24936,7 +25489,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        'COMPSIZE(program,location)'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -24960,7 +25514,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(program,location)'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -24981,7 +25536,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint64* '
+        'GLint64* ',
+        'COMPSIZE(program,location)'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -25002,7 +25558,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint64EXT* '
+        'GLint64EXT* ',
+        'COMPSIZE(program,location)'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -25026,7 +25583,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(program,location)'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -25047,7 +25605,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint64* '
+        'GLuint64* ',
+        'COMPSIZE(program,location)'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -25068,7 +25627,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint64EXT* '
+        'GLuint64EXT* ',
+        'COMPSIZE(program,location)'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -25092,7 +25652,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        'COMPSIZE(program,location)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -25113,7 +25674,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLubyte* '
+        'GLubyte* ',
+        'COMPSIZE(target)'
       ]
     ],
     'feature' => 'GL_EXT_memory_object',
@@ -25130,7 +25692,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLubyte* '
+        'GLubyte* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_memory_object',
@@ -25151,7 +25714,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ATI_vertex_array_object',
@@ -25172,7 +25736,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ATI_vertex_array_object',
@@ -25193,7 +25758,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLboolean *'
+        'GLboolean *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -25214,7 +25780,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -25235,7 +25802,8 @@ our %registry = (
       ],
       [
         'data',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -25256,7 +25824,8 @@ our %registry = (
       ],
       [
         'data',
-        'void **'
+        'void **',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -25273,7 +25842,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar *'
+        'const GLchar *',
+        'COMPSIZE(name)'
       ]
     ],
     'feature' => 'GL_NV_transform_feedback',
@@ -25405,7 +25975,8 @@ our %registry = (
       ],
       [
         'param',
-        'void** '
+        'void** ',
+        '1'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -25426,7 +25997,8 @@ our %registry = (
       ],
       [
         'param',
-        'void** '
+        'void** ',
+        '1'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -25468,7 +26040,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ATI_vertex_attrib_array_object',
@@ -25489,7 +26062,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ATI_vertex_attrib_array_object',
@@ -25513,7 +26087,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -25537,7 +26112,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -25561,7 +26137,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_vertex_attrib_64bit',
@@ -25582,7 +26159,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint64EXT* '
+        'GLint64EXT* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
@@ -25624,7 +26202,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint64EXT* '
+        'GLuint64EXT* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
@@ -25649,7 +26228,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void** '
+        'void** ',
+        '1'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -25674,7 +26254,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -25699,7 +26280,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -25724,7 +26306,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -25749,7 +26332,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_video_capture',
@@ -25774,7 +26358,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_video_capture',
@@ -25799,7 +26384,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_video_capture',
@@ -25820,7 +26406,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_video_capture',
@@ -25841,7 +26428,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint64EXT* '
+        'GLint64EXT* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_present_video',
@@ -25862,7 +26450,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_present_video',
@@ -25883,7 +26472,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint64EXT* '
+        'GLuint64EXT* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_present_video',
@@ -25904,7 +26494,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_present_video',
@@ -25917,7 +26508,8 @@ our %registry = (
     'argdata' => [
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE(name)'
       ]
     ],
     'feature' => 'GL_NV_draw_vulkan_image',
@@ -25945,7 +26537,8 @@ our %registry = (
       ],
       [
         'table',
-        'void* '
+        'void* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -25970,7 +26563,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'GLvoid *'
+        'GLvoid *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_VERSION_4_5',
@@ -25995,7 +26589,8 @@ our %registry = (
       ],
       [
         'img',
-        'void* '
+        'void* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26024,7 +26619,8 @@ our %registry = (
       ],
       [
         'image',
-        'void* '
+        'void* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26057,7 +26653,8 @@ our %registry = (
       ],
       [
         'values',
-        'void* '
+        'void* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26082,7 +26679,8 @@ our %registry = (
       ],
       [
         'v',
-        'GLdouble* '
+        'GLdouble* ',
+        'bufSize/8'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26107,7 +26705,8 @@ our %registry = (
       ],
       [
         'v',
-        'GLfloat* '
+        'GLfloat* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26132,7 +26731,8 @@ our %registry = (
       ],
       [
         'v',
-        'GLint* '
+        'GLint* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26165,7 +26765,8 @@ our %registry = (
       ],
       [
         'values',
-        'void* '
+        'void* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26186,7 +26787,8 @@ our %registry = (
       ],
       [
         'values',
-        'GLfloat* '
+        'GLfloat* ',
+        'bufSize/4'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26207,7 +26809,8 @@ our %registry = (
       ],
       [
         'values',
-        'GLuint* '
+        'GLuint* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26228,7 +26831,8 @@ our %registry = (
       ],
       [
         'values',
-        'GLushort* '
+        'GLushort* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26245,7 +26849,8 @@ our %registry = (
       ],
       [
         'pattern',
-        'GLubyte* '
+        'GLubyte* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26274,7 +26879,8 @@ our %registry = (
       ],
       [
         'row',
-        'void* '
+        'void* ',
+        'rowBufSize'
       ],
       [
         'columnBufSize',
@@ -26282,7 +26888,8 @@ our %registry = (
       ],
       [
         'column',
-        'void*'
+        'void*',
+        'columnBufSize'
       ],
       [
         'span',
@@ -26298,7 +26905,7 @@ our %registry = (
   'glGetnTexImage' => {
     'argdata' => [
       [
-        'tex',
+        'target',
         'GLenum '
       ],
       [
@@ -26319,7 +26926,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'GLvoid *'
+        'GLvoid *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_VERSION_4_5',
@@ -26352,7 +26960,8 @@ our %registry = (
       ],
       [
         'img',
-        'void* '
+        'void* ',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26377,7 +26986,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble *'
+        'GLdouble *',
+        'bufSize/8'
       ]
     ],
     'feature' => 'GL_VERSION_4_5',
@@ -26402,7 +27012,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLdouble* '
+        'GLdouble* ',
+        'bufSize/8'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26431,7 +27042,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'bufSize/4'
       ]
     ],
     'feature' => 'GL_KHR_robustness',
@@ -26456,7 +27068,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'bufSize/4'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26481,7 +27094,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint64* '
+        'GLint64* ',
+        'bufSize/8'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -26510,7 +27124,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'bufSize/4'
       ]
     ],
     'feature' => 'GL_KHR_robustness',
@@ -26535,7 +27150,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'bufSize/4'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26560,7 +27176,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint64* '
+        'GLuint64* ',
+        'bufSize/8'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -26588,7 +27205,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        'bufSize/4'
       ]
     ],
     'feature' => 'GL_KHR_robustness',
@@ -26613,7 +27231,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLuint* '
+        'GLuint* ',
+        'bufSize/4'
       ]
     ],
     'feature' => 'GL_ARB_robustness',
@@ -26767,8 +27386,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'param',
-        'void *'
+        'params',
+        'void *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_igloo_interface',
@@ -26809,7 +27429,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_HP_image_transform',
@@ -26850,7 +27471,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_HP_image_transform',
@@ -27087,7 +27709,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(type,stride)'
       ]
     ],
     'core_removed' => 1,
@@ -27112,7 +27735,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(type,stride,count)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_array',
@@ -27133,7 +27757,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        'COMPSIZE(type,stride)'
       ],
       [
         'ptrstride',
@@ -27162,7 +27787,8 @@ our %registry = (
     'argdata' => [
       [
         'c',
-        'const GLdouble *'
+        'const GLdouble *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -27187,7 +27813,8 @@ our %registry = (
     'argdata' => [
       [
         'c',
-        'const GLfloat *'
+        'const GLfloat *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -27212,7 +27839,8 @@ our %registry = (
     'argdata' => [
       [
         'c',
-        'const GLint *'
+        'const GLint *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -27237,7 +27865,8 @@ our %registry = (
     'argdata' => [
       [
         'c',
-        'const GLshort *'
+        'const GLshort *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -27262,7 +27891,8 @@ our %registry = (
     'argdata' => [
       [
         'c',
-        'const GLubyte *'
+        'const GLubyte *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -27325,7 +27955,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,stride)'
       ]
     ],
     'core_removed' => 1,
@@ -27414,7 +28045,8 @@ our %registry = (
       ],
       [
         'attachments',
-        'const GLenum* '
+        'const GLenum* ',
+        'numAttachments'
       ]
     ],
     'feature' => 'GL_ARB_invalidate_subdata',
@@ -27435,7 +28067,8 @@ our %registry = (
       ],
       [
         'attachments',
-        'const GLenum* '
+        'const GLenum* ',
+        'numAttachments'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -27456,7 +28089,8 @@ our %registry = (
       ],
       [
         'attachments',
-        'const GLenum* '
+        'const GLenum* ',
+        'numAttachments'
       ],
       [
         'x',
@@ -27493,7 +28127,8 @@ our %registry = (
       ],
       [
         'attachments',
-        'const GLenum* '
+        'const GLenum* ',
+        'numAttachments'
       ],
       [
         'x',
@@ -27792,7 +28427,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'namelen'
       ]
     ],
     'feature' => 'GL_ARB_shading_language_include',
@@ -28332,7 +28968,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -28365,7 +29002,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -28397,8 +29035,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'const GLfixed* '
+        'param',
+        'const GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_0_compatibility',
@@ -28439,7 +29078,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -28480,7 +29120,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -28521,7 +29162,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfixed* '
+        'const GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_0_compatibility',
@@ -28608,19 +29250,23 @@ our %registry = (
       ],
       [
         'indirects',
-        'const void** '
+        'const void** ',
+        'count'
       ],
       [
         'sizes',
-        'const GLsizei* '
+        'const GLsizei* ',
+        'count'
       ],
       [
         'states',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ],
       [
         'fbos',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ],
       [
         'count',
@@ -28655,7 +29301,8 @@ our %registry = (
     'argdata' => [
       [
         'm',
-        'const GLdouble *'
+        'const GLdouble *',
+        '16'
       ]
     ],
     'core_removed' => 1,
@@ -28668,7 +29315,8 @@ our %registry = (
     'argdata' => [
       [
         'm',
-        'const GLfloat *'
+        'const GLfloat *',
+        '16'
       ]
     ],
     'core_removed' => 1,
@@ -28681,7 +29329,8 @@ our %registry = (
     'argdata' => [
       [
         'm',
-        'const GLfixed* '
+        'const GLfixed* ',
+        '16'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_0_compatibility',
@@ -28718,7 +29367,8 @@ our %registry = (
       ],
       [
         'program',
-        'const GLubyte* '
+        'const GLubyte* ',
+        'len'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -28734,7 +29384,8 @@ our %registry = (
     'argdata' => [
       [
         'm',
-        'const GLdouble * '
+        'const GLdouble * ',
+        '16'
       ]
     ],
     'core_removed' => 1,
@@ -28751,7 +29402,8 @@ our %registry = (
     'argdata' => [
       [
         'm',
-        'const GLfloat * '
+        'const GLfloat * ',
+        '16'
       ]
     ],
     'core_removed' => 1,
@@ -29026,7 +29678,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLdouble *'
+        'const GLdouble *',
+        'COMPSIZE(target,stride,order)'
       ]
     ],
     'core_removed' => 1,
@@ -29059,7 +29712,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(target,stride,order)'
       ]
     ],
     'core_removed' => 1,
@@ -29108,7 +29762,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLdouble *'
+        'const GLdouble *',
+        'COMPSIZE(target,ustride,uorder,vstride,vorder)'
       ]
     ],
     'core_removed' => 1,
@@ -29157,7 +29812,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(target,ustride,uorder,vstride,vorder)'
       ]
     ],
     'core_removed' => 1,
@@ -29250,7 +29906,8 @@ our %registry = (
       ],
       [
         'points',
-        'const void *'
+        'const void *',
+        'COMPSIZE(target,uorder,vorder)'
       ]
     ],
     'feature' => 'GL_NV_evaluators',
@@ -29472,7 +30129,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(target,pname)'
       ]
     ],
     'feature' => 'GL_NV_evaluators',
@@ -29493,7 +30151,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(target,pname)'
       ]
     ],
     'feature' => 'GL_NV_evaluators',
@@ -29518,11 +30177,13 @@ our %registry = (
       ],
       [
         'stride',
-        'GLint* '
+        'GLint* ',
+        '1'
       ],
       [
         'layout',
-        'GLenum *'
+        'GLenum *',
+        '1'
       ]
     ],
     'feature' => 'GL_LAYOUT_LINEAR_INTEL',
@@ -29559,7 +30220,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'COMPSIZE(size,stride,order)'
       ]
     ],
     'feature' => 'GL_APPLE_vertex_program_evaluators',
@@ -29596,7 +30258,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(size,stride,order)'
       ]
     ],
     'feature' => 'GL_APPLE_vertex_program_evaluators',
@@ -29649,7 +30312,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'COMPSIZE(size,ustride,uorder,vstride,vorder)'
       ]
     ],
     'feature' => 'GL_APPLE_vertex_program_evaluators',
@@ -29702,7 +30366,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(size,ustride,uorder,vstride,vorder)'
       ]
     ],
     'feature' => 'GL_APPLE_vertex_program_evaluators',
@@ -29743,7 +30408,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -29784,7 +30450,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -29824,8 +30491,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'const GLfixed* '
+        'param',
+        'const GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_0_compatibility',
@@ -29886,7 +30554,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void *'
+        'void *',
+        'COMPSIZE(size,type,stride)'
       ]
     ],
     'feature' => 'GL_ARB_matrix_palette',
@@ -29903,7 +30572,8 @@ our %registry = (
       ],
       [
         'indices',
-        'GLubyte *'
+        'GLubyte *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_matrix_palette',
@@ -29920,7 +30590,8 @@ our %registry = (
       ],
       [
         'indices',
-        'GLuint *'
+        'GLuint *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_matrix_palette',
@@ -29937,7 +30608,8 @@ our %registry = (
       ],
       [
         'indices',
-        'GLushort *'
+        'GLushort *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_matrix_palette',
@@ -30012,12 +30684,13 @@ our %registry = (
   'glMatrixLoadTransposedEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum '
       ],
       [
         'm',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '16'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30029,12 +30702,13 @@ our %registry = (
   'glMatrixLoadTransposefEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum '
       ],
       [
         'm',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '16'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30046,12 +30720,13 @@ our %registry = (
   'glMatrixLoaddEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum '
       ],
       [
         'm',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '16'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30063,12 +30738,13 @@ our %registry = (
   'glMatrixLoadfEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum '
       ],
       [
         'm',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '16'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30143,12 +30819,13 @@ our %registry = (
   'glMatrixMultTransposedEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum '
       ],
       [
         'm',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '16'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30160,12 +30837,13 @@ our %registry = (
   'glMatrixMultTransposefEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum '
       ],
       [
         'm',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '16'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30177,12 +30855,13 @@ our %registry = (
   'glMatrixMultdEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum '
       ],
       [
         'm',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '16'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30194,12 +30873,13 @@ our %registry = (
   'glMatrixMultfEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum '
       ],
       [
         'm',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '16'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30549,7 +31229,8 @@ our %registry = (
     'argdata' => [
       [
         'm',
-        'const GLdouble *'
+        'const GLdouble *',
+        '16'
       ]
     ],
     'core_removed' => 1,
@@ -30562,7 +31243,8 @@ our %registry = (
     'argdata' => [
       [
         'm',
-        'const GLfloat *'
+        'const GLfloat *',
+        '16'
       ]
     ],
     'core_removed' => 1,
@@ -30575,7 +31257,8 @@ our %registry = (
     'argdata' => [
       [
         'm',
-        'const GLfixed* '
+        'const GLfixed* ',
+        '16'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_0_compatibility',
@@ -30591,7 +31274,8 @@ our %registry = (
     'argdata' => [
       [
         'm',
-        'const GLdouble * '
+        'const GLdouble * ',
+        '16'
       ]
     ],
     'core_removed' => 1,
@@ -30608,7 +31292,8 @@ our %registry = (
     'argdata' => [
       [
         'm',
-        'const GLfloat * '
+        'const GLfloat * ',
+        '16'
       ]
     ],
     'core_removed' => 1,
@@ -30629,11 +31314,13 @@ our %registry = (
       ],
       [
         'first',
-        'const GLint *'
+        'const GLint *',
+        'drawcount'
       ],
       [
         'count',
-        'const GLsizei *'
+        'const GLsizei *',
+        'drawcount'
       ],
       [
         'drawcount',
@@ -30658,10 +31345,11 @@ our %registry = (
       ],
       [
         'indirect',
-        'const void *'
+        'const void *',
+        'COMPSIZE(drawcount,stride)'
       ],
       [
-        'primcount',
+        'drawcount',
         'GLsizei '
       ],
       [
@@ -30777,11 +31465,13 @@ our %registry = (
       ],
       [
         'first',
-        'const GLint* '
+        'const GLint* ',
+        'primcount'
       ],
       [
         'count',
-        'const GLsizei *'
+        'const GLsizei *',
+        'primcount'
       ],
       [
         'primcount',
@@ -30805,7 +31495,8 @@ our %registry = (
       ],
       [
         'count',
-        'const GLsizei *'
+        'const GLsizei *',
+        'drawcount'
       ],
       [
         'type',
@@ -30813,7 +31504,8 @@ our %registry = (
       ],
       [
         'indices',
-        'const void *const* '
+        'const void *const* ',
+        'drawcount'
       ],
       [
         'drawcount',
@@ -30837,7 +31529,8 @@ our %registry = (
       ],
       [
         'count',
-        'GLsizei* '
+        'GLsizei* ',
+        'drawcount'
       ],
       [
         'type',
@@ -30845,15 +31538,17 @@ our %registry = (
       ],
       [
         'indices',
-        'void**'
+        'void**',
+        'drawcount'
       ],
       [
-        'primcount',
+        'drawcount',
         'GLsizei '
       ],
       [
         'basevertex',
-        'GLint *'
+        'GLint *',
+        'drawcount'
       ]
     ],
     'feature' => 'GL_ARB_draw_elements_base_vertex',
@@ -30878,10 +31573,11 @@ our %registry = (
       ],
       [
         'indirect',
-        'const void *'
+        'const void *',
+        'COMPSIZE(drawcount,stride)'
       ],
       [
-        'primcount',
+        'drawcount',
         'GLsizei '
       ],
       [
@@ -31017,11 +31713,13 @@ our %registry = (
       ],
       [
         'first',
-        'const GLint* '
+        'const GLint* ',
+        'primcount'
       ],
       [
         'count',
-        'const GLsizei *'
+        'const GLsizei *',
+        'primcount'
       ],
       [
         'primcount',
@@ -31038,15 +31736,18 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'const GLenum* '
+        'const GLenum* ',
+        'COMPSIZE(primcount,modestride)'
       ],
       [
         'first',
-        'const GLint *'
+        'const GLint *',
+        'primcount'
       ],
       [
         'count',
-        'const GLsizei *'
+        'const GLsizei *',
+        'primcount'
       ],
       [
         'primcount',
@@ -31067,11 +31768,13 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'const GLenum* '
+        'const GLenum* ',
+        'COMPSIZE(primcount,modestride)'
       ],
       [
         'count',
-        'const GLsizei *'
+        'const GLsizei *',
+        'primcount'
       ],
       [
         'type',
@@ -31079,7 +31782,8 @@ our %registry = (
       ],
       [
         'indices',
-        'const void *const *'
+        'const void *const *',
+        'primcount'
       ],
       [
         'primcount',
@@ -31151,7 +31855,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -31192,7 +31897,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -31226,7 +31932,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '1'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -31266,7 +31973,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -31307,7 +32015,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -31352,7 +32061,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -31397,7 +32107,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -31435,7 +32146,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '2'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -31479,7 +32191,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -31524,7 +32237,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -31573,7 +32287,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -31622,7 +32337,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -31664,7 +32380,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '3'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -31712,7 +32429,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -31761,7 +32479,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -31814,7 +32533,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -31867,7 +32587,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -31913,7 +32634,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -31965,7 +32687,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -32018,7 +32741,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -32088,7 +32812,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -32129,7 +32854,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -32170,7 +32896,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -32211,7 +32938,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -32240,7 +32968,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(size,type,stride)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32289,7 +33018,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32338,7 +33068,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32387,7 +33118,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32436,7 +33168,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32485,7 +33218,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32530,7 +33264,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32579,7 +33314,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32632,7 +33368,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height,depth)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32657,7 +33394,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32682,7 +33420,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint* '
+        'const GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32730,8 +33469,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'param',
-        'const GLfloat* '
+        'params',
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32779,8 +33519,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'param',
-        'const GLint* '
+        'params',
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32841,7 +33582,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32890,7 +33632,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -32947,7 +33690,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height,depth)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -33332,7 +34076,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'size'
       ],
       [
         'usage',
@@ -33357,7 +34102,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'COMPSIZE(size)'
       ],
       [
         'usage',
@@ -33385,7 +34131,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'size'
       ],
       [
         'flags',
@@ -33469,7 +34216,8 @@ our %registry = (
       ],
       [
         'data',
-        'const void *'
+        'const void *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -33534,7 +34282,8 @@ our %registry = (
       ],
       [
         'bufs',
-        'const GLenum* '
+        'const GLenum* ',
+        'n'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -33994,7 +34743,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -34055,7 +34805,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -34116,7 +34867,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -34177,7 +34929,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint* '
+        'const GLuint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -34206,7 +34959,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -34235,7 +34989,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -34264,7 +35019,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint* '
+        'const GLuint* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -34293,7 +35049,8 @@ our %registry = (
       ],
       [
         'string',
-        'const void *'
+        'const void *',
+        'len'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -34450,7 +35207,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLchar* '
+        'const GLchar* ',
+        'namelen'
       ],
       [
         'stringlen',
@@ -34458,7 +35216,8 @@ our %registry = (
       ],
       [
         'string',
-        'const GLchar *'
+        'const GLchar *',
+        'stringlen'
       ]
     ],
     'feature' => 'GL_ARB_shading_language_include',
@@ -34502,7 +35261,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'size'
       ],
       [
         'usage',
@@ -34589,7 +35349,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLbyte *'
+        'const GLbyte *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -34622,7 +35383,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -34687,11 +35449,13 @@ our %registry = (
     'argdata' => [
       [
         'n',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -34704,7 +35468,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -34737,7 +35502,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '3'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -34770,7 +35536,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -34803,7 +35570,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -34872,7 +35640,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -34893,7 +35662,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(type,stride)'
       ]
     ],
     'core_removed' => 1,
@@ -34918,7 +35688,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(type,stride,count)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_array',
@@ -34939,7 +35710,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        'COMPSIZE(type,stride)'
       ],
       [
         'ptrstride',
@@ -34960,7 +35732,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        '4'
       ]
     ],
     'feature' => 'GL_INTEL_parallel_arrays',
@@ -35001,7 +35774,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLbyte *'
+        'const GLbyte *',
+        '3'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -35042,7 +35816,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLdouble *'
+        'const GLdouble *',
+        '3'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -35083,7 +35858,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -35124,7 +35900,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLint *'
+        'const GLint *',
+        '3'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -35165,7 +35942,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLshort *'
+        'const GLshort *',
+        '3'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -35193,7 +35971,8 @@ our %registry = (
       ],
       [
         'label',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE(label,length)'
       ]
     ],
     'feature' => 'GL_KHR_debug',
@@ -35216,7 +35995,8 @@ our %registry = (
       ],
       [
         'label',
-        'const GLchar* '
+        'const GLchar* ',
+        'COMPSIZE(label,length)'
       ]
     ],
     'feature' => 'GL_KHR_debug',
@@ -35433,7 +36213,8 @@ our %registry = (
       ],
       [
         'values',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_tessellation_shader',
@@ -35477,7 +36258,8 @@ our %registry = (
       ],
       [
         'coeffs',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(genMode,colorFormat)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -35498,7 +36280,8 @@ our %registry = (
       ],
       [
         'commands',
-        'const GLubyte* '
+        'const GLubyte* ',
+        'numCommands'
       ],
       [
         'numCoords',
@@ -35510,7 +36293,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const void*'
+        'const void*',
+        'COMPSIZE(numCoords,coordType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -35535,7 +36319,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const void *'
+        'const void *',
+        'COMPSIZE(numCoords,coordType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -35568,7 +36353,8 @@ our %registry = (
       ],
       [
         'dashArray',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'dashCount'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -35654,7 +36440,8 @@ our %registry = (
       ],
       [
         'baseAndCount',
-        'GLuint * '
+        'GLuint * ',
+        '2'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -35675,7 +36462,8 @@ our %registry = (
       ],
       [
         'fontName',
-        'const void *'
+        'const void *',
+        'COMPSIZE(fontTarget,fontName)'
       ],
       [
         'fontStyle',
@@ -35720,7 +36508,8 @@ our %registry = (
       ],
       [
         'fontName',
-        'const void *'
+        'const void *',
+        'COMPSIZE(fontTarget,fontName)'
       ],
       [
         'fontStyle',
@@ -35736,7 +36525,8 @@ our %registry = (
       ],
       [
         'charcodes',
-        'const void*'
+        'const void*',
+        'COMPSIZE(numGlyphs,type,charcodes)'
       ],
       [
         'handleMissingGlyphs',
@@ -35834,7 +36624,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -35875,7 +36666,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -35936,7 +36728,8 @@ our %registry = (
       ],
       [
         'pathString',
-        'const void *'
+        'const void *',
+        'length'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -35965,7 +36758,8 @@ our %registry = (
       ],
       [
         'commands',
-        'const GLubyte* '
+        'const GLubyte* ',
+        'numCommands'
       ],
       [
         'numCoords',
@@ -35977,7 +36771,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const void*'
+        'const void*',
+        'COMPSIZE(numCoords,coordType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -36006,7 +36801,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const void *'
+        'const void *',
+        'COMPSIZE(numCoords,coordType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -36031,7 +36827,8 @@ our %registry = (
       ],
       [
         'coeffs',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(genMode,components)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -36061,7 +36858,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void *'
+        'void *',
+        'length'
       ]
     ],
     'feature' => 'GL_NV_pixel_data_range',
@@ -36082,7 +36880,8 @@ our %registry = (
       ],
       [
         'values',
-        'const GLfloat *'
+        'const GLfloat *',
+        'mapsize'
       ]
     ],
     'core_removed' => 1,
@@ -36103,7 +36902,8 @@ our %registry = (
       ],
       [
         'values',
-        'const GLuint *'
+        'const GLuint *',
+        'mapsize'
       ]
     ],
     'core_removed' => 1,
@@ -36124,7 +36924,8 @@ our %registry = (
       ],
       [
         'values',
-        'const GLushort *'
+        'const GLushort *',
+        'mapsize'
       ]
     ],
     'core_removed' => 1,
@@ -36259,7 +37060,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '1'
       ]
     ],
     'feature' => 'GL_EXT_pixel_transform',
@@ -36341,7 +37143,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_EXT_pixel_transform',
@@ -36419,19 +37222,23 @@ our %registry = (
       ],
       [
         'x',
-        'GLfloat* '
+        'GLfloat* ',
+        '1'
       ],
       [
         'y',
-        'GLfloat *'
+        'GLfloat *',
+        '1'
       ],
       [
         'tangentX',
-        'GLfloat *'
+        'GLfloat *',
+        '1'
       ],
       [
         'tangentY',
-        'GLfloat *'
+        'GLfloat *',
+        '1'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -36474,7 +37281,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_4',
@@ -36513,7 +37321,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_4',
@@ -36546,7 +37355,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfixed* '
+        'const GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
@@ -36603,7 +37413,8 @@ our %registry = (
     'argdata' => [
       [
         'markerp',
-        'GLuint* '
+        'GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_SGIX_async',
@@ -36704,7 +37515,8 @@ our %registry = (
     'argdata' => [
       [
         'mask',
-        'const GLubyte *'
+        'const GLubyte *',
+        'COMPSIZE()'
       ]
     ],
     'core_removed' => 1,
@@ -36949,11 +37761,13 @@ our %registry = (
       ],
       [
         'textures',
-        'const GLuint *'
+        'const GLuint *',
+        'n'
       ],
       [
         'priorities',
-        'const GLclampf *'
+        'const GLclampf *',
+        'n'
       ]
     ],
     'core_removed' => 1,
@@ -36995,7 +37809,8 @@ our %registry = (
       ],
       [
         'binary',
-        'const void *'
+        'const void *',
+        'length'
       ],
       [
         'length',
@@ -37015,11 +37830,11 @@ our %registry = (
         'GLenum '
       ],
       [
-        'buffer',
+        'bindingIndex',
         'GLuint '
       ],
       [
-        'index',
+        'wordIndex',
         'GLuint '
       ],
       [
@@ -37028,7 +37843,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_parameter_buffer_object',
@@ -37044,11 +37860,11 @@ our %registry = (
         'GLenum '
       ],
       [
-        'buffer',
+        'bindingIndex',
         'GLuint '
       ],
       [
-        'index',
+        'wordIndex',
         'GLuint '
       ],
       [
@@ -37057,7 +37873,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint *'
+        'const GLuint *',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_parameter_buffer_object',
@@ -37073,11 +37890,11 @@ our %registry = (
         'GLenum '
       ],
       [
-        'buffer',
+        'bindingIndex',
         'GLuint '
       ],
       [
-        'index',
+        'wordIndex',
         'GLuint '
       ],
       [
@@ -37086,7 +37903,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_parameter_buffer_object',
@@ -37139,7 +37957,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -37192,7 +38011,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -37245,7 +38065,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_gpu_program4',
@@ -37298,7 +38119,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint *'
+        'const GLuint *',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_gpu_program4',
@@ -37323,7 +38145,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_EXT_gpu_program_parameters',
@@ -37348,7 +38171,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_gpu_program4',
@@ -37373,7 +38197,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint *'
+        'const GLuint *',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_gpu_program4',
@@ -37426,7 +38251,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -37479,7 +38305,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -37532,7 +38359,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_gpu_program4',
@@ -37585,7 +38413,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint *'
+        'const GLuint *',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_gpu_program4',
@@ -37610,7 +38439,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_EXT_gpu_program_parameters',
@@ -37635,7 +38465,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_gpu_program4',
@@ -37660,7 +38491,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint *'
+        'const GLuint *',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_gpu_program4',
@@ -37681,7 +38513,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLubyte* '
+        'const GLubyte* ',
+        '1'
       ],
       [
         'x',
@@ -37718,11 +38551,13 @@ our %registry = (
       ],
       [
         'name',
-        'const GLubyte* '
+        'const GLubyte* ',
+        '1'
       ],
       [
         'v',
-        'const GLdouble * '
+        'const GLdouble * ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_fragment_program',
@@ -37743,7 +38578,8 @@ our %registry = (
       ],
       [
         'name',
-        'const GLubyte* '
+        'const GLubyte* ',
+        '1'
       ],
       [
         'x',
@@ -37780,11 +38616,13 @@ our %registry = (
       ],
       [
         'name',
-        'const GLubyte* '
+        'const GLubyte* ',
+        '1'
       ],
       [
         'v',
-        'const GLfloat * '
+        'const GLfloat * ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_fragment_program',
@@ -37836,8 +38674,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'params',
-        'const GLdouble* '
+        'v',
+        'const GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -37889,8 +38728,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'params',
-        'const GLfloat* '
+        'v',
+        'const GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -37934,12 +38774,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'num',
+        'count',
         'GLsizei '
       ],
       [
-        'params',
-        'const GLdouble* '
+        'v',
+        'const GLdouble* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -37959,12 +38800,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'num',
+        'count',
         'GLsizei '
       ],
       [
-        'params',
-        'const GLfloat* '
+        'v',
+        'const GLfloat* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -38018,7 +38860,8 @@ our %registry = (
       ],
       [
         'string',
-        'const void *'
+        'const void *',
+        'len'
       ]
     ],
     'feature' => 'GL_ARB_vertex_program',
@@ -38063,7 +38906,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -38114,7 +38958,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -38202,7 +39047,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64* '
+        'const GLint64* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -38227,7 +39073,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -38255,7 +39102,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -38343,7 +39191,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -38368,7 +39217,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -38396,7 +39246,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -38445,7 +39296,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -38500,7 +39352,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -38600,7 +39453,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64* '
+        'const GLint64* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -38625,7 +39479,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -38653,7 +39508,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -38753,7 +39609,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -38778,7 +39635,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -38806,7 +39664,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -38859,7 +39718,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -38918,7 +39778,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39030,7 +39891,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64* '
+        'const GLint64* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -39055,7 +39917,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -39083,7 +39946,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39195,7 +40059,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -39220,7 +40085,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -39248,7 +40114,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39305,7 +40172,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39368,7 +40236,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39492,7 +40361,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64* '
+        'const GLint64* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -39517,7 +40387,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -39545,7 +40416,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39669,7 +40541,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -39694,7 +40567,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -39722,7 +40596,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39793,7 +40668,8 @@ our %registry = (
       ],
       [
         'values',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_bindless_texture',
@@ -39818,7 +40694,8 @@ our %registry = (
       ],
       [
         'values',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_bindless_texture',
@@ -39847,7 +40724,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39879,7 +40757,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39908,7 +40787,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*6'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39940,7 +40820,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*6'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -39969,7 +40850,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*8'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40001,7 +40883,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*8'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40030,7 +40913,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*9'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40062,7 +40946,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*9'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40091,7 +40976,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*6'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40123,7 +41009,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*6'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40152,7 +41039,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*12'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40184,7 +41072,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*12'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40213,7 +41102,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*16'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40245,7 +41135,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*16'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40274,7 +41165,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*8'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40306,7 +41198,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*8'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40335,7 +41228,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*12'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40367,7 +41261,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*12'
       ]
     ],
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -40412,7 +41307,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_shader_buffer_load',
@@ -40507,7 +41403,8 @@ our %registry = (
       ],
       [
         'message',
-        'const GLchar * '
+        'const GLchar * ',
+        'COMPSIZE(message,length)'
       ]
     ],
     'feature' => 'GL_KHR_debug',
@@ -40628,7 +41525,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -40657,7 +41555,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -40686,7 +41585,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -40715,7 +41615,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -40748,7 +41649,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -40781,7 +41683,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -40814,7 +41717,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -40847,7 +41751,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -40884,7 +41789,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -40921,7 +41827,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -40958,7 +41865,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -40995,7 +41903,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -41103,7 +42012,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'void *'
+        'void *',
+        'COMPSIZE(format,type,width,height)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -41185,7 +42095,8 @@ our %registry = (
       ],
       [
         'data',
-        'void *'
+        'void *',
+        'bufSize'
       ]
     ],
     'feature' => 'GL_KHR_robustness',
@@ -41222,11 +42133,13 @@ our %registry = (
     'argdata' => [
       [
         'v1',
-        'const GLdouble *'
+        'const GLdouble *',
+        '2'
       ],
       [
         'v2',
-        'const GLdouble *'
+        'const GLdouble *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -41263,11 +42176,13 @@ our %registry = (
     'argdata' => [
       [
         'v1',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ],
       [
         'v2',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -41304,11 +42219,13 @@ our %registry = (
     'argdata' => [
       [
         'v1',
-        'const GLint *'
+        'const GLint *',
+        '2'
       ],
       [
         'v2',
-        'const GLint *'
+        'const GLint *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -41345,11 +42262,13 @@ our %registry = (
     'argdata' => [
       [
         'v1',
-        'const GLshort *'
+        'const GLshort *',
+        '2'
       ],
       [
         'v2',
-        'const GLshort *'
+        'const GLshort *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -41362,7 +42281,8 @@ our %registry = (
     'argdata' => [
       [
         'equation',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_SGIX_reference_plane',
@@ -41576,7 +42496,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(type,stride)'
       ]
     ],
     'feature' => 'GL_SUN_triangle_list',
@@ -41601,7 +42522,8 @@ our %registry = (
     'argdata' => [
       [
         'code',
-        'const GLubyte* '
+        'const GLubyte* ',
+        'COMPSIZE()'
       ]
     ],
     'feature' => 'GL_SUN_triangle_list',
@@ -41650,15 +42572,18 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ],
       [
         'c',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -41723,19 +42648,23 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ],
       [
         'c',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ],
       [
         'n',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -41788,15 +42717,18 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ],
       [
         'c',
-        'const GLubyte *'
+        'const GLubyte *',
+        '4'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -41845,15 +42777,18 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ],
       [
         'n',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -41938,23 +42873,28 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ],
       [
         'tc',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ],
       [
         'c',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ],
       [
         'n',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -42011,19 +42951,23 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ],
       [
         'tc',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ],
       [
         'n',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -42068,15 +43012,18 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ],
       [
         'tc',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -42113,11 +43060,13 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -42130,7 +43079,8 @@ our %registry = (
     'argdata' => [
       [
         'code',
-        'const GLuint* '
+        'const GLuint* ',
+        'COMPSIZE()'
       ]
     ],
     'feature' => 'GL_SUN_triangle_list',
@@ -42155,7 +43105,8 @@ our %registry = (
     'argdata' => [
       [
         'code',
-        'const GLushort* '
+        'const GLushort* ',
+        'COMPSIZE()'
       ]
     ],
     'feature' => 'GL_SUN_triangle_list',
@@ -42171,8 +43122,9 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'ids',
-        'GLuint* '
+        'programs',
+        'GLuint* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -42439,8 +43391,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'const GLint* '
+        'param',
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_sampler_objects',
@@ -42463,8 +43416,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'const GLuint* '
+        'param',
+        'const GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_sampler_objects',
@@ -42504,8 +43458,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'const GLfloat* '
+        'param',
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_sampler_objects',
@@ -42545,8 +43500,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'params',
-        'const GLint* '
+        'param',
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_sampler_objects',
@@ -42653,7 +43609,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint * '
+        'const GLint * ',
+        'COMPSIZE(count)'
       ]
     ],
     'feature' => 'GL_ARB_viewport_array',
@@ -42704,7 +43661,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint * '
+        'const GLint * ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_viewport_array',
@@ -42744,7 +43702,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLbyte *'
+        'const GLbyte *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -42785,7 +43744,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -42826,7 +43786,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -42860,7 +43821,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '3'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -42900,7 +43862,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -42941,7 +43904,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -42982,7 +43946,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLubyte *'
+        'const GLubyte *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -43023,7 +43988,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLuint *'
+        'const GLuint *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -43064,7 +44030,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLushort *'
+        'const GLushort *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -43118,7 +44085,8 @@ our %registry = (
       ],
       [
         'color',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -43146,7 +44114,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(size,type,stride)'
       ]
     ],
     'core_removed' => 1,
@@ -43172,7 +44141,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        'COMPSIZE(size,type,stride)'
       ],
       [
         'ptrstride',
@@ -43193,7 +44163,8 @@ our %registry = (
       ],
       [
         'buffer',
-        'GLuint *'
+        'GLuint *',
+        'size'
       ]
     ],
     'core_removed' => 1,
@@ -43222,7 +44193,8 @@ our %registry = (
       ],
       [
         'counterList',
-        'GLuint* '
+        'GLuint* ',
+        'numCounters'
       ]
     ],
     'feature' => 'GL_AMD_performance_monitor',
@@ -43319,11 +44291,13 @@ our %registry = (
       ],
       [
         'row',
-        'const void *'
+        'const void *',
+        'COMPSIZE(target,format,type,width)'
       ],
       [
         'column',
-        'const void *'
+        'const void *',
+        'COMPSIZE(target,format,type,height)'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -43368,7 +44342,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_ATI_fragment_shader',
@@ -43389,7 +44364,8 @@ our %registry = (
       ],
       [
         'addr',
-        'void *'
+        'void *',
+        'COMPSIZE(id,type)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -43410,7 +44386,8 @@ our %registry = (
       ],
       [
         'addr',
-        'void *'
+        'void *',
+        'COMPSIZE(id,type)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -43431,7 +44408,8 @@ our %registry = (
       ],
       [
         'val',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '2'
       ]
     ],
     'feature' => 'GL_AMD_sample_positions',
@@ -43460,15 +44438,17 @@ our %registry = (
       ],
       [
         'shaders',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ],
       [
-        'binaryformat',
+        'binaryFormat',
         'GLenum '
       ],
       [
         'binary',
-        'const void*'
+        'const void*',
+        'length'
       ],
       [
         'length',
@@ -43568,11 +44548,13 @@ our %registry = (
       ],
       [
         'string',
-        'const GLchar *const* '
+        'const GLchar *const* ',
+        'count'
       ],
       [
         'length',
-        'const GLint* '
+        'const GLint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -43613,7 +44595,8 @@ our %registry = (
       ],
       [
         'points',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'n*2'
       ]
     ],
     'feature' => 'GL_SGIS_sharpen_texture',
@@ -43634,7 +44617,8 @@ our %registry = (
       ],
       [
         'buffers',
-        'const GLuint* '
+        'const GLuint* ',
+        'COMPSIZE(numBufferBarriers)'
       ],
       [
         'numTextureBarriers',
@@ -43642,11 +44626,13 @@ our %registry = (
       ],
       [
         'textures',
-        'const GLuint *'
+        'const GLuint *',
+        'COMPSIZE(numTextureBarriers)'
       ],
       [
         'dstLayouts',
-        'const GLenum *'
+        'const GLenum *',
+        'COMPSIZE(numTextureBarriers)'
       ]
     ],
     'feature' => 'GL_EXT_semaphore',
@@ -43698,11 +44684,13 @@ our %registry = (
       ],
       [
         'pConstantIndex',
-        'const GLuint *'
+        'const GLuint *',
+        'numSpecializationConstants'
       ],
       [
         'pConstantValue',
-        'const GLuint *'
+        'const GLuint *',
+        'numSpecializationConstants'
       ]
     ],
     'feature' => 'GL_VERSION_4_6',
@@ -43735,7 +44723,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLfloat* '
+        'GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_sprite',
@@ -43768,7 +44757,8 @@ our %registry = (
       ],
       [
         'params',
-        'GLint* '
+        'GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_SGIX_sprite',
@@ -43833,7 +44823,8 @@ our %registry = (
       ],
       [
         'paths',
-        'const void *'
+        'const void *',
+        'COMPSIZE(numPaths,pathNameType,paths)'
       ],
       [
         'pathBase',
@@ -43853,7 +44844,8 @@ our %registry = (
       ],
       [
         'transformValues',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(numPaths,transformType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -44050,7 +45042,8 @@ our %registry = (
       ],
       [
         'paths',
-        'const void *'
+        'const void *',
+        'COMPSIZE(numPaths,pathNameType,paths)'
       ],
       [
         'pathBase',
@@ -44070,7 +45063,8 @@ our %registry = (
       ],
       [
         'transformValues',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(numPaths,transformType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -44111,7 +45105,8 @@ our %registry = (
       ],
       [
         'paths',
-        'const void *'
+        'const void *',
+        'COMPSIZE(numPaths,pathNameType,paths)'
       ],
       [
         'pathBase',
@@ -44135,7 +45130,8 @@ our %registry = (
       ],
       [
         'transformValues',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(numPaths,transformType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -44180,7 +45176,8 @@ our %registry = (
       ],
       [
         'paths',
-        'const void *'
+        'const void *',
+        'COMPSIZE(numPaths,pathNameType,paths)'
       ],
       [
         'pathBase',
@@ -44204,7 +45201,8 @@ our %registry = (
       ],
       [
         'transformValues',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(numPaths,transformType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -44277,7 +45275,8 @@ our %registry = (
       ],
       [
         'string',
-        'const void *'
+        'const void *',
+        'len'
       ]
     ],
     'feature' => 'GL_GREMEDY_string_marker',
@@ -44380,7 +45379,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void *'
+        'void *',
+        'COMPSIZE(type,stride)'
       ]
     ],
     'feature' => 'GL_EXT_coordinate_frame',
@@ -44528,7 +45528,8 @@ our %registry = (
       ],
       [
         'param',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ATI_envmap_bumpmap',
@@ -44545,7 +45546,8 @@ our %registry = (
       ],
       [
         'param',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ATI_envmap_bumpmap',
@@ -44570,7 +45572,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -44595,7 +45598,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -44620,7 +45624,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '1'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -44645,7 +45650,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -44670,7 +45676,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '1'
       ]
     ],
     'core_removed' => 1,
@@ -44699,7 +45706,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -44768,15 +45776,18 @@ our %registry = (
     'argdata' => [
       [
         'tc',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '2'
       ],
       [
         'c',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -44845,19 +45856,23 @@ our %registry = (
     'argdata' => [
       [
         'tc',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '2'
       ],
       [
         'c',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ],
       [
         'n',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -44914,15 +45929,18 @@ our %registry = (
     'argdata' => [
       [
         'tc',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '2'
       ],
       [
         'c',
-        'const GLubyte *'
+        'const GLubyte *',
+        '4'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -44975,15 +45993,18 @@ our %registry = (
     'argdata' => [
       [
         'tc',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '2'
       ],
       [
         'n',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -45024,11 +46045,13 @@ our %registry = (
     'argdata' => [
       [
         'tc',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '2'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -45041,7 +46064,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -45070,7 +46094,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '2'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -45099,7 +46124,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -45128,7 +46154,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -45161,7 +46188,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -45194,7 +46222,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -45227,7 +46256,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '3'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -45260,7 +46290,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -45293,7 +46324,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -45330,7 +46362,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -45435,19 +46468,23 @@ our %registry = (
     'argdata' => [
       [
         'tc',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '4'
       ],
       [
         'c',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ],
       [
         'n',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -45500,11 +46537,13 @@ our %registry = (
     'argdata' => [
       [
         'tc',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '4'
       ],
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ]
     ],
     'feature' => 'GL_SUN_vertex',
@@ -45517,7 +46556,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -45554,7 +46594,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -45591,7 +46632,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -45628,7 +46670,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -45681,7 +46724,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -45714,7 +46758,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -45747,7 +46792,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -45780,7 +46826,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -45805,7 +46852,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(size,type,stride)'
       ]
     ],
     'core_removed' => 1,
@@ -45834,7 +46882,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(size,type,stride,count)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_array',
@@ -45859,7 +46908,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        'COMPSIZE(size,type,stride)'
       ],
       [
         'ptrstride',
@@ -45884,7 +46934,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        '4'
       ]
     ],
     'feature' => 'GL_INTEL_parallel_arrays',
@@ -45925,7 +46976,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -45966,7 +47018,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -46007,7 +47060,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfixed* '
+        'const GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_0_compatibility',
@@ -46032,7 +47086,8 @@ our %registry = (
       ],
       [
         'weights',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'n'
       ]
     ],
     'feature' => 'GL_SGIS_texture_filter4',
@@ -46073,7 +47128,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLdouble *'
+        'const GLdouble *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -46114,7 +47170,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -46155,7 +47212,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'core_removed' => 1,
@@ -46196,7 +47254,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -46240,7 +47299,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -46330,7 +47390,7 @@ our %registry = (
         'GLint '
       ],
       [
-        'internalFormat',
+        'internalformat',
         'GLint '
       ],
       [
@@ -46359,7 +47419,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height,depth)'
       ]
     ],
     'feature' => 'GL_VERSION_1_2',
@@ -46520,7 +47581,7 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'extent',
+        'size4d',
         'GLsizei '
       ],
       [
@@ -46537,7 +47598,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height,depth,size4d)'
       ]
     ],
     'feature' => 'GL_SGIS_texture4D',
@@ -46608,7 +47670,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -46632,7 +47695,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint* '
+        'const GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -46672,7 +47736,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat *'
+        'const GLfloat *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -46711,7 +47776,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -46751,7 +47817,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfixed* '
+        'const GLfixed* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
@@ -47236,7 +48303,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -47283,7 +48351,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height)'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -47338,7 +48407,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height,depth)'
       ]
     ],
     'feature' => 'GL_VERSION_1_2',
@@ -47439,7 +48509,7 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'extent',
+        'size4d',
         'GLsizei '
       ],
       [
@@ -47452,7 +48522,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height,depth,size4d)'
       ]
     ],
     'feature' => 'GL_SGIS_texture4D',
@@ -47625,7 +48696,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -47674,7 +48746,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -47803,7 +48876,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height,depth)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -47992,7 +49066,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -48017,7 +49092,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -48038,7 +49114,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint* '
+        'const GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -48063,7 +49140,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLuint* '
+        'const GLuint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -48128,7 +49206,8 @@ our %registry = (
       ],
       [
         'param',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -48152,8 +49231,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'param',
-        'const GLfloat* '
+        'params',
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -48218,7 +49298,8 @@ our %registry = (
       ],
       [
         'param',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -48242,8 +49323,9 @@ our %registry = (
         'GLenum '
       ],
       [
-        'param',
-        'const GLint* '
+        'params',
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -48264,7 +49346,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void *'
+        'void *',
+        'length'
       ]
     ],
     'feature' => 'GL_APPLE_texture_range',
@@ -48918,7 +50001,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -49012,7 +50096,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -49122,7 +50207,8 @@ our %registry = (
       ],
       [
         'pixels',
-        'const void *'
+        'const void *',
+        'COMPSIZE(format,type,width,height,depth)'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -49206,7 +50292,8 @@ our %registry = (
       ],
       [
         'attribs',
-        'const GLint *'
+        'const GLint *',
+        'COMPSIZE(count)'
       ],
       [
         'bufferMode',
@@ -49282,7 +50369,8 @@ our %registry = (
       ],
       [
         'varyings',
-        'const GLchar *const* '
+        'const GLchar *const* ',
+        'count'
       ],
       [
         'bufferMode',
@@ -49307,7 +50395,8 @@ our %registry = (
       ],
       [
         'locations',
-        'const GLint *'
+        'const GLint *',
+        'count'
       ],
       [
         'bufferMode',
@@ -49336,7 +50425,8 @@ our %registry = (
       ],
       [
         'transformValues',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(transformType)'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -49433,7 +50523,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*1'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -49476,7 +50567,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*1'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -49548,7 +50640,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64* '
+        'const GLint64* ',
+        'count*1'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -49569,7 +50662,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        'count*1'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -49593,7 +50687,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'count*1'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -49665,7 +50760,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count*1'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -49686,7 +50782,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        'count*1'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -49710,7 +50807,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        'count*1'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -49751,7 +50849,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -49798,7 +50897,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -49882,7 +50982,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64* '
+        'const GLint64* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -49903,7 +51004,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -49927,7 +51029,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -50011,7 +51114,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -50032,7 +51136,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -50056,7 +51161,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -50101,7 +51207,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -50152,7 +51259,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -50248,7 +51356,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64* '
+        'const GLint64* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -50269,7 +51378,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -50293,7 +51403,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -50389,7 +51500,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -50410,7 +51522,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -50434,7 +51547,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -50483,7 +51597,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -50538,7 +51653,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -50646,7 +51762,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64* '
+        'const GLint64* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -50667,7 +51784,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -50691,7 +51809,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLint* '
+        'const GLint* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -50799,7 +51918,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_int64',
@@ -50820,7 +51940,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_gpu_shader5',
@@ -50844,7 +51965,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -50943,7 +52065,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_bindless_texture',
@@ -50964,7 +52087,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64* '
+        'const GLuint64* ',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_bindless_texture',
@@ -50989,7 +52113,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -51017,7 +52142,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -51042,7 +52168,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*6'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -51070,7 +52197,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat *'
+        'const GLfloat *',
+        'count*6'
       ]
     ],
     'feature' => 'GL_VERSION_2_1',
@@ -51095,7 +52223,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*8'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -51123,7 +52252,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat *'
+        'const GLfloat *',
+        'count*8'
       ]
     ],
     'feature' => 'GL_VERSION_2_1',
@@ -51148,7 +52278,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*9'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -51176,7 +52307,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*9'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -51201,7 +52333,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*6'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -51229,7 +52362,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat *'
+        'const GLfloat *',
+        'count*6'
       ]
     ],
     'feature' => 'GL_VERSION_2_1',
@@ -51254,7 +52388,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*12'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -51282,7 +52417,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat *'
+        'const GLfloat *',
+        'count*12'
       ]
     ],
     'feature' => 'GL_VERSION_2_1',
@@ -51307,7 +52443,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*16'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -51335,7 +52472,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*16'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -51360,7 +52498,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*8'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -51388,7 +52527,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat *'
+        'const GLfloat *',
+        'count*8'
       ]
     ],
     'feature' => 'GL_VERSION_2_1',
@@ -51413,7 +52553,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*12'
       ]
     ],
     'feature' => 'GL_ARB_gpu_shader_fp64',
@@ -51441,7 +52582,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLfloat *'
+        'const GLfloat *',
+        'count*12'
       ]
     ],
     'feature' => 'GL_VERSION_2_1',
@@ -51462,7 +52604,8 @@ our %registry = (
       ],
       [
         'indices',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_shader_subroutine',
@@ -51499,7 +52642,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        'count*1'
       ]
     ],
     'feature' => 'GL_NV_shader_buffer_load',
@@ -51597,7 +52741,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'size'
       ],
       [
         'preserve',
@@ -51678,7 +52823,7 @@ our %registry = (
         'GLenum '
       ],
       [
-        'bufSize',
+        'count',
         'GLsizei '
       ],
       [
@@ -51687,7 +52832,8 @@ our %registry = (
       ],
       [
         'values',
-        'GLint *'
+        'GLint *',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_vdpau_interop',
@@ -51733,7 +52879,8 @@ our %registry = (
       ],
       [
         'surfaces',
-        'const GLvdpauSurfaceNV* '
+        'const GLvdpauSurfaceNV* ',
+        'numSurfaces'
       ]
     ],
     'feature' => 'GL_NV_vdpau_interop',
@@ -51758,7 +52905,8 @@ our %registry = (
       ],
       [
         'textureNames',
-        'const GLuint *'
+        'const GLuint *',
+        'numTextureNames'
       ]
     ],
     'feature' => 'GL_NV_vdpau_interop',
@@ -51783,7 +52931,8 @@ our %registry = (
       ],
       [
         'textureNames',
-        'const GLuint *'
+        'const GLuint *',
+        'numTextureNames'
       ]
     ],
     'feature' => 'GL_NV_vdpau_interop',
@@ -51816,7 +52965,8 @@ our %registry = (
       ],
       [
         'surfaces',
-        'const GLvdpauSurfaceNV* '
+        'const GLvdpauSurfaceNV* ',
+        'numSurface'
       ]
     ],
     'feature' => 'GL_NV_vdpau_interop',
@@ -51908,7 +53058,8 @@ our %registry = (
       ],
       [
         'addr',
-        'void *'
+        'void *',
+        'COMPSIZE(id,type,stride)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -51925,7 +53076,8 @@ our %registry = (
       ],
       [
         'addr',
-        'GLbyte *'
+        'GLbyte *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -51942,7 +53094,8 @@ our %registry = (
       ],
       [
         'addr',
-        'GLdouble *'
+        'GLdouble *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -51959,7 +53112,8 @@ our %registry = (
       ],
       [
         'addr',
-        'GLfloat *'
+        'GLfloat *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -51976,7 +53130,8 @@ our %registry = (
       ],
       [
         'addr',
-        'GLint *'
+        'GLint *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -51993,7 +53148,8 @@ our %registry = (
       ],
       [
         'addr',
-        'GLshort *'
+        'GLshort *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -52010,7 +53166,8 @@ our %registry = (
       ],
       [
         'addr',
-        'GLubyte *'
+        'GLubyte *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -52027,7 +53184,8 @@ our %registry = (
       ],
       [
         'addr',
-        'GLuint *'
+        'GLuint *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -52044,7 +53202,8 @@ our %registry = (
       ],
       [
         'addr',
-        'GLushort *'
+        'GLushort *',
+        'COMPSIZE(id)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -52085,7 +53244,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -52114,7 +53274,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -52143,7 +53304,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '2'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -52172,7 +53334,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -52201,7 +53364,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -52234,7 +53398,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -52267,7 +53432,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -52300,7 +53466,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '3'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -52333,7 +53500,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -52366,7 +53534,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -52403,7 +53572,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLdouble *'
+        'const GLdouble *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -52440,7 +53610,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -52477,7 +53648,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -52514,7 +53686,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLint *'
+        'const GLint *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -52551,7 +53724,8 @@ our %registry = (
     'argdata' => [
       [
         'v',
-        'const GLshort *'
+        'const GLshort *',
+        '4'
       ]
     ],
     'core_removed' => 1,
@@ -52932,7 +54106,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void *'
+        'void *',
+        'length'
       ]
     ],
     'feature' => 'GL_APPLE_vertex_array_range',
@@ -52949,7 +54124,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void *'
+        'void *',
+        'COMPSIZE(length)'
       ]
     ],
     'feature' => 'GL_NV_vertex_array_range',
@@ -53326,15 +54502,18 @@ our %registry = (
       ],
       [
         'buffers',
-        'const GLuint* '
+        'const GLuint* ',
+        'count'
       ],
       [
         'offsets',
-        'const GLintptr *'
+        'const GLintptr *',
+        'count'
       ],
       [
         'strides',
-        'const GLsizei *'
+        'const GLsizei *',
+        'count'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -53407,7 +54586,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '1'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53448,7 +54628,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '1'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53481,7 +54662,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '1'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -53522,7 +54704,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLshort* '
+        'const GLshort* ',
+        '1'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53567,7 +54750,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '2'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53612,7 +54796,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '2'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53649,7 +54834,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '2'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -53694,7 +54880,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLshort* '
+        'const GLshort* ',
+        '2'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53743,7 +54930,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '3'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53792,7 +54980,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '3'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53833,7 +55022,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '3'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -53882,7 +55072,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLshort* '
+        'const GLshort* ',
+        '3'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53902,7 +55093,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLbyte* '
+        'const GLbyte* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53922,7 +55114,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint* '
+        'const GLint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53942,7 +55135,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLshort* '
+        'const GLshort* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -53995,7 +55189,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLubyte* '
+        'const GLubyte* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54015,7 +55210,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLuint* '
+        'const GLuint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54035,7 +55231,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLushort* '
+        'const GLushort* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54055,7 +55252,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLbyte* '
+        'const GLbyte* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54108,7 +55306,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54161,7 +55360,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat* '
+        'const GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54206,7 +55406,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -54226,7 +55427,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint* '
+        'const GLint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54279,7 +55481,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLshort* '
+        'const GLshort* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54299,7 +55502,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLubyte* '
+        'const GLubyte* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54319,7 +55523,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLuint* '
+        'const GLuint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54339,7 +55544,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLushort* '
+        'const GLushort* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -54507,8 +55713,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLint* '
+        'v',
+        'const GLint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54546,8 +55753,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLuint* '
+        'v',
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54589,8 +55797,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLint* '
+        'v',
+        'const GLint* ',
+        '2'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54632,8 +55841,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLuint* '
+        'v',
+        'const GLuint* ',
+        '2'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54679,8 +55889,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLint* '
+        'v',
+        'const GLint* ',
+        '3'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54726,8 +55937,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLuint* '
+        'v',
+        'const GLuint* ',
+        '3'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54746,8 +55958,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLbyte* '
+        'v',
+        'const GLbyte* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54797,8 +56010,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLint* '
+        'v',
+        'const GLint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54817,8 +56031,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLshort* '
+        'v',
+        'const GLshort* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54837,8 +56052,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLubyte* '
+        'v',
+        'const GLubyte* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54888,8 +56104,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLuint* '
+        'v',
+        'const GLuint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -54908,8 +56125,9 @@ our %registry = (
         'GLuint '
       ],
       [
-        'v0',
-        'const GLushort* '
+        'v',
+        'const GLushort* ',
+        '4'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -55028,7 +56246,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_attrib_64bit',
@@ -55061,7 +56280,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        '1'
       ]
     ],
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
@@ -55127,7 +56347,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        '1'
       ]
     ],
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
@@ -55170,7 +56391,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '2'
       ]
     ],
     'feature' => 'GL_ARB_vertex_attrib_64bit',
@@ -55207,7 +56429,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        '2'
       ]
     ],
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
@@ -55244,7 +56467,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        '2'
       ]
     ],
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
@@ -55291,7 +56515,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '3'
       ]
     ],
     'feature' => 'GL_ARB_vertex_attrib_64bit',
@@ -55332,7 +56557,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        '3'
       ]
     ],
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
@@ -55373,7 +56599,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        '3'
       ]
     ],
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
@@ -55424,7 +56651,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_vertex_attrib_64bit',
@@ -55469,7 +56697,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLint64EXT* '
+        'const GLint64EXT* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
@@ -55514,7 +56743,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLuint64EXT* '
+        'const GLuint64EXT* ',
+        '4'
       ]
     ],
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
@@ -55643,7 +56873,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -55692,7 +56923,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -55741,7 +56973,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -55790,7 +57023,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -55862,7 +57096,7 @@ our %registry = (
         'GLuint '
       ],
       [
-        'size',
+        'fsize',
         'GLint '
       ],
       [
@@ -55875,7 +57109,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(fsize,type,stride)'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -55891,12 +57126,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -55912,12 +57148,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -55938,7 +57175,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -55954,12 +57192,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLshort* '
+        'const GLshort* ',
+        'count'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -55975,12 +57214,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -55996,12 +57236,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -56022,7 +57263,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -56038,12 +57280,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLshort* '
+        'const GLshort* ',
+        'count*2'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -56059,12 +57302,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -56080,12 +57324,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -56106,7 +57351,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -56122,12 +57368,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLshort* '
+        'const GLshort* ',
+        'count*3'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -56143,12 +57390,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -56164,12 +57412,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -56190,7 +57439,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLhalf* '
+        'const GLhalf* ',
+        'n'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -56206,12 +57456,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLshort* '
+        'const GLshort* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -56227,12 +57478,13 @@ our %registry = (
         'GLuint '
       ],
       [
-        'n',
+        'count',
         'GLsizei '
       ],
       [
         'v',
-        'const GLubyte* '
+        'const GLubyte* ',
+        'count*4'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -56345,7 +57597,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -56378,7 +57631,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -56411,7 +57665,8 @@ our %registry = (
       ],
       [
         'value',
-        'const GLuint* '
+        'const GLuint* ',
+        '1'
       ]
     ],
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
@@ -56436,7 +57691,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(size,type,stride)'
       ]
     ],
     'core_removed' => 1,
@@ -56465,7 +57721,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void *'
+        'const void *',
+        'COMPSIZE(size,type,stride,count)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_array',
@@ -56490,7 +57747,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        'COMPSIZE(size,type,stride)'
       ],
       [
         'ptrstride',
@@ -56515,7 +57773,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'const void** '
+        'const void** ',
+        '4'
       ]
     ],
     'feature' => 'GL_INTEL_parallel_arrays',
@@ -56548,7 +57807,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLdouble *'
+        'const GLdouble *',
+        '1'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56581,7 +57841,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLfloat *'
+        'const GLfloat *',
+        '1'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56614,7 +57875,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLint *'
+        'const GLint *',
+        '1'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56647,7 +57909,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLshort *'
+        'const GLshort *',
+        '1'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56684,7 +57947,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLdouble *'
+        'const GLdouble *',
+        '2'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56721,7 +57985,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLfloat *'
+        'const GLfloat *',
+        '2'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56758,7 +58023,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLint *'
+        'const GLint *',
+        '2'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56795,7 +58061,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLshort *'
+        'const GLshort *',
+        '2'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56836,7 +58103,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLdouble *'
+        'const GLdouble *',
+        '3'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56877,7 +58145,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLfloat *'
+        'const GLfloat *',
+        '3'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56918,7 +58187,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLint *'
+        'const GLint *',
+        '3'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -56959,7 +58229,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLshort *'
+        'const GLshort *',
+        '3'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -57004,7 +58275,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLdouble *'
+        'const GLdouble *',
+        '4'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -57049,7 +58321,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLfloat *'
+        'const GLfloat *',
+        '4'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -57094,7 +58367,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLint *'
+        'const GLint *',
+        '4'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -57139,7 +58413,8 @@ our %registry = (
       ],
       [
         'coords',
-        'const GLshort *'
+        'const GLshort *',
+        '4'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -57164,7 +58439,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void *'
+        'void *',
+        'COMPSIZE(type,stride)'
       ]
     ],
     'feature' => 'GL_EXT_vertex_weighting',
@@ -57189,7 +58465,8 @@ our %registry = (
     'argdata' => [
       [
         'weight',
-        'GLfloat* '
+        'GLfloat* ',
+        '1'
       ]
     ],
     'feature' => 'GL_EXT_vertex_weighting',
@@ -57214,7 +58491,8 @@ our %registry = (
     'argdata' => [
       [
         'weight',
-        'const GLhalf* '
+        'const GLhalf* ',
+        '1'
       ]
     ],
     'feature' => 'GL_NV_half_float',
@@ -57260,7 +58538,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLdouble* '
+        'const GLdouble* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_video_capture',
@@ -57285,7 +58564,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* '
+        'const GLfloat* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_video_capture',
@@ -57310,7 +58590,8 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* '
+        'const GLint* ',
+        'COMPSIZE(pname)'
       ]
     ],
     'feature' => 'GL_NV_video_capture',
@@ -57357,7 +58638,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat * '
+        'const GLfloat * ',
+        'COMPSIZE(count)'
       ]
     ],
     'feature' => 'GL_ARB_viewport_array',
@@ -57408,7 +58690,8 @@ our %registry = (
       ],
       [
         'v',
-        'const GLfloat * '
+        'const GLfloat * ',
+        '4'
       ]
     ],
     'feature' => 'GL_ARB_viewport_array',
@@ -57477,7 +58760,8 @@ our %registry = (
       ],
       [
         'buffers',
-        'const GLuint* '
+        'const GLuint* ',
+        'COMPSIZE(numBufferBarriers)'
       ],
       [
         'numTextureBarriers',
@@ -57485,11 +58769,13 @@ our %registry = (
       ],
       [
         'textures',
-        'const GLuint *'
+        'const GLuint *',
+        'COMPSIZE(numTextureBarriers)'
       ],
       [
         'srcLayouts',
-        'const GLenum *'
+        'const GLenum *',
+        'COMPSIZE(numTextureBarriers)'
       ]
     ],
     'feature' => 'GL_EXT_semaphore',
@@ -57545,11 +58831,13 @@ our %registry = (
       ],
       [
         'paths',
-        'const GLuint * '
+        'const GLuint * ',
+        'numPaths'
       ],
       [
         'weights',
-        'const GLfloat * '
+        'const GLfloat * ',
+        'numPaths'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -57574,7 +58862,8 @@ our %registry = (
       ],
       [
         'pointer',
-        'void *'
+        'void *',
+        'COMPSIZE(type,stride)'
       ]
     ],
     'feature' => 'GL_ARB_vertex_blend',
@@ -57591,7 +58880,8 @@ our %registry = (
       ],
       [
         'weights',
-        'GLbyte *'
+        'GLbyte *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_vertex_blend',
@@ -57608,7 +58898,8 @@ our %registry = (
       ],
       [
         'weights',
-        'GLdouble *'
+        'GLdouble *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_vertex_blend',
@@ -57625,7 +58916,8 @@ our %registry = (
       ],
       [
         'weights',
-        'GLfloat *'
+        'GLfloat *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_vertex_blend',
@@ -57642,7 +58934,8 @@ our %registry = (
       ],
       [
         'weights',
-        'GLint *'
+        'GLint *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_vertex_blend',
@@ -57659,7 +58952,8 @@ our %registry = (
       ],
       [
         'weights',
-        'GLshort *'
+        'GLshort *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_vertex_blend',
@@ -57676,7 +58970,8 @@ our %registry = (
       ],
       [
         'weights',
-        'GLubyte *'
+        'GLubyte *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_vertex_blend',
@@ -57693,7 +58988,8 @@ our %registry = (
       ],
       [
         'weights',
-        'GLuint *'
+        'GLuint *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_vertex_blend',
@@ -57710,7 +59006,8 @@ our %registry = (
       ],
       [
         'weights',
-        'GLushort *'
+        'GLushort *',
+        'size'
       ]
     ],
     'feature' => 'GL_ARB_vertex_blend',
@@ -57747,8 +59044,9 @@ our %registry = (
     },
     'argdata' => [
       [
-        'p',
-        'const GLdouble *'
+        'v',
+        'const GLdouble *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -57786,8 +59084,9 @@ our %registry = (
     },
     'argdata' => [
       [
-        'p',
-        'const GLfloat *'
+        'v',
+        'const GLfloat *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -57825,8 +59124,9 @@ our %registry = (
     },
     'argdata' => [
       [
-        'p',
-        'const GLint *'
+        'v',
+        'const GLint *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -57864,8 +59164,9 @@ our %registry = (
     },
     'argdata' => [
       [
-        'p',
-        'const GLshort *'
+        'v',
+        'const GLshort *',
+        '2'
       ]
     ],
     'core_removed' => 1,
@@ -57907,8 +59208,9 @@ our %registry = (
     },
     'argdata' => [
       [
-        'p',
-        'const GLdouble *'
+        'v',
+        'const GLdouble *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -57950,8 +59252,9 @@ our %registry = (
     },
     'argdata' => [
       [
-        'p',
-        'const GLfloat *'
+        'v',
+        'const GLfloat *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -57993,8 +59296,9 @@ our %registry = (
     },
     'argdata' => [
       [
-        'p',
-        'const GLint *'
+        'v',
+        'const GLint *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -58036,8 +59340,9 @@ our %registry = (
     },
     'argdata' => [
       [
-        'p',
-        'const GLshort *'
+        'v',
+        'const GLshort *',
+        '3'
       ]
     ],
     'core_removed' => 1,
@@ -58074,8 +59379,9 @@ our %registry = (
   'glWindowPos4dvMESA' => {
     'argdata' => [
       [
-        'p',
-        'const GLdouble* '
+        'v',
+        'const GLdouble* ',
+        '4'
       ]
     ],
     'feature' => 'GL_MESA_window_pos',
@@ -58111,8 +59417,9 @@ our %registry = (
   'glWindowPos4fvMESA' => {
     'argdata' => [
       [
-        'p',
-        'const GLfloat* '
+        'v',
+        'const GLfloat* ',
+        '4'
       ]
     ],
     'feature' => 'GL_MESA_window_pos',
@@ -58148,8 +59455,9 @@ our %registry = (
   'glWindowPos4ivMESA' => {
     'argdata' => [
       [
-        'p',
-        'const GLint* '
+        'v',
+        'const GLint* ',
+        '4'
       ]
     ],
     'feature' => 'GL_MESA_window_pos',
@@ -58185,8 +59493,9 @@ our %registry = (
   'glWindowPos4svMESA' => {
     'argdata' => [
       [
-        'p',
-        'const GLshort* '
+        'v',
+        'const GLshort* ',
+        '4'
       ]
     ],
     'feature' => 'GL_MESA_window_pos',
@@ -58207,7 +59516,8 @@ our %registry = (
       ],
       [
         'box',
-        'const GLint * '
+        'const GLint * ',
+        'COMPSIZE(count)'
       ]
     ],
     'feature' => 'GL_EXT_window_rectangles',

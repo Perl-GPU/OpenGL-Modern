@@ -6,7 +6,7 @@
 - add glpErrorString
 - add export tags :glewfunctions :glpfunctions :glfunctions :glconstants :glcompat
 - gl{Create,Gen,Delete}* now have POGL-like _p variants
-- string arguments now don't force a `_c` binding
+- string input (i.e. const) arguments now don't force a `_c` binding
 
 0.04     2017-08-06 12:06:13-04:00
 - Add module to allow OpenGL::Image to work with OpenGL::Modern
