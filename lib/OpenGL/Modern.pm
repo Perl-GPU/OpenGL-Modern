@@ -712,7 +712,7 @@ our @gl_functionsrest = qw(
   glBeginVertexShaderEXT
   glBeginVideoCaptureNV
   glBindArraySetEXT_c
-  glBindAttribLocationARB_c
+  glBindAttribLocationARB
   glBindBufferARB
   glBindBufferBaseEXT
   glBindBufferBaseNV
@@ -2116,7 +2116,7 @@ our @gl_functionsrest = qw(
   glGetArrayObjectfvATI_c
   glGetArrayObjectivATI_c
   glGetAttachedObjectsARB_c
-  glGetAttribLocationARB_c
+  glGetAttribLocationARB
   glGetBooleanIndexedvEXT_c
   glGetBufferParameteri64v_c
   glGetBufferParameterivARB_c
@@ -2440,7 +2440,7 @@ our @gl_functionsrest = qw(
   glGetUniformi64vARB_c
   glGetUniformi64vNV_c
   glGetUniformivARB_c
-  glGetUniformLocationARB_c
+  glGetUniformLocationARB
   glGetUniformOffsetEXT
   glGetUniformSubroutineuiv_c
   glGetUniformui64vARB_c
@@ -4587,7 +4587,7 @@ our %EXPORT_TAGS_GL = (
     'glGetObjectParameterfvARB_c',
     'glGetObjectParameterivARB_c',
     'glGetShaderSourceARB_c',
-    'glGetUniformLocationARB_c',
+    'glGetUniformLocationARB',
     'glGetUniformfvARB_c',
     'glGetUniformivARB_c',
     'glLinkProgramARB',
@@ -4865,9 +4865,9 @@ our %EXPORT_TAGS_GL = (
     'glVertexAttribPointerARB_c'
   ],
   'GL_ARB_vertex_shader' => [
-    'glBindAttribLocationARB_c',
+    'glBindAttribLocationARB',
     'glGetActiveAttribARB_c',
-    'glGetAttribLocationARB_c'
+    'glGetAttribLocationARB'
   ],
   'GL_ARB_vertex_type_2_10_10_10_rev' => [
     'glColorP3ui',

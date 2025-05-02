@@ -130,7 +130,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my $type = $item->{restype};
   my $num_ptr_types = 0;
   for ($type, map $_->[1], @argdata) {
-    $num_ptr_types++ if /\*/ and !/^\s*const\s+GLchar\s*\*\s*$/;
+    $num_ptr_types++ if /\*/ and !/^\s*const\s+GLchar(?:ARB)?\s*\*\s*$/;
   }
   $item->{has_ptr_arg} = 1 if $num_ptr_types > 0;
 }
