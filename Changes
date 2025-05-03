@@ -1,3 +1,4 @@
+0.0401 2025-05-03
 - document glpSetAutoCheckErrors (#44)
 - croak if auto-glewInit fails (#43 #36)
 - update to GLEW 2.1.0 which captures OpenGL 4.6
