@@ -4401,7 +4401,7 @@ our %registry = (
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewAreProgramsResidentNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'GLboolean'
   },
   'glAreTexturesResident' => {
@@ -4424,7 +4424,7 @@ our %registry = (
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'GLboolean'
   },
   'glAreTexturesResidentEXT' => {
@@ -4447,7 +4447,7 @@ our %registry = (
     'feature' => 'GL_EXT_texture_object',
     'glewImpl' => '__glewAreTexturesResidentEXT',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'GLboolean'
   },
   'glAreVertexArraysResidentSGIX' => {
@@ -4468,7 +4468,7 @@ our %registry = (
     'feature' => 'GL_SGIX_vertex_array_object',
     'glewImpl' => '__glewAreVertexArraysResidentSGIX',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'GLboolean'
   },
   'glArrayElement' => {
@@ -4926,7 +4926,7 @@ our %registry = (
     'feature' => 'GL_ARB_multi_bind',
     'glewImpl' => '__glewBindBuffersRange',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glBindFragDataLocation' => {
@@ -5496,7 +5496,7 @@ our %registry = (
     'feature' => 'GL_ARB_multi_bind',
     'glewImpl' => '__glewBindVertexBuffers',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glBindVertexShaderEXT' => {
@@ -7322,7 +7322,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glColor3fv' => {
@@ -7712,7 +7712,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor4fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glColor4fv' => {
@@ -7915,7 +7915,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor4ubVertex2fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glColor4ubVertex3fSUN' => {
@@ -7970,7 +7970,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor4ubVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glColor4ubv' => {
@@ -8860,7 +8860,7 @@ our %registry = (
     'feature' => 'GL_ARB_shading_language_include',
     'glewImpl' => '__glewCompileShaderIncludeARB',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glCompressedMultiTexImage1DEXT' => {
@@ -11380,7 +11380,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewCoverFillPathInstancedNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glCoverFillPathNV' => {
@@ -11435,7 +11435,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewCoverStrokePathInstancedNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glCoverStrokePathNV' => {
@@ -13373,7 +13373,7 @@ our %registry = (
     'feature' => 'GL_EXT_multiview_draw_buffers',
     'glewImpl' => '__glewDrawBuffersIndexedEXT',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glDrawBuffersNV' => {
@@ -13416,7 +13416,7 @@ our %registry = (
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewDrawCommandsAddressNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glDrawCommandsNV' => {
@@ -13445,7 +13445,7 @@ our %registry = (
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewDrawCommandsNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glDrawCommandsStatesAddressNV' => {
@@ -13474,7 +13474,7 @@ our %registry = (
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewDrawCommandsStatesAddressNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glDrawCommandsStatesNV' => {
@@ -13507,7 +13507,7 @@ our %registry = (
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewDrawCommandsStatesNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glDrawElementArrayAPPLE' => {
@@ -14853,7 +14853,7 @@ our %registry = (
     'feature' => 'GL_QCOM_extended_get',
     'glewImpl' => '__glewExtGetBuffersQCOM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glExtGetFramebuffersQCOM' => {
@@ -14876,7 +14876,7 @@ our %registry = (
     'feature' => 'GL_QCOM_extended_get',
     'glewImpl' => '__glewExtGetFramebuffersQCOM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glExtGetProgramBinarySourceQCOM' => {
@@ -14902,7 +14902,7 @@ our %registry = (
     'feature' => 'GL_QCOM_extended_get2',
     'glewImpl' => '__glewExtGetProgramBinarySourceQCOM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glExtGetProgramsQCOM' => {
@@ -14925,7 +14925,7 @@ our %registry = (
     'feature' => 'GL_QCOM_extended_get2',
     'glewImpl' => '__glewExtGetProgramsQCOM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glExtGetRenderbuffersQCOM' => {
@@ -14948,7 +14948,7 @@ our %registry = (
     'feature' => 'GL_QCOM_extended_get',
     'glewImpl' => '__glewExtGetRenderbuffersQCOM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glExtGetShadersQCOM' => {
@@ -14971,7 +14971,7 @@ our %registry = (
     'feature' => 'GL_QCOM_extended_get2',
     'glewImpl' => '__glewExtGetShadersQCOM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glExtGetTexLevelParameterivQCOM' => {
@@ -15074,7 +15074,7 @@ our %registry = (
     'feature' => 'GL_QCOM_extended_get',
     'glewImpl' => '__glewExtGetTexturesQCOM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glExtIsProgramBinaryQCOM' => {
@@ -17491,7 +17491,7 @@ our %registry = (
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetActiveAttrib',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glGetActiveSubroutineName' => {
@@ -17526,7 +17526,7 @@ our %registry = (
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetActiveSubroutineName',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetActiveSubroutineUniformName' => {
@@ -17561,7 +17561,7 @@ our %registry = (
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetActiveSubroutineUniformName',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetActiveSubroutineUniformiv' => {
@@ -17635,7 +17635,7 @@ our %registry = (
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetActiveUniform',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glGetActiveUniformBlockName' => {
@@ -17666,7 +17666,7 @@ our %registry = (
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetActiveUniformBlockName',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetActiveUniformBlockiv' => {
@@ -17723,7 +17723,7 @@ our %registry = (
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetActiveUniformName',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetActiveUniformsiv' => {
@@ -17754,7 +17754,7 @@ our %registry = (
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetActiveUniformsiv',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetActiveVaryingNV' => {
@@ -17795,7 +17795,7 @@ our %registry = (
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewGetActiveVaryingNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glGetArrayObjectfvATI' => {
@@ -17866,7 +17866,7 @@ our %registry = (
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewGetAttachedObjectsARB',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetAttachedShaders' => {
@@ -17893,7 +17893,7 @@ our %registry = (
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetAttachedShaders',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetAttribLocation' => {
@@ -18791,7 +18791,7 @@ our %registry = (
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewGetDebugMessageLog',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 6,
     'restype' => 'GLuint'
   },
   'glGetDebugMessageLogAMD' => {
@@ -18833,7 +18833,7 @@ our %registry = (
     'feature' => 'GL_AMD_debug_output',
     'glewImpl' => '__glewGetDebugMessageLogAMD',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 5,
     'restype' => 'GLuint'
   },
   'glGetDetailTexFuncSGIS' => {
@@ -18920,7 +18920,7 @@ our %registry = (
     'feature' => 'GL_QCOM_driver_control',
     'glewImpl' => '__glewGetDriverControlStringQCOM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetDriverControlsQCOM' => {
@@ -18942,7 +18942,7 @@ our %registry = (
     'feature' => 'GL_QCOM_driver_control',
     'glewImpl' => '__glewGetDriverControlsQCOM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetError' => {
@@ -19758,7 +19758,7 @@ our %registry = (
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewGetInfoLogARB',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetInteger64i_v' => {
@@ -21609,7 +21609,7 @@ our %registry = (
     'feature' => 'GL_ARB_shading_language_include',
     'glewImpl' => '__glewGetNamedStringARB',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetNamedStringivARB' => {
@@ -21678,7 +21678,7 @@ our %registry = (
     'feature' => 'GL_SGIX_nonlinear_lighting_pervertex',
     'glewImpl' => '__glewGetNonlinLightfvSGIX',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetNonlinMaterialfvSGIX' => {
@@ -21703,7 +21703,7 @@ our %registry = (
     'feature' => 'GL_SGIX_nonlinear_lighting_pervertex',
     'glewImpl' => '__glewGetNonlinMaterialfvSGIX',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetObjectBufferfvATI' => {
@@ -21781,7 +21781,7 @@ our %registry = (
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewGetObjectLabel',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetObjectLabelEXT' => {
@@ -21812,7 +21812,7 @@ our %registry = (
     'feature' => 'GL_EXT_debug_label',
     'glewImpl' => '__glewGetObjectLabelEXT',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetObjectParameterfvARB' => {
@@ -21912,7 +21912,7 @@ our %registry = (
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewGetObjectPtrLabel',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glGetOcclusionQueryivNV' => {
@@ -22143,7 +22143,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewGetPathMetricsNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetPathParameterfvNV' => {
@@ -22234,7 +22234,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewGetPathSpacingNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetPathTexGenfvNV' => {
@@ -22333,7 +22333,7 @@ our %registry = (
     'feature' => 'GL_INTEL_performance_query',
     'glewImpl' => '__glewGetPerfCounterInfoINTEL',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 7,
     'restype' => 'void'
   },
   'glGetPerfMonitorCounterDataAMD' => {
@@ -22364,7 +22364,7 @@ our %registry = (
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGetPerfMonitorCounterDataAMD',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetPerfMonitorCounterInfoAMD' => {
@@ -22421,7 +22421,7 @@ our %registry = (
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGetPerfMonitorCounterStringAMD',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetPerfMonitorCountersAMD' => {
@@ -22453,7 +22453,7 @@ our %registry = (
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGetPerfMonitorCountersAMD',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glGetPerfMonitorGroupStringAMD' => {
@@ -22480,7 +22480,7 @@ our %registry = (
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGetPerfMonitorGroupStringAMD',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetPerfMonitorGroupsAMD' => {
@@ -22503,7 +22503,7 @@ our %registry = (
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGetPerfMonitorGroupsAMD',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetPerfQueryDataINTEL' => {
@@ -22532,7 +22532,7 @@ our %registry = (
     'feature' => 'GL_INTEL_performance_query',
     'glewImpl' => '__glewGetPerfQueryDataINTEL',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetPerfQueryIdByNameINTEL' => {
@@ -22549,7 +22549,7 @@ our %registry = (
     'feature' => 'GL_INTEL_performance_query',
     'glewImpl' => '__glewGetPerfQueryIdByNameINTEL',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetPerfQueryInfoINTEL' => {
@@ -22587,7 +22587,7 @@ our %registry = (
     'feature' => 'GL_INTEL_performance_query',
     'glewImpl' => '__glewGetPerfQueryInfoINTEL',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 5,
     'restype' => 'void'
   },
   'glGetPixelMapfv' => {
@@ -22852,7 +22852,7 @@ our %registry = (
     'feature' => 'GL_ARB_get_program_binary',
     'glewImpl' => '__glewGetProgramBinary',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glGetProgramEnvParameterdvARB' => {
@@ -22923,7 +22923,7 @@ our %registry = (
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetProgramInfoLog',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetProgramInterfaceiv' => {
@@ -23020,7 +23020,7 @@ our %registry = (
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewGetProgramNamedParameterdvNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetProgramNamedParameterfvNV' => {
@@ -23047,7 +23047,7 @@ our %registry = (
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewGetProgramNamedParameterfvNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetProgramParameterdvNV' => {
@@ -23126,7 +23126,7 @@ our %registry = (
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewGetProgramPipelineInfoLog',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetProgramPipelineiv' => {
@@ -23267,7 +23267,7 @@ our %registry = (
     'feature' => 'GL_ARB_program_interface_query',
     'glewImpl' => '__glewGetProgramResourceName',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetProgramResourcefvNV' => {
@@ -23310,7 +23310,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewGetProgramResourcefvNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glGetProgramResourceiv' => {
@@ -23354,7 +23354,7 @@ our %registry = (
     'feature' => 'GL_ARB_program_interface_query',
     'glewImpl' => '__glewGetProgramResourceiv',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glGetProgramStageiv' => {
@@ -24019,7 +24019,7 @@ our %registry = (
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewGetSeparableFilter',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glGetSeparableFilterEXT' => {
@@ -24055,7 +24055,7 @@ our %registry = (
     'feature' => 'GL_EXT_convolution',
     'glewImpl' => '__glewGetSeparableFilterEXT',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glGetShaderInfoLog' => {
@@ -24082,7 +24082,7 @@ our %registry = (
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetShaderInfoLog',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetShaderPrecisionFormat' => {
@@ -24109,7 +24109,7 @@ our %registry = (
     'feature' => 'GL_ARB_ES2_compatibility',
     'glewImpl' => '__glewGetShaderPrecisionFormat',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetShaderSource' => {
@@ -24139,7 +24139,7 @@ our %registry = (
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetShaderSource',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetShaderiv' => {
@@ -24276,7 +24276,7 @@ our %registry = (
     'feature' => 'GL_ARB_sync',
     'glewImpl' => '__glewGetSynciv',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetTexBumpParameterfvATI' => {
@@ -25237,7 +25237,7 @@ our %registry = (
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewGetTransformFeedbackVarying',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glGetTransformFeedbackVaryingNV' => {
@@ -25357,7 +25357,7 @@ our %registry = (
     'feature' => 'GL_ANGLE_translated_shader_source',
     'glewImpl' => '__glewGetTranslatedShaderSourceANGLE',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetUniformBlockIndex' => {
@@ -25417,7 +25417,7 @@ our %registry = (
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetUniformIndices',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glGetUniformLocation' => {
@@ -26899,7 +26899,7 @@ our %registry = (
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnSeparableFilterARB',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glGetnTexImage' => {
@@ -29276,7 +29276,7 @@ our %registry = (
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewListDrawCommandsStatesClientNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glLoadIdentity' => {
@@ -30189,7 +30189,7 @@ our %registry = (
     'feature' => 'GL_LAYOUT_LINEAR_INTEL',
     'glewImpl' => '__glewMapTexture2DINTEL',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void *'
   },
   'glMapVertexAttrib1dAPPLE' => {
@@ -31330,7 +31330,7 @@ our %registry = (
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewMultiDrawArrays',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glMultiDrawArraysIndirect' => {
@@ -31481,7 +31481,7 @@ our %registry = (
     'feature' => 'GL_APPLE_element_array',
     'glewImpl' => '__glewMultiDrawElementArrayAPPLE',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glMultiDrawElements' => {
@@ -31515,7 +31515,7 @@ our %registry = (
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewMultiDrawElements',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glMultiDrawElementsBaseVertex' => {
@@ -31554,7 +31554,7 @@ our %registry = (
     'feature' => 'GL_ARB_draw_elements_base_vertex',
     'glewImpl' => '__glewMultiDrawElementsBaseVertex',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glMultiDrawElementsIndirect' => {
@@ -31729,7 +31729,7 @@ our %registry = (
     'feature' => 'GL_APPLE_element_array',
     'glewImpl' => '__glewMultiDrawRangeElementArrayAPPLE',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glMultiModeDrawArraysIBM' => {
@@ -31761,7 +31761,7 @@ our %registry = (
     'feature' => 'GL_IBM_multimode_draw_arrays',
     'glewImpl' => '__glewMultiModeDrawArraysIBM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glMultiModeDrawElementsIBM' => {
@@ -31797,7 +31797,7 @@ our %registry = (
     'feature' => 'GL_IBM_multimode_draw_arrays',
     'glewImpl' => '__glewMultiModeDrawElementsIBM',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glMultiTexBufferEXT' => {
@@ -35461,7 +35461,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glNormal3fv' => {
@@ -36300,7 +36300,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathCommandsNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glPathCoordsNV' => {
@@ -36447,7 +36447,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathGlyphIndexRangeNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'GLenum'
   },
   'glPathGlyphRangeNV' => {
@@ -36544,7 +36544,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathGlyphsNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glPathMemoryGlyphIndexArrayNV' => {
@@ -36778,7 +36778,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathSubCommandsNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glPathSubCoordsNV' => {
@@ -37244,7 +37244,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPointAlongPathNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'GLboolean'
   },
   'glPointParameterf' => {
@@ -37773,7 +37773,7 @@ our %registry = (
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glPrioritizeVertexArraysSGIX' => {
@@ -37794,7 +37794,7 @@ our %registry = (
     'feature' => 'GL_SGIX_vertex_array_object',
     'glewImpl' => '__glewPrioritizeVertexArraysSGIX',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glProgramBinary' => {
@@ -38563,7 +38563,7 @@ our %registry = (
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewProgramNamedParameter4dvNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glProgramNamedParameter4fNV' => {
@@ -38628,7 +38628,7 @@ our %registry = (
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewProgramNamedParameter4fvNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glProgramParameter4dNV' => {
@@ -42145,7 +42145,7 @@ our %registry = (
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glRectf' => {
@@ -42188,7 +42188,7 @@ our %registry = (
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glRecti' => {
@@ -42231,7 +42231,7 @@ our %registry = (
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glRects' => {
@@ -42274,7 +42274,7 @@ our %registry = (
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glReferencePlaneSGIX' => {
@@ -42589,7 +42589,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiColor3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glReplacementCodeuiColor4fNormal3fVertex3fSUN' => {
@@ -42670,7 +42670,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiColor4fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glReplacementCodeuiColor4ubVertex3fSUN' => {
@@ -42734,7 +42734,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiColor4ubVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glReplacementCodeuiNormal3fVertex3fSUN' => {
@@ -42794,7 +42794,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glReplacementCodeuiSUN' => {
@@ -42900,7 +42900,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 5,
     'restype' => 'void'
   },
   'glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN' => {
@@ -42973,7 +42973,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glReplacementCodeuiTexCoord2fVertex3fSUN' => {
@@ -43029,7 +43029,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiTexCoord2fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glReplacementCodeuiVertex3fSUN' => {
@@ -43072,7 +43072,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glReplacementCodeuivSUN' => {
@@ -44303,7 +44303,7 @@ our %registry = (
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewSeparableFilter2D',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glSetFenceAPPLE' => {
@@ -44458,7 +44458,7 @@ our %registry = (
     'feature' => 'GL_ARB_ES2_compatibility',
     'glewImpl' => '__glewShaderBinary',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glShaderOp1EXT' => {
@@ -44560,7 +44560,7 @@ our %registry = (
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewShaderSource',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glShaderStorageBlockBinding' => {
@@ -44638,7 +44638,7 @@ our %registry = (
     'feature' => 'GL_EXT_semaphore',
     'glewImpl' => '__glewSignalSemaphoreEXT',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glSignalVkFenceNV' => {
@@ -44696,7 +44696,7 @@ our %registry = (
     'feature' => 'GL_VERSION_4_6',
     'glewImpl' => '__glewSpecializeShader',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glSpriteParameterfSGIX' => {
@@ -44851,7 +44851,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewStencilFillPathInstancedNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glStencilFillPathNV' => {
@@ -45070,7 +45070,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewStencilStrokePathInstancedNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glStencilStrokePathNV' => {
@@ -45137,7 +45137,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewStencilThenCoverFillPathInstancedNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glStencilThenCoverFillPathNV' => {
@@ -45208,7 +45208,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewStencilThenCoverStrokePathInstancedNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glStencilThenCoverStrokePathNV' => {
@@ -45793,7 +45793,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fColor3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glTexCoord2fColor4fNormal3fVertex3fSUN' => {
@@ -45878,7 +45878,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fColor4fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glTexCoord2fColor4ubVertex3fSUN' => {
@@ -45946,7 +45946,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fColor4ubVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glTexCoord2fNormal3fVertex3fSUN' => {
@@ -46010,7 +46010,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glTexCoord2fVertex3fSUN' => {
@@ -46057,7 +46057,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fVertex3fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glTexCoord2fv' => {
@@ -46490,7 +46490,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord4fColor4fNormal3fVertex4fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 4,
     'restype' => 'void'
   },
   'glTexCoord4fVertex4fSUN' => {
@@ -46549,7 +46549,7 @@ our %registry = (
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord4fVertex4fvSUN',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glTexCoord4fv' => {
@@ -52839,7 +52839,7 @@ our %registry = (
     'feature' => 'GL_NV_vdpau_interop',
     'glewImpl' => '__glewVDPAUGetSurfaceivNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glVDPAUInitNV' => {
@@ -52856,7 +52856,7 @@ our %registry = (
     'feature' => 'GL_NV_vdpau_interop',
     'glewImpl' => '__glewVDPAUInitNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glVDPAUIsSurfaceNV' => {
@@ -52912,7 +52912,7 @@ our %registry = (
     'feature' => 'GL_NV_vdpau_interop',
     'glewImpl' => '__glewVDPAURegisterOutputSurfaceNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'GLvdpauSurfaceNV'
   },
   'glVDPAURegisterVideoSurfaceNV' => {
@@ -52938,7 +52938,7 @@ our %registry = (
     'feature' => 'GL_NV_vdpau_interop',
     'glewImpl' => '__glewVDPAURegisterVideoSurfaceNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'GLvdpauSurfaceNV'
   },
   'glVDPAUSurfaceAccessNV' => {
@@ -54519,7 +54519,7 @@ our %registry = (
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewVertexArrayVertexBuffers',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glVertexArrayVertexOffsetEXT' => {
@@ -58519,7 +58519,7 @@ our %registry = (
     'feature' => 'GL_NV_video_capture',
     'glewImpl' => '__glewVideoCaptureNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'GLenum'
   },
   'glVideoCaptureStreamParameterdvNV' => {
@@ -58781,7 +58781,7 @@ our %registry = (
     'feature' => 'GL_EXT_semaphore',
     'glewImpl' => '__glewWaitSemaphoreEXT',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 3,
     'restype' => 'void'
   },
   'glWaitSync' => {
@@ -58843,7 +58843,7 @@ our %registry = (
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewWeightPathsNV',
     'glewtype' => 'fun',
-    'has_ptr_arg' => 1,
+    'has_ptr_arg' => 2,
     'restype' => 'void'
   },
   'glWeightPointerARB' => {

@@ -132,7 +132,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   for ($type, map $_->[1], @argdata) {
     $num_ptr_types++ if /\*/ and !/^\s*const\s+GLchar(?:ARB)?\s*\*\s*$/;
   }
-  $item->{has_ptr_arg} = 1 if $num_ptr_types > 0;
+  $item->{has_ptr_arg} = $num_ptr_types if $num_ptr_types > 0;
 }
 
 my %feature2version;
