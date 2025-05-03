@@ -30,7 +30,7 @@ WriteConfigPM({ LIBS => $libs || $DYNS->{OTHERLDFLAGS} });
 WriteMakefile(
   NAME => 'OpenGL::Modern',
   VERSION_FROM => 'lib/OpenGL/Modern.pm',
-  ABSTRACT_FROM => 'lib/OpenGL/Modern.pm',
+  ABSTRACT_FROM => 'lib/OpenGL/Modern.pod',
   AUTHOR => 'Chris Marshall <chm@cpan.org>',
   LICENSE => 'perl',
   PREREQ_PM => {

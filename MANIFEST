@@ -7,6 +7,7 @@ include/GL/glew.h
 include/GL/glxew.h
 include/GL/wglew.h
 lib/OpenGL/Modern.pm
+lib/OpenGL/Modern.pod
 lib/OpenGL/Modern.xs
 lib/OpenGL/Modern/Const.pm
 lib/OpenGL/Modern/Const.xs
