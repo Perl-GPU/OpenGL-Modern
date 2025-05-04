@@ -253,7 +253,6 @@ for my $name (sort grep !/^GL/, keys %signature) {
     my @names = $bind->{binding_name};
     if ($bind->{aliases}) {
       my (undef, @list) = split /\n\s*/, $bind->{aliases};
-      pop @list;
       s/\s.*// for @list;
       push @names, @list;
     }

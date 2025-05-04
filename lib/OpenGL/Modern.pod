@@ -817,6 +817,7 @@ Exported under tag C<:GL_EXT_stencil_two_side>.
 =head2 glActiveTexture
 
  glActiveTexture($texture);
+ glActiveTextureARB($texture);
 
 Exported under tag C<:GL_VERSION_1_3>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glActiveTexture.xhtml>
@@ -918,6 +919,7 @@ Exported under tag C<:GL_SGIX_vertex_array_object>.
 =head2 glArrayElement
 
  glArrayElement($i);
+ glArrayElementEXT($i);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -938,6 +940,7 @@ Exported under tag C<:GL_SGIX_async>.
 =head2 glAttachShader
 
  glAttachShader($program, $shader);
+ glAttachObjectARB($program, $shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glAttachShader.xhtml>
@@ -953,6 +956,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glBegin.xml>
 =head2 glBeginConditionalRender
 
  glBeginConditionalRender($id, $mode);
+ glBeginConditionalRenderNV($id, $mode);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBeginConditionalRender.xhtml>
@@ -990,6 +994,7 @@ Exported under tag C<:GL_INTEL_performance_query>.
 =head2 glBeginQuery
 
  glBeginQuery($target, $id);
+ glBeginQueryARB($target, $id);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBeginQuery.xhtml>
@@ -1016,6 +1021,7 @@ Exported under tag C<:GL_EXT_scene_marker>.
 
  glBeginTransformFeedback($primitiveMode);
  glBeginTransformFeedbackEXT($primitiveMode);
+ glBeginTransformFeedbackNV($primitiveMode);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBeginTransformFeedback.xhtml>
@@ -1041,6 +1047,7 @@ Exported under tag C<:GL_EXT_vertex_array_setXXX>.
 =head2 glBindAttribLocation
 
  glBindAttribLocation($program, $index, $name);
+ glBindAttribLocationARB($program, $index, $name);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBindAttribLocation.xhtml>
@@ -1048,6 +1055,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBindAttribLocation
 =head2 glBindBuffer
 
  glBindBuffer($target, $buffer);
+ glBindBufferARB($target, $buffer);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBindBuffer.xhtml>
@@ -1056,12 +1064,14 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBindBuffer.xhtml>
 
  glBindBufferBase($target, $index, $buffer);
  glBindBufferBaseEXT($target, $index, $buffer);
+ glBindBufferBaseNV($target, $index, $buffer);
 
 Exported under tag C<:GL_ARB_uniform_buffer_object>.
 
 =head2 glBindBufferOffsetEXT
 
  glBindBufferOffsetEXT($target, $index, $buffer, $offset);
+ glBindBufferOffsetNV($target, $index, $buffer, $offset);
 
 Exported under tag C<:GL_EXT_transform_feedback>.
 
@@ -1069,6 +1079,7 @@ Exported under tag C<:GL_EXT_transform_feedback>.
 
  glBindBufferRange($target, $index, $buffer, $offset, $size);
  glBindBufferRangeEXT($target, $index, $buffer, $offset, $size);
+ glBindBufferRangeNV($target, $index, $buffer, $offset, $size);
 
 Exported under tag C<:GL_ARB_uniform_buffer_object>.
 
@@ -1087,6 +1098,7 @@ Exported under tag C<:GL_ARB_multi_bind>.
 =head2 glBindFragDataLocation
 
  glBindFragDataLocation($program, $color, $name);
+ glBindFragDataLocationEXT($program, $color, $name);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBindFragDataLocation.xhtml>
@@ -1094,6 +1106,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBindFragDataLocati
 =head2 glBindFragDataLocationIndexed
 
  glBindFragDataLocationIndexed($program, $colorNumber, $index, $name);
+ glBindFragDataLocationIndexedEXT($program, $colorNumber, $index, $name);
 
 Exported under tag C<:GL_ARB_blend_func_extended>.
 
@@ -1160,6 +1173,7 @@ Exported under tag C<:GL_EXT_vertex_shader>.
 =head2 glBindProgramARB
 
  glBindProgramARB($target, $program);
+ glBindProgramNV($target, $program);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
@@ -1202,6 +1216,7 @@ Exported under tag C<:GL_EXT_vertex_shader>.
 =head2 glBindTexture
 
  glBindTexture($target, $texture);
+ glBindTextureEXT($target, $texture);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBindTexture.xhtml>
@@ -1302,12 +1317,14 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glBitmap.xml>
 
  glBlendBarrierKHR();
  glBlendBarrier();
+ glBlendBarrierNV();
 
 Exported under tag C<:GL_KHR_blend_equation_advanced>.
 
 =head2 glBlendColor
 
  glBlendColor($red, $green, $blue, $alpha);
+ glBlendColorEXT($red, $green, $blue, $alpha);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendColor.xhtml>
@@ -1315,6 +1332,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendColor.xhtml>
 =head2 glBlendEquation
 
  glBlendEquation($mode);
+ glBlendEquationEXT($mode);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendEquation.xhtml>
@@ -1322,6 +1340,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendEquation.xhtm
 =head2 glBlendEquationSeparate
 
  glBlendEquationSeparate($modeRGB, $modeAlpha);
+ glBlendEquationSeparateEXT($modeRGB, $modeAlpha);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendEquationSeparate.xhtml>
@@ -1331,6 +1350,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendEquationSepar
  glBlendEquationSeparatei($buf, $modeRGB, $modeAlpha);
  glBlendEquationSeparateIndexedAMD($buf, $modeRGB, $modeAlpha);
  glBlendEquationSeparateiARB($buf, $modeRGB, $modeAlpha);
+ glBlendEquationSeparateiEXT($buf, $modeRGB, $modeAlpha);
 
 Exported under tag C<:GL_VERSION_4_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendEquationSeparatei.xhtml>
@@ -1340,6 +1360,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendEquationSepar
  glBlendEquationi($buf, $mode);
  glBlendEquationIndexedAMD($buf, $mode);
  glBlendEquationiARB($buf, $mode);
+ glBlendEquationiEXT($buf, $mode);
 
 Exported under tag C<:GL_VERSION_4_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendEquationi.xhtml>
@@ -1355,6 +1376,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendFunc.xhtml>
 
  glBlendFuncSeparate($sfactorRGB, $dfactorRGB, $sfactorAlpha, $dfactorAlpha);
  glBlendFuncSeparateEXT($sfactorRGB, $dfactorRGB, $sfactorAlpha, $dfactorAlpha);
+ glBlendFuncSeparateINGR($sfactorRGB, $dfactorRGB, $sfactorAlpha, $dfactorAlpha);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendFuncSeparate.xhtml>
@@ -1364,6 +1386,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendFuncSeparate.
  glBlendFuncSeparatei($buf, $srcRGB, $dstRGB, $srcAlpha, $dstAlpha);
  glBlendFuncSeparateIndexedAMD($buf, $srcRGB, $dstRGB, $srcAlpha, $dstAlpha);
  glBlendFuncSeparateiARB($buf, $srcRGB, $dstRGB, $srcAlpha, $dstAlpha);
+ glBlendFuncSeparateiEXT($buf, $srcRGB, $dstRGB, $srcAlpha, $dstAlpha);
 
 Exported under tag C<:GL_VERSION_4_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendFuncSeparatei.xhtml>
@@ -1373,6 +1396,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendFuncSeparatei
  glBlendFunci($buf, $src, $dst);
  glBlendFuncIndexedAMD($buf, $src, $dst);
  glBlendFunciARB($buf, $src, $dst);
+ glBlendFunciEXT($buf, $src, $dst);
 
 Exported under tag C<:GL_VERSION_4_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBlendFunci.xhtml>
@@ -1387,6 +1411,7 @@ Exported under tag C<:GL_NV_blend_equation_advanced>.
 
  glBlitFramebuffer($srcX0, $srcY0, $srcX1, $srcY1, $dstX0, $dstY0, $dstX1, $dstY1, $mask, $filter);
  glBlitFramebufferEXT($srcX0, $srcY0, $srcX1, $srcY1, $dstX0, $dstY0, $dstX1, $dstY1, $mask, $filter);
+ glBlitFramebufferNV($srcX0, $srcY0, $srcX1, $srcY1, $dstX0, $dstY0, $dstX1, $dstY1, $mask, $filter);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -1411,6 +1436,7 @@ Exported under tag C<:GL_NV_vertex_buffer_unified_memory>.
 =head2 glBufferData
 
  glBufferData_c($target, $size, $data, $usage);
+ glBufferDataARB_c($target, $size, $data, $usage);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBufferData.xhtml>
@@ -1436,6 +1462,7 @@ Exported under tag C<:GL_KTX_buffer_region>.
 =head2 glBufferStorage
 
  glBufferStorage_c($target, $size, $data, $flags);
+ glBufferStorageEXT_c($target, $size, $data, $flags);
 
 Exported under tag C<:GL_ARB_buffer_storage>.
 
@@ -1454,6 +1481,7 @@ Exported under tag C<:GL_EXT_memory_object>.
 =head2 glBufferSubData
 
  glBufferSubData_c($target, $offset, $size, $data);
+ glBufferSubDataARB_c($target, $offset, $size, $data);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBufferSubData.xhtml>
@@ -1483,6 +1511,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glCallLists.xml>
 =head2 glCheckFramebufferStatus
 
  $retval = glCheckFramebufferStatus($target);
+ $retval = glCheckFramebufferStatusEXT($target);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -1501,6 +1530,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glClampColor
 
  glClampColor($target, $clamp);
+ glClampColorARB($target, $clamp);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClampColor.xhtml>
@@ -1682,18 +1712,21 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClearStencil.xhtml
 =head2 glClearTexImage
 
  glClearTexImage_c($texture, $level, $format, $type, $data);
+ glClearTexImageEXT_c($texture, $level, $format, $type, $data);
 
 Exported under tag C<:GL_ARB_clear_texture>.
 
 =head2 glClearTexSubImage
 
  glClearTexSubImage_c($texture, $level, $xoffset, $yoffset, $zoffset, $width, $height, $depth, $format, $type, $data);
+ glClearTexSubImageEXT_c($texture, $level, $xoffset, $yoffset, $zoffset, $width, $height, $depth, $format, $type, $data);
 
 Exported under tag C<:GL_ARB_clear_texture>.
 
 =head2 glClientActiveTexture
 
  glClientActiveTexture($texture);
+ glClientActiveTextureARB($texture);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -1714,12 +1747,14 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glClientWaitSync
 
  $retval = glClientWaitSync($myGLsync, $flags, $timeout);
+ $retval = glClientWaitSyncAPPLE($myGLsync, $flags, $timeout);
 
 Exported under tag C<:GL_ARB_sync>.
 
 =head2 glClipControl
 
  glClipControl($origin, $depth);
+ glClipControlEXT($origin, $depth);
 
 Exported under tag C<:GL_ARB_clip_control>.
 
@@ -2080,6 +2115,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glColorMask.xhtml>
 
  glColorMaski($buf, $red, $green, $blue, $alpha);
  glColorMaskIndexedEXT($buf, $red, $green, $blue, $alpha);
+ glColorMaskiEXT($buf, $red, $green, $blue, $alpha);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glColorMaski.xhtml>
@@ -2145,6 +2181,7 @@ Exported under tag C<:GL_INTEL_parallel_arrays>.
 =head2 glColorSubTable
 
  glColorSubTable_c($target, $start, $count, $format, $type, $data);
+ glColorSubTableEXT_c($target, $start, $count, $format, $type, $data);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -2152,18 +2189,21 @@ Exported under tag C<:GL_ARB_imaging>.
 
  glColorTable_c($target, $internalformat, $width, $format, $type, $table);
  glColorTableEXT_c($target, $internalformat, $width, $format, $type, $table);
+ glColorTableSGI_c($target, $internalformat, $width, $format, $type, $table);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glColorTableParameterfv
 
  glColorTableParameterfv_c($target, $pname, $params);
+ glColorTableParameterfvSGI_c($target, $pname, $params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glColorTableParameteriv
 
  glColorTableParameteriv_c($target, $pname, $params);
+ glColorTableParameterivSGI_c($target, $pname, $params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -2224,6 +2264,7 @@ Exported under tag C<:GL_NV_command_list>.
 =head2 glCompileShader
 
  glCompileShader($shader);
+ glCompileShaderARB($shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompileShader.xhtml>
@@ -2273,6 +2314,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glCompressedTexImage1D
 
  glCompressedTexImage1D_c($target, $level, $internalformat, $width, $border, $imageSize, $data);
+ glCompressedTexImage1DARB_c($target, $level, $internalformat, $width, $border, $imageSize, $data);
 
 Exported under tag C<:GL_VERSION_1_3>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompressedTexImage1D.xhtml>
@@ -2280,6 +2322,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompressedTexImage
 =head2 glCompressedTexImage2D
 
  glCompressedTexImage2D_c($target, $level, $internalformat, $width, $height, $border, $imageSize, $data);
+ glCompressedTexImage2DARB_c($target, $level, $internalformat, $width, $height, $border, $imageSize, $data);
 
 Exported under tag C<:GL_VERSION_1_3>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompressedTexImage2D.xhtml>
@@ -2287,6 +2330,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompressedTexImage
 =head2 glCompressedTexImage3D
 
  glCompressedTexImage3D_c($target, $level, $internalformat, $width, $height, $depth, $border, $imageSize, $data);
+ glCompressedTexImage3DARB_c($target, $level, $internalformat, $width, $height, $depth, $border, $imageSize, $data);
 
 Exported under tag C<:GL_VERSION_1_3>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompressedTexImage3D.xhtml>
@@ -2300,6 +2344,7 @@ Exported under tag C<:GL_NV_texture_array>.
 =head2 glCompressedTexSubImage1D
 
  glCompressedTexSubImage1D_c($target, $level, $xoffset, $width, $format, $imageSize, $data);
+ glCompressedTexSubImage1DARB_c($target, $level, $xoffset, $width, $format, $imageSize, $data);
 
 Exported under tag C<:GL_VERSION_1_3>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompressedTexSubImage1D.xhtml>
@@ -2307,6 +2352,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompressedTexSubIm
 =head2 glCompressedTexSubImage2D
 
  glCompressedTexSubImage2D_c($target, $level, $xoffset, $yoffset, $width, $height, $format, $imageSize, $data);
+ glCompressedTexSubImage2DARB_c($target, $level, $xoffset, $yoffset, $width, $height, $format, $imageSize, $data);
 
 Exported under tag C<:GL_VERSION_1_3>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompressedTexSubImage2D.xhtml>
@@ -2314,6 +2360,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompressedTexSubIm
 =head2 glCompressedTexSubImage3D
 
  glCompressedTexSubImage3D_c($target, $level, $xoffset, $yoffset, $zoffset, $width, $height, $depth, $format, $imageSize, $data);
+ glCompressedTexSubImage3DARB_c($target, $level, $xoffset, $yoffset, $zoffset, $width, $height, $depth, $format, $imageSize, $data);
 
 Exported under tag C<:GL_VERSION_1_3>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompressedTexSubImage3D.xhtml>
@@ -2393,72 +2440,84 @@ Exported under tag C<:GL_NV_conservative_raster_pre_snap_triangles>.
 =head2 glConvolutionFilter1D
 
  glConvolutionFilter1D_c($target, $internalformat, $width, $format, $type, $image);
+ glConvolutionFilter1DEXT_c($target, $internalformat, $width, $format, $type, $image);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glConvolutionFilter2D
 
  glConvolutionFilter2D_c($target, $internalformat, $width, $height, $format, $type, $image);
+ glConvolutionFilter2DEXT_c($target, $internalformat, $width, $height, $format, $type, $image);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glConvolutionParameterf
 
  glConvolutionParameterf($target, $pname, $params);
+ glConvolutionParameterfEXT($target, $pname, $params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glConvolutionParameterfv
 
  glConvolutionParameterfv_c($target, $pname, $params);
+ glConvolutionParameterfvEXT_c($target, $pname, $params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glConvolutionParameteri
 
  glConvolutionParameteri($target, $pname, $params);
+ glConvolutionParameteriEXT($target, $pname, $params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glConvolutionParameteriv
 
  glConvolutionParameteriv_c($target, $pname, $params);
+ glConvolutionParameterivEXT_c($target, $pname, $params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glCopyBufferSubData
 
  glCopyBufferSubData($readtarget, $writetarget, $readoffset, $writeoffset, $size);
+ glCopyBufferSubDataNV($readtarget, $writetarget, $readoffset, $writeoffset, $size);
 
 Exported under tag C<:GL_ARB_copy_buffer>.
 
 =head2 glCopyColorSubTable
 
  glCopyColorSubTable($target, $start, $x, $y, $width);
+ glCopyColorSubTableEXT($target, $start, $x, $y, $width);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glCopyColorTable
 
  glCopyColorTable($target, $internalformat, $x, $y, $width);
+ glCopyColorTableSGI($target, $internalformat, $x, $y, $width);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glCopyConvolutionFilter1D
 
  glCopyConvolutionFilter1D($target, $internalformat, $x, $y, $width);
+ glCopyConvolutionFilter1DEXT($target, $internalformat, $x, $y, $width);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glCopyConvolutionFilter2D
 
  glCopyConvolutionFilter2D($target, $internalformat, $x, $y, $width, $height);
+ glCopyConvolutionFilter2DEXT($target, $internalformat, $x, $y, $width, $height);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glCopyImageSubData
 
  glCopyImageSubData($srcName, $srcTarget, $srcLevel, $srcX, $srcY, $srcZ, $dstName, $dstTarget, $dstLevel, $dstX, $dstY, $dstZ, $srcWidth, $srcHeight, $srcDepth);
+ glCopyImageSubDataEXT($srcName, $srcTarget, $srcLevel, $srcX, $srcY, $srcZ, $dstName, $dstTarget, $dstLevel, $dstX, $dstY, $dstZ, $srcWidth, $srcHeight, $srcDepth);
 
 Exported under tag C<:GL_ARB_copy_image>.
 
@@ -2521,6 +2580,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glCopyPixels.xml>
 =head2 glCopyTexImage1D
 
  glCopyTexImage1D($target, $level, $internalFormat, $x, $y, $width, $border);
+ glCopyTexImage1DEXT($target, $level, $internalFormat, $x, $y, $width, $border);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCopyTexImage1D.xhtml>
@@ -2528,6 +2588,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCopyTexImage1D.xht
 =head2 glCopyTexImage2D
 
  glCopyTexImage2D($target, $level, $internalFormat, $x, $y, $width, $height, $border);
+ glCopyTexImage2DEXT($target, $level, $internalFormat, $x, $y, $width, $height, $border);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCopyTexImage2D.xhtml>
@@ -2535,6 +2596,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCopyTexImage2D.xht
 =head2 glCopyTexSubImage1D
 
  glCopyTexSubImage1D($target, $level, $xoffset, $x, $y, $width);
+ glCopyTexSubImage1DEXT($target, $level, $xoffset, $x, $y, $width);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCopyTexSubImage1D.xhtml>
@@ -2542,6 +2604,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCopyTexSubImage1D.
 =head2 glCopyTexSubImage2D
 
  glCopyTexSubImage2D($target, $level, $xoffset, $yoffset, $x, $y, $width, $height);
+ glCopyTexSubImage2DEXT($target, $level, $xoffset, $yoffset, $x, $y, $width, $height);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCopyTexSubImage2D.xhtml>
@@ -2549,6 +2612,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCopyTexSubImage2D.
 =head2 glCopyTexSubImage3D
 
  glCopyTexSubImage3D($target, $level, $xoffset, $yoffset, $zoffset, $x, $y, $width, $height);
+ glCopyTexSubImage3DEXT($target, $level, $xoffset, $yoffset, $zoffset, $x, $y, $width, $height);
 
 Exported under tag C<:GL_VERSION_1_2>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCopyTexSubImage3D.xhtml>
@@ -2687,6 +2751,7 @@ Exported under tag C<:GL_INTEL_performance_query>.
 =head2 glCreateProgram
 
  $retval = glCreateProgram();
+ $retval = glCreateProgramObjectARB();
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCreateProgram.xhtml>
@@ -2721,6 +2786,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glCreateShader
 
  $retval = glCreateShader($type);
+ $retval = glCreateShaderObjectARB($type);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCreateShader.xhtml>
@@ -2805,6 +2871,7 @@ Exported under tag C<:GL_SGIX_datapipe>.
 
  glDebugMessageCallback_c($callback, $userParam);
  glDebugMessageCallbackARB_c($callback, $userParam);
+ glDebugMessageCallbackKHR_c($callback, $userParam);
 
 Exported under tag C<:GL_KHR_debug>.
 
@@ -2818,6 +2885,7 @@ Exported under tag C<:GL_AMD_debug_output>.
 
  glDebugMessageControl_c($source, $type, $severity, $count, $ids, $enabled);
  glDebugMessageControlARB_c($source, $type, $severity, $count, $ids, $enabled);
+ glDebugMessageControlKHR_c($source, $type, $severity, $count, $ids, $enabled);
 
 Exported under tag C<:GL_KHR_debug>.
 
@@ -2831,6 +2899,7 @@ Exported under tag C<:GL_AMD_debug_output>.
 
  glDebugMessageInsert($source, $type, $id, $severity, $length, $buf);
  glDebugMessageInsertARB($source, $type, $id, $severity, $length, $buf);
+ glDebugMessageInsertKHR($source, $type, $id, $severity, $length, $buf);
 
 Exported under tag C<:GL_KHR_debug>.
 
@@ -2867,7 +2936,9 @@ Exported under tag C<:GL_KTX_buffer_region>.
 =head2 glDeleteBuffers
 
  glDeleteBuffers_c($n, $buffers);
+ glDeleteBuffersARB_c($n, $buffers);
  glDeleteBuffers_p(@inputs);
+ glDeleteBuffersARB_p(@inputs);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDeleteBuffers.xhtml>
@@ -2902,7 +2973,9 @@ Exported under tag C<:GL_ATI_fragment_shader>.
 =head2 glDeleteFramebuffers
 
  glDeleteFramebuffers_c($n, $framebuffers);
+ glDeleteFramebuffersEXT_c($n, $framebuffers);
  glDeleteFramebuffers_p(@inputs);
+ glDeleteFramebuffersEXT_p(@inputs);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -2987,14 +3060,18 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glDeleteProgramsARB
 
  glDeleteProgramsARB_c($n, $programs);
+ glDeleteProgramsNV_c($n, $programs);
  glDeleteProgramsARB_p(@inputs);
+ glDeleteProgramsNV_p(@inputs);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
 =head2 glDeleteQueries
 
  glDeleteQueries_c($n, $ids);
+ glDeleteQueriesARB_c($n, $ids);
  glDeleteQueries_p(@inputs);
+ glDeleteQueriesARB_p(@inputs);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDeleteQueries.xhtml>
@@ -3009,7 +3086,9 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 =head2 glDeleteRenderbuffers
 
  glDeleteRenderbuffers_c($n, $renderbuffers);
+ glDeleteRenderbuffersEXT_c($n, $renderbuffers);
  glDeleteRenderbuffers_p(@inputs);
+ glDeleteRenderbuffersEXT_p(@inputs);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -3044,6 +3123,7 @@ Exported under tag C<:GL_NV_command_list>.
 =head2 glDeleteSync
 
  glDeleteSync($myGLsync);
+ glDeleteSyncAPPLE($myGLsync);
 
 Exported under tag C<:GL_ARB_sync>.
 
@@ -3065,14 +3145,18 @@ Exported under tag C<:GL_EXT_texture_object>.
 =head2 glDeleteTransformFeedbacks
 
  glDeleteTransformFeedbacks_c($n, $ids);
+ glDeleteTransformFeedbacksNV_c($n, $ids);
  glDeleteTransformFeedbacks_p(@inputs);
+ glDeleteTransformFeedbacksNV_p(@inputs);
 
 Exported under tag C<:GL_ARB_transform_feedback2>.
 
 =head2 glDeleteVertexArrays
 
  glDeleteVertexArrays_c($n, $arrays);
+ glDeleteVertexArraysAPPLE_c($n, $arrays);
  glDeleteVertexArrays_p(@inputs);
+ glDeleteVertexArraysAPPLE_p(@inputs);
 
 Exported under tag C<:GL_ARB_vertex_array_object>.
 
@@ -3167,6 +3251,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glDetachShader
 
  glDetachShader($program, $shader);
+ glDetachObjectARB($program, $shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDetachShader.xhtml>
@@ -3243,6 +3328,7 @@ Exported under tag C<:GL_APPLE_vertex_program_evaluators>.
 =head2 glDisableVertexAttribArray
 
  glDisableVertexAttribArray($index);
+ glDisableVertexAttribArrayARB($index);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDisableVertexAttribArray.xhtml>
@@ -3252,6 +3338,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDisableVertexAttri
  glDisablei($cap, $index);
  glDisableIndexedEXT($cap, $index);
  glDisableiEXT($cap, $index);
+ glDisableiNV($cap, $index);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDisablei.xhtml>
@@ -3283,6 +3370,7 @@ Exported under tag C<:GL_ARB_compute_shader>.
 =head2 glDrawArrays
 
  glDrawArrays($mode, $first, $count);
+ glDrawArraysEXT($mode, $first, $count);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawArrays.xhtml>
@@ -3299,6 +3387,7 @@ Exported under tag C<:GL_ARB_draw_indirect>.
  glDrawArraysInstancedANGLE($mode, $first, $count, $primcount);
  glDrawArraysInstancedARB($mode, $first, $count, $primcount);
  glDrawArraysInstancedEXT($mode, $first, $count, $primcount);
+ glDrawArraysInstancedNV($mode, $first, $count, $primcount);
 
 Exported under tag C<:GL_VERSION_3_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawArraysInstanced.xhtml>
@@ -3306,6 +3395,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawArraysInstance
 =head2 glDrawArraysInstancedBaseInstance
 
  glDrawArraysInstancedBaseInstance($mode, $first, $count, $primcount, $baseinstance);
+ glDrawArraysInstancedBaseInstanceEXT($mode, $first, $count, $primcount, $baseinstance);
 
 Exported under tag C<:GL_ARB_base_instance>.
 
@@ -3327,6 +3417,7 @@ Exported under tag C<:GL_KTX_buffer_region>.
  glDrawBuffers_c($n, $bufs);
  glDrawBuffersARB_c($n, $bufs);
  glDrawBuffersATI_c($n, $bufs);
+ glDrawBuffersEXT_c($n, $bufs);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawBuffers.xhtml>
@@ -3389,6 +3480,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawElements.xhtml
 =head2 glDrawElementsBaseVertex
 
  glDrawElementsBaseVertex_c($mode, $count, $type, $indices, $basevertex);
+ glDrawElementsBaseVertexEXT_c($mode, $count, $type, $indices, $basevertex);
 
 Exported under tag C<:GL_ARB_draw_elements_base_vertex>.
 
@@ -3404,6 +3496,7 @@ Exported under tag C<:GL_ARB_draw_indirect>.
  glDrawElementsInstancedANGLE_c($mode, $count, $type, $indices, $instancecount);
  glDrawElementsInstancedARB_c($mode, $count, $type, $indices, $instancecount);
  glDrawElementsInstancedEXT_c($mode, $count, $type, $indices, $instancecount);
+ glDrawElementsInstancedNV_c($mode, $count, $type, $indices, $instancecount);
 
 Exported under tag C<:GL_VERSION_3_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawElementsInstanced.xhtml>
@@ -3411,18 +3504,21 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawElementsInstan
 =head2 glDrawElementsInstancedBaseInstance
 
  glDrawElementsInstancedBaseInstance_c($mode, $count, $type, $indices, $instancecount, $baseinstance);
+ glDrawElementsInstancedBaseInstanceEXT_c($mode, $count, $type, $indices, $instancecount, $baseinstance);
 
 Exported under tag C<:GL_ARB_base_instance>.
 
 =head2 glDrawElementsInstancedBaseVertex
 
  glDrawElementsInstancedBaseVertex_c($mode, $count, $type, $indices, $instancecount, $basevertex);
+ glDrawElementsInstancedBaseVertexEXT_c($mode, $count, $type, $indices, $instancecount, $basevertex);
 
 Exported under tag C<:GL_ARB_draw_elements_base_vertex>.
 
 =head2 glDrawElementsInstancedBaseVertexBaseInstance
 
  glDrawElementsInstancedBaseVertexBaseInstance_c($mode, $count, $type, $indices, $instancecount, $basevertex, $baseinstance);
+ glDrawElementsInstancedBaseVertexBaseInstanceEXT_c($mode, $count, $type, $indices, $instancecount, $basevertex, $baseinstance);
 
 Exported under tag C<:GL_ARB_base_instance>.
 
@@ -3449,6 +3545,7 @@ Exported under tag C<:GL_ATI_element_array>.
 =head2 glDrawRangeElements
 
  glDrawRangeElements_c($mode, $start, $end, $count, $type, $indices);
+ glDrawRangeElementsEXT_c($mode, $start, $end, $count, $type, $indices);
 
 Exported under tag C<:GL_VERSION_1_2>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawRangeElements.xhtml>
@@ -3456,6 +3553,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawRangeElements.
 =head2 glDrawRangeElementsBaseVertex
 
  glDrawRangeElementsBaseVertex_c($mode, $start, $end, $count, $type, $indices, $basevertex);
+ glDrawRangeElementsBaseVertexEXT_c($mode, $start, $end, $count, $type, $indices, $basevertex);
 
 Exported under tag C<:GL_ARB_draw_elements_base_vertex>.
 
@@ -3469,12 +3567,14 @@ Exported under tag C<:GL_NV_draw_texture>.
 
  glDrawTransformFeedback($mode, $id);
  glDrawTransformFeedbackEXT($mode, $id);
+ glDrawTransformFeedbackNV($mode, $id);
 
 Exported under tag C<:GL_ARB_transform_feedback2>.
 
 =head2 glDrawTransformFeedbackInstanced
 
  glDrawTransformFeedbackInstanced($mode, $id, $primcount);
+ glDrawTransformFeedbackInstancedEXT($mode, $id, $primcount);
 
 Exported under tag C<:GL_ARB_transform_feedback_instanced>.
 
@@ -3616,6 +3716,7 @@ Exported under tag C<:GL_APPLE_vertex_program_evaluators>.
 =head2 glEnableVertexAttribArray
 
  glEnableVertexAttribArray($index);
+ glEnableVertexAttribArrayARB($index);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glEnableVertexAttribArray.xhtml>
@@ -3625,6 +3726,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glEnableVertexAttrib
  glEnablei($cap, $index);
  glEnableIndexedEXT($cap, $index);
  glEnableiEXT($cap, $index);
+ glEnableiNV($cap, $index);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glEnablei.xhtml>
@@ -3641,6 +3743,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glEnd.xml>
 
  glEndConditionalRender();
  glEndConditionalRenderNV();
+ glEndConditionalRenderNVX();
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glEndConditionalRender.xhtml>
@@ -3680,6 +3783,7 @@ Exported under tag C<:GL_INTEL_performance_query>.
 =head2 glEndQuery
 
  glEndQuery($target);
+ glEndQueryARB($target);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glEndQuery.xhtml>
@@ -3712,6 +3816,7 @@ Exported under tag C<:GL_QCOM_tiled_rendering>.
 
  glEndTransformFeedback();
  glEndTransformFeedbackEXT();
+ glEndTransformFeedbackNV();
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glEndTransformFeedback.xhtml>
@@ -3917,6 +4022,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glFeedbackBuffer.
 =head2 glFenceSync
 
  $retval = glFenceSync($condition, $flags);
+ $retval = glFenceSyncAPPLE($condition, $flags);
 
 Exported under tag C<:GL_ARB_sync>.
 
@@ -3974,6 +4080,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glFlush.xhtml>
 
  glFlushMappedBufferRange($target, $offset, $length);
  glFlushMappedBufferRangeAPPLE($target, $offset, $length);
+ glFlushMappedBufferRangeEXT($target, $offset, $length);
 
 Exported under tag C<:GL_ARB_map_buffer_range>.
 
@@ -4022,6 +4129,7 @@ Exported under tag C<:GL_NV_vertex_buffer_unified_memory>.
 =head2 glFogCoordPointer
 
  glFogCoordPointer_c($type, $stride, $pointer);
+ glFogCoordPointerEXT_c($type, $stride, $pointer);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4036,6 +4144,7 @@ Exported under tag C<:GL_IBM_vertex_array_lists>.
 =head2 glFogCoordd
 
  glFogCoordd($coord);
+ glFogCoorddEXT($coord);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4044,6 +4153,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glFogCoordd.xml>
 =head2 glFogCoorddv
 
  glFogCoorddv_c($coord);
+ glFogCoorddvEXT_c($coord);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4052,6 +4162,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glFogCoorddv.xml>
 =head2 glFogCoordf
 
  glFogCoordf($coord);
+ glFogCoordfEXT($coord);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4060,6 +4171,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glFogCoordf.xml>
 =head2 glFogCoordfv
 
  glFogCoordfv_c($coord);
+ glFogCoordfvEXT_c($coord);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4358,6 +4470,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glFramebufferRenderbuffer
 
  glFramebufferRenderbuffer($target, $attachment, $renderbuffertarget, $renderbuffer);
+ glFramebufferRenderbufferEXT($target, $attachment, $renderbuffertarget, $renderbuffer);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -4383,6 +4496,7 @@ Exported under tag C<:GL_AMD_framebuffer_sample_positions>.
 
  glFramebufferTexture($target, $attachment, $texture, $level);
  glFramebufferTextureARB($target, $attachment, $texture, $level);
+ glFramebufferTextureEXT($target, $attachment, $texture, $level);
 
 Exported under tag C<:GL_VERSION_3_2>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glFramebufferTexture.xhtml>
@@ -4390,12 +4504,14 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glFramebufferTexture
 =head2 glFramebufferTexture1D
 
  glFramebufferTexture1D($target, $attachment, $textarget, $texture, $level);
+ glFramebufferTexture1DEXT($target, $attachment, $textarget, $texture, $level);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
 =head2 glFramebufferTexture2D
 
  glFramebufferTexture2D($target, $attachment, $textarget, $texture, $level);
+ glFramebufferTexture2DEXT($target, $attachment, $textarget, $texture, $level);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -4408,12 +4524,14 @@ Exported under tag C<:GL_EXT_multisampled_render_to_texture>.
 =head2 glFramebufferTexture3D
 
  glFramebufferTexture3D($target, $attachment, $textarget, $texture, $level, $layer);
+ glFramebufferTexture3DEXT($target, $attachment, $textarget, $texture, $level, $layer);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
 =head2 glFramebufferTextureFaceARB
 
  glFramebufferTextureFaceARB($target, $attachment, $texture, $level, $face);
+ glFramebufferTextureFaceEXT($target, $attachment, $texture, $level, $face);
 
 Exported under tag C<:GL_ARB_geometry_shader4>.
 
@@ -4421,6 +4539,7 @@ Exported under tag C<:GL_ARB_geometry_shader4>.
 
  glFramebufferTextureLayer($target, $attachment, $texture, $level, $layer);
  glFramebufferTextureLayerARB($target, $attachment, $texture, $level, $layer);
+ glFramebufferTextureLayerEXT($target, $attachment, $texture, $level, $layer);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -4484,7 +4603,9 @@ Exported under tag C<:GL_SGIX_async>.
 =head2 glGenBuffers
 
  glGenBuffers_c($n, $buffers);
+ glGenBuffersARB_c($n, $buffers);
  @retvals = glGenBuffers_p($n);
+ @retvals = glGenBuffersARB_p($n);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGenBuffers.xhtml>
@@ -4512,7 +4633,9 @@ Exported under tag C<:GL_ATI_fragment_shader>.
 =head2 glGenFramebuffers
 
  glGenFramebuffers_c($n, $framebuffers);
+ glGenFramebuffersEXT_c($n, $framebuffers);
  @retvals = glGenFramebuffers_p($n);
+ @retvals = glGenFramebuffersEXT_p($n);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -4567,14 +4690,18 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glGenProgramsARB
 
  glGenProgramsARB_c($n, $programs);
+ glGenProgramsNV_c($n, $programs);
  @retvals = glGenProgramsARB_p($n);
+ @retvals = glGenProgramsNV_p($n);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
 =head2 glGenQueries
 
  glGenQueries_c($n, $ids);
+ glGenQueriesARB_c($n, $ids);
  @retvals = glGenQueries_p($n);
+ @retvals = glGenQueriesARB_p($n);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGenQueries.xhtml>
@@ -4589,7 +4716,9 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 =head2 glGenRenderbuffers
 
  glGenRenderbuffers_c($n, $renderbuffers);
+ glGenRenderbuffersEXT_c($n, $renderbuffers);
  @retvals = glGenRenderbuffers_p($n);
+ @retvals = glGenRenderbuffersEXT_p($n);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -4631,14 +4760,18 @@ Exported under tag C<:GL_EXT_texture_object>.
 =head2 glGenTransformFeedbacks
 
  glGenTransformFeedbacks_c($n, $ids);
+ glGenTransformFeedbacksNV_c($n, $ids);
  @retvals = glGenTransformFeedbacks_p($n);
+ @retvals = glGenTransformFeedbacksNV_p($n);
 
 Exported under tag C<:GL_ARB_transform_feedback2>.
 
 =head2 glGenVertexArrays
 
  glGenVertexArrays_c($n, $arrays);
+ glGenVertexArraysAPPLE_c($n, $arrays);
  @retvals = glGenVertexArrays_p($n);
+ @retvals = glGenVertexArraysAPPLE_p($n);
 
 Exported under tag C<:GL_ARB_vertex_array_object>.
 
@@ -4658,6 +4791,7 @@ Exported under tag C<:GL_EXT_vertex_shader>.
 =head2 glGenerateMipmap
 
  glGenerateMipmap($target);
+ glGenerateMipmapEXT($target);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -4688,6 +4822,7 @@ Exported under tag C<:GL_ARB_shader_atomic_counters>.
 =head2 glGetActiveAttrib
 
  glGetActiveAttrib_c($program, $index, $bufSize, $length, $size, $type, $name);
+ glGetActiveAttribARB_c($program, $index, $bufSize, $length, $size, $type, $name);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetActiveAttrib.xhtml>
@@ -4713,6 +4848,7 @@ Exported under tag C<:GL_ARB_shader_subroutine>.
 =head2 glGetActiveUniform
 
  glGetActiveUniform_c($program, $index, $bufSize, $length, $size, $type, $name);
+ glGetActiveUniformARB_c($program, $index, $bufSize, $length, $size, $type, $name);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetActiveUniform.xhtml>
@@ -4775,6 +4911,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetAttachedShaders
 =head2 glGetAttribLocation
 
  $retval = glGetAttribLocation($program, $name);
+ $retval = glGetAttribLocationARB($program, $name);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetAttribLocation.xhtml>
@@ -4782,6 +4919,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetAttribLocation.
 =head2 glGetBooleani_v
 
  glGetBooleani_v_c($target, $index, $data);
+ glGetBooleanIndexedvEXT_c($target, $index, $data);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBooleani_v.xhtml>
@@ -4802,6 +4940,7 @@ Exported under tag C<:GL_VERSION_3_2>.
 =head2 glGetBufferParameteriv
 
  glGetBufferParameteriv_c($target, $pname, $params);
+ glGetBufferParameterivARB_c($target, $pname, $params);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBufferParameteriv.xhtml>
@@ -4815,6 +4954,7 @@ Exported under tag C<:GL_NV_shader_buffer_load>.
 =head2 glGetBufferPointerv
 
  glGetBufferPointerv_c($target, $pname, $params);
+ glGetBufferPointervARB_c($target, $pname, $params);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBufferPointerv.xhtml>
@@ -4822,6 +4962,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBufferPointerv.
 =head2 glGetBufferSubData
 
  glGetBufferSubData_c($target, $offset, $size, $data);
+ glGetBufferSubDataARB_c($target, $offset, $size, $data);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBufferSubData.xhtml>
@@ -4849,12 +4990,14 @@ Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 =head2 glGetColorTable
 
  glGetColorTable_c($target, $format, $type, $table);
+ glGetColorTableEXT_c($target, $format, $type, $table);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glGetColorTableParameterfv
 
  glGetColorTableParameterfv_c($target, $pname, $params);
+ glGetColorTableParameterfvEXT_c($target, $pname, $params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -4867,6 +5010,7 @@ Exported under tag C<:GL_SGI_color_table>.
 =head2 glGetColorTableParameteriv
 
  glGetColorTableParameteriv_c($target, $pname, $params);
+ glGetColorTableParameterivEXT_c($target, $pname, $params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -4927,6 +5071,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glGetCompressedTexImage
 
  glGetCompressedTexImage_c($target, $level, $img);
+ glGetCompressedTexImageARB_c($target, $level, $img);
 
 Exported under tag C<:GL_VERSION_1_3>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetCompressedTexImage.xhtml>
@@ -4995,6 +5140,7 @@ Exported under tag C<:GL_EXT_raster_multisample>.
 
  $retval = glGetDebugMessageLog_c($count, $bufSize, $sources, $types, $ids, $severities, $lengths, $messageLog);
  $retval = glGetDebugMessageLogARB_c($count, $bufSize, $sources, $types, $ids, $severities, $lengths, $messageLog);
+ $retval = glGetDebugMessageLogKHR_c($count, $bufSize, $sources, $types, $ids, $severities, $lengths, $messageLog);
 
 Exported under tag C<:GL_KHR_debug>.
 
@@ -5014,6 +5160,7 @@ Exported under tag C<:GL_SGIS_detail_texture>.
 
  glGetDoublei_v_c($target, $index, $data);
  glGetDoubleIndexedvEXT_c($target, $index, $data);
+ glGetDoublei_vEXT_c($target, $index, $data);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
@@ -5084,6 +5231,7 @@ Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
  glGetFloati_v_c($target, $index, $data);
  glGetFloatIndexedvEXT_c($target, $index, $data);
  glGetFloati_vEXT_c($target, $index, $data);
+ glGetFloati_vNV_c($target, $index, $data);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
@@ -5109,12 +5257,14 @@ Exported under tag C<:GL_SGIX_fog_layers>.
 =head2 glGetFragDataIndex
 
  $retval = glGetFragDataIndex($program, $name);
+ $retval = glGetFragDataIndexEXT($program, $name);
 
 Exported under tag C<:GL_ARB_blend_func_extended>.
 
 =head2 glGetFragDataLocation
 
  $retval = glGetFragDataLocation($program, $name);
+ $retval = glGetFragDataLocationEXT($program, $name);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetFragDataLocation.xhtml>
@@ -5170,6 +5320,7 @@ Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 =head2 glGetFramebufferAttachmentParameteriv
 
  glGetFramebufferAttachmentParameteriv_c($target, $attachment, $pname, $params);
+ glGetFramebufferAttachmentParameterivEXT_c($target, $attachment, $pname, $params);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -5201,6 +5352,7 @@ Exported under tag C<:GL_EXT_shader_pixel_local_storage2>.
 
  $retval = glGetGraphicsResetStatus();
  $retval = glGetGraphicsResetStatusEXT();
+ $retval = glGetGraphicsResetStatusKHR();
 
 Exported under tag C<:GL_VERSION_4_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetGraphicsResetStatus.xhtml>
@@ -5294,12 +5446,14 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetInteger64i_v.xh
 
  glGetInteger64v_c($pname, $data);
  glGetInteger64vAPPLE_c($pname, $data);
+ glGetInteger64vEXT_c($pname, $data);
 
 Exported under tag C<:GL_ARB_sync>.
 
 =head2 glGetIntegeri_v
 
  glGetIntegeri_v_c($target, $index, $data);
+ glGetIntegerIndexedvEXT_c($target, $index, $data);
 
 Exported under tag C<:GL_ARB_uniform_buffer_object>.
 
@@ -5621,6 +5775,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glGetMultisamplefv
 
  glGetMultisamplefv_c($pname, $index, $val);
+ glGetMultisamplefvNV_c($pname, $index, $val);
 
 Exported under tag C<:GL_ARB_texture_multisample>.
 
@@ -5795,6 +5950,7 @@ Exported under tag C<:GL_ATI_vertex_array_object>.
 =head2 glGetObjectLabel
 
  glGetObjectLabel_c($identifier, $name, $bufSize, $length, $label);
+ glGetObjectLabelKHR_c($identifier, $name, $bufSize, $length, $label);
 
 Exported under tag C<:GL_KHR_debug>.
 
@@ -5825,6 +5981,7 @@ Exported under tag C<:GL_ARB_shader_objects>.
 =head2 glGetObjectPtrLabel
 
  glGetObjectPtrLabel_c($ptr, $bufSize, $length, $label);
+ glGetObjectPtrLabelKHR_c($ptr, $bufSize, $length, $label);
 
 Exported under tag C<:GL_KHR_debug>.
 
@@ -6042,6 +6199,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 
  glGetPointerv_c($pname, $params);
  glGetPointervEXT_c($pname, $params);
+ glGetPointervKHR_c($pname, $params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -6252,6 +6410,7 @@ Exported under tag C<:GL_ARB_transform_feedback3>.
 =head2 glGetQueryObjecti64v
 
  glGetQueryObjecti64v_c($id, $pname, $params);
+ glGetQueryObjecti64vEXT_c($id, $pname, $params);
 
 Exported under tag C<:GL_ARB_timer_query>.
 
@@ -6265,6 +6424,7 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 
  glGetQueryObjectiv_c($id, $pname, $params);
  glGetQueryObjectivARB_c($id, $pname, $params);
+ glGetQueryObjectivEXT_c($id, $pname, $params);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetQueryObjectiv.xhtml>
@@ -6278,6 +6438,7 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 =head2 glGetQueryObjectui64v
 
  glGetQueryObjectui64v_c($id, $pname, $params);
+ glGetQueryObjectui64vEXT_c($id, $pname, $params);
 
 Exported under tag C<:GL_ARB_timer_query>.
 
@@ -6290,6 +6451,7 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 =head2 glGetQueryObjectuiv
 
  glGetQueryObjectuiv_c($id, $pname, $params);
+ glGetQueryObjectuivARB_c($id, $pname, $params);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetQueryObjectuiv.xhtml>
@@ -6303,6 +6465,7 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 =head2 glGetQueryiv
 
  glGetQueryiv_c($target, $pname, $params);
+ glGetQueryivARB_c($target, $pname, $params);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetQueryiv.xhtml>
@@ -6316,18 +6479,21 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 =head2 glGetRenderbufferParameteriv
 
  glGetRenderbufferParameteriv_c($target, $pname, $params);
+ glGetRenderbufferParameterivEXT_c($target, $pname, $params);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
 =head2 glGetSamplerParameterIiv
 
  glGetSamplerParameterIiv_c($sampler, $pname, $params);
+ glGetSamplerParameterIivEXT_c($sampler, $pname, $params);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
 =head2 glGetSamplerParameterIuiv
 
  glGetSamplerParameterIuiv_c($sampler, $pname, $params);
+ glGetSamplerParameterIuivEXT_c($sampler, $pname, $params);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
@@ -6377,6 +6543,7 @@ Exported under tag C<:GL_ARB_ES2_compatibility>.
 =head2 glGetShaderSource
 
  glGetShaderSource_c($shader, $bufSize, $length, $source);
+ glGetShaderSourceARB_c($shader, $bufSize, $length, $source);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderSource.xhtml>
@@ -6422,6 +6589,7 @@ Exported under tag C<:GL_ARB_shader_subroutine>.
 =head2 glGetSynciv
 
  glGetSynciv_c($sync, $pname, $count, $length, $values);
+ glGetSyncivAPPLE_c($sync, $pname, $count, $length, $values);
 
 Exported under tag C<:GL_ARB_sync>.
 
@@ -6513,6 +6681,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexLevelParamet
 =head2 glGetTexParameterIiv
 
  glGetTexParameterIiv_c($target, $pname, $params);
+ glGetTexParameterIivEXT_c($target, $pname, $params);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexParameterIiv.xhtml>
@@ -6520,6 +6689,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexParameterIiv
 =head2 glGetTexParameterIuiv
 
  glGetTexParameterIuiv_c($target, $pname, $params);
+ glGetTexParameterIuivEXT_c($target, $pname, $params);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexParameterIuiv.xhtml>
@@ -6553,6 +6723,7 @@ Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 =head2 glGetTextureHandleARB
 
  $retval = glGetTextureHandleARB($texture);
+ $retval = glGetTextureHandleIMG($texture);
 
 Exported under tag C<:GL_ARB_bindless_texture>.
 
@@ -6649,6 +6820,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glGetTextureSamplerHandleARB
 
  $retval = glGetTextureSamplerHandleARB($texture, $sampler);
+ $retval = glGetTextureSamplerHandleIMG($texture, $sampler);
 
 Exported under tag C<:GL_ARB_bindless_texture>.
 
@@ -6673,6 +6845,7 @@ Exported under tag C<:GL_NV_vertex_program>.
 =head2 glGetTransformFeedbackVarying
 
  glGetTransformFeedbackVarying_c($program, $index, $bufSize, $length, $size, $type, $name);
+ glGetTransformFeedbackVaryingEXT_c($program, $index, $bufSize, $length, $size, $type, $name);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTransformFeedbackVarying.xhtml>
@@ -6728,6 +6901,7 @@ Exported under tag C<:GL_ARB_uniform_buffer_object>.
 =head2 glGetUniformLocation
 
  $retval = glGetUniformLocation($program, $name);
+ $retval = glGetUniformLocationARB($program, $name);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetUniformLocation.xhtml>
@@ -6753,6 +6927,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glGetUniformfv
 
  glGetUniformfv_c($program, $location, $params);
+ glGetUniformfvARB_c($program, $location, $params);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetUniformfv.xhtml>
@@ -6772,6 +6947,7 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glGetUniformiv
 
  glGetUniformiv_c($program, $location, $params);
+ glGetUniformivARB_c($program, $location, $params);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetUniformiv.xhtml>
@@ -6791,6 +6967,7 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glGetUniformuiv
 
  glGetUniformuiv_c($program, $location, $params);
+ glGetUniformuivEXT_c($program, $location, $params);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetUniformuiv.xhtml>
@@ -6912,6 +7089,7 @@ Exported under tag C<:GL_ATI_vertex_attrib_array_object>.
 =head2 glGetVertexAttribIiv
 
  glGetVertexAttribIiv_c($index, $pname, $params);
+ glGetVertexAttribIivEXT_c($index, $pname, $params);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIiv.xhtml>
@@ -6919,6 +7097,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIiv
 =head2 glGetVertexAttribIuiv
 
  glGetVertexAttribIuiv_c($index, $pname, $params);
+ glGetVertexAttribIuivEXT_c($index, $pname, $params);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIuiv.xhtml>
@@ -6926,6 +7105,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIui
 =head2 glGetVertexAttribLdv
 
  glGetVertexAttribLdv_c($index, $pname, $params);
+ glGetVertexAttribLdvEXT_c($index, $pname, $params);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
@@ -6951,6 +7131,7 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 
  glGetVertexAttribPointerv_c($index, $pname, $pointer);
  glGetVertexAttribPointervARB_c($index, $pname, $pointer);
+ glGetVertexAttribPointervNV_c($index, $pname, $pointer);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribPointerv.xhtml>
@@ -6959,6 +7140,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribPoi
 
  glGetVertexAttribdv_c($index, $pname, $params);
  glGetVertexAttribdvARB_c($index, $pname, $params);
+ glGetVertexAttribdvNV_c($index, $pname, $params);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribdv.xhtml>
@@ -6967,6 +7149,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribdv.
 
  glGetVertexAttribfv_c($index, $pname, $params);
  glGetVertexAttribfvARB_c($index, $pname, $params);
+ glGetVertexAttribfvNV_c($index, $pname, $params);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribfv.xhtml>
@@ -6975,6 +7158,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribfv.
 
  glGetVertexAttribiv_c($index, $pname, $params);
  glGetVertexAttribivARB_c($index, $pname, $params);
+ glGetVertexAttribivNV_c($index, $pname, $params);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribiv.xhtml>
@@ -7148,6 +7332,7 @@ Exported under tag C<:GL_ARB_robustness>.
 
  glGetnUniformfv_c($program, $location, $bufSize, $params);
  glGetnUniformfvEXT_c($program, $location, $bufSize, $params);
+ glGetnUniformfvKHR_c($program, $location, $bufSize, $params);
 
 Exported under tag C<:GL_KHR_robustness>.
 
@@ -7167,6 +7352,7 @@ Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
  glGetnUniformiv_c($program, $location, $bufSize, $params);
  glGetnUniformivEXT_c($program, $location, $bufSize, $params);
+ glGetnUniformivKHR_c($program, $location, $bufSize, $params);
 
 Exported under tag C<:GL_KHR_robustness>.
 
@@ -7185,6 +7371,7 @@ Exported under tag C<:GL_ARB_gpu_shader_int64>.
 =head2 glGetnUniformuiv
 
  glGetnUniformuiv_c($program, $location, $bufSize, $params);
+ glGetnUniformuivKHR_c($program, $location, $bufSize, $params);
 
 Exported under tag C<:GL_KHR_robustness>.
 
@@ -7252,6 +7439,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glHint.xhtml>
 =head2 glHistogram
 
  glHistogram($target, $width, $internalformat, $sink);
+ glHistogramEXT($target, $width, $internalformat, $sink);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -7550,6 +7738,7 @@ Exported under tag C<:GL_SGIX_async>.
 =head2 glIsBuffer
 
  $retval = glIsBuffer($buffer);
+ $retval = glIsBufferARB($buffer);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glIsBuffer.xhtml>
@@ -7578,6 +7767,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glIsEnabled.xhtml>
  $retval = glIsEnabledi($cap, $index);
  $retval = glIsEnabledIndexedEXT($cap, $index);
  $retval = glIsEnablediEXT($cap, $index);
+ $retval = glIsEnablediNV($cap, $index);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glIsEnabledi.xhtml>
@@ -7597,6 +7787,7 @@ Exported under tag C<:GL_NV_fence>.
 =head2 glIsFramebuffer
 
  $retval = glIsFramebuffer($framebuffer);
+ $retval = glIsFramebufferEXT($framebuffer);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -7690,6 +7881,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glIsProgram.xhtml>
 =head2 glIsProgramARB
 
  $retval = glIsProgramARB($program);
+ $retval = glIsProgramNV($program);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
@@ -7702,6 +7894,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glIsQuery
 
  $retval = glIsQuery($id);
+ $retval = glIsQueryARB($id);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glIsQuery.xhtml>
@@ -7715,6 +7908,7 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 =head2 glIsRenderbuffer
 
  $retval = glIsRenderbuffer($renderbuffer);
+ $retval = glIsRenderbufferEXT($renderbuffer);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -7752,6 +7946,7 @@ Exported under tag C<:GL_REGAL_extension_query>.
 =head2 glIsSync
 
  $retval = glIsSync($myGLsync);
+ $retval = glIsSyncAPPLE($myGLsync);
 
 Exported under tag C<:GL_ARB_sync>.
 
@@ -7783,6 +7978,7 @@ Exported under tag C<:GL_NV_bindless_texture>.
 =head2 glIsTransformFeedback
 
  $retval = glIsTransformFeedback($id);
+ $retval = glIsTransformFeedbackNV($id);
 
 Exported under tag C<:GL_ARB_transform_feedback2>.
 
@@ -7795,6 +7991,7 @@ Exported under tag C<:GL_EXT_vertex_shader>.
 =head2 glIsVertexArray
 
  $retval = glIsVertexArray($array);
+ $retval = glIsVertexArrayAPPLE($array);
 
 Exported under tag C<:GL_ARB_vertex_array_object>.
 
@@ -7952,6 +8149,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glLinkProgram
 
  glLinkProgram($program);
+ glLinkProgramARB($program);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glLinkProgram.xhtml>
@@ -8023,6 +8221,7 @@ Exported under tag C<:GL_NV_vertex_program>.
 =head2 glLoadTransposeMatrixd
 
  glLoadTransposeMatrixd_c($m);
+ glLoadTransposeMatrixdARB_c($m);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8031,6 +8230,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glLoadTransposeMa
 =head2 glLoadTransposeMatrixf
 
  glLoadTransposeMatrixf_c($m);
+ glLoadTransposeMatrixfARB_c($m);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8170,6 +8370,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMapBuffer
 
  $retval = glMapBuffer_c($target, $access);
+ $retval = glMapBufferARB_c($target, $access);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMapBuffer.xhtml>
@@ -8177,6 +8378,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMapBuffer.xhtml>
 =head2 glMapBufferRange
 
  $retval = glMapBufferRange_c($target, $offset, $length, $access);
+ $retval = glMapBufferRangeEXT_c($target, $offset, $length, $access);
 
 Exported under tag C<:GL_ARB_map_buffer_range>.
 
@@ -8515,12 +8717,14 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glMaxShaderCompilerThreadsKHR
 
  glMaxShaderCompilerThreadsKHR($count);
+ glMaxShaderCompilerThreadsARB($count);
 
 Exported under tag C<:GL_KHR_parallel_shader_compile>.
 
 =head2 glMemoryBarrier
 
  glMemoryBarrier($barriers);
+ glMemoryBarrierEXT($barriers);
 
 Exported under tag C<:GL_ARB_shader_image_load_store>.
 
@@ -8551,6 +8755,7 @@ Exported under tag C<:GL_SGIX_quad_mesh>.
 =head2 glMinSampleShading
 
  glMinSampleShading($value);
+ glMinSampleShadingARB($value);
 
 Exported under tag C<:GL_VERSION_4_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMinSampleShading.xhtml>
@@ -8558,6 +8763,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMinSampleShading.x
 =head2 glMinmax
 
  glMinmax($target, $internalformat, $sink);
+ glMinmaxEXT($target, $internalformat, $sink);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -8586,6 +8792,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glMultTransposeMatrixd
 
  glMultTransposeMatrixd_c($m);
+ glMultTransposeMatrixdARB_c($m);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8594,6 +8801,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glMultTransposeMa
 =head2 glMultTransposeMatrixf
 
  glMultTransposeMatrixf_c($m);
+ glMultTransposeMatrixfARB_c($m);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8602,6 +8810,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glMultTransposeMa
 =head2 glMultiDrawArrays
 
  glMultiDrawArrays_c($mode, $first, $count, $drawcount);
+ glMultiDrawArraysEXT_c($mode, $first, $count, $drawcount);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMultiDrawArrays.xhtml>
@@ -8610,6 +8819,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMultiDrawArrays.xh
 
  glMultiDrawArraysIndirect_c($mode, $indirect, $drawcount, $stride);
  glMultiDrawArraysIndirectAMD_c($mode, $indirect, $drawcount, $stride);
+ glMultiDrawArraysIndirectEXT_c($mode, $indirect, $drawcount, $stride);
 
 Exported under tag C<:GL_ARB_multi_draw_indirect>.
 
@@ -8628,6 +8838,7 @@ Exported under tag C<:GL_NV_bindless_multi_draw_indirect>.
 =head2 glMultiDrawArraysIndirectCount
 
  glMultiDrawArraysIndirectCount_c($mode, $indirect, $drawcount, $maxdrawcount, $stride);
+ glMultiDrawArraysIndirectCountARB_c($mode, $indirect, $drawcount, $maxdrawcount, $stride);
 
 Exported under tag C<:GL_VERSION_4_6>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMultiDrawArraysIndirectCount.xhtml>
@@ -8641,6 +8852,7 @@ Exported under tag C<:GL_APPLE_element_array>.
 =head2 glMultiDrawElements
 
  glMultiDrawElements_c($mode, $count, $type, $indices, $drawcount);
+ glMultiDrawElementsEXT_c($mode, $count, $type, $indices, $drawcount);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMultiDrawElements.xhtml>
@@ -8648,6 +8860,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMultiDrawElements.
 =head2 glMultiDrawElementsBaseVertex
 
  glMultiDrawElementsBaseVertex_c($mode, $count, $type, $indices, $drawcount, $basevertex);
+ glMultiDrawElementsBaseVertexEXT_c($mode, $count, $type, $indices, $drawcount, $basevertex);
 
 Exported under tag C<:GL_ARB_draw_elements_base_vertex>.
 
@@ -8655,6 +8868,7 @@ Exported under tag C<:GL_ARB_draw_elements_base_vertex>.
 
  glMultiDrawElementsIndirect_c($mode, $type, $indirect, $drawcount, $stride);
  glMultiDrawElementsIndirectAMD_c($mode, $type, $indirect, $drawcount, $stride);
+ glMultiDrawElementsIndirectEXT_c($mode, $type, $indirect, $drawcount, $stride);
 
 Exported under tag C<:GL_ARB_multi_draw_indirect>.
 
@@ -8673,6 +8887,7 @@ Exported under tag C<:GL_NV_bindless_multi_draw_indirect>.
 =head2 glMultiDrawElementsIndirectCount
 
  glMultiDrawElementsIndirectCount_c($mode, $type, $indirect, $drawcount, $maxdrawcount, $stride);
+ glMultiDrawElementsIndirectCountARB_c($mode, $type, $indirect, $drawcount, $maxdrawcount, $stride);
 
 Exported under tag C<:GL_VERSION_4_6>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMultiDrawElementsIndirectCount.xhtml>
@@ -8704,6 +8919,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glMultiTexCoord1d
 
  glMultiTexCoord1d($target, $s);
+ glMultiTexCoord1dARB($target, $s);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8711,6 +8927,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord1dv
 
  glMultiTexCoord1dv_c($target, $v);
+ glMultiTexCoord1dvARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8718,6 +8935,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord1f
 
  glMultiTexCoord1f($target, $s);
+ glMultiTexCoord1fARB($target, $s);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8725,6 +8943,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord1fv
 
  glMultiTexCoord1fv_c($target, $v);
+ glMultiTexCoord1fvARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8744,6 +8963,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glMultiTexCoord1i
 
  glMultiTexCoord1i($target, $s);
+ glMultiTexCoord1iARB($target, $s);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8751,6 +8971,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord1iv
 
  glMultiTexCoord1iv_c($target, $v);
+ glMultiTexCoord1ivARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8758,6 +8979,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord1s
 
  glMultiTexCoord1s($target, $s);
+ glMultiTexCoord1sARB($target, $s);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8765,6 +8987,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord1sv
 
  glMultiTexCoord1sv_c($target, $v);
+ glMultiTexCoord1svARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8772,6 +8995,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord2d
 
  glMultiTexCoord2d($target, $s, $t);
+ glMultiTexCoord2dARB($target, $s, $t);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8779,6 +9003,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord2dv
 
  glMultiTexCoord2dv_c($target, $v);
+ glMultiTexCoord2dvARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8786,6 +9011,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord2f
 
  glMultiTexCoord2f($target, $s, $t);
+ glMultiTexCoord2fARB($target, $s, $t);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8793,6 +9019,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord2fv
 
  glMultiTexCoord2fv_c($target, $v);
+ glMultiTexCoord2fvARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8812,6 +9039,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glMultiTexCoord2i
 
  glMultiTexCoord2i($target, $s, $t);
+ glMultiTexCoord2iARB($target, $s, $t);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8819,6 +9047,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord2iv
 
  glMultiTexCoord2iv_c($target, $v);
+ glMultiTexCoord2ivARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8826,6 +9055,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord2s
 
  glMultiTexCoord2s($target, $s, $t);
+ glMultiTexCoord2sARB($target, $s, $t);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8833,6 +9063,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord2sv
 
  glMultiTexCoord2sv_c($target, $v);
+ glMultiTexCoord2svARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8840,6 +9071,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord3d
 
  glMultiTexCoord3d($target, $s, $t, $r);
+ glMultiTexCoord3dARB($target, $s, $t, $r);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8847,6 +9079,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord3dv
 
  glMultiTexCoord3dv_c($target, $v);
+ glMultiTexCoord3dvARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8854,6 +9087,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord3f
 
  glMultiTexCoord3f($target, $s, $t, $r);
+ glMultiTexCoord3fARB($target, $s, $t, $r);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8861,6 +9095,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord3fv
 
  glMultiTexCoord3fv_c($target, $v);
+ glMultiTexCoord3fvARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8880,6 +9115,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glMultiTexCoord3i
 
  glMultiTexCoord3i($target, $s, $t, $r);
+ glMultiTexCoord3iARB($target, $s, $t, $r);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8887,6 +9123,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord3iv
 
  glMultiTexCoord3iv_c($target, $v);
+ glMultiTexCoord3ivARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8894,6 +9131,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord3s
 
  glMultiTexCoord3s($target, $s, $t, $r);
+ glMultiTexCoord3sARB($target, $s, $t, $r);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8901,6 +9139,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord3sv
 
  glMultiTexCoord3sv_c($target, $v);
+ glMultiTexCoord3svARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8908,6 +9147,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord4d
 
  glMultiTexCoord4d($target, $s, $t, $r, $q);
+ glMultiTexCoord4dARB($target, $s, $t, $r, $q);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8915,6 +9155,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord4dv
 
  glMultiTexCoord4dv_c($target, $v);
+ glMultiTexCoord4dvARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8922,6 +9163,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord4f
 
  glMultiTexCoord4f($target, $s, $t, $r, $q);
+ glMultiTexCoord4fARB($target, $s, $t, $r, $q);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8929,6 +9171,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord4fv
 
  glMultiTexCoord4fv_c($target, $v);
+ glMultiTexCoord4fvARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8948,6 +9191,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glMultiTexCoord4i
 
  glMultiTexCoord4i($target, $s, $t, $r, $q);
+ glMultiTexCoord4iARB($target, $s, $t, $r, $q);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8955,6 +9199,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord4iv
 
  glMultiTexCoord4iv_c($target, $v);
+ glMultiTexCoord4ivARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8962,6 +9207,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord4s
 
  glMultiTexCoord4s($target, $s, $t, $r, $q);
+ glMultiTexCoord4sARB($target, $s, $t, $r, $q);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8969,6 +9215,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glMultiTexCoord4sv
 
  glMultiTexCoord4sv_c($target, $v);
+ glMultiTexCoord4svARB_c($target, $v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9258,6 +9505,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glNamedBufferStorage
 
  glNamedBufferStorage_c($buffer, $size, $data, $flags);
+ glNamedBufferStorageEXT_c($buffer, $size, $data, $flags);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
@@ -9276,6 +9524,7 @@ Exported under tag C<:GL_EXT_memory_object>.
 =head2 glNamedBufferSubData
 
  glNamedBufferSubData_c($buffer, $offset, $size, $data);
+ glNamedBufferSubDataEXT_c($buffer, $offset, $size, $data);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
@@ -9740,12 +9989,14 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glObjectLabel
 
  glObjectLabel($identifier, $name, $length, $label);
+ glObjectLabelKHR($identifier, $name, $length, $label);
 
 Exported under tag C<:GL_KHR_debug>.
 
 =head2 glObjectPtrLabel
 
  glObjectPtrLabel_c($ptr, $length, $label);
+ glObjectPtrLabelKHR_c($ptr, $length, $label);
 
 Exported under tag C<:GL_KHR_debug>.
 
@@ -9816,6 +10067,7 @@ Exported under tag C<:GL_ARB_tessellation_shader>.
 =head2 glPatchParameteri
 
  glPatchParameteri($pname, $value);
+ glPatchParameteriEXT($pname, $value);
 
 Exported under tag C<:GL_ARB_tessellation_shader>.
 
@@ -9948,6 +10200,7 @@ Exported under tag C<:GL_NV_path_rendering>.
 =head2 glPauseTransformFeedback
 
  glPauseTransformFeedback();
+ glPauseTransformFeedbackNV();
 
 Exported under tag C<:GL_ARB_transform_feedback2>.
 
@@ -10090,6 +10343,7 @@ Exported under tag C<:GL_NV_path_rendering>.
  glPointParameterf($pname, $param);
  glPointParameterfARB($pname, $param);
  glPointParameterfEXT($pname, $param);
+ glPointParameterfSGIS($pname, $param);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameterf.xhtml>
@@ -10099,6 +10353,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameterf.xh
  glPointParameterfv_c($pname, $params);
  glPointParameterfvARB_c($pname, $params);
  glPointParameterfvEXT_c($pname, $params);
+ glPointParameterfvSGIS_c($pname, $params);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameterfv.xhtml>
@@ -10106,6 +10361,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameterfv.x
 =head2 glPointParameteri
 
  glPointParameteri($pname, $param);
+ glPointParameteriNV($pname, $param);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameteri.xhtml>
@@ -10113,6 +10369,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameteri.xh
 =head2 glPointParameteriv
 
  glPointParameteriv_c($pname, $params);
+ glPointParameterivNV_c($pname, $params);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameteriv.xhtml>
@@ -10157,6 +10414,7 @@ Exported under tag C<:GL_SGIX_async>.
 =head2 glPolygonMode
 
  glPolygonMode($face, $mode);
+ glPolygonModeNV($face, $mode);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPolygonMode.xhtml>
@@ -10171,6 +10429,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPolygonOffset.xhtm
 =head2 glPolygonOffsetClamp
 
  glPolygonOffsetClamp($factor, $units, $clamp);
+ glPolygonOffsetClampEXT($factor, $units, $clamp);
 
 Exported under tag C<:GL_ARB_polygon_offset_clamp>.
 
@@ -10213,6 +10472,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glPopClientAttrib
 =head2 glPopDebugGroup
 
  glPopDebugGroup();
+ glPopDebugGroupKHR();
 
 Exported under tag C<:GL_KHR_debug>.
 
@@ -10254,6 +10514,7 @@ Exported under tag C<:GL_NV_present_video>.
 
  glPrimitiveBoundingBoxARB($minX, $minY, $minZ, $minW, $maxX, $maxY, $maxZ, $maxW);
  glPrimitiveBoundingBox($minX, $minY, $minZ, $minW, $maxX, $maxY, $maxZ, $maxW);
+ glPrimitiveBoundingBoxEXT($minX, $minY, $minZ, $minW, $maxX, $maxY, $maxZ, $maxW);
 
 Exported under tag C<:GL_ARB_ES3_2_compatibility>.
 
@@ -10279,6 +10540,7 @@ Exported under tag C<:GL_NV_primitive_restart>.
 =head2 glPrioritizeTextures
 
  glPrioritizeTextures_c($n, $textures, $priorities);
+ glPrioritizeTexturesEXT_c($n, $textures, $priorities);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10498,6 +10760,7 @@ Exported under tag C<:GL_NV_vertex_program>.
 
  glProgramParameteri($program, $pname, $value);
  glProgramParameteriARB($program, $pname, $value);
+ glProgramParameteriEXT($program, $pname, $value);
 
 Exported under tag C<:GL_ARB_get_program_binary>.
 
@@ -10540,18 +10803,21 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniform1f
 
  glProgramUniform1f($program, $location, $x);
+ glProgramUniform1fEXT($program, $location, $x);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform1fv
 
  glProgramUniform1fv_c($program, $location, $count, $value);
+ glProgramUniform1fvEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform1i
 
  glProgramUniform1i($program, $location, $x);
+ glProgramUniform1iEXT($program, $location, $x);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10582,12 +10848,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform1iv
 
  glProgramUniform1iv_c($program, $location, $count, $value);
+ glProgramUniform1ivEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform1ui
 
  glProgramUniform1ui($program, $location, $x);
+ glProgramUniform1uiEXT($program, $location, $x);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10618,6 +10886,7 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform1uiv
 
  glProgramUniform1uiv_c($program, $location, $count, $value);
+ glProgramUniform1uivEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10636,18 +10905,21 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniform2f
 
  glProgramUniform2f($program, $location, $x, $y);
+ glProgramUniform2fEXT($program, $location, $x, $y);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform2fv
 
  glProgramUniform2fv_c($program, $location, $count, $value);
+ glProgramUniform2fvEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform2i
 
  glProgramUniform2i($program, $location, $x, $y);
+ glProgramUniform2iEXT($program, $location, $x, $y);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10678,12 +10950,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform2iv
 
  glProgramUniform2iv_c($program, $location, $count, $value);
+ glProgramUniform2ivEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform2ui
 
  glProgramUniform2ui($program, $location, $x, $y);
+ glProgramUniform2uiEXT($program, $location, $x, $y);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10714,6 +10988,7 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform2uiv
 
  glProgramUniform2uiv_c($program, $location, $count, $value);
+ glProgramUniform2uivEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10732,18 +11007,21 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniform3f
 
  glProgramUniform3f($program, $location, $x, $y, $z);
+ glProgramUniform3fEXT($program, $location, $x, $y, $z);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform3fv
 
  glProgramUniform3fv_c($program, $location, $count, $value);
+ glProgramUniform3fvEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform3i
 
  glProgramUniform3i($program, $location, $x, $y, $z);
+ glProgramUniform3iEXT($program, $location, $x, $y, $z);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10774,12 +11052,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform3iv
 
  glProgramUniform3iv_c($program, $location, $count, $value);
+ glProgramUniform3ivEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform3ui
 
  glProgramUniform3ui($program, $location, $x, $y, $z);
+ glProgramUniform3uiEXT($program, $location, $x, $y, $z);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10810,6 +11090,7 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform3uiv
 
  glProgramUniform3uiv_c($program, $location, $count, $value);
+ glProgramUniform3uivEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10828,18 +11109,21 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniform4f
 
  glProgramUniform4f($program, $location, $x, $y, $z, $w);
+ glProgramUniform4fEXT($program, $location, $x, $y, $z, $w);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform4fv
 
  glProgramUniform4fv_c($program, $location, $count, $value);
+ glProgramUniform4fvEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform4i
 
  glProgramUniform4i($program, $location, $x, $y, $z, $w);
+ glProgramUniform4iEXT($program, $location, $x, $y, $z, $w);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10870,12 +11154,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform4iv
 
  glProgramUniform4iv_c($program, $location, $count, $value);
+ glProgramUniform4ivEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniform4ui
 
  glProgramUniform4ui($program, $location, $x, $y, $z, $w);
+ glProgramUniform4uiEXT($program, $location, $x, $y, $z, $w);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10906,12 +11192,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform4uiv
 
  glProgramUniform4uiv_c($program, $location, $count, $value);
+ glProgramUniform4uivEXT_c($program, $location, $count, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniformHandleui64ARB
 
  glProgramUniformHandleui64ARB($program, $location, $value);
+ glProgramUniformHandleui64IMG($program, $location, $value);
 
 Exported under tag C<:GL_ARB_bindless_texture>.
 
@@ -10924,6 +11212,7 @@ Exported under tag C<:GL_NV_bindless_texture>.
 =head2 glProgramUniformHandleui64vARB
 
  glProgramUniformHandleui64vARB_c($program, $location, $count, $values);
+ glProgramUniformHandleui64vIMG_c($program, $location, $count, $values);
 
 Exported under tag C<:GL_ARB_bindless_texture>.
 
@@ -10942,6 +11231,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniformMatrix2fv
 
  glProgramUniformMatrix2fv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix2fvEXT_c($program, $location, $count, $transpose, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10954,6 +11244,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniformMatrix2x3fv
 
  glProgramUniformMatrix2x3fv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix2x3fvEXT_c($program, $location, $count, $transpose, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10966,6 +11257,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniformMatrix2x4fv
 
  glProgramUniformMatrix2x4fv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix2x4fvEXT_c($program, $location, $count, $transpose, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10978,6 +11270,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniformMatrix3fv
 
  glProgramUniformMatrix3fv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix3fvEXT_c($program, $location, $count, $transpose, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -10990,6 +11283,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniformMatrix3x2fv
 
  glProgramUniformMatrix3x2fv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix3x2fvEXT_c($program, $location, $count, $transpose, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -11002,6 +11296,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniformMatrix3x4fv
 
  glProgramUniformMatrix3x4fv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix3x4fvEXT_c($program, $location, $count, $transpose, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -11014,6 +11309,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniformMatrix4fv
 
  glProgramUniformMatrix4fv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix4fvEXT_c($program, $location, $count, $transpose, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -11026,6 +11322,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniformMatrix4x2fv
 
  glProgramUniformMatrix4x2fv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix4x2fvEXT_c($program, $location, $count, $transpose, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -11038,6 +11335,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniformMatrix4x3fv
 
  glProgramUniformMatrix4x3fv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix4x3fvEXT_c($program, $location, $count, $transpose, $value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -11062,6 +11360,7 @@ Exported under tag C<:GL_NV_geometry_program4>.
 =head2 glProvokingVertex
 
  glProvokingVertex($mode);
+ glProvokingVertexEXT($mode);
 
 Exported under tag C<:GL_ARB_provoking_vertex>.
 
@@ -11090,6 +11389,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glPushDebugGroup
 
  glPushDebugGroup($source, $id, $length, $message);
+ glPushDebugGroupKHR($source, $id, $length, $message);
 
 Exported under tag C<:GL_KHR_debug>.
 
@@ -11118,6 +11418,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glPushName.xml>
 =head2 glQueryCounter
 
  glQueryCounter($id, $target);
+ glQueryCounterEXT($id, $target);
 
 Exported under tag C<:GL_ARB_timer_query>.
 
@@ -11344,6 +11645,7 @@ Exported under tag C<:GL_SUN_read_video_pixels>.
  glReadnPixels_c($x, $y, $width, $height, $format, $type, $bufSize, $data);
  glReadnPixelsARB_c($x, $y, $width, $height, $format, $type, $bufSize, $data);
  glReadnPixelsEXT_c($x, $y, $width, $height, $format, $type, $bufSize, $data);
+ glReadnPixelsKHR_c($x, $y, $width, $height, $format, $type, $bufSize, $data);
 
 Exported under tag C<:GL_KHR_robustness>.
 
@@ -11446,6 +11748,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glRenderMode.xml>
 =head2 glRenderbufferStorage
 
  glRenderbufferStorage($target, $internalformat, $width, $height);
+ glRenderbufferStorageEXT($target, $internalformat, $width, $height);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -11453,6 +11756,7 @@ Exported under tag C<:GL_ARB_framebuffer_object>.
 
  glRenderbufferStorageMultisample($target, $samples, $internalformat, $width, $height);
  glRenderbufferStorageMultisampleEXT($target, $samples, $internalformat, $width, $height);
+ glRenderbufferStorageMultisampleNV($target, $samples, $internalformat, $width, $height);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -11621,12 +11925,14 @@ Exported under tag C<:GL_NV_vertex_program>.
 =head2 glResetHistogram
 
  glResetHistogram($target);
+ glResetHistogramEXT($target);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glResetMinmax
 
  glResetMinmax($target);
+ glResetMinmaxEXT($target);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -11645,6 +11951,7 @@ Exported under tag C<:GL_APPLE_framebuffer_multisample>.
 =head2 glResumeTransformFeedback
 
  glResumeTransformFeedback();
+ glResumeTransformFeedbackNV();
 
 Exported under tag C<:GL_ARB_transform_feedback2>.
 
@@ -11673,6 +11980,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glSampleCoverage
 
  glSampleCoverage($value, $invert);
+ glSampleCoverageARB($value, $invert);
 
 Exported under tag C<:GL_VERSION_1_3>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glSampleCoverage.xhtml>
@@ -11692,6 +12000,7 @@ Exported under tag C<:GL_ATI_fragment_shader>.
 =head2 glSampleMaskEXT
 
  glSampleMaskEXT($value, $invert);
+ glSampleMaskSGIS($value, $invert);
 
 Exported under tag C<:GL_EXT_multisample>.
 
@@ -11710,18 +12019,21 @@ Exported under tag C<:GL_ARB_texture_multisample>.
 =head2 glSamplePatternEXT
 
  glSamplePatternEXT($pattern);
+ glSamplePatternSGIS($pattern);
 
 Exported under tag C<:GL_EXT_multisample>.
 
 =head2 glSamplerParameterIiv
 
  glSamplerParameterIiv_c($sampler, $pname, $param);
+ glSamplerParameterIivEXT_c($sampler, $pname, $param);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
 =head2 glSamplerParameterIuiv
 
  glSamplerParameterIuiv_c($sampler, $pname, $param);
+ glSamplerParameterIuivEXT_c($sampler, $pname, $param);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
@@ -11781,24 +12093,28 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glScissor.xhtml>
 =head2 glScissorArrayv
 
  glScissorArrayv_c($first, $count, $v);
+ glScissorArrayvNV_c($first, $count, $v);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
 =head2 glScissorIndexed
 
  glScissorIndexed($index, $left, $bottom, $width, $height);
+ glScissorIndexedNV($index, $left, $bottom, $width, $height);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
 =head2 glScissorIndexedv
 
  glScissorIndexedv_c($index, $v);
+ glScissorIndexedvNV_c($index, $v);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
 =head2 glSecondaryColor3b
 
  glSecondaryColor3b($red, $green, $blue);
+ glSecondaryColor3bEXT($red, $green, $blue);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11806,6 +12122,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3bv
 
  glSecondaryColor3bv_c($v);
+ glSecondaryColor3bvEXT_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11813,6 +12130,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3d
 
  glSecondaryColor3d($red, $green, $blue);
+ glSecondaryColor3dEXT($red, $green, $blue);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11820,6 +12138,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3dv
 
  glSecondaryColor3dv_c($v);
+ glSecondaryColor3dvEXT_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11827,6 +12146,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3f
 
  glSecondaryColor3f($red, $green, $blue);
+ glSecondaryColor3fEXT($red, $green, $blue);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11834,6 +12154,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3fv
 
  glSecondaryColor3fv_c($v);
+ glSecondaryColor3fvEXT_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11853,6 +12174,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glSecondaryColor3i
 
  glSecondaryColor3i($red, $green, $blue);
+ glSecondaryColor3iEXT($red, $green, $blue);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11860,6 +12182,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3iv
 
  glSecondaryColor3iv_c($v);
+ glSecondaryColor3ivEXT_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11867,6 +12190,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3s
 
  glSecondaryColor3s($red, $green, $blue);
+ glSecondaryColor3sEXT($red, $green, $blue);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11874,6 +12198,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3sv
 
  glSecondaryColor3sv_c($v);
+ glSecondaryColor3svEXT_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11881,6 +12206,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3ub
 
  glSecondaryColor3ub($red, $green, $blue);
+ glSecondaryColor3ubEXT($red, $green, $blue);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11888,6 +12214,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3ubv
 
  glSecondaryColor3ubv_c($v);
+ glSecondaryColor3ubvEXT_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11895,6 +12222,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3ui
 
  glSecondaryColor3ui($red, $green, $blue);
+ glSecondaryColor3uiEXT($red, $green, $blue);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11902,6 +12230,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3uiv
 
  glSecondaryColor3uiv_c($v);
+ glSecondaryColor3uivEXT_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11909,6 +12238,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3us
 
  glSecondaryColor3us($red, $green, $blue);
+ glSecondaryColor3usEXT($red, $green, $blue);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11916,6 +12246,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glSecondaryColor3usv
 
  glSecondaryColor3usv_c($v);
+ glSecondaryColor3usvEXT_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11941,6 +12272,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glSecondaryColorPointer
 
  glSecondaryColorPointer_c($size, $type, $stride, $pointer);
+ glSecondaryColorPointerEXT_c($size, $type, $stride, $pointer);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -11993,6 +12325,7 @@ Exported under tag C<:GL_EXT_semaphore>.
 =head2 glSeparableFilter2D
 
  glSeparableFilter2D_c($target, $internalformat, $width, $height, $format, $type, $row, $column);
+ glSeparableFilter2DEXT_c($target, $internalformat, $width, $height, $format, $type, $row, $column);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -12067,6 +12400,7 @@ Exported under tag C<:GL_EXT_vertex_shader>.
 =head2 glShaderSource
 
  glShaderSource_c($shader, $count, $string, $length);
+ glShaderSourceARB_c($shader, $count, $string, $length);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glShaderSource.xhtml>
@@ -12104,6 +12438,7 @@ Exported under tag C<:GL_NV_draw_vulkan_image>.
 =head2 glSpecializeShader
 
  glSpecializeShader_c($shader, $pEntryPoint, $numSpecializationConstants, $pConstantIndex, $pConstantValue);
+ glSpecializeShaderARB_c($shader, $pEntryPoint, $numSpecializationConstants, $pConstantIndex, $pConstantValue);
 
 Exported under tag C<:GL_VERSION_4_6>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glSpecializeShader.xhtml>
@@ -12200,6 +12535,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glStencilOp.xhtml>
 =head2 glStencilOpSeparate
 
  glStencilOpSeparate($face, $sfail, $dpfail, $dppass);
+ glStencilOpSeparateATI($face, $sfail, $dpfail, $dppass);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glStencilOpSeparate.xhtml>
@@ -12340,6 +12676,7 @@ Exported under tag C<:GL_APPLE_fence>.
 
  glTexBuffer($target, $internalFormat, $buffer);
  glTexBufferARB($target, $internalFormat, $buffer);
+ glTexBufferEXT($target, $internalFormat, $buffer);
 
 Exported under tag C<:GL_VERSION_3_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexBuffer.xhtml>
@@ -12347,6 +12684,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexBuffer.xhtml>
 =head2 glTexBufferRange
 
  glTexBufferRange($target, $internalformat, $buffer, $offset, $size);
+ glTexBufferRangeEXT($target, $internalformat, $buffer, $offset, $size);
 
 Exported under tag C<:GL_ARB_texture_buffer_range>.
 
@@ -12925,6 +13263,7 @@ Exported under tag C<:GL_NV_texture_multisample>.
 =head2 glTexImage3D
 
  glTexImage3D_c($target, $level, $internalformat, $width, $height, $depth, $border, $format, $type, $pixels);
+ glTexImage3DEXT_c($target, $level, $internalformat, $width, $height, $depth, $border, $format, $type, $pixels);
 
 Exported under tag C<:GL_VERSION_1_2>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexImage3D.xhtml>
@@ -12956,12 +13295,14 @@ Exported under tag C<:GL_SGIS_texture4D>.
 =head2 glTexPageCommitmentARB
 
  glTexPageCommitmentARB($target, $level, $xoffset, $yoffset, $zoffset, $width, $height, $depth, $commit);
+ glTexPageCommitmentEXT($target, $level, $xoffset, $yoffset, $zoffset, $width, $height, $depth, $commit);
 
 Exported under tag C<:GL_ARB_sparse_texture>.
 
 =head2 glTexParameterIiv
 
  glTexParameterIiv_c($target, $pname, $params);
+ glTexParameterIivEXT_c($target, $pname, $params);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameterIiv.xhtml>
@@ -12969,6 +13310,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameterIiv.xh
 =head2 glTexParameterIuiv
 
  glTexParameterIuiv_c($target, $pname, $params);
+ glTexParameterIuivEXT_c($target, $pname, $params);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameterIuiv.xhtml>
@@ -13034,12 +13376,14 @@ Exported under tag C<:GL_INTEL_texture_scissor>.
 =head2 glTexStorage1D
 
  glTexStorage1D($target, $levels, $internalformat, $width);
+ glTexStorage1DEXT($target, $levels, $internalformat, $width);
 
 Exported under tag C<:GL_ARB_texture_storage>.
 
 =head2 glTexStorage2D
 
  glTexStorage2D($target, $levels, $internalformat, $width, $height);
+ glTexStorage2DEXT($target, $levels, $internalformat, $width, $height);
 
 Exported under tag C<:GL_ARB_texture_storage>.
 
@@ -13052,6 +13396,7 @@ Exported under tag C<:GL_ARB_texture_storage_multisample>.
 =head2 glTexStorage3D
 
  glTexStorage3D($target, $levels, $internalformat, $width, $height, $depth);
+ glTexStorage3DEXT($target, $levels, $internalformat, $width, $height, $depth);
 
 Exported under tag C<:GL_ARB_texture_storage>.
 
@@ -13100,6 +13445,7 @@ Exported under tag C<:GL_AMD_sparse_texture>.
 =head2 glTexSubImage1D
 
  glTexSubImage1D_c($target, $level, $xoffset, $width, $format, $type, $pixels);
+ glTexSubImage1DEXT_c($target, $level, $xoffset, $width, $format, $type, $pixels);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage1D.xhtml>
@@ -13107,6 +13453,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage1D.xhtm
 =head2 glTexSubImage2D
 
  glTexSubImage2D_c($target, $level, $xoffset, $yoffset, $width, $height, $format, $type, $pixels);
+ glTexSubImage2DEXT_c($target, $level, $xoffset, $yoffset, $width, $height, $format, $type, $pixels);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage2D.xhtml>
@@ -13114,6 +13461,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage2D.xhtm
 =head2 glTexSubImage3D
 
  glTexSubImage3D_c($target, $level, $xoffset, $yoffset, $zoffset, $width, $height, $depth, $format, $type, $pixels);
+ glTexSubImage3DEXT_c($target, $level, $xoffset, $yoffset, $zoffset, $width, $height, $depth, $format, $type, $pixels);
 
 Exported under tag C<:GL_VERSION_1_2>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage3D.xhtml>
@@ -13457,6 +13805,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glTextureView
 
  glTextureView($texture, $target, $origtexture, $internalformat, $minlevel, $numlevels, $minlayer, $numlayers);
+ glTextureViewEXT($texture, $target, $origtexture, $internalformat, $minlevel, $numlevels, $minlayer, $numlayers);
 
 Exported under tag C<:GL_ARB_texture_view>.
 
@@ -13487,6 +13836,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glTransformFeedbackVaryings
 
  glTransformFeedbackVaryings_c($program, $count, $varyings, $bufferMode);
+ glTransformFeedbackVaryingsEXT_c($program, $count, $varyings, $bufferMode);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTransformFeedbackVaryings.xhtml>
@@ -13540,18 +13890,21 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniform1f
 
  glUniform1f($location, $v0);
+ glUniform1fARB($location, $v0);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform1fv
 
  glUniform1fv_c($location, $count, $value);
+ glUniform1fvARB_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform1i
 
  glUniform1i($location, $v0);
+ glUniform1iARB($location, $v0);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -13582,12 +13935,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform1iv
 
  glUniform1iv_c($location, $count, $value);
+ glUniform1ivARB_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform1ui
 
  glUniform1ui($location, $v0);
+ glUniform1uiEXT($location, $v0);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -13618,6 +13973,7 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform1uiv
 
  glUniform1uiv_c($location, $count, $value);
+ glUniform1uivEXT_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -13636,18 +13992,21 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniform2f
 
  glUniform2f($location, $v0, $v1);
+ glUniform2fARB($location, $v0, $v1);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform2fv
 
  glUniform2fv_c($location, $count, $value);
+ glUniform2fvARB_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform2i
 
  glUniform2i($location, $v0, $v1);
+ glUniform2iARB($location, $v0, $v1);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -13678,12 +14037,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform2iv
 
  glUniform2iv_c($location, $count, $value);
+ glUniform2ivARB_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform2ui
 
  glUniform2ui($location, $v0, $v1);
+ glUniform2uiEXT($location, $v0, $v1);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -13714,6 +14075,7 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform2uiv
 
  glUniform2uiv_c($location, $count, $value);
+ glUniform2uivEXT_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -13732,18 +14094,21 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniform3f
 
  glUniform3f($location, $v0, $v1, $v2);
+ glUniform3fARB($location, $v0, $v1, $v2);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform3fv
 
  glUniform3fv_c($location, $count, $value);
+ glUniform3fvARB_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform3i
 
  glUniform3i($location, $v0, $v1, $v2);
+ glUniform3iARB($location, $v0, $v1, $v2);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -13774,12 +14139,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform3iv
 
  glUniform3iv_c($location, $count, $value);
+ glUniform3ivARB_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform3ui
 
  glUniform3ui($location, $v0, $v1, $v2);
+ glUniform3uiEXT($location, $v0, $v1, $v2);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -13810,6 +14177,7 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform3uiv
 
  glUniform3uiv_c($location, $count, $value);
+ glUniform3uivEXT_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -13828,18 +14196,21 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniform4f
 
  glUniform4f($location, $v0, $v1, $v2, $v3);
+ glUniform4fARB($location, $v0, $v1, $v2, $v3);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform4fv
 
  glUniform4fv_c($location, $count, $value);
+ glUniform4fvARB_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform4i
 
  glUniform4i($location, $v0, $v1, $v2, $v3);
+ glUniform4iARB($location, $v0, $v1, $v2, $v3);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -13870,12 +14241,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform4iv
 
  glUniform4iv_c($location, $count, $value);
+ glUniform4ivARB_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniform4ui
 
  glUniform4ui($location, $v0, $v1, $v2, $v3);
+ glUniform4uiEXT($location, $v0, $v1, $v2, $v3);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -13906,6 +14279,7 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform4uiv
 
  glUniform4uiv_c($location, $count, $value);
+ glUniform4uivEXT_c($location, $count, $value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -13924,6 +14298,7 @@ Exported under tag C<:GL_EXT_bindable_uniform>.
 =head2 glUniformHandleui64ARB
 
  glUniformHandleui64ARB($location, $value);
+ glUniformHandleui64IMG($location, $value);
 
 Exported under tag C<:GL_ARB_bindless_texture>.
 
@@ -13936,6 +14311,7 @@ Exported under tag C<:GL_NV_bindless_texture>.
 =head2 glUniformHandleui64vARB
 
  glUniformHandleui64vARB_c($location, $count, $value);
+ glUniformHandleui64vIMG_c($location, $count, $value);
 
 Exported under tag C<:GL_ARB_bindless_texture>.
 
@@ -13954,6 +14330,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniformMatrix2fv
 
  glUniformMatrix2fv_c($location, $count, $transpose, $value);
+ glUniformMatrix2fvARB_c($location, $count, $transpose, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -13966,6 +14343,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniformMatrix2x3fv
 
  glUniformMatrix2x3fv_c($location, $count, $transpose, $value);
+ glUniformMatrix2x3fvNV_c($location, $count, $transpose, $value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
@@ -13978,6 +14356,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniformMatrix2x4fv
 
  glUniformMatrix2x4fv_c($location, $count, $transpose, $value);
+ glUniformMatrix2x4fvNV_c($location, $count, $transpose, $value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
@@ -13990,6 +14369,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniformMatrix3fv
 
  glUniformMatrix3fv_c($location, $count, $transpose, $value);
+ glUniformMatrix3fvARB_c($location, $count, $transpose, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14002,6 +14382,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniformMatrix3x2fv
 
  glUniformMatrix3x2fv_c($location, $count, $transpose, $value);
+ glUniformMatrix3x2fvNV_c($location, $count, $transpose, $value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
@@ -14014,6 +14395,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniformMatrix3x4fv
 
  glUniformMatrix3x4fv_c($location, $count, $transpose, $value);
+ glUniformMatrix3x4fvNV_c($location, $count, $transpose, $value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
@@ -14026,6 +14408,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniformMatrix4fv
 
  glUniformMatrix4fv_c($location, $count, $transpose, $value);
+ glUniformMatrix4fvARB_c($location, $count, $transpose, $value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14038,6 +14421,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniformMatrix4x2fv
 
  glUniformMatrix4x2fv_c($location, $count, $transpose, $value);
+ glUniformMatrix4x2fvNV_c($location, $count, $transpose, $value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
@@ -14050,6 +14434,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniformMatrix4x3fv
 
  glUniformMatrix4x3fv_c($location, $count, $transpose, $value);
+ glUniformMatrix4x3fvNV_c($location, $count, $transpose, $value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
@@ -14080,6 +14465,7 @@ Exported under tag C<:GL_EXT_compiled_vertex_array>.
 =head2 glUnmapBuffer
 
  $retval = glUnmapBuffer($target);
+ $retval = glUnmapBufferARB($target);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glUnmapBuffer.xhtml>
@@ -14117,6 +14503,7 @@ Exported under tag C<:GL_ATI_vertex_array_object>.
 =head2 glUseProgram
 
  glUseProgram($program);
+ glUseProgramObjectARB($program);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glUseProgram.xhtml>
@@ -14196,6 +14583,7 @@ Exported under tag C<:GL_NV_vdpau_interop>.
 =head2 glValidateProgram
 
  glValidateProgram($program);
+ glValidateProgramARB($program);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glValidateProgram.xhtml>
@@ -14660,6 +15048,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 
  glVertexAttrib1d($index, $x);
  glVertexAttrib1dARB($index, $x);
+ glVertexAttrib1dNV($index, $x);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14667,6 +15056,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib1dv_c($index, $v);
  glVertexAttrib1dvARB_c($index, $v);
+ glVertexAttrib1dvNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14674,6 +15064,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib1f($index, $x);
  glVertexAttrib1fARB($index, $x);
+ glVertexAttrib1fNV($index, $x);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14681,6 +15072,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib1fv_c($index, $v);
  glVertexAttrib1fvARB_c($index, $v);
+ glVertexAttrib1fvNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14700,6 +15092,7 @@ Exported under tag C<:GL_NV_half_float>.
 
  glVertexAttrib1s($index, $x);
  glVertexAttrib1sARB($index, $x);
+ glVertexAttrib1sNV($index, $x);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14707,6 +15100,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib1sv_c($index, $v);
  glVertexAttrib1svARB_c($index, $v);
+ glVertexAttrib1svNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14714,6 +15108,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib2d($index, $x, $y);
  glVertexAttrib2dARB($index, $x, $y);
+ glVertexAttrib2dNV($index, $x, $y);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14721,6 +15116,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib2dv_c($index, $v);
  glVertexAttrib2dvARB_c($index, $v);
+ glVertexAttrib2dvNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14728,6 +15124,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib2f($index, $x, $y);
  glVertexAttrib2fARB($index, $x, $y);
+ glVertexAttrib2fNV($index, $x, $y);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14735,6 +15132,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib2fv_c($index, $v);
  glVertexAttrib2fvARB_c($index, $v);
+ glVertexAttrib2fvNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14754,6 +15152,7 @@ Exported under tag C<:GL_NV_half_float>.
 
  glVertexAttrib2s($index, $x, $y);
  glVertexAttrib2sARB($index, $x, $y);
+ glVertexAttrib2sNV($index, $x, $y);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14761,6 +15160,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib2sv_c($index, $v);
  glVertexAttrib2svARB_c($index, $v);
+ glVertexAttrib2svNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14768,6 +15168,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib3d($index, $x, $y, $z);
  glVertexAttrib3dARB($index, $x, $y, $z);
+ glVertexAttrib3dNV($index, $x, $y, $z);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14775,6 +15176,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib3dv_c($index, $v);
  glVertexAttrib3dvARB_c($index, $v);
+ glVertexAttrib3dvNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14782,6 +15184,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib3f($index, $x, $y, $z);
  glVertexAttrib3fARB($index, $x, $y, $z);
+ glVertexAttrib3fNV($index, $x, $y, $z);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14789,6 +15192,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib3fv_c($index, $v);
  glVertexAttrib3fvARB_c($index, $v);
+ glVertexAttrib3fvNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14808,6 +15212,7 @@ Exported under tag C<:GL_NV_half_float>.
 
  glVertexAttrib3s($index, $x, $y, $z);
  glVertexAttrib3sARB($index, $x, $y, $z);
+ glVertexAttrib3sNV($index, $x, $y, $z);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14815,12 +15220,14 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib3sv_c($index, $v);
  glVertexAttrib3svARB_c($index, $v);
+ glVertexAttrib3svNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glVertexAttrib4Nbv
 
  glVertexAttrib4Nbv_c($index, $v);
+ glVertexAttrib4NbvARB_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nbv.xhtml>
@@ -14828,6 +15235,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nbv.x
 =head2 glVertexAttrib4Niv
 
  glVertexAttrib4Niv_c($index, $v);
+ glVertexAttrib4NivARB_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Niv.xhtml>
@@ -14835,6 +15243,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Niv.x
 =head2 glVertexAttrib4Nsv
 
  glVertexAttrib4Nsv_c($index, $v);
+ glVertexAttrib4NsvARB_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nsv.xhtml>
@@ -14843,6 +15252,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nsv.x
 
  glVertexAttrib4Nub($index, $x, $y, $z, $w);
  glVertexAttrib4NubARB($index, $x, $y, $z, $w);
+ glVertexAttrib4ubNV($index, $x, $y, $z, $w);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nub.xhtml>
@@ -14851,6 +15261,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nub.x
 
  glVertexAttrib4Nubv_c($index, $v);
  glVertexAttrib4NubvARB_c($index, $v);
+ glVertexAttrib4ubvNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nubv.xhtml>
@@ -14858,6 +15269,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nubv.
 =head2 glVertexAttrib4Nuiv
 
  glVertexAttrib4Nuiv_c($index, $v);
+ glVertexAttrib4NuivARB_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nuiv.xhtml>
@@ -14865,6 +15277,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nuiv.
 =head2 glVertexAttrib4Nusv
 
  glVertexAttrib4Nusv_c($index, $v);
+ glVertexAttrib4NusvARB_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nusv.xhtml>
@@ -14872,6 +15285,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nusv.
 =head2 glVertexAttrib4bv
 
  glVertexAttrib4bv_c($index, $v);
+ glVertexAttrib4bvARB_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14879,6 +15293,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib4d($index, $x, $y, $z, $w);
  glVertexAttrib4dARB($index, $x, $y, $z, $w);
+ glVertexAttrib4dNV($index, $x, $y, $z, $w);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14886,6 +15301,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib4dv_c($index, $v);
  glVertexAttrib4dvARB_c($index, $v);
+ glVertexAttrib4dvNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14893,6 +15309,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib4f($index, $x, $y, $z, $w);
  glVertexAttrib4fARB($index, $x, $y, $z, $w);
+ glVertexAttrib4fNV($index, $x, $y, $z, $w);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14900,6 +15317,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib4fv_c($index, $v);
  glVertexAttrib4fvARB_c($index, $v);
+ glVertexAttrib4fvNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14918,6 +15336,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertexAttrib4iv
 
  glVertexAttrib4iv_c($index, $v);
+ glVertexAttrib4ivARB_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14925,6 +15344,7 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib4s($index, $x, $y, $z, $w);
  glVertexAttrib4sARB($index, $x, $y, $z, $w);
+ glVertexAttrib4sNV($index, $x, $y, $z, $w);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14932,24 +15352,28 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib4sv_c($index, $v);
  glVertexAttrib4svARB_c($index, $v);
+ glVertexAttrib4svNV_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glVertexAttrib4ubv
 
  glVertexAttrib4ubv_c($index, $v);
+ glVertexAttrib4ubvARB_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glVertexAttrib4uiv
 
  glVertexAttrib4uiv_c($index, $v);
+ glVertexAttrib4uivARB_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glVertexAttrib4usv
 
  glVertexAttrib4usv_c($index, $v);
+ glVertexAttrib4usvARB_c($index, $v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -14971,6 +15395,7 @@ Exported under tag C<:GL_ARB_vertex_attrib_binding>.
  glVertexAttribDivisorANGLE($index, $divisor);
  glVertexAttribDivisorARB($index, $divisor);
  glVertexAttribDivisorEXT($index, $divisor);
+ glVertexAttribDivisorNV($index, $divisor);
 
 Exported under tag C<:GL_VERSION_3_3>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttribDivisor.xhtml>
@@ -14990,120 +15415,140 @@ Exported under tag C<:GL_NV_vertex_buffer_unified_memory>.
 =head2 glVertexAttribI1i
 
  glVertexAttribI1i($index, $v0);
+ glVertexAttribI1iEXT($index, $v0);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI1iv
 
  glVertexAttribI1iv_c($index, $v);
+ glVertexAttribI1ivEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI1ui
 
  glVertexAttribI1ui($index, $v0);
+ glVertexAttribI1uiEXT($index, $v0);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI1uiv
 
  glVertexAttribI1uiv_c($index, $v);
+ glVertexAttribI1uivEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI2i
 
  glVertexAttribI2i($index, $v0, $v1);
+ glVertexAttribI2iEXT($index, $v0, $v1);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI2iv
 
  glVertexAttribI2iv_c($index, $v);
+ glVertexAttribI2ivEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI2ui
 
  glVertexAttribI2ui($index, $v0, $v1);
+ glVertexAttribI2uiEXT($index, $v0, $v1);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI2uiv
 
  glVertexAttribI2uiv_c($index, $v);
+ glVertexAttribI2uivEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI3i
 
  glVertexAttribI3i($index, $v0, $v1, $v2);
+ glVertexAttribI3iEXT($index, $v0, $v1, $v2);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI3iv
 
  glVertexAttribI3iv_c($index, $v);
+ glVertexAttribI3ivEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI3ui
 
  glVertexAttribI3ui($index, $v0, $v1, $v2);
+ glVertexAttribI3uiEXT($index, $v0, $v1, $v2);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI3uiv
 
  glVertexAttribI3uiv_c($index, $v);
+ glVertexAttribI3uivEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI4bv
 
  glVertexAttribI4bv_c($index, $v);
+ glVertexAttribI4bvEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI4i
 
  glVertexAttribI4i($index, $v0, $v1, $v2, $v3);
+ glVertexAttribI4iEXT($index, $v0, $v1, $v2, $v3);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI4iv
 
  glVertexAttribI4iv_c($index, $v);
+ glVertexAttribI4ivEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI4sv
 
  glVertexAttribI4sv_c($index, $v);
+ glVertexAttribI4svEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI4ubv
 
  glVertexAttribI4ubv_c($index, $v);
+ glVertexAttribI4ubvEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI4ui
 
  glVertexAttribI4ui($index, $v0, $v1, $v2, $v3);
+ glVertexAttribI4uiEXT($index, $v0, $v1, $v2, $v3);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI4uiv
 
  glVertexAttribI4uiv_c($index, $v);
+ glVertexAttribI4uivEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
 =head2 glVertexAttribI4usv
 
  glVertexAttribI4usv_c($index, $v);
+ glVertexAttribI4usvEXT_c($index, $v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -15122,6 +15567,7 @@ Exported under tag C<:GL_NV_vertex_buffer_unified_memory>.
 =head2 glVertexAttribIPointer
 
  glVertexAttribIPointer_c($index, $size, $type, $stride, $pointer);
+ glVertexAttribIPointerEXT_c($index, $size, $type, $stride, $pointer);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttribIPointer.xhtml>
@@ -15129,12 +15575,14 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttribIPoint
 =head2 glVertexAttribL1d
 
  glVertexAttribL1d($index, $x);
+ glVertexAttribL1dEXT($index, $x);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
 =head2 glVertexAttribL1dv
 
  glVertexAttribL1dv_c($index, $v);
+ glVertexAttribL1dvEXT_c($index, $v);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
@@ -15177,12 +15625,14 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribL2d
 
  glVertexAttribL2d($index, $x, $y);
+ glVertexAttribL2dEXT($index, $x, $y);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
 =head2 glVertexAttribL2dv
 
  glVertexAttribL2dv_c($index, $v);
+ glVertexAttribL2dvEXT_c($index, $v);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
@@ -15213,12 +15663,14 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribL3d
 
  glVertexAttribL3d($index, $x, $y, $z);
+ glVertexAttribL3dEXT($index, $x, $y, $z);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
 =head2 glVertexAttribL3dv
 
  glVertexAttribL3dv_c($index, $v);
+ glVertexAttribL3dvEXT_c($index, $v);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
@@ -15249,12 +15701,14 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribL4d
 
  glVertexAttribL4d($index, $x, $y, $z, $w);
+ glVertexAttribL4dEXT($index, $x, $y, $z, $w);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
 =head2 glVertexAttribL4dv
 
  glVertexAttribL4dv_c($index, $v);
+ glVertexAttribL4dvEXT_c($index, $v);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
@@ -15297,6 +15751,7 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribLPointer
 
  glVertexAttribLPointer_c($index, $size, $type, $stride, $pointer);
+ glVertexAttribLPointerEXT_c($index, $size, $type, $stride, $pointer);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
@@ -15357,6 +15812,7 @@ Exported under tag C<:GL_AMD_interleaved_elements>.
 =head2 glVertexAttribPointer
 
  glVertexAttribPointer_c($index, $size, $type, $normalized, $stride, $pointer);
+ glVertexAttribPointerARB_c($index, $size, $type, $normalized, $stride, $pointer);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttribPointer.xhtml>
@@ -15817,18 +16273,21 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glViewport.xhtml>
 =head2 glViewportArrayv
 
  glViewportArrayv_c($first, $count, $v);
+ glViewportArrayvNV_c($first, $count, $v);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
 =head2 glViewportIndexedf
 
  glViewportIndexedf($index, $x, $y, $w, $h);
+ glViewportIndexedfNV($index, $x, $y, $w, $h);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
 =head2 glViewportIndexedfv
 
  glViewportIndexedfv_c($index, $v);
+ glViewportIndexedfvNV_c($index, $v);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
@@ -15853,6 +16312,7 @@ Exported under tag C<:GL_EXT_semaphore>.
 =head2 glWaitSync
 
  glWaitSync($myGLsync, $flags, $timeout);
+ glWaitSyncAPPLE($myGLsync, $flags, $timeout);
 
 Exported under tag C<:GL_ARB_sync>.
 
@@ -15926,6 +16386,7 @@ Exported under tag C<:GL_ARB_vertex_blend>.
 
  glWindowPos2d($x, $y);
  glWindowPos2dARB($x, $y);
+ glWindowPos2dMESA($x, $y);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15934,6 +16395,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos2dv_c($v);
  glWindowPos2dvARB_c($v);
+ glWindowPos2dvMESA_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15942,6 +16404,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos2f($x, $y);
  glWindowPos2fARB($x, $y);
+ glWindowPos2fMESA($x, $y);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15950,6 +16413,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos2fv_c($v);
  glWindowPos2fvARB_c($v);
+ glWindowPos2fvMESA_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15958,6 +16422,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos2i($x, $y);
  glWindowPos2iARB($x, $y);
+ glWindowPos2iMESA($x, $y);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15966,6 +16431,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos2iv_c($v);
  glWindowPos2ivARB_c($v);
+ glWindowPos2ivMESA_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15974,6 +16440,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos2s($x, $y);
  glWindowPos2sARB($x, $y);
+ glWindowPos2sMESA($x, $y);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15982,6 +16449,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos2sv_c($v);
  glWindowPos2svARB_c($v);
+ glWindowPos2svMESA_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15990,6 +16458,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos3d($x, $y, $z);
  glWindowPos3dARB($x, $y, $z);
+ glWindowPos3dMESA($x, $y, $z);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15998,6 +16467,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos3dv_c($v);
  glWindowPos3dvARB_c($v);
+ glWindowPos3dvMESA_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16006,6 +16476,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos3f($x, $y, $z);
  glWindowPos3fARB($x, $y, $z);
+ glWindowPos3fMESA($x, $y, $z);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16014,6 +16485,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos3fv_c($v);
  glWindowPos3fvARB_c($v);
+ glWindowPos3fvMESA_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16022,6 +16494,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos3i($x, $y, $z);
  glWindowPos3iARB($x, $y, $z);
+ glWindowPos3iMESA($x, $y, $z);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16030,6 +16503,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos3iv_c($v);
  glWindowPos3ivARB_c($v);
+ glWindowPos3ivMESA_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16038,6 +16512,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos3s($x, $y, $z);
  glWindowPos3sARB($x, $y, $z);
+ glWindowPos3sMESA($x, $y, $z);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16046,6 +16521,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glWindowPos3sv_c($v);
  glWindowPos3svARB_c($v);
+ glWindowPos3svMESA_c($v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
