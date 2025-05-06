@@ -1,2 +1,0 @@
-{ nptr => 6, feature   => "GL_KHR_debug", name      => "glGetDebugMessageLog", restype   => "GLuint", signature => "GLuint count, GLsizei bufSize, GLenum* sources, GLenum* types, GLuint* ids, GLenum* severities, GLsizei* lengths, GLchar* messageLog", },
-{ nptr => 6, feature   => "GL_ARB_debug_output", name      => "glGetDebugMessageLogARB", restype   => "GLuint", signature => "GLuint count, GLsizei bufSize, GLenum* sources, GLenum* types, GLuint* ids, GLenum* severities, GLsizei* lengths, GLchar* messageLog", },
