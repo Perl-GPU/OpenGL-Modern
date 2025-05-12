@@ -13,4 +13,4 @@ lib/OpenGL/Modern.c
 lib/OpenGL/Modern/Const.c
 *.inc
 *~
-const.h
+lib/OpenGL/Modern/const.h

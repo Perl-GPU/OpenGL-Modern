@@ -1,6 +1,4 @@
 Changes
-gl_errors.h
-glew-context.c
 glew.c
 include/GL/eglew.h
 include/GL/glew.h
@@ -11,13 +9,15 @@ lib/OpenGL/Modern.pod
 lib/OpenGL/Modern.xs
 lib/OpenGL/Modern/Const.pm
 lib/OpenGL/Modern/Const.xs
+lib/OpenGL/Modern/gl_errors.h
+lib/OpenGL/Modern/glew-context.c
 lib/OpenGL/Modern/Helpers.pm
 lib/OpenGL/Modern/ImageHack.pm
+lib/OpenGL/Modern/ppport.h
 lib/OpenGL/Modern/Registry.pm
 Makefile.PL
 MANIFEST			This list of files
 MANIFEST.SKIP
-ppport.h
 README.md
 t/00-report-prereqs.t
 t/00_basic.t

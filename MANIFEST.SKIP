@@ -20,5 +20,5 @@ gdm.diff
 ^MYMETA.*
 \.pm\.bak$
 \.inc$
-^const\.h$
+^lib/OpenGL/Modern/const\.h$
 ~$

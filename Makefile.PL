@@ -3,7 +3,7 @@ use ExtUtils::MakeMaker;
 use Devel::CheckLib 'assert_lib';
 use Config;
 
-my $include = "-I. -Iinclude";
+my $include = "-Ilib/OpenGL/Modern -Iinclude";
 my $libs;
 my $define = "-DGLEW_NO_GLU -DGLEW_STATIC";
 my $DYNS;
@@ -67,10 +67,10 @@ WriteMakefile(
     },
   },
   depend           => {
-    'lib/OpenGL/Modern$(OBJ_EXT)' => 'glew-context.c include/GL/glew.h include/GL/wglew.h gl_errors.h auto-xs.inc', # last is not accurate but forced by XSMULTI which has no intermediate .c target
-    'lib/OpenGL/Modern/Const$(OBJ_EXT)' => 'include/GL/glew.h include/GL/wglew.h const.h',
+    'lib/OpenGL/Modern$(OBJ_EXT)' => 'lib/OpenGL/Modern/glew-context.c include/GL/glew.h include/GL/wglew.h lib/OpenGL/Modern/gl_errors.h auto-xs.inc', # last is not accurate but forced by XSMULTI which has no intermediate .c target
+    'lib/OpenGL/Modern/Const$(OBJ_EXT)' => 'include/GL/glew.h include/GL/wglew.h lib/OpenGL/Modern/const.h',
   },
-  clean => { FILES => 'auto-xs.inc const.h lib/OpenGL/Modern/Config.pm' },
+  clean => { FILES => 'auto-xs.inc lib/OpenGL/Modern/const.h lib/OpenGL/Modern/Config.pm' },
   %buildargs,
 );
 
@@ -87,7 +87,7 @@ sub postamble {
 auto-xs.inc : $deps
 \t\$(PERLRUN) -Ilib utils/generate-XS.pl
 
-const.h : lib/OpenGL/Modern/Registry.pm
+lib/OpenGL/Modern/const.h : lib/OpenGL/Modern/Registry.pm
 \t$const_cmd >\$@
 EOF
 }
@@ -96,7 +96,7 @@ sub init_PM {
   $eumm->SUPER::init_PM;
   my $pm = $eumm->{PM};
   delete @$pm{grep /(?:\.(?:c|xs|bs)|\Q$::Config{obj_ext}\E)$/, keys %$pm};
-  delete @$pm{grep /\.pl$/, keys %$pm};
+  delete @$pm{grep /\.(?:pl|h)$/, keys %$pm};
 }
 }
 
