@@ -49,6 +49,10 @@ To install this module type the following:
 
 or cpan or cpanm.
 
+### MacOSX
+
+To build with homebrew and it's emulated MesaGL, run `env WITH_HOMEBREW=1 perl Makefile.PL`.
+
 ## COPYRIGHT AND LICENCE
 
 Copyright (C) 2017 by Chris Marshall
