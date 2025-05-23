@@ -13,6 +13,7 @@ lib/OpenGL/Modern/glew-context.c
 lib/OpenGL/Modern/glew.c
 lib/OpenGL/Modern/Helpers.pm
 lib/OpenGL/Modern/ImageHack.pm
+lib/OpenGL/Modern/Install/typemap
 lib/OpenGL/Modern/ppport.h
 lib/OpenGL/Modern/Registry.pm
 Makefile.PL
@@ -25,7 +26,6 @@ t/01_context.t
 t/02_auto_error_check.t
 t/02_glew_version_accessors.t
 t/02_glGetShaderInfoLog.t
-typemap
 utils/aliases.txt
 utils/common.pl
 utils/feature-reuse.txt

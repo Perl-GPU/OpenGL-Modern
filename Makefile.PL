@@ -43,6 +43,7 @@ WriteMakefile(
     'Capture::Tiny' => 0,
     'Test::More' => '0.88',
   },
+  TYPEMAPS => [qw(lib/OpenGL/Modern/Install/typemap)],
   META_MERGE => {
     "meta-spec" => { version => 2 },
     dynamic_config => 0,
