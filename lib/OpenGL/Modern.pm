@@ -13234,4 +13234,9 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 require XSLoader;
 XSLoader::load( __PACKAGE__, $XS_VERSION );
 
+sub Inline {
+  require OpenGL::Modern::Install::Files;
+  goto &OpenGL::Modern::Install::Files::Inline;
+}
+
 1;
