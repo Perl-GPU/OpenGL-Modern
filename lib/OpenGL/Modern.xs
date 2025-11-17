@@ -63,7 +63,7 @@ static int _auto_check_errors = 0;
 MODULE = OpenGL::Modern		PACKAGE = OpenGL::Modern
 
 GLboolean
-glewCreateContext()
+glewCreateContext(int major=0, int minor=0, int profile_mask=0, int flags=0)
 CODE:
   struct createParams params =
   {
@@ -75,10 +75,10 @@ CODE:
     "",  /* display */
     -1,  /* visual */
 #endif
-    0,   /* major */
-    0,   /* minor */
-    0,   /* profile mask */
-    0    /* flags */
+    major,
+    minor,
+    profile_mask,
+    flags
   };
     RETVAL = glewCreateContext(&params);
 OUTPUT:
