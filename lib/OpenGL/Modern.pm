@@ -13206,6 +13206,7 @@ our @glew_functions = qw(
   glewIsSupported
   glewInit
   done_glewInit
+  glewDestroyContext
 );
 our @glp_functions = qw(
   glpSetAutoCheckErrors
