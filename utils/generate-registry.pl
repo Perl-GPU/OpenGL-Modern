@@ -6,6 +6,10 @@ use warnings;
 This script extracts the function signatures etc from include/GL/glew.h
 and saves the info to lib/OpenGL/Modern/Registry.pm
 
+Run it with:
+
+  make && perl -Mblib utils/generate-registry.pl
+
 =cut
 
 require './utils/common.pl';
@@ -181,7 +185,7 @@ for (grep $_, split /\n/, slurp('utils/aliases.txt')) {
   delete $signature{$from};
 }
 
-for (grep $_, split /\n/, slurp('utils/len-args.txt')) {
+for (grep $_, split /\n/, slurp('utils/args-len.txt')) {
   my ($func, @args) = split ' ';
   next unless my $s = $signature{$func};
   my $argind = 0;
