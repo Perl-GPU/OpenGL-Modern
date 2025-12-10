@@ -28,6 +28,7 @@ t/02_auto_error_check.t
 t/02_glew_version_accessors.t
 t/02_glGetShaderInfoLog.t
 utils/aliases.txt
+utils/args-group.txt
 utils/args-len.txt
 utils/common.pl
 utils/feature-reuse.txt
