@@ -31,6 +31,7 @@ utils/aliases.txt
 utils/args-group.txt
 utils/args-len.txt
 utils/common.pl
+utils/enums-group.txt
 utils/feature-reuse.txt
 utils/generate-registry.pl
 utils/generate-XS.pl
