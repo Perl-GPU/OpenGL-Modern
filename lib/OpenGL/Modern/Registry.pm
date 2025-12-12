@@ -4020,7 +4020,9 @@ our %registry = (
     'argdata' => [
       [
         'op',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'AccumOp'
       ],
       [
         'value',
@@ -4084,7 +4086,9 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ]
     ],
     'feature' => 'GL_EXT_stencil_two_side',
@@ -4099,7 +4103,9 @@ our %registry = (
     'argdata' => [
       [
         'texture',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ]
     ],
     'feature' => 'GL_VERSION_1_3',
@@ -4193,27 +4199,39 @@ our %registry = (
     'argdata' => [
       [
         'op',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentOp1ATI'
       ],
       [
         'dst',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderRegATI'
       ],
       [
         'dstMod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderDestModMaskATI'
       ],
       [
         'arg1',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg1Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg1Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ]
     ],
     'feature' => 'GL_ATI_fragment_shader',
@@ -4225,39 +4243,57 @@ our %registry = (
     'argdata' => [
       [
         'op',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentOp2ATI'
       ],
       [
         'dst',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderRegATI'
       ],
       [
         'dstMod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderDestModMaskATI'
       ],
       [
         'arg1',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg1Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg1Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ],
       [
         'arg2',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg2Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg2Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ]
     ],
     'feature' => 'GL_ATI_fragment_shader',
@@ -4269,51 +4305,75 @@ our %registry = (
     'argdata' => [
       [
         'op',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentOp3ATI'
       ],
       [
         'dst',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderRegATI'
       ],
       [
         'dstMod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderDestModMaskATI'
       ],
       [
         'arg1',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg1Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg1Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ],
       [
         'arg2',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg2Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg2Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ],
       [
         'arg3',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg3Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg3Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ]
     ],
     'feature' => 'GL_ATI_fragment_shader',
@@ -4325,7 +4385,9 @@ our %registry = (
     'argdata' => [
       [
         'func',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'AlphaFunction'
       ],
       [
         'ref',
@@ -4357,7 +4419,9 @@ our %registry = (
     'argdata' => [
       [
         'func',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'AlphaFunction'
       ],
       [
         'ref',
@@ -4373,7 +4437,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightTextureModeEXT'
       ]
     ],
     'feature' => 'GL_EXT_light_texture',
@@ -4490,7 +4556,9 @@ our %registry = (
     'argdata' => [
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ],
       [
         'size',
@@ -4498,7 +4566,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ScalarType'
       ],
       [
         'stride',
@@ -4553,7 +4623,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ]
     ],
     'core_removed' => 1,
@@ -4572,7 +4644,9 @@ our %registry = (
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConditionalRenderMode'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -4641,7 +4715,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryTarget'
       ],
       [
         'id',
@@ -4673,7 +4749,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryTarget'
       ],
       [
         'index',
@@ -4703,7 +4781,9 @@ our %registry = (
     'argdata' => [
       [
         'primitiveMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -4772,7 +4852,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'buffer',
@@ -4792,7 +4874,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'index',
@@ -4815,7 +4899,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'index',
@@ -4843,7 +4929,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'index',
@@ -4871,7 +4959,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'first',
@@ -4897,7 +4987,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'first',
@@ -4996,7 +5088,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'framebuffer',
@@ -5012,7 +5106,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'framebuffer',
@@ -5048,11 +5144,15 @@ our %registry = (
       ],
       [
         'access',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferAccessARB'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ]
     ],
     'feature' => 'GL_ARB_shader_image_load_store',
@@ -5084,7 +5184,9 @@ our %registry = (
       ],
       [
         'access',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferAccessARB'
       ],
       [
         'format',
@@ -5122,11 +5224,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightName'
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightParameter'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -5138,11 +5244,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -5154,11 +5264,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'texture',
@@ -5174,7 +5288,9 @@ our %registry = (
     'argdata' => [
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderParameterEXT'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -5189,7 +5305,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'program',
@@ -5217,7 +5335,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'renderbuffer',
@@ -5233,7 +5353,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'renderbuffer',
@@ -5287,15 +5409,21 @@ our %registry = (
     'argdata' => [
       [
         'unit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -5310,7 +5438,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'texture',
@@ -5341,11 +5471,15 @@ our %registry = (
     'argdata' => [
       [
         'unit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderTextureUnitParameter'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -5379,7 +5513,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BindTransformFeedbackTarget'
       ],
       [
         'id',
@@ -5395,7 +5531,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'id',
@@ -5567,7 +5705,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BinormalPointerTypeEXT'
       ],
       [
         'stride',
@@ -5667,7 +5807,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendEquationModeEXT'
       ]
     ],
     'feature' => 'GL_VERSION_1_4',
@@ -5682,11 +5824,15 @@ our %registry = (
     'argdata' => [
       [
         'modeRGB',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendEquationModeEXT'
       ],
       [
         'modeAlpha',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendEquationModeEXT'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -5707,11 +5853,15 @@ our %registry = (
       ],
       [
         'modeRGB',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendEquationModeEXT'
       ],
       [
         'modeAlpha',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendEquationModeEXT'
       ]
     ],
     'feature' => 'GL_VERSION_4_0',
@@ -5732,7 +5882,9 @@ our %registry = (
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendEquationModeEXT'
       ]
     ],
     'feature' => 'GL_VERSION_4_0',
@@ -5744,11 +5896,15 @@ our %registry = (
     'argdata' => [
       [
         'sfactor',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ],
       [
         'dfactor',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -5763,19 +5919,27 @@ our %registry = (
     'argdata' => [
       [
         'sfactorRGB',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ],
       [
         'dfactorRGB',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ],
       [
         'sfactorAlpha',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ],
       [
         'dfactorAlpha',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ]
     ],
     'feature' => 'GL_VERSION_1_4',
@@ -5796,19 +5960,27 @@ our %registry = (
       ],
       [
         'srcRGB',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ],
       [
         'dstRGB',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ],
       [
         'srcAlpha',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ],
       [
         'dstAlpha',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ]
     ],
     'feature' => 'GL_VERSION_4_0',
@@ -5829,11 +6001,15 @@ our %registry = (
       ],
       [
         'src',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ],
       [
         'dst',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlendingFactor'
       ]
     ],
     'feature' => 'GL_VERSION_4_0',
@@ -5897,11 +6073,15 @@ our %registry = (
       ],
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'ClearBufferMask'
       ],
       [
         'filter',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlitFramebufferFilter'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_object',
@@ -5945,11 +6125,15 @@ our %registry = (
       ],
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'ClearBufferMask'
       ],
       [
         'filter',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlitFramebufferFilter'
       ]
     ],
     'feature' => 'GL_ANGLE_framebuffer_blit',
@@ -6001,11 +6185,15 @@ our %registry = (
       ],
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'ClearBufferMask'
       ],
       [
         'filter',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BlitFramebufferFilter'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -6044,7 +6232,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'size',
@@ -6057,7 +6247,9 @@ our %registry = (
       ],
       [
         'usage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferUsageARB'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -6123,7 +6315,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferStorageTarget'
       ],
       [
         'size',
@@ -6136,7 +6330,9 @@ our %registry = (
       ],
       [
         'flags',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'BufferStorageMask'
       ]
     ],
     'feature' => 'GL_ARB_buffer_storage',
@@ -6165,7 +6361,9 @@ our %registry = (
       ],
       [
         'flags',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'BufferStorageMask'
       ]
     ],
     'feature' => 'GL_EXT_external_buffer',
@@ -6177,7 +6375,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'size',
@@ -6204,7 +6404,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'offset',
@@ -6258,7 +6460,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ListNameType'
       ],
       [
         'lists',
@@ -6279,7 +6483,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_object',
@@ -6295,7 +6501,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -6311,7 +6519,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -6326,11 +6536,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ClampColorTargetARB'
       ],
       [
         'clamp',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ClampColorModeARB'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -6342,7 +6556,9 @@ our %registry = (
     'argdata' => [
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'ClearBufferMask'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -6377,19 +6593,27 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferStorageTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'data',
@@ -6407,11 +6631,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'offset',
@@ -6423,11 +6651,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'data',
@@ -6445,7 +6677,9 @@ our %registry = (
     'argdata' => [
       [
         'buffer',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'Buffer'
       ],
       [
         'drawBuffer',
@@ -6469,7 +6703,9 @@ our %registry = (
     'argdata' => [
       [
         'buffer',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'Buffer'
       ],
       [
         'drawbuffer',
@@ -6491,7 +6727,9 @@ our %registry = (
     'argdata' => [
       [
         'buffer',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'Buffer'
       ],
       [
         'drawbuffer',
@@ -6513,7 +6751,9 @@ our %registry = (
     'argdata' => [
       [
         'buffer',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'Buffer'
       ],
       [
         'drawbuffer',
@@ -6693,15 +6933,21 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'data',
@@ -6723,15 +6969,21 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'data',
@@ -6753,7 +7005,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'offset',
@@ -6765,11 +7019,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'data',
@@ -6791,7 +7049,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'offset',
@@ -6803,11 +7063,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'data',
@@ -6829,7 +7093,9 @@ our %registry = (
       ],
       [
         'buffer',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'Buffer'
       ],
       [
         'drawbuffer',
@@ -6857,7 +7123,9 @@ our %registry = (
       ],
       [
         'buffer',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'Buffer'
       ],
       [
         'drawbuffer',
@@ -6883,7 +7151,9 @@ our %registry = (
       ],
       [
         'buffer',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'Buffer'
       ],
       [
         'drawbuffer',
@@ -6909,7 +7179,9 @@ our %registry = (
       ],
       [
         'buffer',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'Buffer'
       ],
       [
         'drawbuffer',
@@ -6975,11 +7247,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'data',
@@ -7032,11 +7308,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'data',
@@ -7057,7 +7337,9 @@ our %registry = (
     'argdata' => [
       [
         'texture',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ]
     ],
     'core_removed' => 1,
@@ -7070,7 +7352,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ]
     ],
     'feature' => 'GL_ATI_vertex_streams',
@@ -7082,7 +7366,9 @@ our %registry = (
     'argdata' => [
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'ClientAttribMask'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -7101,7 +7387,9 @@ our %registry = (
       ],
       [
         'flags',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'SyncObjectMask'
       ],
       [
         'timeout',
@@ -7120,11 +7408,15 @@ our %registry = (
     'argdata' => [
       [
         'origin',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ClipControlOrigin'
       ],
       [
         'depth',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ClipControlDepth'
       ]
     ],
     'feature' => 'GL_ARB_clip_control',
@@ -7136,7 +7428,9 @@ our %registry = (
     'argdata' => [
       [
         'plane',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ClipPlaneName'
       ],
       [
         'equation',
@@ -7154,7 +7448,9 @@ our %registry = (
     'argdata' => [
       [
         'p',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ClipPlaneName'
       ],
       [
         'eqn',
@@ -7172,7 +7468,9 @@ our %registry = (
     'argdata' => [
       [
         'plane',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ClipPlaneName'
       ],
       [
         'equation',
@@ -8095,7 +8393,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'stride',
@@ -8111,31 +8411,45 @@ our %registry = (
     'argdata' => [
       [
         'op',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentOp1ATI'
       ],
       [
         'dst',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderRegATI'
       ],
       [
         'dstMask',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderDestMaskATI'
       ],
       [
         'dstMod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderDestModMaskATI'
       ],
       [
         'arg1',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg1Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg1Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ]
     ],
     'feature' => 'GL_ATI_fragment_shader',
@@ -8147,43 +8461,63 @@ our %registry = (
     'argdata' => [
       [
         'op',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentOp2ATI'
       ],
       [
         'dst',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderRegATI'
       ],
       [
         'dstMask',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderDestMaskATI'
       ],
       [
         'dstMod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderDestModMaskATI'
       ],
       [
         'arg1',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg1Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg1Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ],
       [
         'arg2',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg2Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg2Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ]
     ],
     'feature' => 'GL_ATI_fragment_shader',
@@ -8195,55 +8529,81 @@ our %registry = (
     'argdata' => [
       [
         'op',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentOp3ATI'
       ],
       [
         'dst',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderRegATI'
       ],
       [
         'dstMask',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderDestMaskATI'
       ],
       [
         'dstMod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderDestModMaskATI'
       ],
       [
         'arg1',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg1Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg1Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ],
       [
         'arg2',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg2Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg2Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ],
       [
         'arg3',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderGenericSourceATI'
       ],
       [
         'arg3Rep',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderValueRepATI'
       ],
       [
         'arg3Mod',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderColorModMaskATI'
       ]
     ],
     'feature' => 'GL_ATI_fragment_shader',
@@ -8310,11 +8670,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorMaterialParameter'
       ]
     ],
     'core_removed' => 1,
@@ -8326,7 +8690,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'color',
@@ -8342,7 +8708,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'color',
@@ -8360,7 +8728,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'color',
@@ -8376,7 +8746,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'color',
@@ -8398,7 +8770,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'stride',
@@ -8424,7 +8798,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'stride',
@@ -8454,7 +8830,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'stride',
@@ -8484,7 +8862,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'pointer',
@@ -8505,7 +8885,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTarget'
       ],
       [
         'start',
@@ -8517,11 +8899,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'data',
@@ -8543,11 +8929,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -8555,11 +8945,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'table',
@@ -8580,11 +8974,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableParameterPName'
       ],
       [
         'params',
@@ -8605,11 +9003,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableParameterPName'
       ],
       [
         'params',
@@ -8627,27 +9029,39 @@ our %registry = (
     'argdata' => [
       [
         'stage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerStageNV'
       ],
       [
         'portion',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerPortionNV'
       ],
       [
         'variable',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerVariableNV'
       ],
       [
         'input',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerRegisterNV'
       ],
       [
         'mapping',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerMappingNV'
       ],
       [
         'componentUsage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerComponentUsageNV'
       ]
     ],
     'feature' => 'GL_NV_register_combiners',
@@ -8659,31 +9073,45 @@ our %registry = (
     'argdata' => [
       [
         'stage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerStageNV'
       ],
       [
         'portion',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerPortionNV'
       ],
       [
         'abOutput',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerRegisterNV'
       ],
       [
         'cdOutput',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerRegisterNV'
       ],
       [
         'sumOutput',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerRegisterNV'
       ],
       [
         'scale',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerScaleNV'
       ],
       [
         'bias',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerBiasNV'
       ],
       [
         'abDotProduct',
@@ -8707,7 +9135,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'param',
@@ -8723,7 +9153,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'params',
@@ -8741,7 +9173,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'param',
@@ -8757,7 +9191,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'params',
@@ -8775,11 +9211,15 @@ our %registry = (
     'argdata' => [
       [
         'stage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerStageNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'params',
@@ -8867,11 +9307,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -8879,7 +9323,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -8909,11 +9355,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -8921,7 +9371,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -8955,11 +9407,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -8967,7 +9423,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -9005,11 +9463,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9025,7 +9487,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9047,11 +9511,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9075,7 +9543,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9097,11 +9567,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9133,7 +9607,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9158,7 +9634,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9166,7 +9644,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -9199,7 +9679,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9207,7 +9689,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -9244,7 +9728,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9252,7 +9738,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -9338,7 +9826,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9354,7 +9844,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9379,7 +9871,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9403,7 +9897,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9428,7 +9924,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9460,7 +9958,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9539,7 +10039,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9547,7 +10049,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -9581,7 +10085,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9589,7 +10095,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -9627,7 +10135,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9635,7 +10145,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -9689,7 +10201,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9715,7 +10229,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9731,7 +10247,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9777,7 +10295,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9803,7 +10323,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9827,7 +10349,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9881,7 +10405,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9907,7 +10433,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -9939,7 +10467,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'imageSize',
@@ -9996,11 +10526,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -10008,11 +10542,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'image',
@@ -10033,11 +10571,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -10049,11 +10591,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'image',
@@ -10074,11 +10620,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionParameter'
       ],
       [
         'params',
@@ -10097,11 +10647,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionParameter'
       ],
       [
         'params',
@@ -10122,11 +10676,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionParameter'
       ],
       [
         'params',
@@ -10145,11 +10703,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionParameter'
       ],
       [
         'params',
@@ -10170,11 +10732,15 @@ our %registry = (
     'argdata' => [
       [
         'readtarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CopyBufferSubDataTarget'
       ],
       [
         'writetarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CopyBufferSubDataTarget'
       ],
       [
         'readoffset',
@@ -10201,7 +10767,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTarget'
       ],
       [
         'start',
@@ -10232,11 +10800,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'x',
@@ -10263,11 +10835,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'x',
@@ -10294,11 +10870,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'x',
@@ -10333,7 +10913,9 @@ our %registry = (
       ],
       [
         'srcTarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CopyImageSubDataTarget'
       ],
       [
         'srcLevel',
@@ -10357,7 +10939,9 @@ our %registry = (
       ],
       [
         'dstTarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CopyImageSubDataTarget'
       ],
       [
         'dstLevel',
@@ -10401,7 +10985,9 @@ our %registry = (
       ],
       [
         'srcTarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CopyBufferSubDataTarget'
       ],
       [
         'srcLevel',
@@ -10425,7 +11011,9 @@ our %registry = (
       ],
       [
         'dstTarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CopyBufferSubDataTarget'
       ],
       [
         'dstLevel',
@@ -10465,11 +11053,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -10477,7 +11069,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'x',
@@ -10505,11 +11099,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -10517,7 +11115,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'x',
@@ -10549,11 +11149,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -10585,11 +11189,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -10629,11 +11237,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -10737,7 +11349,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelCopyType'
       ]
     ],
     'core_removed' => 1,
@@ -10752,7 +11366,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -10760,7 +11376,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'x',
@@ -10790,7 +11408,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -10798,7 +11418,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'x',
@@ -10832,7 +11454,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -10866,7 +11490,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -10908,7 +11534,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -11000,7 +11628,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -11008,7 +11638,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'x',
@@ -11040,7 +11672,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -11048,7 +11682,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'x',
@@ -11140,7 +11776,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -11216,7 +11854,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -11304,7 +11944,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -11352,7 +11994,9 @@ our %registry = (
       ],
       [
         'pathNameType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathElementType'
       ],
       [
         'paths',
@@ -11365,11 +12009,15 @@ our %registry = (
       ],
       [
         'coverMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InstancedPathCoverMode'
       ],
       [
         'transformType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathTransformType'
       ],
       [
         'transformValues',
@@ -11391,7 +12039,9 @@ our %registry = (
       ],
       [
         'coverMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathCoverMode'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -11407,7 +12057,9 @@ our %registry = (
       ],
       [
         'pathNameType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathElementType'
       ],
       [
         'paths',
@@ -11420,11 +12072,15 @@ our %registry = (
       ],
       [
         'coverMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InstancedPathCoverMode'
       ],
       [
         'transformType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathTransformType'
       ],
       [
         'transformValues',
@@ -11446,7 +12102,9 @@ our %registry = (
       ],
       [
         'coverMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathCoverMode'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -11603,7 +12261,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryTarget'
       ],
       [
         'n',
@@ -11664,7 +12324,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -11676,7 +12338,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'string',
@@ -11692,7 +12356,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'count',
@@ -11752,7 +12418,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'n',
@@ -11810,7 +12478,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -11821,7 +12491,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CullParameterEXT'
       ],
       [
         'params',
@@ -11839,7 +12511,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CullParameterEXT'
       ],
       [
         'params',
@@ -11923,15 +12597,21 @@ our %registry = (
     'argdata' => [
       [
         'source',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DebugSource'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DebugType'
       ],
       [
         'severity',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DebugSeverity'
       ],
       [
         'count',
@@ -11961,7 +12641,9 @@ our %registry = (
       ],
       [
         'severity',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DebugSeverity'
       ],
       [
         'count',
@@ -11991,11 +12673,15 @@ our %registry = (
     'argdata' => [
       [
         'source',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DebugSource'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DebugType'
       ],
       [
         'id',
@@ -12003,7 +12689,9 @@ our %registry = (
       ],
       [
         'severity',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DebugSeverity'
       ],
       [
         'length',
@@ -12028,7 +12716,9 @@ our %registry = (
       ],
       [
         'severity',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DebugSeverity'
       ],
       [
         'id',
@@ -12053,7 +12743,9 @@ our %registry = (
     'argdata' => [
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'FfdMaskSGIX'
       ]
     ],
     'feature' => 'GL_SGIX_polynomial_ffd',
@@ -12713,7 +13405,9 @@ our %registry = (
     'argdata' => [
       [
         'func',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DepthFunction'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -12900,7 +13594,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'n',
@@ -12922,7 +13618,9 @@ our %registry = (
     'argdata' => [
       [
         'cap',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -12933,7 +13631,9 @@ our %registry = (
     'argdata' => [
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ]
     ],
     'core_removed' => 1,
@@ -12945,7 +13645,9 @@ our %registry = (
     'argdata' => [
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ],
       [
         'index',
@@ -12961,7 +13663,9 @@ our %registry = (
     'argdata' => [
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ],
       [
         'index',
@@ -13037,7 +13741,9 @@ our %registry = (
       ],
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -13085,7 +13791,9 @@ our %registry = (
     'argdata' => [
       [
         'cap',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ],
       [
         'index',
@@ -13101,7 +13809,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'numAttachments',
@@ -13110,7 +13820,8 @@ our %registry = (
       [
         'attachments',
         'const GLenum* ',
-        'numAttachments'
+        'numAttachments',
+        'InvalidateFramebufferAttachment'
       ]
     ],
     'feature' => 'GL_EXT_discard_framebuffer',
@@ -13190,7 +13901,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'first',
@@ -13209,7 +13922,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'indirect',
@@ -13232,7 +13947,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'first',
@@ -13259,7 +13976,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'first',
@@ -13287,7 +14006,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawBufferMode'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -13344,7 +14065,8 @@ our %registry = (
       [
         'bufs',
         'const GLenum* ',
-        'n'
+        'n',
+        'DrawBufferMode'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -13514,7 +14236,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'first',
@@ -13534,7 +14258,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'count',
@@ -13550,7 +14276,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'count',
@@ -13558,7 +14286,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -13578,7 +14308,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'count',
@@ -13586,7 +14318,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -13608,11 +14342,15 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indirect',
@@ -13635,7 +14373,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'count',
@@ -13643,7 +14383,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -13668,7 +14410,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'count',
@@ -13676,7 +14420,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -13705,7 +14451,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'count',
@@ -13713,7 +14461,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -13742,7 +14492,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'count',
@@ -13750,7 +14502,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -13788,11 +14542,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -13810,7 +14568,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'start',
@@ -13838,7 +14598,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'start',
@@ -13865,7 +14627,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'start',
@@ -13881,7 +14645,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -13902,7 +14668,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'start',
@@ -13918,7 +14686,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -13996,7 +14766,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'id',
@@ -14015,7 +14787,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'id',
@@ -14035,7 +14809,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'id',
@@ -14055,7 +14831,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'id',
@@ -14231,7 +15009,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ElementPointerTypeATI'
       ],
       [
         'pointer',
@@ -14249,7 +15029,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ElementPointerTypeATI'
       ],
       [
         'pointer',
@@ -14267,7 +15049,9 @@ our %registry = (
     'argdata' => [
       [
         'cap',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -14278,7 +15062,9 @@ our %registry = (
     'argdata' => [
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ]
     ],
     'core_removed' => 1,
@@ -14290,7 +15076,9 @@ our %registry = (
     'argdata' => [
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ],
       [
         'index',
@@ -14306,7 +15094,9 @@ our %registry = (
     'argdata' => [
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ],
       [
         'index',
@@ -14382,7 +15172,9 @@ our %registry = (
       ],
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -14430,7 +15222,9 @@ our %registry = (
     'argdata' => [
       [
         'cap',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ],
       [
         'index',
@@ -14507,7 +15301,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryTarget'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -14531,7 +15327,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryTarget'
       ],
       [
         'index',
@@ -14553,7 +15351,9 @@ our %registry = (
     'argdata' => [
       [
         'preserveMask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'BufferBitQCOM'
       ]
     ],
     'feature' => 'GL_QCOM_tiled_rendering',
@@ -14705,11 +15505,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EvalTargetNV'
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EvalMapsModeNV'
       ]
     ],
     'feature' => 'GL_NV_evaluators',
@@ -14721,7 +15525,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MeshMode1'
       ],
       [
         'i1',
@@ -14741,7 +15547,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MeshMode2'
       ],
       [
         'i1',
@@ -14797,7 +15605,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'id',
@@ -14887,7 +15697,9 @@ our %registry = (
       ],
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'source',
@@ -15039,11 +15851,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'texels',
@@ -15137,7 +15953,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FeedbackType'
       ],
       [
         'buffer',
@@ -15158,11 +15976,15 @@ our %registry = (
     'argdata' => [
       [
         'condition',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SyncCondition'
       ],
       [
         'flags',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'SyncBehaviorFlags'
       ]
     ],
     'feature' => 'GL_ARB_sync',
@@ -15174,19 +15996,27 @@ our %registry = (
     'argdata' => [
       [
         'variable',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerVariableNV'
       ],
       [
         'input',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerRegisterNV'
       ],
       [
         'mapping',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerMappingNV'
       ],
       [
         'componentUsage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerComponentUsageNV'
       ]
     ],
     'feature' => 'GL_NV_register_combiners',
@@ -15241,7 +16071,9 @@ our %registry = (
     'argdata' => [
       [
         'object',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ObjectTypeAPPLE'
       ],
       [
         'name',
@@ -15272,7 +16104,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'offset',
@@ -15332,7 +16166,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelDataRangeTargetNV'
       ]
     ],
     'feature' => 'GL_NV_pixel_data_range',
@@ -15393,7 +16229,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FogPointerTypeEXT'
       ],
       [
         'stride',
@@ -15416,7 +16254,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FogPointerTypeIBM'
       ],
       [
         'stride',
@@ -15571,7 +16411,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FogParameter'
       ],
       [
         'param',
@@ -15587,7 +16429,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FogParameter'
       ],
       [
         'params',
@@ -15605,7 +16449,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FogParameter'
       ],
       [
         'param',
@@ -15621,7 +16467,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FogParameter'
       ],
       [
         'params',
@@ -15639,7 +16487,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FogPName'
       ],
       [
         'param',
@@ -15655,7 +16505,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FogPName'
       ],
       [
         'param',
@@ -15689,11 +16541,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ]
     ],
     'feature' => 'GL_SGIX_fragment_specular_lighting',
@@ -15733,7 +16589,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightModelParameterSGIX'
       ],
       [
         'param',
@@ -15766,7 +16624,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightModelParameterSGIX'
       ],
       [
         'params',
@@ -15800,7 +16660,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightModelParameterSGIX'
       ],
       [
         'param',
@@ -15833,7 +16695,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightModelParameterSGIX'
       ],
       [
         'params',
@@ -15871,11 +16735,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightNameSGIX'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightParameterSGIX'
       ],
       [
         'param',
@@ -15912,11 +16780,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightNameSGIX'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightParameterSGIX'
       ],
       [
         'params',
@@ -15954,11 +16826,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightNameSGIX'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightParameterSGIX'
       ],
       [
         'param',
@@ -15995,11 +16871,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightNameSGIX'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightParameterSGIX'
       ],
       [
         'params',
@@ -16037,11 +16917,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'param',
@@ -16078,11 +16962,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'params',
@@ -16120,11 +17008,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'param',
@@ -16161,11 +17053,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'params',
@@ -16205,7 +17101,9 @@ our %registry = (
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawBufferMode'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -16226,7 +17124,8 @@ our %registry = (
       [
         'bufs',
         'const GLenum* ',
-        'n'
+        'n',
+        'DrawBufferMode'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -16315,11 +17214,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferParameterName'
       ],
       [
         'param',
@@ -16355,7 +17258,9 @@ our %registry = (
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ReadBufferMode'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -16370,15 +17275,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'renderbuffertarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'renderbuffer',
@@ -16394,7 +17305,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'start',
@@ -16419,7 +17332,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'start',
@@ -16444,7 +17359,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'numsamples',
@@ -16473,11 +17390,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'texture',
@@ -16500,15 +17421,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'textarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'texture',
@@ -16531,15 +17458,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'textarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'texture',
@@ -16559,15 +17492,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'textarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'texture',
@@ -16594,15 +17533,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'textarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'texture',
@@ -16629,11 +17574,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'texture',
@@ -16645,7 +17594,9 @@ our %registry = (
       ],
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ]
     ],
     'feature' => 'GL_ARB_geometry_shader4',
@@ -16661,11 +17612,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'texture',
@@ -16717,11 +17672,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'texture',
@@ -16753,11 +17712,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'texture',
@@ -16797,7 +17760,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FrontFaceDirection'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -17239,15 +18204,21 @@ our %registry = (
     'argdata' => [
       [
         'dataType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DataTypeEXT'
       ],
       [
         'storageType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderStorageTypeEXT'
       ],
       [
         'range',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ParameterRangeEXT'
       ],
       [
         'components',
@@ -17372,7 +18343,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ]
     ],
     'feature' => 'GL_ARB_framebuffer_object',
@@ -17384,11 +18357,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -17416,7 +18393,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -17436,7 +18415,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'AtomicCounterBufferPName'
       ],
       [
         'params',
@@ -17480,7 +18461,8 @@ our %registry = (
       [
         'type',
         'GLenum* ',
-        '1'
+        '1',
+        'AttributeType'
       ],
       [
         'name',
@@ -17502,7 +18484,9 @@ our %registry = (
       ],
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'index',
@@ -17537,7 +18521,9 @@ our %registry = (
       ],
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'index',
@@ -17572,7 +18558,9 @@ our %registry = (
       ],
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'index',
@@ -17580,7 +18568,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SubroutineParameterName'
       ],
       [
         'values',
@@ -17624,7 +18614,8 @@ our %registry = (
       [
         'type',
         'GLenum* ',
-        '1'
+        '1',
+        'UniformType'
       ],
       [
         'name',
@@ -17681,7 +18672,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'UniformBlockPName'
       ],
       [
         'params',
@@ -17743,7 +18736,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'UniformPName'
       ],
       [
         'params',
@@ -17802,11 +18797,15 @@ our %registry = (
     'argdata' => [
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ArrayObjectPNameATI'
       ],
       [
         'params',
@@ -17824,11 +18823,15 @@ our %registry = (
     'argdata' => [
       [
         'array',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ArrayObjectPNameATI'
       ],
       [
         'params',
@@ -17922,7 +18925,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'index',
@@ -17944,7 +18949,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'data',
@@ -17961,11 +18968,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferPNameARB'
       ],
       [
         'params',
@@ -17986,11 +18997,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferPNameARB'
       ],
       [
         'params',
@@ -18008,7 +19023,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'pname',
@@ -18033,11 +19050,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferPointerNameARB'
       ],
       [
         'params',
@@ -18058,7 +19079,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'offset',
@@ -18084,7 +19107,9 @@ our %registry = (
     'argdata' => [
       [
         'plane',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ClipPlaneName'
       ],
       [
         'equation',
@@ -18102,7 +19127,9 @@ our %registry = (
     'argdata' => [
       [
         'plane',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ClipPlaneName'
       ],
       [
         'equation',
@@ -18120,7 +19147,9 @@ our %registry = (
     'argdata' => [
       [
         'plane',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ClipPlaneName'
       ],
       [
         'equation',
@@ -18141,15 +19170,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTarget'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'table',
@@ -18170,11 +19205,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableParameterPName'
       ],
       [
         'params',
@@ -18192,11 +19231,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTargetSGI'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableParameterPName'
       ],
       [
         'params',
@@ -18217,11 +19260,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableParameterPName'
       ],
       [
         'params',
@@ -18239,11 +19286,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTargetSGI'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableParameterPName'
       ],
       [
         'params',
@@ -18261,15 +19312,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTargetSGI'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'table',
@@ -18287,19 +19344,27 @@ our %registry = (
     'argdata' => [
       [
         'stage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerStageNV'
       ],
       [
         'portion',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerPortionNV'
       ],
       [
         'variable',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerVariableNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'params',
@@ -18317,19 +19382,27 @@ our %registry = (
     'argdata' => [
       [
         'stage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerStageNV'
       ],
       [
         'portion',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerPortionNV'
       ],
       [
         'variable',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerVariableNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'params',
@@ -18347,15 +19420,21 @@ our %registry = (
     'argdata' => [
       [
         'stage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerStageNV'
       ],
       [
         'portion',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerPortionNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'params',
@@ -18373,15 +19452,21 @@ our %registry = (
     'argdata' => [
       [
         'stage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerStageNV'
       ],
       [
         'portion',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerPortionNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'params',
@@ -18399,11 +19484,15 @@ our %registry = (
     'argdata' => [
       [
         'stage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerStageNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'params',
@@ -18421,7 +19510,9 @@ our %registry = (
     'argdata' => [
       [
         'tokenID',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CommandOpcodesNV'
       ],
       [
         'size',
@@ -18437,11 +19528,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'lod',
@@ -18466,7 +19561,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -18518,7 +19615,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'lod',
@@ -18590,15 +19689,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'image',
@@ -18616,15 +19721,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTargetEXT'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'image',
@@ -18642,11 +19753,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionParameter'
       ],
       [
         'params',
@@ -18664,11 +19779,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionParameter'
       ],
       [
         'params',
@@ -18686,11 +19805,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionParameter'
       ],
       [
         'params',
@@ -18708,11 +19831,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionParameter'
       ],
       [
         'params',
@@ -18760,12 +19887,14 @@ our %registry = (
       [
         'sources',
         'GLenum* ',
-        'count'
+        'count',
+        'DebugSource'
       ],
       [
         'types',
         'GLenum* ',
-        'count'
+        'count',
+        'DebugType'
       ],
       [
         'ids',
@@ -18775,7 +19904,8 @@ our %registry = (
       [
         'severities',
         'GLenum* ',
-        'count'
+        'count',
+        'DebugSeverity'
       ],
       [
         'lengths',
@@ -18812,7 +19942,8 @@ our %registry = (
       [
         'severities',
         'GLuint* ',
-        'count'
+        'count',
+        'DebugSeverity'
       ],
       [
         'ids',
@@ -18840,7 +19971,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'points',
@@ -18862,7 +19995,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'index',
@@ -18884,7 +20019,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'data',
@@ -18970,7 +20107,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FenceParameterNameNV'
       ],
       [
         'params',
@@ -18988,11 +20127,15 @@ our %registry = (
     'argdata' => [
       [
         'variable',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerVariableNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'params',
@@ -19010,11 +20153,15 @@ our %registry = (
     'argdata' => [
       [
         'variable',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerVariableNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'CombinerParameterNV'
       ],
       [
         'params',
@@ -19045,7 +20192,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'params',
@@ -19067,7 +20216,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'index',
@@ -19089,7 +20240,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'data',
@@ -19193,11 +20346,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightNameSGIX'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightParameterSGIX'
       ],
       [
         'params',
@@ -19236,11 +20393,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightNameSGIX'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FragmentLightParameterSGIX'
       ],
       [
         'params',
@@ -19279,11 +20440,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'params',
@@ -19322,11 +20487,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'params',
@@ -19347,15 +20516,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachmentParameterName'
       ],
       [
         'params',
@@ -19373,11 +20548,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachmentParameterName'
       ],
       [
         'numsamples',
@@ -19406,11 +20585,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachmentParameterName'
       ],
       [
         'params',
@@ -19432,7 +20615,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetFramebufferParameter'
       ],
       [
         'params',
@@ -19450,7 +20635,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FramebufferTarget'
       ]
     ],
     'feature' => 'GL_EXT_shader_pixel_local_storage2',
@@ -19478,7 +20665,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ContainerType'
       ]
     ],
     'feature' => 'GL_ARB_shader_objects',
@@ -19490,7 +20679,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HistogramTargetEXT'
       ],
       [
         'reset',
@@ -19498,11 +20689,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'values',
@@ -19520,7 +20715,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HistogramTargetEXT'
       ],
       [
         'reset',
@@ -19528,11 +20725,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'values',
@@ -19550,11 +20751,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HistogramTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetHistogramParameterPNameEXT'
       ],
       [
         'params',
@@ -19572,11 +20777,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HistogramTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetHistogramParameterPNameEXT'
       ],
       [
         'params',
@@ -19594,11 +20803,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HistogramTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetHistogramParameterPNameEXT'
       ],
       [
         'params',
@@ -19616,11 +20829,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HistogramTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetHistogramParameterPNameEXT'
       ],
       [
         'params',
@@ -19654,7 +20871,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ]
     ],
     'feature' => 'GL_ARB_bindless_texture',
@@ -19682,7 +20901,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ]
     ],
     'feature' => 'GL_NV_bindless_texture',
@@ -19694,11 +20915,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformTargetHP'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformPNameHP'
       ],
       [
         'params',
@@ -19716,11 +20941,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformTargetHP'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformPNameHP'
       ],
       [
         'params',
@@ -19765,7 +20994,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'index',
@@ -19791,7 +21022,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'data',
@@ -19812,7 +21045,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'index',
@@ -19834,7 +21069,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'index',
@@ -19895,7 +21132,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'data',
@@ -19912,11 +21151,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'samples',
@@ -19924,7 +21167,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormatPName'
       ],
       [
         'count',
@@ -19946,15 +21191,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormatPName'
       ],
       [
         'count',
@@ -19976,15 +21227,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormatPName'
       ],
       [
         'count',
@@ -20010,7 +21267,9 @@ our %registry = (
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetVariantValueEXT'
       ],
       [
         'data',
@@ -20032,7 +21291,9 @@ our %registry = (
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetVariantValueEXT'
       ],
       [
         'data',
@@ -20054,7 +21315,9 @@ our %registry = (
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetVariantValueEXT'
       ],
       [
         'data',
@@ -20072,11 +21335,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightParameter'
       ],
       [
         'params',
@@ -20094,11 +21361,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightParameter'
       ],
       [
         'params',
@@ -20116,11 +21387,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightParameter'
       ],
       [
         'params',
@@ -20142,7 +21417,9 @@ our %registry = (
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetVariantValueEXT'
       ],
       [
         'data',
@@ -20164,7 +21441,9 @@ our %registry = (
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetVariantValueEXT'
       ],
       [
         'data',
@@ -20186,7 +21465,9 @@ our %registry = (
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetVariantValueEXT'
       ],
       [
         'data',
@@ -20288,7 +21569,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EvalTargetNV'
       ],
       [
         'index',
@@ -20296,7 +21579,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapAttribParameterNV'
       ],
       [
         'params',
@@ -20314,7 +21599,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EvalTargetNV'
       ],
       [
         'index',
@@ -20322,7 +21609,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapAttribParameterNV'
       ],
       [
         'params',
@@ -20340,7 +21629,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EvalTargetNV'
       ],
       [
         'index',
@@ -20348,7 +21639,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTypeNV'
       ],
       [
         'ustride',
@@ -20378,11 +21671,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EvalTargetNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapParameterNV'
       ],
       [
         'params',
@@ -20400,11 +21697,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EvalTargetNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapParameterNV'
       ],
       [
         'params',
@@ -20422,11 +21723,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTarget'
       ],
       [
         'query',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetMapQuery'
       ],
       [
         'v',
@@ -20444,11 +21749,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTarget'
       ],
       [
         'query',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetMapQuery'
       ],
       [
         'v',
@@ -20466,11 +21775,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTarget'
       ],
       [
         'query',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetMapQuery'
       ],
       [
         'v',
@@ -20488,11 +21801,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'params',
@@ -20510,11 +21827,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'params',
@@ -20532,11 +21853,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'params',
@@ -20558,7 +21883,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MemoryObjectParameterName'
       ],
       [
         'params',
@@ -20575,7 +21902,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MinmaxTargetEXT'
       ],
       [
         'reset',
@@ -20583,11 +21912,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'values',
@@ -20605,7 +21938,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MinmaxTargetEXT'
       ],
       [
         'reset',
@@ -20613,11 +21948,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'values',
@@ -20635,11 +21974,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MinmaxTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetMinmaxParameterPNameEXT'
       ],
       [
         'params',
@@ -20657,11 +22000,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MinmaxTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetMinmaxParameterPNameEXT'
       ],
       [
         'params',
@@ -20679,11 +22026,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MinmaxTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetMinmaxParameterPNameEXT'
       ],
       [
         'params',
@@ -20701,11 +22052,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MinmaxTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetMinmaxParameterPNameEXT'
       ],
       [
         'params',
@@ -20723,15 +22078,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'params',
@@ -20749,15 +22110,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'params',
@@ -20775,15 +22142,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -20801,15 +22174,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -20827,15 +22206,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -20853,11 +22238,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -20865,11 +22254,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -20887,11 +22280,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -20899,7 +22296,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -20917,11 +22316,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -20929,7 +22332,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -20947,15 +22352,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -20973,15 +22384,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -20999,15 +22416,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -21025,15 +22448,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -21054,7 +22483,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetMultisamplePNameNV'
       ],
       [
         'index',
@@ -21080,7 +22511,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferPNameARB'
       ],
       [
         'params',
@@ -21101,7 +22534,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferPNameARB'
       ],
       [
         'params',
@@ -21122,7 +22557,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferPNameARB'
       ],
       [
         'params',
@@ -21144,7 +22581,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferPNameARB'
       ],
       [
         'params',
@@ -21166,7 +22605,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferPointerNameARB'
       ],
       [
         'params',
@@ -21188,7 +22629,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferPointerNameARB'
       ],
       [
         'params',
@@ -21262,11 +22705,15 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachmentParameterName'
       ],
       [
         'params',
@@ -21287,11 +22734,15 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachmentParameterName'
       ],
       [
         'params',
@@ -21346,7 +22797,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetFramebufferParameter'
       ],
       [
         'param',
@@ -21367,7 +22820,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetFramebufferParameter'
       ],
       [
         'params',
@@ -21389,7 +22844,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -21415,7 +22872,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -21441,7 +22900,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -21467,7 +22928,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -21493,11 +22956,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramStringProperty'
       ],
       [
         'string',
@@ -21519,11 +22986,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramPropertyARB'
       ],
       [
         'params',
@@ -21545,7 +23016,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferParameterName'
       ],
       [
         'params',
@@ -21566,7 +23039,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferParameterName'
       ],
       [
         'params',
@@ -21714,7 +23189,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ArrayObjectPNameATI'
       ],
       [
         'params',
@@ -21736,7 +23213,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ArrayObjectPNameATI'
       ],
       [
         'params',
@@ -21757,7 +23236,9 @@ our %registry = (
     'argdata' => [
       [
         'identifier',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ObjectIdentifier'
       ],
       [
         'name',
@@ -21923,7 +23404,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'OcclusionQueryParameterNameNV'
       ],
       [
         'params',
@@ -21945,7 +23428,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'OcclusionQueryParameterNameNV'
       ],
       [
         'params',
@@ -21963,11 +23448,15 @@ our %registry = (
     'argdata' => [
       [
         'color',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathColor'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathGenMode'
       ],
       [
         'value',
@@ -21985,11 +23474,15 @@ our %registry = (
     'argdata' => [
       [
         'color',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathColor'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathGenMode'
       ],
       [
         'value',
@@ -22012,7 +23505,8 @@ our %registry = (
       [
         'commands',
         'GLubyte* ',
-        'COMPSIZE(path)'
+        'COMPSIZE(path)',
+        'PathCoordType'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -22081,7 +23575,9 @@ our %registry = (
     'argdata' => [
       [
         'metricQueryMask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'PathMetricMask'
       ],
       [
         'firstPathName',
@@ -22111,7 +23607,9 @@ our %registry = (
     'argdata' => [
       [
         'metricQueryMask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'PathMetricMask'
       ],
       [
         'numPaths',
@@ -22119,7 +23617,9 @@ our %registry = (
       ],
       [
         'pathNameType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathElementType'
       ],
       [
         'paths',
@@ -22154,7 +23654,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathParameter'
       ],
       [
         'value',
@@ -22176,7 +23678,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathParameter'
       ],
       [
         'value',
@@ -22194,7 +23698,9 @@ our %registry = (
     'argdata' => [
       [
         'pathListMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathListMode'
       ],
       [
         'numPaths',
@@ -22202,7 +23708,9 @@ our %registry = (
       ],
       [
         'pathNameType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathElementType'
       ],
       [
         'paths',
@@ -22223,7 +23731,9 @@ our %registry = (
       ],
       [
         'transformType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathTransformType'
       ],
       [
         'returnedSpacing',
@@ -22241,11 +23751,15 @@ our %registry = (
     'argdata' => [
       [
         'texCoordSet',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathGenMode'
       ],
       [
         'value',
@@ -22263,11 +23777,15 @@ our %registry = (
     'argdata' => [
       [
         'texCoordSet',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathGenMode'
       ],
       [
         'value',
@@ -22514,7 +24032,9 @@ our %registry = (
       ],
       [
         'flags',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'PerfQueryDataFlags'
       ],
       [
         'dataSize',
@@ -22581,7 +24101,9 @@ our %registry = (
       ],
       [
         'capsMask',
-        'GLuint *'
+        'GLuint *',
+        undef,
+        'PerformanceQueryCapsMaskINTEL'
       ]
     ],
     'feature' => 'GL_INTEL_performance_query',
@@ -22594,7 +24116,9 @@ our %registry = (
     'argdata' => [
       [
         'map',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelMap'
       ],
       [
         'values',
@@ -22612,7 +24136,9 @@ our %registry = (
     'argdata' => [
       [
         'map',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelMap'
       ],
       [
         'values',
@@ -22630,7 +24156,9 @@ our %registry = (
     'argdata' => [
       [
         'map',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelMap'
       ],
       [
         'values',
@@ -22782,7 +24310,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPointervPName'
       ],
       [
         'params',
@@ -22859,7 +24389,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -22881,7 +24413,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -22934,11 +24468,15 @@ our %registry = (
       ],
       [
         'programInterface',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramInterface'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramInterfacePName'
       ],
       [
         'params',
@@ -22956,7 +24494,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -22978,7 +24518,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -23054,7 +24596,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'index',
@@ -23062,7 +24606,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'params',
@@ -23080,7 +24626,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'index',
@@ -23088,7 +24636,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'params',
@@ -23137,7 +24687,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PipelineParameterName'
       ],
       [
         'params',
@@ -23159,7 +24711,9 @@ our %registry = (
       ],
       [
         'programInterface',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramInterface'
       ],
       [
         'name',
@@ -23180,7 +24734,9 @@ our %registry = (
       ],
       [
         'programInterface',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramInterface'
       ],
       [
         'name',
@@ -23201,7 +24757,9 @@ our %registry = (
       ],
       [
         'programInterface',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramInterface'
       ],
       [
         'name',
@@ -23222,7 +24780,9 @@ our %registry = (
       ],
       [
         'programInterface',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramInterface'
       ],
       [
         'name',
@@ -23243,7 +24803,9 @@ our %registry = (
       ],
       [
         'programInterface',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramInterface'
       ],
       [
         'index',
@@ -23278,7 +24840,9 @@ our %registry = (
       ],
       [
         'programInterface',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramInterface'
       ],
       [
         'index',
@@ -23321,7 +24885,9 @@ our %registry = (
       ],
       [
         'programInterface',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramInterface'
       ],
       [
         'index',
@@ -23334,7 +24900,8 @@ our %registry = (
       [
         'props',
         'const GLenum* ',
-        'propCount'
+        'propCount',
+        'ProgramResourceProperty'
       ],
       [
         'count',
@@ -23365,11 +24932,15 @@ our %registry = (
       ],
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramStagePName'
       ],
       [
         'values',
@@ -23387,11 +24958,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramStringProperty'
       ],
       [
         'string',
@@ -23413,7 +24988,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'program',
@@ -23435,7 +25012,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramPropertyARB'
       ],
       [
         'params',
@@ -23453,11 +25032,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramPropertyARB'
       ],
       [
         'params',
@@ -23479,7 +25062,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'params',
@@ -23505,7 +25090,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryObjectParameterName'
       ],
       [
         'offset',
@@ -23529,7 +25116,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryObjectParameterName'
       ],
       [
         'offset',
@@ -23553,7 +25142,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryObjectParameterName'
       ],
       [
         'offset',
@@ -23577,7 +25168,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryObjectParameterName'
       ],
       [
         'offset',
@@ -23593,7 +25186,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryTarget'
       ],
       [
         'index',
@@ -23601,7 +25196,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryParameterName'
       ],
       [
         'params',
@@ -23626,7 +25223,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryObjectParameterName'
       ],
       [
         'params',
@@ -23673,7 +25272,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryObjectParameterName'
       ],
       [
         'params',
@@ -23719,7 +25320,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryObjectParameterName'
       ],
       [
         'params',
@@ -23765,7 +25368,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryObjectParameterName'
       ],
       [
         'params',
@@ -23807,11 +25412,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryParameterName'
       ],
       [
         'params',
@@ -23853,11 +25462,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferParameterName'
       ],
       [
         'params',
@@ -23882,7 +25495,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplerParameterI'
       ],
       [
         'params',
@@ -23907,7 +25522,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplerParameterI'
       ],
       [
         'params',
@@ -23929,7 +25546,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplerParameterF'
       ],
       [
         'params',
@@ -23951,7 +25570,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplerParameterI'
       ],
       [
         'params',
@@ -23973,7 +25594,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SemaphoreParameterName'
       ],
       [
         'params',
@@ -23990,15 +25613,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SeparableTargetEXT'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'row',
@@ -24026,15 +25655,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SeparableTargetEXT'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'row',
@@ -24089,11 +25724,15 @@ our %registry = (
     'argdata' => [
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'precisiontype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrecisionType'
       ],
       [
         'range',
@@ -24150,7 +25789,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderParameterName'
       ],
       [
         'params',
@@ -24168,7 +25809,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'points',
@@ -24186,7 +25829,9 @@ our %registry = (
     'argdata' => [
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ]
     ],
     'feature' => 'GL_NV_command_list',
@@ -24198,7 +25843,9 @@ our %registry = (
     'argdata' => [
       [
         'name',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StringName'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -24213,7 +25860,9 @@ our %registry = (
       ],
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'name',
@@ -24233,7 +25882,9 @@ our %registry = (
       ],
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'name',
@@ -24256,7 +25907,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SyncParameterName'
       ],
       [
         'count',
@@ -24283,7 +25936,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTexBumpParameterATI'
       ],
       [
         'param',
@@ -24301,7 +25956,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTexBumpParameterATI'
       ],
       [
         'param',
@@ -24319,11 +25976,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'params',
@@ -24341,11 +26002,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'params',
@@ -24363,11 +26028,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'params',
@@ -24385,11 +26054,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'filter',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureFilterSGIS'
       ],
       [
         'weights',
@@ -24407,11 +26080,15 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -24429,11 +26106,15 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -24451,11 +26132,15 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -24473,7 +26158,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -24481,11 +26168,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -24502,7 +26193,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -24510,7 +26203,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24527,7 +26222,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -24535,7 +26232,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24555,11 +26254,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24580,11 +26283,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24624,11 +26331,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24645,11 +26356,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24666,11 +26381,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24723,11 +26442,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'bufSize',
@@ -24753,7 +26476,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -24761,11 +26486,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -24791,7 +26520,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24812,7 +26543,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -24820,7 +26553,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24846,7 +26581,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24867,7 +26604,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -24875,7 +26614,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24897,7 +26638,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24918,11 +26661,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24944,7 +26691,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24965,11 +26714,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -24991,7 +26744,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -25012,11 +26767,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -25038,7 +26797,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -25059,11 +26820,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -25148,11 +26913,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'bufSize',
@@ -25174,7 +26943,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'address',
@@ -25182,7 +26953,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'params',
@@ -25226,7 +26999,8 @@ our %registry = (
       [
         'type',
         'GLenum * ',
-        '1'
+        '1',
+        'AttributeType'
       ],
       [
         'name',
@@ -25270,7 +27044,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TransformFeedbackPName'
       ],
       [
         'index',
@@ -25295,7 +27071,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TransformFeedbackPName'
       ],
       [
         'index',
@@ -25320,7 +27098,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TransformFeedbackPName'
       ],
       [
         'param',
@@ -25459,7 +27239,9 @@ our %registry = (
     'argdata' => [
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'location',
@@ -25688,7 +27470,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetPName'
       ],
       [
         'data',
@@ -25710,7 +27494,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ArrayObjectPNameATI'
       ],
       [
         'params',
@@ -25732,7 +27518,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ArrayObjectPNameATI'
       ],
       [
         'params',
@@ -25754,7 +27542,9 @@ our %registry = (
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetVariantValueEXT'
       ],
       [
         'data',
@@ -25776,7 +27566,9 @@ our %registry = (
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetVariantValueEXT'
       ],
       [
         'data',
@@ -25798,7 +27590,9 @@ our %registry = (
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetVariantValueEXT'
       ],
       [
         'data',
@@ -25820,7 +27614,9 @@ our %registry = (
       ],
       [
         'value',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetVariantValueEXT'
       ],
       [
         'data',
@@ -25875,7 +27671,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexArrayPName'
       ],
       [
         'param',
@@ -25900,7 +27698,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexArrayPName'
       ],
       [
         'param',
@@ -25925,7 +27725,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexArrayPName'
       ],
       [
         'param',
@@ -25946,7 +27748,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexArrayPName'
       ],
       [
         'param',
@@ -25971,7 +27775,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexArrayPName'
       ],
       [
         'param',
@@ -25993,7 +27799,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexArrayPName'
       ],
       [
         'param',
@@ -26015,7 +27823,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexArrayPName'
       ],
       [
         'param',
@@ -26036,7 +27846,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ArrayObjectPNameATI'
       ],
       [
         'params',
@@ -26058,7 +27870,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ArrayObjectPNameATI'
       ],
       [
         'params',
@@ -26083,7 +27897,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnum'
       ],
       [
         'params',
@@ -26108,7 +27924,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnum'
       ],
       [
         'params',
@@ -26133,7 +27951,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnum'
       ],
       [
         'params',
@@ -26155,7 +27975,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnum'
       ],
       [
         'params',
@@ -26177,7 +27999,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnum'
       ],
       [
         'params',
@@ -26198,7 +28022,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnum'
       ],
       [
         'params',
@@ -26224,7 +28050,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerPropertyARB'
       ],
       [
         'pointer',
@@ -26250,7 +28078,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPropertyARB'
       ],
       [
         'params',
@@ -26276,7 +28106,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPropertyARB'
       ],
       [
         'params',
@@ -26302,7 +28134,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPropertyARB'
       ],
       [
         'params',
@@ -26521,15 +28355,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorTableTarget'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'bufSize',
@@ -26551,7 +28391,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'lod',
@@ -26577,7 +28419,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'lod',
@@ -26603,15 +28447,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ConvolutionTarget'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'bufSize',
@@ -26633,7 +28483,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HistogramTargetEXT'
       ],
       [
         'reset',
@@ -26641,11 +28493,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'bufSize',
@@ -26667,11 +28523,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTarget'
       ],
       [
         'query',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapQuery'
       ],
       [
         'bufSize',
@@ -26693,11 +28553,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTarget'
       ],
       [
         'query',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapQuery'
       ],
       [
         'bufSize',
@@ -26719,11 +28583,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTarget'
       ],
       [
         'query',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapQuery'
       ],
       [
         'bufSize',
@@ -26745,7 +28613,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MinmaxTargetEXT'
       ],
       [
         'reset',
@@ -26753,11 +28623,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'bufSize',
@@ -26779,7 +28653,9 @@ our %registry = (
     'argdata' => [
       [
         'map',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelMap'
       ],
       [
         'bufSize',
@@ -26801,7 +28677,9 @@ our %registry = (
     'argdata' => [
       [
         'map',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelMap'
       ],
       [
         'bufSize',
@@ -26823,7 +28701,9 @@ our %registry = (
     'argdata' => [
       [
         'map',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelMap'
       ],
       [
         'bufSize',
@@ -26863,15 +28743,21 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SeparableTargetEXT'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'rowBufSize',
@@ -26906,7 +28792,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -26914,11 +28802,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'bufSize',
@@ -26940,7 +28832,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -26948,11 +28842,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'bufSize',
@@ -27341,11 +29239,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HintTarget'
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HintMode'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -27359,7 +29261,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HistogramTargetEXT'
       ],
       [
         'width',
@@ -27367,7 +29271,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'sink',
@@ -27401,11 +29307,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformTargetHP'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformPNameHP'
       ],
       [
         'param',
@@ -27421,11 +29331,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformTargetHP'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformPNameHP'
       ],
       [
         'params',
@@ -27443,11 +29357,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformTargetHP'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformPNameHP'
       ],
       [
         'param',
@@ -27463,11 +29381,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformTargetHP'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ImageTransformPNameHP'
       ],
       [
         'params',
@@ -27493,7 +29415,9 @@ our %registry = (
       ],
       [
         'handleType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ExternalHandleType'
       ],
       [
         'fd',
@@ -27517,7 +29441,9 @@ our %registry = (
       ],
       [
         'handleType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ExternalHandleType'
       ],
       [
         'handle',
@@ -27542,7 +29468,9 @@ our %registry = (
       ],
       [
         'handleType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ExternalHandleType'
       ],
       [
         'name',
@@ -27563,7 +29491,9 @@ our %registry = (
       ],
       [
         'handleType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ExternalHandleType'
       ],
       [
         'fd',
@@ -27583,7 +29513,9 @@ our %registry = (
       ],
       [
         'handleType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ExternalHandleType'
       ],
       [
         'handle',
@@ -27604,7 +29536,9 @@ our %registry = (
       ],
       [
         'handleType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ExternalHandleType'
       ],
       [
         'name',
@@ -27657,7 +29591,9 @@ our %registry = (
     'argdata' => [
       [
         'func',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'IndexFunctionEXT'
       ],
       [
         'ref',
@@ -27685,11 +29621,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'IndexMaterialParameterEXT'
       ]
     ],
     'feature' => 'GL_EXT_index_material',
@@ -27701,7 +29641,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'IndexPointerType'
       ],
       [
         'stride',
@@ -27723,7 +29665,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'IndexPointerType'
       ],
       [
         'stride',
@@ -27749,7 +29693,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'IndexPointerType'
       ],
       [
         'stride',
@@ -27947,7 +29893,9 @@ our %registry = (
     'argdata' => [
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InterleavedArrayFormat'
       ],
       [
         'stride',
@@ -28037,7 +29985,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'numAttachments',
@@ -28046,7 +29996,8 @@ our %registry = (
       [
         'attachments',
         'const GLenum* ',
-        'numAttachments'
+        'numAttachments',
+        'InvalidateFramebufferAttachment'
       ]
     ],
     'feature' => 'GL_ARB_invalidate_subdata',
@@ -28068,7 +30019,8 @@ our %registry = (
       [
         'attachments',
         'const GLenum* ',
-        'numAttachments'
+        'numAttachments',
+        'FramebufferAttachment'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -28090,7 +30042,8 @@ our %registry = (
       [
         'attachments',
         'const GLenum* ',
-        'numAttachments'
+        'numAttachments',
+        'FramebufferAttachment'
       ],
       [
         'x',
@@ -28119,7 +30072,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
       ],
       [
         'numAttachments',
@@ -28128,7 +30083,8 @@ our %registry = (
       [
         'attachments',
         'const GLenum* ',
-        'numAttachments'
+        'numAttachments',
+        'InvalidateFramebufferAttachment'
       ],
       [
         'x',
@@ -28264,7 +30220,9 @@ our %registry = (
     'argdata' => [
       [
         'cap',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -28280,7 +30238,9 @@ our %registry = (
     'argdata' => [
       [
         'cap',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EnableCap'
       ],
       [
         'index',
@@ -28742,7 +30702,9 @@ our %registry = (
       ],
       [
         'cap',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VariantCapEXT'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -28948,7 +30910,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightModelParameter'
       ],
       [
         'param',
@@ -28964,7 +30928,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightModelParameter'
       ],
       [
         'params',
@@ -28982,7 +30948,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightModelParameter'
       ],
       [
         'param',
@@ -28998,7 +30966,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightModelParameter'
       ],
       [
         'params',
@@ -29016,7 +30986,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightModelParameter'
       ],
       [
         'param',
@@ -29032,7 +31004,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightModelParameter'
       ],
       [
         'param',
@@ -29050,11 +31024,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightParameter'
       ],
       [
         'param',
@@ -29070,11 +31048,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightParameter'
       ],
       [
         'params',
@@ -29092,11 +31074,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightParameter'
       ],
       [
         'param',
@@ -29112,11 +31098,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightParameter'
       ],
       [
         'params',
@@ -29134,11 +31124,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightParameter'
       ],
       [
         'param',
@@ -29154,11 +31148,15 @@ our %registry = (
     'argdata' => [
       [
         'light',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightParameter'
       ],
       [
         'params',
@@ -29289,7 +31287,9 @@ our %registry = (
     'argdata' => [
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'FfdMaskSGIX'
       ]
     ],
     'feature' => 'GL_SGIX_polynomial_ffd',
@@ -29355,7 +31355,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'id',
@@ -29445,7 +31447,9 @@ our %registry = (
     'argdata' => [
       [
         'opcode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LogicOp'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -29658,7 +31662,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTarget'
       ],
       [
         'u1',
@@ -29692,7 +31698,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTarget'
       ],
       [
         'u1',
@@ -29726,7 +31734,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTarget'
       ],
       [
         'u1',
@@ -29776,7 +31786,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTarget'
       ],
       [
         'u1',
@@ -29829,11 +31841,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'access',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferAccessARB'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -29849,7 +31865,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ],
       [
         'offset',
@@ -29861,7 +31879,9 @@ our %registry = (
       ],
       [
         'access',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'MapBufferAccessMask'
       ]
     ],
     'feature' => 'GL_ARB_map_buffer_range',
@@ -29874,7 +31894,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EvalTargetNV'
       ],
       [
         'index',
@@ -29882,7 +31904,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapTypeNV'
       ],
       [
         'ustride',
@@ -30028,7 +32052,9 @@ our %registry = (
       ],
       [
         'access',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferAccessARB'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -30045,7 +32071,9 @@ our %registry = (
       ],
       [
         'access',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferAccessARB'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30070,7 +32098,9 @@ our %registry = (
       ],
       [
         'access',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'MapBufferAccessMask'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -30095,7 +32125,9 @@ our %registry = (
       ],
       [
         'access',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'MapBufferAccessMask'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30121,11 +32153,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EvalTargetNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapParameterNV'
       ],
       [
         'params',
@@ -30143,11 +32179,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'EvalTargetNV'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MapParameterNV'
       ],
       [
         'params',
@@ -30380,11 +32420,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'param',
@@ -30400,11 +32444,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'params',
@@ -30422,11 +32470,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'param',
@@ -30442,11 +32494,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'params',
@@ -30464,11 +32520,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'param',
@@ -30484,11 +32544,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ],
       [
         'param',
@@ -30506,7 +32570,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'l',
@@ -30546,7 +32612,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixIndexPointerTypeARB'
       ],
       [
         'stride',
@@ -30656,7 +32724,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30685,7 +32755,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'm',
@@ -30703,7 +32775,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'm',
@@ -30721,7 +32795,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'm',
@@ -30739,7 +32815,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'm',
@@ -30757,7 +32835,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ]
     ],
     'core_removed' => 1,
@@ -30820,7 +32900,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'm',
@@ -30838,7 +32920,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'm',
@@ -30856,7 +32940,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'm',
@@ -30874,7 +32960,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'm',
@@ -30892,7 +32980,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'l',
@@ -30928,7 +33018,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30940,7 +33032,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -30952,7 +33046,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'angle',
@@ -30980,7 +33076,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'angle',
@@ -31008,7 +33106,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'x',
@@ -31032,7 +33132,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'x',
@@ -31056,7 +33158,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'x',
@@ -31080,7 +33184,9 @@ our %registry = (
     'argdata' => [
       [
         'matrixMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MatrixMode'
       ],
       [
         'x',
@@ -31122,7 +33228,9 @@ our %registry = (
     'argdata' => [
       [
         'barriers',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'MemoryBarrierMask'
       ]
     ],
     'feature' => 'GL_ARB_shader_image_load_store',
@@ -31134,7 +33242,9 @@ our %registry = (
     'argdata' => [
       [
         'barriers',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'MemoryBarrierMask'
       ]
     ],
     'feature' => 'GL_ARB_ES3_1_compatibility',
@@ -31150,7 +33260,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MemoryObjectParameterName'
       ],
       [
         'params',
@@ -31209,11 +33321,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MinmaxTargetEXT'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'sink',
@@ -31310,7 +33426,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'first',
@@ -31341,7 +33459,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'indirect',
@@ -31367,7 +33487,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'indirect',
@@ -31400,7 +33522,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'indirect',
@@ -31432,7 +33556,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'indirect',
@@ -31461,7 +33587,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'first',
@@ -31491,7 +33619,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'count',
@@ -31500,7 +33630,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -31525,7 +33657,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'count',
@@ -31534,7 +33668,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -31565,11 +33701,15 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indirect',
@@ -31595,11 +33735,15 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indirect',
@@ -31632,11 +33776,15 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indirect',
@@ -31668,11 +33816,15 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indirect',
@@ -31701,7 +33853,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PrimitiveType'
       ],
       [
         'start',
@@ -31737,7 +33891,8 @@ our %registry = (
       [
         'mode',
         'const GLenum* ',
-        'COMPSIZE(primcount,modestride)'
+        'COMPSIZE(primcount,modestride)',
+        'PrimitiveType'
       ],
       [
         'first',
@@ -31769,7 +33924,8 @@ our %registry = (
       [
         'mode',
         'const GLenum* ',
-        'COMPSIZE(primcount,modestride)'
+        'COMPSIZE(primcount,modestride)',
+        'PrimitiveType'
       ],
       [
         'count',
@@ -31778,7 +33934,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DrawElementsType'
       ],
       [
         'indices',
@@ -31804,15 +33962,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'buffer',
@@ -31831,7 +33995,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -31851,7 +34017,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -31873,7 +34041,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -31893,7 +34063,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -31912,7 +34084,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -31928,7 +34102,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -31949,7 +34125,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -31969,7 +34147,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -31991,7 +34171,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32011,7 +34193,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32033,7 +34217,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32057,7 +34243,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32079,7 +34267,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32103,7 +34293,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32122,7 +34314,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32142,7 +34336,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32163,7 +34359,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32187,7 +34385,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32209,7 +34409,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32233,7 +34435,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32255,7 +34459,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32283,7 +34489,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32305,7 +34513,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32333,7 +34543,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32352,7 +34564,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32376,7 +34590,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32397,7 +34613,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32425,7 +34643,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32447,7 +34667,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32475,7 +34697,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32497,7 +34721,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32529,7 +34755,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32551,7 +34779,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32583,7 +34813,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32602,7 +34834,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32630,7 +34864,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32651,7 +34887,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32683,7 +34921,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32705,7 +34945,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32737,7 +34979,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'v',
@@ -32756,7 +35000,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         's',
@@ -32784,11 +35030,15 @@ our %registry = (
     'argdata' => [
       [
         'texture',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -32804,11 +35054,15 @@ our %registry = (
     'argdata' => [
       [
         'texture',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -32826,11 +35080,15 @@ our %registry = (
     'argdata' => [
       [
         'texture',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -32846,11 +35104,15 @@ our %registry = (
     'argdata' => [
       [
         'texture',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -32868,11 +35130,15 @@ our %registry = (
     'argdata' => [
       [
         'texture',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -32888,11 +35154,15 @@ our %registry = (
     'argdata' => [
       [
         'texture',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -32910,11 +35180,15 @@ our %registry = (
     'argdata' => [
       [
         'texture',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -32930,11 +35204,15 @@ our %registry = (
     'argdata' => [
       [
         'texture',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -32952,7 +35230,9 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'size',
@@ -32960,7 +35240,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'stride',
@@ -32982,15 +35264,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'param',
@@ -33006,15 +35294,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'params',
@@ -33032,15 +35326,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'param',
@@ -33056,15 +35356,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'params',
@@ -33082,15 +35388,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'param',
@@ -33106,15 +35418,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -33132,15 +35450,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'param',
@@ -33156,15 +35480,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -33182,15 +35512,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'param',
@@ -33206,15 +35542,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -33232,11 +35574,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -33244,7 +35590,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -33256,11 +35604,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -33278,11 +35630,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -33290,7 +35646,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -33306,11 +35664,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -33328,11 +35690,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -33340,7 +35706,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -33360,11 +35728,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -33382,15 +35754,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -33408,15 +35786,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -33434,15 +35818,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'param',
@@ -33458,15 +35848,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -33484,15 +35880,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'param',
@@ -33508,15 +35910,21 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -33534,11 +35942,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'renderbuffer',
@@ -33554,11 +35966,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -33574,11 +35990,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -33596,11 +36016,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -33624,11 +36048,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -33646,11 +36074,15 @@ our %registry = (
     'argdata' => [
       [
         'texunit',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureUnit'
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -33682,11 +36114,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -33750,7 +36186,9 @@ our %registry = (
       ],
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'ClearBufferMask'
       ],
       [
         'filter',
@@ -34081,7 +36519,9 @@ our %registry = (
       ],
       [
         'usage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferUsageARB'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -34107,7 +36547,9 @@ our %registry = (
       ],
       [
         'usage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferUsageARB'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -34136,7 +36578,9 @@ our %registry = (
       ],
       [
         'flags',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'BufferStorageMask'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -34165,7 +36609,9 @@ our %registry = (
       ],
       [
         'flags',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'BufferStorageMask'
       ]
     ],
     'feature' => 'GL_EXT_external_buffer',
@@ -34262,7 +36708,9 @@ our %registry = (
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorBuffer'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -34283,7 +36731,8 @@ our %registry = (
       [
         'bufs',
         'const GLenum* ',
-        'n'
+        'n',
+        'ColorBuffer'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -34300,7 +36749,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferParameterName'
       ],
       [
         'param',
@@ -34320,7 +36771,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferParameterName'
       ],
       [
         'param',
@@ -34340,7 +36793,9 @@ our %registry = (
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorBuffer'
       ]
     ],
     'feature' => 'GL_ARB_direct_state_access',
@@ -34356,11 +36811,15 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'renderbuffertarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'renderbuffer',
@@ -34380,11 +36839,15 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'renderbuffertarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'renderbuffer',
@@ -34479,7 +36942,9 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'texture',
@@ -34503,11 +36968,15 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'textarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'texture',
@@ -34531,11 +37000,15 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'textarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'texture',
@@ -34559,11 +37032,15 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'textarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'texture',
@@ -34591,7 +37068,9 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'texture',
@@ -34615,7 +37094,9 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'texture',
@@ -34627,7 +37108,9 @@ our %registry = (
       ],
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -34643,7 +37126,9 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'texture',
@@ -34671,7 +37156,9 @@ our %registry = (
       ],
       [
         'attachment',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
       ],
       [
         'texture',
@@ -34699,7 +37186,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -34735,7 +37224,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -34761,7 +37252,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -34797,7 +37290,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -34823,7 +37318,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -34859,7 +37356,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -34885,7 +37384,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -34921,7 +37422,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -34947,7 +37450,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -34977,7 +37482,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -35007,7 +37514,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -35037,11 +37546,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramFormat'
       ],
       [
         'len',
@@ -35067,7 +37580,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -35091,7 +37606,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -35119,7 +37636,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -35151,7 +37670,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -35179,7 +37700,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -35245,7 +37768,9 @@ our %registry = (
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ListMode'
       ]
     ],
     'core_removed' => 1,
@@ -35266,7 +37791,9 @@ our %registry = (
       ],
       [
         'usage',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ArrayObjectUsageATI'
       ]
     ],
     'feature' => 'GL_ATI_vertex_array_object',
@@ -35620,7 +38147,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'NormalPointerType'
       ],
       [
         'coords',
@@ -35636,7 +38165,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'NormalPointerType'
       ],
       [
         'coords',
@@ -35654,7 +38185,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'NormalPointerType'
       ],
       [
         'stride',
@@ -35676,7 +38209,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'NormalPointerType'
       ],
       [
         'stride',
@@ -35702,7 +38237,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'NormalPointerType'
       ],
       [
         'stride',
@@ -35728,7 +38265,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'NormalPointerType'
       ],
       [
         'pointer',
@@ -35746,7 +38285,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -35770,7 +38311,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -35788,7 +38331,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -35812,7 +38357,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -35830,7 +38377,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -35854,7 +38403,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -35872,7 +38423,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -35896,7 +38449,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -35914,7 +38469,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -35938,7 +38495,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -35959,7 +38518,9 @@ our %registry = (
     'argdata' => [
       [
         'identifier',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ObjectIdentifier'
       ],
       [
         'name',
@@ -36145,7 +38706,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PNTrianglesPNameATI'
       ],
       [
         'param',
@@ -36161,7 +38724,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PNTrianglesPNameATI'
       ],
       [
         'param',
@@ -36177,15 +38742,21 @@ our %registry = (
     'argdata' => [
       [
         'dst',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderRegATI'
       ],
       [
         'coord',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderTextureSourceATI'
       ],
       [
         'swizzle',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SwizzleOpATI'
       ]
     ],
     'feature' => 'GL_ATI_fragment_shader',
@@ -36209,7 +38780,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PatchParameterName'
       ],
       [
         'values',
@@ -36230,7 +38803,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PatchParameterName'
       ],
       [
         'value',
@@ -36246,15 +38821,21 @@ our %registry = (
     'argdata' => [
       [
         'color',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathColor'
       ],
       [
         'genMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathGenMode'
       ],
       [
         'colorFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathColorFormat'
       ],
       [
         'coeffs',
@@ -36281,7 +38862,8 @@ our %registry = (
       [
         'commands',
         'const GLubyte* ',
-        'numCommands'
+        'numCommands',
+        'PathCoordType'
       ],
       [
         'numCoords',
@@ -36289,7 +38871,9 @@ our %registry = (
       ],
       [
         'coordType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathCoordType'
       ],
       [
         'coords',
@@ -36315,7 +38899,9 @@ our %registry = (
       ],
       [
         'coordType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathCoordType'
       ],
       [
         'coords',
@@ -36333,7 +38919,9 @@ our %registry = (
     'argdata' => [
       [
         'zfunc',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DepthFunction'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -36367,7 +38955,9 @@ our %registry = (
     'argdata' => [
       [
         'genMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathGenMode'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -36391,7 +38981,9 @@ our %registry = (
       ],
       [
         'fontStyle',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'PathFontStyle'
       ],
       [
         'firstGlyphIndex',
@@ -36428,7 +39020,9 @@ our %registry = (
       ],
       [
         'fontStyle',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'PathFontStyle'
       ],
       [
         'pathParameterTemplate',
@@ -36458,7 +39052,9 @@ our %registry = (
       ],
       [
         'fontTarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathFontTarget'
       ],
       [
         'fontName',
@@ -36467,7 +39063,9 @@ our %registry = (
       ],
       [
         'fontStyle',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'PathFontStyle'
       ],
       [
         'firstGlyph',
@@ -36479,7 +39077,9 @@ our %registry = (
       ],
       [
         'handleMissingGlyphs',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathHandleMissingGlyphs'
       ],
       [
         'pathParameterTemplate',
@@ -36504,7 +39104,9 @@ our %registry = (
       ],
       [
         'fontTarget',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathFontTarget'
       ],
       [
         'fontName',
@@ -36513,7 +39115,9 @@ our %registry = (
       ],
       [
         'fontStyle',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'PathFontStyle'
       ],
       [
         'numGlyphs',
@@ -36521,7 +39125,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathElementType'
       ],
       [
         'charcodes',
@@ -36530,7 +39136,9 @@ our %registry = (
       ],
       [
         'handleMissingGlyphs',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathHandleMissingGlyphs'
       ],
       [
         'pathParameterTemplate',
@@ -36600,7 +39208,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathParameter'
       ],
       [
         'value',
@@ -36620,7 +39230,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathParameter'
       ],
       [
         'value',
@@ -36642,7 +39254,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathParameter'
       ],
       [
         'value',
@@ -36662,7 +39276,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathParameter'
       ],
       [
         'value',
@@ -36696,7 +39312,9 @@ our %registry = (
     'argdata' => [
       [
         'func',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilFunction'
       ],
       [
         'ref',
@@ -36720,7 +39338,9 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathStringFormat'
       ],
       [
         'length',
@@ -36759,7 +39379,8 @@ our %registry = (
       [
         'commands',
         'const GLubyte* ',
-        'numCommands'
+        'numCommands',
+        'PathCoordType'
       ],
       [
         'numCoords',
@@ -36767,7 +39388,9 @@ our %registry = (
       ],
       [
         'coordType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathCoordType'
       ],
       [
         'coords',
@@ -36797,7 +39420,9 @@ our %registry = (
       ],
       [
         'coordType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathCoordType'
       ],
       [
         'coords',
@@ -36815,11 +39440,15 @@ our %registry = (
     'argdata' => [
       [
         'texCoordSet',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathColor'
       ],
       [
         'genMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathGenMode'
       ],
       [
         'components',
@@ -36850,7 +39479,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelDataRangeTargetNV'
       ],
       [
         'length',
@@ -36872,7 +39503,9 @@ our %registry = (
     'argdata' => [
       [
         'map',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelMap'
       ],
       [
         'mapsize',
@@ -36894,7 +39527,9 @@ our %registry = (
     'argdata' => [
       [
         'map',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelMap'
       ],
       [
         'mapsize',
@@ -36916,7 +39551,9 @@ our %registry = (
     'argdata' => [
       [
         'map',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelMap'
       ],
       [
         'mapsize',
@@ -36938,7 +39575,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelStoreParameter'
       ],
       [
         'param',
@@ -36953,7 +39592,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelStoreParameter'
       ],
       [
         'param',
@@ -36968,7 +39609,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTexGenModeSGIX'
       ]
     ],
     'feature' => 'GL_SGIX_pixel_texture',
@@ -36980,7 +39623,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTransferParameter'
       ],
       [
         'param',
@@ -36996,7 +39641,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTransferParameter'
       ],
       [
         'param',
@@ -37012,11 +39659,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTransformTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTransformPNameEXT'
       ],
       [
         'param',
@@ -37052,11 +39703,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTransformTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTransformPNameEXT'
       ],
       [
         'params',
@@ -37095,11 +39750,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTransformTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTransformPNameEXT'
       ],
       [
         'param',
@@ -37135,11 +39794,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTransformTargetEXT'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelTransformPNameEXT'
       ],
       [
         'params',
@@ -37256,7 +39919,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PointParameterNameARB'
       ],
       [
         'param',
@@ -37277,7 +39942,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PointParameterNameARB'
       ],
       [
         'params',
@@ -37298,7 +39965,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PointParameterNameARB'
       ],
       [
         'param',
@@ -37317,7 +39986,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PointParameterNameARB'
       ],
       [
         'params',
@@ -37335,7 +40006,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PointParameterNameARB'
       ],
       [
         'param',
@@ -37351,7 +40024,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PointParameterNameARB'
       ],
       [
         'params',
@@ -37430,11 +40105,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PolygonMode'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -37827,7 +40506,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'bindingIndex',
@@ -37857,7 +40538,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'bindingIndex',
@@ -37887,7 +40570,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'bindingIndex',
@@ -37917,7 +40602,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -37949,7 +40636,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -37971,7 +40660,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38003,7 +40694,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38025,7 +40718,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38057,7 +40752,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38079,7 +40776,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38111,7 +40810,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38133,7 +40834,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38159,7 +40862,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38185,7 +40890,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38211,7 +40918,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38243,7 +40952,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38265,7 +40976,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38297,7 +41010,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38319,7 +41034,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38351,7 +41068,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38373,7 +41092,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38405,7 +41126,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38427,7 +41150,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38453,7 +41178,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38479,7 +41206,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'index',
@@ -38635,7 +41364,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'index',
@@ -38667,7 +41398,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'index',
@@ -38689,7 +41422,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'index',
@@ -38721,7 +41456,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'index',
@@ -38751,7 +41488,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramParameterPName'
       ],
       [
         'value',
@@ -38767,7 +41506,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'index',
@@ -38793,7 +41534,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'index',
@@ -38848,11 +41591,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramFormat'
       ],
       [
         'len',
@@ -41321,7 +44068,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ProgramTarget'
       ],
       [
         'limit',
@@ -41340,7 +44089,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexProvokingMode'
       ]
     ],
     'feature' => 'GL_ARB_provoking_vertex',
@@ -41352,7 +44103,9 @@ our %registry = (
     'argdata' => [
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'AttribMask'
       ]
     ],
     'core_removed' => 1,
@@ -41364,7 +44117,9 @@ our %registry = (
     'argdata' => [
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'ClientAttribMask'
       ]
     ],
     'core_removed' => 1,
@@ -41376,7 +44131,9 @@ our %registry = (
     'argdata' => [
       [
         'mask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'ClientAttribMask'
       ]
     ],
     'feature' => 'GL_EXT_direct_state_access',
@@ -41391,7 +44148,9 @@ our %registry = (
     'argdata' => [
       [
         'source',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'DebugSource'
       ],
       [
         'id',
@@ -41457,7 +44216,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryCounterTarget'
       ]
     ],
     'feature' => 'GL_ARB_timer_query',
@@ -41485,7 +44246,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'QueryTarget'
       ],
       [
         'id',
@@ -41497,7 +44260,9 @@ our %registry = (
       ],
       [
         'param',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'OcclusionQueryEventMaskAMD'
       ]
     ],
     'feature' => 'GL_AMD_occlusion_query_event',
@@ -41933,7 +44698,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ReadBufferMode'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -41944,7 +44711,9 @@ our %registry = (
     'argdata' => [
       [
         'src',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ReadBufferMode'
       ],
       [
         'index',
@@ -42004,11 +44773,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -42083,11 +44856,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'bufSize',
@@ -42329,7 +45106,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderingMode'
       ]
     ],
     'core_removed' => 1,
@@ -42344,11 +45123,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -42372,7 +45155,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'samples',
@@ -42380,7 +45165,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -42400,7 +45187,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'samples',
@@ -42408,7 +45197,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -42428,7 +45219,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'samples',
@@ -42436,7 +45229,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -42456,7 +45251,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
       ],
       [
         'coverageSamples',
@@ -42468,7 +45265,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -42488,7 +45287,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ReplacementCodeTypeSUN'
       ],
       [
         'stride',
@@ -42536,7 +45337,9 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'TriangleListSUN'
       ],
       [
         'r',
@@ -42573,7 +45376,8 @@ our %registry = (
       [
         'rc',
         'const GLuint* ',
-        '1'
+        '1',
+        'TriangleListSUN'
       ],
       [
         'c',
@@ -42596,7 +45400,9 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'TriangleListSUN'
       ],
       [
         'r',
@@ -42649,7 +45455,8 @@ our %registry = (
       [
         'rc',
         'const GLuint* ',
-        '1'
+        '1',
+        'TriangleListSUN'
       ],
       [
         'c',
@@ -42677,7 +45484,9 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'TriangleListSUN'
       ],
       [
         'r',
@@ -42718,7 +45527,8 @@ our %registry = (
       [
         'rc',
         'const GLuint* ',
-        '1'
+        '1',
+        'TriangleListSUN'
       ],
       [
         'c',
@@ -42741,7 +45551,9 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'TriangleListSUN'
       ],
       [
         'nx',
@@ -42778,7 +45590,8 @@ our %registry = (
       [
         'rc',
         'const GLuint* ',
-        '1'
+        '1',
+        'TriangleListSUN'
       ],
       [
         'n',
@@ -42801,7 +45614,9 @@ our %registry = (
     'argdata' => [
       [
         'code',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'TriangleListSUN'
       ]
     ],
     'feature' => 'GL_SUN_triangle_list',
@@ -42813,7 +45628,9 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'TriangleListSUN'
       ],
       [
         's',
@@ -42874,7 +45691,8 @@ our %registry = (
       [
         'rc',
         'const GLuint* ',
-        '1'
+        '1',
+        'TriangleListSUN'
       ],
       [
         'tc',
@@ -42907,7 +45725,9 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'TriangleListSUN'
       ],
       [
         's',
@@ -42952,7 +45772,8 @@ our %registry = (
       [
         'rc',
         'const GLuint* ',
-        '1'
+        '1',
+        'TriangleListSUN'
       ],
       [
         'tc',
@@ -42980,7 +45801,9 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'TriangleListSUN'
       ],
       [
         's',
@@ -43013,7 +45836,8 @@ our %registry = (
       [
         'rc',
         'const GLuint* ',
-        '1'
+        '1',
+        'TriangleListSUN'
       ],
       [
         'tc',
@@ -43036,7 +45860,9 @@ our %registry = (
     'argdata' => [
       [
         'rc',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'TriangleListSUN'
       ],
       [
         'x',
@@ -43061,7 +45887,8 @@ our %registry = (
       [
         'rc',
         'const GLuint* ',
-        '1'
+        '1',
+        'TriangleListSUN'
       ],
       [
         'v',
@@ -43080,7 +45907,8 @@ our %registry = (
       [
         'code',
         'const GLuint* ',
-        'COMPSIZE()'
+        'COMPSIZE()',
+        'TriangleListSUN'
       ]
     ],
     'feature' => 'GL_SUN_triangle_list',
@@ -43140,7 +45968,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'HistogramTargetEXT'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -43155,7 +45985,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MinmaxTargetEXT'
       ]
     ],
     'feature' => 'GL_ARB_imaging',
@@ -43295,15 +46127,21 @@ our %registry = (
     'argdata' => [
       [
         'dst',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderRegATI'
       ],
       [
         'interp',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderTextureSourceATI'
       ],
       [
         'swizzle',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SwizzleOpATI'
       ]
     ],
     'feature' => 'GL_ATI_fragment_shader',
@@ -43369,7 +46207,9 @@ our %registry = (
     'argdata' => [
       [
         'pattern',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplePatternEXT'
       ]
     ],
     'feature' => 'GL_EXT_multisample',
@@ -43388,7 +46228,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplerParameterI'
       ],
       [
         'param',
@@ -43413,7 +46255,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplerParameterI'
       ],
       [
         'param',
@@ -43435,7 +46279,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplerParameterF'
       ],
       [
         'param',
@@ -43455,7 +46301,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplerParameterF'
       ],
       [
         'param',
@@ -43477,7 +46325,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplerParameterI'
       ],
       [
         'param',
@@ -43497,7 +46347,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SamplerParameterI'
       ],
       [
         'param',
@@ -44049,7 +46901,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'stride',
@@ -44065,7 +46919,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'color',
@@ -44081,7 +46937,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'color',
@@ -44106,7 +46964,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'stride',
@@ -44133,7 +46993,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SecondaryColorPointerTypeIBM'
       ],
       [
         'stride',
@@ -44247,7 +47109,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SemaphoreParameterName'
       ],
       [
         'params',
@@ -44267,11 +47131,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SeparableTargetEXT'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -44283,11 +47151,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'row',
@@ -44326,7 +47198,9 @@ our %registry = (
       ],
       [
         'condition',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FenceConditionNV'
       ]
     ],
     'feature' => 'GL_NV_fence',
@@ -44338,7 +47212,9 @@ our %registry = (
     'argdata' => [
       [
         'dst',
-        'GLuint '
+        'GLuint ',
+        undef,
+        'FragmentShaderConATI'
       ],
       [
         'value',
@@ -44360,7 +47236,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ScalarType'
       ],
       [
         'addr',
@@ -44382,7 +47260,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ScalarType'
       ],
       [
         'addr',
@@ -44422,7 +47302,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShadingModel'
       ]
     ],
     'core_removed' => 1,
@@ -44443,7 +47325,9 @@ our %registry = (
       ],
       [
         'binaryFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderBinaryFormat'
       ],
       [
         'binary',
@@ -44465,7 +47349,9 @@ our %registry = (
     'argdata' => [
       [
         'op',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderOpEXT'
       ],
       [
         'res',
@@ -44485,7 +47371,9 @@ our %registry = (
     'argdata' => [
       [
         'op',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderOpEXT'
       ],
       [
         'res',
@@ -44509,7 +47397,9 @@ our %registry = (
     'argdata' => [
       [
         'op',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderOpEXT'
       ],
       [
         'res',
@@ -44587,7 +47477,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'n',
@@ -44632,7 +47524,8 @@ our %registry = (
       [
         'dstLayouts',
         'const GLenum *',
-        'COMPSIZE(numTextureBarriers)'
+        'COMPSIZE(numTextureBarriers)',
+        'TextureLayout'
       ]
     ],
     'feature' => 'GL_EXT_semaphore',
@@ -44703,7 +47596,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SpriteParameterNameSGIX'
       ],
       [
         'param',
@@ -44719,7 +47614,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SpriteParameterNameSGIX'
       ],
       [
         'params',
@@ -44737,11 +47634,15 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SpriteParameterNameSGIX'
       ],
       [
         'param',
-        'GLint '
+        'GLint ',
+        undef,
+        'SpriteModeSGIX'
       ]
     ],
     'feature' => 'GL_SGIX_sprite',
@@ -44753,12 +47654,15 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SpriteParameterNameSGIX'
       ],
       [
         'params',
         'GLint* ',
-        'COMPSIZE(pname)'
+        'COMPSIZE(pname)',
+        'SpriteModeSGIX'
       ]
     ],
     'feature' => 'GL_SGIX_sprite',
@@ -44787,7 +47691,9 @@ our %registry = (
       ],
       [
         'preserveMask',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'BufferBitQCOM'
       ]
     ],
     'feature' => 'GL_QCOM_tiled_rendering',
@@ -44819,7 +47725,9 @@ our %registry = (
       ],
       [
         'pathNameType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathElementType'
       ],
       [
         'paths',
@@ -44832,7 +47740,9 @@ our %registry = (
       ],
       [
         'fillMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathFillMode'
       ],
       [
         'mask',
@@ -44840,7 +47750,9 @@ our %registry = (
       ],
       [
         'transformType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathTransformType'
       ],
       [
         'transformValues',
@@ -44862,7 +47774,9 @@ our %registry = (
       ],
       [
         'fillMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathFillMode'
       ],
       [
         'mask',
@@ -44878,7 +47792,9 @@ our %registry = (
     'argdata' => [
       [
         'func',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilFunction'
       ],
       [
         'ref',
@@ -44897,11 +47813,15 @@ our %registry = (
     'argdata' => [
       [
         'frontfunc',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'backfunc',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilFunction'
       ],
       [
         'ref',
@@ -44921,11 +47841,15 @@ our %registry = (
     'argdata' => [
       [
         'frontfunc',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilFunction'
       ],
       [
         'backfunc',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilFunction'
       ],
       [
         'ref',
@@ -44956,7 +47880,9 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'mask',
@@ -44972,15 +47898,21 @@ our %registry = (
     'argdata' => [
       [
         'fail',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilOp'
       ],
       [
         'zfail',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilOp'
       ],
       [
         'zpass',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilOp'
       ]
     ],
     'feature' => 'GL_VERSION_1_1',
@@ -44994,19 +47926,27 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'sfail',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilOp'
       ],
       [
         'dpfail',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilOp'
       ],
       [
         'dppass',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'StencilOp'
       ]
     ],
     'feature' => 'GL_VERSION_2_0',
@@ -45018,7 +47958,9 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'value',
@@ -45038,7 +47980,9 @@ our %registry = (
       ],
       [
         'pathNameType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathElementType'
       ],
       [
         'paths',
@@ -45059,7 +48003,9 @@ our %registry = (
       ],
       [
         'transformType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathTransformType'
       ],
       [
         'transformValues',
@@ -45101,7 +48047,9 @@ our %registry = (
       ],
       [
         'pathNameType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathElementType'
       ],
       [
         'paths',
@@ -45114,7 +48062,9 @@ our %registry = (
       ],
       [
         'fillMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathFillMode'
       ],
       [
         'mask',
@@ -45122,11 +48072,15 @@ our %registry = (
       ],
       [
         'coverMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InstancedPathCoverMode'
       ],
       [
         'transformType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathTransformType'
       ],
       [
         'transformValues',
@@ -45148,7 +48102,9 @@ our %registry = (
       ],
       [
         'fillMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathFillMode'
       ],
       [
         'mask',
@@ -45156,7 +48112,9 @@ our %registry = (
       ],
       [
         'coverMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathCoverMode'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -45172,7 +48130,9 @@ our %registry = (
       ],
       [
         'pathNameType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathElementType'
       ],
       [
         'paths',
@@ -45193,11 +48153,15 @@ our %registry = (
       ],
       [
         'coverMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InstancedPathCoverMode'
       ],
       [
         'transformType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathTransformType'
       ],
       [
         'transformValues',
@@ -45227,7 +48191,9 @@ our %registry = (
       ],
       [
         'coverMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathCoverMode'
       ]
     ],
     'feature' => 'GL_NV_path_rendering',
@@ -45329,19 +48295,27 @@ our %registry = (
       ],
       [
         'outX',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderCoordOutEXT'
       ],
       [
         'outY',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderCoordOutEXT'
       ],
       [
         'outZ',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderCoordOutEXT'
       ],
       [
         'outW',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderCoordOutEXT'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',
@@ -45371,7 +48345,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TangentPointerTypeEXT'
       ],
       [
         'stride',
@@ -45453,7 +48429,9 @@ our %registry = (
     'argdata' => [
       [
         'object',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ObjectTypeAPPLE'
       ],
       [
         'name',
@@ -45473,11 +48451,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'buffer',
@@ -45496,11 +48478,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'buffer',
@@ -45524,7 +48510,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexBumpParameterATI'
       ],
       [
         'param',
@@ -45542,7 +48530,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexBumpParameterATI'
       ],
       [
         'param',
@@ -46704,7 +49694,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -46720,7 +49712,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -46738,7 +49732,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -46754,7 +49750,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -46772,7 +49770,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -46788,7 +49788,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -46806,7 +49808,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -46822,7 +49826,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'coords',
@@ -46844,7 +49850,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'stride',
@@ -46870,7 +49878,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'stride',
@@ -46900,7 +49910,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'stride',
@@ -46930,7 +49942,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'pointer',
@@ -46948,11 +49962,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'param',
@@ -46968,11 +49986,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'params',
@@ -46990,11 +50012,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'param',
@@ -47010,11 +50036,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'params',
@@ -47032,11 +50062,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'param',
@@ -47052,11 +50086,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureEnvParameter'
       ],
       [
         'params',
@@ -47074,11 +50112,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'filter',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureFilterSGIS'
       ],
       [
         'n',
@@ -47100,11 +50142,15 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'param',
@@ -47120,11 +50166,15 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -47142,11 +50192,15 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'param',
@@ -47162,11 +50216,15 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -47184,11 +50242,15 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'param',
@@ -47204,11 +50266,15 @@ our %registry = (
     'argdata' => [
       [
         'coord',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureCoordName'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureGenParameter'
       ],
       [
         'params',
@@ -47226,7 +50292,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -47234,7 +50302,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -47246,11 +50316,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -47267,7 +50341,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -47275,7 +50351,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -47291,11 +50369,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -47312,7 +50394,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'samples',
@@ -47320,7 +50404,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -47344,7 +50430,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'coverageSamples',
@@ -47356,7 +50444,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -47383,7 +50473,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -47391,7 +50483,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -47411,11 +50505,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -47433,7 +50531,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'samples',
@@ -47441,7 +50541,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -47469,7 +50571,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'coverageSamples',
@@ -47481,7 +50585,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -47558,7 +50664,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -47566,7 +50674,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -47590,11 +50700,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -47662,11 +50776,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -47687,11 +50805,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -47709,11 +50831,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'param',
@@ -47728,11 +50854,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -47749,11 +50879,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'param',
@@ -47768,11 +50902,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -47789,11 +50927,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'param',
@@ -47809,11 +50951,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'GetTextureParameter'
       ],
       [
         'params',
@@ -47831,7 +50977,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'renderbuffer',
@@ -47890,7 +51038,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'levels',
@@ -47898,7 +51048,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -47917,7 +51069,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'levels',
@@ -47925,7 +51079,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -47945,7 +51101,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'samples',
@@ -47953,7 +51111,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -47980,7 +51140,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'levels',
@@ -47988,7 +51150,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -48012,7 +51176,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'samples',
@@ -48020,7 +51186,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -48048,7 +51216,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'levels',
@@ -48056,7 +51226,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -48080,7 +51252,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'levels',
@@ -48088,7 +51262,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -48116,7 +51292,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'samples',
@@ -48124,7 +51302,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -48156,7 +51336,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'levels',
@@ -48164,7 +51346,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -48196,7 +51380,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'samples',
@@ -48204,7 +51390,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -48240,11 +51428,15 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -48264,7 +51456,9 @@ our %registry = (
       ],
       [
         'flags',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'TextureStorageMaskAMD'
       ]
     ],
     'feature' => 'GL_AMD_sparse_texture',
@@ -48279,7 +51473,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -48295,11 +51491,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -48319,7 +51519,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -48343,11 +51545,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -48367,7 +51573,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -48399,11 +51607,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -48474,7 +51686,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -48514,11 +51728,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -48552,7 +51770,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'buffer',
@@ -48572,11 +51792,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'buffer',
@@ -48596,7 +51820,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'buffer',
@@ -48624,11 +51850,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'buffer',
@@ -48668,7 +51898,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -48676,7 +51908,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -48688,11 +51922,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -48714,7 +51952,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -48722,7 +51962,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -48738,11 +51980,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -48764,7 +52010,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'coverageSamples',
@@ -48776,7 +52024,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -48804,7 +52054,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'samples',
@@ -48812,7 +52064,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -48840,7 +52094,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -48848,7 +52104,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -48868,11 +52126,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -48894,7 +52156,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'coverageSamples',
@@ -48906,7 +52170,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -48938,7 +52204,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'samples',
@@ -48946,7 +52214,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLint '
+        'GLint ',
+        undef,
+        'InternalFormat'
       ],
       [
         'width',
@@ -48974,7 +52244,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'LightTexturePNameEXT'
       ]
     ],
     'feature' => 'GL_EXT_light_texture',
@@ -48986,11 +52258,15 @@ our %registry = (
     'argdata' => [
       [
         'face',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TriangleFace'
       ],
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'MaterialParameter'
       ]
     ],
     'feature' => 'GL_EXT_light_texture',
@@ -49002,7 +52278,9 @@ our %registry = (
     'argdata' => [
       [
         'mode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureNormalModeEXT'
       ]
     ],
     'feature' => 'GL_EXT_texture_perturb_normal',
@@ -49062,7 +52340,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -49084,11 +52364,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -49110,7 +52394,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -49132,11 +52418,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -49158,7 +52448,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'param',
@@ -49178,11 +52470,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'param',
@@ -49202,7 +52498,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'param',
@@ -49224,11 +52522,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -49250,7 +52552,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'param',
@@ -49270,11 +52574,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'param',
@@ -49294,7 +52602,9 @@ our %registry = (
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'param',
@@ -49316,11 +52626,15 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureParameterName'
       ],
       [
         'params',
@@ -49364,7 +52678,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'renderbuffer',
@@ -49388,7 +52704,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49416,7 +52734,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49440,7 +52760,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49472,7 +52794,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49500,7 +52824,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49528,7 +52854,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'samples',
@@ -49536,7 +52864,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49568,7 +52898,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49604,7 +52936,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49636,7 +52970,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49676,7 +53012,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49712,7 +53050,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49744,7 +53084,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49780,7 +53122,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49820,7 +53164,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49860,7 +53206,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49904,7 +53252,9 @@ our %registry = (
       ],
       [
         'internalFormat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'width',
@@ -49924,7 +53274,9 @@ our %registry = (
       ],
       [
         'flags',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'TextureStorageMaskAMD'
       ]
     ],
     'feature' => 'GL_AMD_sparse_texture',
@@ -49952,11 +53304,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -49977,7 +53333,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -49993,11 +53351,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -50039,11 +53401,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -50064,7 +53430,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -50088,11 +53456,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -50142,11 +53514,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -50167,7 +53543,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'level',
@@ -50199,11 +53577,15 @@ our %registry = (
       ],
       [
         'format',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelFormat'
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PixelType'
       ],
       [
         'pixels',
@@ -50228,7 +53610,9 @@ our %registry = (
       ],
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TextureTarget'
       ],
       [
         'origtexture',
@@ -50236,7 +53620,9 @@ our %registry = (
       ],
       [
         'internalformat',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
       ],
       [
         'minlevel',
@@ -50264,7 +53650,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'address',
@@ -50272,11 +53660,15 @@ our %registry = (
       ],
       [
         'matrix',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'transform',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ]
     ],
     'feature' => 'GL_NV_vertex_program',
@@ -50374,7 +53766,9 @@ our %registry = (
       ],
       [
         'bufferMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TransformFeedbackBufferMode'
       ]
     ],
     'feature' => 'GL_VERSION_3_0',
@@ -50396,11 +53790,14 @@ our %registry = (
       [
         'locations',
         'const GLint *',
-        'count'
+        'count',
+        'TransformFeedbackTokenNV'
       ],
       [
         'bufferMode',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TransformFeedbackBufferMode'
       ]
     ],
     'feature' => 'GL_NV_transform_feedback',
@@ -50421,7 +53818,9 @@ our %registry = (
       ],
       [
         'transformType',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PathTransformType'
       ],
       [
         'transformValues',
@@ -52596,7 +55995,9 @@ our %registry = (
     'argdata' => [
       [
         'shadertype',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ShaderType'
       ],
       [
         'count',
@@ -52665,7 +56066,9 @@ our %registry = (
     'argdata' => [
       [
         'target',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
       ]
     ],
     'feature' => 'GL_VERSION_1_5',
@@ -52746,7 +56149,9 @@ our %registry = (
       ],
       [
         'preserve',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'PreserveModeATI'
       ]
     ],
     'feature' => 'GL_ATI_vertex_array_object',
@@ -52778,7 +56183,9 @@ our %registry = (
       ],
       [
         'stages',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'UseProgramStageMask'
       ],
       [
         'program',
@@ -53022,7 +56429,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ScalarType'
       ],
       [
         'stride',
@@ -53050,7 +56459,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ScalarType'
       ],
       [
         'stride',
@@ -53770,7 +57181,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribType'
       ],
       [
         'normalized',
@@ -53802,7 +57215,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribIType'
       ],
       [
         'relativeoffset',
@@ -53830,7 +57245,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribLType'
       ],
       [
         'relativeoffset',
@@ -53906,7 +57323,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'stride',
@@ -53974,7 +57393,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'FogCoordinatePointerType'
       ],
       [
         'stride',
@@ -54002,7 +57423,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'IndexPointerType'
       ],
       [
         'stride',
@@ -54038,7 +57461,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'stride',
@@ -54066,7 +57491,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'NormalPointerType'
       ],
       [
         'stride',
@@ -54086,7 +57513,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexArrayPNameAPPLE'
       ],
       [
         'param',
@@ -54150,7 +57579,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'ColorPointerType'
       ],
       [
         'stride',
@@ -54182,7 +57613,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'TexCoordPointerType'
       ],
       [
         'stride',
@@ -54254,7 +57687,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribType'
       ],
       [
         'normalized',
@@ -54286,7 +57721,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribIType'
       ],
       [
         'relativeoffset',
@@ -54318,7 +57755,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribType'
       ],
       [
         'stride',
@@ -54350,7 +57789,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribLType'
       ],
       [
         'relativeoffset',
@@ -54382,7 +57823,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribLType'
       ],
       [
         'stride',
@@ -54418,7 +57861,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -54538,7 +57983,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'stride',
@@ -55566,7 +59013,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -55640,7 +59089,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribType'
       ],
       [
         'normalized',
@@ -55668,7 +59119,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribType'
       ],
       [
         'normalized',
@@ -56148,7 +59601,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribIType'
       ],
       [
         'relativeoffset',
@@ -56172,7 +59627,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribIType'
       ],
       [
         'stride',
@@ -56199,7 +59656,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribIType'
       ],
       [
         'stride',
@@ -56765,7 +60224,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribLType'
       ],
       [
         'relativeoffset',
@@ -56789,7 +60250,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribLType'
       ],
       [
         'stride',
@@ -56816,7 +60279,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribLType'
       ],
       [
         'stride',
@@ -56841,7 +60306,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -56865,7 +60332,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -56891,7 +60360,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -56915,7 +60386,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -56941,7 +60414,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -56965,7 +60440,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -56991,7 +60468,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -57015,7 +60494,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -57068,7 +60549,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribPointerType'
       ],
       [
         'normalized',
@@ -57101,7 +60584,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexAttribEnumNV'
       ],
       [
         'stride',
@@ -57525,7 +61010,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'param',
@@ -57541,7 +61028,9 @@ our %registry = (
     'argdata' => [
       [
         'pname',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'param',
@@ -57561,7 +61050,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'stride',
@@ -57577,7 +61068,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'value',
@@ -57593,7 +61086,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'value',
@@ -57611,7 +61106,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'value',
@@ -57627,7 +61124,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'value',
@@ -57645,7 +61144,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'value',
@@ -57661,7 +61162,9 @@ our %registry = (
     'argdata' => [
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'value',
@@ -57683,7 +61186,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'stride',
@@ -57709,7 +61214,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'stride',
@@ -57739,7 +61246,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'stride',
@@ -57769,7 +61278,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexPointerType'
       ],
       [
         'pointer',
@@ -57787,7 +61298,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -57803,7 +61316,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -57821,7 +61336,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -57837,7 +61354,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -57855,7 +61374,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -57871,7 +61392,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -57889,7 +61412,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -57905,7 +61430,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -57923,7 +61450,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -57943,7 +61472,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -57961,7 +61492,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -57981,7 +61514,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -57999,7 +61534,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -58019,7 +61556,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -58037,7 +61576,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -58057,7 +61598,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -58075,7 +61618,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -58099,7 +61644,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -58117,7 +61664,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -58141,7 +61690,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -58159,7 +61710,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -58183,7 +61736,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -58201,7 +61756,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -58225,7 +61782,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -58243,7 +61802,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -58271,7 +61832,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -58289,7 +61852,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -58317,7 +61882,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -58335,7 +61902,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -58363,7 +61932,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -58381,7 +61952,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'x',
@@ -58409,7 +61982,9 @@ our %registry = (
     'argdata' => [
       [
         'stream',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexStreamATI'
       ],
       [
         'coords',
@@ -58431,7 +62006,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexWeightPointerTypeEXT'
       ],
       [
         'stride',
@@ -58775,7 +62352,8 @@ our %registry = (
       [
         'srcLayouts',
         'const GLenum *',
-        'COMPSIZE(numTextureBarriers)'
+        'COMPSIZE(numTextureBarriers)',
+        'TextureLayout'
       ]
     ],
     'feature' => 'GL_EXT_semaphore',
@@ -58795,7 +62373,9 @@ our %registry = (
       ],
       [
         'flags',
-        'GLbitfield '
+        'GLbitfield ',
+        undef,
+        'SyncBehaviorFlags'
       ],
       [
         'timeout',
@@ -58854,7 +62434,9 @@ our %registry = (
       ],
       [
         'type',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'WeightPointerTypeARB'
       ],
       [
         'stride',
@@ -59538,19 +63120,27 @@ our %registry = (
       ],
       [
         'outX',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderWriteMaskEXT'
       ],
       [
         'outY',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderWriteMaskEXT'
       ],
       [
         'outZ',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderWriteMaskEXT'
       ],
       [
         'outW',
-        'GLenum '
+        'GLenum ',
+        undef,
+        'VertexShaderWriteMaskEXT'
       ]
     ],
     'feature' => 'GL_EXT_vertex_shader',

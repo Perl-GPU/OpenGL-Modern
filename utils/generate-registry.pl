@@ -197,6 +197,18 @@ for (grep $_, split /\n/, slurp('utils/args-len.txt')) {
   }
 }
 
+for (grep $_, split /\n/, slurp('utils/args-group.txt')) {
+  my ($func, @args) = split ' ';
+  next unless my $s = $signature{$func};
+  my $argind = 0;
+  for (@args) {
+    my ($name, $group) = split /=/;
+    my $arginfo = $s->{argdata}[$argind++];
+    next if !$group;
+    $arginfo->[3] = $group; # undef in slot 2 is OK
+  }
+}
+
 # Now rewrite registry if we need to:
 use Data::Dumper;
 $Data::Dumper::Indent = $Data::Dumper::Sortkeys = $Data::Dumper::Terse = 1;
