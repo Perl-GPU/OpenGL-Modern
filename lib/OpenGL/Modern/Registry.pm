@@ -6682,7 +6682,7 @@ our %registry = (
         'Buffer'
       ],
       [
-        'drawBuffer',
+        'drawbuffer',
         'GLint '
       ],
       [
@@ -7382,7 +7382,7 @@ our %registry = (
     },
     'argdata' => [
       [
-        'myGLsync',
+        'sync',
         'GLsync '
       ],
       [
@@ -10731,23 +10731,23 @@ our %registry = (
     },
     'argdata' => [
       [
-        'readtarget',
+        'readTarget',
         'GLenum ',
         undef,
         'CopyBufferSubDataTarget'
       ],
       [
-        'writetarget',
+        'writeTarget',
         'GLenum ',
         undef,
         'CopyBufferSubDataTarget'
       ],
       [
-        'readoffset',
+        'readOffset',
         'GLintptr '
       ],
       [
-        'writeoffset',
+        'writeOffset',
         'GLintptr '
       ],
       [
@@ -11375,7 +11375,7 @@ our %registry = (
         'GLint '
       ],
       [
-        'internalFormat',
+        'internalformat',
         'GLenum ',
         undef,
         'InternalFormat'
@@ -11417,7 +11417,7 @@ our %registry = (
         'GLint '
       ],
       [
-        'internalFormat',
+        'internalformat',
         'GLenum ',
         undef,
         'InternalFormat'
@@ -13790,7 +13790,7 @@ our %registry = (
     },
     'argdata' => [
       [
-        'cap',
+        'target',
         'GLenum ',
         undef,
         'EnableCap'
@@ -13960,7 +13960,7 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'primcount',
+        'instancecount',
         'GLsizei '
       ]
     ],
@@ -13989,7 +13989,7 @@ our %registry = (
         'GLsizei '
       ],
       [
-        'primcount',
+        'instancecount',
         'GLsizei '
       ],
       [
@@ -14005,7 +14005,7 @@ our %registry = (
   'glDrawBuffer' => {
     'argdata' => [
       [
-        'mode',
+        'buf',
         'GLenum ',
         undef,
         'DrawBufferMode'
@@ -14796,7 +14796,7 @@ our %registry = (
         'GLuint '
       ],
       [
-        'primcount',
+        'instancecount',
         'GLsizei '
       ]
     ],
@@ -14844,7 +14844,7 @@ our %registry = (
         'GLuint '
       ],
       [
-        'primcount',
+        'instancecount',
         'GLsizei '
       ]
     ],
@@ -15221,7 +15221,7 @@ our %registry = (
     },
     'argdata' => [
       [
-        'cap',
+        'target',
         'GLenum ',
         undef,
         'EnableCap'
@@ -17558,7 +17558,7 @@ our %registry = (
         'GLint '
       ],
       [
-        'layer',
+        'zoffset',
         'GLint '
       ]
     ],
@@ -18203,13 +18203,13 @@ our %registry = (
   'glGenSymbolsEXT' => {
     'argdata' => [
       [
-        'dataType',
+        'datatype',
         'GLenum ',
         undef,
         'DataTypeEXT'
       ],
       [
-        'storageType',
+        'storagetype',
         'GLenum ',
         undef,
         'VertexShaderStorageTypeEXT'
@@ -30237,7 +30237,7 @@ our %registry = (
     },
     'argdata' => [
       [
-        'cap',
+        'target',
         'GLenum ',
         undef,
         'EnableCap'
@@ -32569,33 +32569,33 @@ our %registry = (
   'glMatrixFrustumEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
       ],
       [
-        'l',
+        'left',
         'GLdouble '
       ],
       [
-        'r',
+        'right',
         'GLdouble '
       ],
       [
-        'b',
+        'bottom',
         'GLdouble '
       ],
       [
-        't',
+        'top',
         'GLdouble '
       ],
       [
-        'n',
+        'zNear',
         'GLdouble '
       ],
       [
-        'f',
+        'zFar',
         'GLdouble '
       ]
     ],
@@ -32723,7 +32723,7 @@ our %registry = (
   'glMatrixLoadIdentityEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
@@ -32979,33 +32979,33 @@ our %registry = (
   'glMatrixOrthoEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
       ],
       [
-        'l',
+        'left',
         'GLdouble '
       ],
       [
-        'r',
+        'right',
         'GLdouble '
       ],
       [
-        'b',
+        'bottom',
         'GLdouble '
       ],
       [
-        't',
+        'top',
         'GLdouble '
       ],
       [
-        'n',
+        'zNear',
         'GLdouble '
       ],
       [
-        'f',
+        'zFar',
         'GLdouble '
       ]
     ],
@@ -33017,7 +33017,7 @@ our %registry = (
   'glMatrixPopEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
@@ -33031,7 +33031,7 @@ our %registry = (
   'glMatrixPushEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
@@ -33045,7 +33045,7 @@ our %registry = (
   'glMatrixRotatedEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
@@ -33075,7 +33075,7 @@ our %registry = (
   'glMatrixRotatefEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
@@ -33105,7 +33105,7 @@ our %registry = (
   'glMatrixScaledEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
@@ -33131,7 +33131,7 @@ our %registry = (
   'glMatrixScalefEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
@@ -33157,7 +33157,7 @@ our %registry = (
   'glMatrixTranslatedEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
@@ -33183,7 +33183,7 @@ our %registry = (
   'glMatrixTranslatefEXT' => {
     'argdata' => [
       [
-        'matrixMode',
+        'mode',
         'GLenum ',
         undef,
         'MatrixMode'
@@ -34999,7 +34999,7 @@ our %registry = (
   'glMultiTexCoord4x' => {
     'argdata' => [
       [
-        'target',
+        'texture',
         'GLenum ',
         undef,
         'TextureUnit'
@@ -36707,7 +36707,7 @@ our %registry = (
         'GLuint '
       ],
       [
-        'mode',
+        'buf',
         'GLenum ',
         undef,
         'ColorBuffer'
@@ -36792,7 +36792,7 @@ our %registry = (
         'GLuint '
       ],
       [
-        'mode',
+        'src',
         'GLenum ',
         undef,
         'ColorBuffer'
@@ -38290,15 +38290,15 @@ our %registry = (
         'VertexStreamATI'
       ],
       [
-        'x',
+        'nx',
         'GLbyte '
       ],
       [
-        'y',
+        'ny',
         'GLbyte '
       ],
       [
-        'z',
+        'nz',
         'GLbyte '
       ]
     ],
@@ -38336,15 +38336,15 @@ our %registry = (
         'VertexStreamATI'
       ],
       [
-        'x',
+        'nx',
         'GLdouble '
       ],
       [
-        'y',
+        'ny',
         'GLdouble '
       ],
       [
-        'z',
+        'nz',
         'GLdouble '
       ]
     ],
@@ -38382,15 +38382,15 @@ our %registry = (
         'VertexStreamATI'
       ],
       [
-        'x',
+        'nx',
         'GLfloat '
       ],
       [
-        'y',
+        'ny',
         'GLfloat '
       ],
       [
-        'z',
+        'nz',
         'GLfloat '
       ]
     ],
@@ -38428,15 +38428,15 @@ our %registry = (
         'VertexStreamATI'
       ],
       [
-        'x',
+        'nx',
         'GLint '
       ],
       [
-        'y',
+        'ny',
         'GLint '
       ],
       [
-        'z',
+        'nz',
         'GLint '
       ]
     ],
@@ -38474,15 +38474,15 @@ our %registry = (
         'VertexStreamATI'
       ],
       [
-        'x',
+        'nx',
         'GLshort '
       ],
       [
-        'y',
+        'ny',
         'GLshort '
       ],
       [
-        'z',
+        'nz',
         'GLshort '
       ]
     ],
@@ -38918,7 +38918,7 @@ our %registry = (
   'glPathCoverDepthFuncNV' => {
     'argdata' => [
       [
-        'zfunc',
+        'func',
         'GLenum ',
         undef,
         'DepthFunction'
@@ -44697,7 +44697,7 @@ our %registry = (
   'glReadBuffer' => {
     'argdata' => [
       [
-        'mode',
+        'src',
         'GLenum ',
         undef,
         'ReadBufferMode'
@@ -47812,13 +47812,13 @@ our %registry = (
   'glStencilFuncSeparate' => {
     'argdata' => [
       [
-        'frontfunc',
+        'face',
         'GLenum ',
         undef,
         'TriangleFace'
       ],
       [
-        'backfunc',
+        'func',
         'GLenum ',
         undef,
         'StencilFunction'
@@ -48456,7 +48456,7 @@ our %registry = (
         'TextureTarget'
       ],
       [
-        'internalFormat',
+        'internalformat',
         'GLenum ',
         undef,
         'SizedInternalFormat'
@@ -62368,7 +62368,7 @@ our %registry = (
     },
     'argdata' => [
       [
-        'myGLsync',
+        'sync',
         'GLsync '
       ],
       [

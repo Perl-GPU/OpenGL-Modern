@@ -204,6 +204,7 @@ for (grep $_, split /\n/, slurp('utils/args-group.txt')) {
   for (@args) {
     my ($name, $group) = split /=/;
     my $arginfo = $s->{argdata}[$argind++];
+    $arginfo->[0] = $name;
     next if !$group;
     $arginfo->[3] = $group; # undef in slot 2 is OK
   }
