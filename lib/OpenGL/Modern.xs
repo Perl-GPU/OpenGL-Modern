@@ -52,7 +52,7 @@ static int _auto_check_errors = 0;
   if (!n) XSRETURN_EMPTY; \
   GLuint *buffername = malloc(sizeof(GLuint) * n); \
   if (!buffername) croak(#name "_p: malloc failed"); \
-  { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newSVuv(buffername[i]))); }
+  { int i; for (i=0;i<n;i++) buffername[i] = SvUV(ST(i)); }
 #define OGLM_DELETE_FINISH(buffername) \
   free(buffername);
 
