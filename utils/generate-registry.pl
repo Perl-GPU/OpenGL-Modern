@@ -132,11 +132,12 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   $item->{glewImpl} = $glewImpl if defined $glewImpl;
   next if is_manual($name);
   my $type = $item->{restype};
-  my $num_ptr_types = 0;
-  for ($type, map $_->[1], @argdata) {
-    $num_ptr_types++ if /\*/ and !/^\s*const\s+GLchar(?:ARB)?\s*\*\s*$/;
+  my ($i, @ptr_args) = -1;
+  for ([$i++,$type], map [$i++,$_->[1]], @argdata) {
+    my ($ind, $type) = @$_;
+    push @ptr_args, $ind if $type =~ /\*/ and $type !~ /^\s*const\s+GLchar(?:ARB)?\s*\*\s*$/;
   }
-  $item->{has_ptr_arg} = $num_ptr_types if $num_ptr_types > 0;
+  $item->{ptr_args} = \@ptr_args if @ptr_args;
 }
 
 my %feature2version;

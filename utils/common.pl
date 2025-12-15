@@ -41,7 +41,8 @@ sub bindings {
   my @argdata = @{$s->{argdata} || []};
   my $callarg_list = $s->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map $_->[0], @argdata ]})";
   my $thistype = $s->{restype};
-  my $c_suffix = $s->{has_ptr_arg} ? '_c' : '';
+  my @ptr_args = @{$s->{ptr_args} || []};
+  my $c_suffix = @ptr_args ? '_c' : '';
   my $i = 0;
   my %default = (
     binding_name => $name . $c_suffix,
@@ -60,7 +61,7 @@ sub bindings {
     retout => ($thistype eq 'void' ? '' : "\nOUTPUT:\n  RETVAL"),
   );
   my @ret = \%default;
-  return @ret if !$s->{has_ptr_arg};
+  return @ret if !@ptr_args;
   if ($name =~ /^gl(?:Gen|Create)/ && @argdata == 2 && $s->{restype} eq 'void' ) {
     $i = 0;
     push @ret, {
