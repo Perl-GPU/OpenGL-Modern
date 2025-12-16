@@ -42,6 +42,7 @@ sub generate_glew_xs {
       next;
     }
     for my $s (bindings($name, $item)) {
+      die "Error generating for $name: no return type" if !$s->{xs_rettype};
       my $res = "$s->{xs_rettype}\n$s->{binding_name}($s->{xs_args})\n";
       $res .= $s->{xs_argdecls};
       $res .= "$s->{aliases}$s->{xs_code}  OGLM_GLEWINIT\n";

@@ -35,4 +35,5 @@ utils/enums-group.txt
 utils/feature-reuse.txt
 utils/generate-registry.pl
 utils/generate-XS.pl
+utils/paramcounts.txt
 utils/removed.txt

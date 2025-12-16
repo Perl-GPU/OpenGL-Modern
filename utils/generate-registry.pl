@@ -211,6 +211,17 @@ for (grep $_, split /\n/, slurp('utils/args-group.txt')) {
   }
 }
 
+my %counts;
+for my $para (grep $_, split /\n{2,}/, slurp('utils/paramcounts.txt')) {
+  my ($group, @lines) = grep $_, split /\n/, $para;
+  my $count = -1;
+  for (@lines) {
+    $count = $_, next if /^\d+$/;
+    die "In group '$group', got non-number '$_' before a count" if $count < 1;
+    push @{ $counts{$group}{$count} }, $_;
+  }
+}
+
 # Now rewrite registry if we need to:
 use Data::Dumper;
 $Data::Dumper::Indent = $Data::Dumper::Sortkeys = $Data::Dumper::Terse = 1;
@@ -231,6 +242,10 @@ my $features = Dumper \%features;
 $features =~ s!^\{!!;
 $features =~ s!\s+\}$!!s;
 $new .= "our %features = ($features);\n\n";
+my $counts = Dumper \%counts;
+$counts =~ s!^\{!!;
+$counts =~ s!\s+\}$!!s;
+$new .= "our %counts = ($counts);\n\n";
 $new .= "1;\n";
 save_file( "lib/OpenGL/Modern/Registry.pm", $new );
 
