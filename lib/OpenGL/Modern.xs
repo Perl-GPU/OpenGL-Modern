@@ -8,6 +8,7 @@
 #include <GL/glew.h>
 #include <glew-context.c>
 
+#include "gl_counts.h"
 #include "gl_errors.h"
 
 static int _done_glewInit = 0;
