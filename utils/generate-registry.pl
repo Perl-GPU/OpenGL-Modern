@@ -140,6 +140,42 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   $item->{ptr_args} = \@ptr_args if @ptr_args;
 }
 
+my %counts;
+for my $para (grep $_, split /\n{2,}/, slurp('utils/paramcounts.txt')) {
+  my ($group, @lines) = grep $_, split /\n/, $para;
+  my $count = -1;
+  for (@lines) {
+    $count = $_, next if /^\d+$/;
+    die "In group '$group', got non-number '$_' before a count" if $count < 1;
+    push @{ $counts{$group}{$count} }, $_;
+  }
+}
+
+for (grep $_, split /\n/, slurp('utils/args-len.txt')) {
+  my ($func, @args) = split ' ';
+  next unless my $s = $signature{$func};
+  my $argind = 0;
+  for (@args) {
+    my ($name, $len) = split /=/;
+    my $arginfo = $s->{argdata}[$argind++];
+    $arginfo->[0] = $name;
+    push @$arginfo, $len if $len;
+  }
+}
+
+for (grep $_, split /\n/, slurp('utils/args-group.txt')) {
+  my ($func, @args) = split ' ';
+  next unless my $s = $signature{$func};
+  my $argind = 0;
+  for (@args) {
+    my ($name, $group) = split /=/;
+    my $arginfo = $s->{argdata}[$argind++];
+    $arginfo->[0] = $name;
+    next if !$group;
+    $arginfo->[3] = $group; # undef in slot 2 is OK
+  }
+}
+
 my %feature2version;
 for (grep $_, split /\n/, slurp('utils/feature-reuse.txt')) {
   my ($v, $f) = split /\s+/;
@@ -184,42 +220,6 @@ for (grep $_, split /\n/, slurp('utils/aliases.txt')) {
   }
   $signature{$to}{aliases}{$from} = $alias_feature;
   delete $signature{$from};
-}
-
-for (grep $_, split /\n/, slurp('utils/args-len.txt')) {
-  my ($func, @args) = split ' ';
-  next unless my $s = $signature{$func};
-  my $argind = 0;
-  for (@args) {
-    my ($name, $len) = split /=/;
-    my $arginfo = $s->{argdata}[$argind++];
-    $arginfo->[0] = $name;
-    push @$arginfo, $len if $len;
-  }
-}
-
-for (grep $_, split /\n/, slurp('utils/args-group.txt')) {
-  my ($func, @args) = split ' ';
-  next unless my $s = $signature{$func};
-  my $argind = 0;
-  for (@args) {
-    my ($name, $group) = split /=/;
-    my $arginfo = $s->{argdata}[$argind++];
-    $arginfo->[0] = $name;
-    next if !$group;
-    $arginfo->[3] = $group; # undef in slot 2 is OK
-  }
-}
-
-my %counts;
-for my $para (grep $_, split /\n{2,}/, slurp('utils/paramcounts.txt')) {
-  my ($group, @lines) = grep $_, split /\n/, $para;
-  my $count = -1;
-  for (@lines) {
-    $count = $_, next if /^\d+$/;
-    die "In group '$group', got non-number '$_' before a count" if $count < 1;
-    push @{ $counts{$group}{$count} }, $_;
-  }
 }
 
 # Now rewrite registry if we need to:
