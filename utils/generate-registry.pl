@@ -186,7 +186,7 @@ $signature{$_}{core_removed} = 1 for grep $_, split /\s+/, slurp('utils/removed.
 my (%features, %gltags);
 for my $name (sort {uc$a cmp uc$b} keys %signature) {
   my $s = $signature{$name};
-  my @binding_names = map $_->{binding_name}, bindings($name, $s);
+  my @binding_names = map $_->{binding_name}, bindings($name, $s, \%counts);
   push @exported_functions, @binding_names if !is_manual($name);
   next if !$s->{feature};
   for ($s->{feature}, grep defined, $feature2version{$s->{feature}}) {
@@ -276,7 +276,7 @@ my $middle1 = '';
 for my $name (sort grep !/^GL/, keys %signature) {
   $middle1 .= "=head2 $name\n\n";
   my $s = $signature{$name};
-  for my $bind (sort {$a->{binding_name} cmp $b->{binding_name}} bindings($name, $s)) {
+  for my $bind (sort {$a->{binding_name} cmp $b->{binding_name}} bindings($name, $s, \%counts)) {
     my $prefix = " ";
     $prefix .= "\$retval = " if $bind->{xs_rettype} ne 'void';
     $prefix .= "\@retvals = " if $bind->{xs_code} eq "PPCODE:\n";

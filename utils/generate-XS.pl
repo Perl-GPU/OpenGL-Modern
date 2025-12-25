@@ -41,7 +41,7 @@ sub generate_glew_xs {
       print "Skipping $name, already implemented in Modern.xs\n";
       next;
     }
-    for my $s (bindings($name, $item)) {
+    for my $s (bindings($name, $item, \%OpenGL::Modern::Registry::counts)) {
       die "Error generating for $name: no return type" if !$s->{xs_rettype};
       my $res = "$s->{xs_rettype}\n$s->{binding_name}($s->{xs_args})\n";
       $res .= $s->{xs_argdecls};

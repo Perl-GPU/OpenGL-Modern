@@ -4927,6 +4927,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBooleani_v.xhtm
 =head2 glGetBooleanv
 
  glGetBooleanv_c($pname, $data);
+ @retvals = glGetBooleanv_p($pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBooleanv.xhtml>
@@ -5161,12 +5162,16 @@ Exported under tag C<:GL_SGIS_detail_texture>.
  glGetDoublei_v_c($target, $index, $data);
  glGetDoubleIndexedvEXT_c($target, $index, $data);
  glGetDoublei_vEXT_c($target, $index, $data);
+ @retvals = glGetDoublei_v_p($target, $index);
+ @retvals = glGetDoubleIndexedvEXT_p($target, $index);
+ @retvals = glGetDoublei_vEXT_p($target, $index);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
 =head2 glGetDoublev
 
  glGetDoublev_c($pname, $data);
+ @retvals = glGetDoublev_p($pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetDoublev.xhtml>
@@ -5232,12 +5237,17 @@ Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
  glGetFloatIndexedvEXT_c($target, $index, $data);
  glGetFloati_vEXT_c($target, $index, $data);
  glGetFloati_vNV_c($target, $index, $data);
+ @retvals = glGetFloati_v_p($target, $index);
+ @retvals = glGetFloatIndexedvEXT_p($target, $index);
+ @retvals = glGetFloati_vEXT_p($target, $index);
+ @retvals = glGetFloati_vNV_p($target, $index);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
 =head2 glGetFloatv
 
  glGetFloatv_c($pname, $data);
+ @retvals = glGetFloatv_p($pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetFloatv.xhtml>
@@ -5302,6 +5312,7 @@ Exported under tag C<:GL_EXT_fragment_lighting>.
 =head2 glGetFragmentMaterialfvSGIX
 
  glGetFragmentMaterialfvSGIX_c($face, $pname, $params);
+ @retvals = glGetFragmentMaterialfvSGIX_p($face, $pname);
 
 Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
@@ -5314,6 +5325,7 @@ Exported under tag C<:GL_EXT_fragment_lighting>.
 =head2 glGetFragmentMaterialivSGIX
 
  glGetFragmentMaterialivSGIX_c($face, $pname, $params);
+ @retvals = glGetFragmentMaterialivSGIX_p($face, $pname);
 
 Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
@@ -5438,6 +5450,7 @@ Exported under tag C<:GL_ARB_shader_objects>.
 =head2 glGetInteger64i_v
 
  glGetInteger64i_v_c($target, $index, $data);
+ @retvals = glGetInteger64i_v_p($target, $index);
 
 Exported under tag C<:GL_VERSION_3_2>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetInteger64i_v.xhtml>
@@ -5447,6 +5460,9 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetInteger64i_v.xh
  glGetInteger64v_c($pname, $data);
  glGetInteger64vAPPLE_c($pname, $data);
  glGetInteger64vEXT_c($pname, $data);
+ @retvals = glGetInteger64v_p($pname);
+ @retvals = glGetInteger64vAPPLE_p($pname);
+ @retvals = glGetInteger64vEXT_p($pname);
 
 Exported under tag C<:GL_ARB_sync>.
 
@@ -5454,6 +5470,8 @@ Exported under tag C<:GL_ARB_sync>.
 
  glGetIntegeri_v_c($target, $index, $data);
  glGetIntegerIndexedvEXT_c($target, $index, $data);
+ @retvals = glGetIntegeri_v_p($target, $index);
+ @retvals = glGetIntegerIndexedvEXT_p($target, $index);
 
 Exported under tag C<:GL_ARB_uniform_buffer_object>.
 
@@ -5478,6 +5496,7 @@ Exported under tag C<:GL_NV_shader_buffer_load>.
 =head2 glGetIntegerv
 
  glGetIntegerv_c($pname, $data);
+ @retvals = glGetIntegerv_p($pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetIntegerv.xhtml>
@@ -5521,6 +5540,7 @@ Exported under tag C<:GL_EXT_vertex_shader>.
 =head2 glGetLightfv
 
  glGetLightfv_c($light, $pname, $params);
+ @retvals = glGetLightfv_p($light, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -5529,6 +5549,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGetLightfv.xml>
 =head2 glGetLightiv
 
  glGetLightiv_c($light, $pname, $params);
+ @retvals = glGetLightiv_p($light, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -5537,6 +5558,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGetLightiv.xml>
 =head2 glGetLightxv
 
  glGetLightxv_c($light, $pname, $params);
+ @retvals = glGetLightxv_p($light, $pname);
 
 Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 
@@ -5639,6 +5661,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGetMapiv.xml>
 =head2 glGetMaterialfv
 
  glGetMaterialfv_c($face, $pname, $params);
+ @retvals = glGetMaterialfv_p($face, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -5647,6 +5670,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGetMaterialfv.x
 =head2 glGetMaterialiv
 
  glGetMaterialiv_c($face, $pname, $params);
+ @retvals = glGetMaterialiv_p($face, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -5655,6 +5679,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGetMaterialiv.x
 =head2 glGetMaterialxv
 
  glGetMaterialxv_c($face, $pname, $params);
+ @retvals = glGetMaterialxv_p($face, $pname);
 
 Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 
@@ -5703,30 +5728,35 @@ Exported under tag C<:GL_EXT_histogram>.
 =head2 glGetMultiTexEnvfvEXT
 
  glGetMultiTexEnvfvEXT_c($texunit, $target, $pname, $params);
+ @retvals = glGetMultiTexEnvfvEXT_p($texunit, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetMultiTexEnvivEXT
 
  glGetMultiTexEnvivEXT_c($texunit, $target, $pname, $params);
+ @retvals = glGetMultiTexEnvivEXT_p($texunit, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetMultiTexGendvEXT
 
  glGetMultiTexGendvEXT_c($texunit, $coord, $pname, $params);
+ @retvals = glGetMultiTexGendvEXT_p($texunit, $coord, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetMultiTexGenfvEXT
 
  glGetMultiTexGenfvEXT_c($texunit, $coord, $pname, $params);
+ @retvals = glGetMultiTexGenfvEXT_p($texunit, $coord, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetMultiTexGenivEXT
 
  glGetMultiTexGenivEXT_c($texunit, $coord, $pname, $params);
+ @retvals = glGetMultiTexGenivEXT_p($texunit, $coord, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -5739,36 +5769,42 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glGetMultiTexLevelParameterfvEXT
 
  glGetMultiTexLevelParameterfvEXT_c($texunit, $target, $level, $pname, $params);
+ @retvals = glGetMultiTexLevelParameterfvEXT_p($texunit, $target, $level, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetMultiTexLevelParameterivEXT
 
  glGetMultiTexLevelParameterivEXT_c($texunit, $target, $level, $pname, $params);
+ @retvals = glGetMultiTexLevelParameterivEXT_p($texunit, $target, $level, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetMultiTexParameterIivEXT
 
  glGetMultiTexParameterIivEXT_c($texunit, $target, $pname, $params);
+ @retvals = glGetMultiTexParameterIivEXT_p($texunit, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetMultiTexParameterIuivEXT
 
  glGetMultiTexParameterIuivEXT_c($texunit, $target, $pname, $params);
+ @retvals = glGetMultiTexParameterIuivEXT_p($texunit, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetMultiTexParameterfvEXT
 
  glGetMultiTexParameterfvEXT_c($texunit, $target, $pname, $params);
+ @retvals = glGetMultiTexParameterfvEXT_p($texunit, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetMultiTexParameterivEXT
 
  glGetMultiTexParameterivEXT_c($texunit, $target, $pname, $params);
+ @retvals = glGetMultiTexParameterivEXT_p($texunit, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6608,6 +6644,7 @@ Exported under tag C<:GL_ATI_envmap_bumpmap>.
 =head2 glGetTexEnvfv
 
  glGetTexEnvfv_c($target, $pname, $params);
+ @retvals = glGetTexEnvfv_p($target, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -6616,6 +6653,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGetTexEnvfv.xml
 =head2 glGetTexEnviv
 
  glGetTexEnviv_c($target, $pname, $params);
+ @retvals = glGetTexEnviv_p($target, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -6624,6 +6662,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGetTexEnviv.xml
 =head2 glGetTexEnvxv
 
  glGetTexEnvxv_c($target, $pname, $params);
+ @retvals = glGetTexEnvxv_p($target, $pname);
 
 Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 
@@ -6636,6 +6675,7 @@ Exported under tag C<:GL_SGIS_texture_filter4>.
 =head2 glGetTexGendv
 
  glGetTexGendv_c($coord, $pname, $params);
+ @retvals = glGetTexGendv_p($coord, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -6644,6 +6684,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGetTexGendv.xml
 =head2 glGetTexGenfv
 
  glGetTexGenfv_c($coord, $pname, $params);
+ @retvals = glGetTexGenfv_p($coord, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -6652,6 +6693,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGetTexGenfv.xml
 =head2 glGetTexGeniv
 
  glGetTexGeniv_c($coord, $pname, $params);
+ @retvals = glGetTexGeniv_p($coord, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -6667,6 +6709,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexImage.xhtml>
 =head2 glGetTexLevelParameterfv
 
  glGetTexLevelParameterfv_c($target, $level, $pname, $params);
+ @retvals = glGetTexLevelParameterfv_p($target, $level, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexLevelParameterfv.xhtml>
@@ -6674,6 +6717,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexLevelParamet
 =head2 glGetTexLevelParameteriv
 
  glGetTexLevelParameteriv_c($target, $level, $pname, $params);
+ @retvals = glGetTexLevelParameteriv_p($target, $level, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexLevelParameteriv.xhtml>
@@ -6682,6 +6726,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexLevelParamet
 
  glGetTexParameterIiv_c($target, $pname, $params);
  glGetTexParameterIivEXT_c($target, $pname, $params);
+ @retvals = glGetTexParameterIiv_p($target, $pname);
+ @retvals = glGetTexParameterIivEXT_p($target, $pname);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexParameterIiv.xhtml>
@@ -6690,6 +6736,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexParameterIiv
 
  glGetTexParameterIuiv_c($target, $pname, $params);
  glGetTexParameterIuivEXT_c($target, $pname, $params);
+ @retvals = glGetTexParameterIuiv_p($target, $pname);
+ @retvals = glGetTexParameterIuivEXT_p($target, $pname);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexParameterIuiv.xhtml>
@@ -6703,6 +6751,7 @@ Exported under tag C<:GL_APPLE_texture_range>.
 =head2 glGetTexParameterfv
 
  glGetTexParameterfv_c($target, $pname, $params);
+ @retvals = glGetTexParameterfv_p($target, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexParameterfv.xhtml>
@@ -6710,6 +6759,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexParameterfv.
 =head2 glGetTexParameteriv
 
  glGetTexParameteriv_c($target, $pname, $params);
+ @retvals = glGetTexParameteriv_p($target, $pname);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexParameteriv.xhtml>
@@ -6717,6 +6767,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTexParameteriv.
 =head2 glGetTexParameterxv
 
  glGetTexParameterxv_c($target, $pname, $params);
+ @retvals = glGetTexParameterxv_p($target, $pname);
 
 Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 
@@ -6754,6 +6805,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetTextureLevelParameterfvEXT
 
  glGetTextureLevelParameterfvEXT_c($texture, $target, $level, $pname, $params);
+ @retvals = glGetTextureLevelParameterfvEXT_p($texture, $target, $level, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6766,6 +6818,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetTextureLevelParameterivEXT
 
  glGetTextureLevelParameterivEXT_c($texture, $target, $level, $pname, $params);
+ @retvals = glGetTextureLevelParameterivEXT_p($texture, $target, $level, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6778,6 +6831,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetTextureParameterIivEXT
 
  glGetTextureParameterIivEXT_c($texture, $target, $pname, $params);
+ @retvals = glGetTextureParameterIivEXT_p($texture, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6790,6 +6844,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetTextureParameterIuivEXT
 
  glGetTextureParameterIuivEXT_c($texture, $target, $pname, $params);
+ @retvals = glGetTextureParameterIuivEXT_p($texture, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6802,6 +6857,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetTextureParameterfvEXT
 
  glGetTextureParameterfvEXT_c($texture, $target, $pname, $params);
+ @retvals = glGetTextureParameterfvEXT_p($texture, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6814,6 +6870,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetTextureParameterivEXT
 
  glGetTextureParameterivEXT_c($texture, $target, $pname, $params);
+ @retvals = glGetTextureParameterivEXT_p($texture, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6981,6 +7038,7 @@ Exported under tag C<:GL_EXT_memory_object>.
 =head2 glGetUnsignedBytevEXT
 
  glGetUnsignedBytevEXT_c($pname, $data);
+ @retvals = glGetUnsignedBytevEXT_p($pname);
 
 Exported under tag C<:GL_EXT_memory_object>.
 

@@ -56,6 +56,13 @@ static int _auto_check_errors = 0;
   { int i; for (i=0;i<n;i++) buffername[i] = SvUV(ST(i)); }
 #define OGLM_DELETE_FINISH(buffername) \
   free(buffername);
+#define OGLM_GET_SETUP(name, group, pname, buffertype, buffername) \
+  int pname ## _count = oglm_count_##group(pname); \
+  if (pname ## _count < 0) croak(#name "_p: Unknown " #group " %d", pname); \
+  buffertype buffername[OGLM_COUNTMAX_##group];
+#define OGLM_GET_FINISH(pname, typefunc, buffername) \
+  EXTEND(sp, pname ## _count); \
+  { int i; for (i=0;i<pname ## _count;i++) PUSHs(sv_2mortal(typefunc(buffername[i]))); }
 
 /*
   Maybe one day we'll allow Perl callbacks for GLDEBUGPROCARB

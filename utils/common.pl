@@ -7,9 +7,20 @@ my @manual_list = qw(
   glGetString
   glShaderSource_p
 );
-
 my %manual;
 @manual{@manual_list} = ( 1 ) x @manual_list;
+
+my %type2typefunc = (
+  GLfixed => 'newSViv',
+  GLdouble => 'newSVnv',
+  GLfloat => 'newSVnv',
+  GLbyte => 'newSViv',
+  GLint => 'newSViv',
+  GLint64 => 'newSViv',
+  GLuint => 'newSVuv',
+  GLubyte => 'newSVuv',
+  GLboolean => 'newSViv',
+);
 
 sub is_manual { $manual{$_[0]} }
 sub manual_list { @manual_list }
@@ -34,7 +45,7 @@ sub save_file {
 
 sub bindings {
   die "list context only" if !wantarray;
-  my ($name, $s) = @_;
+  my ($name, $s, $counts) = @_;
   my $avail_check = ($s->{glewtype} eq 'fun' && $s->{glewImpl})
     ? "  OGLM_AVAIL_CHECK($s->{glewImpl}, $name)\n"
     : "";
@@ -62,6 +73,7 @@ sub bindings {
   );
   my @ret = \%default;
   return @ret if !@ptr_arg_inds;
+  @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
   if ($name =~ /^gl(?:Gen|Create)/ && @argdata == 2 && $s->{restype} eq 'void') {
     $i = 0;
     push @ret, {
@@ -88,6 +100,33 @@ sub bindings {
       error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
       aftercall => "\n  OGLM_DELETE_FINISH($argdata[1][0])",
     };
+  }
+  my %name2data = map +($_->[0] => $_), @argdata;
+  my @ptr_args = @argdata[@ptr_arg_inds];
+  if ($name =~ /^gl(?:Get)/ && @ptr_args == 1 && ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/) {
+    my $compsize_from = $1;
+    my $compsize_data = $name2data{$compsize_from};
+    my $compsize_group = $compsize_data->[3];
+    if ($compsize_group && $counts->{$compsize_group}) {
+      my ($datatype) = $ptr_args[0][1] =~ /^(?:const\s*)?(\w+)/;
+      my $typefunc = $type2typefunc{$datatype} or die "No typefunc for '$datatype'";
+#if (0) {
+      my $not_that = $ptr_args[0][0];
+      my @filtered_args = grep $_->[0] ne $not_that, @argdata;
+      $i = 0;
+      push @ret, {
+        %default,
+        binding_name => $name . '_p',
+        xs_args => join(', ', map $_->[0], @filtered_args),
+        xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @filtered_args),
+        aliases => !$s->{aliases} ? "" : "ALIAS:\n".join('', map "  ${_}_p = ".++$i."\n", sort keys %{$s->{aliases}}),
+        xs_code => "PPCODE:\n",
+        beforecall => "  OGLM_GET_SETUP($name, $compsize_group, $compsize_from, $datatype, $ptr_args[0][0])\n",
+        error_check2 => "OGLM_CHECK_ERR($name, )",
+        aftercall => "\n  OGLM_GET_FINISH($compsize_from, $typefunc, $ptr_args[0][0])",
+      };
+#}
+    }
   }
   @ret;
 }
