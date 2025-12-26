@@ -295,6 +295,7 @@ int oglm_count_GetTextureParameter(int param) {
   switch (param) {
     case GL_TEXTURE_BASE_LEVEL:
     case GL_TEXTURE_DEPTH:
+    case GL_TEXTURE_HEIGHT:
     case GL_TEXTURE_MAG_FILTER:
     case GL_TEXTURE_MAX_LEVEL:
     case GL_TEXTURE_MAX_LOD:
@@ -302,6 +303,7 @@ int oglm_count_GetTextureParameter(int param) {
     case GL_TEXTURE_MIN_LOD:
     case GL_TEXTURE_PRIORITY:
     case GL_TEXTURE_RESIDENT:
+    case GL_TEXTURE_WIDTH:
     case GL_TEXTURE_WRAP_R:
     case GL_TEXTURE_WRAP_S:
     case GL_TEXTURE_WRAP_T:

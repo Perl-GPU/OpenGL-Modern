@@ -75479,6 +75479,7 @@ our %counts = (
     '1' => [
       'GL_TEXTURE_BASE_LEVEL',
       'GL_TEXTURE_DEPTH',
+      'GL_TEXTURE_HEIGHT',
       'GL_TEXTURE_MAG_FILTER',
       'GL_TEXTURE_MAX_LEVEL',
       'GL_TEXTURE_MAX_LOD',
@@ -75486,6 +75487,7 @@ our %counts = (
       'GL_TEXTURE_MIN_LOD',
       'GL_TEXTURE_PRIORITY',
       'GL_TEXTURE_RESIDENT',
+      'GL_TEXTURE_WIDTH',
       'GL_TEXTURE_WRAP_R',
       'GL_TEXTURE_WRAP_S',
       'GL_TEXTURE_WRAP_T'
