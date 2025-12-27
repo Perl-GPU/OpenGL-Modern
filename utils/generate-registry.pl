@@ -176,6 +176,12 @@ for (grep $_, split /\n/, slurp('utils/args-group.txt')) {
   }
 }
 
+my %groups;
+for (grep $_, split /\n/, slurp('utils/enums-group.txt')) {
+  my ($enum, @groups) = split ' ';
+  push @{ $groups{$_} }, $enum for @groups;
+}
+
 my %feature2version;
 for (grep $_, split /\n/, slurp('utils/feature-reuse.txt')) {
   my ($v, $f) = split /\s+/;
@@ -246,6 +252,10 @@ my $counts = Dumper \%counts;
 $counts =~ s!^\{!!;
 $counts =~ s!\s+\}$!!s;
 $new .= "our %counts = ($counts);\n\n";
+my $groups = Dumper \%groups;
+$groups =~ s!^\{!!;
+$groups =~ s!\s+\}$!!s;
+$new .= "our %groups = ($groups);\n\n";
 $new .= "1;\n";
 save_file( "lib/OpenGL/Modern/Registry.pm", $new );
 
