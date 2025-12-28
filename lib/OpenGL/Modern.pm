@@ -2176,6 +2176,7 @@ our @gl_functionsrest = qw(
   glGetDebugMessageLogARB_c
   glGetDebugMessageLog_c
   glGetDetailTexFuncSGIS_c
+  glGetDetailTexFuncSGIS_p
   glGetDoubleIndexedvEXT_c
   glGetDoublei_vEXT_c
   glGetDoublei_v_c
@@ -2200,8 +2201,10 @@ our @gl_functionsrest = qw(
   glGetFragDataLocationEXT
   glGetFragmentLightfvEXT_c
   glGetFragmentLightfvSGIX_c
+  glGetFragmentLightfvSGIX_p
   glGetFragmentLightivEXT_c
   glGetFragmentLightivSGIX_c
+  glGetFragmentLightivSGIX_p
   glGetFragmentMaterialfvEXT_c
   glGetFragmentMaterialfvSGIX_c
   glGetFragmentMaterialfvSGIX_p
@@ -2211,6 +2214,7 @@ our @gl_functionsrest = qw(
   glGetFramebufferAttachmentParameterivEXT_c
   glGetFramebufferParameterfvAMD_c
   glGetFramebufferParameterivEXT_c
+  glGetFramebufferParameterivEXT_p
   glGetFramebufferParameteriv_c
   glGetFramebufferPixelLocalStorageSizeEXT
   glGetGraphicsResetStatus
@@ -2302,6 +2306,7 @@ our @gl_functionsrest = qw(
   glGetNamedFramebufferAttachmentParameteriv_c
   glGetNamedFramebufferParameterfvAMD_c
   glGetNamedFramebufferParameterivEXT_c
+  glGetNamedFramebufferParameterivEXT_p
   glGetNamedFramebufferParameteriv_c
   glGetNamedProgramivEXT_c
   glGetNamedProgramLocalParameterdvEXT_c
@@ -2425,15 +2430,20 @@ our @gl_functionsrest = qw(
   glGetQueryObjectuivARB_c
   glGetRenderbufferParameterivEXT_c
   glGetSamplerParameterfv_c
+  glGetSamplerParameterfv_p
   glGetSamplerParameterIiv_c
+  glGetSamplerParameterIiv_p
   glGetSamplerParameterIuiv_c
+  glGetSamplerParameterIuiv_p
   glGetSamplerParameteriv_c
+  glGetSamplerParameteriv_p
   glGetSemaphoreParameterui64vEXT_c
   glGetSeparableFilterEXT_c
   glGetSeparableFilter_c
   glGetShaderPrecisionFormat_c
   glGetShaderSourceARB_c
   glGetSharpenTexFuncSGIS_c
+  glGetSharpenTexFuncSGIS_p
   glGetStageIndexNV
   glGetSubroutineIndex
   glGetSubroutineUniformLocation
@@ -4247,6 +4257,7 @@ our %EXPORT_TAGS_GL = (
     'glFramebufferParameteri',
     'glGetFramebufferParameteriv_c',
     'glGetNamedFramebufferParameterivEXT_c',
+    'glGetNamedFramebufferParameterivEXT_p',
     'glNamedFramebufferParameteriEXT'
   ],
   'GL_ARB_framebuffer_object' => [
@@ -4539,9 +4550,13 @@ our %EXPORT_TAGS_GL = (
     'glGenSamplers_c',
     'glGenSamplers_p',
     'glGetSamplerParameterIiv_c',
+    'glGetSamplerParameterIiv_p',
     'glGetSamplerParameterIuiv_c',
+    'glGetSamplerParameterIuiv_p',
     'glGetSamplerParameterfv_c',
+    'glGetSamplerParameterfv_p',
     'glGetSamplerParameteriv_c',
+    'glGetSamplerParameteriv_p',
     'glIsSampler',
     'glSamplerParameterIiv_c',
     'glSamplerParameterIuiv_c',
@@ -5234,6 +5249,7 @@ our %EXPORT_TAGS_GL = (
     'glGetFloatIndexedvEXT_c',
     'glGetFloati_vEXT_c',
     'glGetFramebufferParameterivEXT_c',
+    'glGetFramebufferParameterivEXT_p',
     'glGetMultiTexEnvfvEXT_c',
     'glGetMultiTexEnvfvEXT_p',
     'glGetMultiTexEnvivEXT_c',
@@ -6724,7 +6740,8 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_SGIS_detail_texture' => [
     'glDetailTexFuncSGIS_c',
-    'glGetDetailTexFuncSGIS_c'
+    'glGetDetailTexFuncSGIS_c',
+    'glGetDetailTexFuncSGIS_p'
   ],
   'GL_SGIS_fog_function' => [
     'glFogFuncSGIS_c',
@@ -6745,6 +6762,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_SGIS_sharpen_texture' => [
     'glGetSharpenTexFuncSGIS_c',
+    'glGetSharpenTexFuncSGIS_p',
     'glSharpenTexFuncSGIS_c'
   ],
   'GL_SGIS_texture4D' => [
@@ -6792,7 +6810,9 @@ our %EXPORT_TAGS_GL = (
     'glFragmentMaterialiSGIX',
     'glFragmentMaterialivSGIX_c',
     'glGetFragmentLightfvSGIX_c',
+    'glGetFragmentLightfvSGIX_p',
     'glGetFragmentLightivSGIX_c',
+    'glGetFragmentLightivSGIX_p',
     'glGetFragmentMaterialfvSGIX_c',
     'glGetFragmentMaterialfvSGIX_p',
     'glGetFragmentMaterialivSGIX_c',
@@ -7680,9 +7700,13 @@ our %EXPORT_TAGS_GL = (
     'glGetQueryObjecti64v_c',
     'glGetQueryObjectui64v_c',
     'glGetSamplerParameterIiv_c',
+    'glGetSamplerParameterIiv_p',
     'glGetSamplerParameterIuiv_c',
+    'glGetSamplerParameterIuiv_p',
     'glGetSamplerParameterfv_c',
+    'glGetSamplerParameterfv_p',
     'glGetSamplerParameteriv_c',
+    'glGetSamplerParameteriv_p',
     'glIsSampler',
     'glMultiTexCoordP1ui',
     'glMultiTexCoordP1uiv_c',
@@ -7906,6 +7930,7 @@ our %EXPORT_TAGS_GL = (
     'glGetFramebufferParameteriv_c',
     'glGetInternalformati64v_c',
     'glGetNamedFramebufferParameterivEXT_c',
+    'glGetNamedFramebufferParameterivEXT_p',
     'glGetObjectLabel_c',
     'glGetObjectPtrLabel_c',
     'glGetProgramInterfaceiv_c',

@@ -110,7 +110,6 @@ sub bindings {
     if ($compsize_group && $counts->{$compsize_group}) {
       my ($datatype) = $ptr_args[0][1] =~ /^(?:const\s*)?(\w+)/;
       my $typefunc = $type2typefunc{$datatype} or die "No typefunc for '$datatype'";
-#if (0) {
       my $not_that = $ptr_args[0][0];
       my @filtered_args = grep $_->[0] ne $not_that, @argdata;
       $i = 0;
@@ -125,10 +124,22 @@ sub bindings {
         error_check2 => "OGLM_CHECK_ERR($name, )",
         aftercall => "\n  OGLM_GET_FINISH($compsize_from, $typefunc, $ptr_args[0][0])",
       };
-#}
     }
   }
   @ret;
+}
+
+sub assemble_enum_groups {
+  my ($groups, $counts, %g2c2s) = @_;
+  for my $g (keys %$groups) {
+    my (@syms, %c2s) = @{ $groups->{$g} };
+    for (@syms) {
+      next if !defined(my $c = $counts->{$_});
+      push @{ $c2s{$c} }, $_;
+    }
+    $g2c2s{$g} = \%c2s if keys %c2s;
+  }
+  \%g2c2s;
 }
 
 1;

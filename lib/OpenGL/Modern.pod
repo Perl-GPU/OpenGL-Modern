@@ -5154,6 +5154,7 @@ Exported under tag C<:GL_AMD_debug_output>.
 =head2 glGetDetailTexFuncSGIS
 
  glGetDetailTexFuncSGIS_c($target, $points);
+ @retvals = glGetDetailTexFuncSGIS_p($target);
 
 Exported under tag C<:GL_SGIS_detail_texture>.
 
@@ -5288,6 +5289,7 @@ Exported under tag C<:GL_EXT_fragment_lighting>.
 =head2 glGetFragmentLightfvSGIX
 
  glGetFragmentLightfvSGIX_c($light, $pname, $params);
+ @retvals = glGetFragmentLightfvSGIX_p($light, $pname);
 
 Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
@@ -5300,6 +5302,7 @@ Exported under tag C<:GL_EXT_fragment_lighting>.
 =head2 glGetFragmentLightivSGIX
 
  glGetFragmentLightivSGIX_c($light, $pname, $params);
+ @retvals = glGetFragmentLightivSGIX_p($light, $pname);
 
 Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
@@ -5351,6 +5354,7 @@ Exported under tag C<:GL_ARB_framebuffer_no_attachments>.
 =head2 glGetFramebufferParameterivEXT
 
  glGetFramebufferParameterivEXT_c($framebuffer, $pname, $params);
+ @retvals = glGetFramebufferParameterivEXT_p($framebuffer, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -5890,6 +5894,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetNamedFramebufferParameterivEXT
 
  glGetNamedFramebufferParameterivEXT_c($framebuffer, $pname, $params);
+ @retvals = glGetNamedFramebufferParameterivEXT_p($framebuffer, $pname);
 
 Exported under tag C<:GL_ARB_framebuffer_no_attachments>.
 
@@ -6523,6 +6528,8 @@ Exported under tag C<:GL_ARB_framebuffer_object>.
 
  glGetSamplerParameterIiv_c($sampler, $pname, $params);
  glGetSamplerParameterIivEXT_c($sampler, $pname, $params);
+ @retvals = glGetSamplerParameterIiv_p($sampler, $pname);
+ @retvals = glGetSamplerParameterIivEXT_p($sampler, $pname);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
@@ -6530,18 +6537,22 @@ Exported under tag C<:GL_ARB_sampler_objects>.
 
  glGetSamplerParameterIuiv_c($sampler, $pname, $params);
  glGetSamplerParameterIuivEXT_c($sampler, $pname, $params);
+ @retvals = glGetSamplerParameterIuiv_p($sampler, $pname);
+ @retvals = glGetSamplerParameterIuivEXT_p($sampler, $pname);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
 =head2 glGetSamplerParameterfv
 
  glGetSamplerParameterfv_c($sampler, $pname, $params);
+ @retvals = glGetSamplerParameterfv_p($sampler, $pname);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
 =head2 glGetSamplerParameteriv
 
  glGetSamplerParameteriv_c($sampler, $pname, $params);
+ @retvals = glGetSamplerParameteriv_p($sampler, $pname);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
@@ -6594,6 +6605,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderiv.xhtml>
 =head2 glGetSharpenTexFuncSGIS
 
  glGetSharpenTexFuncSGIS_c($target, $points);
+ @retvals = glGetSharpenTexFuncSGIS_p($target);
 
 Exported under tag C<:GL_SGIS_sharpen_texture>.
 
