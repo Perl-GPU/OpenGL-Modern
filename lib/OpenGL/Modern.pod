@@ -4816,6 +4816,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glGetActiveAtomicCounterBufferiv
 
  glGetActiveAtomicCounterBufferiv_c($program, $bufferIndex, $pname, $params);
+ @retvals = glGetActiveAtomicCounterBufferiv_p($program, $bufferIndex, $pname);
 
 Exported under tag C<:GL_ARB_shader_atomic_counters>.
 
@@ -4842,6 +4843,7 @@ Exported under tag C<:GL_ARB_shader_subroutine>.
 =head2 glGetActiveSubroutineUniformiv
 
  glGetActiveSubroutineUniformiv_c($program, $shadertype, $index, $pname, $values);
+ @retvals = glGetActiveSubroutineUniformiv_p($program, $shadertype, $index, $pname);
 
 Exported under tag C<:GL_ARB_shader_subroutine>.
 
@@ -4920,6 +4922,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetAttribLocation.
 
  glGetBooleani_v_c($target, $index, $data);
  glGetBooleanIndexedvEXT_c($target, $index, $data);
+ @retvals = glGetBooleani_v_p($target, $index);
+ @retvals = glGetBooleanIndexedvEXT_p($target, $index);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBooleani_v.xhtml>
@@ -4935,6 +4939,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBooleanv.xhtml>
 =head2 glGetBufferParameteri64v
 
  glGetBufferParameteri64v_c($target, $pname, $params);
+ @retvals = glGetBufferParameteri64v_p($target, $pname);
 
 Exported under tag C<:GL_VERSION_3_2>.
 
@@ -4942,6 +4947,8 @@ Exported under tag C<:GL_VERSION_3_2>.
 
  glGetBufferParameteriv_c($target, $pname, $params);
  glGetBufferParameterivARB_c($target, $pname, $params);
+ @retvals = glGetBufferParameteriv_p($target, $pname);
+ @retvals = glGetBufferParameterivARB_p($target, $pname);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBufferParameteriv.xhtml>
@@ -4999,12 +5006,15 @@ Exported under tag C<:GL_ARB_imaging>.
 
  glGetColorTableParameterfv_c($target, $pname, $params);
  glGetColorTableParameterfvEXT_c($target, $pname, $params);
+ @retvals = glGetColorTableParameterfv_p($target, $pname);
+ @retvals = glGetColorTableParameterfvEXT_p($target, $pname);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glGetColorTableParameterfvSGI
 
  glGetColorTableParameterfvSGI_c($target, $pname, $params);
+ @retvals = glGetColorTableParameterfvSGI_p($target, $pname);
 
 Exported under tag C<:GL_SGI_color_table>.
 
@@ -5012,12 +5022,15 @@ Exported under tag C<:GL_SGI_color_table>.
 
  glGetColorTableParameteriv_c($target, $pname, $params);
  glGetColorTableParameterivEXT_c($target, $pname, $params);
+ @retvals = glGetColorTableParameteriv_p($target, $pname);
+ @retvals = glGetColorTableParameterivEXT_p($target, $pname);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glGetColorTableParameterivSGI
 
  glGetColorTableParameterivSGI_c($target, $pname, $params);
+ @retvals = glGetColorTableParameterivSGI_p($target, $pname);
 
 Exported under tag C<:GL_SGI_color_table>.
 
@@ -5110,24 +5123,28 @@ Exported under tag C<:GL_EXT_convolution>.
 =head2 glGetConvolutionParameterfv
 
  glGetConvolutionParameterfv_c($target, $pname, $params);
+ @retvals = glGetConvolutionParameterfv_p($target, $pname);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glGetConvolutionParameterfvEXT
 
  glGetConvolutionParameterfvEXT_c($target, $pname, $params);
+ @retvals = glGetConvolutionParameterfvEXT_p($target, $pname);
 
 Exported under tag C<:GL_EXT_convolution>.
 
 =head2 glGetConvolutionParameteriv
 
  glGetConvolutionParameteriv_c($target, $pname, $params);
+ @retvals = glGetConvolutionParameteriv_p($target, $pname);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glGetConvolutionParameterivEXT
 
  glGetConvolutionParameterivEXT_c($target, $pname, $params);
+ @retvals = glGetConvolutionParameterivEXT_p($target, $pname);
 
 Exported under tag C<:GL_EXT_convolution>.
 
@@ -5336,6 +5353,8 @@ Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
  glGetFramebufferAttachmentParameteriv_c($target, $attachment, $pname, $params);
  glGetFramebufferAttachmentParameterivEXT_c($target, $attachment, $pname, $params);
+ @retvals = glGetFramebufferAttachmentParameteriv_p($target, $attachment, $pname);
+ @retvals = glGetFramebufferAttachmentParameterivEXT_p($target, $attachment, $pname);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -5348,6 +5367,7 @@ Exported under tag C<:GL_AMD_framebuffer_sample_positions>.
 =head2 glGetFramebufferParameteriv
 
  glGetFramebufferParameteriv_c($target, $pname, $params);
+ @retvals = glGetFramebufferParameteriv_p($target, $pname);
 
 Exported under tag C<:GL_ARB_framebuffer_no_attachments>.
 
@@ -5400,24 +5420,28 @@ Exported under tag C<:GL_EXT_histogram>.
 =head2 glGetHistogramParameterfv
 
  glGetHistogramParameterfv_c($target, $pname, $params);
+ @retvals = glGetHistogramParameterfv_p($target, $pname);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glGetHistogramParameterfvEXT
 
  glGetHistogramParameterfvEXT_c($target, $pname, $params);
+ @retvals = glGetHistogramParameterfvEXT_p($target, $pname);
 
 Exported under tag C<:GL_EXT_histogram>.
 
 =head2 glGetHistogramParameteriv
 
  glGetHistogramParameteriv_c($target, $pname, $params);
+ @retvals = glGetHistogramParameteriv_p($target, $pname);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glGetHistogramParameterivEXT
 
  glGetHistogramParameterivEXT_c($target, $pname, $params);
+ @retvals = glGetHistogramParameterivEXT_p($target, $pname);
 
 Exported under tag C<:GL_EXT_histogram>.
 
@@ -5708,24 +5732,28 @@ Exported under tag C<:GL_EXT_histogram>.
 =head2 glGetMinmaxParameterfv
 
  glGetMinmaxParameterfv_c($target, $pname, $params);
+ @retvals = glGetMinmaxParameterfv_p($target, $pname);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glGetMinmaxParameterfvEXT
 
  glGetMinmaxParameterfvEXT_c($target, $pname, $params);
+ @retvals = glGetMinmaxParameterfvEXT_p($target, $pname);
 
 Exported under tag C<:GL_EXT_histogram>.
 
 =head2 glGetMinmaxParameteriv
 
  glGetMinmaxParameteriv_c($target, $pname, $params);
+ @retvals = glGetMinmaxParameteriv_p($target, $pname);
 
 Exported under tag C<:GL_ARB_imaging>.
 
 =head2 glGetMinmaxParameterivEXT
 
  glGetMinmaxParameterivEXT_c($target, $pname, $params);
+ @retvals = glGetMinmaxParameterivEXT_p($target, $pname);
 
 Exported under tag C<:GL_EXT_histogram>.
 
@@ -5816,6 +5844,8 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 
  glGetMultisamplefv_c($pname, $index, $val);
  glGetMultisamplefvNV_c($pname, $index, $val);
+ @retvals = glGetMultisamplefv_p($pname, $index);
+ @retvals = glGetMultisamplefvNV_p($pname, $index);
 
 Exported under tag C<:GL_ARB_texture_multisample>.
 
@@ -5834,12 +5864,14 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetNamedBufferParameterivEXT
 
  glGetNamedBufferParameterivEXT_c($buffer, $pname, $params);
+ @retvals = glGetNamedBufferParameterivEXT_p($buffer, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetNamedBufferParameterui64vNV
 
  glGetNamedBufferParameterui64vNV_c($buffer, $pname, $params);
+ @retvals = glGetNamedBufferParameterui64vNV_p($buffer, $pname);
 
 Exported under tag C<:GL_NV_shader_buffer_load>.
 
@@ -5876,6 +5908,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetNamedFramebufferAttachmentParameterivEXT
 
  glGetNamedFramebufferAttachmentParameterivEXT_c($framebuffer, $attachment, $pname, $params);
+ @retvals = glGetNamedFramebufferAttachmentParameterivEXT_p($framebuffer, $attachment, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -5943,6 +5976,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetNamedRenderbufferParameterivEXT
 
  glGetNamedRenderbufferParameterivEXT_c($renderbuffer, $pname, $params);
+ @retvals = glGetNamedRenderbufferParameterivEXT_p($renderbuffer, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6288,6 +6322,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetProgramInfoLog.
 =head2 glGetProgramInterfaceiv
 
  glGetProgramInterfaceiv_c($program, $programInterface, $pname, $params);
+ @retvals = glGetProgramInterfaceiv_p($program, $programInterface, $pname);
 
 Exported under tag C<:GL_ARB_program_interface_query>.
 
@@ -6336,6 +6371,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glGetProgramPipelineiv
 
  glGetProgramPipelineiv_c($pipeline, $pname, $params);
+ @retvals = glGetProgramPipelineiv_p($pipeline, $pname);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -6402,6 +6438,7 @@ Exported under tag C<:GL_NV_vertex_program>.
 =head2 glGetProgramiv
 
  glGetProgramiv_c($program, $pname, $params);
+ @retvals = glGetProgramiv_p($program, $pname);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetProgramiv.xhtml>
@@ -6445,6 +6482,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetQueryIndexediv
 
  glGetQueryIndexediv_c($target, $index, $pname, $params);
+ @retvals = glGetQueryIndexediv_p($target, $index, $pname);
 
 Exported under tag C<:GL_ARB_transform_feedback3>.
 
@@ -6452,6 +6490,8 @@ Exported under tag C<:GL_ARB_transform_feedback3>.
 
  glGetQueryObjecti64v_c($id, $pname, $params);
  glGetQueryObjecti64vEXT_c($id, $pname, $params);
+ @retvals = glGetQueryObjecti64v_p($id, $pname);
+ @retvals = glGetQueryObjecti64vEXT_p($id, $pname);
 
 Exported under tag C<:GL_ARB_timer_query>.
 
@@ -6466,6 +6506,9 @@ Exported under tag C<:GL_ANGLE_timer_query>.
  glGetQueryObjectiv_c($id, $pname, $params);
  glGetQueryObjectivARB_c($id, $pname, $params);
  glGetQueryObjectivEXT_c($id, $pname, $params);
+ @retvals = glGetQueryObjectiv_p($id, $pname);
+ @retvals = glGetQueryObjectivARB_p($id, $pname);
+ @retvals = glGetQueryObjectivEXT_p($id, $pname);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetQueryObjectiv.xhtml>
@@ -6480,6 +6523,8 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 
  glGetQueryObjectui64v_c($id, $pname, $params);
  glGetQueryObjectui64vEXT_c($id, $pname, $params);
+ @retvals = glGetQueryObjectui64v_p($id, $pname);
+ @retvals = glGetQueryObjectui64vEXT_p($id, $pname);
 
 Exported under tag C<:GL_ARB_timer_query>.
 
@@ -6493,6 +6538,8 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 
  glGetQueryObjectuiv_c($id, $pname, $params);
  glGetQueryObjectuivARB_c($id, $pname, $params);
+ @retvals = glGetQueryObjectuiv_p($id, $pname);
+ @retvals = glGetQueryObjectuivARB_p($id, $pname);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetQueryObjectuiv.xhtml>
@@ -6507,6 +6554,8 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 
  glGetQueryiv_c($target, $pname, $params);
  glGetQueryivARB_c($target, $pname, $params);
+ @retvals = glGetQueryiv_p($target, $pname);
+ @retvals = glGetQueryivARB_p($target, $pname);
 
 Exported under tag C<:GL_VERSION_1_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetQueryiv.xhtml>
@@ -6521,6 +6570,8 @@ Exported under tag C<:GL_ANGLE_timer_query>.
 
  glGetRenderbufferParameteriv_c($target, $pname, $params);
  glGetRenderbufferParameterivEXT_c($target, $pname, $params);
+ @retvals = glGetRenderbufferParameteriv_p($target, $pname);
+ @retvals = glGetRenderbufferParameterivEXT_p($target, $pname);
 
 Exported under tag C<:GL_ARB_framebuffer_object>.
 
@@ -6598,6 +6649,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderSource.xh
 =head2 glGetShaderiv
 
  glGetShaderiv_c($shader, $pname, $params);
+ @retvals = glGetShaderiv_p($shader, $pname);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderiv.xhtml>
@@ -7147,12 +7199,14 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetVertexAttribArrayObjectfvATI
 
  glGetVertexAttribArrayObjectfvATI_c($index, $pname, $params);
+ @retvals = glGetVertexAttribArrayObjectfvATI_p($index, $pname);
 
 Exported under tag C<:GL_ATI_vertex_attrib_array_object>.
 
 =head2 glGetVertexAttribArrayObjectivATI
 
  glGetVertexAttribArrayObjectivATI_c($index, $pname, $params);
+ @retvals = glGetVertexAttribArrayObjectivATI_p($index, $pname);
 
 Exported under tag C<:GL_ATI_vertex_attrib_array_object>.
 
@@ -7176,12 +7230,15 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIui
 
  glGetVertexAttribLdv_c($index, $pname, $params);
  glGetVertexAttribLdvEXT_c($index, $pname, $params);
+ @retvals = glGetVertexAttribLdv_p($index, $pname);
+ @retvals = glGetVertexAttribLdvEXT_p($index, $pname);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
 =head2 glGetVertexAttribLi64vNV
 
  glGetVertexAttribLi64vNV_c($index, $pname, $params);
+ @retvals = glGetVertexAttribLi64vNV_p($index, $pname);
 
 Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 
@@ -7194,6 +7251,7 @@ Exported under tag C<:GL_ARB_bindless_texture>.
 =head2 glGetVertexAttribLui64vNV
 
  glGetVertexAttribLui64vNV_c($index, $pname, $params);
+ @retvals = glGetVertexAttribLui64vNV_p($index, $pname);
 
 Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 

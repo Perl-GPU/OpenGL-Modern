@@ -210,9 +210,11 @@ our @gl_functionscompat = qw(
   glGetAttachedShaders_c
   glGetAttribLocation
   glGetBooleani_v_c
+  glGetBooleani_v_p
   glGetBooleanv_c
   glGetBooleanv_p
   glGetBufferParameteriv_c
+  glGetBufferParameteriv_p
   glGetBufferPointerv_c
   glGetBufferSubData_c
   glGetClipPlane_c
@@ -224,6 +226,7 @@ our @gl_functionscompat = qw(
   glGetFloatv_p
   glGetFragDataLocation
   glGetFramebufferAttachmentParameteriv_c
+  glGetFramebufferAttachmentParameteriv_p
   glGetIntegeri_v_c
   glGetIntegeri_v_p
   glGetIntegerv_c
@@ -246,13 +249,19 @@ our @gl_functionscompat = qw(
   glGetPolygonStipple_c
   glGetProgramInfoLog_c
   glGetProgramiv_c
+  glGetProgramiv_p
   glGetQueryObjectiv_c
+  glGetQueryObjectiv_p
   glGetQueryObjectuiv_c
+  glGetQueryObjectuiv_p
   glGetQueryiv_c
+  glGetQueryiv_p
   glGetRenderbufferParameteriv_c
+  glGetRenderbufferParameteriv_p
   glGetShaderInfoLog_c
   glGetShaderSource_c
   glGetShaderiv_c
+  glGetShaderiv_p
   glGetString
   glGetTexEnvfv_c
   glGetTexEnvfv_p
@@ -2127,9 +2136,11 @@ our @gl_functionsrest = qw(
   glGenVertexArraysSGIX_p
   glGenVertexShadersEXT
   glGetActiveAtomicCounterBufferiv_c
+  glGetActiveAtomicCounterBufferiv_p
   glGetActiveAttribARB_c
   glGetActiveSubroutineName_c
   glGetActiveSubroutineUniformiv_c
+  glGetActiveSubroutineUniformiv_p
   glGetActiveSubroutineUniformName_c
   glGetActiveUniformARB_c
   glGetActiveVaryingNV_c
@@ -2139,6 +2150,7 @@ our @gl_functionsrest = qw(
   glGetAttribLocationARB
   glGetBooleanIndexedvEXT_c
   glGetBufferParameteri64v_c
+  glGetBufferParameteri64v_p
   glGetBufferParameterivARB_c
   glGetBufferParameterui64vNV_c
   glGetBufferPointervARB_c
@@ -2148,10 +2160,14 @@ our @gl_functionsrest = qw(
   glGetColorTableEXT_c
   glGetColorTableParameterfvEXT_c
   glGetColorTableParameterfvSGI_c
+  glGetColorTableParameterfvSGI_p
   glGetColorTableParameterfv_c
+  glGetColorTableParameterfv_p
   glGetColorTableParameterivEXT_c
   glGetColorTableParameterivSGI_c
+  glGetColorTableParameterivSGI_p
   glGetColorTableParameteriv_c
+  glGetColorTableParameteriv_p
   glGetColorTableSGI_c
   glGetColorTable_c
   glGetCombinerInputParameterfvNV_c
@@ -2168,9 +2184,13 @@ our @gl_functionsrest = qw(
   glGetConvolutionFilterEXT_c
   glGetConvolutionFilter_c
   glGetConvolutionParameterfvEXT_c
+  glGetConvolutionParameterfvEXT_p
   glGetConvolutionParameterfv_c
+  glGetConvolutionParameterfv_p
   glGetConvolutionParameterivEXT_c
+  glGetConvolutionParameterivEXT_p
   glGetConvolutionParameteriv_c
+  glGetConvolutionParameteriv_p
   glGetCoverageModulationTableNV_c
   glGetDebugMessageLogAMD_c
   glGetDebugMessageLogARB_c
@@ -2216,15 +2236,20 @@ our @gl_functionsrest = qw(
   glGetFramebufferParameterivEXT_c
   glGetFramebufferParameterivEXT_p
   glGetFramebufferParameteriv_c
+  glGetFramebufferParameteriv_p
   glGetFramebufferPixelLocalStorageSizeEXT
   glGetGraphicsResetStatus
   glGetGraphicsResetStatusARB
   glGetHandleARB
   glGetHistogramEXT_c
   glGetHistogramParameterfvEXT_c
+  glGetHistogramParameterfvEXT_p
   glGetHistogramParameterfv_c
+  glGetHistogramParameterfv_p
   glGetHistogramParameterivEXT_c
+  glGetHistogramParameterivEXT_p
   glGetHistogramParameteriv_c
+  glGetHistogramParameteriv_p
   glGetHistogram_c
   glGetImageHandleARB
   glGetImageHandleNV
@@ -2261,9 +2286,13 @@ our @gl_functionsrest = qw(
   glGetMemoryObjectParameterivEXT_c
   glGetMinmaxEXT_c
   glGetMinmaxParameterfvEXT_c
+  glGetMinmaxParameterfvEXT_p
   glGetMinmaxParameterfv_c
+  glGetMinmaxParameterfv_p
   glGetMinmaxParameterivEXT_c
+  glGetMinmaxParameterivEXT_p
   glGetMinmaxParameteriv_c
+  glGetMinmaxParameteriv_p
   glGetMinmax_c
   glGetMPEGParameterfvSGIX_c
   glGetMPEGParameterivSGIX_c
@@ -2271,6 +2300,7 @@ our @gl_functionsrest = qw(
   glGetMPEGQuantTableubv_c
   glGetMultisamplefvNV_c
   glGetMultisamplefv_c
+  glGetMultisamplefv_p
   glGetMultiTexEnvfvEXT_c
   glGetMultiTexEnvfvEXT_p
   glGetMultiTexEnvivEXT_c
@@ -2296,13 +2326,16 @@ our @gl_functionsrest = qw(
   glGetMultiTexParameterivEXT_p
   glGetNamedBufferParameteri64v_c
   glGetNamedBufferParameterivEXT_c
+  glGetNamedBufferParameterivEXT_p
   glGetNamedBufferParameteriv_c
   glGetNamedBufferParameterui64vNV_c
+  glGetNamedBufferParameterui64vNV_p
   glGetNamedBufferPointervEXT_c
   glGetNamedBufferPointerv_c
   glGetNamedBufferSubDataEXT_c
   glGetNamedBufferSubData_c
   glGetNamedFramebufferAttachmentParameterivEXT_c
+  glGetNamedFramebufferAttachmentParameterivEXT_p
   glGetNamedFramebufferAttachmentParameteriv_c
   glGetNamedFramebufferParameterfvAMD_c
   glGetNamedFramebufferParameterivEXT_c
@@ -2315,6 +2348,7 @@ our @gl_functionsrest = qw(
   glGetNamedProgramLocalParameterIuivEXT_c
   glGetNamedProgramStringEXT_c
   glGetNamedRenderbufferParameterivEXT_c
+  glGetNamedRenderbufferParameterivEXT_p
   glGetNamedRenderbufferParameteriv_c
   glGetNamedStringARB_c
   glGetNamedStringivARB_c
@@ -2391,6 +2425,7 @@ our @gl_functionsrest = qw(
   glGetProgramEnvParameterdvARB_c
   glGetProgramEnvParameterfvARB_c
   glGetProgramInterfaceiv_c
+  glGetProgramInterfaceiv_p
   glGetProgramivARB_c
   glGetProgramivNV_c
   glGetProgramLocalParameterdvARB_c
@@ -2401,6 +2436,7 @@ our @gl_functionsrest = qw(
   glGetProgramParameterfvNV_c
   glGetProgramPipelineInfoLog_c
   glGetProgramPipelineiv_c
+  glGetProgramPipelineiv_p
   glGetProgramResourcefvNV_c
   glGetProgramResourceIndex
   glGetProgramResourceiv_c
@@ -2416,16 +2452,19 @@ our @gl_functionsrest = qw(
   glGetQueryBufferObjectui64v
   glGetQueryBufferObjectuiv
   glGetQueryIndexediv_c
+  glGetQueryIndexediv_p
   glGetQueryivANGLE_c
   glGetQueryivARB_c
   glGetQueryObjecti64vANGLE_c
   glGetQueryObjecti64vEXT_c
   glGetQueryObjecti64v_c
+  glGetQueryObjecti64v_p
   glGetQueryObjectivANGLE_c
   glGetQueryObjectivARB_c
   glGetQueryObjectui64vANGLE_c
   glGetQueryObjectui64vEXT_c
   glGetQueryObjectui64v_c
+  glGetQueryObjectui64v_p
   glGetQueryObjectuivANGLE_c
   glGetQueryObjectuivARB_c
   glGetRenderbufferParameterivEXT_c
@@ -2522,7 +2561,9 @@ our @gl_functionsrest = qw(
   glGetVertexArrayPointeri_vEXT_c
   glGetVertexArrayPointervEXT_c
   glGetVertexAttribArrayObjectfvATI_c
+  glGetVertexAttribArrayObjectfvATI_p
   glGetVertexAttribArrayObjectivATI_c
+  glGetVertexAttribArrayObjectivATI_p
   glGetVertexAttribdvARB_c
   glGetVertexAttribdvNV_c
   glGetVertexAttribfvARB_c
@@ -2533,9 +2574,12 @@ our @gl_functionsrest = qw(
   glGetVertexAttribivNV_c
   glGetVertexAttribLdvEXT_c
   glGetVertexAttribLdv_c
+  glGetVertexAttribLdv_p
   glGetVertexAttribLi64vNV_c
+  glGetVertexAttribLi64vNV_p
   glGetVertexAttribLui64vARB_c
   glGetVertexAttribLui64vNV_c
+  glGetVertexAttribLui64vNV_p
   glGetVertexAttribPointervARB_c
   glGetVertexAttribPointervNV_c
   glGetVideoCaptureivNV_c
@@ -4256,6 +4300,7 @@ our %EXPORT_TAGS_GL = (
   'GL_ARB_framebuffer_no_attachments' => [
     'glFramebufferParameteri',
     'glGetFramebufferParameteriv_c',
+    'glGetFramebufferParameteriv_p',
     'glGetNamedFramebufferParameterivEXT_c',
     'glGetNamedFramebufferParameterivEXT_p',
     'glNamedFramebufferParameteriEXT'
@@ -4280,7 +4325,9 @@ our %EXPORT_TAGS_GL = (
     'glGenRenderbuffers_p',
     'glGenerateMipmap',
     'glGetFramebufferAttachmentParameteriv_c',
+    'glGetFramebufferAttachmentParameteriv_p',
     'glGetRenderbufferParameteriv_c',
+    'glGetRenderbufferParameteriv_p',
     'glIsFramebuffer',
     'glIsRenderbuffer',
     'glRenderbufferStorage',
@@ -4378,16 +4425,24 @@ our %EXPORT_TAGS_GL = (
     'glCopyConvolutionFilter1D',
     'glCopyConvolutionFilter2D',
     'glGetColorTableParameterfv_c',
+    'glGetColorTableParameterfv_p',
     'glGetColorTableParameteriv_c',
+    'glGetColorTableParameteriv_p',
     'glGetColorTable_c',
     'glGetConvolutionFilter_c',
     'glGetConvolutionParameterfv_c',
+    'glGetConvolutionParameterfv_p',
     'glGetConvolutionParameteriv_c',
+    'glGetConvolutionParameteriv_p',
     'glGetHistogramParameterfv_c',
+    'glGetHistogramParameterfv_p',
     'glGetHistogramParameteriv_c',
+    'glGetHistogramParameteriv_p',
     'glGetHistogram_c',
     'glGetMinmaxParameterfv_c',
+    'glGetMinmaxParameterfv_p',
     'glGetMinmaxParameteriv_c',
+    'glGetMinmaxParameteriv_p',
     'glGetMinmax_c',
     'glGetSeparableFilter_c',
     'glHistogram',
@@ -4505,6 +4560,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ARB_program_interface_query' => [
     'glGetProgramInterfaceiv_c',
+    'glGetProgramInterfaceiv_p',
     'glGetProgramResourceIndex',
     'glGetProgramResourceLocation',
     'glGetProgramResourceLocationIndex',
@@ -4575,6 +4631,7 @@ our %EXPORT_TAGS_GL = (
     'glGenProgramPipelines_p',
     'glGetProgramPipelineInfoLog_c',
     'glGetProgramPipelineiv_c',
+    'glGetProgramPipelineiv_p',
     'glIsProgramPipeline',
     'glProgramUniform1d',
     'glProgramUniform1dv_c',
@@ -4630,7 +4687,8 @@ our %EXPORT_TAGS_GL = (
     'glValidateProgramPipeline'
   ],
   'GL_ARB_shader_atomic_counters' => [
-    'glGetActiveAtomicCounterBufferiv_c'
+    'glGetActiveAtomicCounterBufferiv_c',
+    'glGetActiveAtomicCounterBufferiv_p'
   ],
   'GL_ARB_shader_image_load_store' => [
     'glBindImageTexture',
@@ -4684,6 +4742,7 @@ our %EXPORT_TAGS_GL = (
     'glGetActiveSubroutineName_c',
     'glGetActiveSubroutineUniformName_c',
     'glGetActiveSubroutineUniformiv_c',
+    'glGetActiveSubroutineUniformiv_p',
     'glGetProgramStageiv_c',
     'glGetSubroutineIndex',
     'glGetSubroutineUniformLocation',
@@ -4739,6 +4798,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ARB_texture_multisample' => [
     'glGetMultisamplefv_c',
+    'glGetMultisamplefv_p',
     'glSampleMaski',
     'glTexImage2DMultisample',
     'glTexImage3DMultisample'
@@ -4759,7 +4819,9 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ARB_timer_query' => [
     'glGetQueryObjecti64v_c',
+    'glGetQueryObjecti64v_p',
     'glGetQueryObjectui64v_c',
+    'glGetQueryObjectui64v_p',
     'glQueryCounter'
   ],
   'GL_ARB_transform_feedback2' => [
@@ -4777,7 +4839,8 @@ our %EXPORT_TAGS_GL = (
     'glBeginQueryIndexed',
     'glDrawTransformFeedbackStream',
     'glEndQueryIndexed',
-    'glGetQueryIndexediv_c'
+    'glGetQueryIndexediv_c',
+    'glGetQueryIndexediv_p'
   ],
   'GL_ARB_transform_feedback_instanced' => [
     'glDrawTransformFeedbackInstanced',
@@ -4812,6 +4875,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ARB_vertex_attrib_64bit' => [
     'glGetVertexAttribLdv_c',
+    'glGetVertexAttribLdv_p',
     'glVertexAttribL1d',
     'glVertexAttribL1dv_c',
     'glVertexAttribL2d',
@@ -5064,7 +5128,9 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ATI_vertex_attrib_array_object' => [
     'glGetVertexAttribArrayObjectfvATI_c',
+    'glGetVertexAttribArrayObjectfvATI_p',
     'glGetVertexAttribArrayObjectivATI_c',
+    'glGetVertexAttribArrayObjectivATI_p',
     'glVertexAttribArrayObjectATI'
   ],
   'GL_ATI_vertex_streams' => [
@@ -5168,7 +5234,9 @@ our %EXPORT_TAGS_GL = (
     'glCopyConvolutionFilter2DEXT',
     'glGetConvolutionFilterEXT_c',
     'glGetConvolutionParameterfvEXT_c',
+    'glGetConvolutionParameterfvEXT_p',
     'glGetConvolutionParameterivEXT_c',
+    'glGetConvolutionParameterivEXT_p',
     'glGetSeparableFilterEXT_c',
     'glSeparableFilter2DEXT_c'
   ],
@@ -5274,9 +5342,11 @@ our %EXPORT_TAGS_GL = (
     'glGetMultiTexParameterivEXT_c',
     'glGetMultiTexParameterivEXT_p',
     'glGetNamedBufferParameterivEXT_c',
+    'glGetNamedBufferParameterivEXT_p',
     'glGetNamedBufferPointervEXT_c',
     'glGetNamedBufferSubDataEXT_c',
     'glGetNamedFramebufferAttachmentParameterivEXT_c',
+    'glGetNamedFramebufferAttachmentParameterivEXT_p',
     'glGetNamedProgramLocalParameterIivEXT_c',
     'glGetNamedProgramLocalParameterIuivEXT_c',
     'glGetNamedProgramLocalParameterdvEXT_c',
@@ -5284,6 +5354,7 @@ our %EXPORT_TAGS_GL = (
     'glGetNamedProgramStringEXT_c',
     'glGetNamedProgramivEXT_c',
     'glGetNamedRenderbufferParameterivEXT_c',
+    'glGetNamedRenderbufferParameterivEXT_p',
     'glGetPointerIndexedvEXT_c',
     'glGetPointeri_vEXT_c',
     'glGetTextureImageEXT_c',
@@ -5581,10 +5652,14 @@ our %EXPORT_TAGS_GL = (
   'GL_EXT_histogram' => [
     'glGetHistogramEXT_c',
     'glGetHistogramParameterfvEXT_c',
+    'glGetHistogramParameterfvEXT_p',
     'glGetHistogramParameterivEXT_c',
+    'glGetHistogramParameterivEXT_p',
     'glGetMinmaxEXT_c',
     'glGetMinmaxParameterfvEXT_c',
+    'glGetMinmaxParameterfvEXT_p',
     'glGetMinmaxParameterivEXT_c',
+    'glGetMinmaxParameterivEXT_p',
     'glHistogramEXT',
     'glMinmaxEXT',
     'glResetHistogramEXT',
@@ -6430,6 +6505,7 @@ our %EXPORT_TAGS_GL = (
     'glGetBufferParameterui64vNV_c',
     'glGetIntegerui64vNV_c',
     'glGetNamedBufferParameterui64vNV_c',
+    'glGetNamedBufferParameterui64vNV_p',
     'glIsBufferResidentNV',
     'glIsNamedBufferResidentNV',
     'glMakeBufferNonResidentNV',
@@ -6502,7 +6578,9 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_NV_vertex_attrib_integer_64bit' => [
     'glGetVertexAttribLi64vNV_c',
+    'glGetVertexAttribLi64vNV_p',
     'glGetVertexAttribLui64vNV_c',
+    'glGetVertexAttribLui64vNV_p',
     'glVertexAttribL1i64NV',
     'glVertexAttribL1i64vNV_c',
     'glVertexAttribL1ui64NV',
@@ -6887,7 +6965,9 @@ our %EXPORT_TAGS_GL = (
     'glColorTableSGI_c',
     'glCopyColorTableSGI',
     'glGetColorTableParameterfvSGI_c',
+    'glGetColorTableParameterfvSGI_p',
     'glGetColorTableParameterivSGI_c',
+    'glGetColorTableParameterivSGI_p',
     'glGetColorTableSGI_c'
   ],
   'GL_SGI_fft' => [
@@ -7441,11 +7521,15 @@ our %EXPORT_TAGS_GL = (
     'glGenQueries_c',
     'glGenQueries_p',
     'glGetBufferParameteriv_c',
+    'glGetBufferParameteriv_p',
     'glGetBufferPointerv_c',
     'glGetBufferSubData_c',
     'glGetQueryObjectiv_c',
+    'glGetQueryObjectiv_p',
     'glGetQueryObjectuiv_c',
+    'glGetQueryObjectuiv_p',
     'glGetQueryiv_c',
+    'glGetQueryiv_p',
     'glIsBuffer',
     'glIsQuery',
     'glMapBuffer_c',
@@ -7470,9 +7554,11 @@ our %EXPORT_TAGS_GL = (
     'glGetAttribLocation',
     'glGetProgramInfoLog_c',
     'glGetProgramiv_c',
+    'glGetProgramiv_p',
     'glGetShaderInfoLog_c',
     'glGetShaderSource_c',
     'glGetShaderiv_c',
+    'glGetShaderiv_p',
     'glGetUniformLocation',
     'glGetUniformfv_c',
     'glGetUniformiv_c',
@@ -7593,9 +7679,12 @@ our %EXPORT_TAGS_GL = (
     'glGenVertexArrays_p',
     'glGenerateMipmap',
     'glGetBooleani_v_c',
+    'glGetBooleani_v_p',
     'glGetFragDataLocation',
     'glGetFramebufferAttachmentParameteriv_c',
+    'glGetFramebufferAttachmentParameteriv_p',
     'glGetRenderbufferParameteriv_c',
+    'glGetRenderbufferParameteriv_p',
     'glGetTexParameterIiv_c',
     'glGetTexParameterIiv_p',
     'glGetTexParameterIuiv_c',
@@ -7671,11 +7760,13 @@ our %EXPORT_TAGS_GL = (
     'glFenceSync',
     'glFramebufferTexture',
     'glGetBufferParameteri64v_c',
+    'glGetBufferParameteri64v_p',
     'glGetInteger64i_v_c',
     'glGetInteger64i_v_p',
     'glGetInteger64v_c',
     'glGetInteger64v_p',
     'glGetMultisamplefv_c',
+    'glGetMultisamplefv_p',
     'glGetSynciv_c',
     'glIsSync',
     'glMultiDrawElementsBaseVertex_c',
@@ -7698,7 +7789,9 @@ our %EXPORT_TAGS_GL = (
     'glGenSamplers_p',
     'glGetFragDataIndex',
     'glGetQueryObjecti64v_c',
+    'glGetQueryObjecti64v_p',
     'glGetQueryObjectui64v_c',
+    'glGetQueryObjectui64v_p',
     'glGetSamplerParameterIiv_c',
     'glGetSamplerParameterIiv_p',
     'glGetSamplerParameterIuiv_c',
@@ -7774,8 +7867,10 @@ our %EXPORT_TAGS_GL = (
     'glGetActiveSubroutineName_c',
     'glGetActiveSubroutineUniformName_c',
     'glGetActiveSubroutineUniformiv_c',
+    'glGetActiveSubroutineUniformiv_p',
     'glGetProgramStageiv_c',
     'glGetQueryIndexediv_c',
+    'glGetQueryIndexediv_p',
     'glGetSubroutineIndex',
     'glGetSubroutineUniformLocation',
     'glGetUniformSubroutineuiv_c',
@@ -7824,8 +7919,10 @@ our %EXPORT_TAGS_GL = (
     'glGetProgramBinary_c',
     'glGetProgramPipelineInfoLog_c',
     'glGetProgramPipelineiv_c',
+    'glGetProgramPipelineiv_p',
     'glGetShaderPrecisionFormat_c',
     'glGetVertexAttribLdv_c',
+    'glGetVertexAttribLdv_p',
     'glIsProgramPipeline',
     'glProgramBinary_c',
     'glProgramParameteri',
@@ -7907,6 +8004,7 @@ our %EXPORT_TAGS_GL = (
     'glDrawTransformFeedbackInstanced',
     'glDrawTransformFeedbackStreamInstanced',
     'glGetActiveAtomicCounterBufferiv_c',
+    'glGetActiveAtomicCounterBufferiv_p',
     'glGetInternalformativ_c',
     'glMemoryBarrier',
     'glTexStorage1D',
@@ -7928,12 +8026,14 @@ our %EXPORT_TAGS_GL = (
     'glFramebufferParameteri',
     'glGetDebugMessageLog_c',
     'glGetFramebufferParameteriv_c',
+    'glGetFramebufferParameteriv_p',
     'glGetInternalformati64v_c',
     'glGetNamedFramebufferParameterivEXT_c',
     'glGetNamedFramebufferParameterivEXT_p',
     'glGetObjectLabel_c',
     'glGetObjectPtrLabel_c',
     'glGetProgramInterfaceiv_c',
+    'glGetProgramInterfaceiv_p',
     'glGetProgramResourceIndex',
     'glGetProgramResourceLocation',
     'glGetProgramResourceLocationIndex',

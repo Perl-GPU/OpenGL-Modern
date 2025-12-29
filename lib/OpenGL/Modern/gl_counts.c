@@ -3,6 +3,87 @@
 
 #include <GL/glew.h>
 
+int oglm_count_ArrayObjectPNameATI(int param) {
+  switch (param) {
+    case GL_OBJECT_BUFFER_SIZE_ATI:
+      return 1;
+    case GL_OBJECT_BUFFER_USAGE_ATI:
+      return 4;
+  }
+  return -1;
+}
+int oglm_count_AtomicCounterBufferPName(int param) {
+  switch (param) {
+    case GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER:
+    case GL_ATOMIC_COUNTER_BUFFER_BINDING:
+    case GL_ATOMIC_COUNTER_BUFFER_DATA_SIZE:
+    case GL_ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTERS:
+    case GL_ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTER_INDICES:
+    case GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER:
+    case GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER:
+    case GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER:
+    case GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER:
+    case GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_BlendingFactor(int param) {
+  switch (param) {
+    case GL_SRC1_ALPHA:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_BufferPNameARB(int param) {
+  switch (param) {
+    case GL_BUFFER_IMMUTABLE_STORAGE:
+    case GL_BUFFER_STORAGE_FLAGS:
+    case GL_BUFFER_SIZE:
+    case GL_BUFFER_USAGE:
+    case GL_BUFFER_ACCESS:
+    case GL_BUFFER_MAPPED:
+    case GL_BUFFER_ACCESS_FLAGS:
+    case GL_BUFFER_MAP_LENGTH:
+    case GL_BUFFER_MAP_OFFSET:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_BufferPointerNameARB(int param) {
+  switch (param) {
+    case GL_BUFFER_MAP_POINTER:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_BufferStorageTarget(int param) {
+  switch (param) {
+    case GL_TEXTURE_BUFFER:
+    case GL_COPY_READ_BUFFER:
+    case GL_COPY_WRITE_BUFFER:
+    case GL_SHADER_STORAGE_BUFFER:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_BufferTargetARB(int param) {
+  switch (param) {
+    case GL_TEXTURE_BUFFER:
+    case GL_COPY_READ_BUFFER:
+    case GL_COPY_WRITE_BUFFER:
+    case GL_SHADER_STORAGE_BUFFER:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ClampColorTargetARB(int param) {
+  switch (param) {
+    case GL_CLAMP_READ_COLOR:
+      return 1;
+  }
+  return -1;
+}
 int oglm_count_ClipPlaneName(int param) {
   switch (param) {
     case GL_CLIP_PLANE0:
@@ -26,11 +107,109 @@ int oglm_count_ColorMaterialParameter(int param) {
   }
   return -1;
 }
+int oglm_count_ColorTableParameterPName(int param) {
+  switch (param) {
+    case GL_COLOR_TABLE_FORMAT:
+    case GL_COLOR_TABLE_WIDTH:
+    case GL_COLOR_TABLE_RED_SIZE:
+    case GL_COLOR_TABLE_GREEN_SIZE:
+    case GL_COLOR_TABLE_BLUE_SIZE:
+    case GL_COLOR_TABLE_ALPHA_SIZE:
+    case GL_COLOR_TABLE_LUMINANCE_SIZE:
+    case GL_COLOR_TABLE_INTENSITY_SIZE:
+      return 1;
+    case GL_COLOR_TABLE_SCALE:
+    case GL_COLOR_TABLE_BIAS:
+      return 4;
+  }
+  return -1;
+}
+int oglm_count_ColorTableTarget(int param) {
+  switch (param) {
+    case GL_COLOR_TABLE:
+    case GL_POST_CONVOLUTION_COLOR_TABLE:
+    case GL_POST_COLOR_MATRIX_COLOR_TABLE:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ColorTableTargetSGI(int param) {
+  switch (param) {
+    case GL_TEXTURE_COLOR_TABLE_SGI:
+    case GL_COLOR_TABLE:
+    case GL_POST_CONVOLUTION_COLOR_TABLE:
+    case GL_POST_COLOR_MATRIX_COLOR_TABLE:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ContainerType(int param) {
+  switch (param) {
+    case GL_PROGRAM_OBJECT_ARB:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ContextFlagMask(int param) {
+  switch (param) {
+    case GL_CONTEXT_FLAG_DEBUG_BIT:
+    case GL_CONTEXT_FLAG_ROBUST_ACCESS_BIT_ARB:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ConvolutionParameter(int param) {
+  switch (param) {
+    case GL_CONVOLUTION_BORDER_MODE:
+    case GL_CONVOLUTION_FORMAT:
+    case GL_CONVOLUTION_WIDTH:
+    case GL_CONVOLUTION_HEIGHT:
+    case GL_MAX_CONVOLUTION_WIDTH:
+    case GL_MAX_CONVOLUTION_HEIGHT:
+      return 1;
+    case GL_CONVOLUTION_FILTER_SCALE:
+    case GL_CONVOLUTION_FILTER_BIAS:
+    case GL_CONVOLUTION_BORDER_COLOR:
+      return 4;
+  }
+  return -1;
+}
+int oglm_count_ConvolutionTarget(int param) {
+  switch (param) {
+    case GL_CONVOLUTION_1D:
+    case GL_CONVOLUTION_2D:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ConvolutionTargetEXT(int param) {
+  switch (param) {
+    case GL_CONVOLUTION_1D:
+    case GL_CONVOLUTION_2D:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_CopyBufferSubDataTarget(int param) {
+  switch (param) {
+    case GL_TEXTURE_BUFFER:
+    case GL_COPY_READ_BUFFER:
+    case GL_COPY_WRITE_BUFFER:
+    case GL_SHADER_STORAGE_BUFFER:
+      return 1;
+  }
+  return -1;
+}
 int oglm_count_CopyImageSubDataTarget(int param) {
   switch (param) {
     case GL_TEXTURE_1D:
     case GL_TEXTURE_2D:
     case GL_TEXTURE_3D:
+    case GL_TEXTURE_RECTANGLE:
+    case GL_TEXTURE_CUBE_MAP:
+    case GL_TEXTURE_1D_ARRAY:
+    case GL_TEXTURE_2D_ARRAY:
+    case GL_TEXTURE_CUBE_MAP_ARRAY:
       return 1;
   }
   return -1;
@@ -45,13 +224,13 @@ int oglm_count_EnableCap(int param) {
     case GL_CULL_FACE:
     case GL_LIGHTING:
     case GL_COLOR_MATERIAL:
+    case GL_FOG:
     case GL_DEPTH_TEST:
     case GL_STENCIL_TEST:
     case GL_NORMALIZE:
     case GL_ALPHA_TEST:
     case GL_DITHER:
     case GL_BLEND:
-    case GL_INDEX_LOGIC_OP:
     case GL_COLOR_LOGIC_OP:
     case GL_SCISSOR_TEST:
     case GL_TEXTURE_GEN_S:
@@ -68,6 +247,7 @@ int oglm_count_EnableCap(int param) {
     case GL_MAP1_TEXTURE_COORD_4:
     case GL_MAP1_VERTEX_3:
     case GL_MAP1_VERTEX_4:
+    case GL_MAP2_COLOR_4:
     case GL_MAP2_INDEX:
     case GL_MAP2_NORMAL:
     case GL_MAP2_TEXTURE_COORD_1:
@@ -101,6 +281,26 @@ int oglm_count_EnableCap(int param) {
     case GL_INDEX_ARRAY:
     case GL_TEXTURE_COORD_ARRAY:
     case GL_EDGE_FLAG_ARRAY:
+    case GL_MULTISAMPLE:
+    case GL_SAMPLE_ALPHA_TO_COVERAGE:
+    case GL_SAMPLE_ALPHA_TO_ONE:
+    case GL_SAMPLE_COVERAGE:
+    case GL_TEXTURE_COLOR_TABLE_SGI:
+    case GL_COLOR_TABLE:
+    case GL_POST_CONVOLUTION_COLOR_TABLE:
+    case GL_POST_COLOR_MATRIX_COLOR_TABLE:
+    case GL_DEBUG_OUTPUT_SYNCHRONOUS:
+    case GL_TEXTURE_RECTANGLE:
+    case GL_TEXTURE_CUBE_MAP:
+    case GL_PROGRAM_POINT_SIZE:
+    case GL_DEPTH_CLAMP:
+    case GL_TEXTURE_CUBE_MAP_SEAMLESS:
+    case GL_RASTERIZER_DISCARD:
+    case GL_PRIMITIVE_RESTART_FIXED_INDEX:
+    case GL_FRAMEBUFFER_SRGB:
+    case GL_SAMPLE_MASK:
+    case GL_PRIMITIVE_RESTART:
+    case GL_DEBUG_OUTPUT:
       return 1;
   }
   return -1;
@@ -112,6 +312,7 @@ int oglm_count_FogPName(int param) {
     case GL_FOG_START:
     case GL_FOG_END:
     case GL_FOG_MODE:
+    case GL_FOG_COORD_SRC:
       return 1;
   }
   return -1;
@@ -147,11 +348,92 @@ int oglm_count_FragmentLightParameterSGIX(int param) {
   }
   return -1;
 }
+int oglm_count_FramebufferAttachmentParameterName(int param) {
+  switch (param) {
+    case GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING:
+    case GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE:
+    case GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE:
+    case GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE:
+    case GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE:
+    case GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE:
+    case GL_FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE:
+    case GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE:
+    case GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE:
+    case GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME:
+    case GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL:
+    case GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE:
+    case GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER:
+    case GL_FRAMEBUFFER_ATTACHMENT_LAYERED:
+    case GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR:
+    case GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_FramebufferParameterName(int param) {
+  switch (param) {
+    case GL_FRAMEBUFFER_DEFAULT_WIDTH:
+    case GL_FRAMEBUFFER_DEFAULT_HEIGHT:
+    case GL_FRAMEBUFFER_DEFAULT_LAYERS:
+    case GL_FRAMEBUFFER_DEFAULT_SAMPLES:
+    case GL_FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_FramebufferTarget(int param) {
+  switch (param) {
+    case GL_READ_FRAMEBUFFER:
+    case GL_DRAW_FRAMEBUFFER:
+      return 1;
+  }
+  return -1;
+}
 int oglm_count_GetFramebufferParameter(int param) {
   switch (param) {
     case GL_DOUBLEBUFFER:
     case GL_STEREO:
+    case GL_SAMPLE_BUFFERS:
+    case GL_SAMPLES:
+    case GL_IMPLEMENTATION_COLOR_READ_TYPE:
+    case GL_IMPLEMENTATION_COLOR_READ_FORMAT:
+    case GL_FRAMEBUFFER_DEFAULT_WIDTH:
+    case GL_FRAMEBUFFER_DEFAULT_HEIGHT:
+    case GL_FRAMEBUFFER_DEFAULT_LAYERS:
+    case GL_FRAMEBUFFER_DEFAULT_SAMPLES:
+    case GL_FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS:
       return 1;
+  }
+  return -1;
+}
+int oglm_count_GetHistogramParameterPNameEXT(int param) {
+  switch (param) {
+    case GL_HISTOGRAM_WIDTH:
+    case GL_HISTOGRAM_FORMAT:
+    case GL_HISTOGRAM_RED_SIZE:
+    case GL_HISTOGRAM_GREEN_SIZE:
+    case GL_HISTOGRAM_BLUE_SIZE:
+    case GL_HISTOGRAM_ALPHA_SIZE:
+    case GL_HISTOGRAM_LUMINANCE_SIZE:
+    case GL_HISTOGRAM_SINK:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_GetMinmaxParameterPNameEXT(int param) {
+  switch (param) {
+    case GL_MINMAX_FORMAT:
+    case GL_MINMAX_SINK:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_GetMultisamplePNameNV(int param) {
+  switch (param) {
+    case GL_PROGRAMMABLE_SAMPLE_LOCATION_ARB:
+      return 1;
+    case GL_SAMPLE_POSITION:
+      return 2;
   }
   return -1;
 }
@@ -163,7 +445,6 @@ int oglm_count_GetPName(int param) {
     case GL_CURRENT_RASTER_DISTANCE:
     case GL_POINT_SMOOTH:
     case GL_POINT_SIZE:
-    case GL_POINT_SIZE_RANGE:
     case GL_POINT_SIZE_GRANULARITY:
     case GL_LINE_SMOOTH:
     case GL_LINE_WIDTH:
@@ -188,6 +469,7 @@ int oglm_count_GetPName(int param) {
     case GL_COLOR_MATERIAL_FACE:
     case GL_COLOR_MATERIAL_PARAMETER:
     case GL_COLOR_MATERIAL:
+    case GL_FOG:
     case GL_FOG_INDEX:
     case GL_FOG_DENSITY:
     case GL_FOG_START:
@@ -221,7 +503,7 @@ int oglm_count_GetPName(int param) {
     case GL_BLEND_SRC:
     case GL_BLEND:
     case GL_LOGIC_OP_MODE:
-    case GL_INDEX_LOGIC_OP:
+    case GL_LOGIC_OP:
     case GL_COLOR_LOGIC_OP:
     case GL_AUX_BUFFERS:
     case GL_DRAW_BUFFER:
@@ -315,6 +597,7 @@ int oglm_count_GetPName(int param) {
     case GL_MAP1_TEXTURE_COORD_4:
     case GL_MAP1_VERTEX_3:
     case GL_MAP1_VERTEX_4:
+    case GL_MAP2_COLOR_4:
     case GL_MAP2_INDEX:
     case GL_MAP2_NORMAL:
     case GL_MAP2_TEXTURE_COORD_1:
@@ -326,6 +609,9 @@ int oglm_count_GetPName(int param) {
     case GL_MAP1_GRID_SEGMENTS:
     case GL_TEXTURE_1D:
     case GL_TEXTURE_2D:
+    case GL_FEEDBACK_BUFFER_SIZE:
+    case GL_FEEDBACK_BUFFER_TYPE:
+    case GL_SELECTION_BUFFER_SIZE:
     case GL_POLYGON_OFFSET_UNITS:
     case GL_POLYGON_OFFSET_POINT:
     case GL_POLYGON_OFFSET_LINE:
@@ -343,14 +629,12 @@ int oglm_count_GetPName(int param) {
     case GL_LIGHT5:
     case GL_LIGHT6:
     case GL_LIGHT7:
-    case GL_BLEND_EQUATION_EXT:
-    case GL_PACK_CMYK_HINT_EXT:
-    case GL_UNPACK_CMYK_HINT_EXT:
+    case GL_BLEND_EQUATION:
     case GL_POLYGON_OFFSET_FILL:
     case GL_POLYGON_OFFSET_FACTOR:
-    case GL_POLYGON_OFFSET_BIAS_EXT:
     case GL_TEXTURE_BINDING_1D:
     case GL_TEXTURE_BINDING_2D:
+    case GL_TEXTURE_BINDING_3D:
     case GL_PACK_SKIP_IMAGES:
     case GL_PACK_IMAGE_HEIGHT:
     case GL_UNPACK_SKIP_IMAGES:
@@ -365,41 +649,190 @@ int oglm_count_GetPName(int param) {
     case GL_VERTEX_ARRAY_SIZE:
     case GL_VERTEX_ARRAY_TYPE:
     case GL_VERTEX_ARRAY_STRIDE:
-    case GL_VERTEX_ARRAY_COUNT_EXT:
     case GL_NORMAL_ARRAY_TYPE:
     case GL_NORMAL_ARRAY_STRIDE:
-    case GL_NORMAL_ARRAY_COUNT_EXT:
     case GL_COLOR_ARRAY_SIZE:
     case GL_COLOR_ARRAY_TYPE:
     case GL_COLOR_ARRAY_STRIDE:
-    case GL_COLOR_ARRAY_COUNT_EXT:
     case GL_INDEX_ARRAY_TYPE:
     case GL_INDEX_ARRAY_STRIDE:
-    case GL_INDEX_ARRAY_COUNT_EXT:
     case GL_TEXTURE_COORD_ARRAY_SIZE:
     case GL_TEXTURE_COORD_ARRAY_TYPE:
     case GL_TEXTURE_COORD_ARRAY_STRIDE:
-    case GL_TEXTURE_COORD_ARRAY_COUNT_EXT:
     case GL_EDGE_FLAG_ARRAY_STRIDE:
-    case GL_EDGE_FLAG_ARRAY_COUNT_EXT:
+    case GL_SAMPLE_BUFFERS:
+    case GL_SAMPLES:
+    case GL_SAMPLE_COVERAGE_VALUE:
+    case GL_SAMPLE_COVERAGE_INVERT:
+    case GL_TEXTURE_COLOR_TABLE_SGI:
+    case GL_BLEND_DST_RGB:
+    case GL_BLEND_SRC_RGB:
+    case GL_BLEND_DST_ALPHA:
+    case GL_BLEND_SRC_ALPHA:
     case GL_MAX_ELEMENTS_VERTICES:
     case GL_MAX_ELEMENTS_INDICES:
-    case GL_POINT_SIZE_MIN_ARB:
-    case GL_POINT_SIZE_MAX_ARB:
-    case GL_POINT_FADE_THRESHOLD_SIZE_ARB:
+    case GL_POINT_SIZE_MIN:
+    case GL_POINT_SIZE_MAX:
+    case GL_POINT_FADE_THRESHOLD_SIZE:
     case GL_LIGHT_MODEL_COLOR_CONTROL:
+    case GL_MAJOR_VERSION:
+    case GL_MINOR_VERSION:
+    case GL_NUM_EXTENSIONS:
+    case GL_CONTEXT_FLAGS:
+    case GL_PROGRAM_PIPELINE_BINDING:
+    case GL_MAX_VIEWPORTS:
+    case GL_VIEWPORT_SUBPIXEL_BITS:
+    case GL_LAYER_PROVOKING_VERTEX:
+    case GL_VIEWPORT_INDEX_PROVOKING_VERTEX:
+    case GL_MAX_COMPUTE_UNIFORM_COMPONENTS:
+    case GL_MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS:
+    case GL_MAX_COMPUTE_ATOMIC_COUNTERS:
+    case GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS:
+    case GL_MAX_DEBUG_GROUP_STACK_DEPTH:
+    case GL_DEBUG_GROUP_STACK_DEPTH:
+    case GL_MAX_UNIFORM_LOCATIONS:
+    case GL_VERTEX_BINDING_DIVISOR:
+    case GL_VERTEX_BINDING_OFFSET:
+    case GL_VERTEX_BINDING_STRIDE:
+    case GL_MAX_VERTEX_ATTRIB_RELATIVE_OFFSET:
+    case GL_MAX_VERTEX_ATTRIB_BINDINGS:
+    case GL_MAX_LABEL_LENGTH:
+    case GL_ACTIVE_TEXTURE:
+    case GL_MAX_RENDERBUFFER_SIZE:
+    case GL_TEXTURE_COMPRESSION_HINT:
+    case GL_TEXTURE_BINDING_RECTANGLE:
+    case GL_MAX_RECTANGLE_TEXTURE_SIZE:
+    case GL_MAX_TEXTURE_LOD_BIAS:
+    case GL_TEXTURE_BINDING_CUBE_MAP:
+    case GL_MAX_CUBE_MAP_TEXTURE_SIZE:
+    case GL_VERTEX_ARRAY_BINDING:
+    case GL_PROGRAM_POINT_SIZE:
+    case GL_NUM_COMPRESSED_TEXTURE_FORMATS:
+    case GL_NUM_PROGRAM_BINARY_FORMATS:
+    case GL_PROGRAM_BINARY_FORMATS:
+    case GL_STENCIL_BACK_FUNC:
+    case GL_STENCIL_BACK_FAIL:
+    case GL_STENCIL_BACK_PASS_DEPTH_FAIL:
+    case GL_STENCIL_BACK_PASS_DEPTH_PASS:
+    case GL_MAX_DRAW_BUFFERS:
+    case GL_BLEND_EQUATION_ALPHA:
+    case GL_MAX_VERTEX_ATTRIBS:
+    case GL_MAX_TEXTURE_IMAGE_UNITS:
+    case GL_ARRAY_BUFFER_BINDING:
+    case GL_ELEMENT_ARRAY_BUFFER_BINDING:
+    case GL_PIXEL_PACK_BUFFER_BINDING:
+    case GL_PIXEL_UNPACK_BUFFER_BINDING:
+    case GL_MAX_DUAL_SOURCE_DRAW_BUFFERS:
     case GL_MAX_ARRAY_TEXTURE_LAYERS:
-    case GL_MAX_COLOR_ATTACHMENTS_EXT:
+    case GL_MIN_PROGRAM_TEXEL_OFFSET:
+    case GL_MAX_PROGRAM_TEXEL_OFFSET:
+    case GL_SAMPLER_BINDING:
+    case GL_UNIFORM_BUFFER_BINDING:
+    case GL_UNIFORM_BUFFER_START:
+    case GL_UNIFORM_BUFFER_SIZE:
+    case GL_MAX_VERTEX_UNIFORM_BLOCKS:
+    case GL_MAX_GEOMETRY_UNIFORM_BLOCKS:
+    case GL_MAX_FRAGMENT_UNIFORM_BLOCKS:
+    case GL_MAX_COMBINED_UNIFORM_BLOCKS:
+    case GL_MAX_UNIFORM_BUFFER_BINDINGS:
+    case GL_MAX_UNIFORM_BLOCK_SIZE:
+    case GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS:
+    case GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS:
+    case GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS:
+    case GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT:
+    case GL_MAX_FRAGMENT_UNIFORM_COMPONENTS:
+    case GL_MAX_VERTEX_UNIFORM_COMPONENTS:
+    case GL_MAX_VARYING_FLOATS:
+    case GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS:
+    case GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS:
+    case GL_FRAGMENT_SHADER_DERIVATIVE_HINT:
+    case GL_CURRENT_PROGRAM:
+    case GL_IMPLEMENTATION_COLOR_READ_TYPE:
+    case GL_IMPLEMENTATION_COLOR_READ_FORMAT:
+    case GL_TEXTURE_BINDING_1D_ARRAY:
+    case GL_TEXTURE_BINDING_2D_ARRAY:
+    case GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS:
+    case GL_MAX_TEXTURE_BUFFER_SIZE:
+    case GL_TEXTURE_BINDING_BUFFER:
+    case GL_TRANSFORM_FEEDBACK_BUFFER_START:
+    case GL_TRANSFORM_FEEDBACK_BUFFER_SIZE:
+    case GL_TRANSFORM_FEEDBACK_BUFFER_BINDING:
+    case GL_STENCIL_BACK_REF:
+    case GL_STENCIL_BACK_VALUE_MASK:
+    case GL_STENCIL_BACK_WRITEMASK:
+    case GL_DRAW_FRAMEBUFFER_BINDING:
+    case GL_RENDERBUFFER_BINDING:
+    case GL_READ_FRAMEBUFFER_BINDING:
+    case GL_MAX_COLOR_ATTACHMENTS:
+    case GL_MAX_ELEMENT_INDEX:
+    case GL_MAX_GEOMETRY_UNIFORM_COMPONENTS:
+    case GL_SHADER_BINARY_FORMATS:
+    case GL_NUM_SHADER_BINARY_FORMATS:
+    case GL_SHADER_COMPILER:
+    case GL_MAX_VERTEX_UNIFORM_VECTORS:
+    case GL_MAX_VARYING_VECTORS:
+    case GL_MAX_FRAGMENT_UNIFORM_VECTORS:
+    case GL_TIMESTAMP:
+    case GL_PROVOKING_VERTEX:
+    case GL_MAX_SAMPLE_MASK_WORDS:
+    case GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS:
+    case GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS:
+    case GL_PRIMITIVE_RESTART_INDEX:
+    case GL_MIN_MAP_BUFFER_ALIGNMENT:
+    case GL_SHADER_STORAGE_BUFFER_BINDING:
+    case GL_SHADER_STORAGE_BUFFER_START:
+    case GL_SHADER_STORAGE_BUFFER_SIZE:
+    case GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS:
+    case GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS:
+    case GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS:
+    case GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS:
+    case GL_MAX_FRAGMENT_SHADER_STORAGE_BLOCKS:
+    case GL_MAX_COMPUTE_SHADER_STORAGE_BLOCKS:
+    case GL_MAX_COMBINED_SHADER_STORAGE_BLOCKS:
+    case GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS:
+    case GL_SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT:
+    case GL_MAX_COMPUTE_WORK_GROUP_INVOCATIONS:
+    case GL_DISPATCH_INDIRECT_BUFFER_BINDING:
+    case GL_TEXTURE_BINDING_2D_MULTISAMPLE:
+    case GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY:
+    case GL_MAX_COLOR_TEXTURE_SAMPLES:
+    case GL_MAX_DEPTH_TEXTURE_SAMPLES:
+    case GL_MAX_INTEGER_SAMPLES:
+    case GL_MAX_SERVER_WAIT_TIMEOUT:
+    case GL_MAX_VERTEX_OUTPUT_COMPONENTS:
+    case GL_MAX_GEOMETRY_INPUT_COMPONENTS:
+    case GL_MAX_GEOMETRY_OUTPUT_COMPONENTS:
+    case GL_MAX_FRAGMENT_INPUT_COMPONENTS:
+    case GL_CONTEXT_PROFILE_MASK:
+    case GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT:
+    case GL_MAX_COMPUTE_UNIFORM_BLOCKS:
+    case GL_MAX_COMPUTE_TEXTURE_IMAGE_UNITS:
+    case GL_MAX_VERTEX_ATOMIC_COUNTERS:
+    case GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS:
+    case GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS:
+    case GL_MAX_GEOMETRY_ATOMIC_COUNTERS:
+    case GL_MAX_FRAGMENT_ATOMIC_COUNTERS:
+    case GL_MAX_COMBINED_ATOMIC_COUNTERS:
+    case GL_MAX_FRAMEBUFFER_WIDTH:
+    case GL_MAX_FRAMEBUFFER_HEIGHT:
+    case GL_MAX_FRAMEBUFFER_LAYERS:
+    case GL_MAX_FRAMEBUFFER_SAMPLES:
       return 1;
+    case GL_POINT_SIZE_RANGE:
     case GL_LINE_WIDTH_RANGE:
     case GL_POLYGON_MODE:
     case GL_DEPTH_RANGE:
     case GL_MAX_VIEWPORT_DIMS:
     case GL_MAP1_GRID_DOMAIN:
     case GL_MAP2_GRID_SEGMENTS:
+    case GL_VIEWPORT_BOUNDS_RANGE:
+    case GL_ALIASED_POINT_SIZE_RANGE:
+    case GL_ALIASED_LINE_WIDTH_RANGE:
       return 2;
     case GL_CURRENT_NORMAL:
-    case GL_POINT_DISTANCE_ATTENUATION_ARB:
+    case GL_POINT_DISTANCE_ATTENUATION:
+    case GL_MAX_COMPUTE_WORK_GROUP_COUNT:
+    case GL_MAX_COMPUTE_WORK_GROUP_SIZE:
       return 3;
     case GL_CURRENT_COLOR:
     case GL_CURRENT_TEXTURE_COORDS:
@@ -414,7 +847,7 @@ int oglm_count_GetPName(int param) {
     case GL_COLOR_CLEAR_VALUE:
     case GL_COLOR_WRITEMASK:
     case GL_MAP2_GRID_DOMAIN:
-    case GL_BLEND_COLOR_EXT:
+    case GL_BLEND_COLOR:
       return 4;
     case GL_MODELVIEW_MATRIX:
     case GL_PROJECTION_MATRIX:
@@ -423,14 +856,38 @@ int oglm_count_GetPName(int param) {
   }
   return -1;
 }
+int oglm_count_GetPointervPName(int param) {
+  switch (param) {
+    case GL_FEEDBACK_BUFFER_POINTER:
+    case GL_SELECTION_BUFFER_POINTER:
+    case GL_VERTEX_ARRAY_POINTER:
+    case GL_NORMAL_ARRAY_POINTER:
+    case GL_COLOR_ARRAY_POINTER:
+    case GL_INDEX_ARRAY_POINTER:
+    case GL_TEXTURE_COORD_ARRAY_POINTER:
+    case GL_EDGE_FLAG_ARRAY_POINTER:
+    case GL_DEBUG_CALLBACK_FUNCTION:
+    case GL_DEBUG_CALLBACK_USER_PARAM:
+      return 1;
+  }
+  return -1;
+}
 int oglm_count_GetTextureParameter(int param) {
   switch (param) {
     case GL_TEXTURE_WIDTH:
     case GL_TEXTURE_HEIGHT:
+    case GL_TEXTURE_INTERNAL_FORMAT:
+    case GL_TEXTURE_BORDER:
     case GL_TEXTURE_MAG_FILTER:
     case GL_TEXTURE_MIN_FILTER:
     case GL_TEXTURE_WRAP_S:
     case GL_TEXTURE_WRAP_T:
+    case GL_TEXTURE_RED_SIZE:
+    case GL_TEXTURE_GREEN_SIZE:
+    case GL_TEXTURE_BLUE_SIZE:
+    case GL_TEXTURE_ALPHA_SIZE:
+    case GL_TEXTURE_LUMINANCE_SIZE:
+    case GL_TEXTURE_INTENSITY_SIZE:
     case GL_TEXTURE_PRIORITY:
     case GL_TEXTURE_RESIDENT:
       return 1;
@@ -446,8 +903,24 @@ int oglm_count_HintTarget(int param) {
     case GL_LINE_SMOOTH_HINT:
     case GL_POLYGON_SMOOTH_HINT:
     case GL_FOG_HINT:
-    case GL_PACK_CMYK_HINT_EXT:
-    case GL_UNPACK_CMYK_HINT_EXT:
+    case GL_GENERATE_MIPMAP_HINT:
+    case GL_TEXTURE_COMPRESSION_HINT:
+    case GL_TEXTURE_STORAGE_HINT_APPLE:
+    case GL_FRAGMENT_SHADER_DERIVATIVE_HINT:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_HistogramTarget(int param) {
+  switch (param) {
+    case GL_HISTOGRAM:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_HistogramTargetEXT(int param) {
+  switch (param) {
+    case GL_HISTOGRAM:
       return 1;
   }
   return -1;
@@ -455,6 +928,82 @@ int oglm_count_HintTarget(int param) {
 int oglm_count_IndexMaterialParameterEXT(int param) {
   switch (param) {
     case GL_INDEX_OFFSET:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_InternalFormatPName(int param) {
+  switch (param) {
+    case GL_SAMPLES:
+    case GL_GENERATE_MIPMAP:
+    case GL_INTERNALFORMAT_SUPPORTED:
+    case GL_INTERNALFORMAT_PREFERRED:
+    case GL_INTERNALFORMAT_RED_SIZE:
+    case GL_INTERNALFORMAT_GREEN_SIZE:
+    case GL_INTERNALFORMAT_BLUE_SIZE:
+    case GL_INTERNALFORMAT_ALPHA_SIZE:
+    case GL_INTERNALFORMAT_DEPTH_SIZE:
+    case GL_INTERNALFORMAT_STENCIL_SIZE:
+    case GL_INTERNALFORMAT_SHARED_SIZE:
+    case GL_INTERNALFORMAT_RED_TYPE:
+    case GL_INTERNALFORMAT_GREEN_TYPE:
+    case GL_INTERNALFORMAT_BLUE_TYPE:
+    case GL_INTERNALFORMAT_ALPHA_TYPE:
+    case GL_INTERNALFORMAT_DEPTH_TYPE:
+    case GL_INTERNALFORMAT_STENCIL_TYPE:
+    case GL_MAX_WIDTH:
+    case GL_MAX_HEIGHT:
+    case GL_MAX_DEPTH:
+    case GL_MAX_LAYERS:
+    case GL_COLOR_COMPONENTS:
+    case GL_COLOR_RENDERABLE:
+    case GL_DEPTH_RENDERABLE:
+    case GL_STENCIL_RENDERABLE:
+    case GL_FRAMEBUFFER_RENDERABLE:
+    case GL_FRAMEBUFFER_RENDERABLE_LAYERED:
+    case GL_FRAMEBUFFER_BLEND:
+    case GL_READ_PIXELS:
+    case GL_READ_PIXELS_FORMAT:
+    case GL_READ_PIXELS_TYPE:
+    case GL_TEXTURE_IMAGE_FORMAT:
+    case GL_TEXTURE_IMAGE_TYPE:
+    case GL_GET_TEXTURE_IMAGE_FORMAT:
+    case GL_GET_TEXTURE_IMAGE_TYPE:
+    case GL_MIPMAP:
+    case GL_AUTO_GENERATE_MIPMAP:
+    case GL_COLOR_ENCODING:
+    case GL_SRGB_READ:
+    case GL_SRGB_WRITE:
+    case GL_FILTER:
+    case GL_VERTEX_TEXTURE:
+    case GL_TESS_CONTROL_TEXTURE:
+    case GL_TESS_EVALUATION_TEXTURE:
+    case GL_GEOMETRY_TEXTURE:
+    case GL_FRAGMENT_TEXTURE:
+    case GL_COMPUTE_TEXTURE:
+    case GL_TEXTURE_SHADOW:
+    case GL_TEXTURE_GATHER:
+    case GL_TEXTURE_GATHER_SHADOW:
+    case GL_SHADER_IMAGE_LOAD:
+    case GL_SHADER_IMAGE_STORE:
+    case GL_SHADER_IMAGE_ATOMIC:
+    case GL_IMAGE_TEXEL_SIZE:
+    case GL_IMAGE_COMPATIBILITY_CLASS:
+    case GL_IMAGE_PIXEL_FORMAT:
+    case GL_IMAGE_PIXEL_TYPE:
+    case GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST:
+    case GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST:
+    case GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE:
+    case GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE:
+    case GL_TEXTURE_COMPRESSED_BLOCK_WIDTH:
+    case GL_TEXTURE_COMPRESSED_BLOCK_HEIGHT:
+    case GL_TEXTURE_COMPRESSED_BLOCK_SIZE:
+    case GL_CLEAR_BUFFER:
+    case GL_TEXTURE_VIEW:
+    case GL_VIEW_COMPATIBILITY_CLASS:
+    case GL_TEXTURE_COMPRESSED:
+    case GL_IMAGE_FORMAT_COMPATIBILITY_TYPE:
+    case GL_NUM_SAMPLE_COUNTS:
       return 1;
   }
   return -1;
@@ -513,6 +1062,7 @@ int oglm_count_MapTarget(int param) {
     case GL_MAP1_TEXTURE_COORD_4:
     case GL_MAP1_VERTEX_3:
     case GL_MAP1_VERTEX_4:
+    case GL_MAP2_COLOR_4:
     case GL_MAP2_INDEX:
     case GL_MAP2_NORMAL:
     case GL_MAP2_TEXTURE_COORD_1:
@@ -540,9 +1090,54 @@ int oglm_count_MaterialParameter(int param) {
   }
   return -1;
 }
+int oglm_count_MinmaxTarget(int param) {
+  switch (param) {
+    case GL_MINMAX:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_MinmaxTargetEXT(int param) {
+  switch (param) {
+    case GL_MINMAX:
+      return 1;
+  }
+  return -1;
+}
 int oglm_count_ObjectIdentifier(int param) {
   switch (param) {
     case GL_VERTEX_ARRAY:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_PNTrianglesPNameATI(int param) {
+  switch (param) {
+    case GL_PN_TRIANGLES_POINT_MODE_ATI:
+    case GL_PN_TRIANGLES_NORMAL_MODE_ATI:
+    case GL_PN_TRIANGLES_TESSELATION_LEVEL_ATI:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_PatchParameterName(int param) {
+  switch (param) {
+    case GL_PATCH_VERTICES:
+    case GL_PATCH_DEFAULT_INNER_LEVEL:
+    case GL_PATCH_DEFAULT_OUTER_LEVEL:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_PipelineParameterName(int param) {
+  switch (param) {
+    case GL_ACTIVE_PROGRAM:
+    case GL_FRAGMENT_SHADER:
+    case GL_VERTEX_SHADER:
+    case GL_INFO_LOG_LENGTH:
+    case GL_GEOMETRY_SHADER:
+    case GL_TESS_EVALUATION_SHADER:
+    case GL_TESS_CONTROL_SHADER:
       return 1;
   }
   return -1;
@@ -565,6 +1160,8 @@ int oglm_count_PixelStoreParameter(int param) {
     case GL_PACK_IMAGE_HEIGHT:
     case GL_UNPACK_SKIP_IMAGES:
     case GL_UNPACK_IMAGE_HEIGHT:
+    case GL_PACK_RESAMPLE_OML:
+    case GL_UNPACK_RESAMPLE_OML:
       return 1;
   }
   return -1;
@@ -585,18 +1182,175 @@ int oglm_count_PixelTransferParameter(int param) {
     case GL_ALPHA_BIAS:
     case GL_DEPTH_SCALE:
     case GL_DEPTH_BIAS:
+    case GL_POST_CONVOLUTION_RED_SCALE:
+    case GL_POST_CONVOLUTION_GREEN_SCALE:
+    case GL_POST_CONVOLUTION_BLUE_SCALE:
+    case GL_POST_CONVOLUTION_ALPHA_SCALE:
+    case GL_POST_CONVOLUTION_RED_BIAS:
+    case GL_POST_CONVOLUTION_GREEN_BIAS:
+    case GL_POST_CONVOLUTION_BLUE_BIAS:
+    case GL_POST_CONVOLUTION_ALPHA_BIAS:
+    case GL_POST_COLOR_MATRIX_RED_SCALE:
+    case GL_POST_COLOR_MATRIX_GREEN_SCALE:
+    case GL_POST_COLOR_MATRIX_BLUE_SCALE:
+    case GL_POST_COLOR_MATRIX_ALPHA_SCALE:
+    case GL_POST_COLOR_MATRIX_RED_BIAS:
+    case GL_POST_COLOR_MATRIX_GREEN_BIAS:
+    case GL_POST_COLOR_MATRIX_BLUE_BIAS:
+    case GL_POST_COLOR_MATRIX_ALPHA_BIAS:
       return 1;
   }
   return -1;
 }
 int oglm_count_PointParameterNameARB(int param) {
   switch (param) {
-    case GL_POINT_SIZE_MIN_ARB:
-    case GL_POINT_SIZE_MAX_ARB:
-    case GL_POINT_FADE_THRESHOLD_SIZE_ARB:
+    case GL_POINT_SIZE_MIN:
+    case GL_POINT_SIZE_MAX:
+    case GL_POINT_FADE_THRESHOLD_SIZE:
       return 1;
-    case GL_POINT_DISTANCE_ATTENUATION_ARB:
+    case GL_POINT_DISTANCE_ATTENUATION:
       return 3;
+  }
+  return -1;
+}
+int oglm_count_ProgramInterfacePName(int param) {
+  switch (param) {
+    case GL_ACTIVE_RESOURCES:
+    case GL_MAX_NAME_LENGTH:
+    case GL_MAX_NUM_ACTIVE_VARIABLES:
+    case GL_MAX_NUM_COMPATIBLE_SUBROUTINES:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ProgramPropertyARB(int param) {
+  switch (param) {
+    case GL_COMPUTE_WORK_GROUP_SIZE:
+    case GL_PROGRAM_BINARY_LENGTH:
+    case GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH:
+    case GL_ACTIVE_UNIFORM_BLOCKS:
+    case GL_DELETE_STATUS:
+    case GL_LINK_STATUS:
+    case GL_VALIDATE_STATUS:
+    case GL_INFO_LOG_LENGTH:
+    case GL_ATTACHED_SHADERS:
+    case GL_ACTIVE_UNIFORMS:
+    case GL_ACTIVE_UNIFORM_MAX_LENGTH:
+    case GL_ACTIVE_ATTRIBUTES:
+    case GL_ACTIVE_ATTRIBUTE_MAX_LENGTH:
+    case GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH:
+    case GL_TRANSFORM_FEEDBACK_BUFFER_MODE:
+    case GL_TRANSFORM_FEEDBACK_VARYINGS:
+    case GL_ACTIVE_ATOMIC_COUNTER_BUFFERS:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ProgramResourceProperty(int param) {
+  switch (param) {
+    case GL_NUM_COMPATIBLE_SUBROUTINES:
+    case GL_COMPATIBLE_SUBROUTINES:
+    case GL_IS_PER_PATCH:
+    case GL_NAME_LENGTH:
+    case GL_TYPE:
+    case GL_ARRAY_SIZE:
+    case GL_OFFSET:
+    case GL_BLOCK_INDEX:
+    case GL_ARRAY_STRIDE:
+    case GL_MATRIX_STRIDE:
+    case GL_IS_ROW_MAJOR:
+    case GL_ATOMIC_COUNTER_BUFFER_INDEX:
+    case GL_BUFFER_BINDING:
+    case GL_BUFFER_DATA_SIZE:
+    case GL_NUM_ACTIVE_VARIABLES:
+    case GL_ACTIVE_VARIABLES:
+    case GL_REFERENCED_BY_VERTEX_SHADER:
+    case GL_REFERENCED_BY_TESS_CONTROL_SHADER:
+    case GL_REFERENCED_BY_TESS_EVALUATION_SHADER:
+    case GL_REFERENCED_BY_GEOMETRY_SHADER:
+    case GL_REFERENCED_BY_FRAGMENT_SHADER:
+    case GL_REFERENCED_BY_COMPUTE_SHADER:
+    case GL_TOP_LEVEL_ARRAY_SIZE:
+    case GL_TOP_LEVEL_ARRAY_STRIDE:
+    case GL_LOCATION:
+    case GL_LOCATION_INDEX:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ProgramStagePName(int param) {
+  switch (param) {
+    case GL_ACTIVE_SUBROUTINES:
+    case GL_ACTIVE_SUBROUTINE_UNIFORMS:
+    case GL_ACTIVE_SUBROUTINE_UNIFORM_LOCATIONS:
+    case GL_ACTIVE_SUBROUTINE_MAX_LENGTH:
+    case GL_ACTIVE_SUBROUTINE_UNIFORM_MAX_LENGTH:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ProgramStringProperty(int param) {
+  switch (param) {
+    case GL_PROGRAM_STRING_ARB:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ProgramTarget(int param) {
+  switch (param) {
+    case GL_TEXT_FRAGMENT_SHADER_ATI:
+    case GL_VERTEX_PROGRAM_ARB:
+    case GL_FRAGMENT_PROGRAM_ARB:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_QueryCounterTarget(int param) {
+  switch (param) {
+    case GL_TIMESTAMP:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_QueryObjectParameterName(int param) {
+  switch (param) {
+    case GL_QUERY_TARGET:
+    case GL_QUERY_RESULT:
+    case GL_QUERY_RESULT_AVAILABLE:
+    case GL_QUERY_RESULT_NO_WAIT:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_QueryParameterName(int param) {
+  switch (param) {
+    case GL_QUERY_COUNTER_BITS:
+    case GL_CURRENT_QUERY:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_QueryTarget(int param) {
+  switch (param) {
+    case GL_ANY_SAMPLES_PASSED:
+    case GL_ANY_SAMPLES_PASSED_CONSERVATIVE:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_RenderbufferParameterName(int param) {
+  switch (param) {
+    case GL_RENDERBUFFER_SAMPLES:
+    case GL_RENDERBUFFER_WIDTH:
+    case GL_RENDERBUFFER_HEIGHT:
+    case GL_RENDERBUFFER_INTERNAL_FORMAT:
+    case GL_RENDERBUFFER_RED_SIZE:
+    case GL_RENDERBUFFER_GREEN_SIZE:
+    case GL_RENDERBUFFER_BLUE_SIZE:
+    case GL_RENDERBUFFER_ALPHA_SIZE:
+    case GL_RENDERBUFFER_DEPTH_SIZE:
+    case GL_RENDERBUFFER_STENCIL_SIZE:
+      return 1;
   }
   return -1;
 }
@@ -604,6 +1358,7 @@ int oglm_count_SamplerParameterF(int param) {
   switch (param) {
     case GL_TEXTURE_MIN_LOD:
     case GL_TEXTURE_MAX_LOD:
+    case GL_TEXTURE_LOD_BIAS:
       return 1;
     case GL_TEXTURE_BORDER_COLOR:
       return 4;
@@ -617,6 +1372,76 @@ int oglm_count_SamplerParameterI(int param) {
     case GL_TEXTURE_WRAP_S:
     case GL_TEXTURE_WRAP_T:
     case GL_TEXTURE_WRAP_R:
+    case GL_TEXTURE_COMPARE_MODE:
+    case GL_TEXTURE_COMPARE_FUNC:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_SeparableTarget(int param) {
+  switch (param) {
+    case GL_SEPARABLE_2D:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_SeparableTargetEXT(int param) {
+  switch (param) {
+    case GL_SEPARABLE_2D:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ShaderParameterName(int param) {
+  switch (param) {
+    case GL_SHADER_TYPE:
+    case GL_DELETE_STATUS:
+    case GL_COMPILE_STATUS:
+    case GL_INFO_LOG_LENGTH:
+    case GL_SHADER_SOURCE_LENGTH:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_ShaderType(int param) {
+  switch (param) {
+    case GL_FRAGMENT_SHADER:
+    case GL_VERTEX_SHADER:
+    case GL_GEOMETRY_SHADER:
+    case GL_TESS_EVALUATION_SHADER:
+    case GL_TESS_CONTROL_SHADER:
+    case GL_COMPUTE_SHADER:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_StringName(int param) {
+  switch (param) {
+    case GL_VENDOR:
+    case GL_RENDERER:
+    case GL_VERSION:
+    case GL_EXTENSIONS:
+    case GL_SHADING_LANGUAGE_VERSION:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_SubroutineParameterName(int param) {
+  switch (param) {
+    case GL_UNIFORM_SIZE:
+    case GL_UNIFORM_NAME_LENGTH:
+    case GL_NUM_COMPATIBLE_SUBROUTINES:
+    case GL_COMPATIBLE_SUBROUTINES:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_SyncParameterName(int param) {
+  switch (param) {
+    case GL_OBJECT_TYPE:
+    case GL_SYNC_CONDITION:
+    case GL_SYNC_STATUS:
+    case GL_SYNC_FLAGS:
       return 1;
   }
   return -1;
@@ -632,9 +1457,33 @@ int oglm_count_TextureEnvParameter(int param) {
   switch (param) {
     case GL_ALPHA_SCALE:
     case GL_TEXTURE_ENV_MODE:
+    case GL_TEXTURE_LOD_BIAS:
+    case GL_COMBINE_RGB:
+    case GL_COMBINE_ALPHA:
+    case GL_RGB_SCALE:
+    case GL_SRC0_RGB:
+    case GL_SRC1_RGB:
+    case GL_SRC2_RGB:
+    case GL_SRC0_ALPHA:
+    case GL_SRC1_ALPHA:
+    case GL_SRC2_ALPHA:
+    case GL_OPERAND0_RGB:
+    case GL_OPERAND1_RGB:
+    case GL_OPERAND2_RGB:
+    case GL_OPERAND0_ALPHA:
+    case GL_OPERAND1_ALPHA:
+    case GL_OPERAND2_ALPHA:
+    case GL_COORD_REPLACE:
       return 1;
     case GL_TEXTURE_ENV_COLOR:
       return 4;
+  }
+  return -1;
+}
+int oglm_count_TextureEnvTarget(int param) {
+  switch (param) {
+    case GL_POINT_SPRITE:
+      return 1;
   }
   return -1;
 }
@@ -652,10 +1501,18 @@ int oglm_count_TextureParameterName(int param) {
   switch (param) {
     case GL_TEXTURE_WIDTH:
     case GL_TEXTURE_HEIGHT:
+    case GL_TEXTURE_INTERNAL_FORMAT:
+    case GL_TEXTURE_BORDER:
     case GL_TEXTURE_MAG_FILTER:
     case GL_TEXTURE_MIN_FILTER:
     case GL_TEXTURE_WRAP_S:
     case GL_TEXTURE_WRAP_T:
+    case GL_TEXTURE_RED_SIZE:
+    case GL_TEXTURE_GREEN_SIZE:
+    case GL_TEXTURE_BLUE_SIZE:
+    case GL_TEXTURE_ALPHA_SIZE:
+    case GL_TEXTURE_LUMINANCE_SIZE:
+    case GL_TEXTURE_INTENSITY_SIZE:
     case GL_TEXTURE_PRIORITY:
     case GL_TEXTURE_RESIDENT:
     case GL_TEXTURE_WRAP_R:
@@ -663,8 +1520,18 @@ int oglm_count_TextureParameterName(int param) {
     case GL_TEXTURE_MAX_LOD:
     case GL_TEXTURE_BASE_LEVEL:
     case GL_TEXTURE_MAX_LEVEL:
+    case GL_GENERATE_MIPMAP:
+    case GL_TEXTURE_LOD_BIAS:
+    case GL_TEXTURE_COMPARE_MODE:
+    case GL_TEXTURE_COMPARE_FUNC:
+    case GL_TEXTURE_SWIZZLE_R:
+    case GL_TEXTURE_SWIZZLE_G:
+    case GL_TEXTURE_SWIZZLE_B:
+    case GL_TEXTURE_SWIZZLE_A:
+    case GL_DEPTH_STENCIL_TEXTURE_MODE:
       return 1;
     case GL_TEXTURE_BORDER_COLOR:
+    case GL_TEXTURE_SWIZZLE_RGBA:
       return 4;
   }
   return -1;
@@ -674,7 +1541,111 @@ int oglm_count_TextureTarget(int param) {
     case GL_TEXTURE_1D:
     case GL_TEXTURE_2D:
     case GL_TEXTURE_3D:
+    case GL_TEXTURE_RECTANGLE:
+    case GL_TEXTURE_CUBE_MAP:
+    case GL_TEXTURE_1D_ARRAY:
+    case GL_TEXTURE_2D_ARRAY:
+    case GL_TEXTURE_BUFFER:
+    case GL_TEXTURE_CUBE_MAP_ARRAY:
       return 1;
+  }
+  return -1;
+}
+int oglm_count_TransformFeedbackPName(int param) {
+  switch (param) {
+    case GL_TRANSFORM_FEEDBACK_BUFFER_START:
+    case GL_TRANSFORM_FEEDBACK_BUFFER_SIZE:
+    case GL_TRANSFORM_FEEDBACK_BUFFER_BINDING:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_UniformBlockPName(int param) {
+  switch (param) {
+    case GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER:
+    case GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER:
+    case GL_UNIFORM_BLOCK_BINDING:
+    case GL_UNIFORM_BLOCK_DATA_SIZE:
+    case GL_UNIFORM_BLOCK_NAME_LENGTH:
+    case GL_UNIFORM_BLOCK_ACTIVE_UNIFORMS:
+    case GL_UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES:
+    case GL_UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER:
+    case GL_UNIFORM_BLOCK_REFERENCED_BY_GEOMETRY_SHADER:
+    case GL_UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER:
+    case GL_UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_UniformPName(int param) {
+  switch (param) {
+    case GL_UNIFORM_TYPE:
+    case GL_UNIFORM_SIZE:
+    case GL_UNIFORM_NAME_LENGTH:
+    case GL_UNIFORM_BLOCK_INDEX:
+    case GL_UNIFORM_OFFSET:
+    case GL_UNIFORM_ARRAY_STRIDE:
+    case GL_UNIFORM_MATRIX_STRIDE:
+    case GL_UNIFORM_IS_ROW_MAJOR:
+    case GL_UNIFORM_ATOMIC_COUNTER_BUFFER_INDEX:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_VertexArrayPName(int param) {
+  switch (param) {
+    case GL_VERTEX_ATTRIB_RELATIVE_OFFSET:
+    case GL_VERTEX_ATTRIB_ARRAY_ENABLED:
+    case GL_VERTEX_ATTRIB_ARRAY_SIZE:
+    case GL_VERTEX_ATTRIB_ARRAY_STRIDE:
+    case GL_VERTEX_ATTRIB_ARRAY_TYPE:
+    case GL_VERTEX_ATTRIB_ARRAY_LONG:
+    case GL_VERTEX_ATTRIB_ARRAY_NORMALIZED:
+    case GL_VERTEX_ATTRIB_ARRAY_INTEGER:
+    case GL_VERTEX_ATTRIB_ARRAY_DIVISOR:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_VertexAttribEnum(int param) {
+  switch (param) {
+    case GL_VERTEX_ATTRIB_ARRAY_ENABLED:
+    case GL_VERTEX_ATTRIB_ARRAY_SIZE:
+    case GL_VERTEX_ATTRIB_ARRAY_STRIDE:
+    case GL_VERTEX_ATTRIB_ARRAY_TYPE:
+    case GL_VERTEX_ATTRIB_ARRAY_NORMALIZED:
+    case GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING:
+    case GL_VERTEX_ATTRIB_ARRAY_INTEGER:
+    case GL_VERTEX_ATTRIB_ARRAY_DIVISOR:
+      return 1;
+    case GL_CURRENT_VERTEX_ATTRIB:
+      return 4;
+  }
+  return -1;
+}
+int oglm_count_VertexAttribPointerPropertyARB(int param) {
+  switch (param) {
+    case GL_VERTEX_ATTRIB_ARRAY_POINTER:
+      return 1;
+  }
+  return -1;
+}
+int oglm_count_VertexAttribPropertyARB(int param) {
+  switch (param) {
+    case GL_VERTEX_ATTRIB_BINDING:
+    case GL_VERTEX_ATTRIB_RELATIVE_OFFSET:
+    case GL_VERTEX_ATTRIB_ARRAY_ENABLED:
+    case GL_VERTEX_ATTRIB_ARRAY_SIZE:
+    case GL_VERTEX_ATTRIB_ARRAY_STRIDE:
+    case GL_VERTEX_ATTRIB_ARRAY_TYPE:
+    case GL_VERTEX_ATTRIB_ARRAY_LONG:
+    case GL_VERTEX_ATTRIB_ARRAY_NORMALIZED:
+    case GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING:
+    case GL_VERTEX_ATTRIB_ARRAY_INTEGER:
+    case GL_VERTEX_ATTRIB_ARRAY_DIVISOR:
+      return 1;
+    case GL_CURRENT_VERTEX_ATTRIB:
+      return 4;
   }
   return -1;
 }

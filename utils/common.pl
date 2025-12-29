@@ -11,15 +11,18 @@ my %manual;
 @manual{@manual_list} = ( 1 ) x @manual_list;
 
 my %type2typefunc = (
-  GLfixed => 'newSViv',
-  GLdouble => 'newSVnv',
-  GLfloat => 'newSVnv',
-  GLbyte => 'newSViv',
-  GLint => 'newSViv',
-  GLint64 => 'newSViv',
-  GLuint => 'newSVuv',
-  GLubyte => 'newSVuv',
   GLboolean => 'newSViv',
+  GLubyte => 'newSVuv',
+  GLbyte => 'newSViv',
+  GLfixed => 'newSViv',
+  GLuint => 'newSVuv',
+  GLint => 'newSViv',
+  GLuint64 => 'newSVuv',
+  GLuint64EXT => 'newSVuv',
+  GLint64 => 'newSViv',
+  GLint64EXT => 'newSViv',
+  GLfloat => 'newSVnv',
+  GLdouble => 'newSVnv',
 );
 
 sub is_manual { $manual{$_[0]} }
