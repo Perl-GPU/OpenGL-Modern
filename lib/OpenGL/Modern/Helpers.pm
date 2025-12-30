@@ -26,9 +26,9 @@ use OpenGL::Modern qw(
   glGetError
   glGetShaderInfoLog_c
   glGetProgramInfoLog_c
-  glGetProgramiv_c
-  glGetShaderiv_c
-  glGetIntegerv_c
+  glGetProgramiv_p
+  glGetShaderiv_p
+  glGetIntegerv_p
   glShaderSource_c
   glBufferData_c
   glUniform2f
@@ -277,34 +277,12 @@ sub gen_thing_p {
     return wantarray ? @ids : $ids[0];
 }
 
-sub get_iv_p {
-    my ( $call, $id, $pname, $count ) = @_;
-    $count ||= 1;
-    xs_buffer my $params, 4 * $count;
-    $call->( $id, $pname, unpack( "$PACK_TYPE*", pack( 'p*', $params ) ) );
-    my @params = unpack 'I*', $params;
-    return wantarray ? @params : $params[0];
-}
-
-sub glGetProgramiv_p { get_iv_p \&glGetProgramiv_c, @_ }    # TODO: get rid of $count
-
-sub glGetShaderiv_p { get_iv_p \&glGetShaderiv_c, @_ }      # TODO: get rid of $count
-
 sub glShaderSource_p {
     my ( $shader, @sources ) = @_;
     my $count = @sources;
     my @lengths = map length, @sources;
     glShaderSource_c( $shader, $count, pack( 'P*', @sources ), pack( 'I*', @lengths ) );
     return;
-}
-
-sub glGetIntegerv_p {
-    my ( $pname, $count ) = @_;                             # TODO: get rid of $count
-    $count ||= 1;
-    xs_buffer my $data, 4 * $count;
-    glGetIntegerv_c $pname, unpack( $PACK_TYPE, pack( 'p', $data ) );
-    my @data = unpack 'I*', $data;
-    return wantarray ? @data : $data[0];
 }
 
 sub glBufferData_p {                                        # NOTE: this might be better named glpBufferDataf_p
