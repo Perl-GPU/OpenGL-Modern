@@ -29,7 +29,7 @@ use OpenGL::Modern qw(
   glGetProgramiv_p
   glGetShaderiv_p
   glGetIntegerv_p
-  glShaderSource_c
+  glShaderSource_p
   glBufferData_c
   glUniform2f
   glUniform4f
@@ -275,14 +275,6 @@ sub gen_thing_p {
     $call->( $n, unpack( $PACK_TYPE, pack( 'p', $new_ids ) ) );
     my @ids = unpack 'I*', $new_ids;
     return wantarray ? @ids : $ids[0];
-}
-
-sub glShaderSource_p {
-    my ( $shader, @sources ) = @_;
-    my $count = @sources;
-    my @lengths = map length, @sources;
-    glShaderSource_c( $shader, $count, pack( 'P*', @sources ), pack( 'I*', @lengths ) );
-    return;
 }
 
 sub glBufferData_p {                                        # NOTE: this might be better named glpBufferDataf_p
