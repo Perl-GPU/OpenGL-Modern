@@ -269,14 +269,6 @@ sub croak_on_gl_error {
     }
 }
 
-sub gen_thing_p {
-    my ( $call, $n ) = @_;
-    xs_buffer my $new_ids, 4 * $n;
-    $call->( $n, unpack( $PACK_TYPE, pack( 'p', $new_ids ) ) );
-    my @ids = unpack 'I*', $new_ids;
-    return wantarray ? @ids : $ids[0];
-}
-
 sub glBufferData_p {                                        # NOTE: this might be better named glpBufferDataf_p
     my $usage = pop;
     my ( $target, $size, @data ) = @_;
