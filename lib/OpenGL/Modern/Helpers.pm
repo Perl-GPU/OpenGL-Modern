@@ -182,30 +182,11 @@ our %glErrorStrings = (
 
 our $PACK_TYPE = $Config{ptrsize} == 4 ? 'L' : 'Q';
 
-sub pack_GLuint {
-    my @gluints = @_;
-    pack 'I*', @gluints;
-}
-
-sub pack_GLint {
-    my @gluints = @_;
-    pack 'I*', @gluints;
-}
-
-sub pack_GLfloat {
-    my @glfloats = @_;
-    pack 'f*', @glfloats;
-}
-
-sub pack_GLdouble {
-    my @gldoubles = @_;
-    pack 'd*', @gldoubles;
-}
-
-# No parameter declaration because we don't want copies
-sub pack_GLstrings {
-    pack 'P*', @_;
-}
+sub pack_GLuint { pack 'I*', @_ }
+sub pack_GLint { pack 'I*', @_ }
+sub pack_GLfloat { pack 'f*', @_ }
+sub pack_GLdouble { pack 'd*', @_ }
+sub pack_GLstrings { pack 'P*', @_ } # No declare params as don't want copies
 
 # No parameter declaration because we don't want copies
 # This returns a packed string representation of the
