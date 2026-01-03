@@ -183,7 +183,7 @@ our %glErrorStrings = (
 our $PACK_TYPE = $Config{ptrsize} == 4 ? 'L' : 'Q';
 
 sub pack_GLuint { pack 'I*', @_ }
-sub pack_GLint { pack 'I*', @_ }
+sub pack_GLint { pack 'i*', @_ }
 sub pack_GLfloat { pack 'f*', @_ }
 sub pack_GLdouble { pack 'd*', @_ }
 sub pack_GLstrings { pack 'P*', @_ } # No declare params as don't want copies
