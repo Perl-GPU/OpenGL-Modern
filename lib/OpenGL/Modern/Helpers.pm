@@ -23,7 +23,7 @@ use OpenGL::Modern qw(
   glGenVertexArrays_p
   glGenBuffers_p
   glGetString
-  glGetError
+  glpCheckErrors
   glGetShaderInfoLog_c
   glGetProgramInfoLog_c
   glGetProgramiv_p
@@ -241,14 +241,7 @@ sub glGetVersion_p {
     $glVersion;
 }
 
-sub croak_on_gl_error {
-
-    # GLenum glGetError (void);
-    my $error = glGetError();
-    if ( $error != GL_NO_ERROR ) {
-        croak $glErrorStrings{$error} || "Unknown OpenGL error: $error";
-    }
-}
+*croak_on_gl_error = \&glpCheckErrors;
 
 sub glBufferData_p {                                        # NOTE: this might be better named glpBufferDataf_p
     my $usage = pop;
