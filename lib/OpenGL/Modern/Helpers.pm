@@ -169,17 +169,6 @@ our @EXPORT_OK = qw(
   glUniform4f_p
 );
 
-our %glErrorStrings = (
-    GL_NO_ERROR()          => 'No error has been recorded.',
-    GL_INVALID_ENUM()      => 'An unacceptable value is specified for an enumerated argument.',
-    GL_INVALID_VALUE()     => 'A numeric argument is out of range.',
-    GL_INVALID_OPERATION() => 'The specified operation is not allowed in the current state.',
-    GL_STACK_OVERFLOW()    => 'This command would cause a stack overflow.',
-    GL_STACK_UNDERFLOW()   => 'This command would cause a stack underflow.',
-    GL_OUT_OF_MEMORY()     => 'There is not enough memory left to execute the command.',
-    GL_TABLE_TOO_LARGE()   => 'The specified table exceeds the implementation\'s maximum supported table size.',
-);
-
 our $PACK_TYPE = $Config{ptrsize} == 4 ? 'L' : 'Q';
 
 sub pack_GLuint { pack 'I*', @_ }
