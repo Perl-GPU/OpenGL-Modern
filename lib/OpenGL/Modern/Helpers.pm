@@ -9,14 +9,6 @@ use Carp qw(croak);
 use Config;
 
 use OpenGL::Modern qw(
-  GL_NO_ERROR
-  GL_INVALID_ENUM
-  GL_INVALID_VALUE
-  GL_INVALID_OPERATION
-  GL_STACK_OVERFLOW
-  GL_STACK_UNDERFLOW
-  GL_OUT_OF_MEMORY
-  GL_TABLE_TOO_LARGE
   GL_VERSION
   glGenTextures_p
   glGenFramebuffers_p
