@@ -8,23 +8,10 @@ require './utils/common.pl';
 This script reads the function signatures from the registry
 and creates XS stubs for each.
 
-This should also autogenerate stub documentation by adding links
-to the OpenGL documentation for each function via
-
-L<https://www.opengl.org/sdk/docs/man/html/glShaderSource.xhtml>
-
 =cut
 
 our %signature;
 *signature = \%OpenGL::Modern::Registry::registry;
-
-=head1 Automagic Perlification
-
-We should think about how to ideally enable the typemap
-to automatically perlify the API. Or just handwrite
-it for the _p functions?!
-
-=cut
 
 sub munge_GL_args {
     my ( @args ) = @_;
