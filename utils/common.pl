@@ -46,6 +46,13 @@ sub save_file {
     }
 }
 
+sub make_aliases {
+  my ($aliases, $suffix) = @_;
+  my $i = 0;
+  !$aliases ? "" : "ALIAS:\n".join '',
+    map "  $_$suffix = ".++$i."\n", sort keys %$aliases;
+}
+
 sub bindings {
   die "list context only" if !wantarray;
   my ($name, $s, $counts) = @_;
@@ -57,13 +64,12 @@ sub bindings {
   my $thistype = $s->{restype};
   my @ptr_arg_inds = @{$s->{ptr_args} || []};
   my $c_suffix = @ptr_arg_inds ? '_c' : '';
-  my $i = 0;
   my %default = (
     binding_name => $name . $c_suffix,
     xs_rettype => $s->{restype},
     xs_args => join(', ', map $_->[0], @argdata),
     xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @argdata),
-    aliases => !$s->{aliases} ? "" : "ALIAS:\n".join('', map "  $_$c_suffix = ".++$i."\n", sort keys %{$s->{aliases}}),
+    aliases => make_aliases($s->{aliases}, $c_suffix),
     xs_code => "CODE:\n",
     error_check => ($name eq "glGetError") ? "" : "OGLM_CHECK_ERR($name, )",
     avail_check => $avail_check,
@@ -78,13 +84,12 @@ sub bindings {
   return @ret if !@ptr_arg_inds;
   @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
   if ($name =~ /^gl(?:Gen|Create)/ && @argdata == 2 && $s->{restype} eq 'void') {
-    $i = 0;
     push @ret, {
       %default,
       binding_name => $name . '_p',
       xs_args => join(', ', map $_->[0], $argdata[0]),
       xs_argdecls => join('', map "  $_->[1]$_->[0];\n", $argdata[0]),
-      aliases => !$s->{aliases} ? "" : "ALIAS:\n".join('', map "  ${_}_p = ".++$i."\n", sort keys %{$s->{aliases}}),
+      aliases => make_aliases($s->{aliases}, '_p'),
       xs_code => "PPCODE:\n",
       beforecall => "  OGLM_GEN_SETUP($name, $argdata[0][0], $argdata[1][0])\n",
       error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
@@ -92,13 +97,12 @@ sub bindings {
     };
   }
   if ($name =~ /^glDelete/ and @argdata == 2 and $argdata[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/) {
-    $i = 0;
     push @ret, {
       %default,
       binding_name => $name . '_p',
       xs_args => '...',
       xs_argdecls => '',
-      aliases => !$s->{aliases} ? "" : "ALIAS:\n".join('', map "  ${_}_p = ".++$i."\n", sort keys %{$s->{aliases}}),
+      aliases => make_aliases($s->{aliases}, '_p'),
       beforecall => "  GLsizei $argdata[0][0] = items;\n  OGLM_DELETE_SETUP($name, items, $argdata[1][0])\n",
       error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
       aftercall => "\n  OGLM_DELETE_FINISH($argdata[1][0])",
@@ -115,13 +119,12 @@ sub bindings {
       my $typefunc = $type2typefunc{$datatype} or die "No typefunc for '$datatype'";
       my $not_that = $ptr_args[0][0];
       my @filtered_args = grep $_->[0] ne $not_that, @argdata;
-      $i = 0;
       push @ret, {
         %default,
         binding_name => $name . '_p',
         xs_args => join(', ', map $_->[0], @filtered_args),
         xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @filtered_args),
-        aliases => !$s->{aliases} ? "" : "ALIAS:\n".join('', map "  ${_}_p = ".++$i."\n", sort keys %{$s->{aliases}}),
+        aliases => make_aliases($s->{aliases}, '_p'),
         xs_code => "PPCODE:\n",
         beforecall => "  OGLM_GET_SETUP($name, $compsize_group, $compsize_from, $datatype, $ptr_args[0][0])\n",
         error_check2 => "OGLM_CHECK_ERR($name, )",
