@@ -82,10 +82,11 @@ sub bindings {
   );
   my @ret = \%default;
   return @ret if !@ptr_arg_inds;
+  my %pbinding = %default;
   @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
   if ($name =~ /^gl(?:Gen|Create)/ && @argdata == 2 && $s->{restype} eq 'void') {
     push @ret, {
-      %default,
+      %pbinding,
       binding_name => $name . '_p',
       xs_args => join(', ', map $_->[0], $argdata[0]),
       xs_argdecls => join('', map "  $_->[1]$_->[0];\n", $argdata[0]),
@@ -98,7 +99,7 @@ sub bindings {
   }
   if ($name =~ /^glDelete/ and @argdata == 2 and $argdata[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/) {
     push @ret, {
-      %default,
+      %pbinding,
       binding_name => $name . '_p',
       xs_args => '...',
       xs_argdecls => '',
@@ -120,7 +121,7 @@ sub bindings {
       my $not_that = $ptr_args[0][0];
       my @filtered_args = grep $_->[0] ne $not_that, @argdata;
       push @ret, {
-        %default,
+        %pbinding,
         binding_name => $name . '_p',
         xs_args => join(', ', map $_->[0], @filtered_args),
         xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @filtered_args),
