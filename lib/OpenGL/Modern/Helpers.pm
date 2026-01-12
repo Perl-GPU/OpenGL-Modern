@@ -16,8 +16,8 @@ use OpenGL::Modern qw(
   glGenBuffers_p
   glGetString
   glpCheckErrors
-  glGetShaderInfoLog_c
-  glGetProgramInfoLog_c
+  glGetShaderInfoLog_p
+  glGetProgramInfoLog_p
   glGetProgramiv_p
   glGetShaderiv_p
   glGetIntegerv_p
@@ -194,22 +194,6 @@ sub xs_buffer {
     $_[0] = "\0" x $_[1];
     $_[0];
 }
-
-sub get_info_log_p {
-    my ( $call, $id ) = @_;
-    my $bufsize = 1024 * 64;
-    my $buffer  = "\0" x $bufsize;
-    my $len     = "\0" x 4;
-
-    # void glGetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
-    # void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
-    $call->( $id, $bufsize, unpack( $PACK_TYPE, pack( 'p', $len ) ), $buffer );
-    $len = unpack 'I', $len;
-    return substr $buffer, 0, $len;
-}
-
-sub glGetShaderInfoLog_p  { get_info_log_p \&glGetShaderInfoLog_c,  @_ }
-sub glGetProgramInfoLog_p { get_info_log_p \&glGetProgramInfoLog_c, @_ }
 
 # This should probably be named glpGetVersion since there is actually
 # no glGetVersion() in the OpenGL API.

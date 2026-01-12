@@ -171,6 +171,11 @@ for (grep $_, split /\n/, slurp('utils/args-group.txt')) {
   }
 }
 
+for (grep $_, split /\n/, slurp('utils/dynlang.txt')) {
+  my ($func, @args) = split ' ';
+  $signature{$func}{dynlang} = { map split('=', $_, 2), @args };
+}
+
 my %groups;
 for (grep $_, split /\n/, slurp('utils/enums-group.txt')) {
   my ($enum, @groups) = split ' ';

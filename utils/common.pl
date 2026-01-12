@@ -129,6 +129,40 @@ sub bindings {
       };
     }
   }
+  my %dynlang = %{ $s->{dynlang} || {} };
+  if (%dynlang) {
+    my %this = %pbinding;
+    my $retval = delete $dynlang{RETVAL};
+    if ($retval) {
+      $this{xs_rettype} = $name2data{$retval}[1];
+      $this{aftercall} = "\n  RETVAL = $retval;";
+      $this{retout} = "\nOUTPUT:\n  RETVAL";
+    }
+    my @thisargs = grep !exists $dynlang{$_->[0]}, @argdata;
+    $this{xs_args} = join(', ', map $_->[0], @thisargs);
+    $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @thisargs);
+    my $beforecall = '';
+    for my $get (sort grep $dynlang{$_} =~ /^</, keys %dynlang) {
+      my $val = delete $dynlang{$get};
+      $val =~ s#^<##;
+      $val =~ s#&#&$get#;
+      my $vardata = $name2data{$get};
+      $beforecall .= "  $vardata->[1]$get;\n  $val;\n";
+    }
+    for my $arr (sort grep $dynlang{$_} =~ /^\[/, keys %dynlang) {
+      my $val = delete $dynlang{$arr};
+      my $vardata = $name2data{$arr};
+      (my $type = $vardata->[1]) =~ s#\*##;
+      $beforecall .= "  $type $arr$val;\n";
+    }
+    for my $var (sort keys %dynlang) {
+      my $val = delete $dynlang{$var};
+      my $vardata = $name2data{$var};
+      $beforecall .= "  $vardata->[1] $var = $val;\n";
+    }
+    $this{beforecall} = $beforecall;
+    push @ret, \%this;
+  }
   @ret;
 }
 

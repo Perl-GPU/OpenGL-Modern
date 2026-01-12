@@ -248,6 +248,7 @@ our @gl_functionscompat = qw(
   glGetPointerv_c
   glGetPolygonStipple_c
   glGetProgramInfoLog_c
+  glGetProgramInfoLog_p
   glGetProgramiv_c
   glGetProgramiv_p
   glGetQueryObjectiv_c
@@ -259,6 +260,7 @@ our @gl_functionscompat = qw(
   glGetRenderbufferParameteriv_c
   glGetRenderbufferParameteriv_p
   glGetShaderInfoLog_c
+  glGetShaderInfoLog_p
   glGetShaderSource_c
   glGetShaderiv_c
   glGetShaderiv_p
@@ -7553,9 +7555,11 @@ our %EXPORT_TAGS_GL = (
     'glGetAttachedShaders_c',
     'glGetAttribLocation',
     'glGetProgramInfoLog_c',
+    'glGetProgramInfoLog_p',
     'glGetProgramiv_c',
     'glGetProgramiv_p',
     'glGetShaderInfoLog_c',
+    'glGetShaderInfoLog_p',
     'glGetShaderSource_c',
     'glGetShaderiv_c',
     'glGetShaderiv_p',

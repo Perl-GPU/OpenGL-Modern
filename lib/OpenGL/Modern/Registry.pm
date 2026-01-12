@@ -25445,6 +25445,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'RETVAL' => 'infoLog',
+      'bufSize' => '<glGetProgramiv(program,GL_INFO_LOG_LENGTH,&)',
+      'infoLog' => '[bufSize]',
+      'length' => 'NULL'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetProgramInfoLog',
     'glewtype' => 'fun',
@@ -26794,6 +26800,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'RETVAL' => 'infoLog',
+      'bufSize' => '<glGetShaderiv(shader,GL_INFO_LOG_LENGTH,&)',
+      'infoLog' => '[bufSize]',
+      'length' => 'NULL'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetShaderInfoLog',
     'glewtype' => 'fun',

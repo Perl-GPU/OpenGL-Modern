@@ -1,0 +1,2 @@
+glGetShaderInfoLog RETVAL=infoLog length=NULL bufSize=<glGetShaderiv(shader,GL_INFO_LOG_LENGTH,&) infoLog=[bufSize]
+glGetProgramInfoLog RETVAL=infoLog length=NULL bufSize=<glGetProgramiv(program,GL_INFO_LOG_LENGTH,&) infoLog=[bufSize]

@@ -6315,6 +6315,7 @@ Exported under tag C<:GL_ARB_vertex_program>.
 =head2 glGetProgramInfoLog
 
  glGetProgramInfoLog_c($program, $bufSize, $length, $infoLog);
+ $retval = glGetProgramInfoLog_p($program);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetProgramInfoLog.xhtml>
@@ -6628,6 +6629,7 @@ Exported under tag C<:GL_EXT_convolution>.
 =head2 glGetShaderInfoLog
 
  glGetShaderInfoLog_c($shader, $bufSize, $length, $infoLog);
+ $retval = glGetShaderInfoLog_p($shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderInfoLog.xhtml>
