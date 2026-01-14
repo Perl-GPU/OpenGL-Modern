@@ -1,0 +1,32 @@
+#!perl
+
+use strict;
+use warnings;
+use OpenGL::Modern qw(
+  glewCreateContext glewInit glewDestroyContext glpCheckErrors glGetString
+  glGetIntegerv_p
+  GL_MAX_TEXTURE_SIZE GL_MAX_VIEWPORT_DIMS
+  GL_VERSION GLEW_OK
+);
+use PDL;
+
+sub with_time (&) {
+  require Time::HiRes;
+  my @t = Time::HiRes::gettimeofday();
+  &{$_[0]}();
+  printf "%g ms\n", Time::HiRes::tv_interval(\@t) * 1000;
+}
+
+print "Perl $^V OpenGL::Modern $OpenGL::Modern::VERSION PDL $PDL::VERSION\n";
+
+# 4.1 core so MacOS allows >2.1
+glewCreateContext(4, 1, 1, 2) == GLEW_OK or die "glewCreateContext failed";
+glewInit() == GLEW_OK or die "glewInit failed";
+print "OpenGL ", glGetString(GL_VERSION), "\n";
+my $max_tex_dim = glGetIntegerv_p(GL_MAX_TEXTURE_SIZE);
+print "Max texture dim = $max_tex_dim\n";
+my $max_vp_dim = glGetIntegerv_p(GL_MAX_VIEWPORT_DIMS);
+print "Max viewport dim = $max_vp_dim\n";
+
+glpCheckErrors();
+glewDestroyContext();
