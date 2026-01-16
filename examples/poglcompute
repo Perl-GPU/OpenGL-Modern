@@ -80,13 +80,14 @@ glBindTexture(GL_TEXTURE_2D, 0);
 };
 print "After: ", $p2->slice($slicearg);
 
-glBindTexture(GL_TEXTURE_2D, 0);
-glDeleteTextures_p($destTextureID);
-glBindFramebuffer(GL_FRAMEBUFFER, 0);
-glDeleteFramebuffers_p($fbo_id);
-
 glpCheckErrors();
+END {
+glBindTexture(GL_TEXTURE_2D, 0);
+glDeleteTextures_p($_) for grep $_, $destTextureID;
+glBindFramebuffer(GL_FRAMEBUFFER, 0);
+glDeleteFramebuffers_p($_) for grep $_, $fbo_id;
 glewDestroyContext();
+}
 
 sub tex_parameters {
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
