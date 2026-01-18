@@ -35,11 +35,11 @@ use OpenGL::Modern qw(
 );
 use PDL;
 
-sub with_time (&) {
+sub with_time (&$) {
   require Time::HiRes;
   my @t = Time::HiRes::gettimeofday();
   &{$_[0]}();
-  printf "%g ms\n", Time::HiRes::tv_interval(\@t) * 1000;
+  printf "$_[1]: %g ms\n", Time::HiRes::tv_interval(\@t) * 1000;
 }
 
 print "Perl $^V OpenGL::Modern $OpenGL::Modern::VERSION PDL $PDL::VERSION\n";
@@ -112,7 +112,7 @@ glUseProgram(0);
 glBindTexture(GL_TEXTURE_2D, 0);
 glDisableVertexAttribArray(0);
 glBindBuffer(GL_ARRAY_BUFFER, 0);
-};
+} 'render';
 
 my $p2 = zeroes(float, $xdim, $ydim);
 my $skip = $p2->dim(1)-1;
@@ -125,7 +125,7 @@ print "Texture $w x $h\n";
 glPixelStorei(GL_PACK_ALIGNMENT, 1);
 glGetTexImage_c(GL_TEXTURE_2D, 0, $format, $type, $p2->address_data);
 glBindTexture(GL_TEXTURE_2D, 0);
-};
+} 'copy dest to CPU';
 print "After: ", $p2->slice($slicearg);
 
 glpCheckErrors();
