@@ -44,8 +44,6 @@ sub with_time (&$) {
 
 print "Perl $^V OpenGL::Modern $OpenGL::Modern::VERSION PDL $PDL::VERSION\n";
 
-my ($xdim, $ydim) = (3048, 3048);
-
 # 4.1 core so MacOS allows >2.1
 glewCreateContext(4, 1, 1, 2) == GLEW_OK or die "glewCreateContext failed";
 glewInit() == GLEW_OK or die "glewInit failed";
@@ -82,6 +80,11 @@ glBindBuffer(GL_ARRAY_BUFFER, 0);
 my $vao = glGenVertexArrays_p(1);
 glBindVertexArray($vao);
 
+my ($xdim, $ydim) = (3048, 3048);
+my $skip0 = int($xdim / 5);
+my $skip1 = int(($ydim-1) / 2);
+my $slicearg = '::'.$skip0.',::'.$skip1;
+
 my ($type, $internalformat, $format) = (GL_FLOAT, GL_R32F, GL_RED);
 
 my ($destTextureID) = glGenTextures_p(1);
@@ -90,6 +93,7 @@ glBindTexture(GL_TEXTURE_2D, $destTextureID);
 my ($dim0, $dim1) = ($xdim, $ydim);
 glTexImage2D_c(GL_TEXTURE_2D, 0, $internalformat, $dim0, $dim1,
   0, $format, $type, 0);
+tex_parameters();
 glBindTexture(GL_TEXTURE_2D, 0);
 
 my ($fbo_id) = glGenFramebuffers_p(1);
@@ -104,19 +108,14 @@ glViewport(0,0,$xdim,$ydim);
 glBindBuffer(GL_ARRAY_BUFFER, $attrib_buffer);
 glVertexAttribPointer_c(0, 2, GL_FLOAT, GL_FALSE, 0, 0);
 glEnableVertexAttribArray(0);
-glBindTexture(GL_TEXTURE_2D, $destTextureID);
-tex_parameters();
 glUseProgram($program);
 glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 glUseProgram(0);
-glBindTexture(GL_TEXTURE_2D, 0);
 glDisableVertexAttribArray(0);
 glBindBuffer(GL_ARRAY_BUFFER, 0);
 } 'render';
 
 my $p2 = zeroes(float, $xdim, $ydim);
-my $skip = $p2->dim(1)-1;
-my $slicearg = '-10:-1,::'.$skip;
 print "Before: ", $p2->slice($slicearg), "\n";
 with_time {
 glBindTexture(GL_TEXTURE_2D, $destTextureID);
