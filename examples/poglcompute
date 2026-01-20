@@ -14,6 +14,7 @@ use OpenGL::Modern qw(
   glGetShaderiv_p glGetShaderInfoLog_p
   glCreateProgram glDeleteProgram glLinkProgram glUseProgram
   glGetProgramiv_p glGetProgramInfoLog_p
+  glGetUniformLocation glUniform1i
   glGenFramebuffers_p glBindFramebuffer glDeleteFramebuffers_p
   glFramebufferTexture glCheckFramebufferStatus
   glGenBuffers_p glDeleteBuffers_p glBindBuffer glBufferData_c
@@ -22,10 +23,10 @@ use OpenGL::Modern qw(
   glEnableVertexAttribArray glDisableVertexAttribArray
   glDrawArrays
   GL_FRAMEBUFFER GL_COLOR_ATTACHMENT0 GL_FRAMEBUFFER_COMPLETE
-  GL_PACK_ALIGNMENT
+  GL_UNPACK_ALIGNMENT GL_PACK_ALIGNMENT
   GL_TEXTURE_2D GL_R32F GL_RED GL_FLOAT GL_COLOR_BUFFER_BIT
   GL_TEXTURE_MIN_FILTER GL_TEXTURE_MAG_FILTER
-  GL_TEXTURE1
+  GL_TEXTURE0 GL_TEXTURE1
   GL_TEXTURE_WIDTH GL_TEXTURE_HEIGHT GL_MAX_TEXTURE_SIZE GL_MAX_VIEWPORT_DIMS
   GL_TEXTURE_WRAP_S GL_TEXTURE_WRAP_T GL_NEAREST GL_CLAMP_TO_EDGE
   GL_VERSION GLEW_OK
@@ -55,24 +56,31 @@ print "Max viewport dim = $max_vp_dim\n";
 
 my $vertex_shader = <<'EOF';
 #version 330
+precision highp float;
 layout(location = 0) in vec2 pos;
+smooth out vec2 texLoc;
 void main() {
   gl_Position = vec4(pos, 0.0, 1.0);
+  texLoc = (pos + 1.0) / 2.0;
 }
 EOF
 
 my $fragment_shader = <<'EOF';
 #version 330
 precision highp float;
+uniform sampler2D tex;
+smooth in vec2 texLoc;
 out vec4 outputColor;
 
 void main() {
-  outputColor = vec4(-0.5, 0, 0, 1);
+  float x = texture(tex, texLoc).r;
+  outputColor = vec4(x, 0, 0, 1);
 }
 EOF
 
 my $pos_data = float('1.0 -1.0; 1.0 1.0; -1.0 -1.0; -1.0 1.0');
 my $program = compile_program($vertex_shader, $fragment_shader);
+my $tex_uniform = glGetUniformLocation($program, "tex");
 my $attrib_buffer = glGenBuffers_p(1);
 glBindBuffer(GL_ARRAY_BUFFER, $attrib_buffer);
 glBufferData_c(GL_ARRAY_BUFFER, $pos_data->nbytes, $pos_data->make_physical->address_data, GL_STATIC_DRAW);
@@ -81,11 +89,27 @@ my $vao = glGenVertexArrays_p(1);
 glBindVertexArray($vao);
 
 my ($xdim, $ydim) = (3048, 3048);
+my $p = sequence(float, $xdim, $ydim);
 my $skip0 = int($xdim / 5);
 my $skip1 = int(($ydim-1) / 2);
 my $slicearg = '::'.$skip0.',::'.$skip1;
+print "Source data: ", $p->slice($slicearg);
+with_time { $p ** 2 } 'square CPU';
 
 my ($type, $internalformat, $format) = (GL_FLOAT, GL_R32F, GL_RED);
+my ($srcTextureID) = glGenTextures_p(1);
+with_time {
+glActiveTexture(GL_TEXTURE0);
+glBindTexture(GL_TEXTURE_2D, $srcTextureID);
+glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+my $input = $p;
+die "Input as texture must have 2 dims, but has [@{[$input->{Points}->dims]}]" if $input->ndims != 2;
+my ($dim0, $dim1) = $input->dims;
+glTexImage2D_c(GL_TEXTURE_2D, 0, $internalformat, $dim0, $dim1,
+  0, $format, $type, $input->address_data);
+tex_parameters();
+glBindTexture(GL_TEXTURE_2D, 0);
+} 'setup src texture';
 
 my ($destTextureID) = glGenTextures_p(1);
 glActiveTexture(GL_TEXTURE1);
@@ -108,7 +132,10 @@ glViewport(0,0,$xdim,$ydim);
 glBindBuffer(GL_ARRAY_BUFFER, $attrib_buffer);
 glVertexAttribPointer_c(0, 2, GL_FLOAT, GL_FALSE, 0, 0);
 glEnableVertexAttribArray(0);
+glActiveTexture(GL_TEXTURE0); # do before bind
+glBindTexture(GL_TEXTURE_2D, $srcTextureID);
 glUseProgram($program);
+glUniform1i($tex_uniform, 0);
 glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 glUseProgram(0);
 glDisableVertexAttribArray(0);
@@ -130,7 +157,7 @@ print "After: ", $p2->slice($slicearg);
 glpCheckErrors();
 END {
 glBindTexture(GL_TEXTURE_2D, 0);
-glDeleteTextures_p($_) for grep $_, $destTextureID;
+glDeleteTextures_p($_) for grep $_, $srcTextureID, $destTextureID;
 glBindFramebuffer(GL_FRAMEBUFFER, 0);
 glDeleteFramebuffers_p($_) for grep $_, $fbo_id;
 glBindVertexArray(0);
