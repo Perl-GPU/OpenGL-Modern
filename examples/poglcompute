@@ -39,8 +39,9 @@ use PDL;
 sub with_time (&$) {
   require Time::HiRes;
   my @t = Time::HiRes::gettimeofday();
-  &{$_[0]}();
+  my $ret = &{$_[0]}();
   printf "$_[1]: %g ms\n", Time::HiRes::tv_interval(\@t) * 1000;
+  $ret;
 }
 
 print "Perl $^V OpenGL::Modern $OpenGL::Modern::VERSION PDL $PDL::VERSION\n";
@@ -94,7 +95,8 @@ my $skip0 = int($xdim / 5);
 my $skip1 = int(($ydim-1) / 2);
 my $slicearg = '::'.$skip0.',::'.$skip1;
 print "Source data: ", $p->slice($slicearg);
-with_time { $p ** 2 } 'square CPU';
+my $p_cpu_squared = with_time { $p ** 2 } 'square CPU';
+print "Squared on CPU: ", $p_cpu_squared->slice($slicearg);
 
 my ($type, $internalformat, $format) = (GL_FLOAT, GL_R32F, GL_RED);
 my ($srcTextureID) = glGenTextures_p(1);
