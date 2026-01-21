@@ -3,6 +3,40 @@ use ExtUtils::MakeMaker;
 use Devel::CheckLib 'assert_lib';
 use Config;
 
+sub pkg_config($$)
+{
+  my ($cmd, $lib) = @_;
+  $cmd =~ s/_/-/g;
+  my $x = `pkg-config --$cmd $lib 2>/dev/null`;
+  chomp $x;
+  return $x;
+}
+
+sub check_homebrew
+{
+  # native libs and homebrew libs coredump if used together
+  return unless $^O eq 'darwin';
+  return unless $ENV{WITH_HOMEBREW};
+  my $found = 0;
+  my %ret;
+  for my $lib (qw(x11 gl glew)) {
+     my $v = pkg_config modversion => $lib;
+     next unless $v =~ /^\d/;
+     chomp $v;
+     print "found homebrew with $lib $v\n";
+     $ret{inc} .= ' ' . pkg_config cflags => $lib;
+     $ret{lib} .= ' ' . pkg_config libs => $lib;
+     $found++;
+  }
+  unless ( 3 == $found ) {
+     print "** warning: to use homebrew, x11 gl and glew have to be installed\n";
+     return;
+  }
+  $ret{lib} =~ s/-lGL\b// while 1 < @{[$ret{lib} =~ m/-lGL\b/g]};
+  return %ret;
+}
++
+
 my $include = "-Ilib/OpenGL/Modern -Iinclude";
 my $libs;
 my $define = "-DGLEW_NO_GLU -DGLEW_STATIC";
@@ -13,8 +47,15 @@ if ( $^O eq 'MSWin32' ) {
 } elsif ( $^O eq 'cygwin' ) {
   $libs = '-lGL -lX11';
 } elsif ( $^O eq 'darwin' ) {
-  $DYNS = { 'OTHERLDFLAGS' => '-framework OpenGL' };
-  $define .= " -Wno-compound-token-split-by-macro -DGL_SILENCE_DEPRECATION";
+  my %hb = check_homebrew;
+  if ( keys %hb ) {
+    $libs = $hb{lib};
+    $include .= $hb{inc};
+    $define .= " -DGLEW_HOMEBREW";
+  } else {
+    $DYNS = { 'OTHERLDFLAGS' => '-framework OpenGL' };
+    $define .= " -Wno-compound-token-split-by-macro -DGL_SILENCE_DEPRECATION";
+  }
 } else {
   $libs = '-lGL -lX11';
 }
