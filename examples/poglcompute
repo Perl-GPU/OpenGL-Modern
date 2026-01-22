@@ -75,7 +75,8 @@ out vec4 outputColor;
 
 void main() {
   float x = texture(tex, texLoc).r;
-  outputColor = vec4(x, 0, 0, 1);
+  float y = pow(x, 2);
+  outputColor = vec4(y, 0, 0, 1);
 }
 EOF
 
@@ -145,7 +146,6 @@ glBindBuffer(GL_ARRAY_BUFFER, 0);
 } 'render';
 
 my $p2 = zeroes(float, $xdim, $ydim);
-print "Before: ", $p2->slice($slicearg), "\n";
 with_time {
 glBindTexture(GL_TEXTURE_2D, $destTextureID);
 my ($w, $h) = map glGetTexLevelParameteriv_p(GL_TEXTURE_2D, 0, $_), GL_TEXTURE_WIDTH, GL_TEXTURE_HEIGHT;
@@ -154,7 +154,7 @@ glPixelStorei(GL_PACK_ALIGNMENT, 1);
 glGetTexImage_c(GL_TEXTURE_2D, 0, $format, $type, $p2->address_data);
 glBindTexture(GL_TEXTURE_2D, 0);
 } 'copy dest to CPU';
-print "After: ", $p2->slice($slicearg);
+print "From GPU: ", $p2->slice($slicearg);
 
 glpCheckErrors();
 END {
