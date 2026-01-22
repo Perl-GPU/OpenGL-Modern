@@ -21,7 +21,7 @@ use OpenGL::Modern qw(
   glGenVertexArrays_p glDeleteVertexArrays_p glBindVertexArray
   glViewport glVertexAttribPointer_c
   glEnableVertexAttribArray glDisableVertexAttribArray
-  glDrawArrays
+  glDrawArrays glFinish
   GL_FRAMEBUFFER GL_COLOR_ATTACHMENT0 GL_FRAMEBUFFER_COMPLETE
   GL_UNPACK_ALIGNMENT GL_PACK_ALIGNMENT
   GL_TEXTURE_2D GL_R32F GL_RED GL_FLOAT GL_COLOR_BUFFER_BIT
@@ -90,9 +90,9 @@ glBindBuffer(GL_ARRAY_BUFFER, 0);
 my $vao = glGenVertexArrays_p(1);
 glBindVertexArray($vao);
 
-my ($xdim, $ydim) = (3048, 3048);
+my ($xdim, $ydim) = (16384, 16384);
 my $p = sequence(float, $xdim, $ydim);
-my $skip0 = int($xdim / 5);
+my $skip0 = int($xdim / 2) - 1;
 my $skip1 = int(($ydim-1) / 2);
 my $slicearg = '::'.$skip0.',::'.$skip1;
 print "Source data: ", $p->slice($slicearg);
@@ -143,7 +143,8 @@ glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 glUseProgram(0);
 glDisableVertexAttribArray(0);
 glBindBuffer(GL_ARRAY_BUFFER, 0);
-} 'render';
+glFinish();
+} 'render' for 1..10;
 
 my $p2 = zeroes(float, $xdim, $ydim);
 with_time {
