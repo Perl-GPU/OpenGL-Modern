@@ -86,6 +86,12 @@ sub bindings {
     aliases => make_aliases($s->{aliases}, '_p'),
   );
   @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
+  my %name2data = map +($_->[0] => $_), @argdata;
+  my @ptr_args = @argdata[@ptr_arg_inds];
+  my %dynlang = %{ $s->{dynlang} || {} };
+  my $compsize_from = ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/ ? $1 : undef;
+  my $compsize_data = $compsize_from && $name2data{$compsize_from};
+  my $compsize_group = $compsize_data && $compsize_data->[3];
   if ($name =~ /^gl(?:Gen|Create)/ && @argdata == 2 && $s->{restype} eq 'void') {
     push @ret, {
       %pbinding,
@@ -96,8 +102,7 @@ sub bindings {
       error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
       aftercall => "\n  OGLM_GEN_FINISH($argdata[0][0], $argdata[1][0])",
     };
-  }
-  if ($name =~ /^glDelete/ and @argdata == 2 and $argdata[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/) {
+  } elsif ($name =~ /^glDelete/ and @argdata == 2 and $argdata[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/) {
     push @ret, {
       %pbinding,
       xs_args => '...',
@@ -106,31 +111,21 @@ sub bindings {
       error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
       aftercall => "\n  OGLM_DELETE_FINISH($argdata[1][0])",
     };
-  }
-  my %name2data = map +($_->[0] => $_), @argdata;
-  my @ptr_args = @argdata[@ptr_arg_inds];
-  if ($name =~ /^gl(?:Get)/ && @ptr_args == 1 && ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/) {
-    my $compsize_from = $1;
-    my $compsize_data = $name2data{$compsize_from};
-    my $compsize_group = $compsize_data->[3];
-    if ($compsize_group && $counts->{$compsize_group}) {
-      my ($datatype) = $ptr_args[0][1] =~ /^(?:const\s*)?(\w+)/;
-      my $typefunc = $type2typefunc{$datatype} or die "No typefunc for '$datatype'";
-      my $not_that = $ptr_args[0][0];
-      my @filtered_args = grep $_->[0] ne $not_that, @argdata;
-      push @ret, {
-        %pbinding,
-        xs_args => join(', ', map $_->[0], @filtered_args),
-        xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @filtered_args),
-        xs_code => "PPCODE:\n",
-        beforecall => "  OGLM_GET_SETUP($name, $compsize_group, $compsize_from, $datatype, $ptr_args[0][0])\n",
-        error_check2 => "OGLM_CHECK_ERR($name, )",
-        aftercall => "\n  OGLM_GET_FINISH($compsize_from, $typefunc, $ptr_args[0][0])",
-      };
-    }
-  }
-  my %dynlang = %{ $s->{dynlang} || {} };
-  if (%dynlang) {
+  } elsif ($name =~ /^gl(?:Get)/ && @ptr_args == 1 && $compsize_group && $counts->{$compsize_group}) {
+    my ($datatype) = $ptr_args[0][1] =~ /^(?:const\s*)?(\w+)/;
+    my $typefunc = $type2typefunc{$datatype} or die "No typefunc for '$datatype'";
+    my $not_that = $ptr_args[0][0];
+    my @filtered_args = grep $_->[0] ne $not_that, @argdata;
+    push @ret, {
+      %pbinding,
+      xs_args => join(', ', map $_->[0], @filtered_args),
+      xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @filtered_args),
+      xs_code => "PPCODE:\n",
+      beforecall => "  OGLM_GET_SETUP($name, $compsize_group, $compsize_from, $datatype, $ptr_args[0][0])\n",
+      error_check2 => "OGLM_CHECK_ERR($name, )",
+      aftercall => "\n  OGLM_GET_FINISH($compsize_from, $typefunc, $ptr_args[0][0])",
+    };
+  } elsif (%dynlang) {
     my %this = %pbinding;
     my $retval = delete $dynlang{RETVAL};
     if ($retval) {
