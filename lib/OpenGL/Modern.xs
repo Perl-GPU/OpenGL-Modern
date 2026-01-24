@@ -111,27 +111,27 @@ CODE:
 OUTPUT:
     RETVAL
 
-SV*
+char *
 glewGetErrorString(err)
     GLenum err
 CODE:
-    RETVAL = newSVpv((void *)glewGetErrorString(err),0);
+    RETVAL = (void *)glewGetErrorString(err);
 OUTPUT:
     RETVAL
 
-SV*
+char *
 glewGetString(what)
     GLenum what;
 CODE:
-    RETVAL = newSVpv((void *)glewGetString(what),0);
+    RETVAL = (void *)glewGetString(what);
 OUTPUT:
     RETVAL
 
-SV*
+char *
 glGetString(what)
     GLenum what;
 CODE:
-    RETVAL = newSVpv((void *)glGetString(what),0);
+    RETVAL = (void *)glGetString(what);
 OUTPUT:
     RETVAL
 
