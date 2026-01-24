@@ -127,14 +127,6 @@ CODE:
 OUTPUT:
     RETVAL
 
-char *
-glGetString(what)
-    GLenum what;
-CODE:
-    RETVAL = (void *)glGetString(what);
-OUTPUT:
-    RETVAL
-
 GLboolean
 glewIsSupported(name);
     char* name;

@@ -79,7 +79,7 @@ GLsync                      T_PTR
 GLbitfield                  T_INT
 GLubyte                     T_U_INT
 GLubyte *                   T_PTR
-const GLubyte *             T_PTR
+const GLubyte *             T_PV_CAST
 GLuint64                    T_U_INT
 GLuint64 *                  T_PTR
 const GLuint64 *            T_PTR
@@ -127,7 +127,13 @@ T_INT_ARRAY
         };
         $var = SvPV_nolen($var);
 
+T_PV_CAST
+        $var = ($type)SvPV_nolen($arg)
+
 OUTPUT
 
 T_FASTPTROBJ
         sv_setref_pv($arg, \"${ntype}\", (void*)$var);
+
+T_PV_CAST
+        sv_setpv((SV*)$arg, (void*)$var);

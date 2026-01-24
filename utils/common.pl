@@ -4,7 +4,6 @@ use warnings;
 # The functions where we specify manual implementations or prototypes
 # These could also be read from Modern.xs, later maybe
 my @manual_list = qw(
-  glGetString
   glShaderSource_p
 );
 my %manual;
