@@ -140,9 +140,12 @@ sub bindings {
     for my $get (sort grep $dynlang{$_} =~ /^</, keys %dynlang) {
       my $val = delete $dynlang{$get};
       $val =~ s#^<##;
+      my ($getfunc) = $val =~ /^(\w+)/;
       $val =~ s#&#&$get#;
       my $vardata = $name2data{$get};
       $beforecall .= "  $vardata->[1]$get;\n  $val;\n";
+      $this{error_check} .= "\n  " if $this{error_check};
+      $this{error_check} .= "OGLM_CHECK_ERR($getfunc, )",
     }
     for my $arr (sort grep $dynlang{$_} =~ /^\[/, keys %dynlang) {
       my $val = delete $dynlang{$arr};
