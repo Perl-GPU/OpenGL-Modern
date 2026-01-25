@@ -187,7 +187,18 @@ my $g2c2s = assemble_enum_groups(\%groups, \%counts);
 
 for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my $s = $signature{$name};
+  next if $s->{dynlang};
   my @argdata = @{$s->{argdata} || []};
+  my @ptr_arg_inds = @{$s->{ptr_args} || []};
+  @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
+  my %name2data = map +($_->[0] => $_), @argdata;
+  my @ptr_args = @argdata[@ptr_arg_inds];
+  my @ptr_types = map {
+    my $const = (my $type = $_->[1]) =~ s#\bconst\b##g;
+    $type =~ s#\*##;
+    $type =~ s#\s##g;
+    [$type, $const];
+  } @ptr_args;
   if ($name =~ /^glDelete/ and @argdata == 2 and $argdata[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/) {
     $s->{dynlang} = {
       $argdata[0][0] => 'items',
