@@ -502,6 +502,7 @@ our @gl_functionscompat = qw(
   glSelectBuffer_c
   glShadeModel
   glShaderSource_c
+  glShaderSource_p
   glStencilFunc
   glStencilFuncSeparate
   glStencilMask
@@ -3301,7 +3302,6 @@ our @gl_functionsrest = qw(
   glShaderOp2EXT
   glShaderOp3EXT
   glShaderSourceARB_c
-  glShaderSource_p
   glShaderStorageBlockBinding
   glSharpenTexFuncSGIS_c
   glSignalSemaphoreEXT_c
@@ -7574,6 +7574,7 @@ our %EXPORT_TAGS_GL = (
     'glIsShader',
     'glLinkProgram',
     'glShaderSource_c',
+    'glShaderSource_p',
     'glStencilFuncSeparate',
     'glStencilMaskSeparate',
     'glStencilOpSeparate',

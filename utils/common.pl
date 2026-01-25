@@ -1,14 +1,6 @@
 use strict;
 use warnings;
 
-# The functions where we specify manual implementations or prototypes
-# These could also be read from Modern.xs, later maybe
-my @manual_list = qw(
-  glShaderSource_p
-);
-my %manual;
-@manual{@manual_list} = ( 1 ) x @manual_list;
-
 my %type2typefunc = (
   GLboolean => 'newSViv',
   GLubyte => 'newSVuv',
@@ -23,9 +15,6 @@ my %type2typefunc = (
   GLfloat => 'newSVnv',
   GLdouble => 'newSVnv',
 );
-
-sub is_manual { $manual{$_[0]} }
-sub manual_list { @manual_list }
 
 sub slurp {
     my $filename = $_[0];
@@ -133,9 +122,12 @@ sub bindings {
       $this{retout} = "\nOUTPUT:\n  RETVAL";
     }
     my @thisargs = grep !exists $dynlang{$_->[0]}, @argdata;
-    $this{xs_args} = join(', ', map $_->[0], @thisargs);
+    my $dotdotdot = grep /\bitems\b/, values %dynlang;
+    $this{xs_args} = join(', ', (map $_->[0], @thisargs), $dotdotdot ? '...' : ());
     $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @thisargs);
     my $beforecall = '';
+    my $cleanup = delete $dynlang{CLEANUP} // '';
+    $this{aftercall} .= "\n  $cleanup" if $cleanup;
     for my $get (sort grep $dynlang{$_} =~ /^</, keys %dynlang) {
       my $val = delete $dynlang{$get};
       $val =~ s#^<##;
@@ -144,18 +136,24 @@ sub bindings {
       my $vardata = $name2data{$get};
       $beforecall .= "  $vardata->[1]$get;\n  $val;\n";
       $this{error_check} .= "\n  " if $this{error_check};
-      $this{error_check} .= "OGLM_CHECK_ERR($getfunc, )",
+      $this{error_check} .= "OGLM_CHECK_ERR($getfunc, $cleanup)",
     }
+    $this{error_check2} &&= "OGLM_CHECK_ERR($name, $cleanup)";
     for my $arr (sort grep $dynlang{$_} =~ /^\[/, keys %dynlang) {
       my $val = delete $dynlang{$arr};
       my $vardata = $name2data{$arr};
       (my $type = $vardata->[1]) =~ s#\*##;
       $beforecall .= "  $type $arr$val;\n";
     }
+    my $need_cast;
     for my $var (sort keys %dynlang) {
       my $val = delete $dynlang{$var};
-      my $vardata = $name2data{$var};
-      $beforecall .= "  $vardata->[1] $var = $val;\n";
+      my $type = $name2data{$var}->[1];
+      $need_cast = $type =~ s#\bconst\b##g;
+      $beforecall .= "  $type $var = $val;\n";
+    }
+    if ($need_cast) {
+      $this{callarg_list} = $s->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map qq{($_->[1])$_->[0]}, @argdata ]})";
     }
     $this{beforecall} = $beforecall;
     push @ret, \%this;

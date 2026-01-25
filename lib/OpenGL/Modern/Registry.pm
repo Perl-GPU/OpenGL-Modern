@@ -49527,6 +49527,12 @@ our %registry = (
         'count'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(string);',
+      'count' => 'items-1',
+      'length' => 'NULL',
+      'string' => 'OGLM_GET_STRINGARGS(string,1)'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewShaderSource',
     'glewtype' => 'fun',

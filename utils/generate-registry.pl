@@ -130,7 +130,6 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
       ( $glewImpl = $name ) =~ s!^gl!__glew!;
   }
   $item->{glewImpl} = $glewImpl if defined $glewImpl;
-  next if is_manual($name);
   my $type = $item->{restype};
   my ($i, @ptr_args) = -1;
   for ([$i++,$type], map [$i++,$_->[1]], @argdata) {
@@ -197,7 +196,7 @@ my (%features, %gltags);
 for my $name (sort {uc$a cmp uc$b} keys %signature) {
   my $s = $signature{$name};
   my @binding_names = map $_->{binding_name}, bindings($name, $s, $g2c2s);
-  push @exported_functions, @binding_names if !is_manual($name);
+  push @exported_functions, @binding_names;
   next if !$s->{feature};
   for ($s->{feature}, grep defined, $feature2version{$s->{feature}}) {
     @{ $gltags{$_} }{ @binding_names } = ();

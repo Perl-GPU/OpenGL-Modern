@@ -63,6 +63,12 @@ static int _auto_check_errors = 0;
 #define OGLM_GET_FINISH(pname, typefunc, buffername) \
   EXTEND(sp, pname ## _count); \
   { int i; for (i=0;i<pname ## _count;i++) PUSHs(sv_2mortal(typefunc(buffername[i]))); }
+#define OGLM_GET_STRINGARGS(varname, startfrom) \
+  malloc(sizeof(GLchar *) * (items-startfrom)); \
+  if (!varname) croak("malloc failed"); \
+  { IV i; for(i = 0; i < items-startfrom; i++) { \
+    varname[i] = (GLchar *)SvPV_nolen(ST(i + startfrom)); \
+  } }
 
 /*
   Maybe one day we'll allow Perl callbacks for GLDEBUGPROCARB
@@ -191,33 +197,5 @@ OUTPUT:
 #     for( i2 = 0; i2 < items; i2++ ) {
 #        PUSHs(sv_2mortal(newSViv(residences[i2])));
 #	 };
-
-# Manual implementations go here
-#
-
-#//# glShaderSource_p($shaderObj, @string);
-void
-glShaderSource_p(shader, ...);
-     GLuint shader;
-INIT:
-    int i;
-    GLsizei count = items - 1;
-CODE:
-    if(! __glewShaderSource) {
-    	croak("glShaderSource not available on this machine");
-    };
-    
-    GLchar** string = malloc(sizeof(GLchar *) * count);
-    GLint *length = malloc(sizeof(GLint) * count);
-    
-    for(i=0; i<count; i++) {
-    	string[i] = (GLchar *)SvPV(ST(i+1),PL_na);
-    	length[i] = strlen(string[i]);
-    }
-    
-    glShaderSource(shader, count, (const GLchar *const*)string, (const GLint *)length);
-    
-    free(string);
-    free(length);
 
 INCLUDE: ../../auto-xs.inc

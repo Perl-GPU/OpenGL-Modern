@@ -12531,6 +12531,8 @@ Exported under tag C<:GL_EXT_vertex_shader>.
 
  glShaderSource_c($shader, $count, $string, $length);
  glShaderSourceARB_c($shader, $count, $string, $length);
+ glShaderSource_p($shader, @inputs);
+ glShaderSourceARB_p($shader, @inputs);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glShaderSource.xhtml>

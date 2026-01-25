@@ -13,22 +13,11 @@ and creates XS stubs for each.
 our %signature;
 *signature = \%OpenGL::Modern::Registry::registry;
 
-sub munge_GL_args {
-    my ( @args ) = @_;
-
-    # GLsizei n
-    # GLsizei count
-}
-
 sub generate_glew_xs {
   my $content;
   my $g2c2s = assemble_enum_groups(\%OpenGL::Modern::Registry::groups, \%OpenGL::Modern::Registry::counts);
   for my $name (@_ ? @_ : sort keys %signature) {
     my $item = $signature{$name};
-    if ( is_manual($name) ) {
-      print "Skipping $name, already implemented in Modern.xs\n";
-      next;
-    }
     for my $s (bindings($name, $item, $g2c2s)) {
       die "Error generating for $name: no return type" if !$s->{xs_rettype};
       my $res = "$s->{xs_rettype}\n$s->{binding_name}($s->{xs_args})\n";
