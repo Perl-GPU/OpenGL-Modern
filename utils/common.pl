@@ -1,20 +1,30 @@
 use strict;
 use warnings;
 
-my %type2typefunc = (
-  GLboolean => 'newSViv',
-  GLubyte => 'newSVuv',
-  GLbyte => 'newSViv',
-  GLfixed => 'newSViv',
-  GLuint => 'newSVuv',
-  GLint => 'newSViv',
-  GLuint64 => 'newSVuv',
-  GLuint64EXT => 'newSVuv',
-  GLint64 => 'newSViv',
-  GLint64EXT => 'newSViv',
-  GLfloat => 'newSVnv',
-  GLdouble => 'newSVnv',
+my %type2func = (
+  GLboolean => ['IV'],
+  GLubyte => ['UV'],
+  GLbyte => ['IV'],
+  GLfixed => ['IV'],
+  GLshort => ['IV'],
+  GLushort => ['UV'],
+  GLuint => ['UV'],
+  GLint => ['IV'],
+  GLuint64 => ['UV'],
+  GLuint64EXT => ['UV'],
+  GLint64 => ['IV'],
+  GLint64EXT => ['IV'],
+  GLhalf => ['NV'], # not right
+  GLfloat => ['NV'],
+  GLdouble => ['NV'],
+  GLclampd => ['NV'],
+  'GLchar*' => ['PV_nolen'],
+  GLenum => ['IV'],
 );
+sub typefunc {
+  my ($type) = @_;
+  $type2func{$type};
+}
 
 sub slurp {
     my $filename = $_[0];
@@ -92,7 +102,8 @@ sub bindings {
     };
   } elsif ($name =~ /^gl(?:Get)/ && @ptr_args == 1 && $compsize_group && $counts->{$compsize_group}) {
     my ($datatype) = $ptr_args[0][1] =~ /^(?:const\s*)?(\w+)/;
-    my $typefunc = $type2typefunc{$datatype} or die "No typefunc for '$datatype'";
+    my $typefunc = typefunc($datatype) or die "No typefunc for '$datatype'";
+    $typefunc = "newSV" . lc $typefunc->[0];
     my $not_that = $ptr_args[0][0];
     my @filtered_args = grep $_->[0] ne $not_that, @argdata;
     push @ret, {
