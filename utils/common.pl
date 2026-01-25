@@ -89,7 +89,7 @@ sub bindings {
   my $compsize_from = ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/ ? $1 : undef;
   my $compsize_data = $compsize_from && $name2data{$compsize_from};
   my $compsize_group = $compsize_data && $compsize_data->[3];
-  if ($name =~ /^gl(?:Gen|Create)/ && @argdata == 2 && $s->{restype} eq 'void') {
+  if ($name =~ /^gl(?:Gen|Create)/ && @argdata == 2) {
     push @ret, {
       %pbinding,
       xs_args => join(', ', map $_->[0], $argdata[0]),
