@@ -17,7 +17,6 @@ my %upper2data;
 my %case_map;
 my %alias;
 
-my @exported_functions; # names the module exports
 my %constants;
 
 for my $file ("include/GL/glew.h") {
@@ -215,19 +214,16 @@ for (grep $_, split /\n/, slurp('utils/feature-reuse.txt')) {
 }
 @feature2version{keys %feature2version} = map +(keys %$_)[0], values %feature2version;
 $signature{$_}{core_removed} = 1 for grep $_, split /\s+/, slurp('utils/removed.txt');
-my (%features, %gltags);
+my %features;
 for my $name (sort {uc$a cmp uc$b} keys %signature) {
   my $s = $signature{$name};
-  my @binding_names = map $_->{binding_name}, bindings($name, $s, $g2c2s);
-  push @exported_functions, @binding_names;
   next if !$s->{feature};
   for ($s->{feature}, grep defined, $feature2version{$s->{feature}}) {
-    @{ $gltags{$_} }{ @binding_names } = ();
     $features{$_}{$name} = undef;
   }
 }
-@gltags{keys %gltags} = map [sort keys %$_], values %gltags;
 @features{keys %features} = map [sort keys %$_], values %features;
+
 my @version_features = grep /^GL_VERSION/, keys %features;
 my (@version_31, @version_core);
 for my $f (@version_features) {
@@ -235,6 +231,18 @@ for my $f (@version_features) {
   my $arr = (10*$maj + $min) < 32 ? \@version_31 : \@version_core;
   push @$arr, $f;
 }
+my %gltags;
+my @exported_functions; # names the module exports
+for my $name (sort {uc$a cmp uc$b} keys %signature) {
+  my $s = $signature{$name};
+  my @binding_names = map $_->{binding_name}, bindings($name, $s, $g2c2s);
+  push @exported_functions, @binding_names;
+  next if !$s->{feature};
+  for ($s->{feature}, grep defined, $feature2version{$s->{feature}}) {
+    @{ $gltags{$_} }{ @binding_names } = ();
+  }
+}
+@gltags{keys %gltags} = map [sort keys %$_], values %gltags;
 my %glcompat_c = map +($_=>undef), map @{$gltags{$_}}, @version_31;
 
 my %nonglew2alias;
