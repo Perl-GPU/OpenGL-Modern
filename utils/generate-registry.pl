@@ -188,7 +188,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my $s = $signature{$name};
   next if $s->{dynlang};
   my @argdata = @{$s->{argdata} || []};
-  my @ptr_arg_inds = @{$s->{ptr_args} || []};
+  next unless my @ptr_arg_inds = @{$s->{ptr_args} || []};
   @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
   my %name2data = map +($_->[0] => $_), @argdata;
   my @ptr_args = @argdata[@ptr_arg_inds];
