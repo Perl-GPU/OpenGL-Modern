@@ -198,11 +198,17 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     $type =~ s#\s##g;
     [$type, $const];
   } @ptr_args;
-  if ($name =~ /^glDelete/ and @argdata == 2 and $argdata[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/) {
+  if (@ptr_types == 1 and $ptr_types[0][1] and
+    (my $info = typefunc($ptr_types[0][0])) and
+    $ptr_args[0][2] and $ptr_args[0][2] !~ /(?:\d|COMPSIZE)/ and
+    $ptr_arg_inds[0] == $#argdata
+  ) {
+    my $len = $ptr_args[0][2];
+    my $startfrom = @argdata - 2;
     $s->{dynlang} = {
-      $argdata[0][0] => 'items',
-      $argdata[1][0] => "OGLM_GET_ARGS($argdata[1][0],0,GLuint,UV)",
-      CLEANUP => "free($argdata[1][0]);",
+      $len => 'items'.($startfrom ? "-$startfrom" : ''),
+      $ptr_args[0][0] => "OGLM_GET_ARGS($ptr_args[0][0],$startfrom,$ptr_types[0][0],$info->[0])",
+      CLEANUP => "free($ptr_args[0][0]);",
     };
   }
 }
