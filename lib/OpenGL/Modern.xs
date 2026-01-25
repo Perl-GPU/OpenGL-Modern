@@ -58,9 +58,6 @@ static int _auto_check_errors = 0;
   int pname ## _count = oglm_count_##group(pname); \
   if (pname ## _count < 0) croak(#name "_p: Unknown " #group " %d", pname); \
   buffertype buffername[OGLM_COUNTMAX_##group];
-#define OGLM_GET_FINISH(pname, typefunc, buffername) \
-  EXTEND(sp, pname ## _count); \
-  { int i; for (i=0;i<pname ## _count;i++) PUSHs(sv_2mortal(typefunc(buffername[i]))); }
 #define OGLM_GET_STRINGARGS(varname, startfrom) \
   malloc(sizeof(GLchar *) * (items-startfrom)); \
   if (!varname) croak("malloc failed"); \

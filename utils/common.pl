@@ -102,7 +102,7 @@ sub bindings {
       xs_code => "PPCODE:\n",
       beforecall => "  OGLM_GET_SETUP($name, $compsize_group, $compsize_from, $datatype, $ptr_args[0][0])\n",
       error_check2 => "OGLM_CHECK_ERR($name, )",
-      aftercall => "\n  OGLM_GET_FINISH($compsize_from, $typefunc, $ptr_args[0][0])",
+      aftercall => "\n  OGLM_OUT_FINISH($ptr_args[0][0], ${compsize_from}_count, $typefunc)",
     };
   } elsif (%dynlang) {
     my %this = %pbinding;
