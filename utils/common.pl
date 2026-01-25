@@ -45,10 +45,9 @@ sub save_file {
 }
 
 sub make_aliases {
-  my ($aliases, $suffix) = @_;
+  my ($aliases) = @_;
   my $i = 0;
-  !$aliases ? "" : "ALIAS:\n".join '',
-    map "  $_$suffix = ".++$i."\n", sort keys %$aliases;
+  !@$aliases ? "" : "ALIAS:\n".join '', map "  $_ = ".++$i."\n", @$aliases;
 }
 
 sub bindings {
@@ -67,7 +66,7 @@ sub bindings {
     xs_rettype => $s->{restype},
     xs_args => join(', ', map $_->[0], @argdata),
     xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @argdata),
-    aliases => make_aliases($s->{aliases}, $c_suffix),
+    aliases => [ map "$_$c_suffix", sort keys %{ $s->{aliases} || {} } ],
     xs_code => "CODE:\n",
     error_check => ($name eq "glGetError") ? "" : "OGLM_CHECK_ERR($name, )",
     avail_check => $avail_check,
@@ -81,7 +80,7 @@ sub bindings {
   my @ret = \%default;
   return @ret if !@ptr_arg_inds;
   my %pbinding = (%default, binding_name => $name . '_p',
-    aliases => make_aliases($s->{aliases}, '_p'),
+    aliases => [ map "${_}_p", sort keys %{ $s->{aliases} || {} } ],
   );
   @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
   my %name2data = map +($_->[0] => $_), @argdata;

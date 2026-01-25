@@ -311,13 +311,7 @@ for my $name (sort grep !/^GL/, keys %signature) {
     my $suffix .= "(";
     $suffix .= join ', ', map $_ eq '...' ? '@inputs' : "\$$_", split /\s*,\s*/, $bind->{xs_args};
     $suffix .= ");\n";
-    my @names = $bind->{binding_name};
-    if ($bind->{aliases}) {
-      my (undef, @list) = split /\n\s*/, $bind->{aliases};
-      s/\s.*// for @list;
-      push @names, @list;
-    }
-    $middle1 .= "$prefix$_$suffix" for @names;
+    $middle1 .= "$prefix$_$suffix" for $bind->{binding_name}, @{ $bind->{aliases} };
   }
   $middle1 .= "\n";
   my $descrip = '';

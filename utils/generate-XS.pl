@@ -22,7 +22,7 @@ sub generate_glew_xs {
       die "Error generating for $name: no return type" if !$s->{xs_rettype};
       my $res = "$s->{xs_rettype}\n$s->{binding_name}($s->{xs_args})\n";
       $res .= $s->{xs_argdecls};
-      $res .= "$s->{aliases}$s->{xs_code}  OGLM_GLEWINIT\n";
+      $res .= make_aliases($s->{aliases})."$s->{xs_code}  OGLM_GLEWINIT\n";
       $res .= "  $s->{error_check}\n" if $s->{error_check};
       $res .= $s->{avail_check} . $s->{beforecall};
       $res .= "  $s->{retcap}$name$s->{callarg_list};";
