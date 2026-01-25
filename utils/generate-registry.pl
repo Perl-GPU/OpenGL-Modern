@@ -202,7 +202,17 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my $nout = grep !$_->[1], @ptr_types;
   die "undef ptr_type for $name" if !$ptr_types[0][0];
   my $info = typefunc($ptr_types[0][0]);
-  if ($nconst == 1 and $nout == 0 and
+  my $compsize_from = ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/ ? $1 : undef;
+  my $compsize_data = $compsize_from && $name2data{$compsize_from};
+  my $compsize_group = $compsize_data && $compsize_data->[3];
+  if ($nconst == 0 && $nout == 1 && $compsize_group && $g2c2s->{$compsize_group}) {
+    my $typefunc = "newSV" . lc $info->[0];
+    $s->{dynlang} = {
+      $ptr_args[0][0] => "OGLM_GET_SETUP($compsize_group,$compsize_from,$ptr_types[0][0],$ptr_args[0][0])",
+      OUTPUT => "OGLM_OUT_FINISH($ptr_args[0][0],${compsize_from}_count,$typefunc)",
+      CLEANUP => "free($ptr_args[0][0]);",
+    };
+  } elsif ($nconst == 1 and $nout == 0 and
     $ptr_args[0][2] and $ptr_args[0][2] !~ /(?:\d|COMPSIZE)/ and
     $info and
     $ptr_arg_inds[0] == $#argdata
@@ -374,7 +384,6 @@ END
 for my $group (sort keys %$g2c2s) {
   my $c2syms = $g2c2s->{$group};
   my ($max) = sort { $b <=> $a } keys %$c2syms;
-  $new .= "#define OGLM_COUNTMAX_$group $max\n";
   $new .= "int oglm_count_$group(int param);\n";
 }
 save_file( "lib/OpenGL/Modern/gl_counts.h", $new );

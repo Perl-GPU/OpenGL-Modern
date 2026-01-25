@@ -2063,10 +2063,12 @@ our @gl_functionsrest = qw(
   glFragmentLightfSGIX
   glFragmentLightfvEXT_c
   glFragmentLightfvSGIX_c
+  glFragmentLightfvSGIX_p
   glFragmentLightiEXT
   glFragmentLightiSGIX
   glFragmentLightivEXT_c
   glFragmentLightivSGIX_c
+  glFragmentLightivSGIX_p
   glFragmentLightModelfEXT
   glFragmentLightModelfSGIX
   glFragmentLightModelfvEXT_c
@@ -2265,10 +2267,8 @@ our @gl_functionsrest = qw(
   glGetFragmentLightivSGIX_p
   glGetFragmentMaterialfvEXT_c
   glGetFragmentMaterialfvSGIX_c
-  glGetFragmentMaterialfvSGIX_p
   glGetFragmentMaterialivEXT_c
   glGetFragmentMaterialivSGIX_c
-  glGetFragmentMaterialivSGIX_p
   glGetFramebufferAttachmentParameterivEXT_c
   glGetFramebufferAttachmentParameterivEXT_p
   glGetFramebufferParameterfvAMD_c
@@ -7122,8 +7122,10 @@ our %EXPORT_TAGS_GL = (
     'glFragmentLightModelivSGIX_c',
     'glFragmentLightfSGIX',
     'glFragmentLightfvSGIX_c',
+    'glFragmentLightfvSGIX_p',
     'glFragmentLightiSGIX',
     'glFragmentLightivSGIX_c',
+    'glFragmentLightivSGIX_p',
     'glFragmentMaterialfSGIX',
     'glFragmentMaterialfvSGIX_c',
     'glFragmentMaterialiSGIX',
@@ -7133,9 +7135,7 @@ our %EXPORT_TAGS_GL = (
     'glGetFragmentLightivSGIX_c',
     'glGetFragmentLightivSGIX_p',
     'glGetFragmentMaterialfvSGIX_c',
-    'glGetFragmentMaterialfvSGIX_p',
-    'glGetFragmentMaterialivSGIX_c',
-    'glGetFragmentMaterialivSGIX_p'
+    'glGetFragmentMaterialivSGIX_c'
   ],
   'GL_SGIX_framezoom' => [
     'glFrameZoomSGIX'

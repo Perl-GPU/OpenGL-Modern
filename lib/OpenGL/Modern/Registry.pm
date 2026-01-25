@@ -17449,6 +17449,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(FragmentLightParameterSGIX,pname,GLfloat,params)'
+    },
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentLightfvSGIX',
     'glewtype' => 'fun',
@@ -17544,6 +17549,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(FragmentLightParameterSGIX,pname,GLint,params)'
+    },
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentLightivSGIX',
     'glewtype' => 'fun',
@@ -19232,6 +19242,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(AtomicCounterBufferPName,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_shader_atomic_counters',
     'glewImpl' => '__glewGetActiveAtomicCounterBufferiv',
     'glewtype' => 'fun',
@@ -19398,6 +19413,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(values);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(values,pname_count,newSViv)',
+      'values' => 'OGLM_GET_SETUP(SubroutineParameterName,pname,GLint,values)'
+    },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetActiveSubroutineUniformiv',
     'glewtype' => 'fun',
@@ -19792,6 +19812,11 @@ our %registry = (
         'COMPSIZE(target)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,target_count,newSViv)',
+      'data' => 'OGLM_GET_SETUP(BufferTargetARB,target,GLboolean,data)'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewGetBooleani_v',
     'glewtype' => 'fun',
@@ -19814,6 +19839,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,pname_count,newSViv)',
+      'data' => 'OGLM_GET_SETUP(GetPName,pname,GLboolean,data)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -19841,6 +19871,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(BufferPNameARB,pname,GLint64,params)'
+    },
     'feature' => 'GL_VERSION_3_2',
     'glewImpl' => '__glewGetBufferParameteri64v',
     'glewtype' => 'fun',
@@ -19872,6 +19907,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(BufferPNameARB,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewGetBufferParameteriv',
     'glewtype' => 'fun',
@@ -20096,6 +20136,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(ColorTableParameterPName,pname,GLfloat,params)'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewGetColorTableParameterfv',
     'glewtype' => 'fun',
@@ -20124,6 +20169,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(ColorTableParameterPName,pname,GLfloat,params)'
+    },
     'feature' => 'GL_SGI_color_table',
     'glewImpl' => '__glewGetColorTableParameterfvSGI',
     'glewtype' => 'fun',
@@ -20155,6 +20205,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(ColorTableParameterPName,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewGetColorTableParameteriv',
     'glewtype' => 'fun',
@@ -20183,6 +20238,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(ColorTableParameterPName,pname,GLint,params)'
+    },
     'feature' => 'GL_SGI_color_table',
     'glewImpl' => '__glewGetColorTableParameterivSGI',
     'glewtype' => 'fun',
@@ -20678,6 +20738,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(ConvolutionParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewGetConvolutionParameterfv',
     'glewtype' => 'fun',
@@ -20706,6 +20771,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(ConvolutionParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_EXT_convolution',
     'glewImpl' => '__glewGetConvolutionParameterfvEXT',
     'glewtype' => 'fun',
@@ -20734,6 +20804,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(ConvolutionParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewGetConvolutionParameteriv',
     'glewtype' => 'fun',
@@ -20762,6 +20837,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(ConvolutionParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_convolution',
     'glewImpl' => '__glewGetConvolutionParameterivEXT',
     'glewtype' => 'fun',
@@ -20913,6 +20993,11 @@ our %registry = (
         'COMPSIZE(target)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(points);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(points,target_count,newSVnv)',
+      'points' => 'OGLM_GET_SETUP(TextureTarget,target,GLfloat,points)'
+    },
     'feature' => 'GL_SGIS_detail_texture',
     'glewImpl' => '__glewGetDetailTexFuncSGIS',
     'glewtype' => 'fun',
@@ -20943,6 +21028,11 @@ our %registry = (
         'COMPSIZE(target)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,target_count,newSVnv)',
+      'data' => 'OGLM_GET_SETUP(GetPName,target,GLdouble,data)'
+    },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewGetDoublei_v',
     'glewtype' => 'fun',
@@ -20965,6 +21055,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,pname_count,newSVnv)',
+      'data' => 'OGLM_GET_SETUP(GetPName,pname,GLdouble,data)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -21184,6 +21279,11 @@ our %registry = (
         'COMPSIZE(target)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,target_count,newSVnv)',
+      'data' => 'OGLM_GET_SETUP(GetPName,target,GLfloat,data)'
+    },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewGetFloati_v',
     'glewtype' => 'fun',
@@ -21206,6 +21306,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,pname_count,newSVnv)',
+      'data' => 'OGLM_GET_SETUP(GetPName,pname,GLfloat,data)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -21326,6 +21431,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(FragmentLightParameterSGIX,pname,GLfloat,params)'
+    },
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewGetFragmentLightfvSGIX',
     'glewtype' => 'fun',
@@ -21377,6 +21487,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(FragmentLightParameterSGIX,pname,GLint,params)'
+    },
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewGetFragmentLightivSGIX',
     'glewtype' => 'fun',
@@ -21516,6 +21631,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(FramebufferAttachmentParameterName,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewGetFramebufferAttachmentParameteriv',
     'glewtype' => 'fun',
@@ -21583,6 +21703,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(FramebufferAttachmentParameterName,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_framebuffer_no_attachments',
     'glewImpl' => '__glewGetFramebufferParameteriv',
     'glewtype' => 'fun',
@@ -21609,6 +21734,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetFramebufferParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetFramebufferParameterivEXT',
     'glewtype' => 'fun',
@@ -21757,6 +21887,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(GetHistogramParameterPNameEXT,pname,GLfloat,params)'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewGetHistogramParameterfv',
     'glewtype' => 'fun',
@@ -21785,6 +21920,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(GetHistogramParameterPNameEXT,pname,GLfloat,params)'
+    },
     'feature' => 'GL_EXT_histogram',
     'glewImpl' => '__glewGetHistogramParameterfvEXT',
     'glewtype' => 'fun',
@@ -21813,6 +21953,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetHistogramParameterPNameEXT,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewGetHistogramParameteriv',
     'glewtype' => 'fun',
@@ -21841,6 +21986,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetHistogramParameterPNameEXT,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_histogram',
     'glewImpl' => '__glewGetHistogramParameterivEXT',
     'glewtype' => 'fun',
@@ -22013,6 +22163,11 @@ our %registry = (
         'COMPSIZE(target)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,target_count,newSViv)',
+      'data' => 'OGLM_GET_SETUP(GetPName,target,GLint64,data)'
+    },
     'feature' => 'GL_VERSION_3_2',
     'glewImpl' => '__glewGetInteger64i_v',
     'glewtype' => 'fun',
@@ -22039,6 +22194,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,pname_count,newSViv)',
+      'data' => 'OGLM_GET_SETUP(GetPName,pname,GLint64,data)'
+    },
     'feature' => 'GL_ARB_sync',
     'glewImpl' => '__glewGetInteger64v',
     'glewtype' => 'fun',
@@ -22068,6 +22228,11 @@ our %registry = (
         'COMPSIZE(target)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,target_count,newSViv)',
+      'data' => 'OGLM_GET_SETUP(GetPName,target,GLint,data)'
+    },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetIntegeri_v',
     'glewtype' => 'fun',
@@ -22159,6 +22324,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,pname_count,newSViv)',
+      'data' => 'OGLM_GET_SETUP(GetPName,pname,GLint,data)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -22398,6 +22568,11 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(LightParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -22426,6 +22601,11 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(LightParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -22453,6 +22633,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(LightParameter,pname,GLfixed,params)'
+    },
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewGetLightxv',
     'glewtype' => 'fun',
@@ -22900,6 +23085,11 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(MaterialParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -22928,6 +23118,11 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(MaterialParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -22955,6 +23150,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(MaterialParameter,pname,GLfixed,params)'
+    },
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewGetMaterialxv',
     'glewtype' => 'fun',
@@ -23084,6 +23284,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(GetMinmaxParameterPNameEXT,pname,GLfloat,params)'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewGetMinmaxParameterfv',
     'glewtype' => 'fun',
@@ -23112,6 +23317,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(GetMinmaxParameterPNameEXT,pname,GLfloat,params)'
+    },
     'feature' => 'GL_EXT_histogram',
     'glewImpl' => '__glewGetMinmaxParameterfvEXT',
     'glewtype' => 'fun',
@@ -23140,6 +23350,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetMinmaxParameterPNameEXT,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewGetMinmaxParameteriv',
     'glewtype' => 'fun',
@@ -23168,6 +23383,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetMinmaxParameterPNameEXT,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_histogram',
     'glewImpl' => '__glewGetMinmaxParameterivEXT',
     'glewtype' => 'fun',
@@ -23202,6 +23422,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(TextureEnvParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexEnvfvEXT',
     'glewtype' => 'fun',
@@ -23236,6 +23461,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(TextureEnvParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexEnvivEXT',
     'glewtype' => 'fun',
@@ -23270,6 +23500,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(TextureGenParameter,pname,GLdouble,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexGendvEXT',
     'glewtype' => 'fun',
@@ -23304,6 +23539,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(TextureGenParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexGenfvEXT',
     'glewtype' => 'fun',
@@ -23338,6 +23578,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(TextureGenParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexGenivEXT',
     'glewtype' => 'fun',
@@ -23420,6 +23665,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexLevelParameterfvEXT',
     'glewtype' => 'fun',
@@ -23458,6 +23708,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexLevelParameterivEXT',
     'glewtype' => 'fun',
@@ -23492,6 +23747,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexParameterIivEXT',
     'glewtype' => 'fun',
@@ -23526,6 +23786,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVuv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLuint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexParameterIuivEXT',
     'glewtype' => 'fun',
@@ -23560,6 +23825,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexParameterfvEXT',
     'glewtype' => 'fun',
@@ -23594,6 +23864,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetMultiTexParameterivEXT',
     'glewtype' => 'fun',
@@ -23623,6 +23898,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(val);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(val,pname_count,newSVnv)',
+      'val' => 'OGLM_GET_SETUP(GetMultisamplePNameNV,pname,GLfloat,val)'
+    },
     'feature' => 'GL_ARB_texture_multisample',
     'glewImpl' => '__glewGetMultisamplefv',
     'glewtype' => 'fun',
@@ -23699,6 +23979,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(BufferPNameARB,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetNamedBufferParameterivEXT',
     'glewtype' => 'fun',
@@ -23725,6 +24010,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVuv)',
+      'params' => 'OGLM_GET_SETUP(BufferPNameARB,pname,GLuint64EXT,params)'
+    },
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewGetNamedBufferParameterui64vNV',
     'glewtype' => 'fun',
@@ -23896,6 +24186,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(FramebufferAttachmentParameterName,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetNamedFramebufferAttachmentParameterivEXT',
     'glewtype' => 'fun',
@@ -23982,6 +24277,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetFramebufferParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_framebuffer_no_attachments',
     'glewImpl' => '__glewGetNamedFramebufferParameterivEXT',
     'glewtype' => 'fun',
@@ -24217,6 +24517,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(RenderbufferParameterName,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetNamedRenderbufferParameterivEXT',
     'glewtype' => 'fun',
@@ -25796,6 +26101,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(ProgramInterfacePName,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_program_interface_query',
     'glewImpl' => '__glewGetProgramInterfaceiv',
     'glewtype' => 'fun',
@@ -26028,6 +26338,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(PipelineParameterName,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewGetProgramPipelineiv',
     'glewtype' => 'fun',
@@ -26372,6 +26687,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(ProgramPropertyARB,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetProgramiv',
     'glewtype' => 'fun',
@@ -26562,6 +26882,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(QueryParameterName,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_transform_feedback3',
     'glewImpl' => '__glewGetQueryIndexediv',
     'glewtype' => 'fun',
@@ -26591,6 +26916,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(QueryObjectParameterName,pname,GLint64,params)'
+    },
     'feature' => 'GL_ARB_timer_query',
     'glewImpl' => '__glewGetQueryObjecti64v',
     'glewtype' => 'fun',
@@ -26644,6 +26974,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(QueryObjectParameterName,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewGetQueryObjectiv',
     'glewtype' => 'fun',
@@ -26696,6 +27031,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVuv)',
+      'params' => 'OGLM_GET_SETUP(QueryObjectParameterName,pname,GLuint64,params)'
+    },
     'feature' => 'GL_ARB_timer_query',
     'glewImpl' => '__glewGetQueryObjectui64v',
     'glewtype' => 'fun',
@@ -26748,6 +27088,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVuv)',
+      'params' => 'OGLM_GET_SETUP(QueryObjectParameterName,pname,GLuint,params)'
+    },
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewGetQueryObjectuiv',
     'glewtype' => 'fun',
@@ -26802,6 +27147,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(QueryParameterName,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewGetQueryiv',
     'glewtype' => 'fun',
@@ -26856,6 +27206,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(RenderbufferParameterName,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewGetRenderbufferParameteriv',
     'glewtype' => 'fun',
@@ -26885,6 +27240,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(SamplerParameterI,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewGetSamplerParameterIiv',
     'glewtype' => 'fun',
@@ -26914,6 +27274,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVuv)',
+      'params' => 'OGLM_GET_SETUP(SamplerParameterI,pname,GLuint,params)'
+    },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewGetSamplerParameterIuiv',
     'glewtype' => 'fun',
@@ -26940,6 +27305,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(SamplerParameterF,pname,GLfloat,params)'
+    },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewGetSamplerParameterfv',
     'glewtype' => 'fun',
@@ -26966,6 +27336,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(SamplerParameterI,pname,GLint,params)'
+    },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewGetSamplerParameteriv',
     'glewtype' => 'fun',
@@ -27212,6 +27587,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(ShaderParameterName,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetShaderiv',
     'glewtype' => 'fun',
@@ -27234,6 +27614,11 @@ our %registry = (
         'COMPSIZE(target)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(points);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(points,target_count,newSVnv)',
+      'points' => 'OGLM_GET_SETUP(TextureTarget,target,GLfloat,points)'
+    },
     'feature' => 'GL_SGIS_sharpen_texture',
     'glewImpl' => '__glewGetSharpenTexFuncSGIS',
     'glewtype' => 'fun',
@@ -27417,6 +27802,11 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(TextureEnvParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -27445,6 +27835,11 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(TextureEnvParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -27472,6 +27867,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(TextureEnvParameter,pname,GLfixed,params)'
+    },
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewGetTexEnvxv',
     'glewtype' => 'fun',
@@ -27529,6 +27929,11 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(TextureGenParameter,pname,GLdouble,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -27557,6 +27962,11 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(TextureGenParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -27585,6 +27995,11 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(TextureGenParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -27653,6 +28068,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -27684,6 +28104,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -27714,6 +28139,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewGetTexParameterIiv',
     'glewtype' => 'fun',
@@ -27745,6 +28175,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVuv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLuint,params)'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewGetTexParameterIuiv',
     'glewtype' => 'fun',
@@ -27797,6 +28232,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -27824,6 +28264,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -27851,6 +28296,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLfixed,params)'
+    },
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewGetTexParameterxv',
     'glewtype' => 'fun',
@@ -28025,6 +28475,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetTextureLevelParameterfvEXT',
     'glewtype' => 'fun',
@@ -28090,6 +28545,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetTextureLevelParameterivEXT',
     'glewtype' => 'fun',
@@ -28147,6 +28607,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetTextureParameterIivEXT',
     'glewtype' => 'fun',
@@ -28204,6 +28669,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVuv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLuint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetTextureParameterIuivEXT',
     'glewtype' => 'fun',
@@ -28261,6 +28731,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetTextureParameterfvEXT',
     'glewtype' => 'fun',
@@ -28318,6 +28793,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(GetTextureParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetTextureParameterivEXT',
     'glewtype' => 'fun',
@@ -29007,6 +29487,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(data);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(data,pname_count,newSVuv)',
+      'data' => 'OGLM_GET_SETUP(GetPName,pname,GLubyte,data)'
+    },
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewGetUnsignedBytevEXT',
     'glewtype' => 'fun',
@@ -29411,6 +29896,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(ArrayObjectPNameATI,pname,GLfloat,params)'
+    },
     'feature' => 'GL_ATI_vertex_attrib_array_object',
     'glewImpl' => '__glewGetVertexAttribArrayObjectfvATI',
     'glewtype' => 'fun',
@@ -29437,6 +29927,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(ArrayObjectPNameATI,pname,GLint,params)'
+    },
     'feature' => 'GL_ATI_vertex_attrib_array_object',
     'glewImpl' => '__glewGetVertexAttribArrayObjectivATI',
     'glewtype' => 'fun',
@@ -29524,6 +30019,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(VertexAttribEnum,pname,GLdouble,params)'
+    },
     'feature' => 'GL_ARB_vertex_attrib_64bit',
     'glewImpl' => '__glewGetVertexAttribLdv',
     'glewtype' => 'fun',
@@ -29550,6 +30050,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(VertexAttribEnum,pname,GLint64EXT,params)'
+    },
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewGetVertexAttribLi64vNV',
     'glewtype' => 'fun',
@@ -29601,6 +30106,11 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVuv)',
+      'params' => 'OGLM_GET_SETUP(VertexAttribEnum,pname,GLuint64EXT,params)'
+    },
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewGetVertexAttribLui64vNV',
     'glewtype' => 'fun',

@@ -84,27 +84,8 @@ sub bindings {
   );
   @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
   my %name2data = map +($_->[0] => $_), @argdata;
-  my @ptr_args = @argdata[@ptr_arg_inds];
   my %dynlang = %{ $s->{dynlang} || {} };
-  my $compsize_from = ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/ ? $1 : undef;
-  my $compsize_data = $compsize_from && $name2data{$compsize_from};
-  my $compsize_group = $compsize_data && $compsize_data->[3];
-  if ($name =~ /^gl(?:Get)/ && @ptr_args == 1 && $compsize_group && $counts->{$compsize_group}) {
-    my ($datatype) = $ptr_args[0][1] =~ /^(?:const\s*)?(\w+)/;
-    my $typefunc = typefunc($datatype) or die "No typefunc for '$datatype'";
-    $typefunc = "newSV" . lc $typefunc->[0];
-    my $not_that = $ptr_args[0][0];
-    my @filtered_args = grep $_->[0] ne $not_that, @argdata;
-    push @ret, {
-      %pbinding,
-      xs_args => join(', ', map $_->[0], @filtered_args),
-      xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @filtered_args),
-      xs_code => "PPCODE:\n",
-      beforecall => "  OGLM_GET_SETUP($name, $compsize_group, $compsize_from, $datatype, $ptr_args[0][0])\n",
-      error_check2 => "OGLM_CHECK_ERR($name, )",
-      aftercall => "\n  OGLM_OUT_FINISH($ptr_args[0][0], ${compsize_from}_count, $typefunc)",
-    };
-  } elsif (%dynlang) {
+  if (%dynlang) {
     my %this = %pbinding;
     die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
     if (my $retval = delete $dynlang{RETVAL}) {

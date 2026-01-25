@@ -4346,6 +4346,7 @@ Exported under tag C<:GL_EXT_fragment_lighting>.
 =head2 glFragmentLightfvSGIX
 
  glFragmentLightfvSGIX_c($light, $pname, $params);
+ @retvals = glFragmentLightfvSGIX_p($light, $pname);
 
 Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
@@ -4370,6 +4371,7 @@ Exported under tag C<:GL_EXT_fragment_lighting>.
 =head2 glFragmentLightivSGIX
 
  glFragmentLightivSGIX_c($light, $pname, $params);
+ @retvals = glFragmentLightivSGIX_p($light, $pname);
 
 Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
@@ -5345,7 +5347,6 @@ Exported under tag C<:GL_EXT_fragment_lighting>.
 =head2 glGetFragmentMaterialfvSGIX
 
  glGetFragmentMaterialfvSGIX_c($face, $pname, $params);
- @retvals = glGetFragmentMaterialfvSGIX_p($face, $pname);
 
 Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
@@ -5358,7 +5359,6 @@ Exported under tag C<:GL_EXT_fragment_lighting>.
 =head2 glGetFragmentMaterialivSGIX
 
  glGetFragmentMaterialivSGIX_c($face, $pname, $params);
- @retvals = glGetFragmentMaterialivSGIX_p($face, $pname);
 
 Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
