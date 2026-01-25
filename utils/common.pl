@@ -150,7 +150,8 @@ sub bindings {
     my $need_cast;
     for my $var (sort keys %dynlang) {
       my $val = delete $dynlang{$var};
-      my $type = $name2data{$var}->[1];
+      die "$name: no arg data found for '$var'" unless my $data = $name2data{$var};
+      my $type = $data->[1];
       $need_cast = $type =~ s#\bconst\b##g;
       $beforecall .= "  $type $var = $val;\n";
     }
