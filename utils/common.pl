@@ -90,15 +90,6 @@ sub bindings {
       error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
       aftercall => "\n  OGLM_GEN_FINISH($argdata[0][0], $argdata[1][0])",
     };
-  } elsif ($name =~ /^glDelete/ and @argdata == 2 and $argdata[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/) {
-    push @ret, {
-      %pbinding,
-      xs_args => '...',
-      xs_argdecls => '',
-      beforecall => "  GLsizei $argdata[0][0] = items;\n  OGLM_DELETE_SETUP($name, items, $argdata[1][0])\n",
-      error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
-      aftercall => "\n  OGLM_DELETE_FINISH($argdata[1][0])",
-    };
   } elsif ($name =~ /^gl(?:Get)/ && @ptr_args == 1 && $compsize_group && $counts->{$compsize_group}) {
     my ($datatype) = $ptr_args[0][1] =~ /^(?:const\s*)?(\w+)/;
     my $typefunc = $type2typefunc{$datatype} or die "No typefunc for '$datatype'";

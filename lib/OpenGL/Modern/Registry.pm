@@ -13072,6 +13072,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(buffers);',
+      'buffers' => 'OGLM_GET_ARGS(buffers,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewDeleteBuffers',
     'glewtype' => 'fun',
@@ -13092,6 +13097,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(lists);',
+      'lists' => 'OGLM_GET_ARGS(lists,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewDeleteCommandListsNV',
     'glewtype' => 'fun',
@@ -13112,6 +13122,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(fences);',
+      'fences' => 'OGLM_GET_ARGS(fences,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_APPLE_fence',
     'glewImpl' => '__glewDeleteFencesAPPLE',
     'glewtype' => 'fun',
@@ -13132,6 +13147,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(fences);',
+      'fences' => 'OGLM_GET_ARGS(fences,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_NV_fence',
     'glewImpl' => '__glewDeleteFencesNV',
     'glewtype' => 'fun',
@@ -13167,6 +13187,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(framebuffers);',
+      'framebuffers' => 'OGLM_GET_ARGS(framebuffers,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewDeleteFramebuffers',
     'glewtype' => 'fun',
@@ -13222,6 +13247,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(memoryObjects);',
+      'memoryObjects' => 'OGLM_GET_ARGS(memoryObjects,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_EXT_memory_object',
     'glewImpl' => '__glewDeleteMemoryObjectsEXT',
     'glewtype' => 'fun',
@@ -13295,6 +13325,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(ids);',
+      'ids' => 'OGLM_GET_ARGS(ids,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_NV_occlusion_query',
     'glewImpl' => '__glewDeleteOcclusionQueriesNV',
     'glewtype' => 'fun',
@@ -13375,6 +13410,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(pipelines);',
+      'n' => 'items',
+      'pipelines' => 'OGLM_GET_ARGS(pipelines,0,GLuint,UV)'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewDeleteProgramPipelines',
     'glewtype' => 'fun',
@@ -13398,6 +13438,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(programs);',
+      'n' => 'items',
+      'programs' => 'OGLM_GET_ARGS(programs,0,GLuint,UV)'
+    },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewDeleteProgramsARB',
     'glewtype' => 'fun',
@@ -13421,6 +13466,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(ids);',
+      'ids' => 'OGLM_GET_ARGS(ids,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewDeleteQueries',
     'glewtype' => 'fun',
@@ -13440,6 +13490,11 @@ our %registry = (
         'const GLuint* '
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(ids);',
+      'ids' => 'OGLM_GET_ARGS(ids,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_ANGLE_timer_query',
     'glewImpl' => '__glewDeleteQueriesANGLE',
     'glewtype' => 'fun',
@@ -13463,6 +13518,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(renderbuffers);',
+      'n' => 'items',
+      'renderbuffers' => 'OGLM_GET_ARGS(renderbuffers,0,GLuint,UV)'
+    },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewDeleteRenderbuffers',
     'glewtype' => 'fun',
@@ -13483,6 +13543,11 @@ our %registry = (
         'count'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(samplers);',
+      'count' => 'items',
+      'samplers' => 'OGLM_GET_ARGS(samplers,0,GLuint,UV)'
+    },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewDeleteSamplers',
     'glewtype' => 'fun',
@@ -13503,6 +13568,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(semaphores);',
+      'n' => 'items',
+      'semaphores' => 'OGLM_GET_ARGS(semaphores,0,GLuint,UV)'
+    },
     'feature' => 'GL_EXT_semaphore',
     'glewImpl' => '__glewDeleteSemaphoresEXT',
     'glewtype' => 'fun',
@@ -13535,6 +13605,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(states);',
+      'n' => 'items',
+      'states' => 'OGLM_GET_ARGS(states,0,GLuint,UV)'
+    },
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewDeleteStatesNV',
     'glewtype' => 'fun',
@@ -13570,6 +13645,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(textures);',
+      'n' => 'items',
+      'textures' => 'OGLM_GET_ARGS(textures,0,GLuint,UV)'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -13589,6 +13669,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(textures);',
+      'n' => 'items',
+      'textures' => 'OGLM_GET_ARGS(textures,0,GLuint,UV)'
+    },
     'feature' => 'GL_EXT_texture_object',
     'glewImpl' => '__glewDeleteTexturesEXT',
     'glewtype' => 'fun',
@@ -13612,6 +13697,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(ids);',
+      'ids' => 'OGLM_GET_ARGS(ids,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_ARB_transform_feedback2',
     'glewImpl' => '__glewDeleteTransformFeedbacks',
     'glewtype' => 'fun',
@@ -13635,6 +13725,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(arrays);',
+      'arrays' => 'OGLM_GET_ARGS(arrays,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_ARB_vertex_array_object',
     'glewImpl' => '__glewDeleteVertexArrays',
     'glewtype' => 'fun',
@@ -13654,6 +13749,11 @@ our %registry = (
         'const GLuint* '
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(arrays);',
+      'arrays' => 'OGLM_GET_ARGS(arrays,0,GLuint,UV)',
+      'n' => 'items'
+    },
     'feature' => 'GL_SGIX_vertex_array_object',
     'glewImpl' => '__glewDeleteVertexArraysSGIX',
     'glewtype' => 'fun',

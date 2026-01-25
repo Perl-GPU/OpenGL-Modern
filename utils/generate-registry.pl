@@ -17,7 +17,7 @@ my %upper2data;
 my %case_map;
 my %alias;
 
-my @exported_functions = manual_list(); # names the module exports
+my @exported_functions; # names the module exports
 my %constants;
 
 for my $file ("include/GL/glew.h") {
@@ -184,6 +184,18 @@ for (grep $_, split /\n/, slurp('utils/enums-group.txt')) {
   push @{ $groups{$_} }, $enum for @groups;
 }
 my $g2c2s = assemble_enum_groups(\%groups, \%counts);
+
+for my $name (@ARGV ? @ARGV : sort keys %signature) {
+  my $s = $signature{$name};
+  my @argdata = @{$s->{argdata} || []};
+  if ($name =~ /^glDelete/ and @argdata == 2 and $argdata[1][1] =~ /^\s*const\s+GLuint\s*\*\s*$/) {
+    $s->{dynlang} = {
+      $argdata[0][0] => 'items',
+      $argdata[1][0] => "OGLM_GET_ARGS($argdata[1][0],0,GLuint,UV)",
+      CLEANUP => "free($argdata[1][0]);",
+    };
+  }
+}
 
 my %feature2version;
 for (grep $_, split /\n/, slurp('utils/feature-reuse.txt')) {

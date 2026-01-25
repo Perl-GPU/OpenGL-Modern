@@ -49,13 +49,12 @@ static int _auto_check_errors = 0;
   EXTEND(sp, n); \
   { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newSVuv(buffername[i]))); } \
   free(buffername);
-#define OGLM_DELETE_SETUP(name, n, buffername) \
-  if (!n) XSRETURN_EMPTY; \
-  GLuint *buffername = malloc(sizeof(GLuint) * n); \
-  if (!buffername) croak(#name "_p: malloc failed"); \
-  { int i; for (i=0;i<n;i++) buffername[i] = SvUV(ST(i)); }
-#define OGLM_DELETE_FINISH(buffername) \
-  free(buffername);
+#define OGLM_GET_ARGS(varname, startfrom, type, perltype) \
+  malloc(sizeof(type) * (items-startfrom)); \
+  if (!varname) croak("malloc failed"); \
+  { IV i; for(i = 0; i < items-startfrom; i++) { \
+    varname[i] = (type)Sv##perltype(ST(i + startfrom)); \
+  } }
 #define OGLM_GET_SETUP(name, group, pname, buffertype, buffername) \
   int pname ## _count = oglm_count_##group(pname); \
   if (pname ## _count < 0) croak(#name "_p: Unknown " #group " %d", pname); \
