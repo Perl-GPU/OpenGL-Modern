@@ -22,19 +22,11 @@ SHADER
 
     glCompileShader( $id );
 
-    my $ok = "\0" x 4;
-    my $pack_type = $Config{ptrsize} == 4 ? 'L' : 'Q';
-    glGetShaderiv_c( $id, GL_COMPILE_STATUS, unpack( $pack_type, pack( 'p', $ok ) ) );
-    $ok = unpack 'I', $ok;
+    my $ok = glGetShaderiv_p( $id, GL_COMPILE_STATUS );
     if ( $ok == GL_FALSE ) {
         pass "We recognize an invalid shader as invalid";
 
-        my $bufsize = 1024 * 64;
-        my $len     = "\0" x 4;
-        my $buffer  = "\0" x $bufsize;
-        glGetShaderInfoLog_c( $id, $bufsize, unpack( $pack_type, pack( 'p', $len ) ), $buffer );
-        $len = unpack 'I', $len;
-        my $log = substr $buffer, 0, $len;
+        my $log = glGetShaderInfoLog_p( $id );
         isnt $log, '', "We get some error message";
 
         note "Error message: $log";
