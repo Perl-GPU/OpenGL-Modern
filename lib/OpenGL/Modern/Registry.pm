@@ -5794,9 +5794,6 @@ our %registry = (
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
-    'ptr_args' => [
-      6
-    ],
     'restype' => 'void'
   },
   'glBlendBarrierKHR' => {
@@ -32778,9 +32775,6 @@ our %registry = (
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewLoadProgramNV',
     'glewtype' => 'fun',
-    'ptr_args' => [
-      3
-    ],
     'restype' => 'void'
   },
   'glLoadTransposeMatrixd' => {
@@ -40602,7 +40596,6 @@ our %registry = (
     'glewImpl' => '__glewPathCommandsNV',
     'glewtype' => 'fun',
     'ptr_args' => [
-      2,
       5
     ],
     'restype' => 'void'
@@ -41144,7 +41137,6 @@ our %registry = (
     'glewImpl' => '__glewPathSubCommandsNV',
     'glewtype' => 'fun',
     'ptr_args' => [
-      4,
       7
     ],
     'restype' => 'void'
@@ -41981,9 +41973,6 @@ our %registry = (
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
-    'ptr_args' => [
-      0
-    ],
     'restype' => 'void'
   },
   'glPopAttrib' => {
@@ -43089,9 +43078,6 @@ our %registry = (
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewProgramNamedParameter4dNV',
     'glewtype' => 'fun',
-    'ptr_args' => [
-      2
-    ],
     'restype' => 'void'
   },
   'glProgramNamedParameter4dvNV' => {
@@ -43159,9 +43145,6 @@ our %registry = (
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewProgramNamedParameter4fNV',
     'glewtype' => 'fun',
-    'ptr_args' => [
-      2
-    ],
     'restype' => 'void'
   },
   'glProgramNamedParameter4fvNV' => {

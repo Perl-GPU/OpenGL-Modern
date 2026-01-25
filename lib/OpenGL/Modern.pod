@@ -1307,7 +1307,7 @@ Exported under tag C<:GL_EXT_coordinate_frame>.
 
 =head2 glBitmap
 
- glBitmap_c($width, $height, $xorig, $yorig, $xmove, $ymove, $bitmap);
+ glBitmap($width, $height, $xorig, $yorig, $xmove, $ymove, $bitmap);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8344,7 +8344,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glLoadName.xml>
 
 =head2 glLoadProgramNV
 
- glLoadProgramNV_c($target, $id, $len, $program);
+ glLoadProgramNV($target, $id, $len, $program);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -10577,7 +10577,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 
 =head2 glPolygonStipple
 
- glPolygonStipple_c($mask);
+ glPolygonStipple($mask);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10840,7 +10840,7 @@ Exported under tag C<:GL_NV_gpu_program4>.
 
 =head2 glProgramNamedParameter4dNV
 
- glProgramNamedParameter4dNV_c($id, $len, $name, $x, $y, $z, $w);
+ glProgramNamedParameter4dNV($id, $len, $name, $x, $y, $z, $w);
 
 Exported under tag C<:GL_NV_fragment_program>.
 
@@ -10852,7 +10852,7 @@ Exported under tag C<:GL_NV_fragment_program>.
 
 =head2 glProgramNamedParameter4fNV
 
- glProgramNamedParameter4fNV_c($id, $len, $name, $x, $y, $z, $w);
+ glProgramNamedParameter4fNV($id, $len, $name, $x, $y, $z, $w);
 
 Exported under tag C<:GL_NV_fragment_program>.
 

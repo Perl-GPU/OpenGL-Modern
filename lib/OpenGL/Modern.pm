@@ -34,7 +34,7 @@ our @gl_functionscompat = qw(
   glBindRenderbuffer
   glBindTexture
   glBindVertexArray
-  glBitmap_c
+  glBitmap
   glBlendColor
   glBlendEquation
   glBlendEquationSeparate
@@ -428,7 +428,7 @@ our @gl_functionscompat = qw(
   glPointSize
   glPolygonMode
   glPolygonOffset
-  glPolygonStipple_c
+  glPolygonStipple
   glPopAttrib
   glPopClientAttrib
   glPopMatrix
@@ -2689,7 +2689,7 @@ our @gl_functionsrest = qw(
   glListDrawCommandsStatesClientNV_c
   glLoadIdentityDeformationMapSGIX
   glLoadMatrixx_c
-  glLoadProgramNV_c
+  glLoadProgramNV
   glLoadTransposeMatrixdARB_c
   glLoadTransposeMatrixfARB_c
   glLockArraysEXT
@@ -3044,9 +3044,9 @@ our @gl_functionsrest = qw(
   glProgramLocalParameters4fvEXT_c
   glProgramLocalParametersI4ivNV_c
   glProgramLocalParametersI4uivNV_c
-  glProgramNamedParameter4dNV_c
+  glProgramNamedParameter4dNV
   glProgramNamedParameter4dvNV_c
-  glProgramNamedParameter4fNV_c
+  glProgramNamedParameter4fNV
   glProgramNamedParameter4fvNV_c
   glProgramParameter4dNV
   glProgramParameter4dvNV_c
@@ -6232,9 +6232,9 @@ our %EXPORT_TAGS_GL = (
   'GL_NV_fragment_program' => [
     'glGetProgramNamedParameterdvNV_c',
     'glGetProgramNamedParameterfvNV_c',
-    'glProgramNamedParameter4dNV_c',
+    'glProgramNamedParameter4dNV',
     'glProgramNamedParameter4dvNV_c',
-    'glProgramNamedParameter4fNV_c',
+    'glProgramNamedParameter4fNV',
     'glProgramNamedParameter4fvNV_c'
   ],
   'GL_NV_framebuffer_blit' => [
@@ -6633,7 +6633,7 @@ our %EXPORT_TAGS_GL = (
     'glGetVertexAttribfvNV_c',
     'glGetVertexAttribivNV_c',
     'glIsProgramNV',
-    'glLoadProgramNV_c',
+    'glLoadProgramNV',
     'glProgramParameter4dNV',
     'glProgramParameter4dvNV_c',
     'glProgramParameter4fNV',
@@ -7055,7 +7055,7 @@ our %EXPORT_TAGS_GL = (
     'glArrayElement',
     'glBegin',
     'glBindTexture',
-    'glBitmap_c',
+    'glBitmap',
     'glBlendFunc',
     'glCallList',
     'glCallLists_c',
@@ -7270,7 +7270,7 @@ our %EXPORT_TAGS_GL = (
     'glPointSize',
     'glPolygonMode',
     'glPolygonOffset',
-    'glPolygonStipple_c',
+    'glPolygonStipple',
     'glPopAttrib',
     'glPopClientAttrib',
     'glPopMatrix',
