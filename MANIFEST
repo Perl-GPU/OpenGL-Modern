@@ -25,11 +25,11 @@ MANIFEST			This list of files
 MANIFEST.SKIP
 README.md
 t/00-report-prereqs.t
-t/00_basic.t
-t/01_context.t
-t/02_auto_error_check.t
-t/02_glew_version_accessors.t
-t/02_glGetShaderInfoLog.t
+t/auto_error_check.t
+t/basic.t
+t/context.t
+t/glew_version_accessors.t
+t/glGetShaderInfoLog.t
 utils/aliases.txt
 utils/args-group.txt
 utils/args-len.txt
