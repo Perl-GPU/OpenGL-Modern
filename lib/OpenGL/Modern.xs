@@ -40,15 +40,14 @@ static int _auto_check_errors = 0;
   if ( !impl ) { \
     croak(#name " not available on this machine"); \
   }
-#define OGLM_GEN_SETUP(name, n, buffername) \
-  if (n < 0) croak(#name "_p: called with negative n=%d", n); \
+#define OGLM_OUT_SETUP(buffername, n, type) \
+  NULL; if (n < 0) croak("called with negative n=%d", n); \
   if (!n) XSRETURN_EMPTY; \
-  GLuint *buffername = malloc(sizeof(GLuint) * n); \
-  if (!buffername) croak(#name "_p: malloc failed");
-#define OGLM_GEN_FINISH(n, buffername) \
+  buffername = malloc(sizeof(type) * n); \
+  if (!buffername) croak("malloc failed");
+#define OGLM_OUT_FINISH(buffername, n, newfunc) \
   EXTEND(sp, n); \
-  { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newSVuv(buffername[i]))); } \
-  free(buffername);
+  { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newfunc(buffername[i]))); }
 #define OGLM_GET_ARGS(varname, startfrom, type, perltype) \
   malloc(sizeof(type) * (items-startfrom)); \
   if (!varname) croak("malloc failed"); \

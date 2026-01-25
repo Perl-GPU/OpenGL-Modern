@@ -89,17 +89,7 @@ sub bindings {
   my $compsize_from = ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/ ? $1 : undef;
   my $compsize_data = $compsize_from && $name2data{$compsize_from};
   my $compsize_group = $compsize_data && $compsize_data->[3];
-  if ($name =~ /^gl(?:Gen|Create)/ && @argdata == 2) {
-    push @ret, {
-      %pbinding,
-      xs_args => join(', ', map $_->[0], $argdata[0]),
-      xs_argdecls => join('', map "  $_->[1]$_->[0];\n", $argdata[0]),
-      xs_code => "PPCODE:\n",
-      beforecall => "  OGLM_GEN_SETUP($name, $argdata[0][0], $argdata[1][0])\n",
-      error_check2 => "OGLM_CHECK_ERR($name, free($argdata[1][0]))",
-      aftercall => "\n  OGLM_GEN_FINISH($argdata[0][0], $argdata[1][0])",
-    };
-  } elsif ($name =~ /^gl(?:Get)/ && @ptr_args == 1 && $compsize_group && $counts->{$compsize_group}) {
+  if ($name =~ /^gl(?:Get)/ && @ptr_args == 1 && $compsize_group && $counts->{$compsize_group}) {
     my ($datatype) = $ptr_args[0][1] =~ /^(?:const\s*)?(\w+)/;
     my $typefunc = typefunc($datatype) or die "No typefunc for '$datatype'";
     $typefunc = "newSV" . lc $typefunc->[0];
@@ -116,11 +106,14 @@ sub bindings {
     };
   } elsif (%dynlang) {
     my %this = %pbinding;
-    my $retval = delete $dynlang{RETVAL};
-    if ($retval) {
+    die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
+    if (my $retval = delete $dynlang{RETVAL}) {
       $this{xs_rettype} = $name2data{$retval}[1];
       $this{aftercall} = "\n  RETVAL = $retval;";
       $this{retout} = "\nOUTPUT:\n  RETVAL";
+    } elsif (my $output = delete $dynlang{OUTPUT}) {
+      $this{aftercall} = "\n  $output";
+      $this{xs_code} = "PPCODE:\n";
     }
     my @thisargs = grep !exists $dynlang{$_->[0]}, @argdata;
     my $dotdotdot = grep /\bitems\b/, values %dynlang;

@@ -189,7 +189,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   next if $s->{dynlang};
   my @argdata = @{$s->{argdata} || []};
   next unless my @ptr_arg_inds = @{$s->{ptr_args} || []};
-  @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
+  next unless @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
   my %name2data = map +($_->[0] => $_), @argdata;
   my @ptr_args = @argdata[@ptr_arg_inds];
   my @ptr_types = map {
@@ -198,9 +198,13 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     $type =~ s#\s##g;
     [$type, $const];
   } @ptr_args;
-  if (@ptr_types == 1 and $ptr_types[0][1] and
-    (my $info = typefunc($ptr_types[0][0])) and
+  my $nconst = grep $_->[1], @ptr_types;
+  my $nout = grep !$_->[1], @ptr_types;
+  die "undef ptr_type for $name" if !$ptr_types[0][0];
+  my $info = typefunc($ptr_types[0][0]);
+  if ($nconst == 1 and $nout == 0 and
     $ptr_args[0][2] and $ptr_args[0][2] !~ /(?:\d|COMPSIZE)/ and
+    $info and
     $ptr_arg_inds[0] == $#argdata
   ) {
     my $len = $ptr_args[0][2];
@@ -208,6 +212,19 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     $s->{dynlang} = {
       $len => 'items'.($startfrom ? "-$startfrom" : ''),
       $ptr_args[0][0] => "OGLM_GET_ARGS($ptr_args[0][0],$startfrom,$ptr_types[0][0],$info->[0])",
+      CLEANUP => "free($ptr_args[0][0]);",
+    };
+  } elsif ($nconst == 0 and $nout == 1 and
+    $info and
+    $ptr_args[0][2] and $ptr_args[0][2] !~ /(?:\d|COMPSIZE)/ and
+    $ptr_arg_inds[0] == $#argdata
+  ) {
+    my $len = $ptr_args[0][2];
+    my $startfrom = @argdata - 2;
+    my $newfunc = 'newSV' . lc substr $info->[0], 0, 2;
+    $s->{dynlang} = {
+      $ptr_args[0][0] => "OGLM_OUT_SETUP($ptr_args[0][0],$len,$ptr_types[0][0])",
+      OUTPUT => "OGLM_OUT_FINISH($ptr_args[0][0],$len,$newfunc)",
       CLEANUP => "free($ptr_args[0][0]);",
     };
   }

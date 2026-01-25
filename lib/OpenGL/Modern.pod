@@ -2743,14 +2743,12 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glCreateMemoryObjectsEXT
 
  glCreateMemoryObjectsEXT_c($n, $memoryObjects);
- @retvals = glCreateMemoryObjectsEXT_p($n);
 
 Exported under tag C<:GL_EXT_memory_object>.
 
 =head2 glCreatePerfQueryINTEL
 
  glCreatePerfQueryINTEL_c($queryId, $queryHandle);
- @retvals = glCreatePerfQueryINTEL_p($queryId);
 
 Exported under tag C<:GL_INTEL_performance_query>.
 
@@ -2772,6 +2770,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glCreateQueries
 
  glCreateQueries_c($target, $n, $ids);
+ @retvals = glCreateQueries_p($target, $n);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
@@ -2826,6 +2825,7 @@ Exported under tag C<:GL_ARB_cl_event>.
 =head2 glCreateTextures
 
  glCreateTextures_c($target, $n, $textures);
+ @retvals = glCreateTextures_p($target, $n);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
@@ -3042,6 +3042,7 @@ Exported under tag C<:GL_NV_path_rendering>.
 =head2 glDeletePerfMonitorsAMD
 
  glDeletePerfMonitorsAMD_c($n, $monitors);
+ @retvals = glDeletePerfMonitorsAMD_p($n);
 
 Exported under tag C<:GL_AMD_performance_monitor>.
 
@@ -4026,6 +4027,7 @@ Exported under tag C<:GL_EXT_vertex_shader>.
 =head2 glFeedbackBuffer
 
  glFeedbackBuffer_c($size, $type, $buffer);
+ @retvals = glFeedbackBuffer_p($size, $type);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4663,13 +4665,13 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGenLists.xml>
 =head2 glGenMPEGPredictorsSGIX
 
  glGenMPEGPredictorsSGIX_c($n, $predictors);
- @retvals = glGenMPEGPredictorsSGIX_p($n);
 
 Exported under tag C<:GL_SGIX_mpeg1>.
 
 =head2 glGenNamesAMD
 
  glGenNamesAMD_c($identifier, $num, $names);
+ @retvals = glGenNamesAMD_p($identifier, $num);
 
 Exported under tag C<:GL_AMD_name_gen_delete>.
 
@@ -4722,7 +4724,6 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGenQueries.xhtml>
 =head2 glGenQueriesANGLE
 
  glGenQueriesANGLE_c($n, $ids);
- @retvals = glGenQueriesANGLE_p($n);
 
 Exported under tag C<:GL_ANGLE_timer_query>.
 
@@ -4791,7 +4792,6 @@ Exported under tag C<:GL_ARB_vertex_array_object>.
 =head2 glGenVertexArraysSGIX
 
  glGenVertexArraysSGIX_c($n, $arrays);
- @retvals = glGenVertexArraysSGIX_p($n);
 
 Exported under tag C<:GL_SGIX_vertex_array_object>.
 
@@ -5545,18 +5545,21 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetIntegerv.xhtml>
 =head2 glGetInternalformatSampleivNV
 
  glGetInternalformatSampleivNV_c($target, $internalformat, $samples, $pname, $count, $params);
+ @retvals = glGetInternalformatSampleivNV_p($target, $internalformat, $samples, $pname, $count);
 
 Exported under tag C<:GL_NV_internalformat_sample_query>.
 
 =head2 glGetInternalformati64v
 
  glGetInternalformati64v_c($target, $internalformat, $pname, $count, $params);
+ @retvals = glGetInternalformati64v_p($target, $internalformat, $pname, $count);
 
 Exported under tag C<:GL_ARB_internalformat_query2>.
 
 =head2 glGetInternalformativ
 
  glGetInternalformativ_c($target, $internalformat, $pname, $count, $params);
+ @retvals = glGetInternalformativ_p($target, $internalformat, $pname, $count);
 
 Exported under tag C<:GL_ARB_internalformat_query>.
 
@@ -7400,12 +7403,14 @@ Exported under tag C<:GL_ARB_robustness>.
 =head2 glGetnMapfvARB
 
  glGetnMapfvARB_c($target, $query, $bufSize, $v);
+ @retvals = glGetnMapfvARB_p($target, $query, $bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
 =head2 glGetnMapivARB
 
  glGetnMapivARB_c($target, $query, $bufSize, $v);
+ @retvals = glGetnMapivARB_p($target, $query, $bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
@@ -7424,18 +7429,21 @@ Exported under tag C<:GL_ARB_robustness>.
 =head2 glGetnPixelMapuivARB
 
  glGetnPixelMapuivARB_c($map, $bufSize, $values);
+ @retvals = glGetnPixelMapuivARB_p($map, $bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
 =head2 glGetnPixelMapusvARB
 
  glGetnPixelMapusvARB_c($map, $bufSize, $values);
+ @retvals = glGetnPixelMapusvARB_p($map, $bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
 =head2 glGetnPolygonStippleARB
 
  glGetnPolygonStippleARB_c($bufSize, $pattern);
+ @retvals = glGetnPolygonStippleARB_p($bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
@@ -8692,18 +8700,21 @@ Exported under tag C<:GL_ARB_matrix_palette>.
 =head2 glMatrixIndexubvARB
 
  glMatrixIndexubvARB_c($size, $indices);
+ @retvals = glMatrixIndexubvARB_p($size);
 
 Exported under tag C<:GL_ARB_matrix_palette>.
 
 =head2 glMatrixIndexuivARB
 
  glMatrixIndexuivARB_c($size, $indices);
+ @retvals = glMatrixIndexuivARB_p($size);
 
 Exported under tag C<:GL_ARB_matrix_palette>.
 
 =head2 glMatrixIndexusvARB
 
  glMatrixIndexusvARB_c($size, $indices);
+ @retvals = glMatrixIndexusvARB_p($size);
 
 Exported under tag C<:GL_ARB_matrix_palette>.
 
@@ -12087,6 +12098,7 @@ Exported under tag C<:GL_SUN_triangle_list>.
 =head2 glRequestResidentProgramsNV
 
  glRequestResidentProgramsNV_c($n, $programs);
+ @retvals = glRequestResidentProgramsNV_p($n);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -12455,6 +12467,7 @@ Exported under tag C<:GL_IBM_vertex_array_lists>.
 =head2 glSelectBuffer
 
  glSelectBuffer_c($size, $buffer);
+ @retvals = glSelectBuffer_p($size);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12463,6 +12476,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glSelectBuffer.xm
 =head2 glSelectPerfMonitorCountersAMD
 
  glSelectPerfMonitorCountersAMD_c($monitor, $enable, $group, $numCounters, $counterList);
+ @retvals = glSelectPerfMonitorCountersAMD_p($monitor, $enable, $group, $numCounters);
 
 Exported under tag C<:GL_AMD_performance_monitor>.
 
@@ -16519,48 +16533,56 @@ Exported under tag C<:GL_ARB_vertex_blend>.
 =head2 glWeightbvARB
 
  glWeightbvARB_c($size, $weights);
+ @retvals = glWeightbvARB_p($size);
 
 Exported under tag C<:GL_ARB_vertex_blend>.
 
 =head2 glWeightdvARB
 
  glWeightdvARB_c($size, $weights);
+ @retvals = glWeightdvARB_p($size);
 
 Exported under tag C<:GL_ARB_vertex_blend>.
 
 =head2 glWeightfvARB
 
  glWeightfvARB_c($size, $weights);
+ @retvals = glWeightfvARB_p($size);
 
 Exported under tag C<:GL_ARB_vertex_blend>.
 
 =head2 glWeightivARB
 
  glWeightivARB_c($size, $weights);
+ @retvals = glWeightivARB_p($size);
 
 Exported under tag C<:GL_ARB_vertex_blend>.
 
 =head2 glWeightsvARB
 
  glWeightsvARB_c($size, $weights);
+ @retvals = glWeightsvARB_p($size);
 
 Exported under tag C<:GL_ARB_vertex_blend>.
 
 =head2 glWeightubvARB
 
  glWeightubvARB_c($size, $weights);
+ @retvals = glWeightubvARB_p($size);
 
 Exported under tag C<:GL_ARB_vertex_blend>.
 
 =head2 glWeightuivARB
 
  glWeightuivARB_c($size, $weights);
+ @retvals = glWeightuivARB_p($size);
 
 Exported under tag C<:GL_ARB_vertex_blend>.
 
 =head2 glWeightusvARB
 
  glWeightusvARB_c($size, $weights);
+ @retvals = glWeightusvARB_p($size);
 
 Exported under tag C<:GL_ARB_vertex_blend>.
 
