@@ -224,27 +224,6 @@ for my $name (sort {uc$a cmp uc$b} keys %signature) {
 }
 @features{keys %features} = map [sort keys %$_], values %features;
 
-my @version_features = grep /^GL_VERSION/, keys %features;
-my (@version_31, @version_core);
-for my $f (@version_features) {
-  die "Error parsing '$f'" unless my ($maj, $min) = $f =~ /(\d)/g;
-  my $arr = (10*$maj + $min) < 32 ? \@version_31 : \@version_core;
-  push @$arr, $f;
-}
-my %gltags;
-my @exported_functions; # names the module exports
-for my $name (sort {uc$a cmp uc$b} keys %signature) {
-  my $s = $signature{$name};
-  my @binding_names = map $_->{binding_name}, bindings($name, $s, $g2c2s);
-  push @exported_functions, @binding_names;
-  next if !$s->{feature};
-  for ($s->{feature}, grep defined, $feature2version{$s->{feature}}) {
-    @{ $gltags{$_} }{ @binding_names } = ();
-  }
-}
-@gltags{keys %gltags} = map [sort keys %$_], values %gltags;
-my %glcompat_c = map +($_=>undef), map @{$gltags{$_}}, @version_31;
-
 my %nonglew2alias;
 for (grep $_, split /\n/, slurp('utils/aliases.txt')) {
   my ($to, $from) = split ' ';
@@ -261,6 +240,36 @@ for (grep $_, split /\n/, slurp('utils/aliases.txt')) {
   $signature{$to}{aliases}{$from} = $alias_feature;
   delete $signature{$from};
 }
+
+my @version_features = grep /^GL_VERSION/, keys %features;
+my (@version_31, @version_core);
+for my $f (@version_features) {
+  die "Error parsing '$f'" unless my ($maj, $min) = $f =~ /(\d)/g;
+  my $arr = (10*$maj + $min) < 32 ? \@version_31 : \@version_core;
+  push @$arr, $f;
+}
+my %gltags;
+my @exported_functions; # names the module exports
+for my $name (sort {uc$a cmp uc$b} keys %signature) {
+  my $s = $signature{$name};
+  my @bindings = bindings($name, $s, $g2c2s);
+  my @binding_names = map $_->{binding_name}, @bindings;
+  my @binding_aliases = map @{ $_->{aliases} }, @bindings;
+  push @exported_functions, @binding_names, @binding_aliases;
+  next if !$s->{feature};
+  for ($s->{feature}, grep defined, $feature2version{$s->{feature}}) {
+    @{ $gltags{$_} }{ @binding_names } = ();
+  }
+  next if !$s->{aliases};
+  my %aliases = %{ $s->{aliases} };
+  for my $from (keys %aliases) {
+    next unless my $feature = $aliases{$from};
+    my @these_bindings = grep /^$from/, @binding_aliases;
+    @{ $gltags{$feature} }{ @these_bindings } = ();
+  }
+}
+@gltags{keys %gltags} = map [sort keys %$_], values %gltags;
+my %glcompat_c = map +($_=>undef), map @{$gltags{$_}}, @version_31;
 
 use Data::Dumper;
 $Data::Dumper::Indent = $Data::Dumper::Sortkeys = $Data::Dumper::Terse = 1;
