@@ -30626,6 +30626,13 @@ our %registry = (
         'count'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(values);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(values,pname_count,newSViv)',
+      'count' => 'sizeof(GLint)',
+      'length' => 'NULL',
+      'values' => 'OGLM_GET_SETUP(SyncParameterName,pname,GLint,values)'
+    },
     'feature' => 'GL_ARB_sync',
     'glewImpl' => '__glewGetSynciv',
     'glewtype' => 'fun',

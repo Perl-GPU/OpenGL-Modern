@@ -7308,6 +7308,8 @@ Exported under tag C<:GL_ARB_shader_subroutine>.
 
  glGetSynciv_c($sync, $pname, $count, $length, $values);
  glGetSyncivAPPLE_c($sync, $pname, $count, $length, $values);
+ @retvals = glGetSynciv_p($sync, $pname);
+ @retvals = glGetSyncivAPPLE_p($sync, $pname);
 
 Exported under tag C<:GL_ARB_sync>.
 

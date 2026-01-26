@@ -2817,7 +2817,9 @@ our @gl_functionsrest = qw(
   glGetSubroutineIndex
   glGetSubroutineUniformLocation
   glGetSyncivAPPLE_c
+  glGetSyncivAPPLE_p
   glGetSynciv_c
+  glGetSynciv_p
   glGetTexBumpParameterfvATI_c
   glGetTexBumpParameterivATI_c
   glGetTexEnvxv_c
@@ -4546,6 +4548,7 @@ our %EXPORT_TAGS_GL = (
     'glGetInteger64vAPPLE_c',
     'glGetInteger64vAPPLE_p',
     'glGetSyncivAPPLE_c',
+    'glGetSyncivAPPLE_p',
     'glIsSyncAPPLE',
     'glWaitSyncAPPLE'
   ],
@@ -5294,6 +5297,7 @@ our %EXPORT_TAGS_GL = (
     'glGetInteger64v_c',
     'glGetInteger64v_p',
     'glGetSynciv_c',
+    'glGetSynciv_p',
     'glIsSync',
     'glWaitSync'
   ],
@@ -8651,6 +8655,7 @@ our %EXPORT_TAGS_GL = (
     'glGetMultisamplefv_c',
     'glGetMultisamplefv_p',
     'glGetSynciv_c',
+    'glGetSynciv_p',
     'glIsSync',
     'glMultiDrawElementsBaseVertex_c',
     'glProvokingVertex',
