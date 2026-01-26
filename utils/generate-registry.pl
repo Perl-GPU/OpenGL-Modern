@@ -203,6 +203,10 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my $nout = grep !$_->[1], @ptr_types;
   die "undef ptr_type for $name" if !$ptr_types[0][0];
   my @infos = map typefunc($_->[0]), @ptr_types;
+  my %lenarg2ptrs;
+  push @{ $lenarg2ptrs{$_->[1]} }, $_->[0] for
+    grep defined($_->[1]) && $_->[1] !~ /(?:\d|COMPSIZE)/, map [@$_[0,2]], @argdata;
+  next if keys(%lenarg2ptrs) > 1;
   my $compsize_from = ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/ ? $1 : undef;
   my $compsize_data = $compsize_from && $name2data{$compsize_from};
   my $compsize_group = $compsize_data && $compsize_data->[3];
