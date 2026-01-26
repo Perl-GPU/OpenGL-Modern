@@ -120,6 +120,7 @@ sub bindings {
       my $val = delete $dynlang{$arr};
       my $vardata = $name2data{$arr};
       (my $type = $vardata->[1]) =~ s#\*##;
+      $type = 'char' if $type eq 'void';
       $beforecall .= "  $type $arr$val;\n";
     }
     my $need_cast;
