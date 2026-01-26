@@ -28987,6 +28987,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'RETVAL' => 'infoLog',
+      'bufSize' => '<glGetProgramPipelineiv(pipeline,GL_INFO_LOG_LENGTH,&)',
+      'infoLog' => '[bufSize]',
+      'length' => 'NULL'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewGetProgramPipelineInfoLog',
     'glewtype' => 'fun',

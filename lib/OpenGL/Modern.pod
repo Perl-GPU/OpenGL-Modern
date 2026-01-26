@@ -6930,6 +6930,7 @@ Exported under tag C<:GL_NV_vertex_program>.
 =head2 glGetProgramPipelineInfoLog
 
  glGetProgramPipelineInfoLog_c($pipeline, $bufSize, $length, $infoLog);
+ $retval = glGetProgramPipelineInfoLog_p($pipeline);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 

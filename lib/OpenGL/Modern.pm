@@ -2741,6 +2741,7 @@ our @gl_functionsrest = qw(
   glGetProgramParameterdvNV_c
   glGetProgramParameterfvNV_c
   glGetProgramPipelineInfoLog_c
+  glGetProgramPipelineInfoLog_p
   glGetProgramPipelineiv_c
   glGetProgramPipelineiv_p
   glGetProgramResourcefvNV_c
@@ -5143,6 +5144,7 @@ our %EXPORT_TAGS_GL = (
     'glGenProgramPipelines_c',
     'glGenProgramPipelines_p',
     'glGetProgramPipelineInfoLog_c',
+    'glGetProgramPipelineInfoLog_p',
     'glGetProgramPipelineiv_c',
     'glGetProgramPipelineiv_p',
     'glIsProgramPipeline',
@@ -8796,6 +8798,7 @@ our %EXPORT_TAGS_GL = (
     'glGetFloati_v_p',
     'glGetProgramBinary_c',
     'glGetProgramPipelineInfoLog_c',
+    'glGetProgramPipelineInfoLog_p',
     'glGetProgramPipelineiv_c',
     'glGetProgramPipelineiv_p',
     'glGetShaderPrecisionFormat_c',
