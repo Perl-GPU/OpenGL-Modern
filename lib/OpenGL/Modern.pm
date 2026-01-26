@@ -727,12 +727,16 @@ our @gl_functionsrest = qw(
   glAlphaFragmentOp3ATI
   glAlphaFuncQCOM
   glAlphaFuncx
+  glAlphaToCoverageDitherControlNV
+  glApplyFramebufferAttachmentCMAAINTEL
   glApplyTextureEXT
   glAreProgramsResidentNV_c
   glAreTexturesResidentEXT_c
   glAreVertexArraysResidentSGIX_c
   glArrayElementEXT
   glArrayObjectATI
+  glAsyncCopyBufferSubDataNVX_c
+  glAsyncCopyImageSubDataNVX_c
   glAsyncMarkerSGIX
   glAttachObjectARB
   glBeginConditionalRenderNV
@@ -743,6 +747,7 @@ our @gl_functionsrest = qw(
   glBeginPerfQueryINTEL
   glBeginQueryANGLE
   glBeginQueryARB
+  glBeginQueryEXT
   glBeginQueryIndexed
   glBeginSceneEXT
   glBeginTransformFeedbackEXT
@@ -766,6 +771,7 @@ our @gl_functionsrest = qw(
   glBindFragDataLocationIndexedEXT
   glBindFragmentShaderATI
   glBindFramebufferEXT
+  glBindFramebufferOES
   glBindImageTexture
   glBindImageTextureEXT
   glBindImageTextures_c
@@ -778,9 +784,11 @@ our @gl_functionsrest = qw(
   glBindProgramNV
   glBindProgramPipeline
   glBindRenderbufferEXT
+  glBindRenderbufferOES
   glBindSampler
   glBindSamplers_c
   glBindSamplers_p
+  glBindShadingRateImageNV
   glBindTexGenParameterEXT
   glBindTextureEXT
   glBindTextures_c
@@ -790,6 +798,7 @@ our @gl_functionsrest = qw(
   glBindTransformFeedback
   glBindTransformFeedbackNV
   glBindVertexArrayAPPLE
+  glBindVertexArrayOES
   glBindVertexArraySGIX
   glBindVertexBuffer
   glBindVertexBuffers_c
@@ -806,29 +815,40 @@ our @gl_functionsrest = qw(
   glBlendEquationiARB
   glBlendEquationiEXT
   glBlendEquationIndexedAMD
+  glBlendEquationiOES
+  glBlendEquationOES
   glBlendEquationSeparateEXT
   glBlendEquationSeparatei
   glBlendEquationSeparateiARB
   glBlendEquationSeparateiEXT
   glBlendEquationSeparateIndexedAMD
+  glBlendEquationSeparateiOES
+  glBlendEquationSeparateOES
   glBlendFunci
   glBlendFunciARB
   glBlendFunciEXT
   glBlendFuncIndexedAMD
+  glBlendFunciOES
   glBlendFuncSeparateEXT
   glBlendFuncSeparatei
   glBlendFuncSeparateiARB
   glBlendFuncSeparateiEXT
   glBlendFuncSeparateIndexedAMD
   glBlendFuncSeparateINGR
+  glBlendFuncSeparateiOES
+  glBlendFuncSeparateOES
   glBlendParameteriNV
   glBlitFramebufferANGLE
   glBlitFramebufferEXT
+  glBlitFramebufferLayerEXT
+  glBlitFramebufferLayersEXT
   glBlitFramebufferNV
   glBlitNamedFramebuffer
   glBufferAddressRangeNV
+  glBufferAttachMemoryNV
   glBufferDataARB_c
   glBufferPageCommitmentARB
+  glBufferPageCommitmentMemNV
   glBufferParameteriAPPLE
   glBufferRegionEnabled
   glBufferStorageExternalEXT
@@ -838,6 +858,7 @@ our @gl_functionsrest = qw(
   glBufferSubDataARB_c
   glCallCommandListNV
   glCheckFramebufferStatusEXT
+  glCheckFramebufferStatusOES
   glCheckNamedFramebufferStatus
   glCheckNamedFramebufferStatusEXT
   glClampColorARB
@@ -848,6 +869,7 @@ our @gl_functionsrest = qw(
   glClearColorx
   glClearDepthdNV
   glClearDepthf
+  glClearDepthfOES
   glClearDepthx
   glClearNamedBufferDataEXT_c
   glClearNamedBufferData_c
@@ -866,10 +888,12 @@ our @gl_functionsrest = qw(
   glClientActiveTextureARB
   glClientActiveVertexStreamATI
   glClientAttribDefaultEXT
+  glClientWaitSemaphoreui64NVX_c
   glClientWaitSync
   glClientWaitSyncAPPLE
   glClipControl
   glClipControlEXT
+  glClipPlanefOES_c
   glClipPlanef_c
   glClipPlanex_c
   glColor3fVertex3fSUN
@@ -891,6 +915,7 @@ our @gl_functionsrest = qw(
   glColorFragmentOp3ATI
   glColorMaskiEXT
   glColorMaskIndexedEXT
+  glColorMaskiOES
   glColorP3ui
   glColorP3uiv_c
   glColorP4ui
@@ -928,10 +953,12 @@ our @gl_functionsrest = qw(
   glCompressedTexImage2DARB_c
   glCompressedTexImage3DARB_c
   glCompressedTexImage3DNV_c
+  glCompressedTexImage3DOES_c
   glCompressedTexSubImage1DARB_c
   glCompressedTexSubImage2DARB_c
   glCompressedTexSubImage3DARB_c
   glCompressedTexSubImage3DNV_c
+  glCompressedTexSubImage3DOES_c
   glCompressedTextureImage1DEXT_c
   glCompressedTextureImage2DEXT_c
   glCompressedTextureImage3DEXT_c
@@ -967,6 +994,7 @@ our @gl_functionsrest = qw(
   glCopyImageSubData
   glCopyImageSubDataEXT
   glCopyImageSubDataNV
+  glCopyImageSubDataOES
   glCopyMultiTexImage1DEXT
   glCopyMultiTexImage2DEXT
   glCopyMultiTexSubImage1DEXT
@@ -980,6 +1008,7 @@ our @gl_functionsrest = qw(
   glCopyTexSubImage2DEXT
   glCopyTexSubImage3DEXT
   glCopyTexSubImage3DNV
+  glCopyTexSubImage3DOES
   glCopyTextureImage1DEXT
   glCopyTextureImage2DEXT
   glCopyTextureLevelsAPPLE
@@ -1007,12 +1036,15 @@ our @gl_functionsrest = qw(
   glCreateProgramObjectARB
   glCreateProgramPipelines_c
   glCreateProgramPipelines_p
+  glCreateProgressFenceNVX
   glCreateQueries_c
   glCreateQueries_p
   glCreateRenderbuffers_c
   glCreateRenderbuffers_p
   glCreateSamplers_c
   glCreateSamplers_p
+  glCreateSemaphoresNV_c
+  glCreateSemaphoresNV_p
   glCreateShaderObjectARB
   glCreateShaderProgramEXT
   glCreateShaderProgramv_c
@@ -1029,6 +1061,7 @@ our @gl_functionsrest = qw(
   glCullParameterdvEXT_c
   glCullParameterfvEXT_c
   glCurrentPaletteMatrixARB
+  glCurrentPaletteMatrixOES
   glDataPipe
   glDebugMessageCallbackAMD_c
   glDebugMessageCallbackARB_c
@@ -1057,6 +1090,7 @@ our @gl_functionsrest = qw(
   glDeleteFragmentShaderATI
   glDeleteFramebuffersEXT_c
   glDeleteFramebuffersEXT_p
+  glDeleteFramebuffersOES_c
   glDeleteMemoryObjectsEXT_c
   glDeleteMemoryObjectsEXT_p
   glDeleteMPEGPredictorsSGIX_c
@@ -1079,8 +1113,11 @@ our @gl_functionsrest = qw(
   glDeleteQueriesANGLE_c
   glDeleteQueriesARB_c
   glDeleteQueriesARB_p
+  glDeleteQueriesEXT_c
+  glDeleteQueriesEXT_p
   glDeleteRenderbuffersEXT_c
   glDeleteRenderbuffersEXT_p
+  glDeleteRenderbuffersOES_c
   glDeleteSamplers_c
   glDeleteSamplers_p
   glDeleteSemaphoresEXT_c
@@ -1097,6 +1134,7 @@ our @gl_functionsrest = qw(
   glDeleteTransformFeedbacks_p
   glDeleteVertexArraysAPPLE_c
   glDeleteVertexArraysAPPLE_p
+  glDeleteVertexArraysOES_c
   glDeleteVertexArraysSGIX_c
   glDeleteVertexShaderEXT
   glDepthBoundsdNV
@@ -1105,6 +1143,7 @@ our @gl_functionsrest = qw(
   glDepthRangeArrayv_c
   glDepthRangedNV
   glDepthRangef
+  glDepthRangefOES
   glDepthRangeIndexed
   glDepthRangeIndexedfNV
   glDepthRangex
@@ -1116,6 +1155,7 @@ our @gl_functionsrest = qw(
   glDisableiEXT
   glDisableIndexedEXT
   glDisableiNV
+  glDisableiOES
   glDisableVariantClientStateEXT
   glDisableVertexArrayAttrib
   glDisableVertexArrayAttribEXT
@@ -1164,6 +1204,10 @@ our @gl_functionsrest = qw(
   glDrawElementsInstancedBaseVertex_c
   glDrawElementsInstancedEXT_c
   glDrawElementsInstancedNV_c
+  glDrawMeshTasksEXT
+  glDrawMeshTasksIndirectEXT
+  glDrawMeshTasksIndirectNV
+  glDrawMeshTasksNV
   glDrawRangeElementArrayAPPLE
   glDrawRangeElementArrayATI
   glDrawRangeElementsBaseVertexEXT_c
@@ -1181,6 +1225,10 @@ our @gl_functionsrest = qw(
   glEdgeFlagFormatNV
   glEdgeFlagPointerEXT_c
   glEdgeFlagPointerListIBM_c
+  glEGLImageTargetRenderbufferStorageOES
+  glEGLImageTargetTexStorageEXT_c
+  glEGLImageTargetTexture2DOES
+  glEGLImageTargetTextureStorageEXT_c
   glElementPointerAPPLE_c
   glElementPointerATI_c
   glEnableClientStateiEXT
@@ -1189,6 +1237,7 @@ our @gl_functionsrest = qw(
   glEnableiEXT
   glEnableIndexedEXT
   glEnableiNV
+  glEnableiOES
   glEnableVariantClientStateEXT
   glEnableVertexArrayAttrib
   glEnableVertexArrayAttribEXT
@@ -1203,6 +1252,7 @@ our @gl_functionsrest = qw(
   glEndPerfQueryINTEL
   glEndQueryANGLE
   glEndQueryARB
+  glEndQueryEXT
   glEndQueryIndexed
   glEndSceneEXT
   glEndTilingQCOM
@@ -1211,6 +1261,7 @@ our @gl_functionsrest = qw(
   glEndVertexShaderEXT
   glEndVideoCaptureNV
   glEvalMapsNV
+  glEvaluateDepthValuesARB
   GLEW_3DFX_multisample
   GLEW_3DFX_tbuffer
   GLEW_3DFX_texture_compression_FXT1
@@ -1221,9 +1272,11 @@ our @gl_functionsrest = qw(
   GLEW_AMD_debug_output
   GLEW_AMD_depth_clamp_separate
   GLEW_AMD_draw_buffers_blend
+  GLEW_AMD_framebuffer_multisample_advanced
   GLEW_AMD_framebuffer_sample_positions
   GLEW_AMD_gcn_shader
   GLEW_AMD_gpu_shader_half_float
+  GLEW_AMD_gpu_shader_half_float_fetch
   GLEW_AMD_gpu_shader_int16
   GLEW_AMD_gpu_shader_int64
   GLEW_AMD_interleaved_elements
@@ -1239,6 +1292,7 @@ our @gl_functionsrest = qw(
   GLEW_AMD_shader_atomic_counter_ops
   GLEW_AMD_shader_ballot
   GLEW_AMD_shader_explicit_vertex_parameter
+  GLEW_AMD_shader_image_load_store_lod
   GLEW_AMD_shader_stencil_export
   GLEW_AMD_shader_stencil_value_export
   GLEW_AMD_shader_trinary_minmax
@@ -1465,8 +1519,10 @@ our @gl_functionsrest = qw(
   GLEW_ARM_mali_program_binary
   GLEW_ARM_mali_shader_binary
   GLEW_ARM_rgba8
+  GLEW_ARM_shader_core_properties
   GLEW_ARM_shader_framebuffer_fetch
   GLEW_ARM_shader_framebuffer_fetch_depth_stencil
+  GLEW_ARM_texture_unnormalized_coordinates
   GLEW_ATIX_point_sprites
   GLEW_ATIX_texture_env_combine3
   GLEW_ATIX_texture_env_route
@@ -1488,8 +1544,8 @@ our @gl_functionsrest = qw(
   GLEW_ATI_vertex_array_object
   GLEW_ATI_vertex_attrib_array_object
   GLEW_ATI_vertex_streams
-  GLEW_EGL_KHR_context_flush_control
-  GLEW_EGL_NV_robustness_video_memory_purge
+  GLEW_DMP_program_binary
+  GLEW_DMP_shader_binary
   GLEW_EXT_422_pixels
   GLEW_EXT_abgr
   GLEW_EXT_base_instance
@@ -1505,6 +1561,7 @@ our @gl_functionsrest = qw(
   GLEW_EXT_buffer_storage
   GLEW_EXT_Cg_shader
   GLEW_EXT_clear_texture
+  GLEW_EXT_clip_control
   GLEW_EXT_clip_cull_distance
   GLEW_EXT_clip_volume_hint
   GLEW_EXT_cmyka
@@ -1522,21 +1579,32 @@ our @gl_functionsrest = qw(
   GLEW_EXT_debug_label
   GLEW_EXT_debug_marker
   GLEW_EXT_depth_bounds_test
+  GLEW_EXT_depth_clamp
   GLEW_EXT_direct_state_access
   GLEW_EXT_discard_framebuffer
+  GLEW_EXT_disjoint_timer_query
   GLEW_EXT_draw_buffers
   GLEW_EXT_draw_buffers2
   GLEW_EXT_draw_buffers_indexed
   GLEW_EXT_draw_elements_base_vertex
   GLEW_EXT_draw_instanced
   GLEW_EXT_draw_range_elements
+  GLEW_EXT_draw_transform_feedback
   GLEW_EXT_EGL_image_array
+  GLEW_EXT_EGL_image_external_wrap_modes
+  GLEW_EXT_EGL_image_storage
+  GLEW_EXT_EGL_image_storage_compression
+  GLEW_EXT_EGL_sync
   GLEW_EXT_external_buffer
   GLEW_EXT_float_blend
   GLEW_EXT_fog_coord
   GLEW_EXT_fragment_lighting
+  GLEW_EXT_fragment_shading_rate
+  GLEW_EXT_fragment_shading_rate_attachment
+  GLEW_EXT_fragment_shading_rate_primitive
   GLEW_EXT_frag_depth
   GLEW_EXT_framebuffer_blit
+  GLEW_EXT_framebuffer_blit_layers
   GLEW_EXT_framebuffer_multisample
   GLEW_EXT_framebuffer_multisample_blit_scaled
   GLEW_EXT_framebuffer_object
@@ -1558,6 +1626,7 @@ our @gl_functionsrest = qw(
   GLEW_EXT_memory_object
   GLEW_EXT_memory_object_fd
   GLEW_EXT_memory_object_win32
+  GLEW_EXT_mesh_shader
   GLEW_EXT_misc_attribute
   GLEW_EXT_multiple_textures
   GLEW_EXT_multisample
@@ -1565,8 +1634,12 @@ our @gl_functionsrest = qw(
   GLEW_EXT_multisampled_render_to_texture2
   GLEW_EXT_multisample_compatibility
   GLEW_EXT_multiview_draw_buffers
+  GLEW_EXT_multiview_tessellation_geometry_shader
+  GLEW_EXT_multiview_texture_multisample
+  GLEW_EXT_multiview_timer_query
   GLEW_EXT_multi_draw_arrays
   GLEW_EXT_multi_draw_indirect
+  GLEW_EXT_occlusion_query_boolean
   GLEW_EXT_packed_depth_stencil
   GLEW_EXT_packed_float
   GLEW_EXT_packed_pixels
@@ -1578,20 +1651,26 @@ our @gl_functionsrest = qw(
   GLEW_EXT_polygon_offset
   GLEW_EXT_polygon_offset_clamp
   GLEW_EXT_post_depth_coverage
+  GLEW_EXT_primitive_bounding_box
+  GLEW_EXT_protected_textures
   GLEW_EXT_provoking_vertex
   GLEW_EXT_pvrtc_sRGB
   GLEW_EXT_raster_multisample
   GLEW_EXT_read_format_bgra
   GLEW_EXT_render_snorm
   GLEW_EXT_rescale_normal
+  GLEW_EXT_robustness
   GLEW_EXT_scene_marker
   GLEW_EXT_secondary_color
   GLEW_EXT_semaphore
   GLEW_EXT_semaphore_fd
   GLEW_EXT_semaphore_win32
+  GLEW_EXT_separate_depth_stencil
   GLEW_EXT_separate_shader_objects
   GLEW_EXT_separate_specular_color
+  GLEW_EXT_shader_clock
   GLEW_EXT_shader_framebuffer_fetch
+  GLEW_EXT_shader_framebuffer_fetch_non_coherent
   GLEW_EXT_shader_group_vote
   GLEW_EXT_shader_image_load_formatted
   GLEW_EXT_shader_image_load_store
@@ -1601,7 +1680,10 @@ our @gl_functionsrest = qw(
   GLEW_EXT_shader_non_constant_global_initializers
   GLEW_EXT_shader_pixel_local_storage
   GLEW_EXT_shader_pixel_local_storage2
+  GLEW_EXT_shader_realtime_clock
+  GLEW_EXT_shader_samples_identical
   GLEW_EXT_shader_texture_lod
+  GLEW_EXT_shader_texture_samples
   GLEW_EXT_shadow_funcs
   GLEW_EXT_shadow_samplers
   GLEW_EXT_shared_texture_palette
@@ -1609,13 +1691,18 @@ our @gl_functionsrest = qw(
   GLEW_EXT_sparse_texture2
   GLEW_EXT_sRGB
   GLEW_EXT_sRGB_write_control
+  GLEW_EXT_static_vertex_array
   GLEW_EXT_stencil_clear_tag
   GLEW_EXT_stencil_two_side
   GLEW_EXT_stencil_wrap
   GLEW_EXT_subtexture
+  GLEW_EXT_tessellation_point_size
+  GLEW_EXT_tessellation_shader
   GLEW_EXT_texture
   GLEW_EXT_texture3D
   GLEW_EXT_texture_array
+  GLEW_EXT_texture_border_clamp
+  GLEW_EXT_texture_buffer
   GLEW_EXT_texture_buffer_object
   GLEW_EXT_texture_compression_astc_decode_mode
   GLEW_EXT_texture_compression_astc_decode_mode_rgb9e5
@@ -1624,6 +1711,7 @@ our @gl_functionsrest = qw(
   GLEW_EXT_texture_compression_latc
   GLEW_EXT_texture_compression_rgtc
   GLEW_EXT_texture_compression_s3tc
+  GLEW_EXT_texture_compression_s3tc_srgb
   GLEW_EXT_texture_cube_map
   GLEW_EXT_texture_cube_map_array
   GLEW_EXT_texture_edge_clamp
@@ -1634,14 +1722,18 @@ our @gl_functionsrest = qw(
   GLEW_EXT_texture_filter_anisotropic
   GLEW_EXT_texture_filter_minmax
   GLEW_EXT_texture_format_BGRA8888
+  GLEW_EXT_texture_format_sRGB_override
   GLEW_EXT_texture_integer
   GLEW_EXT_texture_lod_bias
   GLEW_EXT_texture_mirror_clamp
+  GLEW_EXT_texture_mirror_clamp_to_edge
   GLEW_EXT_texture_norm16
   GLEW_EXT_texture_object
   GLEW_EXT_texture_perturb_normal
+  GLEW_EXT_texture_query_lod
   GLEW_EXT_texture_rectangle
   GLEW_EXT_texture_rg
+  GLEW_EXT_texture_shadow_lod
   GLEW_EXT_texture_shared_exponent
   GLEW_EXT_texture_snorm
   GLEW_EXT_texture_sRGB
@@ -1649,6 +1741,7 @@ our @gl_functionsrest = qw(
   GLEW_EXT_texture_sRGB_R8
   GLEW_EXT_texture_sRGB_RG8
   GLEW_EXT_texture_storage
+  GLEW_EXT_texture_storage_compression
   GLEW_EXT_texture_swizzle
   GLEW_EXT_texture_type_2_10_10_10_REV
   GLEW_EXT_texture_view
@@ -1665,26 +1758,43 @@ our @gl_functionsrest = qw(
   GLEW_EXT_window_rectangles
   GLEW_EXT_x11_sync_object
   GLEW_EXT_YUV_target
+  GLEW_FJ_shader_binary_GCCSO
   GLEW_GREMEDY_frame_terminator
   GLEW_GREMEDY_string_marker
   GLEW_HP_convolution_border_modes
   GLEW_HP_image_transform
   GLEW_HP_occlusion_test
   GLEW_HP_texture_lighting
+  GLEW_HUAWEI_program_binary
+  GLEW_HUAWEI_shader_binary
   GLEW_IBM_cull_vertex
   GLEW_IBM_multimode_draw_arrays
   GLEW_IBM_rasterpos_clip
   GLEW_IBM_static_data
   GLEW_IBM_texture_mirrored_repeat
   GLEW_IBM_vertex_array_lists
+  GLEW_IMG_bindless_texture
+  GLEW_IMG_framebuffer_downsample
+  GLEW_IMG_multisampled_render_to_texture
+  GLEW_IMG_program_binary
+  GLEW_IMG_pvric_end_to_end_signature
+  GLEW_IMG_read_format
+  GLEW_IMG_shader_binary
+  GLEW_IMG_texture_compression_pvrtc
+  GLEW_IMG_texture_compression_pvrtc2
+  GLEW_IMG_texture_env_enhanced_fixed_function
+  GLEW_IMG_texture_filter_cubic
+  GLEW_IMG_tile_region_protection
   GLEW_INGR_color_clamp
   GLEW_INGR_interlace_read
+  GLEW_INTEL_blackhole_render
   GLEW_INTEL_conservative_rasterization
   GLEW_INTEL_fragment_shader_ordering
   GLEW_INTEL_framebuffer_CMAA
   GLEW_INTEL_map_texture
   GLEW_INTEL_parallel_arrays
   GLEW_INTEL_performance_query
+  GLEW_INTEL_shader_integer_functions2
   GLEW_INTEL_texture_scissor
   GLEW_KHR_blend_equation_advanced
   GLEW_KHR_blend_equation_advanced_coherent
@@ -1694,20 +1804,30 @@ our @gl_functionsrest = qw(
   GLEW_KHR_parallel_shader_compile
   GLEW_KHR_robustness
   GLEW_KHR_robust_buffer_access_behavior
+  GLEW_KHR_shader_subgroup
   GLEW_KHR_texture_compression_astc_hdr
   GLEW_KHR_texture_compression_astc_ldr
   GLEW_KHR_texture_compression_astc_sliced_3d
   GLEW_KTX_buffer_region
   GLEW_MESAX_texture_stack
+  GLEW_MESA_bgra
+  GLEW_MESA_framebuffer_flip_x
+  GLEW_MESA_framebuffer_flip_y
+  GLEW_MESA_framebuffer_swap_xy
   GLEW_MESA_pack_invert
+  GLEW_MESA_program_binary_formats
   GLEW_MESA_resize_buffers
   GLEW_MESA_shader_integer_functions
+  GLEW_MESA_texture_const_bandwidth
+  GLEW_MESA_tile_raster_order
   GLEW_MESA_window_pos
   GLEW_MESA_ycbcr_texture
   GLEW_NVX_blend_equation_advanced_multi_draw_buffers
   GLEW_NVX_conditional_render
   GLEW_NVX_gpu_memory_info
+  GLEW_NVX_gpu_multicast2
   GLEW_NVX_linked_gpu_multicast
+  GLEW_NVX_progress_fence
   GLEW_NV_3dvision_settings
   GLEW_NV_alpha_to_coverage_dither_control
   GLEW_NV_bgr
@@ -1721,16 +1841,20 @@ our @gl_functionsrest = qw(
   GLEW_NV_clip_space_w_scaling
   GLEW_NV_command_list
   GLEW_NV_compute_program5
+  GLEW_NV_compute_shader_derivatives
   GLEW_NV_conditional_render
   GLEW_NV_conservative_raster
   GLEW_NV_conservative_raster_dilate
+  GLEW_NV_conservative_raster_pre_snap
   GLEW_NV_conservative_raster_pre_snap_triangles
+  GLEW_NV_conservative_raster_underestimation
   GLEW_NV_copy_buffer
   GLEW_NV_copy_depth_to_color
   GLEW_NV_copy_image
   GLEW_NV_deep_texture3D
   GLEW_NV_depth_buffer_float
   GLEW_NV_depth_clamp
+  GLEW_NV_depth_nonlinear
   GLEW_NV_depth_range_unclamped
   GLEW_NV_draw_buffers
   GLEW_NV_draw_instanced
@@ -1750,6 +1874,7 @@ our @gl_functionsrest = qw(
   GLEW_NV_fragment_program2
   GLEW_NV_fragment_program4
   GLEW_NV_fragment_program_option
+  GLEW_NV_fragment_shader_barycentric
   GLEW_NV_fragment_shader_interlock
   GLEW_NV_framebuffer_blit
   GLEW_NV_framebuffer_mixed_samples
@@ -1770,6 +1895,9 @@ our @gl_functionsrest = qw(
   GLEW_NV_instanced_arrays
   GLEW_NV_internalformat_sample_query
   GLEW_NV_light_max_exponent
+  GLEW_NV_memory_attachment
+  GLEW_NV_memory_object_sparse
+  GLEW_NV_mesh_shader
   GLEW_NV_multisample_coverage
   GLEW_NV_multisample_filter_hint
   GLEW_NV_non_square_matrices
@@ -1789,14 +1917,20 @@ our @gl_functionsrest = qw(
   GLEW_NV_polygon_mode
   GLEW_NV_present_video
   GLEW_NV_primitive_restart
+  GLEW_NV_primitive_shading_rate
+  GLEW_NV_query_resource_tag
+  GLEW_NV_read_buffer
+  GLEW_NV_read_buffer_front
   GLEW_NV_read_depth
   GLEW_NV_read_depth_stencil
   GLEW_NV_read_stencil
   GLEW_NV_register_combiners
   GLEW_NV_register_combiners2
+  GLEW_NV_representative_fragment_test
   GLEW_NV_robustness_video_memory_purge
   GLEW_NV_sample_locations
   GLEW_NV_sample_mask_override_coverage
+  GLEW_NV_scissor_exclusive
   GLEW_NV_shader_atomic_counters
   GLEW_NV_shader_atomic_float
   GLEW_NV_shader_atomic_float64
@@ -1805,8 +1939,11 @@ our @gl_functionsrest = qw(
   GLEW_NV_shader_buffer_load
   GLEW_NV_shader_noperspective_interpolation
   GLEW_NV_shader_storage_buffer_object
+  GLEW_NV_shader_subgroup_partitioned
+  GLEW_NV_shader_texture_footprint
   GLEW_NV_shader_thread_group
   GLEW_NV_shader_thread_shuffle
+  GLEW_NV_shading_rate_image
   GLEW_NV_shadow_samplers_array
   GLEW_NV_shadow_samplers_cube
   GLEW_NV_sRGB_formats
@@ -1830,10 +1967,13 @@ our @gl_functionsrest = qw(
   GLEW_NV_texture_shader
   GLEW_NV_texture_shader2
   GLEW_NV_texture_shader3
+  GLEW_NV_timeline_semaphore
   GLEW_NV_transform_feedback
   GLEW_NV_transform_feedback2
+  GLEW_NV_uniform_buffer_std430_layout
   GLEW_NV_uniform_buffer_unified_memory
   GLEW_NV_vdpau_interop
+  GLEW_NV_vdpau_interop2
   GLEW_NV_vertex_array_range
   GLEW_NV_vertex_array_range2
   GLEW_NV_vertex_attrib_integer_64bit
@@ -1848,7 +1988,68 @@ our @gl_functionsrest = qw(
   GLEW_NV_viewport_array
   GLEW_NV_viewport_array2
   GLEW_NV_viewport_swizzle
+  GLEW_OES_blend_equation_separate
+  GLEW_OES_blend_func_separate
+  GLEW_OES_blend_subtract
   GLEW_OES_byte_coordinates
+  GLEW_OES_compressed_ETC1_RGB8_texture
+  GLEW_OES_compressed_paletted_texture
+  GLEW_OES_copy_image
+  GLEW_OES_depth24
+  GLEW_OES_depth32
+  GLEW_OES_depth_texture
+  GLEW_OES_depth_texture_cube_map
+  GLEW_OES_draw_buffers_indexed
+  GLEW_OES_draw_texture
+  GLEW_OES_EGL_image
+  GLEW_OES_EGL_image_external
+  GLEW_OES_EGL_image_external_essl3
+  GLEW_OES_element_index_uint
+  GLEW_OES_extended_matrix_palette
+  GLEW_OES_fbo_render_mipmap
+  GLEW_OES_fragment_precision_high
+  GLEW_OES_framebuffer_object
+  GLEW_OES_geometry_point_size
+  GLEW_OES_geometry_shader
+  GLEW_OES_get_program_binary
+  GLEW_OES_gpu_shader5
+  GLEW_OES_mapbuffer
+  GLEW_OES_matrix_get
+  GLEW_OES_matrix_palette
+  GLEW_OES_packed_depth_stencil
+  GLEW_OES_point_size_array
+  GLEW_OES_point_sprite
+  GLEW_OES_read_format
+  GLEW_OES_required_internalformat
+  GLEW_OES_rgb8_rgba8
+  GLEW_OES_sample_shading
+  GLEW_OES_sample_variables
+  GLEW_OES_shader_image_atomic
+  GLEW_OES_shader_io_blocks
+  GLEW_OES_shader_multisample_interpolation
+  GLEW_OES_single_precision
+  GLEW_OES_standard_derivatives
+  GLEW_OES_stencil1
+  GLEW_OES_stencil4
+  GLEW_OES_stencil8
+  GLEW_OES_surfaceless_context
+  GLEW_OES_tessellation_point_size
+  GLEW_OES_tessellation_shader
+  GLEW_OES_texture_3D
+  GLEW_OES_texture_border_clamp
+  GLEW_OES_texture_buffer
+  GLEW_OES_texture_compression_astc
+  GLEW_OES_texture_cube_map
+  GLEW_OES_texture_cube_map_array
+  GLEW_OES_texture_env_crossbar
+  GLEW_OES_texture_mirrored_repeat
+  GLEW_OES_texture_npot
+  GLEW_OES_texture_stencil8
+  GLEW_OES_texture_storage_multisample_2d_array
+  GLEW_OES_texture_view
+  GLEW_OES_vertex_array_object
+  GLEW_OES_vertex_half_float
+  GLEW_OES_vertex_type_10_10_10_2
   GLEW_OML_interlace
   GLEW_OML_resample
   GLEW_OML_subsample
@@ -1863,10 +2064,22 @@ our @gl_functionsrest = qw(
   GLEW_QCOM_extended_get
   GLEW_QCOM_extended_get2
   GLEW_QCOM_framebuffer_foveated
+  GLEW_QCOM_frame_extrapolation
+  GLEW_QCOM_motion_estimation
   GLEW_QCOM_perfmon_global_mode
+  GLEW_QCOM_render_shared_exponent
+  GLEW_QCOM_render_sRGB_R8_RG8
   GLEW_QCOM_shader_framebuffer_fetch_noncoherent
+  GLEW_QCOM_shader_framebuffer_fetch_rate
+  GLEW_QCOM_shading_rate
+  GLEW_QCOM_texture_foveated
+  GLEW_QCOM_texture_foveated2
+  GLEW_QCOM_texture_foveated_subsampled_layout
+  GLEW_QCOM_texture_lod_bias
   GLEW_QCOM_tiled_rendering
   GLEW_QCOM_writeonly_rendering
+  GLEW_QCOM_ycbcr_degamma
+  GLEW_QCOM_YUV_texture_gather
   GLEW_REGAL_enable
   GLEW_REGAL_error_string
   GLEW_REGAL_ES1_0_compatibility
@@ -2009,6 +2222,7 @@ our @gl_functionsrest = qw(
   GLEW_VERSION_4_4
   GLEW_VERSION_4_5
   GLEW_VERSION_4_6
+  GLEW_VIV_shader_binary
   GLEW_WIN_phong_shading
   GLEW_WIN_scene_markerXXX
   GLEW_WIN_specular_fog
@@ -2026,6 +2240,7 @@ our @gl_functionsrest = qw(
   glExtGetTexturesQCOM_c
   glExtIsProgramBinaryQCOM
   glExtractComponentEXT
+  glExtrapolateTex2DQCOM
   glExtTexObjectStateOverrideiQCOM
   glFenceSync
   glFenceSyncAPPLE
@@ -2088,26 +2303,35 @@ our @gl_functionsrest = qw(
   glFramebufferDrawBufferEXT
   glFramebufferDrawBuffersEXT_c
   glFramebufferDrawBuffersEXT_p
+  glFramebufferFetchBarrierEXT
   glFramebufferFetchBarrierQCOM
   glFramebufferFoveationConfigQCOM_c
   glFramebufferFoveationParametersQCOM
   glFramebufferParameteri
+  glFramebufferParameteriMESA
   glFramebufferPixelLocalStorageSizeEXT
   glFramebufferReadBufferEXT
   glFramebufferRenderbufferEXT
+  glFramebufferRenderbufferOES
   glFramebufferSampleLocationsfvARB_c
   glFramebufferSampleLocationsfvNV_c
   glFramebufferSamplePositionsfvAMD_c
+  glFramebufferShadingRateEXT
   glFramebufferTexture
   glFramebufferTexture1DEXT
+  glFramebufferTexture2DDownsampleIMG
   glFramebufferTexture2DEXT
   glFramebufferTexture2DMultisampleEXT
+  glFramebufferTexture2DMultisampleIMG
+  glFramebufferTexture2DOES
   glFramebufferTexture3DEXT
+  glFramebufferTexture3DOES
   glFramebufferTextureARB
   glFramebufferTextureEXT
   glFramebufferTextureFaceARB
   glFramebufferTextureFaceEXT
   glFramebufferTextureLayerARB
+  glFramebufferTextureLayerDownsampleIMG
   glFramebufferTextureLayerEXT
   glFramebufferTextureLayerNV
   glFramebufferTextureMultisampleMultiviewOVR
@@ -2116,11 +2340,13 @@ our @gl_functionsrest = qw(
   glFrameZoomSGIX
   glFreeObjectBufferATI
   glFrustumf
+  glFrustumfOES
   glFrustumx
   glGenAsyncMarkersSGIX
   glGenBuffersARB_c
   glGenBuffersARB_p
   glGenerateMipmapEXT
+  glGenerateMipmapOES
   glGenerateMultiTexMipmapEXT
   glGenerateTextureMipmap
   glGenerateTextureMipmapEXT
@@ -2131,6 +2357,7 @@ our @gl_functionsrest = qw(
   glGenFragmentShadersATI
   glGenFramebuffersEXT_c
   glGenFramebuffersEXT_p
+  glGenFramebuffersOES_c
   glGenMPEGPredictorsSGIX_c
   glGenNamesAMD_c
   glGenNamesAMD_p
@@ -2148,8 +2375,11 @@ our @gl_functionsrest = qw(
   glGenQueriesANGLE_c
   glGenQueriesARB_c
   glGenQueriesARB_p
+  glGenQueriesEXT_c
+  glGenQueriesEXT_p
   glGenRenderbuffersEXT_c
   glGenRenderbuffersEXT_p
+  glGenRenderbuffersOES_c
   glGenSamplers_c
   glGenSamplers_p
   glGenSemaphoresEXT_c
@@ -2163,6 +2393,7 @@ our @gl_functionsrest = qw(
   glGenTransformFeedbacks_p
   glGenVertexArraysAPPLE_c
   glGenVertexArraysAPPLE_p
+  glGenVertexArraysOES_c
   glGenVertexArraysSGIX_c
   glGenVertexShadersEXT
   glGetActiveAtomicCounterBufferiv_c
@@ -2186,7 +2417,9 @@ our @gl_functionsrest = qw(
   glGetBufferParameterivARB_p
   glGetBufferParameterui64vNV_c
   glGetBufferPointervARB_c
+  glGetBufferPointervOES_c
   glGetBufferSubDataARB_c
+  glGetClipPlanefOES_c
   glGetClipPlanef_c
   glGetClipPlanex_c
   glGetColorTableEXT_c
@@ -2267,13 +2500,19 @@ our @gl_functionsrest = qw(
   glGetFragmentLightivSGIX_p
   glGetFragmentMaterialfvEXT_c
   glGetFragmentMaterialfvSGIX_c
+  glGetFragmentMaterialfvSGIX_p
   glGetFragmentMaterialivEXT_c
   glGetFragmentMaterialivSGIX_c
+  glGetFragmentMaterialivSGIX_p
+  glGetFragmentShadingRatesEXT_c
   glGetFramebufferAttachmentParameterivEXT_c
   glGetFramebufferAttachmentParameterivEXT_p
+  glGetFramebufferAttachmentParameterivOES_c
   glGetFramebufferParameterfvAMD_c
   glGetFramebufferParameterivEXT_c
   glGetFramebufferParameterivEXT_p
+  glGetFramebufferParameterivMESA_c
+  glGetFramebufferParameterivMESA_p
   glGetFramebufferParameteriv_c
   glGetFramebufferParameteriv_p
   glGetFramebufferPixelLocalStorageSizeEXT
@@ -2331,6 +2570,7 @@ our @gl_functionsrest = qw(
   glGetMapParameterivNV_c
   glGetMaterialxv_c
   glGetMaterialxv_p
+  glGetMemoryObjectDetachedResourcesuivNV_c
   glGetMemoryObjectParameterivEXT_c
   glGetMinmaxEXT_c
   glGetMinmaxParameterfvEXT_c
@@ -2484,6 +2724,7 @@ our @gl_functionsrest = qw(
   glGetPointervEXT_c
   glGetPointervKHR_c
   glGetProcAddressREGAL_c
+  glGetProgramBinaryOES_c
   glGetProgramBinary_c
   glGetProgramEnvParameterdvARB_c
   glGetProgramEnvParameterfvARB_c
@@ -2519,6 +2760,8 @@ our @gl_functionsrest = qw(
   glGetQueryivANGLE_c
   glGetQueryivARB_c
   glGetQueryivARB_p
+  glGetQueryivEXT_c
+  glGetQueryivEXT_p
   glGetQueryObjecti64vANGLE_c
   glGetQueryObjecti64vEXT_c
   glGetQueryObjecti64vEXT_p
@@ -2537,25 +2780,33 @@ our @gl_functionsrest = qw(
   glGetQueryObjectuivANGLE_c
   glGetQueryObjectuivARB_c
   glGetQueryObjectuivARB_p
+  glGetQueryObjectuivEXT_c
+  glGetQueryObjectuivEXT_p
   glGetRenderbufferParameterivEXT_c
   glGetRenderbufferParameterivEXT_p
+  glGetRenderbufferParameterivOES_c
   glGetSamplerParameterfv_c
   glGetSamplerParameterfv_p
   glGetSamplerParameterIivEXT_c
   glGetSamplerParameterIivEXT_p
+  glGetSamplerParameterIivOES_c
   glGetSamplerParameterIiv_c
   glGetSamplerParameterIiv_p
   glGetSamplerParameterIuivEXT_c
   glGetSamplerParameterIuivEXT_p
+  glGetSamplerParameterIuivOES_c
   glGetSamplerParameterIuiv_c
   glGetSamplerParameterIuiv_p
   glGetSamplerParameteriv_c
   glGetSamplerParameteriv_p
+  glGetSemaphoreParameterivNV_c
   glGetSemaphoreParameterui64vEXT_c
   glGetSeparableFilterEXT_c
   glGetSeparableFilter_c
   glGetShaderPrecisionFormat_c
   glGetShaderSourceARB_c
+  glGetShadingRateImagePaletteNV_c
+  glGetShadingRateSampleLocationivNV_c
   glGetSharpenTexFuncSGIS_c
   glGetSharpenTexFuncSGIS_p
   glGetStageIndexNV
@@ -2568,10 +2819,15 @@ our @gl_functionsrest = qw(
   glGetTexEnvxv_c
   glGetTexEnvxv_p
   glGetTexFilterFuncSGIS_c
+  glGetTexGenfvOES_c
+  glGetTexGenivOES_c
+  glGetTexGenxvOES_c
   glGetTexParameterIivEXT_c
   glGetTexParameterIivEXT_p
+  glGetTexParameterIivOES_c
   glGetTexParameterIuivEXT_c
   glGetTexParameterIuivEXT_p
+  glGetTexParameterIuivOES_c
   glGetTexParameterPointervAPPLE_c
   glGetTexParameterxv_c
   glGetTexParameterxv_p
@@ -2719,9 +2975,11 @@ our @gl_functionsrest = qw(
   glIsEnablediEXT
   glIsEnabledIndexedEXT
   glIsEnablediNV
+  glIsEnablediOES
   glIsFenceAPPLE
   glIsFenceNV
   glIsFramebufferEXT
+  glIsFramebufferOES
   glIsImageHandleResidentARB
   glIsImageHandleResidentNV
   glIsMemoryObjectEXT
@@ -2739,7 +2997,9 @@ our @gl_functionsrest = qw(
   glIsProgramPipeline
   glIsQueryANGLE
   glIsQueryARB
+  glIsQueryEXT
   glIsRenderbufferEXT
+  glIsRenderbufferOES
   glIsSampler
   glIsSemaphoreEXT
   glIsStateNV
@@ -2753,6 +3013,7 @@ our @gl_functionsrest = qw(
   glIsTransformFeedbackNV
   glIsVariantEnabledEXT
   glIsVertexArrayAPPLE
+  glIsVertexArrayOES
   glIsVertexArraySGIX
   glIsVertexAttribEnabledAPPLE
   glLabelObjectEXT
@@ -2769,6 +3030,7 @@ our @gl_functionsrest = qw(
   glListDrawCommandsStatesClientNV_c
   glLoadIdentityDeformationMapSGIX
   glLoadMatrixx_c
+  glLoadPaletteFromModelViewMatrixOES
   glLoadProgramNV
   glLoadTransposeMatrixdARB_c
   glLoadTransposeMatrixfARB_c
@@ -2787,6 +3049,7 @@ our @gl_functionsrest = qw(
   glMakeTextureHandleResidentARB
   glMakeTextureHandleResidentNV
   glMapBufferARB_c
+  glMapBufferOES_c
   glMapBufferRangeEXT_c
   glMapControlPointsNV_c
   glMapNamedBufferEXT_c
@@ -2805,6 +3068,7 @@ our @gl_functionsrest = qw(
   glMaterialxv_c
   glMatrixFrustumEXT
   glMatrixIndexPointerARB_c
+  glMatrixIndexPointerOES_c
   glMatrixIndexubvARB_c
   glMatrixIndexubvARB_p
   glMatrixIndexuivARB_c
@@ -2835,6 +3099,7 @@ our @gl_functionsrest = qw(
   glMatrixScalefEXT
   glMatrixTranslatedEXT
   glMatrixTranslatefEXT
+  glMaxActiveShaderCoresARM
   glMaxShaderCompilerThreadsARB
   glMaxShaderCompilerThreadsKHR
   glMemoryBarrier
@@ -2847,6 +3112,7 @@ our @gl_functionsrest = qw(
   glMinmaxEXT
   glMinSampleShading
   glMinSampleShadingARB
+  glMinSampleShadingOES
   glMPEGPredictorSGIX_c
   glMPEGQuantTableubv_c
   glMulticastBarrierNV
@@ -2859,6 +3125,9 @@ our @gl_functionsrest = qw(
   glMulticastGetQueryObjectivNV_c
   glMulticastGetQueryObjectui64vNV_c
   glMulticastGetQueryObjectuivNV_c
+  glMulticastScissorArrayvNVX_c
+  glMulticastViewportArrayvNVX_c
+  glMulticastViewportPositionWScaleNVX
   glMulticastWaitSyncNV
   glMultiDrawArraysEXT_c
   glMultiDrawArraysIndirectAMD_c
@@ -2879,6 +3148,10 @@ our @gl_functionsrest = qw(
   glMultiDrawElementsIndirectCount_c
   glMultiDrawElementsIndirectEXT_c
   glMultiDrawElementsIndirect_c
+  glMultiDrawMeshTasksIndirectCountEXT
+  glMultiDrawMeshTasksIndirectCountNV
+  glMultiDrawMeshTasksIndirectEXT
+  glMultiDrawMeshTasksIndirectNV
   glMultiDrawRangeElementArrayAPPLE_c
   glMultiModeDrawArraysIBM_c
   glMultiModeDrawElementsIBM_c
@@ -2960,8 +3233,10 @@ our @gl_functionsrest = qw(
   glMultMatrixx_c
   glMultTransposeMatrixdARB_c
   glMultTransposeMatrixfARB_c
+  glNamedBufferAttachMemoryNV
   glNamedBufferDataEXT_c
   glNamedBufferData_c
+  glNamedBufferPageCommitmentMemNV
   glNamedBufferStorageExternalEXT
   glNamedBufferStorageEXT_c
   glNamedBufferStorageMemEXT
@@ -2988,6 +3263,7 @@ our @gl_functionsrest = qw(
   glNamedFramebufferTextureFaceEXT
   glNamedFramebufferTextureLayer
   glNamedFramebufferTextureLayerEXT
+  glNamedFramebufferTextureMultiviewOVR
   glNamedProgramLocalParameter4dEXT
   glNamedProgramLocalParameter4dvEXT_c
   glNamedProgramLocalParameter4fEXT
@@ -3003,6 +3279,7 @@ our @gl_functionsrest = qw(
   glNamedRenderbufferStorage
   glNamedRenderbufferStorageEXT
   glNamedRenderbufferStorageMultisample
+  glNamedRenderbufferStorageMultisampleAdvancedAMD
   glNamedRenderbufferStorageMultisampleCoverageEXT
   glNamedRenderbufferStorageMultisampleEXT
   glNamedStringARB
@@ -3038,6 +3315,7 @@ our @gl_functionsrest = qw(
   glObjectPurgeableAPPLE
   glObjectUnpurgeableAPPLE
   glOrthof
+  glOrthofOES
   glOrthox
   glPassTexCoordATI
   glPatchParameterfv_c
@@ -3111,6 +3389,7 @@ our @gl_functionsrest = qw(
   glPrimitiveRestartNV
   glPrioritizeTexturesEXT_c
   glPrioritizeVertexArraysSGIX_c
+  glProgramBinaryOES_c
   glProgramBinary_c
   glProgramBufferParametersfvNV_c
   glProgramBufferParametersfvNV_p
@@ -3306,6 +3585,7 @@ our @gl_functionsrest = qw(
   glQueryObjectParameteruiAMD
   glRasterSamplesEXT
   glReadBufferIndexedEXT
+  glReadBufferNV
   glReadBufferRegion
   glReadnPixelsARB_c
   glReadnPixelsEXT_c
@@ -3316,11 +3596,14 @@ our @gl_functionsrest = qw(
   glReleaseKeyedMutexWin32EXT
   glReleaseShaderCompiler
   glRenderbufferStorageEXT
+  glRenderbufferStorageMultisampleAdvancedAMD
   glRenderbufferStorageMultisampleANGLE
   glRenderbufferStorageMultisampleAPPLE
   glRenderbufferStorageMultisampleCoverageNV
   glRenderbufferStorageMultisampleEXT
+  glRenderbufferStorageMultisampleIMG
   glRenderbufferStorageMultisampleNV
+  glRenderbufferStorageOES
   glRenderGpuMaskNV
   glReplacementCodePointerSUN_c
   glReplacementCodeubSUN
@@ -3349,9 +3632,11 @@ our @gl_functionsrest = qw(
   glRequestResidentProgramsNV_p
   glResetHistogram
   glResetHistogramEXT
+  glResetMemoryObjectParameterNV
   glResetMinmax
   glResetMinmaxEXT
   glResizeBuffersMESA
+  glResolveDepthValuesNV
   glResolveMultisampleFramebufferAPPLE
   glResumeTransformFeedback
   glResumeTransformFeedbackNV
@@ -3369,13 +3654,17 @@ our @gl_functionsrest = qw(
   glSamplerParameterfv_c
   glSamplerParameteri
   glSamplerParameterIivEXT_c
+  glSamplerParameterIivOES_c
   glSamplerParameterIiv_c
   glSamplerParameterIuivEXT_c
+  glSamplerParameterIuivOES_c
   glSamplerParameterIuiv_c
   glSamplerParameteriv_c
   glScalex
   glScissorArrayvNV_c
   glScissorArrayv_c
+  glScissorExclusiveArrayvNV_c
+  glScissorExclusiveNV
   glScissorIndexed
   glScissorIndexedNV
   glScissorIndexedvNV_c
@@ -3408,6 +3697,7 @@ our @gl_functionsrest = qw(
   glSelectTextureCoordSetSGIS
   glSelectTextureSGIS
   glSelectTextureTransformSGIS
+  glSemaphoreParameterivNV_c
   glSemaphoreParameterui64vEXT_c
   glSeparableFilter2DEXT_c
   glSeparableFilter2D_c
@@ -3424,8 +3714,17 @@ our @gl_functionsrest = qw(
   glShaderSourceARB_c
   glShaderSourceARB_p
   glShaderStorageBlockBinding
+  glShadingRateCombinerOpsEXT
+  glShadingRateEXT
+  glShadingRateImageBarrierNV
+  glShadingRateImagePaletteNV_c
+  glShadingRateImagePaletteNV_p
+  glShadingRateQCOM
+  glShadingRateSampleOrderCustomNV_c
+  glShadingRateSampleOrderNV
   glSharpenTexFuncSGIS_c
   glSignalSemaphoreEXT_c
+  glSignalSemaphoreui64NVX_c
   glSignalVkFenceNV
   glSignalVkSemaphoreNV
   glSpecializeShaderARB_c
@@ -3462,10 +3761,13 @@ our @gl_functionsrest = qw(
   glTestFenceAPPLE
   glTestFenceNV
   glTestObjectAPPLE
+  glTexAttachMemoryNV
   glTexBufferARB
   glTexBufferEXT
+  glTexBufferOES
   glTexBufferRange
   glTexBufferRangeEXT
+  glTexBufferRangeOES
   glTexBumpParameterfvATI_c
   glTexBumpParameterivATI_c
   glTexCoord1hNV
@@ -3504,19 +3806,31 @@ our @gl_functionsrest = qw(
   glTexCoordPointervINTEL_c
   glTexEnvx
   glTexEnvxv_c
+  glTexEstimateMotionQCOM
+  glTexEstimateMotionRegionsQCOM
   glTexFilterFuncSGIS_c
   glTexFilterFuncSGIS_p
+  glTexGenfOES
+  glTexGenfvOES_c
+  glTexGeniOES
+  glTexGenivOES_c
+  glTexGenxOES
+  glTexGenxvOES_c
   glTexImage2DMultisample
   glTexImage2DMultisampleCoverageNV
   glTexImage3DEXT_c
   glTexImage3DMultisample
   glTexImage3DMultisampleCoverageNV
   glTexImage3DNV_c
+  glTexImage3DOES_c
   glTexImage4DSGIS_c
   glTexPageCommitmentARB
   glTexPageCommitmentEXT
+  glTexPageCommitmentMemNV
   glTexParameterIivEXT_c
+  glTexParameterIivOES_c
   glTexParameterIuivEXT_c
+  glTexParameterIuivOES_c
   glTexParameterx
   glTexParameterxv_c
   glTexRenderbufferNV
@@ -3530,6 +3844,9 @@ our @gl_functionsrest = qw(
   glTexStorage3D
   glTexStorage3DEXT
   glTexStorage3DMultisample
+  glTexStorage3DMultisampleOES
+  glTexStorageAttribs2DEXT_c
+  glTexStorageAttribs3DEXT_c
   glTexStorageMem1DEXT
   glTexStorageMem2DEXT
   glTexStorageMem2DMultisampleEXT
@@ -3540,7 +3857,9 @@ our @gl_functionsrest = qw(
   glTexSubImage2DEXT_c
   glTexSubImage3DEXT_c
   glTexSubImage3DNV_c
+  glTexSubImage3DOES_c
   glTexSubImage4DSGIS_c
+  glTextureAttachMemoryNV
   glTextureBarrier
   glTextureBarrierNV
   glTextureBuffer
@@ -3548,6 +3867,7 @@ our @gl_functionsrest = qw(
   glTextureBufferRange
   glTextureBufferRangeEXT
   glTextureFogSGIX
+  glTextureFoveationParametersQCOM
   glTextureImage1DEXT_c
   glTextureImage2DEXT_c
   glTextureImage2DMultisampleCoverageNV
@@ -3559,6 +3879,7 @@ our @gl_functionsrest = qw(
   glTextureMaterialEXT
   glTextureNormalEXT
   glTexturePageCommitmentEXT
+  glTexturePageCommitmentMemNV
   glTextureParameterf
   glTextureParameterfEXT
   glTextureParameterfvEXT_c
@@ -3597,6 +3918,7 @@ our @gl_functionsrest = qw(
   glTextureSubImage3D_c
   glTextureView
   glTextureViewEXT
+  glTextureViewOES
   glTrackMatrixNV
   glTransformFeedbackAttribsNV_c
   glTransformFeedbackBufferBase
@@ -3703,11 +4025,13 @@ our @gl_functionsrest = qw(
   glUniformui64vNV_c
   glUnlockArraysEXT
   glUnmapBufferARB
+  glUnmapBufferOES
   glUnmapNamedBuffer
   glUnmapNamedBufferEXT
   glUnmapObjectBufferATI
   glUnmapTexture2DINTEL
   glUpdateObjectBufferATI_c
+  glUploadGpuMaskNVX
   glUseProgramObjectARB
   glUseProgramStages
   glUseShaderProgramEXT
@@ -3730,6 +4054,7 @@ our @gl_functionsrest = qw(
   glVDPAUMapSurfacesNV_c
   glVDPAURegisterOutputSurfaceNV_c
   glVDPAURegisterVideoSurfaceNV_c
+  glVDPAURegisterVideoSurfaceWithPictureStructureNV_c
   glVDPAUSurfaceAccessNV
   glVDPAUUnmapSurfacesNV_c
   glVDPAUUnregisterSurfaceNV
@@ -4009,6 +4334,7 @@ our @gl_functionsrest = qw(
   glViewportPositionWScaleNV
   glViewportSwizzleNV
   glWaitSemaphoreEXT_c
+  glWaitSemaphoreui64NVX_c
   glWaitSync
   glWaitSyncAPPLE
   glWaitVkSemaphoreNV
@@ -4022,6 +4348,7 @@ our @gl_functionsrest = qw(
   glWeightivARB_p
   glWeightPathsNV_c
   glWeightPointerARB_c
+  glWeightPointerOES_c
   glWeightsvARB_c
   glWeightsvARB_p
   glWeightubvARB_c
@@ -4088,6 +4415,10 @@ our %EXPORT_TAGS_GL = (
     'glBlendEquationSeparateIndexedAMD',
     'glBlendFuncIndexedAMD',
     'glBlendFuncSeparateIndexedAMD'
+  ],
+  'GL_AMD_framebuffer_multisample_advanced' => [
+    'glNamedRenderbufferStorageMultisampleAdvancedAMD',
+    'glRenderbufferStorageMultisampleAdvancedAMD'
   ],
   'GL_AMD_framebuffer_sample_positions' => [
     'glFramebufferSamplePositionsfvAMD_c',
@@ -4771,6 +5102,7 @@ our %EXPORT_TAGS_GL = (
     'glReadnPixelsARB_c'
   ],
   'GL_ARB_sample_locations' => [
+    'glEvaluateDepthValuesARB',
     'glFramebufferSampleLocationsfvARB_c',
     'glNamedFramebufferSampleLocationsfvARB_c'
   ],
@@ -5264,6 +5596,9 @@ our %EXPORT_TAGS_GL = (
     'glWindowPos3sARB',
     'glWindowPos3svARB_c'
   ],
+  'GL_ARM_shader_core_properties' => [
+    'glMaxActiveShaderCoresARM'
+  ],
   'GL_ATI_draw_buffers' => [
     'glDrawBuffersATI_c',
     'glDrawBuffersATI_p'
@@ -5375,6 +5710,10 @@ our %EXPORT_TAGS_GL = (
     'glVertexStream4sATI',
     'glVertexStream4svATI_c'
   ],
+  'GL_EXT_EGL_image_storage' => [
+    'glEGLImageTargetTexStorageEXT_c',
+    'glEGLImageTargetTextureStorageEXT_c'
+  ],
   'GL_EXT_base_instance' => [
     'glDrawArraysInstancedBaseInstanceEXT',
     'glDrawElementsInstancedBaseInstanceEXT_c',
@@ -5403,12 +5742,14 @@ our %EXPORT_TAGS_GL = (
     'glBlendEquationEXT'
   ],
   'GL_EXT_buffer_storage' => [
-    'glBufferStorageEXT_c',
-    'glNamedBufferStorageEXT_c'
+    'glBufferStorageEXT_c'
   ],
   'GL_EXT_clear_texture' => [
     'glClearTexImageEXT_c',
     'glClearTexSubImageEXT_c'
+  ],
+  'GL_EXT_clip_control' => [
+    'glClipControlEXT'
   ],
   'GL_EXT_color_subtable' => [
     'glColorSubTableEXT_c',
@@ -5621,6 +5962,7 @@ our %EXPORT_TAGS_GL = (
     'glMultiTexSubImage2DEXT_c',
     'glMultiTexSubImage3DEXT_c',
     'glNamedBufferDataEXT_c',
+    'glNamedBufferStorageEXT_c',
     'glNamedBufferSubDataEXT_c',
     'glNamedCopyBufferSubDataEXT',
     'glNamedFramebufferRenderbufferEXT',
@@ -5686,6 +6028,7 @@ our %EXPORT_TAGS_GL = (
     'glTextureImage1DEXT_c',
     'glTextureImage2DEXT_c',
     'glTextureImage3DEXT_c',
+    'glTexturePageCommitmentEXT',
     'glTextureParameterIivEXT_c',
     'glTextureParameterIuivEXT_c',
     'glTextureParameterfEXT',
@@ -5713,6 +6056,24 @@ our %EXPORT_TAGS_GL = (
   'GL_EXT_discard_framebuffer' => [
     'glDiscardFramebufferEXT_c',
     'glDiscardFramebufferEXT_p'
+  ],
+  'GL_EXT_disjoint_timer_query' => [
+    'glBeginQueryEXT',
+    'glDeleteQueriesEXT_c',
+    'glDeleteQueriesEXT_p',
+    'glEndQueryEXT',
+    'glGenQueriesEXT_c',
+    'glGenQueriesEXT_p',
+    'glGetInteger64vEXT_c',
+    'glGetInteger64vEXT_p',
+    'glGetQueryObjectivEXT_c',
+    'glGetQueryObjectivEXT_p',
+    'glGetQueryObjectuivEXT_c',
+    'glGetQueryObjectuivEXT_p',
+    'glGetQueryivEXT_c',
+    'glGetQueryivEXT_p',
+    'glIsQueryEXT',
+    'glQueryCounterEXT'
   ],
   'GL_EXT_draw_buffers' => [
     'glDrawBuffersEXT_c',
@@ -5751,6 +6112,10 @@ our %EXPORT_TAGS_GL = (
   'GL_EXT_draw_range_elements' => [
     'glDrawRangeElementsEXT_c'
   ],
+  'GL_EXT_draw_transform_feedback' => [
+    'glDrawTransformFeedbackEXT',
+    'glDrawTransformFeedbackInstancedEXT'
+  ],
   'GL_EXT_external_buffer' => [
     'glBufferStorageExternalEXT',
     'glNamedBufferStorageExternalEXT'
@@ -5782,8 +6147,18 @@ our %EXPORT_TAGS_GL = (
     'glGetFragmentMaterialivEXT_c',
     'glLightEnviEXT'
   ],
+  'GL_EXT_fragment_shading_rate' => [
+    'glFramebufferShadingRateEXT',
+    'glGetFragmentShadingRatesEXT_c',
+    'glShadingRateCombinerOpsEXT',
+    'glShadingRateEXT'
+  ],
   'GL_EXT_framebuffer_blit' => [
     'glBlitFramebufferEXT'
+  ],
+  'GL_EXT_framebuffer_blit_layers' => [
+    'glBlitFramebufferLayerEXT',
+    'glBlitFramebufferLayersEXT'
   ],
   'GL_EXT_framebuffer_multisample' => [
     'glRenderbufferStorageMultisampleEXT'
@@ -5922,6 +6297,12 @@ our %EXPORT_TAGS_GL = (
     'glImportMemoryWin32HandleEXT_c',
     'glImportMemoryWin32NameEXT_c'
   ],
+  'GL_EXT_mesh_shader' => [
+    'glDrawMeshTasksEXT',
+    'glDrawMeshTasksIndirectEXT',
+    'glMultiDrawMeshTasksIndirectCountEXT',
+    'glMultiDrawMeshTasksIndirectEXT'
+  ],
   'GL_EXT_multi_draw_arrays' => [
     'glMultiDrawArraysEXT_c',
     'glMultiDrawElementsEXT_c'
@@ -5968,6 +6349,9 @@ our %EXPORT_TAGS_GL = (
   'GL_EXT_polygon_offset_clamp' => [
     'glPolygonOffsetClampEXT'
   ],
+  'GL_EXT_primitive_bounding_box' => [
+    'glPrimitiveBoundingBoxEXT'
+  ],
   'GL_EXT_provoking_vertex' => [
     'glProvokingVertexEXT'
   ],
@@ -5977,6 +6361,12 @@ our %EXPORT_TAGS_GL = (
     'glCoverageModulationTableNV_p',
     'glGetCoverageModulationTableNV_c',
     'glRasterSamplesEXT'
+  ],
+  'GL_EXT_robustness' => [
+    'glGetGraphicsResetStatusEXT',
+    'glGetnUniformfvEXT_c',
+    'glGetnUniformivEXT_c',
+    'glReadnPixelsEXT_c'
   ],
   'GL_EXT_scene_marker' => [
     'glBeginSceneEXT',
@@ -6024,6 +6414,9 @@ our %EXPORT_TAGS_GL = (
     'glCreateShaderProgramEXT',
     'glUseShaderProgramEXT'
   ],
+  'GL_EXT_shader_framebuffer_fetch' => [
+    'glFramebufferFetchBarrierEXT'
+  ],
   'GL_EXT_shader_image_load_store' => [
     'glBindImageTextureEXT',
     'glMemoryBarrierEXT'
@@ -6035,8 +6428,7 @@ our %EXPORT_TAGS_GL = (
     'glGetFramebufferPixelLocalStorageSizeEXT'
   ],
   'GL_EXT_sparse_texture' => [
-    'glTexPageCommitmentEXT',
-    'glTexturePageCommitmentEXT'
+    'glTexPageCommitmentEXT'
   ],
   'GL_EXT_stencil_two_side' => [
     'glActiveStencilFaceEXT'
@@ -6046,11 +6438,22 @@ our %EXPORT_TAGS_GL = (
     'glTexSubImage2DEXT_c',
     'glTexSubImage3DEXT_c'
   ],
+  'GL_EXT_tessellation_point_size' => [
+    'glPatchParameteriEXT'
+  ],
   'GL_EXT_texture3D' => [
     'glTexImage3DEXT_c'
   ],
   'GL_EXT_texture_array' => [
     'glFramebufferTextureLayerEXT'
+  ],
+  'GL_EXT_texture_border_clamp' => [
+    'glGetSamplerParameterIivEXT_c',
+    'glGetSamplerParameterIivEXT_p',
+    'glGetSamplerParameterIuivEXT_c',
+    'glGetSamplerParameterIuivEXT_p',
+    'glSamplerParameterIivEXT_c',
+    'glSamplerParameterIuivEXT_c'
   ],
   'GL_EXT_texture_buffer_object' => [
     'glTexBufferEXT'
@@ -6085,6 +6488,10 @@ our %EXPORT_TAGS_GL = (
     'glTextureStorage1DEXT',
     'glTextureStorage2DEXT',
     'glTextureStorage3DEXT'
+  ],
+  'GL_EXT_texture_storage_compression' => [
+    'glTexStorageAttribs2DEXT_c',
+    'glTexStorageAttribs3DEXT_c'
   ],
   'GL_EXT_texture_view' => [
     'glTextureViewEXT'
@@ -6219,6 +6626,27 @@ our %EXPORT_TAGS_GL = (
     'glTexCoordPointerListIBM_c',
     'glVertexPointerListIBM_c'
   ],
+  'GL_IMG_bindless_texture' => [
+    'glGetTextureHandleIMG',
+    'glGetTextureSamplerHandleIMG',
+    'glProgramUniformHandleui64IMG',
+    'glProgramUniformHandleui64vIMG_c',
+    'glProgramUniformHandleui64vIMG_p',
+    'glUniformHandleui64IMG',
+    'glUniformHandleui64vIMG_c',
+    'glUniformHandleui64vIMG_p'
+  ],
+  'GL_IMG_framebuffer_downsample' => [
+    'glFramebufferTexture2DDownsampleIMG',
+    'glFramebufferTextureLayerDownsampleIMG'
+  ],
+  'GL_IMG_multisampled_render_to_texture' => [
+    'glFramebufferTexture2DMultisampleIMG',
+    'glRenderbufferStorageMultisampleIMG'
+  ],
+  'GL_INTEL_framebuffer_CMAA' => [
+    'glApplyFramebufferAttachmentCMAAINTEL'
+  ],
   'GL_INTEL_parallel_arrays' => [
     'glColorPointervINTEL_c',
     'glNormalPointervINTEL_c',
@@ -6279,6 +6707,11 @@ our %EXPORT_TAGS_GL = (
     'glSyncTextureINTEL',
     'glUnmapTexture2DINTEL'
   ],
+  'GL_MESA_framebuffer_flip_y' => [
+    'glFramebufferParameteriMESA',
+    'glGetFramebufferParameterivMESA_c',
+    'glGetFramebufferParameterivMESA_p'
+  ],
   'GL_MESA_resize_buffers' => [
     'glResizeBuffersMESA'
   ],
@@ -6312,14 +6745,31 @@ our %EXPORT_TAGS_GL = (
     'glBeginConditionalRenderNVX',
     'glEndConditionalRenderNVX'
   ],
+  'GL_NVX_gpu_multicast2' => [
+    'glAsyncCopyBufferSubDataNVX_c',
+    'glAsyncCopyImageSubDataNVX_c',
+    'glMulticastScissorArrayvNVX_c',
+    'glMulticastViewportArrayvNVX_c',
+    'glMulticastViewportPositionWScaleNVX',
+    'glUploadGpuMaskNVX'
+  ],
   'GL_NVX_linked_gpu_multicast' => [
     'glLGPUCopyImageSubDataNVX',
     'glLGPUInterlockNVX',
     'glLGPUNamedBufferSubDataNVX_c'
   ],
+  'GL_NVX_progress_fence' => [
+    'glClientWaitSemaphoreui64NVX_c',
+    'glCreateProgressFenceNVX',
+    'glSignalSemaphoreui64NVX_c',
+    'glWaitSemaphoreui64NVX_c'
+  ],
   'GL_NV_3dvision_settings' => [
     'glStereoParameterfNV',
     'glStereoParameteriNV'
+  ],
+  'GL_NV_alpha_to_coverage_dither_control' => [
+    'glAlphaToCoverageDitherControlNV'
   ],
   'GL_NV_bindless_multi_draw_indirect' => [
     'glMultiDrawArraysIndirectBindlessNV_c',
@@ -6595,6 +7045,26 @@ our %EXPORT_TAGS_GL = (
     'glGetInternalformatSampleivNV_c',
     'glGetInternalformatSampleivNV_p'
   ],
+  'GL_NV_memory_attachment' => [
+    'glBufferAttachMemoryNV',
+    'glGetMemoryObjectDetachedResourcesuivNV_c',
+    'glNamedBufferAttachMemoryNV',
+    'glResetMemoryObjectParameterNV',
+    'glTexAttachMemoryNV',
+    'glTextureAttachMemoryNV'
+  ],
+  'GL_NV_memory_object_sparse' => [
+    'glBufferPageCommitmentMemNV',
+    'glNamedBufferPageCommitmentMemNV',
+    'glTexPageCommitmentMemNV',
+    'glTexturePageCommitmentMemNV'
+  ],
+  'GL_NV_mesh_shader' => [
+    'glDrawMeshTasksIndirectNV',
+    'glDrawMeshTasksNV',
+    'glMultiDrawMeshTasksIndirectCountNV',
+    'glMultiDrawMeshTasksIndirectNV'
+  ],
   'GL_NV_non_square_matrices' => [
     'glUniformMatrix2x3fvNV_c',
     'glUniformMatrix2x4fvNV_c',
@@ -6712,6 +7182,9 @@ our %EXPORT_TAGS_GL = (
     'glPrimitiveRestartIndexNV',
     'glPrimitiveRestartNV'
   ],
+  'GL_NV_read_buffer' => [
+    'glReadBufferNV'
+  ],
   'GL_NV_register_combiners' => [
     'glCombinerInputNV',
     'glCombinerOutputNV',
@@ -6733,7 +7206,12 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_NV_sample_locations' => [
     'glFramebufferSampleLocationsfvNV_c',
-    'glNamedFramebufferSampleLocationsfvNV_c'
+    'glNamedFramebufferSampleLocationsfvNV_c',
+    'glResolveDepthValuesNV'
+  ],
+  'GL_NV_scissor_exclusive' => [
+    'glScissorExclusiveArrayvNV_c',
+    'glScissorExclusiveNV'
   ],
   'GL_NV_shader_buffer_load' => [
     'glGetBufferParameterui64vNV_c',
@@ -6751,6 +7229,16 @@ our %EXPORT_TAGS_GL = (
     'glProgramUniformui64vNV_p',
     'glUniformui64NV',
     'glUniformui64vNV_c'
+  ],
+  'GL_NV_shading_rate_image' => [
+    'glBindShadingRateImageNV',
+    'glGetShadingRateImagePaletteNV_c',
+    'glGetShadingRateSampleLocationivNV_c',
+    'glShadingRateImageBarrierNV',
+    'glShadingRateImagePaletteNV_c',
+    'glShadingRateImagePaletteNV_p',
+    'glShadingRateSampleOrderCustomNV_c',
+    'glShadingRateSampleOrderNV'
   ],
   'GL_NV_texture_array' => [
     'glCompressedTexImage3DNV_c',
@@ -6770,6 +7258,12 @@ our %EXPORT_TAGS_GL = (
     'glTextureImage2DMultisampleNV',
     'glTextureImage3DMultisampleCoverageNV',
     'glTextureImage3DMultisampleNV'
+  ],
+  'GL_NV_timeline_semaphore' => [
+    'glCreateSemaphoresNV_c',
+    'glCreateSemaphoresNV_p',
+    'glGetSemaphoreParameterivNV_c',
+    'glSemaphoreParameterivNV_c'
   ],
   'GL_NV_transform_feedback' => [
     'glActiveVaryingNV',
@@ -6806,6 +7300,9 @@ our %EXPORT_TAGS_GL = (
     'glVDPAUSurfaceAccessNV',
     'glVDPAUUnmapSurfacesNV_c',
     'glVDPAUUnregisterSurfaceNV'
+  ],
+  'GL_NV_vdpau_interop2' => [
+    'glVDPAURegisterVideoSurfaceWithPictureStructureNV_c'
   ],
   'GL_NV_vertex_array_range' => [
     'glFlushVertexArrayRangeNV',
@@ -6952,8 +7449,123 @@ our %EXPORT_TAGS_GL = (
   'GL_NV_viewport_swizzle' => [
     'glViewportSwizzleNV'
   ],
+  'GL_OES_EGL_image' => [
+    'glEGLImageTargetRenderbufferStorageOES',
+    'glEGLImageTargetTexture2DOES'
+  ],
+  'GL_OES_blend_equation_separate' => [
+    'glBlendEquationSeparateOES'
+  ],
+  'GL_OES_blend_func_separate' => [
+    'glBlendFuncSeparateOES'
+  ],
+  'GL_OES_blend_subtract' => [
+    'glBlendEquationOES'
+  ],
+  'GL_OES_copy_image' => [
+    'glCopyImageSubDataOES'
+  ],
+  'GL_OES_draw_buffers_indexed' => [
+    'glBlendEquationSeparateiOES',
+    'glBlendEquationiOES',
+    'glBlendFuncSeparateiOES',
+    'glBlendFunciOES',
+    'glColorMaskiOES',
+    'glDisableiOES',
+    'glEnableiOES',
+    'glIsEnablediOES'
+  ],
+  'GL_OES_framebuffer_object' => [
+    'glBindFramebufferOES',
+    'glBindRenderbufferOES',
+    'glCheckFramebufferStatusOES',
+    'glDeleteFramebuffersOES_c',
+    'glDeleteRenderbuffersOES_c',
+    'glFramebufferRenderbufferOES',
+    'glFramebufferTexture2DOES',
+    'glGenFramebuffersOES_c',
+    'glGenRenderbuffersOES_c',
+    'glGenerateMipmapOES',
+    'glGetFramebufferAttachmentParameterivOES_c',
+    'glGetRenderbufferParameterivOES_c',
+    'glIsFramebufferOES',
+    'glIsRenderbufferOES',
+    'glRenderbufferStorageOES'
+  ],
+  'GL_OES_get_program_binary' => [
+    'glGetProgramBinaryOES_c',
+    'glProgramBinaryOES_c'
+  ],
+  'GL_OES_mapbuffer' => [
+    'glGetBufferPointervOES_c',
+    'glMapBufferOES_c',
+    'glUnmapBufferOES'
+  ],
+  'GL_OES_matrix_palette' => [
+    'glCurrentPaletteMatrixOES',
+    'glLoadPaletteFromModelViewMatrixOES',
+    'glMatrixIndexPointerOES_c',
+    'glWeightPointerOES_c'
+  ],
+  'GL_OES_sample_shading' => [
+    'glMinSampleShadingOES'
+  ],
+  'GL_OES_single_precision' => [
+    'glClearDepthfOES',
+    'glClipPlanefOES_c',
+    'glDepthRangefOES',
+    'glFrustumfOES',
+    'glGetClipPlanefOES_c',
+    'glOrthofOES'
+  ],
+  'GL_OES_texture_3D' => [
+    'glCompressedTexImage3DOES_c',
+    'glCompressedTexSubImage3DOES_c',
+    'glCopyTexSubImage3DOES',
+    'glFramebufferTexture3DOES',
+    'glTexImage3DOES_c',
+    'glTexSubImage3DOES_c'
+  ],
+  'GL_OES_texture_border_clamp' => [
+    'glGetSamplerParameterIivOES_c',
+    'glGetSamplerParameterIuivOES_c',
+    'glGetTexParameterIivOES_c',
+    'glGetTexParameterIuivOES_c',
+    'glSamplerParameterIivOES_c',
+    'glSamplerParameterIuivOES_c',
+    'glTexParameterIivOES_c',
+    'glTexParameterIuivOES_c'
+  ],
+  'GL_OES_texture_buffer' => [
+    'glTexBufferOES',
+    'glTexBufferRangeOES'
+  ],
+  'GL_OES_texture_cube_map' => [
+    'glGetTexGenfvOES_c',
+    'glGetTexGenivOES_c',
+    'glGetTexGenxvOES_c',
+    'glTexGenfOES',
+    'glTexGenfvOES_c',
+    'glTexGeniOES',
+    'glTexGenivOES_c',
+    'glTexGenxOES',
+    'glTexGenxvOES_c'
+  ],
+  'GL_OES_texture_storage_multisample_2d_array' => [
+    'glTexStorage3DMultisampleOES'
+  ],
+  'GL_OES_texture_view' => [
+    'glTextureViewOES'
+  ],
+  'GL_OES_vertex_array_object' => [
+    'glBindVertexArrayOES',
+    'glDeleteVertexArraysOES_c',
+    'glGenVertexArraysOES_c',
+    'glIsVertexArrayOES'
+  ],
   'GL_OVR_multiview' => [
-    'glFramebufferTextureMultiviewOVR'
+    'glFramebufferTextureMultiviewOVR',
+    'glNamedFramebufferTextureMultiviewOVR'
   ],
   'GL_OVR_multiview_multisampled_render_to_texture' => [
     'glFramebufferTextureMultisampleMultiviewOVR'
@@ -6983,12 +7595,25 @@ our %EXPORT_TAGS_GL = (
     'glExtGetShadersQCOM_c',
     'glExtIsProgramBinaryQCOM'
   ],
+  'GL_QCOM_frame_extrapolation' => [
+    'glExtrapolateTex2DQCOM'
+  ],
   'GL_QCOM_framebuffer_foveated' => [
     'glFramebufferFoveationConfigQCOM_c',
     'glFramebufferFoveationParametersQCOM'
   ],
+  'GL_QCOM_motion_estimation' => [
+    'glTexEstimateMotionQCOM',
+    'glTexEstimateMotionRegionsQCOM'
+  ],
   'GL_QCOM_shader_framebuffer_fetch_noncoherent' => [
     'glFramebufferFetchBarrierQCOM'
+  ],
+  'GL_QCOM_shading_rate' => [
+    'glShadingRateQCOM'
+  ],
+  'GL_QCOM_texture_foveated' => [
+    'glTextureFoveationParametersQCOM'
   ],
   'GL_QCOM_tiled_rendering' => [
     'glEndTilingQCOM',
@@ -7135,7 +7760,9 @@ our %EXPORT_TAGS_GL = (
     'glGetFragmentLightivSGIX_c',
     'glGetFragmentLightivSGIX_p',
     'glGetFragmentMaterialfvSGIX_c',
-    'glGetFragmentMaterialivSGIX_c'
+    'glGetFragmentMaterialfvSGIX_p',
+    'glGetFragmentMaterialivSGIX_c',
+    'glGetFragmentMaterialivSGIX_p'
   ],
   'GL_SGIX_framezoom' => [
     'glFrameZoomSGIX'
@@ -8567,6 +9194,7 @@ our @gl_constants = qw(
   GL_ACTIVE_VERTEX_UNITS_ARB
   GL_ADD
   GL_ADD_ATI
+  GL_ADD_BLEND_IMG
   GL_ADD_SIGNED
   GL_ADD_SIGNED_ARB
   GL_ADD_SIGNED_EXT
@@ -8609,6 +9237,7 @@ our @gl_constants = qw(
   GL_ALPHA8I_EXT
   GL_ALPHA8UI_EXT
   GL_ALPHA8_EXT
+  GL_ALPHA8_OES
   GL_ALPHA8_SNORM
   GL_ALPHA_BIAS
   GL_ALPHA_BITS
@@ -8650,6 +9279,8 @@ our @gl_constants = qw(
   GL_AND_REVERSE
   GL_ANY_SAMPLES_PASSED
   GL_ANY_SAMPLES_PASSED_CONSERVATIVE
+  GL_ANY_SAMPLES_PASSED_CONSERVATIVE_EXT
+  GL_ANY_SAMPLES_PASSED_EXT
   GL_ARC_TO_NV
   GL_ARRAY_BUFFER
   GL_ARRAY_BUFFER_ARB
@@ -8680,11 +9311,17 @@ our @gl_constants = qw(
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER
+  GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_MESH_SHADER_EXT
+  GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_MESH_SHADER_NV
+  GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TASK_SHADER_EXT
+  GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TASK_SHADER_NV
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER
   GL_ATOMIC_COUNTER_BUFFER_SIZE
   GL_ATOMIC_COUNTER_BUFFER_START
+  GL_ATTACHED_MEMORY_OBJECT_NV
+  GL_ATTACHED_MEMORY_OFFSET_NV
   GL_ATTACHED_SHADERS
   GL_ATTENUATION_EXT
   GL_ATTRIBUTE_ADDRESS_COMMAND_NV
@@ -8720,6 +9357,7 @@ our @gl_constants = qw(
   GL_BGRA
   GL_BGRA8_EXT
   GL_BGRA_EXT
+  GL_BGRA_IMG
   GL_BGRA_INTEGER
   GL_BGRA_INTEGER_EXT
   GL_BGR_EXT
@@ -8735,6 +9373,7 @@ our @gl_constants = qw(
   GL_BINORMAL_ARRAY_TYPE_EXT
   GL_BITMAP
   GL_BITMAP_TOKEN
+  GL_BLACKHOLE_RENDER_INTEL
   GL_BLEND
   GL_BLEND_ADVANCED_COHERENT_KHR
   GL_BLEND_ADVANCED_COHERENT_NV
@@ -8744,21 +9383,28 @@ our @gl_constants = qw(
   GL_BLEND_DST
   GL_BLEND_DST_ALPHA
   GL_BLEND_DST_ALPHA_EXT
+  GL_BLEND_DST_ALPHA_OES
   GL_BLEND_DST_RGB
   GL_BLEND_DST_RGB_EXT
+  GL_BLEND_DST_RGB_OES
   GL_BLEND_EQUATION
   GL_BLEND_EQUATION_ALPHA
   GL_BLEND_EQUATION_ALPHA_EXT
+  GL_BLEND_EQUATION_ALPHA_OES
   GL_BLEND_EQUATION_EXT
+  GL_BLEND_EQUATION_OES
   GL_BLEND_EQUATION_RGB
   GL_BLEND_EQUATION_RGB_EXT
+  GL_BLEND_EQUATION_RGB_OES
   GL_BLEND_OVERLAP_NV
   GL_BLEND_PREMULTIPLIED_SRC_NV
   GL_BLEND_SRC
   GL_BLEND_SRC_ALPHA
   GL_BLEND_SRC_ALPHA_EXT
+  GL_BLEND_SRC_ALPHA_OES
   GL_BLEND_SRC_RGB
   GL_BLEND_SRC_RGB_EXT
+  GL_BLEND_SRC_RGB_OES
   GL_BLOCK_INDEX
   GL_BLUE
   GL_BLUE_BIAS
@@ -8785,6 +9431,7 @@ our @gl_constants = qw(
   GL_BUFFER_ACCESS
   GL_BUFFER_ACCESS_ARB
   GL_BUFFER_ACCESS_FLAGS
+  GL_BUFFER_ACCESS_OES
   GL_BUFFER_BINDING
   GL_BUFFER_DATA_SIZE
   GL_BUFFER_FLUSHING_UNMAP_APPLE
@@ -8793,10 +9440,12 @@ our @gl_constants = qw(
   GL_BUFFER_IMMUTABLE_STORAGE_EXT
   GL_BUFFER_MAPPED
   GL_BUFFER_MAPPED_ARB
+  GL_BUFFER_MAPPED_OES
   GL_BUFFER_MAP_LENGTH
   GL_BUFFER_MAP_OFFSET
   GL_BUFFER_MAP_POINTER
   GL_BUFFER_MAP_POINTER_ARB
+  GL_BUFFER_MAP_POINTER_OES
   GL_BUFFER_OBJECT_APPLE
   GL_BUFFER_OBJECT_EXT
   GL_BUFFER_SERIALIZED_MODIFY_APPLE
@@ -8835,7 +9484,9 @@ our @gl_constants = qw(
   GL_CLAMP_READ_COLOR_ARB
   GL_CLAMP_TO_BORDER
   GL_CLAMP_TO_BORDER_ARB
+  GL_CLAMP_TO_BORDER_EXT
   GL_CLAMP_TO_BORDER_NV
+  GL_CLAMP_TO_BORDER_OES
   GL_CLAMP_TO_BORDER_SGIS
   GL_CLAMP_TO_EDGE
   GL_CLAMP_TO_EDGE_EXT
@@ -8860,6 +9511,7 @@ our @gl_constants = qw(
   GL_CLIPPING_OUTPUT_PRIMITIVES
   GL_CLIPPING_OUTPUT_PRIMITIVES_ARB
   GL_CLIP_DEPTH_MODE
+  GL_CLIP_DEPTH_MODE_EXT
   GL_CLIP_DISTANCE0
   GL_CLIP_DISTANCE0_APPLE
   GL_CLIP_DISTANCE0_EXT
@@ -8886,6 +9538,7 @@ our @gl_constants = qw(
   GL_CLIP_FAR_HINT_PGI
   GL_CLIP_NEAR_HINT_PGI
   GL_CLIP_ORIGIN
+  GL_CLIP_ORIGIN_EXT
   GL_CLIP_PLANE0
   GL_CLIP_PLANE1
   GL_CLIP_PLANE2
@@ -8929,6 +9582,7 @@ our @gl_constants = qw(
   GL_COLOR_ATTACHMENT0
   GL_COLOR_ATTACHMENT0_EXT
   GL_COLOR_ATTACHMENT0_NV
+  GL_COLOR_ATTACHMENT0_OES
   GL_COLOR_ATTACHMENT1
   GL_COLOR_ATTACHMENT10
   GL_COLOR_ATTACHMENT10_EXT
@@ -9124,11 +9778,21 @@ our @gl_constants = qw(
   GL_COMPRESSED_RGBA_ASTC_10x8_KHR
   GL_COMPRESSED_RGBA_ASTC_12x10_KHR
   GL_COMPRESSED_RGBA_ASTC_12x12_KHR
+  GL_COMPRESSED_RGBA_ASTC_3x3x3_OES
+  GL_COMPRESSED_RGBA_ASTC_4x3x3_OES
   GL_COMPRESSED_RGBA_ASTC_4x4_KHR
+  GL_COMPRESSED_RGBA_ASTC_4x4x3_OES
+  GL_COMPRESSED_RGBA_ASTC_4x4x4_OES
   GL_COMPRESSED_RGBA_ASTC_5x4_KHR
+  GL_COMPRESSED_RGBA_ASTC_5x4x4_OES
   GL_COMPRESSED_RGBA_ASTC_5x5_KHR
+  GL_COMPRESSED_RGBA_ASTC_5x5x4_OES
+  GL_COMPRESSED_RGBA_ASTC_5x5x5_OES
   GL_COMPRESSED_RGBA_ASTC_6x5_KHR
+  GL_COMPRESSED_RGBA_ASTC_6x5x5_OES
   GL_COMPRESSED_RGBA_ASTC_6x6_KHR
+  GL_COMPRESSED_RGBA_ASTC_6x6x5_OES
+  GL_COMPRESSED_RGBA_ASTC_6x6x6_OES
   GL_COMPRESSED_RGBA_ASTC_8x5_KHR
   GL_COMPRESSED_RGBA_ASTC_8x6_KHR
   GL_COMPRESSED_RGBA_ASTC_8x8_KHR
@@ -9136,6 +9800,10 @@ our @gl_constants = qw(
   GL_COMPRESSED_RGBA_BPTC_UNORM_ARB
   GL_COMPRESSED_RGBA_BPTC_UNORM_EXT
   GL_COMPRESSED_RGBA_FXT1_3DFX
+  GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG
+  GL_COMPRESSED_RGBA_PVRTC_2BPPV2_IMG
+  GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG
+  GL_COMPRESSED_RGBA_PVRTC_4BPPV2_IMG
   GL_COMPRESSED_RGBA_S3TC_DXT1_ANGLE
   GL_COMPRESSED_RGBA_S3TC_DXT1_EXT
   GL_COMPRESSED_RGBA_S3TC_DXT1_NV
@@ -9153,6 +9821,8 @@ our @gl_constants = qw(
   GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_ARB
   GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_EXT
   GL_COMPRESSED_RGB_FXT1_3DFX
+  GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG
+  GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG
   GL_COMPRESSED_RGB_S3TC_DXT1_ANGLE
   GL_COMPRESSED_RGB_S3TC_DXT1_EXT
   GL_COMPRESSED_RGB_S3TC_DXT1_NV
@@ -9178,11 +9848,21 @@ our @gl_constants = qw(
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x8_KHR
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_3x3x3_OES
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4x3x3_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4x4_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4x4x3_OES
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4x4x4_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x4_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x4x4_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x5_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x5x4_OES
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x5x5_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x5_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x5x5_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x6_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x6x5_OES
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x6x6_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x5_KHR
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x6_KHR
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x8_KHR
@@ -9232,6 +9912,7 @@ our @gl_constants = qw(
   GL_CONSERVATIVE_RASTER_DILATE_RANGE_NV
   GL_CONSERVATIVE_RASTER_MODE_NV
   GL_CONSERVATIVE_RASTER_MODE_POST_SNAP_NV
+  GL_CONSERVATIVE_RASTER_MODE_PRE_SNAP_NV
   GL_CONSERVATIVE_RASTER_MODE_PRE_SNAP_TRIANGLES_NV
   GL_CONSERVE_MEMORY_HINT_PGI
   GL_CONSTANT
@@ -9245,6 +9926,7 @@ our @gl_constants = qw(
   GL_CONSTANT_COLOR1_NV
   GL_CONSTANT_COLOR_EXT
   GL_CONSTANT_EXT
+  GL_CONST_BW_TILING_MESA
   GL_CONST_EYE_NV
   GL_CONTEXT_COMPATIBILITY_PROFILE_BIT
   GL_CONTEXT_CORE_PROFILE_BIT
@@ -9253,11 +9935,15 @@ our @gl_constants = qw(
   GL_CONTEXT_FLAG_FORWARD_COMPATIBLE_BIT
   GL_CONTEXT_FLAG_NO_ERROR_BIT
   GL_CONTEXT_FLAG_NO_ERROR_BIT_KHR
+  GL_CONTEXT_FLAG_PROTECTED_CONTENT_BIT_EXT
   GL_CONTEXT_FLAG_ROBUST_ACCESS_BIT
   GL_CONTEXT_FLAG_ROBUST_ACCESS_BIT_ARB
   GL_CONTEXT_LOST
   GL_CONTEXT_PROFILE_MASK
+  GL_CONTEXT_RELEASE_BEHAVIOR
+  GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH
   GL_CONTEXT_ROBUST_ACCESS
+  GL_CONTEXT_ROBUST_ACCESS_EXT
   GL_CONTINUOUS_AMD
   GL_CONTRAST_NV
   GL_CONVEX_HULL_NV
@@ -9291,6 +9977,7 @@ our @gl_constants = qw(
   GL_COORD_REPLACE
   GL_COORD_REPLACE_ARB
   GL_COORD_REPLACE_NV
+  GL_COORD_REPLACE_OES
   GL_COPY
   GL_COPY_INVERTED
   GL_COPY_PIXEL_TOKEN
@@ -9318,6 +10005,9 @@ our @gl_constants = qw(
   GL_CUBE_MAP_ZP_SGIX
   GL_CUBIC_CURVE_TO_NV
   GL_CUBIC_EXT
+  GL_CUBIC_IMG
+  GL_CUBIC_MIPMAP_LINEAR_IMG
+  GL_CUBIC_MIPMAP_NEAREST_IMG
   GL_CULL_FACE
   GL_CULL_FACE_MODE
   GL_CULL_FRAGMENT_NV
@@ -9342,10 +10032,12 @@ our @gl_constants = qw(
   GL_CURRENT_NORMAL
   GL_CURRENT_OCCLUSION_QUERY_ID_NV
   GL_CURRENT_PALETTE_MATRIX_ARB
+  GL_CURRENT_PALETTE_MATRIX_OES
   GL_CURRENT_PROGRAM
   GL_CURRENT_QUERY
   GL_CURRENT_QUERY_ANGLE
   GL_CURRENT_QUERY_ARB
+  GL_CURRENT_QUERY_EXT
   GL_CURRENT_RASTER_COLOR
   GL_CURRENT_RASTER_DISTANCE
   GL_CURRENT_RASTER_INDEX
@@ -9444,10 +10136,12 @@ our @gl_constants = qw(
   GL_DEPTH
   GL_DEPTH24_STENCIL8
   GL_DEPTH24_STENCIL8_EXT
+  GL_DEPTH24_STENCIL8_OES
   GL_DEPTH32F_STENCIL8
   GL_DEPTH32F_STENCIL8_NV
   GL_DEPTH_ATTACHMENT
   GL_DEPTH_ATTACHMENT_EXT
+  GL_DEPTH_ATTACHMENT_OES
   GL_DEPTH_BIAS
   GL_DEPTH_BITS
   GL_DEPTH_BOUNDS_EXT
@@ -9464,6 +10158,7 @@ our @gl_constants = qw(
   GL_DEPTH_BUFFER_BIT7_QCOM
   GL_DEPTH_BUFFER_FLOAT_MODE_NV
   GL_DEPTH_CLAMP
+  GL_DEPTH_CLAMP_EXT
   GL_DEPTH_CLAMP_FAR_AMD
   GL_DEPTH_CLAMP_NEAR_AMD
   GL_DEPTH_CLAMP_NV
@@ -9471,14 +10166,18 @@ our @gl_constants = qw(
   GL_DEPTH_COMPONENT
   GL_DEPTH_COMPONENT16
   GL_DEPTH_COMPONENT16_ARB
+  GL_DEPTH_COMPONENT16_NONLINEAR_NV
+  GL_DEPTH_COMPONENT16_OES
   GL_DEPTH_COMPONENT16_SGIX
   GL_DEPTH_COMPONENT24
   GL_DEPTH_COMPONENT24_ARB
+  GL_DEPTH_COMPONENT24_OES
   GL_DEPTH_COMPONENT24_SGIX
   GL_DEPTH_COMPONENT32
   GL_DEPTH_COMPONENT32F
   GL_DEPTH_COMPONENT32F_NV
   GL_DEPTH_COMPONENT32_ARB
+  GL_DEPTH_COMPONENT32_OES
   GL_DEPTH_COMPONENT32_SGIX
   GL_DEPTH_COMPONENTS
   GL_DEPTH_EXT
@@ -9494,6 +10193,7 @@ our @gl_constants = qw(
   GL_DEPTH_STENCIL_ATTACHMENT
   GL_DEPTH_STENCIL_EXT
   GL_DEPTH_STENCIL_NV
+  GL_DEPTH_STENCIL_OES
   GL_DEPTH_STENCIL_TEXTURE_MODE
   GL_DEPTH_STENCIL_TO_BGRA_NV
   GL_DEPTH_STENCIL_TO_RGBA_NV
@@ -9501,6 +10201,9 @@ our @gl_constants = qw(
   GL_DEPTH_TEXTURE_MODE
   GL_DEPTH_TEXTURE_MODE_ARB
   GL_DEPTH_WRITEMASK
+  GL_DETACHED_BUFFERS_NV
+  GL_DETACHED_MEMORY_INCARNATION_NV
+  GL_DETACHED_TEXTURES_NV
   GL_DEVICE_LUID_EXT
   GL_DEVICE_NODE_MASK_EXT
   GL_DEVICE_UUID_EXT
@@ -9516,6 +10219,7 @@ our @gl_constants = qw(
   GL_DISPLAY_LIST
   GL_DISTANCE_ATTENUATION_EXT
   GL_DITHER
+  GL_DMP_PROGRAM_BINARY_DMP
   GL_DOMAIN
   GL_DONT_CARE
   GL_DOT2_ADD_ATI
@@ -9524,6 +10228,7 @@ our @gl_constants = qw(
   GL_DOT3_RGBA
   GL_DOT3_RGBA_ARB
   GL_DOT3_RGBA_EXT
+  GL_DOT3_RGBA_IMG
   GL_DOT3_RGB_ARB
   GL_DOT3_RGB_EXT
   GL_DOT4_ATI
@@ -9566,6 +10271,7 @@ our @gl_constants = qw(
   GL_DOUBLE_VEC3_EXT
   GL_DOUBLE_VEC4
   GL_DOUBLE_VEC4_EXT
+  GL_DOWNSAMPLE_SCALES_IMG
   GL_DRAW_ARRAYS_COMMAND_NV
   GL_DRAW_ARRAYS_INSTANCED_COMMAND_NV
   GL_DRAW_ARRAYS_STRIP_COMMAND_NV
@@ -9720,7 +10426,6 @@ our @gl_constants = qw(
   GL_EDGE_FLAG_ARRAY_STRIDE
   GL_EDGE_FLAG_ARRAY_STRIDE_EXT
   GL_EFFECTIVE_RASTER_SAMPLES_EXT
-  GL_EGL_GENERATE_RESET_ON_VIDEO_MEMORY_PURGE_NV
   GL_EIGHTH_BIT_ATI
   GL_ELEMENT_ADDRESS_COMMAND_NV
   GL_ELEMENT_ARRAY_ADDRESS_NV
@@ -9748,6 +10453,7 @@ our @gl_constants = qw(
   GL_EQUAL
   GL_EQUIV
   GL_ERROR_REGAL
+  GL_ETC1_RGB8_OES
   GL_ETC1_SRGB8_NV
   GL_EVAL_2D_NV
   GL_EVAL_BIT
@@ -9789,6 +10495,7 @@ our @gl_constants = qw(
   GL_EYE_RADIAL_NV
   GL_EYE_SPACE_SGIX
   GL_E_TIMES_F_NV
+  GL_FACTOR_ALPHA_MODULATE_IMG
   GL_FACTOR_MAX_AMD
   GL_FACTOR_MIN_AMD
   GL_FAILURE_NV
@@ -9814,11 +10521,23 @@ our @gl_constants = qw(
   GL_FIRST_TO_REST_NV
   GL_FIRST_VERTEX_CONVENTION
   GL_FIRST_VERTEX_CONVENTION_EXT
+  GL_FIRST_VERTEX_CONVENTION_OES
   GL_FIXED
   GL_FIXED_ONLY
   GL_FIXED_ONLY_ARB
   GL_FLAT
   GL_FLOAT
+  GL_FLOAT16_IMAGE_1D_AMD
+  GL_FLOAT16_IMAGE_1D_ARRAY_AMD
+  GL_FLOAT16_IMAGE_2D_AMD
+  GL_FLOAT16_IMAGE_2D_ARRAY_AMD
+  GL_FLOAT16_IMAGE_2D_MULTISAMPLE_AMD
+  GL_FLOAT16_IMAGE_2D_MULTISAMPLE_ARRAY_AMD
+  GL_FLOAT16_IMAGE_2D_RECT_AMD
+  GL_FLOAT16_IMAGE_3D_AMD
+  GL_FLOAT16_IMAGE_BUFFER_AMD
+  GL_FLOAT16_IMAGE_CUBE_AMD
+  GL_FLOAT16_IMAGE_CUBE_MAP_ARRAY_AMD
   GL_FLOAT16_MAT2_AMD
   GL_FLOAT16_MAT2x3_AMD
   GL_FLOAT16_MAT2x4_AMD
@@ -9829,6 +10548,24 @@ our @gl_constants = qw(
   GL_FLOAT16_MAT4x2_AMD
   GL_FLOAT16_MAT4x3_AMD
   GL_FLOAT16_NV
+  GL_FLOAT16_SAMPLER_1D_AMD
+  GL_FLOAT16_SAMPLER_1D_ARRAY_AMD
+  GL_FLOAT16_SAMPLER_1D_ARRAY_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_1D_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_2D_AMD
+  GL_FLOAT16_SAMPLER_2D_ARRAY_AMD
+  GL_FLOAT16_SAMPLER_2D_ARRAY_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_2D_MULTISAMPLE_AMD
+  GL_FLOAT16_SAMPLER_2D_MULTISAMPLE_ARRAY_AMD
+  GL_FLOAT16_SAMPLER_2D_RECT_AMD
+  GL_FLOAT16_SAMPLER_2D_RECT_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_2D_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_3D_AMD
+  GL_FLOAT16_SAMPLER_BUFFER_AMD
+  GL_FLOAT16_SAMPLER_CUBE_AMD
+  GL_FLOAT16_SAMPLER_CUBE_MAP_ARRAY_AMD
+  GL_FLOAT16_SAMPLER_CUBE_MAP_ARRAY_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_CUBE_SHADOW_AMD
   GL_FLOAT16_VEC2_NV
   GL_FLOAT16_VEC3_NV
   GL_FLOAT16_VEC4_NV
@@ -9940,11 +10677,17 @@ our @gl_constants = qw(
   GL_FORMAT_SUBSAMPLE_24_24_OML
   GL_FOVEATION_ENABLE_BIT_QCOM
   GL_FOVEATION_SCALED_BIN_METHOD_BIT_QCOM
+  GL_FOVEATION_SUBSAMPLED_LAYOUT_METHOD_BIT_QCOM
   GL_FRACTIONAL_EVEN
+  GL_FRACTIONAL_EVEN_EXT
+  GL_FRACTIONAL_EVEN_OES
   GL_FRACTIONAL_ODD
+  GL_FRACTIONAL_ODD_EXT
+  GL_FRACTIONAL_ODD_OES
   GL_FRAGMENTS_INSTRUMENT_COUNTERS_SGIX
   GL_FRAGMENTS_INSTRUMENT_MAX_SGIX
   GL_FRAGMENTS_INSTRUMENT_SGIX
+  GL_FRAGMENT_ALPHA_MODULATE_IMG
   GL_FRAGMENT_COLOR_EXT
   GL_FRAGMENT_COLOR_MATERIAL_EXT
   GL_FRAGMENT_COLOR_MATERIAL_FACE_EXT
@@ -9955,6 +10698,7 @@ our @gl_constants = qw(
   GL_FRAGMENT_DEPTH_EXT
   GL_FRAGMENT_INPUT_NV
   GL_FRAGMENT_INTERPOLATION_OFFSET_BITS
+  GL_FRAGMENT_INTERPOLATION_OFFSET_BITS_OES
   GL_FRAGMENT_LIGHT0_EXT
   GL_FRAGMENT_LIGHT7_EXT
   GL_FRAGMENT_LIGHTING_EXT
@@ -9976,10 +10720,21 @@ our @gl_constants = qw(
   GL_FRAGMENT_SHADER_BIT
   GL_FRAGMENT_SHADER_DERIVATIVE_HINT
   GL_FRAGMENT_SHADER_DERIVATIVE_HINT_ARB
+  GL_FRAGMENT_SHADER_DERIVATIVE_HINT_OES
   GL_FRAGMENT_SHADER_DISCARDS_SAMPLES_EXT
   GL_FRAGMENT_SHADER_FRAMEBUFFER_FETCH_MRT_ARM
   GL_FRAGMENT_SHADER_INVOCATIONS
   GL_FRAGMENT_SHADER_INVOCATIONS_ARB
+  GL_FRAGMENT_SHADING_RATE_ATTACHMENT_WITH_DEFAULT_FRAMEBUFFER_SUPPORTED_EXT
+  GL_FRAGMENT_SHADING_RATE_COMBINER_OP_KEEP_EXT
+  GL_FRAGMENT_SHADING_RATE_COMBINER_OP_MAX_EXT
+  GL_FRAGMENT_SHADING_RATE_COMBINER_OP_MIN_EXT
+  GL_FRAGMENT_SHADING_RATE_COMBINER_OP_MUL_EXT
+  GL_FRAGMENT_SHADING_RATE_COMBINER_OP_REPLACE_EXT
+  GL_FRAGMENT_SHADING_RATE_NON_TRIVIAL_COMBINERS_SUPPORTED_EXT
+  GL_FRAGMENT_SHADING_RATE_PRIMITIVE_RATE_WITH_MULTI_VIEWPORT_SUPPORTED_EXT
+  GL_FRAGMENT_SHADING_RATE_WITH_SAMPLE_MASK_SUPPORTED_EXT
+  GL_FRAGMENT_SHADING_RATE_WITH_SHADER_DEPTH_STENCIL_WRITES_SUPPORTED_EXT
   GL_FRAGMENT_SUBROUTINE
   GL_FRAGMENT_SUBROUTINE_UNIFORM
   GL_FRAGMENT_TEXTURE
@@ -9996,61 +10751,84 @@ our @gl_constants = qw(
   GL_FRAMEBUFFER_ATTACHMENT_LAYERED
   GL_FRAMEBUFFER_ATTACHMENT_LAYERED_ARB
   GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_LAYERED_OES
   GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME
   GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_OES
   GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE
   GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_OES
   GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE
   GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_OES
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_OES
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_EXT
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_NV
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_OES
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_SAMPLES_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_SCALE_IMG
   GL_FRAMEBUFFER_BARRIER_BIT
   GL_FRAMEBUFFER_BARRIER_BIT_EXT
   GL_FRAMEBUFFER_BINDING
   GL_FRAMEBUFFER_BINDING_EXT
+  GL_FRAMEBUFFER_BINDING_OES
   GL_FRAMEBUFFER_BLEND
   GL_FRAMEBUFFER_COMPLETE
   GL_FRAMEBUFFER_COMPLETE_EXT
+  GL_FRAMEBUFFER_COMPLETE_OES
   GL_FRAMEBUFFER_DEFAULT
   GL_FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS
   GL_FRAMEBUFFER_DEFAULT_HEIGHT
   GL_FRAMEBUFFER_DEFAULT_LAYERS
   GL_FRAMEBUFFER_DEFAULT_LAYERS_EXT
+  GL_FRAMEBUFFER_DEFAULT_LAYERS_OES
   GL_FRAMEBUFFER_DEFAULT_SAMPLES
   GL_FRAMEBUFFER_DEFAULT_WIDTH
   GL_FRAMEBUFFER_EXT
   GL_FRAMEBUFFER_FETCH_NONCOHERENT_QCOM
+  GL_FRAMEBUFFER_FLIP_X_MESA
+  GL_FRAMEBUFFER_FLIP_Y_MESA
   GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT
   GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_OES
   GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_OES
   GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER
   GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_OES
   GL_FRAMEBUFFER_INCOMPLETE_FORMATS_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_FORMATS_OES
+  GL_FRAMEBUFFER_INCOMPLETE_FOVEATION_QCOM
   GL_FRAMEBUFFER_INCOMPLETE_INSUFFICIENT_SHADER_COMBINED_LOCAL_STORAGE_EXT
   GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_ARB
   GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_EXT
   GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS
   GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_ARB
   GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_OES
   GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT
   GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_OES
   GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE
+  GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_AND_DOWNSAMPLE_IMG
   GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_ANGLE
   GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_APPLE
   GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_IMG
   GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_NV
   GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER
   GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_OES
   GL_FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR
+  GL_FRAMEBUFFER_OES
   GL_FRAMEBUFFER_PROGRAMMABLE_SAMPLE_LOCATIONS_ARB
   GL_FRAMEBUFFER_PROGRAMMABLE_SAMPLE_LOCATIONS_NV
   GL_FRAMEBUFFER_RENDERABLE
@@ -10060,9 +10838,12 @@ our @gl_constants = qw(
   GL_FRAMEBUFFER_SRGB
   GL_FRAMEBUFFER_SRGB_CAPABLE_EXT
   GL_FRAMEBUFFER_SRGB_EXT
+  GL_FRAMEBUFFER_SWAP_XY_MESA
   GL_FRAMEBUFFER_UNDEFINED
+  GL_FRAMEBUFFER_UNDEFINED_OES
   GL_FRAMEBUFFER_UNSUPPORTED
   GL_FRAMEBUFFER_UNSUPPORTED_EXT
+  GL_FRAMEBUFFER_UNSUPPORTED_OES
   GL_FRAME_NV
   GL_FRONT
   GL_FRONT_AND_BACK
@@ -10075,12 +10856,16 @@ our @gl_constants = qw(
   GL_FULL_SUPPORT
   GL_FUNC_ADD
   GL_FUNC_ADD_EXT
+  GL_FUNC_ADD_OES
   GL_FUNC_COMPLEX_ADD_EXT
   GL_FUNC_COMPLEX_MULTIPLY_EXT
   GL_FUNC_REVERSE_SUBTRACT
   GL_FUNC_REVERSE_SUBTRACT_EXT
+  GL_FUNC_REVERSE_SUBTRACT_OES
   GL_FUNC_SUBTRACT
   GL_FUNC_SUBTRACT_EXT
+  GL_FUNC_SUBTRACT_OES
+  GL_GCCSO_SHADER_BINARY_FJ
   GL_GENERATE_MIPMAP
   GL_GENERATE_MIPMAP_HINT
   GL_GENERATE_MIPMAP_HINT_SGIS
@@ -10092,8 +10877,11 @@ our @gl_constants = qw(
   GL_GEOMETRY_INPUT_TYPE_ARB
   GL_GEOMETRY_INPUT_TYPE_EXT
   GL_GEOMETRY_LINKED_INPUT_TYPE_EXT
+  GL_GEOMETRY_LINKED_INPUT_TYPE_OES
   GL_GEOMETRY_LINKED_OUTPUT_TYPE_EXT
+  GL_GEOMETRY_LINKED_OUTPUT_TYPE_OES
   GL_GEOMETRY_LINKED_VERTICES_OUT_EXT
+  GL_GEOMETRY_LINKED_VERTICES_OUT_OES
   GL_GEOMETRY_OUTPUT_TYPE
   GL_GEOMETRY_OUTPUT_TYPE_ARB
   GL_GEOMETRY_OUTPUT_TYPE_EXT
@@ -10103,9 +10891,12 @@ our @gl_constants = qw(
   GL_GEOMETRY_SHADER_ARB
   GL_GEOMETRY_SHADER_BIT
   GL_GEOMETRY_SHADER_BIT_EXT
+  GL_GEOMETRY_SHADER_BIT_OES
   GL_GEOMETRY_SHADER_EXT
   GL_GEOMETRY_SHADER_INVOCATIONS
   GL_GEOMETRY_SHADER_INVOCATIONS_EXT
+  GL_GEOMETRY_SHADER_INVOCATIONS_OES
+  GL_GEOMETRY_SHADER_OES
   GL_GEOMETRY_SHADER_PRIMITIVES_EMITTED
   GL_GEOMETRY_SHADER_PRIMITIVES_EMITTED_ARB
   GL_GEOMETRY_SUBROUTINE
@@ -10129,6 +10920,7 @@ our @gl_constants = qw(
   GL_GLYPH_VERTICAL_BEARING_Y_BIT_NV
   GL_GLYPH_WIDTH_BIT_NV
   GL_GPU_ADDRESS_NV
+  GL_GPU_DISJOINT_EXT
   GL_GPU_MEMORY_INFO_CURRENT_AVAILABLE_VIDMEM_NVX
   GL_GPU_MEMORY_INFO_DEDICATED_VIDMEM_NVX
   GL_GPU_MEMORY_INFO_EVICTED_MEMORY_NVX
@@ -10148,6 +10940,7 @@ our @gl_constants = qw(
   GL_GREEN_SCALE
   GL_GUILTY_CONTEXT_RESET
   GL_GUILTY_CONTEXT_RESET_ARB
+  GL_GUILTY_CONTEXT_RESET_EXT
   GL_HALF_APPLE
   GL_HALF_BIAS_NEGATE_NV
   GL_HALF_BIAS_NORMAL_NV
@@ -10155,6 +10948,7 @@ our @gl_constants = qw(
   GL_HALF_FLOAT
   GL_HALF_FLOAT_ARB
   GL_HALF_FLOAT_NV
+  GL_HALF_FLOAT_OES
   GL_HANDLE_TYPE_D3D11_IMAGE_EXT
   GL_HANDLE_TYPE_D3D11_IMAGE_KMT_EXT
   GL_HANDLE_TYPE_D3D12_FENCE_EXT
@@ -10201,6 +10995,8 @@ our @gl_constants = qw(
   GL_HSL_LUMINOSITY_NV
   GL_HSL_SATURATION_KHR
   GL_HSL_SATURATION_NV
+  GL_HUAWEI_PROGRAM_BINARY
+  GL_HUAWEI_SHADER_BINARY
   GL_IDENTITY_NV
   GL_IGLOO_COLORNORMAL_SGIX
   GL_IGLOO_FULLSCREEN_SGIX
@@ -10241,6 +11037,7 @@ our @gl_constants = qw(
   GL_IMAGE_BIT
   GL_IMAGE_BUFFER
   GL_IMAGE_BUFFER_EXT
+  GL_IMAGE_BUFFER_OES
   GL_IMAGE_CLASS_10_10_10_2
   GL_IMAGE_CLASS_11_11_10
   GL_IMAGE_CLASS_1_X_16
@@ -10257,6 +11054,7 @@ our @gl_constants = qw(
   GL_IMAGE_CUBE_EXT
   GL_IMAGE_CUBE_MAP_ARRAY
   GL_IMAGE_CUBE_MAP_ARRAY_EXT
+  GL_IMAGE_CUBE_MAP_ARRAY_OES
   GL_IMAGE_FORMAT_COMPATIBILITY_BY_CLASS
   GL_IMAGE_FORMAT_COMPATIBILITY_BY_SIZE
   GL_IMAGE_FORMAT_COMPATIBILITY_TYPE
@@ -10264,7 +11062,9 @@ our @gl_constants = qw(
   GL_IMAGE_PIXEL_TYPE
   GL_IMAGE_TEXEL_SIZE
   GL_IMPLEMENTATION_COLOR_READ_FORMAT
+  GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES
   GL_IMPLEMENTATION_COLOR_READ_TYPE
+  GL_IMPLEMENTATION_COLOR_READ_TYPE_OES
   GL_INCLUSIVE_EXT
   GL_INCR
   GL_INCR_WRAP
@@ -10296,6 +11096,7 @@ our @gl_constants = qw(
   GL_INFO_LOG_LENGTH
   GL_INNOCENT_CONTEXT_RESET
   GL_INNOCENT_CONTEXT_RESET_ARB
+  GL_INNOCENT_CONTEXT_RESET_EXT
   GL_INT
   GL_INT16_NV
   GL_INT16_VEC2_NV
@@ -10369,6 +11170,7 @@ our @gl_constants = qw(
   GL_INTERPOLATE
   GL_INTERPOLATE_ARB
   GL_INTERPOLATE_EXT
+  GL_INT_10_10_10_2_OES
   GL_INT_2_10_10_10_REV
   GL_INT_IMAGE_1D
   GL_INT_IMAGE_1D_ARRAY
@@ -10388,10 +11190,12 @@ our @gl_constants = qw(
   GL_INT_IMAGE_3D_EXT
   GL_INT_IMAGE_BUFFER
   GL_INT_IMAGE_BUFFER_EXT
+  GL_INT_IMAGE_BUFFER_OES
   GL_INT_IMAGE_CUBE
   GL_INT_IMAGE_CUBE_EXT
   GL_INT_IMAGE_CUBE_MAP_ARRAY
   GL_INT_IMAGE_CUBE_MAP_ARRAY_EXT
+  GL_INT_IMAGE_CUBE_MAP_ARRAY_OES
   GL_INT_SAMPLER_1D
   GL_INT_SAMPLER_1D_ARRAY
   GL_INT_SAMPLER_1D_ARRAY_EXT
@@ -10402,6 +11206,7 @@ our @gl_constants = qw(
   GL_INT_SAMPLER_2D_EXT
   GL_INT_SAMPLER_2D_MULTISAMPLE
   GL_INT_SAMPLER_2D_MULTISAMPLE_ARRAY
+  GL_INT_SAMPLER_2D_MULTISAMPLE_ARRAY_OES
   GL_INT_SAMPLER_2D_RECT
   GL_INT_SAMPLER_2D_RECT_EXT
   GL_INT_SAMPLER_3D
@@ -10409,11 +11214,13 @@ our @gl_constants = qw(
   GL_INT_SAMPLER_BUFFER
   GL_INT_SAMPLER_BUFFER_AMD
   GL_INT_SAMPLER_BUFFER_EXT
+  GL_INT_SAMPLER_BUFFER_OES
   GL_INT_SAMPLER_CUBE
   GL_INT_SAMPLER_CUBE_EXT
   GL_INT_SAMPLER_CUBE_MAP_ARRAY
   GL_INT_SAMPLER_CUBE_MAP_ARRAY_ARB
   GL_INT_SAMPLER_CUBE_MAP_ARRAY_EXT
+  GL_INT_SAMPLER_CUBE_MAP_ARRAY_OES
   GL_INT_SAMPLER_RENDERBUFFER_NV
   GL_INT_VEC2
   GL_INT_VEC2_ARB
@@ -10424,6 +11231,7 @@ our @gl_constants = qw(
   GL_INVALID_ENUM
   GL_INVALID_FRAMEBUFFER_OPERATION
   GL_INVALID_FRAMEBUFFER_OPERATION_EXT
+  GL_INVALID_FRAMEBUFFER_OPERATION_OES
   GL_INVALID_INDEX
   GL_INVALID_OPERATION
   GL_INVALID_VALUE
@@ -10437,7 +11245,11 @@ our @gl_constants = qw(
   GL_INVERT_OVG_NV
   GL_INVERT_RGB_NV
   GL_ISOLINES
+  GL_ISOLINES_EXT
+  GL_ISOLINES_OES
   GL_IS_PER_PATCH
+  GL_IS_PER_PATCH_EXT
+  GL_IS_PER_PATCH_OES
   GL_IS_ROW_MAJOR
   GL_ITALIC_BIT_NV
   GL_KEEP
@@ -10449,12 +11261,16 @@ our @gl_constants = qw(
   GL_LARGE_CW_ARC_TO_NV
   GL_LAST_VERTEX_CONVENTION
   GL_LAST_VERTEX_CONVENTION_EXT
+  GL_LAST_VERTEX_CONVENTION_OES
   GL_LAST_VIDEO_CAPTURE_STATUS_NV
   GL_LAYERED_SGIX
   GL_LAYER_PROVOKING_VERTEX
   GL_LAYER_PROVOKING_VERTEX_EXT
+  GL_LAYER_PROVOKING_VERTEX_OES
   GL_LAYOUT_COLOR_ATTACHMENT_EXT
   GL_LAYOUT_DEFAULT_INTEL
+  GL_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_EXT
+  GL_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_EXT
   GL_LAYOUT_DEPTH_STENCIL_ATTACHMENT_EXT
   GL_LAYOUT_DEPTH_STENCIL_READ_ONLY_EXT
   GL_LAYOUT_GENERAL_EXT
@@ -10500,6 +11316,7 @@ our @gl_constants = qw(
   GL_LINES_ADJACENCY
   GL_LINES_ADJACENCY_ARB
   GL_LINES_ADJACENCY_EXT
+  GL_LINES_ADJACENCY_OES
   GL_LINE_BIT
   GL_LINE_LOOP
   GL_LINE_NV
@@ -10514,6 +11331,7 @@ our @gl_constants = qw(
   GL_LINE_STRIP_ADJACENCY
   GL_LINE_STRIP_ADJACENCY_ARB
   GL_LINE_STRIP_ADJACENCY_EXT
+  GL_LINE_STRIP_ADJACENCY_OES
   GL_LINE_TOKEN
   GL_LINE_TO_NV
   GL_LINE_WIDTH
@@ -10548,7 +11366,9 @@ our @gl_constants = qw(
   GL_LOG_WARNING_REGAL
   GL_LOSE_CONTEXT_ON_RESET
   GL_LOSE_CONTEXT_ON_RESET_ARB
+  GL_LOSE_CONTEXT_ON_RESET_EXT
   GL_LOWER_LEFT
+  GL_LOWER_LEFT_EXT
   GL_LOW_FLOAT
   GL_LOW_INT
   GL_LO_BIAS_NV
@@ -10584,6 +11404,7 @@ our @gl_constants = qw(
   GL_LUMINANCE4
   GL_LUMINANCE4_ALPHA4
   GL_LUMINANCE4_ALPHA4_EXT
+  GL_LUMINANCE4_ALPHA4_OES
   GL_LUMINANCE4_EXT
   GL_LUMINANCE6_ALPHA2
   GL_LUMINANCE6_ALPHA2_EXT
@@ -10592,8 +11413,10 @@ our @gl_constants = qw(
   GL_LUMINANCE8UI_EXT
   GL_LUMINANCE8_ALPHA8
   GL_LUMINANCE8_ALPHA8_EXT
+  GL_LUMINANCE8_ALPHA8_OES
   GL_LUMINANCE8_ALPHA8_SNORM
   GL_LUMINANCE8_EXT
+  GL_LUMINANCE8_OES
   GL_LUMINANCE8_SNORM
   GL_LUMINANCE_ALPHA
   GL_LUMINANCE_ALPHA16F_ARB
@@ -10771,12 +11594,19 @@ our @gl_constants = qw(
   GL_MATRIX9_ARB
   GL_MATRIX_EXT
   GL_MATRIX_INDEX_ARRAY_ARB
+  GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES
+  GL_MATRIX_INDEX_ARRAY_OES
   GL_MATRIX_INDEX_ARRAY_POINTER_ARB
+  GL_MATRIX_INDEX_ARRAY_POINTER_OES
   GL_MATRIX_INDEX_ARRAY_SIZE_ARB
+  GL_MATRIX_INDEX_ARRAY_SIZE_OES
   GL_MATRIX_INDEX_ARRAY_STRIDE_ARB
+  GL_MATRIX_INDEX_ARRAY_STRIDE_OES
   GL_MATRIX_INDEX_ARRAY_TYPE_ARB
+  GL_MATRIX_INDEX_ARRAY_TYPE_OES
   GL_MATRIX_MODE
   GL_MATRIX_PALETTE_ARB
+  GL_MATRIX_PALETTE_OES
   GL_MATRIX_STRIDE
   GL_MAT_AMBIENT_AND_DIFFUSE_BIT_PGI
   GL_MAT_AMBIENT_BIT_PGI
@@ -10788,6 +11618,7 @@ our @gl_constants = qw(
   GL_MAX
   GL_MAX_3D_TEXTURE_SIZE
   GL_MAX_3D_TEXTURE_SIZE_EXT
+  GL_MAX_3D_TEXTURE_SIZE_OES
   GL_MAX_ACTIVE_LIGHTS_EXT
   GL_MAX_ALPHA_SGIS
   GL_MAX_ARRAY_TEXTURE_LAYERS
@@ -10807,9 +11638,12 @@ our @gl_constants = qw(
   GL_MAX_CLIP_DISTANCES_APPLE
   GL_MAX_CLIP_DISTANCES_EXT
   GL_MAX_CLIP_PLANES
+  GL_MAX_COARSE_FRAGMENT_SAMPLES_NV
   GL_MAX_COLOR_ATTACHMENTS
   GL_MAX_COLOR_ATTACHMENTS_EXT
   GL_MAX_COLOR_ATTACHMENTS_NV
+  GL_MAX_COLOR_FRAMEBUFFER_SAMPLES_AMD
+  GL_MAX_COLOR_FRAMEBUFFER_STORAGE_SAMPLES_AMD
   GL_MAX_COLOR_MATRIX_STACK_DEPTH
   GL_MAX_COLOR_MATRIX_STACK_DEPTH_SGI
   GL_MAX_COLOR_TEXTURE_SAMPLES
@@ -10822,13 +11656,22 @@ our @gl_constants = qw(
   GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS
   GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS
   GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS_EXT
+  GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS_OES
   GL_MAX_COMBINED_IMAGE_UNIFORMS
   GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS
   GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS_EXT
+  GL_MAX_COMBINED_MESH_UNIFORM_COMPONENTS_EXT
+  GL_MAX_COMBINED_MESH_UNIFORM_COMPONENTS_NV
   GL_MAX_COMBINED_SHADER_OUTPUT_RESOURCES
   GL_MAX_COMBINED_SHADER_STORAGE_BLOCKS
+  GL_MAX_COMBINED_TASK_UNIFORM_COMPONENTS_EXT
+  GL_MAX_COMBINED_TASK_UNIFORM_COMPONENTS_NV
   GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS
+  GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS_EXT
+  GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS_OES
   GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS
+  GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS_EXT
+  GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS_OES
   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS
   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS_ARB
   GL_MAX_COMBINED_UNIFORM_BLOCKS
@@ -10855,6 +11698,7 @@ our @gl_constants = qw(
   GL_MAX_CUBE_MAP_TEXTURE_SIZE
   GL_MAX_CUBE_MAP_TEXTURE_SIZE_ARB
   GL_MAX_CUBE_MAP_TEXTURE_SIZE_EXT
+  GL_MAX_CUBE_MAP_TEXTURE_SIZE_OES
   GL_MAX_CULL_DISTANCES
   GL_MAX_CULL_DISTANCES_EXT
   GL_MAX_DEBUG_GROUP_STACK_DEPTH
@@ -10867,12 +11711,16 @@ our @gl_constants = qw(
   GL_MAX_DEEP_3D_TEXTURE_DEPTH_NV
   GL_MAX_DEEP_3D_TEXTURE_WIDTH_HEIGHT_NV
   GL_MAX_DEPTH
+  GL_MAX_DEPTH_STENCIL_FRAMEBUFFER_SAMPLES_AMD
   GL_MAX_DEPTH_TEXTURE_SAMPLES
+  GL_MAX_DETACHED_BUFFERS_NV
+  GL_MAX_DETACHED_TEXTURES_NV
   GL_MAX_DRAW_BUFFERS
   GL_MAX_DRAW_BUFFERS_ARB
   GL_MAX_DRAW_BUFFERS_ATI
   GL_MAX_DRAW_BUFFERS_EXT
   GL_MAX_DRAW_BUFFERS_NV
+  GL_MAX_DRAW_MESH_TASKS_COUNT_NV
   GL_MAX_DUAL_SOURCE_DRAW_BUFFERS
   GL_MAX_DUAL_SOURCE_DRAW_BUFFERS_EXT
   GL_MAX_ELEMENTS_INDICES
@@ -10891,9 +11739,14 @@ our @gl_constants = qw(
   GL_MAX_FRAGMENT_INPUT_COMPONENTS
   GL_MAX_FRAGMENT_INTERPOLATION_OFFSET
   GL_MAX_FRAGMENT_INTERPOLATION_OFFSET_NV
+  GL_MAX_FRAGMENT_INTERPOLATION_OFFSET_OES
   GL_MAX_FRAGMENT_LIGHTS_EXT
   GL_MAX_FRAGMENT_PROGRAM_LOCAL_PARAMETERS_NV
   GL_MAX_FRAGMENT_SHADER_STORAGE_BLOCKS
+  GL_MAX_FRAGMENT_SHADING_RATE_ATTACHMENT_LAYERS_EXT
+  GL_MAX_FRAGMENT_SHADING_RATE_ATTACHMENT_TEXEL_ASPECT_RATIO_EXT
+  GL_MAX_FRAGMENT_SHADING_RATE_ATTACHMENT_TEXEL_HEIGHT_EXT
+  GL_MAX_FRAGMENT_SHADING_RATE_ATTACHMENT_TEXEL_WIDTH_EXT
   GL_MAX_FRAGMENT_UNIFORM_BLOCKS
   GL_MAX_FRAGMENT_UNIFORM_COMPONENTS
   GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB
@@ -10901,39 +11754,52 @@ our @gl_constants = qw(
   GL_MAX_FRAMEBUFFER_HEIGHT
   GL_MAX_FRAMEBUFFER_LAYERS
   GL_MAX_FRAMEBUFFER_LAYERS_EXT
+  GL_MAX_FRAMEBUFFER_LAYERS_OES
   GL_MAX_FRAMEBUFFER_SAMPLES
   GL_MAX_FRAMEBUFFER_WIDTH
   GL_MAX_GENERAL_COMBINERS_NV
   GL_MAX_GEOMETRY_ATOMIC_COUNTERS
   GL_MAX_GEOMETRY_ATOMIC_COUNTERS_EXT
+  GL_MAX_GEOMETRY_ATOMIC_COUNTERS_OES
   GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS
   GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS_EXT
+  GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS_OES
   GL_MAX_GEOMETRY_BINDABLE_UNIFORMS_EXT
   GL_MAX_GEOMETRY_IMAGE_UNIFORMS
   GL_MAX_GEOMETRY_IMAGE_UNIFORMS_EXT
+  GL_MAX_GEOMETRY_IMAGE_UNIFORMS_OES
   GL_MAX_GEOMETRY_INPUT_COMPONENTS
   GL_MAX_GEOMETRY_INPUT_COMPONENTS_EXT
+  GL_MAX_GEOMETRY_INPUT_COMPONENTS_OES
   GL_MAX_GEOMETRY_OUTPUT_COMPONENTS
   GL_MAX_GEOMETRY_OUTPUT_COMPONENTS_EXT
+  GL_MAX_GEOMETRY_OUTPUT_COMPONENTS_OES
   GL_MAX_GEOMETRY_OUTPUT_VERTICES
   GL_MAX_GEOMETRY_OUTPUT_VERTICES_ARB
   GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT
+  GL_MAX_GEOMETRY_OUTPUT_VERTICES_OES
   GL_MAX_GEOMETRY_PROGRAM_INVOCATIONS_NV
   GL_MAX_GEOMETRY_SHADER_INVOCATIONS
   GL_MAX_GEOMETRY_SHADER_INVOCATIONS_EXT
+  GL_MAX_GEOMETRY_SHADER_INVOCATIONS_OES
   GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS
   GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS_EXT
+  GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS_OES
   GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS
   GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_ARB
   GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT
+  GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_OES
   GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS
   GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_ARB
   GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT
+  GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_OES
   GL_MAX_GEOMETRY_UNIFORM_BLOCKS
   GL_MAX_GEOMETRY_UNIFORM_BLOCKS_EXT
+  GL_MAX_GEOMETRY_UNIFORM_BLOCKS_OES
   GL_MAX_GEOMETRY_UNIFORM_COMPONENTS
   GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_ARB
   GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT
+  GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_OES
   GL_MAX_GEOMETRY_VARYING_COMPONENTS_ARB
   GL_MAX_GEOMETRY_VARYING_COMPONENTS_EXT
   GL_MAX_GREEN_SGIS
@@ -10952,6 +11818,39 @@ our @gl_constants = qw(
   GL_MAX_LUMINANCE_SGIS
   GL_MAX_MAP_TESSELLATION_NV
   GL_MAX_MATRIX_PALETTE_STACK_DEPTH_ARB
+  GL_MAX_MESH_ATOMIC_COUNTERS_EXT
+  GL_MAX_MESH_ATOMIC_COUNTERS_NV
+  GL_MAX_MESH_ATOMIC_COUNTER_BUFFERS_EXT
+  GL_MAX_MESH_ATOMIC_COUNTER_BUFFERS_NV
+  GL_MAX_MESH_IMAGE_UNIFORMS_EXT
+  GL_MAX_MESH_IMAGE_UNIFORMS_NV
+  GL_MAX_MESH_MULTIVIEW_VIEW_COUNT_EXT
+  GL_MAX_MESH_OUTPUT_COMPONENTS_EXT
+  GL_MAX_MESH_OUTPUT_LAYERS_EXT
+  GL_MAX_MESH_OUTPUT_MEMORY_SIZE_EXT
+  GL_MAX_MESH_OUTPUT_PRIMITIVES_EXT
+  GL_MAX_MESH_OUTPUT_PRIMITIVES_NV
+  GL_MAX_MESH_OUTPUT_VERTICES_EXT
+  GL_MAX_MESH_OUTPUT_VERTICES_NV
+  GL_MAX_MESH_PAYLOAD_AND_OUTPUT_MEMORY_SIZE_EXT
+  GL_MAX_MESH_PAYLOAD_AND_SHARED_MEMORY_SIZE_EXT
+  GL_MAX_MESH_SHADER_STORAGE_BLOCKS_EXT
+  GL_MAX_MESH_SHADER_STORAGE_BLOCKS_NV
+  GL_MAX_MESH_SHARED_MEMORY_SIZE_EXT
+  GL_MAX_MESH_TEXTURE_IMAGE_UNITS_EXT
+  GL_MAX_MESH_TEXTURE_IMAGE_UNITS_NV
+  GL_MAX_MESH_TOTAL_MEMORY_SIZE_NV
+  GL_MAX_MESH_UNIFORM_BLOCKS_EXT
+  GL_MAX_MESH_UNIFORM_BLOCKS_NV
+  GL_MAX_MESH_UNIFORM_COMPONENTS_EXT
+  GL_MAX_MESH_UNIFORM_COMPONENTS_NV
+  GL_MAX_MESH_VIEWS_NV
+  GL_MAX_MESH_WORK_GROUP_COUNT_EXT
+  GL_MAX_MESH_WORK_GROUP_INVOCATIONS_EXT
+  GL_MAX_MESH_WORK_GROUP_INVOCATIONS_NV
+  GL_MAX_MESH_WORK_GROUP_SIZE_EXT
+  GL_MAX_MESH_WORK_GROUP_SIZE_NV
+  GL_MAX_MESH_WORK_GROUP_TOTAL_COUNT_EXT
   GL_MAX_MIPMAP_ANISOTROPY_SGIX
   GL_MAX_MODELVIEW_STACK_DEPTH
   GL_MAX_MULTISAMPLE_COVERAGE_MODES_NV
@@ -10966,10 +11865,15 @@ our @gl_constants = qw(
   GL_MAX_OPTIMIZED_VERTEX_SHADER_LOCAL_CONSTANTS_EXT
   GL_MAX_OPTIMIZED_VERTEX_SHADER_VARIANTS_EXT
   GL_MAX_PALETTE_MATRICES_ARB
+  GL_MAX_PALETTE_MATRICES_OES
   GL_MAX_PATCH_VERTICES
+  GL_MAX_PATCH_VERTICES_EXT
+  GL_MAX_PATCH_VERTICES_OES
   GL_MAX_PIXEL_MAP_TABLE
   GL_MAX_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT
   GL_MAX_PN_TRIANGLES_TESSELATION_LEVEL_ATI
+  GL_MAX_PREFERRED_MESH_WORK_GROUP_INVOCATIONS_EXT
+  GL_MAX_PREFERRED_TASK_WORK_GROUP_INVOCATIONS_EXT
   GL_MAX_PROGRAM_ADDRESS_REGISTERS_ARB
   GL_MAX_PROGRAM_ALU_INSTRUCTIONS_ARB
   GL_MAX_PROGRAM_ATTRIBS_ARB
@@ -11021,10 +11925,12 @@ our @gl_constants = qw(
   GL_MAX_RED_SGIS
   GL_MAX_RENDERBUFFER_SIZE
   GL_MAX_RENDERBUFFER_SIZE_EXT
+  GL_MAX_RENDERBUFFER_SIZE_OES
   GL_MAX_SAMPLES
   GL_MAX_SAMPLES_ANGLE
   GL_MAX_SAMPLES_APPLE
   GL_MAX_SAMPLES_EXT
+  GL_MAX_SAMPLES_IMG
   GL_MAX_SAMPLES_NV
   GL_MAX_SAMPLE_MASK_WORDS
   GL_MAX_SAMPLE_MASK_WORDS_NV
@@ -11039,6 +11945,7 @@ our @gl_constants = qw(
   GL_MAX_SHADER_PIXEL_LOCAL_STORAGE_SIZE_EXT
   GL_MAX_SHADER_STORAGE_BLOCK_SIZE
   GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS
+  GL_MAX_SHADER_SUBSAMPLED_IMAGE_UNITS_QCOM
   GL_MAX_SHININESS_NV
   GL_MAX_SPARSE_3D_TEXTURE_SIZE_AMD
   GL_MAX_SPARSE_3D_TEXTURE_SIZE_ARB
@@ -11053,31 +11960,99 @@ our @gl_constants = qw(
   GL_MAX_SUBPIXEL_PRECISION_BIAS_BITS_NV
   GL_MAX_SUBROUTINES
   GL_MAX_SUBROUTINE_UNIFORM_LOCATIONS
+  GL_MAX_TASK_ATOMIC_COUNTERS_EXT
+  GL_MAX_TASK_ATOMIC_COUNTERS_NV
+  GL_MAX_TASK_ATOMIC_COUNTER_BUFFERS_EXT
+  GL_MAX_TASK_ATOMIC_COUNTER_BUFFERS_NV
+  GL_MAX_TASK_IMAGE_UNIFORMS_EXT
+  GL_MAX_TASK_IMAGE_UNIFORMS_NV
+  GL_MAX_TASK_OUTPUT_COUNT_NV
+  GL_MAX_TASK_PAYLOAD_AND_SHARED_MEMORY_SIZE_EXT
+  GL_MAX_TASK_PAYLOAD_SIZE_EXT
+  GL_MAX_TASK_SHADER_STORAGE_BLOCKS_EXT
+  GL_MAX_TASK_SHADER_STORAGE_BLOCKS_NV
+  GL_MAX_TASK_SHARED_MEMORY_SIZE_EXT
+  GL_MAX_TASK_TEXTURE_IMAGE_UNITS_EXT
+  GL_MAX_TASK_TEXTURE_IMAGE_UNITS_NV
+  GL_MAX_TASK_TOTAL_MEMORY_SIZE_NV
+  GL_MAX_TASK_UNIFORM_BLOCKS_EXT
+  GL_MAX_TASK_UNIFORM_BLOCKS_NV
+  GL_MAX_TASK_UNIFORM_COMPONENTS_EXT
+  GL_MAX_TASK_UNIFORM_COMPONENTS_NV
+  GL_MAX_TASK_WORK_GROUP_COUNT_EXT
+  GL_MAX_TASK_WORK_GROUP_INVOCATIONS_EXT
+  GL_MAX_TASK_WORK_GROUP_INVOCATIONS_NV
+  GL_MAX_TASK_WORK_GROUP_SIZE_EXT
+  GL_MAX_TASK_WORK_GROUP_SIZE_NV
+  GL_MAX_TASK_WORK_GROUP_TOTAL_COUNT_EXT
   GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS
+  GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS_EXT
+  GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS_OES
   GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS
+  GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS_EXT
+  GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS_OES
   GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS
+  GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS_EXT
+  GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS_OES
   GL_MAX_TESS_CONTROL_INPUT_COMPONENTS
+  GL_MAX_TESS_CONTROL_INPUT_COMPONENTS_EXT
+  GL_MAX_TESS_CONTROL_INPUT_COMPONENTS_OES
   GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS
+  GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS_EXT
+  GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS_OES
   GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS
+  GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS_EXT
+  GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS_OES
   GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS
+  GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS_EXT
+  GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS_OES
   GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS
+  GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS_EXT
+  GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS_OES
   GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS
+  GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS_EXT
+  GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS_OES
   GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS
+  GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS_EXT
+  GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS_OES
   GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS
+  GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS_EXT
+  GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS_OES
   GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS
+  GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS_EXT
+  GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS_OES
   GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS
+  GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS_EXT
+  GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS_OES
   GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS
+  GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS_EXT
+  GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS_OES
   GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS
+  GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS_EXT
+  GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS_OES
   GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS
+  GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS_EXT
+  GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS_OES
   GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS
+  GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS_EXT
+  GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS_OES
   GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS
+  GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS_EXT
+  GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS_OES
   GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS
+  GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS_EXT
+  GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS_OES
   GL_MAX_TESS_GEN_LEVEL
+  GL_MAX_TESS_GEN_LEVEL_EXT
+  GL_MAX_TESS_GEN_LEVEL_OES
   GL_MAX_TESS_PATCH_COMPONENTS
+  GL_MAX_TESS_PATCH_COMPONENTS_EXT
+  GL_MAX_TESS_PATCH_COMPONENTS_OES
   GL_MAX_TEXTURES_SGIS
   GL_MAX_TEXTURE_BUFFER_SIZE
   GL_MAX_TEXTURE_BUFFER_SIZE_ARB
   GL_MAX_TEXTURE_BUFFER_SIZE_EXT
+  GL_MAX_TEXTURE_BUFFER_SIZE_OES
   GL_MAX_TEXTURE_COORDS
   GL_MAX_TEXTURE_COORDS_ARB
   GL_MAX_TEXTURE_COORDS_NV
@@ -11093,6 +12068,7 @@ our @gl_constants = qw(
   GL_MAX_TEXTURE_STACK_DEPTH
   GL_MAX_TEXTURE_UNITS
   GL_MAX_TEXTURE_UNITS_ARB
+  GL_MAX_TIMELINE_SEMAPHORE_VALUE_DIFFERENCE_NV
   GL_MAX_TRACK_MATRICES_NV
   GL_MAX_TRACK_MATRIX_STACK_DEPTH_NV
   GL_MAX_TRANSFORM_FEEDBACK_BUFFERS
@@ -11141,6 +12117,7 @@ our @gl_constants = qw(
   GL_MAX_VERTEX_UNIFORM_COMPONENTS_ARB
   GL_MAX_VERTEX_UNIFORM_VECTORS
   GL_MAX_VERTEX_UNITS_ARB
+  GL_MAX_VERTEX_UNITS_OES
   GL_MAX_VERTEX_VARYING_COMPONENTS_ARB
   GL_MAX_VERTEX_VARYING_COMPONENTS_EXT
   GL_MAX_VIEWPORTS
@@ -11151,6 +12128,35 @@ our @gl_constants = qw(
   GL_MAX_WINDOW_RECTANGLES_EXT
   GL_MEDIUM_FLOAT
   GL_MEDIUM_INT
+  GL_MEMORY_ATTACHABLE_ALIGNMENT_NV
+  GL_MEMORY_ATTACHABLE_NV
+  GL_MEMORY_ATTACHABLE_SIZE_NV
+  GL_MESH_OUTPUT_PER_PRIMITIVE_GRANULARITY_EXT
+  GL_MESH_OUTPUT_PER_PRIMITIVE_GRANULARITY_NV
+  GL_MESH_OUTPUT_PER_VERTEX_GRANULARITY_EXT
+  GL_MESH_OUTPUT_PER_VERTEX_GRANULARITY_NV
+  GL_MESH_OUTPUT_TYPE_EXT
+  GL_MESH_OUTPUT_TYPE_NV
+  GL_MESH_PREFERS_COMPACT_PRIMITIVE_OUTPUT_EXT
+  GL_MESH_PREFERS_COMPACT_VERTEX_OUTPUT_EXT
+  GL_MESH_PREFERS_LOCAL_INVOCATION_PRIMITIVE_OUTPUT_EXT
+  GL_MESH_PREFERS_LOCAL_INVOCATION_VERTEX_OUTPUT_EXT
+  GL_MESH_PRIMITIVES_GENERATED_EXT
+  GL_MESH_PRIMITIVES_OUT_EXT
+  GL_MESH_PRIMITIVES_OUT_NV
+  GL_MESH_SHADER_BIT_EXT
+  GL_MESH_SHADER_BIT_NV
+  GL_MESH_SHADER_EXT
+  GL_MESH_SHADER_INVOCATIONS_EXT
+  GL_MESH_SHADER_NV
+  GL_MESH_SUBROUTINE_EXT
+  GL_MESH_SUBROUTINE_NV
+  GL_MESH_SUBROUTINE_UNIFORM_EXT
+  GL_MESH_SUBROUTINE_UNIFORM_NV
+  GL_MESH_VERTICES_OUT_EXT
+  GL_MESH_VERTICES_OUT_NV
+  GL_MESH_WORK_GROUP_SIZE_EXT
+  GL_MESH_WORK_GROUP_SIZE_NV
   GL_MIN
   GL_MINMAX
   GL_MINMAX_EXT
@@ -11166,6 +12172,9 @@ our @gl_constants = qw(
   GL_MIN_EXT
   GL_MIN_FRAGMENT_INTERPOLATION_OFFSET
   GL_MIN_FRAGMENT_INTERPOLATION_OFFSET_NV
+  GL_MIN_FRAGMENT_INTERPOLATION_OFFSET_OES
+  GL_MIN_FRAGMENT_SHADING_RATE_ATTACHMENT_TEXEL_HEIGHT_EXT
+  GL_MIN_FRAGMENT_SHADING_RATE_ATTACHMENT_TEXEL_WIDTH_EXT
   GL_MIN_GREEN_SGIS
   GL_MIN_INTENSITY_SGIS
   GL_MIN_LOD_WARNING_AMD
@@ -11180,6 +12189,7 @@ our @gl_constants = qw(
   GL_MIN_RED_SGIS
   GL_MIN_SAMPLE_SHADING_VALUE
   GL_MIN_SAMPLE_SHADING_VALUE_ARB
+  GL_MIN_SAMPLE_SHADING_VALUE_OES
   GL_MIN_SPARSE_LEVEL_AMD
   GL_MIPMAP
   GL_MIRRORED_REPEAT
@@ -11236,15 +12246,19 @@ our @gl_constants = qw(
   GL_MODELVIEW8_ARB
   GL_MODELVIEW9_ARB
   GL_MODELVIEW_MATRIX
+  GL_MODELVIEW_MATRIX_FLOAT_AS_INT_BITS_OES
   GL_MODELVIEW_PROJECTION_NV
   GL_MODELVIEW_STACK_DEPTH
   GL_MODULATE
   GL_MODULATE_ADD_ATI
   GL_MODULATE_ADD_ATIX
+  GL_MODULATE_COLOR_IMG
   GL_MODULATE_SIGNED_ADD_ATI
   GL_MODULATE_SIGNED_ADD_ATIX
   GL_MODULATE_SUBTRACT_ATI
   GL_MODULATE_SUBTRACT_ATIX
+  GL_MOTION_ESTIMATION_SEARCH_BLOCK_X_QCOM
+  GL_MOTION_ESTIMATION_SEARCH_BLOCK_Y_QCOM
   GL_MOVE_TO_CONTINUES_NV
   GL_MOVE_TO_NV
   GL_MOVE_TO_RESETS_NV
@@ -11295,6 +12309,7 @@ our @gl_constants = qw(
   GL_NEGATE_BIT_ATI
   GL_NEGATIVE_ONE_EXT
   GL_NEGATIVE_ONE_TO_ONE
+  GL_NEGATIVE_ONE_TO_ONE_EXT
   GL_NEGATIVE_W_EXT
   GL_NEGATIVE_X_EXT
   GL_NEGATIVE_Y_EXT
@@ -11303,6 +12318,7 @@ our @gl_constants = qw(
   GL_NEXT_VIDEO_CAPTURE_BUFFER_STATUS_NV
   GL_NICEST
   GL_NONE
+  GL_NONE_OES
   GL_NOOP
   GL_NOP_COMMAND_NV
   GL_NOR
@@ -11329,15 +12345,18 @@ our @gl_constants = qw(
   GL_NORMAL_MAP_ARB
   GL_NORMAL_MAP_EXT
   GL_NORMAL_MAP_NV
+  GL_NORMAL_MAP_OES
   GL_NOTEQUAL
   GL_NO_ERROR
   GL_NO_RESET_NOTIFICATION
   GL_NO_RESET_NOTIFICATION_ARB
+  GL_NO_RESET_NOTIFICATION_EXT
   GL_NUM_ACTIVE_VARIABLES
   GL_NUM_COMPATIBLE_SUBROUTINES
   GL_NUM_COMPRESSED_TEXTURE_FORMATS
   GL_NUM_COMPRESSED_TEXTURE_FORMATS_ARB
   GL_NUM_DEVICE_UUIDS_EXT
+  GL_NUM_DOWNSAMPLE_SCALES_IMG
   GL_NUM_EXTENSIONS
   GL_NUM_FILL_STREAMS_NV
   GL_NUM_FRAGMENT_CONSTANTS_ATI
@@ -11349,12 +12368,15 @@ our @gl_constants = qw(
   GL_NUM_LOOPBACK_COMPONENTS_ATI
   GL_NUM_PASSES_ATI
   GL_NUM_PROGRAM_BINARY_FORMATS
+  GL_NUM_PROGRAM_BINARY_FORMATS_OES
   GL_NUM_SAMPLE_COUNTS
   GL_NUM_SHADER_BINARY_FORMATS
   GL_NUM_SHADING_LANGUAGE_VERSIONS
   GL_NUM_SPARSE_LEVELS_ARB
   GL_NUM_SPARSE_LEVELS_EXT
   GL_NUM_SPIR_V_EXTENSIONS
+  GL_NUM_SUPPORTED_MULTISAMPLE_MODES_AMD
+  GL_NUM_SURFACE_COMPRESSION_FIXED_RATES_EXT
   GL_NUM_TILING_TYPES_EXT
   GL_NUM_VIDEO_CAPTURE_STREAMS_NV
   GL_NUM_VIRTUAL_PAGE_SIZES_ARB
@@ -11535,6 +12557,16 @@ our @gl_constants = qw(
   GL_PACK_SKIP_ROWS_NV
   GL_PACK_SUBSAMPLE_RATE_SGIX
   GL_PACK_SWAP_BYTES
+  GL_PALETTE4_R5_G6_B5_OES
+  GL_PALETTE4_RGB5_A1_OES
+  GL_PALETTE4_RGB8_OES
+  GL_PALETTE4_RGBA4_OES
+  GL_PALETTE4_RGBA8_OES
+  GL_PALETTE8_R5_G6_B5_OES
+  GL_PALETTE8_RGB5_A1_OES
+  GL_PALETTE8_RGB8_OES
+  GL_PALETTE8_RGBA4_OES
+  GL_PALETTE8_RGBA8_OES
   GL_PARALLEL_ARRAYS_INTEL
   GL_PARAMETER_BUFFER
   GL_PARAMETER_BUFFER_ARB
@@ -11544,9 +12576,13 @@ our @gl_constants = qw(
   GL_PASS_THROUGH_NV
   GL_PASS_THROUGH_TOKEN
   GL_PATCHES
+  GL_PATCHES_EXT
+  GL_PATCHES_OES
   GL_PATCH_DEFAULT_INNER_LEVEL
   GL_PATCH_DEFAULT_OUTER_LEVEL
   GL_PATCH_VERTICES
+  GL_PATCH_VERTICES_EXT
+  GL_PATCH_VERTICES_OES
   GL_PATH_CLIENT_LENGTH_NV
   GL_PATH_COMMAND_COUNT_NV
   GL_PATH_COMPUTED_LENGTH_NV
@@ -11698,6 +12734,11 @@ our @gl_constants = qw(
   GL_POINT_FADE_THRESHOLD_SIZE_EXT
   GL_POINT_NV
   GL_POINT_SIZE
+  GL_POINT_SIZE_ARRAY_BUFFER_BINDING_OES
+  GL_POINT_SIZE_ARRAY_OES
+  GL_POINT_SIZE_ARRAY_POINTER_OES
+  GL_POINT_SIZE_ARRAY_STRIDE_OES
+  GL_POINT_SIZE_ARRAY_TYPE_OES
   GL_POINT_SIZE_GRANULARITY
   GL_POINT_SIZE_MAX
   GL_POINT_SIZE_MAX_ARB
@@ -11715,6 +12756,7 @@ our @gl_constants = qw(
   GL_POINT_SPRITE_CULL_CLIP_ATIX
   GL_POINT_SPRITE_CULL_MODE_ATIX
   GL_POINT_SPRITE_NV
+  GL_POINT_SPRITE_OES
   GL_POINT_SPRITE_R_MODE_NV
   GL_POINT_TOKEN
   GL_POLYGON
@@ -11795,13 +12837,16 @@ our @gl_constants = qw(
   GL_PRIMITIVES_GENERATED
   GL_PRIMITIVES_GENERATED_EXT
   GL_PRIMITIVES_GENERATED_NV
+  GL_PRIMITIVES_GENERATED_OES
   GL_PRIMITIVES_SUBMITTED
   GL_PRIMITIVES_SUBMITTED_ARB
   GL_PRIMITIVE_BOUNDING_BOX_ARB
+  GL_PRIMITIVE_BOUNDING_BOX_EXT
   GL_PRIMITIVE_ID_NV
   GL_PRIMITIVE_RESTART
   GL_PRIMITIVE_RESTART_FIXED_INDEX
   GL_PRIMITIVE_RESTART_FOR_PATCHES_SUPPORTED
+  GL_PRIMITIVE_RESTART_FOR_PATCHES_SUPPORTED_OES
   GL_PRIMITIVE_RESTART_INDEX
   GL_PRIMITIVE_RESTART_INDEX_NV
   GL_PRIMITIVE_RESTART_NV
@@ -11816,7 +12861,10 @@ our @gl_constants = qw(
   GL_PROGRAM_ATTRIB_COMPONENTS_NV
   GL_PROGRAM_BINARY_ANGLE
   GL_PROGRAM_BINARY_FORMATS
+  GL_PROGRAM_BINARY_FORMATS_OES
+  GL_PROGRAM_BINARY_FORMAT_MESA
   GL_PROGRAM_BINARY_LENGTH
+  GL_PROGRAM_BINARY_LENGTH_OES
   GL_PROGRAM_BINARY_RETRIEVABLE_HINT
   GL_PROGRAM_BINDING_ARB
   GL_PROGRAM_ERROR_POSITION_ARB
@@ -11862,6 +12910,7 @@ our @gl_constants = qw(
   GL_PROGRAM_UNDER_NATIVE_LIMITS_ARB
   GL_PROJECTION
   GL_PROJECTION_MATRIX
+  GL_PROJECTION_MATRIX_FLOAT_AS_INT_BITS_OES
   GL_PROJECTION_STACK_DEPTH
   GL_PROTECTED_MEMORY_OBJECT_EXT
   GL_PROVOKING_VERTEX
@@ -11900,12 +12949,15 @@ our @gl_constants = qw(
   GL_PROXY_TEXTURE_RECTANGLE_NV
   GL_PURGEABLE_APPLE
   GL_PURGED_CONTEXT_RESET_NV
+  GL_PVRIC_SIGNATURE_MISMATCH_IMG
   GL_Q
   GL_QUADRATIC_ATTENUATION
   GL_QUADRATIC_CURVE_TO_NV
   GL_QUADS
+  GL_QUADS_EXT
   GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION
   GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION_EXT
+  GL_QUADS_OES
   GL_QUAD_MESH_SUN
   GL_QUAD_STRIP
   GL_QUARTER_BIT_ATI
@@ -11925,6 +12977,7 @@ our @gl_constants = qw(
   GL_QUERY_COUNTER_BITS
   GL_QUERY_COUNTER_BITS_ANGLE
   GL_QUERY_COUNTER_BITS_ARB
+  GL_QUERY_COUNTER_BITS_EXT
   GL_QUERY_DEPTH_BOUNDS_FAIL_EVENT_BIT_AMD
   GL_QUERY_DEPTH_FAIL_EVENT_BIT_AMD
   GL_QUERY_DEPTH_PASS_EVENT_BIT_AMD
@@ -11939,7 +12992,9 @@ our @gl_constants = qw(
   GL_QUERY_RESULT_AVAILABLE
   GL_QUERY_RESULT_AVAILABLE_ANGLE
   GL_QUERY_RESULT_AVAILABLE_ARB
+  GL_QUERY_RESULT_AVAILABLE_EXT
   GL_QUERY_RESULT_AVAILABLE_NV
+  GL_QUERY_RESULT_EXT
   GL_QUERY_RESULT_NO_WAIT
   GL_QUERY_RESULT_NO_WAIT_AMD
   GL_QUERY_RESULT_NV
@@ -11990,6 +13045,7 @@ our @gl_constants = qw(
   GL_RASTER_SAMPLES_EXT
   GL_READ_BUFFER
   GL_READ_BUFFER_EXT
+  GL_READ_BUFFER_NV
   GL_READ_FRAMEBUFFER
   GL_READ_FRAMEBUFFER_ANGLE
   GL_READ_FRAMEBUFFER_APPLE
@@ -12010,6 +13066,7 @@ our @gl_constants = qw(
   GL_READ_PIXEL_DATA_RANGE_POINTER_NV
   GL_READ_WRITE
   GL_READ_WRITE_ARB
+  GL_RECIP_ADD_SIGNED_ALPHA_IMG
   GL_RECLAIM_MEMORY_HINT_PGI
   GL_RECT_NV
   GL_RED
@@ -12030,13 +13087,23 @@ our @gl_constants = qw(
   GL_REFERENCED_BY_FRAGMENT_SHADER
   GL_REFERENCED_BY_GEOMETRY_SHADER
   GL_REFERENCED_BY_GEOMETRY_SHADER_EXT
+  GL_REFERENCED_BY_GEOMETRY_SHADER_OES
+  GL_REFERENCED_BY_MESH_SHADER_EXT
+  GL_REFERENCED_BY_MESH_SHADER_NV
+  GL_REFERENCED_BY_TASK_SHADER_EXT
+  GL_REFERENCED_BY_TASK_SHADER_NV
   GL_REFERENCED_BY_TESS_CONTROL_SHADER
+  GL_REFERENCED_BY_TESS_CONTROL_SHADER_EXT
+  GL_REFERENCED_BY_TESS_CONTROL_SHADER_OES
   GL_REFERENCED_BY_TESS_EVALUATION_SHADER
+  GL_REFERENCED_BY_TESS_EVALUATION_SHADER_EXT
+  GL_REFERENCED_BY_TESS_EVALUATION_SHADER_OES
   GL_REFERENCED_BY_VERTEX_SHADER
   GL_REFLECTION_MAP
   GL_REFLECTION_MAP_ARB
   GL_REFLECTION_MAP_EXT
   GL_REFLECTION_MAP_NV
+  GL_REFLECTION_MAP_OES
   GL_REGISTER_COMBINERS_NV
   GL_REG_0_ATI
   GL_REG_1_ATI
@@ -12068,33 +13135,46 @@ our @gl_constants = qw(
   GL_RENDERBUFFER
   GL_RENDERBUFFER_ALPHA_SIZE
   GL_RENDERBUFFER_ALPHA_SIZE_EXT
+  GL_RENDERBUFFER_ALPHA_SIZE_OES
   GL_RENDERBUFFER_BINDING
   GL_RENDERBUFFER_BINDING_EXT
+  GL_RENDERBUFFER_BINDING_OES
   GL_RENDERBUFFER_BLUE_SIZE
   GL_RENDERBUFFER_BLUE_SIZE_EXT
+  GL_RENDERBUFFER_BLUE_SIZE_OES
   GL_RENDERBUFFER_COLOR_SAMPLES_NV
   GL_RENDERBUFFER_COVERAGE_SAMPLES_NV
   GL_RENDERBUFFER_DEPTH_SIZE
   GL_RENDERBUFFER_DEPTH_SIZE_EXT
+  GL_RENDERBUFFER_DEPTH_SIZE_OES
   GL_RENDERBUFFER_EXT
   GL_RENDERBUFFER_FREE_MEMORY_ATI
   GL_RENDERBUFFER_GREEN_SIZE
   GL_RENDERBUFFER_GREEN_SIZE_EXT
+  GL_RENDERBUFFER_GREEN_SIZE_OES
   GL_RENDERBUFFER_HEIGHT
   GL_RENDERBUFFER_HEIGHT_EXT
+  GL_RENDERBUFFER_HEIGHT_OES
   GL_RENDERBUFFER_INTERNAL_FORMAT
   GL_RENDERBUFFER_INTERNAL_FORMAT_EXT
+  GL_RENDERBUFFER_INTERNAL_FORMAT_OES
+  GL_RENDERBUFFER_OES
   GL_RENDERBUFFER_RED_SIZE
   GL_RENDERBUFFER_RED_SIZE_EXT
+  GL_RENDERBUFFER_RED_SIZE_OES
   GL_RENDERBUFFER_SAMPLES
   GL_RENDERBUFFER_SAMPLES_ANGLE
   GL_RENDERBUFFER_SAMPLES_APPLE
   GL_RENDERBUFFER_SAMPLES_EXT
+  GL_RENDERBUFFER_SAMPLES_IMG
   GL_RENDERBUFFER_SAMPLES_NV
   GL_RENDERBUFFER_STENCIL_SIZE
   GL_RENDERBUFFER_STENCIL_SIZE_EXT
+  GL_RENDERBUFFER_STENCIL_SIZE_OES
+  GL_RENDERBUFFER_STORAGE_SAMPLES_AMD
   GL_RENDERBUFFER_WIDTH
   GL_RENDERBUFFER_WIDTH_EXT
+  GL_RENDERBUFFER_WIDTH_OES
   GL_RENDERER
   GL_RENDER_DIRECT_TO_FRAMEBUFFER_QCOM
   GL_RENDER_GPU_MASK_NV
@@ -12111,6 +13191,7 @@ our @gl_constants = qw(
   GL_REPLACE_OLDEST_SUN
   GL_REPLACE_VALUE_AMD
   GL_REPLICATE_BORDER
+  GL_REPRESENTATIVE_FRAGMENT_TEST_NV
   GL_REQUIRED_TEXTURE_IMAGE_UNITS_OES
   GL_RESAMPLE_AVERAGE_OML
   GL_RESAMPLE_DECIMATE_OML
@@ -12123,6 +13204,7 @@ our @gl_constants = qw(
   GL_RESCALE_NORMAL_EXT
   GL_RESET_NOTIFICATION_STRATEGY
   GL_RESET_NOTIFICATION_STRATEGY_ARB
+  GL_RESET_NOTIFICATION_STRATEGY_EXT
   GL_RESTART_PATH_NV
   GL_RESTART_SUN
   GL_RETAINED_APPLE
@@ -12179,8 +13261,10 @@ our @gl_constants = qw(
   GL_RGB4_S3TC
   GL_RGB5
   GL_RGB565
+  GL_RGB565_OES
   GL_RGB5_A1
   GL_RGB5_A1_EXT
+  GL_RGB5_A1_OES
   GL_RGB5_EXT
   GL_RGB8
   GL_RGB8I
@@ -12188,6 +13272,7 @@ our @gl_constants = qw(
   GL_RGB8UI
   GL_RGB8UI_EXT
   GL_RGB8_EXT
+  GL_RGB8_OES
   GL_RGB8_SNORM
   GL_RGB9_E5
   GL_RGB9_E5_APPLE
@@ -12220,6 +13305,7 @@ our @gl_constants = qw(
   GL_RGBA4
   GL_RGBA4_DXT5_S3TC
   GL_RGBA4_EXT
+  GL_RGBA4_OES
   GL_RGBA4_S3TC
   GL_RGBA8
   GL_RGBA8I
@@ -12291,6 +13377,7 @@ our @gl_constants = qw(
   GL_SAMPLER_2D_ARRAY_SHADOW_NV
   GL_SAMPLER_2D_MULTISAMPLE
   GL_SAMPLER_2D_MULTISAMPLE_ARRAY
+  GL_SAMPLER_2D_MULTISAMPLE_ARRAY_OES
   GL_SAMPLER_2D_RECT
   GL_SAMPLER_2D_RECT_ARB
   GL_SAMPLER_2D_RECT_SHADOW
@@ -12304,14 +13391,17 @@ our @gl_constants = qw(
   GL_SAMPLER_BUFFER
   GL_SAMPLER_BUFFER_AMD
   GL_SAMPLER_BUFFER_EXT
+  GL_SAMPLER_BUFFER_OES
   GL_SAMPLER_CUBE
   GL_SAMPLER_CUBE_ARB
   GL_SAMPLER_CUBE_MAP_ARRAY
   GL_SAMPLER_CUBE_MAP_ARRAY_ARB
   GL_SAMPLER_CUBE_MAP_ARRAY_EXT
+  GL_SAMPLER_CUBE_MAP_ARRAY_OES
   GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW
   GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW_ARB
   GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW_EXT
+  GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW_OES
   GL_SAMPLER_CUBE_SHADOW
   GL_SAMPLER_CUBE_SHADOW_EXT
   GL_SAMPLER_CUBE_SHADOW_NV
@@ -12371,6 +13461,7 @@ our @gl_constants = qw(
   GL_SAMPLE_POSITION_NV
   GL_SAMPLE_SHADING
   GL_SAMPLE_SHADING_ARB
+  GL_SAMPLE_SHADING_OES
   GL_SATURATE_BIT_ATI
   GL_SCALAR_EXT
   GL_SCALEBIAS_HINT_SGIX
@@ -12381,8 +13472,10 @@ our @gl_constants = qw(
   GL_SCALE_BY_TWO_NV
   GL_SCISSOR_BIT
   GL_SCISSOR_BOX
+  GL_SCISSOR_BOX_EXCLUSIVE_NV
   GL_SCISSOR_COMMAND_NV
   GL_SCISSOR_TEST
+  GL_SCISSOR_TEST_EXCLUSIVE_NV
   GL_SCREEN_COORDINATES_REND
   GL_SCREEN_KHR
   GL_SCREEN_NV
@@ -12411,6 +13504,9 @@ our @gl_constants = qw(
   GL_SELECTED_TEXTURE_TRANSFORM_SGIS
   GL_SELECTION_BUFFER_POINTER
   GL_SELECTION_BUFFER_SIZE
+  GL_SEMAPHORE_TYPE_BINARY_NV
+  GL_SEMAPHORE_TYPE_NV
+  GL_SEMAPHORE_TYPE_TIMELINE_NV
   GL_SEPARABLE_2D
   GL_SEPARABLE_2D_EXT
   GL_SEPARATE_ATTRIBS
@@ -12420,12 +13516,23 @@ our @gl_constants = qw(
   GL_SEPARATE_SPECULAR_COLOR_EXT
   GL_SET
   GL_SET_AMD
+  GL_SGX_BINARY_IMG
+  GL_SGX_PROGRAM_BINARY_IMG
   GL_SHADER
+  GL_SHADER_BINARY_DMP
   GL_SHADER_BINARY_FORMATS
   GL_SHADER_BINARY_FORMAT_SPIR_V
   GL_SHADER_BINARY_FORMAT_SPIR_V_ARB
+  GL_SHADER_BINARY_VIV
   GL_SHADER_COMPILER
   GL_SHADER_CONSISTENT_NV
+  GL_SHADER_CORE_ACTIVE_COUNT_ARM
+  GL_SHADER_CORE_COUNT_ARM
+  GL_SHADER_CORE_FMA_RATE_ARM
+  GL_SHADER_CORE_MAX_WARP_COUNT_ARM
+  GL_SHADER_CORE_PIXEL_RATE_ARM
+  GL_SHADER_CORE_PRESENT_MASK_ARM
+  GL_SHADER_CORE_TEXEL_RATE_ARM
   GL_SHADER_IMAGE_ACCESS_BARRIER_BIT
   GL_SHADER_IMAGE_ACCESS_BARRIER_BIT_EXT
   GL_SHADER_IMAGE_ATOMIC
@@ -12448,6 +13555,47 @@ our @gl_constants = qw(
   GL_SHADE_MODEL
   GL_SHADING_LANGUAGE_VERSION
   GL_SHADING_LANGUAGE_VERSION_ARB
+  GL_SHADING_RATE_16_INVOCATIONS_PER_PIXEL_NV
+  GL_SHADING_RATE_1X1_PIXELS_EXT
+  GL_SHADING_RATE_1X1_PIXELS_QCOM
+  GL_SHADING_RATE_1X2_PIXELS_EXT
+  GL_SHADING_RATE_1X2_PIXELS_QCOM
+  GL_SHADING_RATE_1X4_PIXELS_EXT
+  GL_SHADING_RATE_1_INVOCATION_PER_1X2_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_2X1_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_2X2_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_2X4_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_4X2_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_4X4_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_PIXEL_NV
+  GL_SHADING_RATE_2X1_PIXELS_EXT
+  GL_SHADING_RATE_2X1_PIXELS_QCOM
+  GL_SHADING_RATE_2X2_PIXELS_EXT
+  GL_SHADING_RATE_2X2_PIXELS_QCOM
+  GL_SHADING_RATE_2X4_PIXELS_EXT
+  GL_SHADING_RATE_2_INVOCATIONS_PER_PIXEL_NV
+  GL_SHADING_RATE_4X1_PIXELS_EXT
+  GL_SHADING_RATE_4X2_PIXELS_EXT
+  GL_SHADING_RATE_4X2_PIXELS_QCOM
+  GL_SHADING_RATE_4X4_PIXELS_EXT
+  GL_SHADING_RATE_4X4_PIXELS_QCOM
+  GL_SHADING_RATE_4_INVOCATIONS_PER_PIXEL_NV
+  GL_SHADING_RATE_8_INVOCATIONS_PER_PIXEL_NV
+  GL_SHADING_RATE_ATTACHMENT_EXT
+  GL_SHADING_RATE_EXT
+  GL_SHADING_RATE_IMAGE_BINDING_NV
+  GL_SHADING_RATE_IMAGE_NV
+  GL_SHADING_RATE_IMAGE_PALETTE_COUNT_NV
+  GL_SHADING_RATE_IMAGE_PALETTE_SIZE_NV
+  GL_SHADING_RATE_IMAGE_PER_PRIMITIVE_NV
+  GL_SHADING_RATE_IMAGE_TEXEL_HEIGHT_NV
+  GL_SHADING_RATE_IMAGE_TEXEL_WIDTH_NV
+  GL_SHADING_RATE_NO_INVOCATIONS_NV
+  GL_SHADING_RATE_PRESERVE_ASPECT_RATIO_QCOM
+  GL_SHADING_RATE_QCOM
+  GL_SHADING_RATE_SAMPLE_ORDER_DEFAULT_NV
+  GL_SHADING_RATE_SAMPLE_ORDER_PIXEL_MAJOR_NV
+  GL_SHADING_RATE_SAMPLE_ORDER_SAMPLE_MAJOR_NV
   GL_SHADOW_AMBIENT_SGIX
   GL_SHADOW_ATTENUATION_EXT
   GL_SHARED_EDGE_NV
@@ -12502,6 +13650,8 @@ our @gl_constants = qw(
   GL_SLUMINANCE_NV
   GL_SMALL_CCW_ARC_TO_NV
   GL_SMALL_CW_ARC_TO_NV
+  GL_SMAPHS30_PROGRAM_BINARY_DMP
+  GL_SMAPHS_PROGRAM_BINARY_DMP
   GL_SMOOTH
   GL_SMOOTH_CUBIC_CURVE_TO_NV
   GL_SMOOTH_LINE_WIDTH_GRANULARITY
@@ -12598,6 +13748,7 @@ our @gl_constants = qw(
   GL_STENCIL
   GL_STENCIL_ATTACHMENT
   GL_STENCIL_ATTACHMENT_EXT
+  GL_STENCIL_ATTACHMENT_OES
   GL_STENCIL_BACK_FAIL
   GL_STENCIL_BACK_FAIL_ATI
   GL_STENCIL_BACK_FUNC
@@ -12632,10 +13783,13 @@ our @gl_constants = qw(
   GL_STENCIL_INDEX16
   GL_STENCIL_INDEX16_EXT
   GL_STENCIL_INDEX1_EXT
+  GL_STENCIL_INDEX1_OES
   GL_STENCIL_INDEX4
   GL_STENCIL_INDEX4_EXT
+  GL_STENCIL_INDEX4_OES
   GL_STENCIL_INDEX8
   GL_STENCIL_INDEX8_EXT
+  GL_STENCIL_INDEX8_OES
   GL_STENCIL_OP_VALUE_AMD
   GL_STENCIL_PASS_DEPTH_FAIL
   GL_STENCIL_PASS_DEPTH_PASS
@@ -12669,6 +13823,19 @@ our @gl_constants = qw(
   GL_STRICT_DEPTHFUNC_HINT_PGI
   GL_STRICT_LIGHTING_HINT_PGI
   GL_STRICT_SCISSOR_HINT_PGI
+  GL_SUBGROUP_FEATURE_ARITHMETIC_BIT_KHR
+  GL_SUBGROUP_FEATURE_BALLOT_BIT_KHR
+  GL_SUBGROUP_FEATURE_BASIC_BIT_KHR
+  GL_SUBGROUP_FEATURE_CLUSTERED_BIT_KHR
+  GL_SUBGROUP_FEATURE_PARTITIONED_BIT_NV
+  GL_SUBGROUP_FEATURE_QUAD_BIT_KHR
+  GL_SUBGROUP_FEATURE_SHUFFLE_BIT_KHR
+  GL_SUBGROUP_FEATURE_SHUFFLE_RELATIVE_BIT_KHR
+  GL_SUBGROUP_FEATURE_VOTE_BIT_KHR
+  GL_SUBGROUP_QUAD_ALL_STAGES_KHR
+  GL_SUBGROUP_SIZE_KHR
+  GL_SUBGROUP_SUPPORTED_FEATURES_KHR
+  GL_SUBGROUP_SUPPORTED_STAGES_KHR
   GL_SUBPIXEL_BITS
   GL_SUBPIXEL_PRECISION_BIAS_X_BITS_NV
   GL_SUBPIXEL_PRECISION_BIAS_Y_BITS_NV
@@ -12679,6 +13846,22 @@ our @gl_constants = qw(
   GL_SUCCESS_NV
   GL_SUPERSAMPLE_SCALE_X_NV
   GL_SUPERSAMPLE_SCALE_Y_NV
+  GL_SUPPORTED_MULTISAMPLE_MODES_AMD
+  GL_SURFACE_COMPRESSION_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_10BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_11BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_12BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_1BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_2BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_3BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_4BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_5BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_6BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_7BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_8BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_9BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_DEFAULT_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_NONE_EXT
   GL_SURFACE_MAPPED_NV
   GL_SURFACE_REGISTERED_NV
   GL_SURFACE_STATE_NV
@@ -12719,14 +13902,31 @@ our @gl_constants = qw(
   GL_TANGENT_ARRAY_STRIDE_EXT
   GL_TANGENT_ARRAY_TYPE_EXT
   GL_TANGENT_SPACE_SGIX
+  GL_TASK_SHADER_BIT_EXT
+  GL_TASK_SHADER_BIT_NV
+  GL_TASK_SHADER_EXT
+  GL_TASK_SHADER_INVOCATIONS_EXT
+  GL_TASK_SHADER_NV
+  GL_TASK_SUBROUTINE_EXT
+  GL_TASK_SUBROUTINE_NV
+  GL_TASK_SUBROUTINE_UNIFORM_EXT
+  GL_TASK_SUBROUTINE_UNIFORM_NV
+  GL_TASK_WORK_GROUP_SIZE_EXT
+  GL_TASK_WORK_GROUP_SIZE_NV
   GL_TERMINATE_SEQUENCE_COMMAND_NV
   GL_TESSELLATION_FACTOR_AMD
   GL_TESSELLATION_MODE_AMD
   GL_TESS_CONTROL_OUTPUT_VERTICES
+  GL_TESS_CONTROL_OUTPUT_VERTICES_EXT
+  GL_TESS_CONTROL_OUTPUT_VERTICES_OES
   GL_TESS_CONTROL_PROGRAM_NV
   GL_TESS_CONTROL_PROGRAM_PARAMETER_BUFFER_NV
   GL_TESS_CONTROL_SHADER
   GL_TESS_CONTROL_SHADER_BIT
+  GL_TESS_CONTROL_SHADER_BIT_EXT
+  GL_TESS_CONTROL_SHADER_BIT_OES
+  GL_TESS_CONTROL_SHADER_EXT
+  GL_TESS_CONTROL_SHADER_OES
   GL_TESS_CONTROL_SHADER_PATCHES
   GL_TESS_CONTROL_SHADER_PATCHES_ARB
   GL_TESS_CONTROL_SUBROUTINE
@@ -12736,15 +13936,27 @@ our @gl_constants = qw(
   GL_TESS_EVALUATION_PROGRAM_PARAMETER_BUFFER_NV
   GL_TESS_EVALUATION_SHADER
   GL_TESS_EVALUATION_SHADER_BIT
+  GL_TESS_EVALUATION_SHADER_BIT_EXT
+  GL_TESS_EVALUATION_SHADER_BIT_OES
+  GL_TESS_EVALUATION_SHADER_EXT
   GL_TESS_EVALUATION_SHADER_INVOCATIONS
   GL_TESS_EVALUATION_SHADER_INVOCATIONS_ARB
+  GL_TESS_EVALUATION_SHADER_OES
   GL_TESS_EVALUATION_SUBROUTINE
   GL_TESS_EVALUATION_SUBROUTINE_UNIFORM
   GL_TESS_EVALUATION_TEXTURE
   GL_TESS_GEN_MODE
+  GL_TESS_GEN_MODE_EXT
+  GL_TESS_GEN_MODE_OES
   GL_TESS_GEN_POINT_MODE
+  GL_TESS_GEN_POINT_MODE_EXT
+  GL_TESS_GEN_POINT_MODE_OES
   GL_TESS_GEN_SPACING
+  GL_TESS_GEN_SPACING_EXT
+  GL_TESS_GEN_SPACING_OES
   GL_TESS_GEN_VERTEX_ORDER
+  GL_TESS_GEN_VERTEX_ORDER_EXT
+  GL_TESS_GEN_VERTEX_ORDER_OES
   GL_TEXCOORD1_BIT_PGI
   GL_TEXCOORD2_BIT_PGI
   GL_TEXCOORD3_BIT_PGI
@@ -12831,11 +14043,14 @@ our @gl_constants = qw(
   GL_TEXTURE_2D_BINDING_EXT
   GL_TEXTURE_2D_MULTISAMPLE
   GL_TEXTURE_2D_MULTISAMPLE_ARRAY
+  GL_TEXTURE_2D_MULTISAMPLE_ARRAY_OES
   GL_TEXTURE_2D_STACK_BINDING_MESAX
   GL_TEXTURE_2D_STACK_MESAX
   GL_TEXTURE_3D
   GL_TEXTURE_3D_BINDING_EXT
   GL_TEXTURE_3D_EXT
+  GL_TEXTURE_3D_OES
+  GL_TEXTURE_ALPHA_MODULATE_IMG
   GL_TEXTURE_ALPHA_SIZE
   GL_TEXTURE_ALPHA_SIZE_EXT
   GL_TEXTURE_ALPHA_TYPE
@@ -12853,16 +14068,21 @@ our @gl_constants = qw(
   GL_TEXTURE_BINDING_2D_ARRAY_NV
   GL_TEXTURE_BINDING_2D_MULTISAMPLE
   GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY
+  GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY_OES
   GL_TEXTURE_BINDING_3D
+  GL_TEXTURE_BINDING_3D_OES
   GL_TEXTURE_BINDING_BUFFER
   GL_TEXTURE_BINDING_BUFFER_ARB
   GL_TEXTURE_BINDING_BUFFER_EXT
+  GL_TEXTURE_BINDING_BUFFER_OES
   GL_TEXTURE_BINDING_CUBE_MAP
   GL_TEXTURE_BINDING_CUBE_MAP_ARB
   GL_TEXTURE_BINDING_CUBE_MAP_ARRAY
   GL_TEXTURE_BINDING_CUBE_MAP_ARRAY_ARB
   GL_TEXTURE_BINDING_CUBE_MAP_ARRAY_EXT
+  GL_TEXTURE_BINDING_CUBE_MAP_ARRAY_OES
   GL_TEXTURE_BINDING_CUBE_MAP_EXT
+  GL_TEXTURE_BINDING_CUBE_MAP_OES
   GL_TEXTURE_BINDING_EXTERNAL_OES
   GL_TEXTURE_BINDING_RECTANGLE
   GL_TEXTURE_BINDING_RECTANGLE_ARB
@@ -12876,21 +14096,34 @@ our @gl_constants = qw(
   GL_TEXTURE_BLUE_TYPE_ARB
   GL_TEXTURE_BORDER
   GL_TEXTURE_BORDER_COLOR
+  GL_TEXTURE_BORDER_COLOR_EXT
   GL_TEXTURE_BORDER_COLOR_NV
+  GL_TEXTURE_BORDER_COLOR_OES
   GL_TEXTURE_BORDER_VALUES_NV
   GL_TEXTURE_BUFFER
   GL_TEXTURE_BUFFER_ARB
   GL_TEXTURE_BUFFER_BINDING
+  GL_TEXTURE_BUFFER_BINDING_EXT
+  GL_TEXTURE_BUFFER_BINDING_OES
   GL_TEXTURE_BUFFER_DATA_STORE_BINDING
   GL_TEXTURE_BUFFER_DATA_STORE_BINDING_ARB
   GL_TEXTURE_BUFFER_DATA_STORE_BINDING_EXT
+  GL_TEXTURE_BUFFER_DATA_STORE_BINDING_OES
   GL_TEXTURE_BUFFER_EXT
   GL_TEXTURE_BUFFER_FORMAT
   GL_TEXTURE_BUFFER_FORMAT_ARB
   GL_TEXTURE_BUFFER_FORMAT_EXT
+  GL_TEXTURE_BUFFER_OES
   GL_TEXTURE_BUFFER_OFFSET
   GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT
+  GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT_EXT
+  GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT_OES
+  GL_TEXTURE_BUFFER_OFFSET_EXT
+  GL_TEXTURE_BUFFER_OFFSET_OES
   GL_TEXTURE_BUFFER_SIZE
+  GL_TEXTURE_BUFFER_SIZE_EXT
+  GL_TEXTURE_BUFFER_SIZE_OES
+  GL_TEXTURE_CBCR_DEGAMMA_QCOM
   GL_TEXTURE_COLOR_SAMPLES_NV
   GL_TEXTURE_COLOR_TABLE_SGI
   GL_TEXTURE_COMPARE_FAIL_VALUE_ARB
@@ -12934,6 +14167,7 @@ our @gl_constants = qw(
   GL_TEXTURE_COORD_NV
   GL_TEXTURE_COORD_SET_INTERLEAVE_FACTOR_SGIS
   GL_TEXTURE_COVERAGE_SAMPLES_NV
+  GL_TEXTURE_CROP_RECT_OES
   GL_TEXTURE_CUBE_MAP
   GL_TEXTURE_CUBE_MAP_ARB
   GL_TEXTURE_CUBE_MAP_ARRAY
@@ -12944,21 +14178,28 @@ our @gl_constants = qw(
   GL_TEXTURE_CUBE_MAP_NEGATIVE_X
   GL_TEXTURE_CUBE_MAP_NEGATIVE_X_ARB
   GL_TEXTURE_CUBE_MAP_NEGATIVE_X_EXT
+  GL_TEXTURE_CUBE_MAP_NEGATIVE_X_OES
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Y
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Y_ARB
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Y_EXT
+  GL_TEXTURE_CUBE_MAP_NEGATIVE_Y_OES
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Z
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Z_ARB
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Z_EXT
+  GL_TEXTURE_CUBE_MAP_NEGATIVE_Z_OES
+  GL_TEXTURE_CUBE_MAP_OES
   GL_TEXTURE_CUBE_MAP_POSITIVE_X
   GL_TEXTURE_CUBE_MAP_POSITIVE_X_ARB
   GL_TEXTURE_CUBE_MAP_POSITIVE_X_EXT
+  GL_TEXTURE_CUBE_MAP_POSITIVE_X_OES
   GL_TEXTURE_CUBE_MAP_POSITIVE_Y
   GL_TEXTURE_CUBE_MAP_POSITIVE_Y_ARB
   GL_TEXTURE_CUBE_MAP_POSITIVE_Y_EXT
+  GL_TEXTURE_CUBE_MAP_POSITIVE_Y_OES
   GL_TEXTURE_CUBE_MAP_POSITIVE_Z
   GL_TEXTURE_CUBE_MAP_POSITIVE_Z_ARB
   GL_TEXTURE_CUBE_MAP_POSITIVE_Z_EXT
+  GL_TEXTURE_CUBE_MAP_POSITIVE_Z_OES
   GL_TEXTURE_CUBE_MAP_SEAMLESS
   GL_TEXTURE_DEFORMATION_BIT_SGIX
   GL_TEXTURE_DEPTH
@@ -12982,13 +14223,21 @@ our @gl_constants = qw(
   GL_TEXTURE_FIXED_SAMPLE_LOCATIONS
   GL_TEXTURE_FLOAT_COMPONENTS_NV
   GL_TEXTURE_FORMAT_QCOM
+  GL_TEXTURE_FORMAT_SRGB_OVERRIDE_EXT
+  GL_TEXTURE_FOVEATED_CUTOFF_DENSITY_QCOM
+  GL_TEXTURE_FOVEATED_FEATURE_BITS_QCOM
+  GL_TEXTURE_FOVEATED_FEATURE_QUERY_QCOM
+  GL_TEXTURE_FOVEATED_MIN_PIXEL_DENSITY_QCOM
+  GL_TEXTURE_FOVEATED_NUM_FOCAL_POINTS_QUERY_QCOM
   GL_TEXTURE_FREE_MEMORY_ATI
   GL_TEXTURE_GATHER
   GL_TEXTURE_GATHER_SHADOW
   GL_TEXTURE_GEN_MODE
+  GL_TEXTURE_GEN_MODE_OES
   GL_TEXTURE_GEN_Q
   GL_TEXTURE_GEN_R
   GL_TEXTURE_GEN_S
+  GL_TEXTURE_GEN_STR_OES
   GL_TEXTURE_GEN_T
   GL_TEXTURE_GEQUAL_R_SGIX
   GL_TEXTURE_GREEN_SIZE
@@ -13015,6 +14264,7 @@ our @gl_constants = qw(
   GL_TEXTURE_LIGHT_EXT
   GL_TEXTURE_LOD_BIAS
   GL_TEXTURE_LOD_BIAS_EXT
+  GL_TEXTURE_LOD_BIAS_QCOM
   GL_TEXTURE_LO_SIZE_NV
   GL_TEXTURE_LUMINANCE_SIZE
   GL_TEXTURE_LUMINANCE_SIZE_EXT
@@ -13025,6 +14275,7 @@ our @gl_constants = qw(
   GL_TEXTURE_MATERIAL_FACE_EXT
   GL_TEXTURE_MATERIAL_PARAMETER_EXT
   GL_TEXTURE_MATRIX
+  GL_TEXTURE_MATRIX_FLOAT_AS_INT_BITS_OES
   GL_TEXTURE_MAX_ANISOTROPY
   GL_TEXTURE_MAX_ANISOTROPY_EXT
   GL_TEXTURE_MAX_CLAMP_R_SGIX
@@ -13051,6 +14302,7 @@ our @gl_constants = qw(
   GL_TEXTURE_POINT_SPRITE_ATIX
   GL_TEXTURE_PRIORITY
   GL_TEXTURE_PRIORITY_EXT
+  GL_TEXTURE_PROTECTED_EXT
   GL_TEXTURE_RANGE_LENGTH_APPLE
   GL_TEXTURE_RANGE_POINTER_APPLE
   GL_TEXTURE_RECTANGLE
@@ -13068,6 +14320,7 @@ our @gl_constants = qw(
   GL_TEXTURE_RESIDENT
   GL_TEXTURE_RESIDENT_EXT
   GL_TEXTURE_SAMPLES
+  GL_TEXTURE_SAMPLES_IMG
   GL_TEXTURE_SHADER_NV
   GL_TEXTURE_SHADOW
   GL_TEXTURE_SHARED_SIZE
@@ -13094,6 +14347,7 @@ our @gl_constants = qw(
   GL_TEXTURE_TARGET_QCOM
   GL_TEXTURE_TILING_EXT
   GL_TEXTURE_TYPE_QCOM
+  GL_TEXTURE_UNNORMALIZED_COORDINATES_ARM
   GL_TEXTURE_UNSIGNED_REMAP_MODE_NV
   GL_TEXTURE_UPDATE_BARRIER_BIT
   GL_TEXTURE_UPDATE_BARRIER_BIT_EXT
@@ -13101,26 +14355,34 @@ our @gl_constants = qw(
   GL_TEXTURE_VIEW
   GL_TEXTURE_VIEW_MIN_LAYER
   GL_TEXTURE_VIEW_MIN_LAYER_EXT
+  GL_TEXTURE_VIEW_MIN_LAYER_OES
   GL_TEXTURE_VIEW_MIN_LEVEL
   GL_TEXTURE_VIEW_MIN_LEVEL_EXT
+  GL_TEXTURE_VIEW_MIN_LEVEL_OES
   GL_TEXTURE_VIEW_NUM_LAYERS
   GL_TEXTURE_VIEW_NUM_LAYERS_EXT
+  GL_TEXTURE_VIEW_NUM_LAYERS_OES
   GL_TEXTURE_VIEW_NUM_LEVELS
   GL_TEXTURE_VIEW_NUM_LEVELS_EXT
+  GL_TEXTURE_VIEW_NUM_LEVELS_OES
   GL_TEXTURE_WIDTH
   GL_TEXTURE_WIDTH_QCOM
   GL_TEXTURE_WRAP_R
   GL_TEXTURE_WRAP_R_EXT
+  GL_TEXTURE_WRAP_R_OES
   GL_TEXTURE_WRAP_S
   GL_TEXTURE_WRAP_T
+  GL_TEXTURE_Y_DEGAMMA_QCOM
   GL_TEXT_FRAGMENT_SHADER_ATI
   GL_TILING_TYPES_EXT
+  GL_TIMELINE_SEMAPHORE_VALUE_NV
   GL_TIMEOUT_EXPIRED
   GL_TIMEOUT_EXPIRED_APPLE
   GL_TIMEOUT_IGNORED
   GL_TIMEOUT_IGNORED_APPLE
   GL_TIMESTAMP
   GL_TIMESTAMP_ANGLE
+  GL_TIMESTAMP_EXT
   GL_TIME_ELAPSED
   GL_TIME_ELAPSED_ANGLE
   GL_TIME_ELAPSED_EXT
@@ -13197,6 +14459,7 @@ our @gl_constants = qw(
   GL_TRIANGLES_ADJACENCY
   GL_TRIANGLES_ADJACENCY_ARB
   GL_TRIANGLES_ADJACENCY_EXT
+  GL_TRIANGLES_ADJACENCY_OES
   GL_TRIANGLE_FAN
   GL_TRIANGLE_LIST_SUN
   GL_TRIANGLE_MESH_SUN
@@ -13204,13 +14467,18 @@ our @gl_constants = qw(
   GL_TRIANGLE_STRIP_ADJACENCY
   GL_TRIANGLE_STRIP_ADJACENCY_ARB
   GL_TRIANGLE_STRIP_ADJACENCY_EXT
+  GL_TRIANGLE_STRIP_ADJACENCY_OES
   GL_TRIANGULAR_NV
+  GL_TRP_ERROR_CONTEXT_RESET_IMG
+  GL_TRP_IMG
+  GL_TRP_UNSUPPORTED_CONTEXT_IMG
   GL_TRUE
   GL_TYPE
   GL_UNCORRELATED_NV
   GL_UNDEFINED_APPLE
   GL_UNDEFINED_VERTEX
   GL_UNDEFINED_VERTEX_EXT
+  GL_UNDEFINED_VERTEX_OES
   GL_UNIFORM
   GL_UNIFORM_ADDRESS_COMMAND_NV
   GL_UNIFORM_ARRAY_STRIDE
@@ -13227,6 +14495,10 @@ our @gl_constants = qw(
   GL_UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER
   GL_UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER
   GL_UNIFORM_BLOCK_REFERENCED_BY_GEOMETRY_SHADER
+  GL_UNIFORM_BLOCK_REFERENCED_BY_MESH_SHADER_EXT
+  GL_UNIFORM_BLOCK_REFERENCED_BY_MESH_SHADER_NV
+  GL_UNIFORM_BLOCK_REFERENCED_BY_TASK_SHADER_EXT
+  GL_UNIFORM_BLOCK_REFERENCED_BY_TASK_SHADER_NV
   GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER
   GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER
   GL_UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER
@@ -13249,6 +14521,7 @@ our @gl_constants = qw(
   GL_UNIFORM_TYPE
   GL_UNKNOWN_CONTEXT_RESET
   GL_UNKNOWN_CONTEXT_RESET_ARB
+  GL_UNKNOWN_CONTEXT_RESET_EXT
   GL_UNPACK_ALIGNMENT
   GL_UNPACK_CLIENT_STORAGE_APPLE
   GL_UNPACK_CMYK_HINT_EXT
@@ -13306,9 +14579,11 @@ our @gl_constants = qw(
   GL_UNSIGNED_INT_10F_11F_11F_REV_NV
   GL_UNSIGNED_INT_10_10_10_2
   GL_UNSIGNED_INT_10_10_10_2_EXT
+  GL_UNSIGNED_INT_10_10_10_2_OES
   GL_UNSIGNED_INT_24_8
   GL_UNSIGNED_INT_24_8_EXT
   GL_UNSIGNED_INT_24_8_NV
+  GL_UNSIGNED_INT_24_8_OES
   GL_UNSIGNED_INT_2_10_10_10_REV
   GL_UNSIGNED_INT_2_10_10_10_REV_EXT
   GL_UNSIGNED_INT_5_9_9_9_REV
@@ -13337,10 +14612,12 @@ our @gl_constants = qw(
   GL_UNSIGNED_INT_IMAGE_3D_EXT
   GL_UNSIGNED_INT_IMAGE_BUFFER
   GL_UNSIGNED_INT_IMAGE_BUFFER_EXT
+  GL_UNSIGNED_INT_IMAGE_BUFFER_OES
   GL_UNSIGNED_INT_IMAGE_CUBE
   GL_UNSIGNED_INT_IMAGE_CUBE_EXT
   GL_UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY
   GL_UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY_EXT
+  GL_UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY_OES
   GL_UNSIGNED_INT_S8_S8_8_8_NV
   GL_UNSIGNED_INT_SAMPLER_1D
   GL_UNSIGNED_INT_SAMPLER_1D_ARRAY
@@ -13352,6 +14629,7 @@ our @gl_constants = qw(
   GL_UNSIGNED_INT_SAMPLER_2D_EXT
   GL_UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE
   GL_UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE_ARRAY
+  GL_UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE_ARRAY_OES
   GL_UNSIGNED_INT_SAMPLER_2D_RECT
   GL_UNSIGNED_INT_SAMPLER_2D_RECT_EXT
   GL_UNSIGNED_INT_SAMPLER_3D
@@ -13359,11 +14637,13 @@ our @gl_constants = qw(
   GL_UNSIGNED_INT_SAMPLER_BUFFER
   GL_UNSIGNED_INT_SAMPLER_BUFFER_AMD
   GL_UNSIGNED_INT_SAMPLER_BUFFER_EXT
+  GL_UNSIGNED_INT_SAMPLER_BUFFER_OES
   GL_UNSIGNED_INT_SAMPLER_CUBE
   GL_UNSIGNED_INT_SAMPLER_CUBE_EXT
   GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY
   GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_ARB
   GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_EXT
+  GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_OES
   GL_UNSIGNED_INT_SAMPLER_RENDERBUFFER_NV
   GL_UNSIGNED_INT_VEC2
   GL_UNSIGNED_INT_VEC2_EXT
@@ -13382,6 +14662,7 @@ our @gl_constants = qw(
   GL_UNSIGNED_SHORT_4_4_4_4_EXT
   GL_UNSIGNED_SHORT_4_4_4_4_REV
   GL_UNSIGNED_SHORT_4_4_4_4_REV_EXT
+  GL_UNSIGNED_SHORT_4_4_4_4_REV_IMG
   GL_UNSIGNED_SHORT_5_5_5_1
   GL_UNSIGNED_SHORT_5_5_5_1_EXT
   GL_UNSIGNED_SHORT_5_6_5
@@ -13390,7 +14671,9 @@ our @gl_constants = qw(
   GL_UNSIGNED_SHORT_8_8_MESA
   GL_UNSIGNED_SHORT_8_8_REV_APPLE
   GL_UNSIGNED_SHORT_8_8_REV_MESA
+  GL_UPLOAD_GPU_MASK_NVX
   GL_UPPER_LEFT
+  GL_UPPER_LEFT_EXT
   GL_USE_MISSING_GLYPH_NV
   GL_UTF16_NV
   GL_UTF8_NV
@@ -13422,6 +14705,7 @@ our @gl_constants = qw(
   GL_VERTEX_ARRAY_ADDRESS_NV
   GL_VERTEX_ARRAY_BINDING
   GL_VERTEX_ARRAY_BINDING_APPLE
+  GL_VERTEX_ARRAY_BINDING_OES
   GL_VERTEX_ARRAY_BUFFER_BINDING
   GL_VERTEX_ARRAY_BUFFER_BINDING_ARB
   GL_VERTEX_ARRAY_COUNT_EXT
@@ -13641,10 +14925,16 @@ our @gl_constants = qw(
   GL_WEIGHT_ARRAY_ARB
   GL_WEIGHT_ARRAY_BUFFER_BINDING
   GL_WEIGHT_ARRAY_BUFFER_BINDING_ARB
+  GL_WEIGHT_ARRAY_BUFFER_BINDING_OES
+  GL_WEIGHT_ARRAY_OES
   GL_WEIGHT_ARRAY_POINTER_ARB
+  GL_WEIGHT_ARRAY_POINTER_OES
   GL_WEIGHT_ARRAY_SIZE_ARB
+  GL_WEIGHT_ARRAY_SIZE_OES
   GL_WEIGHT_ARRAY_STRIDE_ARB
+  GL_WEIGHT_ARRAY_STRIDE_OES
   GL_WEIGHT_ARRAY_TYPE_ARB
+  GL_WEIGHT_ARRAY_TYPE_OES
   GL_WEIGHT_SUM_UNITY_ARB
   GL_WIDE_LINE_HINT_PGI
   GL_WINDOW_RECTANGLE_EXT
@@ -13655,6 +14945,7 @@ our @gl_constants = qw(
   GL_WRITE_DISCARD_NV
   GL_WRITE_ONLY
   GL_WRITE_ONLY_ARB
+  GL_WRITE_ONLY_OES
   GL_WRITE_PIXEL_DATA_RANGE_LENGTH_NV
   GL_WRITE_PIXEL_DATA_RANGE_NV
   GL_WRITE_PIXEL_DATA_RANGE_POINTER_NV
@@ -13678,6 +14969,7 @@ our @gl_constants = qw(
   GL_ZERO
   GL_ZERO_EXT
   GL_ZERO_TO_ONE
+  GL_ZERO_TO_ONE_EXT
   GL_ZOOM_X
   GL_ZOOM_Y
   GL_Z_EXT

@@ -1,5 +1,6 @@
 - add ExtUtils::Depends support in addition to ::Config, including `use Inline with => 'OpenGL::Modern'`
 - glGet, glGet{Program,Shader}InfoLog now have POGL-like _p variants
+- update to GLEW 2.3.1
 
 0.0401 2025-05-03
 - document glpSetAutoCheckErrors (#44)

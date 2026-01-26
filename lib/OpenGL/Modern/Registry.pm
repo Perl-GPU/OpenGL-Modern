@@ -56,6 +56,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_AMD_framebuffer_multisample_advanced' => {
+    'glewImpl' => 'GLEW_AMD_framebuffer_multisample_advanced',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_AMD_framebuffer_sample_positions' => {
     'glewImpl' => 'GLEW_AMD_framebuffer_sample_positions',
     'glewtype' => 'var',
@@ -68,6 +73,11 @@ our %registry = (
   },
   'GLEW_AMD_gpu_shader_half_float' => {
     'glewImpl' => 'GLEW_AMD_gpu_shader_half_float',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_AMD_gpu_shader_half_float_fetch' => {
+    'glewImpl' => 'GLEW_AMD_gpu_shader_half_float_fetch',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -143,6 +153,11 @@ our %registry = (
   },
   'GLEW_AMD_shader_explicit_vertex_parameter' => {
     'glewImpl' => 'GLEW_AMD_shader_explicit_vertex_parameter',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_AMD_shader_image_load_store_lod' => {
+    'glewImpl' => 'GLEW_AMD_shader_image_load_store_lod',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -1276,6 +1291,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_ARM_shader_core_properties' => {
+    'glewImpl' => 'GLEW_ARM_shader_core_properties',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_ARM_shader_framebuffer_fetch' => {
     'glewImpl' => 'GLEW_ARM_shader_framebuffer_fetch',
     'glewtype' => 'var',
@@ -1283,6 +1303,11 @@ our %registry = (
   },
   'GLEW_ARM_shader_framebuffer_fetch_depth_stencil' => {
     'glewImpl' => 'GLEW_ARM_shader_framebuffer_fetch_depth_stencil',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_ARM_texture_unnormalized_coordinates' => {
+    'glewImpl' => 'GLEW_ARM_texture_unnormalized_coordinates',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -1391,13 +1416,13 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
-  'GLEW_EGL_KHR_context_flush_control' => {
-    'glewImpl' => 'GLEW_EGL_KHR_context_flush_control',
+  'GLEW_DMP_program_binary' => {
+    'glewImpl' => 'GLEW_DMP_program_binary',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
-  'GLEW_EGL_NV_robustness_video_memory_purge' => {
-    'glewImpl' => 'GLEW_EGL_NV_robustness_video_memory_purge',
+  'GLEW_DMP_shader_binary' => {
+    'glewImpl' => 'GLEW_DMP_shader_binary',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -1413,6 +1438,26 @@ our %registry = (
   },
   'GLEW_EXT_EGL_image_array' => {
     'glewImpl' => 'GLEW_EXT_EGL_image_array',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_EGL_image_external_wrap_modes' => {
+    'glewImpl' => 'GLEW_EXT_EGL_image_external_wrap_modes',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_EGL_image_storage' => {
+    'glewImpl' => 'GLEW_EXT_EGL_image_storage',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_EGL_image_storage_compression' => {
+    'glewImpl' => 'GLEW_EXT_EGL_image_storage_compression',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_EGL_sync' => {
+    'glewImpl' => 'GLEW_EXT_EGL_sync',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -1483,6 +1528,11 @@ our %registry = (
   },
   'GLEW_EXT_clear_texture' => {
     'glewImpl' => 'GLEW_EXT_clear_texture',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_clip_control' => {
+    'glewImpl' => 'GLEW_EXT_clip_control',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -1571,6 +1621,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_depth_clamp' => {
+    'glewImpl' => 'GLEW_EXT_depth_clamp',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_direct_state_access' => {
     'glewImpl' => 'GLEW_EXT_direct_state_access',
     'glewtype' => 'var',
@@ -1578,6 +1633,11 @@ our %registry = (
   },
   'GLEW_EXT_discard_framebuffer' => {
     'glewImpl' => 'GLEW_EXT_discard_framebuffer',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_disjoint_timer_query' => {
+    'glewImpl' => 'GLEW_EXT_disjoint_timer_query',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -1611,6 +1671,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_draw_transform_feedback' => {
+    'glewImpl' => 'GLEW_EXT_draw_transform_feedback',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_external_buffer' => {
     'glewImpl' => 'GLEW_EXT_external_buffer',
     'glewtype' => 'var',
@@ -1636,8 +1701,28 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_fragment_shading_rate' => {
+    'glewImpl' => 'GLEW_EXT_fragment_shading_rate',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_fragment_shading_rate_attachment' => {
+    'glewImpl' => 'GLEW_EXT_fragment_shading_rate_attachment',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_fragment_shading_rate_primitive' => {
+    'glewImpl' => 'GLEW_EXT_fragment_shading_rate_primitive',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_framebuffer_blit' => {
     'glewImpl' => 'GLEW_EXT_framebuffer_blit',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_framebuffer_blit_layers' => {
+    'glewImpl' => 'GLEW_EXT_framebuffer_blit_layers',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -1746,6 +1831,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_mesh_shader' => {
+    'glewImpl' => 'GLEW_EXT_mesh_shader',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_misc_attribute' => {
     'glewImpl' => 'GLEW_EXT_misc_attribute',
     'glewtype' => 'var',
@@ -1788,6 +1878,26 @@ our %registry = (
   },
   'GLEW_EXT_multiview_draw_buffers' => {
     'glewImpl' => 'GLEW_EXT_multiview_draw_buffers',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_multiview_tessellation_geometry_shader' => {
+    'glewImpl' => 'GLEW_EXT_multiview_tessellation_geometry_shader',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_multiview_texture_multisample' => {
+    'glewImpl' => 'GLEW_EXT_multiview_texture_multisample',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_multiview_timer_query' => {
+    'glewImpl' => 'GLEW_EXT_multiview_timer_query',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_occlusion_query_boolean' => {
+    'glewImpl' => 'GLEW_EXT_occlusion_query_boolean',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -1846,6 +1956,16 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_primitive_bounding_box' => {
+    'glewImpl' => 'GLEW_EXT_primitive_bounding_box',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_protected_textures' => {
+    'glewImpl' => 'GLEW_EXT_protected_textures',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_provoking_vertex' => {
     'glewImpl' => 'GLEW_EXT_provoking_vertex',
     'glewtype' => 'var',
@@ -1873,6 +1993,11 @@ our %registry = (
   },
   'GLEW_EXT_rescale_normal' => {
     'glewImpl' => 'GLEW_EXT_rescale_normal',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_robustness' => {
+    'glewImpl' => 'GLEW_EXT_robustness',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -1911,6 +2036,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_separate_depth_stencil' => {
+    'glewImpl' => 'GLEW_EXT_separate_depth_stencil',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_separate_shader_objects' => {
     'glewImpl' => 'GLEW_EXT_separate_shader_objects',
     'glewtype' => 'var',
@@ -1921,8 +2051,18 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_shader_clock' => {
+    'glewImpl' => 'GLEW_EXT_shader_clock',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_shader_framebuffer_fetch' => {
     'glewImpl' => 'GLEW_EXT_shader_framebuffer_fetch',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_shader_framebuffer_fetch_non_coherent' => {
+    'glewImpl' => 'GLEW_EXT_shader_framebuffer_fetch_non_coherent',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -1971,8 +2111,23 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_shader_realtime_clock' => {
+    'glewImpl' => 'GLEW_EXT_shader_realtime_clock',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_shader_samples_identical' => {
+    'glewImpl' => 'GLEW_EXT_shader_samples_identical',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_shader_texture_lod' => {
     'glewImpl' => 'GLEW_EXT_shader_texture_lod',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_shader_texture_samples' => {
+    'glewImpl' => 'GLEW_EXT_shader_texture_samples',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2001,6 +2156,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_static_vertex_array' => {
+    'glewImpl' => 'GLEW_EXT_static_vertex_array',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_stencil_clear_tag' => {
     'glewImpl' => 'GLEW_EXT_stencil_clear_tag',
     'glewtype' => 'var',
@@ -2021,6 +2181,16 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_tessellation_point_size' => {
+    'glewImpl' => 'GLEW_EXT_tessellation_point_size',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_tessellation_shader' => {
+    'glewImpl' => 'GLEW_EXT_tessellation_shader',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_texture' => {
     'glewImpl' => 'GLEW_EXT_texture',
     'glewtype' => 'var',
@@ -2033,6 +2203,16 @@ our %registry = (
   },
   'GLEW_EXT_texture_array' => {
     'glewImpl' => 'GLEW_EXT_texture_array',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_texture_border_clamp' => {
+    'glewImpl' => 'GLEW_EXT_texture_border_clamp',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_texture_buffer' => {
+    'glewImpl' => 'GLEW_EXT_texture_buffer',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2073,6 +2253,11 @@ our %registry = (
   },
   'GLEW_EXT_texture_compression_s3tc' => {
     'glewImpl' => 'GLEW_EXT_texture_compression_s3tc',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_texture_compression_s3tc_srgb' => {
+    'glewImpl' => 'GLEW_EXT_texture_compression_s3tc_srgb',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2126,6 +2311,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_texture_format_sRGB_override' => {
+    'glewImpl' => 'GLEW_EXT_texture_format_sRGB_override',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_texture_integer' => {
     'glewImpl' => 'GLEW_EXT_texture_integer',
     'glewtype' => 'var',
@@ -2141,6 +2331,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_texture_mirror_clamp_to_edge' => {
+    'glewImpl' => 'GLEW_EXT_texture_mirror_clamp_to_edge',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_texture_norm16' => {
     'glewImpl' => 'GLEW_EXT_texture_norm16',
     'glewtype' => 'var',
@@ -2153,6 +2348,11 @@ our %registry = (
   },
   'GLEW_EXT_texture_perturb_normal' => {
     'glewImpl' => 'GLEW_EXT_texture_perturb_normal',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_texture_query_lod' => {
+    'glewImpl' => 'GLEW_EXT_texture_query_lod',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2186,6 +2386,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_EXT_texture_shadow_lod' => {
+    'glewImpl' => 'GLEW_EXT_texture_shadow_lod',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_EXT_texture_shared_exponent' => {
     'glewImpl' => 'GLEW_EXT_texture_shared_exponent',
     'glewtype' => 'var',
@@ -2198,6 +2403,11 @@ our %registry = (
   },
   'GLEW_EXT_texture_storage' => {
     'glewImpl' => 'GLEW_EXT_texture_storage',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_EXT_texture_storage_compression' => {
+    'glewImpl' => 'GLEW_EXT_texture_storage_compression',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2276,6 +2486,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_FJ_shader_binary_GCCSO' => {
+    'glewImpl' => 'GLEW_FJ_shader_binary_GCCSO',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_GREMEDY_frame_terminator' => {
     'glewImpl' => 'GLEW_GREMEDY_frame_terminator',
     'glewtype' => 'var',
@@ -2303,6 +2518,16 @@ our %registry = (
   },
   'GLEW_HP_texture_lighting' => {
     'glewImpl' => 'GLEW_HP_texture_lighting',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_HUAWEI_program_binary' => {
+    'glewImpl' => 'GLEW_HUAWEI_program_binary',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_HUAWEI_shader_binary' => {
+    'glewImpl' => 'GLEW_HUAWEI_shader_binary',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2336,6 +2561,66 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_IMG_bindless_texture' => {
+    'glewImpl' => 'GLEW_IMG_bindless_texture',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_framebuffer_downsample' => {
+    'glewImpl' => 'GLEW_IMG_framebuffer_downsample',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_multisampled_render_to_texture' => {
+    'glewImpl' => 'GLEW_IMG_multisampled_render_to_texture',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_program_binary' => {
+    'glewImpl' => 'GLEW_IMG_program_binary',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_pvric_end_to_end_signature' => {
+    'glewImpl' => 'GLEW_IMG_pvric_end_to_end_signature',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_read_format' => {
+    'glewImpl' => 'GLEW_IMG_read_format',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_shader_binary' => {
+    'glewImpl' => 'GLEW_IMG_shader_binary',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_texture_compression_pvrtc' => {
+    'glewImpl' => 'GLEW_IMG_texture_compression_pvrtc',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_texture_compression_pvrtc2' => {
+    'glewImpl' => 'GLEW_IMG_texture_compression_pvrtc2',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_texture_env_enhanced_fixed_function' => {
+    'glewImpl' => 'GLEW_IMG_texture_env_enhanced_fixed_function',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_texture_filter_cubic' => {
+    'glewImpl' => 'GLEW_IMG_texture_filter_cubic',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_IMG_tile_region_protection' => {
+    'glewImpl' => 'GLEW_IMG_tile_region_protection',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_INGR_color_clamp' => {
     'glewImpl' => 'GLEW_INGR_color_clamp',
     'glewtype' => 'var',
@@ -2343,6 +2628,11 @@ our %registry = (
   },
   'GLEW_INGR_interlace_read' => {
     'glewImpl' => 'GLEW_INGR_interlace_read',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_INTEL_blackhole_render' => {
+    'glewImpl' => 'GLEW_INTEL_blackhole_render',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2373,6 +2663,11 @@ our %registry = (
   },
   'GLEW_INTEL_performance_query' => {
     'glewImpl' => 'GLEW_INTEL_performance_query',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_INTEL_shader_integer_functions2' => {
+    'glewImpl' => 'GLEW_INTEL_shader_integer_functions2',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2421,6 +2716,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_KHR_shader_subgroup' => {
+    'glewImpl' => 'GLEW_KHR_shader_subgroup',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_KHR_texture_compression_astc_hdr' => {
     'glewImpl' => 'GLEW_KHR_texture_compression_astc_hdr',
     'glewtype' => 'var',
@@ -2446,8 +2746,33 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_MESA_bgra' => {
+    'glewImpl' => 'GLEW_MESA_bgra',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_MESA_framebuffer_flip_x' => {
+    'glewImpl' => 'GLEW_MESA_framebuffer_flip_x',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_MESA_framebuffer_flip_y' => {
+    'glewImpl' => 'GLEW_MESA_framebuffer_flip_y',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_MESA_framebuffer_swap_xy' => {
+    'glewImpl' => 'GLEW_MESA_framebuffer_swap_xy',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_MESA_pack_invert' => {
     'glewImpl' => 'GLEW_MESA_pack_invert',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_MESA_program_binary_formats' => {
+    'glewImpl' => 'GLEW_MESA_program_binary_formats',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2458,6 +2783,16 @@ our %registry = (
   },
   'GLEW_MESA_shader_integer_functions' => {
     'glewImpl' => 'GLEW_MESA_shader_integer_functions',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_MESA_texture_const_bandwidth' => {
+    'glewImpl' => 'GLEW_MESA_texture_const_bandwidth',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_MESA_tile_raster_order' => {
+    'glewImpl' => 'GLEW_MESA_tile_raster_order',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2486,8 +2821,18 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_NVX_gpu_multicast2' => {
+    'glewImpl' => 'GLEW_NVX_gpu_multicast2',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_NVX_linked_gpu_multicast' => {
     'glewImpl' => 'GLEW_NVX_linked_gpu_multicast',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NVX_progress_fence' => {
+    'glewImpl' => 'GLEW_NVX_progress_fence',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2561,6 +2906,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_NV_compute_shader_derivatives' => {
+    'glewImpl' => 'GLEW_NV_compute_shader_derivatives',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_NV_conditional_render' => {
     'glewImpl' => 'GLEW_NV_conditional_render',
     'glewtype' => 'var',
@@ -2576,8 +2926,18 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_NV_conservative_raster_pre_snap' => {
+    'glewImpl' => 'GLEW_NV_conservative_raster_pre_snap',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_NV_conservative_raster_pre_snap_triangles' => {
     'glewImpl' => 'GLEW_NV_conservative_raster_pre_snap_triangles',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_conservative_raster_underestimation' => {
+    'glewImpl' => 'GLEW_NV_conservative_raster_underestimation',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2608,6 +2968,11 @@ our %registry = (
   },
   'GLEW_NV_depth_clamp' => {
     'glewImpl' => 'GLEW_NV_depth_clamp',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_depth_nonlinear' => {
+    'glewImpl' => 'GLEW_NV_depth_nonlinear',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2698,6 +3063,11 @@ our %registry = (
   },
   'GLEW_NV_fragment_program_option' => {
     'glewImpl' => 'GLEW_NV_fragment_program_option',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_fragment_shader_barycentric' => {
+    'glewImpl' => 'GLEW_NV_fragment_shader_barycentric',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2801,6 +3171,21 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_NV_memory_attachment' => {
+    'glewImpl' => 'GLEW_NV_memory_attachment',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_memory_object_sparse' => {
+    'glewImpl' => 'GLEW_NV_memory_object_sparse',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_mesh_shader' => {
+    'glewImpl' => 'GLEW_NV_mesh_shader',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_NV_multisample_coverage' => {
     'glewImpl' => 'GLEW_NV_multisample_coverage',
     'glewtype' => 'var',
@@ -2896,6 +3281,26 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_NV_primitive_shading_rate' => {
+    'glewImpl' => 'GLEW_NV_primitive_shading_rate',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_query_resource_tag' => {
+    'glewImpl' => 'GLEW_NV_query_resource_tag',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_read_buffer' => {
+    'glewImpl' => 'GLEW_NV_read_buffer',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_read_buffer_front' => {
+    'glewImpl' => 'GLEW_NV_read_buffer_front',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_NV_read_depth' => {
     'glewImpl' => 'GLEW_NV_read_depth',
     'glewtype' => 'var',
@@ -2921,6 +3326,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_NV_representative_fragment_test' => {
+    'glewImpl' => 'GLEW_NV_representative_fragment_test',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_NV_robustness_video_memory_purge' => {
     'glewImpl' => 'GLEW_NV_robustness_video_memory_purge',
     'glewtype' => 'var',
@@ -2938,6 +3348,11 @@ our %registry = (
   },
   'GLEW_NV_sample_mask_override_coverage' => {
     'glewImpl' => 'GLEW_NV_sample_mask_override_coverage',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_scissor_exclusive' => {
+    'glewImpl' => 'GLEW_NV_scissor_exclusive',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -2981,6 +3396,16 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_NV_shader_subgroup_partitioned' => {
+    'glewImpl' => 'GLEW_NV_shader_subgroup_partitioned',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_shader_texture_footprint' => {
+    'glewImpl' => 'GLEW_NV_shader_texture_footprint',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_NV_shader_thread_group' => {
     'glewImpl' => 'GLEW_NV_shader_thread_group',
     'glewtype' => 'var',
@@ -2988,6 +3413,11 @@ our %registry = (
   },
   'GLEW_NV_shader_thread_shuffle' => {
     'glewImpl' => 'GLEW_NV_shader_thread_shuffle',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_shading_rate_image' => {
+    'glewImpl' => 'GLEW_NV_shading_rate_image',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -3101,6 +3531,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_NV_timeline_semaphore' => {
+    'glewImpl' => 'GLEW_NV_timeline_semaphore',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_NV_transform_feedback' => {
     'glewImpl' => 'GLEW_NV_transform_feedback',
     'glewtype' => 'var',
@@ -3111,6 +3546,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_NV_uniform_buffer_std430_layout' => {
+    'glewImpl' => 'GLEW_NV_uniform_buffer_std430_layout',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_NV_uniform_buffer_unified_memory' => {
     'glewImpl' => 'GLEW_NV_uniform_buffer_unified_memory',
     'glewtype' => 'var',
@@ -3118,6 +3558,11 @@ our %registry = (
   },
   'GLEW_NV_vdpau_interop' => {
     'glewImpl' => 'GLEW_NV_vdpau_interop',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_NV_vdpau_interop2' => {
+    'glewImpl' => 'GLEW_NV_vdpau_interop2',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -3191,8 +3636,313 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_OES_EGL_image' => {
+    'glewImpl' => 'GLEW_OES_EGL_image',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_EGL_image_external' => {
+    'glewImpl' => 'GLEW_OES_EGL_image_external',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_EGL_image_external_essl3' => {
+    'glewImpl' => 'GLEW_OES_EGL_image_external_essl3',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_blend_equation_separate' => {
+    'glewImpl' => 'GLEW_OES_blend_equation_separate',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_blend_func_separate' => {
+    'glewImpl' => 'GLEW_OES_blend_func_separate',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_blend_subtract' => {
+    'glewImpl' => 'GLEW_OES_blend_subtract',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_OES_byte_coordinates' => {
     'glewImpl' => 'GLEW_OES_byte_coordinates',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_compressed_ETC1_RGB8_texture' => {
+    'glewImpl' => 'GLEW_OES_compressed_ETC1_RGB8_texture',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_compressed_paletted_texture' => {
+    'glewImpl' => 'GLEW_OES_compressed_paletted_texture',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_copy_image' => {
+    'glewImpl' => 'GLEW_OES_copy_image',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_depth24' => {
+    'glewImpl' => 'GLEW_OES_depth24',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_depth32' => {
+    'glewImpl' => 'GLEW_OES_depth32',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_depth_texture' => {
+    'glewImpl' => 'GLEW_OES_depth_texture',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_depth_texture_cube_map' => {
+    'glewImpl' => 'GLEW_OES_depth_texture_cube_map',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_draw_buffers_indexed' => {
+    'glewImpl' => 'GLEW_OES_draw_buffers_indexed',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_draw_texture' => {
+    'glewImpl' => 'GLEW_OES_draw_texture',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_element_index_uint' => {
+    'glewImpl' => 'GLEW_OES_element_index_uint',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_extended_matrix_palette' => {
+    'glewImpl' => 'GLEW_OES_extended_matrix_palette',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_fbo_render_mipmap' => {
+    'glewImpl' => 'GLEW_OES_fbo_render_mipmap',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_fragment_precision_high' => {
+    'glewImpl' => 'GLEW_OES_fragment_precision_high',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_framebuffer_object' => {
+    'glewImpl' => 'GLEW_OES_framebuffer_object',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_geometry_point_size' => {
+    'glewImpl' => 'GLEW_OES_geometry_point_size',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_geometry_shader' => {
+    'glewImpl' => 'GLEW_OES_geometry_shader',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_get_program_binary' => {
+    'glewImpl' => 'GLEW_OES_get_program_binary',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_gpu_shader5' => {
+    'glewImpl' => 'GLEW_OES_gpu_shader5',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_mapbuffer' => {
+    'glewImpl' => 'GLEW_OES_mapbuffer',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_matrix_get' => {
+    'glewImpl' => 'GLEW_OES_matrix_get',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_matrix_palette' => {
+    'glewImpl' => 'GLEW_OES_matrix_palette',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_packed_depth_stencil' => {
+    'glewImpl' => 'GLEW_OES_packed_depth_stencil',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_point_size_array' => {
+    'glewImpl' => 'GLEW_OES_point_size_array',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_point_sprite' => {
+    'glewImpl' => 'GLEW_OES_point_sprite',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_read_format' => {
+    'glewImpl' => 'GLEW_OES_read_format',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_required_internalformat' => {
+    'glewImpl' => 'GLEW_OES_required_internalformat',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_rgb8_rgba8' => {
+    'glewImpl' => 'GLEW_OES_rgb8_rgba8',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_sample_shading' => {
+    'glewImpl' => 'GLEW_OES_sample_shading',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_sample_variables' => {
+    'glewImpl' => 'GLEW_OES_sample_variables',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_shader_image_atomic' => {
+    'glewImpl' => 'GLEW_OES_shader_image_atomic',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_shader_io_blocks' => {
+    'glewImpl' => 'GLEW_OES_shader_io_blocks',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_shader_multisample_interpolation' => {
+    'glewImpl' => 'GLEW_OES_shader_multisample_interpolation',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_single_precision' => {
+    'glewImpl' => 'GLEW_OES_single_precision',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_standard_derivatives' => {
+    'glewImpl' => 'GLEW_OES_standard_derivatives',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_stencil1' => {
+    'glewImpl' => 'GLEW_OES_stencil1',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_stencil4' => {
+    'glewImpl' => 'GLEW_OES_stencil4',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_stencil8' => {
+    'glewImpl' => 'GLEW_OES_stencil8',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_surfaceless_context' => {
+    'glewImpl' => 'GLEW_OES_surfaceless_context',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_tessellation_point_size' => {
+    'glewImpl' => 'GLEW_OES_tessellation_point_size',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_tessellation_shader' => {
+    'glewImpl' => 'GLEW_OES_tessellation_shader',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_3D' => {
+    'glewImpl' => 'GLEW_OES_texture_3D',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_border_clamp' => {
+    'glewImpl' => 'GLEW_OES_texture_border_clamp',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_buffer' => {
+    'glewImpl' => 'GLEW_OES_texture_buffer',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_compression_astc' => {
+    'glewImpl' => 'GLEW_OES_texture_compression_astc',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_cube_map' => {
+    'glewImpl' => 'GLEW_OES_texture_cube_map',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_cube_map_array' => {
+    'glewImpl' => 'GLEW_OES_texture_cube_map_array',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_env_crossbar' => {
+    'glewImpl' => 'GLEW_OES_texture_env_crossbar',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_mirrored_repeat' => {
+    'glewImpl' => 'GLEW_OES_texture_mirrored_repeat',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_npot' => {
+    'glewImpl' => 'GLEW_OES_texture_npot',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_stencil8' => {
+    'glewImpl' => 'GLEW_OES_texture_stencil8',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_storage_multisample_2d_array' => {
+    'glewImpl' => 'GLEW_OES_texture_storage_multisample_2d_array',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_texture_view' => {
+    'glewImpl' => 'GLEW_OES_texture_view',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_vertex_array_object' => {
+    'glewImpl' => 'GLEW_OES_vertex_array_object',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_vertex_half_float' => {
+    'glewImpl' => 'GLEW_OES_vertex_half_float',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_OES_vertex_type_10_10_10_2' => {
+    'glewImpl' => 'GLEW_OES_vertex_type_10_10_10_2',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -3236,6 +3986,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_QCOM_YUV_texture_gather' => {
+    'glewImpl' => 'GLEW_QCOM_YUV_texture_gather',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_QCOM_alpha_test' => {
     'glewImpl' => 'GLEW_QCOM_alpha_test',
     'glewtype' => 'var',
@@ -3261,8 +4016,18 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_QCOM_frame_extrapolation' => {
+    'glewImpl' => 'GLEW_QCOM_frame_extrapolation',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_QCOM_framebuffer_foveated' => {
     'glewImpl' => 'GLEW_QCOM_framebuffer_foveated',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_QCOM_motion_estimation' => {
+    'glewImpl' => 'GLEW_QCOM_motion_estimation',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -3271,8 +4036,48 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_QCOM_render_sRGB_R8_RG8' => {
+    'glewImpl' => 'GLEW_QCOM_render_sRGB_R8_RG8',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_QCOM_render_shared_exponent' => {
+    'glewImpl' => 'GLEW_QCOM_render_shared_exponent',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_QCOM_shader_framebuffer_fetch_noncoherent' => {
     'glewImpl' => 'GLEW_QCOM_shader_framebuffer_fetch_noncoherent',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_QCOM_shader_framebuffer_fetch_rate' => {
+    'glewImpl' => 'GLEW_QCOM_shader_framebuffer_fetch_rate',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_QCOM_shading_rate' => {
+    'glewImpl' => 'GLEW_QCOM_shading_rate',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_QCOM_texture_foveated' => {
+    'glewImpl' => 'GLEW_QCOM_texture_foveated',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_QCOM_texture_foveated2' => {
+    'glewImpl' => 'GLEW_QCOM_texture_foveated2',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_QCOM_texture_foveated_subsampled_layout' => {
+    'glewImpl' => 'GLEW_QCOM_texture_foveated_subsampled_layout',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_QCOM_texture_lod_bias' => {
+    'glewImpl' => 'GLEW_QCOM_texture_lod_bias',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -3283,6 +4088,11 @@ our %registry = (
   },
   'GLEW_QCOM_writeonly_rendering' => {
     'glewImpl' => 'GLEW_QCOM_writeonly_rendering',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
+  'GLEW_QCOM_ycbcr_degamma' => {
+    'glewImpl' => 'GLEW_QCOM_ycbcr_degamma',
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
@@ -3996,6 +4806,11 @@ our %registry = (
     'glewtype' => 'var',
     'restype' => 'GLboolean'
   },
+  'GLEW_VIV_shader_binary' => {
+    'glewImpl' => 'GLEW_VIV_shader_binary',
+    'glewtype' => 'var',
+    'restype' => 'GLboolean'
+  },
   'GLEW_WIN_phong_shading' => {
     'glewImpl' => 'GLEW_WIN_phong_shading',
     'glewtype' => 'var',
@@ -4435,6 +5250,24 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glAlphaToCoverageDitherControlNV' => {
+    'argdata' => [
+      [
+        'mode',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_NV_alpha_to_coverage_dither_control',
+    'glewImpl' => '__glewAlphaToCoverageDitherControlNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glApplyFramebufferAttachmentCMAAINTEL' => {
+    'feature' => 'GL_INTEL_framebuffer_CMAA',
+    'glewImpl' => '__glewApplyFramebufferAttachmentCMAAINTEL',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glApplyTextureEXT' => {
     'argdata' => [
       [
@@ -4602,6 +5435,186 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glAsyncCopyBufferSubDataNVX' => {
+    'argdata' => [
+      [
+        'waitSemaphoreCount',
+        'GLsizei '
+      ],
+      [
+        'waitSemaphoreArray',
+        'const GLuint* ',
+        'waitSemaphoreCount'
+      ],
+      [
+        'fenceValueArray',
+        'const GLuint64 *',
+        'waitSemaphoreCount'
+      ],
+      [
+        'readGpu',
+        'GLuint '
+      ],
+      [
+        'writeGpuMask',
+        'GLbitfield '
+      ],
+      [
+        'readBuffer',
+        'GLuint '
+      ],
+      [
+        'writeBuffer',
+        'GLuint '
+      ],
+      [
+        'readOffset',
+        'GLintptr '
+      ],
+      [
+        'writeOffset',
+        'GLintptr '
+      ],
+      [
+        'size',
+        'GLsizeiptr '
+      ],
+      [
+        'signalSemaphoreCount',
+        'GLsizei '
+      ],
+      [
+        'signalSemaphoreArray',
+        'const GLuint *',
+        'signalSemaphoreCount'
+      ],
+      [
+        'signalValueArray',
+        'const GLuint64 *',
+        'signalSemaphoreCount'
+      ]
+    ],
+    'feature' => 'GL_NVX_gpu_multicast2',
+    'glewImpl' => '__glewAsyncCopyBufferSubDataNVX',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1,
+      2,
+      11,
+      12
+    ],
+    'restype' => 'GLsync'
+  },
+  'glAsyncCopyImageSubDataNVX' => {
+    'argdata' => [
+      [
+        'waitSemaphoreCount',
+        'GLsizei '
+      ],
+      [
+        'waitSemaphoreArray',
+        'const GLuint* ',
+        'waitSemaphoreCount'
+      ],
+      [
+        'waitValueArray',
+        'const GLuint64 *',
+        'waitSemaphoreCount'
+      ],
+      [
+        'srcGpu',
+        'GLuint '
+      ],
+      [
+        'dstGpuMask',
+        'GLbitfield '
+      ],
+      [
+        'srcName',
+        'GLuint '
+      ],
+      [
+        'srcTarget',
+        'GLenum '
+      ],
+      [
+        'srcLevel',
+        'GLint '
+      ],
+      [
+        'srcX',
+        'GLint '
+      ],
+      [
+        'srcY',
+        'GLint '
+      ],
+      [
+        'srcZ',
+        'GLint '
+      ],
+      [
+        'dstName',
+        'GLuint '
+      ],
+      [
+        'dstTarget',
+        'GLenum '
+      ],
+      [
+        'dstLevel',
+        'GLint '
+      ],
+      [
+        'dstX',
+        'GLint '
+      ],
+      [
+        'dstY',
+        'GLint '
+      ],
+      [
+        'dstZ',
+        'GLint '
+      ],
+      [
+        'srcWidth',
+        'GLsizei '
+      ],
+      [
+        'srcHeight',
+        'GLsizei '
+      ],
+      [
+        'srcDepth',
+        'GLsizei '
+      ],
+      [
+        'signalSemaphoreCount',
+        'GLsizei '
+      ],
+      [
+        'signalSemaphoreArray',
+        'const GLuint *',
+        'signalSemaphoreCount'
+      ],
+      [
+        'signalValueArray',
+        'const GLuint64 *',
+        'signalSemaphoreCount'
+      ]
+    ],
+    'feature' => 'GL_NVX_gpu_multicast2',
+    'glewImpl' => '__glewAsyncCopyImageSubDataNVX',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1,
+      2,
+      21,
+      22
+    ],
+    'restype' => 'GLuint'
+  },
   'glAsyncMarkerSGIX' => {
     'argdata' => [
       [
@@ -4756,6 +5769,24 @@ our %registry = (
     ],
     'feature' => 'GL_ANGLE_timer_query',
     'glewImpl' => '__glewBeginQueryANGLE',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glBeginQueryEXT' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'QueryTarget'
+      ],
+      [
+        'id',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_EXT_disjoint_timer_query',
+    'glewImpl' => '__glewBeginQueryEXT',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -5147,6 +6178,22 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glBindFramebufferOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'framebuffer',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewBindFramebufferOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glBindImageTexture' => {
     'argdata' => [
       [
@@ -5401,6 +6448,22 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glBindRenderbufferOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'renderbuffer',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewBindRenderbufferOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glBindSampler' => {
     'argdata' => [
       [
@@ -5444,6 +6507,18 @@ our %registry = (
     'ptr_args' => [
       2
     ],
+    'restype' => 'void'
+  },
+  'glBindShadingRateImageNV' => {
+    'argdata' => [
+      [
+        'texture',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_NV_shading_rate_image',
+    'glewImpl' => '__glewBindShadingRateImageNV',
+    'glewtype' => 'fun',
     'restype' => 'void'
   },
   'glBindTexGenParameterEXT' => {
@@ -5614,6 +6689,18 @@ our %registry = (
     ],
     'feature' => 'GL_APPLE_vertex_array_object',
     'glewImpl' => '__glewBindVertexArrayAPPLE',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glBindVertexArrayOES' => {
+    'argdata' => [
+      [
+        'array',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_vertex_array_object',
+    'glewImpl' => '__glewBindVertexArrayOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -5870,6 +6957,18 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glBlendEquationOES' => {
+    'argdata' => [
+      [
+        'mode',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_blend_subtract',
+    'glewImpl' => '__glewBlendEquationOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glBlendEquationSeparate' => {
     'aliases' => {
       'glBlendEquationSeparateEXT' => 'GL_EXT_blend_equation_separate'
@@ -5890,6 +6989,22 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewBlendEquationSeparate',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glBlendEquationSeparateOES' => {
+    'argdata' => [
+      [
+        'modeRGB',
+        'GLenum '
+      ],
+      [
+        'modeAlpha',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_blend_equation_separate',
+    'glewImpl' => '__glewBlendEquationSeparateOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -5922,6 +7037,26 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glBlendEquationSeparateiOES' => {
+    'argdata' => [
+      [
+        'buf',
+        'GLuint '
+      ],
+      [
+        'modeRGB',
+        'GLenum '
+      ],
+      [
+        'modeAlpha',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_draw_buffers_indexed',
+    'glewImpl' => '__glewBlendEquationSeparateiOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glBlendEquationi' => {
     'aliases' => {
       'glBlendEquationIndexedAMD' => 'GL_AMD_draw_buffers_blend',
@@ -5942,6 +7077,22 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_4_0',
     'glewImpl' => '__glewBlendEquationi',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glBlendEquationiOES' => {
+    'argdata' => [
+      [
+        'buf',
+        'GLuint '
+      ],
+      [
+        'mode',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_draw_buffers_indexed',
+    'glewImpl' => '__glewBlendEquationiOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -6000,6 +7151,30 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glBlendFuncSeparateOES' => {
+    'argdata' => [
+      [
+        'sfactorRGB',
+        'GLenum '
+      ],
+      [
+        'dfactorRGB',
+        'GLenum '
+      ],
+      [
+        'sfactorAlpha',
+        'GLenum '
+      ],
+      [
+        'dfactorAlpha',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_blend_func_separate',
+    'glewImpl' => '__glewBlendFuncSeparateOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glBlendFuncSeparatei' => {
     'aliases' => {
       'glBlendFuncSeparateIndexedAMD' => 'GL_AMD_draw_buffers_blend',
@@ -6041,6 +7216,34 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glBlendFuncSeparateiOES' => {
+    'argdata' => [
+      [
+        'buf',
+        'GLuint '
+      ],
+      [
+        'srcRGB',
+        'GLenum '
+      ],
+      [
+        'dstRGB',
+        'GLenum '
+      ],
+      [
+        'srcAlpha',
+        'GLenum '
+      ],
+      [
+        'dstAlpha',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_draw_buffers_indexed',
+    'glewImpl' => '__glewBlendFuncSeparateiOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glBlendFunci' => {
     'aliases' => {
       'glBlendFuncIndexedAMD' => 'GL_AMD_draw_buffers_blend',
@@ -6067,6 +7270,26 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_4_0',
     'glewImpl' => '__glewBlendFunci',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glBlendFunciOES' => {
+    'argdata' => [
+      [
+        'buf',
+        'GLuint '
+      ],
+      [
+        'src',
+        'GLenum '
+      ],
+      [
+        'dst',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_draw_buffers_indexed',
+    'glewImpl' => '__glewBlendFunciOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -6194,6 +7417,118 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glBlitFramebufferLayerEXT' => {
+    'argdata' => [
+      [
+        'srcX0',
+        'GLint '
+      ],
+      [
+        'srcY0',
+        'GLint '
+      ],
+      [
+        'srcX1',
+        'GLint '
+      ],
+      [
+        'srcY1',
+        'GLint '
+      ],
+      [
+        'srcLayer',
+        'GLint '
+      ],
+      [
+        'dstX0',
+        'GLint '
+      ],
+      [
+        'dstY0',
+        'GLint '
+      ],
+      [
+        'dstX1',
+        'GLint '
+      ],
+      [
+        'dstY1',
+        'GLint '
+      ],
+      [
+        'dstLayer',
+        'GLint '
+      ],
+      [
+        'mask',
+        'GLbitfield ',
+        undef,
+        'ClearBufferMask'
+      ],
+      [
+        'filter',
+        'GLenum ',
+        undef,
+        'BlitFramebufferFilter'
+      ]
+    ],
+    'feature' => 'GL_EXT_framebuffer_blit_layers',
+    'glewImpl' => '__glewBlitFramebufferLayerEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glBlitFramebufferLayersEXT' => {
+    'argdata' => [
+      [
+        'srcX0',
+        'GLint '
+      ],
+      [
+        'srcY0',
+        'GLint '
+      ],
+      [
+        'srcX1',
+        'GLint '
+      ],
+      [
+        'srcY1',
+        'GLint '
+      ],
+      [
+        'dstX0',
+        'GLint '
+      ],
+      [
+        'dstY0',
+        'GLint '
+      ],
+      [
+        'dstX1',
+        'GLint '
+      ],
+      [
+        'dstY1',
+        'GLint '
+      ],
+      [
+        'mask',
+        'GLbitfield ',
+        undef,
+        'ClearBufferMask'
+      ],
+      [
+        'filter',
+        'GLenum ',
+        undef,
+        'BlitFramebufferFilter'
+      ]
+    ],
+    'feature' => 'GL_EXT_framebuffer_blit_layers',
+    'glewImpl' => '__glewBlitFramebufferLayersEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glBlitNamedFramebuffer' => {
     'argdata' => [
       [
@@ -6278,6 +7613,28 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glBufferAttachMemoryNV' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'BufferTargetARB'
+      ],
+      [
+        'memory',
+        'GLuint '
+      ],
+      [
+        'offset',
+        'GLuint64 '
+      ]
+    ],
+    'feature' => 'GL_NV_memory_attachment',
+    'glewImpl' => '__glewBufferAttachMemoryNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glBufferData' => {
     'aliases' => {
       'glBufferDataARB' => 'GL_ARB_vertex_buffer_object'
@@ -6334,6 +7691,40 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_sparse_buffer',
     'glewImpl' => '__glewBufferPageCommitmentARB',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glBufferPageCommitmentMemNV' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'BufferStorageTarget'
+      ],
+      [
+        'offset',
+        'GLintptr '
+      ],
+      [
+        'size',
+        'GLsizeiptr '
+      ],
+      [
+        'memory',
+        'GLuint '
+      ],
+      [
+        'memOffset',
+        'GLuint64 '
+      ],
+      [
+        'commit',
+        'GLboolean '
+      ]
+    ],
+    'feature' => 'GL_NV_memory_object_sparse',
+    'glewImpl' => '__glewBufferPageCommitmentMemNV',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -6551,6 +7942,18 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewCheckFramebufferStatus',
+    'glewtype' => 'fun',
+    'restype' => 'GLenum'
+  },
+  'glCheckFramebufferStatusOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewCheckFramebufferStatusOES',
     'glewtype' => 'fun',
     'restype' => 'GLenum'
   },
@@ -6972,6 +8375,18 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glClearDepthfOES' => {
+    'argdata' => [
+      [
+        'depth',
+        'GLclampf '
+      ]
+    ],
+    'feature' => 'GL_OES_single_precision',
+    'glewImpl' => '__glewClearDepthfOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glClearDepthx' => {
     'argdata' => [
       [
@@ -7212,7 +8627,7 @@ our %registry = (
       ],
       [
         'value',
-        'GLfloat* ',
+        'const GLfloat* ',
         'COMPSIZE(buffer)'
       ]
     ],
@@ -7472,6 +8887,32 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glClientWaitSemaphoreui64NVX' => {
+    'argdata' => [
+      [
+        'fenceObjectCount',
+        'GLsizei '
+      ],
+      [
+        'semaphoreArray',
+        'const GLuint* ',
+        'fenceObjectCount'
+      ],
+      [
+        'fenceValueArray',
+        'const GLuint64 *',
+        'fenceObjectCount'
+      ]
+    ],
+    'feature' => 'GL_NVX_progress_fence',
+    'glewImpl' => '__glewClientWaitSemaphoreui64NVX',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1,
+      2
+    ],
+    'restype' => 'void'
+  },
   'glClientWaitSync' => {
     'aliases' => {
       'glClientWaitSyncAPPLE' => 'GL_APPLE_sync'
@@ -7499,7 +8940,7 @@ our %registry = (
   },
   'glClipControl' => {
     'aliases' => {
-      'glClipControlEXT' => undef
+      'glClipControlEXT' => 'GL_EXT_clip_control'
     },
     'argdata' => [
       [
@@ -7558,6 +8999,25 @@ our %registry = (
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewClipPlanef',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
+  'glClipPlanefOES' => {
+    'argdata' => [
+      [
+        'plane',
+        'GLenum '
+      ],
+      [
+        'equation',
+        'const GLfloat* '
+      ]
+    ],
+    'feature' => 'GL_OES_single_precision',
+    'glewImpl' => '__glewClipPlanefOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       1
@@ -8817,6 +10277,34 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glColorMaskiOES' => {
+    'argdata' => [
+      [
+        'buf',
+        'GLuint '
+      ],
+      [
+        'r',
+        'GLboolean '
+      ],
+      [
+        'g',
+        'GLboolean '
+      ],
+      [
+        'b',
+        'GLboolean '
+      ],
+      [
+        'a',
+        'GLboolean '
+      ]
+    ],
+    'feature' => 'GL_OES_draw_buffers_indexed',
+    'glewImpl' => '__glewColorMaskiOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glColorMaterial' => {
     'argdata' => [
       [
@@ -10019,6 +11507,53 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glCompressedTexImage3DOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'internalformat',
+        'GLenum '
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ],
+      [
+        'depth',
+        'GLsizei '
+      ],
+      [
+        'border',
+        'GLint '
+      ],
+      [
+        'imageSize',
+        'GLsizei '
+      ],
+      [
+        'data',
+        'const void *'
+      ]
+    ],
+    'feature' => 'GL_OES_texture_3D',
+    'glewImpl' => '__glewCompressedTexImage3DOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      8
+    ],
+    'restype' => 'void'
+  },
   'glCompressedTexSubImage1D' => {
     'aliases' => {
       'glCompressedTexSubImage1DARB' => 'GL_ARB_texture_compression'
@@ -10233,6 +11768,61 @@ our %registry = (
     ],
     'feature' => 'GL_NV_texture_array',
     'glewImpl' => '__glewCompressedTexSubImage3DNV',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      10
+    ],
+    'restype' => 'void'
+  },
+  'glCompressedTexSubImage3DOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'xoffset',
+        'GLint '
+      ],
+      [
+        'yoffset',
+        'GLint '
+      ],
+      [
+        'zoffset',
+        'GLint '
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ],
+      [
+        'depth',
+        'GLsizei '
+      ],
+      [
+        'format',
+        'GLenum '
+      ],
+      [
+        'imageSize',
+        'GLsizei '
+      ],
+      [
+        'data',
+        'const void *'
+      ]
+    ],
+    'feature' => 'GL_OES_texture_3D',
+    'glewImpl' => '__glewCompressedTexSubImage3DOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       10
@@ -11283,6 +12873,74 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glCopyImageSubDataOES' => {
+    'argdata' => [
+      [
+        'srcName',
+        'GLuint '
+      ],
+      [
+        'srcTarget',
+        'GLenum '
+      ],
+      [
+        'srcLevel',
+        'GLint '
+      ],
+      [
+        'srcX',
+        'GLint '
+      ],
+      [
+        'srcY',
+        'GLint '
+      ],
+      [
+        'srcZ',
+        'GLint '
+      ],
+      [
+        'dstName',
+        'GLuint '
+      ],
+      [
+        'dstTarget',
+        'GLenum '
+      ],
+      [
+        'dstLevel',
+        'GLint '
+      ],
+      [
+        'dstX',
+        'GLint '
+      ],
+      [
+        'dstY',
+        'GLint '
+      ],
+      [
+        'dstZ',
+        'GLint '
+      ],
+      [
+        'srcWidth',
+        'GLsizei '
+      ],
+      [
+        'srcHeight',
+        'GLsizei '
+      ],
+      [
+        'srcDepth',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_OES_copy_image',
+    'glewImpl' => '__glewCopyImageSubDataOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glCopyMultiTexImage1DEXT' => {
     'argdata' => [
       [
@@ -11851,6 +13509,50 @@ our %registry = (
     ],
     'feature' => 'GL_NV_texture_array',
     'glewImpl' => '__glewCopyTexSubImage3DNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glCopyTexSubImage3DOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'xoffset',
+        'GLint '
+      ],
+      [
+        'yoffset',
+        'GLint '
+      ],
+      [
+        'zoffset',
+        'GLint '
+      ],
+      [
+        'x',
+        'GLint '
+      ],
+      [
+        'y',
+        'GLint '
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_3D',
+    'glewImpl' => '__glewCopyTexSubImage3DOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -12536,6 +14238,12 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glCreateProgressFenceNVX' => {
+    'feature' => 'GL_NVX_progress_fence',
+    'glewImpl' => '__glewCreateProgressFenceNVX',
+    'glewtype' => 'fun',
+    'restype' => 'GLuint'
+  },
   'glCreateQueries' => {
     'argdata' => [
       [
@@ -12611,6 +14319,31 @@ our %registry = (
     },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCreateSamplers',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
+  'glCreateSemaphoresNV' => {
+    'argdata' => [
+      [
+        'n',
+        'GLsizei '
+      ],
+      [
+        'semaphores',
+        'GLuint* ',
+        'n'
+      ]
+    ],
+    'dynlang' => {
+      'CLEANUP' => 'free(semaphores);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(semaphores,n,newSVuv)',
+      'semaphores' => 'OGLM_OUT_SETUP(semaphores,n,GLuint)'
+    },
+    'feature' => 'GL_NV_timeline_semaphore',
+    'glewImpl' => '__glewCreateSemaphoresNV',
     'glewtype' => 'fun',
     'ptr_args' => [
       1
@@ -12875,6 +14608,18 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_matrix_palette',
     'glewImpl' => '__glewCurrentPaletteMatrixARB',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glCurrentPaletteMatrixOES' => {
+    'argdata' => [
+      [
+        'index',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_matrix_palette',
+    'glewImpl' => '__glewCurrentPaletteMatrixOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -13290,6 +15035,25 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glDeleteFramebuffersOES' => {
+    'argdata' => [
+      [
+        'n',
+        'GLsizei '
+      ],
+      [
+        'framebuffers',
+        'const GLuint* '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewDeleteFramebuffersOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
   'glDeleteLists' => {
     'argdata' => [
       [
@@ -13598,6 +15362,31 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glDeleteQueriesEXT' => {
+    'argdata' => [
+      [
+        'n',
+        'GLsizei '
+      ],
+      [
+        'ids',
+        'const GLuint* ',
+        'n'
+      ]
+    ],
+    'dynlang' => {
+      'CLEANUP' => 'free(ids);',
+      'ids' => 'OGLM_GET_ARGS(ids,0,GLuint,UV)',
+      'n' => 'items'
+    },
+    'feature' => 'GL_EXT_disjoint_timer_query',
+    'glewImpl' => '__glewDeleteQueriesEXT',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
   'glDeleteRenderbuffers' => {
     'aliases' => {
       'glDeleteRenderbuffersEXT' => 'GL_EXT_framebuffer_object'
@@ -13620,6 +15409,25 @@ our %registry = (
     },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewDeleteRenderbuffers',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
+  'glDeleteRenderbuffersOES' => {
+    'argdata' => [
+      [
+        'n',
+        'GLsizei '
+      ],
+      [
+        'renderbuffers',
+        'const GLuint* '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewDeleteRenderbuffersOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       1
@@ -13827,6 +15635,25 @@ our %registry = (
     },
     'feature' => 'GL_ARB_vertex_array_object',
     'glewImpl' => '__glewDeleteVertexArrays',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
+  'glDeleteVertexArraysOES' => {
+    'argdata' => [
+      [
+        'n',
+        'GLsizei '
+      ],
+      [
+        'arrays',
+        'const GLuint* '
+      ]
+    ],
+    'feature' => 'GL_OES_vertex_array_object',
+    'glewImpl' => '__glewDeleteVertexArraysOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       1
@@ -14051,6 +15878,22 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_ES2_compatibility',
     'glewImpl' => '__glewDepthRangef',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glDepthRangefOES' => {
+    'argdata' => [
+      [
+        'n',
+        'GLclampf '
+      ],
+      [
+        'f',
+        'GLclampf '
+      ]
+    ],
+    'feature' => 'GL_OES_single_precision',
+    'glewImpl' => '__glewDepthRangefOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -14303,6 +16146,22 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewDisablei',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glDisableiOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'index',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_draw_buffers_indexed',
+    'glewImpl' => '__glewDisableiOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -14869,7 +16728,7 @@ our %registry = (
       ],
       [
         'indices',
-        'void *',
+        'const void *',
         'COMPSIZE(count,type)'
       ],
       [
@@ -15087,6 +16946,66 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glDrawMeshTasksEXT' => {
+    'argdata' => [
+      [
+        'num_groups_x',
+        'GLuint '
+      ],
+      [
+        'num_groups_y',
+        'GLuint '
+      ],
+      [
+        'num_groups_z',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_EXT_mesh_shader',
+    'glewImpl' => '__glewDrawMeshTasksEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glDrawMeshTasksIndirectEXT' => {
+    'argdata' => [
+      [
+        'indirect',
+        'GLintptr '
+      ]
+    ],
+    'feature' => 'GL_EXT_mesh_shader',
+    'glewImpl' => '__glewDrawMeshTasksIndirectEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glDrawMeshTasksIndirectNV' => {
+    'argdata' => [
+      [
+        'indirect',
+        'GLintptr '
+      ]
+    ],
+    'feature' => 'GL_NV_mesh_shader',
+    'glewImpl' => '__glewDrawMeshTasksIndirectNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glDrawMeshTasksNV' => {
+    'argdata' => [
+      [
+        'first',
+        'GLuint '
+      ],
+      [
+        'count',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_NV_mesh_shader',
+    'glewImpl' => '__glewDrawMeshTasksNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glDrawPixels' => {
     'argdata' => [
       [
@@ -15253,7 +17172,7 @@ our %registry = (
       ],
       [
         'indices',
-        'void *',
+        'const void *',
         'COMPSIZE(count,type)'
       ],
       [
@@ -15323,7 +17242,7 @@ our %registry = (
   },
   'glDrawTransformFeedback' => {
     'aliases' => {
-      'glDrawTransformFeedbackEXT' => undef,
+      'glDrawTransformFeedbackEXT' => 'GL_EXT_draw_transform_feedback',
       'glDrawTransformFeedbackNV' => 'GL_NV_transform_feedback2'
     },
     'argdata' => [
@@ -15345,7 +17264,7 @@ our %registry = (
   },
   'glDrawTransformFeedbackInstanced' => {
     'aliases' => {
-      'glDrawTransformFeedbackInstancedEXT' => undef
+      'glDrawTransformFeedbackInstancedEXT' => 'GL_EXT_draw_transform_feedback'
     },
     'argdata' => [
       [
@@ -15466,6 +17385,84 @@ our %registry = (
     'feature' => 'GL_NV_draw_vulkan_image',
     'glewImpl' => '__glewDrawVkImageNV',
     'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glEGLImageTargetRenderbufferStorageOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'image',
+        'GLeglImageOES '
+      ]
+    ],
+    'feature' => 'GL_OES_EGL_image',
+    'glewImpl' => '__glewEGLImageTargetRenderbufferStorageOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glEGLImageTargetTexStorageEXT' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'image',
+        'GLeglImageOES '
+      ],
+      [
+        'attrib_list',
+        'const GLint* '
+      ]
+    ],
+    'feature' => 'GL_EXT_EGL_image_storage',
+    'glewImpl' => '__glewEGLImageTargetTexStorageEXT',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glEGLImageTargetTexture2DOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'image',
+        'GLeglImageOES '
+      ]
+    ],
+    'feature' => 'GL_OES_EGL_image',
+    'glewImpl' => '__glewEGLImageTargetTexture2DOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glEGLImageTargetTextureStorageEXT' => {
+    'argdata' => [
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'image',
+        'GLeglImageOES '
+      ],
+      [
+        'attrib_list',
+        'const GLint* '
+      ]
+    ],
+    'feature' => 'GL_EXT_EGL_image_storage',
+    'glewImpl' => '__glewEGLImageTargetTextureStorageEXT',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
     'restype' => 'void'
   },
   'glEdgeFlag' => {
@@ -15811,6 +17808,22 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glEnableiOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'index',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_draw_buffers_indexed',
+    'glewImpl' => '__glewEnableiOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glEnd' => {
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
@@ -15895,6 +17908,20 @@ our %registry = (
     ],
     'feature' => 'GL_ANGLE_timer_query',
     'glewImpl' => '__glewEndQueryANGLE',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glEndQueryEXT' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'QueryTarget'
+      ]
+    ],
+    'feature' => 'GL_EXT_disjoint_timer_query',
+    'glewImpl' => '__glewEndQueryEXT',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -16181,6 +18208,12 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glEvaluateDepthValuesARB' => {
+    'feature' => 'GL_ARB_sample_locations',
+    'glewImpl' => '__glewEvaluateDepthValuesARB',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -16554,6 +18587,30 @@ our %registry = (
     ],
     'feature' => 'GL_EXT_vertex_shader',
     'glewImpl' => '__glewExtractComponentEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glExtrapolateTex2DQCOM' => {
+    'argdata' => [
+      [
+        'src1',
+        'GLuint '
+      ],
+      [
+        'src2',
+        'GLuint '
+      ],
+      [
+        'output',
+        'GLuint '
+      ],
+      [
+        'scaleFactor',
+        'GLfloat '
+      ]
+    ],
+    'feature' => 'GL_QCOM_frame_extrapolation',
+    'glewImpl' => '__glewExtrapolateTex2DQCOM',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -17818,6 +19875,12 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glFramebufferFetchBarrierEXT' => {
+    'feature' => 'GL_EXT_shader_framebuffer_fetch',
+    'glewImpl' => '__glewFramebufferFetchBarrierEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glFramebufferFetchBarrierQCOM' => {
     'feature' => 'GL_QCOM_shader_framebuffer_fetch_noncoherent',
     'glewImpl' => '__glewFramebufferFetchBarrierQCOM',
@@ -17920,6 +19983,30 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glFramebufferParameteriMESA' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
+      ],
+      [
+        'pname',
+        'GLenum ',
+        undef,
+        'FramebufferParameterName'
+      ],
+      [
+        'param',
+        'GLint '
+      ]
+    ],
+    'feature' => 'GL_MESA_framebuffer_flip_y',
+    'glewImpl' => '__glewFramebufferParameteriMESA',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glFramebufferPixelLocalStorageSizeEXT' => {
     'argdata' => [
       [
@@ -17984,6 +20071,30 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewFramebufferRenderbuffer',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glFramebufferRenderbufferOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'attachment',
+        'GLenum '
+      ],
+      [
+        'renderbuffertarget',
+        'GLenum '
+      ],
+      [
+        'renderbuffer',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewFramebufferRenderbufferOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -18072,6 +20183,46 @@ our %registry = (
     'ptr_args' => [
       3
     ],
+    'restype' => 'void'
+  },
+  'glFramebufferShadingRateEXT' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
+      ],
+      [
+        'attachment',
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
+      ],
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'baseLayer',
+        'GLint '
+      ],
+      [
+        'numLayers',
+        'GLsizei '
+      ],
+      [
+        'texelWidth',
+        'GLsizei '
+      ],
+      [
+        'texelHeight',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_EXT_fragment_shading_rate',
+    'glewImpl' => '__glewFramebufferShadingRateEXT',
+    'glewtype' => 'fun',
     'restype' => 'void'
   },
   'glFramebufferTexture' => {
@@ -18180,6 +20331,48 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glFramebufferTexture2DDownsampleIMG' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
+      ],
+      [
+        'attachment',
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
+      ],
+      [
+        'textarget',
+        'GLenum ',
+        undef,
+        'TextureTarget'
+      ],
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'xscale',
+        'GLint '
+      ],
+      [
+        'yscale',
+        'GLint '
+      ]
+    ],
+    'feature' => 'GL_IMG_framebuffer_downsample',
+    'glewImpl' => '__glewFramebufferTexture2DDownsampleIMG',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glFramebufferTexture2DMultisampleEXT' => {
     'argdata' => [
       [
@@ -18215,6 +20408,72 @@ our %registry = (
     ],
     'feature' => 'GL_EXT_multisampled_render_to_texture',
     'glewImpl' => '__glewFramebufferTexture2DMultisampleEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glFramebufferTexture2DMultisampleIMG' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
+      ],
+      [
+        'attachment',
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
+      ],
+      [
+        'textarget',
+        'GLenum ',
+        undef,
+        'TextureTarget'
+      ],
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'samples',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_IMG_multisampled_render_to_texture',
+    'glewImpl' => '__glewFramebufferTexture2DMultisampleIMG',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glFramebufferTexture2DOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'attachment',
+        'GLenum '
+      ],
+      [
+        'textarget',
+        'GLenum '
+      ],
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'level',
+        'GLint '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewFramebufferTexture2DOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -18256,6 +20515,38 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewFramebufferTexture3D',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glFramebufferTexture3DOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'attachment',
+        'GLenum '
+      ],
+      [
+        'textarget',
+        'GLenum '
+      ],
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'zoffset',
+        'GLint '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_3D',
+    'glewImpl' => '__glewFramebufferTexture3DOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -18329,6 +20620,46 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewFramebufferTextureLayer',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glFramebufferTextureLayerDownsampleIMG' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
+      ],
+      [
+        'attachment',
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
+      ],
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'layer',
+        'GLint '
+      ],
+      [
+        'xscale',
+        'GLint '
+      ],
+      [
+        'yscale',
+        'GLint '
+      ]
+    ],
+    'feature' => 'GL_IMG_framebuffer_downsample',
+    'glewImpl' => '__glewFramebufferTextureLayerDownsampleIMG',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -18525,6 +20856,38 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glFrustumfOES' => {
+    'argdata' => [
+      [
+        'l',
+        'GLfloat '
+      ],
+      [
+        'r',
+        'GLfloat '
+      ],
+      [
+        'b',
+        'GLfloat '
+      ],
+      [
+        't',
+        'GLfloat '
+      ],
+      [
+        'n',
+        'GLfloat '
+      ],
+      [
+        'f',
+        'GLfloat '
+      ]
+    ],
+    'feature' => 'GL_OES_single_precision',
+    'glewImpl' => '__glewFrustumfOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glFrustumx' => {
     'argdata' => [
       [
@@ -18681,6 +21044,25 @@ our %registry = (
     },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewGenFramebuffers',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
+  'glGenFramebuffersOES' => {
+    'argdata' => [
+      [
+        'n',
+        'GLsizei '
+      ],
+      [
+        'framebuffers',
+        'GLuint* '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewGenFramebuffersOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       1
@@ -18909,6 +21291,31 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGenQueriesEXT' => {
+    'argdata' => [
+      [
+        'n',
+        'GLsizei '
+      ],
+      [
+        'ids',
+        'GLuint* ',
+        'n'
+      ]
+    ],
+    'dynlang' => {
+      'CLEANUP' => 'free(ids);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(ids,n,newSVuv)',
+      'ids' => 'OGLM_OUT_SETUP(ids,n,GLuint)'
+    },
+    'feature' => 'GL_EXT_disjoint_timer_query',
+    'glewImpl' => '__glewGenQueriesEXT',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
   'glGenRenderbuffers' => {
     'aliases' => {
       'glGenRenderbuffersEXT' => 'GL_EXT_framebuffer_object'
@@ -18931,6 +21338,25 @@ our %registry = (
     },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewGenRenderbuffers',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
+  'glGenRenderbuffersOES' => {
+    'argdata' => [
+      [
+        'n',
+        'GLsizei '
+      ],
+      [
+        'renderbuffers',
+        'GLuint* '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewGenRenderbuffersOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       1
@@ -19122,6 +21548,25 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGenVertexArraysOES' => {
+    'argdata' => [
+      [
+        'n',
+        'GLsizei '
+      ],
+      [
+        'arrays',
+        'GLuint* '
+      ]
+    ],
+    'feature' => 'GL_OES_vertex_array_object',
+    'glewImpl' => '__glewGenVertexArraysOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
   'glGenVertexArraysSGIX' => {
     'argdata' => [
       [
@@ -19167,6 +21612,18 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewGenerateMipmap',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glGenerateMipmapOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewGenerateMipmapOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -19977,6 +22434,29 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGetBufferPointervOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'void** '
+      ]
+    ],
+    'feature' => 'GL_OES_mapbuffer',
+    'glewImpl' => '__glewGetBufferPointervOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glGetBufferSubData' => {
     'aliases' => {
       'glGetBufferSubDataARB' => 'GL_ARB_vertex_buffer_object'
@@ -20048,6 +22528,25 @@ our %registry = (
     ],
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewGetClipPlanef',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      1
+    ],
+    'restype' => 'void'
+  },
+  'glGetClipPlanefOES' => {
+    'argdata' => [
+      [
+        'plane',
+        'GLenum '
+      ],
+      [
+        'equation',
+        'GLfloat* '
+      ]
+    ],
+    'feature' => 'GL_OES_single_precision',
+    'glewImpl' => '__glewGetClipPlanefOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       1
@@ -20947,7 +23446,7 @@ our %registry = (
       ],
       [
         'severities',
-        'GLuint* ',
+        'GLenum* ',
         'count',
         'DebugSeverity'
       ],
@@ -21539,10 +24038,15 @@ our %registry = (
       ],
       [
         'params',
-        'const GLfloat* ',
+        'GLfloat* ',
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVnv)',
+      'params' => 'OGLM_GET_SETUP(MaterialParameter,pname,GLfloat,params)'
+    },
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewGetFragmentMaterialfvSGIX',
     'glewtype' => 'fun',
@@ -21590,15 +24094,51 @@ our %registry = (
       ],
       [
         'params',
-        'const GLint* ',
+        'GLint* ',
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(MaterialParameter,pname,GLint,params)'
+    },
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewGetFragmentMaterialivSGIX',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
+    ],
+    'restype' => 'void'
+  },
+  'glGetFragmentShadingRatesEXT' => {
+    'argdata' => [
+      [
+        'samples',
+        'GLsizei '
+      ],
+      [
+        'maxCount',
+        'GLsizei '
+      ],
+      [
+        'count',
+        'GLsizei* ',
+        '1'
+      ],
+      [
+        'shadingRates',
+        'GLenum *',
+        'maxCount',
+        'ShadingRate'
+      ]
+    ],
+    'feature' => 'GL_EXT_fragment_shading_rate',
+    'glewImpl' => '__glewGetFragmentShadingRatesEXT',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2,
+      3
     ],
     'restype' => 'void'
   },
@@ -21638,6 +24178,33 @@ our %registry = (
     },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewGetFramebufferAttachmentParameteriv',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      3
+    ],
+    'restype' => 'void'
+  },
+  'glGetFramebufferAttachmentParameterivOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'attachment',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'GLint* '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewGetFramebufferAttachmentParameterivOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       3
@@ -21747,6 +24314,39 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGetFramebufferParameterivMESA' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'FramebufferTarget'
+      ],
+      [
+        'pname',
+        'GLenum ',
+        undef,
+        'FramebufferAttachmentParameterName'
+      ],
+      [
+        'params',
+        'GLint* ',
+        'COMPSIZE(pname)'
+      ]
+    ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(FramebufferAttachmentParameterName,pname,GLint,params)'
+    },
+    'feature' => 'GL_MESA_framebuffer_flip_y',
+    'glewImpl' => '__glewGetFramebufferParameterivMESA',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glGetFramebufferPixelLocalStorageSizeEXT' => {
     'argdata' => [
       [
@@ -21763,7 +24363,7 @@ our %registry = (
   },
   'glGetGraphicsResetStatus' => {
     'aliases' => {
-      'glGetGraphicsResetStatusEXT' => undef,
+      'glGetGraphicsResetStatusEXT' => 'GL_EXT_robustness',
       'glGetGraphicsResetStatusKHR' => undef
     },
     'feature' => 'GL_VERSION_4_5',
@@ -22179,7 +24779,7 @@ our %registry = (
   'glGetInteger64v' => {
     'aliases' => {
       'glGetInteger64vAPPLE' => 'GL_APPLE_sync',
-      'glGetInteger64vEXT' => undef
+      'glGetInteger64vEXT' => 'GL_EXT_disjoint_timer_query'
     },
     'argdata' => [
       [
@@ -23160,6 +25760,37 @@ our %registry = (
     'glewtype' => 'fun',
     'ptr_args' => [
       2
+    ],
+    'restype' => 'void'
+  },
+  'glGetMemoryObjectDetachedResourcesuivNV' => {
+    'argdata' => [
+      [
+        'memory',
+        'GLuint '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'first',
+        'GLint '
+      ],
+      [
+        'count',
+        'GLsizei '
+      ],
+      [
+        'params',
+        'GLuint* '
+      ]
+    ],
+    'feature' => 'GL_NV_memory_attachment',
+    'glewImpl' => '__glewGetMemoryObjectDetachedResourcesuivNV',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      4
     ],
     'restype' => 'void'
   },
@@ -25989,6 +28620,39 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGetProgramBinaryOES' => {
+    'argdata' => [
+      [
+        'program',
+        'GLuint '
+      ],
+      [
+        'bufSize',
+        'GLsizei '
+      ],
+      [
+        'length',
+        'GLsizei* '
+      ],
+      [
+        'binaryFormat',
+        'GLenum *'
+      ],
+      [
+        'binary',
+        'void*'
+      ]
+    ],
+    'feature' => 'GL_OES_get_program_binary',
+    'glewImpl' => '__glewGetProgramBinaryOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2,
+      3,
+      4
+    ],
+    'restype' => 'void'
+  },
   'glGetProgramEnvParameterdvARB' => {
     'argdata' => [
       [
@@ -26955,7 +29619,7 @@ our %registry = (
   'glGetQueryObjectiv' => {
     'aliases' => {
       'glGetQueryObjectivARB' => 'GL_ARB_occlusion_query',
-      'glGetQueryObjectivEXT' => undef
+      'glGetQueryObjectivEXT' => 'GL_EXT_disjoint_timer_query'
     },
     'argdata' => [
       [
@@ -27124,6 +29788,37 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGetQueryObjectuivEXT' => {
+    'argdata' => [
+      [
+        'id',
+        'GLuint '
+      ],
+      [
+        'pname',
+        'GLenum ',
+        undef,
+        'QueryObjectParameterName'
+      ],
+      [
+        'params',
+        'GLuint* ',
+        'COMPSIZE(pname)'
+      ]
+    ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSVuv)',
+      'params' => 'OGLM_GET_SETUP(QueryObjectParameterName,pname,GLuint,params)'
+    },
+    'feature' => 'GL_EXT_disjoint_timer_query',
+    'glewImpl' => '__glewGetQueryObjectuivEXT',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glGetQueryiv' => {
     'aliases' => {
       'glGetQueryivARB' => 'GL_ARB_occlusion_query'
@@ -27183,6 +29878,39 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGetQueryivEXT' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'QueryTarget'
+      ],
+      [
+        'pname',
+        'GLenum ',
+        undef,
+        'QueryParameterName'
+      ],
+      [
+        'params',
+        'GLint* ',
+        'COMPSIZE(pname)'
+      ]
+    ],
+    'dynlang' => {
+      'CLEANUP' => 'free(params);',
+      'OUTPUT' => 'OGLM_OUT_FINISH(params,pname_count,newSViv)',
+      'params' => 'OGLM_GET_SETUP(QueryParameterName,pname,GLint,params)'
+    },
+    'feature' => 'GL_EXT_disjoint_timer_query',
+    'glewImpl' => '__glewGetQueryivEXT',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glGetRenderbufferParameteriv' => {
     'aliases' => {
       'glGetRenderbufferParameterivEXT' => 'GL_EXT_framebuffer_object'
@@ -27219,9 +29947,32 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGetRenderbufferParameterivOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'GLint* '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewGetRenderbufferParameterivOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glGetSamplerParameterIiv' => {
     'aliases' => {
-      'glGetSamplerParameterIivEXT' => undef
+      'glGetSamplerParameterIivEXT' => 'GL_EXT_texture_border_clamp'
     },
     'argdata' => [
       [
@@ -27253,9 +30004,32 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGetSamplerParameterIivOES' => {
+    'argdata' => [
+      [
+        'sampler',
+        'GLuint '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'GLint* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_border_clamp',
+    'glewImpl' => '__glewGetSamplerParameterIivOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glGetSamplerParameterIuiv' => {
     'aliases' => {
-      'glGetSamplerParameterIuivEXT' => undef
+      'glGetSamplerParameterIuivEXT' => 'GL_EXT_texture_border_clamp'
     },
     'argdata' => [
       [
@@ -27281,6 +30055,29 @@ our %registry = (
     },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewGetSamplerParameterIuiv',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glGetSamplerParameterIuivOES' => {
+    'argdata' => [
+      [
+        'sampler',
+        'GLuint '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'GLuint* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_border_clamp',
+    'glewImpl' => '__glewGetSamplerParameterIuivOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -27343,6 +30140,31 @@ our %registry = (
     },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewGetSamplerParameteriv',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glGetSemaphoreParameterivNV' => {
+    'argdata' => [
+      [
+        'semaphore',
+        'GLuint '
+      ],
+      [
+        'pname',
+        'GLenum ',
+        undef,
+        'SemaphoreParameterName'
+      ],
+      [
+        'params',
+        'GLint* '
+      ]
+    ],
+    'feature' => 'GL_NV_timeline_semaphore',
+    'glewImpl' => '__glewGetSemaphoreParameterivNV',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -27597,6 +30419,58 @@ our %registry = (
     'glewtype' => 'fun',
     'ptr_args' => [
       2
+    ],
+    'restype' => 'void'
+  },
+  'glGetShadingRateImagePaletteNV' => {
+    'argdata' => [
+      [
+        'viewport',
+        'GLuint '
+      ],
+      [
+        'entry',
+        'GLuint '
+      ],
+      [
+        'rate',
+        'GLenum* ',
+        '1'
+      ]
+    ],
+    'feature' => 'GL_NV_shading_rate_image',
+    'glewImpl' => '__glewGetShadingRateImagePaletteNV',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glGetShadingRateSampleLocationivNV' => {
+    'argdata' => [
+      [
+        'rate',
+        'GLenum '
+      ],
+      [
+        'samples',
+        'GLuint '
+      ],
+      [
+        'index',
+        'GLuint '
+      ],
+      [
+        'location',
+        'GLint* ',
+        '3'
+      ]
+    ],
+    'feature' => 'GL_NV_shading_rate_image',
+    'glewImpl' => '__glewGetShadingRateSampleLocationivNV',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      3
     ],
     'restype' => 'void'
   },
@@ -27974,6 +30848,29 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGetTexGenfvOES' => {
+    'argdata' => [
+      [
+        'coord',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'GLfloat* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_cube_map',
+    'glewImpl' => '__glewGetTexGenfvOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glGetTexGeniv' => {
     'argdata' => [
       [
@@ -28001,6 +30898,52 @@ our %registry = (
       'params' => 'OGLM_GET_SETUP(TextureGenParameter,pname,GLint,params)'
     },
     'feature' => 'GL_VERSION_1_1',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glGetTexGenivOES' => {
+    'argdata' => [
+      [
+        'coord',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'GLint* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_cube_map',
+    'glewImpl' => '__glewGetTexGenivOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glGetTexGenxvOES' => {
+    'argdata' => [
+      [
+        'coord',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'GLfixed* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_cube_map',
+    'glewImpl' => '__glewGetTexGenxvOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -28152,6 +31095,29 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glGetTexParameterIivOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'GLint* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_border_clamp',
+    'glewImpl' => '__glewGetTexParameterIivOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glGetTexParameterIuiv' => {
     'aliases' => {
       'glGetTexParameterIuivEXT' => 'GL_EXT_texture_integer'
@@ -28182,6 +31148,29 @@ our %registry = (
     },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewGetTexParameterIuiv',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glGetTexParameterIuivOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'GLuint* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_border_clamp',
+    'glewImpl' => '__glewGetTexParameterIuivOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -28311,7 +31300,7 @@ our %registry = (
   },
   'glGetTextureHandleARB' => {
     'aliases' => {
-      'glGetTextureHandleIMG' => undef
+      'glGetTextureHandleIMG' => 'GL_IMG_bindless_texture'
     },
     'argdata' => [
       [
@@ -28808,7 +31797,7 @@ our %registry = (
   },
   'glGetTextureSamplerHandleARB' => {
     'aliases' => {
-      'glGetTextureSamplerHandleIMG' => undef
+      'glGetTextureSamplerHandleIMG' => 'GL_IMG_bindless_texture'
     },
     'argdata' => [
       [
@@ -31090,7 +34079,7 @@ our %registry = (
   },
   'glGetnUniformfv' => {
     'aliases' => {
-      'glGetnUniformfvEXT' => undef,
+      'glGetnUniformfvEXT' => 'GL_EXT_robustness',
       'glGetnUniformfvKHR' => undef
     },
     'argdata' => [
@@ -31178,7 +34167,7 @@ our %registry = (
   },
   'glGetnUniformiv' => {
     'aliases' => {
-      'glGetnUniformivEXT' => undef,
+      'glGetnUniformivEXT' => 'GL_EXT_robustness',
       'glGetnUniformivKHR' => undef
     },
     'argdata' => [
@@ -32486,6 +35475,22 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'GLboolean'
   },
+  'glIsEnablediOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'index',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_draw_buffers_indexed',
+    'glewImpl' => '__glewIsEnablediOES',
+    'glewtype' => 'fun',
+    'restype' => 'GLboolean'
+  },
   'glIsFenceAPPLE' => {
     'argdata' => [
       [
@@ -32522,6 +35527,18 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewIsFramebuffer',
+    'glewtype' => 'fun',
+    'restype' => 'GLboolean'
+  },
+  'glIsFramebufferOES' => {
+    'argdata' => [
+      [
+        'framebuffer',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewIsFramebufferOES',
     'glewtype' => 'fun',
     'restype' => 'GLboolean'
   },
@@ -32776,6 +35793,18 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'GLboolean'
   },
+  'glIsQueryEXT' => {
+    'argdata' => [
+      [
+        'id',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_EXT_disjoint_timer_query',
+    'glewImpl' => '__glewIsQueryEXT',
+    'glewtype' => 'fun',
+    'restype' => 'GLboolean'
+  },
   'glIsRenderbuffer' => {
     'aliases' => {
       'glIsRenderbufferEXT' => 'GL_EXT_framebuffer_object'
@@ -32788,6 +35817,18 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewIsRenderbuffer',
+    'glewtype' => 'fun',
+    'restype' => 'GLboolean'
+  },
+  'glIsRenderbufferOES' => {
+    'argdata' => [
+      [
+        'renderbuffer',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewIsRenderbufferOES',
     'glewtype' => 'fun',
     'restype' => 'GLboolean'
   },
@@ -32958,6 +35999,18 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_vertex_array_object',
     'glewImpl' => '__glewIsVertexArray',
+    'glewtype' => 'fun',
+    'restype' => 'GLboolean'
+  },
+  'glIsVertexArrayOES' => {
+    'argdata' => [
+      [
+        'array',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_vertex_array_object',
+    'glewImpl' => '__glewIsVertexArrayOES',
     'glewtype' => 'fun',
     'restype' => 'GLboolean'
   },
@@ -33610,6 +36663,12 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glLoadPaletteFromModelViewMatrixOES' => {
+    'feature' => 'GL_OES_matrix_palette',
+    'glewImpl' => '__glewLoadPaletteFromModelViewMatrixOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glLoadProgramNV' => {
     'argdata' => [
       [
@@ -34133,6 +37192,25 @@ our %registry = (
       -1
     ],
     'restype' => 'void*'
+  },
+  'glMapBufferOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'access',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_mapbuffer',
+    'glewImpl' => '__glewMapBufferOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      -1
+    ],
+    'restype' => 'void *'
   },
   'glMapBufferRange' => {
     'aliases' => {
@@ -34946,6 +38024,33 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glMatrixIndexPointerOES' => {
+    'argdata' => [
+      [
+        'size',
+        'GLint '
+      ],
+      [
+        'type',
+        'GLenum '
+      ],
+      [
+        'stride',
+        'GLsizei '
+      ],
+      [
+        'pointer',
+        'void *'
+      ]
+    ],
+    'feature' => 'GL_OES_matrix_palette',
+    'glewImpl' => '__glewMatrixIndexPointerOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      3
+    ],
+    'restype' => 'void'
+  },
   'glMatrixIndexubvARB' => {
     'argdata' => [
       [
@@ -35569,6 +38674,18 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glMaxActiveShaderCoresARM' => {
+    'argdata' => [
+      [
+        'count',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_ARM_shader_core_properties',
+    'glewImpl' => '__glewMaxActiveShaderCoresARM',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glMaxShaderCompilerThreadsKHR' => {
     'aliases' => {
       'glMaxShaderCompilerThreadsARB' => 'GL_ARB_parallel_shader_compile'
@@ -35676,6 +38793,18 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_4_0',
     'glewImpl' => '__glewMinSampleShading',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glMinSampleShadingOES' => {
+    'argdata' => [
+      [
+        'value',
+        'GLfloat '
+      ]
+    ],
+    'feature' => 'GL_OES_sample_shading',
+    'glewImpl' => '__glewMinSampleShadingOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -36055,7 +39184,7 @@ our %registry = (
       ],
       [
         'count',
-        'GLsizei* ',
+        'const GLsizei* ',
         'drawcount'
       ],
       [
@@ -36066,7 +39195,7 @@ our %registry = (
       ],
       [
         'indices',
-        'void**',
+        'const void*const *',
         'drawcount'
       ],
       [
@@ -36075,7 +39204,7 @@ our %registry = (
       ],
       [
         'basevertex',
-        'GLint *',
+        'const GLint *',
         'drawcount'
       ]
     ],
@@ -36251,6 +39380,94 @@ our %registry = (
     'ptr_args' => [
       2
     ],
+    'restype' => 'void'
+  },
+  'glMultiDrawMeshTasksIndirectCountEXT' => {
+    'argdata' => [
+      [
+        'indirect',
+        'GLintptr '
+      ],
+      [
+        'drawcount',
+        'GLintptr '
+      ],
+      [
+        'maxdrawcount',
+        'GLsizei '
+      ],
+      [
+        'stride',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_EXT_mesh_shader',
+    'glewImpl' => '__glewMultiDrawMeshTasksIndirectCountEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glMultiDrawMeshTasksIndirectCountNV' => {
+    'argdata' => [
+      [
+        'indirect',
+        'GLintptr '
+      ],
+      [
+        'drawcount',
+        'GLintptr '
+      ],
+      [
+        'maxdrawcount',
+        'GLsizei '
+      ],
+      [
+        'stride',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_NV_mesh_shader',
+    'glewImpl' => '__glewMultiDrawMeshTasksIndirectCountNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glMultiDrawMeshTasksIndirectEXT' => {
+    'argdata' => [
+      [
+        'indirect',
+        'GLintptr '
+      ],
+      [
+        'drawcount',
+        'GLsizei '
+      ],
+      [
+        'stride',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_EXT_mesh_shader',
+    'glewImpl' => '__glewMultiDrawMeshTasksIndirectEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glMultiDrawMeshTasksIndirectNV' => {
+    'argdata' => [
+      [
+        'indirect',
+        'GLintptr '
+      ],
+      [
+        'drawcount',
+        'GLsizei '
+      ],
+      [
+        'stride',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_NV_mesh_shader',
+    'glewImpl' => '__glewMultiDrawMeshTasksIndirectNV',
+    'glewtype' => 'fun',
     'restype' => 'void'
   },
   'glMultiDrawRangeElementArrayAPPLE' => {
@@ -38977,6 +42194,86 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glMulticastScissorArrayvNVX' => {
+    'argdata' => [
+      [
+        'gpu',
+        'GLuint '
+      ],
+      [
+        'first',
+        'GLuint '
+      ],
+      [
+        'count',
+        'GLsizei '
+      ],
+      [
+        'v',
+        'const GLint* ',
+        'COMPSIZE(count)'
+      ]
+    ],
+    'feature' => 'GL_NVX_gpu_multicast2',
+    'glewImpl' => '__glewMulticastScissorArrayvNVX',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      3
+    ],
+    'restype' => 'void'
+  },
+  'glMulticastViewportArrayvNVX' => {
+    'argdata' => [
+      [
+        'gpu',
+        'GLuint '
+      ],
+      [
+        'first',
+        'GLuint '
+      ],
+      [
+        'count',
+        'GLsizei '
+      ],
+      [
+        'v',
+        'const GLfloat* ',
+        'COMPSIZE(count)'
+      ]
+    ],
+    'feature' => 'GL_NVX_gpu_multicast2',
+    'glewImpl' => '__glewMulticastViewportArrayvNVX',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      3
+    ],
+    'restype' => 'void'
+  },
+  'glMulticastViewportPositionWScaleNVX' => {
+    'argdata' => [
+      [
+        'gpu',
+        'GLuint '
+      ],
+      [
+        'index',
+        'GLuint '
+      ],
+      [
+        'xcoeff',
+        'GLfloat '
+      ],
+      [
+        'ycoeff',
+        'GLfloat '
+      ]
+    ],
+    'feature' => 'GL_NVX_gpu_multicast2',
+    'glewImpl' => '__glewMulticastViewportPositionWScaleNVX',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glMulticastWaitSyncNV' => {
     'argdata' => [
       [
@@ -39006,6 +42303,26 @@ our %registry = (
     ],
     'feature' => 'GL_SGIS_shared_multisample',
     'glewImpl' => '__glewMultisampleSubRectPosSGIS',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glNamedBufferAttachMemoryNV' => {
+    'argdata' => [
+      [
+        'buffer',
+        'GLuint '
+      ],
+      [
+        'memory',
+        'GLuint '
+      ],
+      [
+        'offset',
+        'GLuint64 '
+      ]
+    ],
+    'feature' => 'GL_NV_memory_attachment',
+    'glewImpl' => '__glewNamedBufferAttachMemoryNV',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -39069,9 +42386,41 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glNamedBufferPageCommitmentMemNV' => {
+    'argdata' => [
+      [
+        'buffer',
+        'GLuint '
+      ],
+      [
+        'offset',
+        'GLintptr '
+      ],
+      [
+        'size',
+        'GLsizeiptr '
+      ],
+      [
+        'memory',
+        'GLuint '
+      ],
+      [
+        'memOffset',
+        'GLuint64 '
+      ],
+      [
+        'commit',
+        'GLboolean '
+      ]
+    ],
+    'feature' => 'GL_NV_memory_object_sparse',
+    'glewImpl' => '__glewNamedBufferPageCommitmentMemNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glNamedBufferStorage' => {
     'aliases' => {
-      'glNamedBufferStorageEXT' => 'GL_EXT_buffer_storage'
+      'glNamedBufferStorageEXT' => 'GL_EXT_direct_state_access'
     },
     'argdata' => [
       [
@@ -39706,6 +43055,40 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glNamedFramebufferTextureMultiviewOVR' => {
+    'argdata' => [
+      [
+        'framebuffer',
+        'GLuint '
+      ],
+      [
+        'attachment',
+        'GLenum ',
+        undef,
+        'FramebufferAttachment'
+      ],
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'baseViewIndex',
+        'GLint '
+      ],
+      [
+        'numViews',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_OVR_multiview',
+    'glewImpl' => '__glewNamedFramebufferTextureMultiviewOVR',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glNamedProgramLocalParameter4dEXT' => {
     'argdata' => [
       [
@@ -40195,6 +43578,40 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewNamedRenderbufferStorageMultisample',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glNamedRenderbufferStorageMultisampleAdvancedAMD' => {
+    'argdata' => [
+      [
+        'renderbuffer',
+        'GLuint '
+      ],
+      [
+        'samples',
+        'GLsizei '
+      ],
+      [
+        'storageSamples',
+        'GLsizei '
+      ],
+      [
+        'internalformat',
+        'GLenum ',
+        undef,
+        'InternalFormat'
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_AMD_framebuffer_multisample_advanced',
+    'glewImpl' => '__glewNamedRenderbufferStorageMultisampleAdvancedAMD',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -41257,6 +44674,38 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glOrthofOES' => {
+    'argdata' => [
+      [
+        'l',
+        'GLfloat '
+      ],
+      [
+        'r',
+        'GLfloat '
+      ],
+      [
+        'b',
+        'GLfloat '
+      ],
+      [
+        't',
+        'GLfloat '
+      ],
+      [
+        'n',
+        'GLfloat '
+      ],
+      [
+        'f',
+        'GLfloat '
+      ]
+    ],
+    'feature' => 'GL_OES_single_precision',
+    'glewImpl' => '__glewOrthofOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glOrthox' => {
     'argdata' => [
       [
@@ -41387,7 +44836,7 @@ our %registry = (
   },
   'glPatchParameteri' => {
     'aliases' => {
-      'glPatchParameteriEXT' => undef
+      'glPatchParameteriEXT' => 'GL_EXT_tessellation_point_size'
     },
     'argdata' => [
       [
@@ -41638,7 +45087,7 @@ our %registry = (
       ],
       [
         'baseAndCount',
-        'GLuint * ',
+        'GLuint* ',
         '2'
       ]
     ],
@@ -43029,7 +46478,7 @@ our %registry = (
   'glPrimitiveBoundingBoxARB' => {
     'aliases' => {
       'glPrimitiveBoundingBox' => 'GL_ARB_ES3_2_compatibility',
-      'glPrimitiveBoundingBoxEXT' => undef
+      'glPrimitiveBoundingBoxEXT' => 'GL_EXT_primitive_bounding_box'
     },
     'argdata' => [
       [
@@ -43175,6 +46624,33 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_get_program_binary',
     'glewImpl' => '__glewProgramBinary',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glProgramBinaryOES' => {
+    'argdata' => [
+      [
+        'program',
+        'GLuint '
+      ],
+      [
+        'binaryFormat',
+        'GLenum '
+      ],
+      [
+        'binary',
+        'const void *'
+      ],
+      [
+        'length',
+        'GLint '
+      ]
+    ],
+    'feature' => 'GL_OES_get_program_binary',
+    'glewImpl' => '__glewProgramBinaryOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -46203,7 +49679,7 @@ our %registry = (
   },
   'glProgramUniformHandleui64ARB' => {
     'aliases' => {
-      'glProgramUniformHandleui64IMG' => undef
+      'glProgramUniformHandleui64IMG' => 'GL_IMG_bindless_texture'
     },
     'argdata' => [
       [
@@ -46246,7 +49722,7 @@ our %registry = (
   },
   'glProgramUniformHandleui64vARB' => {
     'aliases' => {
-      'glProgramUniformHandleui64vIMG' => undef
+      'glProgramUniformHandleui64vIMG' => 'GL_IMG_bindless_texture'
     },
     'argdata' => [
       [
@@ -47112,7 +50588,7 @@ our %registry = (
   },
   'glQueryCounter' => {
     'aliases' => {
-      'glQueryCounterEXT' => undef
+      'glQueryCounterEXT' => 'GL_EXT_disjoint_timer_query'
     },
     'argdata' => [
       [
@@ -47654,6 +51130,18 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glReadBufferNV' => {
+    'argdata' => [
+      [
+        'mode',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_NV_read_buffer',
+    'glewImpl' => '__glewReadBufferNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glReadBufferRegion' => {
     'argdata' => [
       [
@@ -47767,7 +51255,7 @@ our %registry = (
   'glReadnPixels' => {
     'aliases' => {
       'glReadnPixelsARB' => 'GL_ARB_robustness',
-      'glReadnPixelsEXT' => undef,
+      'glReadnPixelsEXT' => 'GL_EXT_robustness',
       'glReadnPixelsKHR' => undef
     },
     'argdata' => [
@@ -48196,6 +51684,42 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glRenderbufferStorageMultisampleAdvancedAMD' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
+      ],
+      [
+        'samples',
+        'GLsizei '
+      ],
+      [
+        'storageSamples',
+        'GLsizei '
+      ],
+      [
+        'internalformat',
+        'GLenum ',
+        undef,
+        'InternalFormat'
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_AMD_framebuffer_multisample_advanced',
+    'glewImpl' => '__glewRenderbufferStorageMultisampleAdvancedAMD',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glRenderbufferStorageMultisampleCoverageNV' => {
     'argdata' => [
       [
@@ -48229,6 +51753,62 @@ our %registry = (
     ],
     'feature' => 'GL_NV_framebuffer_multisample_coverage',
     'glewImpl' => '__glewRenderbufferStorageMultisampleCoverageNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glRenderbufferStorageMultisampleIMG' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'RenderbufferTarget'
+      ],
+      [
+        'samples',
+        'GLsizei '
+      ],
+      [
+        'internalformat',
+        'GLenum ',
+        undef,
+        'InternalFormat'
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_IMG_multisampled_render_to_texture',
+    'glewImpl' => '__glewRenderbufferStorageMultisampleIMG',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glRenderbufferStorageOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'internalformat',
+        'GLenum '
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_OES_framebuffer_object',
+    'glewImpl' => '__glewRenderbufferStorageOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -48977,6 +52557,22 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glResetMemoryObjectParameterNV' => {
+    'argdata' => [
+      [
+        'memory',
+        'GLuint '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_NV_memory_attachment',
+    'glewImpl' => '__glewResetMemoryObjectParameterNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glResetMinmax' => {
     'aliases' => {
       'glResetMinmaxEXT' => 'GL_EXT_histogram'
@@ -48997,6 +52593,12 @@ our %registry = (
   'glResizeBuffersMESA' => {
     'feature' => 'GL_MESA_resize_buffers',
     'glewImpl' => '__glewResizeBuffersMESA',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glResolveDepthValuesNV' => {
+    'feature' => 'GL_NV_sample_locations',
+    'glewImpl' => '__glewResolveDepthValuesNV',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -49218,7 +52820,7 @@ our %registry = (
   },
   'glSamplerParameterIiv' => {
     'aliases' => {
-      'glSamplerParameterIivEXT' => undef
+      'glSamplerParameterIivEXT' => 'GL_EXT_texture_border_clamp'
     },
     'argdata' => [
       [
@@ -49245,9 +52847,32 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glSamplerParameterIivOES' => {
+    'argdata' => [
+      [
+        'sampler',
+        'GLuint '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'const GLint* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_border_clamp',
+    'glewImpl' => '__glewSamplerParameterIivOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glSamplerParameterIuiv' => {
     'aliases' => {
-      'glSamplerParameterIuivEXT' => undef
+      'glSamplerParameterIuivEXT' => 'GL_EXT_texture_border_clamp'
     },
     'argdata' => [
       [
@@ -49268,6 +52893,29 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewSamplerParameterIuiv',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glSamplerParameterIuivOES' => {
+    'argdata' => [
+      [
+        'sampler',
+        'GLuint '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'const GLuint* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_border_clamp',
+    'glewImpl' => '__glewSamplerParameterIuivOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -49478,6 +53126,54 @@ our %registry = (
     'ptr_args' => [
       2
     ],
+    'restype' => 'void'
+  },
+  'glScissorExclusiveArrayvNV' => {
+    'argdata' => [
+      [
+        'first',
+        'GLuint '
+      ],
+      [
+        'count',
+        'GLsizei '
+      ],
+      [
+        'v',
+        'const GLint* ',
+        'COMPSIZE(count)'
+      ]
+    ],
+    'feature' => 'GL_NV_scissor_exclusive',
+    'glewImpl' => '__glewScissorExclusiveArrayvNV',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glScissorExclusiveNV' => {
+    'argdata' => [
+      [
+        'x',
+        'GLint '
+      ],
+      [
+        'y',
+        'GLint '
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ]
+    ],
+    'feature' => 'GL_NV_scissor_exclusive',
+    'glewImpl' => '__glewScissorExclusiveNV',
+    'glewtype' => 'fun',
     'restype' => 'void'
   },
   'glScissorIndexed' => {
@@ -50150,6 +53846,31 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glSemaphoreParameterivNV' => {
+    'argdata' => [
+      [
+        'semaphore',
+        'GLuint '
+      ],
+      [
+        'pname',
+        'GLenum ',
+        undef,
+        'SemaphoreParameterName'
+      ],
+      [
+        'params',
+        'const GLint* '
+      ]
+    ],
+    'feature' => 'GL_NV_timeline_semaphore',
+    'glewImpl' => '__glewSemaphoreParameterivNV',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glSemaphoreParameterui64vEXT' => {
     'argdata' => [
       [
@@ -50547,6 +54268,135 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glShadingRateCombinerOpsEXT' => {
+    'argdata' => [
+      [
+        'combinerOp0',
+        'GLenum ',
+        undef,
+        'ShadingRateCombinerOp'
+      ],
+      [
+        'combinerOp1',
+        'GLenum ',
+        undef,
+        'ShadingRateCombinerOp'
+      ]
+    ],
+    'feature' => 'GL_EXT_fragment_shading_rate',
+    'glewImpl' => '__glewShadingRateCombinerOpsEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glShadingRateEXT' => {
+    'argdata' => [
+      [
+        'rate',
+        'GLenum ',
+        undef,
+        'ShadingRate'
+      ]
+    ],
+    'feature' => 'GL_EXT_fragment_shading_rate',
+    'glewImpl' => '__glewShadingRateEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glShadingRateImageBarrierNV' => {
+    'argdata' => [
+      [
+        'synchronize',
+        'GLboolean '
+      ]
+    ],
+    'feature' => 'GL_NV_shading_rate_image',
+    'glewImpl' => '__glewShadingRateImageBarrierNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glShadingRateImagePaletteNV' => {
+    'argdata' => [
+      [
+        'viewport',
+        'GLuint '
+      ],
+      [
+        'first',
+        'GLuint '
+      ],
+      [
+        'count',
+        'GLsizei '
+      ],
+      [
+        'rates',
+        'const GLenum* ',
+        'count'
+      ]
+    ],
+    'dynlang' => {
+      'CLEANUP' => 'free(rates);',
+      'count' => 'items-2',
+      'rates' => 'OGLM_GET_ARGS(rates,2,GLenum,IV)'
+    },
+    'feature' => 'GL_NV_shading_rate_image',
+    'glewImpl' => '__glewShadingRateImagePaletteNV',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      3
+    ],
+    'restype' => 'void'
+  },
+  'glShadingRateQCOM' => {
+    'argdata' => [
+      [
+        'rate',
+        'GLenum ',
+        undef,
+        'ShadingRateQCOM'
+      ]
+    ],
+    'feature' => 'GL_QCOM_shading_rate',
+    'glewImpl' => '__glewShadingRateQCOM',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glShadingRateSampleOrderCustomNV' => {
+    'argdata' => [
+      [
+        'rate',
+        'GLenum '
+      ],
+      [
+        'samples',
+        'GLuint '
+      ],
+      [
+        'locations',
+        'const GLint* ',
+        'COMPSIZE(rate,samples)'
+      ]
+    ],
+    'feature' => 'GL_NV_shading_rate_image',
+    'glewImpl' => '__glewShadingRateSampleOrderCustomNV',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glShadingRateSampleOrderNV' => {
+    'argdata' => [
+      [
+        'order',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_NV_shading_rate_image',
+    'glewImpl' => '__glewShadingRateSampleOrderNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glSharpenTexFuncSGIS' => {
     'argdata' => [
       [
@@ -50611,6 +54461,36 @@ our %registry = (
       2,
       4,
       5
+    ],
+    'restype' => 'void'
+  },
+  'glSignalSemaphoreui64NVX' => {
+    'argdata' => [
+      [
+        'signalGpu',
+        'GLuint '
+      ],
+      [
+        'fenceObjectCount',
+        'GLsizei '
+      ],
+      [
+        'semaphoreArray',
+        'const GLuint* ',
+        'fenceObjectCount'
+      ],
+      [
+        'fenceValueArray',
+        'const GLuint64 *',
+        'fenceObjectCount'
+      ]
+    ],
+    'feature' => 'GL_NVX_progress_fence',
+    'glewImpl' => '__glewSignalSemaphoreui64NVX',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2,
+      3
     ],
     'restype' => 'void'
   },
@@ -51546,6 +55426,28 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'GLboolean'
   },
+  'glTexAttachMemoryNV' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'TextureTarget'
+      ],
+      [
+        'memory',
+        'GLuint '
+      ],
+      [
+        'offset',
+        'GLuint64 '
+      ]
+    ],
+    'feature' => 'GL_NV_memory_attachment',
+    'glewImpl' => '__glewTexAttachMemoryNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glTexBuffer' => {
     'aliases' => {
       'glTexBufferARB' => 'GL_ARB_texture_buffer_object',
@@ -51571,6 +55473,26 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_3_1',
     'glewImpl' => '__glewTexBuffer',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glTexBufferOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'internalformat',
+        'GLenum '
+      ],
+      [
+        'buffer',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_buffer',
+    'glewImpl' => '__glewTexBufferOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -51606,6 +55528,34 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_texture_buffer_range',
     'glewImpl' => '__glewTexBufferRange',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glTexBufferRangeOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'internalformat',
+        'GLenum '
+      ],
+      [
+        'buffer',
+        'GLuint '
+      ],
+      [
+        'offset',
+        'GLintptr '
+      ],
+      [
+        'size',
+        'GLsizeiptr '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_buffer',
+    'glewImpl' => '__glewTexBufferRangeOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -53305,6 +57255,50 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glTexEstimateMotionQCOM' => {
+    'argdata' => [
+      [
+        'ref',
+        'GLuint '
+      ],
+      [
+        'target',
+        'GLuint '
+      ],
+      [
+        'output',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_QCOM_motion_estimation',
+    'glewImpl' => '__glewTexEstimateMotionQCOM',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glTexEstimateMotionRegionsQCOM' => {
+    'argdata' => [
+      [
+        'ref',
+        'GLuint '
+      ],
+      [
+        'target',
+        'GLuint '
+      ],
+      [
+        'output',
+        'GLuint '
+      ],
+      [
+        'mask',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_QCOM_motion_estimation',
+    'glewImpl' => '__glewTexEstimateMotionRegionsQCOM',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glTexFilterFuncSGIS' => {
     'argdata' => [
       [
@@ -53418,6 +57412,26 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glTexGenfOES' => {
+    'argdata' => [
+      [
+        'coord',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'param',
+        'GLfloat '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_cube_map',
+    'glewImpl' => '__glewTexGenfOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glTexGenfv' => {
     'argdata' => [
       [
@@ -53440,6 +57454,29 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glTexGenfvOES' => {
+    'argdata' => [
+      [
+        'coord',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'const GLfloat* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_cube_map',
+    'glewImpl' => '__glewTexGenfvOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -53470,6 +57507,26 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glTexGeniOES' => {
+    'argdata' => [
+      [
+        'coord',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'param',
+        'GLint '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_cube_map',
+    'glewImpl' => '__glewTexGeniOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glTexGeniv' => {
     'argdata' => [
       [
@@ -53492,6 +57549,72 @@ our %registry = (
     ],
     'core_removed' => 1,
     'feature' => 'GL_VERSION_1_1',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glTexGenivOES' => {
+    'argdata' => [
+      [
+        'coord',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'const GLint* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_cube_map',
+    'glewImpl' => '__glewTexGenivOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glTexGenxOES' => {
+    'argdata' => [
+      [
+        'coord',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'param',
+        'GLfixed '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_cube_map',
+    'glewImpl' => '__glewTexGenxOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glTexGenxvOES' => {
+    'argdata' => [
+      [
+        'coord',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'const GLfixed* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_cube_map',
+    'glewImpl' => '__glewTexGenxvOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -53878,6 +58001,57 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glTexImage3DOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'internalFormat',
+        'GLenum '
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ],
+      [
+        'depth',
+        'GLsizei '
+      ],
+      [
+        'border',
+        'GLint '
+      ],
+      [
+        'format',
+        'GLenum '
+      ],
+      [
+        'type',
+        'GLenum '
+      ],
+      [
+        'pixels',
+        'const void *'
+      ]
+    ],
+    'feature' => 'GL_OES_texture_3D',
+    'glewImpl' => '__glewTexImage3DOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      9
+    ],
+    'restype' => 'void'
+  },
   'glTexImage4DSGIS' => {
     'argdata' => [
       [
@@ -53989,6 +58163,64 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glTexPageCommitmentMemNV' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'TextureTarget'
+      ],
+      [
+        'layer',
+        'GLint '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'xoffset',
+        'GLint '
+      ],
+      [
+        'yoffset',
+        'GLint '
+      ],
+      [
+        'zoffset',
+        'GLint '
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ],
+      [
+        'depth',
+        'GLsizei '
+      ],
+      [
+        'memory',
+        'GLuint '
+      ],
+      [
+        'offset',
+        'GLuint64 '
+      ],
+      [
+        'commit',
+        'GLboolean '
+      ]
+    ],
+    'feature' => 'GL_NV_memory_object_sparse',
+    'glewImpl' => '__glewTexPageCommitmentMemNV',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glTexParameterIiv' => {
     'aliases' => {
       'glTexParameterIivEXT' => 'GL_EXT_texture_integer'
@@ -54020,6 +58252,29 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glTexParameterIivOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'const GLint* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_border_clamp',
+    'glewImpl' => '__glewTexParameterIivOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
   'glTexParameterIuiv' => {
     'aliases' => {
       'glTexParameterIuivEXT' => 'GL_EXT_texture_integer'
@@ -54045,6 +58300,29 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewTexParameterIuiv',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glTexParameterIuivOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'pname',
+        'GLenum '
+      ],
+      [
+        'params',
+        'const GLuint* '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_border_clamp',
+    'glewImpl' => '__glewTexParameterIuivOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -54440,6 +58718,128 @@ our %registry = (
     'feature' => 'GL_ARB_texture_storage_multisample',
     'glewImpl' => '__glewTexStorage3DMultisample',
     'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glTexStorage3DMultisampleOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'samples',
+        'GLsizei '
+      ],
+      [
+        'internalformat',
+        'GLenum '
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ],
+      [
+        'depth',
+        'GLsizei '
+      ],
+      [
+        'fixedsamplelocations',
+        'GLboolean '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_storage_multisample_2d_array',
+    'glewImpl' => '__glewTexStorage3DMultisampleOES',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glTexStorageAttribs2DEXT' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'TextureTarget'
+      ],
+      [
+        'levels',
+        'GLsizei '
+      ],
+      [
+        'internalformat',
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ],
+      [
+        'attrib_list',
+        'const GLint* ',
+        undef,
+        'TexStorageAttribs'
+      ]
+    ],
+    'feature' => 'GL_EXT_texture_storage_compression',
+    'glewImpl' => '__glewTexStorageAttribs2DEXT',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      5
+    ],
+    'restype' => 'void'
+  },
+  'glTexStorageAttribs3DEXT' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum ',
+        undef,
+        'TextureTarget'
+      ],
+      [
+        'levels',
+        'GLsizei '
+      ],
+      [
+        'internalformat',
+        'GLenum ',
+        undef,
+        'SizedInternalFormat'
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ],
+      [
+        'depth',
+        'GLsizei '
+      ],
+      [
+        'attrib_list',
+        'const GLint* ',
+        undef,
+        'TexStorageAttribs'
+      ]
+    ],
+    'feature' => 'GL_EXT_texture_storage_compression',
+    'glewImpl' => '__glewTexStorageAttribs3DEXT',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      6
+    ],
     'restype' => 'void'
   },
   'glTexStorageMem1DEXT' => {
@@ -54920,6 +59320,61 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glTexSubImage3DOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'xoffset',
+        'GLint '
+      ],
+      [
+        'yoffset',
+        'GLint '
+      ],
+      [
+        'zoffset',
+        'GLint '
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ],
+      [
+        'depth',
+        'GLsizei '
+      ],
+      [
+        'format',
+        'GLenum '
+      ],
+      [
+        'type',
+        'GLenum '
+      ],
+      [
+        'pixels',
+        'const void *'
+      ]
+    ],
+    'feature' => 'GL_OES_texture_3D',
+    'glewImpl' => '__glewTexSubImage3DOES',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      10
+    ],
+    'restype' => 'void'
+  },
   'glTexSubImage4DSGIS' => {
     'argdata' => [
       [
@@ -54988,6 +59443,26 @@ our %registry = (
     'ptr_args' => [
       12
     ],
+    'restype' => 'void'
+  },
+  'glTextureAttachMemoryNV' => {
+    'argdata' => [
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'memory',
+        'GLuint '
+      ],
+      [
+        'offset',
+        'GLuint64 '
+      ]
+    ],
+    'feature' => 'GL_NV_memory_attachment',
+    'glewImpl' => '__glewTextureAttachMemoryNV',
+    'glewtype' => 'fun',
     'restype' => 'void'
   },
   'glTextureBarrier' => {
@@ -55127,6 +59602,46 @@ our %registry = (
     ],
     'feature' => 'GL_SGIX_fog_texture',
     'glewImpl' => '__glewTextureFogSGIX',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glTextureFoveationParametersQCOM' => {
+    'argdata' => [
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'layer',
+        'GLuint '
+      ],
+      [
+        'focalPoint',
+        'GLuint '
+      ],
+      [
+        'focalX',
+        'GLfloat '
+      ],
+      [
+        'focalY',
+        'GLfloat '
+      ],
+      [
+        'gainX',
+        'GLfloat '
+      ],
+      [
+        'gainY',
+        'GLfloat '
+      ],
+      [
+        'foveaArea',
+        'GLfloat '
+      ]
+    ],
+    'feature' => 'GL_QCOM_texture_foveated',
+    'glewImpl' => '__glewTextureFoveationParametersQCOM',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -55573,8 +60088,64 @@ our %registry = (
         'GLboolean '
       ]
     ],
-    'feature' => 'GL_EXT_sparse_texture',
+    'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewTexturePageCommitmentEXT',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glTexturePageCommitmentMemNV' => {
+    'argdata' => [
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'layer',
+        'GLint '
+      ],
+      [
+        'level',
+        'GLint '
+      ],
+      [
+        'xoffset',
+        'GLint '
+      ],
+      [
+        'yoffset',
+        'GLint '
+      ],
+      [
+        'zoffset',
+        'GLint '
+      ],
+      [
+        'width',
+        'GLsizei '
+      ],
+      [
+        'height',
+        'GLsizei '
+      ],
+      [
+        'depth',
+        'GLsizei '
+      ],
+      [
+        'memory',
+        'GLuint '
+      ],
+      [
+        'offset',
+        'GLuint64 '
+      ],
+      [
+        'commit',
+        'GLboolean '
+      ]
+    ],
+    'feature' => 'GL_NV_memory_object_sparse',
+    'glewImpl' => '__glewTexturePageCommitmentMemNV',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -56919,6 +61490,46 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_texture_view',
     'glewImpl' => '__glewTextureView',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glTextureViewOES' => {
+    'argdata' => [
+      [
+        'texture',
+        'GLuint '
+      ],
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'origtexture',
+        'GLuint '
+      ],
+      [
+        'internalformat',
+        'GLenum '
+      ],
+      [
+        'minlevel',
+        'GLuint '
+      ],
+      [
+        'numlevels',
+        'GLuint '
+      ],
+      [
+        'minlayer',
+        'GLuint '
+      ],
+      [
+        'numlayers',
+        'GLuint '
+      ]
+    ],
+    'feature' => 'GL_OES_texture_view',
+    'glewImpl' => '__glewTextureViewOES',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -58764,7 +63375,7 @@ our %registry = (
   },
   'glUniformHandleui64ARB' => {
     'aliases' => {
-      'glUniformHandleui64IMG' => undef
+      'glUniformHandleui64IMG' => 'GL_IMG_bindless_texture'
     },
     'argdata' => [
       [
@@ -58799,7 +63410,7 @@ our %registry = (
   },
   'glUniformHandleui64vARB' => {
     'aliases' => {
-      'glUniformHandleui64vIMG' => undef
+      'glUniformHandleui64vIMG' => 'GL_IMG_bindless_texture'
     },
     'argdata' => [
       [
@@ -59483,6 +64094,18 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'GLboolean'
   },
+  'glUnmapBufferOES' => {
+    'argdata' => [
+      [
+        'target',
+        'GLenum '
+      ]
+    ],
+    'feature' => 'GL_OES_mapbuffer',
+    'glewImpl' => '__glewUnmapBufferOES',
+    'glewtype' => 'fun',
+    'restype' => 'GLboolean'
+  },
   'glUnmapNamedBuffer' => {
     'argdata' => [
       [
@@ -59567,6 +64190,18 @@ our %registry = (
     'ptr_args' => [
       3
     ],
+    'restype' => 'void'
+  },
+  'glUploadGpuMaskNVX' => {
+    'argdata' => [
+      [
+        'mask',
+        'GLbitfield '
+      ]
+    ],
+    'feature' => 'GL_NVX_gpu_multicast2',
+    'glewImpl' => '__glewUploadGpuMaskNVX',
+    'glewtype' => 'fun',
     'restype' => 'void'
   },
   'glUseProgram' => {
@@ -59764,6 +64399,39 @@ our %registry = (
     ],
     'feature' => 'GL_NV_vdpau_interop',
     'glewImpl' => '__glewVDPAURegisterVideoSurfaceNV',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      0,
+      3
+    ],
+    'restype' => 'GLvdpauSurfaceNV'
+  },
+  'glVDPAURegisterVideoSurfaceWithPictureStructureNV' => {
+    'argdata' => [
+      [
+        'vdpSurface',
+        'const void *'
+      ],
+      [
+        'target',
+        'GLenum '
+      ],
+      [
+        'numTextureNames',
+        'GLsizei '
+      ],
+      [
+        'textureNames',
+        'const GLuint *',
+        'numTextureNames'
+      ],
+      [
+        'isFrameStructure',
+        'GLboolean '
+      ]
+    ],
+    'feature' => 'GL_NV_vdpau_interop2',
+    'glewImpl' => '__glewVDPAURegisterVideoSurfaceWithPictureStructureNV',
     'glewtype' => 'fun',
     'ptr_args' => [
       0,
@@ -66101,6 +70769,36 @@ our %registry = (
     ],
     'restype' => 'void'
   },
+  'glWaitSemaphoreui64NVX' => {
+    'argdata' => [
+      [
+        'waitGpu',
+        'GLuint '
+      ],
+      [
+        'fenceObjectCount',
+        'GLsizei '
+      ],
+      [
+        'semaphoreArray',
+        'const GLuint* ',
+        'fenceObjectCount'
+      ],
+      [
+        'fenceValueArray',
+        'const GLuint64 *',
+        'fenceObjectCount'
+      ]
+    ],
+    'feature' => 'GL_NVX_progress_fence',
+    'glewImpl' => '__glewWaitSemaphoreui64NVX',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2,
+      3
+    ],
+    'restype' => 'void'
+  },
   'glWaitSync' => {
     'aliases' => {
       'glWaitSyncAPPLE' => 'GL_APPLE_sync'
@@ -66192,6 +70890,33 @@ our %registry = (
     ],
     'feature' => 'GL_ARB_vertex_blend',
     'glewImpl' => '__glewWeightPointerARB',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      3
+    ],
+    'restype' => 'void'
+  },
+  'glWeightPointerOES' => {
+    'argdata' => [
+      [
+        'size',
+        'GLint '
+      ],
+      [
+        'type',
+        'GLenum '
+      ],
+      [
+        'stride',
+        'GLsizei '
+      ],
+      [
+        'pointer',
+        'void *'
+      ]
+    ],
+    'feature' => 'GL_OES_matrix_palette',
+    'glewImpl' => '__glewWeightPointerOES',
     'glewtype' => 'fun',
     'ptr_args' => [
       3
@@ -66765,7 +71490,7 @@ our %registry = (
         'GLdouble '
       ],
       [
-        'w',
+        'param4',
         'GLdouble '
       ]
     ],
@@ -67051,6 +71776,7 @@ our @glconstants = qw(
   GL_ACTIVE_VERTEX_UNITS_ARB
   GL_ADD
   GL_ADD_ATI
+  GL_ADD_BLEND_IMG
   GL_ADD_SIGNED
   GL_ADD_SIGNED_ARB
   GL_ADD_SIGNED_EXT
@@ -67093,6 +71819,7 @@ our @glconstants = qw(
   GL_ALPHA8I_EXT
   GL_ALPHA8UI_EXT
   GL_ALPHA8_EXT
+  GL_ALPHA8_OES
   GL_ALPHA8_SNORM
   GL_ALPHA_BIAS
   GL_ALPHA_BITS
@@ -67134,6 +71861,8 @@ our @glconstants = qw(
   GL_AND_REVERSE
   GL_ANY_SAMPLES_PASSED
   GL_ANY_SAMPLES_PASSED_CONSERVATIVE
+  GL_ANY_SAMPLES_PASSED_CONSERVATIVE_EXT
+  GL_ANY_SAMPLES_PASSED_EXT
   GL_ARC_TO_NV
   GL_ARRAY_BUFFER
   GL_ARRAY_BUFFER_ARB
@@ -67164,11 +71893,17 @@ our @glconstants = qw(
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER
+  GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_MESH_SHADER_EXT
+  GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_MESH_SHADER_NV
+  GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TASK_SHADER_EXT
+  GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TASK_SHADER_NV
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER
   GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER
   GL_ATOMIC_COUNTER_BUFFER_SIZE
   GL_ATOMIC_COUNTER_BUFFER_START
+  GL_ATTACHED_MEMORY_OBJECT_NV
+  GL_ATTACHED_MEMORY_OFFSET_NV
   GL_ATTACHED_SHADERS
   GL_ATTENUATION_EXT
   GL_ATTRIBUTE_ADDRESS_COMMAND_NV
@@ -67204,6 +71939,7 @@ our @glconstants = qw(
   GL_BGRA
   GL_BGRA8_EXT
   GL_BGRA_EXT
+  GL_BGRA_IMG
   GL_BGRA_INTEGER
   GL_BGRA_INTEGER_EXT
   GL_BGR_EXT
@@ -67219,6 +71955,7 @@ our @glconstants = qw(
   GL_BINORMAL_ARRAY_TYPE_EXT
   GL_BITMAP
   GL_BITMAP_TOKEN
+  GL_BLACKHOLE_RENDER_INTEL
   GL_BLEND
   GL_BLEND_ADVANCED_COHERENT_KHR
   GL_BLEND_ADVANCED_COHERENT_NV
@@ -67228,21 +71965,28 @@ our @glconstants = qw(
   GL_BLEND_DST
   GL_BLEND_DST_ALPHA
   GL_BLEND_DST_ALPHA_EXT
+  GL_BLEND_DST_ALPHA_OES
   GL_BLEND_DST_RGB
   GL_BLEND_DST_RGB_EXT
+  GL_BLEND_DST_RGB_OES
   GL_BLEND_EQUATION
   GL_BLEND_EQUATION_ALPHA
   GL_BLEND_EQUATION_ALPHA_EXT
+  GL_BLEND_EQUATION_ALPHA_OES
   GL_BLEND_EQUATION_EXT
+  GL_BLEND_EQUATION_OES
   GL_BLEND_EQUATION_RGB
   GL_BLEND_EQUATION_RGB_EXT
+  GL_BLEND_EQUATION_RGB_OES
   GL_BLEND_OVERLAP_NV
   GL_BLEND_PREMULTIPLIED_SRC_NV
   GL_BLEND_SRC
   GL_BLEND_SRC_ALPHA
   GL_BLEND_SRC_ALPHA_EXT
+  GL_BLEND_SRC_ALPHA_OES
   GL_BLEND_SRC_RGB
   GL_BLEND_SRC_RGB_EXT
+  GL_BLEND_SRC_RGB_OES
   GL_BLOCK_INDEX
   GL_BLUE
   GL_BLUE_BIAS
@@ -67269,6 +72013,7 @@ our @glconstants = qw(
   GL_BUFFER_ACCESS
   GL_BUFFER_ACCESS_ARB
   GL_BUFFER_ACCESS_FLAGS
+  GL_BUFFER_ACCESS_OES
   GL_BUFFER_BINDING
   GL_BUFFER_DATA_SIZE
   GL_BUFFER_FLUSHING_UNMAP_APPLE
@@ -67277,10 +72022,12 @@ our @glconstants = qw(
   GL_BUFFER_IMMUTABLE_STORAGE_EXT
   GL_BUFFER_MAPPED
   GL_BUFFER_MAPPED_ARB
+  GL_BUFFER_MAPPED_OES
   GL_BUFFER_MAP_LENGTH
   GL_BUFFER_MAP_OFFSET
   GL_BUFFER_MAP_POINTER
   GL_BUFFER_MAP_POINTER_ARB
+  GL_BUFFER_MAP_POINTER_OES
   GL_BUFFER_OBJECT_APPLE
   GL_BUFFER_OBJECT_EXT
   GL_BUFFER_SERIALIZED_MODIFY_APPLE
@@ -67319,7 +72066,9 @@ our @glconstants = qw(
   GL_CLAMP_READ_COLOR_ARB
   GL_CLAMP_TO_BORDER
   GL_CLAMP_TO_BORDER_ARB
+  GL_CLAMP_TO_BORDER_EXT
   GL_CLAMP_TO_BORDER_NV
+  GL_CLAMP_TO_BORDER_OES
   GL_CLAMP_TO_BORDER_SGIS
   GL_CLAMP_TO_EDGE
   GL_CLAMP_TO_EDGE_EXT
@@ -67344,6 +72093,7 @@ our @glconstants = qw(
   GL_CLIPPING_OUTPUT_PRIMITIVES
   GL_CLIPPING_OUTPUT_PRIMITIVES_ARB
   GL_CLIP_DEPTH_MODE
+  GL_CLIP_DEPTH_MODE_EXT
   GL_CLIP_DISTANCE0
   GL_CLIP_DISTANCE0_APPLE
   GL_CLIP_DISTANCE0_EXT
@@ -67370,6 +72120,7 @@ our @glconstants = qw(
   GL_CLIP_FAR_HINT_PGI
   GL_CLIP_NEAR_HINT_PGI
   GL_CLIP_ORIGIN
+  GL_CLIP_ORIGIN_EXT
   GL_CLIP_PLANE0
   GL_CLIP_PLANE1
   GL_CLIP_PLANE2
@@ -67413,6 +72164,7 @@ our @glconstants = qw(
   GL_COLOR_ATTACHMENT0
   GL_COLOR_ATTACHMENT0_EXT
   GL_COLOR_ATTACHMENT0_NV
+  GL_COLOR_ATTACHMENT0_OES
   GL_COLOR_ATTACHMENT1
   GL_COLOR_ATTACHMENT10
   GL_COLOR_ATTACHMENT10_EXT
@@ -67608,11 +72360,21 @@ our @glconstants = qw(
   GL_COMPRESSED_RGBA_ASTC_10x8_KHR
   GL_COMPRESSED_RGBA_ASTC_12x10_KHR
   GL_COMPRESSED_RGBA_ASTC_12x12_KHR
+  GL_COMPRESSED_RGBA_ASTC_3x3x3_OES
+  GL_COMPRESSED_RGBA_ASTC_4x3x3_OES
   GL_COMPRESSED_RGBA_ASTC_4x4_KHR
+  GL_COMPRESSED_RGBA_ASTC_4x4x3_OES
+  GL_COMPRESSED_RGBA_ASTC_4x4x4_OES
   GL_COMPRESSED_RGBA_ASTC_5x4_KHR
+  GL_COMPRESSED_RGBA_ASTC_5x4x4_OES
   GL_COMPRESSED_RGBA_ASTC_5x5_KHR
+  GL_COMPRESSED_RGBA_ASTC_5x5x4_OES
+  GL_COMPRESSED_RGBA_ASTC_5x5x5_OES
   GL_COMPRESSED_RGBA_ASTC_6x5_KHR
+  GL_COMPRESSED_RGBA_ASTC_6x5x5_OES
   GL_COMPRESSED_RGBA_ASTC_6x6_KHR
+  GL_COMPRESSED_RGBA_ASTC_6x6x5_OES
+  GL_COMPRESSED_RGBA_ASTC_6x6x6_OES
   GL_COMPRESSED_RGBA_ASTC_8x5_KHR
   GL_COMPRESSED_RGBA_ASTC_8x6_KHR
   GL_COMPRESSED_RGBA_ASTC_8x8_KHR
@@ -67620,6 +72382,10 @@ our @glconstants = qw(
   GL_COMPRESSED_RGBA_BPTC_UNORM_ARB
   GL_COMPRESSED_RGBA_BPTC_UNORM_EXT
   GL_COMPRESSED_RGBA_FXT1_3DFX
+  GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG
+  GL_COMPRESSED_RGBA_PVRTC_2BPPV2_IMG
+  GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG
+  GL_COMPRESSED_RGBA_PVRTC_4BPPV2_IMG
   GL_COMPRESSED_RGBA_S3TC_DXT1_ANGLE
   GL_COMPRESSED_RGBA_S3TC_DXT1_EXT
   GL_COMPRESSED_RGBA_S3TC_DXT1_NV
@@ -67637,6 +72403,8 @@ our @glconstants = qw(
   GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_ARB
   GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_EXT
   GL_COMPRESSED_RGB_FXT1_3DFX
+  GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG
+  GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG
   GL_COMPRESSED_RGB_S3TC_DXT1_ANGLE
   GL_COMPRESSED_RGB_S3TC_DXT1_EXT
   GL_COMPRESSED_RGB_S3TC_DXT1_NV
@@ -67662,11 +72430,21 @@ our @glconstants = qw(
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x8_KHR
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_3x3x3_OES
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4x3x3_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4x4_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4x4x3_OES
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4x4x4_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x4_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x4x4_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x5_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x5x4_OES
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x5x5_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x5_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x5x5_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x6_KHR
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x6x5_OES
+  GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x6x6_OES
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x5_KHR
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x6_KHR
   GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x8_KHR
@@ -67716,6 +72494,7 @@ our @glconstants = qw(
   GL_CONSERVATIVE_RASTER_DILATE_RANGE_NV
   GL_CONSERVATIVE_RASTER_MODE_NV
   GL_CONSERVATIVE_RASTER_MODE_POST_SNAP_NV
+  GL_CONSERVATIVE_RASTER_MODE_PRE_SNAP_NV
   GL_CONSERVATIVE_RASTER_MODE_PRE_SNAP_TRIANGLES_NV
   GL_CONSERVE_MEMORY_HINT_PGI
   GL_CONSTANT
@@ -67729,6 +72508,7 @@ our @glconstants = qw(
   GL_CONSTANT_COLOR1_NV
   GL_CONSTANT_COLOR_EXT
   GL_CONSTANT_EXT
+  GL_CONST_BW_TILING_MESA
   GL_CONST_EYE_NV
   GL_CONTEXT_COMPATIBILITY_PROFILE_BIT
   GL_CONTEXT_CORE_PROFILE_BIT
@@ -67737,11 +72517,15 @@ our @glconstants = qw(
   GL_CONTEXT_FLAG_FORWARD_COMPATIBLE_BIT
   GL_CONTEXT_FLAG_NO_ERROR_BIT
   GL_CONTEXT_FLAG_NO_ERROR_BIT_KHR
+  GL_CONTEXT_FLAG_PROTECTED_CONTENT_BIT_EXT
   GL_CONTEXT_FLAG_ROBUST_ACCESS_BIT
   GL_CONTEXT_FLAG_ROBUST_ACCESS_BIT_ARB
   GL_CONTEXT_LOST
   GL_CONTEXT_PROFILE_MASK
+  GL_CONTEXT_RELEASE_BEHAVIOR
+  GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH
   GL_CONTEXT_ROBUST_ACCESS
+  GL_CONTEXT_ROBUST_ACCESS_EXT
   GL_CONTINUOUS_AMD
   GL_CONTRAST_NV
   GL_CONVEX_HULL_NV
@@ -67775,6 +72559,7 @@ our @glconstants = qw(
   GL_COORD_REPLACE
   GL_COORD_REPLACE_ARB
   GL_COORD_REPLACE_NV
+  GL_COORD_REPLACE_OES
   GL_COPY
   GL_COPY_INVERTED
   GL_COPY_PIXEL_TOKEN
@@ -67802,6 +72587,9 @@ our @glconstants = qw(
   GL_CUBE_MAP_ZP_SGIX
   GL_CUBIC_CURVE_TO_NV
   GL_CUBIC_EXT
+  GL_CUBIC_IMG
+  GL_CUBIC_MIPMAP_LINEAR_IMG
+  GL_CUBIC_MIPMAP_NEAREST_IMG
   GL_CULL_FACE
   GL_CULL_FACE_MODE
   GL_CULL_FRAGMENT_NV
@@ -67826,10 +72614,12 @@ our @glconstants = qw(
   GL_CURRENT_NORMAL
   GL_CURRENT_OCCLUSION_QUERY_ID_NV
   GL_CURRENT_PALETTE_MATRIX_ARB
+  GL_CURRENT_PALETTE_MATRIX_OES
   GL_CURRENT_PROGRAM
   GL_CURRENT_QUERY
   GL_CURRENT_QUERY_ANGLE
   GL_CURRENT_QUERY_ARB
+  GL_CURRENT_QUERY_EXT
   GL_CURRENT_RASTER_COLOR
   GL_CURRENT_RASTER_DISTANCE
   GL_CURRENT_RASTER_INDEX
@@ -67928,10 +72718,12 @@ our @glconstants = qw(
   GL_DEPTH
   GL_DEPTH24_STENCIL8
   GL_DEPTH24_STENCIL8_EXT
+  GL_DEPTH24_STENCIL8_OES
   GL_DEPTH32F_STENCIL8
   GL_DEPTH32F_STENCIL8_NV
   GL_DEPTH_ATTACHMENT
   GL_DEPTH_ATTACHMENT_EXT
+  GL_DEPTH_ATTACHMENT_OES
   GL_DEPTH_BIAS
   GL_DEPTH_BITS
   GL_DEPTH_BOUNDS_EXT
@@ -67948,6 +72740,7 @@ our @glconstants = qw(
   GL_DEPTH_BUFFER_BIT7_QCOM
   GL_DEPTH_BUFFER_FLOAT_MODE_NV
   GL_DEPTH_CLAMP
+  GL_DEPTH_CLAMP_EXT
   GL_DEPTH_CLAMP_FAR_AMD
   GL_DEPTH_CLAMP_NEAR_AMD
   GL_DEPTH_CLAMP_NV
@@ -67955,14 +72748,18 @@ our @glconstants = qw(
   GL_DEPTH_COMPONENT
   GL_DEPTH_COMPONENT16
   GL_DEPTH_COMPONENT16_ARB
+  GL_DEPTH_COMPONENT16_NONLINEAR_NV
+  GL_DEPTH_COMPONENT16_OES
   GL_DEPTH_COMPONENT16_SGIX
   GL_DEPTH_COMPONENT24
   GL_DEPTH_COMPONENT24_ARB
+  GL_DEPTH_COMPONENT24_OES
   GL_DEPTH_COMPONENT24_SGIX
   GL_DEPTH_COMPONENT32
   GL_DEPTH_COMPONENT32F
   GL_DEPTH_COMPONENT32F_NV
   GL_DEPTH_COMPONENT32_ARB
+  GL_DEPTH_COMPONENT32_OES
   GL_DEPTH_COMPONENT32_SGIX
   GL_DEPTH_COMPONENTS
   GL_DEPTH_EXT
@@ -67978,6 +72775,7 @@ our @glconstants = qw(
   GL_DEPTH_STENCIL_ATTACHMENT
   GL_DEPTH_STENCIL_EXT
   GL_DEPTH_STENCIL_NV
+  GL_DEPTH_STENCIL_OES
   GL_DEPTH_STENCIL_TEXTURE_MODE
   GL_DEPTH_STENCIL_TO_BGRA_NV
   GL_DEPTH_STENCIL_TO_RGBA_NV
@@ -67985,6 +72783,9 @@ our @glconstants = qw(
   GL_DEPTH_TEXTURE_MODE
   GL_DEPTH_TEXTURE_MODE_ARB
   GL_DEPTH_WRITEMASK
+  GL_DETACHED_BUFFERS_NV
+  GL_DETACHED_MEMORY_INCARNATION_NV
+  GL_DETACHED_TEXTURES_NV
   GL_DEVICE_LUID_EXT
   GL_DEVICE_NODE_MASK_EXT
   GL_DEVICE_UUID_EXT
@@ -68000,6 +72801,7 @@ our @glconstants = qw(
   GL_DISPLAY_LIST
   GL_DISTANCE_ATTENUATION_EXT
   GL_DITHER
+  GL_DMP_PROGRAM_BINARY_DMP
   GL_DOMAIN
   GL_DONT_CARE
   GL_DOT2_ADD_ATI
@@ -68008,6 +72810,7 @@ our @glconstants = qw(
   GL_DOT3_RGBA
   GL_DOT3_RGBA_ARB
   GL_DOT3_RGBA_EXT
+  GL_DOT3_RGBA_IMG
   GL_DOT3_RGB_ARB
   GL_DOT3_RGB_EXT
   GL_DOT4_ATI
@@ -68050,6 +72853,7 @@ our @glconstants = qw(
   GL_DOUBLE_VEC3_EXT
   GL_DOUBLE_VEC4
   GL_DOUBLE_VEC4_EXT
+  GL_DOWNSAMPLE_SCALES_IMG
   GL_DRAW_ARRAYS_COMMAND_NV
   GL_DRAW_ARRAYS_INSTANCED_COMMAND_NV
   GL_DRAW_ARRAYS_STRIP_COMMAND_NV
@@ -68204,7 +73008,6 @@ our @glconstants = qw(
   GL_EDGE_FLAG_ARRAY_STRIDE
   GL_EDGE_FLAG_ARRAY_STRIDE_EXT
   GL_EFFECTIVE_RASTER_SAMPLES_EXT
-  GL_EGL_GENERATE_RESET_ON_VIDEO_MEMORY_PURGE_NV
   GL_EIGHTH_BIT_ATI
   GL_ELEMENT_ADDRESS_COMMAND_NV
   GL_ELEMENT_ARRAY_ADDRESS_NV
@@ -68232,6 +73035,7 @@ our @glconstants = qw(
   GL_EQUAL
   GL_EQUIV
   GL_ERROR_REGAL
+  GL_ETC1_RGB8_OES
   GL_ETC1_SRGB8_NV
   GL_EVAL_2D_NV
   GL_EVAL_BIT
@@ -68273,6 +73077,7 @@ our @glconstants = qw(
   GL_EYE_RADIAL_NV
   GL_EYE_SPACE_SGIX
   GL_E_TIMES_F_NV
+  GL_FACTOR_ALPHA_MODULATE_IMG
   GL_FACTOR_MAX_AMD
   GL_FACTOR_MIN_AMD
   GL_FAILURE_NV
@@ -68298,11 +73103,23 @@ our @glconstants = qw(
   GL_FIRST_TO_REST_NV
   GL_FIRST_VERTEX_CONVENTION
   GL_FIRST_VERTEX_CONVENTION_EXT
+  GL_FIRST_VERTEX_CONVENTION_OES
   GL_FIXED
   GL_FIXED_ONLY
   GL_FIXED_ONLY_ARB
   GL_FLAT
   GL_FLOAT
+  GL_FLOAT16_IMAGE_1D_AMD
+  GL_FLOAT16_IMAGE_1D_ARRAY_AMD
+  GL_FLOAT16_IMAGE_2D_AMD
+  GL_FLOAT16_IMAGE_2D_ARRAY_AMD
+  GL_FLOAT16_IMAGE_2D_MULTISAMPLE_AMD
+  GL_FLOAT16_IMAGE_2D_MULTISAMPLE_ARRAY_AMD
+  GL_FLOAT16_IMAGE_2D_RECT_AMD
+  GL_FLOAT16_IMAGE_3D_AMD
+  GL_FLOAT16_IMAGE_BUFFER_AMD
+  GL_FLOAT16_IMAGE_CUBE_AMD
+  GL_FLOAT16_IMAGE_CUBE_MAP_ARRAY_AMD
   GL_FLOAT16_MAT2_AMD
   GL_FLOAT16_MAT2x3_AMD
   GL_FLOAT16_MAT2x4_AMD
@@ -68313,6 +73130,24 @@ our @glconstants = qw(
   GL_FLOAT16_MAT4x2_AMD
   GL_FLOAT16_MAT4x3_AMD
   GL_FLOAT16_NV
+  GL_FLOAT16_SAMPLER_1D_AMD
+  GL_FLOAT16_SAMPLER_1D_ARRAY_AMD
+  GL_FLOAT16_SAMPLER_1D_ARRAY_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_1D_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_2D_AMD
+  GL_FLOAT16_SAMPLER_2D_ARRAY_AMD
+  GL_FLOAT16_SAMPLER_2D_ARRAY_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_2D_MULTISAMPLE_AMD
+  GL_FLOAT16_SAMPLER_2D_MULTISAMPLE_ARRAY_AMD
+  GL_FLOAT16_SAMPLER_2D_RECT_AMD
+  GL_FLOAT16_SAMPLER_2D_RECT_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_2D_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_3D_AMD
+  GL_FLOAT16_SAMPLER_BUFFER_AMD
+  GL_FLOAT16_SAMPLER_CUBE_AMD
+  GL_FLOAT16_SAMPLER_CUBE_MAP_ARRAY_AMD
+  GL_FLOAT16_SAMPLER_CUBE_MAP_ARRAY_SHADOW_AMD
+  GL_FLOAT16_SAMPLER_CUBE_SHADOW_AMD
   GL_FLOAT16_VEC2_NV
   GL_FLOAT16_VEC3_NV
   GL_FLOAT16_VEC4_NV
@@ -68424,11 +73259,17 @@ our @glconstants = qw(
   GL_FORMAT_SUBSAMPLE_24_24_OML
   GL_FOVEATION_ENABLE_BIT_QCOM
   GL_FOVEATION_SCALED_BIN_METHOD_BIT_QCOM
+  GL_FOVEATION_SUBSAMPLED_LAYOUT_METHOD_BIT_QCOM
   GL_FRACTIONAL_EVEN
+  GL_FRACTIONAL_EVEN_EXT
+  GL_FRACTIONAL_EVEN_OES
   GL_FRACTIONAL_ODD
+  GL_FRACTIONAL_ODD_EXT
+  GL_FRACTIONAL_ODD_OES
   GL_FRAGMENTS_INSTRUMENT_COUNTERS_SGIX
   GL_FRAGMENTS_INSTRUMENT_MAX_SGIX
   GL_FRAGMENTS_INSTRUMENT_SGIX
+  GL_FRAGMENT_ALPHA_MODULATE_IMG
   GL_FRAGMENT_COLOR_EXT
   GL_FRAGMENT_COLOR_MATERIAL_EXT
   GL_FRAGMENT_COLOR_MATERIAL_FACE_EXT
@@ -68439,6 +73280,7 @@ our @glconstants = qw(
   GL_FRAGMENT_DEPTH_EXT
   GL_FRAGMENT_INPUT_NV
   GL_FRAGMENT_INTERPOLATION_OFFSET_BITS
+  GL_FRAGMENT_INTERPOLATION_OFFSET_BITS_OES
   GL_FRAGMENT_LIGHT0_EXT
   GL_FRAGMENT_LIGHT7_EXT
   GL_FRAGMENT_LIGHTING_EXT
@@ -68460,10 +73302,21 @@ our @glconstants = qw(
   GL_FRAGMENT_SHADER_BIT
   GL_FRAGMENT_SHADER_DERIVATIVE_HINT
   GL_FRAGMENT_SHADER_DERIVATIVE_HINT_ARB
+  GL_FRAGMENT_SHADER_DERIVATIVE_HINT_OES
   GL_FRAGMENT_SHADER_DISCARDS_SAMPLES_EXT
   GL_FRAGMENT_SHADER_FRAMEBUFFER_FETCH_MRT_ARM
   GL_FRAGMENT_SHADER_INVOCATIONS
   GL_FRAGMENT_SHADER_INVOCATIONS_ARB
+  GL_FRAGMENT_SHADING_RATE_ATTACHMENT_WITH_DEFAULT_FRAMEBUFFER_SUPPORTED_EXT
+  GL_FRAGMENT_SHADING_RATE_COMBINER_OP_KEEP_EXT
+  GL_FRAGMENT_SHADING_RATE_COMBINER_OP_MAX_EXT
+  GL_FRAGMENT_SHADING_RATE_COMBINER_OP_MIN_EXT
+  GL_FRAGMENT_SHADING_RATE_COMBINER_OP_MUL_EXT
+  GL_FRAGMENT_SHADING_RATE_COMBINER_OP_REPLACE_EXT
+  GL_FRAGMENT_SHADING_RATE_NON_TRIVIAL_COMBINERS_SUPPORTED_EXT
+  GL_FRAGMENT_SHADING_RATE_PRIMITIVE_RATE_WITH_MULTI_VIEWPORT_SUPPORTED_EXT
+  GL_FRAGMENT_SHADING_RATE_WITH_SAMPLE_MASK_SUPPORTED_EXT
+  GL_FRAGMENT_SHADING_RATE_WITH_SHADER_DEPTH_STENCIL_WRITES_SUPPORTED_EXT
   GL_FRAGMENT_SUBROUTINE
   GL_FRAGMENT_SUBROUTINE_UNIFORM
   GL_FRAGMENT_TEXTURE
@@ -68480,61 +73333,84 @@ our @glconstants = qw(
   GL_FRAMEBUFFER_ATTACHMENT_LAYERED
   GL_FRAMEBUFFER_ATTACHMENT_LAYERED_ARB
   GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_LAYERED_OES
   GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME
   GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_OES
   GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE
   GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_OES
   GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE
   GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_OES
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_OES
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_EXT
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_NV
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_OES
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR
   GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_SAMPLES_EXT
+  GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_SCALE_IMG
   GL_FRAMEBUFFER_BARRIER_BIT
   GL_FRAMEBUFFER_BARRIER_BIT_EXT
   GL_FRAMEBUFFER_BINDING
   GL_FRAMEBUFFER_BINDING_EXT
+  GL_FRAMEBUFFER_BINDING_OES
   GL_FRAMEBUFFER_BLEND
   GL_FRAMEBUFFER_COMPLETE
   GL_FRAMEBUFFER_COMPLETE_EXT
+  GL_FRAMEBUFFER_COMPLETE_OES
   GL_FRAMEBUFFER_DEFAULT
   GL_FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS
   GL_FRAMEBUFFER_DEFAULT_HEIGHT
   GL_FRAMEBUFFER_DEFAULT_LAYERS
   GL_FRAMEBUFFER_DEFAULT_LAYERS_EXT
+  GL_FRAMEBUFFER_DEFAULT_LAYERS_OES
   GL_FRAMEBUFFER_DEFAULT_SAMPLES
   GL_FRAMEBUFFER_DEFAULT_WIDTH
   GL_FRAMEBUFFER_EXT
   GL_FRAMEBUFFER_FETCH_NONCOHERENT_QCOM
+  GL_FRAMEBUFFER_FLIP_X_MESA
+  GL_FRAMEBUFFER_FLIP_Y_MESA
   GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT
   GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_OES
   GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_OES
   GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER
   GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_OES
   GL_FRAMEBUFFER_INCOMPLETE_FORMATS_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_FORMATS_OES
+  GL_FRAMEBUFFER_INCOMPLETE_FOVEATION_QCOM
   GL_FRAMEBUFFER_INCOMPLETE_INSUFFICIENT_SHADER_COMBINED_LOCAL_STORAGE_EXT
   GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_ARB
   GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_EXT
   GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS
   GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_ARB
   GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_OES
   GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT
   GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_OES
   GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE
+  GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_AND_DOWNSAMPLE_IMG
   GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_ANGLE
   GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_APPLE
   GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_IMG
   GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_NV
   GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER
   GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_EXT
+  GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_OES
   GL_FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR
+  GL_FRAMEBUFFER_OES
   GL_FRAMEBUFFER_PROGRAMMABLE_SAMPLE_LOCATIONS_ARB
   GL_FRAMEBUFFER_PROGRAMMABLE_SAMPLE_LOCATIONS_NV
   GL_FRAMEBUFFER_RENDERABLE
@@ -68544,9 +73420,12 @@ our @glconstants = qw(
   GL_FRAMEBUFFER_SRGB
   GL_FRAMEBUFFER_SRGB_CAPABLE_EXT
   GL_FRAMEBUFFER_SRGB_EXT
+  GL_FRAMEBUFFER_SWAP_XY_MESA
   GL_FRAMEBUFFER_UNDEFINED
+  GL_FRAMEBUFFER_UNDEFINED_OES
   GL_FRAMEBUFFER_UNSUPPORTED
   GL_FRAMEBUFFER_UNSUPPORTED_EXT
+  GL_FRAMEBUFFER_UNSUPPORTED_OES
   GL_FRAME_NV
   GL_FRONT
   GL_FRONT_AND_BACK
@@ -68559,12 +73438,16 @@ our @glconstants = qw(
   GL_FULL_SUPPORT
   GL_FUNC_ADD
   GL_FUNC_ADD_EXT
+  GL_FUNC_ADD_OES
   GL_FUNC_COMPLEX_ADD_EXT
   GL_FUNC_COMPLEX_MULTIPLY_EXT
   GL_FUNC_REVERSE_SUBTRACT
   GL_FUNC_REVERSE_SUBTRACT_EXT
+  GL_FUNC_REVERSE_SUBTRACT_OES
   GL_FUNC_SUBTRACT
   GL_FUNC_SUBTRACT_EXT
+  GL_FUNC_SUBTRACT_OES
+  GL_GCCSO_SHADER_BINARY_FJ
   GL_GENERATE_MIPMAP
   GL_GENERATE_MIPMAP_HINT
   GL_GENERATE_MIPMAP_HINT_SGIS
@@ -68576,8 +73459,11 @@ our @glconstants = qw(
   GL_GEOMETRY_INPUT_TYPE_ARB
   GL_GEOMETRY_INPUT_TYPE_EXT
   GL_GEOMETRY_LINKED_INPUT_TYPE_EXT
+  GL_GEOMETRY_LINKED_INPUT_TYPE_OES
   GL_GEOMETRY_LINKED_OUTPUT_TYPE_EXT
+  GL_GEOMETRY_LINKED_OUTPUT_TYPE_OES
   GL_GEOMETRY_LINKED_VERTICES_OUT_EXT
+  GL_GEOMETRY_LINKED_VERTICES_OUT_OES
   GL_GEOMETRY_OUTPUT_TYPE
   GL_GEOMETRY_OUTPUT_TYPE_ARB
   GL_GEOMETRY_OUTPUT_TYPE_EXT
@@ -68587,9 +73473,12 @@ our @glconstants = qw(
   GL_GEOMETRY_SHADER_ARB
   GL_GEOMETRY_SHADER_BIT
   GL_GEOMETRY_SHADER_BIT_EXT
+  GL_GEOMETRY_SHADER_BIT_OES
   GL_GEOMETRY_SHADER_EXT
   GL_GEOMETRY_SHADER_INVOCATIONS
   GL_GEOMETRY_SHADER_INVOCATIONS_EXT
+  GL_GEOMETRY_SHADER_INVOCATIONS_OES
+  GL_GEOMETRY_SHADER_OES
   GL_GEOMETRY_SHADER_PRIMITIVES_EMITTED
   GL_GEOMETRY_SHADER_PRIMITIVES_EMITTED_ARB
   GL_GEOMETRY_SUBROUTINE
@@ -68613,6 +73502,7 @@ our @glconstants = qw(
   GL_GLYPH_VERTICAL_BEARING_Y_BIT_NV
   GL_GLYPH_WIDTH_BIT_NV
   GL_GPU_ADDRESS_NV
+  GL_GPU_DISJOINT_EXT
   GL_GPU_MEMORY_INFO_CURRENT_AVAILABLE_VIDMEM_NVX
   GL_GPU_MEMORY_INFO_DEDICATED_VIDMEM_NVX
   GL_GPU_MEMORY_INFO_EVICTED_MEMORY_NVX
@@ -68632,6 +73522,7 @@ our @glconstants = qw(
   GL_GREEN_SCALE
   GL_GUILTY_CONTEXT_RESET
   GL_GUILTY_CONTEXT_RESET_ARB
+  GL_GUILTY_CONTEXT_RESET_EXT
   GL_HALF_APPLE
   GL_HALF_BIAS_NEGATE_NV
   GL_HALF_BIAS_NORMAL_NV
@@ -68639,6 +73530,7 @@ our @glconstants = qw(
   GL_HALF_FLOAT
   GL_HALF_FLOAT_ARB
   GL_HALF_FLOAT_NV
+  GL_HALF_FLOAT_OES
   GL_HANDLE_TYPE_D3D11_IMAGE_EXT
   GL_HANDLE_TYPE_D3D11_IMAGE_KMT_EXT
   GL_HANDLE_TYPE_D3D12_FENCE_EXT
@@ -68685,6 +73577,8 @@ our @glconstants = qw(
   GL_HSL_LUMINOSITY_NV
   GL_HSL_SATURATION_KHR
   GL_HSL_SATURATION_NV
+  GL_HUAWEI_PROGRAM_BINARY
+  GL_HUAWEI_SHADER_BINARY
   GL_IDENTITY_NV
   GL_IGLOO_COLORNORMAL_SGIX
   GL_IGLOO_FULLSCREEN_SGIX
@@ -68725,6 +73619,7 @@ our @glconstants = qw(
   GL_IMAGE_BIT
   GL_IMAGE_BUFFER
   GL_IMAGE_BUFFER_EXT
+  GL_IMAGE_BUFFER_OES
   GL_IMAGE_CLASS_10_10_10_2
   GL_IMAGE_CLASS_11_11_10
   GL_IMAGE_CLASS_1_X_16
@@ -68741,6 +73636,7 @@ our @glconstants = qw(
   GL_IMAGE_CUBE_EXT
   GL_IMAGE_CUBE_MAP_ARRAY
   GL_IMAGE_CUBE_MAP_ARRAY_EXT
+  GL_IMAGE_CUBE_MAP_ARRAY_OES
   GL_IMAGE_FORMAT_COMPATIBILITY_BY_CLASS
   GL_IMAGE_FORMAT_COMPATIBILITY_BY_SIZE
   GL_IMAGE_FORMAT_COMPATIBILITY_TYPE
@@ -68748,7 +73644,9 @@ our @glconstants = qw(
   GL_IMAGE_PIXEL_TYPE
   GL_IMAGE_TEXEL_SIZE
   GL_IMPLEMENTATION_COLOR_READ_FORMAT
+  GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES
   GL_IMPLEMENTATION_COLOR_READ_TYPE
+  GL_IMPLEMENTATION_COLOR_READ_TYPE_OES
   GL_INCLUSIVE_EXT
   GL_INCR
   GL_INCR_WRAP
@@ -68780,6 +73678,7 @@ our @glconstants = qw(
   GL_INFO_LOG_LENGTH
   GL_INNOCENT_CONTEXT_RESET
   GL_INNOCENT_CONTEXT_RESET_ARB
+  GL_INNOCENT_CONTEXT_RESET_EXT
   GL_INT
   GL_INT16_NV
   GL_INT16_VEC2_NV
@@ -68853,6 +73752,7 @@ our @glconstants = qw(
   GL_INTERPOLATE
   GL_INTERPOLATE_ARB
   GL_INTERPOLATE_EXT
+  GL_INT_10_10_10_2_OES
   GL_INT_2_10_10_10_REV
   GL_INT_IMAGE_1D
   GL_INT_IMAGE_1D_ARRAY
@@ -68872,10 +73772,12 @@ our @glconstants = qw(
   GL_INT_IMAGE_3D_EXT
   GL_INT_IMAGE_BUFFER
   GL_INT_IMAGE_BUFFER_EXT
+  GL_INT_IMAGE_BUFFER_OES
   GL_INT_IMAGE_CUBE
   GL_INT_IMAGE_CUBE_EXT
   GL_INT_IMAGE_CUBE_MAP_ARRAY
   GL_INT_IMAGE_CUBE_MAP_ARRAY_EXT
+  GL_INT_IMAGE_CUBE_MAP_ARRAY_OES
   GL_INT_SAMPLER_1D
   GL_INT_SAMPLER_1D_ARRAY
   GL_INT_SAMPLER_1D_ARRAY_EXT
@@ -68886,6 +73788,7 @@ our @glconstants = qw(
   GL_INT_SAMPLER_2D_EXT
   GL_INT_SAMPLER_2D_MULTISAMPLE
   GL_INT_SAMPLER_2D_MULTISAMPLE_ARRAY
+  GL_INT_SAMPLER_2D_MULTISAMPLE_ARRAY_OES
   GL_INT_SAMPLER_2D_RECT
   GL_INT_SAMPLER_2D_RECT_EXT
   GL_INT_SAMPLER_3D
@@ -68893,11 +73796,13 @@ our @glconstants = qw(
   GL_INT_SAMPLER_BUFFER
   GL_INT_SAMPLER_BUFFER_AMD
   GL_INT_SAMPLER_BUFFER_EXT
+  GL_INT_SAMPLER_BUFFER_OES
   GL_INT_SAMPLER_CUBE
   GL_INT_SAMPLER_CUBE_EXT
   GL_INT_SAMPLER_CUBE_MAP_ARRAY
   GL_INT_SAMPLER_CUBE_MAP_ARRAY_ARB
   GL_INT_SAMPLER_CUBE_MAP_ARRAY_EXT
+  GL_INT_SAMPLER_CUBE_MAP_ARRAY_OES
   GL_INT_SAMPLER_RENDERBUFFER_NV
   GL_INT_VEC2
   GL_INT_VEC2_ARB
@@ -68908,6 +73813,7 @@ our @glconstants = qw(
   GL_INVALID_ENUM
   GL_INVALID_FRAMEBUFFER_OPERATION
   GL_INVALID_FRAMEBUFFER_OPERATION_EXT
+  GL_INVALID_FRAMEBUFFER_OPERATION_OES
   GL_INVALID_INDEX
   GL_INVALID_OPERATION
   GL_INVALID_VALUE
@@ -68921,7 +73827,11 @@ our @glconstants = qw(
   GL_INVERT_OVG_NV
   GL_INVERT_RGB_NV
   GL_ISOLINES
+  GL_ISOLINES_EXT
+  GL_ISOLINES_OES
   GL_IS_PER_PATCH
+  GL_IS_PER_PATCH_EXT
+  GL_IS_PER_PATCH_OES
   GL_IS_ROW_MAJOR
   GL_ITALIC_BIT_NV
   GL_KEEP
@@ -68933,12 +73843,16 @@ our @glconstants = qw(
   GL_LARGE_CW_ARC_TO_NV
   GL_LAST_VERTEX_CONVENTION
   GL_LAST_VERTEX_CONVENTION_EXT
+  GL_LAST_VERTEX_CONVENTION_OES
   GL_LAST_VIDEO_CAPTURE_STATUS_NV
   GL_LAYERED_SGIX
   GL_LAYER_PROVOKING_VERTEX
   GL_LAYER_PROVOKING_VERTEX_EXT
+  GL_LAYER_PROVOKING_VERTEX_OES
   GL_LAYOUT_COLOR_ATTACHMENT_EXT
   GL_LAYOUT_DEFAULT_INTEL
+  GL_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_EXT
+  GL_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_EXT
   GL_LAYOUT_DEPTH_STENCIL_ATTACHMENT_EXT
   GL_LAYOUT_DEPTH_STENCIL_READ_ONLY_EXT
   GL_LAYOUT_GENERAL_EXT
@@ -68984,6 +73898,7 @@ our @glconstants = qw(
   GL_LINES_ADJACENCY
   GL_LINES_ADJACENCY_ARB
   GL_LINES_ADJACENCY_EXT
+  GL_LINES_ADJACENCY_OES
   GL_LINE_BIT
   GL_LINE_LOOP
   GL_LINE_NV
@@ -68998,6 +73913,7 @@ our @glconstants = qw(
   GL_LINE_STRIP_ADJACENCY
   GL_LINE_STRIP_ADJACENCY_ARB
   GL_LINE_STRIP_ADJACENCY_EXT
+  GL_LINE_STRIP_ADJACENCY_OES
   GL_LINE_TOKEN
   GL_LINE_TO_NV
   GL_LINE_WIDTH
@@ -69032,7 +73948,9 @@ our @glconstants = qw(
   GL_LOG_WARNING_REGAL
   GL_LOSE_CONTEXT_ON_RESET
   GL_LOSE_CONTEXT_ON_RESET_ARB
+  GL_LOSE_CONTEXT_ON_RESET_EXT
   GL_LOWER_LEFT
+  GL_LOWER_LEFT_EXT
   GL_LOW_FLOAT
   GL_LOW_INT
   GL_LO_BIAS_NV
@@ -69068,6 +73986,7 @@ our @glconstants = qw(
   GL_LUMINANCE4
   GL_LUMINANCE4_ALPHA4
   GL_LUMINANCE4_ALPHA4_EXT
+  GL_LUMINANCE4_ALPHA4_OES
   GL_LUMINANCE4_EXT
   GL_LUMINANCE6_ALPHA2
   GL_LUMINANCE6_ALPHA2_EXT
@@ -69076,8 +73995,10 @@ our @glconstants = qw(
   GL_LUMINANCE8UI_EXT
   GL_LUMINANCE8_ALPHA8
   GL_LUMINANCE8_ALPHA8_EXT
+  GL_LUMINANCE8_ALPHA8_OES
   GL_LUMINANCE8_ALPHA8_SNORM
   GL_LUMINANCE8_EXT
+  GL_LUMINANCE8_OES
   GL_LUMINANCE8_SNORM
   GL_LUMINANCE_ALPHA
   GL_LUMINANCE_ALPHA16F_ARB
@@ -69255,12 +74176,19 @@ our @glconstants = qw(
   GL_MATRIX9_ARB
   GL_MATRIX_EXT
   GL_MATRIX_INDEX_ARRAY_ARB
+  GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES
+  GL_MATRIX_INDEX_ARRAY_OES
   GL_MATRIX_INDEX_ARRAY_POINTER_ARB
+  GL_MATRIX_INDEX_ARRAY_POINTER_OES
   GL_MATRIX_INDEX_ARRAY_SIZE_ARB
+  GL_MATRIX_INDEX_ARRAY_SIZE_OES
   GL_MATRIX_INDEX_ARRAY_STRIDE_ARB
+  GL_MATRIX_INDEX_ARRAY_STRIDE_OES
   GL_MATRIX_INDEX_ARRAY_TYPE_ARB
+  GL_MATRIX_INDEX_ARRAY_TYPE_OES
   GL_MATRIX_MODE
   GL_MATRIX_PALETTE_ARB
+  GL_MATRIX_PALETTE_OES
   GL_MATRIX_STRIDE
   GL_MAT_AMBIENT_AND_DIFFUSE_BIT_PGI
   GL_MAT_AMBIENT_BIT_PGI
@@ -69272,6 +74200,7 @@ our @glconstants = qw(
   GL_MAX
   GL_MAX_3D_TEXTURE_SIZE
   GL_MAX_3D_TEXTURE_SIZE_EXT
+  GL_MAX_3D_TEXTURE_SIZE_OES
   GL_MAX_ACTIVE_LIGHTS_EXT
   GL_MAX_ALPHA_SGIS
   GL_MAX_ARRAY_TEXTURE_LAYERS
@@ -69291,9 +74220,12 @@ our @glconstants = qw(
   GL_MAX_CLIP_DISTANCES_APPLE
   GL_MAX_CLIP_DISTANCES_EXT
   GL_MAX_CLIP_PLANES
+  GL_MAX_COARSE_FRAGMENT_SAMPLES_NV
   GL_MAX_COLOR_ATTACHMENTS
   GL_MAX_COLOR_ATTACHMENTS_EXT
   GL_MAX_COLOR_ATTACHMENTS_NV
+  GL_MAX_COLOR_FRAMEBUFFER_SAMPLES_AMD
+  GL_MAX_COLOR_FRAMEBUFFER_STORAGE_SAMPLES_AMD
   GL_MAX_COLOR_MATRIX_STACK_DEPTH
   GL_MAX_COLOR_MATRIX_STACK_DEPTH_SGI
   GL_MAX_COLOR_TEXTURE_SAMPLES
@@ -69306,13 +74238,22 @@ our @glconstants = qw(
   GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS
   GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS
   GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS_EXT
+  GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS_OES
   GL_MAX_COMBINED_IMAGE_UNIFORMS
   GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS
   GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS_EXT
+  GL_MAX_COMBINED_MESH_UNIFORM_COMPONENTS_EXT
+  GL_MAX_COMBINED_MESH_UNIFORM_COMPONENTS_NV
   GL_MAX_COMBINED_SHADER_OUTPUT_RESOURCES
   GL_MAX_COMBINED_SHADER_STORAGE_BLOCKS
+  GL_MAX_COMBINED_TASK_UNIFORM_COMPONENTS_EXT
+  GL_MAX_COMBINED_TASK_UNIFORM_COMPONENTS_NV
   GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS
+  GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS_EXT
+  GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS_OES
   GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS
+  GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS_EXT
+  GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS_OES
   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS
   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS_ARB
   GL_MAX_COMBINED_UNIFORM_BLOCKS
@@ -69339,6 +74280,7 @@ our @glconstants = qw(
   GL_MAX_CUBE_MAP_TEXTURE_SIZE
   GL_MAX_CUBE_MAP_TEXTURE_SIZE_ARB
   GL_MAX_CUBE_MAP_TEXTURE_SIZE_EXT
+  GL_MAX_CUBE_MAP_TEXTURE_SIZE_OES
   GL_MAX_CULL_DISTANCES
   GL_MAX_CULL_DISTANCES_EXT
   GL_MAX_DEBUG_GROUP_STACK_DEPTH
@@ -69351,12 +74293,16 @@ our @glconstants = qw(
   GL_MAX_DEEP_3D_TEXTURE_DEPTH_NV
   GL_MAX_DEEP_3D_TEXTURE_WIDTH_HEIGHT_NV
   GL_MAX_DEPTH
+  GL_MAX_DEPTH_STENCIL_FRAMEBUFFER_SAMPLES_AMD
   GL_MAX_DEPTH_TEXTURE_SAMPLES
+  GL_MAX_DETACHED_BUFFERS_NV
+  GL_MAX_DETACHED_TEXTURES_NV
   GL_MAX_DRAW_BUFFERS
   GL_MAX_DRAW_BUFFERS_ARB
   GL_MAX_DRAW_BUFFERS_ATI
   GL_MAX_DRAW_BUFFERS_EXT
   GL_MAX_DRAW_BUFFERS_NV
+  GL_MAX_DRAW_MESH_TASKS_COUNT_NV
   GL_MAX_DUAL_SOURCE_DRAW_BUFFERS
   GL_MAX_DUAL_SOURCE_DRAW_BUFFERS_EXT
   GL_MAX_ELEMENTS_INDICES
@@ -69375,9 +74321,14 @@ our @glconstants = qw(
   GL_MAX_FRAGMENT_INPUT_COMPONENTS
   GL_MAX_FRAGMENT_INTERPOLATION_OFFSET
   GL_MAX_FRAGMENT_INTERPOLATION_OFFSET_NV
+  GL_MAX_FRAGMENT_INTERPOLATION_OFFSET_OES
   GL_MAX_FRAGMENT_LIGHTS_EXT
   GL_MAX_FRAGMENT_PROGRAM_LOCAL_PARAMETERS_NV
   GL_MAX_FRAGMENT_SHADER_STORAGE_BLOCKS
+  GL_MAX_FRAGMENT_SHADING_RATE_ATTACHMENT_LAYERS_EXT
+  GL_MAX_FRAGMENT_SHADING_RATE_ATTACHMENT_TEXEL_ASPECT_RATIO_EXT
+  GL_MAX_FRAGMENT_SHADING_RATE_ATTACHMENT_TEXEL_HEIGHT_EXT
+  GL_MAX_FRAGMENT_SHADING_RATE_ATTACHMENT_TEXEL_WIDTH_EXT
   GL_MAX_FRAGMENT_UNIFORM_BLOCKS
   GL_MAX_FRAGMENT_UNIFORM_COMPONENTS
   GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB
@@ -69385,39 +74336,52 @@ our @glconstants = qw(
   GL_MAX_FRAMEBUFFER_HEIGHT
   GL_MAX_FRAMEBUFFER_LAYERS
   GL_MAX_FRAMEBUFFER_LAYERS_EXT
+  GL_MAX_FRAMEBUFFER_LAYERS_OES
   GL_MAX_FRAMEBUFFER_SAMPLES
   GL_MAX_FRAMEBUFFER_WIDTH
   GL_MAX_GENERAL_COMBINERS_NV
   GL_MAX_GEOMETRY_ATOMIC_COUNTERS
   GL_MAX_GEOMETRY_ATOMIC_COUNTERS_EXT
+  GL_MAX_GEOMETRY_ATOMIC_COUNTERS_OES
   GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS
   GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS_EXT
+  GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS_OES
   GL_MAX_GEOMETRY_BINDABLE_UNIFORMS_EXT
   GL_MAX_GEOMETRY_IMAGE_UNIFORMS
   GL_MAX_GEOMETRY_IMAGE_UNIFORMS_EXT
+  GL_MAX_GEOMETRY_IMAGE_UNIFORMS_OES
   GL_MAX_GEOMETRY_INPUT_COMPONENTS
   GL_MAX_GEOMETRY_INPUT_COMPONENTS_EXT
+  GL_MAX_GEOMETRY_INPUT_COMPONENTS_OES
   GL_MAX_GEOMETRY_OUTPUT_COMPONENTS
   GL_MAX_GEOMETRY_OUTPUT_COMPONENTS_EXT
+  GL_MAX_GEOMETRY_OUTPUT_COMPONENTS_OES
   GL_MAX_GEOMETRY_OUTPUT_VERTICES
   GL_MAX_GEOMETRY_OUTPUT_VERTICES_ARB
   GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT
+  GL_MAX_GEOMETRY_OUTPUT_VERTICES_OES
   GL_MAX_GEOMETRY_PROGRAM_INVOCATIONS_NV
   GL_MAX_GEOMETRY_SHADER_INVOCATIONS
   GL_MAX_GEOMETRY_SHADER_INVOCATIONS_EXT
+  GL_MAX_GEOMETRY_SHADER_INVOCATIONS_OES
   GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS
   GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS_EXT
+  GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS_OES
   GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS
   GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_ARB
   GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT
+  GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_OES
   GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS
   GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_ARB
   GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT
+  GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_OES
   GL_MAX_GEOMETRY_UNIFORM_BLOCKS
   GL_MAX_GEOMETRY_UNIFORM_BLOCKS_EXT
+  GL_MAX_GEOMETRY_UNIFORM_BLOCKS_OES
   GL_MAX_GEOMETRY_UNIFORM_COMPONENTS
   GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_ARB
   GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT
+  GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_OES
   GL_MAX_GEOMETRY_VARYING_COMPONENTS_ARB
   GL_MAX_GEOMETRY_VARYING_COMPONENTS_EXT
   GL_MAX_GREEN_SGIS
@@ -69436,6 +74400,39 @@ our @glconstants = qw(
   GL_MAX_LUMINANCE_SGIS
   GL_MAX_MAP_TESSELLATION_NV
   GL_MAX_MATRIX_PALETTE_STACK_DEPTH_ARB
+  GL_MAX_MESH_ATOMIC_COUNTERS_EXT
+  GL_MAX_MESH_ATOMIC_COUNTERS_NV
+  GL_MAX_MESH_ATOMIC_COUNTER_BUFFERS_EXT
+  GL_MAX_MESH_ATOMIC_COUNTER_BUFFERS_NV
+  GL_MAX_MESH_IMAGE_UNIFORMS_EXT
+  GL_MAX_MESH_IMAGE_UNIFORMS_NV
+  GL_MAX_MESH_MULTIVIEW_VIEW_COUNT_EXT
+  GL_MAX_MESH_OUTPUT_COMPONENTS_EXT
+  GL_MAX_MESH_OUTPUT_LAYERS_EXT
+  GL_MAX_MESH_OUTPUT_MEMORY_SIZE_EXT
+  GL_MAX_MESH_OUTPUT_PRIMITIVES_EXT
+  GL_MAX_MESH_OUTPUT_PRIMITIVES_NV
+  GL_MAX_MESH_OUTPUT_VERTICES_EXT
+  GL_MAX_MESH_OUTPUT_VERTICES_NV
+  GL_MAX_MESH_PAYLOAD_AND_OUTPUT_MEMORY_SIZE_EXT
+  GL_MAX_MESH_PAYLOAD_AND_SHARED_MEMORY_SIZE_EXT
+  GL_MAX_MESH_SHADER_STORAGE_BLOCKS_EXT
+  GL_MAX_MESH_SHADER_STORAGE_BLOCKS_NV
+  GL_MAX_MESH_SHARED_MEMORY_SIZE_EXT
+  GL_MAX_MESH_TEXTURE_IMAGE_UNITS_EXT
+  GL_MAX_MESH_TEXTURE_IMAGE_UNITS_NV
+  GL_MAX_MESH_TOTAL_MEMORY_SIZE_NV
+  GL_MAX_MESH_UNIFORM_BLOCKS_EXT
+  GL_MAX_MESH_UNIFORM_BLOCKS_NV
+  GL_MAX_MESH_UNIFORM_COMPONENTS_EXT
+  GL_MAX_MESH_UNIFORM_COMPONENTS_NV
+  GL_MAX_MESH_VIEWS_NV
+  GL_MAX_MESH_WORK_GROUP_COUNT_EXT
+  GL_MAX_MESH_WORK_GROUP_INVOCATIONS_EXT
+  GL_MAX_MESH_WORK_GROUP_INVOCATIONS_NV
+  GL_MAX_MESH_WORK_GROUP_SIZE_EXT
+  GL_MAX_MESH_WORK_GROUP_SIZE_NV
+  GL_MAX_MESH_WORK_GROUP_TOTAL_COUNT_EXT
   GL_MAX_MIPMAP_ANISOTROPY_SGIX
   GL_MAX_MODELVIEW_STACK_DEPTH
   GL_MAX_MULTISAMPLE_COVERAGE_MODES_NV
@@ -69450,10 +74447,15 @@ our @glconstants = qw(
   GL_MAX_OPTIMIZED_VERTEX_SHADER_LOCAL_CONSTANTS_EXT
   GL_MAX_OPTIMIZED_VERTEX_SHADER_VARIANTS_EXT
   GL_MAX_PALETTE_MATRICES_ARB
+  GL_MAX_PALETTE_MATRICES_OES
   GL_MAX_PATCH_VERTICES
+  GL_MAX_PATCH_VERTICES_EXT
+  GL_MAX_PATCH_VERTICES_OES
   GL_MAX_PIXEL_MAP_TABLE
   GL_MAX_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT
   GL_MAX_PN_TRIANGLES_TESSELATION_LEVEL_ATI
+  GL_MAX_PREFERRED_MESH_WORK_GROUP_INVOCATIONS_EXT
+  GL_MAX_PREFERRED_TASK_WORK_GROUP_INVOCATIONS_EXT
   GL_MAX_PROGRAM_ADDRESS_REGISTERS_ARB
   GL_MAX_PROGRAM_ALU_INSTRUCTIONS_ARB
   GL_MAX_PROGRAM_ATTRIBS_ARB
@@ -69505,10 +74507,12 @@ our @glconstants = qw(
   GL_MAX_RED_SGIS
   GL_MAX_RENDERBUFFER_SIZE
   GL_MAX_RENDERBUFFER_SIZE_EXT
+  GL_MAX_RENDERBUFFER_SIZE_OES
   GL_MAX_SAMPLES
   GL_MAX_SAMPLES_ANGLE
   GL_MAX_SAMPLES_APPLE
   GL_MAX_SAMPLES_EXT
+  GL_MAX_SAMPLES_IMG
   GL_MAX_SAMPLES_NV
   GL_MAX_SAMPLE_MASK_WORDS
   GL_MAX_SAMPLE_MASK_WORDS_NV
@@ -69523,6 +74527,7 @@ our @glconstants = qw(
   GL_MAX_SHADER_PIXEL_LOCAL_STORAGE_SIZE_EXT
   GL_MAX_SHADER_STORAGE_BLOCK_SIZE
   GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS
+  GL_MAX_SHADER_SUBSAMPLED_IMAGE_UNITS_QCOM
   GL_MAX_SHININESS_NV
   GL_MAX_SPARSE_3D_TEXTURE_SIZE_AMD
   GL_MAX_SPARSE_3D_TEXTURE_SIZE_ARB
@@ -69537,31 +74542,99 @@ our @glconstants = qw(
   GL_MAX_SUBPIXEL_PRECISION_BIAS_BITS_NV
   GL_MAX_SUBROUTINES
   GL_MAX_SUBROUTINE_UNIFORM_LOCATIONS
+  GL_MAX_TASK_ATOMIC_COUNTERS_EXT
+  GL_MAX_TASK_ATOMIC_COUNTERS_NV
+  GL_MAX_TASK_ATOMIC_COUNTER_BUFFERS_EXT
+  GL_MAX_TASK_ATOMIC_COUNTER_BUFFERS_NV
+  GL_MAX_TASK_IMAGE_UNIFORMS_EXT
+  GL_MAX_TASK_IMAGE_UNIFORMS_NV
+  GL_MAX_TASK_OUTPUT_COUNT_NV
+  GL_MAX_TASK_PAYLOAD_AND_SHARED_MEMORY_SIZE_EXT
+  GL_MAX_TASK_PAYLOAD_SIZE_EXT
+  GL_MAX_TASK_SHADER_STORAGE_BLOCKS_EXT
+  GL_MAX_TASK_SHADER_STORAGE_BLOCKS_NV
+  GL_MAX_TASK_SHARED_MEMORY_SIZE_EXT
+  GL_MAX_TASK_TEXTURE_IMAGE_UNITS_EXT
+  GL_MAX_TASK_TEXTURE_IMAGE_UNITS_NV
+  GL_MAX_TASK_TOTAL_MEMORY_SIZE_NV
+  GL_MAX_TASK_UNIFORM_BLOCKS_EXT
+  GL_MAX_TASK_UNIFORM_BLOCKS_NV
+  GL_MAX_TASK_UNIFORM_COMPONENTS_EXT
+  GL_MAX_TASK_UNIFORM_COMPONENTS_NV
+  GL_MAX_TASK_WORK_GROUP_COUNT_EXT
+  GL_MAX_TASK_WORK_GROUP_INVOCATIONS_EXT
+  GL_MAX_TASK_WORK_GROUP_INVOCATIONS_NV
+  GL_MAX_TASK_WORK_GROUP_SIZE_EXT
+  GL_MAX_TASK_WORK_GROUP_SIZE_NV
+  GL_MAX_TASK_WORK_GROUP_TOTAL_COUNT_EXT
   GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS
+  GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS_EXT
+  GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS_OES
   GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS
+  GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS_EXT
+  GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS_OES
   GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS
+  GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS_EXT
+  GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS_OES
   GL_MAX_TESS_CONTROL_INPUT_COMPONENTS
+  GL_MAX_TESS_CONTROL_INPUT_COMPONENTS_EXT
+  GL_MAX_TESS_CONTROL_INPUT_COMPONENTS_OES
   GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS
+  GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS_EXT
+  GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS_OES
   GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS
+  GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS_EXT
+  GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS_OES
   GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS
+  GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS_EXT
+  GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS_OES
   GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS
+  GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS_EXT
+  GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS_OES
   GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS
+  GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS_EXT
+  GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS_OES
   GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS
+  GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS_EXT
+  GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS_OES
   GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS
+  GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS_EXT
+  GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS_OES
   GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS
+  GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS_EXT
+  GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS_OES
   GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS
+  GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS_EXT
+  GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS_OES
   GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS
+  GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS_EXT
+  GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS_OES
   GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS
+  GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS_EXT
+  GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS_OES
   GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS
+  GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS_EXT
+  GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS_OES
   GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS
+  GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS_EXT
+  GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS_OES
   GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS
+  GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS_EXT
+  GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS_OES
   GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS
+  GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS_EXT
+  GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS_OES
   GL_MAX_TESS_GEN_LEVEL
+  GL_MAX_TESS_GEN_LEVEL_EXT
+  GL_MAX_TESS_GEN_LEVEL_OES
   GL_MAX_TESS_PATCH_COMPONENTS
+  GL_MAX_TESS_PATCH_COMPONENTS_EXT
+  GL_MAX_TESS_PATCH_COMPONENTS_OES
   GL_MAX_TEXTURES_SGIS
   GL_MAX_TEXTURE_BUFFER_SIZE
   GL_MAX_TEXTURE_BUFFER_SIZE_ARB
   GL_MAX_TEXTURE_BUFFER_SIZE_EXT
+  GL_MAX_TEXTURE_BUFFER_SIZE_OES
   GL_MAX_TEXTURE_COORDS
   GL_MAX_TEXTURE_COORDS_ARB
   GL_MAX_TEXTURE_COORDS_NV
@@ -69577,6 +74650,7 @@ our @glconstants = qw(
   GL_MAX_TEXTURE_STACK_DEPTH
   GL_MAX_TEXTURE_UNITS
   GL_MAX_TEXTURE_UNITS_ARB
+  GL_MAX_TIMELINE_SEMAPHORE_VALUE_DIFFERENCE_NV
   GL_MAX_TRACK_MATRICES_NV
   GL_MAX_TRACK_MATRIX_STACK_DEPTH_NV
   GL_MAX_TRANSFORM_FEEDBACK_BUFFERS
@@ -69625,6 +74699,7 @@ our @glconstants = qw(
   GL_MAX_VERTEX_UNIFORM_COMPONENTS_ARB
   GL_MAX_VERTEX_UNIFORM_VECTORS
   GL_MAX_VERTEX_UNITS_ARB
+  GL_MAX_VERTEX_UNITS_OES
   GL_MAX_VERTEX_VARYING_COMPONENTS_ARB
   GL_MAX_VERTEX_VARYING_COMPONENTS_EXT
   GL_MAX_VIEWPORTS
@@ -69635,6 +74710,35 @@ our @glconstants = qw(
   GL_MAX_WINDOW_RECTANGLES_EXT
   GL_MEDIUM_FLOAT
   GL_MEDIUM_INT
+  GL_MEMORY_ATTACHABLE_ALIGNMENT_NV
+  GL_MEMORY_ATTACHABLE_NV
+  GL_MEMORY_ATTACHABLE_SIZE_NV
+  GL_MESH_OUTPUT_PER_PRIMITIVE_GRANULARITY_EXT
+  GL_MESH_OUTPUT_PER_PRIMITIVE_GRANULARITY_NV
+  GL_MESH_OUTPUT_PER_VERTEX_GRANULARITY_EXT
+  GL_MESH_OUTPUT_PER_VERTEX_GRANULARITY_NV
+  GL_MESH_OUTPUT_TYPE_EXT
+  GL_MESH_OUTPUT_TYPE_NV
+  GL_MESH_PREFERS_COMPACT_PRIMITIVE_OUTPUT_EXT
+  GL_MESH_PREFERS_COMPACT_VERTEX_OUTPUT_EXT
+  GL_MESH_PREFERS_LOCAL_INVOCATION_PRIMITIVE_OUTPUT_EXT
+  GL_MESH_PREFERS_LOCAL_INVOCATION_VERTEX_OUTPUT_EXT
+  GL_MESH_PRIMITIVES_GENERATED_EXT
+  GL_MESH_PRIMITIVES_OUT_EXT
+  GL_MESH_PRIMITIVES_OUT_NV
+  GL_MESH_SHADER_BIT_EXT
+  GL_MESH_SHADER_BIT_NV
+  GL_MESH_SHADER_EXT
+  GL_MESH_SHADER_INVOCATIONS_EXT
+  GL_MESH_SHADER_NV
+  GL_MESH_SUBROUTINE_EXT
+  GL_MESH_SUBROUTINE_NV
+  GL_MESH_SUBROUTINE_UNIFORM_EXT
+  GL_MESH_SUBROUTINE_UNIFORM_NV
+  GL_MESH_VERTICES_OUT_EXT
+  GL_MESH_VERTICES_OUT_NV
+  GL_MESH_WORK_GROUP_SIZE_EXT
+  GL_MESH_WORK_GROUP_SIZE_NV
   GL_MIN
   GL_MINMAX
   GL_MINMAX_EXT
@@ -69650,6 +74754,9 @@ our @glconstants = qw(
   GL_MIN_EXT
   GL_MIN_FRAGMENT_INTERPOLATION_OFFSET
   GL_MIN_FRAGMENT_INTERPOLATION_OFFSET_NV
+  GL_MIN_FRAGMENT_INTERPOLATION_OFFSET_OES
+  GL_MIN_FRAGMENT_SHADING_RATE_ATTACHMENT_TEXEL_HEIGHT_EXT
+  GL_MIN_FRAGMENT_SHADING_RATE_ATTACHMENT_TEXEL_WIDTH_EXT
   GL_MIN_GREEN_SGIS
   GL_MIN_INTENSITY_SGIS
   GL_MIN_LOD_WARNING_AMD
@@ -69664,6 +74771,7 @@ our @glconstants = qw(
   GL_MIN_RED_SGIS
   GL_MIN_SAMPLE_SHADING_VALUE
   GL_MIN_SAMPLE_SHADING_VALUE_ARB
+  GL_MIN_SAMPLE_SHADING_VALUE_OES
   GL_MIN_SPARSE_LEVEL_AMD
   GL_MIPMAP
   GL_MIRRORED_REPEAT
@@ -69720,15 +74828,19 @@ our @glconstants = qw(
   GL_MODELVIEW8_ARB
   GL_MODELVIEW9_ARB
   GL_MODELVIEW_MATRIX
+  GL_MODELVIEW_MATRIX_FLOAT_AS_INT_BITS_OES
   GL_MODELVIEW_PROJECTION_NV
   GL_MODELVIEW_STACK_DEPTH
   GL_MODULATE
   GL_MODULATE_ADD_ATI
   GL_MODULATE_ADD_ATIX
+  GL_MODULATE_COLOR_IMG
   GL_MODULATE_SIGNED_ADD_ATI
   GL_MODULATE_SIGNED_ADD_ATIX
   GL_MODULATE_SUBTRACT_ATI
   GL_MODULATE_SUBTRACT_ATIX
+  GL_MOTION_ESTIMATION_SEARCH_BLOCK_X_QCOM
+  GL_MOTION_ESTIMATION_SEARCH_BLOCK_Y_QCOM
   GL_MOVE_TO_CONTINUES_NV
   GL_MOVE_TO_NV
   GL_MOVE_TO_RESETS_NV
@@ -69779,6 +74891,7 @@ our @glconstants = qw(
   GL_NEGATE_BIT_ATI
   GL_NEGATIVE_ONE_EXT
   GL_NEGATIVE_ONE_TO_ONE
+  GL_NEGATIVE_ONE_TO_ONE_EXT
   GL_NEGATIVE_W_EXT
   GL_NEGATIVE_X_EXT
   GL_NEGATIVE_Y_EXT
@@ -69787,6 +74900,7 @@ our @glconstants = qw(
   GL_NEXT_VIDEO_CAPTURE_BUFFER_STATUS_NV
   GL_NICEST
   GL_NONE
+  GL_NONE_OES
   GL_NOOP
   GL_NOP_COMMAND_NV
   GL_NOR
@@ -69813,15 +74927,18 @@ our @glconstants = qw(
   GL_NORMAL_MAP_ARB
   GL_NORMAL_MAP_EXT
   GL_NORMAL_MAP_NV
+  GL_NORMAL_MAP_OES
   GL_NOTEQUAL
   GL_NO_ERROR
   GL_NO_RESET_NOTIFICATION
   GL_NO_RESET_NOTIFICATION_ARB
+  GL_NO_RESET_NOTIFICATION_EXT
   GL_NUM_ACTIVE_VARIABLES
   GL_NUM_COMPATIBLE_SUBROUTINES
   GL_NUM_COMPRESSED_TEXTURE_FORMATS
   GL_NUM_COMPRESSED_TEXTURE_FORMATS_ARB
   GL_NUM_DEVICE_UUIDS_EXT
+  GL_NUM_DOWNSAMPLE_SCALES_IMG
   GL_NUM_EXTENSIONS
   GL_NUM_FILL_STREAMS_NV
   GL_NUM_FRAGMENT_CONSTANTS_ATI
@@ -69833,12 +74950,15 @@ our @glconstants = qw(
   GL_NUM_LOOPBACK_COMPONENTS_ATI
   GL_NUM_PASSES_ATI
   GL_NUM_PROGRAM_BINARY_FORMATS
+  GL_NUM_PROGRAM_BINARY_FORMATS_OES
   GL_NUM_SAMPLE_COUNTS
   GL_NUM_SHADER_BINARY_FORMATS
   GL_NUM_SHADING_LANGUAGE_VERSIONS
   GL_NUM_SPARSE_LEVELS_ARB
   GL_NUM_SPARSE_LEVELS_EXT
   GL_NUM_SPIR_V_EXTENSIONS
+  GL_NUM_SUPPORTED_MULTISAMPLE_MODES_AMD
+  GL_NUM_SURFACE_COMPRESSION_FIXED_RATES_EXT
   GL_NUM_TILING_TYPES_EXT
   GL_NUM_VIDEO_CAPTURE_STREAMS_NV
   GL_NUM_VIRTUAL_PAGE_SIZES_ARB
@@ -70019,6 +75139,16 @@ our @glconstants = qw(
   GL_PACK_SKIP_ROWS_NV
   GL_PACK_SUBSAMPLE_RATE_SGIX
   GL_PACK_SWAP_BYTES
+  GL_PALETTE4_R5_G6_B5_OES
+  GL_PALETTE4_RGB5_A1_OES
+  GL_PALETTE4_RGB8_OES
+  GL_PALETTE4_RGBA4_OES
+  GL_PALETTE4_RGBA8_OES
+  GL_PALETTE8_R5_G6_B5_OES
+  GL_PALETTE8_RGB5_A1_OES
+  GL_PALETTE8_RGB8_OES
+  GL_PALETTE8_RGBA4_OES
+  GL_PALETTE8_RGBA8_OES
   GL_PARALLEL_ARRAYS_INTEL
   GL_PARAMETER_BUFFER
   GL_PARAMETER_BUFFER_ARB
@@ -70028,9 +75158,13 @@ our @glconstants = qw(
   GL_PASS_THROUGH_NV
   GL_PASS_THROUGH_TOKEN
   GL_PATCHES
+  GL_PATCHES_EXT
+  GL_PATCHES_OES
   GL_PATCH_DEFAULT_INNER_LEVEL
   GL_PATCH_DEFAULT_OUTER_LEVEL
   GL_PATCH_VERTICES
+  GL_PATCH_VERTICES_EXT
+  GL_PATCH_VERTICES_OES
   GL_PATH_CLIENT_LENGTH_NV
   GL_PATH_COMMAND_COUNT_NV
   GL_PATH_COMPUTED_LENGTH_NV
@@ -70182,6 +75316,11 @@ our @glconstants = qw(
   GL_POINT_FADE_THRESHOLD_SIZE_EXT
   GL_POINT_NV
   GL_POINT_SIZE
+  GL_POINT_SIZE_ARRAY_BUFFER_BINDING_OES
+  GL_POINT_SIZE_ARRAY_OES
+  GL_POINT_SIZE_ARRAY_POINTER_OES
+  GL_POINT_SIZE_ARRAY_STRIDE_OES
+  GL_POINT_SIZE_ARRAY_TYPE_OES
   GL_POINT_SIZE_GRANULARITY
   GL_POINT_SIZE_MAX
   GL_POINT_SIZE_MAX_ARB
@@ -70199,6 +75338,7 @@ our @glconstants = qw(
   GL_POINT_SPRITE_CULL_CLIP_ATIX
   GL_POINT_SPRITE_CULL_MODE_ATIX
   GL_POINT_SPRITE_NV
+  GL_POINT_SPRITE_OES
   GL_POINT_SPRITE_R_MODE_NV
   GL_POINT_TOKEN
   GL_POLYGON
@@ -70279,13 +75419,16 @@ our @glconstants = qw(
   GL_PRIMITIVES_GENERATED
   GL_PRIMITIVES_GENERATED_EXT
   GL_PRIMITIVES_GENERATED_NV
+  GL_PRIMITIVES_GENERATED_OES
   GL_PRIMITIVES_SUBMITTED
   GL_PRIMITIVES_SUBMITTED_ARB
   GL_PRIMITIVE_BOUNDING_BOX_ARB
+  GL_PRIMITIVE_BOUNDING_BOX_EXT
   GL_PRIMITIVE_ID_NV
   GL_PRIMITIVE_RESTART
   GL_PRIMITIVE_RESTART_FIXED_INDEX
   GL_PRIMITIVE_RESTART_FOR_PATCHES_SUPPORTED
+  GL_PRIMITIVE_RESTART_FOR_PATCHES_SUPPORTED_OES
   GL_PRIMITIVE_RESTART_INDEX
   GL_PRIMITIVE_RESTART_INDEX_NV
   GL_PRIMITIVE_RESTART_NV
@@ -70300,7 +75443,10 @@ our @glconstants = qw(
   GL_PROGRAM_ATTRIB_COMPONENTS_NV
   GL_PROGRAM_BINARY_ANGLE
   GL_PROGRAM_BINARY_FORMATS
+  GL_PROGRAM_BINARY_FORMATS_OES
+  GL_PROGRAM_BINARY_FORMAT_MESA
   GL_PROGRAM_BINARY_LENGTH
+  GL_PROGRAM_BINARY_LENGTH_OES
   GL_PROGRAM_BINARY_RETRIEVABLE_HINT
   GL_PROGRAM_BINDING_ARB
   GL_PROGRAM_ERROR_POSITION_ARB
@@ -70346,6 +75492,7 @@ our @glconstants = qw(
   GL_PROGRAM_UNDER_NATIVE_LIMITS_ARB
   GL_PROJECTION
   GL_PROJECTION_MATRIX
+  GL_PROJECTION_MATRIX_FLOAT_AS_INT_BITS_OES
   GL_PROJECTION_STACK_DEPTH
   GL_PROTECTED_MEMORY_OBJECT_EXT
   GL_PROVOKING_VERTEX
@@ -70384,12 +75531,15 @@ our @glconstants = qw(
   GL_PROXY_TEXTURE_RECTANGLE_NV
   GL_PURGEABLE_APPLE
   GL_PURGED_CONTEXT_RESET_NV
+  GL_PVRIC_SIGNATURE_MISMATCH_IMG
   GL_Q
   GL_QUADRATIC_ATTENUATION
   GL_QUADRATIC_CURVE_TO_NV
   GL_QUADS
+  GL_QUADS_EXT
   GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION
   GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION_EXT
+  GL_QUADS_OES
   GL_QUAD_MESH_SUN
   GL_QUAD_STRIP
   GL_QUARTER_BIT_ATI
@@ -70409,6 +75559,7 @@ our @glconstants = qw(
   GL_QUERY_COUNTER_BITS
   GL_QUERY_COUNTER_BITS_ANGLE
   GL_QUERY_COUNTER_BITS_ARB
+  GL_QUERY_COUNTER_BITS_EXT
   GL_QUERY_DEPTH_BOUNDS_FAIL_EVENT_BIT_AMD
   GL_QUERY_DEPTH_FAIL_EVENT_BIT_AMD
   GL_QUERY_DEPTH_PASS_EVENT_BIT_AMD
@@ -70423,7 +75574,9 @@ our @glconstants = qw(
   GL_QUERY_RESULT_AVAILABLE
   GL_QUERY_RESULT_AVAILABLE_ANGLE
   GL_QUERY_RESULT_AVAILABLE_ARB
+  GL_QUERY_RESULT_AVAILABLE_EXT
   GL_QUERY_RESULT_AVAILABLE_NV
+  GL_QUERY_RESULT_EXT
   GL_QUERY_RESULT_NO_WAIT
   GL_QUERY_RESULT_NO_WAIT_AMD
   GL_QUERY_RESULT_NV
@@ -70474,6 +75627,7 @@ our @glconstants = qw(
   GL_RASTER_SAMPLES_EXT
   GL_READ_BUFFER
   GL_READ_BUFFER_EXT
+  GL_READ_BUFFER_NV
   GL_READ_FRAMEBUFFER
   GL_READ_FRAMEBUFFER_ANGLE
   GL_READ_FRAMEBUFFER_APPLE
@@ -70494,6 +75648,7 @@ our @glconstants = qw(
   GL_READ_PIXEL_DATA_RANGE_POINTER_NV
   GL_READ_WRITE
   GL_READ_WRITE_ARB
+  GL_RECIP_ADD_SIGNED_ALPHA_IMG
   GL_RECLAIM_MEMORY_HINT_PGI
   GL_RECT_NV
   GL_RED
@@ -70514,13 +75669,23 @@ our @glconstants = qw(
   GL_REFERENCED_BY_FRAGMENT_SHADER
   GL_REFERENCED_BY_GEOMETRY_SHADER
   GL_REFERENCED_BY_GEOMETRY_SHADER_EXT
+  GL_REFERENCED_BY_GEOMETRY_SHADER_OES
+  GL_REFERENCED_BY_MESH_SHADER_EXT
+  GL_REFERENCED_BY_MESH_SHADER_NV
+  GL_REFERENCED_BY_TASK_SHADER_EXT
+  GL_REFERENCED_BY_TASK_SHADER_NV
   GL_REFERENCED_BY_TESS_CONTROL_SHADER
+  GL_REFERENCED_BY_TESS_CONTROL_SHADER_EXT
+  GL_REFERENCED_BY_TESS_CONTROL_SHADER_OES
   GL_REFERENCED_BY_TESS_EVALUATION_SHADER
+  GL_REFERENCED_BY_TESS_EVALUATION_SHADER_EXT
+  GL_REFERENCED_BY_TESS_EVALUATION_SHADER_OES
   GL_REFERENCED_BY_VERTEX_SHADER
   GL_REFLECTION_MAP
   GL_REFLECTION_MAP_ARB
   GL_REFLECTION_MAP_EXT
   GL_REFLECTION_MAP_NV
+  GL_REFLECTION_MAP_OES
   GL_REGISTER_COMBINERS_NV
   GL_REG_0_ATI
   GL_REG_1_ATI
@@ -70552,33 +75717,46 @@ our @glconstants = qw(
   GL_RENDERBUFFER
   GL_RENDERBUFFER_ALPHA_SIZE
   GL_RENDERBUFFER_ALPHA_SIZE_EXT
+  GL_RENDERBUFFER_ALPHA_SIZE_OES
   GL_RENDERBUFFER_BINDING
   GL_RENDERBUFFER_BINDING_EXT
+  GL_RENDERBUFFER_BINDING_OES
   GL_RENDERBUFFER_BLUE_SIZE
   GL_RENDERBUFFER_BLUE_SIZE_EXT
+  GL_RENDERBUFFER_BLUE_SIZE_OES
   GL_RENDERBUFFER_COLOR_SAMPLES_NV
   GL_RENDERBUFFER_COVERAGE_SAMPLES_NV
   GL_RENDERBUFFER_DEPTH_SIZE
   GL_RENDERBUFFER_DEPTH_SIZE_EXT
+  GL_RENDERBUFFER_DEPTH_SIZE_OES
   GL_RENDERBUFFER_EXT
   GL_RENDERBUFFER_FREE_MEMORY_ATI
   GL_RENDERBUFFER_GREEN_SIZE
   GL_RENDERBUFFER_GREEN_SIZE_EXT
+  GL_RENDERBUFFER_GREEN_SIZE_OES
   GL_RENDERBUFFER_HEIGHT
   GL_RENDERBUFFER_HEIGHT_EXT
+  GL_RENDERBUFFER_HEIGHT_OES
   GL_RENDERBUFFER_INTERNAL_FORMAT
   GL_RENDERBUFFER_INTERNAL_FORMAT_EXT
+  GL_RENDERBUFFER_INTERNAL_FORMAT_OES
+  GL_RENDERBUFFER_OES
   GL_RENDERBUFFER_RED_SIZE
   GL_RENDERBUFFER_RED_SIZE_EXT
+  GL_RENDERBUFFER_RED_SIZE_OES
   GL_RENDERBUFFER_SAMPLES
   GL_RENDERBUFFER_SAMPLES_ANGLE
   GL_RENDERBUFFER_SAMPLES_APPLE
   GL_RENDERBUFFER_SAMPLES_EXT
+  GL_RENDERBUFFER_SAMPLES_IMG
   GL_RENDERBUFFER_SAMPLES_NV
   GL_RENDERBUFFER_STENCIL_SIZE
   GL_RENDERBUFFER_STENCIL_SIZE_EXT
+  GL_RENDERBUFFER_STENCIL_SIZE_OES
+  GL_RENDERBUFFER_STORAGE_SAMPLES_AMD
   GL_RENDERBUFFER_WIDTH
   GL_RENDERBUFFER_WIDTH_EXT
+  GL_RENDERBUFFER_WIDTH_OES
   GL_RENDERER
   GL_RENDER_DIRECT_TO_FRAMEBUFFER_QCOM
   GL_RENDER_GPU_MASK_NV
@@ -70595,6 +75773,7 @@ our @glconstants = qw(
   GL_REPLACE_OLDEST_SUN
   GL_REPLACE_VALUE_AMD
   GL_REPLICATE_BORDER
+  GL_REPRESENTATIVE_FRAGMENT_TEST_NV
   GL_REQUIRED_TEXTURE_IMAGE_UNITS_OES
   GL_RESAMPLE_AVERAGE_OML
   GL_RESAMPLE_DECIMATE_OML
@@ -70607,6 +75786,7 @@ our @glconstants = qw(
   GL_RESCALE_NORMAL_EXT
   GL_RESET_NOTIFICATION_STRATEGY
   GL_RESET_NOTIFICATION_STRATEGY_ARB
+  GL_RESET_NOTIFICATION_STRATEGY_EXT
   GL_RESTART_PATH_NV
   GL_RESTART_SUN
   GL_RETAINED_APPLE
@@ -70663,8 +75843,10 @@ our @glconstants = qw(
   GL_RGB4_S3TC
   GL_RGB5
   GL_RGB565
+  GL_RGB565_OES
   GL_RGB5_A1
   GL_RGB5_A1_EXT
+  GL_RGB5_A1_OES
   GL_RGB5_EXT
   GL_RGB8
   GL_RGB8I
@@ -70672,6 +75854,7 @@ our @glconstants = qw(
   GL_RGB8UI
   GL_RGB8UI_EXT
   GL_RGB8_EXT
+  GL_RGB8_OES
   GL_RGB8_SNORM
   GL_RGB9_E5
   GL_RGB9_E5_APPLE
@@ -70704,6 +75887,7 @@ our @glconstants = qw(
   GL_RGBA4
   GL_RGBA4_DXT5_S3TC
   GL_RGBA4_EXT
+  GL_RGBA4_OES
   GL_RGBA4_S3TC
   GL_RGBA8
   GL_RGBA8I
@@ -70775,6 +75959,7 @@ our @glconstants = qw(
   GL_SAMPLER_2D_ARRAY_SHADOW_NV
   GL_SAMPLER_2D_MULTISAMPLE
   GL_SAMPLER_2D_MULTISAMPLE_ARRAY
+  GL_SAMPLER_2D_MULTISAMPLE_ARRAY_OES
   GL_SAMPLER_2D_RECT
   GL_SAMPLER_2D_RECT_ARB
   GL_SAMPLER_2D_RECT_SHADOW
@@ -70788,14 +75973,17 @@ our @glconstants = qw(
   GL_SAMPLER_BUFFER
   GL_SAMPLER_BUFFER_AMD
   GL_SAMPLER_BUFFER_EXT
+  GL_SAMPLER_BUFFER_OES
   GL_SAMPLER_CUBE
   GL_SAMPLER_CUBE_ARB
   GL_SAMPLER_CUBE_MAP_ARRAY
   GL_SAMPLER_CUBE_MAP_ARRAY_ARB
   GL_SAMPLER_CUBE_MAP_ARRAY_EXT
+  GL_SAMPLER_CUBE_MAP_ARRAY_OES
   GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW
   GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW_ARB
   GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW_EXT
+  GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW_OES
   GL_SAMPLER_CUBE_SHADOW
   GL_SAMPLER_CUBE_SHADOW_EXT
   GL_SAMPLER_CUBE_SHADOW_NV
@@ -70855,6 +76043,7 @@ our @glconstants = qw(
   GL_SAMPLE_POSITION_NV
   GL_SAMPLE_SHADING
   GL_SAMPLE_SHADING_ARB
+  GL_SAMPLE_SHADING_OES
   GL_SATURATE_BIT_ATI
   GL_SCALAR_EXT
   GL_SCALEBIAS_HINT_SGIX
@@ -70865,8 +76054,10 @@ our @glconstants = qw(
   GL_SCALE_BY_TWO_NV
   GL_SCISSOR_BIT
   GL_SCISSOR_BOX
+  GL_SCISSOR_BOX_EXCLUSIVE_NV
   GL_SCISSOR_COMMAND_NV
   GL_SCISSOR_TEST
+  GL_SCISSOR_TEST_EXCLUSIVE_NV
   GL_SCREEN_COORDINATES_REND
   GL_SCREEN_KHR
   GL_SCREEN_NV
@@ -70895,6 +76086,9 @@ our @glconstants = qw(
   GL_SELECTED_TEXTURE_TRANSFORM_SGIS
   GL_SELECTION_BUFFER_POINTER
   GL_SELECTION_BUFFER_SIZE
+  GL_SEMAPHORE_TYPE_BINARY_NV
+  GL_SEMAPHORE_TYPE_NV
+  GL_SEMAPHORE_TYPE_TIMELINE_NV
   GL_SEPARABLE_2D
   GL_SEPARABLE_2D_EXT
   GL_SEPARATE_ATTRIBS
@@ -70904,12 +76098,23 @@ our @glconstants = qw(
   GL_SEPARATE_SPECULAR_COLOR_EXT
   GL_SET
   GL_SET_AMD
+  GL_SGX_BINARY_IMG
+  GL_SGX_PROGRAM_BINARY_IMG
   GL_SHADER
+  GL_SHADER_BINARY_DMP
   GL_SHADER_BINARY_FORMATS
   GL_SHADER_BINARY_FORMAT_SPIR_V
   GL_SHADER_BINARY_FORMAT_SPIR_V_ARB
+  GL_SHADER_BINARY_VIV
   GL_SHADER_COMPILER
   GL_SHADER_CONSISTENT_NV
+  GL_SHADER_CORE_ACTIVE_COUNT_ARM
+  GL_SHADER_CORE_COUNT_ARM
+  GL_SHADER_CORE_FMA_RATE_ARM
+  GL_SHADER_CORE_MAX_WARP_COUNT_ARM
+  GL_SHADER_CORE_PIXEL_RATE_ARM
+  GL_SHADER_CORE_PRESENT_MASK_ARM
+  GL_SHADER_CORE_TEXEL_RATE_ARM
   GL_SHADER_IMAGE_ACCESS_BARRIER_BIT
   GL_SHADER_IMAGE_ACCESS_BARRIER_BIT_EXT
   GL_SHADER_IMAGE_ATOMIC
@@ -70932,6 +76137,47 @@ our @glconstants = qw(
   GL_SHADE_MODEL
   GL_SHADING_LANGUAGE_VERSION
   GL_SHADING_LANGUAGE_VERSION_ARB
+  GL_SHADING_RATE_16_INVOCATIONS_PER_PIXEL_NV
+  GL_SHADING_RATE_1X1_PIXELS_EXT
+  GL_SHADING_RATE_1X1_PIXELS_QCOM
+  GL_SHADING_RATE_1X2_PIXELS_EXT
+  GL_SHADING_RATE_1X2_PIXELS_QCOM
+  GL_SHADING_RATE_1X4_PIXELS_EXT
+  GL_SHADING_RATE_1_INVOCATION_PER_1X2_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_2X1_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_2X2_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_2X4_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_4X2_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_4X4_PIXELS_NV
+  GL_SHADING_RATE_1_INVOCATION_PER_PIXEL_NV
+  GL_SHADING_RATE_2X1_PIXELS_EXT
+  GL_SHADING_RATE_2X1_PIXELS_QCOM
+  GL_SHADING_RATE_2X2_PIXELS_EXT
+  GL_SHADING_RATE_2X2_PIXELS_QCOM
+  GL_SHADING_RATE_2X4_PIXELS_EXT
+  GL_SHADING_RATE_2_INVOCATIONS_PER_PIXEL_NV
+  GL_SHADING_RATE_4X1_PIXELS_EXT
+  GL_SHADING_RATE_4X2_PIXELS_EXT
+  GL_SHADING_RATE_4X2_PIXELS_QCOM
+  GL_SHADING_RATE_4X4_PIXELS_EXT
+  GL_SHADING_RATE_4X4_PIXELS_QCOM
+  GL_SHADING_RATE_4_INVOCATIONS_PER_PIXEL_NV
+  GL_SHADING_RATE_8_INVOCATIONS_PER_PIXEL_NV
+  GL_SHADING_RATE_ATTACHMENT_EXT
+  GL_SHADING_RATE_EXT
+  GL_SHADING_RATE_IMAGE_BINDING_NV
+  GL_SHADING_RATE_IMAGE_NV
+  GL_SHADING_RATE_IMAGE_PALETTE_COUNT_NV
+  GL_SHADING_RATE_IMAGE_PALETTE_SIZE_NV
+  GL_SHADING_RATE_IMAGE_PER_PRIMITIVE_NV
+  GL_SHADING_RATE_IMAGE_TEXEL_HEIGHT_NV
+  GL_SHADING_RATE_IMAGE_TEXEL_WIDTH_NV
+  GL_SHADING_RATE_NO_INVOCATIONS_NV
+  GL_SHADING_RATE_PRESERVE_ASPECT_RATIO_QCOM
+  GL_SHADING_RATE_QCOM
+  GL_SHADING_RATE_SAMPLE_ORDER_DEFAULT_NV
+  GL_SHADING_RATE_SAMPLE_ORDER_PIXEL_MAJOR_NV
+  GL_SHADING_RATE_SAMPLE_ORDER_SAMPLE_MAJOR_NV
   GL_SHADOW_AMBIENT_SGIX
   GL_SHADOW_ATTENUATION_EXT
   GL_SHARED_EDGE_NV
@@ -70986,6 +76232,8 @@ our @glconstants = qw(
   GL_SLUMINANCE_NV
   GL_SMALL_CCW_ARC_TO_NV
   GL_SMALL_CW_ARC_TO_NV
+  GL_SMAPHS30_PROGRAM_BINARY_DMP
+  GL_SMAPHS_PROGRAM_BINARY_DMP
   GL_SMOOTH
   GL_SMOOTH_CUBIC_CURVE_TO_NV
   GL_SMOOTH_LINE_WIDTH_GRANULARITY
@@ -71082,6 +76330,7 @@ our @glconstants = qw(
   GL_STENCIL
   GL_STENCIL_ATTACHMENT
   GL_STENCIL_ATTACHMENT_EXT
+  GL_STENCIL_ATTACHMENT_OES
   GL_STENCIL_BACK_FAIL
   GL_STENCIL_BACK_FAIL_ATI
   GL_STENCIL_BACK_FUNC
@@ -71116,10 +76365,13 @@ our @glconstants = qw(
   GL_STENCIL_INDEX16
   GL_STENCIL_INDEX16_EXT
   GL_STENCIL_INDEX1_EXT
+  GL_STENCIL_INDEX1_OES
   GL_STENCIL_INDEX4
   GL_STENCIL_INDEX4_EXT
+  GL_STENCIL_INDEX4_OES
   GL_STENCIL_INDEX8
   GL_STENCIL_INDEX8_EXT
+  GL_STENCIL_INDEX8_OES
   GL_STENCIL_OP_VALUE_AMD
   GL_STENCIL_PASS_DEPTH_FAIL
   GL_STENCIL_PASS_DEPTH_PASS
@@ -71153,6 +76405,19 @@ our @glconstants = qw(
   GL_STRICT_DEPTHFUNC_HINT_PGI
   GL_STRICT_LIGHTING_HINT_PGI
   GL_STRICT_SCISSOR_HINT_PGI
+  GL_SUBGROUP_FEATURE_ARITHMETIC_BIT_KHR
+  GL_SUBGROUP_FEATURE_BALLOT_BIT_KHR
+  GL_SUBGROUP_FEATURE_BASIC_BIT_KHR
+  GL_SUBGROUP_FEATURE_CLUSTERED_BIT_KHR
+  GL_SUBGROUP_FEATURE_PARTITIONED_BIT_NV
+  GL_SUBGROUP_FEATURE_QUAD_BIT_KHR
+  GL_SUBGROUP_FEATURE_SHUFFLE_BIT_KHR
+  GL_SUBGROUP_FEATURE_SHUFFLE_RELATIVE_BIT_KHR
+  GL_SUBGROUP_FEATURE_VOTE_BIT_KHR
+  GL_SUBGROUP_QUAD_ALL_STAGES_KHR
+  GL_SUBGROUP_SIZE_KHR
+  GL_SUBGROUP_SUPPORTED_FEATURES_KHR
+  GL_SUBGROUP_SUPPORTED_STAGES_KHR
   GL_SUBPIXEL_BITS
   GL_SUBPIXEL_PRECISION_BIAS_X_BITS_NV
   GL_SUBPIXEL_PRECISION_BIAS_Y_BITS_NV
@@ -71163,6 +76428,22 @@ our @glconstants = qw(
   GL_SUCCESS_NV
   GL_SUPERSAMPLE_SCALE_X_NV
   GL_SUPERSAMPLE_SCALE_Y_NV
+  GL_SUPPORTED_MULTISAMPLE_MODES_AMD
+  GL_SURFACE_COMPRESSION_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_10BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_11BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_12BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_1BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_2BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_3BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_4BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_5BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_6BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_7BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_8BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_9BPC_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_DEFAULT_EXT
+  GL_SURFACE_COMPRESSION_FIXED_RATE_NONE_EXT
   GL_SURFACE_MAPPED_NV
   GL_SURFACE_REGISTERED_NV
   GL_SURFACE_STATE_NV
@@ -71203,14 +76484,31 @@ our @glconstants = qw(
   GL_TANGENT_ARRAY_STRIDE_EXT
   GL_TANGENT_ARRAY_TYPE_EXT
   GL_TANGENT_SPACE_SGIX
+  GL_TASK_SHADER_BIT_EXT
+  GL_TASK_SHADER_BIT_NV
+  GL_TASK_SHADER_EXT
+  GL_TASK_SHADER_INVOCATIONS_EXT
+  GL_TASK_SHADER_NV
+  GL_TASK_SUBROUTINE_EXT
+  GL_TASK_SUBROUTINE_NV
+  GL_TASK_SUBROUTINE_UNIFORM_EXT
+  GL_TASK_SUBROUTINE_UNIFORM_NV
+  GL_TASK_WORK_GROUP_SIZE_EXT
+  GL_TASK_WORK_GROUP_SIZE_NV
   GL_TERMINATE_SEQUENCE_COMMAND_NV
   GL_TESSELLATION_FACTOR_AMD
   GL_TESSELLATION_MODE_AMD
   GL_TESS_CONTROL_OUTPUT_VERTICES
+  GL_TESS_CONTROL_OUTPUT_VERTICES_EXT
+  GL_TESS_CONTROL_OUTPUT_VERTICES_OES
   GL_TESS_CONTROL_PROGRAM_NV
   GL_TESS_CONTROL_PROGRAM_PARAMETER_BUFFER_NV
   GL_TESS_CONTROL_SHADER
   GL_TESS_CONTROL_SHADER_BIT
+  GL_TESS_CONTROL_SHADER_BIT_EXT
+  GL_TESS_CONTROL_SHADER_BIT_OES
+  GL_TESS_CONTROL_SHADER_EXT
+  GL_TESS_CONTROL_SHADER_OES
   GL_TESS_CONTROL_SHADER_PATCHES
   GL_TESS_CONTROL_SHADER_PATCHES_ARB
   GL_TESS_CONTROL_SUBROUTINE
@@ -71220,15 +76518,27 @@ our @glconstants = qw(
   GL_TESS_EVALUATION_PROGRAM_PARAMETER_BUFFER_NV
   GL_TESS_EVALUATION_SHADER
   GL_TESS_EVALUATION_SHADER_BIT
+  GL_TESS_EVALUATION_SHADER_BIT_EXT
+  GL_TESS_EVALUATION_SHADER_BIT_OES
+  GL_TESS_EVALUATION_SHADER_EXT
   GL_TESS_EVALUATION_SHADER_INVOCATIONS
   GL_TESS_EVALUATION_SHADER_INVOCATIONS_ARB
+  GL_TESS_EVALUATION_SHADER_OES
   GL_TESS_EVALUATION_SUBROUTINE
   GL_TESS_EVALUATION_SUBROUTINE_UNIFORM
   GL_TESS_EVALUATION_TEXTURE
   GL_TESS_GEN_MODE
+  GL_TESS_GEN_MODE_EXT
+  GL_TESS_GEN_MODE_OES
   GL_TESS_GEN_POINT_MODE
+  GL_TESS_GEN_POINT_MODE_EXT
+  GL_TESS_GEN_POINT_MODE_OES
   GL_TESS_GEN_SPACING
+  GL_TESS_GEN_SPACING_EXT
+  GL_TESS_GEN_SPACING_OES
   GL_TESS_GEN_VERTEX_ORDER
+  GL_TESS_GEN_VERTEX_ORDER_EXT
+  GL_TESS_GEN_VERTEX_ORDER_OES
   GL_TEXCOORD1_BIT_PGI
   GL_TEXCOORD2_BIT_PGI
   GL_TEXCOORD3_BIT_PGI
@@ -71315,11 +76625,14 @@ our @glconstants = qw(
   GL_TEXTURE_2D_BINDING_EXT
   GL_TEXTURE_2D_MULTISAMPLE
   GL_TEXTURE_2D_MULTISAMPLE_ARRAY
+  GL_TEXTURE_2D_MULTISAMPLE_ARRAY_OES
   GL_TEXTURE_2D_STACK_BINDING_MESAX
   GL_TEXTURE_2D_STACK_MESAX
   GL_TEXTURE_3D
   GL_TEXTURE_3D_BINDING_EXT
   GL_TEXTURE_3D_EXT
+  GL_TEXTURE_3D_OES
+  GL_TEXTURE_ALPHA_MODULATE_IMG
   GL_TEXTURE_ALPHA_SIZE
   GL_TEXTURE_ALPHA_SIZE_EXT
   GL_TEXTURE_ALPHA_TYPE
@@ -71337,16 +76650,21 @@ our @glconstants = qw(
   GL_TEXTURE_BINDING_2D_ARRAY_NV
   GL_TEXTURE_BINDING_2D_MULTISAMPLE
   GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY
+  GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY_OES
   GL_TEXTURE_BINDING_3D
+  GL_TEXTURE_BINDING_3D_OES
   GL_TEXTURE_BINDING_BUFFER
   GL_TEXTURE_BINDING_BUFFER_ARB
   GL_TEXTURE_BINDING_BUFFER_EXT
+  GL_TEXTURE_BINDING_BUFFER_OES
   GL_TEXTURE_BINDING_CUBE_MAP
   GL_TEXTURE_BINDING_CUBE_MAP_ARB
   GL_TEXTURE_BINDING_CUBE_MAP_ARRAY
   GL_TEXTURE_BINDING_CUBE_MAP_ARRAY_ARB
   GL_TEXTURE_BINDING_CUBE_MAP_ARRAY_EXT
+  GL_TEXTURE_BINDING_CUBE_MAP_ARRAY_OES
   GL_TEXTURE_BINDING_CUBE_MAP_EXT
+  GL_TEXTURE_BINDING_CUBE_MAP_OES
   GL_TEXTURE_BINDING_EXTERNAL_OES
   GL_TEXTURE_BINDING_RECTANGLE
   GL_TEXTURE_BINDING_RECTANGLE_ARB
@@ -71360,21 +76678,34 @@ our @glconstants = qw(
   GL_TEXTURE_BLUE_TYPE_ARB
   GL_TEXTURE_BORDER
   GL_TEXTURE_BORDER_COLOR
+  GL_TEXTURE_BORDER_COLOR_EXT
   GL_TEXTURE_BORDER_COLOR_NV
+  GL_TEXTURE_BORDER_COLOR_OES
   GL_TEXTURE_BORDER_VALUES_NV
   GL_TEXTURE_BUFFER
   GL_TEXTURE_BUFFER_ARB
   GL_TEXTURE_BUFFER_BINDING
+  GL_TEXTURE_BUFFER_BINDING_EXT
+  GL_TEXTURE_BUFFER_BINDING_OES
   GL_TEXTURE_BUFFER_DATA_STORE_BINDING
   GL_TEXTURE_BUFFER_DATA_STORE_BINDING_ARB
   GL_TEXTURE_BUFFER_DATA_STORE_BINDING_EXT
+  GL_TEXTURE_BUFFER_DATA_STORE_BINDING_OES
   GL_TEXTURE_BUFFER_EXT
   GL_TEXTURE_BUFFER_FORMAT
   GL_TEXTURE_BUFFER_FORMAT_ARB
   GL_TEXTURE_BUFFER_FORMAT_EXT
+  GL_TEXTURE_BUFFER_OES
   GL_TEXTURE_BUFFER_OFFSET
   GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT
+  GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT_EXT
+  GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT_OES
+  GL_TEXTURE_BUFFER_OFFSET_EXT
+  GL_TEXTURE_BUFFER_OFFSET_OES
   GL_TEXTURE_BUFFER_SIZE
+  GL_TEXTURE_BUFFER_SIZE_EXT
+  GL_TEXTURE_BUFFER_SIZE_OES
+  GL_TEXTURE_CBCR_DEGAMMA_QCOM
   GL_TEXTURE_COLOR_SAMPLES_NV
   GL_TEXTURE_COLOR_TABLE_SGI
   GL_TEXTURE_COMPARE_FAIL_VALUE_ARB
@@ -71418,6 +76749,7 @@ our @glconstants = qw(
   GL_TEXTURE_COORD_NV
   GL_TEXTURE_COORD_SET_INTERLEAVE_FACTOR_SGIS
   GL_TEXTURE_COVERAGE_SAMPLES_NV
+  GL_TEXTURE_CROP_RECT_OES
   GL_TEXTURE_CUBE_MAP
   GL_TEXTURE_CUBE_MAP_ARB
   GL_TEXTURE_CUBE_MAP_ARRAY
@@ -71428,21 +76760,28 @@ our @glconstants = qw(
   GL_TEXTURE_CUBE_MAP_NEGATIVE_X
   GL_TEXTURE_CUBE_MAP_NEGATIVE_X_ARB
   GL_TEXTURE_CUBE_MAP_NEGATIVE_X_EXT
+  GL_TEXTURE_CUBE_MAP_NEGATIVE_X_OES
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Y
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Y_ARB
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Y_EXT
+  GL_TEXTURE_CUBE_MAP_NEGATIVE_Y_OES
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Z
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Z_ARB
   GL_TEXTURE_CUBE_MAP_NEGATIVE_Z_EXT
+  GL_TEXTURE_CUBE_MAP_NEGATIVE_Z_OES
+  GL_TEXTURE_CUBE_MAP_OES
   GL_TEXTURE_CUBE_MAP_POSITIVE_X
   GL_TEXTURE_CUBE_MAP_POSITIVE_X_ARB
   GL_TEXTURE_CUBE_MAP_POSITIVE_X_EXT
+  GL_TEXTURE_CUBE_MAP_POSITIVE_X_OES
   GL_TEXTURE_CUBE_MAP_POSITIVE_Y
   GL_TEXTURE_CUBE_MAP_POSITIVE_Y_ARB
   GL_TEXTURE_CUBE_MAP_POSITIVE_Y_EXT
+  GL_TEXTURE_CUBE_MAP_POSITIVE_Y_OES
   GL_TEXTURE_CUBE_MAP_POSITIVE_Z
   GL_TEXTURE_CUBE_MAP_POSITIVE_Z_ARB
   GL_TEXTURE_CUBE_MAP_POSITIVE_Z_EXT
+  GL_TEXTURE_CUBE_MAP_POSITIVE_Z_OES
   GL_TEXTURE_CUBE_MAP_SEAMLESS
   GL_TEXTURE_DEFORMATION_BIT_SGIX
   GL_TEXTURE_DEPTH
@@ -71466,13 +76805,21 @@ our @glconstants = qw(
   GL_TEXTURE_FIXED_SAMPLE_LOCATIONS
   GL_TEXTURE_FLOAT_COMPONENTS_NV
   GL_TEXTURE_FORMAT_QCOM
+  GL_TEXTURE_FORMAT_SRGB_OVERRIDE_EXT
+  GL_TEXTURE_FOVEATED_CUTOFF_DENSITY_QCOM
+  GL_TEXTURE_FOVEATED_FEATURE_BITS_QCOM
+  GL_TEXTURE_FOVEATED_FEATURE_QUERY_QCOM
+  GL_TEXTURE_FOVEATED_MIN_PIXEL_DENSITY_QCOM
+  GL_TEXTURE_FOVEATED_NUM_FOCAL_POINTS_QUERY_QCOM
   GL_TEXTURE_FREE_MEMORY_ATI
   GL_TEXTURE_GATHER
   GL_TEXTURE_GATHER_SHADOW
   GL_TEXTURE_GEN_MODE
+  GL_TEXTURE_GEN_MODE_OES
   GL_TEXTURE_GEN_Q
   GL_TEXTURE_GEN_R
   GL_TEXTURE_GEN_S
+  GL_TEXTURE_GEN_STR_OES
   GL_TEXTURE_GEN_T
   GL_TEXTURE_GEQUAL_R_SGIX
   GL_TEXTURE_GREEN_SIZE
@@ -71499,6 +76846,7 @@ our @glconstants = qw(
   GL_TEXTURE_LIGHT_EXT
   GL_TEXTURE_LOD_BIAS
   GL_TEXTURE_LOD_BIAS_EXT
+  GL_TEXTURE_LOD_BIAS_QCOM
   GL_TEXTURE_LO_SIZE_NV
   GL_TEXTURE_LUMINANCE_SIZE
   GL_TEXTURE_LUMINANCE_SIZE_EXT
@@ -71509,6 +76857,7 @@ our @glconstants = qw(
   GL_TEXTURE_MATERIAL_FACE_EXT
   GL_TEXTURE_MATERIAL_PARAMETER_EXT
   GL_TEXTURE_MATRIX
+  GL_TEXTURE_MATRIX_FLOAT_AS_INT_BITS_OES
   GL_TEXTURE_MAX_ANISOTROPY
   GL_TEXTURE_MAX_ANISOTROPY_EXT
   GL_TEXTURE_MAX_CLAMP_R_SGIX
@@ -71535,6 +76884,7 @@ our @glconstants = qw(
   GL_TEXTURE_POINT_SPRITE_ATIX
   GL_TEXTURE_PRIORITY
   GL_TEXTURE_PRIORITY_EXT
+  GL_TEXTURE_PROTECTED_EXT
   GL_TEXTURE_RANGE_LENGTH_APPLE
   GL_TEXTURE_RANGE_POINTER_APPLE
   GL_TEXTURE_RECTANGLE
@@ -71552,6 +76902,7 @@ our @glconstants = qw(
   GL_TEXTURE_RESIDENT
   GL_TEXTURE_RESIDENT_EXT
   GL_TEXTURE_SAMPLES
+  GL_TEXTURE_SAMPLES_IMG
   GL_TEXTURE_SHADER_NV
   GL_TEXTURE_SHADOW
   GL_TEXTURE_SHARED_SIZE
@@ -71578,6 +76929,7 @@ our @glconstants = qw(
   GL_TEXTURE_TARGET_QCOM
   GL_TEXTURE_TILING_EXT
   GL_TEXTURE_TYPE_QCOM
+  GL_TEXTURE_UNNORMALIZED_COORDINATES_ARM
   GL_TEXTURE_UNSIGNED_REMAP_MODE_NV
   GL_TEXTURE_UPDATE_BARRIER_BIT
   GL_TEXTURE_UPDATE_BARRIER_BIT_EXT
@@ -71585,26 +76937,34 @@ our @glconstants = qw(
   GL_TEXTURE_VIEW
   GL_TEXTURE_VIEW_MIN_LAYER
   GL_TEXTURE_VIEW_MIN_LAYER_EXT
+  GL_TEXTURE_VIEW_MIN_LAYER_OES
   GL_TEXTURE_VIEW_MIN_LEVEL
   GL_TEXTURE_VIEW_MIN_LEVEL_EXT
+  GL_TEXTURE_VIEW_MIN_LEVEL_OES
   GL_TEXTURE_VIEW_NUM_LAYERS
   GL_TEXTURE_VIEW_NUM_LAYERS_EXT
+  GL_TEXTURE_VIEW_NUM_LAYERS_OES
   GL_TEXTURE_VIEW_NUM_LEVELS
   GL_TEXTURE_VIEW_NUM_LEVELS_EXT
+  GL_TEXTURE_VIEW_NUM_LEVELS_OES
   GL_TEXTURE_WIDTH
   GL_TEXTURE_WIDTH_QCOM
   GL_TEXTURE_WRAP_R
   GL_TEXTURE_WRAP_R_EXT
+  GL_TEXTURE_WRAP_R_OES
   GL_TEXTURE_WRAP_S
   GL_TEXTURE_WRAP_T
+  GL_TEXTURE_Y_DEGAMMA_QCOM
   GL_TEXT_FRAGMENT_SHADER_ATI
   GL_TILING_TYPES_EXT
+  GL_TIMELINE_SEMAPHORE_VALUE_NV
   GL_TIMEOUT_EXPIRED
   GL_TIMEOUT_EXPIRED_APPLE
   GL_TIMEOUT_IGNORED
   GL_TIMEOUT_IGNORED_APPLE
   GL_TIMESTAMP
   GL_TIMESTAMP_ANGLE
+  GL_TIMESTAMP_EXT
   GL_TIME_ELAPSED
   GL_TIME_ELAPSED_ANGLE
   GL_TIME_ELAPSED_EXT
@@ -71681,6 +77041,7 @@ our @glconstants = qw(
   GL_TRIANGLES_ADJACENCY
   GL_TRIANGLES_ADJACENCY_ARB
   GL_TRIANGLES_ADJACENCY_EXT
+  GL_TRIANGLES_ADJACENCY_OES
   GL_TRIANGLE_FAN
   GL_TRIANGLE_LIST_SUN
   GL_TRIANGLE_MESH_SUN
@@ -71688,13 +77049,18 @@ our @glconstants = qw(
   GL_TRIANGLE_STRIP_ADJACENCY
   GL_TRIANGLE_STRIP_ADJACENCY_ARB
   GL_TRIANGLE_STRIP_ADJACENCY_EXT
+  GL_TRIANGLE_STRIP_ADJACENCY_OES
   GL_TRIANGULAR_NV
+  GL_TRP_ERROR_CONTEXT_RESET_IMG
+  GL_TRP_IMG
+  GL_TRP_UNSUPPORTED_CONTEXT_IMG
   GL_TRUE
   GL_TYPE
   GL_UNCORRELATED_NV
   GL_UNDEFINED_APPLE
   GL_UNDEFINED_VERTEX
   GL_UNDEFINED_VERTEX_EXT
+  GL_UNDEFINED_VERTEX_OES
   GL_UNIFORM
   GL_UNIFORM_ADDRESS_COMMAND_NV
   GL_UNIFORM_ARRAY_STRIDE
@@ -71711,6 +77077,10 @@ our @glconstants = qw(
   GL_UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER
   GL_UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER
   GL_UNIFORM_BLOCK_REFERENCED_BY_GEOMETRY_SHADER
+  GL_UNIFORM_BLOCK_REFERENCED_BY_MESH_SHADER_EXT
+  GL_UNIFORM_BLOCK_REFERENCED_BY_MESH_SHADER_NV
+  GL_UNIFORM_BLOCK_REFERENCED_BY_TASK_SHADER_EXT
+  GL_UNIFORM_BLOCK_REFERENCED_BY_TASK_SHADER_NV
   GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER
   GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER
   GL_UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER
@@ -71733,6 +77103,7 @@ our @glconstants = qw(
   GL_UNIFORM_TYPE
   GL_UNKNOWN_CONTEXT_RESET
   GL_UNKNOWN_CONTEXT_RESET_ARB
+  GL_UNKNOWN_CONTEXT_RESET_EXT
   GL_UNPACK_ALIGNMENT
   GL_UNPACK_CLIENT_STORAGE_APPLE
   GL_UNPACK_CMYK_HINT_EXT
@@ -71790,9 +77161,11 @@ our @glconstants = qw(
   GL_UNSIGNED_INT_10F_11F_11F_REV_NV
   GL_UNSIGNED_INT_10_10_10_2
   GL_UNSIGNED_INT_10_10_10_2_EXT
+  GL_UNSIGNED_INT_10_10_10_2_OES
   GL_UNSIGNED_INT_24_8
   GL_UNSIGNED_INT_24_8_EXT
   GL_UNSIGNED_INT_24_8_NV
+  GL_UNSIGNED_INT_24_8_OES
   GL_UNSIGNED_INT_2_10_10_10_REV
   GL_UNSIGNED_INT_2_10_10_10_REV_EXT
   GL_UNSIGNED_INT_5_9_9_9_REV
@@ -71821,10 +77194,12 @@ our @glconstants = qw(
   GL_UNSIGNED_INT_IMAGE_3D_EXT
   GL_UNSIGNED_INT_IMAGE_BUFFER
   GL_UNSIGNED_INT_IMAGE_BUFFER_EXT
+  GL_UNSIGNED_INT_IMAGE_BUFFER_OES
   GL_UNSIGNED_INT_IMAGE_CUBE
   GL_UNSIGNED_INT_IMAGE_CUBE_EXT
   GL_UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY
   GL_UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY_EXT
+  GL_UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY_OES
   GL_UNSIGNED_INT_S8_S8_8_8_NV
   GL_UNSIGNED_INT_SAMPLER_1D
   GL_UNSIGNED_INT_SAMPLER_1D_ARRAY
@@ -71836,6 +77211,7 @@ our @glconstants = qw(
   GL_UNSIGNED_INT_SAMPLER_2D_EXT
   GL_UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE
   GL_UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE_ARRAY
+  GL_UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE_ARRAY_OES
   GL_UNSIGNED_INT_SAMPLER_2D_RECT
   GL_UNSIGNED_INT_SAMPLER_2D_RECT_EXT
   GL_UNSIGNED_INT_SAMPLER_3D
@@ -71843,11 +77219,13 @@ our @glconstants = qw(
   GL_UNSIGNED_INT_SAMPLER_BUFFER
   GL_UNSIGNED_INT_SAMPLER_BUFFER_AMD
   GL_UNSIGNED_INT_SAMPLER_BUFFER_EXT
+  GL_UNSIGNED_INT_SAMPLER_BUFFER_OES
   GL_UNSIGNED_INT_SAMPLER_CUBE
   GL_UNSIGNED_INT_SAMPLER_CUBE_EXT
   GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY
   GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_ARB
   GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_EXT
+  GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_OES
   GL_UNSIGNED_INT_SAMPLER_RENDERBUFFER_NV
   GL_UNSIGNED_INT_VEC2
   GL_UNSIGNED_INT_VEC2_EXT
@@ -71866,6 +77244,7 @@ our @glconstants = qw(
   GL_UNSIGNED_SHORT_4_4_4_4_EXT
   GL_UNSIGNED_SHORT_4_4_4_4_REV
   GL_UNSIGNED_SHORT_4_4_4_4_REV_EXT
+  GL_UNSIGNED_SHORT_4_4_4_4_REV_IMG
   GL_UNSIGNED_SHORT_5_5_5_1
   GL_UNSIGNED_SHORT_5_5_5_1_EXT
   GL_UNSIGNED_SHORT_5_6_5
@@ -71874,7 +77253,9 @@ our @glconstants = qw(
   GL_UNSIGNED_SHORT_8_8_MESA
   GL_UNSIGNED_SHORT_8_8_REV_APPLE
   GL_UNSIGNED_SHORT_8_8_REV_MESA
+  GL_UPLOAD_GPU_MASK_NVX
   GL_UPPER_LEFT
+  GL_UPPER_LEFT_EXT
   GL_USE_MISSING_GLYPH_NV
   GL_UTF16_NV
   GL_UTF8_NV
@@ -71906,6 +77287,7 @@ our @glconstants = qw(
   GL_VERTEX_ARRAY_ADDRESS_NV
   GL_VERTEX_ARRAY_BINDING
   GL_VERTEX_ARRAY_BINDING_APPLE
+  GL_VERTEX_ARRAY_BINDING_OES
   GL_VERTEX_ARRAY_BUFFER_BINDING
   GL_VERTEX_ARRAY_BUFFER_BINDING_ARB
   GL_VERTEX_ARRAY_COUNT_EXT
@@ -72125,10 +77507,16 @@ our @glconstants = qw(
   GL_WEIGHT_ARRAY_ARB
   GL_WEIGHT_ARRAY_BUFFER_BINDING
   GL_WEIGHT_ARRAY_BUFFER_BINDING_ARB
+  GL_WEIGHT_ARRAY_BUFFER_BINDING_OES
+  GL_WEIGHT_ARRAY_OES
   GL_WEIGHT_ARRAY_POINTER_ARB
+  GL_WEIGHT_ARRAY_POINTER_OES
   GL_WEIGHT_ARRAY_SIZE_ARB
+  GL_WEIGHT_ARRAY_SIZE_OES
   GL_WEIGHT_ARRAY_STRIDE_ARB
+  GL_WEIGHT_ARRAY_STRIDE_OES
   GL_WEIGHT_ARRAY_TYPE_ARB
+  GL_WEIGHT_ARRAY_TYPE_OES
   GL_WEIGHT_SUM_UNITY_ARB
   GL_WIDE_LINE_HINT_PGI
   GL_WINDOW_RECTANGLE_EXT
@@ -72139,6 +77527,7 @@ our @glconstants = qw(
   GL_WRITE_DISCARD_NV
   GL_WRITE_ONLY
   GL_WRITE_ONLY_ARB
+  GL_WRITE_ONLY_OES
   GL_WRITE_PIXEL_DATA_RANGE_LENGTH_NV
   GL_WRITE_PIXEL_DATA_RANGE_NV
   GL_WRITE_PIXEL_DATA_RANGE_POINTER_NV
@@ -72162,6 +77551,7 @@ our @glconstants = qw(
   GL_ZERO
   GL_ZERO_EXT
   GL_ZERO_TO_ONE
+  GL_ZERO_TO_ONE_EXT
   GL_ZOOM_X
   GL_ZOOM_Y
   GL_Z_EXT
@@ -72182,6 +77572,10 @@ our %features = (
     'glBlendEquationSeparateIndexedAMD',
     'glBlendFuncIndexedAMD',
     'glBlendFuncSeparateIndexedAMD'
+  ],
+  'GL_AMD_framebuffer_multisample_advanced' => [
+    'glNamedRenderbufferStorageMultisampleAdvancedAMD',
+    'glRenderbufferStorageMultisampleAdvancedAMD'
   ],
   'GL_AMD_framebuffer_sample_positions' => [
     'glFramebufferSamplePositionsfvAMD',
@@ -72800,6 +78194,7 @@ our %features = (
     'glReadnPixelsARB'
   ],
   'GL_ARB_sample_locations' => [
+    'glEvaluateDepthValuesARB',
     'glFramebufferSampleLocationsfvARB',
     'glNamedFramebufferSampleLocationsfvARB'
   ],
@@ -73249,6 +78644,9 @@ our %features = (
     'glWindowPos3sARB',
     'glWindowPos3svARB'
   ],
+  'GL_ARM_shader_core_properties' => [
+    'glMaxActiveShaderCoresARM'
+  ],
   'GL_ATI_draw_buffers' => [
     'glDrawBuffersATI'
   ],
@@ -73357,6 +78755,10 @@ our %features = (
     'glVertexStream4sATI',
     'glVertexStream4svATI'
   ],
+  'GL_EXT_EGL_image_storage' => [
+    'glEGLImageTargetTexStorageEXT',
+    'glEGLImageTargetTextureStorageEXT'
+  ],
   'GL_EXT_base_instance' => [
     'glDrawArraysInstancedBaseInstanceEXT',
     'glDrawElementsInstancedBaseInstanceEXT',
@@ -73385,12 +78787,14 @@ our %features = (
     'glBlendEquationEXT'
   ],
   'GL_EXT_buffer_storage' => [
-    'glBufferStorageEXT',
-    'glNamedBufferStorageEXT'
+    'glBufferStorageEXT'
   ],
   'GL_EXT_clear_texture' => [
     'glClearTexImageEXT',
     'glClearTexSubImageEXT'
+  ],
+  'GL_EXT_clip_control' => [
+    'glClipControlEXT'
   ],
   'GL_EXT_color_subtable' => [
     'glColorSubTableEXT',
@@ -73575,6 +78979,7 @@ our %features = (
     'glMultiTexSubImage2DEXT',
     'glMultiTexSubImage3DEXT',
     'glNamedBufferDataEXT',
+    'glNamedBufferStorageEXT',
     'glNamedBufferSubDataEXT',
     'glNamedCopyBufferSubDataEXT',
     'glNamedFramebufferRenderbufferEXT',
@@ -73637,6 +79042,7 @@ our %features = (
     'glTextureImage1DEXT',
     'glTextureImage2DEXT',
     'glTextureImage3DEXT',
+    'glTexturePageCommitmentEXT',
     'glTextureParameterIivEXT',
     'glTextureParameterIuivEXT',
     'glTextureParameterfEXT',
@@ -73663,6 +79069,18 @@ our %features = (
   ],
   'GL_EXT_discard_framebuffer' => [
     'glDiscardFramebufferEXT'
+  ],
+  'GL_EXT_disjoint_timer_query' => [
+    'glBeginQueryEXT',
+    'glDeleteQueriesEXT',
+    'glEndQueryEXT',
+    'glGenQueriesEXT',
+    'glGetInteger64vEXT',
+    'glGetQueryObjectivEXT',
+    'glGetQueryObjectuivEXT',
+    'glGetQueryivEXT',
+    'glIsQueryEXT',
+    'glQueryCounterEXT'
   ],
   'GL_EXT_draw_buffers' => [
     'glDrawBuffersEXT'
@@ -73698,6 +79116,10 @@ our %features = (
   'GL_EXT_draw_range_elements' => [
     'glDrawRangeElementsEXT'
   ],
+  'GL_EXT_draw_transform_feedback' => [
+    'glDrawTransformFeedbackEXT',
+    'glDrawTransformFeedbackInstancedEXT'
+  ],
   'GL_EXT_external_buffer' => [
     'glBufferStorageExternalEXT',
     'glNamedBufferStorageExternalEXT'
@@ -73729,8 +79151,18 @@ our %features = (
     'glGetFragmentMaterialivEXT',
     'glLightEnviEXT'
   ],
+  'GL_EXT_fragment_shading_rate' => [
+    'glFramebufferShadingRateEXT',
+    'glGetFragmentShadingRatesEXT',
+    'glShadingRateCombinerOpsEXT',
+    'glShadingRateEXT'
+  ],
   'GL_EXT_framebuffer_blit' => [
     'glBlitFramebufferEXT'
+  ],
+  'GL_EXT_framebuffer_blit_layers' => [
+    'glBlitFramebufferLayerEXT',
+    'glBlitFramebufferLayersEXT'
   ],
   'GL_EXT_framebuffer_multisample' => [
     'glRenderbufferStorageMultisampleEXT'
@@ -73857,6 +79289,12 @@ our %features = (
     'glImportMemoryWin32HandleEXT',
     'glImportMemoryWin32NameEXT'
   ],
+  'GL_EXT_mesh_shader' => [
+    'glDrawMeshTasksEXT',
+    'glDrawMeshTasksIndirectEXT',
+    'glMultiDrawMeshTasksIndirectCountEXT',
+    'glMultiDrawMeshTasksIndirectEXT'
+  ],
   'GL_EXT_multi_draw_arrays' => [
     'glMultiDrawArraysEXT',
     'glMultiDrawElementsEXT'
@@ -73901,6 +79339,9 @@ our %features = (
   'GL_EXT_polygon_offset_clamp' => [
     'glPolygonOffsetClampEXT'
   ],
+  'GL_EXT_primitive_bounding_box' => [
+    'glPrimitiveBoundingBoxEXT'
+  ],
   'GL_EXT_provoking_vertex' => [
     'glProvokingVertexEXT'
   ],
@@ -73909,6 +79350,12 @@ our %features = (
     'glCoverageModulationTableNV',
     'glGetCoverageModulationTableNV',
     'glRasterSamplesEXT'
+  ],
+  'GL_EXT_robustness' => [
+    'glGetGraphicsResetStatusEXT',
+    'glGetnUniformfvEXT',
+    'glGetnUniformivEXT',
+    'glReadnPixelsEXT'
   ],
   'GL_EXT_scene_marker' => [
     'glBeginSceneEXT',
@@ -73954,6 +79401,9 @@ our %features = (
     'glCreateShaderProgramEXT',
     'glUseShaderProgramEXT'
   ],
+  'GL_EXT_shader_framebuffer_fetch' => [
+    'glFramebufferFetchBarrierEXT'
+  ],
   'GL_EXT_shader_image_load_store' => [
     'glBindImageTextureEXT',
     'glMemoryBarrierEXT'
@@ -73964,8 +79414,7 @@ our %features = (
     'glGetFramebufferPixelLocalStorageSizeEXT'
   ],
   'GL_EXT_sparse_texture' => [
-    'glTexPageCommitmentEXT',
-    'glTexturePageCommitmentEXT'
+    'glTexPageCommitmentEXT'
   ],
   'GL_EXT_stencil_two_side' => [
     'glActiveStencilFaceEXT'
@@ -73975,11 +79424,20 @@ our %features = (
     'glTexSubImage2DEXT',
     'glTexSubImage3DEXT'
   ],
+  'GL_EXT_tessellation_point_size' => [
+    'glPatchParameteriEXT'
+  ],
   'GL_EXT_texture3D' => [
     'glTexImage3DEXT'
   ],
   'GL_EXT_texture_array' => [
     'glFramebufferTextureLayerEXT'
+  ],
+  'GL_EXT_texture_border_clamp' => [
+    'glGetSamplerParameterIivEXT',
+    'glGetSamplerParameterIuivEXT',
+    'glSamplerParameterIivEXT',
+    'glSamplerParameterIuivEXT'
   ],
   'GL_EXT_texture_buffer_object' => [
     'glTexBufferEXT'
@@ -74010,6 +79468,10 @@ our %features = (
     'glTextureStorage1DEXT',
     'glTextureStorage2DEXT',
     'glTextureStorage3DEXT'
+  ],
+  'GL_EXT_texture_storage_compression' => [
+    'glTexStorageAttribs2DEXT',
+    'glTexStorageAttribs3DEXT'
   ],
   'GL_EXT_texture_view' => [
     'glTextureViewEXT'
@@ -74141,6 +79603,25 @@ our %features = (
     'glTexCoordPointerListIBM',
     'glVertexPointerListIBM'
   ],
+  'GL_IMG_bindless_texture' => [
+    'glGetTextureHandleIMG',
+    'glGetTextureSamplerHandleIMG',
+    'glProgramUniformHandleui64IMG',
+    'glProgramUniformHandleui64vIMG',
+    'glUniformHandleui64IMG',
+    'glUniformHandleui64vIMG'
+  ],
+  'GL_IMG_framebuffer_downsample' => [
+    'glFramebufferTexture2DDownsampleIMG',
+    'glFramebufferTextureLayerDownsampleIMG'
+  ],
+  'GL_IMG_multisampled_render_to_texture' => [
+    'glFramebufferTexture2DMultisampleIMG',
+    'glRenderbufferStorageMultisampleIMG'
+  ],
+  'GL_INTEL_framebuffer_CMAA' => [
+    'glApplyFramebufferAttachmentCMAAINTEL'
+  ],
   'GL_INTEL_parallel_arrays' => [
     'glColorPointervINTEL',
     'glNormalPointervINTEL',
@@ -74199,6 +79680,10 @@ our %features = (
     'glSyncTextureINTEL',
     'glUnmapTexture2DINTEL'
   ],
+  'GL_MESA_framebuffer_flip_y' => [
+    'glFramebufferParameteriMESA',
+    'glGetFramebufferParameterivMESA'
+  ],
   'GL_MESA_resize_buffers' => [
     'glResizeBuffersMESA'
   ],
@@ -74232,14 +79717,31 @@ our %features = (
     'glBeginConditionalRenderNVX',
     'glEndConditionalRenderNVX'
   ],
+  'GL_NVX_gpu_multicast2' => [
+    'glAsyncCopyBufferSubDataNVX',
+    'glAsyncCopyImageSubDataNVX',
+    'glMulticastScissorArrayvNVX',
+    'glMulticastViewportArrayvNVX',
+    'glMulticastViewportPositionWScaleNVX',
+    'glUploadGpuMaskNVX'
+  ],
   'GL_NVX_linked_gpu_multicast' => [
     'glLGPUCopyImageSubDataNVX',
     'glLGPUInterlockNVX',
     'glLGPUNamedBufferSubDataNVX'
   ],
+  'GL_NVX_progress_fence' => [
+    'glClientWaitSemaphoreui64NVX',
+    'glCreateProgressFenceNVX',
+    'glSignalSemaphoreui64NVX',
+    'glWaitSemaphoreui64NVX'
+  ],
   'GL_NV_3dvision_settings' => [
     'glStereoParameterfNV',
     'glStereoParameteriNV'
+  ],
+  'GL_NV_alpha_to_coverage_dither_control' => [
+    'glAlphaToCoverageDitherControlNV'
   ],
   'GL_NV_bindless_multi_draw_indirect' => [
     'glMultiDrawArraysIndirectBindlessNV',
@@ -74497,6 +79999,26 @@ our %features = (
   'GL_NV_internalformat_sample_query' => [
     'glGetInternalformatSampleivNV'
   ],
+  'GL_NV_memory_attachment' => [
+    'glBufferAttachMemoryNV',
+    'glGetMemoryObjectDetachedResourcesuivNV',
+    'glNamedBufferAttachMemoryNV',
+    'glResetMemoryObjectParameterNV',
+    'glTexAttachMemoryNV',
+    'glTextureAttachMemoryNV'
+  ],
+  'GL_NV_memory_object_sparse' => [
+    'glBufferPageCommitmentMemNV',
+    'glNamedBufferPageCommitmentMemNV',
+    'glTexPageCommitmentMemNV',
+    'glTexturePageCommitmentMemNV'
+  ],
+  'GL_NV_mesh_shader' => [
+    'glDrawMeshTasksIndirectNV',
+    'glDrawMeshTasksNV',
+    'glMultiDrawMeshTasksIndirectCountNV',
+    'glMultiDrawMeshTasksIndirectNV'
+  ],
   'GL_NV_non_square_matrices' => [
     'glUniformMatrix2x3fvNV',
     'glUniformMatrix2x4fvNV',
@@ -74608,6 +80130,9 @@ our %features = (
     'glPrimitiveRestartIndexNV',
     'glPrimitiveRestartNV'
   ],
+  'GL_NV_read_buffer' => [
+    'glReadBufferNV'
+  ],
   'GL_NV_register_combiners' => [
     'glCombinerInputNV',
     'glCombinerOutputNV',
@@ -74629,7 +80154,12 @@ our %features = (
   ],
   'GL_NV_sample_locations' => [
     'glFramebufferSampleLocationsfvNV',
-    'glNamedFramebufferSampleLocationsfvNV'
+    'glNamedFramebufferSampleLocationsfvNV',
+    'glResolveDepthValuesNV'
+  ],
+  'GL_NV_scissor_exclusive' => [
+    'glScissorExclusiveArrayvNV',
+    'glScissorExclusiveNV'
   ],
   'GL_NV_shader_buffer_load' => [
     'glGetBufferParameterui64vNV',
@@ -74645,6 +80175,15 @@ our %features = (
     'glProgramUniformui64vNV',
     'glUniformui64NV',
     'glUniformui64vNV'
+  ],
+  'GL_NV_shading_rate_image' => [
+    'glBindShadingRateImageNV',
+    'glGetShadingRateImagePaletteNV',
+    'glGetShadingRateSampleLocationivNV',
+    'glShadingRateImageBarrierNV',
+    'glShadingRateImagePaletteNV',
+    'glShadingRateSampleOrderCustomNV',
+    'glShadingRateSampleOrderNV'
   ],
   'GL_NV_texture_array' => [
     'glCompressedTexImage3DNV',
@@ -74664,6 +80203,11 @@ our %features = (
     'glTextureImage2DMultisampleNV',
     'glTextureImage3DMultisampleCoverageNV',
     'glTextureImage3DMultisampleNV'
+  ],
+  'GL_NV_timeline_semaphore' => [
+    'glCreateSemaphoresNV',
+    'glGetSemaphoreParameterivNV',
+    'glSemaphoreParameterivNV'
   ],
   'GL_NV_transform_feedback' => [
     'glActiveVaryingNV',
@@ -74698,6 +80242,9 @@ our %features = (
     'glVDPAUSurfaceAccessNV',
     'glVDPAUUnmapSurfacesNV',
     'glVDPAUUnregisterSurfaceNV'
+  ],
+  'GL_NV_vdpau_interop2' => [
+    'glVDPAURegisterVideoSurfaceWithPictureStructureNV'
   ],
   'GL_NV_vertex_array_range' => [
     'glFlushVertexArrayRangeNV',
@@ -74835,8 +80382,123 @@ our %features = (
   'GL_NV_viewport_swizzle' => [
     'glViewportSwizzleNV'
   ],
+  'GL_OES_EGL_image' => [
+    'glEGLImageTargetRenderbufferStorageOES',
+    'glEGLImageTargetTexture2DOES'
+  ],
+  'GL_OES_blend_equation_separate' => [
+    'glBlendEquationSeparateOES'
+  ],
+  'GL_OES_blend_func_separate' => [
+    'glBlendFuncSeparateOES'
+  ],
+  'GL_OES_blend_subtract' => [
+    'glBlendEquationOES'
+  ],
+  'GL_OES_copy_image' => [
+    'glCopyImageSubDataOES'
+  ],
+  'GL_OES_draw_buffers_indexed' => [
+    'glBlendEquationSeparateiOES',
+    'glBlendEquationiOES',
+    'glBlendFuncSeparateiOES',
+    'glBlendFunciOES',
+    'glColorMaskiOES',
+    'glDisableiOES',
+    'glEnableiOES',
+    'glIsEnablediOES'
+  ],
+  'GL_OES_framebuffer_object' => [
+    'glBindFramebufferOES',
+    'glBindRenderbufferOES',
+    'glCheckFramebufferStatusOES',
+    'glDeleteFramebuffersOES',
+    'glDeleteRenderbuffersOES',
+    'glFramebufferRenderbufferOES',
+    'glFramebufferTexture2DOES',
+    'glGenFramebuffersOES',
+    'glGenRenderbuffersOES',
+    'glGenerateMipmapOES',
+    'glGetFramebufferAttachmentParameterivOES',
+    'glGetRenderbufferParameterivOES',
+    'glIsFramebufferOES',
+    'glIsRenderbufferOES',
+    'glRenderbufferStorageOES'
+  ],
+  'GL_OES_get_program_binary' => [
+    'glGetProgramBinaryOES',
+    'glProgramBinaryOES'
+  ],
+  'GL_OES_mapbuffer' => [
+    'glGetBufferPointervOES',
+    'glMapBufferOES',
+    'glUnmapBufferOES'
+  ],
+  'GL_OES_matrix_palette' => [
+    'glCurrentPaletteMatrixOES',
+    'glLoadPaletteFromModelViewMatrixOES',
+    'glMatrixIndexPointerOES',
+    'glWeightPointerOES'
+  ],
+  'GL_OES_sample_shading' => [
+    'glMinSampleShadingOES'
+  ],
+  'GL_OES_single_precision' => [
+    'glClearDepthfOES',
+    'glClipPlanefOES',
+    'glDepthRangefOES',
+    'glFrustumfOES',
+    'glGetClipPlanefOES',
+    'glOrthofOES'
+  ],
+  'GL_OES_texture_3D' => [
+    'glCompressedTexImage3DOES',
+    'glCompressedTexSubImage3DOES',
+    'glCopyTexSubImage3DOES',
+    'glFramebufferTexture3DOES',
+    'glTexImage3DOES',
+    'glTexSubImage3DOES'
+  ],
+  'GL_OES_texture_border_clamp' => [
+    'glGetSamplerParameterIivOES',
+    'glGetSamplerParameterIuivOES',
+    'glGetTexParameterIivOES',
+    'glGetTexParameterIuivOES',
+    'glSamplerParameterIivOES',
+    'glSamplerParameterIuivOES',
+    'glTexParameterIivOES',
+    'glTexParameterIuivOES'
+  ],
+  'GL_OES_texture_buffer' => [
+    'glTexBufferOES',
+    'glTexBufferRangeOES'
+  ],
+  'GL_OES_texture_cube_map' => [
+    'glGetTexGenfvOES',
+    'glGetTexGenivOES',
+    'glGetTexGenxvOES',
+    'glTexGenfOES',
+    'glTexGenfvOES',
+    'glTexGeniOES',
+    'glTexGenivOES',
+    'glTexGenxOES',
+    'glTexGenxvOES'
+  ],
+  'GL_OES_texture_storage_multisample_2d_array' => [
+    'glTexStorage3DMultisampleOES'
+  ],
+  'GL_OES_texture_view' => [
+    'glTextureViewOES'
+  ],
+  'GL_OES_vertex_array_object' => [
+    'glBindVertexArrayOES',
+    'glDeleteVertexArraysOES',
+    'glGenVertexArraysOES',
+    'glIsVertexArrayOES'
+  ],
   'GL_OVR_multiview' => [
-    'glFramebufferTextureMultiviewOVR'
+    'glFramebufferTextureMultiviewOVR',
+    'glNamedFramebufferTextureMultiviewOVR'
   ],
   'GL_OVR_multiview_multisampled_render_to_texture' => [
     'glFramebufferTextureMultisampleMultiviewOVR'
@@ -74866,12 +80528,25 @@ our %features = (
     'glExtGetShadersQCOM',
     'glExtIsProgramBinaryQCOM'
   ],
+  'GL_QCOM_frame_extrapolation' => [
+    'glExtrapolateTex2DQCOM'
+  ],
   'GL_QCOM_framebuffer_foveated' => [
     'glFramebufferFoveationConfigQCOM',
     'glFramebufferFoveationParametersQCOM'
   ],
+  'GL_QCOM_motion_estimation' => [
+    'glTexEstimateMotionQCOM',
+    'glTexEstimateMotionRegionsQCOM'
+  ],
   'GL_QCOM_shader_framebuffer_fetch_noncoherent' => [
     'glFramebufferFetchBarrierQCOM'
+  ],
+  'GL_QCOM_shading_rate' => [
+    'glShadingRateQCOM'
+  ],
+  'GL_QCOM_texture_foveated' => [
+    'glTextureFoveationParametersQCOM'
   ],
   'GL_QCOM_tiled_rendering' => [
     'glEndTilingQCOM',

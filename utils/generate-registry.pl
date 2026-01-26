@@ -120,8 +120,9 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     # Rewrite `const GLwhatever foo[]` into `const GLwhatever* foo`
     s!^const (\w+)\s+(\**)(\w+)\[\d*\]$!const $1 * $2$3!;
     s!^(\w+)\s+(\**)(\w+)\[\d*\]$!$1 * $2$3!;
-    /(.*?)(\w+)$/;
-    push @argdata, [$2,$1]; # name, type
+    my ($type, $arg) = /(.*?)(\w+)$/;
+    if (!$type) { $type = "$arg "; $arg = 'param'.(@argdata+1); }
+    push @argdata, [$arg,$type];
   }
   $item->{argdata} = \@argdata if @argdata;
   my $glewImpl;

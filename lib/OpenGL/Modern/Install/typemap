@@ -98,6 +98,7 @@ const void *                T_PTR
 void * *                    T_PTR
 const void * *              T_PTR
 const void * const *        T_PTR
+GLeglImageOES               T_PTR
 
 GLVULKANPROCNV              T_PTR
 GLLOGPROCREGAL              T_PTR
