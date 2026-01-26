@@ -86,6 +86,7 @@ sub bindings {
   my %name2data = map +($_->[0] => $_), @argdata;
   my %dynlang = %{ $s->{dynlang} || {} };
   if (%dynlang) {
+    die "$name: undefined dynlang arg '$_'" for grep /^[a-z]/ && !exists $name2data{$_}, keys %dynlang;
     my %this = %pbinding;
     die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
     if (my $retval = delete $dynlang{RETVAL}) {
