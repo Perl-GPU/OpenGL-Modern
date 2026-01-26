@@ -21833,6 +21833,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'RETVAL' => 'name',
+      'bufSize' => '<glGetActiveSubroutineUniformiv(program,shadertype,index,GL_UNIFORM_NAME_LENGTH,&)',
+      'length' => 'NULL',
+      'name' => '[bufSize]'
+    },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetActiveSubroutineUniformName',
     'glewtype' => 'fun',

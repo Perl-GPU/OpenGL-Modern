@@ -5353,6 +5353,7 @@ Exported under tag C<:GL_ARB_shader_subroutine>.
 =head2 glGetActiveSubroutineUniformName
 
  glGetActiveSubroutineUniformName_c($program, $shadertype, $index, $bufSize, $length, $name);
+ $retval = glGetActiveSubroutineUniformName_p($program, $shadertype, $index);
 
 Exported under tag C<:GL_ARB_shader_subroutine>.
 

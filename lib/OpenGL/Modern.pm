@@ -2403,6 +2403,7 @@ our @gl_functionsrest = qw(
   glGetActiveSubroutineUniformiv_c
   glGetActiveSubroutineUniformiv_p
   glGetActiveSubroutineUniformName_c
+  glGetActiveSubroutineUniformName_p
   glGetActiveUniformARB_c
   glGetActiveVaryingNV_c
   glGetArrayObjectfvATI_c
@@ -5257,6 +5258,7 @@ our %EXPORT_TAGS_GL = (
   'GL_ARB_shader_subroutine' => [
     'glGetActiveSubroutineName_c',
     'glGetActiveSubroutineUniformName_c',
+    'glGetActiveSubroutineUniformName_p',
     'glGetActiveSubroutineUniformiv_c',
     'glGetActiveSubroutineUniformiv_p',
     'glGetProgramStageiv_c',
@@ -8736,6 +8738,7 @@ our %EXPORT_TAGS_GL = (
     'glGenTransformFeedbacks_p',
     'glGetActiveSubroutineName_c',
     'glGetActiveSubroutineUniformName_c',
+    'glGetActiveSubroutineUniformName_p',
     'glGetActiveSubroutineUniformiv_c',
     'glGetActiveSubroutineUniformiv_p',
     'glGetProgramStageiv_c',
