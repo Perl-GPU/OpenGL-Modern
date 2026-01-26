@@ -2751,6 +2751,7 @@ our @gl_functionsrest = qw(
   glGetProgramResourceLocationIndex
   glGetProgramResourceLocationIndexEXT
   glGetProgramResourceName_c
+  glGetProgramResourceName_p
   glGetProgramStageiv_c
   glGetProgramStringARB_c
   glGetProgramStringNV_c
@@ -5072,6 +5073,7 @@ our %EXPORT_TAGS_GL = (
     'glGetProgramResourceLocation',
     'glGetProgramResourceLocationIndex',
     'glGetProgramResourceName_c',
+    'glGetProgramResourceName_p',
     'glGetProgramResourceiv_c'
   ],
   'GL_ARB_provoking_vertex' => [
@@ -8925,6 +8927,7 @@ our %EXPORT_TAGS_GL = (
     'glGetProgramResourceLocation',
     'glGetProgramResourceLocationIndex',
     'glGetProgramResourceName_c',
+    'glGetProgramResourceName_p',
     'glGetProgramResourceiv_c',
     'glInvalidateBufferData',
     'glInvalidateBufferSubData',

@@ -6968,6 +6968,7 @@ Exported under tag C<:GL_EXT_blend_func_extended>.
 =head2 glGetProgramResourceName
 
  glGetProgramResourceName_c($program, $programInterface, $index, $bufSize, $length, $name);
+ $retval = glGetProgramResourceName_p($program, $programInterface, $index);
 
 Exported under tag C<:GL_ARB_program_interface_query>.
 

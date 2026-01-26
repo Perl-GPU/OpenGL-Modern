@@ -29156,6 +29156,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'RETVAL' => 'name',
+      'bufSize' => '<glGetProgramResourceiv(program,programInterface,index,1,&(GLenum){GL_NAME_LENGTH},sizeof(bufSize),NULL,&)',
+      'length' => 'NULL',
+      'name' => '[bufSize]'
+    },
     'feature' => 'GL_ARB_program_interface_query',
     'glewImpl' => '__glewGetProgramResourceName',
     'glewtype' => 'fun',
