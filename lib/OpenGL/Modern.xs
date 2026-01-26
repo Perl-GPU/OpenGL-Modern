@@ -58,12 +58,6 @@ static int _auto_check_errors = 0;
   NULL; int pname ## _count = oglm_count_##group(pname); \
   if (pname ## _count < 0) croak("Unknown " #group " %d", pname); \
   buffername = malloc(sizeof(buffertype) * pname ## _count);
-#define OGLM_GET_STRINGARGS(varname, startfrom) \
-  malloc(sizeof(GLchar *) * (items-startfrom)); \
-  if (!varname) croak("malloc failed"); \
-  { IV i; for(i = 0; i < items-startfrom; i++) { \
-    varname[i] = (GLchar *)SvPV_nolen(ST(i + startfrom)); \
-  } }
 
 /*
   Maybe one day we'll allow Perl callbacks for GLDEBUGPROCARB

@@ -1,3 +1,3 @@
 glGetShaderInfoLog RETVAL=infoLog length=NULL bufSize=<glGetShaderiv(shader,GL_INFO_LOG_LENGTH,&) infoLog=[bufSize]
 glGetProgramInfoLog RETVAL=infoLog length=NULL bufSize=<glGetProgramiv(program,GL_INFO_LOG_LENGTH,&) infoLog=[bufSize]
-glShaderSource count=items-1 length=NULL string=OGLM_GET_STRINGARGS(string,1) CLEANUP=free(string);
+glShaderSource count=items-1 length=NULL string=OGLM_GET_ARGS(string,1,GLchar*,PV_nolen) CLEANUP=free(string);

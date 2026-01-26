@@ -54237,7 +54237,7 @@ our %registry = (
       'CLEANUP' => 'free(string);',
       'count' => 'items-1',
       'length' => 'NULL',
-      'string' => 'OGLM_GET_STRINGARGS(string,1)'
+      'string' => 'OGLM_GET_ARGS(string,1,GLchar*,PV_nolen)'
     },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewShaderSource',
