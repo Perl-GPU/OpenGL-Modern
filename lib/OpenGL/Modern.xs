@@ -41,8 +41,7 @@ static int _auto_check_errors = 0;
     croak(#name " not available on this machine"); \
   }
 #define OGLM_OUT_SETUP(buffername, n, type) \
-  NULL; if (n < 0) croak("called with negative n=%d", n); \
-  if (!n) XSRETURN_EMPTY; \
+  NULL; if (n <= 0) croak("called with invalid n=%d", n); \
   buffername = malloc(sizeof(type) * n); \
   if (!buffername) croak("malloc failed");
 #define OGLM_OUT_FINISH(buffername, n, newfunc) \
