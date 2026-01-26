@@ -107,7 +107,7 @@ sub bindings {
       my $val = delete $dynlang{$get};
       $val =~ s#^<##;
       my ($getfunc) = $val =~ /^(\w+)/;
-      $val =~ s#&#&$get#;
+      $val =~ s#&(?![a-z])#&$get#;
       my $vardata = $name2data{$get};
       $beforecall .= "  $vardata->[1]$get;\n  $val;\n";
       $this{error_check} .= "\n  " if $this{error_check};
