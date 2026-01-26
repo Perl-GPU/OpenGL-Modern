@@ -360,6 +360,7 @@ for my $name (sort grep !/^GL/, keys %signature) {
   $middle1 .= "=head2 $name\n\n";
   my $s = $signature{$name};
   for my $bind (sort {$a->{binding_name} cmp $b->{binding_name}} bindings($name, $s, $g2c2s)) {
+    die "$name: $bind->{binding_name} has no xs_rettype" if !defined $bind->{xs_rettype};
     my $prefix = " ";
     $prefix .= "\$retval = " if $bind->{xs_rettype} ne 'void';
     $prefix .= "\@retvals = " if $bind->{xs_code} eq "PPCODE:\n";
