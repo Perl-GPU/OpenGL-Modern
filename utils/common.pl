@@ -90,6 +90,7 @@ sub bindings {
     my %this = %pbinding;
     die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
     if (my $retval = delete $dynlang{RETVAL}) {
+      die "$name: dynlang RETVAL '$retval' not arg to function" if !defined $name2data{$retval};
       $this{xs_rettype} = $name2data{$retval}[1];
       $this{aftercall} = "\n  RETVAL = $retval;";
       $this{retout} = "\nOUTPUT:\n  RETVAL";
