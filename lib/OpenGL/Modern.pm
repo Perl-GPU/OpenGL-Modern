@@ -205,6 +205,7 @@ our @gl_functionscompat = qw(
   glGenerateMipmap
   glGetActiveAttrib_c
   glGetActiveUniformBlockName_c
+  glGetActiveUniformBlockName_p
   glGetActiveUniformBlockiv_c
   glGetActiveUniformName_c
   glGetActiveUniform_c
@@ -5375,6 +5376,7 @@ our %EXPORT_TAGS_GL = (
     'glBindBufferBase',
     'glBindBufferRange',
     'glGetActiveUniformBlockName_c',
+    'glGetActiveUniformBlockName_p',
     'glGetActiveUniformBlockiv_c',
     'glGetActiveUniformName_c',
     'glGetActiveUniformsiv_c',
@@ -8616,6 +8618,7 @@ our %EXPORT_TAGS_GL = (
     'glDrawArraysInstanced',
     'glDrawElementsInstanced_c',
     'glGetActiveUniformBlockName_c',
+    'glGetActiveUniformBlockName_p',
     'glGetActiveUniformBlockiv_c',
     'glGetActiveUniformName_c',
     'glGetActiveUniformsiv_c',

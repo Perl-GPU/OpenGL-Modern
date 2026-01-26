@@ -21964,6 +21964,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'RETVAL' => 'uniformBlockName',
+      'bufSize' => '<glGetActiveUniformBlockiv(program,uniformBlockIndex,GL_UNIFORM_BLOCK_NAME_LENGTH,&)',
+      'length' => 'NULL',
+      'uniformBlockName' => '[bufSize]'
+    },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetActiveUniformBlockName',
     'glewtype' => 'fun',

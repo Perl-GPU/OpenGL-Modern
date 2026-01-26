@@ -2,3 +2,4 @@ glGetShaderInfoLog RETVAL=infoLog length=NULL bufSize=<glGetShaderiv(shader,GL_I
 glGetProgramInfoLog RETVAL=infoLog length=NULL bufSize=<glGetProgramiv(program,GL_INFO_LOG_LENGTH,&) infoLog=[bufSize]
 glShaderSource count=items-1 length=NULL string=OGLM_GET_ARGS(string,1,GLchar*,PV_nolen) CLEANUP=free(string);
 glGetActiveSubroutineUniformName RETVAL=name length=NULL bufSize=<glGetActiveSubroutineUniformiv(program,shadertype,index,GL_UNIFORM_NAME_LENGTH,&) name=[bufSize]
+glGetActiveUniformBlockName RETVAL=uniformBlockName length=NULL bufSize=<glGetActiveUniformBlockiv(program,uniformBlockIndex,GL_UNIFORM_BLOCK_NAME_LENGTH,&) uniformBlockName=[bufSize]
