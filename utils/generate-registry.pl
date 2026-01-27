@@ -193,12 +193,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   next unless @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
   my %name2data = map +($_->[0] => $_), @argdata;
   my @ptr_args = @argdata[@ptr_arg_inds];
-  my @ptr_types = map {
-    my $const = (my $type = $_->[1]) =~ s#\bconst\b##g;
-    $type =~ s#\*##;
-    $type =~ s#\s##g;
-    [$type, $const];
-  } @ptr_args;
+  my @ptr_types = map parse_ptr($_), @ptr_args;
   my $nconst = grep $_->[1], @ptr_types;
   my $nout = grep !$_->[1], @ptr_types;
   die "undef ptr_type for $name" if !$ptr_types[0][0];

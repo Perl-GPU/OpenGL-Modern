@@ -50,6 +50,14 @@ sub make_aliases {
   !@$aliases ? "" : "ALIAS:\n".join '', map "  $_ = ".++$i."\n", @$aliases;
 }
 
+sub parse_ptr {
+  my ($data) = @_;
+  my $const = (my $type = $data->[1]) =~ s#\bconst\b##g;
+  $type =~ s#\*##;
+  $type =~ s#\s##g;
+  [$type, $const];
+}
+
 sub bindings {
   die "list context only" if !wantarray;
   my ($name, $s, $counts) = @_;
