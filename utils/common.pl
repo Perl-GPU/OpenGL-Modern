@@ -86,65 +86,63 @@ sub bindings {
     retout => ($thistype eq 'void' ? '' : "\nOUTPUT:\n  RETVAL"),
   );
   my @ret = \%default;
-  return @ret if !@ptr_arg_inds;
+  my %dynlang = %{ $s->{dynlang} || {} };
+  return @ret if !@ptr_arg_inds or !%dynlang;
   my %pbinding = (%default, binding_name => $name . '_p',
     aliases => [ map "${_}_p", sort keys %{ $s->{aliases} || {} } ],
   );
   @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
   my %name2data = map +($_->[0] => $_), @argdata;
-  my %dynlang = %{ $s->{dynlang} || {} };
-  if (%dynlang) {
-    die "$name: undefined dynlang arg '$_'" for grep /^[a-z]/ && !exists $name2data{$_}, keys %dynlang;
-    my %this = %pbinding;
-    die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
-    if (my $retval = delete $dynlang{RETVAL}) {
-      die "$name: dynlang RETVAL '$retval' not arg to function" if !defined $name2data{$retval};
-      $this{xs_rettype} = delete $dynlang{RETTYPE} // $name2data{$retval}[1];
-      $this{aftercall} = "\n  RETVAL = $retval;";
-      $this{retout} = "\nOUTPUT:\n  RETVAL";
-    } elsif (my $output = delete $dynlang{OUTPUT}) {
-      $this{aftercall} = "\n  $output";
-      $this{xs_code} = "PPCODE:\n";
-    }
-    my @thisargs = grep !exists $dynlang{$_->[0]}, @argdata;
-    my $dotdotdot = grep /\bitems\b/, values %dynlang;
-    $this{xs_args} = join(', ', (map $_->[0], @thisargs), $dotdotdot ? '...' : ());
-    $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @thisargs);
-    my $beforecall = '';
-    my $cleanup = delete $dynlang{CLEANUP} // '';
-    $this{aftercall} .= "\n  $cleanup" if $cleanup;
-    for my $get (sort grep $dynlang{$_} =~ /^</, keys %dynlang) {
-      my $val = delete $dynlang{$get};
-      $val =~ s#^<##;
-      my ($getfunc) = $val =~ /^(\w+)/;
-      $val =~ s#&(?![\{\(a-z])#&$get#;
-      my $vardata = $name2data{$get};
-      $beforecall .= "  $vardata->[1]$get;\n  $val;\n";
-      $this{error_check} .= "\n  " if $this{error_check};
-      $this{error_check} .= "OGLM_CHECK_ERR($getfunc, $cleanup)",
-    }
-    $this{error_check2} &&= "OGLM_CHECK_ERR($name, $cleanup)";
-    for my $arr (sort grep $dynlang{$_} =~ /^\[/, keys %dynlang) {
-      my $val = delete $dynlang{$arr};
-      my $vardata = $name2data{$arr};
-      (my $type = $vardata->[1]) =~ s#\*##;
-      $type = 'char' if $type eq 'void';
-      $beforecall .= "  $type $arr$val;\n";
-    }
-    my $need_cast;
-    for my $var (sort keys %dynlang) {
-      my $val = delete $dynlang{$var};
-      die "$name: no arg data found for '$var'" unless my $data = $name2data{$var};
-      my $type = $data->[1];
-      $need_cast = $type =~ s#\bconst\b##g;
-      $beforecall .= "  $type $var = $val;\n";
-    }
-    if ($need_cast) {
-      $this{callarg_list} = $s->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map qq{($_->[1])$_->[0]}, @argdata ]})";
-    }
-    $this{beforecall} = $beforecall;
-    push @ret, \%this;
+  die "$name: undefined dynlang arg '$_'" for grep /^[a-z]/ && !exists $name2data{$_}, keys %dynlang;
+  my %this = %pbinding;
+  die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
+  if (my $retval = delete $dynlang{RETVAL}) {
+    die "$name: dynlang RETVAL '$retval' not arg to function" if !defined $name2data{$retval};
+    $this{xs_rettype} = delete $dynlang{RETTYPE} // $name2data{$retval}[1];
+    $this{aftercall} = "\n  RETVAL = $retval;";
+    $this{retout} = "\nOUTPUT:\n  RETVAL";
+  } elsif (my $output = delete $dynlang{OUTPUT}) {
+    $this{aftercall} = "\n  $output";
+    $this{xs_code} = "PPCODE:\n";
   }
+  my @thisargs = grep !exists $dynlang{$_->[0]}, @argdata;
+  my $dotdotdot = grep /\bitems\b/, values %dynlang;
+  $this{xs_args} = join(', ', (map $_->[0], @thisargs), $dotdotdot ? '...' : ());
+  $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @thisargs);
+  my $beforecall = '';
+  my $cleanup = delete $dynlang{CLEANUP} // '';
+  $this{aftercall} .= "\n  $cleanup" if $cleanup;
+  for my $get (sort grep $dynlang{$_} =~ /^</, keys %dynlang) {
+    my $val = delete $dynlang{$get};
+    $val =~ s#^<##;
+    my ($getfunc) = $val =~ /^(\w+)/;
+    $val =~ s#&(?![\{\(a-z])#&$get#;
+    my $vardata = $name2data{$get};
+    $beforecall .= "  $vardata->[1]$get;\n  $val;\n";
+    $this{error_check} .= "\n  " if $this{error_check};
+    $this{error_check} .= "OGLM_CHECK_ERR($getfunc, $cleanup)",
+  }
+  $this{error_check2} &&= "OGLM_CHECK_ERR($name, $cleanup)";
+  for my $arr (sort grep $dynlang{$_} =~ /^\[/, keys %dynlang) {
+    my $val = delete $dynlang{$arr};
+    my $vardata = $name2data{$arr};
+    (my $type = $vardata->[1]) =~ s#\*##;
+    $type = 'char' if $type eq 'void';
+    $beforecall .= "  $type $arr$val;\n";
+  }
+  my $need_cast;
+  for my $var (sort keys %dynlang) {
+    my $val = delete $dynlang{$var};
+    die "$name: no arg data found for '$var'" unless my $data = $name2data{$var};
+    my $type = $data->[1];
+    $need_cast = $type =~ s#\bconst\b##g;
+    $beforecall .= "  $type $var = $val;\n";
+  }
+  if ($need_cast) {
+    $this{callarg_list} = $s->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map qq{($_->[1])$_->[0]}, @argdata ]})";
+  }
+  $this{beforecall} = $beforecall;
+  push @ret, \%this;
   @ret;
 }
 
