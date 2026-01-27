@@ -7248,6 +7248,8 @@ Exported under tag C<:GL_ARB_ES2_compatibility>.
 
  glGetShaderSource_c($shader, $bufSize, $length, $source);
  glGetShaderSourceARB_c($shader, $bufSize, $length, $source);
+ $retval = glGetShaderSource_p($shader);
+ $retval = glGetShaderSourceARB_p($shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderSource.xhtml>

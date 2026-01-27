@@ -6,3 +6,4 @@ glGetActiveUniformBlockName RETVAL=uniformBlockName length=NULL bufSize=<glGetAc
 glGetProgramPipelineInfoLog RETVAL=infoLog length=NULL bufSize=<glGetProgramPipelineiv(pipeline,GL_INFO_LOG_LENGTH,&) infoLog=[bufSize]
 glGetProgramResourceName RETVAL=name length=NULL bufSize=<glGetProgramResourceiv(program,programInterface,index,1,&(GLenum){GL_NAME_LENGTH},sizeof(bufSize),NULL,&) name=[bufSize]
 glGetSynciv count=sizeof(GLint) length=NULL values=OGLM_GET_SETUP(SyncParameterName,pname,GLint,values) OUTPUT=OGLM_OUT_FINISH(values,pname_count,newSViv) CLEANUP=free(values);
+glGetShaderSource RETVAL=source length=NULL bufSize=<glGetShaderiv(shader,GL_SHADER_SOURCE_LENGTH,&) source=[bufSize]

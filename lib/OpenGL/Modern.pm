@@ -265,6 +265,7 @@ our @gl_functionscompat = qw(
   glGetShaderInfoLog_c
   glGetShaderInfoLog_p
   glGetShaderSource_c
+  glGetShaderSource_p
   glGetShaderiv_c
   glGetShaderiv_p
   glGetString
@@ -2809,6 +2810,7 @@ our @gl_functionsrest = qw(
   glGetSeparableFilter_c
   glGetShaderPrecisionFormat_c
   glGetShaderSourceARB_c
+  glGetShaderSourceARB_p
   glGetShadingRateImagePaletteNV_c
   glGetShadingRateSampleLocationivNV_c
   glGetSharpenTexFuncSGIS_c
@@ -5232,6 +5234,7 @@ our %EXPORT_TAGS_GL = (
     'glGetObjectParameterfvARB_c',
     'glGetObjectParameterivARB_c',
     'glGetShaderSourceARB_c',
+    'glGetShaderSourceARB_p',
     'glGetUniformLocationARB',
     'glGetUniformfvARB_c',
     'glGetUniformivARB_c',
@@ -8442,6 +8445,7 @@ our %EXPORT_TAGS_GL = (
     'glGetShaderInfoLog_c',
     'glGetShaderInfoLog_p',
     'glGetShaderSource_c',
+    'glGetShaderSource_p',
     'glGetShaderiv_c',
     'glGetShaderiv_p',
     'glGetUniformLocation',

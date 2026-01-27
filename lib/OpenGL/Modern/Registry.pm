@@ -30406,6 +30406,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'RETVAL' => 'source',
+      'bufSize' => '<glGetShaderiv(shader,GL_SHADER_SOURCE_LENGTH,&)',
+      'length' => 'NULL',
+      'source' => '[bufSize]'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetShaderSource',
     'glewtype' => 'fun',
