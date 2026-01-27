@@ -21836,8 +21836,7 @@ our %registry = (
     'dynlang' => {
       'RETVAL' => 'name',
       'bufSize' => '<glGetActiveSubroutineUniformiv(program,shadertype,index,GL_UNIFORM_NAME_LENGTH,&)',
-      'length' => 'NULL',
-      'name' => '[bufSize]'
+      'length' => 'NULL'
     },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetActiveSubroutineUniformName',
@@ -21967,8 +21966,7 @@ our %registry = (
     'dynlang' => {
       'RETVAL' => 'uniformBlockName',
       'bufSize' => '<glGetActiveUniformBlockiv(program,uniformBlockIndex,GL_UNIFORM_BLOCK_NAME_LENGTH,&)',
-      'length' => 'NULL',
-      'uniformBlockName' => '[bufSize]'
+      'length' => 'NULL'
     },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetActiveUniformBlockName',
@@ -28741,7 +28739,6 @@ our %registry = (
     'dynlang' => {
       'RETVAL' => 'infoLog',
       'bufSize' => '<glGetProgramiv(program,GL_INFO_LOG_LENGTH,&)',
-      'infoLog' => '[bufSize]',
       'length' => 'NULL'
     },
     'feature' => 'GL_VERSION_2_0',
@@ -28990,7 +28987,6 @@ our %registry = (
     'dynlang' => {
       'RETVAL' => 'infoLog',
       'bufSize' => '<glGetProgramPipelineiv(pipeline,GL_INFO_LOG_LENGTH,&)',
-      'infoLog' => '[bufSize]',
       'length' => 'NULL'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
@@ -29159,8 +29155,7 @@ our %registry = (
     'dynlang' => {
       'RETVAL' => 'name',
       'bufSize' => '<glGetProgramResourceiv(program,programInterface,index,1,&(GLenum){GL_NAME_LENGTH},sizeof(bufSize),NULL,&)',
-      'length' => 'NULL',
-      'name' => '[bufSize]'
+      'length' => 'NULL'
     },
     'feature' => 'GL_ARB_program_interface_query',
     'glewImpl' => '__glewGetProgramResourceName',
@@ -30336,7 +30331,6 @@ our %registry = (
     'dynlang' => {
       'RETVAL' => 'infoLog',
       'bufSize' => '<glGetShaderiv(shader,GL_INFO_LOG_LENGTH,&)',
-      'infoLog' => '[bufSize]',
       'length' => 'NULL'
     },
     'feature' => 'GL_VERSION_2_0',
@@ -30409,8 +30403,7 @@ our %registry = (
     'dynlang' => {
       'RETVAL' => 'source',
       'bufSize' => '<glGetShaderiv(shader,GL_SHADER_SOURCE_LENGTH,&)',
-      'length' => 'NULL',
-      'source' => '[bufSize]'
+      'length' => 'NULL'
     },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetShaderSource',

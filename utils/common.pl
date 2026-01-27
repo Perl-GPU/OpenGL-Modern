@@ -93,6 +93,7 @@ sub bindings {
   );
   @ptr_arg_inds = grep $_ >= 0, @ptr_arg_inds;
   my %name2data = map +($_->[0] => $_), @argdata;
+  my %name2parsed = map +($_->[0] => parse_ptr($_)), @argdata[@ptr_arg_inds];
   die "$name: undefined dynlang arg '$_'" for grep /^[a-z]/ && !exists $name2data{$_}, keys %dynlang;
   my %this = %pbinding;
   die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
@@ -105,7 +106,7 @@ sub bindings {
     $this{aftercall} = "\n  $output";
     $this{xs_code} = "PPCODE:\n";
   }
-  my @xs_inargs = grep !exists $dynlang{$_->[0]}, @argdata;
+  my @xs_inargs = grep !exists $dynlang{$_->[0]} && (!exists $name2parsed{$_->[0]} || $name2parsed{$_->[0]}[1]), @argdata;
   my $dotdotdot = grep /\bitems\b/, values %dynlang;
   $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
   $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
@@ -123,12 +124,11 @@ sub bindings {
     $this{error_check} .= "OGLM_CHECK_ERR($getfunc, $cleanup)",
   }
   $this{error_check2} &&= "OGLM_CHECK_ERR($name, $cleanup)";
-  for my $arr (sort grep $dynlang{$_} =~ /^\[/, keys %dynlang) {
-    my $val = delete $dynlang{$arr};
-    my $vardata = $name2data{$arr};
-    (my $type = $vardata->[1]) =~ s#\*##;
+  for my $arr (sort grep !$dynlang{$_} && !$name2parsed{$_}[1], keys %name2parsed) {
+    my $len = $name2data{$arr}[2] // die "$name: pointer arg without len";
+    my $type = $name2parsed{$arr}[0];
     $type = 'char' if $type eq 'void';
-    $beforecall .= "  $type $arr$val;\n";
+    $beforecall .= "  $type $arr\[$len];\n";
   }
   my $need_cast;
   for my $var (sort keys %dynlang) {
