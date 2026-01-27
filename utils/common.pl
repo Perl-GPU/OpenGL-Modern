@@ -105,10 +105,10 @@ sub bindings {
     $this{aftercall} = "\n  $output";
     $this{xs_code} = "PPCODE:\n";
   }
-  my @thisargs = grep !exists $dynlang{$_->[0]}, @argdata;
+  my @xs_inargs = grep !exists $dynlang{$_->[0]}, @argdata;
   my $dotdotdot = grep /\bitems\b/, values %dynlang;
-  $this{xs_args} = join(', ', (map $_->[0], @thisargs), $dotdotdot ? '...' : ());
-  $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @thisargs);
+  $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
+  $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
   my $beforecall = '';
   my $cleanup = delete $dynlang{CLEANUP} // '';
   $this{aftercall} .= "\n  $cleanup" if $cleanup;
