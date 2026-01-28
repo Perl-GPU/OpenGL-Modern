@@ -217,11 +217,8 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my $compsize_data = $compsize_from && $name2data{$compsize_from};
   my $compsize_group = $compsize_data && $compsize_data->[3];
   if ($nconst == 0 && $nout == 1 && $compsize_group && $g2c2s->{$compsize_group}) {
-    my $typefunc = "newSV" . lc $infos[0];
     $s->{dynlang} = {
-      $ptr_args[0][0] => "OGLM_GET_SETUP($compsize_group,$compsize_from,$ptr_types[0][0],$ptr_args[0][0])",
-      OUTPUT => "OGLM_OUT_FINISH($ptr_args[0][0],${compsize_from}_count,$typefunc)",
-      CLEANUP => "free($ptr_args[0][0]);",
+      $ptr_args[0][0] => "SIZE:$compsize_group:$compsize_from,OUTASLIST:${compsize_from}_count",
     };
   } elsif ($nconst == 1 and $nout == 0 and
     $ptr_args[0][2] and $ptr_args[0][2] !~ /(?:\d|COMPSIZE)/ and

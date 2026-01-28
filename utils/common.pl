@@ -97,10 +97,11 @@ sub bindings {
   die "$name: undefined dynlang arg '$_'" for grep /^[a-z]/ && !exists $name2data{$_}, keys %dynlang;
   my %this = %pbinding;
   my $cleanup = delete $dynlang{CLEANUP} // '';
-  my @outaslist = grep $dynlang{$_} =~ /\bOUTASLIST\b/, keys %dynlang;
+  my %indynlang = %dynlang;
+  my @outaslist = grep $indynlang{$_} =~ /\bOUTASLIST\b/, keys %indynlang;
   die "$name: >1 OUTASLIST (@outaslist)" if @outaslist > 1;
   if (@outaslist) {
-    die "$name: no OUTASLIST len" unless my ($len) = $dynlang{$outaslist[0]} =~ /\bOUTASLIST:([^\s,]+)/;
+    die "$name: no OUTASLIST len" unless my ($len) = $indynlang{$outaslist[0]} =~ /\bOUTASLIST:([^\s,]+)/;
     my $parsed = parse_ptr($name2data{$outaslist[0]});
     die "$name: no typefunc for $outaslist[0]" unless my $typefunc = typefunc($parsed->[0]);
     my $newfunc = 'newSV' . lc substr $typefunc, 0, 2;
@@ -108,6 +109,12 @@ sub bindings {
     $cleanup .= "\n  " if $cleanup;
     $cleanup .= "free($outaslist[0]);";
     $dynlang{OUTPUT} = "OGLM_OUT_FINISH($outaslist[0],$len,$newfunc)";
+  }
+  my @sized = grep $indynlang{$_} =~ /\bSIZE\b/, keys %indynlang;
+  for my $arg (@sized) {
+    die "$name: failed to get SIZE info from '$indynlang{$arg}'" unless my ($compsize_group, $compsize_from) = $indynlang{$arg} =~ /\bSIZE:([^:]+):([^,\s]+)/;
+    my $parsed = parse_ptr($name2data{$arg});
+    $dynlang{$arg} = "OGLM_GET_SETUP($compsize_group,$compsize_from,$parsed->[0],$arg)";
   }
   die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
   if (my $retval = delete $dynlang{RETVAL}) {
