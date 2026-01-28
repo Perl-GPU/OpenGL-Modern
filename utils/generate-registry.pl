@@ -210,8 +210,8 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   die "undef ptr_type for $name" if !$ptr_types[0][0];
   my @infos = map typefunc($_->[0]), @ptr_types;
   my (%dynlang, %lenarg2ptrs);
-  push @{ $lenarg2ptrs{$_->[1]} }, $_->[0] for
-    grep defined($_->[1]) && $_->[1] !~ /(?:\d|COMPSIZE)/, map [@$_[0,2]], @argdata;
+  my %arg2len = map @$_, grep defined($_->[1]) && $_->[1] !~ /(?:\d|COMPSIZE)/, map [@$_[0,2]], @argdata;
+  push @{ $lenarg2ptrs{$arg2len{$_}} }, $_ for keys %arg2len;
   next if keys(%lenarg2ptrs) > 1;
   my $compsize_from = ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/ ? $1 : undef;
   my $compsize_data = $compsize_from && $name2data{$compsize_from};
@@ -222,16 +222,15 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     $constargs[0][2] and $constargs[0][2] !~ /(?:\d|COMPSIZE)/ and
     $infos[0]
   ) {
-    my $len = $constargs[0][2];
+    my $len = $arg2len{$constargs[0][0]};
     my $startfrom = @argdata - 2;
     $dynlang{$len} = 'items'.($startfrom ? "-$startfrom" : '');
     $dynlang{$constargs[0][0]} = "VARARGS:$startfrom";
   } elsif (@constargs == 0 and @outargs == 1 and
     $infos[0] and
-    $outargs[0][2] and $outargs[0][2] !~ /(?:\d|COMPSIZE)/
+    $arg2len{$outargs[0][0]}
   ) {
-    my $len = $outargs[0][2];
-    $dynlang{$outargs[0][0]} = "OUTASLIST:$len";
+    $dynlang{$outargs[0][0]} = "OUTASLIST:$arg2len{$outargs[0][0]}";
   }
   $s->{dynlang} = \%dynlang if %dynlang;
 }
