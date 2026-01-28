@@ -97,10 +97,10 @@ sub bindings {
   die "$name: undefined dynlang arg '$_'" for grep /^[a-z]/ && !exists $name2data{$_}, keys %dynlang;
   my %this = %pbinding;
   my $cleanup = delete $dynlang{CLEANUP} // '';
-  my @outaslist = grep $dynlang{$_} =~ /^OUTASLIST/, keys %dynlang;
+  my @outaslist = grep $dynlang{$_} =~ /\bOUTASLIST\b/, keys %dynlang;
   die "$name: >1 OUTASLIST (@outaslist)" if @outaslist > 1;
   if (@outaslist) {
-    die "$name: no OUTASLIST len" unless my ($len) = $dynlang{$outaslist[0]} =~ /^OUTASLIST:(.+)$/;
+    die "$name: no OUTASLIST len" unless my ($len) = $dynlang{$outaslist[0]} =~ /\bOUTASLIST:([^\s,]+)/;
     my $parsed = parse_ptr($name2data{$outaslist[0]});
     die "$name: no typefunc for $outaslist[0]" unless my $typefunc = typefunc($parsed->[0]);
     my $newfunc = 'newSV' . lc substr $typefunc, 0, 2;
