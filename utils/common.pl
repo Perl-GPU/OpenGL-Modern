@@ -129,7 +129,7 @@ sub bindings {
     $this{aftercall} = "\n  $output";
     $this{xs_code} = "PPCODE:\n";
   }
-  my @xs_inargs = grep !$dynlang{$_->[0]} && !($name2parsed{$_->[0]} && !$name2parsed{$_->[0]}[1]), @argdata;
+  my @xs_inargs = grep !$dynlang{$_->[0]} && !($s->{restype} eq 'void' && $name2parsed{$_->[0]} && !$name2parsed{$_->[0]}[1]), @argdata;
   my $dotdotdot = grep /\bitems\b/, values %dynlang;
   $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
   $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
@@ -169,11 +169,13 @@ sub bindings {
     $need_cast = 1 if $type =~ s#\bconst\b##g;
     $beforecall .= "  $type $var = $val;\n";
   }
-  for my $arr (sort grep !$gotdynlang{$_} && !$name2parsed{$_}[1], keys %name2parsed) {
-    my $len = $name2data{$arr}[2] // die "$name: pointer arg without len";
-    my $type = $name2parsed{$arr}[0];
-    $type = 'char' if $type eq 'void';
-    $beforecall .= "  $type $arr\[$len];\n";
+  if ($s->{restype} eq 'void') {
+    for my $arr (sort grep !$gotdynlang{$_} && !$name2parsed{$_}[1], keys %name2parsed) {
+      my $len = $name2data{$arr}[2] // die "$name: pointer arg without len";
+      my $type = $name2parsed{$arr}[0];
+      $type = 'char' if $type eq 'void';
+      $beforecall .= "  $type $arr\[$len];\n";
+    }
   }
   if ($need_cast) {
     $this{callarg_list} = $s->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map qq{($_->[1])$_->[0]}, @argdata ]})";
