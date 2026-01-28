@@ -358,7 +358,10 @@ for my $name (sort grep !/^GL/, keys %signature) {
     die "$name: $bind->{binding_name} has no xs_rettype" if !defined $bind->{xs_rettype};
     my $prefix = " ";
     $prefix .= "\$retval = " if $bind->{xs_rettype} ne 'void';
-    $prefix .= "\@retvals = " if $bind->{xs_code} eq "PPCODE:\n";
+    if ($bind->{xs_code} eq "PPCODE:\n") {
+      my ($retname) = grep $s->{dynlang}{$_} =~ /\bOUTASLIST\b/, keys %{ $s->{dynlang} };
+      $prefix .= "\@$retname = ";
+    }
     my $suffix .= "(";
     $suffix .= join ', ', map $_ eq '...' ? '@inputs' : "\$$_", split /\s*,\s*/, $bind->{xs_args};
     $suffix .= ");\n";
