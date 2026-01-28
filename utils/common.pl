@@ -153,19 +153,20 @@ sub bindings {
   }
   $this{aftercall} .= "\n  $cleanup" if $cleanup;
   $this{error_check2} &&= "OGLM_CHECK_ERR($name, $cleanup)";
-  for my $arr (sort grep !$dynlang{$_} && !$name2parsed{$_}[1], keys %name2parsed) {
-    my $len = $name2data{$arr}[2] // die "$name: pointer arg without len";
-    my $type = $name2parsed{$arr}[0];
-    $type = 'char' if $type eq 'void';
-    $beforecall .= "  $type $arr\[$len];\n";
-  }
   my $need_cast;
+  my %gotdynlang = map +($_=>1), keys %dynlang;
   for my $var (sort keys %dynlang) {
     my $val = delete $dynlang{$var};
     die "$name: no arg data found for '$var'" unless my $data = $name2data{$var};
     my $type = $data->[1];
     $need_cast = $type =~ s#\bconst\b##g;
     $beforecall .= "  $type $var = $val;\n";
+  }
+  for my $arr (sort grep !$gotdynlang{$_} && !$name2parsed{$_}[1], keys %name2parsed) {
+    my $len = $name2data{$arr}[2] // die "$name: pointer arg without len";
+    my $type = $name2parsed{$arr}[0];
+    $type = 'char' if $type eq 'void';
+    $beforecall .= "  $type $arr\[$len];\n";
   }
   if ($need_cast) {
     $this{callarg_list} = $s->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map qq{($_->[1])$_->[0]}, @argdata ]})";
