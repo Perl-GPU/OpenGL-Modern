@@ -35,6 +35,16 @@ int oglm_count_BlendingFactor(int param) {
   }
   return -1;
 }
+int oglm_count_Buffer(int param) {
+  switch (param) {
+    case GL_DEPTH:
+    case GL_STENCIL:
+      return 1;
+    case GL_COLOR:
+      return 4;
+  }
+  return -1;
+}
 int oglm_count_BufferPNameARB(int param) {
   switch (param) {
     case GL_BUFFER_IMMUTABLE_STORAGE:
@@ -1008,6 +1018,16 @@ int oglm_count_InternalFormatPName(int param) {
   }
   return -1;
 }
+int oglm_count_InvalidateFramebufferAttachment(int param) {
+  switch (param) {
+    case GL_DEPTH:
+    case GL_STENCIL:
+      return 1;
+    case GL_COLOR:
+      return 4;
+  }
+  return -1;
+}
 int oglm_count_LightModelParameter(int param) {
   switch (param) {
     case GL_LIGHT_MODEL_LOCAL_VIEWER:
@@ -1139,6 +1159,16 @@ int oglm_count_PipelineParameterName(int param) {
     case GL_TESS_EVALUATION_SHADER:
     case GL_TESS_CONTROL_SHADER:
       return 1;
+  }
+  return -1;
+}
+int oglm_count_PixelCopyType(int param) {
+  switch (param) {
+    case GL_DEPTH:
+    case GL_STENCIL:
+      return 1;
+    case GL_COLOR:
+      return 4;
   }
   return -1;
 }
