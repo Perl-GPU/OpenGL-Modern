@@ -235,8 +235,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     };
   } elsif ($nconst == 0 and $nout == 1 and
     $infos[0] and
-    $ptr_args[0][2] and $ptr_args[0][2] !~ /(?:\d|COMPSIZE)/ and
-    $ptr_arg_inds[0] == $#argdata
+    $ptr_args[0][2] and $ptr_args[0][2] !~ /(?:\d|COMPSIZE)/
   ) {
     my $len = $ptr_args[0][2];
     $s->{dynlang} = {
