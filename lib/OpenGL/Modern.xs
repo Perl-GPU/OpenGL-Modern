@@ -53,8 +53,8 @@ static int _auto_check_errors = 0;
   { IV i; for(i = 0; i < items-startfrom; i++) { \
     varname[i] = (type)Sv##perltype(ST(i + startfrom)); \
   } }
-#define OGLM_GET_SETUP(group, pname, buffertype, buffername) \
-  NULL; int pname ## _count = oglm_count_##group(pname); \
+#define OGLM_GET_SETUP(group, pname, buffertype, buffername, mult) \
+  NULL; int pname ## _count = oglm_count_##group(pname) * mult; \
   if (pname ## _count < 0) croak("Unknown " #group " %d", pname); \
   buffername = malloc(sizeof(buffertype) * pname ## _count);
 

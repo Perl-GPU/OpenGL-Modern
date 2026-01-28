@@ -112,9 +112,12 @@ sub bindings {
   }
   my @sized = grep $indynlang{$_} =~ /\bSIZE\b/, keys %indynlang;
   for my $arg (@sized) {
-    die "$name: failed to get SIZE info from '$indynlang{$arg}'" unless my ($compsize_group, $compsize_from) = $indynlang{$arg} =~ /\bSIZE:([^:]+):([^,\s]+)/;
+    die "$name: failed to get SIZE info from '$indynlang{$arg}'" unless
+      my ($compsize_group, $compsize_from, $mult) =
+        $indynlang{$arg} =~ /\bSIZE:([^:]+):([^,:\s]+)(?::([^,\s]+))?/;
+    $mult ||= 1;
     my $parsed = parse_ptr($name2data{$arg});
-    $dynlang{$arg} = "OGLM_GET_SETUP($compsize_group,$compsize_from,$parsed->[0],$arg)";
+    $dynlang{$arg} = "OGLM_GET_SETUP($compsize_group,$compsize_from,$parsed->[0],$arg,$mult)";
   }
   die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
   if (my $retval = delete $dynlang{RETVAL}) {
