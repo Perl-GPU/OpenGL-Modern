@@ -6025,8 +6025,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(buffers);',
-      'buffers' => 'OGLM_GET_ARGS(buffers,2,GLuint,UV)',
+      'buffers' => 'VARARGS:2',
       'count' => 'items-2'
     },
     'feature' => 'GL_ARB_multi_bind',
@@ -6289,9 +6288,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(textures);',
       'count' => 'items-1',
-      'textures' => 'OGLM_GET_ARGS(textures,1,GLuint,UV)'
+      'textures' => 'VARARGS:1'
     },
     'feature' => 'GL_ARB_multi_bind',
     'glewImpl' => '__glewBindImageTextures',
@@ -6497,9 +6495,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(samplers);',
       'count' => 'items-1',
-      'samplers' => 'OGLM_GET_ARGS(samplers,1,GLuint,UV)'
+      'samplers' => 'VARARGS:1'
     },
     'feature' => 'GL_ARB_multi_bind',
     'glewImpl' => '__glewBindSamplers',
@@ -6620,9 +6617,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(textures);',
       'count' => 'items-1',
-      'textures' => 'OGLM_GET_ARGS(textures,1,GLuint,UV)'
+      'textures' => 'VARARGS:1'
     },
     'feature' => 'GL_ARB_multi_bind',
     'glewImpl' => '__glewBindTextures',
@@ -8716,9 +8712,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(values);',
       'n' => 'items-1',
-      'values' => 'OGLM_GET_ARGS(values,1,GLuint,UV)'
+      'values' => 'VARARGS:1'
     },
     'feature' => 'GL_EXT_shader_pixel_local_storage2',
     'glewImpl' => '__glewClearPixelLocalStorageuiEXT',
@@ -14079,9 +14074,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'n' => 'items',
-      'v' => 'OGLM_GET_ARGS(v,0,GLfloat,NV)'
+      'v' => 'VARARGS:0'
     },
     'feature' => 'GL_EXT_raster_multisample',
     'glewImpl' => '__glewCoverageModulationTableNV',
@@ -14404,9 +14398,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(strings);',
       'count' => 'items-1',
-      'strings' => 'OGLM_GET_ARGS(strings,1,GLchar*,PV_nolen)'
+      'strings' => 'VARARGS:1'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewCreateShaderProgramv',
@@ -14716,9 +14709,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
       'count' => 'items-4',
-      'ids' => 'OGLM_GET_ARGS(ids,4,GLuint,UV)'
+      'ids' => 'VARARGS:4'
     },
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewDebugMessageControl',
@@ -14755,9 +14747,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
       'count' => 'items-3',
-      'ids' => 'OGLM_GET_ARGS(ids,3,GLuint,UV)'
+      'ids' => 'VARARGS:3'
     },
     'feature' => 'GL_AMD_debug_output',
     'glewImpl' => '__glewDebugMessageEnableAMD',
@@ -14918,8 +14909,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(buffers);',
-      'buffers' => 'OGLM_GET_ARGS(buffers,0,GLuint,UV)',
+      'buffers' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_VERSION_1_5',
@@ -14943,8 +14933,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(lists);',
-      'lists' => 'OGLM_GET_ARGS(lists,0,GLuint,UV)',
+      'lists' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_NV_command_list',
@@ -14968,8 +14957,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(fences);',
-      'fences' => 'OGLM_GET_ARGS(fences,0,GLuint,UV)',
+      'fences' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_APPLE_fence',
@@ -14993,8 +14981,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(fences);',
-      'fences' => 'OGLM_GET_ARGS(fences,0,GLuint,UV)',
+      'fences' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_NV_fence',
@@ -15033,8 +15020,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(framebuffers);',
-      'framebuffers' => 'OGLM_GET_ARGS(framebuffers,0,GLuint,UV)',
+      'framebuffers' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_ARB_framebuffer_object',
@@ -15112,8 +15098,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(memoryObjects);',
-      'memoryObjects' => 'OGLM_GET_ARGS(memoryObjects,0,GLuint,UV)',
+      'memoryObjects' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_EXT_memory_object',
@@ -15158,8 +15143,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(names);',
-      'names' => 'OGLM_GET_ARGS(names,1,GLuint,UV)',
+      'names' => 'VARARGS:1',
       'num' => 'items-1'
     },
     'feature' => 'GL_AMD_name_gen_delete',
@@ -15195,8 +15179,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
-      'ids' => 'OGLM_GET_ARGS(ids,0,GLuint,UV)',
+      'ids' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_NV_occlusion_query',
@@ -15285,9 +15268,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(pipelines);',
       'n' => 'items',
-      'pipelines' => 'OGLM_GET_ARGS(pipelines,0,GLuint,UV)'
+      'pipelines' => 'VARARGS:0'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewDeleteProgramPipelines',
@@ -15313,9 +15295,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(programs);',
       'n' => 'items',
-      'programs' => 'OGLM_GET_ARGS(programs,0,GLuint,UV)'
+      'programs' => 'VARARGS:0'
     },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewDeleteProgramsARB',
@@ -15341,8 +15322,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
-      'ids' => 'OGLM_GET_ARGS(ids,0,GLuint,UV)',
+      'ids' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_VERSION_1_5',
@@ -15385,8 +15365,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
-      'ids' => 'OGLM_GET_ARGS(ids,0,GLuint,UV)',
+      'ids' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_EXT_disjoint_timer_query',
@@ -15413,9 +15392,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(renderbuffers);',
       'n' => 'items',
-      'renderbuffers' => 'OGLM_GET_ARGS(renderbuffers,0,GLuint,UV)'
+      'renderbuffers' => 'VARARGS:0'
     },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewDeleteRenderbuffers',
@@ -15457,9 +15435,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(samplers);',
       'count' => 'items',
-      'samplers' => 'OGLM_GET_ARGS(samplers,0,GLuint,UV)'
+      'samplers' => 'VARARGS:0'
     },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewDeleteSamplers',
@@ -15482,9 +15459,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(semaphores);',
       'n' => 'items',
-      'semaphores' => 'OGLM_GET_ARGS(semaphores,0,GLuint,UV)'
+      'semaphores' => 'VARARGS:0'
     },
     'feature' => 'GL_EXT_semaphore',
     'glewImpl' => '__glewDeleteSemaphoresEXT',
@@ -15519,9 +15495,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(states);',
       'n' => 'items',
-      'states' => 'OGLM_GET_ARGS(states,0,GLuint,UV)'
+      'states' => 'VARARGS:0'
     },
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewDeleteStatesNV',
@@ -15559,9 +15534,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(textures);',
       'n' => 'items',
-      'textures' => 'OGLM_GET_ARGS(textures,0,GLuint,UV)'
+      'textures' => 'VARARGS:0'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -15583,9 +15557,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(textures);',
       'n' => 'items',
-      'textures' => 'OGLM_GET_ARGS(textures,0,GLuint,UV)'
+      'textures' => 'VARARGS:0'
     },
     'feature' => 'GL_EXT_texture_object',
     'glewImpl' => '__glewDeleteTexturesEXT',
@@ -15611,8 +15584,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
-      'ids' => 'OGLM_GET_ARGS(ids,0,GLuint,UV)',
+      'ids' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_ARB_transform_feedback2',
@@ -15639,8 +15611,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(arrays);',
-      'arrays' => 'OGLM_GET_ARGS(arrays,0,GLuint,UV)',
+      'arrays' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_ARB_vertex_array_object',
@@ -15812,9 +15783,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'count' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLclampd,NV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewDepthRangeArrayv',
@@ -16200,8 +16170,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(attachments);',
-      'attachments' => 'OGLM_GET_ARGS(attachments,1,GLenum,IV)',
+      'attachments' => 'VARARGS:1',
       'numAttachments' => 'items-1'
     },
     'feature' => 'GL_EXT_discard_framebuffer',
@@ -16454,8 +16423,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(bufs);',
-      'bufs' => 'OGLM_GET_ARGS(bufs,0,GLenum,IV)',
+      'bufs' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_VERSION_2_0',
@@ -16505,8 +16473,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(bufs);',
-      'bufs' => 'OGLM_GET_ARGS(bufs,0,GLenum,IV)',
+      'bufs' => 'VARARGS:0',
       'n' => 'items'
     },
     'feature' => 'GL_NV_draw_buffers',
@@ -19878,8 +19845,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(bufs);',
-      'bufs' => 'OGLM_GET_ARGS(bufs,1,GLenum,IV)',
+      'bufs' => 'VARARGS:1',
       'n' => 'items-1'
     },
     'feature' => 'GL_EXT_direct_state_access',
@@ -35251,8 +35217,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(attachments);',
-      'attachments' => 'OGLM_GET_ARGS(attachments,1,GLenum,IV)',
+      'attachments' => 'VARARGS:1',
       'numAttachments' => 'items-1'
     },
     'feature' => 'GL_ARB_invalidate_subdata',
@@ -35281,8 +35246,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(attachments);',
-      'attachments' => 'OGLM_GET_ARGS(attachments,1,GLenum,IV)',
+      'attachments' => 'VARARGS:1',
       'numAttachments' => 'items-1'
     },
     'feature' => 'GL_ARB_direct_state_access',
@@ -35327,8 +35291,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(attachments);',
-      'attachments' => 'OGLM_GET_ARGS(attachments,5,GLenum,IV)',
+      'attachments' => 'VARARGS:5',
       'numAttachments' => 'items-5'
     },
     'feature' => 'GL_ARB_direct_state_access',
@@ -35375,8 +35338,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(attachments);',
-      'attachments' => 'OGLM_GET_ARGS(attachments,5,GLenum,IV)',
+      'attachments' => 'VARARGS:5',
       'numAttachments' => 'items-5'
     },
     'feature' => 'GL_ARB_invalidate_subdata',
@@ -42270,9 +42232,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'count' => 'items-2',
-      'v' => 'OGLM_GET_ARGS(v,2,GLint,IV)'
+      'v' => 'VARARGS:2'
     },
     'feature' => 'GL_NVX_gpu_multicast2',
     'glewImpl' => '__glewMulticastScissorArrayvNVX',
@@ -42303,9 +42264,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'count' => 'items-2',
-      'v' => 'OGLM_GET_ARGS(v,2,GLfloat,NV)'
+      'v' => 'VARARGS:2'
     },
     'feature' => 'GL_NVX_gpu_multicast2',
     'glewImpl' => '__glewMulticastViewportArrayvNVX',
@@ -42665,8 +42625,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(bufs);',
-      'bufs' => 'OGLM_GET_ARGS(bufs,1,GLenum,IV)',
+      'bufs' => 'VARARGS:1',
       'n' => 'items-1'
     },
     'feature' => 'GL_ARB_direct_state_access',
@@ -45055,8 +45014,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(dashArray);',
-      'dashArray' => 'OGLM_GET_ARGS(dashArray,1,GLfloat,NV)',
+      'dashArray' => 'VARARGS:1',
       'dashCount' => 'items-1'
     },
     'feature' => 'GL_NV_path_rendering',
@@ -45661,9 +45619,8 @@ our %registry = (
     ],
     'core_removed' => 1,
     'dynlang' => {
-      'CLEANUP' => 'free(values);',
       'mapsize' => 'items-1',
-      'values' => 'OGLM_GET_ARGS(values,1,GLfloat,NV)'
+      'values' => 'VARARGS:1'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -45692,9 +45649,8 @@ our %registry = (
     ],
     'core_removed' => 1,
     'dynlang' => {
-      'CLEANUP' => 'free(values);',
       'mapsize' => 'items-1',
-      'values' => 'OGLM_GET_ARGS(values,1,GLuint,UV)'
+      'values' => 'VARARGS:1'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -45723,9 +45679,8 @@ our %registry = (
     ],
     'core_removed' => 1,
     'dynlang' => {
-      'CLEANUP' => 'free(values);',
       'mapsize' => 'items-1',
-      'values' => 'OGLM_GET_ARGS(values,1,GLushort,UV)'
+      'values' => 'VARARGS:1'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -46749,9 +46704,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(params);',
       'count' => 'items-3',
-      'params' => 'OGLM_GET_ARGS(params,3,GLint,IV)'
+      'params' => 'VARARGS:3'
     },
     'feature' => 'GL_NV_parameter_buffer_object',
     'glewImpl' => '__glewProgramBufferParametersIivNV',
@@ -46788,9 +46742,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(params);',
       'count' => 'items-3',
-      'params' => 'OGLM_GET_ARGS(params,3,GLuint,UV)'
+      'params' => 'VARARGS:3'
     },
     'feature' => 'GL_NV_parameter_buffer_object',
     'glewImpl' => '__glewProgramBufferParametersIuivNV',
@@ -46827,9 +46780,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(params);',
       'count' => 'items-3',
-      'params' => 'OGLM_GET_ARGS(params,3,GLfloat,NV)'
+      'params' => 'VARARGS:3'
     },
     'feature' => 'GL_NV_parameter_buffer_object',
     'glewImpl' => '__glewProgramBufferParametersfvNV',
@@ -47943,9 +47895,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-2',
-      'value' => 'OGLM_GET_ARGS(value,2,GLdouble,NV)'
+      'value' => 'VARARGS:2'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1dv',
@@ -48002,9 +47953,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-2',
-      'value' => 'OGLM_GET_ARGS(value,2,GLfloat,NV)'
+      'value' => 'VARARGS:2'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1fv',
@@ -48098,9 +48048,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-2',
-      'value' => 'OGLM_GET_ARGS(value,2,GLint64,IV)'
+      'value' => 'VARARGS:2'
     },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform1i64vARB',
@@ -48131,9 +48080,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-2',
-      'value' => 'OGLM_GET_ARGS(value,2,GLint64EXT,IV)'
+      'value' => 'VARARGS:2'
     },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform1i64vNV',
@@ -48167,9 +48115,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-2',
-      'value' => 'OGLM_GET_ARGS(value,2,GLint,IV)'
+      'value' => 'VARARGS:2'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1iv',
@@ -48263,9 +48210,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-2',
-      'value' => 'OGLM_GET_ARGS(value,2,GLuint64,UV)'
+      'value' => 'VARARGS:2'
     },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform1ui64vARB',
@@ -48296,9 +48242,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-2',
-      'value' => 'OGLM_GET_ARGS(value,2,GLuint64EXT,UV)'
+      'value' => 'VARARGS:2'
     },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform1ui64vNV',
@@ -48332,9 +48277,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-2',
-      'value' => 'OGLM_GET_ARGS(value,2,GLuint,UV)'
+      'value' => 'VARARGS:2'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1uiv',
@@ -49809,9 +49753,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(values);',
       'count' => 'items-2',
-      'values' => 'OGLM_GET_ARGS(values,2,GLuint64,UV)'
+      'values' => 'VARARGS:2'
     },
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewProgramUniformHandleui64vARB',
@@ -49842,9 +49785,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(values);',
       'count' => 'items-2',
-      'values' => 'OGLM_GET_ARGS(values,2,GLuint64,UV)'
+      'values' => 'VARARGS:2'
     },
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewProgramUniformHandleui64vNV',
@@ -50498,9 +50440,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-2',
-      'value' => 'OGLM_GET_ARGS(value,2,GLuint64EXT,UV)'
+      'value' => 'VARARGS:2'
     },
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewProgramUniformui64vNV',
@@ -53186,9 +53127,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'count' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLint,IV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewScissorArrayv',
@@ -53215,9 +53155,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'count' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLint,IV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_NV_scissor_exclusive',
     'glewImpl' => '__glewScissorExclusiveArrayvNV',
@@ -54309,10 +54248,9 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(string);',
       'count' => 'items-1',
       'length' => 'NULL',
-      'string' => 'OGLM_GET_ARGS(string,1,GLchar*,PV_nolen)'
+      'string' => 'VARARGS:1'
     },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewShaderSource',
@@ -54410,9 +54348,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(rates);',
       'count' => 'items-2',
-      'rates' => 'OGLM_GET_ARGS(rates,2,GLenum,IV)'
+      'rates' => 'VARARGS:2'
     },
     'feature' => 'GL_NV_shading_rate_image',
     'glewImpl' => '__glewShadingRateImagePaletteNV',
@@ -57399,9 +57336,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(weights);',
       'n' => 'items-2',
-      'weights' => 'OGLM_GET_ARGS(weights,2,GLfloat,NV)'
+      'weights' => 'VARARGS:2'
     },
     'feature' => 'GL_SGIS_texture_filter4',
     'glewImpl' => '__glewTexFilterFuncSGIS',
@@ -61736,9 +61672,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(varyings);',
       'count' => 'items-2',
-      'varyings' => 'OGLM_GET_ARGS(varyings,2,GLchar*,PV_nolen)'
+      'varyings' => 'VARARGS:2'
     },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewTransformFeedbackVaryings',
@@ -61772,9 +61707,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(locations);',
       'count' => 'items-2',
-      'locations' => 'OGLM_GET_ARGS(locations,2,GLint,IV)'
+      'locations' => 'VARARGS:2'
     },
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewTransformFeedbackVaryingsNV',
@@ -63513,9 +63447,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-1',
-      'value' => 'OGLM_GET_ARGS(value,1,GLuint64,UV)'
+      'value' => 'VARARGS:1'
     },
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewUniformHandleui64vARB',
@@ -63542,9 +63475,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(value);',
       'count' => 'items-1',
-      'value' => 'OGLM_GET_ARGS(value,1,GLuint64,UV)'
+      'value' => 'VARARGS:1'
     },
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewUniformHandleui64vNV',
@@ -64104,9 +64036,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(indices);',
       'count' => 'items-1',
-      'indices' => 'OGLM_GET_ARGS(indices,1,GLuint,UV)'
+      'indices' => 'VARARGS:1'
     },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewUniformSubroutinesuiv',
@@ -68975,9 +68906,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'count' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLdouble,NV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs1dvNV',
@@ -69004,9 +68934,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'count' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLfloat,NV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs1fvNV',
@@ -69033,9 +68962,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'n' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLhalf,NV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttribs1hvNV',
@@ -69062,9 +68990,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'count' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLshort,IV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs1svNV',
@@ -69139,9 +69066,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'n' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLhalf,NV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttribs2hvNV',
@@ -69240,9 +69166,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'n' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLhalf,NV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttribs3hvNV',
@@ -69341,9 +69266,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'n' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLhalf,NV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttribs4hvNV',
@@ -70704,9 +70628,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
       'count' => 'items-1',
-      'v' => 'OGLM_GET_ARGS(v,1,GLfloat,NV)'
+      'v' => 'VARARGS:1'
     },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewViewportArrayv',
@@ -71742,8 +71665,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(box);',
-      'box' => 'OGLM_GET_ARGS(box,1,GLint,IV)',
+      'box' => 'VARARGS:1',
       'count' => 'items-1'
     },
     'feature' => 'GL_EXT_window_rectangles',

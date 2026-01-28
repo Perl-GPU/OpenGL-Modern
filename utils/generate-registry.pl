@@ -231,8 +231,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     my $startfrom = @argdata - 2;
     $s->{dynlang} = {
       $len => 'items'.($startfrom ? "-$startfrom" : ''),
-      $ptr_args[0][0] => "OGLM_GET_ARGS($ptr_args[0][0],$startfrom,$ptr_types[0][0],$infos[0])",
-      CLEANUP => "free($ptr_args[0][0]);",
+      $ptr_args[0][0] => "VARARGS:$startfrom",
     };
   } elsif ($nconst == 0 and $nout == 1 and
     $infos[0] and

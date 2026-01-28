@@ -112,7 +112,6 @@ sub bindings {
   $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
   my $beforecall = '';
   my $cleanup = delete $dynlang{CLEANUP} // '';
-  $this{aftercall} .= "\n  $cleanup" if $cleanup;
   for my $get (sort grep $dynlang{$_} =~ /^</, keys %dynlang) {
     my $val = delete $dynlang{$get};
     $val =~ s#^<##;
@@ -123,6 +122,17 @@ sub bindings {
     $this{error_check} .= "\n  " if $this{error_check};
     $this{error_check} .= "OGLM_CHECK_ERR($getfunc, $cleanup)",
   }
+  my @varargs = grep $dynlang{$_} =~ /^VARARGS/, keys %dynlang;
+  die "$name: >1 VARARGS (@varargs)" if @varargs > 1;
+  if (@varargs) {
+    die "$name: no VARARGS startfrom" unless my ($startfrom) = $dynlang{$varargs[0]} =~ /^VARARGS:(\d+)$/;
+    my $parsed = parse_ptr($name2data{$varargs[0]});
+    die "$name: no typefunc for $varargs[0]" unless my $typefunc = typefunc($parsed->[0]);
+    $dynlang{$varargs[0]} = "OGLM_GET_ARGS($varargs[0],$startfrom,$parsed->[0],$typefunc)";
+    $cleanup .= "\n  " if $cleanup;
+    $cleanup .= "free($varargs[0]);";
+  }
+  $this{aftercall} .= "\n  $cleanup" if $cleanup;
   $this{error_check2} &&= "OGLM_CHECK_ERR($name, $cleanup)";
   for my $arr (sort grep !$dynlang{$_} && !$name2parsed{$_}[1], keys %name2parsed) {
     my $len = $name2data{$arr}[2] // die "$name: pointer arg without len";
