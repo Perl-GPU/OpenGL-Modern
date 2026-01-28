@@ -208,7 +208,6 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my @constargs = @ptr_args[ grep $ptr_types[$_][1], 0..$#ptr_args ];
   my @outargs = @ptr_args[ grep !$ptr_types[$_][1], 0..$#ptr_args ];
   die "undef ptr_type for $name" if !$ptr_types[0][0];
-  my @infos = map typefunc($_->[0]), @ptr_types;
   my (%dynlang, %lenarg2ptrs);
   my %arg2len = map @$_, grep defined($_->[1]) && $_->[1] !~ /(?:\d|COMPSIZE)/, map [@$_[0,2]], @argdata;
   push @{ $lenarg2ptrs{$arg2len{$_}} }, $_ for keys %arg2len;
@@ -219,9 +218,10 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   if (@constargs == 0 && @outargs == 1 && $compsize_group && $g2c2s->{$compsize_group}) {
     $arg2len{$outargs[0][0]} = "${compsize_from}_count";
     $dynlang{$outargs[0][0]} = "SIZE:$compsize_group:$compsize_from";
-  } elsif (@constargs == 1 and @outargs == 0 and
-    $arg2len{$constargs[0][0]} and
-    $infos[0]
+  }
+  if (@constargs == 1 and
+    typefunc(parse_ptr($constargs[0])->[0]) and
+    $arg2len{$constargs[0][0]}
   ) {
     my $len = $arg2len{$constargs[0][0]};
     my $startfrom = @argdata - 2;

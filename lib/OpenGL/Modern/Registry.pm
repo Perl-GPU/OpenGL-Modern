@@ -5299,6 +5299,10 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'n' => 'items-1',
+      'programs' => 'VARARGS:1'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewAreProgramsResidentNV',
     'glewtype' => 'fun',
@@ -5326,6 +5330,10 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'n' => 'items-1',
+      'textures' => 'VARARGS:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -5351,6 +5359,10 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'n' => 'items-1',
+      'textures' => 'VARARGS:1'
+    },
     'feature' => 'GL_EXT_texture_object',
     'glewImpl' => '__glewAreTexturesResidentEXT',
     'glewtype' => 'fun',
@@ -31910,7 +31922,9 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'uniformIndices' => 'OUTASLIST:uniformCount'
+      'uniformCount' => 'items-2',
+      'uniformIndices' => 'OUTASLIST:uniformCount',
+      'uniformNames' => 'VARARGS:2'
     },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetUniformIndices',

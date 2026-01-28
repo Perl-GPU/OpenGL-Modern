@@ -19,6 +19,7 @@ our @gl_functionscompat = qw(
   glActiveTexture
   glAlphaFunc
   glAreTexturesResident_c
+  glAreTexturesResident_p
   glArrayElement
   glAttachShader
   glBegin
@@ -736,7 +737,9 @@ our @gl_functionsrest = qw(
   glApplyFramebufferAttachmentCMAAINTEL
   glApplyTextureEXT
   glAreProgramsResidentNV_c
+  glAreProgramsResidentNV_p
   glAreTexturesResidentEXT_c
+  glAreTexturesResidentEXT_p
   glAreVertexArraysResidentSGIX_c
   glArrayElementEXT
   glArrayObjectATI
@@ -6514,6 +6517,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_EXT_texture_object' => [
     'glAreTexturesResidentEXT_c',
+    'glAreTexturesResidentEXT_p',
     'glBindTextureEXT',
     'glDeleteTexturesEXT_c',
     'glDeleteTexturesEXT_p',
@@ -7398,6 +7402,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_NV_vertex_program' => [
     'glAreProgramsResidentNV_c',
+    'glAreProgramsResidentNV_p',
     'glBindProgramNV',
     'glDeleteProgramsNV_c',
     'glDeleteProgramsNV_p',
@@ -7968,6 +7973,7 @@ our %EXPORT_TAGS_GL = (
     'glAccum',
     'glAlphaFunc',
     'glAreTexturesResident_c',
+    'glAreTexturesResident_p',
     'glArrayElement',
     'glBegin',
     'glBindTexture',

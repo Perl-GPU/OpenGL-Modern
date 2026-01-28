@@ -1013,12 +1013,14 @@ Exported under tag C<:GL_EXT_light_texture>.
 =head2 glAreProgramsResidentNV
 
  $retval = glAreProgramsResidentNV_c($n, $programs, $residences);
+ $retval = glAreProgramsResidentNV_p($residences, @programs);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
 =head2 glAreTexturesResident
 
  $retval = glAreTexturesResident_c($n, $textures, $residences);
+ $retval = glAreTexturesResident_p($residences, @textures);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -1027,6 +1029,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glAreTexturesResi
 =head2 glAreTexturesResidentEXT
 
  $retval = glAreTexturesResidentEXT_c($n, $textures, $residences);
+ $retval = glAreTexturesResidentEXT_p($residences, @textures);
 
 Exported under tag C<:GL_EXT_texture_object>.
 
@@ -7674,7 +7677,7 @@ Exported under tag C<:GL_EXT_bindable_uniform>.
 =head2 glGetUniformIndices
 
  glGetUniformIndices_c($program, $uniformCount, $uniformNames, $uniformIndices);
- @uniformIndices = glGetUniformIndices_p($program, $uniformCount, $uniformNames);
+ @uniformIndices = glGetUniformIndices_p($program, @uniformNames);
 
 Exported under tag C<:GL_ARB_uniform_buffer_object>.
 
