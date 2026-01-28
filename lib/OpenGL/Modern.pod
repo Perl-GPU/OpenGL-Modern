@@ -3194,12 +3194,16 @@ Exported under tag C<:GL_AMD_debug_output>.
  glDebugMessageControl_c($source, $type, $severity, $count, $ids, $enabled);
  glDebugMessageControlARB_c($source, $type, $severity, $count, $ids, $enabled);
  glDebugMessageControlKHR_c($source, $type, $severity, $count, $ids, $enabled);
+ glDebugMessageControl_p($source, $type, $severity, $enabled, @inputs);
+ glDebugMessageControlARB_p($source, $type, $severity, $enabled, @inputs);
+ glDebugMessageControlKHR_p($source, $type, $severity, $enabled, @inputs);
 
 Exported under tag C<:GL_KHR_debug>.
 
 =head2 glDebugMessageEnableAMD
 
  glDebugMessageEnableAMD_c($category, $severity, $count, $ids, $enabled);
+ glDebugMessageEnableAMD_p($category, $severity, $enabled, @inputs);
 
 Exported under tag C<:GL_AMD_debug_output>.
 
@@ -8495,12 +8499,14 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glInvalidateNamedFramebufferSubData
 
  glInvalidateNamedFramebufferSubData_c($framebuffer, $numAttachments, $attachments, $x, $y, $width, $height);
+ glInvalidateNamedFramebufferSubData_p($framebuffer, $x, $y, $width, $height, @inputs);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
 =head2 glInvalidateSubFramebuffer
 
  glInvalidateSubFramebuffer_c($target, $numAttachments, $attachments, $x, $y, $width, $height);
+ glInvalidateSubFramebuffer_p($target, $x, $y, $width, $height, @inputs);
 
 Exported under tag C<:GL_ARB_invalidate_subdata>.
 
@@ -15047,6 +15053,8 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 
  glTransformFeedbackVaryings_c($program, $count, $varyings, $bufferMode);
  glTransformFeedbackVaryingsEXT_c($program, $count, $varyings, $bufferMode);
+ glTransformFeedbackVaryings_p($program, $bufferMode, @inputs);
+ glTransformFeedbackVaryingsEXT_p($program, $bufferMode, @inputs);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTransformFeedbackVaryings.xhtml>
@@ -15054,6 +15062,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTransformFeedbackV
 =head2 glTransformFeedbackVaryingsNV
 
  glTransformFeedbackVaryingsNV_c($program, $count, $locations, $bufferMode);
+ glTransformFeedbackVaryingsNV_p($program, $bufferMode, @inputs);
 
 Exported under tag C<:GL_NV_transform_feedback>.
 

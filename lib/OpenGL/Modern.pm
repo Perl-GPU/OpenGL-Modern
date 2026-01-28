@@ -574,6 +574,7 @@ our @gl_functionscompat = qw(
   glTexSubImage2D_c
   glTexSubImage3D_c
   glTransformFeedbackVaryings_c
+  glTransformFeedbackVaryings_p
   glTranslated
   glTranslatef
   glUniform1f
@@ -1070,9 +1071,13 @@ our @gl_functionsrest = qw(
   glDebugMessageCallbackKHR_c
   glDebugMessageCallback_c
   glDebugMessageControlARB_c
+  glDebugMessageControlARB_p
   glDebugMessageControlKHR_c
+  glDebugMessageControlKHR_p
   glDebugMessageControl_c
+  glDebugMessageControl_p
   glDebugMessageEnableAMD_c
+  glDebugMessageEnableAMD_p
   glDebugMessageInsert
   glDebugMessageInsertAMD
   glDebugMessageInsertARB
@@ -2973,7 +2978,9 @@ our @gl_functionsrest = qw(
   glInvalidateNamedFramebufferData_c
   glInvalidateNamedFramebufferData_p
   glInvalidateNamedFramebufferSubData_c
+  glInvalidateNamedFramebufferSubData_p
   glInvalidateSubFramebuffer_c
+  glInvalidateSubFramebuffer_p
   glInvalidateTexImage
   glInvalidateTexSubImage
   glIsAsyncMarkerSGIX
@@ -3932,7 +3939,9 @@ our @gl_functionsrest = qw(
   glTransformFeedbackBufferBase
   glTransformFeedbackBufferRange
   glTransformFeedbackVaryingsEXT_c
+  glTransformFeedbackVaryingsEXT_p
   glTransformFeedbackVaryingsNV_c
+  glTransformFeedbackVaryingsNV_p
   glTransformPathNV_c
   glTranslatex
   glUniform1d
@@ -4415,6 +4424,7 @@ our %EXPORT_TAGS_GL = (
   'GL_AMD_debug_output' => [
     'glDebugMessageCallbackAMD_c',
     'glDebugMessageEnableAMD_c',
+    'glDebugMessageEnableAMD_p',
     'glDebugMessageInsertAMD',
     'glGetDebugMessageLogAMD_c'
   ],
@@ -4662,6 +4672,7 @@ our %EXPORT_TAGS_GL = (
   'GL_ARB_debug_output' => [
     'glDebugMessageCallbackARB_c',
     'glDebugMessageControlARB_c',
+    'glDebugMessageControlARB_p',
     'glDebugMessageInsertARB',
     'glGetDebugMessageLogARB_c'
   ],
@@ -4732,6 +4743,7 @@ our %EXPORT_TAGS_GL = (
     'glInvalidateNamedFramebufferData_c',
     'glInvalidateNamedFramebufferData_p',
     'glInvalidateNamedFramebufferSubData_c',
+    'glInvalidateNamedFramebufferSubData_p',
     'glMapNamedBufferRange_c',
     'glMapNamedBuffer_c',
     'glNamedBufferData_c',
@@ -4974,6 +4986,7 @@ our %EXPORT_TAGS_GL = (
     'glInvalidateFramebuffer_c',
     'glInvalidateFramebuffer_p',
     'glInvalidateSubFramebuffer_c',
+    'glInvalidateSubFramebuffer_p',
     'glInvalidateTexImage',
     'glInvalidateTexSubImage'
   ],
@@ -6524,7 +6537,8 @@ our %EXPORT_TAGS_GL = (
     'glBindBufferRangeEXT',
     'glEndTransformFeedbackEXT',
     'glGetTransformFeedbackVaryingEXT_c',
-    'glTransformFeedbackVaryingsEXT_c'
+    'glTransformFeedbackVaryingsEXT_c',
+    'glTransformFeedbackVaryingsEXT_p'
   ],
   'GL_EXT_vertex_array' => [
     'glArrayElementEXT',
@@ -6692,6 +6706,7 @@ our %EXPORT_TAGS_GL = (
   'GL_KHR_debug' => [
     'glDebugMessageCallback_c',
     'glDebugMessageControl_c',
+    'glDebugMessageControl_p',
     'glDebugMessageInsert',
     'glGetDebugMessageLog_c',
     'glGetObjectLabel_c',
@@ -7291,7 +7306,8 @@ our %EXPORT_TAGS_GL = (
     'glGetTransformFeedbackVaryingNV_c',
     'glGetVaryingLocationNV',
     'glTransformFeedbackAttribsNV_c',
-    'glTransformFeedbackVaryingsNV_c'
+    'glTransformFeedbackVaryingsNV_c',
+    'glTransformFeedbackVaryingsNV_p'
   ],
   'GL_NV_transform_feedback2' => [
     'glBindTransformFeedbackNV',
@@ -8593,6 +8609,7 @@ our %EXPORT_TAGS_GL = (
     'glTexParameterIiv_c',
     'glTexParameterIuiv_c',
     'glTransformFeedbackVaryings_c',
+    'glTransformFeedbackVaryings_p',
     'glUniform1ui',
     'glUniform1uiv_c',
     'glUniform2ui',
@@ -8917,6 +8934,7 @@ our %EXPORT_TAGS_GL = (
     'glCopyImageSubData',
     'glDebugMessageCallback_c',
     'glDebugMessageControl_c',
+    'glDebugMessageControl_p',
     'glDebugMessageInsert',
     'glDispatchCompute',
     'glDispatchComputeIndirect',
@@ -8943,6 +8961,7 @@ our %EXPORT_TAGS_GL = (
     'glInvalidateFramebuffer_c',
     'glInvalidateFramebuffer_p',
     'glInvalidateSubFramebuffer_c',
+    'glInvalidateSubFramebuffer_p',
     'glInvalidateTexImage',
     'glInvalidateTexSubImage',
     'glMultiDrawArraysIndirect_c',
@@ -9085,6 +9104,7 @@ our %EXPORT_TAGS_GL = (
     'glInvalidateNamedFramebufferData_c',
     'glInvalidateNamedFramebufferData_p',
     'glInvalidateNamedFramebufferSubData_c',
+    'glInvalidateNamedFramebufferSubData_p',
     'glMapNamedBufferRange_c',
     'glMapNamedBuffer_c',
     'glMemoryBarrierByRegion',

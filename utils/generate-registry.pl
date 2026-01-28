@@ -214,8 +214,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     };
   } elsif ($nconst == 1 and $nout == 0 and
     $ptr_args[0][2] and $ptr_args[0][2] !~ /(?:\d|COMPSIZE)/ and
-    $infos[0] and
-    $ptr_arg_inds[0] == $#argdata
+    $infos[0]
   ) {
     my $len = $ptr_args[0][2];
     my $startfrom = @argdata - 2;

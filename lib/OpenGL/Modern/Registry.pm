@@ -14715,6 +14715,11 @@ our %registry = (
         'GLboolean '
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(ids);',
+      'count' => 'items-4',
+      'ids' => 'OGLM_GET_ARGS(ids,4,GLuint,UV)'
+    },
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewDebugMessageControl',
     'glewtype' => 'fun',
@@ -14749,6 +14754,11 @@ our %registry = (
         'GLboolean '
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(ids);',
+      'count' => 'items-3',
+      'ids' => 'OGLM_GET_ARGS(ids,3,GLuint,UV)'
+    },
     'feature' => 'GL_AMD_debug_output',
     'glewImpl' => '__glewDebugMessageEnableAMD',
     'glewtype' => 'fun',
@@ -35311,6 +35321,11 @@ our %registry = (
         'GLsizei '
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(attachments);',
+      'attachments' => 'OGLM_GET_ARGS(attachments,5,GLenum,IV)',
+      'numAttachments' => 'items-5'
+    },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewInvalidateNamedFramebufferSubData',
     'glewtype' => 'fun',
@@ -35354,6 +35369,11 @@ our %registry = (
         'GLsizei '
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(attachments);',
+      'attachments' => 'OGLM_GET_ARGS(attachments,5,GLenum,IV)',
+      'numAttachments' => 'items-5'
+    },
     'feature' => 'GL_ARB_invalidate_subdata',
     'glewImpl' => '__glewInvalidateSubFramebuffer',
     'glewtype' => 'fun',
@@ -61690,6 +61710,11 @@ our %registry = (
         'TransformFeedbackBufferMode'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(varyings);',
+      'count' => 'items-2',
+      'varyings' => 'OGLM_GET_ARGS(varyings,2,GLchar*,PV_nolen)'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewTransformFeedbackVaryings',
     'glewtype' => 'fun',
@@ -61721,6 +61746,11 @@ our %registry = (
         'TransformFeedbackBufferMode'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(locations);',
+      'count' => 'items-2',
+      'locations' => 'OGLM_GET_ARGS(locations,2,GLint,IV)'
+    },
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewTransformFeedbackVaryingsNV',
     'glewtype' => 'fun',
