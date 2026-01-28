@@ -126,7 +126,7 @@ sub bindings {
     $this{aftercall} = "\n  $output";
     $this{xs_code} = "PPCODE:\n";
   }
-  my @xs_inargs = grep !exists $dynlang{$_->[0]} && (!exists $name2parsed{$_->[0]} || $name2parsed{$_->[0]}[1]), @argdata;
+  my @xs_inargs = grep !$dynlang{$_->[0]} && !($name2parsed{$_->[0]} && !$name2parsed{$_->[0]}[1]), @argdata;
   my $dotdotdot = grep /\bitems\b/, values %dynlang;
   $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
   $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
