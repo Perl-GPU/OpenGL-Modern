@@ -155,7 +155,11 @@ sub bindings {
   $this{error_check2} &&= "OGLM_CHECK_ERR($name, $cleanup)";
   my $need_cast;
   my %gotdynlang = map +($_=>1), keys %dynlang;
-  for my $var (sort keys %dynlang) {
+  my %hasitems = map +($_=>1), grep $dynlang{$_} =~ /\bitems\b/, keys %dynlang;
+  for my $var (
+    (sort keys %hasitems),
+    (sort grep !$hasitems{$_}, keys %dynlang),
+  ) {
     my $val = delete $dynlang{$var};
     die "$name: no arg data found for '$var'" unless my $data = $name2data{$var};
     my $type = $data->[1];
