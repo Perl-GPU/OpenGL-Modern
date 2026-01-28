@@ -3552,6 +3552,7 @@ Exported under tag C<:GL_NV_viewport_array>.
 =head2 glDepthRangeArrayv
 
  glDepthRangeArrayv_c($first, $count, $v);
+ glDepthRangeArrayv_p($first, @inputs);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
@@ -10361,12 +10362,14 @@ Exported under tag C<:GL_NV_gpu_multicast>.
 =head2 glMulticastScissorArrayvNVX
 
  glMulticastScissorArrayvNVX_c($gpu, $first, $count, $v);
+ glMulticastScissorArrayvNVX_p($gpu, $first, @inputs);
 
 Exported under tag C<:GL_NVX_gpu_multicast2>.
 
 =head2 glMulticastViewportArrayvNVX
 
  glMulticastViewportArrayvNVX_c($gpu, $first, $count, $v);
+ glMulticastViewportArrayvNVX_p($gpu, $first, @inputs);
 
 Exported under tag C<:GL_NVX_gpu_multicast2>.
 
@@ -13100,12 +13103,15 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glScissor.xhtml>
 
  glScissorArrayv_c($first, $count, $v);
  glScissorArrayvNV_c($first, $count, $v);
+ glScissorArrayv_p($first, @inputs);
+ glScissorArrayvNV_p($first, @inputs);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
 =head2 glScissorExclusiveArrayvNV
 
  glScissorExclusiveArrayvNV_c($first, $count, $v);
+ glScissorExclusiveArrayvNV_p($first, @inputs);
 
 Exported under tag C<:GL_NV_scissor_exclusive>.
 
@@ -17522,6 +17528,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glViewport.xhtml>
 
  glViewportArrayv_c($first, $count, $v);
  glViewportArrayvNV_c($first, $count, $v);
+ glViewportArrayv_p($first, @inputs);
+ glViewportArrayvNV_p($first, @inputs);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
@@ -17845,6 +17853,7 @@ Exported under tag C<:GL_MESA_window_pos>.
 =head2 glWindowRectanglesEXT
 
  glWindowRectanglesEXT_c($mode, $count, $box);
+ glWindowRectanglesEXT_p($mode, @inputs);
 
 Exported under tag C<:GL_EXT_window_rectangles>.
 

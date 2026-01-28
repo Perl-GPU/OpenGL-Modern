@@ -151,12 +151,23 @@ for (grep $_, split /\n/, slurp('utils/paramcounts.txt')) {
 for (grep $_, split /\n/, slurp('utils/args-len.txt')) {
   my ($func, @args) = split ' ';
   next unless my $s = $signature{$func};
-  my $argind = 0;
+  my ($argind, $argdata, $found_compsize) = (0, $s->{argdata});
   for (@args) {
     my ($name, $len) = split /=/;
-    my $arginfo = $s->{argdata}[$argind++];
+    my $arginfo = $argdata->[$argind++];
     $arginfo->[0] = $name;
-    push @$arginfo, $len if $len;
+    next if !$len;
+    $found_compsize = 1 if $len =~ /COMPSIZE/;
+    push @$arginfo, $len;
+  }
+  next if !$found_compsize;
+  my %name2data = map +($_->[0] => $_), @$argdata;
+  for (0..$#$argdata) {
+    next if !$argdata->[$_][2] or $argdata->[$_][2] !~ /^COMPSIZE\((\w+)\)/;
+    my $compsize_from = $1;
+    my $fromdata = $name2data{$compsize_from};
+    next if $fromdata->[1] !~ /^\s*GLsizei\s*$/;
+    $argdata->[$_][2] = $compsize_from;
   }
 }
 

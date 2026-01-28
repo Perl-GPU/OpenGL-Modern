@@ -15808,9 +15808,14 @@ our %registry = (
       [
         'v',
         'const GLclampd * ',
-        'COMPSIZE(count)'
+        'count'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(v);',
+      'count' => 'items-1',
+      'v' => 'OGLM_GET_ARGS(v,1,GLclampd,NV)'
+    },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewDepthRangeArrayv',
     'glewtype' => 'fun',
@@ -17508,7 +17513,7 @@ our %registry = (
       [
         'pointer',
         'const void *',
-        'COMPSIZE(stride)'
+        'stride'
       ]
     ],
     'core_removed' => 1,
@@ -32199,12 +32204,12 @@ our %registry = (
       [
         'uniformNames',
         'const GLchar* const * ',
-        'COMPSIZE(uniformCount)'
+        'uniformCount'
       ],
       [
         'uniformIndices',
         'GLuint* ',
-        'COMPSIZE(uniformCount)'
+        'uniformCount'
       ]
     ],
     'feature' => 'GL_ARB_uniform_buffer_object',
@@ -42261,9 +42266,14 @@ our %registry = (
       [
         'v',
         'const GLint* ',
-        'COMPSIZE(count)'
+        'count'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(v);',
+      'count' => 'items-2',
+      'v' => 'OGLM_GET_ARGS(v,2,GLint,IV)'
+    },
     'feature' => 'GL_NVX_gpu_multicast2',
     'glewImpl' => '__glewMulticastScissorArrayvNVX',
     'glewtype' => 'fun',
@@ -42289,9 +42299,14 @@ our %registry = (
       [
         'v',
         'const GLfloat* ',
-        'COMPSIZE(count)'
+        'count'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(v);',
+      'count' => 'items-2',
+      'v' => 'OGLM_GET_ARGS(v,2,GLfloat,NV)'
+    },
     'feature' => 'GL_NVX_gpu_multicast2',
     'glewImpl' => '__glewMulticastViewportArrayvNVX',
     'glewtype' => 'fun',
@@ -53167,9 +53182,14 @@ our %registry = (
       [
         'v',
         'const GLint * ',
-        'COMPSIZE(count)'
+        'count'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(v);',
+      'count' => 'items-1',
+      'v' => 'OGLM_GET_ARGS(v,1,GLint,IV)'
+    },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewScissorArrayv',
     'glewtype' => 'fun',
@@ -53191,9 +53211,14 @@ our %registry = (
       [
         'v',
         'const GLint* ',
-        'COMPSIZE(count)'
+        'count'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(v);',
+      'count' => 'items-1',
+      'v' => 'OGLM_GET_ARGS(v,1,GLint,IV)'
+    },
     'feature' => 'GL_NV_scissor_exclusive',
     'glewImpl' => '__glewScissorExclusiveArrayvNV',
     'glewtype' => 'fun',
@@ -65757,7 +65782,7 @@ our %registry = (
       [
         'pointer',
         'void *',
-        'COMPSIZE(length)'
+        'length'
       ]
     ],
     'feature' => 'GL_NV_vertex_array_range',
@@ -70675,9 +70700,14 @@ our %registry = (
       [
         'v',
         'const GLfloat * ',
-        'COMPSIZE(count)'
+        'count'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(v);',
+      'count' => 'items-1',
+      'v' => 'OGLM_GET_ARGS(v,1,GLfloat,NV)'
+    },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewViewportArrayv',
     'glewtype' => 'fun',
@@ -71708,9 +71738,14 @@ our %registry = (
       [
         'box',
         'const GLint * ',
-        'COMPSIZE(count)'
+        'count'
       ]
     ],
+    'dynlang' => {
+      'CLEANUP' => 'free(box);',
+      'box' => 'OGLM_GET_ARGS(box,1,GLint,IV)',
+      'count' => 'items-1'
+    },
     'feature' => 'GL_EXT_window_rectangles',
     'glewImpl' => '__glewWindowRectanglesEXT',
     'glewtype' => 'fun',

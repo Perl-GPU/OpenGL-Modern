@@ -1148,6 +1148,7 @@ our @gl_functionsrest = qw(
   glDepthBoundsEXT
   glDepthRangeArrayfvNV_c
   glDepthRangeArrayv_c
+  glDepthRangeArrayv_p
   glDepthRangedNV
   glDepthRangef
   glDepthRangefOES
@@ -3141,7 +3142,9 @@ our @gl_functionsrest = qw(
   glMulticastGetQueryObjectui64vNV_c
   glMulticastGetQueryObjectuivNV_c
   glMulticastScissorArrayvNVX_c
+  glMulticastScissorArrayvNVX_p
   glMulticastViewportArrayvNVX_c
+  glMulticastViewportArrayvNVX_p
   glMulticastViewportPositionWScaleNVX
   glMulticastWaitSyncNV
   glMultiDrawArraysEXT_c
@@ -3677,8 +3680,11 @@ our @gl_functionsrest = qw(
   glSamplerParameteriv_c
   glScalex
   glScissorArrayvNV_c
+  glScissorArrayvNV_p
   glScissorArrayv_c
+  glScissorArrayv_p
   glScissorExclusiveArrayvNV_c
+  glScissorExclusiveArrayvNV_p
   glScissorExclusiveNV
   glScissorIndexed
   glScissorIndexedNV
@@ -4343,7 +4349,9 @@ our @gl_functionsrest = qw(
   glVideoCaptureStreamParameterfvNV_c
   glVideoCaptureStreamParameterivNV_c
   glViewportArrayvNV_c
+  glViewportArrayvNV_p
   glViewportArrayv_c
+  glViewportArrayv_p
   glViewportIndexedf
   glViewportIndexedfNV
   glViewportIndexedfvNV_c
@@ -4415,6 +4423,7 @@ our @gl_functionsrest = qw(
   glWindowPos4sMESA
   glWindowPos4svMESA_c
   glWindowRectanglesEXT_c
+  glWindowRectanglesEXT_p
   glWriteMaskEXT
 );
 our %EXPORT_TAGS_GL = (
@@ -5594,15 +5603,18 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ARB_viewport_array' => [
     'glDepthRangeArrayv_c',
+    'glDepthRangeArrayv_p',
     'glDepthRangeIndexed',
     'glGetDoublei_v_c',
     'glGetDoublei_v_p',
     'glGetFloati_v_c',
     'glGetFloati_v_p',
     'glScissorArrayv_c',
+    'glScissorArrayv_p',
     'glScissorIndexed',
     'glScissorIndexedv_c',
     'glViewportArrayv_c',
+    'glViewportArrayv_p',
     'glViewportIndexedf',
     'glViewportIndexedfv_c'
   ],
@@ -6622,7 +6634,8 @@ our %EXPORT_TAGS_GL = (
     'glReleaseKeyedMutexWin32EXT'
   ],
   'GL_EXT_window_rectangles' => [
-    'glWindowRectanglesEXT_c'
+    'glWindowRectanglesEXT_c',
+    'glWindowRectanglesEXT_p'
   ],
   'GL_EXT_x11_sync_object' => [
     'glImportSyncEXT'
@@ -6779,7 +6792,9 @@ our %EXPORT_TAGS_GL = (
     'glAsyncCopyBufferSubDataNVX_c',
     'glAsyncCopyImageSubDataNVX_c',
     'glMulticastScissorArrayvNVX_c',
+    'glMulticastScissorArrayvNVX_p',
     'glMulticastViewportArrayvNVX_c',
+    'glMulticastViewportArrayvNVX_p',
     'glMulticastViewportPositionWScaleNVX',
     'glUploadGpuMaskNVX'
   ],
@@ -7241,6 +7256,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_NV_scissor_exclusive' => [
     'glScissorExclusiveArrayvNV_c',
+    'glScissorExclusiveArrayvNV_p',
     'glScissorExclusiveNV'
   ],
   'GL_NV_shader_buffer_load' => [
@@ -7471,9 +7487,11 @@ our %EXPORT_TAGS_GL = (
     'glGetFloati_vNV_p',
     'glIsEnablediNV',
     'glScissorArrayvNV_c',
+    'glScissorArrayvNV_p',
     'glScissorIndexedNV',
     'glScissorIndexedvNV_c',
     'glViewportArrayvNV_c',
+    'glViewportArrayvNV_p',
     'glViewportIndexedfNV',
     'glViewportIndexedfvNV_c'
   ],
@@ -8816,6 +8834,7 @@ our %EXPORT_TAGS_GL = (
     'glDeleteProgramPipelines_c',
     'glDeleteProgramPipelines_p',
     'glDepthRangeArrayv_c',
+    'glDepthRangeArrayv_p',
     'glDepthRangeIndexed',
     'glDepthRangef',
     'glGenProgramPipelines_c',
@@ -8891,6 +8910,7 @@ our %EXPORT_TAGS_GL = (
     'glProgramUniformMatrix4x3fv_c',
     'glReleaseShaderCompiler',
     'glScissorArrayv_c',
+    'glScissorArrayv_p',
     'glScissorIndexed',
     'glScissorIndexedv_c',
     'glShaderBinary_c',
@@ -8906,6 +8926,7 @@ our %EXPORT_TAGS_GL = (
     'glVertexAttribL4dv_c',
     'glVertexAttribLPointer_c',
     'glViewportArrayv_c',
+    'glViewportArrayv_p',
     'glViewportIndexedf',
     'glViewportIndexedfv_c'
   ],
