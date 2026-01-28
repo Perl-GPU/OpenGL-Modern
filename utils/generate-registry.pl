@@ -205,40 +205,35 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my %name2data = map +($_->[0] => $_), @argdata;
   my @ptr_args = @argdata[@ptr_arg_inds];
   my @ptr_types = map parse_ptr($_), @ptr_args;
-  my $nconst = grep $_->[1], @ptr_types;
-  my $nout = grep !$_->[1], @ptr_types;
+  my @constargs = @ptr_args[ grep $ptr_types[$_][1], 0..$#ptr_args ];
+  my @outargs = @ptr_args[ grep !$ptr_types[$_][1], 0..$#ptr_args ];
   die "undef ptr_type for $name" if !$ptr_types[0][0];
   my @infos = map typefunc($_->[0]), @ptr_types;
-  my %lenarg2ptrs;
+  my (%dynlang, %lenarg2ptrs);
   push @{ $lenarg2ptrs{$_->[1]} }, $_->[0] for
     grep defined($_->[1]) && $_->[1] !~ /(?:\d|COMPSIZE)/, map [@$_[0,2]], @argdata;
   next if keys(%lenarg2ptrs) > 1;
   my $compsize_from = ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/ ? $1 : undef;
   my $compsize_data = $compsize_from && $name2data{$compsize_from};
   my $compsize_group = $compsize_data && $compsize_data->[3];
-  if ($nconst == 0 && $nout == 1 && $compsize_group && $g2c2s->{$compsize_group}) {
-    $s->{dynlang} = {
-      $ptr_args[0][0] => "SIZE:$compsize_group:$compsize_from,OUTASLIST:${compsize_from}_count",
-    };
-  } elsif ($nconst == 1 and $nout == 0 and
-    $ptr_args[0][2] and $ptr_args[0][2] !~ /(?:\d|COMPSIZE)/ and
+  if (@constargs == 0 && @outargs == 1 && $compsize_group && $g2c2s->{$compsize_group}) {
+    $dynlang{$outargs[0][0]} = "SIZE:$compsize_group:$compsize_from,OUTASLIST:${compsize_from}_count";
+  } elsif (@constargs == 1 and @outargs == 0 and
+    $constargs[0][2] and $constargs[0][2] !~ /(?:\d|COMPSIZE)/ and
     $infos[0]
   ) {
-    my $len = $ptr_args[0][2];
+    my $len = $constargs[0][2];
     my $startfrom = @argdata - 2;
-    $s->{dynlang} = {
-      $len => 'items'.($startfrom ? "-$startfrom" : ''),
-      $ptr_args[0][0] => "VARARGS:$startfrom",
-    };
-  } elsif ($nconst == 0 and $nout == 1 and
+    $dynlang{$len} = 'items'.($startfrom ? "-$startfrom" : '');
+    $dynlang{$constargs[0][0]} = "VARARGS:$startfrom";
+  } elsif (@constargs == 0 and @outargs == 1 and
     $infos[0] and
-    $ptr_args[0][2] and $ptr_args[0][2] !~ /(?:\d|COMPSIZE)/
+    $outargs[0][2] and $outargs[0][2] !~ /(?:\d|COMPSIZE)/
   ) {
-    my $len = $ptr_args[0][2];
-    $s->{dynlang} = {
-      $ptr_args[0][0] => "OUTASLIST:$len",
-    };
+    my $len = $outargs[0][2];
+    $dynlang{$outargs[0][0]} = "OUTASLIST:$len";
   }
+  $s->{dynlang} = \%dynlang if %dynlang;
 }
 
 my %feature2version;
