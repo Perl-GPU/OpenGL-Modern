@@ -295,6 +295,7 @@ our @gl_functionscompat = qw(
   glGetTransformFeedbackVarying_c
   glGetUniformBlockIndex
   glGetUniformIndices_c
+  glGetUniformIndices_p
   glGetUniformLocation
   glGetUniformfv_c
   glGetUniformiv_c
@@ -5417,6 +5418,7 @@ our %EXPORT_TAGS_GL = (
     'glGetIntegeri_v_p',
     'glGetUniformBlockIndex',
     'glGetUniformIndices_c',
+    'glGetUniformIndices_p',
     'glUniformBlockBinding'
   ],
   'GL_ARB_vertex_array_object' => [
@@ -8673,6 +8675,7 @@ our %EXPORT_TAGS_GL = (
     'glGetIntegeri_v_p',
     'glGetUniformBlockIndex',
     'glGetUniformIndices_c',
+    'glGetUniformIndices_p',
     'glPrimitiveRestartIndex',
     'glTexBuffer',
     'glUniformBlockBinding'

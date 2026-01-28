@@ -7673,6 +7673,7 @@ Exported under tag C<:GL_EXT_bindable_uniform>.
 =head2 glGetUniformIndices
 
  glGetUniformIndices_c($program, $uniformCount, $uniformNames, $uniformIndices);
+ @retvals = glGetUniformIndices_p($program, $uniformCount, $uniformNames);
 
 Exported under tag C<:GL_ARB_uniform_buffer_object>.
 

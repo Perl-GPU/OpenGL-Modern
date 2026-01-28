@@ -230,7 +230,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   }
   if (@outargs == 1 and
     typefunc(parse_ptr($outargs[0])->[0]) and
-    !(grep !$dynlang{$_->[0]}, @constargs) and
+    $s->{restype} eq 'void' and
     $arg2len{$outargs[0][0]}
   ) {
     $dynlang{$outargs[0][0]} //= "";

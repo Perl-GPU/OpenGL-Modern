@@ -31904,6 +31904,9 @@ our %registry = (
         'uniformCount'
       ]
     ],
+    'dynlang' => {
+      'uniformIndices' => 'OUTASLIST:uniformCount'
+    },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetUniformIndices',
     'glewtype' => 'fun',
