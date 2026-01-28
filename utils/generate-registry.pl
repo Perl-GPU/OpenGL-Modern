@@ -206,7 +206,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my $compsize_data = $compsize_from && $name2data{$compsize_from};
   my $compsize_group = $compsize_data && $compsize_data->[3];
   if ($nconst == 0 && $nout == 1 && $compsize_group && $g2c2s->{$compsize_group}) {
-    my $typefunc = "newSV" . lc $infos[0][0];
+    my $typefunc = "newSV" . lc $infos[0];
     $s->{dynlang} = {
       $ptr_args[0][0] => "OGLM_GET_SETUP($compsize_group,$compsize_from,$ptr_types[0][0],$ptr_args[0][0])",
       OUTPUT => "OGLM_OUT_FINISH($ptr_args[0][0],${compsize_from}_count,$typefunc)",
@@ -220,7 +220,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     my $startfrom = @argdata - 2;
     $s->{dynlang} = {
       $len => 'items'.($startfrom ? "-$startfrom" : ''),
-      $ptr_args[0][0] => "OGLM_GET_ARGS($ptr_args[0][0],$startfrom,$ptr_types[0][0],$infos[0][0])",
+      $ptr_args[0][0] => "OGLM_GET_ARGS($ptr_args[0][0],$startfrom,$ptr_types[0][0],$infos[0])",
       CLEANUP => "free($ptr_args[0][0]);",
     };
   } elsif ($nconst == 0 and $nout == 1 and
@@ -230,7 +230,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   ) {
     my $len = $ptr_args[0][2];
     my $startfrom = @argdata - 2;
-    my $newfunc = 'newSV' . lc substr $infos[0][0], 0, 2;
+    my $newfunc = 'newSV' . lc substr $infos[0], 0, 2;
     $s->{dynlang} = {
       $ptr_args[0][0] => "OGLM_OUT_SETUP($ptr_args[0][0],$len,$ptr_types[0][0])",
       OUTPUT => "OGLM_OUT_FINISH($ptr_args[0][0],$len,$newfunc)",

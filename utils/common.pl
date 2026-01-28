@@ -2,24 +2,24 @@ use strict;
 use warnings;
 
 my %type2func = (
-  GLboolean => ['IV'],
-  GLubyte => ['UV'],
-  GLbyte => ['IV'],
-  GLfixed => ['IV'],
-  GLshort => ['IV'],
-  GLushort => ['UV'],
-  GLuint => ['UV'],
-  GLint => ['IV'],
-  GLuint64 => ['UV'],
-  GLuint64EXT => ['UV'],
-  GLint64 => ['IV'],
-  GLint64EXT => ['IV'],
-  GLhalf => ['NV'], # not right
-  GLfloat => ['NV'],
-  GLdouble => ['NV'],
-  GLclampd => ['NV'],
-  'GLchar*' => ['PV_nolen'],
-  GLenum => ['IV'],
+  GLboolean => 'IV',
+  GLubyte => 'UV',
+  GLbyte => 'IV',
+  GLfixed => 'IV',
+  GLshort => 'IV',
+  GLushort => 'UV',
+  GLuint => 'UV',
+  GLint => 'IV',
+  GLuint64 => 'UV',
+  GLuint64EXT => 'UV',
+  GLint64 => 'IV',
+  GLint64EXT => 'IV',
+  GLhalf => 'NV', # not right
+  GLfloat => 'NV',
+  GLdouble => 'NV',
+  GLclampd => 'NV',
+  'GLchar*' => 'PV_nolen',
+  GLenum => 'IV',
 );
 sub typefunc {
   my ($type) = @_;
