@@ -220,7 +220,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     $arg2len{$outargs[0][0]} = "${compsize_from}_count";
     $dynlang{$outargs[0][0]} = "SIZE:$compsize_group:$compsize_from";
   } elsif (@constargs == 1 and @outargs == 0 and
-    $constargs[0][2] and $constargs[0][2] !~ /(?:\d|COMPSIZE)/ and
+    $arg2len{$constargs[0][0]} and
     $infos[0]
   ) {
     my $len = $arg2len{$constargs[0][0]};
