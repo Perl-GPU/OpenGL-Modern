@@ -96,6 +96,19 @@ sub bindings {
   my %name2parsed = map +($_->[0] => parse_ptr($_)), @argdata[@ptr_arg_inds];
   die "$name: undefined dynlang arg '$_'" for grep /^[a-z]/ && !exists $name2data{$_}, keys %dynlang;
   my %this = %pbinding;
+  my $cleanup = delete $dynlang{CLEANUP} // '';
+  my @outaslist = grep $dynlang{$_} =~ /^OUTASLIST/, keys %dynlang;
+  die "$name: >1 OUTASLIST (@outaslist)" if @outaslist > 1;
+  if (@outaslist) {
+    die "$name: no OUTASLIST len" unless my ($len) = $dynlang{$outaslist[0]} =~ /^OUTASLIST:(.+)$/;
+    my $parsed = parse_ptr($name2data{$outaslist[0]});
+    die "$name: no typefunc for $outaslist[0]" unless my $typefunc = typefunc($parsed->[0]);
+    my $newfunc = 'newSV' . lc substr $typefunc, 0, 2;
+    $dynlang{$outaslist[0]} = "OGLM_OUT_SETUP($outaslist[0],$len,$parsed->[0])";
+    $cleanup .= "\n  " if $cleanup;
+    $cleanup .= "free($outaslist[0]);";
+    $dynlang{OUTPUT} = "OGLM_OUT_FINISH($outaslist[0],$len,$newfunc)";
+  }
   die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
   if (my $retval = delete $dynlang{RETVAL}) {
     die "$name: dynlang RETVAL '$retval' not arg to function" if !defined $name2data{$retval};
@@ -111,7 +124,6 @@ sub bindings {
   $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
   $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
   my $beforecall = '';
-  my $cleanup = delete $dynlang{CLEANUP} // '';
   for my $get (sort grep $dynlang{$_} =~ /^</, keys %dynlang) {
     my $val = delete $dynlang{$get};
     $val =~ s#^<##;

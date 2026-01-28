@@ -239,12 +239,8 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     $ptr_arg_inds[0] == $#argdata
   ) {
     my $len = $ptr_args[0][2];
-    my $startfrom = @argdata - 2;
-    my $newfunc = 'newSV' . lc substr $infos[0], 0, 2;
     $s->{dynlang} = {
-      $ptr_args[0][0] => "OGLM_OUT_SETUP($ptr_args[0][0],$len,$ptr_types[0][0])",
-      OUTPUT => "OGLM_OUT_FINISH($ptr_args[0][0],$len,$newfunc)",
-      CLEANUP => "free($ptr_args[0][0]);",
+      $ptr_args[0][0] => "OUTASLIST:$len",
     };
   }
 }

@@ -14098,9 +14098,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(buffers);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(buffers,n,newSVuv)',
-      'buffers' => 'OGLM_OUT_SETUP(buffers,n,GLuint)'
+      'buffers' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCreateBuffers',
@@ -14123,9 +14121,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(lists);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(lists,n,newSVuv)',
-      'lists' => 'OGLM_OUT_SETUP(lists,n,GLuint)'
+      'lists' => 'OUTASLIST:n'
     },
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewCreateCommandListsNV',
@@ -14148,9 +14144,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(framebuffers);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(framebuffers,n,newSVuv)',
-      'framebuffers' => 'OGLM_OUT_SETUP(framebuffers,n,GLuint)'
+      'framebuffers' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCreateFramebuffers',
@@ -14220,9 +14214,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(pipelines);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(pipelines,n,newSVuv)',
-      'pipelines' => 'OGLM_OUT_SETUP(pipelines,n,GLuint)'
+      'pipelines' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCreateProgramPipelines',
@@ -14257,9 +14249,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(ids,n,newSVuv)',
-      'ids' => 'OGLM_OUT_SETUP(ids,n,GLuint)'
+      'ids' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCreateQueries',
@@ -14282,9 +14272,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(renderbuffers);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(renderbuffers,n,newSVuv)',
-      'renderbuffers' => 'OGLM_OUT_SETUP(renderbuffers,n,GLuint)'
+      'renderbuffers' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCreateRenderbuffers',
@@ -14307,9 +14295,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(samplers);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(samplers,n,newSVuv)',
-      'samplers' => 'OGLM_OUT_SETUP(samplers,n,GLuint)'
+      'samplers' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCreateSamplers',
@@ -14332,9 +14318,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(semaphores);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(semaphores,n,newSVuv)',
-      'semaphores' => 'OGLM_OUT_SETUP(semaphores,n,GLuint)'
+      'semaphores' => 'OUTASLIST:n'
     },
     'feature' => 'GL_NV_timeline_semaphore',
     'glewImpl' => '__glewCreateSemaphoresNV',
@@ -14422,9 +14406,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(states);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(states,n,newSVuv)',
-      'states' => 'OGLM_OUT_SETUP(states,n,GLuint)'
+      'states' => 'OUTASLIST:n'
     },
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewCreateStatesNV',
@@ -14473,9 +14455,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(textures);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(textures,n,newSVuv)',
-      'textures' => 'OGLM_OUT_SETUP(textures,n,GLuint)'
+      'textures' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCreateTextures',
@@ -14498,9 +14478,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(ids,n,newSVuv)',
-      'ids' => 'OGLM_OUT_SETUP(ids,n,GLuint)'
+      'ids' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCreateTransformFeedbacks',
@@ -14523,9 +14501,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(arrays);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(arrays,n,newSVuv)',
-      'arrays' => 'OGLM_OUT_SETUP(arrays,n,GLuint)'
+      'arrays' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewCreateVertexArrays',
@@ -15219,9 +15195,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(monitors);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(monitors,n,newSVuv)',
-      'monitors' => 'OGLM_OUT_SETUP(monitors,n,GLuint)'
+      'monitors' => 'OUTASLIST:n'
     },
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewDeletePerfMonitorsAMD',
@@ -18616,9 +18590,7 @@ our %registry = (
     ],
     'core_removed' => 1,
     'dynlang' => {
-      'CLEANUP' => 'free(buffer);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(buffer,size,newSVnv)',
-      'buffer' => 'OGLM_OUT_SETUP(buffer,size,GLfloat)'
+      'buffer' => 'OUTASLIST:size'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -20929,9 +20901,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(buffers);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(buffers,n,newSVuv)',
-      'buffers' => 'OGLM_OUT_SETUP(buffers,n,GLuint)'
+      'buffers' => 'OUTASLIST:n'
     },
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewGenBuffers',
@@ -20954,9 +20924,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(fences);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(fences,n,newSVuv)',
-      'fences' => 'OGLM_OUT_SETUP(fences,n,GLuint)'
+      'fences' => 'OUTASLIST:n'
     },
     'feature' => 'GL_APPLE_fence',
     'glewImpl' => '__glewGenFencesAPPLE',
@@ -20979,9 +20947,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(fences);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(fences,n,newSVuv)',
-      'fences' => 'OGLM_OUT_SETUP(fences,n,GLuint)'
+      'fences' => 'OUTASLIST:n'
     },
     'feature' => 'GL_NV_fence',
     'glewImpl' => '__glewGenFencesNV',
@@ -21019,9 +20985,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(framebuffers);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(framebuffers,n,newSVuv)',
-      'framebuffers' => 'OGLM_OUT_SETUP(framebuffers,n,GLuint)'
+      'framebuffers' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewGenFramebuffers',
@@ -21098,9 +21062,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(names);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(names,num,newSVuv)',
-      'names' => 'OGLM_OUT_SETUP(names,num,GLuint)'
+      'names' => 'OUTASLIST:num'
     },
     'feature' => 'GL_AMD_name_gen_delete',
     'glewImpl' => '__glewGenNamesAMD',
@@ -21123,9 +21085,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(ids,n,newSVuv)',
-      'ids' => 'OGLM_OUT_SETUP(ids,n,GLuint)'
+      'ids' => 'OUTASLIST:n'
     },
     'feature' => 'GL_NV_occlusion_query',
     'glewImpl' => '__glewGenOcclusionQueriesNV',
@@ -21160,9 +21120,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(monitors);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(monitors,n,newSVuv)',
-      'monitors' => 'OGLM_OUT_SETUP(monitors,n,GLuint)'
+      'monitors' => 'OUTASLIST:n'
     },
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGenPerfMonitorsAMD',
@@ -21185,9 +21143,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(pipelines);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(pipelines,n,newSVuv)',
-      'pipelines' => 'OGLM_OUT_SETUP(pipelines,n,GLuint)'
+      'pipelines' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewGenProgramPipelines',
@@ -21213,9 +21169,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(programs);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(programs,n,newSVuv)',
-      'programs' => 'OGLM_OUT_SETUP(programs,n,GLuint)'
+      'programs' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewGenProgramsARB',
@@ -21241,9 +21195,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(ids,n,newSVuv)',
-      'ids' => 'OGLM_OUT_SETUP(ids,n,GLuint)'
+      'ids' => 'OUTASLIST:n'
     },
     'feature' => 'GL_VERSION_1_5',
     'glewImpl' => '__glewGenQueries',
@@ -21285,9 +21237,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(ids,n,newSVuv)',
-      'ids' => 'OGLM_OUT_SETUP(ids,n,GLuint)'
+      'ids' => 'OUTASLIST:n'
     },
     'feature' => 'GL_EXT_disjoint_timer_query',
     'glewImpl' => '__glewGenQueriesEXT',
@@ -21313,9 +21263,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(renderbuffers);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(renderbuffers,n,newSVuv)',
-      'renderbuffers' => 'OGLM_OUT_SETUP(renderbuffers,n,GLuint)'
+      'renderbuffers' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewGenRenderbuffers',
@@ -21357,9 +21305,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(samplers);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(samplers,count,newSVuv)',
-      'samplers' => 'OGLM_OUT_SETUP(samplers,count,GLuint)'
+      'samplers' => 'OUTASLIST:count'
     },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewGenSamplers',
@@ -21382,9 +21328,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(semaphores);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(semaphores,n,newSVuv)',
-      'semaphores' => 'OGLM_OUT_SETUP(semaphores,n,GLuint)'
+      'semaphores' => 'OUTASLIST:n'
     },
     'feature' => 'GL_EXT_semaphore',
     'glewImpl' => '__glewGenSemaphoresEXT',
@@ -21437,9 +21381,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(textures);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(textures,n,newSVuv)',
-      'textures' => 'OGLM_OUT_SETUP(textures,n,GLuint)'
+      'textures' => 'OUTASLIST:n'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -21461,9 +21403,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(textures);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(textures,n,newSVuv)',
-      'textures' => 'OGLM_OUT_SETUP(textures,n,GLuint)'
+      'textures' => 'OUTASLIST:n'
     },
     'feature' => 'GL_EXT_texture_object',
     'glewImpl' => '__glewGenTexturesEXT',
@@ -21489,9 +21429,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(ids);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(ids,n,newSVuv)',
-      'ids' => 'OGLM_OUT_SETUP(ids,n,GLuint)'
+      'ids' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_transform_feedback2',
     'glewImpl' => '__glewGenTransformFeedbacks',
@@ -21517,9 +21455,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(arrays);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(arrays,n,newSVuv)',
-      'arrays' => 'OGLM_OUT_SETUP(arrays,n,GLuint)'
+      'arrays' => 'OUTASLIST:n'
     },
     'feature' => 'GL_ARB_vertex_array_object',
     'glewImpl' => '__glewGenVertexArrays',
@@ -24962,9 +24898,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(params);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(params,count,newSViv)',
-      'params' => 'OGLM_OUT_SETUP(params,count,GLint)'
+      'params' => 'OUTASLIST:count'
     },
     'feature' => 'GL_NV_internalformat_sample_query',
     'glewImpl' => '__glewGetInternalformatSampleivNV',
@@ -25005,9 +24939,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(params);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(params,count,newSViv)',
-      'params' => 'OGLM_OUT_SETUP(params,count,GLint64)'
+      'params' => 'OUTASLIST:count'
     },
     'feature' => 'GL_ARB_internalformat_query2',
     'glewImpl' => '__glewGetInternalformati64v',
@@ -25048,9 +24980,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(params);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(params,count,newSViv)',
-      'params' => 'OGLM_OUT_SETUP(params,count,GLint)'
+      'params' => 'OUTASLIST:count'
     },
     'feature' => 'GL_ARB_internalformat_query',
     'glewImpl' => '__glewGetInternalformativ',
@@ -33691,9 +33621,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(v,bufSize,newSVnv)',
-      'v' => 'OGLM_OUT_SETUP(v,bufSize,GLfloat)'
+      'v' => 'OUTASLIST:bufSize'
     },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnMapfvARB',
@@ -33728,9 +33656,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(v);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(v,bufSize,newSViv)',
-      'v' => 'OGLM_OUT_SETUP(v,bufSize,GLint)'
+      'v' => 'OUTASLIST:bufSize'
     },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnMapivARB',
@@ -33827,9 +33753,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(values);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(values,bufSize,newSVuv)',
-      'values' => 'OGLM_OUT_SETUP(values,bufSize,GLuint)'
+      'values' => 'OUTASLIST:bufSize'
     },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnPixelMapuivARB',
@@ -33858,9 +33782,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(values);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(values,bufSize,newSVuv)',
-      'values' => 'OGLM_OUT_SETUP(values,bufSize,GLushort)'
+      'values' => 'OUTASLIST:bufSize'
     },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnPixelMapusvARB',
@@ -33883,9 +33805,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(pattern);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(pattern,bufSize,newSVuv)',
-      'pattern' => 'OGLM_OUT_SETUP(pattern,bufSize,GLubyte)'
+      'pattern' => 'OUTASLIST:bufSize'
     },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnPolygonStippleARB',
@@ -38081,9 +38001,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(indices);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(indices,size,newSVuv)',
-      'indices' => 'OGLM_OUT_SETUP(indices,size,GLubyte)'
+      'indices' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_matrix_palette',
     'glewImpl' => '__glewMatrixIndexubvARB',
@@ -38106,9 +38024,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(indices);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(indices,size,newSVuv)',
-      'indices' => 'OGLM_OUT_SETUP(indices,size,GLuint)'
+      'indices' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_matrix_palette',
     'glewImpl' => '__glewMatrixIndexuivARB',
@@ -38131,9 +38047,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(indices);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(indices,size,newSVuv)',
-      'indices' => 'OGLM_OUT_SETUP(indices,size,GLushort)'
+      'indices' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_matrix_palette',
     'glewImpl' => '__glewMatrixIndexusvARB',
@@ -52534,9 +52448,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(programs);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(programs,n,newSVuv)',
-      'programs' => 'OGLM_OUT_SETUP(programs,n,GLuint)'
+      'programs' => 'OUTASLIST:n'
     },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewRequestResidentProgramsNV',
@@ -53776,9 +53688,7 @@ our %registry = (
     ],
     'core_removed' => 1,
     'dynlang' => {
-      'CLEANUP' => 'free(buffer);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(buffer,size,newSVuv)',
-      'buffer' => 'OGLM_OUT_SETUP(buffer,size,GLuint)'
+      'buffer' => 'OUTASLIST:size'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -53812,9 +53722,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(counterList);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(counterList,numCounters,newSVuv)',
-      'counterList' => 'OGLM_OUT_SETUP(counterList,numCounters,GLuint)'
+      'counterList' => 'OUTASLIST:numCounters'
     },
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewSelectPerfMonitorCountersAMD',
@@ -70949,9 +70857,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(weights);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(weights,size,newSViv)',
-      'weights' => 'OGLM_OUT_SETUP(weights,size,GLbyte)'
+      'weights' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_vertex_blend',
     'glewImpl' => '__glewWeightbvARB',
@@ -70974,9 +70880,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(weights);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(weights,size,newSVnv)',
-      'weights' => 'OGLM_OUT_SETUP(weights,size,GLdouble)'
+      'weights' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_vertex_blend',
     'glewImpl' => '__glewWeightdvARB',
@@ -70999,9 +70903,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(weights);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(weights,size,newSVnv)',
-      'weights' => 'OGLM_OUT_SETUP(weights,size,GLfloat)'
+      'weights' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_vertex_blend',
     'glewImpl' => '__glewWeightfvARB',
@@ -71024,9 +70926,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(weights);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(weights,size,newSViv)',
-      'weights' => 'OGLM_OUT_SETUP(weights,size,GLint)'
+      'weights' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_vertex_blend',
     'glewImpl' => '__glewWeightivARB',
@@ -71049,9 +70949,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(weights);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(weights,size,newSViv)',
-      'weights' => 'OGLM_OUT_SETUP(weights,size,GLshort)'
+      'weights' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_vertex_blend',
     'glewImpl' => '__glewWeightsvARB',
@@ -71074,9 +70972,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(weights);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(weights,size,newSVuv)',
-      'weights' => 'OGLM_OUT_SETUP(weights,size,GLubyte)'
+      'weights' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_vertex_blend',
     'glewImpl' => '__glewWeightubvARB',
@@ -71099,9 +70995,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(weights);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(weights,size,newSVuv)',
-      'weights' => 'OGLM_OUT_SETUP(weights,size,GLuint)'
+      'weights' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_vertex_blend',
     'glewImpl' => '__glewWeightuivARB',
@@ -71124,9 +71018,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'CLEANUP' => 'free(weights);',
-      'OUTPUT' => 'OGLM_OUT_FINISH(weights,size,newSVuv)',
-      'weights' => 'OGLM_OUT_SETUP(weights,size,GLushort)'
+      'weights' => 'OUTASLIST:size'
     },
     'feature' => 'GL_ARB_vertex_blend',
     'glewImpl' => '__glewWeightusvARB',
