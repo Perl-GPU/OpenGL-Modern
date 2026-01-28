@@ -5399,6 +5399,7 @@ Exported under tag C<:GL_ARB_uniform_buffer_object>.
 =head2 glGetActiveUniformsiv
 
  glGetActiveUniformsiv_c($program, $uniformCount, $uniformIndices, $pname, $params);
+ @params = glGetActiveUniformsiv_p($program, $pname, @uniformIndices);
 
 Exported under tag C<:GL_ARB_uniform_buffer_object>.
 

@@ -21977,6 +21977,11 @@ our %registry = (
         'COMPSIZE(uniformCount,pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:UniformPName:pname:uniformCount,OUTASLIST:pname_count',
+      'uniformCount' => 'items-2',
+      'uniformIndices' => 'VARARGS:2'
+    },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetActiveUniformsiv',
     'glewtype' => 'fun',

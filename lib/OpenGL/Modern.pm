@@ -210,6 +210,7 @@ our @gl_functionscompat = qw(
   glGetActiveUniformName_c
   glGetActiveUniform_c
   glGetActiveUniformsiv_c
+  glGetActiveUniformsiv_p
   glGetAttachedShaders_c
   glGetAttribLocation
   glGetBooleani_v_c
@@ -5414,6 +5415,7 @@ our %EXPORT_TAGS_GL = (
     'glGetActiveUniformBlockiv_c',
     'glGetActiveUniformName_c',
     'glGetActiveUniformsiv_c',
+    'glGetActiveUniformsiv_p',
     'glGetIntegeri_v_c',
     'glGetIntegeri_v_p',
     'glGetUniformBlockIndex',
@@ -8671,6 +8673,7 @@ our %EXPORT_TAGS_GL = (
     'glGetActiveUniformBlockiv_c',
     'glGetActiveUniformName_c',
     'glGetActiveUniformsiv_c',
+    'glGetActiveUniformsiv_p',
     'glGetIntegeri_v_c',
     'glGetIntegeri_v_p',
     'glGetUniformBlockIndex',
