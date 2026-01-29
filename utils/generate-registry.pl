@@ -222,9 +222,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     $s->{restype} eq 'void' and
     $arg2len{$outargs[0][0]}
   ) {
-    $dynlang{$outargs[0][0]} //= "";
-    $dynlang{$outargs[0][0]} .= "," if $dynlang{$outargs[0][0]};
-    $dynlang{$outargs[0][0]} .= "OUTASLIST:$arg2len{$outargs[0][0]}";
+    $dynlang{$outargs[0][0]} = join ',', grep $_, $dynlang{$outargs[0][0]}, "OUTASLIST:$arg2len{$outargs[0][0]}";
   }
   if (@constargs == 1 and
     typefunc(parse_ptr($constargs[0])->[0]) and
