@@ -8983,6 +8983,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'equation' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9004,6 +9007,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'eqn' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewClipPlanef',
     'glewtype' => 'fun',
@@ -9045,6 +9051,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'equation' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewClipPlanex',
     'glewtype' => 'fun',
@@ -9082,6 +9091,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9118,6 +9130,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9208,6 +9223,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9243,6 +9261,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewColor3hvNV',
     'glewtype' => 'fun',
@@ -9280,6 +9301,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9316,6 +9340,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9352,6 +9379,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9388,6 +9418,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9424,6 +9457,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9464,6 +9500,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9504,6 +9543,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9620,6 +9662,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9659,6 +9704,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewColor4hvNV',
     'glewtype' => 'fun',
@@ -9700,6 +9748,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9740,6 +9791,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9892,6 +9946,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9932,6 +9989,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -9972,6 +10032,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -10364,6 +10427,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'color' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewColorP3uiv',
     'glewtype' => 'fun',
@@ -10404,6 +10470,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'color' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewColorP4uiv',
     'glewtype' => 'fun',
@@ -14550,6 +14619,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_EXT_cull_vertex',
     'glewImpl' => '__glewCullParameterdvEXT',
     'glewtype' => 'fun',
@@ -14572,6 +14644,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_EXT_cull_vertex',
     'glewImpl' => '__glewCullParameterfvEXT',
     'glewtype' => 'fun',
@@ -15921,6 +15996,9 @@ our %registry = (
         'n*2'
       ]
     ],
+    'dynlang' => {
+      'points' => 'VARARGS:2:n*2'
+    },
     'feature' => 'GL_SGIS_detail_texture',
     'glewImpl' => '__glewDetailTexFuncSGIS',
     'glewtype' => 'fun',
@@ -17534,6 +17612,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'flag' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -17980,6 +18061,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'u' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -18008,6 +18092,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'u' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -18040,6 +18127,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'u' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -18072,6 +18162,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'u' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -18203,6 +18296,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewExecuteProgramNV',
     'glewtype' => 'fun',
@@ -18956,6 +19052,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'coord' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewFogCoorddv',
     'glewtype' => 'fun',
@@ -18992,6 +19091,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'coord' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewFogCoordfv',
     'glewtype' => 'fun',
@@ -19020,6 +19122,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'fog' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewFogCoordhvNV',
     'glewtype' => 'fun',
@@ -19040,6 +19145,9 @@ our %registry = (
         'n*2'
       ]
     ],
+    'dynlang' => {
+      'points' => 'VARARGS:1:n*2'
+    },
     'feature' => 'GL_SGIS_fog_function',
     'glewImpl' => '__glewFogFuncSGIS',
     'glewtype' => 'fun',
@@ -19872,6 +19980,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'providedFeatures' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_QCOM_framebuffer_foveated',
     'glewImpl' => '__glewFramebufferFoveationConfigQCOM',
     'glewtype' => 'fun',
@@ -22069,6 +22180,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetArrayObjectfvATI',
     'glewtype' => 'fun',
@@ -22097,6 +22211,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetArrayObjectivATI',
     'glewtype' => 'fun',
@@ -22433,6 +22550,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'equation' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -22454,6 +22574,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'equation' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewGetClipPlanef',
     'glewtype' => 'fun',
@@ -22495,6 +22618,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'equation' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewGetClipPlanex',
     'glewtype' => 'fun',
@@ -26755,6 +26881,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetNamedProgramLocalParameterIivEXT',
     'glewtype' => 'fun',
@@ -26785,6 +26914,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetNamedProgramLocalParameterIuivEXT',
     'glewtype' => 'fun',
@@ -26815,6 +26947,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetNamedProgramLocalParameterdvEXT',
     'glewtype' => 'fun',
@@ -26845,6 +26980,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetNamedProgramLocalParameterfvEXT',
     'glewtype' => 'fun',
@@ -26909,6 +27047,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetNamedProgramivEXT',
     'glewtype' => 'fun',
@@ -27128,6 +27269,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetObjectBufferfvATI',
     'glewtype' => 'fun',
@@ -27154,6 +27298,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetObjectBufferivATI',
     'glewtype' => 'fun',
@@ -27632,6 +27779,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewGetPathParameterfvNV',
     'glewtype' => 'fun',
@@ -27658,6 +27808,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewGetPathParameterivNV',
     'glewtype' => 'fun',
@@ -28481,6 +28634,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewGetProgramEnvParameterdvARB',
     'glewtype' => 'fun',
@@ -28507,6 +28663,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewGetProgramEnvParameterfvARB',
     'glewtype' => 'fun',
@@ -28603,6 +28762,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewGetProgramLocalParameterdvARB',
     'glewtype' => 'fun',
@@ -28629,6 +28791,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewGetProgramLocalParameterfvARB',
     'glewtype' => 'fun',
@@ -28721,6 +28886,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewGetProgramParameterdvNV',
     'glewtype' => 'fun',
@@ -28753,6 +28921,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewGetProgramParameterfvNV',
     'glewtype' => 'fun',
@@ -29086,6 +29257,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'values' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetProgramStageiv',
     'glewtype' => 'fun',
@@ -29197,6 +29371,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewGetProgramivARB',
     'glewtype' => 'fun',
@@ -29223,6 +29400,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewGetProgramivNV',
     'glewtype' => 'fun',
@@ -30227,6 +30407,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'rate' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_NV_shading_rate_image',
     'glewImpl' => '__glewGetShadingRateImagePaletteNV',
     'glewtype' => 'fun',
@@ -30255,6 +30438,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'location' => 'OUTASLIST:3'
+    },
     'feature' => 'GL_NV_shading_rate_image',
     'glewImpl' => '__glewGetShadingRateSampleLocationivNV',
     'glewtype' => 'fun',
@@ -31672,6 +31858,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewGetTrackMatrixivNV',
     'glewtype' => 'fun',
@@ -31746,6 +31935,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'location' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewGetTransformFeedbackVaryingNV',
     'glewtype' => 'fun',
@@ -31988,6 +32180,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetUniformSubroutineuiv',
     'glewtype' => 'fun',
@@ -32264,6 +32459,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetVariantArrayObjectfvATI',
     'glewtype' => 'fun',
@@ -32290,6 +32488,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetVariantArrayObjectivATI',
     'glewtype' => 'fun',
@@ -32703,6 +32904,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewGetVertexAttribIiv',
     'glewtype' => 'fun',
@@ -32732,6 +32936,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewGetVertexAttribIuiv',
     'glewtype' => 'fun',
@@ -32907,6 +33114,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetVertexAttribdv',
     'glewtype' => 'fun',
@@ -32937,6 +33147,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetVertexAttribfv',
     'glewtype' => 'fun',
@@ -32967,6 +33180,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetVertexAttribiv',
     'glewtype' => 'fun',
@@ -33394,6 +33610,9 @@ our %registry = (
         'bufSize/8'
       ]
     ],
+    'dynlang' => {
+      'v' => 'OUTASLIST:bufSize/8'
+    },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnMapdvARB',
     'glewtype' => 'fun',
@@ -33532,6 +33751,9 @@ our %registry = (
         'bufSize/4'
       ]
     ],
+    'dynlang' => {
+      'values' => 'OUTASLIST:bufSize/4'
+    },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnPixelMapfvARB',
     'glewtype' => 'fun',
@@ -33778,6 +34000,9 @@ our %registry = (
         'bufSize/8'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:bufSize/8'
+    },
     'feature' => 'GL_VERSION_4_5',
     'glewImpl' => '__glewGetnUniformdv',
     'glewtype' => 'fun',
@@ -33806,6 +34031,9 @@ our %registry = (
         'bufSize/8'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:bufSize/8'
+    },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnUniformdvARB',
     'glewtype' => 'fun',
@@ -33838,6 +34066,9 @@ our %registry = (
         'bufSize/4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:bufSize/4'
+    },
     'feature' => 'GL_KHR_robustness',
     'glewImpl' => '__glewGetnUniformfv',
     'glewtype' => 'fun',
@@ -33866,6 +34097,9 @@ our %registry = (
         'bufSize/4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:bufSize/4'
+    },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnUniformfvARB',
     'glewtype' => 'fun',
@@ -33894,6 +34128,9 @@ our %registry = (
         'bufSize/8'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:bufSize/8'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewGetnUniformi64vARB',
     'glewtype' => 'fun',
@@ -33926,6 +34163,9 @@ our %registry = (
         'bufSize/4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:bufSize/4'
+    },
     'feature' => 'GL_KHR_robustness',
     'glewImpl' => '__glewGetnUniformiv',
     'glewtype' => 'fun',
@@ -33954,6 +34194,9 @@ our %registry = (
         'bufSize/4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:bufSize/4'
+    },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnUniformivARB',
     'glewtype' => 'fun',
@@ -33982,6 +34225,9 @@ our %registry = (
         'bufSize/8'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:bufSize/8'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewGetnUniformui64vARB',
     'glewtype' => 'fun',
@@ -34013,6 +34259,9 @@ our %registry = (
         'bufSize/4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:bufSize/4'
+    },
     'feature' => 'GL_KHR_robustness',
     'glewImpl' => '__glewGetnUniformuiv',
     'glewtype' => 'fun',
@@ -34041,6 +34290,9 @@ our %registry = (
         'bufSize/4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'OUTASLIST:bufSize/4'
+    },
     'feature' => 'GL_ARB_robustness',
     'glewImpl' => '__glewGetnUniformuivARB',
     'glewtype' => 'fun',
@@ -34668,6 +34920,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'c' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -34696,6 +34951,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'c' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -34724,6 +34982,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'c' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -34752,6 +35013,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'c' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -34780,6 +35044,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'c' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -36355,6 +36622,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'm' => 'VARARGS:0:16'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -36371,6 +36641,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'm' => 'VARARGS:0:16'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -36386,6 +36659,9 @@ our %registry = (
         '16'
       ]
     ],
+    'dynlang' => {
+      'm' => 'VARARGS:0:16'
+    },
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewLoadMatrixx',
     'glewtype' => 'fun',
@@ -36451,6 +36727,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'm' => 'VARARGS:0:16'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewLoadTransposeMatrixd',
     'glewtype' => 'fun',
@@ -36471,6 +36750,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'm' => 'VARARGS:0:16'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewLoadTransposeMatrixf',
     'glewtype' => 'fun',
@@ -37948,6 +38230,9 @@ our %registry = (
         '16'
       ]
     ],
+    'dynlang' => {
+      'm' => 'VARARGS:1:16'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixLoadTransposedEXT',
     'glewtype' => 'fun',
@@ -37970,6 +38255,9 @@ our %registry = (
         '16'
       ]
     ],
+    'dynlang' => {
+      'm' => 'VARARGS:1:16'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixLoadTransposefEXT',
     'glewtype' => 'fun',
@@ -37992,6 +38280,9 @@ our %registry = (
         '16'
       ]
     ],
+    'dynlang' => {
+      'm' => 'VARARGS:1:16'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixLoaddEXT',
     'glewtype' => 'fun',
@@ -38014,6 +38305,9 @@ our %registry = (
         '16'
       ]
     ],
+    'dynlang' => {
+      'm' => 'VARARGS:1:16'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixLoadfEXT',
     'glewtype' => 'fun',
@@ -38107,6 +38401,9 @@ our %registry = (
         '16'
       ]
     ],
+    'dynlang' => {
+      'm' => 'VARARGS:1:16'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixMultTransposedEXT',
     'glewtype' => 'fun',
@@ -38129,6 +38426,9 @@ our %registry = (
         '16'
       ]
     ],
+    'dynlang' => {
+      'm' => 'VARARGS:1:16'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixMultTransposefEXT',
     'glewtype' => 'fun',
@@ -38151,6 +38451,9 @@ our %registry = (
         '16'
       ]
     ],
+    'dynlang' => {
+      'm' => 'VARARGS:1:16'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixMultdEXT',
     'glewtype' => 'fun',
@@ -38173,6 +38476,9 @@ our %registry = (
         '16'
       ]
     ],
+    'dynlang' => {
+      'm' => 'VARARGS:1:16'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMatrixMultfEXT',
     'glewtype' => 'fun',
@@ -38581,6 +38887,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'm' => 'VARARGS:0:16'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -38597,6 +38906,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'm' => 'VARARGS:0:16'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -38612,6 +38924,9 @@ our %registry = (
         '16'
       ]
     ],
+    'dynlang' => {
+      'm' => 'VARARGS:0:16'
+    },
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewMultMatrixx',
     'glewtype' => 'fun',
@@ -38632,6 +38947,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'm' => 'VARARGS:0:16'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultTransposeMatrixd',
     'glewtype' => 'fun',
@@ -38652,6 +38970,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'm' => 'VARARGS:0:16'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultTransposeMatrixf',
     'glewtype' => 'fun',
@@ -39397,6 +39718,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1dv',
     'glewtype' => 'fun',
@@ -39445,6 +39769,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1fv',
     'glewtype' => 'fun',
@@ -39485,6 +39812,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewMultiTexCoord1hvNV',
     'glewtype' => 'fun',
@@ -39533,6 +39863,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1iv',
     'glewtype' => 'fun',
@@ -39581,6 +39914,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord1sv',
     'glewtype' => 'fun',
@@ -39633,6 +39969,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2dv',
     'glewtype' => 'fun',
@@ -39685,6 +40024,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2fv',
     'glewtype' => 'fun',
@@ -39729,6 +40071,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewMultiTexCoord2hvNV',
     'glewtype' => 'fun',
@@ -39781,6 +40126,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2iv',
     'glewtype' => 'fun',
@@ -39833,6 +40181,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord2sv',
     'glewtype' => 'fun',
@@ -39889,6 +40240,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3dv',
     'glewtype' => 'fun',
@@ -39945,6 +40299,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3fv',
     'glewtype' => 'fun',
@@ -39993,6 +40350,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewMultiTexCoord3hvNV',
     'glewtype' => 'fun',
@@ -40049,6 +40409,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3iv',
     'glewtype' => 'fun',
@@ -40105,6 +40468,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord3sv',
     'glewtype' => 'fun',
@@ -40165,6 +40531,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4dv',
     'glewtype' => 'fun',
@@ -40225,6 +40594,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4fv',
     'glewtype' => 'fun',
@@ -40277,6 +40649,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewMultiTexCoord4hvNV',
     'glewtype' => 'fun',
@@ -40337,6 +40712,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4iv',
     'glewtype' => 'fun',
@@ -40397,6 +40775,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_1_3',
     'glewImpl' => '__glewMultiTexCoord4sv',
     'glewtype' => 'fun',
@@ -40479,6 +40860,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:2:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewMultiTexCoordP1uiv',
     'glewtype' => 'fun',
@@ -40531,6 +40915,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:2:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewMultiTexCoordP2uiv',
     'glewtype' => 'fun',
@@ -40583,6 +40970,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:2:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewMultiTexCoordP3uiv',
     'glewtype' => 'fun',
@@ -40635,6 +41025,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:2:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewMultiTexCoordP4uiv',
     'glewtype' => 'fun',
@@ -42893,6 +43286,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:3:4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParameter4dvEXT',
     'glewtype' => 'fun',
@@ -42961,6 +43357,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:3:4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParameter4fvEXT',
     'glewtype' => 'fun',
@@ -43029,6 +43428,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:3:4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParameterI4ivEXT',
     'glewtype' => 'fun',
@@ -43097,6 +43499,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:3:4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParameterI4uivEXT',
     'glewtype' => 'fun',
@@ -43131,6 +43536,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:4:count*4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParameters4fvEXT',
     'glewtype' => 'fun',
@@ -43165,6 +43573,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:4:count*4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParametersI4ivEXT',
     'glewtype' => 'fun',
@@ -43199,6 +43610,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:4:count*4'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewNamedProgramLocalParametersI4uivEXT',
     'glewtype' => 'fun',
@@ -43592,6 +44006,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -43628,6 +44045,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -43718,6 +44138,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -43753,6 +44176,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewNormal3hvNV',
     'glewtype' => 'fun',
@@ -43790,6 +44216,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -43826,6 +44255,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -43901,6 +44333,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewNormalP3uiv',
     'glewtype' => 'fun',
@@ -44057,6 +44492,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewNormalStream3bvATI',
     'glewtype' => 'fun',
@@ -44105,6 +44543,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewNormalStream3dvATI',
     'glewtype' => 'fun',
@@ -44153,6 +44594,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewNormalStream3fvATI',
     'glewtype' => 'fun',
@@ -44201,6 +44645,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewNormalStream3ivATI',
     'glewtype' => 'fun',
@@ -44249,6 +44696,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewNormalStream3svATI',
     'glewtype' => 'fun',
@@ -45557,6 +46007,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:1'
+    },
     'feature' => 'GL_EXT_pixel_transform',
     'glewImpl' => '__glewPixelTransformParameterfvEXT',
     'glewtype' => 'fun',
@@ -45652,6 +46105,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:1'
+    },
     'feature' => 'GL_EXT_pixel_transform',
     'glewImpl' => '__glewPixelTransformParameterivEXT',
     'glewtype' => 'fun',
@@ -46563,6 +47019,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewProgramEnvParameter4dvARB',
     'glewtype' => 'fun',
@@ -46623,6 +47082,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewProgramEnvParameter4fvARB',
     'glewtype' => 'fun',
@@ -46683,6 +47145,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramEnvParameterI4ivNV',
     'glewtype' => 'fun',
@@ -46743,6 +47208,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramEnvParameterI4uivNV',
     'glewtype' => 'fun',
@@ -46773,6 +47241,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_EXT_gpu_program_parameters',
     'glewImpl' => '__glewProgramEnvParameters4fvEXT',
     'glewtype' => 'fun',
@@ -46803,6 +47274,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramEnvParametersI4ivNV',
     'glewtype' => 'fun',
@@ -46833,6 +47307,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramEnvParametersI4uivNV',
     'glewtype' => 'fun',
@@ -46893,6 +47370,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewProgramLocalParameter4dvARB',
     'glewtype' => 'fun',
@@ -46953,6 +47433,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewProgramLocalParameter4fvARB',
     'glewtype' => 'fun',
@@ -47013,6 +47496,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramLocalParameterI4ivNV',
     'glewtype' => 'fun',
@@ -47073,6 +47559,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramLocalParameterI4uivNV',
     'glewtype' => 'fun',
@@ -47103,6 +47592,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_EXT_gpu_program_parameters',
     'glewImpl' => '__glewProgramLocalParameters4fvEXT',
     'glewtype' => 'fun',
@@ -47133,6 +47625,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramLocalParametersI4ivNV',
     'glewtype' => 'fun',
@@ -47163,6 +47658,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'params' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_NV_gpu_program4',
     'glewImpl' => '__glewProgramLocalParametersI4uivNV',
     'glewtype' => 'fun',
@@ -47357,6 +47855,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewProgramParameter4dvNV',
     'glewtype' => 'fun',
@@ -47417,6 +47918,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewProgramParameter4fvNV',
     'glewtype' => 'fun',
@@ -47473,6 +47977,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewProgramParameters4dvNV',
     'glewtype' => 'fun',
@@ -47503,6 +48010,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewProgramParameters4fvNV',
     'glewtype' => 'fun',
@@ -48052,6 +48562,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*2'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform2dv',
     'glewtype' => 'fun',
@@ -48110,6 +48623,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*2'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform2fv',
     'glewtype' => 'fun',
@@ -48213,6 +48729,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*2'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform2i64vARB',
     'glewtype' => 'fun',
@@ -48241,6 +48760,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*2'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform2i64vNV',
     'glewtype' => 'fun',
@@ -48272,6 +48794,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*2'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform2iv',
     'glewtype' => 'fun',
@@ -48375,6 +48900,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*2'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform2ui64vARB',
     'glewtype' => 'fun',
@@ -48403,6 +48931,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*2'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform2ui64vNV',
     'glewtype' => 'fun',
@@ -48434,6 +48965,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*2'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform2uiv',
     'glewtype' => 'fun',
@@ -48490,6 +49024,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*3'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform3dv',
     'glewtype' => 'fun',
@@ -48552,6 +49089,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*3'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform3fv',
     'glewtype' => 'fun',
@@ -48667,6 +49207,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*3'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform3i64vARB',
     'glewtype' => 'fun',
@@ -48695,6 +49238,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*3'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform3i64vNV',
     'glewtype' => 'fun',
@@ -48726,6 +49272,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*3'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform3iv',
     'glewtype' => 'fun',
@@ -48841,6 +49390,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*3'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform3ui64vARB',
     'glewtype' => 'fun',
@@ -48869,6 +49421,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*3'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform3ui64vNV',
     'glewtype' => 'fun',
@@ -48900,6 +49455,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*3'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform3uiv',
     'glewtype' => 'fun',
@@ -48960,6 +49518,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform4dv',
     'glewtype' => 'fun',
@@ -49026,6 +49587,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform4fv',
     'glewtype' => 'fun',
@@ -49153,6 +49717,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform4i64vARB',
     'glewtype' => 'fun',
@@ -49181,6 +49748,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform4i64vNV',
     'glewtype' => 'fun',
@@ -49212,6 +49782,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform4iv',
     'glewtype' => 'fun',
@@ -49339,6 +49912,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform4ui64vARB',
     'glewtype' => 'fun',
@@ -49367,6 +49943,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform4ui64vNV',
     'glewtype' => 'fun',
@@ -49398,6 +49977,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform4uiv',
     'glewtype' => 'fun',
@@ -49540,6 +50122,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*4'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix2dv',
     'glewtype' => 'fun',
@@ -49575,6 +50160,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*4'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix2fv',
     'glewtype' => 'fun',
@@ -49607,6 +50195,9 @@ our %registry = (
         'count*6'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*6'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix2x3dv',
     'glewtype' => 'fun',
@@ -49642,6 +50233,9 @@ our %registry = (
         'count*6'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*6'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix2x3fv',
     'glewtype' => 'fun',
@@ -49674,6 +50268,9 @@ our %registry = (
         'count*8'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*8'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix2x4dv',
     'glewtype' => 'fun',
@@ -49709,6 +50306,9 @@ our %registry = (
         'count*8'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*8'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix2x4fv',
     'glewtype' => 'fun',
@@ -49741,6 +50341,9 @@ our %registry = (
         'count*9'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*9'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix3dv',
     'glewtype' => 'fun',
@@ -49776,6 +50379,9 @@ our %registry = (
         'count*9'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*9'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix3fv',
     'glewtype' => 'fun',
@@ -49808,6 +50414,9 @@ our %registry = (
         'count*6'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*6'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix3x2dv',
     'glewtype' => 'fun',
@@ -49843,6 +50452,9 @@ our %registry = (
         'count*6'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*6'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix3x2fv',
     'glewtype' => 'fun',
@@ -49875,6 +50487,9 @@ our %registry = (
         'count*12'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*12'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix3x4dv',
     'glewtype' => 'fun',
@@ -49910,6 +50525,9 @@ our %registry = (
         'count*12'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*12'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix3x4fv',
     'glewtype' => 'fun',
@@ -49942,6 +50560,9 @@ our %registry = (
         'count*16'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*16'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix4dv',
     'glewtype' => 'fun',
@@ -49977,6 +50598,9 @@ our %registry = (
         'count*16'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*16'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix4fv',
     'glewtype' => 'fun',
@@ -50009,6 +50633,9 @@ our %registry = (
         'count*8'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*8'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix4x2dv',
     'glewtype' => 'fun',
@@ -50044,6 +50671,9 @@ our %registry = (
         'count*8'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*8'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix4x2fv',
     'glewtype' => 'fun',
@@ -50076,6 +50706,9 @@ our %registry = (
         'count*12'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*12'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix4x3dv',
     'glewtype' => 'fun',
@@ -50111,6 +50744,9 @@ our %registry = (
         'count*12'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:4:count*12'
+    },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniformMatrix4x3fv',
     'glewtype' => 'fun',
@@ -50402,6 +51038,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50434,6 +51073,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50466,6 +51108,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50498,6 +51143,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50534,6 +51182,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50570,6 +51221,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50606,6 +51260,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50642,6 +51299,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50682,6 +51342,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50722,6 +51385,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50762,6 +51428,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -50802,6 +51471,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -51223,6 +51895,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'equation' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_SGIX_reference_plane',
     'glewImpl' => '__glewReferencePlaneSGIX',
     'glewtype' => 'fun',
@@ -52954,6 +53629,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewScissorIndexedv',
     'glewtype' => 'fun',
@@ -52998,6 +53676,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3bv',
     'glewtype' => 'fun',
@@ -53042,6 +53723,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3dv',
     'glewtype' => 'fun',
@@ -53086,6 +53770,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3fv',
     'glewtype' => 'fun',
@@ -53122,6 +53809,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewSecondaryColor3hvNV',
     'glewtype' => 'fun',
@@ -53166,6 +53856,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3iv',
     'glewtype' => 'fun',
@@ -53210,6 +53903,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3sv',
     'glewtype' => 'fun',
@@ -53254,6 +53950,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3ubv',
     'glewtype' => 'fun',
@@ -53298,6 +53997,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3uiv',
     'glewtype' => 'fun',
@@ -53342,6 +54044,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewSecondaryColor3usv',
     'glewtype' => 'fun',
@@ -53404,6 +54109,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'color' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewSecondaryColorP3uiv',
     'glewtype' => 'fun',
@@ -53725,6 +54433,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_ATI_fragment_shader',
     'glewImpl' => '__glewSetFragmentShaderConstantATI',
     'glewtype' => 'fun',
@@ -53801,6 +54512,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'val' => 'VARARGS:2:2'
+    },
     'feature' => 'GL_AMD_sample_positions',
     'glewImpl' => '__glewSetMultisamplefvAMD',
     'glewtype' => 'fun',
@@ -54141,6 +54855,9 @@ our %registry = (
         'n*2'
       ]
     ],
+    'dynlang' => {
+      'points' => 'VARARGS:2:n*2'
+    },
     'feature' => 'GL_SGIS_sharpen_texture',
     'glewImpl' => '__glewSharpenTexFuncSGIS',
     'glewtype' => 'fun',
@@ -55350,6 +56067,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -55378,6 +56098,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -55405,6 +56128,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewTexCoord1hvNV',
     'glewtype' => 'fun',
@@ -55434,6 +56160,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -55462,6 +56191,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -55494,6 +56226,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -55874,6 +56609,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -55905,6 +56643,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewTexCoord2hvNV',
     'glewtype' => 'fun',
@@ -55938,6 +56679,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -55970,6 +56714,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -56006,6 +56753,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -56042,6 +56792,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -56077,6 +56830,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewTexCoord3hvNV',
     'glewtype' => 'fun',
@@ -56114,6 +56870,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -56150,6 +56909,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -56190,6 +56952,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -56394,6 +57159,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -56433,6 +57201,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewTexCoord4hvNV',
     'glewtype' => 'fun',
@@ -56474,6 +57245,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -56514,6 +57288,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -56573,6 +57350,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewTexCoordP1uiv',
     'glewtype' => 'fun',
@@ -56613,6 +57393,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewTexCoordP2uiv',
     'glewtype' => 'fun',
@@ -56653,6 +57436,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewTexCoordP3uiv',
     'glewtype' => 'fun',
@@ -56693,6 +57479,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewTexCoordP4uiv',
     'glewtype' => 'fun',
@@ -61554,6 +62343,9 @@ our %registry = (
         'count*1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*1'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniform1dv',
     'glewtype' => 'fun',
@@ -61600,6 +62392,9 @@ our %registry = (
         'count*1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*1'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform1fv',
     'glewtype' => 'fun',
@@ -61675,6 +62470,9 @@ our %registry = (
         'count*1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*1'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform1i64vARB',
     'glewtype' => 'fun',
@@ -61699,6 +62497,9 @@ our %registry = (
         'count*1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*1'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform1i64vNV',
     'glewtype' => 'fun',
@@ -61726,6 +62527,9 @@ our %registry = (
         'count*1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*1'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform1iv',
     'glewtype' => 'fun',
@@ -61801,6 +62605,9 @@ our %registry = (
         'count*1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*1'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform1ui64vARB',
     'glewtype' => 'fun',
@@ -61825,6 +62632,9 @@ our %registry = (
         'count*1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*1'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform1ui64vNV',
     'glewtype' => 'fun',
@@ -61852,6 +62662,9 @@ our %registry = (
         'count*1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*1'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewUniform1uiv',
     'glewtype' => 'fun',
@@ -61896,6 +62709,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniform2dv',
     'glewtype' => 'fun',
@@ -61946,6 +62762,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform2fv',
     'glewtype' => 'fun',
@@ -62033,6 +62852,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform2i64vARB',
     'glewtype' => 'fun',
@@ -62057,6 +62879,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform2i64vNV',
     'glewtype' => 'fun',
@@ -62084,6 +62909,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform2iv',
     'glewtype' => 'fun',
@@ -62171,6 +62999,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform2ui64vARB',
     'glewtype' => 'fun',
@@ -62195,6 +63026,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform2ui64vNV',
     'glewtype' => 'fun',
@@ -62222,6 +63056,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewUniform2uiv',
     'glewtype' => 'fun',
@@ -62270,6 +63107,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniform3dv',
     'glewtype' => 'fun',
@@ -62324,6 +63164,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform3fv',
     'glewtype' => 'fun',
@@ -62423,6 +63266,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform3i64vARB',
     'glewtype' => 'fun',
@@ -62447,6 +63293,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform3i64vNV',
     'glewtype' => 'fun',
@@ -62474,6 +63323,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform3iv',
     'glewtype' => 'fun',
@@ -62573,6 +63425,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform3ui64vARB',
     'glewtype' => 'fun',
@@ -62597,6 +63452,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform3ui64vNV',
     'glewtype' => 'fun',
@@ -62624,6 +63482,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewUniform3uiv',
     'glewtype' => 'fun',
@@ -62676,6 +63537,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniform4dv',
     'glewtype' => 'fun',
@@ -62734,6 +63598,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform4fv',
     'glewtype' => 'fun',
@@ -62845,6 +63712,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform4i64vARB',
     'glewtype' => 'fun',
@@ -62869,6 +63739,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform4i64vNV',
     'glewtype' => 'fun',
@@ -62896,6 +63769,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniform4iv',
     'glewtype' => 'fun',
@@ -63007,6 +63883,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewUniform4ui64vARB',
     'glewtype' => 'fun',
@@ -63031,6 +63910,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewUniform4ui64vNV',
     'glewtype' => 'fun',
@@ -63058,6 +63940,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewUniform4uiv',
     'glewtype' => 'fun',
@@ -63220,6 +64105,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniformMatrix2dv',
     'glewtype' => 'fun',
@@ -63251,6 +64139,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniformMatrix2fv',
     'glewtype' => 'fun',
@@ -63279,6 +64170,9 @@ our %registry = (
         'count*6'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*6'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniformMatrix2x3dv',
     'glewtype' => 'fun',
@@ -63310,6 +64204,9 @@ our %registry = (
         'count*6'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*6'
+    },
     'feature' => 'GL_VERSION_2_1',
     'glewImpl' => '__glewUniformMatrix2x3fv',
     'glewtype' => 'fun',
@@ -63338,6 +64235,9 @@ our %registry = (
         'count*8'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*8'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniformMatrix2x4dv',
     'glewtype' => 'fun',
@@ -63369,6 +64269,9 @@ our %registry = (
         'count*8'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*8'
+    },
     'feature' => 'GL_VERSION_2_1',
     'glewImpl' => '__glewUniformMatrix2x4fv',
     'glewtype' => 'fun',
@@ -63397,6 +64300,9 @@ our %registry = (
         'count*9'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*9'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniformMatrix3dv',
     'glewtype' => 'fun',
@@ -63428,6 +64334,9 @@ our %registry = (
         'count*9'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*9'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniformMatrix3fv',
     'glewtype' => 'fun',
@@ -63456,6 +64365,9 @@ our %registry = (
         'count*6'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*6'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniformMatrix3x2dv',
     'glewtype' => 'fun',
@@ -63487,6 +64399,9 @@ our %registry = (
         'count*6'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*6'
+    },
     'feature' => 'GL_VERSION_2_1',
     'glewImpl' => '__glewUniformMatrix3x2fv',
     'glewtype' => 'fun',
@@ -63515,6 +64430,9 @@ our %registry = (
         'count*12'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*12'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniformMatrix3x4dv',
     'glewtype' => 'fun',
@@ -63546,6 +64464,9 @@ our %registry = (
         'count*12'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*12'
+    },
     'feature' => 'GL_VERSION_2_1',
     'glewImpl' => '__glewUniformMatrix3x4fv',
     'glewtype' => 'fun',
@@ -63574,6 +64495,9 @@ our %registry = (
         'count*16'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*16'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniformMatrix4dv',
     'glewtype' => 'fun',
@@ -63605,6 +64529,9 @@ our %registry = (
         'count*16'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*16'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUniformMatrix4fv',
     'glewtype' => 'fun',
@@ -63633,6 +64560,9 @@ our %registry = (
         'count*8'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*8'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniformMatrix4x2dv',
     'glewtype' => 'fun',
@@ -63664,6 +64594,9 @@ our %registry = (
         'count*8'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*8'
+    },
     'feature' => 'GL_VERSION_2_1',
     'glewImpl' => '__glewUniformMatrix4x2fv',
     'glewtype' => 'fun',
@@ -63692,6 +64625,9 @@ our %registry = (
         'count*12'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*12'
+    },
     'feature' => 'GL_ARB_gpu_shader_fp64',
     'glewImpl' => '__glewUniformMatrix4x3dv',
     'glewtype' => 'fun',
@@ -63723,6 +64659,9 @@ our %registry = (
         'count*12'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:count*12'
+    },
     'feature' => 'GL_VERSION_2_1',
     'glewImpl' => '__glewUniformMatrix4x3fv',
     'glewtype' => 'fun',
@@ -63793,6 +64732,9 @@ our %registry = (
         'count*1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:2:count*1'
+    },
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewUniformui64vNV',
     'glewtype' => 'fun',
@@ -64501,6 +65443,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -64533,6 +65478,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -64564,6 +65512,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertex2hvNV',
     'glewtype' => 'fun',
@@ -64597,6 +65548,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -64629,6 +65583,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -64665,6 +65622,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -64701,6 +65661,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -64736,6 +65699,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertex3hvNV',
     'glewtype' => 'fun',
@@ -64773,6 +65739,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -64809,6 +65778,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -64849,6 +65821,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -64889,6 +65864,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -64928,6 +65906,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertex4hvNV',
     'glewtype' => 'fun',
@@ -64969,6 +65950,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -65009,6 +65993,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -65916,6 +66903,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib1dv',
     'glewtype' => 'fun',
@@ -65960,6 +66950,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib1fv',
     'glewtype' => 'fun',
@@ -65996,6 +66989,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttrib1hvNV',
     'glewtype' => 'fun',
@@ -66040,6 +67036,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib1sv',
     'glewtype' => 'fun',
@@ -66088,6 +67087,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib2dv',
     'glewtype' => 'fun',
@@ -66136,6 +67138,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib2fv',
     'glewtype' => 'fun',
@@ -66176,6 +67181,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttrib2hvNV',
     'glewtype' => 'fun',
@@ -66224,6 +67232,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib2sv',
     'glewtype' => 'fun',
@@ -66276,6 +67287,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib3dv',
     'glewtype' => 'fun',
@@ -66328,6 +67342,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib3fv',
     'glewtype' => 'fun',
@@ -66372,6 +67389,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttrib3hvNV',
     'glewtype' => 'fun',
@@ -66424,6 +67444,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib3sv',
     'glewtype' => 'fun',
@@ -66447,6 +67470,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4Nbv',
     'glewtype' => 'fun',
@@ -66470,6 +67496,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4Niv',
     'glewtype' => 'fun',
@@ -66493,6 +67522,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4Nsv',
     'glewtype' => 'fun',
@@ -66549,6 +67581,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4Nubv',
     'glewtype' => 'fun',
@@ -66572,6 +67607,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4Nuiv',
     'glewtype' => 'fun',
@@ -66595,6 +67633,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4Nusv',
     'glewtype' => 'fun',
@@ -66618,6 +67659,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4bv',
     'glewtype' => 'fun',
@@ -66674,6 +67718,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4dv',
     'glewtype' => 'fun',
@@ -66730,6 +67777,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4fv',
     'glewtype' => 'fun',
@@ -66778,6 +67828,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttrib4hvNV',
     'glewtype' => 'fun',
@@ -66801,6 +67854,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4iv',
     'glewtype' => 'fun',
@@ -66857,6 +67913,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4sv',
     'glewtype' => 'fun',
@@ -66880,6 +67939,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4ubv',
     'glewtype' => 'fun',
@@ -66903,6 +67965,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4uiv',
     'glewtype' => 'fun',
@@ -66926,6 +67991,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewVertexAttrib4usv',
     'glewtype' => 'fun',
@@ -67104,6 +68172,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI1iv',
     'glewtype' => 'fun',
@@ -67146,6 +68217,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI1uiv',
     'glewtype' => 'fun',
@@ -67192,6 +68266,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI2iv',
     'glewtype' => 'fun',
@@ -67238,6 +68315,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI2uiv',
     'glewtype' => 'fun',
@@ -67288,6 +68368,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI3iv',
     'glewtype' => 'fun',
@@ -67338,6 +68421,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI3uiv',
     'glewtype' => 'fun',
@@ -67361,6 +68447,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI4bv',
     'glewtype' => 'fun',
@@ -67415,6 +68504,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI4iv',
     'glewtype' => 'fun',
@@ -67438,6 +68530,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI4sv',
     'glewtype' => 'fun',
@@ -67461,6 +68556,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI4ubv',
     'glewtype' => 'fun',
@@ -67515,6 +68613,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI4uiv',
     'glewtype' => 'fun',
@@ -67538,6 +68639,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewVertexAttribI4usv',
     'glewtype' => 'fun',
@@ -67668,6 +68772,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL1dv',
     'glewtype' => 'fun',
@@ -67704,6 +68811,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL1i64vNV',
     'glewtype' => 'fun',
@@ -67775,6 +68885,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL1ui64vNV',
     'glewtype' => 'fun',
@@ -67821,6 +68934,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_ARB_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL2dv',
     'glewtype' => 'fun',
@@ -67861,6 +68977,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL2i64vNV',
     'glewtype' => 'fun',
@@ -67901,6 +69020,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL2ui64vNV',
     'glewtype' => 'fun',
@@ -67951,6 +69073,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_ARB_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL3dv',
     'glewtype' => 'fun',
@@ -67995,6 +69120,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL3i64vNV',
     'glewtype' => 'fun',
@@ -68039,6 +69167,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL3ui64vNV',
     'glewtype' => 'fun',
@@ -68093,6 +69224,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_ARB_vertex_attrib_64bit',
     'glewImpl' => '__glewVertexAttribL4dv',
     'glewtype' => 'fun',
@@ -68141,6 +69275,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL4i64vNV',
     'glewtype' => 'fun',
@@ -68189,6 +69326,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_NV_vertex_attrib_integer_64bit',
     'glewImpl' => '__glewVertexAttribL4ui64vNV',
     'glewtype' => 'fun',
@@ -68333,6 +69473,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexAttribP1uiv',
     'glewtype' => 'fun',
@@ -68389,6 +69532,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexAttribP2uiv',
     'glewtype' => 'fun',
@@ -68445,6 +69591,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexAttribP3uiv',
     'glewtype' => 'fun',
@@ -68501,6 +69650,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:3:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexAttribP4uiv',
     'glewtype' => 'fun',
@@ -68731,6 +69883,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs2dvNV',
     'glewtype' => 'fun',
@@ -68755,6 +69910,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs2fvNV',
     'glewtype' => 'fun',
@@ -68807,6 +69965,9 @@ our %registry = (
         'count*2'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:count*2'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs2svNV',
     'glewtype' => 'fun',
@@ -68831,6 +69992,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs3dvNV',
     'glewtype' => 'fun',
@@ -68855,6 +70019,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs3fvNV',
     'glewtype' => 'fun',
@@ -68907,6 +70074,9 @@ our %registry = (
         'count*3'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:count*3'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs3svNV',
     'glewtype' => 'fun',
@@ -68931,6 +70101,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs4dvNV',
     'glewtype' => 'fun',
@@ -68955,6 +70128,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs4fvNV',
     'glewtype' => 'fun',
@@ -69007,6 +70183,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs4svNV',
     'glewtype' => 'fun',
@@ -69031,6 +70210,9 @@ our %registry = (
         'count*4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:2:count*4'
+    },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs4ubvNV',
     'glewtype' => 'fun',
@@ -69157,6 +70339,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexP2uiv',
     'glewtype' => 'fun',
@@ -69197,6 +70382,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexP3uiv',
     'glewtype' => 'fun',
@@ -69237,6 +70425,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'value' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ARB_vertex_type_2_10_10_10_rev',
     'glewImpl' => '__glewVertexP4uiv',
     'glewtype' => 'fun',
@@ -69401,6 +70592,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream1dvATI',
     'glewtype' => 'fun',
@@ -69441,6 +70635,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream1fvATI',
     'glewtype' => 'fun',
@@ -69481,6 +70678,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream1ivATI',
     'glewtype' => 'fun',
@@ -69521,6 +70721,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:1'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream1svATI',
     'glewtype' => 'fun',
@@ -69565,6 +70768,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream2dvATI',
     'glewtype' => 'fun',
@@ -69609,6 +70815,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream2fvATI',
     'glewtype' => 'fun',
@@ -69653,6 +70862,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream2ivATI',
     'glewtype' => 'fun',
@@ -69697,6 +70909,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:2'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream2svATI',
     'glewtype' => 'fun',
@@ -69745,6 +70960,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream3dvATI',
     'glewtype' => 'fun',
@@ -69793,6 +71011,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream3fvATI',
     'glewtype' => 'fun',
@@ -69841,6 +71062,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream3ivATI',
     'glewtype' => 'fun',
@@ -69889,6 +71113,9 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:3'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream3svATI',
     'glewtype' => 'fun',
@@ -69941,6 +71168,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream4dvATI',
     'glewtype' => 'fun',
@@ -69993,6 +71223,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream4fvATI',
     'glewtype' => 'fun',
@@ -70045,6 +71278,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream4ivATI',
     'glewtype' => 'fun',
@@ -70097,6 +71333,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'coords' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_ATI_vertex_streams',
     'glewImpl' => '__glewVertexStream4svATI',
     'glewtype' => 'fun',
@@ -70155,6 +71394,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'weight' => 'OUTASLIST:1'
+    },
     'feature' => 'GL_EXT_vertex_weighting',
     'glewImpl' => '__glewVertexWeightfvEXT',
     'glewtype' => 'fun',
@@ -70183,6 +71425,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'weight' => 'VARARGS:0:1'
+    },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexWeighthvNV',
     'glewtype' => 'fun',
@@ -70399,6 +71644,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:1:4'
+    },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewViewportIndexedfv',
     'glewtype' => 'fun',
@@ -70868,6 +72116,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2dv',
     'glewtype' => 'fun',
@@ -70910,6 +72161,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2fv',
     'glewtype' => 'fun',
@@ -70952,6 +72206,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2iv',
     'glewtype' => 'fun',
@@ -70994,6 +72251,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:2'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos2sv',
     'glewtype' => 'fun',
@@ -71040,6 +72300,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3dv',
     'glewtype' => 'fun',
@@ -71086,6 +72349,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3fv',
     'glewtype' => 'fun',
@@ -71132,6 +72398,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3iv',
     'glewtype' => 'fun',
@@ -71178,6 +72447,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v' => 'VARARGS:0:3'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewWindowPos3sv',
     'glewtype' => 'fun',
@@ -71218,6 +72490,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos4dvMESA',
     'glewtype' => 'fun',
@@ -71258,6 +72533,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos4fvMESA',
     'glewtype' => 'fun',
@@ -71298,6 +72576,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos4ivMESA',
     'glewtype' => 'fun',
@@ -71338,6 +72619,9 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:0:4'
+    },
     'feature' => 'GL_MESA_window_pos',
     'glewImpl' => '__glewWindowPos4svMESA',
     'glewtype' => 'fun',

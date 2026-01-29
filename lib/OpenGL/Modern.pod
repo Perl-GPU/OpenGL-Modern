@@ -2015,6 +2015,7 @@ Exported under tag C<:GL_ARB_clip_control>.
 =head2 glClipPlane
 
  glClipPlane_c($plane, $equation);
+ glClipPlane_p($plane, @equation);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2023,6 +2024,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glClipPlane.xml>
 =head2 glClipPlanef
 
  glClipPlanef_c($p, $eqn);
+ glClipPlanef_p($p, @eqn);
 
 Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 
@@ -2035,6 +2037,7 @@ Exported under tag C<:GL_OES_single_precision>.
 =head2 glClipPlanex
 
  glClipPlanex_c($plane, $equation);
+ glClipPlanex_p($plane, @equation);
 
 Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 
@@ -2048,6 +2051,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor3bv
 
  glColor3bv_c($v);
+ glColor3bv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2062,6 +2066,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor3dv
 
  glColor3dv_c($v);
+ glColor3dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2088,6 +2093,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glColor3fv
 
  glColor3fv_c($v);
+ glColor3fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2101,6 +2107,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glColor3hvNV
 
  glColor3hvNV_c($v);
+ glColor3hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -2114,6 +2121,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor3iv
 
  glColor3iv_c($v);
+ glColor3iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2128,6 +2136,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor3sv
 
  glColor3sv_c($v);
+ glColor3sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2142,6 +2151,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor3ubv
 
  glColor3ubv_c($v);
+ glColor3ubv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2156,6 +2166,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor3uiv
 
  glColor3uiv_c($v);
+ glColor3uiv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2170,6 +2181,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor3usv
 
  glColor3usv_c($v);
+ glColor3usv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2184,6 +2196,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor4bv
 
  glColor4bv_c($v);
+ glColor4bv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2198,6 +2211,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor4dv
 
  glColor4dv_c($v);
+ glColor4dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2224,6 +2238,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glColor4fv
 
  glColor4fv_c($v);
+ glColor4fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2237,6 +2252,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glColor4hvNV
 
  glColor4hvNV_c($v);
+ glColor4hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -2250,6 +2266,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor4iv
 
  glColor4iv_c($v);
+ glColor4iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2264,6 +2281,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor4sv
 
  glColor4sv_c($v);
+ glColor4sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2302,6 +2320,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glColor4ubv
 
  glColor4ubv_c($v);
+ glColor4ubv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2316,6 +2335,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor4uiv
 
  glColor4uiv_c($v);
+ glColor4uiv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2330,6 +2350,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glColor4usv
 
  glColor4usv_c($v);
+ glColor4usv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -2403,6 +2424,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glColorP3uiv
 
  glColorP3uiv_c($type, $color);
+ glColorP3uiv_p($type, @color);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -2415,6 +2437,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glColorP4uiv
 
  glColorP4uiv_c($type, $color);
+ glColorP4uiv_p($type, @color);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -3151,12 +3174,14 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCullFace.xhtml>
 =head2 glCullParameterdvEXT
 
  glCullParameterdvEXT_c($pname, $params);
+ @params = glCullParameterdvEXT_p($pname);
 
 Exported under tag C<:GL_EXT_cull_vertex>.
 
 =head2 glCullParameterfvEXT
 
  glCullParameterfvEXT_c($pname, $params);
+ @params = glCullParameterfvEXT_p($pname);
 
 Exported under tag C<:GL_EXT_cull_vertex>.
 
@@ -3606,6 +3631,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDetachShader.xhtml
 =head2 glDetailTexFuncSGIS
 
  glDetailTexFuncSGIS_c($target, $n, $points);
+ glDetailTexFuncSGIS_p($target, $n, @points);
 
 Exported under tag C<:GL_SGIS_detail_texture>.
 
@@ -4040,6 +4066,7 @@ Exported under tag C<:GL_IBM_vertex_array_lists>.
 =head2 glEdgeFlagv
 
  glEdgeFlagv_c($flag);
+ glEdgeFlagv_p(@flag);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4262,6 +4289,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glEvalCoord1dv
 
  glEvalCoord1dv_c($u);
+ glEvalCoord1dv_p(@u);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4276,6 +4304,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glEvalCoord1fv
 
  glEvalCoord1fv_c($u);
+ glEvalCoord1fv_p(@u);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4290,6 +4319,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glEvalCoord2dv
 
  glEvalCoord2dv_c($u);
+ glEvalCoord2dv_p(@u);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4304,6 +4334,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glEvalCoord2fv
 
  glEvalCoord2fv_c($u);
+ glEvalCoord2fv_p(@u);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4355,6 +4386,7 @@ Exported under tag C<:GL_ARB_sample_locations>.
 =head2 glExecuteProgramNV
 
  glExecuteProgramNV_c($target, $id, $params);
+ glExecuteProgramNV_p($target, $id, @params);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -4586,6 +4618,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glFogCoordd.xml>
 
  glFogCoorddv_c($coord);
  glFogCoorddvEXT_c($coord);
+ glFogCoorddv_p(@coord);
+ glFogCoorddvEXT_p(@coord);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4604,6 +4638,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glFogCoordf.xml>
 
  glFogCoordfv_c($coord);
  glFogCoordfvEXT_c($coord);
+ glFogCoordfv_p(@coord);
+ glFogCoordfvEXT_p(@coord);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4618,12 +4654,14 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glFogCoordhvNV
 
  glFogCoordhvNV_c($fog);
+ glFogCoordhvNV_p(@fog);
 
 Exported under tag C<:GL_NV_half_float>.
 
 =head2 glFogFuncSGIS
 
  glFogFuncSGIS_c($n, $points);
+ glFogFuncSGIS_p($n, @points);
 
 Exported under tag C<:GL_SGIS_fog_function>.
 
@@ -4881,6 +4919,7 @@ Exported under tag C<:GL_QCOM_shader_framebuffer_fetch_noncoherent>.
 =head2 glFramebufferFoveationConfigQCOM
 
  glFramebufferFoveationConfigQCOM_c($framebuffer, $numLayers, $focalPointsPerLayer, $requestedFeatures, $providedFeatures);
+ @providedFeatures = glFramebufferFoveationConfigQCOM_p($framebuffer, $numLayers, $focalPointsPerLayer, $requestedFeatures);
 
 Exported under tag C<:GL_QCOM_framebuffer_foveated>.
 
@@ -5415,12 +5454,14 @@ Exported under tag C<:GL_NV_transform_feedback>.
 =head2 glGetArrayObjectfvATI
 
  glGetArrayObjectfvATI_c($array, $pname, $params);
+ @params = glGetArrayObjectfvATI_p($array, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
 =head2 glGetArrayObjectivATI
 
  glGetArrayObjectivATI_c($array, $pname, $params);
+ @params = glGetArrayObjectivATI_p($array, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
@@ -5511,6 +5552,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetBufferSubData.x
 =head2 glGetClipPlane
 
  glGetClipPlane_c($plane, $equation);
+ @equation = glGetClipPlane_p($plane);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -5519,6 +5561,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glGetClipPlane.xm
 =head2 glGetClipPlanef
 
  glGetClipPlanef_c($plane, $equation);
+ @equation = glGetClipPlanef_p($plane);
 
 Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 
@@ -5531,6 +5574,7 @@ Exported under tag C<:GL_OES_single_precision>.
 =head2 glGetClipPlanex
 
  glGetClipPlanex_c($plane, $equation);
+ @equation = glGetClipPlanex_p($plane);
 
 Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 
@@ -6501,24 +6545,28 @@ Exported under tag C<:GL_ARB_framebuffer_no_attachments>.
 =head2 glGetNamedProgramLocalParameterIivEXT
 
  glGetNamedProgramLocalParameterIivEXT_c($program, $target, $index, $params);
+ @params = glGetNamedProgramLocalParameterIivEXT_p($program, $target, $index);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetNamedProgramLocalParameterIuivEXT
 
  glGetNamedProgramLocalParameterIuivEXT_c($program, $target, $index, $params);
+ @params = glGetNamedProgramLocalParameterIuivEXT_p($program, $target, $index);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetNamedProgramLocalParameterdvEXT
 
  glGetNamedProgramLocalParameterdvEXT_c($program, $target, $index, $params);
+ @params = glGetNamedProgramLocalParameterdvEXT_p($program, $target, $index);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glGetNamedProgramLocalParameterfvEXT
 
  glGetNamedProgramLocalParameterfvEXT_c($program, $target, $index, $params);
+ @params = glGetNamedProgramLocalParameterfvEXT_p($program, $target, $index);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6531,6 +6579,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glGetNamedProgramivEXT
 
  glGetNamedProgramivEXT_c($program, $target, $pname, $params);
+ @params = glGetNamedProgramivEXT_p($program, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6580,12 +6629,14 @@ Exported under tag C<:GL_SGIX_nonlinear_lighting_pervertex>.
 =head2 glGetObjectBufferfvATI
 
  glGetObjectBufferfvATI_c($buffer, $pname, $params);
+ @params = glGetObjectBufferfvATI_p($buffer, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
 =head2 glGetObjectBufferivATI
 
  glGetObjectBufferivATI_c($buffer, $pname, $params);
+ @params = glGetObjectBufferivATI_p($buffer, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
@@ -6690,12 +6741,14 @@ Exported under tag C<:GL_NV_path_rendering>.
 =head2 glGetPathParameterfvNV
 
  glGetPathParameterfvNV_c($path, $pname, $value);
+ @value = glGetPathParameterfvNV_p($path, $pname);
 
 Exported under tag C<:GL_NV_path_rendering>.
 
 =head2 glGetPathParameterivNV
 
  glGetPathParameterivNV_c($path, $pname, $value);
+ @value = glGetPathParameterivNV_p($path, $pname);
 
 Exported under tag C<:GL_NV_path_rendering>.
 
@@ -6876,12 +6929,14 @@ Exported under tag C<:GL_OES_get_program_binary>.
 =head2 glGetProgramEnvParameterdvARB
 
  glGetProgramEnvParameterdvARB_c($target, $index, $params);
+ @params = glGetProgramEnvParameterdvARB_p($target, $index);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
 =head2 glGetProgramEnvParameterfvARB
 
  glGetProgramEnvParameterfvARB_c($target, $index, $params);
+ @params = glGetProgramEnvParameterfvARB_p($target, $index);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
@@ -6903,12 +6958,14 @@ Exported under tag C<:GL_ARB_program_interface_query>.
 =head2 glGetProgramLocalParameterdvARB
 
  glGetProgramLocalParameterdvARB_c($target, $index, $params);
+ @params = glGetProgramLocalParameterdvARB_p($target, $index);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
 =head2 glGetProgramLocalParameterfvARB
 
  glGetProgramLocalParameterfvARB_c($target, $index, $params);
+ @params = glGetProgramLocalParameterfvARB_p($target, $index);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
@@ -6927,12 +6984,14 @@ Exported under tag C<:GL_NV_fragment_program>.
 =head2 glGetProgramParameterdvNV
 
  glGetProgramParameterdvNV_c($target, $index, $pname, $params);
+ @params = glGetProgramParameterdvNV_p($target, $index, $pname);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
 =head2 glGetProgramParameterfvNV
 
  glGetProgramParameterfvNV_c($target, $index, $pname, $params);
+ @params = glGetProgramParameterfvNV_p($target, $index, $pname);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -6996,6 +7055,7 @@ Exported under tag C<:GL_ARB_program_interface_query>.
 =head2 glGetProgramStageiv
 
  glGetProgramStageiv_c($program, $shadertype, $pname, $values);
+ @values = glGetProgramStageiv_p($program, $shadertype, $pname);
 
 Exported under tag C<:GL_ARB_shader_subroutine>.
 
@@ -7022,12 +7082,14 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetProgramiv.xhtml
 =head2 glGetProgramivARB
 
  glGetProgramivARB_c($target, $pname, $params);
+ @params = glGetProgramivARB_p($target, $pname);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
 =head2 glGetProgramivNV
 
  glGetProgramivNV_c($id, $pname, $params);
+ @params = glGetProgramivNV_p($id, $pname);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -7274,12 +7336,14 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderiv.xhtml>
 =head2 glGetShadingRateImagePaletteNV
 
  glGetShadingRateImagePaletteNV_c($viewport, $entry, $rate);
+ @rate = glGetShadingRateImagePaletteNV_p($viewport, $entry);
 
 Exported under tag C<:GL_NV_shading_rate_image>.
 
 =head2 glGetShadingRateSampleLocationivNV
 
  glGetShadingRateSampleLocationivNV_c($rate, $samples, $index, $location);
+ @location = glGetShadingRateSampleLocationivNV_p($rate, $samples, $index);
 
 Exported under tag C<:GL_NV_shading_rate_image>.
 
@@ -7621,6 +7685,7 @@ Exported under tag C<:GL_ARB_get_texture_sub_image>.
 =head2 glGetTrackMatrixivNV
 
  glGetTrackMatrixivNV_c($target, $address, $pname, $params);
+ @params = glGetTrackMatrixivNV_p($target, $address, $pname);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -7635,6 +7700,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTransformFeedba
 =head2 glGetTransformFeedbackVaryingNV
 
  glGetTransformFeedbackVaryingNV_c($program, $index, $location);
+ @location = glGetTransformFeedbackVaryingNV_p($program, $index);
 
 Exported under tag C<:GL_NV_transform_feedback>.
 
@@ -7698,6 +7764,7 @@ Exported under tag C<:GL_EXT_bindable_uniform>.
 =head2 glGetUniformSubroutineuiv
 
  glGetUniformSubroutineuiv_c($shadertype, $location, $params);
+ @params = glGetUniformSubroutineuiv_p($shadertype, $location);
 
 Exported under tag C<:GL_ARB_shader_subroutine>.
 
@@ -7771,12 +7838,14 @@ Exported under tag C<:GL_EXT_memory_object>.
 =head2 glGetVariantArrayObjectfvATI
 
  glGetVariantArrayObjectfvATI_c($id, $pname, $params);
+ @params = glGetVariantArrayObjectfvATI_p($id, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
 =head2 glGetVariantArrayObjectivATI
 
  glGetVariantArrayObjectivATI_c($id, $pname, $params);
+ @params = glGetVariantArrayObjectivATI_p($id, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
@@ -7876,6 +7945,8 @@ Exported under tag C<:GL_ATI_vertex_attrib_array_object>.
 
  glGetVertexAttribIiv_c($index, $pname, $params);
  glGetVertexAttribIivEXT_c($index, $pname, $params);
+ @params = glGetVertexAttribIiv_p($index, $pname);
+ @params = glGetVertexAttribIivEXT_p($index, $pname);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIiv.xhtml>
@@ -7884,6 +7955,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIiv
 
  glGetVertexAttribIuiv_c($index, $pname, $params);
  glGetVertexAttribIuivEXT_c($index, $pname, $params);
+ @params = glGetVertexAttribIuiv_p($index, $pname);
+ @params = glGetVertexAttribIuivEXT_p($index, $pname);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIuiv.xhtml>
@@ -7931,6 +8004,9 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribPoi
  glGetVertexAttribdv_c($index, $pname, $params);
  glGetVertexAttribdvARB_c($index, $pname, $params);
  glGetVertexAttribdvNV_c($index, $pname, $params);
+ @params = glGetVertexAttribdv_p($index, $pname);
+ @params = glGetVertexAttribdvARB_p($index, $pname);
+ @params = glGetVertexAttribdvNV_p($index, $pname);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribdv.xhtml>
@@ -7940,6 +8016,9 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribdv.
  glGetVertexAttribfv_c($index, $pname, $params);
  glGetVertexAttribfvARB_c($index, $pname, $params);
  glGetVertexAttribfvNV_c($index, $pname, $params);
+ @params = glGetVertexAttribfv_p($index, $pname);
+ @params = glGetVertexAttribfvARB_p($index, $pname);
+ @params = glGetVertexAttribfvNV_p($index, $pname);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribfv.xhtml>
@@ -7949,6 +8028,9 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribfv.
  glGetVertexAttribiv_c($index, $pname, $params);
  glGetVertexAttribivARB_c($index, $pname, $params);
  glGetVertexAttribivNV_c($index, $pname, $params);
+ @params = glGetVertexAttribiv_p($index, $pname);
+ @params = glGetVertexAttribivARB_p($index, $pname);
+ @params = glGetVertexAttribivNV_p($index, $pname);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribiv.xhtml>
@@ -8041,6 +8123,7 @@ Exported under tag C<:GL_ARB_robustness>.
 =head2 glGetnMapdvARB
 
  glGetnMapdvARB_c($target, $query, $bufSize, $v);
+ @v = glGetnMapdvARB_p($target, $query, $bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
@@ -8067,6 +8150,7 @@ Exported under tag C<:GL_ARB_robustness>.
 =head2 glGetnPixelMapfvARB
 
  glGetnPixelMapfvARB_c($map, $bufSize, $values);
+ @values = glGetnPixelMapfvARB_p($map, $bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
@@ -8113,6 +8197,7 @@ Exported under tag C<:GL_ARB_robustness>.
 =head2 glGetnUniformdv
 
  glGetnUniformdv_c($program, $location, $bufSize, $params);
+ @params = glGetnUniformdv_p($program, $location, $bufSize);
 
 Exported under tag C<:GL_VERSION_4_5>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetnUniformdv.xhtml>
@@ -8120,6 +8205,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetnUniformdv.xhtm
 =head2 glGetnUniformdvARB
 
  glGetnUniformdvARB_c($program, $location, $bufSize, $params);
+ @params = glGetnUniformdvARB_p($program, $location, $bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
@@ -8128,18 +8214,23 @@ Exported under tag C<:GL_ARB_robustness>.
  glGetnUniformfv_c($program, $location, $bufSize, $params);
  glGetnUniformfvEXT_c($program, $location, $bufSize, $params);
  glGetnUniformfvKHR_c($program, $location, $bufSize, $params);
+ @params = glGetnUniformfv_p($program, $location, $bufSize);
+ @params = glGetnUniformfvEXT_p($program, $location, $bufSize);
+ @params = glGetnUniformfvKHR_p($program, $location, $bufSize);
 
 Exported under tag C<:GL_KHR_robustness>.
 
 =head2 glGetnUniformfvARB
 
  glGetnUniformfvARB_c($program, $location, $bufSize, $params);
+ @params = glGetnUniformfvARB_p($program, $location, $bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
 =head2 glGetnUniformi64vARB
 
  glGetnUniformi64vARB_c($program, $location, $bufSize, $params);
+ @params = glGetnUniformi64vARB_p($program, $location, $bufSize);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
@@ -8148,18 +8239,23 @@ Exported under tag C<:GL_ARB_gpu_shader_int64>.
  glGetnUniformiv_c($program, $location, $bufSize, $params);
  glGetnUniformivEXT_c($program, $location, $bufSize, $params);
  glGetnUniformivKHR_c($program, $location, $bufSize, $params);
+ @params = glGetnUniformiv_p($program, $location, $bufSize);
+ @params = glGetnUniformivEXT_p($program, $location, $bufSize);
+ @params = glGetnUniformivKHR_p($program, $location, $bufSize);
 
 Exported under tag C<:GL_KHR_robustness>.
 
 =head2 glGetnUniformivARB
 
  glGetnUniformivARB_c($program, $location, $bufSize, $params);
+ @params = glGetnUniformivARB_p($program, $location, $bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
 =head2 glGetnUniformui64vARB
 
  glGetnUniformui64vARB_c($program, $location, $bufSize, $params);
+ @params = glGetnUniformui64vARB_p($program, $location, $bufSize);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
@@ -8167,12 +8263,15 @@ Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
  glGetnUniformuiv_c($program, $location, $bufSize, $params);
  glGetnUniformuivKHR_c($program, $location, $bufSize, $params);
+ @params = glGetnUniformuiv_p($program, $location, $bufSize);
+ @params = glGetnUniformuivKHR_p($program, $location, $bufSize);
 
 Exported under tag C<:GL_KHR_robustness>.
 
 =head2 glGetnUniformuivARB
 
  glGetnUniformuivARB_c($program, $location, $bufSize, $params);
+ @params = glGetnUniformuivARB_p($program, $location, $bufSize);
 
 Exported under tag C<:GL_ARB_robustness>.
 
@@ -8367,6 +8466,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glIndexd.xml>
 =head2 glIndexdv
 
  glIndexdv_c($c);
+ glIndexdv_p(@c);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8383,6 +8483,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glIndexf.xml>
 =head2 glIndexfv
 
  glIndexfv_c($c);
+ glIndexfv_p(@c);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8399,6 +8500,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glIndexi.xml>
 =head2 glIndexiv
 
  glIndexiv_c($c);
+ glIndexiv_p(@c);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8415,6 +8517,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glIndexs.xml>
 =head2 glIndexsv
 
  glIndexsv_c($c);
+ glIndexsv_p(@c);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -8431,6 +8534,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glIndexub.xml>
 =head2 glIndexubv
 
  glIndexubv_c($c);
+ glIndexubv_p(@c);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9014,6 +9118,7 @@ Exported under tag C<:GL_SGIX_polynomial_ffd>.
 =head2 glLoadMatrixd
 
  glLoadMatrixd_c($m);
+ glLoadMatrixd_p(@m);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9022,6 +9127,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glLoadMatrixd.xml
 =head2 glLoadMatrixf
 
  glLoadMatrixf_c($m);
+ glLoadMatrixf_p(@m);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9030,6 +9136,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glLoadMatrixf.xml
 =head2 glLoadMatrixx
 
  glLoadMatrixx_c($m);
+ glLoadMatrixx_p(@m);
 
 Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 
@@ -9057,6 +9164,8 @@ Exported under tag C<:GL_NV_vertex_program>.
 
  glLoadTransposeMatrixd_c($m);
  glLoadTransposeMatrixdARB_c($m);
+ glLoadTransposeMatrixd_p(@m);
+ glLoadTransposeMatrixdARB_p(@m);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9066,6 +9175,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glLoadTransposeMa
 
  glLoadTransposeMatrixf_c($m);
  glLoadTransposeMatrixfARB_c($m);
+ glLoadTransposeMatrixf_p(@m);
+ glLoadTransposeMatrixfARB_p(@m);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9439,24 +9550,28 @@ Exported under tag C<:GL_NV_path_rendering>.
 =head2 glMatrixLoadTransposedEXT
 
  glMatrixLoadTransposedEXT_c($mode, $m);
+ glMatrixLoadTransposedEXT_p($mode, @m);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glMatrixLoadTransposefEXT
 
  glMatrixLoadTransposefEXT_c($mode, $m);
+ glMatrixLoadTransposefEXT_p($mode, @m);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glMatrixLoaddEXT
 
  glMatrixLoaddEXT_c($mode, $m);
+ glMatrixLoaddEXT_p($mode, @m);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glMatrixLoadfEXT
 
  glMatrixLoadfEXT_c($mode, $m);
+ glMatrixLoadfEXT_p($mode, @m);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -9489,24 +9604,28 @@ Exported under tag C<:GL_NV_path_rendering>.
 =head2 glMatrixMultTransposedEXT
 
  glMatrixMultTransposedEXT_c($mode, $m);
+ glMatrixMultTransposedEXT_p($mode, @m);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glMatrixMultTransposefEXT
 
  glMatrixMultTransposefEXT_c($mode, $m);
+ glMatrixMultTransposefEXT_p($mode, @m);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glMatrixMultdEXT
 
  glMatrixMultdEXT_c($mode, $m);
+ glMatrixMultdEXT_p($mode, @m);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glMatrixMultfEXT
 
  glMatrixMultfEXT_c($mode, $m);
+ glMatrixMultfEXT_p($mode, @m);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -9632,6 +9751,7 @@ Exported under tag C<:GL_ARB_imaging>.
 =head2 glMultMatrixd
 
  glMultMatrixd_c($m);
+ glMultMatrixd_p(@m);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9640,6 +9760,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glMultMatrixd.xml
 =head2 glMultMatrixf
 
  glMultMatrixf_c($m);
+ glMultMatrixf_p(@m);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9648,6 +9769,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glMultMatrixf.xml
 =head2 glMultMatrixx
 
  glMultMatrixx_c($m);
+ glMultMatrixx_p(@m);
 
 Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 
@@ -9655,6 +9777,8 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 
  glMultTransposeMatrixd_c($m);
  glMultTransposeMatrixdARB_c($m);
+ glMultTransposeMatrixd_p(@m);
+ glMultTransposeMatrixdARB_p(@m);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9664,6 +9788,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glMultTransposeMa
 
  glMultTransposeMatrixf_c($m);
  glMultTransposeMatrixfARB_c($m);
+ glMultTransposeMatrixf_p(@m);
+ glMultTransposeMatrixfARB_p(@m);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9814,6 +9940,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord1dv_c($target, $v);
  glMultiTexCoord1dvARB_c($target, $v);
+ glMultiTexCoord1dv_p($target, @v);
+ glMultiTexCoord1dvARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9830,6 +9958,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord1fv_c($target, $v);
  glMultiTexCoord1fvARB_c($target, $v);
+ glMultiTexCoord1fv_p($target, @v);
+ glMultiTexCoord1fvARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9843,6 +9973,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glMultiTexCoord1hvNV
 
  glMultiTexCoord1hvNV_c($target, $v);
+ glMultiTexCoord1hvNV_p($target, @v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -9858,6 +9989,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord1iv_c($target, $v);
  glMultiTexCoord1ivARB_c($target, $v);
+ glMultiTexCoord1iv_p($target, @v);
+ glMultiTexCoord1ivARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9874,6 +10007,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord1sv_c($target, $v);
  glMultiTexCoord1svARB_c($target, $v);
+ glMultiTexCoord1sv_p($target, @v);
+ glMultiTexCoord1svARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9890,6 +10025,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord2dv_c($target, $v);
  glMultiTexCoord2dvARB_c($target, $v);
+ glMultiTexCoord2dv_p($target, @v);
+ glMultiTexCoord2dvARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9906,6 +10043,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord2fv_c($target, $v);
  glMultiTexCoord2fvARB_c($target, $v);
+ glMultiTexCoord2fv_p($target, @v);
+ glMultiTexCoord2fvARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9919,6 +10058,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glMultiTexCoord2hvNV
 
  glMultiTexCoord2hvNV_c($target, $v);
+ glMultiTexCoord2hvNV_p($target, @v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -9934,6 +10074,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord2iv_c($target, $v);
  glMultiTexCoord2ivARB_c($target, $v);
+ glMultiTexCoord2iv_p($target, @v);
+ glMultiTexCoord2ivARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9950,6 +10092,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord2sv_c($target, $v);
  glMultiTexCoord2svARB_c($target, $v);
+ glMultiTexCoord2sv_p($target, @v);
+ glMultiTexCoord2svARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9966,6 +10110,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord3dv_c($target, $v);
  glMultiTexCoord3dvARB_c($target, $v);
+ glMultiTexCoord3dv_p($target, @v);
+ glMultiTexCoord3dvARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9982,6 +10128,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord3fv_c($target, $v);
  glMultiTexCoord3fvARB_c($target, $v);
+ glMultiTexCoord3fv_p($target, @v);
+ glMultiTexCoord3fvARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9995,6 +10143,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glMultiTexCoord3hvNV
 
  glMultiTexCoord3hvNV_c($target, $v);
+ glMultiTexCoord3hvNV_p($target, @v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -10010,6 +10159,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord3iv_c($target, $v);
  glMultiTexCoord3ivARB_c($target, $v);
+ glMultiTexCoord3iv_p($target, @v);
+ glMultiTexCoord3ivARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10026,6 +10177,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord3sv_c($target, $v);
  glMultiTexCoord3svARB_c($target, $v);
+ glMultiTexCoord3sv_p($target, @v);
+ glMultiTexCoord3svARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10042,6 +10195,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord4dv_c($target, $v);
  glMultiTexCoord4dvARB_c($target, $v);
+ glMultiTexCoord4dv_p($target, @v);
+ glMultiTexCoord4dvARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10058,6 +10213,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord4fv_c($target, $v);
  glMultiTexCoord4fvARB_c($target, $v);
+ glMultiTexCoord4fv_p($target, @v);
+ glMultiTexCoord4fvARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10071,6 +10228,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glMultiTexCoord4hvNV
 
  glMultiTexCoord4hvNV_c($target, $v);
+ glMultiTexCoord4hvNV_p($target, @v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -10086,6 +10244,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord4iv_c($target, $v);
  glMultiTexCoord4ivARB_c($target, $v);
+ glMultiTexCoord4iv_p($target, @v);
+ glMultiTexCoord4ivARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10102,6 +10262,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glMultiTexCoord4sv_c($target, $v);
  glMultiTexCoord4svARB_c($target, $v);
+ glMultiTexCoord4sv_p($target, @v);
+ glMultiTexCoord4svARB_p($target, @v);
 
 Exported under tag C<:GL_VERSION_1_3>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10121,6 +10283,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glMultiTexCoordP1uiv
 
  glMultiTexCoordP1uiv_c($texture, $type, $coords);
+ glMultiTexCoordP1uiv_p($texture, $type, @coords);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -10133,6 +10296,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glMultiTexCoordP2uiv
 
  glMultiTexCoordP2uiv_c($texture, $type, $coords);
+ glMultiTexCoordP2uiv_p($texture, $type, @coords);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -10145,6 +10309,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glMultiTexCoordP3uiv
 
  glMultiTexCoordP3uiv_c($texture, $type, $coords);
+ glMultiTexCoordP3uiv_p($texture, $type, @coords);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -10157,6 +10322,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glMultiTexCoordP4uiv
 
  glMultiTexCoordP4uiv_c($texture, $type, $coords);
+ glMultiTexCoordP4uiv_p($texture, $type, @coords);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -10576,6 +10742,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glNamedProgramLocalParameter4dvEXT
 
  glNamedProgramLocalParameter4dvEXT_c($program, $target, $index, $params);
+ glNamedProgramLocalParameter4dvEXT_p($program, $target, $index, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10588,6 +10755,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glNamedProgramLocalParameter4fvEXT
 
  glNamedProgramLocalParameter4fvEXT_c($program, $target, $index, $params);
+ glNamedProgramLocalParameter4fvEXT_p($program, $target, $index, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10600,6 +10768,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glNamedProgramLocalParameterI4ivEXT
 
  glNamedProgramLocalParameterI4ivEXT_c($program, $target, $index, $params);
+ glNamedProgramLocalParameterI4ivEXT_p($program, $target, $index, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10612,24 +10781,28 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glNamedProgramLocalParameterI4uivEXT
 
  glNamedProgramLocalParameterI4uivEXT_c($program, $target, $index, $params);
+ glNamedProgramLocalParameterI4uivEXT_p($program, $target, $index, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glNamedProgramLocalParameters4fvEXT
 
  glNamedProgramLocalParameters4fvEXT_c($program, $target, $index, $count, $params);
+ glNamedProgramLocalParameters4fvEXT_p($program, $target, $index, $count, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glNamedProgramLocalParametersI4ivEXT
 
  glNamedProgramLocalParametersI4ivEXT_c($program, $target, $index, $count, $params);
+ glNamedProgramLocalParametersI4ivEXT_p($program, $target, $index, $count, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glNamedProgramLocalParametersI4uivEXT
 
  glNamedProgramLocalParametersI4uivEXT_c($program, $target, $index, $count, $params);
+ glNamedProgramLocalParametersI4uivEXT_p($program, $target, $index, $count, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10723,6 +10896,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glNormal3bv
 
  glNormal3bv_c($v);
+ glNormal3bv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10737,6 +10911,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glNormal3dv
 
  glNormal3dv_c($v);
+ glNormal3dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10763,6 +10938,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glNormal3fv
 
  glNormal3fv_c($v);
+ glNormal3fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10776,6 +10952,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glNormal3hvNV
 
  glNormal3hvNV_c($v);
+ glNormal3hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -10789,6 +10966,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glNormal3iv
 
  glNormal3iv_c($v);
+ glNormal3iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10803,6 +10981,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glNormal3sv
 
  glNormal3sv_c($v);
+ glNormal3sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -10828,6 +11007,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glNormalP3uiv
 
  glNormalP3uiv_c($type, $coords);
+ glNormalP3uiv_p($type, @coords);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -10866,6 +11046,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glNormalStream3bvATI
 
  glNormalStream3bvATI_c($stream, $coords);
+ glNormalStream3bvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -10878,6 +11059,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glNormalStream3dvATI
 
  glNormalStream3dvATI_c($stream, $coords);
+ glNormalStream3dvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -10890,6 +11072,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glNormalStream3fvATI
 
  glNormalStream3fvATI_c($stream, $coords);
+ glNormalStream3fvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -10902,6 +11085,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glNormalStream3ivATI
 
  glNormalStream3ivATI_c($stream, $coords);
+ glNormalStream3ivATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -10914,6 +11098,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glNormalStream3svATI
 
  glNormalStream3svATI_c($stream, $coords);
+ glNormalStream3svATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -11226,6 +11411,7 @@ Exported under tag C<:GL_SGI_fft>.
 =head2 glPixelTransformParameterfvEXT
 
  glPixelTransformParameterfvEXT_c($target, $pname, $params);
+ glPixelTransformParameterfvEXT_p($target, $pname, @params);
 
 Exported under tag C<:GL_EXT_pixel_transform>.
 
@@ -11250,6 +11436,7 @@ Exported under tag C<:GL_SGI_fft>.
 =head2 glPixelTransformParameterivEXT
 
  glPixelTransformParameterivEXT_c($target, $pname, $params);
+ glPixelTransformParameterivEXT_p($target, $pname, @params);
 
 Exported under tag C<:GL_EXT_pixel_transform>.
 
@@ -11535,6 +11722,7 @@ Exported under tag C<:GL_ARB_vertex_program>.
 =head2 glProgramEnvParameter4dvARB
 
  glProgramEnvParameter4dvARB_c($target, $index, $params);
+ glProgramEnvParameter4dvARB_p($target, $index, @params);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
@@ -11547,6 +11735,7 @@ Exported under tag C<:GL_ARB_vertex_program>.
 =head2 glProgramEnvParameter4fvARB
 
  glProgramEnvParameter4fvARB_c($target, $index, $params);
+ glProgramEnvParameter4fvARB_p($target, $index, @params);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
@@ -11559,6 +11748,7 @@ Exported under tag C<:GL_NV_gpu_program4>.
 =head2 glProgramEnvParameterI4ivNV
 
  glProgramEnvParameterI4ivNV_c($target, $index, $params);
+ glProgramEnvParameterI4ivNV_p($target, $index, @params);
 
 Exported under tag C<:GL_NV_gpu_program4>.
 
@@ -11571,24 +11761,28 @@ Exported under tag C<:GL_NV_gpu_program4>.
 =head2 glProgramEnvParameterI4uivNV
 
  glProgramEnvParameterI4uivNV_c($target, $index, $params);
+ glProgramEnvParameterI4uivNV_p($target, $index, @params);
 
 Exported under tag C<:GL_NV_gpu_program4>.
 
 =head2 glProgramEnvParameters4fvEXT
 
  glProgramEnvParameters4fvEXT_c($target, $index, $count, $params);
+ glProgramEnvParameters4fvEXT_p($target, $index, $count, @params);
 
 Exported under tag C<:GL_EXT_gpu_program_parameters>.
 
 =head2 glProgramEnvParametersI4ivNV
 
  glProgramEnvParametersI4ivNV_c($target, $index, $count, $params);
+ glProgramEnvParametersI4ivNV_p($target, $index, $count, @params);
 
 Exported under tag C<:GL_NV_gpu_program4>.
 
 =head2 glProgramEnvParametersI4uivNV
 
  glProgramEnvParametersI4uivNV_c($target, $index, $count, $params);
+ glProgramEnvParametersI4uivNV_p($target, $index, $count, @params);
 
 Exported under tag C<:GL_NV_gpu_program4>.
 
@@ -11601,6 +11795,7 @@ Exported under tag C<:GL_ARB_vertex_program>.
 =head2 glProgramLocalParameter4dvARB
 
  glProgramLocalParameter4dvARB_c($target, $index, $params);
+ glProgramLocalParameter4dvARB_p($target, $index, @params);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
@@ -11613,6 +11808,7 @@ Exported under tag C<:GL_ARB_vertex_program>.
 =head2 glProgramLocalParameter4fvARB
 
  glProgramLocalParameter4fvARB_c($target, $index, $params);
+ glProgramLocalParameter4fvARB_p($target, $index, @params);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
@@ -11625,6 +11821,7 @@ Exported under tag C<:GL_NV_gpu_program4>.
 =head2 glProgramLocalParameterI4ivNV
 
  glProgramLocalParameterI4ivNV_c($target, $index, $params);
+ glProgramLocalParameterI4ivNV_p($target, $index, @params);
 
 Exported under tag C<:GL_NV_gpu_program4>.
 
@@ -11637,24 +11834,28 @@ Exported under tag C<:GL_NV_gpu_program4>.
 =head2 glProgramLocalParameterI4uivNV
 
  glProgramLocalParameterI4uivNV_c($target, $index, $params);
+ glProgramLocalParameterI4uivNV_p($target, $index, @params);
 
 Exported under tag C<:GL_NV_gpu_program4>.
 
 =head2 glProgramLocalParameters4fvEXT
 
  glProgramLocalParameters4fvEXT_c($target, $index, $count, $params);
+ glProgramLocalParameters4fvEXT_p($target, $index, $count, @params);
 
 Exported under tag C<:GL_EXT_gpu_program_parameters>.
 
 =head2 glProgramLocalParametersI4ivNV
 
  glProgramLocalParametersI4ivNV_c($target, $index, $count, $params);
+ glProgramLocalParametersI4ivNV_p($target, $index, $count, @params);
 
 Exported under tag C<:GL_NV_gpu_program4>.
 
 =head2 glProgramLocalParametersI4uivNV
 
  glProgramLocalParametersI4uivNV_c($target, $index, $count, $params);
+ glProgramLocalParametersI4uivNV_p($target, $index, $count, @params);
 
 Exported under tag C<:GL_NV_gpu_program4>.
 
@@ -11691,6 +11892,7 @@ Exported under tag C<:GL_NV_vertex_program>.
 =head2 glProgramParameter4dvNV
 
  glProgramParameter4dvNV_c($target, $index, $v);
+ glProgramParameter4dvNV_p($target, $index, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -11703,6 +11905,7 @@ Exported under tag C<:GL_NV_vertex_program>.
 =head2 glProgramParameter4fvNV
 
  glProgramParameter4fvNV_c($target, $index, $v);
+ glProgramParameter4fvNV_p($target, $index, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -11717,12 +11920,14 @@ Exported under tag C<:GL_ARB_get_program_binary>.
 =head2 glProgramParameters4dvNV
 
  glProgramParameters4dvNV_c($target, $index, $count, $v);
+ glProgramParameters4dvNV_p($target, $index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
 =head2 glProgramParameters4fvNV
 
  glProgramParameters4fvNV_c($target, $index, $count, $v);
+ glProgramParameters4fvNV_p($target, $index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -11860,6 +12065,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniform2dv
 
  glProgramUniform2dv_c($program, $location, $count, $value);
+ glProgramUniform2dv_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -11874,6 +12080,8 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniform2fv_c($program, $location, $count, $value);
  glProgramUniform2fvEXT_c($program, $location, $count, $value);
+ glProgramUniform2fv_p($program, $location, $count, @value);
+ glProgramUniform2fvEXT_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -11899,12 +12107,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform2i64vARB
 
  glProgramUniform2i64vARB_c($program, $location, $count, $value);
+ glProgramUniform2i64vARB_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glProgramUniform2i64vNV
 
  glProgramUniform2i64vNV_c($program, $location, $count, $value);
+ glProgramUniform2i64vNV_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -11912,6 +12122,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glProgramUniform2iv_c($program, $location, $count, $value);
  glProgramUniform2ivEXT_c($program, $location, $count, $value);
+ glProgramUniform2iv_p($program, $location, $count, @value);
+ glProgramUniform2ivEXT_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -11937,12 +12149,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform2ui64vARB
 
  glProgramUniform2ui64vARB_c($program, $location, $count, $value);
+ glProgramUniform2ui64vARB_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glProgramUniform2ui64vNV
 
  glProgramUniform2ui64vNV_c($program, $location, $count, $value);
+ glProgramUniform2ui64vNV_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -11950,6 +12164,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glProgramUniform2uiv_c($program, $location, $count, $value);
  glProgramUniform2uivEXT_c($program, $location, $count, $value);
+ glProgramUniform2uiv_p($program, $location, $count, @value);
+ glProgramUniform2uivEXT_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -11962,6 +12178,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniform3dv
 
  glProgramUniform3dv_c($program, $location, $count, $value);
+ glProgramUniform3dv_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -11976,6 +12193,8 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniform3fv_c($program, $location, $count, $value);
  glProgramUniform3fvEXT_c($program, $location, $count, $value);
+ glProgramUniform3fv_p($program, $location, $count, @value);
+ glProgramUniform3fvEXT_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12001,12 +12220,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform3i64vARB
 
  glProgramUniform3i64vARB_c($program, $location, $count, $value);
+ glProgramUniform3i64vARB_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glProgramUniform3i64vNV
 
  glProgramUniform3i64vNV_c($program, $location, $count, $value);
+ glProgramUniform3i64vNV_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -12014,6 +12235,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glProgramUniform3iv_c($program, $location, $count, $value);
  glProgramUniform3ivEXT_c($program, $location, $count, $value);
+ glProgramUniform3iv_p($program, $location, $count, @value);
+ glProgramUniform3ivEXT_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12039,12 +12262,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform3ui64vARB
 
  glProgramUniform3ui64vARB_c($program, $location, $count, $value);
+ glProgramUniform3ui64vARB_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glProgramUniform3ui64vNV
 
  glProgramUniform3ui64vNV_c($program, $location, $count, $value);
+ glProgramUniform3ui64vNV_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -12052,6 +12277,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glProgramUniform3uiv_c($program, $location, $count, $value);
  glProgramUniform3uivEXT_c($program, $location, $count, $value);
+ glProgramUniform3uiv_p($program, $location, $count, @value);
+ glProgramUniform3uivEXT_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12064,6 +12291,7 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 =head2 glProgramUniform4dv
 
  glProgramUniform4dv_c($program, $location, $count, $value);
+ glProgramUniform4dv_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12078,6 +12306,8 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniform4fv_c($program, $location, $count, $value);
  glProgramUniform4fvEXT_c($program, $location, $count, $value);
+ glProgramUniform4fv_p($program, $location, $count, @value);
+ glProgramUniform4fvEXT_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12103,12 +12333,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform4i64vARB
 
  glProgramUniform4i64vARB_c($program, $location, $count, $value);
+ glProgramUniform4i64vARB_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glProgramUniform4i64vNV
 
  glProgramUniform4i64vNV_c($program, $location, $count, $value);
+ glProgramUniform4i64vNV_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -12116,6 +12348,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glProgramUniform4iv_c($program, $location, $count, $value);
  glProgramUniform4ivEXT_c($program, $location, $count, $value);
+ glProgramUniform4iv_p($program, $location, $count, @value);
+ glProgramUniform4ivEXT_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12141,12 +12375,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glProgramUniform4ui64vARB
 
  glProgramUniform4ui64vARB_c($program, $location, $count, $value);
+ glProgramUniform4ui64vARB_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glProgramUniform4ui64vNV
 
  glProgramUniform4ui64vNV_c($program, $location, $count, $value);
+ glProgramUniform4ui64vNV_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -12154,6 +12390,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glProgramUniform4uiv_c($program, $location, $count, $value);
  glProgramUniform4uivEXT_c($program, $location, $count, $value);
+ glProgramUniform4uiv_p($program, $location, $count, @value);
+ glProgramUniform4uivEXT_p($program, $location, $count, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12189,6 +12427,7 @@ Exported under tag C<:GL_NV_bindless_texture>.
 =head2 glProgramUniformMatrix2dv
 
  glProgramUniformMatrix2dv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix2dv_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12196,12 +12435,15 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniformMatrix2fv_c($program, $location, $count, $transpose, $value);
  glProgramUniformMatrix2fvEXT_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix2fv_p($program, $location, $count, $transpose, @value);
+ glProgramUniformMatrix2fvEXT_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniformMatrix2x3dv
 
  glProgramUniformMatrix2x3dv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix2x3dv_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12209,12 +12451,15 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniformMatrix2x3fv_c($program, $location, $count, $transpose, $value);
  glProgramUniformMatrix2x3fvEXT_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix2x3fv_p($program, $location, $count, $transpose, @value);
+ glProgramUniformMatrix2x3fvEXT_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniformMatrix2x4dv
 
  glProgramUniformMatrix2x4dv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix2x4dv_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12222,12 +12467,15 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniformMatrix2x4fv_c($program, $location, $count, $transpose, $value);
  glProgramUniformMatrix2x4fvEXT_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix2x4fv_p($program, $location, $count, $transpose, @value);
+ glProgramUniformMatrix2x4fvEXT_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniformMatrix3dv
 
  glProgramUniformMatrix3dv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix3dv_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12235,12 +12483,15 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniformMatrix3fv_c($program, $location, $count, $transpose, $value);
  glProgramUniformMatrix3fvEXT_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix3fv_p($program, $location, $count, $transpose, @value);
+ glProgramUniformMatrix3fvEXT_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniformMatrix3x2dv
 
  glProgramUniformMatrix3x2dv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix3x2dv_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12248,12 +12499,15 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniformMatrix3x2fv_c($program, $location, $count, $transpose, $value);
  glProgramUniformMatrix3x2fvEXT_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix3x2fv_p($program, $location, $count, $transpose, @value);
+ glProgramUniformMatrix3x2fvEXT_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniformMatrix3x4dv
 
  glProgramUniformMatrix3x4dv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix3x4dv_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12261,12 +12515,15 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniformMatrix3x4fv_c($program, $location, $count, $transpose, $value);
  glProgramUniformMatrix3x4fvEXT_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix3x4fv_p($program, $location, $count, $transpose, @value);
+ glProgramUniformMatrix3x4fvEXT_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniformMatrix4dv
 
  glProgramUniformMatrix4dv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix4dv_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12274,12 +12531,15 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniformMatrix4fv_c($program, $location, $count, $transpose, $value);
  glProgramUniformMatrix4fvEXT_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix4fv_p($program, $location, $count, $transpose, @value);
+ glProgramUniformMatrix4fvEXT_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniformMatrix4x2dv
 
  glProgramUniformMatrix4x2dv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix4x2dv_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12287,12 +12547,15 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniformMatrix4x2fv_c($program, $location, $count, $transpose, $value);
  glProgramUniformMatrix4x2fvEXT_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix4x2fv_p($program, $location, $count, $transpose, @value);
+ glProgramUniformMatrix4x2fvEXT_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
 =head2 glProgramUniformMatrix4x3dv
 
  glProgramUniformMatrix4x3dv_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix4x3dv_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12300,6 +12563,8 @@ Exported under tag C<:GL_ARB_separate_shader_objects>.
 
  glProgramUniformMatrix4x3fv_c($program, $location, $count, $transpose, $value);
  glProgramUniformMatrix4x3fvEXT_c($program, $location, $count, $transpose, $value);
+ glProgramUniformMatrix4x3fv_p($program, $location, $count, $transpose, @value);
+ glProgramUniformMatrix4x3fvEXT_p($program, $location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -12409,6 +12674,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos2dv
 
  glRasterPos2dv_c($v);
+ glRasterPos2dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12423,6 +12689,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos2fv
 
  glRasterPos2fv_c($v);
+ glRasterPos2fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12437,6 +12704,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos2iv
 
  glRasterPos2iv_c($v);
+ glRasterPos2iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12451,6 +12719,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos2sv
 
  glRasterPos2sv_c($v);
+ glRasterPos2sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12465,6 +12734,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos3dv
 
  glRasterPos3dv_c($v);
+ glRasterPos3dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12479,6 +12749,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos3fv
 
  glRasterPos3fv_c($v);
+ glRasterPos3fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12493,6 +12764,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos3iv
 
  glRasterPos3iv_c($v);
+ glRasterPos3iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12507,6 +12779,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos3sv
 
  glRasterPos3sv_c($v);
+ glRasterPos3sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12521,6 +12794,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos4dv
 
  glRasterPos4dv_c($v);
+ glRasterPos4dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12535,6 +12809,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos4fv
 
  glRasterPos4fv_c($v);
+ glRasterPos4fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12549,6 +12824,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos4iv
 
  glRasterPos4iv_c($v);
+ glRasterPos4iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12563,6 +12839,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glRasterPos4sv
 
  glRasterPos4sv_c($v);
+ glRasterPos4sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -12687,6 +12964,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glRectsv.xml>
 =head2 glReferencePlaneSGIX
 
  glReferencePlaneSGIX_c($equation);
+ glReferencePlaneSGIX_p(@equation);
 
 Exported under tag C<:GL_SGIX_reference_plane>.
 
@@ -13137,6 +13415,8 @@ Exported under tag C<:GL_ARB_viewport_array>.
 
  glScissorIndexedv_c($index, $v);
  glScissorIndexedvNV_c($index, $v);
+ glScissorIndexedv_p($index, @v);
+ glScissorIndexedvNV_p($index, @v);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
@@ -13152,6 +13432,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glSecondaryColor3bv_c($v);
  glSecondaryColor3bvEXT_c($v);
+ glSecondaryColor3bv_p(@v);
+ glSecondaryColor3bvEXT_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13168,6 +13450,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glSecondaryColor3dv_c($v);
  glSecondaryColor3dvEXT_c($v);
+ glSecondaryColor3dv_p(@v);
+ glSecondaryColor3dvEXT_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13184,6 +13468,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glSecondaryColor3fv_c($v);
  glSecondaryColor3fvEXT_c($v);
+ glSecondaryColor3fv_p(@v);
+ glSecondaryColor3fvEXT_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13197,6 +13483,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glSecondaryColor3hvNV
 
  glSecondaryColor3hvNV_c($v);
+ glSecondaryColor3hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -13212,6 +13499,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glSecondaryColor3iv_c($v);
  glSecondaryColor3ivEXT_c($v);
+ glSecondaryColor3iv_p(@v);
+ glSecondaryColor3ivEXT_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13228,6 +13517,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glSecondaryColor3sv_c($v);
  glSecondaryColor3svEXT_c($v);
+ glSecondaryColor3sv_p(@v);
+ glSecondaryColor3svEXT_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13244,6 +13535,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glSecondaryColor3ubv_c($v);
  glSecondaryColor3ubvEXT_c($v);
+ glSecondaryColor3ubv_p(@v);
+ glSecondaryColor3ubvEXT_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13260,6 +13553,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glSecondaryColor3uiv_c($v);
  glSecondaryColor3uivEXT_c($v);
+ glSecondaryColor3uiv_p(@v);
+ glSecondaryColor3uivEXT_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13276,6 +13571,8 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 
  glSecondaryColor3usv_c($v);
  glSecondaryColor3usvEXT_c($v);
+ glSecondaryColor3usv_p(@v);
+ glSecondaryColor3usvEXT_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13295,6 +13592,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glSecondaryColorP3uiv
 
  glSecondaryColorP3uiv_c($type, $color);
+ glSecondaryColorP3uiv_p($type, @color);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -13381,6 +13679,7 @@ Exported under tag C<:GL_NV_fence>.
 =head2 glSetFragmentShaderConstantATI
 
  glSetFragmentShaderConstantATI_c($dst, $value);
+ glSetFragmentShaderConstantATI_p($dst, @value);
 
 Exported under tag C<:GL_ATI_fragment_shader>.
 
@@ -13399,6 +13698,7 @@ Exported under tag C<:GL_EXT_vertex_shader>.
 =head2 glSetMultisamplefvAMD
 
  glSetMultisamplefvAMD_c($pname, $index, $val);
+ glSetMultisamplefvAMD_p($pname, $index, @val);
 
 Exported under tag C<:GL_AMD_sample_positions>.
 
@@ -13496,6 +13796,7 @@ Exported under tag C<:GL_NV_shading_rate_image>.
 =head2 glSharpenTexFuncSGIS
 
  glSharpenTexFuncSGIS_c($target, $n, $points);
+ glSharpenTexFuncSGIS_p($target, $n, @points);
 
 Exported under tag C<:GL_SGIS_sharpen_texture>.
 
@@ -13816,6 +14117,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord1dv
 
  glTexCoord1dv_c($v);
+ glTexCoord1dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13830,6 +14132,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord1fv
 
  glTexCoord1fv_c($v);
+ glTexCoord1fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13843,6 +14146,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glTexCoord1hvNV
 
  glTexCoord1hvNV_c($v);
+ glTexCoord1hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -13856,6 +14160,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord1iv
 
  glTexCoord1iv_c($v);
+ glTexCoord1iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13870,6 +14175,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord1sv
 
  glTexCoord1sv_c($v);
+ glTexCoord1sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13884,6 +14190,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord2dv
 
  glTexCoord2dv_c($v);
+ glTexCoord2dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13958,6 +14265,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glTexCoord2fv
 
  glTexCoord2fv_c($v);
+ glTexCoord2fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13971,6 +14279,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glTexCoord2hvNV
 
  glTexCoord2hvNV_c($v);
+ glTexCoord2hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -13984,6 +14293,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord2iv
 
  glTexCoord2iv_c($v);
+ glTexCoord2iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13998,6 +14308,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord2sv
 
  glTexCoord2sv_c($v);
+ glTexCoord2sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14012,6 +14323,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord3dv
 
  glTexCoord3dv_c($v);
+ glTexCoord3dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14026,6 +14338,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord3fv
 
  glTexCoord3fv_c($v);
+ glTexCoord3fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14039,6 +14352,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glTexCoord3hvNV
 
  glTexCoord3hvNV_c($v);
+ glTexCoord3hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -14052,6 +14366,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord3iv
 
  glTexCoord3iv_c($v);
+ glTexCoord3iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14066,6 +14381,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord3sv
 
  glTexCoord3sv_c($v);
+ glTexCoord3sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14080,6 +14396,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord4dv
 
  glTexCoord4dv_c($v);
+ glTexCoord4dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14118,6 +14435,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glTexCoord4fv
 
  glTexCoord4fv_c($v);
+ glTexCoord4fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14131,6 +14449,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glTexCoord4hvNV
 
  glTexCoord4hvNV_c($v);
+ glTexCoord4hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -14144,6 +14463,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord4iv
 
  glTexCoord4iv_c($v);
+ glTexCoord4iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14158,6 +14478,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glTexCoord4sv
 
  glTexCoord4sv_c($v);
+ glTexCoord4sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14177,6 +14498,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glTexCoordP1uiv
 
  glTexCoordP1uiv_c($type, $coords);
+ glTexCoordP1uiv_p($type, @coords);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -14189,6 +14511,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glTexCoordP2uiv
 
  glTexCoordP2uiv_c($type, $coords);
+ glTexCoordP2uiv_p($type, @coords);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -14201,6 +14524,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glTexCoordP3uiv
 
  glTexCoordP3uiv_c($type, $coords);
+ glTexCoordP3uiv_p($type, @coords);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -14213,6 +14537,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glTexCoordP4uiv
 
  glTexCoordP4uiv_c($type, $coords);
+ glTexCoordP4uiv_p($type, @coords);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -15114,6 +15439,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniform1dv
 
  glUniform1dv_c($location, $count, $value);
+ glUniform1dv_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15128,6 +15454,8 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glUniform1fv_c($location, $count, $value);
  glUniform1fvARB_c($location, $count, $value);
+ glUniform1fv_p($location, $count, @value);
+ glUniform1fvARB_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -15153,12 +15481,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform1i64vARB
 
  glUniform1i64vARB_c($location, $count, $value);
+ glUniform1i64vARB_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glUniform1i64vNV
 
  glUniform1i64vNV_c($location, $count, $value);
+ glUniform1i64vNV_p($location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -15166,6 +15496,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glUniform1iv_c($location, $count, $value);
  glUniform1ivARB_c($location, $count, $value);
+ glUniform1iv_p($location, $count, @value);
+ glUniform1ivARB_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -15191,12 +15523,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform1ui64vARB
 
  glUniform1ui64vARB_c($location, $count, $value);
+ glUniform1ui64vARB_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glUniform1ui64vNV
 
  glUniform1ui64vNV_c($location, $count, $value);
+ glUniform1ui64vNV_p($location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -15204,6 +15538,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glUniform1uiv_c($location, $count, $value);
  glUniform1uivEXT_c($location, $count, $value);
+ glUniform1uiv_p($location, $count, @value);
+ glUniform1uivEXT_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -15216,6 +15552,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniform2dv
 
  glUniform2dv_c($location, $count, $value);
+ glUniform2dv_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15230,6 +15567,8 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glUniform2fv_c($location, $count, $value);
  glUniform2fvARB_c($location, $count, $value);
+ glUniform2fv_p($location, $count, @value);
+ glUniform2fvARB_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -15255,12 +15594,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform2i64vARB
 
  glUniform2i64vARB_c($location, $count, $value);
+ glUniform2i64vARB_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glUniform2i64vNV
 
  glUniform2i64vNV_c($location, $count, $value);
+ glUniform2i64vNV_p($location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -15268,6 +15609,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glUniform2iv_c($location, $count, $value);
  glUniform2ivARB_c($location, $count, $value);
+ glUniform2iv_p($location, $count, @value);
+ glUniform2ivARB_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -15293,12 +15636,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform2ui64vARB
 
  glUniform2ui64vARB_c($location, $count, $value);
+ glUniform2ui64vARB_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glUniform2ui64vNV
 
  glUniform2ui64vNV_c($location, $count, $value);
+ glUniform2ui64vNV_p($location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -15306,6 +15651,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glUniform2uiv_c($location, $count, $value);
  glUniform2uivEXT_c($location, $count, $value);
+ glUniform2uiv_p($location, $count, @value);
+ glUniform2uivEXT_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -15318,6 +15665,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniform3dv
 
  glUniform3dv_c($location, $count, $value);
+ glUniform3dv_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15332,6 +15680,8 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glUniform3fv_c($location, $count, $value);
  glUniform3fvARB_c($location, $count, $value);
+ glUniform3fv_p($location, $count, @value);
+ glUniform3fvARB_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -15357,12 +15707,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform3i64vARB
 
  glUniform3i64vARB_c($location, $count, $value);
+ glUniform3i64vARB_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glUniform3i64vNV
 
  glUniform3i64vNV_c($location, $count, $value);
+ glUniform3i64vNV_p($location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -15370,6 +15722,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glUniform3iv_c($location, $count, $value);
  glUniform3ivARB_c($location, $count, $value);
+ glUniform3iv_p($location, $count, @value);
+ glUniform3ivARB_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -15395,12 +15749,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform3ui64vARB
 
  glUniform3ui64vARB_c($location, $count, $value);
+ glUniform3ui64vARB_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glUniform3ui64vNV
 
  glUniform3ui64vNV_c($location, $count, $value);
+ glUniform3ui64vNV_p($location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -15408,6 +15764,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glUniform3uiv_c($location, $count, $value);
  glUniform3uivEXT_c($location, $count, $value);
+ glUniform3uiv_p($location, $count, @value);
+ glUniform3uivEXT_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -15420,6 +15778,7 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glUniform4dv
 
  glUniform4dv_c($location, $count, $value);
+ glUniform4dv_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15434,6 +15793,8 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glUniform4fv_c($location, $count, $value);
  glUniform4fvARB_c($location, $count, $value);
+ glUniform4fv_p($location, $count, @value);
+ glUniform4fvARB_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -15459,12 +15820,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform4i64vARB
 
  glUniform4i64vARB_c($location, $count, $value);
+ glUniform4i64vARB_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glUniform4i64vNV
 
  glUniform4i64vNV_c($location, $count, $value);
+ glUniform4i64vNV_p($location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -15472,6 +15835,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glUniform4iv_c($location, $count, $value);
  glUniform4ivARB_c($location, $count, $value);
+ glUniform4iv_p($location, $count, @value);
+ glUniform4ivARB_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -15497,12 +15862,14 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glUniform4ui64vARB
 
  glUniform4ui64vARB_c($location, $count, $value);
+ glUniform4ui64vARB_p($location, $count, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_int64>.
 
 =head2 glUniform4ui64vNV
 
  glUniform4ui64vNV_c($location, $count, $value);
+ glUniform4ui64vNV_p($location, $count, @value);
 
 Exported under tag C<:GL_NV_gpu_shader5>.
 
@@ -15510,6 +15877,8 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 
  glUniform4uiv_c($location, $count, $value);
  glUniform4uivEXT_c($location, $count, $value);
+ glUniform4uiv_p($location, $count, @value);
+ glUniform4uivEXT_p($location, $count, @value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -15557,6 +15926,7 @@ Exported under tag C<:GL_NV_bindless_texture>.
 =head2 glUniformMatrix2dv
 
  glUniformMatrix2dv_c($location, $count, $transpose, $value);
+ glUniformMatrix2dv_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15564,12 +15934,15 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
  glUniformMatrix2fv_c($location, $count, $transpose, $value);
  glUniformMatrix2fvARB_c($location, $count, $transpose, $value);
+ glUniformMatrix2fv_p($location, $count, $transpose, @value);
+ glUniformMatrix2fvARB_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniformMatrix2x3dv
 
  glUniformMatrix2x3dv_c($location, $count, $transpose, $value);
+ glUniformMatrix2x3dv_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15577,12 +15950,15 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
  glUniformMatrix2x3fv_c($location, $count, $transpose, $value);
  glUniformMatrix2x3fvNV_c($location, $count, $transpose, $value);
+ glUniformMatrix2x3fv_p($location, $count, $transpose, @value);
+ glUniformMatrix2x3fvNV_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
 =head2 glUniformMatrix2x4dv
 
  glUniformMatrix2x4dv_c($location, $count, $transpose, $value);
+ glUniformMatrix2x4dv_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15590,12 +15966,15 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
  glUniformMatrix2x4fv_c($location, $count, $transpose, $value);
  glUniformMatrix2x4fvNV_c($location, $count, $transpose, $value);
+ glUniformMatrix2x4fv_p($location, $count, $transpose, @value);
+ glUniformMatrix2x4fvNV_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
 =head2 glUniformMatrix3dv
 
  glUniformMatrix3dv_c($location, $count, $transpose, $value);
+ glUniformMatrix3dv_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15603,12 +15982,15 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
  glUniformMatrix3fv_c($location, $count, $transpose, $value);
  glUniformMatrix3fvARB_c($location, $count, $transpose, $value);
+ glUniformMatrix3fv_p($location, $count, $transpose, @value);
+ glUniformMatrix3fvARB_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniformMatrix3x2dv
 
  glUniformMatrix3x2dv_c($location, $count, $transpose, $value);
+ glUniformMatrix3x2dv_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15616,12 +15998,15 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
  glUniformMatrix3x2fv_c($location, $count, $transpose, $value);
  glUniformMatrix3x2fvNV_c($location, $count, $transpose, $value);
+ glUniformMatrix3x2fv_p($location, $count, $transpose, @value);
+ glUniformMatrix3x2fvNV_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
 =head2 glUniformMatrix3x4dv
 
  glUniformMatrix3x4dv_c($location, $count, $transpose, $value);
+ glUniformMatrix3x4dv_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15629,12 +16014,15 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
  glUniformMatrix3x4fv_c($location, $count, $transpose, $value);
  glUniformMatrix3x4fvNV_c($location, $count, $transpose, $value);
+ glUniformMatrix3x4fv_p($location, $count, $transpose, @value);
+ glUniformMatrix3x4fvNV_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
 =head2 glUniformMatrix4dv
 
  glUniformMatrix4dv_c($location, $count, $transpose, $value);
+ glUniformMatrix4dv_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15642,12 +16030,15 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
  glUniformMatrix4fv_c($location, $count, $transpose, $value);
  glUniformMatrix4fvARB_c($location, $count, $transpose, $value);
+ glUniformMatrix4fv_p($location, $count, $transpose, @value);
+ glUniformMatrix4fvARB_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
 =head2 glUniformMatrix4x2dv
 
  glUniformMatrix4x2dv_c($location, $count, $transpose, $value);
+ glUniformMatrix4x2dv_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15655,12 +16046,15 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
  glUniformMatrix4x2fv_c($location, $count, $transpose, $value);
  glUniformMatrix4x2fvNV_c($location, $count, $transpose, $value);
+ glUniformMatrix4x2fv_p($location, $count, $transpose, @value);
+ glUniformMatrix4x2fvNV_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
 =head2 glUniformMatrix4x3dv
 
  glUniformMatrix4x3dv_c($location, $count, $transpose, $value);
+ glUniformMatrix4x3dv_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
@@ -15668,6 +16062,8 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 
  glUniformMatrix4x3fv_c($location, $count, $transpose, $value);
  glUniformMatrix4x3fvNV_c($location, $count, $transpose, $value);
+ glUniformMatrix4x3fv_p($location, $count, $transpose, @value);
+ glUniformMatrix4x3fvNV_p($location, $count, $transpose, @value);
 
 Exported under tag C<:GL_VERSION_2_1>.
 
@@ -15687,6 +16083,7 @@ Exported under tag C<:GL_NV_shader_buffer_load>.
 =head2 glUniformui64vNV
 
  glUniformui64vNV_c($location, $count, $value);
+ glUniformui64vNV_p($location, $count, @value);
 
 Exported under tag C<:GL_NV_shader_buffer_load>.
 
@@ -15922,6 +16319,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex2dv
 
  glVertex2dv_c($v);
+ glVertex2dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15936,6 +16334,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex2fv
 
  glVertex2fv_c($v);
+ glVertex2fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15949,6 +16348,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertex2hvNV
 
  glVertex2hvNV_c($v);
+ glVertex2hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -15962,6 +16362,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex2iv
 
  glVertex2iv_c($v);
+ glVertex2iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15976,6 +16377,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex2sv
 
  glVertex2sv_c($v);
+ glVertex2sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -15990,6 +16392,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex3dv
 
  glVertex3dv_c($v);
+ glVertex3dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16004,6 +16407,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex3fv
 
  glVertex3fv_c($v);
+ glVertex3fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16017,6 +16421,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertex3hvNV
 
  glVertex3hvNV_c($v);
+ glVertex3hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -16030,6 +16435,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex3iv
 
  glVertex3iv_c($v);
+ glVertex3iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16044,6 +16450,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex3sv
 
  glVertex3sv_c($v);
+ glVertex3sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16058,6 +16465,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex4dv
 
  glVertex4dv_c($v);
+ glVertex4dv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16072,6 +16480,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex4fv
 
  glVertex4fv_c($v);
+ glVertex4fv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16085,6 +16494,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertex4hvNV
 
  glVertex4hvNV_c($v);
+ glVertex4hvNV_p(@v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -16098,6 +16508,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex4iv
 
  glVertex4iv_c($v);
+ glVertex4iv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16112,6 +16523,7 @@ Not available in a 'future-compatible' profile as removed in 3.2.
 =head2 glVertex4sv
 
  glVertex4sv_c($v);
+ glVertex4sv_p(@v);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -16309,6 +16721,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib1dv_c($index, $v);
  glVertexAttrib1dvARB_c($index, $v);
  glVertexAttrib1dvNV_c($index, $v);
+ glVertexAttrib1dv_p($index, @v);
+ glVertexAttrib1dvARB_p($index, @v);
+ glVertexAttrib1dvNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16325,6 +16740,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib1fv_c($index, $v);
  glVertexAttrib1fvARB_c($index, $v);
  glVertexAttrib1fvNV_c($index, $v);
+ glVertexAttrib1fv_p($index, @v);
+ glVertexAttrib1fvARB_p($index, @v);
+ glVertexAttrib1fvNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16337,6 +16755,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertexAttrib1hvNV
 
  glVertexAttrib1hvNV_c($index, $v);
+ glVertexAttrib1hvNV_p($index, @v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -16353,6 +16772,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib1sv_c($index, $v);
  glVertexAttrib1svARB_c($index, $v);
  glVertexAttrib1svNV_c($index, $v);
+ glVertexAttrib1sv_p($index, @v);
+ glVertexAttrib1svARB_p($index, @v);
+ glVertexAttrib1svNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16369,6 +16791,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib2dv_c($index, $v);
  glVertexAttrib2dvARB_c($index, $v);
  glVertexAttrib2dvNV_c($index, $v);
+ glVertexAttrib2dv_p($index, @v);
+ glVertexAttrib2dvARB_p($index, @v);
+ glVertexAttrib2dvNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16385,6 +16810,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib2fv_c($index, $v);
  glVertexAttrib2fvARB_c($index, $v);
  glVertexAttrib2fvNV_c($index, $v);
+ glVertexAttrib2fv_p($index, @v);
+ glVertexAttrib2fvARB_p($index, @v);
+ glVertexAttrib2fvNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16397,6 +16825,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertexAttrib2hvNV
 
  glVertexAttrib2hvNV_c($index, $v);
+ glVertexAttrib2hvNV_p($index, @v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -16413,6 +16842,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib2sv_c($index, $v);
  glVertexAttrib2svARB_c($index, $v);
  glVertexAttrib2svNV_c($index, $v);
+ glVertexAttrib2sv_p($index, @v);
+ glVertexAttrib2svARB_p($index, @v);
+ glVertexAttrib2svNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16429,6 +16861,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib3dv_c($index, $v);
  glVertexAttrib3dvARB_c($index, $v);
  glVertexAttrib3dvNV_c($index, $v);
+ glVertexAttrib3dv_p($index, @v);
+ glVertexAttrib3dvARB_p($index, @v);
+ glVertexAttrib3dvNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16445,6 +16880,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib3fv_c($index, $v);
  glVertexAttrib3fvARB_c($index, $v);
  glVertexAttrib3fvNV_c($index, $v);
+ glVertexAttrib3fv_p($index, @v);
+ glVertexAttrib3fvARB_p($index, @v);
+ glVertexAttrib3fvNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16457,6 +16895,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertexAttrib3hvNV
 
  glVertexAttrib3hvNV_c($index, $v);
+ glVertexAttrib3hvNV_p($index, @v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -16473,6 +16912,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib3sv_c($index, $v);
  glVertexAttrib3svARB_c($index, $v);
  glVertexAttrib3svNV_c($index, $v);
+ glVertexAttrib3sv_p($index, @v);
+ glVertexAttrib3svARB_p($index, @v);
+ glVertexAttrib3svNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16480,6 +16922,8 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib4Nbv_c($index, $v);
  glVertexAttrib4NbvARB_c($index, $v);
+ glVertexAttrib4Nbv_p($index, @v);
+ glVertexAttrib4NbvARB_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nbv.xhtml>
@@ -16488,6 +16932,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nbv.x
 
  glVertexAttrib4Niv_c($index, $v);
  glVertexAttrib4NivARB_c($index, $v);
+ glVertexAttrib4Niv_p($index, @v);
+ glVertexAttrib4NivARB_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Niv.xhtml>
@@ -16496,6 +16942,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Niv.x
 
  glVertexAttrib4Nsv_c($index, $v);
  glVertexAttrib4NsvARB_c($index, $v);
+ glVertexAttrib4Nsv_p($index, @v);
+ glVertexAttrib4NsvARB_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nsv.xhtml>
@@ -16514,6 +16962,9 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nub.x
  glVertexAttrib4Nubv_c($index, $v);
  glVertexAttrib4NubvARB_c($index, $v);
  glVertexAttrib4ubvNV_c($index, $v);
+ glVertexAttrib4Nubv_p($index, @v);
+ glVertexAttrib4NubvARB_p($index, @v);
+ glVertexAttrib4ubvNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nubv.xhtml>
@@ -16522,6 +16973,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nubv.
 
  glVertexAttrib4Nuiv_c($index, $v);
  glVertexAttrib4NuivARB_c($index, $v);
+ glVertexAttrib4Nuiv_p($index, @v);
+ glVertexAttrib4NuivARB_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nuiv.xhtml>
@@ -16530,6 +16983,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nuiv.
 
  glVertexAttrib4Nusv_c($index, $v);
  glVertexAttrib4NusvARB_c($index, $v);
+ glVertexAttrib4Nusv_p($index, @v);
+ glVertexAttrib4NusvARB_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nusv.xhtml>
@@ -16538,6 +16993,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttrib4Nusv.
 
  glVertexAttrib4bv_c($index, $v);
  glVertexAttrib4bvARB_c($index, $v);
+ glVertexAttrib4bv_p($index, @v);
+ glVertexAttrib4bvARB_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16554,6 +17011,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib4dv_c($index, $v);
  glVertexAttrib4dvARB_c($index, $v);
  glVertexAttrib4dvNV_c($index, $v);
+ glVertexAttrib4dv_p($index, @v);
+ glVertexAttrib4dvARB_p($index, @v);
+ glVertexAttrib4dvNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16570,6 +17030,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib4fv_c($index, $v);
  glVertexAttrib4fvARB_c($index, $v);
  glVertexAttrib4fvNV_c($index, $v);
+ glVertexAttrib4fv_p($index, @v);
+ glVertexAttrib4fvARB_p($index, @v);
+ glVertexAttrib4fvNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16582,6 +17045,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertexAttrib4hvNV
 
  glVertexAttrib4hvNV_c($index, $v);
+ glVertexAttrib4hvNV_p($index, @v);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -16589,6 +17053,8 @@ Exported under tag C<:GL_NV_half_float>.
 
  glVertexAttrib4iv_c($index, $v);
  glVertexAttrib4ivARB_c($index, $v);
+ glVertexAttrib4iv_p($index, @v);
+ glVertexAttrib4ivARB_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16605,6 +17071,9 @@ Exported under tag C<:GL_VERSION_2_0>.
  glVertexAttrib4sv_c($index, $v);
  glVertexAttrib4svARB_c($index, $v);
  glVertexAttrib4svNV_c($index, $v);
+ glVertexAttrib4sv_p($index, @v);
+ glVertexAttrib4svARB_p($index, @v);
+ glVertexAttrib4svNV_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16612,6 +17081,8 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib4ubv_c($index, $v);
  glVertexAttrib4ubvARB_c($index, $v);
+ glVertexAttrib4ubv_p($index, @v);
+ glVertexAttrib4ubvARB_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16619,6 +17090,8 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib4uiv_c($index, $v);
  glVertexAttrib4uivARB_c($index, $v);
+ glVertexAttrib4uiv_p($index, @v);
+ glVertexAttrib4uivARB_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16626,6 +17099,8 @@ Exported under tag C<:GL_VERSION_2_0>.
 
  glVertexAttrib4usv_c($index, $v);
  glVertexAttrib4usvARB_c($index, $v);
+ glVertexAttrib4usv_p($index, @v);
+ glVertexAttrib4usvARB_p($index, @v);
 
 Exported under tag C<:GL_VERSION_2_0>.
 
@@ -16675,6 +17150,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI1iv_c($index, $v);
  glVertexAttribI1ivEXT_c($index, $v);
+ glVertexAttribI1iv_p($index, @v);
+ glVertexAttribI1ivEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16689,6 +17166,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI1uiv_c($index, $v);
  glVertexAttribI1uivEXT_c($index, $v);
+ glVertexAttribI1uiv_p($index, @v);
+ glVertexAttribI1uivEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16703,6 +17182,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI2iv_c($index, $v);
  glVertexAttribI2ivEXT_c($index, $v);
+ glVertexAttribI2iv_p($index, @v);
+ glVertexAttribI2ivEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16717,6 +17198,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI2uiv_c($index, $v);
  glVertexAttribI2uivEXT_c($index, $v);
+ glVertexAttribI2uiv_p($index, @v);
+ glVertexAttribI2uivEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16731,6 +17214,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI3iv_c($index, $v);
  glVertexAttribI3ivEXT_c($index, $v);
+ glVertexAttribI3iv_p($index, @v);
+ glVertexAttribI3ivEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16745,6 +17230,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI3uiv_c($index, $v);
  glVertexAttribI3uivEXT_c($index, $v);
+ glVertexAttribI3uiv_p($index, @v);
+ glVertexAttribI3uivEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16752,6 +17239,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI4bv_c($index, $v);
  glVertexAttribI4bvEXT_c($index, $v);
+ glVertexAttribI4bv_p($index, @v);
+ glVertexAttribI4bvEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16766,6 +17255,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI4iv_c($index, $v);
  glVertexAttribI4ivEXT_c($index, $v);
+ glVertexAttribI4iv_p($index, @v);
+ glVertexAttribI4ivEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16773,6 +17264,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI4sv_c($index, $v);
  glVertexAttribI4svEXT_c($index, $v);
+ glVertexAttribI4sv_p($index, @v);
+ glVertexAttribI4svEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16780,6 +17273,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI4ubv_c($index, $v);
  glVertexAttribI4ubvEXT_c($index, $v);
+ glVertexAttribI4ubv_p($index, @v);
+ glVertexAttribI4ubvEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16794,6 +17289,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI4uiv_c($index, $v);
  glVertexAttribI4uivEXT_c($index, $v);
+ glVertexAttribI4uiv_p($index, @v);
+ glVertexAttribI4uivEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16801,6 +17298,8 @@ Exported under tag C<:GL_VERSION_3_0>.
 
  glVertexAttribI4usv_c($index, $v);
  glVertexAttribI4usvEXT_c($index, $v);
+ glVertexAttribI4usv_p($index, @v);
+ glVertexAttribI4usvEXT_p($index, @v);
 
 Exported under tag C<:GL_VERSION_3_0>.
 
@@ -16835,6 +17334,8 @@ Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
  glVertexAttribL1dv_c($index, $v);
  glVertexAttribL1dvEXT_c($index, $v);
+ glVertexAttribL1dv_p($index, @v);
+ glVertexAttribL1dvEXT_p($index, @v);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
@@ -16847,6 +17348,7 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribL1i64vNV
 
  glVertexAttribL1i64vNV_c($index, $v);
+ glVertexAttribL1i64vNV_p($index, @v);
 
 Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 
@@ -16871,6 +17373,7 @@ Exported under tag C<:GL_ARB_bindless_texture>.
 =head2 glVertexAttribL1ui64vNV
 
  glVertexAttribL1ui64vNV_c($index, $v);
+ glVertexAttribL1ui64vNV_p($index, @v);
 
 Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 
@@ -16885,6 +17388,8 @@ Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
  glVertexAttribL2dv_c($index, $v);
  glVertexAttribL2dvEXT_c($index, $v);
+ glVertexAttribL2dv_p($index, @v);
+ glVertexAttribL2dvEXT_p($index, @v);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
@@ -16897,6 +17402,7 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribL2i64vNV
 
  glVertexAttribL2i64vNV_c($index, $v);
+ glVertexAttribL2i64vNV_p($index, @v);
 
 Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 
@@ -16909,6 +17415,7 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribL2ui64vNV
 
  glVertexAttribL2ui64vNV_c($index, $v);
+ glVertexAttribL2ui64vNV_p($index, @v);
 
 Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 
@@ -16923,6 +17430,8 @@ Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
  glVertexAttribL3dv_c($index, $v);
  glVertexAttribL3dvEXT_c($index, $v);
+ glVertexAttribL3dv_p($index, @v);
+ glVertexAttribL3dvEXT_p($index, @v);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
@@ -16935,6 +17444,7 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribL3i64vNV
 
  glVertexAttribL3i64vNV_c($index, $v);
+ glVertexAttribL3i64vNV_p($index, @v);
 
 Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 
@@ -16947,6 +17457,7 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribL3ui64vNV
 
  glVertexAttribL3ui64vNV_c($index, $v);
+ glVertexAttribL3ui64vNV_p($index, @v);
 
 Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 
@@ -16961,6 +17472,8 @@ Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
  glVertexAttribL4dv_c($index, $v);
  glVertexAttribL4dvEXT_c($index, $v);
+ glVertexAttribL4dv_p($index, @v);
+ glVertexAttribL4dvEXT_p($index, @v);
 
 Exported under tag C<:GL_ARB_vertex_attrib_64bit>.
 
@@ -16973,6 +17486,7 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribL4i64vNV
 
  glVertexAttribL4i64vNV_c($index, $v);
+ glVertexAttribL4i64vNV_p($index, @v);
 
 Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 
@@ -16985,6 +17499,7 @@ Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 =head2 glVertexAttribL4ui64vNV
 
  glVertexAttribL4ui64vNV_c($index, $v);
+ glVertexAttribL4ui64vNV_p($index, @v);
 
 Exported under tag C<:GL_NV_vertex_attrib_integer_64bit>.
 
@@ -17016,6 +17531,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glVertexAttribP1uiv
 
  glVertexAttribP1uiv_c($index, $type, $normalized, $value);
+ glVertexAttribP1uiv_p($index, $type, $normalized, @value);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -17028,6 +17544,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glVertexAttribP2uiv
 
  glVertexAttribP2uiv_c($index, $type, $normalized, $value);
+ glVertexAttribP2uiv_p($index, $type, $normalized, @value);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -17040,6 +17557,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glVertexAttribP3uiv
 
  glVertexAttribP3uiv_c($index, $type, $normalized, $value);
+ glVertexAttribP3uiv_p($index, $type, $normalized, @value);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -17052,6 +17570,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glVertexAttribP4uiv
 
  glVertexAttribP4uiv_c($index, $type, $normalized, $value);
+ glVertexAttribP4uiv_p($index, $type, $normalized, @value);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -17106,12 +17625,14 @@ Exported under tag C<:GL_NV_vertex_program>.
 =head2 glVertexAttribs2dvNV
 
  glVertexAttribs2dvNV_c($index, $count, $v);
+ glVertexAttribs2dvNV_p($index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
 =head2 glVertexAttribs2fvNV
 
  glVertexAttribs2fvNV_c($index, $count, $v);
+ glVertexAttribs2fvNV_p($index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -17125,18 +17646,21 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertexAttribs2svNV
 
  glVertexAttribs2svNV_c($index, $count, $v);
+ glVertexAttribs2svNV_p($index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
 =head2 glVertexAttribs3dvNV
 
  glVertexAttribs3dvNV_c($index, $count, $v);
+ glVertexAttribs3dvNV_p($index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
 =head2 glVertexAttribs3fvNV
 
  glVertexAttribs3fvNV_c($index, $count, $v);
+ glVertexAttribs3fvNV_p($index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -17150,18 +17674,21 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertexAttribs3svNV
 
  glVertexAttribs3svNV_c($index, $count, $v);
+ glVertexAttribs3svNV_p($index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
 =head2 glVertexAttribs4dvNV
 
  glVertexAttribs4dvNV_c($index, $count, $v);
+ glVertexAttribs4dvNV_p($index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
 =head2 glVertexAttribs4fvNV
 
  glVertexAttribs4fvNV_c($index, $count, $v);
+ glVertexAttribs4fvNV_p($index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -17175,12 +17702,14 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertexAttribs4svNV
 
  glVertexAttribs4svNV_c($index, $count, $v);
+ glVertexAttribs4svNV_p($index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
 =head2 glVertexAttribs4ubvNV
 
  glVertexAttribs4ubvNV_c($index, $count, $v);
+ glVertexAttribs4ubvNV_p($index, $count, @v);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -17223,6 +17752,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glVertexP2uiv
 
  glVertexP2uiv_c($type, $value);
+ glVertexP2uiv_p($type, @value);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -17235,6 +17765,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glVertexP3uiv
 
  glVertexP3uiv_c($type, $value);
+ glVertexP3uiv_p($type, @value);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -17247,6 +17778,7 @@ Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 =head2 glVertexP4uiv
 
  glVertexP4uiv_c($type, $value);
+ glVertexP4uiv_p($type, @value);
 
 Exported under tag C<:GL_ARB_vertex_type_2_10_10_10_rev>.
 
@@ -17285,6 +17817,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream1dvATI
 
  glVertexStream1dvATI_c($stream, $coords);
+ glVertexStream1dvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17297,6 +17830,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream1fvATI
 
  glVertexStream1fvATI_c($stream, $coords);
+ glVertexStream1fvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17309,6 +17843,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream1ivATI
 
  glVertexStream1ivATI_c($stream, $coords);
+ glVertexStream1ivATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17321,6 +17856,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream1svATI
 
  glVertexStream1svATI_c($stream, $coords);
+ glVertexStream1svATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17333,6 +17869,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream2dvATI
 
  glVertexStream2dvATI_c($stream, $coords);
+ glVertexStream2dvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17345,6 +17882,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream2fvATI
 
  glVertexStream2fvATI_c($stream, $coords);
+ glVertexStream2fvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17357,6 +17895,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream2ivATI
 
  glVertexStream2ivATI_c($stream, $coords);
+ glVertexStream2ivATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17369,6 +17908,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream2svATI
 
  glVertexStream2svATI_c($stream, $coords);
+ glVertexStream2svATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17381,6 +17921,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream3dvATI
 
  glVertexStream3dvATI_c($stream, $coords);
+ glVertexStream3dvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17393,6 +17934,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream3fvATI
 
  glVertexStream3fvATI_c($stream, $coords);
+ glVertexStream3fvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17405,6 +17947,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream3ivATI
 
  glVertexStream3ivATI_c($stream, $coords);
+ glVertexStream3ivATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17417,6 +17960,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream3svATI
 
  glVertexStream3svATI_c($stream, $coords);
+ glVertexStream3svATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17429,6 +17973,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream4dvATI
 
  glVertexStream4dvATI_c($stream, $coords);
+ glVertexStream4dvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17441,6 +17986,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream4fvATI
 
  glVertexStream4fvATI_c($stream, $coords);
+ glVertexStream4fvATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17453,6 +17999,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream4ivATI
 
  glVertexStream4ivATI_c($stream, $coords);
+ glVertexStream4ivATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17465,6 +18012,7 @@ Exported under tag C<:GL_ATI_vertex_streams>.
 =head2 glVertexStream4svATI
 
  glVertexStream4svATI_c($stream, $coords);
+ glVertexStream4svATI_p($stream, @coords);
 
 Exported under tag C<:GL_ATI_vertex_streams>.
 
@@ -17483,6 +18031,7 @@ Exported under tag C<:GL_EXT_vertex_weighting>.
 =head2 glVertexWeightfvEXT
 
  glVertexWeightfvEXT_c($weight);
+ @weight = glVertexWeightfvEXT_p();
 
 Exported under tag C<:GL_EXT_vertex_weighting>.
 
@@ -17495,6 +18044,7 @@ Exported under tag C<:GL_NV_half_float>.
 =head2 glVertexWeighthvNV
 
  glVertexWeighthvNV_c($weight);
+ glVertexWeighthvNV_p(@weight);
 
 Exported under tag C<:GL_NV_half_float>.
 
@@ -17549,6 +18099,8 @@ Exported under tag C<:GL_ARB_viewport_array>.
 
  glViewportIndexedfv_c($index, $v);
  glViewportIndexedfvNV_c($index, $v);
+ glViewportIndexedfv_p($index, @v);
+ glViewportIndexedfvNV_p($index, @v);
 
 Exported under tag C<:GL_ARB_viewport_array>.
 
@@ -17677,6 +18229,9 @@ Not available in a 'future-compatible' profile as removed in 3.2.
  glWindowPos2dv_c($v);
  glWindowPos2dvARB_c($v);
  glWindowPos2dvMESA_c($v);
+ glWindowPos2dv_p(@v);
+ glWindowPos2dvARB_p(@v);
+ glWindowPos2dvMESA_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -17695,6 +18250,9 @@ Not available in a 'future-compatible' profile as removed in 3.2.
  glWindowPos2fv_c($v);
  glWindowPos2fvARB_c($v);
  glWindowPos2fvMESA_c($v);
+ glWindowPos2fv_p(@v);
+ glWindowPos2fvARB_p(@v);
+ glWindowPos2fvMESA_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -17713,6 +18271,9 @@ Not available in a 'future-compatible' profile as removed in 3.2.
  glWindowPos2iv_c($v);
  glWindowPos2ivARB_c($v);
  glWindowPos2ivMESA_c($v);
+ glWindowPos2iv_p(@v);
+ glWindowPos2ivARB_p(@v);
+ glWindowPos2ivMESA_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -17731,6 +18292,9 @@ Not available in a 'future-compatible' profile as removed in 3.2.
  glWindowPos2sv_c($v);
  glWindowPos2svARB_c($v);
  glWindowPos2svMESA_c($v);
+ glWindowPos2sv_p(@v);
+ glWindowPos2svARB_p(@v);
+ glWindowPos2svMESA_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -17749,6 +18313,9 @@ Not available in a 'future-compatible' profile as removed in 3.2.
  glWindowPos3dv_c($v);
  glWindowPos3dvARB_c($v);
  glWindowPos3dvMESA_c($v);
+ glWindowPos3dv_p(@v);
+ glWindowPos3dvARB_p(@v);
+ glWindowPos3dvMESA_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -17767,6 +18334,9 @@ Not available in a 'future-compatible' profile as removed in 3.2.
  glWindowPos3fv_c($v);
  glWindowPos3fvARB_c($v);
  glWindowPos3fvMESA_c($v);
+ glWindowPos3fv_p(@v);
+ glWindowPos3fvARB_p(@v);
+ glWindowPos3fvMESA_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -17785,6 +18355,9 @@ Not available in a 'future-compatible' profile as removed in 3.2.
  glWindowPos3iv_c($v);
  glWindowPos3ivARB_c($v);
  glWindowPos3ivMESA_c($v);
+ glWindowPos3iv_p(@v);
+ glWindowPos3ivARB_p(@v);
+ glWindowPos3ivMESA_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -17803,6 +18376,9 @@ Not available in a 'future-compatible' profile as removed in 3.2.
  glWindowPos3sv_c($v);
  glWindowPos3svARB_c($v);
  glWindowPos3svMESA_c($v);
+ glWindowPos3sv_p(@v);
+ glWindowPos3svARB_p(@v);
+ glWindowPos3svMESA_p(@v);
 
 Exported under tag C<:GL_VERSION_1_4>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -17816,6 +18392,7 @@ Exported under tag C<:GL_MESA_window_pos>.
 =head2 glWindowPos4dvMESA
 
  glWindowPos4dvMESA_c($v);
+ glWindowPos4dvMESA_p(@v);
 
 Exported under tag C<:GL_MESA_window_pos>.
 
@@ -17828,6 +18405,7 @@ Exported under tag C<:GL_MESA_window_pos>.
 =head2 glWindowPos4fvMESA
 
  glWindowPos4fvMESA_c($v);
+ glWindowPos4fvMESA_p(@v);
 
 Exported under tag C<:GL_MESA_window_pos>.
 
@@ -17840,6 +18418,7 @@ Exported under tag C<:GL_MESA_window_pos>.
 =head2 glWindowPos4ivMESA
 
  glWindowPos4ivMESA_c($v);
+ glWindowPos4ivMESA_p(@v);
 
 Exported under tag C<:GL_MESA_window_pos>.
 
@@ -17852,6 +18431,7 @@ Exported under tag C<:GL_MESA_window_pos>.
 =head2 glWindowPos4svMESA
 
  glWindowPos4svMESA_c($v);
+ glWindowPos4svMESA_p(@v);
 
 Exported under tag C<:GL_MESA_window_pos>.
 
