@@ -219,15 +219,6 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     $arg2len{$outargs[0][0]} = "${compsize_from}_count";
     $dynlang{$outargs[0][0]} = "SIZE:$compsize_group:$compsize_from";
   }
-  if (@constargs == 1 and
-    typefunc(parse_ptr($constargs[0])->[0]) and
-    $arg2len{$constargs[0][0]}
-  ) {
-    my $len = $arg2len{$constargs[0][0]};
-    my $startfrom = @argdata - 2;
-    $dynlang{$len} = 'items'.($startfrom ? "-$startfrom" : '');
-    $dynlang{$constargs[0][0]} = "VARARGS:$startfrom";
-  }
   if (@outargs == 1 and
     typefunc(parse_ptr($outargs[0])->[0]) and
     $s->{restype} eq 'void' and
@@ -236,6 +227,15 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     $dynlang{$outargs[0][0]} //= "";
     $dynlang{$outargs[0][0]} .= "," if $dynlang{$outargs[0][0]};
     $dynlang{$outargs[0][0]} .= "OUTASLIST:$arg2len{$outargs[0][0]}";
+  }
+  if (@constargs == 1 and
+    typefunc(parse_ptr($constargs[0])->[0]) and
+    $arg2len{$constargs[0][0]}
+  ) {
+    my $len = $arg2len{$constargs[0][0]};
+    my $startfrom = grep !$dynlang{$_} && $_ ne $len && $_ ne $constargs[0][0], keys %name2data;
+    $dynlang{$len} = 'items'.($startfrom ? "-$startfrom" : '');
+    $dynlang{$constargs[0][0]} = "VARARGS:$startfrom";
   }
   $s->{dynlang} = \%dynlang if %dynlang;
 }

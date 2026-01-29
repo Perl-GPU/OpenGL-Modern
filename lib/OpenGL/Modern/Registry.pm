@@ -31922,9 +31922,9 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'uniformCount' => 'items-2',
+      'uniformCount' => 'items-1',
       'uniformIndices' => 'OUTASLIST:uniformCount',
-      'uniformNames' => 'VARARGS:2'
+      'uniformNames' => 'VARARGS:1'
     },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetUniformIndices',
