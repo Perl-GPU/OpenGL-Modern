@@ -2988,6 +2988,7 @@ our @gl_functionsrest = qw(
   glGetProgramResourcefvNV_c
   glGetProgramResourceIndex
   glGetProgramResourceiv_c
+  glGetProgramResourceiv_p
   glGetProgramResourceLocation
   glGetProgramResourceLocationIndex
   glGetProgramResourceLocationIndexEXT
@@ -5732,7 +5733,8 @@ our %EXPORT_TAGS_GL = (
     'glGetProgramResourceLocationIndex',
     'glGetProgramResourceName_c',
     'glGetProgramResourceName_p',
-    'glGetProgramResourceiv_c'
+    'glGetProgramResourceiv_c',
+    'glGetProgramResourceiv_p'
   ],
   'GL_ARB_provoking_vertex' => [
     'glProvokingVertex'
@@ -10215,6 +10217,7 @@ our %EXPORT_TAGS_GL = (
     'glGetProgramResourceName_c',
     'glGetProgramResourceName_p',
     'glGetProgramResourceiv_c',
+    'glGetProgramResourceiv_p',
     'glInvalidateBufferData',
     'glInvalidateBufferSubData',
     'glInvalidateFramebuffer_c',

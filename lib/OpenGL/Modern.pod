@@ -7049,6 +7049,7 @@ Exported under tag C<:GL_NV_path_rendering>.
 =head2 glGetProgramResourceiv
 
  glGetProgramResourceiv_c($program, $programInterface, $index, $propCount, $props, $count, $length, $params);
+ @params = glGetProgramResourceiv_p($program, $programInterface, $index, @props);
 
 Exported under tag C<:GL_ARB_program_interface_query>.
 

@@ -29223,6 +29223,13 @@ our %registry = (
         'count'
       ]
     ],
+    'dynlang' => {
+      'count' => 'propCount',
+      'length' => 'NULL',
+      'params' => 'OUTASLIST:count',
+      'propCount' => 'items-3',
+      'props' => 'VARARGS:3:propCount'
+    },
     'feature' => 'GL_ARB_program_interface_query',
     'glewImpl' => '__glewGetProgramResourceiv',
     'glewtype' => 'fun',

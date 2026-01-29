@@ -8,3 +8,4 @@ glGetActiveUniformBlockName RETVAL=uniformBlockName length=NULL bufSize=<glGetAc
 glGetProgramResourceName RETVAL=name length=NULL bufSize=<glGetProgramResourceiv(program,programInterface,index,1,&(GLenum){GL_NAME_LENGTH},sizeof(bufSize),NULL,&)
 glGetSynciv count=sizeof(GLint) length=NULL values=SIZE:SyncParameterName:pname,OUTASLIST:pname_count
 glGetActiveUniformsiv uniformCount=items-2 uniformIndices=VARARGS:2:uniformCount params=SIZE:UniformPName:pname:uniformCount,OUTASLIST:pname_count
+glGetProgramResourceiv propCount=items-3 props=VARARGS:3:propCount count=propCount length=NULL params=OUTASLIST:count
