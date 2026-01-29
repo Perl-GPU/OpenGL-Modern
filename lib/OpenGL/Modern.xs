@@ -40,10 +40,6 @@ static int _auto_check_errors = 0;
   if ( !impl ) { \
     croak(#name " not available on this machine"); \
   }
-#define OGLM_OUT_SETUP(buffername, n, type) \
-  NULL; if (n <= 0) croak("called with invalid n=%d", n); \
-  buffername = malloc(sizeof(type) * n); \
-  if (!buffername) croak("malloc failed");
 #define OGLM_OUT_FINISH(buffername, n, newfunc) \
   EXTEND(sp, n); \
   { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newfunc(buffername[i]))); }
@@ -59,7 +55,8 @@ static int _auto_check_errors = 0;
   int pname ## _count = oglm_count_##group(pname) * (mult); \
   if (pname ## _count < 0) croak("Unknown " #group " %d", pname);
 #define OGLM_ALLOC(size, buffertype, buffername) \
-  malloc(sizeof(buffertype) * size); \
+  NULL; if (size <= 0) croak("called with invalid n=%d", size); \
+  buffername = malloc(sizeof(buffertype) * size); \
   if (!buffername) croak("malloc failed");
 
 /*
