@@ -28823,6 +28823,10 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'name' => 'VARARGS:2:1',
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewGetProgramNamedParameterdvNV',
     'glewtype' => 'fun',
@@ -28853,6 +28857,10 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'name' => 'VARARGS:2:1',
+      'params' => 'OUTASLIST:4'
+    },
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewGetProgramNamedParameterfvNV',
     'glewtype' => 'fun',

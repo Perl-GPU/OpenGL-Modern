@@ -208,13 +208,11 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my @constargs = @ptr_args[ grep $ptr_types[$_][1], 0..$#ptr_args ];
   my @outargs = @ptr_args[ grep !$ptr_types[$_][1], 0..$#ptr_args ];
   die "undef ptr_type for $name" if !$ptr_types[0][0];
-  my (%dynlang, %lenarg2ptrs);
   my %arg2len = map @$_, grep defined($_->[1]) && $_->[1] !~ /COMPSIZE/, map [@$_[0,2]], @argdata;
-  push @{ $lenarg2ptrs{$arg2len{$_}} }, $_ for keys %arg2len;
-  next if keys(%lenarg2ptrs) > 1;
   my $compsize_from = ($ptr_args[0][2]//'') =~ /COMPSIZE\(([^,]+)\)/ ? $1 : undef;
   my $compsize_data = $compsize_from && $name2data{$compsize_from};
   my $compsize_group = $compsize_data && $compsize_data->[3];
+  my %dynlang;
   if (@constargs == 0 && @outargs == 1 && $compsize_group && $g2c2s->{$compsize_group}) {
     $arg2len{$outargs[0][0]} = "${compsize_from}_count";
     $dynlang{$outargs[0][0]} = "SIZE:$compsize_group:$compsize_from";

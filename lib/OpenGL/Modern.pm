@@ -2976,7 +2976,9 @@ our @gl_functionsrest = qw(
   glGetProgramLocalParameterfvARB_c
   glGetProgramLocalParameterfvARB_p
   glGetProgramNamedParameterdvNV_c
+  glGetProgramNamedParameterdvNV_p
   glGetProgramNamedParameterfvNV_c
+  glGetProgramNamedParameterfvNV_p
   glGetProgramParameterdvNV_c
   glGetProgramParameterdvNV_p
   glGetProgramParameterfvNV_c
@@ -7826,7 +7828,9 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_NV_fragment_program' => [
     'glGetProgramNamedParameterdvNV_c',
+    'glGetProgramNamedParameterdvNV_p',
     'glGetProgramNamedParameterfvNV_c',
+    'glGetProgramNamedParameterfvNV_p',
     'glProgramNamedParameter4dNV',
     'glProgramNamedParameter4dvNV_c',
     'glProgramNamedParameter4fNV',
