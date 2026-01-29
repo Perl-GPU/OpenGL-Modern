@@ -207,7 +207,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   my @ptr_types = map parse_ptr($_), @ptr_args;
   my @constargs = @ptr_args[ grep $ptr_types[$_][1], 0..$#ptr_args ];
   my @outargs = @ptr_args[ grep !$ptr_types[$_][1], 0..$#ptr_args ];
-  die "undef ptr_type for $name" if !$ptr_types[0][0];
+  die "$name: undef ptr_type" if grep !$_->[0], @ptr_types;
   my %arg2len = map @$_, grep defined($_->[1]) && $_->[1] !~ /COMPSIZE/, map [@$_[0,2]], @argdata;
   my %dynlang;
   for my $arg (@ptr_args) {
