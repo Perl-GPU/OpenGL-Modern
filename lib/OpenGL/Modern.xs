@@ -48,12 +48,12 @@ static int _auto_check_errors = 0;
   EXTEND(sp, n); \
   { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newfunc(buffername[i]))); }
 #define OGLM_GET_VARARGS(varname, startfrom, type, perltype, howmany) \
-  NULL; if (items-startfrom != howmany) \
-    croak("error: expected %d args but given %d", howmany, items-startfrom); \
-  varname = malloc(sizeof(type) * (items-startfrom)); \
+  NULL; if (items-(startfrom) != (howmany)) \
+    croak("error: expected %d args but given %d", howmany, items-(startfrom)); \
+  varname = malloc(sizeof(type) * (howmany)); \
   if (!varname) croak("malloc failed"); \
-  { IV i; for(i = 0; i < items-startfrom; i++) { \
-    varname[i] = (type)Sv##perltype(ST(i + startfrom)); \
+  { IV i; for(i = 0; i < (howmany); i++) { \
+    varname[i] = (type)Sv##perltype(ST(i + (startfrom))); \
   } }
 #define OGLM_GET_SETUP(group, pname, buffertype, buffername, mult) \
   NULL; int pname ## _count = oglm_count_##group(pname) * mult; \
