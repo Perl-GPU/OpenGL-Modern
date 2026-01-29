@@ -111,13 +111,15 @@ sub bindings {
     $dynlang{OUTPUT} = "OGLM_OUT_FINISH($outaslist[0],$len,$newfunc)";
   }
   my @sized = grep $indynlang{$_} =~ /\bSIZE\b/, keys %indynlang;
+  my %arg2lenoverride;
   for my $arg (@sized) {
     die "$name: failed to get SIZE info from '$indynlang{$arg}'" unless
       my ($compsize_group, $compsize_from, $mult) =
         $indynlang{$arg} =~ /\bSIZE:([^:]+):([^,:\s]+)(?::([^,\s]+))?/;
     $mult ||= 1;
     my $parsed = parse_ptr($name2data{$arg});
-    $dynlang{$arg} = "OGLM_GET_SETUP($compsize_group,$compsize_from,$parsed->[0],$arg,$mult)";
+    $arg2lenoverride{$arg} = ["${compsize_from}_count", "OGLM_SIZE_ENUM($compsize_group,$compsize_from,$mult)"];
+    $dynlang{$arg} = "OGLM_ALLOC(${compsize_from}_count,$parsed->[0],$arg)";
   }
   die "$name: cannot have both RETVAL and OUTPUT" if $dynlang{OUTPUT} and $dynlang{RETVAL};
   if (my $retval = delete $dynlang{RETVAL}) {
@@ -167,6 +169,7 @@ sub bindings {
     die "$name: no arg data found for '$var'" unless my $data = $name2data{$var};
     my $type = $data->[1];
     $need_cast = 1 if $type =~ s#\bconst\b##g;
+    $beforecall .= "  $arg2lenoverride{$var}->[1]\n" if $arg2lenoverride{$var};
     $beforecall .= "  $type $var = $val;\n";
   }
   if ($s->{restype} eq 'void') {
