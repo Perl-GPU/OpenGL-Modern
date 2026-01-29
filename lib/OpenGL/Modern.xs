@@ -47,8 +47,10 @@ static int _auto_check_errors = 0;
 #define OGLM_OUT_FINISH(buffername, n, newfunc) \
   EXTEND(sp, n); \
   { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newfunc(buffername[i]))); }
-#define OGLM_GET_ARGS(varname, startfrom, type, perltype) \
-  malloc(sizeof(type) * (items-startfrom)); \
+#define OGLM_GET_VARARGS(varname, startfrom, type, perltype, howmany) \
+  NULL; if (items-startfrom != howmany) \
+    croak("error: expected %d args but given %d", howmany, items-startfrom); \
+  varname = malloc(sizeof(type) * (items-startfrom)); \
   if (!varname) croak("malloc failed"); \
   { IV i; for(i = 0; i < items-startfrom; i++) { \
     varname[i] = (type)Sv##perltype(ST(i + startfrom)); \
