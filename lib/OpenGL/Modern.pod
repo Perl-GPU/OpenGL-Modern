@@ -1813,6 +1813,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClearBufferfi.xhtm
 =head2 glClearBufferfv
 
  glClearBufferfv_c($buffer, $drawbuffer, $value);
+ glClearBufferfv_p($buffer, $drawbuffer, @value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClearBufferfv.xhtml>
@@ -1820,6 +1821,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClearBufferfv.xhtm
 =head2 glClearBufferiv
 
  glClearBufferiv_c($buffer, $drawbuffer, $value);
+ glClearBufferiv_p($buffer, $drawbuffer, @value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClearBufferiv.xhtml>
@@ -1827,6 +1829,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClearBufferiv.xhtm
 =head2 glClearBufferuiv
 
  glClearBufferuiv_c($buffer, $drawbuffer, $value);
+ glClearBufferuiv_p($buffer, $drawbuffer, @value);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClearBufferuiv.xhtml>
@@ -1928,18 +1931,21 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glClearNamedFramebufferfv
 
  glClearNamedFramebufferfv_c($framebuffer, $buffer, $drawbuffer, $value);
+ glClearNamedFramebufferfv_p($framebuffer, $buffer, $drawbuffer, @value);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
 =head2 glClearNamedFramebufferiv
 
  glClearNamedFramebufferiv_c($framebuffer, $buffer, $drawbuffer, $value);
+ glClearNamedFramebufferiv_p($framebuffer, $buffer, $drawbuffer, @value);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
 =head2 glClearNamedFramebufferuiv
 
  glClearNamedFramebufferuiv_c($framebuffer, $buffer, $drawbuffer, $value);
+ glClearNamedFramebufferuiv_p($framebuffer, $buffer, $drawbuffer, @value);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
@@ -2486,6 +2492,8 @@ Exported under tag C<:GL_ARB_imaging>.
 
  glColorTableParameterfv_c($target, $pname, $params);
  glColorTableParameterfvSGI_c($target, $pname, $params);
+ glColorTableParameterfv_p($target, $pname, @params);
+ glColorTableParameterfvSGI_p($target, $pname, @params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -2493,6 +2501,8 @@ Exported under tag C<:GL_ARB_imaging>.
 
  glColorTableParameteriv_c($target, $pname, $params);
  glColorTableParameterivSGI_c($target, $pname, $params);
+ glColorTableParameteriv_p($target, $pname, @params);
+ glColorTableParameterivSGI_p($target, $pname, @params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -2763,6 +2773,8 @@ Exported under tag C<:GL_ARB_imaging>.
 
  glConvolutionParameterfv_c($target, $pname, $params);
  glConvolutionParameterfvEXT_c($target, $pname, $params);
+ glConvolutionParameterfv_p($target, $pname, @params);
+ glConvolutionParameterfvEXT_p($target, $pname, @params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -2777,6 +2789,8 @@ Exported under tag C<:GL_ARB_imaging>.
 
  glConvolutionParameteriv_c($target, $pname, $params);
  glConvolutionParameterivEXT_c($target, $pname, $params);
+ glConvolutionParameteriv_p($target, $pname, @params);
+ glConvolutionParameterivEXT_p($target, $pname, @params);
 
 Exported under tag C<:GL_ARB_imaging>.
 
@@ -4682,6 +4696,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glFogf.xml>
 =head2 glFogfv
 
  glFogfv_c($pname, $params);
+ glFogfv_p($pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4698,6 +4713,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glFogi.xml>
 =head2 glFogiv
 
  glFogiv_c($pname, $params);
+ glFogiv_p($pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -4712,6 +4728,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glFogxv
 
  glFogxv_c($pname, $param);
+ glFogxv_p($pname, @param);
 
 Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 
@@ -4852,6 +4869,7 @@ Exported under tag C<:GL_EXT_fragment_lighting>.
 =head2 glFragmentMaterialfvSGIX
 
  glFragmentMaterialfvSGIX_c($face, $pname, $params);
+ glFragmentMaterialfvSGIX_p($face, $pname, @params);
 
 Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
@@ -4876,6 +4894,7 @@ Exported under tag C<:GL_EXT_fragment_lighting>.
 =head2 glFragmentMaterialivSGIX
 
  glFragmentMaterialivSGIX_c($face, $pname, $params);
+ glFragmentMaterialivSGIX_p($face, $pname, @params);
 
 Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 
@@ -8984,6 +9003,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glLightModelf.xml
 =head2 glLightModelfv
 
  glLightModelfv_c($pname, $params);
+ glLightModelfv_p($pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9000,6 +9020,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glLightModeli.xml
 =head2 glLightModeliv
 
  glLightModeliv_c($pname, $params);
+ glLightModeliv_p($pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9014,6 +9035,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glLightModelxv
 
  glLightModelxv_c($pname, $param);
+ glLightModelxv_p($pname, @param);
 
 Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 
@@ -9028,6 +9050,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glLightf.xml>
 =head2 glLightfv
 
  glLightfv_c($light, $pname, $params);
+ glLightfv_p($light, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9044,6 +9067,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glLighti.xml>
 =head2 glLightiv
 
  glLightiv_c($light, $pname, $params);
+ glLightiv_p($light, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9058,6 +9082,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glLightxv
 
  glLightxv_c($light, $pname, $params);
+ glLightxv_p($light, $pname, @params);
 
 Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 
@@ -9454,6 +9479,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glMaterialf.xml>
 =head2 glMaterialfv
 
  glMaterialfv_c($face, $pname, $params);
+ glMaterialfv_p($face, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9470,6 +9496,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glMateriali.xml>
 =head2 glMaterialiv
 
  glMaterialiv_c($face, $pname, $params);
+ glMaterialiv_p($face, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -9484,6 +9511,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glMaterialxv
 
  glMaterialxv_c($face, $pname, $param);
+ glMaterialxv_p($face, $pname, @param);
 
 Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 
@@ -10344,6 +10372,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glMultiTexEnvfvEXT
 
  glMultiTexEnvfvEXT_c($texunit, $target, $pname, $params);
+ glMultiTexEnvfvEXT_p($texunit, $target, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10356,6 +10385,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glMultiTexEnvivEXT
 
  glMultiTexEnvivEXT_c($texunit, $target, $pname, $params);
+ glMultiTexEnvivEXT_p($texunit, $target, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10368,6 +10398,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glMultiTexGendvEXT
 
  glMultiTexGendvEXT_c($texunit, $coord, $pname, $params);
+ glMultiTexGendvEXT_p($texunit, $coord, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10380,6 +10411,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glMultiTexGenfvEXT
 
  glMultiTexGenfvEXT_c($texunit, $coord, $pname, $params);
+ glMultiTexGenfvEXT_p($texunit, $coord, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10392,6 +10424,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glMultiTexGenivEXT
 
  glMultiTexGenivEXT_c($texunit, $coord, $pname, $params);
+ glMultiTexGenivEXT_p($texunit, $coord, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10416,12 +10449,14 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glMultiTexParameterIivEXT
 
  glMultiTexParameterIivEXT_c($texunit, $target, $pname, $params);
+ glMultiTexParameterIivEXT_p($texunit, $target, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glMultiTexParameterIuivEXT
 
  glMultiTexParameterIuivEXT_c($texunit, $target, $pname, $params);
+ glMultiTexParameterIuivEXT_p($texunit, $target, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10434,6 +10469,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glMultiTexParameterfvEXT
 
  glMultiTexParameterfvEXT_c($texunit, $target, $pname, $params);
+ glMultiTexParameterfvEXT_p($texunit, $target, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -10446,6 +10482,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glMultiTexParameterivEXT
 
  glMultiTexParameterivEXT_c($texunit, $target, $pname, $params);
+ glMultiTexParameterivEXT_p($texunit, $target, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -11186,6 +11223,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glPassThrough.xml
 =head2 glPatchParameterfv
 
  glPatchParameterfv_c($pname, $values);
+ glPatchParameterfv_p($pname, @values);
 
 Exported under tag C<:GL_ARB_tessellation_shader>.
 
@@ -11485,6 +11523,10 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameterf.xh
  glPointParameterfvARB_c($pname, $params);
  glPointParameterfvEXT_c($pname, $params);
  glPointParameterfvSGIS_c($pname, $params);
+ glPointParameterfv_p($pname, @params);
+ glPointParameterfvARB_p($pname, @params);
+ glPointParameterfvEXT_p($pname, @params);
+ glPointParameterfvSGIS_p($pname, @params);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameterfv.xhtml>
@@ -11501,6 +11543,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameteri.xh
 
  glPointParameteriv_c($pname, $params);
  glPointParameterivNV_c($pname, $params);
+ glPointParameteriv_p($pname, @params);
+ glPointParameterivNV_p($pname, @params);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glPointParameteriv.xhtml>
@@ -11514,6 +11558,7 @@ Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 =head2 glPointParameterxv
 
  glPointParameterxv_c($pname, $params);
+ glPointParameterxv_p($pname, @params);
 
 Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 
@@ -13310,6 +13355,8 @@ Exported under tag C<:GL_EXT_multisample>.
 
  glSamplerParameterIiv_c($sampler, $pname, $param);
  glSamplerParameterIivEXT_c($sampler, $pname, $param);
+ glSamplerParameterIiv_p($sampler, $pname, @param);
+ glSamplerParameterIivEXT_p($sampler, $pname, @param);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
@@ -13323,6 +13370,8 @@ Exported under tag C<:GL_OES_texture_border_clamp>.
 
  glSamplerParameterIuiv_c($sampler, $pname, $param);
  glSamplerParameterIuivEXT_c($sampler, $pname, $param);
+ glSamplerParameterIuiv_p($sampler, $pname, @param);
+ glSamplerParameterIuivEXT_p($sampler, $pname, @param);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
@@ -13341,6 +13390,7 @@ Exported under tag C<:GL_ARB_sampler_objects>.
 =head2 glSamplerParameterfv
 
  glSamplerParameterfv_c($sampler, $pname, $param);
+ glSamplerParameterfv_p($sampler, $pname, @param);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
@@ -13353,6 +13403,7 @@ Exported under tag C<:GL_ARB_sampler_objects>.
 =head2 glSamplerParameteriv
 
  glSamplerParameteriv_c($sampler, $pname, $param);
+ glSamplerParameteriv_p($sampler, $pname, @param);
 
 Exported under tag C<:GL_ARB_sampler_objects>.
 
@@ -14581,6 +14632,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glTexEnvf.xml>
 =head2 glTexEnvfv
 
  glTexEnvfv_c($target, $pname, $params);
+ glTexEnvfv_p($target, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14597,6 +14649,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glTexEnvi.xml>
 =head2 glTexEnviv
 
  glTexEnviv_c($target, $pname, $params);
+ glTexEnviv_p($target, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14611,6 +14664,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glTexEnvxv
 
  glTexEnvxv_c($target, $pname, $params);
+ glTexEnvxv_p($target, $pname, @params);
 
 Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 
@@ -14644,6 +14698,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glTexGend.xml>
 =head2 glTexGendv
 
  glTexGendv_c($coord, $pname, $params);
+ glTexGendv_p($coord, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14666,6 +14721,7 @@ Exported under tag C<:GL_OES_texture_cube_map>.
 =head2 glTexGenfv
 
  glTexGenfv_c($coord, $pname, $params);
+ glTexGenfv_p($coord, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14694,6 +14750,7 @@ Exported under tag C<:GL_OES_texture_cube_map>.
 =head2 glTexGeniv
 
  glTexGeniv_c($coord, $pname, $params);
+ glTexGeniv_p($coord, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -14798,6 +14855,8 @@ Exported under tag C<:GL_NV_memory_object_sparse>.
 
  glTexParameterIiv_c($target, $pname, $params);
  glTexParameterIivEXT_c($target, $pname, $params);
+ glTexParameterIiv_p($target, $pname, @params);
+ glTexParameterIivEXT_p($target, $pname, @params);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameterIiv.xhtml>
@@ -14812,6 +14871,8 @@ Exported under tag C<:GL_OES_texture_border_clamp>.
 
  glTexParameterIuiv_c($target, $pname, $params);
  glTexParameterIuivEXT_c($target, $pname, $params);
+ glTexParameterIuiv_p($target, $pname, @params);
+ glTexParameterIuivEXT_p($target, $pname, @params);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameterIuiv.xhtml>
@@ -14832,6 +14893,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameterf.xhtm
 =head2 glTexParameterfv
 
  glTexParameterfv_c($target, $pname, $params);
+ glTexParameterfv_p($target, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameterfv.xhtml>
@@ -14846,6 +14908,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameteri.xhtm
 =head2 glTexParameteriv
 
  glTexParameteriv_c($target, $pname, $params);
+ glTexParameteriv_p($target, $pname, @params);
 
 Exported under tag C<:GL_VERSION_1_1>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameteriv.xhtml>
@@ -14859,6 +14922,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glTexParameterxv
 
  glTexParameterxv_c($target, $pname, $params);
+ glTexParameterxv_p($target, $pname, @params);
 
 Exported under tag C<:GL_REGAL_ES1_1_compatibility>.
 
@@ -15138,24 +15202,28 @@ Exported under tag C<:GL_NV_memory_object_sparse>.
 =head2 glTextureParameterIiv
 
  glTextureParameterIiv_c($texture, $pname, $params);
+ glTextureParameterIiv_p($texture, $pname, @params);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
 =head2 glTextureParameterIivEXT
 
  glTextureParameterIivEXT_c($texture, $target, $pname, $params);
+ glTextureParameterIivEXT_p($texture, $target, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
 =head2 glTextureParameterIuiv
 
  glTextureParameterIuiv_c($texture, $pname, $params);
+ glTextureParameterIuiv_p($texture, $pname, @params);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
 =head2 glTextureParameterIuivEXT
 
  glTextureParameterIuivEXT_c($texture, $target, $pname, $params);
+ glTextureParameterIuivEXT_p($texture, $target, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -15174,12 +15242,14 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glTextureParameterfv
 
  glTextureParameterfv_c($texture, $pname, $param);
+ glTextureParameterfv_p($texture, $pname, @param);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
 =head2 glTextureParameterfvEXT
 
  glTextureParameterfvEXT_c($texture, $target, $pname, $params);
+ glTextureParameterfvEXT_p($texture, $target, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -15198,12 +15268,14 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glTextureParameteriv
 
  glTextureParameteriv_c($texture, $pname, $param);
+ glTextureParameteriv_p($texture, $pname, @param);
 
 Exported under tag C<:GL_ARB_direct_state_access>.
 
 =head2 glTextureParameterivEXT
 
  glTextureParameterivEXT_c($texture, $target, $pname, $params);
+ glTextureParameterivEXT_p($texture, $target, $pname, @params);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 

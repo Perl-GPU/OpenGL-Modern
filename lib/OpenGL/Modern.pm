@@ -52,8 +52,11 @@ our @gl_functionscompat = qw(
   glClearAccum
   glClearBufferfi
   glClearBufferfv_c
+  glClearBufferfv_p
   glClearBufferiv_c
+  glClearBufferiv_p
   glClearBufferuiv_c
+  glClearBufferuiv_p
   glClearColor
   glClearDepth
   glClearIndex
@@ -205,8 +208,10 @@ our @gl_functionscompat = qw(
   glFogCoordfv_p
   glFogf
   glFogfv_c
+  glFogfv_p
   glFogi
   glFogiv_c
+  glFogiv_p
   glFramebufferRenderbuffer
   glFramebufferTexture1D
   glFramebufferTexture2D
@@ -371,12 +376,16 @@ our @gl_functionscompat = qw(
   glIsVertexArray
   glLightModelf
   glLightModelfv_c
+  glLightModelfv_p
   glLightModeli
   glLightModeliv_c
+  glLightModeliv_p
   glLightf
   glLightfv_c
+  glLightfv_p
   glLighti
   glLightiv_c
+  glLightiv_p
   glLineStipple
   glLineWidth
   glLinkProgram
@@ -404,8 +413,10 @@ our @gl_functionscompat = qw(
   glMapGrid2f
   glMaterialf
   glMaterialfv_c
+  glMaterialfv_p
   glMateriali
   glMaterialiv_c
+  glMaterialiv_p
   glMatrixMode
   glMultMatrixd_c
   glMultMatrixd_p
@@ -497,8 +508,10 @@ our @gl_functionscompat = qw(
   glPixelZoom
   glPointParameterf
   glPointParameterfv_c
+  glPointParameterfv_p
   glPointParameteri
   glPointParameteriv_c
+  glPointParameteriv_p
   glPointSize
   glPolygonMode
   glPolygonOffset
@@ -656,23 +669,32 @@ our @gl_functionscompat = qw(
   glTexCoordPointer_c
   glTexEnvf
   glTexEnvfv_c
+  glTexEnvfv_p
   glTexEnvi
   glTexEnviv_c
+  glTexEnviv_p
   glTexGend
   glTexGendv_c
+  glTexGendv_p
   glTexGenf
   glTexGenfv_c
+  glTexGenfv_p
   glTexGeni
   glTexGeniv_c
+  glTexGeniv_p
   glTexImage1D_c
   glTexImage2D_c
   glTexImage3D_c
   glTexParameterIiv_c
+  glTexParameterIiv_p
   glTexParameterIuiv_c
+  glTexParameterIuiv_p
   glTexParameterf
   glTexParameterfv_c
+  glTexParameterfv_p
   glTexParameteri
   glTexParameteriv_c
+  glTexParameteriv_p
   glTexSubImage1D_c
   glTexSubImage2D_c
   glTexSubImage3D_c
@@ -1061,8 +1083,11 @@ our @gl_functionsrest = qw(
   glClearNamedBufferSubData_c
   glClearNamedFramebufferfi
   glClearNamedFramebufferfv_c
+  glClearNamedFramebufferfv_p
   glClearNamedFramebufferiv_c
+  glClearNamedFramebufferiv_p
   glClearNamedFramebufferuiv_c
+  glClearNamedFramebufferuiv_p
   glClearPixelLocalStorageuiEXT_c
   glClearPixelLocalStorageuiEXT_p
   glClearTexImageEXT_c
@@ -1117,9 +1142,13 @@ our @gl_functionsrest = qw(
   glColorSubTable_c
   glColorTableEXT_c
   glColorTableParameterfvSGI_c
+  glColorTableParameterfvSGI_p
   glColorTableParameterfv_c
+  glColorTableParameterfv_p
   glColorTableParameterivSGI_c
+  glColorTableParameterivSGI_p
   glColorTableParameteriv_c
+  glColorTableParameteriv_p
   glColorTableSGI_c
   glColorTable_c
   glCombinerInputNV
@@ -1167,11 +1196,15 @@ our @gl_functionsrest = qw(
   glConvolutionParameterf
   glConvolutionParameterfEXT
   glConvolutionParameterfvEXT_c
+  glConvolutionParameterfvEXT_p
   glConvolutionParameterfv_c
+  glConvolutionParameterfv_p
   glConvolutionParameteri
   glConvolutionParameteriEXT
   glConvolutionParameterivEXT_c
+  glConvolutionParameterivEXT_p
   glConvolutionParameteriv_c
+  glConvolutionParameteriv_p
   glCopyBufferSubDataNV
   glCopyColorSubTable
   glCopyColorSubTableEXT
@@ -2474,6 +2507,7 @@ our @gl_functionsrest = qw(
   glFogLayersSGIX_c
   glFogx
   glFogxv_c
+  glFogxv_p
   glFragmentColorMaterialEXT
   glFragmentColorMaterialSGIX
   glFragmentCoverageColorNV
@@ -2499,10 +2533,12 @@ our @gl_functionsrest = qw(
   glFragmentMaterialfSGIX
   glFragmentMaterialfvEXT_c
   glFragmentMaterialfvSGIX_c
+  glFragmentMaterialfvSGIX_p
   glFragmentMaterialiEXT
   glFragmentMaterialiSGIX
   glFragmentMaterialivEXT_c
   glFragmentMaterialivSGIX_c
+  glFragmentMaterialivSGIX_p
   glFramebufferDrawBufferEXT
   glFramebufferDrawBuffersEXT_c
   glFramebufferDrawBuffersEXT_p
@@ -3292,8 +3328,10 @@ our @gl_functionsrest = qw(
   glLightEnviEXT
   glLightModelx
   glLightModelxv_c
+  glLightModelxv_p
   glLightx
   glLightxv_c
+  glLightxv_p
   glLineWidthx
   glLinkProgramARB
   glListDrawCommandsStatesClientNV_c
@@ -3338,6 +3376,7 @@ our @gl_functionsrest = qw(
   glMapVertexAttrib2fAPPLE_c
   glMaterialx
   glMaterialxv_c
+  glMaterialxv_p
   glMatrixFrustumEXT
   glMatrixIndexPointerARB_c
   glMatrixIndexPointerOES_c
@@ -3515,23 +3554,32 @@ our @gl_functionsrest = qw(
   glMultiTexCoordPointerEXT_c
   glMultiTexEnvfEXT
   glMultiTexEnvfvEXT_c
+  glMultiTexEnvfvEXT_p
   glMultiTexEnviEXT
   glMultiTexEnvivEXT_c
+  glMultiTexEnvivEXT_p
   glMultiTexGendEXT
   glMultiTexGendvEXT_c
+  glMultiTexGendvEXT_p
   glMultiTexGenfEXT
   glMultiTexGenfvEXT_c
+  glMultiTexGenfvEXT_p
   glMultiTexGeniEXT
   glMultiTexGenivEXT_c
+  glMultiTexGenivEXT_p
   glMultiTexImage1DEXT_c
   glMultiTexImage2DEXT_c
   glMultiTexImage3DEXT_c
   glMultiTexParameterfEXT
   glMultiTexParameterfvEXT_c
+  glMultiTexParameterfvEXT_p
   glMultiTexParameteriEXT
   glMultiTexParameterIivEXT_c
+  glMultiTexParameterIivEXT_p
   glMultiTexParameterIuivEXT_c
+  glMultiTexParameterIuivEXT_p
   glMultiTexParameterivEXT_c
+  glMultiTexParameterivEXT_p
   glMultiTexRenderbufferEXT
   glMultiTexSubImage1DEXT_c
   glMultiTexSubImage2DEXT_c
@@ -3642,6 +3690,7 @@ our @gl_functionsrest = qw(
   glOrthox
   glPassTexCoordATI
   glPatchParameterfv_c
+  glPatchParameterfv_p
   glPatchParameteri
   glPatchParameteriEXT
   glPathColorGenNV_c
@@ -3688,12 +3737,17 @@ our @gl_functionsrest = qw(
   glPointParameterfEXT
   glPointParameterfSGIS
   glPointParameterfvARB_c
+  glPointParameterfvARB_p
   glPointParameterfvEXT_c
+  glPointParameterfvEXT_p
   glPointParameterfvSGIS_c
+  glPointParameterfvSGIS_p
   glPointParameteriNV
   glPointParameterivNV_c
+  glPointParameterivNV_p
   glPointParameterx
   glPointParameterxv_c
+  glPointParameterxv_p
   glPointSizePointerOES_c
   glPointSizex
   glPollAsyncSGIX_c
@@ -4056,14 +4110,20 @@ our @gl_functionsrest = qw(
   glSamplePatternSGIS
   glSamplerParameterf
   glSamplerParameterfv_c
+  glSamplerParameterfv_p
   glSamplerParameteri
   glSamplerParameterIivEXT_c
+  glSamplerParameterIivEXT_p
   glSamplerParameterIivOES_c
   glSamplerParameterIiv_c
+  glSamplerParameterIiv_p
   glSamplerParameterIuivEXT_c
+  glSamplerParameterIuivEXT_p
   glSamplerParameterIuivOES_c
   glSamplerParameterIuiv_c
+  glSamplerParameterIuiv_p
   glSamplerParameteriv_c
+  glSamplerParameteriv_p
   glScalex
   glScissorArrayvNV_c
   glScissorArrayvNV_p
@@ -4236,6 +4296,7 @@ our @gl_functionsrest = qw(
   glTexCoordPointervINTEL_c
   glTexEnvx
   glTexEnvxv_c
+  glTexEnvxv_p
   glTexEstimateMotionQCOM
   glTexEstimateMotionRegionsQCOM
   glTexFilterFuncSGIS_c
@@ -4258,11 +4319,14 @@ our @gl_functionsrest = qw(
   glTexPageCommitmentEXT
   glTexPageCommitmentMemNV
   glTexParameterIivEXT_c
+  glTexParameterIivEXT_p
   glTexParameterIivOES_c
   glTexParameterIuivEXT_c
+  glTexParameterIuivEXT_p
   glTexParameterIuivOES_c
   glTexParameterx
   glTexParameterxv_c
+  glTexParameterxv_p
   glTexRenderbufferNV
   glTexScissorFuncINTEL
   glTexScissorINTEL
@@ -4313,15 +4377,23 @@ our @gl_functionsrest = qw(
   glTextureParameterf
   glTextureParameterfEXT
   glTextureParameterfvEXT_c
+  glTextureParameterfvEXT_p
   glTextureParameterfv_c
+  glTextureParameterfv_p
   glTextureParameteri
   glTextureParameteriEXT
   glTextureParameterIivEXT_c
+  glTextureParameterIivEXT_p
   glTextureParameterIiv_c
+  glTextureParameterIiv_p
   glTextureParameterIuivEXT_c
+  glTextureParameterIuivEXT_p
   glTextureParameterIuiv_c
+  glTextureParameterIuiv_p
   glTextureParameterivEXT_c
+  glTextureParameterivEXT_p
   glTextureParameteriv_c
+  glTextureParameteriv_p
   glTextureRangeAPPLE_c
   glTextureRenderbufferEXT
   glTextureStorage1D
@@ -5282,8 +5354,11 @@ our %EXPORT_TAGS_GL = (
     'glClearNamedBufferSubData_c',
     'glClearNamedFramebufferfi',
     'glClearNamedFramebufferfv_c',
+    'glClearNamedFramebufferfv_p',
     'glClearNamedFramebufferiv_c',
+    'glClearNamedFramebufferiv_p',
     'glClearNamedFramebufferuiv_c',
+    'glClearNamedFramebufferuiv_p',
     'glCompressedTextureSubImage1D_c',
     'glCompressedTextureSubImage2D_c',
     'glCompressedTextureSubImage3D_c',
@@ -5360,11 +5435,15 @@ our %EXPORT_TAGS_GL = (
     'glTextureBuffer',
     'glTextureBufferRange',
     'glTextureParameterIiv_c',
+    'glTextureParameterIiv_p',
     'glTextureParameterIuiv_c',
+    'glTextureParameterIuiv_p',
     'glTextureParameterf',
     'glTextureParameterfv_c',
+    'glTextureParameterfv_p',
     'glTextureParameteri',
     'glTextureParameteriv_c',
+    'glTextureParameteriv_p',
     'glTextureStorage1D',
     'glTextureStorage2D',
     'glTextureStorage2DMultisample',
@@ -5551,14 +5630,18 @@ our %EXPORT_TAGS_GL = (
   'GL_ARB_imaging' => [
     'glColorSubTable_c',
     'glColorTableParameterfv_c',
+    'glColorTableParameterfv_p',
     'glColorTableParameteriv_c',
+    'glColorTableParameteriv_p',
     'glColorTable_c',
     'glConvolutionFilter1D_c',
     'glConvolutionFilter2D_c',
     'glConvolutionParameterf',
     'glConvolutionParameterfv_c',
+    'glConvolutionParameterfv_p',
     'glConvolutionParameteri',
     'glConvolutionParameteriv_c',
+    'glConvolutionParameteriv_p',
     'glCopyColorSubTable',
     'glCopyColorTable',
     'glCopyConvolutionFilter1D',
@@ -5722,7 +5805,8 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ARB_point_parameters' => [
     'glPointParameterfARB',
-    'glPointParameterfvARB_c'
+    'glPointParameterfvARB_c',
+    'glPointParameterfvARB_p'
   ],
   'GL_ARB_polygon_offset_clamp' => [
     'glPolygonOffsetClamp'
@@ -5798,11 +5882,15 @@ our %EXPORT_TAGS_GL = (
     'glGetSamplerParameteriv_p',
     'glIsSampler',
     'glSamplerParameterIiv_c',
+    'glSamplerParameterIiv_p',
     'glSamplerParameterIuiv_c',
+    'glSamplerParameterIuiv_p',
     'glSamplerParameterf',
     'glSamplerParameterfv_c',
+    'glSamplerParameterfv_p',
     'glSamplerParameteri',
-    'glSamplerParameteriv_c'
+    'glSamplerParameteriv_c',
+    'glSamplerParameteriv_p'
   ],
   'GL_ARB_separate_shader_objects' => [
     'glActiveShaderProgram',
@@ -6012,6 +6100,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ARB_tessellation_shader' => [
     'glPatchParameterfv_c',
+    'glPatchParameterfv_p',
     'glPatchParameteri'
   ],
   'GL_ARB_texture_barrier' => [
@@ -6590,8 +6679,10 @@ our %EXPORT_TAGS_GL = (
     'glConvolutionFilter2DEXT_c',
     'glConvolutionParameterfEXT',
     'glConvolutionParameterfvEXT_c',
+    'glConvolutionParameterfvEXT_p',
     'glConvolutionParameteriEXT',
     'glConvolutionParameterivEXT_c',
+    'glConvolutionParameterivEXT_p',
     'glCopyConvolutionFilter1DEXT',
     'glCopyConvolutionFilter2DEXT',
     'glGetConvolutionFilterEXT_c',
@@ -6781,23 +6872,32 @@ our %EXPORT_TAGS_GL = (
     'glMultiTexCoordPointerEXT_c',
     'glMultiTexEnvfEXT',
     'glMultiTexEnvfvEXT_c',
+    'glMultiTexEnvfvEXT_p',
     'glMultiTexEnviEXT',
     'glMultiTexEnvivEXT_c',
+    'glMultiTexEnvivEXT_p',
     'glMultiTexGendEXT',
     'glMultiTexGendvEXT_c',
+    'glMultiTexGendvEXT_p',
     'glMultiTexGenfEXT',
     'glMultiTexGenfvEXT_c',
+    'glMultiTexGenfvEXT_p',
     'glMultiTexGeniEXT',
     'glMultiTexGenivEXT_c',
+    'glMultiTexGenivEXT_p',
     'glMultiTexImage1DEXT_c',
     'glMultiTexImage2DEXT_c',
     'glMultiTexImage3DEXT_c',
     'glMultiTexParameterIivEXT_c',
+    'glMultiTexParameterIivEXT_p',
     'glMultiTexParameterIuivEXT_c',
+    'glMultiTexParameterIuivEXT_p',
     'glMultiTexParameterfEXT',
     'glMultiTexParameterfvEXT_c',
+    'glMultiTexParameterfvEXT_p',
     'glMultiTexParameteriEXT',
     'glMultiTexParameterivEXT_c',
+    'glMultiTexParameterivEXT_p',
     'glMultiTexRenderbufferEXT',
     'glMultiTexSubImage1DEXT_c',
     'glMultiTexSubImage2DEXT_c',
@@ -6896,11 +6996,15 @@ our %EXPORT_TAGS_GL = (
     'glTextureImage3DEXT_c',
     'glTexturePageCommitmentEXT',
     'glTextureParameterIivEXT_c',
+    'glTextureParameterIivEXT_p',
     'glTextureParameterIuivEXT_c',
+    'glTextureParameterIuivEXT_p',
     'glTextureParameterfEXT',
     'glTextureParameterfvEXT_c',
+    'glTextureParameterfvEXT_p',
     'glTextureParameteriEXT',
     'glTextureParameterivEXT_c',
+    'glTextureParameterivEXT_p',
     'glTextureRenderbufferEXT',
     'glTextureSubImage1DEXT_c',
     'glTextureSubImage2DEXT_c',
@@ -7231,7 +7335,8 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_EXT_point_parameters' => [
     'glPointParameterfEXT',
-    'glPointParameterfvEXT_c'
+    'glPointParameterfvEXT_c',
+    'glPointParameterfvEXT_p'
   ],
   'GL_EXT_polygon_offset' => [
     'glPolygonOffsetEXT'
@@ -7353,7 +7458,9 @@ our %EXPORT_TAGS_GL = (
     'glGetSamplerParameterIuivEXT_c',
     'glGetSamplerParameterIuivEXT_p',
     'glSamplerParameterIivEXT_c',
-    'glSamplerParameterIuivEXT_c'
+    'glSamplerParameterIivEXT_p',
+    'glSamplerParameterIuivEXT_c',
+    'glSamplerParameterIuivEXT_p'
   ],
   'GL_EXT_texture_buffer_object' => [
     'glTexBufferEXT'
@@ -7366,7 +7473,9 @@ our %EXPORT_TAGS_GL = (
     'glGetTexParameterIuivEXT_c',
     'glGetTexParameterIuivEXT_p',
     'glTexParameterIivEXT_c',
-    'glTexParameterIuivEXT_c'
+    'glTexParameterIivEXT_p',
+    'glTexParameterIuivEXT_c',
+    'glTexParameterIuivEXT_p'
   ],
   'GL_EXT_texture_object' => [
     'glAreTexturesResidentEXT_c',
@@ -8144,7 +8253,8 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_NV_point_sprite' => [
     'glPointParameteriNV',
-    'glPointParameterivNV_c'
+    'glPointParameterivNV_c',
+    'glPointParameterivNV_p'
   ],
   'GL_NV_polygon_mode' => [
     'glPolygonModeNV'
@@ -8661,17 +8771,21 @@ our %EXPORT_TAGS_GL = (
     'glDepthRangex',
     'glFogx',
     'glFogxv_c',
+    'glFogxv_p',
     'glFrustumf',
     'glFrustumx',
     'glLightModelx',
     'glLightModelxv_c',
+    'glLightModelxv_p',
     'glLightx',
     'glLightxv_c',
+    'glLightxv_p',
     'glLineWidthx',
     'glLoadMatrixx_c',
     'glLoadMatrixx_p',
     'glMaterialx',
     'glMaterialxv_c',
+    'glMaterialxv_p',
     'glMultMatrixx_c',
     'glMultMatrixx_p',
     'glMultiTexCoord4x',
@@ -8685,6 +8799,7 @@ our %EXPORT_TAGS_GL = (
     'glScalex',
     'glTexEnvx',
     'glTexEnvxv_c',
+    'glTexEnvxv_p',
     'glTexParameterx',
     'glTranslatex'
   ],
@@ -8708,8 +8823,10 @@ our %EXPORT_TAGS_GL = (
     'glGetTexParameterxv_p',
     'glPointParameterx',
     'glPointParameterxv_c',
+    'glPointParameterxv_p',
     'glPointSizePointerOES_c',
-    'glTexParameterxv_c'
+    'glTexParameterxv_c',
+    'glTexParameterxv_p'
   ],
   'GL_REGAL_extension_query' => [
     'glGetExtensionREGAL',
@@ -8796,8 +8913,10 @@ our %EXPORT_TAGS_GL = (
     'glFragmentLightivSGIX_p',
     'glFragmentMaterialfSGIX',
     'glFragmentMaterialfvSGIX_c',
+    'glFragmentMaterialfvSGIX_p',
     'glFragmentMaterialiSGIX',
     'glFragmentMaterialivSGIX_c',
+    'glFragmentMaterialivSGIX_p',
     'glGetFragmentLightfvSGIX_c',
     'glGetFragmentLightfvSGIX_p',
     'glGetFragmentLightivSGIX_c',
@@ -8870,7 +8989,9 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_SGI_color_table' => [
     'glColorTableParameterfvSGI_c',
+    'glColorTableParameterfvSGI_p',
     'glColorTableParameterivSGI_c',
+    'glColorTableParameterivSGI_p',
     'glColorTableSGI_c',
     'glCopyColorTableSGI',
     'glGetColorTableParameterfvSGI_c',
@@ -9074,8 +9195,10 @@ our %EXPORT_TAGS_GL = (
     'glFlush',
     'glFogf',
     'glFogfv_c',
+    'glFogfv_p',
     'glFogi',
     'glFogiv_c',
+    'glFogiv_p',
     'glFrontFace',
     'glFrustum',
     'glGenLists',
@@ -9153,12 +9276,16 @@ our %EXPORT_TAGS_GL = (
     'glIsTexture',
     'glLightModelf',
     'glLightModelfv_c',
+    'glLightModelfv_p',
     'glLightModeli',
     'glLightModeliv_c',
+    'glLightModeliv_p',
     'glLightf',
     'glLightfv_c',
+    'glLightfv_p',
     'glLighti',
     'glLightiv_c',
+    'glLightiv_p',
     'glLineStipple',
     'glLineWidth',
     'glListBase',
@@ -9179,8 +9306,10 @@ our %EXPORT_TAGS_GL = (
     'glMapGrid2f',
     'glMaterialf',
     'glMaterialfv_c',
+    'glMaterialfv_p',
     'glMateriali',
     'glMaterialiv_c',
+    'glMaterialiv_p',
     'glMatrixMode',
     'glMultMatrixd_c',
     'glMultMatrixd_p',
@@ -9338,20 +9467,27 @@ our %EXPORT_TAGS_GL = (
     'glTexCoordPointer_c',
     'glTexEnvf',
     'glTexEnvfv_c',
+    'glTexEnvfv_p',
     'glTexEnvi',
     'glTexEnviv_c',
+    'glTexEnviv_p',
     'glTexGend',
     'glTexGendv_c',
+    'glTexGendv_p',
     'glTexGenf',
     'glTexGenfv_c',
+    'glTexGenfv_p',
     'glTexGeni',
     'glTexGeniv_c',
+    'glTexGeniv_p',
     'glTexImage1D_c',
     'glTexImage2D_c',
     'glTexParameterf',
     'glTexParameterfv_c',
+    'glTexParameterfv_p',
     'glTexParameteri',
     'glTexParameteriv_c',
+    'glTexParameteriv_p',
     'glTexSubImage1D_c',
     'glTexSubImage2D_c',
     'glTranslated',
@@ -9484,8 +9620,10 @@ our %EXPORT_TAGS_GL = (
     'glMultiDrawElements_c',
     'glPointParameterf',
     'glPointParameterfv_c',
+    'glPointParameterfv_p',
     'glPointParameteri',
     'glPointParameteriv_c',
+    'glPointParameteriv_p',
     'glSecondaryColor3b',
     'glSecondaryColor3bv_c',
     'glSecondaryColor3bv_p',
@@ -9730,8 +9868,11 @@ our %EXPORT_TAGS_GL = (
     'glClampColor',
     'glClearBufferfi',
     'glClearBufferfv_c',
+    'glClearBufferfv_p',
     'glClearBufferiv_c',
+    'glClearBufferiv_p',
     'glClearBufferuiv_c',
+    'glClearBufferuiv_p',
     'glColorMaski',
     'glDeleteFramebuffers_c',
     'glDeleteFramebuffers_p',
@@ -9781,7 +9922,9 @@ our %EXPORT_TAGS_GL = (
     'glRenderbufferStorage',
     'glRenderbufferStorageMultisample',
     'glTexParameterIiv_c',
+    'glTexParameterIiv_p',
     'glTexParameterIuiv_c',
+    'glTexParameterIuiv_p',
     'glTransformFeedbackVaryings_c',
     'glTransformFeedbackVaryings_p',
     'glUniform1ui',
@@ -9921,11 +10064,15 @@ our %EXPORT_TAGS_GL = (
     'glNormalP3uiv_p',
     'glQueryCounter',
     'glSamplerParameterIiv_c',
+    'glSamplerParameterIiv_p',
     'glSamplerParameterIuiv_c',
+    'glSamplerParameterIuiv_p',
     'glSamplerParameterf',
     'glSamplerParameterfv_c',
+    'glSamplerParameterfv_p',
     'glSamplerParameteri',
     'glSamplerParameteriv_c',
+    'glSamplerParameteriv_p',
     'glSecondaryColorP3ui',
     'glSecondaryColorP3uiv_c',
     'glSecondaryColorP3uiv_p',
@@ -9997,6 +10144,7 @@ our %EXPORT_TAGS_GL = (
     'glIsTransformFeedback',
     'glMinSampleShading',
     'glPatchParameterfv_c',
+    'glPatchParameterfv_p',
     'glPatchParameteri',
     'glPauseTransformFeedback',
     'glResumeTransformFeedback',
@@ -10280,8 +10428,11 @@ our %EXPORT_TAGS_GL = (
     'glClearNamedBufferSubData_c',
     'glClearNamedFramebufferfi',
     'glClearNamedFramebufferfv_c',
+    'glClearNamedFramebufferfv_p',
     'glClearNamedFramebufferiv_c',
+    'glClearNamedFramebufferiv_p',
     'glClearNamedFramebufferuiv_c',
+    'glClearNamedFramebufferuiv_p',
     'glClipControl',
     'glCompressedTextureSubImage1D_c',
     'glCompressedTextureSubImage2D_c',
@@ -10398,11 +10549,15 @@ our %EXPORT_TAGS_GL = (
     'glTextureBuffer',
     'glTextureBufferRange',
     'glTextureParameterIiv_c',
+    'glTextureParameterIiv_p',
     'glTextureParameterIuiv_c',
+    'glTextureParameterIuiv_p',
     'glTextureParameterf',
     'glTextureParameterfv_c',
+    'glTextureParameterfv_p',
     'glTextureParameteri',
     'glTextureParameteriv_c',
+    'glTextureParameteriv_p',
     'glTextureStorage1D',
     'glTextureStorage2D',
     'glTextureStorage2DMultisample',

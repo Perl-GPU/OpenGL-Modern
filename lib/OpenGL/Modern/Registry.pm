@@ -8193,6 +8193,9 @@ our %registry = (
         'COMPSIZE(buffer)'
       ]
     ],
+    'dynlang' => {
+      'value' => 'SIZE:Buffer:buffer,VARARGS:2:buffer_count'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewClearBufferfv',
     'glewtype' => 'fun',
@@ -8219,6 +8222,9 @@ our %registry = (
         'COMPSIZE(buffer)'
       ]
     ],
+    'dynlang' => {
+      'value' => 'SIZE:Buffer:buffer,VARARGS:2:buffer_count'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewClearBufferiv',
     'glewtype' => 'fun',
@@ -8245,6 +8251,9 @@ our %registry = (
         'COMPSIZE(buffer)'
       ]
     ],
+    'dynlang' => {
+      'value' => 'SIZE:Buffer:buffer,VARARGS:2:buffer_count'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewClearBufferuiv',
     'glewtype' => 'fun',
@@ -8639,6 +8648,9 @@ our %registry = (
         'COMPSIZE(buffer)'
       ]
     ],
+    'dynlang' => {
+      'value' => 'SIZE:Buffer:buffer,VARARGS:3:buffer_count'
+    },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewClearNamedFramebufferfv',
     'glewtype' => 'fun',
@@ -8669,6 +8681,9 @@ our %registry = (
         'COMPSIZE(buffer)'
       ]
     ],
+    'dynlang' => {
+      'value' => 'SIZE:Buffer:buffer,VARARGS:3:buffer_count'
+    },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewClearNamedFramebufferiv',
     'glewtype' => 'fun',
@@ -8699,6 +8714,9 @@ our %registry = (
         'COMPSIZE(buffer)'
       ]
     ],
+    'dynlang' => {
+      'value' => 'SIZE:Buffer:buffer,VARARGS:3:buffer_count'
+    },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewClearNamedFramebufferuiv',
     'glewtype' => 'fun',
@@ -10721,6 +10739,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:ColorTableParameterPName:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewColorTableParameterfv',
     'glewtype' => 'fun',
@@ -10752,6 +10773,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:ColorTableParameterPName:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewColorTableParameteriv',
     'glewtype' => 'fun',
@@ -12559,6 +12583,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:ConvolutionParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewConvolutionParameterfv',
     'glewtype' => 'fun',
@@ -12617,6 +12644,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:ConvolutionParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_imaging',
     'glewImpl' => '__glewConvolutionParameteriv',
     'glewtype' => 'fun',
@@ -19208,6 +19238,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:FogParameter:pname,VARARGS:1:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -19248,6 +19281,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:FogParameter:pname,VARARGS:1:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -19287,6 +19323,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'param' => 'SIZE:FogPName:pname,VARARGS:1:pname_count'
+    },
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewFogxv',
     'glewtype' => 'fun',
@@ -19776,6 +19815,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:MaterialParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentMaterialfvSGIX',
     'glewtype' => 'fun',
@@ -19871,6 +19913,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:MaterialParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_SGIX_fragment_specular_lighting',
     'glewImpl' => '__glewFragmentMaterialivSGIX',
     'glewtype' => 'fun',
@@ -36253,6 +36298,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:LightModelParameter:pname,VARARGS:1:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -36293,6 +36341,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:LightModelParameter:pname,VARARGS:1:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -36332,6 +36383,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'param' => 'SIZE:LightModelParameter:pname,VARARGS:1:pname_count'
+    },
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewLightModelxv',
     'glewtype' => 'fun',
@@ -36385,6 +36439,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:LightParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -36437,6 +36494,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:LightParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -36488,6 +36548,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:LightParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewLightxv',
     'glewtype' => 'fun',
@@ -37885,6 +37948,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:MaterialParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -37937,6 +38003,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:MaterialParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -37988,6 +38057,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'param' => 'SIZE:MaterialParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewMaterialxv',
     'glewtype' => 'fun',
@@ -41143,6 +41215,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureEnvParameter:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexEnvfvEXT',
     'glewtype' => 'fun',
@@ -41207,6 +41282,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureEnvParameter:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexEnvivEXT',
     'glewtype' => 'fun',
@@ -41271,6 +41349,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureGenParameter:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexGendvEXT',
     'glewtype' => 'fun',
@@ -41335,6 +41416,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureGenParameter:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexGenfvEXT',
     'glewtype' => 'fun',
@@ -41399,6 +41483,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureGenParameter:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexGenivEXT',
     'glewtype' => 'fun',
@@ -41619,6 +41706,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexParameterIivEXT',
     'glewtype' => 'fun',
@@ -41653,6 +41743,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexParameterIuivEXT',
     'glewtype' => 'fun',
@@ -41717,6 +41810,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexParameterfvEXT',
     'glewtype' => 'fun',
@@ -41781,6 +41877,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewMultiTexParameterivEXT',
     'glewtype' => 'fun',
@@ -45035,6 +45134,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'values' => 'SIZE:PatchParameterName:pname,VARARGS:1:pname_count'
+    },
     'feature' => 'GL_ARB_tessellation_shader',
     'glewImpl' => '__glewPatchParameterfv',
     'glewtype' => 'fun',
@@ -46274,6 +46376,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:PointParameterNameARB:pname,VARARGS:1:pname_count'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewPointParameterfv',
     'glewtype' => 'fun',
@@ -46320,6 +46425,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:PointParameterNameARB:pname,VARARGS:1:pname_count'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewPointParameteriv',
     'glewtype' => 'fun',
@@ -46360,6 +46468,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:PointParameterNameARB:pname,VARARGS:1:pname_count'
+    },
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewPointParameterxv',
     'glewtype' => 'fun',
@@ -53253,6 +53364,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'param' => 'SIZE:SamplerParameterI:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewSamplerParameterIiv',
     'glewtype' => 'fun',
@@ -53305,6 +53419,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'param' => 'SIZE:SamplerParameterI:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewSamplerParameterIuiv',
     'glewtype' => 'fun',
@@ -53376,6 +53493,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'param' => 'SIZE:SamplerParameterF:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewSamplerParameterfv',
     'glewtype' => 'fun',
@@ -53424,6 +53544,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'param' => 'SIZE:SamplerParameterI:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewSamplerParameteriv',
     'glewtype' => 'fun',
@@ -57674,6 +57797,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:TextureEnvParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -57726,6 +57852,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:TextureEnvParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -57777,6 +57906,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureEnvParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_REGAL_ES1_0_compatibility',
     'glewImpl' => '__glewTexEnvxv',
     'glewtype' => 'fun',
@@ -57910,6 +58042,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:TextureGenParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -57982,6 +58117,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:TextureGenParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -58077,6 +58215,9 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'params' => 'SIZE:TextureGenParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -58773,6 +58914,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewTexParameterIiv',
     'glewtype' => 'fun',
@@ -58827,6 +58971,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewTexParameterIuiv',
     'glewtype' => 'fun',
@@ -58901,6 +59048,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -58951,6 +59101,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -59002,6 +59155,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:GetTextureParameter:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_REGAL_ES1_1_compatibility',
     'glewImpl' => '__glewTexParameterxv',
     'glewtype' => 'fun',
@@ -60696,6 +60852,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureParameterIiv',
     'glewtype' => 'fun',
@@ -60728,6 +60887,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewTextureParameterIivEXT',
     'glewtype' => 'fun',
@@ -60754,6 +60916,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureParameterIuiv',
     'glewtype' => 'fun',
@@ -60786,6 +60951,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewTextureParameterIuivEXT',
     'glewtype' => 'fun',
@@ -60862,6 +61030,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'param' => 'SIZE:TextureParameterName:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureParameterfv',
     'glewtype' => 'fun',
@@ -60894,6 +61065,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewTextureParameterfvEXT',
     'glewtype' => 'fun',
@@ -60970,6 +61144,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'param' => 'SIZE:TextureParameterName:pname,VARARGS:2:pname_count'
+    },
     'feature' => 'GL_ARB_direct_state_access',
     'glewImpl' => '__glewTextureParameteriv',
     'glewtype' => 'fun',
@@ -61002,6 +61179,9 @@ our %registry = (
         'COMPSIZE(pname)'
       ]
     ],
+    'dynlang' => {
+      'params' => 'SIZE:TextureParameterName:pname,VARARGS:3:pname_count'
+    },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewTextureParameterivEXT',
     'glewtype' => 'fun',
