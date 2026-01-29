@@ -130,7 +130,7 @@ sub bindings {
     $this{xs_code} = "PPCODE:\n";
   }
   my @xs_inargs = grep !$dynlang{$_->[0]} && !($s->{restype} eq 'void' && $name2parsed{$_->[0]} && !$name2parsed{$_->[0]}[1]), @argdata;
-  my $dotdotdot = grep /\bVARARGS\b/, values %dynlang;
+  my $dotdotdot = grep /\bVARARGS\b/, values %indynlang;
   $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
   $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
   my $beforecall = '';
