@@ -147,10 +147,9 @@ sub bindings {
   my @varargs = grep $dynlang{$_} =~ /^VARARGS/, keys %dynlang;
   die "$name: >1 VARARGS (@varargs)" if @varargs > 1;
   if (@varargs) {
-    die "$name: no VARARGS startfrom" unless my ($startfrom, $howmany) = $dynlang{$varargs[0]} =~ /^VARARGS:(\d+)(?::([^,\s]+))?/;
+    die "$name: failed to parse VARARGS '$dynlang{$varargs[0]}'" unless my ($startfrom, $howmany) = $dynlang{$varargs[0]} =~ /^VARARGS:(\d+):([^,\s]+)/;
     my $parsed = parse_ptr($name2data{$varargs[0]});
     die "$name: no typefunc for $varargs[0]" unless my $typefunc = typefunc($parsed->[0]);
-    $howmany ||= "items-$startfrom";
     $dynlang{$varargs[0]} = "OGLM_GET_VARARGS($varargs[0],$startfrom,$parsed->[0],$typefunc,$howmany)";
     $cleanup .= "\n  " if $cleanup;
     $cleanup .= "free($varargs[0]);";

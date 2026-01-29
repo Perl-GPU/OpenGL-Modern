@@ -235,7 +235,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     my $len = $arg2len{$constargs[0][0]};
     my $startfrom = grep !$dynlang{$_} && $_ ne $len && $_ ne $constargs[0][0], keys %name2data;
     $dynlang{$len} = 'items'.($startfrom ? "-$startfrom" : '');
-    $dynlang{$constargs[0][0]} = "VARARGS:$startfrom";
+    $dynlang{$constargs[0][0]} = "VARARGS:$startfrom:$len";
   }
   $s->{dynlang} = \%dynlang if %dynlang;
 }

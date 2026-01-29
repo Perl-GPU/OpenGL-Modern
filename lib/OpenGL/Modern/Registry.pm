@@ -5301,7 +5301,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items-1',
-      'programs' => 'VARARGS:1'
+      'programs' => 'VARARGS:1:n'
     },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewAreProgramsResidentNV',
@@ -5332,7 +5332,7 @@ our %registry = (
     'core_removed' => 1,
     'dynlang' => {
       'n' => 'items-1',
-      'textures' => 'VARARGS:1'
+      'textures' => 'VARARGS:1:n'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -5361,7 +5361,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items-1',
-      'textures' => 'VARARGS:1'
+      'textures' => 'VARARGS:1:n'
     },
     'feature' => 'GL_EXT_texture_object',
     'glewImpl' => '__glewAreTexturesResidentEXT',
@@ -6037,7 +6037,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'buffers' => 'VARARGS:2',
+      'buffers' => 'VARARGS:2:count',
       'count' => 'items-2'
     },
     'feature' => 'GL_ARB_multi_bind',
@@ -6301,7 +6301,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'textures' => 'VARARGS:1'
+      'textures' => 'VARARGS:1:count'
     },
     'feature' => 'GL_ARB_multi_bind',
     'glewImpl' => '__glewBindImageTextures',
@@ -6508,7 +6508,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'samplers' => 'VARARGS:1'
+      'samplers' => 'VARARGS:1:count'
     },
     'feature' => 'GL_ARB_multi_bind',
     'glewImpl' => '__glewBindSamplers',
@@ -6630,7 +6630,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'textures' => 'VARARGS:1'
+      'textures' => 'VARARGS:1:count'
     },
     'feature' => 'GL_ARB_multi_bind',
     'glewImpl' => '__glewBindTextures',
@@ -8725,7 +8725,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items-1',
-      'values' => 'VARARGS:1'
+      'values' => 'VARARGS:1:n'
     },
     'feature' => 'GL_EXT_shader_pixel_local_storage2',
     'glewImpl' => '__glewClearPixelLocalStorageuiEXT',
@@ -14087,7 +14087,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items',
-      'v' => 'VARARGS:0'
+      'v' => 'VARARGS:0:n'
     },
     'feature' => 'GL_EXT_raster_multisample',
     'glewImpl' => '__glewCoverageModulationTableNV',
@@ -14395,7 +14395,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'strings' => 'VARARGS:1'
+      'strings' => 'VARARGS:1:count'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewCreateShaderProgramv',
@@ -14698,7 +14698,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-4',
-      'ids' => 'VARARGS:4'
+      'ids' => 'VARARGS:4:count'
     },
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewDebugMessageControl',
@@ -14736,7 +14736,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-3',
-      'ids' => 'VARARGS:3'
+      'ids' => 'VARARGS:3:count'
     },
     'feature' => 'GL_AMD_debug_output',
     'glewImpl' => '__glewDebugMessageEnableAMD',
@@ -14897,7 +14897,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'buffers' => 'VARARGS:0',
+      'buffers' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_VERSION_1_5',
@@ -14921,7 +14921,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'lists' => 'VARARGS:0',
+      'lists' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_NV_command_list',
@@ -14945,7 +14945,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'fences' => 'VARARGS:0',
+      'fences' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_APPLE_fence',
@@ -14969,7 +14969,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'fences' => 'VARARGS:0',
+      'fences' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_NV_fence',
@@ -15008,7 +15008,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'framebuffers' => 'VARARGS:0',
+      'framebuffers' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_ARB_framebuffer_object',
@@ -15086,7 +15086,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'memoryObjects' => 'VARARGS:0',
+      'memoryObjects' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_EXT_memory_object',
@@ -15131,7 +15131,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'names' => 'VARARGS:1',
+      'names' => 'VARARGS:1:num',
       'num' => 'items-1'
     },
     'feature' => 'GL_AMD_name_gen_delete',
@@ -15167,7 +15167,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'ids' => 'VARARGS:0',
+      'ids' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_NV_occlusion_query',
@@ -15255,7 +15255,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items',
-      'pipelines' => 'VARARGS:0'
+      'pipelines' => 'VARARGS:0:n'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewDeleteProgramPipelines',
@@ -15282,7 +15282,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items',
-      'programs' => 'VARARGS:0'
+      'programs' => 'VARARGS:0:n'
     },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewDeleteProgramsARB',
@@ -15308,7 +15308,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'ids' => 'VARARGS:0',
+      'ids' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_VERSION_1_5',
@@ -15351,7 +15351,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'ids' => 'VARARGS:0',
+      'ids' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_EXT_disjoint_timer_query',
@@ -15379,7 +15379,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items',
-      'renderbuffers' => 'VARARGS:0'
+      'renderbuffers' => 'VARARGS:0:n'
     },
     'feature' => 'GL_ARB_framebuffer_object',
     'glewImpl' => '__glewDeleteRenderbuffers',
@@ -15422,7 +15422,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items',
-      'samplers' => 'VARARGS:0'
+      'samplers' => 'VARARGS:0:count'
     },
     'feature' => 'GL_ARB_sampler_objects',
     'glewImpl' => '__glewDeleteSamplers',
@@ -15446,7 +15446,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items',
-      'semaphores' => 'VARARGS:0'
+      'semaphores' => 'VARARGS:0:n'
     },
     'feature' => 'GL_EXT_semaphore',
     'glewImpl' => '__glewDeleteSemaphoresEXT',
@@ -15482,7 +15482,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items',
-      'states' => 'VARARGS:0'
+      'states' => 'VARARGS:0:n'
     },
     'feature' => 'GL_NV_command_list',
     'glewImpl' => '__glewDeleteStatesNV',
@@ -15521,7 +15521,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items',
-      'textures' => 'VARARGS:0'
+      'textures' => 'VARARGS:0:n'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -15544,7 +15544,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items',
-      'textures' => 'VARARGS:0'
+      'textures' => 'VARARGS:0:n'
     },
     'feature' => 'GL_EXT_texture_object',
     'glewImpl' => '__glewDeleteTexturesEXT',
@@ -15570,7 +15570,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'ids' => 'VARARGS:0',
+      'ids' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_ARB_transform_feedback2',
@@ -15597,7 +15597,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'arrays' => 'VARARGS:0',
+      'arrays' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_ARB_vertex_array_object',
@@ -15770,7 +15770,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:count'
     },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewDepthRangeArrayv',
@@ -16156,7 +16156,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'attachments' => 'VARARGS:1',
+      'attachments' => 'VARARGS:1:numAttachments',
       'numAttachments' => 'items-1'
     },
     'feature' => 'GL_EXT_discard_framebuffer',
@@ -16409,7 +16409,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'bufs' => 'VARARGS:0',
+      'bufs' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_VERSION_2_0',
@@ -16459,7 +16459,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'bufs' => 'VARARGS:0',
+      'bufs' => 'VARARGS:0:n',
       'n' => 'items'
     },
     'feature' => 'GL_NV_draw_buffers',
@@ -19825,7 +19825,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'bufs' => 'VARARGS:1',
+      'bufs' => 'VARARGS:1:n',
       'n' => 'items-1'
     },
     'feature' => 'GL_EXT_direct_state_access',
@@ -21992,7 +21992,7 @@ our %registry = (
     'dynlang' => {
       'params' => 'SIZE:UniformPName:pname:uniformCount,OUTASLIST:pname_count',
       'uniformCount' => 'items-2',
-      'uniformIndices' => 'VARARGS:2'
+      'uniformIndices' => 'VARARGS:2:uniformCount'
     },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetActiveUniformsiv',
@@ -31924,7 +31924,7 @@ our %registry = (
     'dynlang' => {
       'uniformCount' => 'items-1',
       'uniformIndices' => 'OUTASLIST:uniformCount',
-      'uniformNames' => 'VARARGS:1'
+      'uniformNames' => 'VARARGS:1:uniformCount'
     },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetUniformIndices',
@@ -34943,7 +34943,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'attachments' => 'VARARGS:1',
+      'attachments' => 'VARARGS:1:numAttachments',
       'numAttachments' => 'items-1'
     },
     'feature' => 'GL_ARB_invalidate_subdata',
@@ -34972,7 +34972,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'attachments' => 'VARARGS:1',
+      'attachments' => 'VARARGS:1:numAttachments',
       'numAttachments' => 'items-1'
     },
     'feature' => 'GL_ARB_direct_state_access',
@@ -35017,7 +35017,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'attachments' => 'VARARGS:5',
+      'attachments' => 'VARARGS:5:numAttachments',
       'numAttachments' => 'items-5'
     },
     'feature' => 'GL_ARB_direct_state_access',
@@ -35064,7 +35064,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'attachments' => 'VARARGS:5',
+      'attachments' => 'VARARGS:5:numAttachments',
       'numAttachments' => 'items-5'
     },
     'feature' => 'GL_ARB_invalidate_subdata',
@@ -41953,7 +41953,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'v' => 'VARARGS:2'
+      'v' => 'VARARGS:2:count'
     },
     'feature' => 'GL_NVX_gpu_multicast2',
     'glewImpl' => '__glewMulticastScissorArrayvNVX',
@@ -41985,7 +41985,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'v' => 'VARARGS:2'
+      'v' => 'VARARGS:2:count'
     },
     'feature' => 'GL_NVX_gpu_multicast2',
     'glewImpl' => '__glewMulticastViewportArrayvNVX',
@@ -42345,7 +42345,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'bufs' => 'VARARGS:1',
+      'bufs' => 'VARARGS:1:n',
       'n' => 'items-1'
     },
     'feature' => 'GL_ARB_direct_state_access',
@@ -44734,7 +44734,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'dashArray' => 'VARARGS:1',
+      'dashArray' => 'VARARGS:1:dashCount',
       'dashCount' => 'items-1'
     },
     'feature' => 'GL_NV_path_rendering',
@@ -45340,7 +45340,7 @@ our %registry = (
     'core_removed' => 1,
     'dynlang' => {
       'mapsize' => 'items-1',
-      'values' => 'VARARGS:1'
+      'values' => 'VARARGS:1:mapsize'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -45370,7 +45370,7 @@ our %registry = (
     'core_removed' => 1,
     'dynlang' => {
       'mapsize' => 'items-1',
-      'values' => 'VARARGS:1'
+      'values' => 'VARARGS:1:mapsize'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -45400,7 +45400,7 @@ our %registry = (
     'core_removed' => 1,
     'dynlang' => {
       'mapsize' => 'items-1',
-      'values' => 'VARARGS:1'
+      'values' => 'VARARGS:1:mapsize'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -46425,7 +46425,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-3',
-      'params' => 'VARARGS:3'
+      'params' => 'VARARGS:3:count'
     },
     'feature' => 'GL_NV_parameter_buffer_object',
     'glewImpl' => '__glewProgramBufferParametersIivNV',
@@ -46463,7 +46463,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-3',
-      'params' => 'VARARGS:3'
+      'params' => 'VARARGS:3:count'
     },
     'feature' => 'GL_NV_parameter_buffer_object',
     'glewImpl' => '__glewProgramBufferParametersIuivNV',
@@ -46501,7 +46501,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-3',
-      'params' => 'VARARGS:3'
+      'params' => 'VARARGS:3:count'
     },
     'feature' => 'GL_NV_parameter_buffer_object',
     'glewImpl' => '__glewProgramBufferParametersfvNV',
@@ -47616,7 +47616,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'value' => 'VARARGS:2'
+      'value' => 'VARARGS:2:count'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1dv',
@@ -47674,7 +47674,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'value' => 'VARARGS:2'
+      'value' => 'VARARGS:2:count'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1fv',
@@ -47769,7 +47769,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'value' => 'VARARGS:2'
+      'value' => 'VARARGS:2:count'
     },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform1i64vARB',
@@ -47801,7 +47801,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'value' => 'VARARGS:2'
+      'value' => 'VARARGS:2:count'
     },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform1i64vNV',
@@ -47836,7 +47836,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'value' => 'VARARGS:2'
+      'value' => 'VARARGS:2:count'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1iv',
@@ -47931,7 +47931,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'value' => 'VARARGS:2'
+      'value' => 'VARARGS:2:count'
     },
     'feature' => 'GL_ARB_gpu_shader_int64',
     'glewImpl' => '__glewProgramUniform1ui64vARB',
@@ -47963,7 +47963,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'value' => 'VARARGS:2'
+      'value' => 'VARARGS:2:count'
     },
     'feature' => 'GL_NV_gpu_shader5',
     'glewImpl' => '__glewProgramUniform1ui64vNV',
@@ -47998,7 +47998,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'value' => 'VARARGS:2'
+      'value' => 'VARARGS:2:count'
     },
     'feature' => 'GL_ARB_separate_shader_objects',
     'glewImpl' => '__glewProgramUniform1uiv',
@@ -49474,7 +49474,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'values' => 'VARARGS:2'
+      'values' => 'VARARGS:2:count'
     },
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewProgramUniformHandleui64vARB',
@@ -49506,7 +49506,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'values' => 'VARARGS:2'
+      'values' => 'VARARGS:2:count'
     },
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewProgramUniformHandleui64vNV',
@@ -50161,7 +50161,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'value' => 'VARARGS:2'
+      'value' => 'VARARGS:2:count'
     },
     'feature' => 'GL_NV_shader_buffer_load',
     'glewImpl' => '__glewProgramUniformui64vNV',
@@ -52846,7 +52846,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:count'
     },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewScissorArrayv',
@@ -52874,7 +52874,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:count'
     },
     'feature' => 'GL_NV_scissor_exclusive',
     'glewImpl' => '__glewScissorExclusiveArrayvNV',
@@ -53964,7 +53964,7 @@ our %registry = (
     'dynlang' => {
       'count' => 'items-1',
       'length' => 'NULL',
-      'string' => 'VARARGS:1'
+      'string' => 'VARARGS:1:count'
     },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewShaderSource',
@@ -54063,7 +54063,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'rates' => 'VARARGS:2'
+      'rates' => 'VARARGS:2:count'
     },
     'feature' => 'GL_NV_shading_rate_image',
     'glewImpl' => '__glewShadingRateImagePaletteNV',
@@ -57051,7 +57051,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items-2',
-      'weights' => 'VARARGS:2'
+      'weights' => 'VARARGS:2:n'
     },
     'feature' => 'GL_SGIS_texture_filter4',
     'glewImpl' => '__glewTexFilterFuncSGIS',
@@ -61387,7 +61387,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'varyings' => 'VARARGS:2'
+      'varyings' => 'VARARGS:2:count'
     },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewTransformFeedbackVaryings',
@@ -61422,7 +61422,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-2',
-      'locations' => 'VARARGS:2'
+      'locations' => 'VARARGS:2:count'
     },
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewTransformFeedbackVaryingsNV',
@@ -63162,7 +63162,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'value' => 'VARARGS:1'
+      'value' => 'VARARGS:1:count'
     },
     'feature' => 'GL_ARB_bindless_texture',
     'glewImpl' => '__glewUniformHandleui64vARB',
@@ -63190,7 +63190,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'value' => 'VARARGS:1'
+      'value' => 'VARARGS:1:count'
     },
     'feature' => 'GL_NV_bindless_texture',
     'glewImpl' => '__glewUniformHandleui64vNV',
@@ -63751,7 +63751,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'indices' => 'VARARGS:1'
+      'indices' => 'VARARGS:1:count'
     },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewUniformSubroutinesuiv',
@@ -68621,7 +68621,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:count'
     },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs1dvNV',
@@ -68649,7 +68649,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:count'
     },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs1fvNV',
@@ -68677,7 +68677,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:n'
     },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttribs1hvNV',
@@ -68705,7 +68705,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:count'
     },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewVertexAttribs1svNV',
@@ -68781,7 +68781,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:n'
     },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttribs2hvNV',
@@ -68881,7 +68881,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:n'
     },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttribs3hvNV',
@@ -68981,7 +68981,7 @@ our %registry = (
     ],
     'dynlang' => {
       'n' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:n'
     },
     'feature' => 'GL_NV_half_float',
     'glewImpl' => '__glewVertexAttribs4hvNV',
@@ -70343,7 +70343,7 @@ our %registry = (
     ],
     'dynlang' => {
       'count' => 'items-1',
-      'v' => 'VARARGS:1'
+      'v' => 'VARARGS:1:count'
     },
     'feature' => 'GL_ARB_viewport_array',
     'glewImpl' => '__glewViewportArrayv',
@@ -71363,7 +71363,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'box' => 'VARARGS:1',
+      'box' => 'VARARGS:1:count',
       'count' => 'items-1'
     },
     'feature' => 'GL_EXT_window_rectangles',
