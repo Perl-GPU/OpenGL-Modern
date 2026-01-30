@@ -10,6 +10,7 @@ my %type2func = (
   GLushort => 'UV',
   GLuint => 'UV',
   GLint => 'IV',
+  GLsizei => 'IV',
   GLuint64 => 'UV',
   GLuint64EXT => 'UV',
   GLint64 => 'IV',
