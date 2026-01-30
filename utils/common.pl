@@ -27,6 +27,12 @@ sub typefunc {
   $type2func{$type};
 }
 
+sub is_stringtype {
+  my ($type, $const) = @_;
+  return $type =~ /^\s*const\s+GLchar(?:ARB)?\s*\*\s*$/ if $const;
+  $type =~ /^\s*GLchar(?:ARB)?\s*\*\s*$/;
+}
+
 sub slurp {
     my $filename = $_[0];
     open my $old_fh, '<:raw', $filename

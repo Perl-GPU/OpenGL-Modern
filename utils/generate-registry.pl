@@ -135,7 +135,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   for ([$i++,$type], map [$i++,$_->[1]], @argdata) {
     my ($ind, $type) = @$_;
     next if $type !~ /\*/;
-    next if $type =~ /^\s*const\s+GLchar(?:ARB)?\s*\*\s*$/;
+    next if is_stringtype($type, 1);
     next if $name !~ /v[A-Z]*$/ and $type =~ /^\s*const\s+GLubyte(?:ARB)?\s*\*\s*$/;
     push @ptr_args, $ind;
   }
