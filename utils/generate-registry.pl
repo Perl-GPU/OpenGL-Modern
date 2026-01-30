@@ -351,16 +351,17 @@ my $middle1 = '';
 for my $name (sort grep !/^GL/, keys %signature) {
   $middle1 .= "=head2 $name\n\n";
   my $s = $signature{$name};
+  my %dynlang = %{ $s->{dynlang} || {} };
   for my $bind (sort {$a->{binding_name} cmp $b->{binding_name}} bindings($name, $s, $g2c2s)) {
     die "$name: $bind->{binding_name} has no xs_rettype" if !defined $bind->{xs_rettype};
     my $prefix = " ";
     $prefix .= "\$retval = " if $bind->{xs_rettype} ne 'void';
     if ($bind->{xs_code} eq "PPCODE:\n") {
-      my ($retname) = grep $s->{dynlang}{$_} =~ /\bOUTASLIST\b/, keys %{ $s->{dynlang} };
+      my ($retname) = grep $dynlang{$_} =~ /\bOUTASLIST\b/, keys %dynlang;
       $prefix .= "\@$retname = ";
     }
     my $suffix .= "(";
-    my ($varargsname) = grep $s->{dynlang}{$_} =~ /\bVARARGS\b/, keys %{ $s->{dynlang} };
+    my ($varargsname) = grep $dynlang{$_} =~ /\bVARARGS\b/, keys %dynlang;
     $suffix .= join ', ', map $_ eq '...' ? "\@$varargsname" : "\$$_", split /\s*,\s*/, $bind->{xs_args};
     $suffix .= ");\n";
     $middle1 .= "$prefix$_$suffix" for $bind->{binding_name}, @{ $bind->{aliases} };
