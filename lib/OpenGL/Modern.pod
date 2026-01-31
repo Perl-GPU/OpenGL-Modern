@@ -1013,14 +1013,14 @@ Exported under tag C<:GL_EXT_light_texture>.
 =head2 glAreProgramsResidentNV
 
  $retval = glAreProgramsResidentNV_c($n, $programs, $residences);
- $retval = glAreProgramsResidentNV_p($residences, @programs);
+ ($retval, \@residences) = glAreProgramsResidentNV_p(@programs);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
 =head2 glAreTexturesResident
 
  $retval = glAreTexturesResident_c($n, $textures, $residences);
- $retval = glAreTexturesResident_p($residences, @textures);
+ ($retval, \@residences) = glAreTexturesResident_p(@textures);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -1029,7 +1029,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glAreTexturesResi
 =head2 glAreTexturesResidentEXT
 
  $retval = glAreTexturesResidentEXT_c($n, $textures, $residences);
- $retval = glAreTexturesResidentEXT_p($residences, @textures);
+ ($retval, \@residences) = glAreTexturesResidentEXT_p(@textures);
 
 Exported under tag C<:GL_EXT_texture_object>.
 
@@ -4413,12 +4413,14 @@ Exported under tag C<:GL_QCOM_extended_get>.
 =head2 glExtGetBuffersQCOM
 
  glExtGetBuffersQCOM_c($buffers, $maxBuffers, $numBuffers);
+ (\@buffers, $numBuffers) = glExtGetBuffersQCOM_p($maxBuffers);
 
 Exported under tag C<:GL_QCOM_extended_get>.
 
 =head2 glExtGetFramebuffersQCOM
 
  glExtGetFramebuffersQCOM_c($framebuffers, $maxFramebuffers, $numFramebuffers);
+ (\@framebuffers, $numFramebuffers) = glExtGetFramebuffersQCOM_p($maxFramebuffers);
 
 Exported under tag C<:GL_QCOM_extended_get>.
 
@@ -4431,18 +4433,21 @@ Exported under tag C<:GL_QCOM_extended_get2>.
 =head2 glExtGetProgramsQCOM
 
  glExtGetProgramsQCOM_c($programs, $maxPrograms, $numPrograms);
+ (\@programs, $numPrograms) = glExtGetProgramsQCOM_p($maxPrograms);
 
 Exported under tag C<:GL_QCOM_extended_get2>.
 
 =head2 glExtGetRenderbuffersQCOM
 
  glExtGetRenderbuffersQCOM_c($renderbuffers, $maxRenderbuffers, $numRenderbuffers);
+ (\@renderbuffers, $numRenderbuffers) = glExtGetRenderbuffersQCOM_p($maxRenderbuffers);
 
 Exported under tag C<:GL_QCOM_extended_get>.
 
 =head2 glExtGetShadersQCOM
 
  glExtGetShadersQCOM_c($shaders, $maxShaders, $numShaders);
+ (\@shaders, $numShaders) = glExtGetShadersQCOM_p($maxShaders);
 
 Exported under tag C<:GL_QCOM_extended_get2>.
 
@@ -4520,6 +4525,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glFinish.xhtml>
 =head2 glFinishAsyncSGIX
 
  $retval = glFinishAsyncSGIX_c($markerp);
+ ($retval, $markerp) = glFinishAsyncSGIX_p();
 
 Exported under tag C<:GL_SGIX_async>.
 
@@ -5406,6 +5412,8 @@ Exported under tag C<:GL_ARB_shader_atomic_counters>.
 
  glGetActiveAttrib_c($program, $index, $bufSize, $length, $size, $type, $name);
  glGetActiveAttribARB_c($program, $index, $bufSize, $length, $size, $type, $name);
+ ($length, $size, $type, $name) = glGetActiveAttrib_p($program, $index, $bufSize);
+ ($length, $size, $type, $name) = glGetActiveAttribARB_p($program, $index, $bufSize);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetActiveAttrib.xhtml>
@@ -5413,6 +5421,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetActiveAttrib.xh
 =head2 glGetActiveSubroutineName
 
  glGetActiveSubroutineName_c($program, $shadertype, $index, $bufSize, $length, $name);
+ ($length, $name) = glGetActiveSubroutineName_p($program, $shadertype, $index, $bufSize);
 
 Exported under tag C<:GL_ARB_shader_subroutine>.
 
@@ -5434,6 +5443,8 @@ Exported under tag C<:GL_ARB_shader_subroutine>.
 
  glGetActiveUniform_c($program, $index, $bufSize, $length, $size, $type, $name);
  glGetActiveUniformARB_c($program, $index, $bufSize, $length, $size, $type, $name);
+ ($length, $size, $type, $name) = glGetActiveUniform_p($program, $index, $bufSize);
+ ($length, $size, $type, $name) = glGetActiveUniformARB_p($program, $index, $bufSize);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetActiveUniform.xhtml>
@@ -5454,6 +5465,7 @@ Exported under tag C<:GL_ARB_uniform_buffer_object>.
 =head2 glGetActiveUniformName
 
  glGetActiveUniformName_c($program, $uniformIndex, $bufSize, $length, $uniformName);
+ ($length, $uniformName) = glGetActiveUniformName_p($program, $uniformIndex, $bufSize);
 
 Exported under tag C<:GL_ARB_uniform_buffer_object>.
 
@@ -5467,6 +5479,7 @@ Exported under tag C<:GL_ARB_uniform_buffer_object>.
 =head2 glGetActiveVaryingNV
 
  glGetActiveVaryingNV_c($program, $index, $bufSize, $length, $size, $type, $name);
+ ($length, $size, $type, $name) = glGetActiveVaryingNV_p($program, $index, $bufSize);
 
 Exported under tag C<:GL_NV_transform_feedback>.
 
@@ -5493,6 +5506,7 @@ Exported under tag C<:GL_ARB_shader_objects>.
 =head2 glGetAttachedShaders
 
  glGetAttachedShaders_c($program, $maxCount, $count, $shaders);
+ ($count, \@shaders) = glGetAttachedShaders_p($program, $maxCount);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetAttachedShaders.xhtml>
@@ -5761,12 +5775,16 @@ Exported under tag C<:GL_EXT_raster_multisample>.
  $retval = glGetDebugMessageLog_c($count, $bufSize, $sources, $types, $ids, $severities, $lengths, $messageLog);
  $retval = glGetDebugMessageLogARB_c($count, $bufSize, $sources, $types, $ids, $severities, $lengths, $messageLog);
  $retval = glGetDebugMessageLogKHR_c($count, $bufSize, $sources, $types, $ids, $severities, $lengths, $messageLog);
+ ($retval, \@sources, \@types, \@ids, \@severities, \@lengths, $messageLog) = glGetDebugMessageLog_p($count, $bufSize);
+ ($retval, \@sources, \@types, \@ids, \@severities, \@lengths, $messageLog) = glGetDebugMessageLogARB_p($count, $bufSize);
+ ($retval, \@sources, \@types, \@ids, \@severities, \@lengths, $messageLog) = glGetDebugMessageLogKHR_p($count, $bufSize);
 
 Exported under tag C<:GL_KHR_debug>.
 
 =head2 glGetDebugMessageLogAMD
 
  $retval = glGetDebugMessageLogAMD_c($count, $bufSize, $categories, $severities, $ids, $lengths, $message);
+ ($retval, \@categories, \@severities, \@ids, \@lengths, $message) = glGetDebugMessageLogAMD_p($count, $bufSize);
 
 Exported under tag C<:GL_AMD_debug_output>.
 
@@ -5954,6 +5972,7 @@ Exported under tag C<:GL_SGIX_fragment_specular_lighting>.
 =head2 glGetFragmentShadingRatesEXT
 
  glGetFragmentShadingRatesEXT_c($samples, $maxCount, $count, $shadingRates);
+ ($count, \@shadingRates) = glGetFragmentShadingRatesEXT_p($samples, $maxCount);
 
 Exported under tag C<:GL_EXT_fragment_shading_rate>.
 
@@ -6093,6 +6112,7 @@ Exported under tag C<:GL_HP_image_transform>.
 =head2 glGetInfoLogARB
 
  glGetInfoLogARB_c($obj, $maxLength, $length, $infoLog);
+ ($length, $infoLog) = glGetInfoLogARB_p($obj, $maxLength);
 
 Exported under tag C<:GL_ARB_shader_objects>.
 
@@ -6618,6 +6638,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glGetNamedStringARB
 
  glGetNamedStringARB_c($namelen, $name, $bufSize, $stringlen, $string);
+ ($stringlen, $string) = glGetNamedStringARB_p($namelen, $name, $bufSize);
 
 Exported under tag C<:GL_ARB_shading_language_include>.
 
@@ -6663,12 +6684,15 @@ Exported under tag C<:GL_ATI_vertex_array_object>.
 
  glGetObjectLabel_c($identifier, $name, $bufSize, $length, $label);
  glGetObjectLabelKHR_c($identifier, $name, $bufSize, $length, $label);
+ ($length, $label) = glGetObjectLabel_p($identifier, $name, $bufSize);
+ ($length, $label) = glGetObjectLabelKHR_p($identifier, $name, $bufSize);
 
 Exported under tag C<:GL_KHR_debug>.
 
 =head2 glGetObjectLabelEXT
 
  glGetObjectLabelEXT_c($type, $object, $bufSize, $length, $label);
+ ($length, $label) = glGetObjectLabelEXT_p($type, $object, $bufSize);
 
 Exported under tag C<:GL_EXT_debug_label>.
 
@@ -6798,6 +6822,7 @@ Exported under tag C<:GL_INTEL_performance_query>.
 =head2 glGetPerfMonitorCounterDataAMD
 
  glGetPerfMonitorCounterDataAMD_c($monitor, $pname, $dataSize, $data, $bytesWritten);
+ (\@data, $bytesWritten) = glGetPerfMonitorCounterDataAMD_p($monitor, $pname, $dataSize);
 
 Exported under tag C<:GL_AMD_performance_monitor>.
 
@@ -6810,24 +6835,28 @@ Exported under tag C<:GL_AMD_performance_monitor>.
 =head2 glGetPerfMonitorCounterStringAMD
 
  glGetPerfMonitorCounterStringAMD_c($group, $counter, $bufSize, $length, $counterString);
+ ($length, $counterString) = glGetPerfMonitorCounterStringAMD_p($group, $counter, $bufSize);
 
 Exported under tag C<:GL_AMD_performance_monitor>.
 
 =head2 glGetPerfMonitorCountersAMD
 
  glGetPerfMonitorCountersAMD_c($group, $numCounters, $maxActiveCounters, $counterSize, $counters);
+ ($numCounters, $maxActiveCounters, \@counters) = glGetPerfMonitorCountersAMD_p($group, $counterSize);
 
 Exported under tag C<:GL_AMD_performance_monitor>.
 
 =head2 glGetPerfMonitorGroupStringAMD
 
  glGetPerfMonitorGroupStringAMD_c($group, $bufSize, $length, $groupString);
+ ($length, $groupString) = glGetPerfMonitorGroupStringAMD_p($group, $bufSize);
 
 Exported under tag C<:GL_AMD_performance_monitor>.
 
 =head2 glGetPerfMonitorGroupsAMD
 
  glGetPerfMonitorGroupsAMD_c($numGroups, $groupsSize, $groups);
+ ($numGroups, \@groups) = glGetPerfMonitorGroupsAMD_p($groupsSize);
 
 Exported under tag C<:GL_AMD_performance_monitor>.
 
@@ -7064,6 +7093,7 @@ Exported under tag C<:GL_ARB_program_interface_query>.
 =head2 glGetProgramResourcefvNV
 
  glGetProgramResourcefvNV_c($program, $programInterface, $index, $propCount, $props, $count, $length, $params);
+ ($length, \@params) = glGetProgramResourcefvNV_p($program, $programInterface, $index, $propCount, $props, $count);
 
 Exported under tag C<:GL_NV_path_rendering>.
 
@@ -7334,6 +7364,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderInfoLog.x
 =head2 glGetShaderPrecisionFormat
 
  glGetShaderPrecisionFormat_c($shadertype, $precisiontype, $range, $precision);
+ (\@range, $precision) = glGetShaderPrecisionFormat_p($shadertype, $precisiontype);
 
 Exported under tag C<:GL_ARB_ES2_compatibility>.
 
@@ -7715,6 +7746,8 @@ Exported under tag C<:GL_NV_vertex_program>.
 
  glGetTransformFeedbackVarying_c($program, $index, $bufSize, $length, $size, $type, $name);
  glGetTransformFeedbackVaryingEXT_c($program, $index, $bufSize, $length, $size, $type, $name);
+ ($length, $size, $type, $name) = glGetTransformFeedbackVarying_p($program, $index, $bufSize);
+ ($length, $size, $type, $name) = glGetTransformFeedbackVaryingEXT_p($program, $index, $bufSize);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTransformFeedbackVarying.xhtml>
@@ -7747,6 +7780,7 @@ Exported under tag C<:GL_ARB_direct_state_access>.
 =head2 glGetTranslatedShaderSourceANGLE
 
  glGetTranslatedShaderSourceANGLE_c($shader, $bufSize, $length, $source);
+ ($length, $source) = glGetTranslatedShaderSourceANGLE_p($shader, $bufSize);
 
 Exported under tag C<:GL_ANGLE_translated_shader_source>.
 
@@ -9441,6 +9475,7 @@ Exported under tag C<:GL_NV_evaluators>.
 =head2 glMapTexture2DINTEL
 
  $retval = glMapTexture2DINTEL_c($texture, $level, $access, $stride, $layout);
+ ($retval, $stride, $layout) = glMapTexture2DINTEL_p($texture, $level, $access);
 
 Exported under tag C<:GL_LAYOUT_LINEAR_INTEL>.
 
@@ -11280,6 +11315,7 @@ Exported under tag C<:GL_NV_path_rendering>.
 =head2 glPathGlyphIndexRangeNV
 
  $retval = glPathGlyphIndexRangeNV_c($fontTarget, $fontName, $fontStyle, $pathParameterTemplate, $emScale, $baseAndCount);
+ ($retval, \@baseAndCount) = glPathGlyphIndexRangeNV_p($fontTarget, $fontName, $fontStyle, $pathParameterTemplate, $emScale);
 
 Exported under tag C<:GL_NV_path_rendering>.
 
@@ -11504,6 +11540,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glPixelZoom.xml>
 =head2 glPointAlongPathNV
 
  $retval = glPointAlongPathNV_c($path, $startSegment, $numSegments, $distance, $x, $y, $tangentX, $tangentY);
+ ($retval, $x, $y, $tangentX, $tangentY) = glPointAlongPathNV_p($path, $startSegment, $numSegments, $distance);
 
 Exported under tag C<:GL_NV_path_rendering>.
 
@@ -11584,6 +11621,7 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glPollAsyncSGIX
 
  $retval = glPollAsyncSGIX_c($markerp);
+ ($retval, $markerp) = glPollAsyncSGIX_p();
 
 Exported under tag C<:GL_SGIX_async>.
 

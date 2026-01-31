@@ -5300,8 +5300,9 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'n' => 'items-1',
-      'programs' => 'VARARGS:1:n'
+      'n' => 'items',
+      'programs' => 'VARARGS:0:n',
+      'residences' => 'OUTARRAY:n'
     },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewAreProgramsResidentNV',
@@ -5331,8 +5332,9 @@ our %registry = (
     ],
     'core_removed' => 1,
     'dynlang' => {
-      'n' => 'items-1',
-      'textures' => 'VARARGS:1:n'
+      'n' => 'items',
+      'residences' => 'OUTARRAY:n',
+      'textures' => 'VARARGS:0:n'
     },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
@@ -5360,8 +5362,9 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'n' => 'items-1',
-      'textures' => 'VARARGS:1:n'
+      'n' => 'items',
+      'residences' => 'OUTARRAY:n',
+      'textures' => 'VARARGS:0:n'
     },
     'feature' => 'GL_EXT_texture_object',
     'glewImpl' => '__glewAreTexturesResidentEXT',
@@ -18374,6 +18377,10 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'buffers' => 'OUTARRAY:maxBuffers',
+      'numBuffers' => 'OUTSCALAR'
+    },
     'feature' => 'GL_QCOM_extended_get',
     'glewImpl' => '__glewExtGetBuffersQCOM',
     'glewtype' => 'fun',
@@ -18400,6 +18407,10 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'framebuffers' => 'OUTARRAY:maxFramebuffers',
+      'numFramebuffers' => 'OUTSCALAR'
+    },
     'feature' => 'GL_QCOM_extended_get',
     'glewImpl' => '__glewExtGetFramebuffersQCOM',
     'glewtype' => 'fun',
@@ -18457,6 +18468,10 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'numPrograms' => 'OUTSCALAR',
+      'programs' => 'OUTARRAY:maxPrograms'
+    },
     'feature' => 'GL_QCOM_extended_get2',
     'glewImpl' => '__glewExtGetProgramsQCOM',
     'glewtype' => 'fun',
@@ -18483,6 +18498,10 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'numRenderbuffers' => 'OUTSCALAR',
+      'renderbuffers' => 'OUTARRAY:maxRenderbuffers'
+    },
     'feature' => 'GL_QCOM_extended_get',
     'glewImpl' => '__glewExtGetRenderbuffersQCOM',
     'glewtype' => 'fun',
@@ -18509,6 +18528,10 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'numShaders' => 'OUTSCALAR',
+      'shaders' => 'OUTARRAY:maxShaders'
+    },
     'feature' => 'GL_QCOM_extended_get2',
     'glewImpl' => '__glewExtGetShadersQCOM',
     'glewtype' => 'fun',
@@ -18805,6 +18828,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'markerp' => 'OUTSCALAR'
+    },
     'feature' => 'GL_SGIX_async',
     'glewImpl' => '__glewFinishAsyncSGIX',
     'glewtype' => 'fun',
@@ -21830,6 +21856,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'length' => 'OUTSCALAR',
+      'name' => 'OUTSCALAR',
+      'size' => 'OUTSCALAR',
+      'type' => 'OUTSCALAR'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetActiveAttrib',
     'glewtype' => 'fun',
@@ -21872,6 +21904,10 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'length' => 'OUTSCALAR',
+      'name' => 'OUTSCALAR'
+    },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetActiveSubroutineName',
     'glewtype' => 'fun',
@@ -22004,6 +22040,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'length' => 'OUTSCALAR',
+      'name' => 'OUTSCALAR',
+      'size' => 'OUTSCALAR',
+      'type' => 'OUTSCALAR'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetActiveUniform',
     'glewtype' => 'fun',
@@ -22109,6 +22151,10 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'length' => 'OUTSCALAR',
+      'uniformName' => 'OUTSCALAR'
+    },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetActiveUniformName',
     'glewtype' => 'fun',
@@ -22194,6 +22240,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'length' => 'OUTSCALAR',
+      'name' => 'OUTSCALAR',
+      'size' => 'OUTSCALAR',
+      'type' => 'OUTSCALAR'
+    },
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewGetActiveVaryingNV',
     'glewtype' => 'fun',
@@ -22318,6 +22370,10 @@ our %registry = (
         'maxCount'
       ]
     ],
+    'dynlang' => {
+      'count' => 'OUTSCALAR',
+      'shaders' => 'OUTARRAY:maxCount'
+    },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetAttachedShaders',
     'glewtype' => 'fun',
@@ -23499,6 +23555,14 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'ids' => 'OUTARRAY:count',
+      'lengths' => 'OUTARRAY:count',
+      'messageLog' => 'OUTSCALAR',
+      'severities' => 'OUTARRAY:count',
+      'sources' => 'OUTARRAY:count',
+      'types' => 'OUTARRAY:count'
+    },
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewGetDebugMessageLog',
     'glewtype' => 'fun',
@@ -23549,6 +23613,13 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'categories' => 'OUTARRAY:count',
+      'ids' => 'OUTARRAY:count',
+      'lengths' => 'OUTARRAY:count',
+      'message' => 'OUTSCALAR',
+      'severities' => 'OUTARRAY:count'
+    },
     'feature' => 'GL_AMD_debug_output',
     'glewImpl' => '__glewGetDebugMessageLogAMD',
     'glewtype' => 'fun',
@@ -24198,6 +24269,10 @@ our %registry = (
         'ShadingRate'
       ]
     ],
+    'dynlang' => {
+      'count' => 'OUTSCALAR',
+      'shadingRates' => 'OUTARRAY:maxCount'
+    },
     'feature' => 'GL_EXT_fragment_shading_rate',
     'glewImpl' => '__glewGetFragmentShadingRatesEXT',
     'glewtype' => 'fun',
@@ -24785,6 +24860,10 @@ our %registry = (
         'maxLength'
       ]
     ],
+    'dynlang' => {
+      'infoLog' => 'OUTSCALAR',
+      'length' => 'OUTSCALAR'
+    },
     'feature' => 'GL_ARB_shader_objects',
     'glewImpl' => '__glewGetInfoLogARB',
     'glewtype' => 'fun',
@@ -27183,6 +27262,10 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'string' => 'OUTSCALAR',
+      'stringlen' => 'OUTSCALAR'
+    },
     'feature' => 'GL_ARB_shading_language_include',
     'glewImpl' => '__glewGetNamedStringARB',
     'glewtype' => 'fun',
@@ -27384,6 +27467,10 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'label' => 'OUTSCALAR',
+      'length' => 'OUTSCALAR'
+    },
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewGetObjectLabel',
     'glewtype' => 'fun',
@@ -27418,6 +27505,10 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'label' => 'OUTSCALAR',
+      'length' => 'OUTSCALAR'
+    },
     'feature' => 'GL_EXT_debug_label',
     'glewImpl' => '__glewGetObjectLabelEXT',
     'glewtype' => 'fun',
@@ -28064,6 +28155,10 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'bytesWritten' => 'OUTSCALAR',
+      'data' => 'OUTARRAY:dataSize/4'
+    },
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGetPerfMonitorCounterDataAMD',
     'glewtype' => 'fun',
@@ -28126,6 +28221,10 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'counterString' => 'OUTSCALAR',
+      'length' => 'OUTSCALAR'
+    },
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGetPerfMonitorCounterStringAMD',
     'glewtype' => 'fun',
@@ -28161,6 +28260,11 @@ our %registry = (
         'counterSize'
       ]
     ],
+    'dynlang' => {
+      'counters' => 'OUTARRAY:counterSize',
+      'maxActiveCounters' => 'OUTSCALAR',
+      'numCounters' => 'OUTSCALAR'
+    },
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGetPerfMonitorCountersAMD',
     'glewtype' => 'fun',
@@ -28192,6 +28296,10 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'groupString' => 'OUTSCALAR',
+      'length' => 'OUTSCALAR'
+    },
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGetPerfMonitorGroupStringAMD',
     'glewtype' => 'fun',
@@ -28218,6 +28326,10 @@ our %registry = (
         'groupsSize'
       ]
     ],
+    'dynlang' => {
+      'groups' => 'OUTARRAY:groupsSize',
+      'numGroups' => 'OUTSCALAR'
+    },
     'feature' => 'GL_AMD_performance_monitor',
     'glewImpl' => '__glewGetPerfMonitorGroupsAMD',
     'glewtype' => 'fun',
@@ -29225,6 +29337,10 @@ our %registry = (
         'count'
       ]
     ],
+    'dynlang' => {
+      'length' => 'OUTSCALAR',
+      'params' => 'OUTARRAY:count'
+    },
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewGetProgramResourcefvNV',
     'glewtype' => 'fun',
@@ -30375,6 +30491,10 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'precision' => 'OUTSCALAR',
+      'range' => 'OUTARRAY:2'
+    },
     'feature' => 'GL_ARB_ES2_compatibility',
     'glewImpl' => '__glewGetShaderPrecisionFormat',
     'glewtype' => 'fun',
@@ -31968,6 +32088,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'length' => 'OUTSCALAR',
+      'name' => 'OUTSCALAR',
+      'size' => 'OUTSCALAR',
+      'type' => 'OUTSCALAR'
+    },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewGetTransformFeedbackVarying',
     'glewtype' => 'fun',
@@ -32110,6 +32236,10 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'length' => 'OUTSCALAR',
+      'source' => 'OUTSCALAR'
+    },
     'feature' => 'GL_ANGLE_translated_shader_source',
     'glewImpl' => '__glewGetTranslatedShaderSourceANGLE',
     'glewtype' => 'fun',
@@ -37701,6 +37831,10 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'layout' => 'OUTSCALAR',
+      'stride' => 'OUTSCALAR'
+    },
     'feature' => 'GL_LAYOUT_LINEAR_INTEL',
     'glewImpl' => '__glewMapTexture2DINTEL',
     'glewtype' => 'fun',
@@ -45401,6 +45535,9 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'baseAndCount' => 'OUTARRAY:2'
+    },
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPathGlyphIndexRangeNV',
     'glewtype' => 'fun',
@@ -46323,6 +46460,12 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'tangentX' => 'OUTSCALAR',
+      'tangentY' => 'OUTSCALAR',
+      'x' => 'OUTSCALAR',
+      'y' => 'OUTSCALAR'
+    },
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewPointAlongPathNV',
     'glewtype' => 'fun',
@@ -46533,6 +46676,9 @@ our %registry = (
         '1'
       ]
     ],
+    'dynlang' => {
+      'markerp' => 'OUTSCALAR'
+    },
     'feature' => 'GL_SGIX_async',
     'glewImpl' => '__glewPollAsyncSGIX',
     'glewtype' => 'fun',

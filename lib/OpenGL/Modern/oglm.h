@@ -44,3 +44,14 @@ extern int _auto_check_errors;
   NULL; if (size <= 0) croak("called with invalid n=%d", size); \
   buffername = malloc(sizeof(buffertype) * size); \
   if (!buffername) croak("malloc failed");
+#define OGLM_PUSH_ARRAY(name, newfunc, buffername, howmany) \
+  { \
+    AV *newval = newAV(); \
+    if (!newval) croak(#name ": newAV failed"); \
+    av_extend(newval, howmany); \
+    IV i; \
+    for (i = 0; i < howmany; i++) { \
+      av_push(newval, newfunc(buffername[i])); \
+    } \
+    mPUSHs(newRV_noinc((SV*)newval)); \
+  }

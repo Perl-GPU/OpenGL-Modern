@@ -228,6 +228,16 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     } else {
       $dynlang{$outargs[0][0]} = join ',', grep $_, $dynlang{$outargs[0][0]}, "OUTASLIST:$len";
     }
+  } elsif (
+    ((($s->{restype} ne 'void') + @outargs) > 1) and
+    !(grep !$arg2len{$_->[0]} || !(is_stringtype($_->[1]) || typefunc(parse_ptr($_)->[0])), @outargs)
+  ) {
+    for (@outargs) {
+      my $len = $arg2len{$_->[0]};
+      my $outas = (is_stringtype($_->[1]) || ($len =~ /^\d+$/ && $len == 1))
+        ? "OUTSCALAR" : "OUTARRAY:$arg2len{$_->[0]}";
+      $dynlang{$_->[0]} = join ',', grep $_, $dynlang{$_->[0]}, $outas;
+    }
   }
   if (@constargs == 1 and
     typefunc(parse_ptr($constargs[0])->[0]) and
@@ -360,7 +370,7 @@ for my $name (sort grep !/^GL/, keys %signature) {
     die "$name: $bind->{binding_name} has no xs_rettype" if !defined $bind->{xs_rettype};
     my $prefix = " ";
     if (my @retnames = @{ $bind->{retnames} }) {
-      $prefix .= "@retnames = ";
+      $prefix .= @retnames == 1 ? "$retnames[0] = " : "(@{[join ', ', @retnames]}) = ";
     }
     my $suffix .= "(";
     my ($varargsname) = grep $dynlang{$_} =~ /\bVARARGS\b/, keys %dynlang;

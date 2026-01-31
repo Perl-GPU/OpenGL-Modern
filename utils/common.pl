@@ -145,9 +145,46 @@ sub bindings {
   } elsif (my $output = delete $dynlang{OUTPUT}) {
     $this{aftercall} = "\n  $output";
     $this{xs_code} = "PPCODE:\n";
+  } elsif (grep $indynlang{$_} =~ /\bOUT(?:ARRAY|SCALAR)\b/, keys %indynlang) {
+    my @retnames = map $indynlang{$_} =~ /\bOUTSCALAR\b/ ? ['$',$_] :
+      $indynlang{$_} =~ /\bOUTARRAY\b/ ? ['\\@',$_] :
+      (), grep $indynlang{$_}, map $_->[0], @argdata;
+    $this{retnames} = [ $isvoid ? () : '$retval', map join('', @$_), @retnames ];
+    $this{xs_code} = "PPCODE:\n";
+    my $aftercall = "EXTEND(sp, ".(@{ $this{retnames} }).");";
+    if (!$isvoid) {
+      my $newval = $s->{restype} =~ /^\s*void\s*\*\s*$/ ? "newSViv(PTR2IV(RETVAL))" : "newSV".lc(substr typefunc($s->{restype}), 0, 2)."(RETVAL)";
+      $aftercall .= "\n  mPUSHs($newval);";
+    }
+    for (@retnames) {
+      my ($sigil, $arg) = @$_;
+      delete $is_inarg{$arg};
+      if ($sigil eq '\\@') {
+        die "$name: no OUTARRAY len" unless my ($len) = $indynlang{$arg} =~ /\bOUTARRAY:([^\s,]+)/;
+        my $parsed = $name2parsed{$arg};
+        $dynlang{$arg} = "OGLM_ALLOC($len,$parsed->[0],$arg)";
+        my $typefunc = typefunc($name2parsed{$arg}[0]);
+        my $newfunc = "newSV".lc(substr $typefunc, 0, 2);
+        my $makeav = "OGLM_PUSH_ARRAY($name, $newfunc, $arg, $len)";
+        $aftercall .= "\n  $makeav";
+        $cleanup .= "free($arg);";
+      } else {
+        delete $dynlang{$arg};
+        my $newval;
+        if (is_stringtype($name2data{$arg}[1])) {
+          $newval = "newSVpv($arg,0)";
+        } else {
+          my $typefunc = typefunc($name2parsed{$arg}[0]);
+          $newval = "newSV".lc(substr $typefunc, 0, 2)."($arg\[0])";
+        }
+        $aftercall .= "\n  mPUSHs($newval);";
+      }
+    }
+    $this{aftercall} = "\n  $aftercall";
+    $this{retout} = "";
   }
   delete @is_inarg{keys %dynlang};
-  delete @is_inarg{grep !$name2parsed{$_}[1], keys %name2parsed} if $isvoid;
+  delete @is_inarg{grep !$name2parsed{$_}[1], keys %name2parsed};
   my @xs_inargs = grep $is_inarg{$_->[0]}, @argdata;
   my $dotdotdot = grep /\bVARARGS\b/, values %indynlang;
   $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
@@ -187,13 +224,11 @@ sub bindings {
     $beforecall .= "  $arg2lenoverride{$var}->[1]\n" if $arg2lenoverride{$var};
     $beforecall .= "  $type$var = $val;\n";
   }
-  if ($isvoid) {
-    for my $arr (sort grep !$gotdynlang{$_} && !$name2parsed{$_}[1], keys %name2parsed) {
-      my $len = $name2data{$arr}[2] // die "$name: pointer arg without len";
-      my $type = $name2parsed{$arr}[0];
-      $type = 'char' if $type eq 'void';
-      $beforecall .= "  $type $arr\[$len];\n";
-    }
+  for my $arr (sort grep +($indynlang{$_}//'') =~ /\bOUTSCALAR\b/ || (!$gotdynlang{$_} && !$name2parsed{$_}[1]), keys %name2parsed) {
+    my $len = $name2data{$arr}[2] // die "$name: pointer arg without len";
+    my $type = $name2parsed{$arr}[0];
+    $type = 'char' if $type eq 'void';
+    $beforecall .= "  $type $arr\[$len];\n";
   }
   if ($need_cast) {
     $this{callarg_list} = $s->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map qq{($_->[1])$_->[0]}, @argdata ]})";
