@@ -105,9 +105,8 @@ sub bindings {
   my %this = %pbinding;
   my $cleanup = delete $dynlang{CLEANUP} // '';
   my %indynlang = %dynlang;
-  my @outaslist = grep $indynlang{$_} =~ /\bOUTASLIST\b/, keys %indynlang;
-  die "$name: >1 OUTASLIST (@outaslist)" if @outaslist > 1;
-  if (@outaslist) {
+  if (my @outaslist = grep $indynlang{$_} =~ /\bOUTASLIST\b/, keys %indynlang) {
+    die "$name: >1 OUTASLIST (@outaslist)" if @outaslist > 1;
     die "$name: no OUTASLIST len" unless my ($len) = $indynlang{$outaslist[0]} =~ /\bOUTASLIST:([^\s,]+)/;
     my $parsed = parse_ptr($name2data{$outaslist[0]});
     die "$name: no typefunc for $outaslist[0]" unless my $typefunc = typefunc($parsed->[0]);
