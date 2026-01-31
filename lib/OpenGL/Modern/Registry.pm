@@ -20026,7 +20026,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'providedFeatures' => 'OUTASLIST:1'
+      'RETVAL' => 'providedFeatures'
     },
     'feature' => 'GL_QCOM_framebuffer_foveated',
     'glewImpl' => '__glewFramebufferFoveationConfigQCOM',
@@ -22226,7 +22226,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetArrayObjectfvATI',
@@ -22257,7 +22257,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetArrayObjectivATI',
@@ -27093,7 +27093,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_EXT_direct_state_access',
     'glewImpl' => '__glewGetNamedProgramivEXT',
@@ -27315,7 +27315,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetObjectBufferfvATI',
@@ -27344,7 +27344,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetObjectBufferivATI',
@@ -29318,7 +29318,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'values' => 'OUTASLIST:1'
+      'RETVAL' => 'values'
     },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetProgramStageiv',
@@ -29432,7 +29432,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_ARB_vertex_program',
     'glewImpl' => '__glewGetProgramivARB',
@@ -30468,7 +30468,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'rate' => 'OUTASLIST:1'
+      'RETVAL' => 'rate'
     },
     'feature' => 'GL_NV_shading_rate_image',
     'glewImpl' => '__glewGetShadingRateImagePaletteNV',
@@ -31919,7 +31919,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_NV_vertex_program',
     'glewImpl' => '__glewGetTrackMatrixivNV',
@@ -31996,7 +31996,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'location' => 'OUTASLIST:1'
+      'RETVAL' => 'location'
     },
     'feature' => 'GL_NV_transform_feedback',
     'glewImpl' => '__glewGetTransformFeedbackVaryingNV',
@@ -32241,7 +32241,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetUniformSubroutineuiv',
@@ -32520,7 +32520,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetVariantArrayObjectfvATI',
@@ -32549,7 +32549,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_ATI_vertex_array_object',
     'glewImpl' => '__glewGetVariantArrayObjectivATI',
@@ -32965,7 +32965,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewGetVertexAttribIiv',
@@ -32997,7 +32997,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'params' => 'OUTASLIST:1'
+      'RETVAL' => 'params'
     },
     'feature' => 'GL_VERSION_3_0',
     'glewImpl' => '__glewGetVertexAttribIuiv',
@@ -71590,7 +71590,7 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'weight' => 'OUTASLIST:1'
+      'RETVAL' => 'weight'
     },
     'feature' => 'GL_EXT_vertex_weighting',
     'glewImpl' => '__glewVertexWeightfvEXT',

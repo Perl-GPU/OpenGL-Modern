@@ -221,9 +221,13 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
   if (@outargs == 1 and
     typefunc(parse_ptr($outargs[0])->[0]) and
     $s->{restype} eq 'void' and
-    $arg2len{$outargs[0][0]}
+    (my $len = $arg2len{$outargs[0][0]})
   ) {
-    $dynlang{$outargs[0][0]} = join ',', grep $_, $dynlang{$outargs[0][0]}, "OUTASLIST:$arg2len{$outargs[0][0]}";
+    if ($len eq '1') {
+      $dynlang{RETVAL} = $outargs[0][0];
+    } else {
+      $dynlang{$outargs[0][0]} = join ',', grep $_, $dynlang{$outargs[0][0]}, "OUTASLIST:$len";
+    }
   }
   if (@constargs == 1 and
     typefunc(parse_ptr($constargs[0])->[0]) and

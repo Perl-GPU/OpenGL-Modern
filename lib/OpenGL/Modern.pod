@@ -4938,7 +4938,7 @@ Exported under tag C<:GL_QCOM_shader_framebuffer_fetch_noncoherent>.
 =head2 glFramebufferFoveationConfigQCOM
 
  glFramebufferFoveationConfigQCOM_c($framebuffer, $numLayers, $focalPointsPerLayer, $requestedFeatures, $providedFeatures);
- @providedFeatures = glFramebufferFoveationConfigQCOM_p($framebuffer, $numLayers, $focalPointsPerLayer, $requestedFeatures);
+ $providedFeatures = glFramebufferFoveationConfigQCOM_p($framebuffer, $numLayers, $focalPointsPerLayer, $requestedFeatures);
 
 Exported under tag C<:GL_QCOM_framebuffer_foveated>.
 
@@ -5473,14 +5473,14 @@ Exported under tag C<:GL_NV_transform_feedback>.
 =head2 glGetArrayObjectfvATI
 
  glGetArrayObjectfvATI_c($array, $pname, $params);
- @params = glGetArrayObjectfvATI_p($array, $pname);
+ $params = glGetArrayObjectfvATI_p($array, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
 =head2 glGetArrayObjectivATI
 
  glGetArrayObjectivATI_c($array, $pname, $params);
- @params = glGetArrayObjectivATI_p($array, $pname);
+ $params = glGetArrayObjectivATI_p($array, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
@@ -6598,7 +6598,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glGetNamedProgramivEXT
 
  glGetNamedProgramivEXT_c($program, $target, $pname, $params);
- @params = glGetNamedProgramivEXT_p($program, $target, $pname);
+ $params = glGetNamedProgramivEXT_p($program, $target, $pname);
 
 Exported under tag C<:GL_EXT_direct_state_access>.
 
@@ -6648,14 +6648,14 @@ Exported under tag C<:GL_SGIX_nonlinear_lighting_pervertex>.
 =head2 glGetObjectBufferfvATI
 
  glGetObjectBufferfvATI_c($buffer, $pname, $params);
- @params = glGetObjectBufferfvATI_p($buffer, $pname);
+ $params = glGetObjectBufferfvATI_p($buffer, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
 =head2 glGetObjectBufferivATI
 
  glGetObjectBufferivATI_c($buffer, $pname, $params);
- @params = glGetObjectBufferivATI_p($buffer, $pname);
+ $params = glGetObjectBufferivATI_p($buffer, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
@@ -7077,7 +7077,7 @@ Exported under tag C<:GL_ARB_program_interface_query>.
 =head2 glGetProgramStageiv
 
  glGetProgramStageiv_c($program, $shadertype, $pname, $values);
- @values = glGetProgramStageiv_p($program, $shadertype, $pname);
+ $values = glGetProgramStageiv_p($program, $shadertype, $pname);
 
 Exported under tag C<:GL_ARB_shader_subroutine>.
 
@@ -7104,7 +7104,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetProgramiv.xhtml
 =head2 glGetProgramivARB
 
  glGetProgramivARB_c($target, $pname, $params);
- @params = glGetProgramivARB_p($target, $pname);
+ $params = glGetProgramivARB_p($target, $pname);
 
 Exported under tag C<:GL_ARB_vertex_program>.
 
@@ -7358,7 +7358,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderiv.xhtml>
 =head2 glGetShadingRateImagePaletteNV
 
  glGetShadingRateImagePaletteNV_c($viewport, $entry, $rate);
- @rate = glGetShadingRateImagePaletteNV_p($viewport, $entry);
+ $rate = glGetShadingRateImagePaletteNV_p($viewport, $entry);
 
 Exported under tag C<:GL_NV_shading_rate_image>.
 
@@ -7707,7 +7707,7 @@ Exported under tag C<:GL_ARB_get_texture_sub_image>.
 =head2 glGetTrackMatrixivNV
 
  glGetTrackMatrixivNV_c($target, $address, $pname, $params);
- @params = glGetTrackMatrixivNV_p($target, $address, $pname);
+ $params = glGetTrackMatrixivNV_p($target, $address, $pname);
 
 Exported under tag C<:GL_NV_vertex_program>.
 
@@ -7722,7 +7722,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTransformFeedba
 =head2 glGetTransformFeedbackVaryingNV
 
  glGetTransformFeedbackVaryingNV_c($program, $index, $location);
- @location = glGetTransformFeedbackVaryingNV_p($program, $index);
+ $location = glGetTransformFeedbackVaryingNV_p($program, $index);
 
 Exported under tag C<:GL_NV_transform_feedback>.
 
@@ -7786,7 +7786,7 @@ Exported under tag C<:GL_EXT_bindable_uniform>.
 =head2 glGetUniformSubroutineuiv
 
  glGetUniformSubroutineuiv_c($shadertype, $location, $params);
- @params = glGetUniformSubroutineuiv_p($shadertype, $location);
+ $params = glGetUniformSubroutineuiv_p($shadertype, $location);
 
 Exported under tag C<:GL_ARB_shader_subroutine>.
 
@@ -7860,14 +7860,14 @@ Exported under tag C<:GL_EXT_memory_object>.
 =head2 glGetVariantArrayObjectfvATI
 
  glGetVariantArrayObjectfvATI_c($id, $pname, $params);
- @params = glGetVariantArrayObjectfvATI_p($id, $pname);
+ $params = glGetVariantArrayObjectfvATI_p($id, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
 =head2 glGetVariantArrayObjectivATI
 
  glGetVariantArrayObjectivATI_c($id, $pname, $params);
- @params = glGetVariantArrayObjectivATI_p($id, $pname);
+ $params = glGetVariantArrayObjectivATI_p($id, $pname);
 
 Exported under tag C<:GL_ATI_vertex_array_object>.
 
@@ -7967,8 +7967,8 @@ Exported under tag C<:GL_ATI_vertex_attrib_array_object>.
 
  glGetVertexAttribIiv_c($index, $pname, $params);
  glGetVertexAttribIivEXT_c($index, $pname, $params);
- @params = glGetVertexAttribIiv_p($index, $pname);
- @params = glGetVertexAttribIivEXT_p($index, $pname);
+ $params = glGetVertexAttribIiv_p($index, $pname);
+ $params = glGetVertexAttribIivEXT_p($index, $pname);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIiv.xhtml>
@@ -7977,8 +7977,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIiv
 
  glGetVertexAttribIuiv_c($index, $pname, $params);
  glGetVertexAttribIuivEXT_c($index, $pname, $params);
- @params = glGetVertexAttribIuiv_p($index, $pname);
- @params = glGetVertexAttribIuivEXT_p($index, $pname);
+ $params = glGetVertexAttribIuiv_p($index, $pname);
+ $params = glGetVertexAttribIuivEXT_p($index, $pname);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetVertexAttribIuiv.xhtml>
@@ -18106,7 +18106,7 @@ Exported under tag C<:GL_EXT_vertex_weighting>.
 =head2 glVertexWeightfvEXT
 
  glVertexWeightfvEXT_c($weight);
- @weight = glVertexWeightfvEXT_p();
+ $weight = glVertexWeightfvEXT_p();
 
 Exported under tag C<:GL_EXT_vertex_weighting>.
 
