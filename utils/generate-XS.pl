@@ -34,4 +34,5 @@ sub generate_glew_xs {
 }
 
 my $xs_code = generate_glew_xs(@ARGV);
-save_file( 'auto-xs.inc', $xs_code );
+save_file('auto-xs.inc', $xs_code);
+save_file('auto-xs-var.inc', "\n");

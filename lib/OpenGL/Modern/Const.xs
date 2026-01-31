@@ -14,3 +14,5 @@ MODULE = OpenGL::Modern::Const		PACKAGE = OpenGL::Modern
 BOOT:
   HV *stash = gv_stashpvn("OpenGL::Modern", strlen("OpenGL::Modern"), TRUE);
 #include "const.h"
+
+INCLUDE: ../../../auto-xs-var.inc
