@@ -7,6 +7,10 @@
 
 #include <GL/glew.h>
 
+extern int _done_glewInit;
+extern int _auto_check_errors;
+#include "oglm.h"
+
 #define OGL_CONST_i(test) newCONSTSUB(stash, #test, newSViv((IV)test));
 
 MODULE = OpenGL::Modern::Const		PACKAGE = OpenGL::Modern

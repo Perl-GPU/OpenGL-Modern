@@ -18,6 +18,7 @@ lib/OpenGL/Modern/Helpers.pm
 lib/OpenGL/Modern/ImageHack.pm
 lib/OpenGL/Modern/Install/Files.pm
 lib/OpenGL/Modern/Install/typemap
+lib/OpenGL/Modern/oglm.h
 lib/OpenGL/Modern/ppport.h
 lib/OpenGL/Modern/Registry.pm
 Makefile.PL

@@ -71,9 +71,9 @@ WriteMakefile(
     'lib/OpenGL/Modern$(OBJ_EXT)' => join(' ',
       qw(auto-xs.inc auto-xs-var.inc include/GL/glew.h include/GL/wglew.h),
       map "lib/OpenGL/Modern/$_", qw(
-        glew-context.c gl_counts.h gl_errors.h Install/typemap
+        glew-context.c gl_counts.h gl_errors.h Install/typemap oglm.h
     )), # first and last are not accurate but forced by XSMULTI which has no intermediate .c target
-    'lib/OpenGL/Modern/Const$(OBJ_EXT)' => 'include/GL/glew.h include/GL/wglew.h lib/OpenGL/Modern/const.h auto-xs-var.inc',
+    'lib/OpenGL/Modern/Const$(OBJ_EXT)' => 'include/GL/glew.h include/GL/wglew.h lib/OpenGL/Modern/const.h lib/OpenGL/Modern/oglm.h auto-xs-var.inc',
     'lib/OpenGL/Modern/gl_counts$(OBJ_EXT)' => 'include/GL/glew.h',
   },
   clean => { FILES => 'auto-xs.inc auto-xs-var.inc '.join ' ', map qq{lib/OpenGL/Modern/$_},
