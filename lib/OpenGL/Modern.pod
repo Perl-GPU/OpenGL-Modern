@@ -5465,7 +5465,7 @@ Exported under tag C<:GL_ARB_uniform_buffer_object>.
 =head2 glGetActiveUniformName
 
  glGetActiveUniformName_c($program, $uniformIndex, $bufSize, $length, $uniformName);
- ($length, $uniformName) = glGetActiveUniformName_p($program, $uniformIndex, $bufSize);
+ $uniformName = glGetActiveUniformName_p($program, $uniformIndex);
 
 Exported under tag C<:GL_ARB_uniform_buffer_object>.
 

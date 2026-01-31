@@ -22153,8 +22153,9 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'length' => 'OUTSCALAR',
-      'uniformName' => 'OUTSCALAR'
+      'RETVAL' => 'uniformName',
+      'bufSize' => '<glGetProgramiv(program,GL_ACTIVE_UNIFORM_MAX_LENGTH,&)',
+      'length' => 'NULL'
     },
     'feature' => 'GL_ARB_uniform_buffer_object',
     'glewImpl' => '__glewGetActiveUniformName',
