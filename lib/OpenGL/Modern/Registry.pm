@@ -21905,8 +21905,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'length' => 'OUTSCALAR',
-      'name' => 'OUTSCALAR'
+      'RETVAL' => 'name',
+      'bufSize' => '<glGetProgramStageiv(program,shadertype,GL_ACTIVE_SUBROUTINE_UNIFORM_MAX_LENGTH,&)'
     },
     'feature' => 'GL_ARB_shader_subroutine',
     'glewImpl' => '__glewGetActiveSubroutineName',
