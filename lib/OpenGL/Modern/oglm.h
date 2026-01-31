@@ -33,8 +33,7 @@ extern int _auto_check_errors;
 #define OGLM_GET_VARARGS(varname, startfrom, type, perltype, howmany) \
   NULL; if (items-(startfrom) != (howmany)) \
     croak("error: expected %d args but given %d", howmany, items-(startfrom)); \
-  varname = malloc(sizeof(type) * (howmany)); \
-  if (!varname) croak("malloc failed"); \
+  varname = OGLM_ALLOC(howmany, type, varname); \
   { IV i; for(i = 0; i < (howmany); i++) { \
     varname[i] = (type)Sv##perltype(ST(i + (startfrom))); \
   } }
