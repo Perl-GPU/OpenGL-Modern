@@ -109,7 +109,7 @@ sub bindings {
   if (my @outaslist = grep $indynlang{$_} =~ /\bOUTASLIST\b/, keys %indynlang) {
     die "$name: >1 OUTASLIST (@outaslist)" if @outaslist > 1;
     die "$name: no OUTASLIST len" unless my ($len) = $indynlang{$outaslist[0]} =~ /\bOUTASLIST:([^\s,]+)/;
-    my $parsed = parse_ptr($name2data{$outaslist[0]});
+    my $parsed = $name2parsed{$outaslist[0]};
     die "$name: no typefunc for $outaslist[0]" unless my $typefunc = typefunc($parsed->[0]);
     my $newfunc = 'newSV' . lc substr $typefunc, 0, 2;
     $dynlang{$outaslist[0]} = "OGLM_ALLOC($len,$parsed->[0],$outaslist[0])";
@@ -124,7 +124,7 @@ sub bindings {
       my ($compsize_group, $compsize_from, $mult) =
         $indynlang{$arg} =~ /\bSIZE:([^:]+):([^,:\s]+)(?::([^,\s]+))?/;
     $mult ||= 1;
-    my $parsed = parse_ptr($name2data{$arg});
+    my $parsed = $name2parsed{$arg};
     $arg2lenoverride{$arg} = ["${compsize_from}_count", "OGLM_SIZE_ENUM($compsize_group,$compsize_from,$mult)"];
     $dynlang{$arg} = "OGLM_ALLOC(${compsize_from}_count,$parsed->[0],$arg)";
   }
@@ -132,7 +132,7 @@ sub bindings {
   if (my $retval = delete $dynlang{RETVAL}) {
     die "$name: dynlang RETVAL '$retval' not arg to function" if !defined $name2data{$retval};
     if (($name2data{$retval}[2]//'') eq '1') {
-      $this{xs_rettype} = parse_ptr($name2data{$retval})->[0];
+      $this{xs_rettype} = $name2parsed{$retval}[0];
       $this{aftercall} = "\n  RETVAL = $retval\[0];";
     } else {
       $this{xs_rettype} = delete $dynlang{RETTYPE} // $name2data{$retval}[1];
@@ -162,7 +162,7 @@ sub bindings {
   if (my @varargs = grep $indynlang{$_} =~ /\bVARARGS\b/, keys %indynlang) {
     die "$name: >1 VARARGS (@varargs)" if @varargs > 1;
     die "$name: failed to parse VARARGS '$dynlang{$varargs[0]}'" unless my ($startfrom, $howmany) = $indynlang{$varargs[0]} =~ /\bVARARGS:(\d+):([^,\s]+)/;
-    my $parsed = parse_ptr($name2data{$varargs[0]});
+    my $parsed = $name2parsed{$varargs[0]};
     die "$name: no typefunc for $varargs[0]" unless my $typefunc = typefunc($parsed->[0]);
     $dynlang{$varargs[0]} = "OGLM_GET_VARARGS($varargs[0],$startfrom,$parsed->[0],$typefunc,$howmany)";
     $cleanup .= "free($varargs[0]);";
