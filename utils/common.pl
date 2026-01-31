@@ -171,8 +171,10 @@ sub bindings {
       } else {
         delete $dynlang{$arg};
         my $newval;
-        if (is_stringtype($name2data{$arg}[1])) {
-          $newval = "newSVpv($arg,0)";
+        if ($name2parsed{$arg}[0] eq 'void' || is_stringtype($name2data{$arg}[1])) {
+          my ($len) = $indynlang{$arg} =~ /\bOUTSCALAR:([^\s,]+)/;
+          $len //= 0;
+          $newval = "newSVpv($arg,$len)";
         } else {
           my $typefunc = typefunc($name2parsed{$arg}[0]);
           $newval = "newSV".lc(substr $typefunc, 0, 2)."($arg\[0])";
