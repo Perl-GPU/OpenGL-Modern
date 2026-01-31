@@ -29,7 +29,7 @@ extern int _auto_check_errors;
   }
 #define OGLM_OUT_FINISH(buffername, n, newfunc) \
   EXTEND(sp, n); \
-  { int i; for (i=0;i<n;i++) PUSHs(sv_2mortal(newfunc(buffername[i]))); }
+  { int i; for (i=0;i<n;i++) mPUSHs(newfunc(buffername[i])); }
 #define OGLM_GET_VARARGS(varname, startfrom, type, perltype, howmany) \
   NULL; if (items-(startfrom) != (howmany)) \
     croak("error: expected %d args but given %d", howmany, items-(startfrom)); \
