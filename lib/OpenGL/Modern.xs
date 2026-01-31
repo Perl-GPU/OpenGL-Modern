@@ -126,18 +126,4 @@ CODE:
 OUTPUT:
   RETVAL
 
-# This isn't a bad idea, but I postpone this API and the corresponding
-# typemap hackery until later
-#GLboolean
-#glAreProgramsResidentNV_p(GLuint* ids);
-#PPCODE:
-#     SV* buf_res = sv_2mortal(newSVpv("",items * sizeof(GLboolean)));
-#     GLboolean* residences = (GLboolean*) SvPV_nolen(buf_res);
-#     glAreProgramsResidentNV(items, ids, residences);
-#     EXTEND(SP, items);
-#     int i2;
-#     for( i2 = 0; i2 < items; i2++ ) {
-#        PUSHs(sv_2mortal(newSViv(residences[i2])));
-#	 };
-
 INCLUDE: ../../auto-xs.inc
