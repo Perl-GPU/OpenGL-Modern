@@ -152,9 +152,8 @@ sub bindings {
     $this{error_check} .= "\n  " if $this{error_check};
     $this{error_check} .= "OGLM_CHECK_ERR($getfunc, $cleanup)",
   }
-  my @varargs = grep $indynlang{$_} =~ /\bVARARGS\b/, keys %indynlang;
-  die "$name: >1 VARARGS (@varargs)" if @varargs > 1;
-  if (@varargs) {
+  if (my @varargs = grep $indynlang{$_} =~ /\bVARARGS\b/, keys %indynlang) {
+    die "$name: >1 VARARGS (@varargs)" if @varargs > 1;
     die "$name: failed to parse VARARGS '$dynlang{$varargs[0]}'" unless my ($startfrom, $howmany) = $indynlang{$varargs[0]} =~ /\bVARARGS:(\d+):([^,\s]+)/;
     my $parsed = parse_ptr($name2data{$varargs[0]});
     die "$name: no typefunc for $varargs[0]" unless my $typefunc = typefunc($parsed->[0]);
