@@ -9,3 +9,4 @@ glGetProgramResourceName RETVAL=name length=NULL bufSize=<glGetProgramResourceiv
 glGetSynciv count=sizeof(GLint) length=NULL values=SIZE:SyncParameterName:pname,OUTASLIST:pname_count
 glGetActiveUniformsiv uniformCount=items-2 uniformIndices=VARARGS:2:uniformCount params=SIZE:UniformPName:pname:uniformCount,OUTASLIST:pname_count
 glGetProgramResourceiv propCount=items-3 props=VARARGS:3:propCount count=propCount length=NULL params=OUTASLIST:count
+glGetActiveUniform bufSize=<glGetProgramiv(program,GL_ACTIVE_UNIFORM_MAX_LENGTH,&) length=NULL name=OUTSCALAR size=OUTSCALAR type=OUTSCALAR

@@ -5443,8 +5443,8 @@ Exported under tag C<:GL_ARB_shader_subroutine>.
 
  glGetActiveUniform_c($program, $index, $bufSize, $length, $size, $type, $name);
  glGetActiveUniformARB_c($program, $index, $bufSize, $length, $size, $type, $name);
- ($length, $size, $type, $name) = glGetActiveUniform_p($program, $index, $bufSize);
- ($length, $size, $type, $name) = glGetActiveUniformARB_p($program, $index, $bufSize);
+ ($size, $type, $name) = glGetActiveUniform_p($program, $index);
+ ($size, $type, $name) = glGetActiveUniformARB_p($program, $index);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetActiveUniform.xhtml>

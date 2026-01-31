@@ -22041,7 +22041,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'length' => 'OUTSCALAR',
+      'bufSize' => '<glGetProgramiv(program,GL_ACTIVE_UNIFORM_MAX_LENGTH,&)',
+      'length' => 'NULL',
       'name' => 'OUTSCALAR',
       'size' => 'OUTSCALAR',
       'type' => 'OUTSCALAR'
