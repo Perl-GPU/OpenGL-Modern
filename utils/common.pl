@@ -74,6 +74,7 @@ sub bindings {
   my @argdata = @{$s->{argdata} || []};
   my $callarg_list = $s->{glewtype} eq 'var' ? "" : "(@{[ join ', ', map $_->[0], @argdata ]})";
   my $thistype = $s->{restype};
+  my $isvoid = $thistype eq 'void';
   my @ptr_arg_inds = @{$s->{ptr_args} || []};
   my $c_suffix = @ptr_arg_inds ? '_c' : '';
   my %default = (
@@ -86,12 +87,12 @@ sub bindings {
     error_check => ($name eq "glGetError") ? "" : "OGLM_CHECK_ERR($name, )",
     avail_check => $avail_check,
     beforecall => '',
-    retcap => ($thistype eq 'void' ? '' : 'RETVAL = '),
-    retnames => ($thistype eq 'void' ? [] : ['$retval']),
+    retcap => ($isvoid ? '' : 'RETVAL = '),
+    retnames => ($isvoid ? [] : ['$retval']),
     callarg_list => $callarg_list,
     error_check2 => ($name eq "glGetError") ? "" : "OGLM_CHECK_ERR($name, )",
     aftercall => '',
-    retout => ($thistype eq 'void' ? '' : "\nOUTPUT:\n  RETVAL"),
+    retout => ($isvoid ? '' : "\nOUTPUT:\n  RETVAL"),
   );
   my @ret = \%default;
   my %dynlang = %{ $s->{dynlang} || {} };
@@ -146,7 +147,7 @@ sub bindings {
     $this{xs_code} = "PPCODE:\n";
   }
   delete @is_inarg{keys %dynlang};
-  delete @is_inarg{grep !$name2parsed{$_}[1], keys %name2parsed} if $s->{restype} eq 'void';
+  delete @is_inarg{grep !$name2parsed{$_}[1], keys %name2parsed} if $isvoid;
   my @xs_inargs = grep $is_inarg{$_->[0]}, @argdata;
   my $dotdotdot = grep /\bVARARGS\b/, values %indynlang;
   $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
@@ -186,7 +187,7 @@ sub bindings {
     $beforecall .= "  $arg2lenoverride{$var}->[1]\n" if $arg2lenoverride{$var};
     $beforecall .= "  $type$var = $val;\n";
   }
-  if ($s->{restype} eq 'void') {
+  if ($isvoid) {
     for my $arr (sort grep !$gotdynlang{$_} && !$name2parsed{$_}[1], keys %name2parsed) {
       my $len = $name2data{$arr}[2] // die "$name: pointer arg without len";
       my $type = $name2parsed{$arr}[0];
