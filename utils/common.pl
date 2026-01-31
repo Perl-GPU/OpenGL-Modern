@@ -113,7 +113,6 @@ sub bindings {
     die "$name: no typefunc for $outaslist[0]" unless my $typefunc = typefunc($parsed->[0]);
     my $newfunc = 'newSV' . lc substr $typefunc, 0, 2;
     $dynlang{$outaslist[0]} = "OGLM_ALLOC($len,$parsed->[0],$outaslist[0])";
-    $cleanup .= "\n  " if $cleanup;
     $cleanup .= "free($outaslist[0]);";
     $dynlang{OUTPUT} = "OGLM_OUT_FINISH($outaslist[0],$len,$newfunc)";
   }
@@ -160,7 +159,6 @@ sub bindings {
     my $parsed = parse_ptr($name2data{$varargs[0]});
     die "$name: no typefunc for $varargs[0]" unless my $typefunc = typefunc($parsed->[0]);
     $dynlang{$varargs[0]} = "OGLM_GET_VARARGS($varargs[0],$startfrom,$parsed->[0],$typefunc,$howmany)";
-    $cleanup .= "\n  " if $cleanup;
     $cleanup .= "free($varargs[0]);";
   }
   $this{aftercall} .= "\n  $cleanup" if $cleanup;
