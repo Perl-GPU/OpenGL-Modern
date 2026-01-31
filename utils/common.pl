@@ -106,6 +106,7 @@ sub bindings {
   my %this = %pbinding;
   my $cleanup = delete $dynlang{CLEANUP} // '';
   my %indynlang = %dynlang;
+  my %is_inarg = map +($_->[0]=>1), @argdata;
   if (my @outaslist = grep $indynlang{$_} =~ /\bOUTASLIST\b/, keys %indynlang) {
     die "$name: >1 OUTASLIST (@outaslist)" if @outaslist > 1;
     die "$name: no OUTASLIST len" unless my ($len) = $indynlang{$outaslist[0]} =~ /\bOUTASLIST:([^\s,]+)/;
@@ -144,7 +145,9 @@ sub bindings {
     $this{aftercall} = "\n  $output";
     $this{xs_code} = "PPCODE:\n";
   }
-  my @xs_inargs = grep !$dynlang{$_->[0]} && !($s->{restype} eq 'void' && $name2parsed{$_->[0]} && !$name2parsed{$_->[0]}[1]), @argdata;
+  delete @is_inarg{keys %dynlang};
+  delete @is_inarg{grep !$name2parsed{$_}[1], keys %name2parsed} if $s->{restype} eq 'void';
+  my @xs_inargs = grep $is_inarg{$_->[0]}, @argdata;
   my $dotdotdot = grep /\bVARARGS\b/, values %indynlang;
   $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
   $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
