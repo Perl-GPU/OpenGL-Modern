@@ -1,3 +1,6 @@
+extern int _done_glewInit;
+extern int _auto_check_errors;
+
 #define OGLM_CHECK_ERR(name, cleanup) \
   if (_auto_check_errors) { \
     int err = GL_NO_ERROR; \

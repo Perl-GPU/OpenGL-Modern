@@ -12,9 +12,6 @@
 #include "gl_errors.h"
 #include "oglm.h"
 
-int _done_glewInit = 0;
-int _auto_check_errors = 0;
-
 /*
   Maybe one day we'll allow Perl callbacks for GLDEBUGPROCARB
 */

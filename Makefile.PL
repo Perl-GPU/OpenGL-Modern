@@ -63,10 +63,10 @@ WriteMakefile(
   XSBUILD => {
     xs => {
       'lib/OpenGL/Modern' => {
-        OBJECT => join(' ', map "lib/OpenGL/Modern$_\$(OBJ_EXT)", '', qw(/glew /gl_counts)),
+        OBJECT => join(' ', map "lib/OpenGL/Modern$_\$(OBJ_EXT)", '', qw(/glew /gl_counts /oglm)),
       },
       'lib/OpenGL/Modern/Const' => {
-        OBJECT => join(' ', map "lib/OpenGL/Modern/$_\$(OBJ_EXT)", qw(Const glew)),
+        OBJECT => join(' ', map "lib/OpenGL/Modern/$_\$(OBJ_EXT)", qw(Const glew oglm)),
       },
     },
   },
