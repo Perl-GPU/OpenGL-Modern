@@ -5419,7 +5419,7 @@ Exported under tag C<:GL_ARB_shader_subroutine>.
 =head2 glGetActiveSubroutineUniformName
 
  glGetActiveSubroutineUniformName_c($program, $shadertype, $index, $bufSize, $length, $name);
- $retval = glGetActiveSubroutineUniformName_p($program, $shadertype, $index);
+ $name = glGetActiveSubroutineUniformName_p($program, $shadertype, $index);
 
 Exported under tag C<:GL_ARB_shader_subroutine>.
 
@@ -5441,7 +5441,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetActiveUniform.x
 =head2 glGetActiveUniformBlockName
 
  glGetActiveUniformBlockName_c($program, $uniformBlockIndex, $bufSize, $length, $uniformBlockName);
- $retval = glGetActiveUniformBlockName_p($program, $uniformBlockIndex);
+ $uniformBlockName = glGetActiveUniformBlockName_p($program, $uniformBlockIndex);
 
 Exported under tag C<:GL_ARB_uniform_buffer_object>.
 
@@ -6962,7 +6962,7 @@ Exported under tag C<:GL_ARB_vertex_program>.
 =head2 glGetProgramInfoLog
 
  glGetProgramInfoLog_c($program, $bufSize, $length, $infoLog);
- $retval = glGetProgramInfoLog_p($program);
+ $infoLog = glGetProgramInfoLog_p($program);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetProgramInfoLog.xhtml>
@@ -7019,7 +7019,7 @@ Exported under tag C<:GL_NV_vertex_program>.
 =head2 glGetProgramPipelineInfoLog
 
  glGetProgramPipelineInfoLog_c($pipeline, $bufSize, $length, $infoLog);
- $retval = glGetProgramPipelineInfoLog_p($pipeline);
+ $infoLog = glGetProgramPipelineInfoLog_p($pipeline);
 
 Exported under tag C<:GL_ARB_separate_shader_objects>.
 
@@ -7057,7 +7057,7 @@ Exported under tag C<:GL_EXT_blend_func_extended>.
 =head2 glGetProgramResourceName
 
  glGetProgramResourceName_c($program, $programInterface, $index, $bufSize, $length, $name);
- $retval = glGetProgramResourceName_p($program, $programInterface, $index);
+ $name = glGetProgramResourceName_p($program, $programInterface, $index);
 
 Exported under tag C<:GL_ARB_program_interface_query>.
 
@@ -7326,7 +7326,7 @@ Exported under tag C<:GL_EXT_convolution>.
 =head2 glGetShaderInfoLog
 
  glGetShaderInfoLog_c($shader, $bufSize, $length, $infoLog);
- $retval = glGetShaderInfoLog_p($shader);
+ $infoLog = glGetShaderInfoLog_p($shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderInfoLog.xhtml>
@@ -7341,8 +7341,8 @@ Exported under tag C<:GL_ARB_ES2_compatibility>.
 
  glGetShaderSource_c($shader, $bufSize, $length, $source);
  glGetShaderSourceARB_c($shader, $bufSize, $length, $source);
- $retval = glGetShaderSource_p($shader);
- $retval = glGetShaderSourceARB_p($shader);
+ $source = glGetShaderSource_p($shader);
+ $source = glGetShaderSourceARB_p($shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderSource.xhtml>

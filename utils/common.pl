@@ -87,6 +87,7 @@ sub bindings {
     avail_check => $avail_check,
     beforecall => '',
     retcap => ($thistype eq 'void' ? '' : 'RETVAL = '),
+    retnames => ($thistype eq 'void' ? [] : ['$retval']),
     callarg_list => $callarg_list,
     error_check2 => ($name eq "glGetError") ? "" : "OGLM_CHECK_ERR($name, )",
     aftercall => '',
@@ -114,6 +115,7 @@ sub bindings {
     $dynlang{$outaslist[0]} = "OGLM_ALLOC($len,$parsed->[0],$outaslist[0])";
     $cleanup .= "free($outaslist[0]);";
     $dynlang{OUTPUT} = "OGLM_OUT_FINISH($outaslist[0],$len,$newfunc)";
+    $this{retnames} = ["\@$outaslist[0]"];
   }
   my @sized = grep $indynlang{$_} =~ /\bSIZE\b/, keys %indynlang;
   my %arg2lenoverride;
@@ -132,6 +134,7 @@ sub bindings {
     $this{xs_rettype} = delete $dynlang{RETTYPE} // $name2data{$retval}[1];
     $this{aftercall} = "\n  RETVAL = $retval;";
     $this{retout} = "\nOUTPUT:\n  RETVAL";
+    $this{retnames} = ["\$$retval"];
   } elsif (my $output = delete $dynlang{OUTPUT}) {
     $this{aftercall} = "\n  $output";
     $this{xs_code} = "PPCODE:\n";
