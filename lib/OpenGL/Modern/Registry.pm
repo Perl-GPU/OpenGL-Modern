@@ -28731,6 +28731,12 @@ our %registry = (
         'bufSize'
       ]
     ],
+    'dynlang' => {
+      'binary' => 'OUTSCALAR:bufSize',
+      'binaryFormat' => 'OUTSCALAR',
+      'bufSize' => '<glGetProgramiv(program,GL_PROGRAM_BINARY_LENGTH,&)',
+      'length' => 'NULL'
+    },
     'feature' => 'GL_ARB_get_program_binary',
     'glewImpl' => '__glewGetProgramBinary',
     'glewtype' => 'fun',

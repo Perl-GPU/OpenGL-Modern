@@ -10,3 +10,4 @@ glGetSynciv count=sizeof(GLint) length=NULL values=SIZE:SyncParameterName:pname,
 glGetActiveUniformsiv uniformCount=items-2 uniformIndices=VARARGS:2:uniformCount params=SIZE:UniformPName:pname:uniformCount,OUTASLIST:pname_count
 glGetProgramResourceiv propCount=items-3 props=VARARGS:3:propCount count=propCount length=NULL params=OUTASLIST:count
 glGetActiveUniform bufSize=<glGetProgramiv(program,GL_ACTIVE_UNIFORM_MAX_LENGTH,&) length=NULL name=OUTSCALAR size=OUTSCALAR type=OUTSCALAR
+glGetProgramBinary bufSize=<glGetProgramiv(program,GL_PROGRAM_BINARY_LENGTH,&) binary=OUTSCALAR:bufSize binaryFormat=OUTSCALAR length=NULL

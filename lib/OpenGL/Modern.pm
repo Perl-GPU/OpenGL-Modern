@@ -3027,6 +3027,7 @@ our @gl_functionsrest = qw(
   glGetProcAddressREGAL_c
   glGetProgramBinaryOES_c
   glGetProgramBinary_c
+  glGetProgramBinary_p
   glGetProgramEnvParameterdvARB_c
   glGetProgramEnvParameterdvARB_p
   glGetProgramEnvParameterfvARB_c
@@ -5575,6 +5576,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ARB_get_program_binary' => [
     'glGetProgramBinary_c',
+    'glGetProgramBinary_p',
     'glProgramBinary_c',
     'glProgramParameteri'
   ],
@@ -10276,6 +10278,7 @@ our %EXPORT_TAGS_GL = (
     'glGetFloati_v_c',
     'glGetFloati_v_p',
     'glGetProgramBinary_c',
+    'glGetProgramBinary_p',
     'glGetProgramPipelineInfoLog_c',
     'glGetProgramPipelineInfoLog_p',
     'glGetProgramPipelineiv_c',

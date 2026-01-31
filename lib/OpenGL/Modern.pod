@@ -6965,6 +6965,7 @@ Exported under tag C<:GL_REGAL_proc_address>.
 =head2 glGetProgramBinary
 
  glGetProgramBinary_c($program, $bufSize, $length, $binaryFormat, $binary);
+ ($binaryFormat, $binary) = glGetProgramBinary_p($program);
 
 Exported under tag C<:GL_ARB_get_program_binary>.
 
