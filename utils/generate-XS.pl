@@ -13,10 +13,10 @@ and creates XS stubs for each.
 our %signature;
 *signature = \%OpenGL::Modern::Registry::registry;
 
+my $g2c2s = assemble_enum_groups(\%OpenGL::Modern::Registry::groups, \%OpenGL::Modern::Registry::counts);
 sub generate_glew_xs {
   my $content;
-  my $g2c2s = assemble_enum_groups(\%OpenGL::Modern::Registry::groups, \%OpenGL::Modern::Registry::counts);
-  for my $name (@_ ? @_ : sort keys %signature) {
+  for my $name (@_) {
     my $item = $signature{$name};
     for my $s (bindings($name, $item, $g2c2s)) {
       die "Error generating for $name: no return type" if !$s->{xs_rettype};
@@ -33,6 +33,7 @@ sub generate_glew_xs {
   $content;
 }
 
-my $xs_code = generate_glew_xs(@ARGV);
+my $xs_code = generate_glew_xs(sort grep $signature{$_}{glewtype} eq 'fun', keys %signature);
 save_file('auto-xs.inc', $xs_code);
-save_file('auto-xs-var.inc', "\n");
+my $var_code = generate_glew_xs(sort grep $signature{$_}{glewtype} eq 'var', keys %signature);
+save_file('auto-xs-var.inc', $var_code);
