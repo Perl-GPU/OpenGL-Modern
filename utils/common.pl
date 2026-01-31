@@ -172,9 +172,9 @@ sub bindings {
     my $val = delete $dynlang{$var};
     die "$name: no arg data found for '$var'" unless my $data = $name2data{$var};
     my $type = $data->[1];
-    $need_cast = 1 if $type =~ s#\bconst\b##g;
+    $need_cast = 1 if $type =~ s#\bconst\b\s*##g;
     $beforecall .= "  $arg2lenoverride{$var}->[1]\n" if $arg2lenoverride{$var};
-    $beforecall .= "  $type $var = $val;\n";
+    $beforecall .= "  $type$var = $val;\n";
   }
   if ($s->{restype} eq 'void') {
     for my $arr (sort grep !$gotdynlang{$_} && !$name2parsed{$_}[1], keys %name2parsed) {
