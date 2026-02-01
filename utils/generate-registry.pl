@@ -136,7 +136,7 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     my ($ind, $type) = @$_;
     next if $type !~ /\*/;
     next if is_stringtype($type, 1);
-    next if $name !~ /v[A-Z]*$/ and $type =~ /^\s*const\s+GLubyte(?:ARB)?\s*\*\s*$/;
+    next if ($name !~ /v[A-Z]*$/ || $argdata[$ind][0] eq 'name') and $type =~ /^\s*const\s+GLubyte(?:ARB)?\s*\*\s*$/;
     push @ptr_args, $ind;
   }
   $item->{ptr_args} = \@ptr_args if @ptr_args;

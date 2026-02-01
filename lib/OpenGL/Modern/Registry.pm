@@ -28990,14 +28990,12 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'name' => 'VARARGS:2:1',
       'params' => 'OUTASLIST:4'
     },
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewGetProgramNamedParameterdvNV',
     'glewtype' => 'fun',
     'ptr_args' => [
-      2,
       3
     ],
     'restype' => 'void'
@@ -29024,14 +29022,12 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'name' => 'VARARGS:2:1',
       'params' => 'OUTASLIST:4'
     },
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewGetProgramNamedParameterfvNV',
     'glewtype' => 'fun',
     'ptr_args' => [
-      2,
       3
     ],
     'restype' => 'void'
@@ -48009,11 +48005,13 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:3:4'
+    },
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewProgramNamedParameter4dvNV',
     'glewtype' => 'fun',
     'ptr_args' => [
-      2,
       3
     ],
     'restype' => 'void'
@@ -48076,11 +48074,13 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'v' => 'VARARGS:3:4'
+    },
     'feature' => 'GL_NV_fragment_program',
     'glewImpl' => '__glewProgramNamedParameter4fvNV',
     'glewtype' => 'fun',
     'ptr_args' => [
-      2,
       3
     ],
     'restype' => 'void'

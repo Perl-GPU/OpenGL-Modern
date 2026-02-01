@@ -7021,14 +7021,14 @@ Exported under tag C<:GL_ARB_vertex_program>.
 =head2 glGetProgramNamedParameterdvNV
 
  glGetProgramNamedParameterdvNV_c($id, $len, $name, $params);
- @params = glGetProgramNamedParameterdvNV_p($id, $len, @name);
+ @params = glGetProgramNamedParameterdvNV_p($id, $len, $name);
 
 Exported under tag C<:GL_NV_fragment_program>.
 
 =head2 glGetProgramNamedParameterfvNV
 
  glGetProgramNamedParameterfvNV_c($id, $len, $name, $params);
- @params = glGetProgramNamedParameterfvNV_p($id, $len, @name);
+ @params = glGetProgramNamedParameterfvNV_p($id, $len, $name);
 
 Exported under tag C<:GL_NV_fragment_program>.
 
@@ -11955,6 +11955,7 @@ Exported under tag C<:GL_NV_fragment_program>.
 =head2 glProgramNamedParameter4dvNV
 
  glProgramNamedParameter4dvNV_c($id, $len, $name, $v);
+ glProgramNamedParameter4dvNV_p($id, $len, $name, @v);
 
 Exported under tag C<:GL_NV_fragment_program>.
 
@@ -11967,6 +11968,7 @@ Exported under tag C<:GL_NV_fragment_program>.
 =head2 glProgramNamedParameter4fvNV
 
  glProgramNamedParameter4fvNV_c($id, $len, $name, $v);
+ glProgramNamedParameter4fvNV_p($id, $len, $name, @v);
 
 Exported under tag C<:GL_NV_fragment_program>.
 

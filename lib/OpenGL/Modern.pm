@@ -3853,8 +3853,10 @@ our @gl_functionsrest = qw(
   glProgramLocalParametersI4uivNV_p
   glProgramNamedParameter4dNV
   glProgramNamedParameter4dvNV_c
+  glProgramNamedParameter4dvNV_p
   glProgramNamedParameter4fNV
   glProgramNamedParameter4fvNV_c
+  glProgramNamedParameter4fvNV_p
   glProgramParameter4dNV
   glProgramParameter4dvNV_c
   glProgramParameter4dvNV_p
@@ -8003,8 +8005,10 @@ our %EXPORT_TAGS_GL = (
     'glGetProgramNamedParameterfvNV_p',
     'glProgramNamedParameter4dNV',
     'glProgramNamedParameter4dvNV_c',
+    'glProgramNamedParameter4dvNV_p',
     'glProgramNamedParameter4fNV',
-    'glProgramNamedParameter4fvNV_c'
+    'glProgramNamedParameter4fvNV_c',
+    'glProgramNamedParameter4fvNV_p'
   ],
   'GL_NV_framebuffer_blit' => [
     'glBlitFramebufferNV'
