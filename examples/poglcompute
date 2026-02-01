@@ -132,7 +132,8 @@ glBindFramebuffer(GL_FRAMEBUFFER, $fbo_id);
 glFramebufferTexture(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, $destTextureID, 0);
 my $fbstat = glCheckFramebufferStatus(GL_FRAMEBUFFER);
 die "FBO Status error: " . glpErrorString(glGetError()) if !$fbstat;
-die sprintf "FBO Status: %04X", $fbstat if $fbstat != GL_FRAMEBUFFER_COMPLETE;
+die "FBO Status: ".OpenGL::Modern::enum2name('FramebufferStatus', $fbstat)
+  if $fbstat != GL_FRAMEBUFFER_COMPLETE;
 
 with_time {
 glViewport(0,0,$xdim,$ydim);
