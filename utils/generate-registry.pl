@@ -304,7 +304,7 @@ my %gltags;
 my @exported_functions; # names the module exports
 for my $name (sort {uc$a cmp uc$b} keys %signature) {
   my $s = $signature{$name};
-  my @bindings = bindings($name, $s, $g2c2s);
+  my @bindings = bindings($name, $s, $g2c2s, \%signature);
   my @binding_names = map $_->{binding_name}, @bindings;
   my @binding_aliases = map @{ $_->{aliases} }, @bindings;
   push @exported_functions, @binding_names, @binding_aliases;
@@ -374,7 +374,7 @@ for my $name (sort grep !/^GL/, keys %signature) {
   $middle1 .= "=head2 $name\n\n";
   my $s = $signature{$name};
   my %dynlang = %{ $s->{dynlang} || {} };
-  for my $bind (sort {$a->{binding_name} cmp $b->{binding_name}} bindings($name, $s, $g2c2s)) {
+  for my $bind (sort {$a->{binding_name} cmp $b->{binding_name}} bindings($name, $s, $g2c2s, \%signature)) {
     die "$name: $bind->{binding_name} has no xs_rettype" if !defined $bind->{xs_rettype};
     my $prefix = " ";
     if (my @retnames = @{ $bind->{retnames} }) {

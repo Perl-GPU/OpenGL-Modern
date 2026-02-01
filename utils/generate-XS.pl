@@ -18,7 +18,7 @@ sub generate_glew_xs {
   my $content;
   for my $name (@_) {
     my $item = $signature{$name};
-    for my $s (bindings($name, $item, $g2c2s)) {
+    for my $s (bindings($name, $item, $g2c2s, \%signature)) {
       die "Error generating for $name: no return type" if !$s->{xs_rettype};
       my $res = "$s->{xs_rettype}\n$s->{binding_name}($s->{xs_args})\n";
       $res .= $s->{xs_argdecls};

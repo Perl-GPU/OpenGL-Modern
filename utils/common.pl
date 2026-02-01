@@ -67,7 +67,8 @@ sub parse_ptr {
 
 sub bindings {
   die "list context only" if !wantarray;
-  my ($name, $s, $counts) = @_;
+  my ($name, $s, $counts, $signatures) = @_;
+  die "bindings: no signatures given" if !$signatures;
   my $avail_check = ($s->{glewtype} eq 'fun' && $s->{glewImpl})
     ? "  OGLM_AVAIL_CHECK($s->{glewImpl}, $name)\n"
     : "";
