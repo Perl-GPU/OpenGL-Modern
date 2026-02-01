@@ -80,7 +80,7 @@ WriteMakefile(
     'lib/OpenGL/Modern/gl_counts$(OBJ_EXT)' => 'include/GL/glew.h',
   },
   clean => { FILES => 'auto-xs.inc auto-xs-var.inc '.join ' ', map qq{lib/OpenGL/Modern/$_},
-    qw(const.h Config.pm glew$(OBJ_EXT) gl_counts$(OBJ_EXT)) },
+    qw(const.h Config.pm glew$(OBJ_EXT) gl_counts$(OBJ_EXT) oglm$(OBJ_EXT)) },
   %buildargs,
 );
 
