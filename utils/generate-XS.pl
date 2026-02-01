@@ -37,3 +37,5 @@ my $xs_code = generate_glew_xs(sort grep $signature{$_}{glewtype} eq 'fun', keys
 save_file('auto-xs.inc', $xs_code);
 my $var_code = generate_glew_xs(sort grep $signature{$_}{glewtype} eq 'var', keys %signature);
 save_file('auto-xs-var.inc', $var_code);
+my $enums_code = "\n";
+save_file('auto-xs-enums.inc', $enums_code);

@@ -14,6 +14,8 @@
 
 MODULE = OpenGL::Modern::Const		PACKAGE = OpenGL::Modern
 
+INCLUDE: ../../../auto-xs-enums.inc
+
 INCLUDE: ../../../auto-xs-var.inc
 
 BOOT:

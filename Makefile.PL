@@ -72,14 +72,18 @@ WriteMakefile(
   },
   depend           => {
     'lib/OpenGL/Modern$(OBJ_EXT)' => join(' ',
-      qw(auto-xs.inc auto-xs-var.inc include/GL/glew.h include/GL/wglew.h),
+      qw(auto-xs.inc include/GL/glew.h include/GL/wglew.h),
       map "lib/OpenGL/Modern/$_", qw(
         glew-context.c gl_counts.h gl_errors.h Install/typemap oglm.h
     )), # first and last are not accurate but forced by XSMULTI which has no intermediate .c target
-    'lib/OpenGL/Modern/Const$(OBJ_EXT)' => 'include/GL/glew.h include/GL/wglew.h lib/OpenGL/Modern/const.h lib/OpenGL/Modern/oglm.h auto-xs-var.inc',
+    'lib/OpenGL/Modern/Const$(OBJ_EXT)' => join(' ',
+      qw(auto-xs-enums.inc auto-xs-var.inc include/GL/glew.h include/GL/wglew.h),
+      map "lib/OpenGL/Modern/$_", qw(
+        const.h oglm.h
+    )),
     'lib/OpenGL/Modern/gl_counts$(OBJ_EXT)' => 'include/GL/glew.h',
   },
-  clean => { FILES => 'auto-xs.inc auto-xs-var.inc '.join ' ', map qq{lib/OpenGL/Modern/$_},
+  clean => { FILES => 'auto-xs.inc auto-xs-enums.inc auto-xs-var.inc '.join ' ', map qq{lib/OpenGL/Modern/$_},
     qw(const.h Config.pm glew$(OBJ_EXT) gl_counts$(OBJ_EXT) oglm$(OBJ_EXT)) },
   %buildargs,
 );
@@ -97,7 +101,7 @@ sub postamble {
 auto-xs.inc : $deps
 \t\$(PERLRUN) -Ilib utils/generate-XS.pl
 
-auto-xs-var.inc : auto-xs.inc
+auto-xs-enums.inc auto-xs-var.inc : auto-xs.inc
 
 lib/OpenGL/Modern/const.h : lib/OpenGL/Modern/Registry.pm
 \t$const_cmd >\$@
