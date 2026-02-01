@@ -22390,8 +22390,8 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'count' => 'OUTSCALAR',
-      'shaders' => 'OUTARRAY:maxCount'
+      'maxCount' => '<glGetProgramiv(program,GL_ATTACHED_SHADERS,&)',
+      'shaders' => 'OUTASLIST:maxCount'
     },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetAttachedShaders',

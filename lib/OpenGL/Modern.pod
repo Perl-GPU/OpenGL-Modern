@@ -5510,7 +5510,7 @@ Exported under tag C<:GL_ARB_shader_objects>.
 =head2 glGetAttachedShaders
 
  glGetAttachedShaders_c($program, $maxCount, $count, $shaders);
- ($count, \@shaders) = glGetAttachedShaders_p($program, $maxCount);
+ @shaders = glGetAttachedShaders_p($program);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetAttachedShaders.xhtml>
