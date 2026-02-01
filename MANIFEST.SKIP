@@ -2,7 +2,6 @@
 ^blib/
 ^pogl_implemented
 ^signatures
-^utils/XS_generate_NOTES.txt
 ^lib/OpenGL/Modern/Config\.pm$
 ^.git
 ^xt/
