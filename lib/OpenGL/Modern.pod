@@ -7747,8 +7747,8 @@ Exported under tag C<:GL_NV_vertex_program>.
 
  glGetTransformFeedbackVarying_c($program, $index, $bufSize, $length, $size, $type, $name);
  glGetTransformFeedbackVaryingEXT_c($program, $index, $bufSize, $length, $size, $type, $name);
- ($length, $size, $type, $name) = glGetTransformFeedbackVarying_p($program, $index, $bufSize);
- ($length, $size, $type, $name) = glGetTransformFeedbackVaryingEXT_p($program, $index, $bufSize);
+ ($size, $type, $name) = glGetTransformFeedbackVarying_p($program, $index);
+ ($size, $type, $name) = glGetTransformFeedbackVaryingEXT_p($program, $index);
 
 Exported under tag C<:GL_VERSION_3_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetTransformFeedbackVarying.xhtml>
