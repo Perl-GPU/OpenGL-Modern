@@ -191,7 +191,7 @@ for (grep $_, split /\n/, slurp('utils/dynlang.txt')) {
 
 my %groups;
 for (grep $_, split /\n/, slurp('utils/enums-group.txt')) {
-  my ($enum, @groups) = split ' ';
+  my ($enum, $value, @groups) = split ' ';
   push @{ $groups{$_} }, $enum for @groups;
 }
 my $g2c2s = assemble_enum_groups(\%groups, \%counts);
