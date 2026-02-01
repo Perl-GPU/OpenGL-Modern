@@ -11770,6 +11770,8 @@ Exported under tag C<:GL_NV_primitive_restart>.
 
  glPrioritizeTextures_c($n, $textures, $priorities);
  glPrioritizeTexturesEXT_c($n, $textures, $priorities);
+ glPrioritizeTextures_p(\@textures, \@priorities);
+ glPrioritizeTexturesEXT_p(\@textures, \@priorities);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.

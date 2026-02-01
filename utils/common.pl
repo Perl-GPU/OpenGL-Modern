@@ -18,6 +18,7 @@ my %type2func = (
   GLhalf => 'NV', # not right
   GLfloat => 'NV',
   GLdouble => 'NV',
+  GLclampf => 'NV',
   GLclampd => 'NV',
   'GLchar*' => 'PV_nolen',
   GLenum => 'IV',

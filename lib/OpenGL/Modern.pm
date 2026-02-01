@@ -528,6 +528,7 @@ our @gl_functionscompat = qw(
   glPopName
   glPrimitiveRestartIndex
   glPrioritizeTextures_c
+  glPrioritizeTextures_p
   glPushAttrib
   glPushClientAttrib
   glPushMatrix
@@ -3824,6 +3825,7 @@ our @gl_functionsrest = qw(
   glPrimitiveRestartIndexNV
   glPrimitiveRestartNV
   glPrioritizeTexturesEXT_c
+  glPrioritizeTexturesEXT_p
   glPrioritizeVertexArraysSGIX_c
   glProgramBinaryOES_c
   glProgramBinary_c
@@ -7589,7 +7591,8 @@ our %EXPORT_TAGS_GL = (
     'glGenTexturesEXT_c',
     'glGenTexturesEXT_p',
     'glIsTextureEXT',
-    'glPrioritizeTexturesEXT_c'
+    'glPrioritizeTexturesEXT_c',
+    'glPrioritizeTexturesEXT_p'
   ],
   'GL_EXT_texture_perturb_normal' => [
     'glTextureNormalEXT'
@@ -9500,6 +9503,7 @@ our %EXPORT_TAGS_GL = (
     'glPopMatrix',
     'glPopName',
     'glPrioritizeTextures_c',
+    'glPrioritizeTextures_p',
     'glPushAttrib',
     'glPushClientAttrib',
     'glPushMatrix',

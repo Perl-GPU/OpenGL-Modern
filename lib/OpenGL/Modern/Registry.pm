@@ -47111,6 +47111,11 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'n' => 'LEN:textures',
+      'priorities' => 'INARRAY:n',
+      'textures' => 'INARRAY:n'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
