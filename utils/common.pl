@@ -81,6 +81,7 @@ sub bindings {
     binding_name => $name . $c_suffix,
     xs_rettype => $s->{restype},
     xs_args => join(', ', map $_->[0], @argdata),
+    innames => [map "\$$_->[0]", @argdata],
     xs_argdecls => join('', map "  $_->[1]$_->[0];\n", @argdata),
     aliases => [ map "$_$c_suffix", sort keys %{ $s->{aliases} || {} } ],
     xs_code => "CODE:\n",
@@ -187,10 +188,6 @@ sub bindings {
   }
   delete @is_inarg{keys %dynlang};
   delete @is_inarg{grep !$name2parsed{$_}[1], keys %name2parsed};
-  my @xs_inargs = grep $is_inarg{$_->[0]}, @argdata;
-  my $dotdotdot = grep /\bVARARGS\b/, values %indynlang;
-  $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
-  $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
   my $beforecall = '';
   for my $get (sort grep $dynlang{$_} =~ /^</, keys %dynlang) {
     my $val = delete $dynlang{$get};
@@ -202,14 +199,21 @@ sub bindings {
     $this{error_check} .= "\n  " if $this{error_check};
     $this{error_check} .= "OGLM_CHECK_ERR($getfunc, $cleanup)",
   }
+  my $varargsname;
   if (my @varargs = grep $indynlang{$_} =~ /\bVARARGS\b/, keys %indynlang) {
     die "$name: >1 VARARGS (@varargs)" if @varargs > 1;
+    $varargsname = $varargs[0];
     die "$name: failed to parse VARARGS '$dynlang{$varargs[0]}'" unless my ($startfrom, $howmany) = $indynlang{$varargs[0]} =~ /\bVARARGS:(\d+):([^,\s]+)/;
     my $parsed = $name2parsed{$varargs[0]};
     die "$name: no typefunc for $varargs[0]" unless my $typefunc = typefunc($parsed->[0]);
     $dynlang{$varargs[0]} = "OGLM_GET_VARARGS($varargs[0],$startfrom,$parsed->[0],$typefunc,$howmany)";
     $cleanup .= "free($varargs[0]);";
   }
+  my @xs_inargs = grep $is_inarg{$_->[0]}, @argdata;
+  my $dotdotdot = defined $varargsname;
+  $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
+  $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
+  $this{innames} = [(map "\$$_->[0]", @xs_inargs), $dotdotdot ? "\@$varargsname" : ()];
   $this{aftercall} .= "\n  $cleanup" if $cleanup;
   $this{error_check2} &&= "OGLM_CHECK_ERR($name, $cleanup)";
   my $need_cast;

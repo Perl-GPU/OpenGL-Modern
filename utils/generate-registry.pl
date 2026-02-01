@@ -373,8 +373,7 @@ for my $name (sort grep !/^GL/, keys %signature) {
       $prefix .= @retnames == 1 ? "$retnames[0] = " : "(@{[join ', ', @retnames]}) = ";
     }
     my $suffix .= "(";
-    my ($varargsname) = grep $dynlang{$_} =~ /\bVARARGS\b/, keys %dynlang;
-    $suffix .= join ', ', map $_ eq '...' ? "\@$varargsname" : "\$$_", split /\s*,\s*/, $bind->{xs_args};
+    $suffix .= join ', ', @{ $bind->{innames} };
     $suffix .= ");\n";
     $middle1 .= "$prefix$_$suffix" for $bind->{binding_name}, @{ $bind->{aliases} };
   }
