@@ -1,6 +1,5 @@
 \.(def|old)$
 ^blib/
-^pogl_implemented
 ^signatures
 ^lib/OpenGL/Modern/Config\.pm$
 ^.git
