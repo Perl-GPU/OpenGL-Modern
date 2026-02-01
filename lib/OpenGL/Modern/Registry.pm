@@ -88584,7 +88584,7 @@ our %groups = (
     'GL_SHADER_BINARY_DMP',
     'GL_GCCSO_SHADER_BINARY_FJ',
     'GL_SHADER_BINARY_FORMAT_SPIR_V',
-    'GL_HUAWEI_SHADER_BINARY'
+    'GL_SHADER_BINARY_HUAWEI'
   ],
   'ShaderParameterName' => [
     'GL_SHADER_TYPE',
