@@ -1,13 +1,10 @@
 \.(def|old)$
 ^blib/
-^signatures
 ^lib/OpenGL/Modern/Config\.pm$
-^.git
+^\.git
 ^xt/
 \.sw.$
 \.o$
-.travis.yml
-gdm.diff
 ^Makefile$
 ^MANIFEST.bak$
 ^MANIFEST.SKIP~$
