@@ -3,7 +3,8 @@
 use strict;
 use warnings;
 use OpenGL::Modern qw(
-  glewCreateContext glewInit glewDestroyContext glpCheckErrors glGetString
+  glewCreateContext glewInit glpSetAutoCheckErrors glewDestroyContext
+  glpCheckErrors glGetString
   glGenTextures_p glBindTexture glDeleteTextures_p
   glTexImage2D_c glTexParameteri
   glGetTexLevelParameteriv_p glGetIntegerv_p
@@ -49,6 +50,7 @@ print "Perl $^V OpenGL::Modern $OpenGL::Modern::VERSION PDL $PDL::VERSION\n";
 # 3.3 core so MacOS allows >2.1
 glewCreateContext(3, 3, 1, 2) == GLEW_OK or die "glewCreateContext failed";
 glewInit() == GLEW_OK or die "glewInit failed";
+glpSetAutoCheckErrors(1);
 print "OpenGL ", glGetString(GL_VERSION), "\n";
 my $max_tex_dim = glGetIntegerv_p(GL_MAX_TEXTURE_SIZE);
 print "Max texture dim = $max_tex_dim\n";
