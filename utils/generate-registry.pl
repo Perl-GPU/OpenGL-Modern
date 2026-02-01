@@ -189,9 +189,10 @@ for (grep $_, split /\n/, slurp('utils/dynlang.txt')) {
   $signature{$func}{dynlang} = { map split('=', $_, 2), @args };
 }
 
-my %groups;
+my (%groups, %enums);
 for (grep $_, split /\n/, slurp('utils/enums-group.txt')) {
   my ($enum, $value, @groups) = split ' ';
+  $enums{$enum} = $value;
   push @{ $groups{$_} }, $enum for @groups;
 }
 my $g2c2s = assemble_enum_groups(\%groups, \%counts);
@@ -346,6 +347,7 @@ $new .= "our \@glconstants = qw($glconstants);\n\n";
 $new .= "our %features = (@{[dump_strip(\%features)]});\n\n";
 $new .= "our %counts = (@{[dump_strip(\%counts)]});\n\n";
 $new .= "our %groups = (@{[dump_strip(\%groups)]});\n\n";
+$new .= "our %enums = (@{[dump_strip(\%enums)]});\n\n";
 $new .= "1;\n";
 save_file( "lib/OpenGL/Modern/Registry.pm", $new );
 
