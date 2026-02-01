@@ -6684,8 +6684,8 @@ Exported under tag C<:GL_ATI_vertex_array_object>.
 
  glGetObjectLabel_c($identifier, $name, $bufSize, $length, $label);
  glGetObjectLabelKHR_c($identifier, $name, $bufSize, $length, $label);
- ($length, $label) = glGetObjectLabel_p($identifier, $name, $bufSize);
- ($length, $label) = glGetObjectLabelKHR_p($identifier, $name, $bufSize);
+ $label = glGetObjectLabel_p($identifier, $name);
+ $label = glGetObjectLabelKHR_p($identifier, $name);
 
 Exported under tag C<:GL_KHR_debug>.
 

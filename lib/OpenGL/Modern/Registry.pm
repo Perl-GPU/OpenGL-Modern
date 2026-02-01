@@ -27470,8 +27470,9 @@ our %registry = (
       ]
     ],
     'dynlang' => {
-      'label' => 'OUTSCALAR',
-      'length' => 'OUTSCALAR'
+      'RETVAL' => 'label',
+      'bufSize' => '<glGetIntegerv(GL_MAX_LABEL_LENGTH,&)',
+      'length' => 'NULL'
     },
     'feature' => 'GL_KHR_debug',
     'glewImpl' => '__glewGetObjectLabel',

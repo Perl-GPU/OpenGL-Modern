@@ -14,3 +14,4 @@ glGetActiveUniformName bufSize=<glGetProgramiv(program,GL_ACTIVE_UNIFORM_MAX_LEN
 glGetProgramBinary bufSize=<glGetProgramiv(program,GL_PROGRAM_BINARY_LENGTH,&) binary=OUTSCALAR:bufSize binaryFormat=OUTSCALAR length=NULL
 glGetActiveAttrib bufSize=<glGetProgramiv(program,GL_ACTIVE_ATTRIBUTE_MAX_LENGTH,&) name=OUTSCALAR size=OUTSCALAR type=OUTSCALAR
 glGetActiveSubroutineName bufSize=<glGetProgramStageiv(program,shadertype,GL_ACTIVE_SUBROUTINE_UNIFORM_MAX_LENGTH,&) RETVAL=name
+glGetObjectLabel bufSize=<glGetIntegerv(GL_MAX_LABEL_LENGTH,&) length=NULL RETVAL=label
