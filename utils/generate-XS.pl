@@ -12,8 +12,10 @@ and creates XS stubs for each.
 
 our %signature;
 *signature = \%OpenGL::Modern::Registry::registry;
+our %groups;
+*groups = \%OpenGL::Modern::Registry::groups;
 
-my $g2c2s = assemble_enum_groups(\%OpenGL::Modern::Registry::groups, \%OpenGL::Modern::Registry::counts);
+my $g2c2s = assemble_enum_groups(\%groups, \%OpenGL::Modern::Registry::counts);
 sub generate_glew_xs {
   my $content;
   for my $name (@_) {
@@ -37,5 +39,45 @@ my $xs_code = generate_glew_xs(sort grep $signature{$_}{glewtype} eq 'fun', keys
 save_file('auto-xs.inc', $xs_code);
 my $var_code = generate_glew_xs(sort grep $signature{$_}{glewtype} eq 'var', keys %signature);
 save_file('auto-xs-var.inc', $var_code);
-my $enums_code = "\n";
+
+our %enums;
+*enums = \%OpenGL::Modern::Registry::enums;
+my %known_constant = map +($_=>1), @OpenGL::Modern::Registry::glconstants;
+my $enums_code = <<'EOF';
+char *
+enum2name(g, e)
+  char *g;
+  GLenum e;
+CODE:
+  RETVAL = NULL;
+EOF
+for my $g (sort keys %groups) {
+  next if $g eq 'SpecialNumbers';
+  next unless my @names = grep $known_constant{$_}, @{ $groups{$g} };
+  $enums_code .= <<"EOF";
+  if (!strcmp(g, "$g")) {
+    switch (e) {
+EOF
+  my %val2names; push @{ $val2names{$enums{$_}} }, $_ for @names;
+  my @final_names;
+  for my $val (keys %val2names) {
+    my @names = @{ $val2names{$val} };
+    push @final_names, (sort { length($a) <=> length($b) } @names)[0];
+  }
+  $enums_code .= <<"EOF" for sort @final_names;
+      case $_: RETVAL = "$_"; break;
+EOF
+  $enums_code .= <<"EOF";
+      default: RETVAL = "UNKNOWN ENUM";
+    }
+    goto alldone;
+  }
+EOF
+}
+$enums_code .= <<'EOF';
+  if (!RETVAL) RETVAL = "UNKNOWN GROUP";
+  alldone:
+OUTPUT:
+  RETVAL
+EOF
 save_file('auto-xs-enums.inc', $enums_code);

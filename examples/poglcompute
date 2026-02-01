@@ -14,7 +14,7 @@ use OpenGL::Modern qw(
   glGetShaderiv_p glGetShaderInfoLog_p
   glCreateProgram glDeleteProgram glLinkProgram glUseProgram
   glGetProgramiv_p glGetProgramInfoLog_p
-  glGetUniformLocation glUniform1i
+  glGetUniformLocation glUniform1i glGetActiveUniform_p
   glGenFramebuffers_p glBindFramebuffer glDeleteFramebuffers_p
   glFramebufferTexture glCheckFramebufferStatus
   glGenBuffers_p glDeleteBuffers_p glBindBuffer glBufferData_c
@@ -82,6 +82,10 @@ EOF
 
 my $pos_data = float('1.0 -1.0; 1.0 1.0; -1.0 -1.0; -1.0 1.0');
 my $program = compile_program($vertex_shader, $fragment_shader);
+my ($size, $utype, $name) = glGetActiveUniform_p($program, 0);
+print "glGetActiveUniform_p: (size=$size, type=@{[
+  OpenGL::Modern::enum2name('UniformType', $utype)
+]}, name=$name)\n";
 my $tex_uniform = glGetUniformLocation($program, "tex");
 my $attrib_buffer = glGenBuffers_p(1);
 glBindBuffer(GL_ARRAY_BUFFER, $attrib_buffer);
