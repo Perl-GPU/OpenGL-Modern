@@ -2093,6 +2093,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glColor3fVertex3fvSUN
 
  glColor3fVertex3fvSUN_c($c, $v);
+ glColor3fVertex3fvSUN_p(\@c, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -2238,6 +2239,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glColor4fNormal3fVertex3fvSUN
 
  glColor4fNormal3fVertex3fvSUN_c($c, $n, $v);
+ glColor4fNormal3fVertex3fvSUN_p(\@c, \@n, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -2308,6 +2310,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glColor4ubVertex2fvSUN
 
  glColor4ubVertex2fvSUN_c($c, $v);
+ glColor4ubVertex2fvSUN_p(\@c, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -2320,6 +2323,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glColor4ubVertex3fvSUN
 
  glColor4ubVertex3fvSUN_c($c, $v);
+ glColor4ubVertex3fvSUN_p(\@c, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -11008,6 +11012,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glNormal3fVertex3fvSUN
 
  glNormal3fVertex3fvSUN_c($n, $v);
+ glNormal3fVertex3fvSUN_p(\@n, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -12997,6 +13002,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glRectd.xml>
 =head2 glRectdv
 
  glRectdv_c($v1, $v2);
+ glRectdv_p(\@v1, \@v2);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13013,6 +13019,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glRectf.xml>
 =head2 glRectfv
 
  glRectfv_c($v1, $v2);
+ glRectfv_p(\@v1, \@v2);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13029,6 +13036,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glRecti.xml>
 =head2 glRectiv
 
  glRectiv_c($v1, $v2);
+ glRectiv_p(\@v1, \@v2);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13045,6 +13053,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glRects.xml>
 =head2 glRectsv
 
  glRectsv_c($v1, $v2);
+ glRectsv_p(\@v1, \@v2);
 
 Exported under tag C<:GL_VERSION_1_1>.
 Not available in a 'future-compatible' profile as removed in 3.2.
@@ -13161,6 +13170,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glReplacementCodeuiColor3fVertex3fvSUN
 
  glReplacementCodeuiColor3fVertex3fvSUN_c($rc, $c, $v);
+ glReplacementCodeuiColor3fVertex3fvSUN_p(\@rc, \@c, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -13173,6 +13183,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glReplacementCodeuiColor4fNormal3fVertex3fvSUN
 
  glReplacementCodeuiColor4fNormal3fVertex3fvSUN_c($rc, $c, $n, $v);
+ glReplacementCodeuiColor4fNormal3fVertex3fvSUN_p(\@rc, \@c, \@n, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -13185,6 +13196,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glReplacementCodeuiColor4ubVertex3fvSUN
 
  glReplacementCodeuiColor4ubVertex3fvSUN_c($rc, $c, $v);
+ glReplacementCodeuiColor4ubVertex3fvSUN_p(\@rc, \@c, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -13197,6 +13209,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glReplacementCodeuiNormal3fVertex3fvSUN
 
  glReplacementCodeuiNormal3fVertex3fvSUN_c($rc, $n, $v);
+ glReplacementCodeuiNormal3fVertex3fvSUN_p(\@rc, \@n, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -13215,6 +13228,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN
 
  glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN_c($rc, $tc, $c, $n, $v);
+ glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN_p(\@rc, \@tc, \@c, \@n, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -13227,6 +13241,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN
 
  glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN_c($rc, $tc, $n, $v);
+ glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN_p(\@rc, \@tc, \@n, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -13239,6 +13254,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glReplacementCodeuiTexCoord2fVertex3fvSUN
 
  glReplacementCodeuiTexCoord2fVertex3fvSUN_c($rc, $tc, $v);
+ glReplacementCodeuiTexCoord2fVertex3fvSUN_p(\@rc, \@tc, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -13251,6 +13267,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glReplacementCodeuiVertex3fvSUN
 
  glReplacementCodeuiVertex3fvSUN_c($rc, $v);
+ glReplacementCodeuiVertex3fvSUN_p(\@rc, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -14306,6 +14323,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glTexCoord2fColor3fVertex3fvSUN
 
  glTexCoord2fColor3fVertex3fvSUN_c($tc, $c, $v);
+ glTexCoord2fColor3fVertex3fvSUN_p(\@tc, \@c, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -14318,6 +14336,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glTexCoord2fColor4fNormal3fVertex3fvSUN
 
  glTexCoord2fColor4fNormal3fVertex3fvSUN_c($tc, $c, $n, $v);
+ glTexCoord2fColor4fNormal3fVertex3fvSUN_p(\@tc, \@c, \@n, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -14330,6 +14349,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glTexCoord2fColor4ubVertex3fvSUN
 
  glTexCoord2fColor4ubVertex3fvSUN_c($tc, $c, $v);
+ glTexCoord2fColor4ubVertex3fvSUN_p(\@tc, \@c, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -14342,6 +14362,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glTexCoord2fNormal3fVertex3fvSUN
 
  glTexCoord2fNormal3fVertex3fvSUN_c($tc, $n, $v);
+ glTexCoord2fNormal3fVertex3fvSUN_p(\@tc, \@n, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -14354,6 +14375,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glTexCoord2fVertex3fvSUN
 
  glTexCoord2fVertex3fvSUN_c($tc, $v);
+ glTexCoord2fVertex3fvSUN_p(\@tc, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -14512,6 +14534,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glTexCoord4fColor4fNormal3fVertex4fvSUN
 
  glTexCoord4fColor4fNormal3fVertex4fvSUN_c($tc, $c, $n, $v);
+ glTexCoord4fColor4fNormal3fVertex4fvSUN_p(\@tc, \@c, \@n, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 
@@ -14524,6 +14547,7 @@ Exported under tag C<:GL_SUN_vertex>.
 =head2 glTexCoord4fVertex4fvSUN
 
  glTexCoord4fVertex4fvSUN_c($tc, $v);
+ glTexCoord4fVertex4fvSUN_p(\@tc, \@v);
 
 Exported under tag C<:GL_SUN_vertex>.
 

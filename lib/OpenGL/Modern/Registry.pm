@@ -9226,6 +9226,10 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:3',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -9664,6 +9668,11 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:4',
+      'n' => 'INARRAY:3',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor4fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -9891,6 +9900,10 @@ our %registry = (
         '2'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:4',
+      'v' => 'INARRAY:2'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor4ubVertex2fvSUN',
     'glewtype' => 'fun',
@@ -9949,6 +9962,10 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:4',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewColor4ubVertex3fvSUN',
     'glewtype' => 'fun',
@@ -44374,6 +44391,10 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'n' => 'INARRAY:3',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -52023,6 +52044,10 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v1' => 'INARRAY:2',
+      'v2' => 'INARRAY:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -52069,6 +52094,10 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v1' => 'INARRAY:2',
+      'v2' => 'INARRAY:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -52115,6 +52144,10 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v1' => 'INARRAY:2',
+      'v2' => 'INARRAY:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -52161,6 +52194,10 @@ our %registry = (
       ]
     ],
     'core_removed' => 1,
+    'dynlang' => {
+      'v1' => 'INARRAY:2',
+      'v2' => 'INARRAY:2'
+    },
     'feature' => 'GL_VERSION_1_1',
     'glewtype' => 'fun',
     'ptr_args' => [
@@ -52606,6 +52643,11 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:3',
+      'rc' => 'INARRAY:1',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiColor3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -52694,6 +52736,12 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:4',
+      'n' => 'INARRAY:3',
+      'rc' => 'INARRAY:1',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiColor4fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -52766,6 +52814,11 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:4',
+      'rc' => 'INARRAY:1',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiColor4ubVertex3fvSUN',
     'glewtype' => 'fun',
@@ -52833,6 +52886,11 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'n' => 'INARRAY:3',
+      'rc' => 'INARRAY:1',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -52948,6 +53006,13 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:4',
+      'n' => 'INARRAY:3',
+      'rc' => 'INARRAY:1',
+      'tc' => 'INARRAY:2',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -53030,6 +53095,12 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'n' => 'INARRAY:3',
+      'rc' => 'INARRAY:1',
+      'tc' => 'INARRAY:2',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -53094,6 +53165,11 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'rc' => 'INARRAY:1',
+      'tc' => 'INARRAY:2',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiTexCoord2fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -53144,6 +53220,10 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'rc' => 'INARRAY:1',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewReplacementCodeuiVertex3fvSUN',
     'glewtype' => 'fun',
@@ -56604,6 +56684,11 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:3',
+      'tc' => 'INARRAY:2',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fColor3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -56693,6 +56778,12 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:4',
+      'n' => 'INARRAY:3',
+      'tc' => 'INARRAY:2',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fColor4fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -56766,6 +56857,11 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:4',
+      'tc' => 'INARRAY:2',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fColor4ubVertex3fvSUN',
     'glewtype' => 'fun',
@@ -56834,6 +56930,11 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'n' => 'INARRAY:3',
+      'tc' => 'INARRAY:2',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fNormal3fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -56885,6 +56986,10 @@ our %registry = (
         '3'
       ]
     ],
+    'dynlang' => {
+      'tc' => 'INARRAY:2',
+      'v' => 'INARRAY:3'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord2fVertex3fvSUN',
     'glewtype' => 'fun',
@@ -57371,6 +57476,12 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'c' => 'INARRAY:4',
+      'n' => 'INARRAY:3',
+      'tc' => 'INARRAY:4',
+      'v' => 'INARRAY:4'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord4fColor4fNormal3fVertex4fvSUN',
     'glewtype' => 'fun',
@@ -57435,6 +57546,10 @@ our %registry = (
         '4'
       ]
     ],
+    'dynlang' => {
+      'tc' => 'INARRAY:4',
+      'v' => 'INARRAY:4'
+    },
     'feature' => 'GL_SUN_vertex',
     'glewImpl' => '__glewTexCoord4fVertex4fvSUN',
     'glewtype' => 'fun',

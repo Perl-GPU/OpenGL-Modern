@@ -571,12 +571,16 @@ our @gl_functionscompat = qw(
   glReadPixels_c
   glRectd
   glRectdv_c
+  glRectdv_p
   glRectf
   glRectfv_c
+  glRectfv_p
   glRecti
   glRectiv_c
+  glRectiv_p
   glRects
   glRectsv_c
+  glRectsv_p
   glRenderMode
   glRenderbufferStorage
   glRenderbufferStorageMultisample
@@ -1114,18 +1118,22 @@ our @gl_functionsrest = qw(
   glClipPlanex_p
   glColor3fVertex3fSUN
   glColor3fVertex3fvSUN_c
+  glColor3fVertex3fvSUN_p
   glColor3hNV
   glColor3hvNV_c
   glColor3hvNV_p
   glColor4fNormal3fVertex3fSUN
   glColor4fNormal3fVertex3fvSUN_c
+  glColor4fNormal3fVertex3fvSUN_p
   glColor4hNV
   glColor4hvNV_c
   glColor4hvNV_p
   glColor4ubVertex2fSUN
   glColor4ubVertex2fvSUN_c
+  glColor4ubVertex2fvSUN_p
   glColor4ubVertex3fSUN
   glColor4ubVertex3fvSUN_c
+  glColor4ubVertex3fvSUN_p
   glColor4x
   glColorFormatNV
   glColorFragmentOp1ATI
@@ -3689,6 +3697,7 @@ our @gl_functionsrest = qw(
   glNonlinMaterialfvSGIX_c
   glNormal3fVertex3fSUN
   glNormal3fVertex3fvSUN_c
+  glNormal3fVertex3fvSUN_p
   glNormal3hNV
   glNormal3hvNV_c
   glNormal3hvNV_p
@@ -4109,21 +4118,29 @@ our @gl_functionsrest = qw(
   glReplacementCodeubvSUN_c
   glReplacementCodeuiColor3fVertex3fSUN
   glReplacementCodeuiColor3fVertex3fvSUN_c
+  glReplacementCodeuiColor3fVertex3fvSUN_p
   glReplacementCodeuiColor4fNormal3fVertex3fSUN
   glReplacementCodeuiColor4fNormal3fVertex3fvSUN_c
+  glReplacementCodeuiColor4fNormal3fVertex3fvSUN_p
   glReplacementCodeuiColor4ubVertex3fSUN
   glReplacementCodeuiColor4ubVertex3fvSUN_c
+  glReplacementCodeuiColor4ubVertex3fvSUN_p
   glReplacementCodeuiNormal3fVertex3fSUN
   glReplacementCodeuiNormal3fVertex3fvSUN_c
+  glReplacementCodeuiNormal3fVertex3fvSUN_p
   glReplacementCodeuiSUN
   glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN
   glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN_c
+  glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN_p
   glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN
   glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN_c
+  glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN_p
   glReplacementCodeuiTexCoord2fVertex3fSUN
   glReplacementCodeuiTexCoord2fVertex3fvSUN_c
+  glReplacementCodeuiTexCoord2fVertex3fvSUN_p
   glReplacementCodeuiVertex3fSUN
   glReplacementCodeuiVertex3fvSUN_c
+  glReplacementCodeuiVertex3fvSUN_p
   glReplacementCodeuivSUN_c
   glReplacementCodeusSUN
   glReplacementCodeusvSUN_c
@@ -4298,14 +4315,19 @@ our @gl_functionsrest = qw(
   glTexCoord1hvNV_p
   glTexCoord2fColor3fVertex3fSUN
   glTexCoord2fColor3fVertex3fvSUN_c
+  glTexCoord2fColor3fVertex3fvSUN_p
   glTexCoord2fColor4fNormal3fVertex3fSUN
   glTexCoord2fColor4fNormal3fVertex3fvSUN_c
+  glTexCoord2fColor4fNormal3fVertex3fvSUN_p
   glTexCoord2fColor4ubVertex3fSUN
   glTexCoord2fColor4ubVertex3fvSUN_c
+  glTexCoord2fColor4ubVertex3fvSUN_p
   glTexCoord2fNormal3fVertex3fSUN
   glTexCoord2fNormal3fVertex3fvSUN_c
+  glTexCoord2fNormal3fVertex3fvSUN_p
   glTexCoord2fVertex3fSUN
   glTexCoord2fVertex3fvSUN_c
+  glTexCoord2fVertex3fvSUN_p
   glTexCoord2hNV
   glTexCoord2hvNV_c
   glTexCoord2hvNV_p
@@ -4314,8 +4336,10 @@ our @gl_functionsrest = qw(
   glTexCoord3hvNV_p
   glTexCoord4fColor4fNormal3fVertex4fSUN
   glTexCoord4fColor4fNormal3fVertex4fvSUN_c
+  glTexCoord4fColor4fNormal3fVertex4fvSUN_p
   glTexCoord4fVertex4fSUN
   glTexCoord4fVertex4fvSUN_c
+  glTexCoord4fVertex4fvSUN_p
   glTexCoord4hNV
   glTexCoord4hvNV_c
   glTexCoord4hvNV_p
@@ -9113,44 +9137,64 @@ our %EXPORT_TAGS_GL = (
   'GL_SUN_vertex' => [
     'glColor3fVertex3fSUN',
     'glColor3fVertex3fvSUN_c',
+    'glColor3fVertex3fvSUN_p',
     'glColor4fNormal3fVertex3fSUN',
     'glColor4fNormal3fVertex3fvSUN_c',
+    'glColor4fNormal3fVertex3fvSUN_p',
     'glColor4ubVertex2fSUN',
     'glColor4ubVertex2fvSUN_c',
+    'glColor4ubVertex2fvSUN_p',
     'glColor4ubVertex3fSUN',
     'glColor4ubVertex3fvSUN_c',
+    'glColor4ubVertex3fvSUN_p',
     'glNormal3fVertex3fSUN',
     'glNormal3fVertex3fvSUN_c',
+    'glNormal3fVertex3fvSUN_p',
     'glReplacementCodeuiColor3fVertex3fSUN',
     'glReplacementCodeuiColor3fVertex3fvSUN_c',
+    'glReplacementCodeuiColor3fVertex3fvSUN_p',
     'glReplacementCodeuiColor4fNormal3fVertex3fSUN',
     'glReplacementCodeuiColor4fNormal3fVertex3fvSUN_c',
+    'glReplacementCodeuiColor4fNormal3fVertex3fvSUN_p',
     'glReplacementCodeuiColor4ubVertex3fSUN',
     'glReplacementCodeuiColor4ubVertex3fvSUN_c',
+    'glReplacementCodeuiColor4ubVertex3fvSUN_p',
     'glReplacementCodeuiNormal3fVertex3fSUN',
     'glReplacementCodeuiNormal3fVertex3fvSUN_c',
+    'glReplacementCodeuiNormal3fVertex3fvSUN_p',
     'glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN',
     'glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN_c',
+    'glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN_p',
     'glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN',
     'glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN_c',
+    'glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN_p',
     'glReplacementCodeuiTexCoord2fVertex3fSUN',
     'glReplacementCodeuiTexCoord2fVertex3fvSUN_c',
+    'glReplacementCodeuiTexCoord2fVertex3fvSUN_p',
     'glReplacementCodeuiVertex3fSUN',
     'glReplacementCodeuiVertex3fvSUN_c',
+    'glReplacementCodeuiVertex3fvSUN_p',
     'glTexCoord2fColor3fVertex3fSUN',
     'glTexCoord2fColor3fVertex3fvSUN_c',
+    'glTexCoord2fColor3fVertex3fvSUN_p',
     'glTexCoord2fColor4fNormal3fVertex3fSUN',
     'glTexCoord2fColor4fNormal3fVertex3fvSUN_c',
+    'glTexCoord2fColor4fNormal3fVertex3fvSUN_p',
     'glTexCoord2fColor4ubVertex3fSUN',
     'glTexCoord2fColor4ubVertex3fvSUN_c',
+    'glTexCoord2fColor4ubVertex3fvSUN_p',
     'glTexCoord2fNormal3fVertex3fSUN',
     'glTexCoord2fNormal3fVertex3fvSUN_c',
+    'glTexCoord2fNormal3fVertex3fvSUN_p',
     'glTexCoord2fVertex3fSUN',
     'glTexCoord2fVertex3fvSUN_c',
+    'glTexCoord2fVertex3fvSUN_p',
     'glTexCoord4fColor4fNormal3fVertex4fSUN',
     'glTexCoord4fColor4fNormal3fVertex4fvSUN_c',
+    'glTexCoord4fColor4fNormal3fVertex4fvSUN_p',
     'glTexCoord4fVertex4fSUN',
-    'glTexCoord4fVertex4fvSUN_c'
+    'glTexCoord4fVertex4fvSUN_c',
+    'glTexCoord4fVertex4fvSUN_p'
   ],
   'GL_VERSION_1_1' => [
     'glAccum',
@@ -9474,12 +9518,16 @@ our %EXPORT_TAGS_GL = (
     'glReadPixels_c',
     'glRectd',
     'glRectdv_c',
+    'glRectdv_p',
     'glRectf',
     'glRectfv_c',
+    'glRectfv_p',
     'glRecti',
     'glRectiv_c',
+    'glRectiv_p',
     'glRects',
     'glRectsv_c',
+    'glRectsv_p',
     'glRenderMode',
     'glRotated',
     'glRotatef',

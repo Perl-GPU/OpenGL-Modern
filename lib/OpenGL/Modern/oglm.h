@@ -37,6 +37,20 @@ extern int _auto_check_errors;
   { IV i; for(i = 0; i < (howmany); i++) { \
     varname[i] = (type)Sv##perltype(ST(i + (startfrom))); \
   } }
+#define OGLM_GET_ARRAY(varname, type, perltype, howmany) \
+  NULL; if (!SvOK(varname##SV)) croak("given undef instead of array-ref"); \
+  if (!SvROK(varname##SV)) croak("given non-reference instead of array-ref"); \
+  if (SvTYPE(SvRV(varname##SV)) != SVt_PVAV) croak("given reference to non-array"); \
+  if (av_count((AV*)SvRV(varname##SV)) != (howmany)) \
+    croak("error: expected %d args but given %zd", howmany, av_count((AV*)SvRV(varname##SV))); \
+  varname = OGLM_ALLOC(howmany, type, varname); \
+  { AV *av = (AV*)SvRV(varname##SV); IV i; for(i = 0; i < (howmany); i++) { \
+    SV **got = av_fetch(av, i, 0); \
+    if (!got) croak("av_fetch failed"); \
+    if (!*got) croak("av_fetch failed(2)"); \
+    if (!SvOK(*got)) croak("got undef from " #varname); \
+    varname[i] = (type)Sv##perltype(*got); \
+  } }
 #define OGLM_SIZE_ENUM(group, pname, mult) \
   int pname ## _count = oglm_count_##group(pname) * (mult); \
   if (pname ## _count < 0) croak("Unknown " #group " %d", pname);

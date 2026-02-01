@@ -188,6 +188,15 @@ sub bindings {
   }
   delete @is_inarg{keys %dynlang};
   delete @is_inarg{grep !$name2parsed{$_}[1], keys %name2parsed};
+  my %is_inarray;
+  for my $arg (sort grep $indynlang{$_} =~ /\bINARRAY:/, keys %indynlang) {
+    die "$name: no INARRAY len" unless my ($len) = $indynlang{$arg} =~ /\bINARRAY:([^\s,]+)/;
+    $is_inarray{$arg} = $is_inarg{$arg} = 1;
+    my $parsed = $name2parsed{$arg};
+    my $typefunc = typefunc($parsed->[0]);
+    $dynlang{$arg} = "OGLM_GET_ARRAY($arg, $parsed->[0], $typefunc, $len)";
+    $cleanup .= "free($arg);";
+  }
   my $beforecall = '';
   for my $get (sort grep $dynlang{$_} =~ /^</, keys %dynlang) {
     my $val = delete $dynlang{$get};
@@ -211,9 +220,9 @@ sub bindings {
   }
   my @xs_inargs = grep $is_inarg{$_->[0]}, @argdata;
   my $dotdotdot = defined $varargsname;
-  $this{xs_args} = join(', ', (map $_->[0], @xs_inargs), $dotdotdot ? '...' : ());
-  $this{xs_argdecls} = join('', map "  $_->[1]$_->[0];\n", @xs_inargs);
-  $this{innames} = [(map "\$$_->[0]", @xs_inargs), $dotdotdot ? "\@$varargsname" : ()];
+  $this{xs_args} = join(', ', (map $_->[0].($is_inarray{$_->[0]} ? 'SV' : ''), @xs_inargs), $dotdotdot ? '...' : ());
+  $this{xs_argdecls} = join('', map "  ".($is_inarray{$_->[0]} ? 'SV *' : $_->[1])."$_->[0]".($is_inarray{$_->[0]} ? 'SV' : '').";\n", @xs_inargs);
+  $this{innames} = [(map +($is_inarray{$_->[0]} ? '\\@' : '$').$_->[0], @xs_inargs), $dotdotdot ? "\@$varargsname" : ()];
   $this{aftercall} .= "\n  $cleanup" if $cleanup;
   $this{error_check2} &&= "OGLM_CHECK_ERR($name, $cleanup)";
   my $need_cast;

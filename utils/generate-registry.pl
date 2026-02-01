@@ -247,6 +247,14 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     my $startfrom = grep !$dynlang{$_} && $_ ne $len && $_ ne $constargs[0][0], keys %name2data;
     $dynlang{$len} = 'items'.($startfrom ? "-$startfrom" : '') if $len =~ /^[a-zA-Z]+$/;
     $dynlang{$constargs[0][0]} = join ',', grep $_, $dynlang{$constargs[0][0]}, "VARARGS:$startfrom:$len";
+  } elsif (
+    @constargs > 1 and
+    !(grep !$arg2len{$_->[0]} || $arg2len{$_->[0]} =~ /\D/ || !typefunc(parse_ptr($_)->[0]), @constargs)
+  ) {
+    for (@constargs) {
+      my $len = $arg2len{$_->[0]};
+      $dynlang{$_->[0]} = join ',', grep $_, $dynlang{$_->[0]}, "INARRAY:$arg2len{$_->[0]}";
+    }
   }
   $s->{dynlang} = \%dynlang if %dynlang;
 }
