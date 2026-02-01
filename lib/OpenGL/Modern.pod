@@ -1057,12 +1057,14 @@ Exported under tag C<:GL_ATI_vertex_array_object>.
 =head2 glAsyncCopyBufferSubDataNVX
 
  $retval = glAsyncCopyBufferSubDataNVX_c($waitSemaphoreCount, $waitSemaphoreArray, $fenceValueArray, $readGpu, $writeGpuMask, $readBuffer, $writeBuffer, $readOffset, $writeOffset, $size, $signalSemaphoreCount, $signalSemaphoreArray, $signalValueArray);
+ $retval = glAsyncCopyBufferSubDataNVX_p(\@waitSemaphoreArray, \@fenceValueArray, $readGpu, $writeGpuMask, $readBuffer, $writeBuffer, $readOffset, $writeOffset, $size, \@signalSemaphoreArray, \@signalValueArray);
 
 Exported under tag C<:GL_NVX_gpu_multicast2>.
 
 =head2 glAsyncCopyImageSubDataNVX
 
  $retval = glAsyncCopyImageSubDataNVX_c($waitSemaphoreCount, $waitSemaphoreArray, $waitValueArray, $srcGpu, $dstGpuMask, $srcName, $srcTarget, $srcLevel, $srcX, $srcY, $srcZ, $dstName, $dstTarget, $dstLevel, $dstX, $dstY, $dstZ, $srcWidth, $srcHeight, $srcDepth, $signalSemaphoreCount, $signalSemaphoreArray, $signalValueArray);
+ $retval = glAsyncCopyImageSubDataNVX_p(\@waitSemaphoreArray, \@waitValueArray, $srcGpu, $dstGpuMask, $srcName, $srcTarget, $srcLevel, $srcX, $srcY, $srcZ, $dstName, $dstTarget, $dstLevel, $dstX, $dstY, $dstZ, $srcWidth, $srcHeight, $srcDepth, \@signalSemaphoreArray, \@signalValueArray);
 
 Exported under tag C<:GL_NVX_gpu_multicast2>.
 
@@ -2001,6 +2003,7 @@ Exported under tag C<:GL_EXT_direct_state_access>.
 =head2 glClientWaitSemaphoreui64NVX
 
  glClientWaitSemaphoreui64NVX_c($fenceObjectCount, $semaphoreArray, $fenceValueArray);
+ glClientWaitSemaphoreui64NVX_p(\@semaphoreArray, \@fenceValueArray);
 
 Exported under tag C<:GL_NVX_progress_fence>.
 
@@ -2575,6 +2578,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompileShader.xhtm
 =head2 glCompileShaderIncludeARB
 
  glCompileShaderIncludeARB_c($shader, $count, $path, $length);
+ glCompileShaderIncludeARB_p($shader, \@path, \@length);
 
 Exported under tag C<:GL_ARB_shading_language_include>.
 
@@ -3827,6 +3831,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawBuffers.xhtml>
 =head2 glDrawBuffersIndexedEXT
 
  glDrawBuffersIndexedEXT_c($n, $location, $indices);
+ glDrawBuffersIndexedEXT_p(\@location, \@indices);
 
 Exported under tag C<:GL_EXT_multiview_draw_buffers>.
 
@@ -9870,6 +9875,8 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl2.1/xhtml/glMultTransposeMa
 
  glMultiDrawArrays_c($mode, $first, $count, $drawcount);
  glMultiDrawArraysEXT_c($mode, $first, $count, $drawcount);
+ glMultiDrawArrays_p($mode, \@first, \@count);
+ glMultiDrawArraysEXT_p($mode, \@first, \@count);
 
 Exported under tag C<:GL_VERSION_1_4>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMultiDrawArrays.xhtml>
@@ -9905,6 +9912,7 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glMultiDrawArraysInd
 =head2 glMultiDrawElementArrayAPPLE
 
  glMultiDrawElementArrayAPPLE_c($mode, $first, $count, $primcount);
+ glMultiDrawElementArrayAPPLE_p($mode, \@first, \@count);
 
 Exported under tag C<:GL_APPLE_element_array>.
 
@@ -9978,6 +9986,7 @@ Exported under tag C<:GL_NV_mesh_shader>.
 =head2 glMultiDrawRangeElementArrayAPPLE
 
  glMultiDrawRangeElementArrayAPPLE_c($mode, $start, $end, $first, $count, $primcount);
+ glMultiDrawRangeElementArrayAPPLE_p($mode, $start, $end, \@first, \@count);
 
 Exported under tag C<:GL_APPLE_element_array>.
 
@@ -13921,6 +13930,7 @@ Exported under tag C<:GL_EXT_semaphore>.
 =head2 glSignalSemaphoreui64NVX
 
  glSignalSemaphoreui64NVX_c($signalGpu, $fenceObjectCount, $semaphoreArray, $fenceValueArray);
+ glSignalSemaphoreui64NVX_p($signalGpu, \@semaphoreArray, \@fenceValueArray);
 
 Exported under tag C<:GL_NVX_progress_fence>.
 
@@ -13940,6 +13950,8 @@ Exported under tag C<:GL_NV_draw_vulkan_image>.
 
  glSpecializeShader_c($shader, $pEntryPoint, $numSpecializationConstants, $pConstantIndex, $pConstantValue);
  glSpecializeShaderARB_c($shader, $pEntryPoint, $numSpecializationConstants, $pConstantIndex, $pConstantValue);
+ glSpecializeShader_p($shader, $pEntryPoint, \@pConstantIndex, \@pConstantValue);
+ glSpecializeShaderARB_p($shader, $pEntryPoint, \@pConstantIndex, \@pConstantValue);
 
 Exported under tag C<:GL_VERSION_4_6>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glSpecializeShader.xhtml>
@@ -18265,6 +18277,7 @@ Exported under tag C<:GL_EXT_semaphore>.
 =head2 glWaitSemaphoreui64NVX
 
  glWaitSemaphoreui64NVX_c($waitGpu, $fenceObjectCount, $semaphoreArray, $fenceValueArray);
+ glWaitSemaphoreui64NVX_p($waitGpu, \@semaphoreArray, \@fenceValueArray);
 
 Exported under tag C<:GL_NVX_progress_fence>.
 
@@ -18284,6 +18297,7 @@ Exported under tag C<:GL_NV_draw_vulkan_image>.
 =head2 glWeightPathsNV
 
  glWeightPathsNV_c($resultPath, $numPaths, $paths, $weights);
+ glWeightPathsNV_p($resultPath, \@paths, \@weights);
 
 Exported under tag C<:GL_NV_path_rendering>.
 

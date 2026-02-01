@@ -53,6 +53,9 @@ extern int _auto_check_errors;
     if (!SvOK(*got)) croak("got undef from " #varname); \
     varname[i] = (type)Sv##perltype(*got); \
   } }
+#define OGLM_LEN_ARRAY(len, varname) \
+  0; OGLM_VALIDATE_AV(varname##SV) \
+  len = av_count((AV*)SvRV(varname##SV));
 #define OGLM_SIZE_ENUM(group, pname, mult) \
   int pname ## _count = oglm_count_##group(pname) * (mult); \
   if (pname ## _count < 0) croak("Unknown " #group " %d", pname);

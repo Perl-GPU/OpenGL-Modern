@@ -250,10 +250,15 @@ for my $name (@ARGV ? @ARGV : sort keys %signature) {
     $dynlang{$constargs[0][0]} = join ',', grep $_, $dynlang{$constargs[0][0]}, "VARARGS:$startfrom:$len";
   } elsif (
     @constargs > 1 and
-    !(grep !$arg2len{$_->[0]} || $arg2len{$_->[0]} =~ /\D/ || !typefunc(parse_ptr($_)->[0]), @constargs)
+    !(grep !$arg2len{$_->[0]} || !typefunc(parse_ptr($_)->[0]), @constargs)
   ) {
+    my %len_done;
     for (@constargs) {
       my $len = $arg2len{$_->[0]};
+      if ($len =~ /\D/ and !$len_done{$len}) {
+        $len_done{$len} = 1;
+        $dynlang{$len} = "LEN:$_->[0]";
+      }
       $dynlang{$_->[0]} = join ',', grep $_, $dynlang{$_->[0]}, "INARRAY:$arg2len{$_->[0]}";
     }
   }

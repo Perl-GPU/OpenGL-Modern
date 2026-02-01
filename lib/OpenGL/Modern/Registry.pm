@@ -5509,6 +5509,14 @@ our %registry = (
         'signalSemaphoreCount'
       ]
     ],
+    'dynlang' => {
+      'fenceValueArray' => 'INARRAY:waitSemaphoreCount',
+      'signalSemaphoreArray' => 'INARRAY:signalSemaphoreCount',
+      'signalSemaphoreCount' => 'LEN:signalSemaphoreArray',
+      'signalValueArray' => 'INARRAY:signalSemaphoreCount',
+      'waitSemaphoreArray' => 'INARRAY:waitSemaphoreCount',
+      'waitSemaphoreCount' => 'LEN:waitSemaphoreArray'
+    },
     'feature' => 'GL_NVX_gpu_multicast2',
     'glewImpl' => '__glewAsyncCopyBufferSubDataNVX',
     'glewtype' => 'fun',
@@ -5619,6 +5627,14 @@ our %registry = (
         'signalSemaphoreCount'
       ]
     ],
+    'dynlang' => {
+      'signalSemaphoreArray' => 'INARRAY:signalSemaphoreCount',
+      'signalSemaphoreCount' => 'LEN:signalSemaphoreArray',
+      'signalValueArray' => 'INARRAY:signalSemaphoreCount',
+      'waitSemaphoreArray' => 'INARRAY:waitSemaphoreCount',
+      'waitSemaphoreCount' => 'LEN:waitSemaphoreArray',
+      'waitValueArray' => 'INARRAY:waitSemaphoreCount'
+    },
     'feature' => 'GL_NVX_gpu_multicast2',
     'glewImpl' => '__glewAsyncCopyImageSubDataNVX',
     'glewtype' => 'fun',
@@ -8932,6 +8948,11 @@ our %registry = (
         'fenceObjectCount'
       ]
     ],
+    'dynlang' => {
+      'fenceObjectCount' => 'LEN:semaphoreArray',
+      'fenceValueArray' => 'INARRAY:fenceObjectCount',
+      'semaphoreArray' => 'INARRAY:fenceObjectCount'
+    },
     'feature' => 'GL_NVX_progress_fence',
     'glewImpl' => '__glewClientWaitSemaphoreui64NVX',
     'glewtype' => 'fun',
@@ -11082,6 +11103,11 @@ our %registry = (
         'count'
       ]
     ],
+    'dynlang' => {
+      'count' => 'LEN:path',
+      'length' => 'INARRAY:count',
+      'path' => 'INARRAY:count'
+    },
     'feature' => 'GL_ARB_shading_language_include',
     'glewImpl' => '__glewCompileShaderIncludeARB',
     'glewtype' => 'fun',
@@ -16565,6 +16591,11 @@ our %registry = (
         'n'
       ]
     ],
+    'dynlang' => {
+      'indices' => 'INARRAY:n',
+      'location' => 'INARRAY:n',
+      'n' => 'LEN:location'
+    },
     'feature' => 'GL_EXT_multiview_draw_buffers',
     'glewImpl' => '__glewDrawBuffersIndexedEXT',
     'glewtype' => 'fun',
@@ -39251,6 +39282,11 @@ our %registry = (
         'GLsizei '
       ]
     ],
+    'dynlang' => {
+      'count' => 'INARRAY:drawcount',
+      'drawcount' => 'LEN:first',
+      'first' => 'INARRAY:drawcount'
+    },
     'feature' => 'GL_VERSION_1_4',
     'glewImpl' => '__glewMultiDrawArrays',
     'glewtype' => 'fun',
@@ -39423,6 +39459,11 @@ our %registry = (
         'GLsizei '
       ]
     ],
+    'dynlang' => {
+      'count' => 'INARRAY:primcount',
+      'first' => 'INARRAY:primcount',
+      'primcount' => 'LEN:first'
+    },
     'feature' => 'GL_APPLE_element_array',
     'glewImpl' => '__glewMultiDrawElementArrayAPPLE',
     'glewtype' => 'fun',
@@ -39803,6 +39844,11 @@ our %registry = (
         'GLsizei '
       ]
     ],
+    'dynlang' => {
+      'count' => 'INARRAY:primcount',
+      'first' => 'INARRAY:primcount',
+      'primcount' => 'LEN:first'
+    },
     'feature' => 'GL_APPLE_element_array',
     'glewImpl' => '__glewMultiDrawRangeElementArrayAPPLE',
     'glewtype' => 'fun',
@@ -55302,6 +55348,11 @@ our %registry = (
         'fenceObjectCount'
       ]
     ],
+    'dynlang' => {
+      'fenceObjectCount' => 'LEN:semaphoreArray',
+      'fenceValueArray' => 'INARRAY:fenceObjectCount',
+      'semaphoreArray' => 'INARRAY:fenceObjectCount'
+    },
     'feature' => 'GL_NVX_progress_fence',
     'glewImpl' => '__glewSignalSemaphoreui64NVX',
     'glewtype' => 'fun',
@@ -55363,6 +55414,11 @@ our %registry = (
         'numSpecializationConstants'
       ]
     ],
+    'dynlang' => {
+      'numSpecializationConstants' => 'LEN:pConstantIndex',
+      'pConstantIndex' => 'INARRAY:numSpecializationConstants',
+      'pConstantValue' => 'INARRAY:numSpecializationConstants'
+    },
     'feature' => 'GL_VERSION_4_6',
     'glewImpl' => '__glewSpecializeShader',
     'glewtype' => 'fun',
@@ -72231,6 +72287,11 @@ our %registry = (
         'fenceObjectCount'
       ]
     ],
+    'dynlang' => {
+      'fenceObjectCount' => 'LEN:semaphoreArray',
+      'fenceValueArray' => 'INARRAY:fenceObjectCount',
+      'semaphoreArray' => 'INARRAY:fenceObjectCount'
+    },
     'feature' => 'GL_NVX_progress_fence',
     'glewImpl' => '__glewWaitSemaphoreui64NVX',
     'glewtype' => 'fun',
@@ -72298,6 +72359,11 @@ our %registry = (
         'numPaths'
       ]
     ],
+    'dynlang' => {
+      'numPaths' => 'LEN:paths',
+      'paths' => 'INARRAY:numPaths',
+      'weights' => 'INARRAY:numPaths'
+    },
     'feature' => 'GL_NV_path_rendering',
     'glewImpl' => '__glewWeightPathsNV',
     'glewtype' => 'fun',

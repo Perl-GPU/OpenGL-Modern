@@ -210,6 +210,12 @@ sub bindings {
       $this{avail_check} = join "", grep $_, $this{avail_check}, "  OGLM_AVAIL_CHECK($glewImpl, $getfunc)\n";
     }
   }
+  for my $len (sort grep $dynlang{$_} =~ /\bLEN:/, keys %dynlang) {
+    my $val = delete $dynlang{$len};
+    die "$name: failed to parse LEN '$val'" unless my ($varname) = $val =~ /\bLEN:([^,\s]+)/;
+    my $vardata = $name2data{$len};
+    $beforecall .= "  $vardata->[1]$len = OGLM_LEN_ARRAY($len, $varname);\n";
+  }
   my $varargsname;
   if (my @varargs = grep $indynlang{$_} =~ /\bVARARGS\b/, keys %indynlang) {
     die "$name: >1 VARARGS (@varargs)" if @varargs > 1;

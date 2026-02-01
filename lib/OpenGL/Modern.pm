@@ -432,6 +432,7 @@ our @gl_functionscompat = qw(
   glMultTransposeMatrixf_c
   glMultTransposeMatrixf_p
   glMultiDrawArrays_c
+  glMultiDrawArrays_p
   glMultiDrawElements_c
   glMultiTexCoord1d
   glMultiTexCoord1dv_c
@@ -951,7 +952,9 @@ our @gl_functionsrest = qw(
   glArrayElementEXT
   glArrayObjectATI
   glAsyncCopyBufferSubDataNVX_c
+  glAsyncCopyBufferSubDataNVX_p
   glAsyncCopyImageSubDataNVX_c
+  glAsyncCopyImageSubDataNVX_p
   glAsyncMarkerSGIX
   glAttachObjectARB
   glBeginConditionalRenderNV
@@ -1107,6 +1110,7 @@ our @gl_functionsrest = qw(
   glClientActiveVertexStreamATI
   glClientAttribDefaultEXT
   glClientWaitSemaphoreui64NVX_c
+  glClientWaitSemaphoreui64NVX_p
   glClientWaitSync
   glClientWaitSyncAPPLE
   glClipControl
@@ -1175,6 +1179,7 @@ our @gl_functionsrest = qw(
   glCompileCommandListNV
   glCompileShaderARB
   glCompileShaderIncludeARB_c
+  glCompileShaderIncludeARB_p
   glCompressedMultiTexImage1DEXT_c
   glCompressedMultiTexImage2DEXT_c
   glCompressedMultiTexImage3DEXT_c
@@ -1427,6 +1432,7 @@ our @gl_functionsrest = qw(
   glDrawBuffersEXT_c
   glDrawBuffersEXT_p
   glDrawBuffersIndexedEXT_c
+  glDrawBuffersIndexedEXT_p
   glDrawBuffersNV_c
   glDrawBuffersNV_p
   glDrawCommandsAddressNV_c
@@ -3495,6 +3501,7 @@ our @gl_functionsrest = qw(
   glMulticastViewportPositionWScaleNVX
   glMulticastWaitSyncNV
   glMultiDrawArraysEXT_c
+  glMultiDrawArraysEXT_p
   glMultiDrawArraysIndirectAMD_c
   glMultiDrawArraysIndirectBindlessCountNV_c
   glMultiDrawArraysIndirectBindlessNV_c
@@ -3503,6 +3510,7 @@ our @gl_functionsrest = qw(
   glMultiDrawArraysIndirectEXT_c
   glMultiDrawArraysIndirect_c
   glMultiDrawElementArrayAPPLE_c
+  glMultiDrawElementArrayAPPLE_p
   glMultiDrawElementsBaseVertexEXT_c
   glMultiDrawElementsBaseVertex_c
   glMultiDrawElementsEXT_c
@@ -3518,6 +3526,7 @@ our @gl_functionsrest = qw(
   glMultiDrawMeshTasksIndirectEXT
   glMultiDrawMeshTasksIndirectNV
   glMultiDrawRangeElementArrayAPPLE_c
+  glMultiDrawRangeElementArrayAPPLE_p
   glMultiModeDrawArraysIBM_c
   glMultiModeDrawElementsIBM_c
   glMultisampleSubRectPosSGIS
@@ -4265,10 +4274,13 @@ our @gl_functionsrest = qw(
   glSharpenTexFuncSGIS_p
   glSignalSemaphoreEXT_c
   glSignalSemaphoreui64NVX_c
+  glSignalSemaphoreui64NVX_p
   glSignalVkFenceNV
   glSignalVkSemaphoreNV
   glSpecializeShaderARB_c
+  glSpecializeShaderARB_p
   glSpecializeShader_c
+  glSpecializeShader_p
   glSpriteParameterfSGIX
   glSpriteParameterfvSGIX_c
   glSpriteParameteriSGIX
@@ -5065,6 +5077,7 @@ our @gl_functionsrest = qw(
   glViewportSwizzleNV
   glWaitSemaphoreEXT_c
   glWaitSemaphoreui64NVX_c
+  glWaitSemaphoreui64NVX_p
   glWaitSync
   glWaitSyncAPPLE
   glWaitVkSemaphoreNV
@@ -5077,6 +5090,7 @@ our @gl_functionsrest = qw(
   glWeightivARB_c
   glWeightivARB_p
   glWeightPathsNV_c
+  glWeightPathsNV_p
   glWeightPointerARB_c
   glWeightPointerOES_c
   glWeightsvARB_c
@@ -5268,7 +5282,9 @@ our %EXPORT_TAGS_GL = (
     'glDrawRangeElementArrayAPPLE',
     'glElementPointerAPPLE_c',
     'glMultiDrawElementArrayAPPLE_c',
-    'glMultiDrawRangeElementArrayAPPLE_c'
+    'glMultiDrawElementArrayAPPLE_p',
+    'glMultiDrawRangeElementArrayAPPLE_c',
+    'glMultiDrawRangeElementArrayAPPLE_p'
   ],
   'GL_APPLE_fence' => [
     'glDeleteFencesAPPLE_c',
@@ -5611,7 +5627,8 @@ our %EXPORT_TAGS_GL = (
     'glGetTextureSubImage_c'
   ],
   'GL_ARB_gl_spirv' => [
-    'glSpecializeShaderARB_c'
+    'glSpecializeShaderARB_c',
+    'glSpecializeShaderARB_p'
   ],
   'GL_ARB_gpu_shader_fp64' => [
     'glGetUniformdv_c',
@@ -6153,6 +6170,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_ARB_shading_language_include' => [
     'glCompileShaderIncludeARB_c',
+    'glCompileShaderIncludeARB_p',
     'glDeleteNamedStringARB',
     'glGetNamedStringARB_c',
     'glGetNamedStringARB_p',
@@ -7380,6 +7398,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_EXT_multi_draw_arrays' => [
     'glMultiDrawArraysEXT_c',
+    'glMultiDrawArraysEXT_p',
     'glMultiDrawElementsEXT_c'
   ],
   'GL_EXT_multi_draw_indirect' => [
@@ -7395,6 +7414,7 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_EXT_multiview_draw_buffers' => [
     'glDrawBuffersIndexedEXT_c',
+    'glDrawBuffersIndexedEXT_p',
     'glGetIntegeri_vEXT_c',
     'glReadBufferIndexedEXT'
   ],
@@ -7867,7 +7887,9 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_NVX_gpu_multicast2' => [
     'glAsyncCopyBufferSubDataNVX_c',
+    'glAsyncCopyBufferSubDataNVX_p',
     'glAsyncCopyImageSubDataNVX_c',
+    'glAsyncCopyImageSubDataNVX_p',
     'glMulticastScissorArrayvNVX_c',
     'glMulticastScissorArrayvNVX_p',
     'glMulticastViewportArrayvNVX_c',
@@ -7882,9 +7904,12 @@ our %EXPORT_TAGS_GL = (
   ],
   'GL_NVX_progress_fence' => [
     'glClientWaitSemaphoreui64NVX_c',
+    'glClientWaitSemaphoreui64NVX_p',
     'glCreateProgressFenceNVX',
     'glSignalSemaphoreui64NVX_c',
-    'glWaitSemaphoreui64NVX_c'
+    'glSignalSemaphoreui64NVX_p',
+    'glWaitSemaphoreui64NVX_c',
+    'glWaitSemaphoreui64NVX_p'
   ],
   'GL_NV_3dvision_settings' => [
     'glStereoParameterfNV',
@@ -8337,7 +8362,8 @@ our %EXPORT_TAGS_GL = (
     'glStencilThenCoverStrokePathInstancedNV_c',
     'glStencilThenCoverStrokePathNV',
     'glTransformPathNV_c',
-    'glWeightPathsNV_c'
+    'glWeightPathsNV_c',
+    'glWeightPathsNV_p'
   ],
   'GL_NV_pixel_data_range' => [
     'glFlushPixelDataRangeNV',
@@ -9741,6 +9767,7 @@ our %EXPORT_TAGS_GL = (
     'glFogCoordfv_c',
     'glFogCoordfv_p',
     'glMultiDrawArrays_c',
+    'glMultiDrawArrays_p',
     'glMultiDrawElements_c',
     'glPointParameterf',
     'glPointParameterfv_c',
@@ -10716,7 +10743,8 @@ our %EXPORT_TAGS_GL = (
     'glMultiDrawArraysIndirectCount_c',
     'glMultiDrawElementsIndirectCount_c',
     'glPolygonOffsetClamp',
-    'glSpecializeShader_c'
+    'glSpecializeShader_c',
+    'glSpecializeShader_p'
   ],
   'GL_WIN_swap_hint' => [
     'glAddSwapHintRectWIN'
