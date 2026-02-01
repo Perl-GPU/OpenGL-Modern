@@ -37,10 +37,12 @@ extern int _auto_check_errors;
   { IV i; for(i = 0; i < (howmany); i++) { \
     varname[i] = (type)Sv##perltype(ST(i + (startfrom))); \
   } }
+#define OGLM_VALIDATE_AV(varSV) \
+  if (!SvOK(varSV)) croak("given undef instead of array-ref"); \
+  if (!SvROK(varSV)) croak("given non-reference instead of array-ref"); \
+  if (SvTYPE(SvRV(varSV)) != SVt_PVAV) croak("given reference to non-array");
 #define OGLM_GET_ARRAY(varname, type, perltype, howmany) \
-  NULL; if (!SvOK(varname##SV)) croak("given undef instead of array-ref"); \
-  if (!SvROK(varname##SV)) croak("given non-reference instead of array-ref"); \
-  if (SvTYPE(SvRV(varname##SV)) != SVt_PVAV) croak("given reference to non-array"); \
+  NULL; OGLM_VALIDATE_AV(varname##SV) \
   if (av_count((AV*)SvRV(varname##SV)) != (howmany)) \
     croak("error: expected %d args but given %zd", howmany, av_count((AV*)SvRV(varname##SV))); \
   varname = OGLM_ALLOC(howmany, type, varname); \
