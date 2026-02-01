@@ -206,8 +206,9 @@ sub bindings {
     $val =~ s#&(?![\{\(a-z])#&$get#;
     my $vardata = $name2data{$get};
     $beforecall .= "  $vardata->[1]$get;\n  $val;\n";
-    $this{error_check} .= "\n  " if $this{error_check};
-    $this{error_check} .= "OGLM_CHECK_ERR($getfunc, $cleanup)",
+    if (my $glewImpl = $signatures->{$getfunc}{glewImpl}) {
+      $this{avail_check} = join "", grep $_, $this{avail_check}, "  OGLM_AVAIL_CHECK($glewImpl, $getfunc)\n";
+    }
   }
   my $varargsname;
   if (my @varargs = grep $indynlang{$_} =~ /\bVARARGS\b/, keys %indynlang) {
