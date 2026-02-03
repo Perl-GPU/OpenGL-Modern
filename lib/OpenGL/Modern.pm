@@ -5362,9 +5362,7 @@ our %EXPORT_TAGS_GL = (
     'glMemoryBarrierByRegion'
   ],
   'GL_ARB_ES3_2_compatibility' => [
-    'glPrimitiveBoundingBox',
-    'glPrimitiveBoundingBoxARB',
-    'glPrimitiveBoundingBoxEXT'
+    'glPrimitiveBoundingBoxARB'
   ],
   'GL_ARB_base_instance' => [
     'glDrawArraysInstancedBaseInstance',
@@ -7794,9 +7792,7 @@ our %EXPORT_TAGS_GL = (
     'glTexScissorINTEL'
   ],
   'GL_KHR_blend_equation_advanced' => [
-    'glBlendBarrier',
-    'glBlendBarrierKHR',
-    'glBlendBarrierNV'
+    'glBlendBarrierKHR'
   ],
   'GL_KHR_debug' => [
     'glDebugMessageCallback_c',

@@ -6932,7 +6932,7 @@ our %registry = (
   },
   'glBlendBarrierKHR' => {
     'aliases' => {
-      'glBlendBarrier' => 'GL_KHR_blend_equation_advanced',
+      'glBlendBarrier' => undef,
       'glBlendBarrierNV' => 'GL_NV_blend_equation_advanced'
     },
     'feature' => 'GL_KHR_blend_equation_advanced',
@@ -47018,7 +47018,7 @@ our %registry = (
   },
   'glPrimitiveBoundingBoxARB' => {
     'aliases' => {
-      'glPrimitiveBoundingBox' => 'GL_ARB_ES3_2_compatibility',
+      'glPrimitiveBoundingBox' => undef,
       'glPrimitiveBoundingBoxEXT' => 'GL_EXT_primitive_bounding_box'
     },
     'argdata' => [

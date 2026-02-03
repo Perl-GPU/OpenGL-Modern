@@ -282,21 +282,27 @@ for my $name (sort {uc$a cmp uc$b} keys %signature) {
 }
 @features{keys %features} = map [sort keys %$_], values %features;
 
-my %nonglew2alias;
+{
+my (%alias2real, %real2aliases);
 for (grep $_, split /\n/, slurp('utils/aliases.txt')) {
   my ($to, $from) = split ' ';
-  my $alias_feature = $signature{$from}{feature};
-  if (exists $signature{$to}) {
-    # do nothing
-  } elsif (exists $nonglew2alias{$to}) {
-    $to = $nonglew2alias{$to};
-  } else {
-    $nonglew2alias{$to} = $from;
-    $signature{$to} = $signature{$from};
-    ($to, $from) = ($from, $to);
-  }
-  $signature{$to}{aliases}{$from} = $alias_feature;
+  $alias2real{$from} = $to;
+  push @{ $real2aliases{$to} }, $from;
+}
+for my $alias (grep !exists $signature{$alias2real{$_}}, sort keys %alias2real) {
+  next unless my $real = $alias2real{$alias};
+  next if !$real2aliases{$real}; # already done
+  die "non-existent alias '$alias' to non-existent '$real'" if !$signature{$alias};
+  my ($actual_real, $actual_alias) = ($alias, $real);
+  my @bad_aliases = grep $_ ne $actual_real, @{ delete $real2aliases{$real} };
+  delete @alias2real{$actual_real, @bad_aliases};
+  $alias2real{$_} = $actual_real for $actual_alias, @bad_aliases;
+}
+for (sort keys %alias2real) {
+  my ($to, $from) = ($alias2real{$_}, $_);
+  $signature{$to}{aliases}{$from} = $signature{$from}{feature};
   delete $signature{$from};
+}
 }
 
 my @version_features = grep /^GL_VERSION/, keys %features;
