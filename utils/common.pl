@@ -21,6 +21,7 @@ my %type2func = (
   GLclampf => 'NV',
   GLclampd => 'NV',
   'GLchar*' => 'PV_nolen',
+  'GLcharARB*' => 'PV_nolen',
   GLenum => 'IV',
 );
 sub typefunc {
@@ -223,7 +224,7 @@ sub bindings {
     $varargsname = $varargs[0];
     die "$name: failed to parse VARARGS '$dynlang{$varargs[0]}'" unless my ($startfrom, $howmany) = $indynlang{$varargs[0]} =~ /\bVARARGS:(\d+):([^,\s]+)/;
     my $parsed = $name2parsed{$varargs[0]};
-    die "$name: no typefunc for $varargs[0]" unless my $typefunc = typefunc($parsed->[0]);
+    die "$name: no typefunc for $varargs[0] ($parsed->[0])" unless my $typefunc = typefunc($parsed->[0]);
     $dynlang{$varargs[0]} = "OGLM_GET_VARARGS($varargs[0],$startfrom,$parsed->[0],$typefunc,$howmany)";
     $cleanup .= "free($varargs[0]);";
   }
