@@ -28,7 +28,8 @@ use OpenGL::Modern qw(
   GL_TEXTURE_2D GL_R32F GL_RED GL_FLOAT GL_COLOR_BUFFER_BIT
   GL_TEXTURE_MIN_FILTER GL_TEXTURE_MAG_FILTER
   GL_TEXTURE0 GL_TEXTURE1
-  GL_TEXTURE_WIDTH GL_TEXTURE_HEIGHT GL_MAX_TEXTURE_SIZE GL_MAX_VIEWPORT_DIMS
+  GL_TEXTURE_WIDTH GL_TEXTURE_HEIGHT
+  GL_MAX_TEXTURE_SIZE GL_MAX_VIEWPORT_DIMS GL_MAX_TEXTURE_BUFFER_SIZE
   GL_TEXTURE_WRAP_S GL_TEXTURE_WRAP_T GL_NEAREST GL_CLAMP_TO_EDGE
   GL_VERSION GLEW_OK
   GL_COMPILE_STATUS GL_LINK_STATUS GL_FALSE
@@ -56,6 +57,8 @@ my $max_tex_dim = glGetIntegerv_p(GL_MAX_TEXTURE_SIZE);
 print "Max texture dim = $max_tex_dim\n";
 my $max_vp_dim = glGetIntegerv_p(GL_MAX_VIEWPORT_DIMS);
 print "Max viewport dim = $max_vp_dim\n";
+my $max_texbuffer = glGetIntegerv_p(GL_MAX_TEXTURE_BUFFER_SIZE);
+printf "Max texture buffer = %g\n", $max_texbuffer;
 
 my $vertex_shader = <<'EOF';
 #version 330
