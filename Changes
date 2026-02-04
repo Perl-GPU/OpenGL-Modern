@@ -1,3 +1,4 @@
+0.0403 2026-02-04
 - check gl.xml "alias" has all same types for args; some are GLhandle vs GLuint
 
 0.0402 2026-02-01
