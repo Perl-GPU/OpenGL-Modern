@@ -5658,10 +5658,23 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glAttachObjectARB' => {
+    'argdata' => [
+      [
+        'containerObj',
+        'GLhandleARB '
+      ],
+      [
+        'obj',
+        'GLhandleARB '
+      ]
+    ],
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewAttachObjectARB',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glAttachShader' => {
-    'aliases' => {
-      'glAttachObjectARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'program',
@@ -5901,9 +5914,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glBindAttribLocation' => {
-    'aliases' => {
-      'glBindAttribLocationARB' => 'GL_ARB_vertex_shader'
-    },
     'argdata' => [
       [
         'program',
@@ -5920,6 +5930,26 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewBindAttribLocation',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glBindAttribLocationARB' => {
+    'argdata' => [
+      [
+        'programObj',
+        'GLhandleARB '
+      ],
+      [
+        'index',
+        'GLuint '
+      ],
+      [
+        'name',
+        'const GLcharARB* '
+      ]
+    ],
+    'feature' => 'GL_ARB_vertex_shader',
+    'glewImpl' => '__glewBindAttribLocationARB',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -11068,9 +11098,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glCompileShader' => {
-    'aliases' => {
-      'glCompileShaderARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'shader',
@@ -11079,6 +11106,18 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewCompileShader',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glCompileShaderARB' => {
+    'argdata' => [
+      [
+        'shaderObj',
+        'GLhandleARB '
+      ]
+    ],
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewCompileShaderARB',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -16035,10 +16074,23 @@ our %registry = (
     'glewtype' => 'fun',
     'restype' => 'void'
   },
+  'glDetachObjectARB' => {
+    'argdata' => [
+      [
+        'containerObj',
+        'GLhandleARB '
+      ],
+      [
+        'attachedObj',
+        'GLhandleARB '
+      ]
+    ],
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewDetachObjectARB',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
   'glDetachShader' => {
-    'aliases' => {
-      'glDetachObjectARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'program',
@@ -21866,9 +21918,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glGetActiveAttrib' => {
-    'aliases' => {
-      'glGetActiveAttribARB' => 'GL_ARB_vertex_shader'
-    },
     'argdata' => [
       [
         'program',
@@ -21912,6 +21961,59 @@ our %registry = (
     },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetActiveAttrib',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      3,
+      4,
+      5,
+      6
+    ],
+    'restype' => 'void'
+  },
+  'glGetActiveAttribARB' => {
+    'argdata' => [
+      [
+        'program',
+        'GLhandleARB '
+      ],
+      [
+        'index',
+        'GLuint '
+      ],
+      [
+        'bufSize',
+        'GLsizei '
+      ],
+      [
+        'length',
+        'GLsizei* ',
+        '1'
+      ],
+      [
+        'size',
+        'GLint *',
+        '1'
+      ],
+      [
+        'type',
+        'GLenum *',
+        '1',
+        'AttributeType'
+      ],
+      [
+        'name',
+        'GLcharARB *',
+        'bufSize'
+      ]
+    ],
+    'dynlang' => {
+      'bufSize' => '<glGetProgramiv(program,GL_ACTIVE_ATTRIBUTE_MAX_LENGTH,&)',
+      'name' => 'OUTSCALAR',
+      'size' => 'OUTSCALAR',
+      'type' => 'OUTSCALAR'
+    },
+    'feature' => 'GL_ARB_vertex_shader',
+    'glewImpl' => '__glewGetActiveAttribARB',
     'glewtype' => 'fun',
     'ptr_args' => [
       3,
@@ -22050,9 +22152,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glGetActiveUniform' => {
-    'aliases' => {
-      'glGetActiveUniformARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'program',
@@ -22097,6 +22196,60 @@ our %registry = (
     },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetActiveUniform',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      3,
+      4,
+      5,
+      6
+    ],
+    'restype' => 'void'
+  },
+  'glGetActiveUniformARB' => {
+    'argdata' => [
+      [
+        'program',
+        'GLhandleARB '
+      ],
+      [
+        'index',
+        'GLuint '
+      ],
+      [
+        'bufSize',
+        'GLsizei '
+      ],
+      [
+        'length',
+        'GLsizei* ',
+        '1'
+      ],
+      [
+        'size',
+        'GLint *',
+        '1'
+      ],
+      [
+        'type',
+        'GLenum *',
+        '1',
+        'UniformType'
+      ],
+      [
+        'name',
+        'GLcharARB *',
+        'bufSize'
+      ]
+    ],
+    'dynlang' => {
+      'bufSize' => '<glGetProgramiv(program,GL_ACTIVE_UNIFORM_MAX_LENGTH,&)',
+      'length' => 'NULL',
+      'name' => 'OUTSCALAR',
+      'size' => 'OUTSCALAR',
+      'type' => 'OUTSCALAR'
+    },
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewGetActiveUniformARB',
     'glewtype' => 'fun',
     'ptr_args' => [
       3,
@@ -22434,9 +22587,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glGetAttribLocation' => {
-    'aliases' => {
-      'glGetAttribLocationARB' => 'GL_ARB_vertex_shader'
-    },
     'argdata' => [
       [
         'program',
@@ -22449,6 +22599,22 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetAttribLocation',
+    'glewtype' => 'fun',
+    'restype' => 'GLint'
+  },
+  'glGetAttribLocationARB' => {
+    'argdata' => [
+      [
+        'programObj',
+        'GLhandleARB '
+      ],
+      [
+        'name',
+        'const GLcharARB* '
+      ]
+    ],
+    'feature' => 'GL_ARB_vertex_shader',
+    'glewImpl' => '__glewGetAttribLocationARB',
     'glewtype' => 'fun',
     'restype' => 'GLint'
   },
@@ -30558,9 +30724,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glGetShaderSource' => {
-    'aliases' => {
-      'glGetShaderSourceARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'shader',
@@ -30588,6 +30751,41 @@ our %registry = (
     },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetShaderSource',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2,
+      3
+    ],
+    'restype' => 'void'
+  },
+  'glGetShaderSourceARB' => {
+    'argdata' => [
+      [
+        'shader',
+        'GLhandleARB '
+      ],
+      [
+        'bufSize',
+        'GLsizei '
+      ],
+      [
+        'length',
+        'GLsizei* ',
+        '1'
+      ],
+      [
+        'source',
+        'GLcharARB *',
+        'bufSize'
+      ]
+    ],
+    'dynlang' => {
+      'RETVAL' => 'source',
+      'bufSize' => '<glGetShaderiv(shader,GL_SHADER_SOURCE_LENGTH,&)',
+      'length' => 'NULL'
+    },
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewGetShaderSourceARB',
     'glewtype' => 'fun',
     'ptr_args' => [
       2,
@@ -32372,9 +32570,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glGetUniformLocation' => {
-    'aliases' => {
-      'glGetUniformLocationARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'program',
@@ -32387,6 +32582,22 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetUniformLocation',
+    'glewtype' => 'fun',
+    'restype' => 'GLint'
+  },
+  'glGetUniformLocationARB' => {
+    'argdata' => [
+      [
+        'programObj',
+        'GLhandleARB '
+      ],
+      [
+        'name',
+        'const GLcharARB* '
+      ]
+    ],
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewGetUniformLocationARB',
     'glewtype' => 'fun',
     'restype' => 'GLint'
   },
@@ -32460,9 +32671,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glGetUniformfv' => {
-    'aliases' => {
-      'glGetUniformfvARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'program',
@@ -32480,6 +32688,29 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetUniformfv',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glGetUniformfvARB' => {
+    'argdata' => [
+      [
+        'programObj',
+        'GLhandleARB '
+      ],
+      [
+        'location',
+        'GLint '
+      ],
+      [
+        'params',
+        'GLfloat* '
+      ]
+    ],
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewGetUniformfvARB',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -32535,9 +32766,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glGetUniformiv' => {
-    'aliases' => {
-      'glGetUniformivARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'program',
@@ -32555,6 +32783,29 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewGetUniformiv',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2
+    ],
+    'restype' => 'void'
+  },
+  'glGetUniformivARB' => {
+    'argdata' => [
+      [
+        'programObj',
+        'GLhandleARB '
+      ],
+      [
+        'location',
+        'GLint '
+      ],
+      [
+        'params',
+        'GLint* '
+      ]
+    ],
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewGetUniformivARB',
     'glewtype' => 'fun',
     'ptr_args' => [
       2
@@ -36783,9 +37034,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glLinkProgram' => {
-    'aliases' => {
-      'glLinkProgramARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'program',
@@ -36794,6 +37042,18 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewLinkProgram',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glLinkProgramARB' => {
+    'argdata' => [
+      [
+        'programObj',
+        'GLhandleARB '
+      ]
+    ],
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewLinkProgramARB',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -55077,9 +55337,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glShaderSource' => {
-    'aliases' => {
-      'glShaderSourceARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'shader',
@@ -55107,6 +55364,41 @@ our %registry = (
     },
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewShaderSource',
+    'glewtype' => 'fun',
+    'ptr_args' => [
+      2,
+      3
+    ],
+    'restype' => 'void'
+  },
+  'glShaderSourceARB' => {
+    'argdata' => [
+      [
+        'shader',
+        'GLhandleARB '
+      ],
+      [
+        'count',
+        'GLsizei '
+      ],
+      [
+        'string',
+        'const GLcharARB ** ',
+        'count'
+      ],
+      [
+        'length',
+        'const GLint *',
+        'count'
+      ]
+    ],
+    'dynlang' => {
+      'count' => 'items-1',
+      'length' => 'NULL',
+      'string' => 'VARARGS:1:count'
+    },
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewShaderSourceARB',
     'glewtype' => 'fun',
     'ptr_args' => [
       2,
@@ -65404,9 +65696,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glUseProgram' => {
-    'aliases' => {
-      'glUseProgramObjectARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'program',
@@ -65415,6 +65704,18 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewUseProgram',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glUseProgramObjectARB' => {
+    'argdata' => [
+      [
+        'programObj',
+        'GLhandleARB '
+      ]
+    ],
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewUseProgramObjectARB',
     'glewtype' => 'fun',
     'restype' => 'void'
   },
@@ -65687,9 +65988,6 @@ our %registry = (
     'restype' => 'void'
   },
   'glValidateProgram' => {
-    'aliases' => {
-      'glValidateProgramARB' => 'GL_ARB_shader_objects'
-    },
     'argdata' => [
       [
         'program',
@@ -65698,6 +65996,18 @@ our %registry = (
     ],
     'feature' => 'GL_VERSION_2_0',
     'glewImpl' => '__glewValidateProgram',
+    'glewtype' => 'fun',
+    'restype' => 'void'
+  },
+  'glValidateProgramARB' => {
+    'argdata' => [
+      [
+        'programObj',
+        'GLhandleARB '
+      ]
+    ],
+    'feature' => 'GL_ARB_shader_objects',
+    'glewImpl' => '__glewValidateProgramARB',
     'glewtype' => 'fun',
     'restype' => 'void'
   },

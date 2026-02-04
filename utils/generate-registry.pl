@@ -300,7 +300,30 @@ for my $alias (grep !exists $signature{$alias2real{$_}}, sort keys %alias2real) 
 }
 for (sort keys %alias2real) {
   my ($to, $from) = ($alias2real{$_}, $_);
-  $signature{$to}{aliases}{$from} = $signature{$from}{feature};
+  my ($from_sig, $to_sig) = @signature{$from, $to};
+  die "no sig for '$to'" if !$to_sig;
+  if ($from_sig && $from_sig != $to_sig) {
+    my ($from_data, $to_data) = map $_->{argdata}, $from_sig, $to_sig;
+    if ($from_data && $to_data) {
+      next if @$from_data != @$to_data;
+      my ($from_types, $to_types) = map [map {
+        my $type = $_->[1] =~ s#(?: |ARB|EXT|GL|const)##gr;
+        $type eq 'enum' ? 'int' : $type
+      } @$_], $from_data, $to_data;
+      my @difftypeind = grep $from_types->[$_] ne $to_types->[$_], 0..$#$from_types;
+      if (@difftypeind) {
+        # print "$from diff $to at (@difftypeind) = (@{[map qq{'$from_types->[$_]' ne '$to_types->[$_]'}, @difftypeind]})\n";
+        if (my $to_dyn = $to_sig->{dynlang}) {
+          # relying on only difference being GLhandleARB vs GLuint, non-"pointer" args
+          $from_sig->{dynlang} = { %$to_dyn };
+          my $new_from_data = $from_sig->{argdata} = [ map [@$_], @$to_data ];
+          $new_from_data->[$_][1] = $from_data->[$_][1] for 0..$#$new_from_data;
+        }
+        next;
+      }
+    }
+  }
+  $to_sig->{aliases}{$from} = $from_sig->{feature};
   delete $signature{$from};
 }
 }

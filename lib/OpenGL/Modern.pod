@@ -1074,10 +1074,15 @@ Exported under tag C<:GL_NVX_gpu_multicast2>.
 
 Exported under tag C<:GL_SGIX_async>.
 
+=head2 glAttachObjectARB
+
+ glAttachObjectARB($containerObj, $obj);
+
+Exported under tag C<:GL_ARB_shader_objects>.
+
 =head2 glAttachShader
 
  glAttachShader($program, $shader);
- glAttachObjectARB($program, $shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glAttachShader.xhtml>
@@ -1190,10 +1195,15 @@ Exported under tag C<:GL_EXT_vertex_array_setXXX>.
 =head2 glBindAttribLocation
 
  glBindAttribLocation($program, $index, $name);
- glBindAttribLocationARB($program, $index, $name);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBindAttribLocation.xhtml>
+
+=head2 glBindAttribLocationARB
+
+ glBindAttribLocationARB($programObj, $index, $name);
+
+Exported under tag C<:GL_ARB_vertex_shader>.
 
 =head2 glBindBuffer
 
@@ -2570,10 +2580,15 @@ Exported under tag C<:GL_NV_command_list>.
 =head2 glCompileShader
 
  glCompileShader($shader);
- glCompileShaderARB($shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glCompileShader.xhtml>
+
+=head2 glCompileShaderARB
+
+ glCompileShaderARB($shaderObj);
+
+Exported under tag C<:GL_ARB_shader_objects>.
 
 =head2 glCompileShaderIncludeARB
 
@@ -3642,10 +3657,15 @@ Exported under tag C<:GL_OES_single_precision>.
 
 Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 
+=head2 glDetachObjectARB
+
+ glDetachObjectARB($containerObj, $attachedObj);
+
+Exported under tag C<:GL_ARB_shader_objects>.
+
 =head2 glDetachShader
 
  glDetachShader($program, $shader);
- glDetachObjectARB($program, $shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDetachShader.xhtml>
@@ -5420,12 +5440,17 @@ Exported under tag C<:GL_ARB_shader_atomic_counters>.
 =head2 glGetActiveAttrib
 
  glGetActiveAttrib_c($program, $index, $bufSize, $length, $size, $type, $name);
- glGetActiveAttribARB_c($program, $index, $bufSize, $length, $size, $type, $name);
  ($size, $type, $name) = glGetActiveAttrib_p($program, $index);
- ($size, $type, $name) = glGetActiveAttribARB_p($program, $index);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetActiveAttrib.xhtml>
+
+=head2 glGetActiveAttribARB
+
+ glGetActiveAttribARB_c($program, $index, $bufSize, $length, $size, $type, $name);
+ ($size, $type, $name) = glGetActiveAttribARB_p($program, $index);
+
+Exported under tag C<:GL_ARB_vertex_shader>.
 
 =head2 glGetActiveSubroutineName
 
@@ -5451,12 +5476,17 @@ Exported under tag C<:GL_ARB_shader_subroutine>.
 =head2 glGetActiveUniform
 
  glGetActiveUniform_c($program, $index, $bufSize, $length, $size, $type, $name);
- glGetActiveUniformARB_c($program, $index, $bufSize, $length, $size, $type, $name);
  ($size, $type, $name) = glGetActiveUniform_p($program, $index);
- ($size, $type, $name) = glGetActiveUniformARB_p($program, $index);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetActiveUniform.xhtml>
+
+=head2 glGetActiveUniformARB
+
+ glGetActiveUniformARB_c($program, $index, $bufSize, $length, $size, $type, $name);
+ ($size, $type, $name) = glGetActiveUniformARB_p($program, $index);
+
+Exported under tag C<:GL_ARB_shader_objects>.
 
 =head2 glGetActiveUniformBlockName
 
@@ -5523,10 +5553,15 @@ See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetAttachedShaders
 =head2 glGetAttribLocation
 
  $retval = glGetAttribLocation($program, $name);
- $retval = glGetAttribLocationARB($program, $name);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetAttribLocation.xhtml>
+
+=head2 glGetAttribLocationARB
+
+ $retval = glGetAttribLocationARB($programObj, $name);
+
+Exported under tag C<:GL_ARB_vertex_shader>.
 
 =head2 glGetBooleani_v
 
@@ -7381,12 +7416,17 @@ Exported under tag C<:GL_ARB_ES2_compatibility>.
 =head2 glGetShaderSource
 
  glGetShaderSource_c($shader, $bufSize, $length, $source);
- glGetShaderSourceARB_c($shader, $bufSize, $length, $source);
  $source = glGetShaderSource_p($shader);
- $source = glGetShaderSourceARB_p($shader);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetShaderSource.xhtml>
+
+=head2 glGetShaderSourceARB
+
+ glGetShaderSourceARB_c($shader, $bufSize, $length, $source);
+ $source = glGetShaderSourceARB_p($shader);
+
+Exported under tag C<:GL_ARB_shader_objects>.
 
 =head2 glGetShaderiv
 
@@ -7816,10 +7856,15 @@ Exported under tag C<:GL_ARB_uniform_buffer_object>.
 =head2 glGetUniformLocation
 
  $retval = glGetUniformLocation($program, $name);
- $retval = glGetUniformLocationARB($program, $name);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetUniformLocation.xhtml>
+
+=head2 glGetUniformLocationARB
+
+ $retval = glGetUniformLocationARB($programObj, $name);
+
+Exported under tag C<:GL_ARB_shader_objects>.
 
 =head2 glGetUniformOffsetEXT
 
@@ -7843,10 +7888,15 @@ Exported under tag C<:GL_ARB_gpu_shader_fp64>.
 =head2 glGetUniformfv
 
  glGetUniformfv_c($program, $location, $params);
- glGetUniformfvARB_c($program, $location, $params);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetUniformfv.xhtml>
+
+=head2 glGetUniformfvARB
+
+ glGetUniformfvARB_c($programObj, $location, $params);
+
+Exported under tag C<:GL_ARB_shader_objects>.
 
 =head2 glGetUniformi64vARB
 
@@ -7863,10 +7913,15 @@ Exported under tag C<:GL_NV_gpu_shader5>.
 =head2 glGetUniformiv
 
  glGetUniformiv_c($program, $location, $params);
- glGetUniformivARB_c($program, $location, $params);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glGetUniformiv.xhtml>
+
+=head2 glGetUniformivARB
+
+ glGetUniformivARB_c($programObj, $location, $params);
+
+Exported under tag C<:GL_ARB_shader_objects>.
 
 =head2 glGetUniformui64vARB
 
@@ -9154,10 +9209,15 @@ Exported under tag C<:GL_REGAL_ES1_0_compatibility>.
 =head2 glLinkProgram
 
  glLinkProgram($program);
- glLinkProgramARB($program);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glLinkProgram.xhtml>
+
+=head2 glLinkProgramARB
+
+ glLinkProgramARB($programObj);
+
+Exported under tag C<:GL_ARB_shader_objects>.
 
 =head2 glListBase
 
@@ -13860,12 +13920,17 @@ Exported under tag C<:GL_EXT_vertex_shader>.
 =head2 glShaderSource
 
  glShaderSource_c($shader, $count, $string, $length);
- glShaderSourceARB_c($shader, $count, $string, $length);
  glShaderSource_p($shader, @string);
- glShaderSourceARB_p($shader, @string);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glShaderSource.xhtml>
+
+=head2 glShaderSourceARB
+
+ glShaderSourceARB_c($shader, $count, $string, $length);
+ glShaderSourceARB_p($shader, @string);
+
+Exported under tag C<:GL_ARB_shader_objects>.
 
 =head2 glShaderStorageBlockBinding
 
@@ -16300,10 +16365,15 @@ Exported under tag C<:GL_NVX_gpu_multicast2>.
 =head2 glUseProgram
 
  glUseProgram($program);
- glUseProgramObjectARB($program);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glUseProgram.xhtml>
+
+=head2 glUseProgramObjectARB
+
+ glUseProgramObjectARB($programObj);
+
+Exported under tag C<:GL_ARB_shader_objects>.
 
 =head2 glUseProgramStages
 
@@ -16386,10 +16456,15 @@ Exported under tag C<:GL_NV_vdpau_interop>.
 =head2 glValidateProgram
 
  glValidateProgram($program);
- glValidateProgramARB($program);
 
 Exported under tag C<:GL_VERSION_2_0>.
 See L<https://registry.khronos.org/OpenGL-Refpages/gl4/html/glValidateProgram.xhtml>
+
+=head2 glValidateProgramARB
+
+ glValidateProgramARB($programObj);
+
+Exported under tag C<:GL_ARB_shader_objects>.
 
 =head2 glValidateProgramPipeline
 

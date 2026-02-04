@@ -1,3 +1,5 @@
+- check gl.xml "alias" has all same types for args; some are GLhandle vs GLuint
+
 0.0402 2026-02-01
 - add ExtUtils::Depends support in addition to ::Config, including `use Inline with => 'OpenGL::Modern'`
 - most functions that take pointers now have POGL-like _p variants
