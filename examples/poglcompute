@@ -53,12 +53,9 @@ glewCreateContext(3, 3, 1, 2) == GLEW_OK or die "glewCreateContext failed";
 glewInit() == GLEW_OK or die "glewInit failed";
 glpSetAutoCheckErrors(1);
 print "OpenGL ", glGetString(GL_VERSION), "\n";
-my $max_tex_dim = glGetIntegerv_p(GL_MAX_TEXTURE_SIZE);
-print "Max texture dim = $max_tex_dim\n";
-my $max_vp_dim = glGetIntegerv_p(GL_MAX_VIEWPORT_DIMS);
-print "Max viewport dim = $max_vp_dim\n";
-my $max_texbuffer = glGetIntegerv_p(GL_MAX_TEXTURE_BUFFER_SIZE);
-printf "Max texture buffer = %g\n", $max_texbuffer;
+print "Max texture dim = @{[ glGetIntegerv_p(GL_MAX_TEXTURE_SIZE) ]}\n";
+print "Max viewport dims = (@{[ glGetIntegerv_p(GL_MAX_VIEWPORT_DIMS) ]})\n";
+printf "Max texture buffer = %g\n", glGetIntegerv_p(GL_MAX_TEXTURE_BUFFER_SIZE);
 
 my $vertex_shader = <<'EOF';
 #version 330
