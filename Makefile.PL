@@ -40,7 +40,6 @@ WriteMakefile(
     'Devel::CheckLib' => 0,
   },
   TEST_REQUIRES => {
-    'Capture::Tiny' => 0,
     'Test::More' => '0.88',
   },
   TYPEMAPS => [qw(lib/OpenGL/Modern/Install/typemap)],
