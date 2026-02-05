@@ -58,14 +58,16 @@ sub binescalate (&$) {
 }
 
 sub binsearch (&$$$;$$) {
-  my ($f, $low, $high, $eps, $low_good, $high_good) = @_;
-  $low_good //= !!$f->($low);
-  $high_good //= !!$f->($high);
+  my ($f, $low, $high, $eps) = @_;
+  my ($low_good, $high_good) = map !!$f->($_), $low, $high;
   return undef if !!$low_good == !!$high_good;
-  return $high_good ? $high : $low if (my $diff = $high - $low) <= $eps;
-  $diff /= 2;
-  &binsearch($f, $low + $diff, $high, $eps, undef, $high_good) //
-    &binsearch($f, $low, $high - $diff, $eps, $low_good, undef);
+  while (1) {
+    return $high_good ? $high : $low if (my $diff = $high - $low) <= $eps;
+    my $mid = $low + ($diff / 2);
+    my $mid_good = !!$f->($mid);
+    (($mid_good ? $high_good : $low_good) ? ($high, $high_good) : ($low, $low_good))
+       = ($mid, $mid_good);
+  }
 }
 
 print "Perl $^V OpenGL::Modern $OpenGL::Modern::VERSION PDL $PDL::VERSION\n";
@@ -85,7 +87,7 @@ sub prox1d {
 }
 my $max_tex = binescalate(\&prox1d, 20);
 print "Max 1D texture size, binescalated = $max_tex\n";
-$max_tex = binsearch(\&prox1d, $max_tex, $max_tex * 2, 2);
+$max_tex = binsearch(\&prox1d, $max_tex, $max_tex * 2, 1);
 print "Max 1D texture size, binsearched = $max_tex\n";
 
 my $vertex_shader = <<'EOF';
