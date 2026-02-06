@@ -233,20 +233,20 @@ sub compile_shader {
 sub compile_program {
   my ($vsrc, $fsrc) = @_;
   my $vShader = compile_shader(GL_VERTEX_SHADER, $vsrc);
-  my $fShader = eval { compile_shader(GL_FRAGMENT_SHADER, $fsrc) };
+  my $fShader = $fsrc && eval { compile_shader(GL_FRAGMENT_SHADER, $fsrc) };
   if (my $err = $@) {
     glDeleteShader($vShader);
     die $err;
   }
   my $program = glCreateProgram();
   glAttachShader($program, $vShader);
-  glAttachShader($program, $fShader);
+  glAttachShader($program, $fShader) if $fsrc;
   glLinkProgram($program);
   my $status = glGetProgramiv_p($program, GL_LINK_STATUS);
   glDetachShader($program, $vShader);
-  glDetachShader($program, $fShader);
+  glDetachShader($program, $fShader) if $fsrc;
   glDeleteShader($vShader);
-  glDeleteShader($fShader);
+  glDeleteShader($fShader) if $fsrc;
   if ($status == GL_FALSE) {
     my $str = "Program linker failed.\n";
     $str .= glGetProgramInfoLog_p($program);
