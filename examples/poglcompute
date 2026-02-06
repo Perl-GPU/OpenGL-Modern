@@ -56,7 +56,7 @@ sub binescalate (&$) {
   $val;
 }
 
-sub binsearch (&$$$;$$) {
+sub binsearch (&$$$) {
   my ($f, $low, $high, $eps) = @_;
   my ($low_good, $high_good) = map !!$f->($_), $low, $high;
   return undef if !!$low_good == !!$high_good;
