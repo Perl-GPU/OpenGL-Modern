@@ -17,7 +17,7 @@ use OpenGL::Modern qw(
   glFramebufferTexture glCheckFramebufferStatus
   glTransformFeedbackVaryings_p
   glGenBuffers_p glDeleteBuffers_p glBindBuffer glBufferData_c
-  glMapBuffer_c
+  glMapBuffer_c glUnmapBuffer
   glGenVertexArrays_p glDeleteVertexArrays_p glBindVertexArray
   glEnableVertexAttribArray glDisableVertexAttribArray
   glVertexAttribPointer_c glGetAttribLocation
@@ -121,8 +121,9 @@ glBufferData_c(GL_ARRAY_BUFFER, $p->nbytes, 0, GL_STREAM_DRAW);
 my $input = PDL->new_around_pointer(glMapBuffer_c(GL_ARRAY_BUFFER, GL_WRITE_ONLY), $p->nbytes);
 $input->set_datatype(float->enum);
 $input->setdims([$xdim, $ydim]);
-glBindBuffer(GL_ARRAY_BUFFER, 0);
 $input .= $p;
+glUnmapBuffer(GL_ARRAY_BUFFER);
+glBindBuffer(GL_ARRAY_BUFFER, 0);
 } 'setup src buffer';
 
 my ($destBufferID) = glGenBuffers_p(1);
