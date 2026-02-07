@@ -231,7 +231,7 @@ sub compile_shader {
 }
 
 sub compile_program {
-  my ($vsrc, $fsrc) = @_;
+  my ($vsrc, $fsrc, $prelink) = @_;
   my $vShader = compile_shader(GL_VERTEX_SHADER, $vsrc);
   my $fShader = $fsrc && eval { compile_shader(GL_FRAGMENT_SHADER, $fsrc) };
   if (my $err = $@) {
@@ -241,6 +241,7 @@ sub compile_program {
   my $program = glCreateProgram();
   glAttachShader($program, $vShader);
   glAttachShader($program, $fShader) if $fsrc;
+  $prelink->($program) if $prelink;
   glLinkProgram($program);
   my $status = glGetProgramiv_p($program, GL_LINK_STATUS);
   glDetachShader($program, $vShader);
