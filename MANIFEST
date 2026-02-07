@@ -1,5 +1,6 @@
 Changes
 examples/poglcompute
+examples/poglcompute-mapbuffer
 examples/poglcompute-textures
 include/GL/eglew.h
 include/GL/glew.h
