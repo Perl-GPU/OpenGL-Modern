@@ -126,7 +126,7 @@ sub prox2d {
   return if $@;
   glGetTexLevelParameteriv_p(GL_PROXY_TEXTURE_2D, 0, GL_TEXTURE_WIDTH);
 }
-my $max_dim2d = int(0.5 + (binsearch(\&prox2d, 1, 5000, 1)//5000));
+my $max_dim2d = int(0.5 + (binsearch(\&prox2d, 1, 1581, 1)//1581));
 my ($xdim, $ydim) = ($max_dim2d, $max_dim2d);
 my $p = sequence(float, $xdim, $ydim);
 my $skip0 = int($xdim / 2) - 1;

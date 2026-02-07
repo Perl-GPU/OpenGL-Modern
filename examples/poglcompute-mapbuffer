@@ -83,7 +83,7 @@ sub buffer_alloc {
   glDeleteBuffers_p($buffer);
   $ok;
 }
-my $max_buffer = int(0.5 + (binsearch(\&buffer_alloc, 1, 1e8, 1)//1e8));
+my $max_buffer = int(0.5 + (binsearch(\&buffer_alloc, 1, 1e7, 1)//1e7));
 print "Max GPU buffer size, binsearched = $max_buffer\n";
 
 my $vertex_shader = <<'EOF';
@@ -104,6 +104,7 @@ my $vao = glGenVertexArrays_p(1);
 glBindVertexArray($vao);
 
 my ($xdim, $ydim) = (0.5 * int sqrt $max_buffer) x 2;
+print "ndarray dim = $xdim\n";
 my $p = sequence(float, $xdim, $ydim);
 my $skip0 = int($xdim / 2) - 1;
 my $skip1 = int(($ydim-1) / 2);
