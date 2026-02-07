@@ -7,7 +7,6 @@ use OpenGL::Modern qw(
   glpErrorString glGetError glGetString
   glGenTextures_p glBindTexture glDeleteTextures_p
   glTexImage2D_c
-  glGetIntegerv_p
   glCreateShader glDeleteShader glShaderSource_p glCompileShader
   glAttachShader glDetachShader
   glGetShaderiv_p glGetShaderInfoLog_p
