@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use OpenGL::Modern qw(
   glewCreateContext glewInit glpSetAutoCheckErrors glewDestroyContext
-  glGetString
+  glpErrorString glGetError glGetString
   glGenTextures_p glBindTexture glDeleteTextures_p
   glTexImage1D_c glTexImage2D_c glTexParameteri
   glGetTexLevelParameteriv_p glGetIntegerv_p
