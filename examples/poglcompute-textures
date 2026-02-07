@@ -168,6 +168,7 @@ die "FBO Status error: " . glpErrorString(glGetError()) if !$fbstat;
 die "FBO Status: ".OpenGL::Modern::enum2name('FramebufferStatus', $fbstat)
   if $fbstat != GL_FRAMEBUFFER_COMPLETE;
 
+glFinish();
 with_time {
 glViewport(0,0,$xdim,$ydim);
 glBindBuffer(GL_ARRAY_BUFFER, $attrib_buffer);
