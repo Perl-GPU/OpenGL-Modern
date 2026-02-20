@@ -129,9 +129,8 @@ sub prox2d {
 my $max_dim2d = int(0.5 + (binsearch(\&prox2d, 1, 1581, 1)//1581));
 my ($xdim, $ydim) = ($max_dim2d, $max_dim2d);
 my $p = sequence(float, $xdim, $ydim);
-my $skip0 = int($xdim / 2) - 1;
-my $skip1 = int(($ydim-1) / 2);
-my $slicearg = '::'.$skip0.',::'.$skip1;
+my ($skip0, $skip1) = map int(($_-1) / 2), $xdim, $ydim;
+my $slicearg = join ',', map '::'.$_, $skip0, $skip1;
 print "Source data: ", $p->slice($slicearg);
 my $p_cpu_squared = with_time { $p ** 2 } 'square CPU';
 print "Squared on CPU: ", $p_cpu_squared->slice($slicearg);
