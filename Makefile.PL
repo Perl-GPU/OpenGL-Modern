@@ -18,6 +18,11 @@ if ( $^O eq 'MSWin32' ) {
 } else {
   $libs = '-lGL -lX11';
 }
+
+$define .= ' ' . $ENV{OGLM_ADD_DEFINE} if defined $ENV{OGLM_ADD_DEFINE};
+$libs   .= ' ' . $ENV{OGLM_ADD_LIBS} if defined $ENV{OGLM_ADD_LIBS};
+$DYNS->{OTHERLDFLAGS} = $ENV{OGLM_REPLACE_OTHERLDFLAGS} if defined $ENV{OGLM_REPLACE_OTHERLDFLAGS};
+
 my %buildargs = (
   !$libs ? () : (LIBS => $libs),
   DEFINE           => $define,
