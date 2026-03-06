@@ -16616,6 +16616,7 @@ our @glew_functions = qw(
   glewIsSupported
   glewInit
   done_glewInit
+  glewHasContext
   glewDestroyContext
 );
 our @glp_functions = qw(
