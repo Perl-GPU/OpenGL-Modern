@@ -13,12 +13,12 @@ if ( $^O eq 'MSWin32' ) {
 } elsif ( $^O eq 'cygwin' ) {
   $libs = '-lGL -lX11';
 } elsif ( $^O eq 'darwin' ) {
+  $define .= " -Wno-compound-token-split-by-macro -DGL_SILENCE_DEPRECATION";
   if ( $ENV{OGLM_APPLE_GLX} ) {
      $define .= " -DGLEW_APPLE_GLX -I/opt/X11/include";
      $libs = '-L/opt/X11/lib -lglut';
   } else {
      $DYNS = { 'OTHERLDFLAGS' => '-framework OpenGL' };
-     $define .= " -Wno-compound-token-split-by-macro -DGL_SILENCE_DEPRECATION";
   }
 } else {
   $libs = '-lGL -lX11';
