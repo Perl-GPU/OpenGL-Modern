@@ -18420,14 +18420,9 @@ typedef void (GLAPIENTRY * PFNGLGETINTEGERVPROC) (GLenum pname, GLint *params);
 #include <OpenGL/CGLCurrent.h>
 #endif
 
-GLenum GLEWAPIENTRY glewContextInit (void)
+GLboolean GLEWAPIENTRY glewHasContext (void)
 {
-  PFNGLGETSTRINGPROC getString;
-  const GLubyte* s;
-  GLuint dot;
-  GLint major, minor;
-
-  if (
+  return !(
   #if defined(GLEW_EGL)
     eglGetCurrentContext() == EGL_NO_CONTEXT
   #elif defined(GLEW_OSMESA)
@@ -18441,7 +18436,17 @@ GLenum GLEWAPIENTRY glewContextInit (void)
   #else /* __UNIX || (__APPLE__ && GLEW_APPLE_GLX) */
     !glXGetCurrentContext()
   #endif
-  )
+  );
+}
+
+GLenum GLEWAPIENTRY glewContextInit (void)
+{
+  PFNGLGETSTRINGPROC getString;
+  const GLubyte* s;
+  GLuint dot;
+  GLint major, minor;
+
+  if (!glewHasContext())
     return GLEW_ERROR_NO_GL_CONTEXT;
 
   #ifdef _WIN32
