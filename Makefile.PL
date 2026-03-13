@@ -10,8 +10,6 @@ my $DYNS;
 if ( $^O eq 'MSWin32' ) {
   $libs   = '-lopengl32 -lgdi32 -lmsimg32';
   $define .= " -D_WIN32",
-} elsif ( $^O eq 'cygwin' ) {
-  $libs = '-lGL -lX11';
 } elsif ( $^O eq 'darwin' ) {
   $DYNS = { 'OTHERLDFLAGS' => '-framework OpenGL' };
   $define .= " -Wno-compound-token-split-by-macro -DGL_SILENCE_DEPRECATION";
