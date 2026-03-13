@@ -1,6 +1,6 @@
 use strict;
 use ExtUtils::MakeMaker;
-use Devel::CheckLib 'assert_lib';
+use Devel::CheckLib 'check_lib';
 use Config;
 
 my $include = "-Ilib/OpenGL/Modern -Iinclude";
@@ -22,7 +22,7 @@ my %buildargs = (
   INC              => $include,
   !$DYNS ? () : ( dynamic_lib => $DYNS ),
 );
-die "$@\nOS unsupported\n" if !eval { assert_lib %buildargs; 1 };
+die "$@\nOS unsupported\n" if !check_lib %buildargs;
 WriteConfigPM({ LIBS => $libs || $DYNS->{OTHERLDFLAGS}, DEFINE => $define });
 
 WriteMakefile(
