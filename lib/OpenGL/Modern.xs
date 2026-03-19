@@ -104,7 +104,7 @@ OUTPUT:
 void
 glpCheckErrors()
 CODE:
-  OGLM_CROAK_IF_ERR(glpCheckErrors, )
+  OGLM_CROAK_IF_ERR("glpCheckErrors", )
 
 const char *
 glpErrorString(err)
