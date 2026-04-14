@@ -8,7 +8,7 @@ use Exporter 'import';
 
 use OpenGL::Modern::Const;
 
-our $VERSION    = '0.0404';
+our $VERSION    = '0.0405';
 our $XS_VERSION = $VERSION; # capture before strip, as EUMM reads statically in setting version for .xs file
 $VERSION =~ tr/_//d;
 
