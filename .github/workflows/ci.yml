@@ -23,6 +23,9 @@ jobs:
             os: windows-latest
           - perl-version: '5.30'
             os: macos-latest
+          - perl-version: '5.30'
+            os: macos-latest
+            apple-glx: true
     steps:
       - uses: actions/checkout@v2
       - name: 'ci-dist: target-setup-perl'
@@ -32,6 +35,11 @@ jobs:
           perl-version: ${{ matrix.perl-version }}
       - name: Install dependencies
         uses: Perl-GPU/devops/github-actions/install-dep-opengl-modern-dep@main
+      - name: 'Use XQuartz/GLX'
+        if: matrix.apple-glx
+        run: |
+          echo "OGLM_APPLE_GLX=1" >> $GITHUB_ENV
+          brew install --cask xquartz
       - name: 'ci-dist: target-all'
         uses: Perl-GPU/devops/github-actions/ci-dist@main
         with:
